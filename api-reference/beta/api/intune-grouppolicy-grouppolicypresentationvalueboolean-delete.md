@@ -3,7 +3,7 @@ title: "Delete groupPolicyPresentationValueBoolean"
 description: "Deletes a groupPolicyPresentationValueBoolean."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

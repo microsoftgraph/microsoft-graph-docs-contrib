@@ -3,7 +3,7 @@ title: "Range: unmerge"
 description: "Unmerge the range cells into separate cells."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Example
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 ```
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

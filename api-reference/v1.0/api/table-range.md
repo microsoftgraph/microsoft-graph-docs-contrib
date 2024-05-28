@@ -3,7 +3,7 @@ title: "workbookTable: range"
 description: "Gets the range object associated with the entire table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
 

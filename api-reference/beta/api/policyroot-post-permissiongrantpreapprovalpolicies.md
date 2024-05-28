@@ -3,7 +3,7 @@ title: "Create permissionGrantPreApprovalPolicy"
 description: "Create a new permissionGrantPreApprovalPolicy object."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

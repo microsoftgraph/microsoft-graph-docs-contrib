@@ -3,7 +3,7 @@ title: "credentialUsageSummary resource type"
 description: "Represents the current state of how many users in your organization are using self-service password reset capabilities."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ Represents the current state of how many users in your organization are using se
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getCredentialUsageSummary](../api/reportroot-getcredentialusagesummary.md) | credentialUsageSummary | Read properties and relationships of a credentialUsageSummary object. |
+| [List](../api/reportroot-getcredentialusagesummary.md) | credentialUsageSummary | Read properties and relationships of a credentialUsageSummary object. |
 
 ## Properties
 

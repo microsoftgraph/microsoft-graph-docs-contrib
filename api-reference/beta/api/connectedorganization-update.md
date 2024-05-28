@@ -3,7 +3,7 @@ title: "Update a connectedOrganization object"
 description: "Update a connectedOrganization object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

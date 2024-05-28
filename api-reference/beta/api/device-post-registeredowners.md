@@ -3,7 +3,7 @@ title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

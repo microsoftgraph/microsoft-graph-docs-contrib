@@ -124,7 +124,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -168,7 +168,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of a request to update a team photo.
+The following example shows a request to update a team photo.
 
 
 # [HTTP](#tab/http)

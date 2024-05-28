@@ -3,7 +3,7 @@ title: "Delete deviceManagementAbstractComplexSettingInstance"
 description: "Deletes a deviceManagementAbstractComplexSettingInstance."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

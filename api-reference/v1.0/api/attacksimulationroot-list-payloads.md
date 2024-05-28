@@ -3,7 +3,7 @@ title: "List payloads"
 description: "Get a list of payloads for attack simulation campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

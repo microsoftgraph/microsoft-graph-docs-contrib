@@ -3,7 +3,7 @@ title: "educationModule: unpin"
 description: "Unpin an educationModule in the classwork list."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Unpin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
+Unpin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to `false` for an [educationModule](../resources/educationmodule.md).
 
 Only teachers in the class can perform this operation.
 
@@ -22,7 +22,6 @@ Only teachers in the class can perform this operation.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_unpin" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-unpin-permissions.md)]
 
 ## HTTP request
@@ -31,7 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /education/classes/{id}/modules/{id}/unpin
-
 ```
 
 ## Request headers
@@ -46,7 +44,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 Ok` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
 
 ## Example
 
@@ -110,7 +108,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationModule",

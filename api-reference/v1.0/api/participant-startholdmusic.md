@@ -3,7 +3,7 @@ title: "participant: startHoldMusic"
 description: "Put a participant on hold and play music in the background."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `202 Accepted` response code and a [startHo
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { 

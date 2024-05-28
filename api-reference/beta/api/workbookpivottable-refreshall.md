@@ -3,7 +3,7 @@ title: "workbookPivotTable: refreshAll"
 description: "Refreshes the PivotTable within a given worksheet."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

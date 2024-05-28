@@ -3,7 +3,7 @@ title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns `201 Created` response code and [ContactFolde
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ In the request body, supply a JSON representation of [contactFolder](../resource
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

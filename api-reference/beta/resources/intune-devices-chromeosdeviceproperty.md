@@ -3,7 +3,7 @@ title: "chromeOSDeviceProperty resource type"
 description: "Represents a property of the ChromeOS device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

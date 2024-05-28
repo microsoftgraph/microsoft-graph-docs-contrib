@@ -3,7 +3,7 @@ title: "orgContact resource type"
 description: "Represents an organizational contact"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -22,16 +22,16 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Method                                                                  | Return Type                                      | Description                                                                                                                 |
 |:------------------------------------------------------------------------|:-------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
 | **Organizational contacts** |
-| [List organizational contacts](../api/orgcontact-list.md)               | [orgContact](orgcontact.md)                      | List properties of organizational contacts.                                                                                 |
-| [Get organizational contact](../api/orgcontact-get.md)                  | [orgContact](orgcontact.md)                      | Read properties and relationships of an organizational contact.                                                             |
+| [List](../api/orgcontact-list.md)               | [orgContact](orgcontact.md)                      | List properties of organizational contacts.                                                                                 |
+| [Get](../api/orgcontact-get.md)                  | [orgContact](orgcontact.md)                      | Read properties and relationships of an organizational contact.                                                             |
 | **Organizational hierarchy** |
 | [Get manager](../api/orgcontact-get-manager.md)                         | [directoryObject](directoryobject.md)            | Get the organizational contact's manager.                                                                                   |
-| [List directReports](../api/orgcontact-list-directreports.md)           | [directoryObject](directoryobject.md) collection | List the organizational contact's direct reports.                                                                           |
+| [List direct reports](../api/orgcontact-list-directreports.md)           | [directoryObject](directoryobject.md) collection | List the organizational contact's direct reports.                                                                           |
 | [List memberOf](../api/orgcontact-list-memberof.md)                     | [directoryObject](directoryobject.md) collection | List the groups an organizational contact is a member of.                                                                   |
 | [List transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups an organizational contact is a member of, including groups that the organizational contact is nested under. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md)             | String collection                                | Check for group membership.                                                                                                 |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md)                 | String collection                                | Return all the groups that the specified organizational contact is a member of.                                             |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md)               | String collection                                | Returns a list of directoryObjects the organizational contact is a member of.                                               |
+| [Check member groups](../api/directoryobject-checkmembergroups.md)             | String collection                                | Check for group membership.                                                                                                 |
+| [Get member groups](../api/directoryobject-getmembergroups.md)                 | String collection                                | Return all the groups that the specified organizational contact is a member of.                                             |
+| [Get member objects](../api/directoryobject-getmemberobjects.md)               | String collection                                | Returns a list of directoryObjects the organizational contact is a member of.                                               |
 
 ## Properties
 
@@ -68,7 +68,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

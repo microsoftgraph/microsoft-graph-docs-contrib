@@ -3,7 +3,7 @@ title: "application: addKey"
 description: "Add a key credential to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

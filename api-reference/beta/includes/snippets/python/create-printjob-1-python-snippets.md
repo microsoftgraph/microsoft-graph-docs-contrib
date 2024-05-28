@@ -4,11 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.print_job import PrintJob
-from msgraph.generated.models.print_job_configuration import PrintJobConfiguration
-from msgraph.generated.models.integer_range import IntegerRange
-from msgraph.generated.models.print_margin import PrintMargin
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.print_job import PrintJob
+from msgraph_beta.generated.models.print_job_configuration import PrintJobConfiguration
+from msgraph_beta.generated.models.printer_feed_orientation import PrinterFeedOrientation
+from msgraph_beta.generated.models.integer_range import IntegerRange
+from msgraph_beta.generated.models.print_quality import PrintQuality
+from msgraph_beta.generated.models.print_orientation import PrintOrientation
+from msgraph_beta.generated.models.print_duplex_mode import PrintDuplexMode
+from msgraph_beta.generated.models.print_color_mode import PrintColorMode
+from msgraph_beta.generated.models.print_margin import PrintMargin
+from msgraph_beta.generated.models.print_multipage_layout import PrintMultipageLayout
+from msgraph_beta.generated.models.print_scaling import PrintScaling
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "Display a chart image in Excel"
 description: "When you retrieve a chart image, the Excel API in Microsoft Graph returns the image as a base-64 string that you can display inside an HTML image tag."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Display a chart image in Excel

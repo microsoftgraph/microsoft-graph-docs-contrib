@@ -3,7 +3,7 @@ title: "Update chat"
 description: "Update the properties of a chat object."
 author: "anandjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_patch" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-patch-permissions.md)]
 
-> **Note:**S The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

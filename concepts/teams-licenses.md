@@ -3,7 +3,7 @@ title: "Payment models and licensing requirements for Microsoft Teams APIs"
 description: "Learn about the payment models and license requirements that apply to some Microsoft Teams APIs in Microsoft Graph: model=A, model=B, and evaluation mode."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Payment models and licensing requirements for Microsoft Teams APIs
@@ -18,8 +18,8 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 |:------------------|:---------------|
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li></ul> | A, B |
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
-| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /users/{user-id}/chats/getAllRetainedMessages](/graph/api/chat-getallretainedmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllRetainedMessages](/graph/api/channel-getallretainedmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
-| APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
+| [Export APIs](/microsoftteams/export-teams-content): <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /users/{user-id}/chats/getAllRetainedMessages](/graph/api/chat-getallretainedmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllRetainedMessages](/graph/api/channel-getallretainedmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
+| PATCH APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
 | Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul> | No model parameter |
 
 > [!NOTE]
@@ -209,6 +209,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 
 |    Scenario    | Details |
 |:-------------------------|:--------|
+| Why was the number of messages billed higher than the number of messages in my Teams? | If your app is retrieving the same message multiple times, it is billed for multiple times. One way to avoid this is to use [change notifications](/graph/api/subscription-post-subscriptions) instead of [export APIs](/microsoftteams/export-teams-content).  If you must use export APIs, make sure to use filters (for example, `$filter=lastModifiedDateTime`, `$filter=from`). |
 | Did billing actually started on July 5? | Yes, we're onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing is effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
 | Do I need to provide an Azure subscription if my application isn't calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. |

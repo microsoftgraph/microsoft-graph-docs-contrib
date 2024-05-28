@@ -3,7 +3,7 @@ title: "Get bookingBusiness"
 description: "Get the properties and relationships of a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

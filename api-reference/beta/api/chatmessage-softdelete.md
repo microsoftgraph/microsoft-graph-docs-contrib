@@ -2,7 +2,7 @@
 title: "chatMessage: softDelete"
 description: "Delete a single message or message reply in a channel or a chat."
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---

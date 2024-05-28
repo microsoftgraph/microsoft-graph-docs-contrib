@@ -3,7 +3,7 @@ title: Update printConnector
 description: Update the properties of a printConnector object.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

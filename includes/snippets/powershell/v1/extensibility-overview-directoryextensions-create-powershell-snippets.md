@@ -10,8 +10,8 @@ $params = @{
 	name = "jobGroupTracker"
 	dataType = "String"
 	targetObjects = @(
-		"User"
-	)
+	"User"
+)
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params

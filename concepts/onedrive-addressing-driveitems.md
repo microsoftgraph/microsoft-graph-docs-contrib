@@ -2,7 +2,7 @@
 title: "Address resources in a drive on OneDrive"
 description: "Learn how to access items within a drive on OneDrive with ID-based and path-based addressing, and how to properly encode paths for Microsoft Graph."
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ---

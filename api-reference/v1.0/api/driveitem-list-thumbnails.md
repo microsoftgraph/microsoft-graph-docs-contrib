@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve a collection of ThumbnailSet resources for a DriveItem resource."
 doc_type: apiPageType
 ---
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and collection of [T
 
 ## Example
 
-Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
+The following example shows a request which retrieves available thumbnails for an item in the current user's OneDrive.
 
 
 # [HTTP](#tab/http)

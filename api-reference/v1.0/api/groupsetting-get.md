@@ -4,7 +4,7 @@ description: "Retrieve the properties of a specific of group setting object."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Group.Read.All, Group.ReadWrite.All         |
+
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ## HTTP request
 

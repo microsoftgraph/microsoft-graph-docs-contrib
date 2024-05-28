@@ -3,7 +3,7 @@ title: "externalItem resource type"
 description: "An item added to a Microsoft Graph connection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -19,10 +19,10 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 
 | Method                                                        | Return Type                     | Description |
 |:--------------------------------------------------------------|:--------------------------------|:--|
-| [Create externalItem](../api/externalconnectors-externalconnection-put-items.md) | [externalItem](externalconnectors-externalitem.md) | Create an **externalItem**. |
-| [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an **externalItem**.    |
-| [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an **externalItem**. |
-| [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an **externalItem**. |
+| [Create](../api/externalconnectors-externalconnection-put-items.md) | [externalItem](externalconnectors-externalitem.md) | Create an **externalItem**. |
+| [Get](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an **externalItem**.    |
+| [Update](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an **externalItem**. |
+| [Delete](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an **externalItem**. |
 | [Add activities](../api/externalconnectors-externalitem-addactivities.md)         |[microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection | Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties

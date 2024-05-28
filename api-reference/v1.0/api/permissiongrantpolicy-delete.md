@@ -3,7 +3,7 @@ title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 

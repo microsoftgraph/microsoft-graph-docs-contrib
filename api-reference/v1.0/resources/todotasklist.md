@@ -3,7 +3,7 @@ title: "todoTaskList resource type"
 description: "A list in Microsoft To Do that contains one or more todoTask resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ This resource supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the [todoTaskList](todotasklist.md) in the user's mailbox. |
-|[Create todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a [todoTaskList](todotasklist.md) in the user's mailbox. |
+|[List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the [todoTaskList](todotasklist.md) in the user's mailbox. |
+|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a [todoTaskList](todotasklist.md) in the user's mailbox. |
 |[Get task list](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
 |[Update task list](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
 |[Delete task list](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|

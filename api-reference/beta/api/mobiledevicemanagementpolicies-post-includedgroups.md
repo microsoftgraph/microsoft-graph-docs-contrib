@@ -3,7 +3,7 @@ title: "Add includedGroups"
 description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Add groups to be included in a mobile app management policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

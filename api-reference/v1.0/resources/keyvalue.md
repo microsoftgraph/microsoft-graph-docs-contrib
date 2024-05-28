@@ -3,7 +3,7 @@ title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 ms.localizationpriority: medium
 author: "dougeby"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Represents a key-value pair.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

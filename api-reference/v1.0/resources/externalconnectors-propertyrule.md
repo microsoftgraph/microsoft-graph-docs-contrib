@@ -3,7 +3,7 @@ title: "propertyRule resource type"
 description: "Defines the set of conditions to display a displayTemplate"
 author: "emzho"
 ms.localizationpriority: normal
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

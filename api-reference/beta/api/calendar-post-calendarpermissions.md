@@ -3,7 +3,7 @@ title: "Create calendarPermission"
 description: "Create the calendarpermission object."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 

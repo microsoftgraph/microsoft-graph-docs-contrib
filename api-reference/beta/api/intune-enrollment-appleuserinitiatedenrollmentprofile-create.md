@@ -3,7 +3,7 @@ title: "Create appleUserInitiatedEnrollmentProfile"
 description: "Create a new appleUserInitiatedEnrollmentProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

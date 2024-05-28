@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentScheduleInstance resource type"
 description: "Represents an instance of a provisioned membership or ownership assignment in PIM for groups."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -18,9 +18,9 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) collection|Get a list of the [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) objects and their properties.|
-|[Get privilegedAccessGroupAssignmentScheduleInstance](../api/privilegedaccessgroupassignmentscheduleinstance-get.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) object.|
-|[filterByCurrentUser](../api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) collection|Return instances of membership and ownership assignment schedules for the calling principal.|
+|[List](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) collection|Get a list of the [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) objects and their properties.|
+|[Get](../api/privilegedaccessgroupassignmentscheduleinstance-get.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) object.|
+|[Filter by current user](../api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) collection|Return instances of membership and ownership assignment schedules for the calling principal.|
 
 ## Properties
 |Property|Type|Description|

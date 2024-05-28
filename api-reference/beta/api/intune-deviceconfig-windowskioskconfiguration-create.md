@@ -3,7 +3,7 @@ title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

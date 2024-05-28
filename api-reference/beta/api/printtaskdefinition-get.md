@@ -3,7 +3,7 @@ title: Get taskDefinition
 description: Get details about a task definition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

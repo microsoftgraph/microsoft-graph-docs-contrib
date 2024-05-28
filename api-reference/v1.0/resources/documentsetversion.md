@@ -3,7 +3,7 @@ title: "documentSetVersion resource type"
 description: "Represents the version of a document set item in a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,11 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [versions of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
-|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [version of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
-|[Get documentSetVersion](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [version of a document set](../resources/documentsetversion.md) in a list.|
-|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [document set version](../resources/documentsetversion.md).|
+|[List](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [versions of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
+|[Create](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [version of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
+|[Get](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
+|[Delete](../api/documentsetversion-delete.md)|None|Delete a [version of a document set](../resources/documentsetversion.md) in a list.|
+|[Restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [document set version](../resources/documentsetversion.md).|
 
 
 ## Properties
@@ -36,7 +36,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).     |
 | published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
-| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Default value is `false`.|
+| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions are captured. The default value is `false`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -44,7 +44,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | fields        | [fieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

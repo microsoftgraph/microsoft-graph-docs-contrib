@@ -4,7 +4,7 @@ description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a site resource by path
@@ -42,7 +42,7 @@ To access the root SharePoint site with a relative path:
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
-GET /sites/{hostname}:/{relative-path}
+GET https://graph.microsoft.com/beta/sites/{hostname}:/{relative-path}
 ```
 
 ## Response

@@ -3,7 +3,7 @@ title: "Delete deviceManagementPartner"
 description: "Deletes a deviceManagementPartner."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

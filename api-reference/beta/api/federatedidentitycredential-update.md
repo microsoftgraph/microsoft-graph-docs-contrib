@@ -3,7 +3,7 @@ title: "Update federatedIdentityCredential"
 description: "Update the properties of a federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

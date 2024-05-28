@@ -3,7 +3,7 @@ title: "collectInvestigationPackageResponseAction resource type"
 description: "Describes a response action that collects details for an investigation package."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

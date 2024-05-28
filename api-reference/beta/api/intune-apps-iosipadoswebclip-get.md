@@ -3,7 +3,7 @@ title: "Get iosiPadOSWebClip"
 description: "Read properties and relationships of the iosiPadOSWebClip object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

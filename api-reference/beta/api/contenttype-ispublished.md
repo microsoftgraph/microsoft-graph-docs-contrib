@@ -4,7 +4,7 @@ title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: isPublished
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

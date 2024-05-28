@@ -3,7 +3,7 @@ title: "deviceHealthScriptRemediationHistoryData resource type"
 description: "The number of devices remediated by a device health script on a given date."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List workbookComments"
 description: "Retrieve a list of workbookComment objects."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 

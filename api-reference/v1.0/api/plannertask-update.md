@@ -3,7 +3,7 @@ title: "Update plannerTask"
 description: "Update the properties of **plannerTask** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -42,10 +42,10 @@ PATCH /planner/tasks/{id}
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. For possible values, see [appliedCategories](../resources/plannerappliedcategories.md).|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
-|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](../resources/planner-identifiers-disclaimer.md) is done on the service. |
+|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. The value is 28 characters long and case-sensitive. [Format validation](../resources/planner-identifiers-disclaimer.md) is done on the service. |
 |conversationThreadId|String|Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).|
@@ -53,6 +53,9 @@ PATCH /planner/tasks/{id}
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |title|String|Title of the task.|
+
+> [!NOTE]
+> For Project tasks that are replicated to Planner, only the **percentComplete** property can be updated.
 
 ## Response
 
@@ -62,7 +65,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +127,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

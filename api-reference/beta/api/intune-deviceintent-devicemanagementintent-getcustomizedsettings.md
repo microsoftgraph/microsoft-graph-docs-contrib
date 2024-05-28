@@ -3,7 +3,7 @@ title: "getCustomizedSettings function"
 description: "Intune Deviceintent Devicemanagementintent Getcustomizedsettings Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

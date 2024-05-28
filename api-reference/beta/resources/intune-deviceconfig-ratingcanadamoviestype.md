@@ -3,7 +3,7 @@ title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

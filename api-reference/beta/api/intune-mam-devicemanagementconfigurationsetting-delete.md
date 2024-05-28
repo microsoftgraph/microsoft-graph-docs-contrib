@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationSetting"
 description: "Deletes a deviceManagementConfigurationSetting."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

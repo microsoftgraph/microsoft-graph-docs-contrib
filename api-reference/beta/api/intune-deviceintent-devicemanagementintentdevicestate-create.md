@@ -3,7 +3,7 @@ title: "Create deviceManagementIntentDeviceState"
 description: "Create a new deviceManagementIntentDeviceState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

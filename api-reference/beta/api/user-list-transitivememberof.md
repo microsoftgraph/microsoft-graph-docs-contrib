@@ -4,7 +4,7 @@ description: "Get groups, directory roles, and administrative units that the use
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

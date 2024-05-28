@@ -3,7 +3,7 @@ title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 Here is an example of how to call this API.
 
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 <br/>
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

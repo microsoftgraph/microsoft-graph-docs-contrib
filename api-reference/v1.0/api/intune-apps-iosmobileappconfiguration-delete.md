@@ -3,7 +3,7 @@ title: "Delete iosMobileAppConfiguration"
 description: "Deletes a iosMobileAppConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

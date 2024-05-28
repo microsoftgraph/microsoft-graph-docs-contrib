@@ -3,7 +3,7 @@ title: "educationSubmission resource type"
 description: "Represents the resources that an individual (or group) submit for an assignment and the outcomes (such as grades or feedback) associated with the submission."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -25,16 +25,16 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
-|[List resources](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
-|[List submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
+|[Get submission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
+|[List submission resources](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
+|[List submitted resources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[List outcomes](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md) collection| Get an **educationOutcome** object collection.|
-|[Excuse a submission](../api/educationsubmission-excuse.md)|[educationSubmission](educationsubmission.md)|Indicates that the submission has no further action for the student and isn't included in average grade calculations.|
-|[Return a submission](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
-|[Reassign a submission](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reassign the submission to the student with feedback for review.|
-|[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
-|[Submit a submission](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This operation copies the resources into the **submittedResources** folder for grading and updates the status.|
-|[Unsubmit a submission](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This operation copies the resources into the **workingResources** folder for grading and updates the status.|
+|[Excuse submission](../api/educationsubmission-excuse.md)|[educationSubmission](educationsubmission.md)|Indicates that the submission has no further action for the student and isn't included in average grade calculations.|
+|[Return submission](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
+|[Reassign submission](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reassign the submission to the student with feedback for review.|
+|[Set up submission resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
+|[Submit submission](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This operation copies the resources into the **submittedResources** folder for grading and updates the status.|
+|[Unsubmit submission](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This operation copies the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,7 +44,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
 |returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
-|status|educationSubmissionStatus| Read-only. Possible values are: `working`, `submitted`, `returned`, `unknownFutureValue` and `reassigned`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`.|
+|status|educationSubmissionStatus| Read-only. Possible values are: `working`, `submitted`, `returned`, `unknownFutureValue`, `reassigned`, and `excused`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`, and `excused`.|
 |submittedBy|[identitySet](identityset.md)|User who moved the resource into the submitted state.|
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|

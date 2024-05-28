@@ -3,7 +3,7 @@ title: "businessScenario resource type"
 description: "Represents a scenario that collects relevant data and configuration for a specific problem domain."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

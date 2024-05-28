@@ -3,7 +3,7 @@ title: "Create deviceManagementIntegerSettingInstance"
 description: "Create a new deviceManagementIntegerSettingInstance object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

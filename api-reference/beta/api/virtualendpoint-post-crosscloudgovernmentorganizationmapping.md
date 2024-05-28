@@ -3,7 +3,7 @@ title: "Create cloudPcCrossCloudGovernmentOrganizationMapping"
 description: "Create a new cloudPcCrossCloudGovernmentOrganizationMapping object."
 author: "SuyliuMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

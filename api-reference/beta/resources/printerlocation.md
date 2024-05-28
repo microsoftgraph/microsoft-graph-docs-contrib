@@ -3,7 +3,7 @@ title: printerLocation resource type
 description: Represents the physical and hierarchical location of a printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

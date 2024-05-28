@@ -3,7 +3,7 @@ title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

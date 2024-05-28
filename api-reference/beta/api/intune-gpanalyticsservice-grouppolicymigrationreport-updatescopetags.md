@@ -3,7 +3,7 @@ title: "updateScopeTags action"
 description: "Intune Gpanalyticsservice Grouppolicymigrationreport Updatescopetags Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

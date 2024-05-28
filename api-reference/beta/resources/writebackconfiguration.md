@@ -4,7 +4,7 @@ description: "Represents a writeback state on Microsoft Entra cloud groups (Micr
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 

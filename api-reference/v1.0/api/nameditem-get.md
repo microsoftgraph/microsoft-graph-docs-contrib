@@ -3,7 +3,7 @@ title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 
@@ -41,10 +41,10 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorkbookNamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookNamedItem](../resources/workbooknameditem.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

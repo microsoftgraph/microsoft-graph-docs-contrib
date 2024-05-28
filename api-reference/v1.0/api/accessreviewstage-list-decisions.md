@@ -3,7 +3,7 @@ title: "List decisions (from a multi-stage access review)"
 description: "Get the decisions from a stage in a multi-stage access review."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

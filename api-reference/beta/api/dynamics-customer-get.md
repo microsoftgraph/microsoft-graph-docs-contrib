@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a **customers** 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}

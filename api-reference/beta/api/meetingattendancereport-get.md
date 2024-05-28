@@ -3,7 +3,7 @@ title: "Get meetingAttendanceReport"
 description: "Get the attendance report for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
 > This method doesn't support channel meetings.
@@ -45,7 +45,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get an attendance report for a webinar session by ID:
+To get an attendance report for a webinar session by ID with delegated and app permission:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}

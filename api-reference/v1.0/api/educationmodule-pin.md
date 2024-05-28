@@ -3,7 +3,7 @@ title: "educationModule: pin"
 description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to `true` for an [educationModule](../resources/educationmodule.md).
 
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
@@ -22,7 +22,6 @@ Only teachers can perform this action and only one module at a time can be pinne
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_pin" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-pin-permissions.md)]
 
 ## HTTP request
@@ -31,7 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /education/classes/{id}/modules/{id}/pin
-
 ```
 
 ## Request headers
@@ -46,15 +44,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 Ok` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
 
 ## Example
 
-The following example shows how to call this API.
-
 ### Request
 
-Here's an example of a request.
+The following examples shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +99,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 
 ### Response
 
-Here's an example of a response.
+The following examples shows the response.
 
 <!-- {
   "blockType": "response",
@@ -112,7 +108,7 @@ Here's an example of a response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationModule",

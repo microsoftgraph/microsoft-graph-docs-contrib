@@ -3,7 +3,7 @@ title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get change notifications for membership changes in teams and channels us
 description: "Learn how to get change notifications for any changes (create, update, and delete) in teams and channels membership using Microsoft Graph."
 author: "anandab"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

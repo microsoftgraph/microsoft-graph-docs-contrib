@@ -3,7 +3,7 @@ title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

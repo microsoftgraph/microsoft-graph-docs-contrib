@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "github.com/google/uuid"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewWindowsInformationProtectionPolicy()
 displayName := "Display Name value"
@@ -240,6 +240,7 @@ requestBody.SetMinutesOfInactivityBeforeDeviceLock(&minutesOfInactivityBeforeDev
 daysWithoutContactBeforeUnenroll := int32(0)
 requestBody.SetDaysWithoutContactBeforeUnenroll(&daysWithoutContactBeforeUnenroll) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 windowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicyId("windowsInformationProtectionPolicy-id").Patch(context.Background(), requestBody, nil)
 
 

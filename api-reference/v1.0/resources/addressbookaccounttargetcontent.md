@@ -3,7 +3,7 @@ title: "addressBookAccountTargetContent resource type"
 description: "Represents included or excluded users' email addresses for an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

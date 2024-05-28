@@ -3,7 +3,7 @@ title: "targetApps action"
 description: "Intune Mam Targetedmanagedappprotection Targetapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

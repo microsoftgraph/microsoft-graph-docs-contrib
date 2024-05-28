@@ -3,7 +3,7 @@ title: "playLostModeSound action"
 description: "Play lost mode sound"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -2,8 +2,9 @@
 title: "externalProfile resource type"
 description: "Defines an external profile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

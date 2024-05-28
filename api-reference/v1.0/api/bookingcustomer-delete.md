@@ -3,7 +3,7 @@ title: "Delete bookingCustomer"
 description: "Delete the specified bookingCustomer object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

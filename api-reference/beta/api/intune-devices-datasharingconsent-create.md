@@ -3,7 +3,7 @@ title: "Create dataSharingConsent"
 description: "Create a new dataSharingConsent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

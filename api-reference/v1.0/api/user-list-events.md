@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,11 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+> [!NOTE]
+> You can't use the `$filter` parameter to filter on the **recurrence** property.
+
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
@@ -81,9 +85,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-## Example
-##### Request
-Here is an example of the request. It specifies the following:
+## Examples
+### Request
+The following example shows a request. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -133,8 +137,8 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response
-Here is an example of the response. The **body** property is returned in the default HTML format.
+### Response
+The following example shows the response. The **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "truncated": true,

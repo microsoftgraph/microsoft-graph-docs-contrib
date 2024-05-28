@@ -4,7 +4,7 @@ description: "Get a list of the group's direct members. A group can have users, 
 ms.localizationpriority: high
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -27,6 +27,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-list-members-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/read` or `microsoft.directory/groups/members/limitedRead` role permission, or `microsoft.directory/groups/hiddenMembers/read` role permission to read hidden members. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator - Including hidden members
+- Exchange Administrator - Including hidden members
+- SharePoint Administrator - Including hidden members 
+- Intune Administrator - Including hidden members
+- Teams Administrator - Including hidden members
+- Yammer Administrator - Including hidden members
+
+To list the members of a hidden membership group, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 

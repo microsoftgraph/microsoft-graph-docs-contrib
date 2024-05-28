@@ -3,7 +3,7 @@ title: "List permissionGrantPolicies"
 description: "Retrieve a list of permissionGrantPolicy objects."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 

@@ -3,7 +3,7 @@ title: "Delete device"
 description: "Delete a registered device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "device_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/device-delete-permissions.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
 
 ## HTTP request
 

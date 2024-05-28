@@ -3,7 +3,7 @@ title: "applicationSignInDetailedSummary resource type"
 description: "Represents a detailed summary of an application sign-in."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
-| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
+| [List](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
+| [Get](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.inference_classification_override import InferenceClassificationOverride
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.inference_classification_override import InferenceClassificationOverride
+from msgraph_beta.generated.models.inference_classification_type import InferenceClassificationType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

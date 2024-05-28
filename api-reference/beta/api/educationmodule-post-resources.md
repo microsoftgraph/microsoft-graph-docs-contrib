@@ -3,7 +3,7 @@ title: "Create educationModuleResource"
 description: "Create an education module resource."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

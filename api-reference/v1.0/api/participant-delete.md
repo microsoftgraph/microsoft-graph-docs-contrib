@@ -3,7 +3,7 @@ title: "Delete participant"
 description: "Delete a specific participant in the call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

@@ -9,13 +9,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.users.item.onlinemeetings.item.sendvirtualappointmentremindersms.SendVirtualAppointmentReminderSmsPostRequestBody sendVirtualAppointmentReminderSmsPostRequestBody = new com.microsoft.graph.beta.users.item.onlinemeetings.item.sendvirtualappointmentremindersms.SendVirtualAppointmentReminderSmsPostRequestBody();
+LinkedList<AttendeeNotificationInfo> attendees = new LinkedList<AttendeeNotificationInfo>();
+AttendeeNotificationInfo attendeeNotificationInfo = new AttendeeNotificationInfo();
+attendeeNotificationInfo.setPhoneNumber("+13129224122");
+attendeeNotificationInfo.setTimeZone("Pacific Standard Time");
+attendees.add(attendeeNotificationInfo);
+AttendeeNotificationInfo attendeeNotificationInfo1 = new AttendeeNotificationInfo();
+attendeeNotificationInfo1.setPhoneNumber("+1242421412");
+attendeeNotificationInfo1.setTimeZone("Eastern Standard Time");
+attendees.add(attendeeNotificationInfo1);
+sendVirtualAppointmentReminderSmsPostRequestBody.setAttendees(attendees);
 sendVirtualAppointmentReminderSmsPostRequestBody.setRemindBeforeTimeInMinutesType(RemindBeforeTimeInMinutesType.Mins15);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-LinkedList<String> phoneNumbers = new LinkedList<String>();
-phoneNumbers.add("+13129224122");
-phoneNumbers.add("+1242421412");
-additionalData.put("phoneNumbers", phoneNumbers);
-sendVirtualAppointmentReminderSmsPostRequestBody.setAdditionalData(additionalData);
 graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").sendVirtualAppointmentReminderSms().post(sendVirtualAppointmentReminderSmsPostRequestBody);
 
 

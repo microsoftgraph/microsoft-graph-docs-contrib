@@ -3,7 +3,7 @@ title: "reportRoot: getAttackSimulationSimulationUserCoverage"
 description: "List simulation coverage for users of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

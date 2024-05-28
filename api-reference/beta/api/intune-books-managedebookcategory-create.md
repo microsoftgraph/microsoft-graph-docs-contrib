@@ -3,7 +3,7 @@ title: "Create managedEBookCategory"
 description: "Create a new managedEBookCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "joinMeetingIdMeetingInfo resource type"
 description: "Contains information that allows you to join an existing meeting with a joinMeetingId and a passcode."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

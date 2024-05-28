@@ -3,7 +3,7 @@ title: "searchAlterationOptions resource type"
 description: "Provides the search alteration options for spelling correction."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -22,7 +22,7 @@ Provides the search alteration options for spelling correction.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

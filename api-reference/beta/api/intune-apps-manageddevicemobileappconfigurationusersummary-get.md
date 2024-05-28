@@ -3,7 +3,7 @@ title: "Get managedDeviceMobileAppConfigurationUserSummary"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

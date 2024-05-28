@@ -3,7 +3,7 @@ title: "List customQuestions"
 description: "Get the bookingCustomQuestion resources associated with a bookingBusiness."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the [bookingCustomQuestion](../resources/bookingcustomquestion.md) resources associated with a [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

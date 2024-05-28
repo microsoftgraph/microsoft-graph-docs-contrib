@@ -3,7 +3,7 @@ title: "iosAvailableUpdateVersion resource type"
 description: "iOS available update version details"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

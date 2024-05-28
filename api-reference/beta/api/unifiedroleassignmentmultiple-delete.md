@@ -4,7 +4,7 @@ description: "Delete a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -76,7 +76,7 @@ The following example shows how to delete a [unifiedRoleAssignmentMultiple](../r
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -126,7 +126,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -143,7 +143,7 @@ The following example shows how to delete a [unifiedRoleAssignmentMultiple](../r
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -191,7 +191,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

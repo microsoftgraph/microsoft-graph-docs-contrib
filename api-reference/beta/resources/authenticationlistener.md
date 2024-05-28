@@ -3,7 +3,7 @@ title: "authenticationListener resource type"
 description: "Defines the listener to evaluate during an authentication event."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -21,12 +21,12 @@ You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.m
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List onSignUpStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md) collection|Get the collection of authenticationListener resources supported by the onSignupStart event.|
-|[Create authenticationListener](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md)|Create a new authenticationListener object for the onSignupStart event.|
-|[Update authenticationListener](../api/authenticationlistener-update.md)|[authenticationListener](../resources/authenticationlistener.md)|Update the specified listener defined for the onSignupStart event in the authentication pipeline.|
-|[Put authenticationListener](../api/authenticationlistener-put.md)|[authenticationListener](../resources/authenticationlistener.md)|Replace the properties of an authenticationListener object.|
-|[Get authenticationListener](../api/authenticationlistener-get.md)|[authenticationListener](../resources/authenticationlistener.md)|Get the specified listener defined for the onSignupStart event in the authentication pipeline.|
-|[Delete authenticationListener](../api/authenticationlistener-delete.md)|None|Delete the specified listener defined for the onSignupStart event in the authentication pipeline.|
+|[List listeners](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md) collection|Get the collection of authenticationListener resources supported by the onSignupStart event.|
+|[Create listener](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md)|Create a new authenticationListener object for the onSignupStart event.|
+|[Update listener](../api/authenticationlistener-update.md)|[authenticationListener](../resources/authenticationlistener.md)|Update the specified listener defined for the onSignupStart event in the authentication pipeline.|
+|[Put listener](../api/authenticationlistener-put.md)|[authenticationListener](../resources/authenticationlistener.md)|Replace the properties of an authenticationListener object.|
+|[Get listener](../api/authenticationlistener-get.md)|[authenticationListener](../resources/authenticationlistener.md)|Get the specified listener defined for the onSignupStart event in the authentication pipeline.|
+|[Delete listener](../api/authenticationlistener-delete.md)|None|Delete the specified listener defined for the onSignupStart event in the authentication pipeline.|
 
 ## Properties
 
@@ -42,7 +42,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

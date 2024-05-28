@@ -1,19 +1,21 @@
 ---
-title: "Update authentication signInPreferences"
-description: "Update the properties of a user's authentication sign in preferences."
+title: "Update authentication method states"
+description: "Update the properties of a user's authentication method states."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Update authentication signInPreferences
+# Update authentication method states
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [signInPreferences](../resources/signInPreferences.md) object.
+Update the properties of a user's authentication method states. Use this API to update the following information:
+
+- A user's [signInPreferences](../resources/signInPreferences.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -55,12 +57,12 @@ PATCH /users/{id | userPrincipalName}/authentication/signInPreferences
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

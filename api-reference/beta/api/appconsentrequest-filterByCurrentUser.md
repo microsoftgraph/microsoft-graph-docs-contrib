@@ -3,7 +3,7 @@ title: "appConsentRequest: filterByCurrentUser"
 description: "Retrieve appConsentRequest objects for which the current user is the reviewer."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

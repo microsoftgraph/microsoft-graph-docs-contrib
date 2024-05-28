@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Event;
+use Microsoft\Graph\Generated\Models\ResponseStatus;
+use Microsoft\Graph\Generated\Models\Response;
+use Microsoft\Graph\Generated\Models\OnlineMeetingProvider;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

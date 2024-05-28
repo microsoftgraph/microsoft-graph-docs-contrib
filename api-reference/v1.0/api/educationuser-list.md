@@ -3,7 +3,7 @@ title: "List educationUser"
 description: "Get a list of the educationUser objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

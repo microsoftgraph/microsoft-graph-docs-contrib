@@ -3,7 +3,7 @@ title: "Create iosMobileAppConfiguration"
 description: "Create a new iosMobileAppConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

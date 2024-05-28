@@ -3,7 +3,7 @@ title: "Get educationSchool"
 description: "Retrieve the properties and relationships of the school object."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

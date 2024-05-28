@@ -3,7 +3,7 @@ title: "virtualEndpoint: getEffectivePermissions"
 description: "Get the effective permissions of the currently authenticated user."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

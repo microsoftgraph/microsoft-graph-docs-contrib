@@ -3,7 +3,7 @@ title: "Cross-tenant access settings API overview"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 09/13/2022
 ---

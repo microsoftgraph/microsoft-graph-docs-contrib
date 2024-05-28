@@ -3,7 +3,7 @@ title: "Update agreement"
 description: "Update the properties of an agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

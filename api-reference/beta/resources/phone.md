@@ -3,7 +3,7 @@ title: "phone resource type"
 description: "Represents a phone number."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "dkershaw10"
 ---
 
@@ -24,7 +24,7 @@ Represents a phone number.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

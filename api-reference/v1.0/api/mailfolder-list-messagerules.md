@@ -3,7 +3,7 @@ title: "List rules"
 description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

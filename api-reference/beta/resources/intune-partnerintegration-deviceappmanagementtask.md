@@ -3,7 +3,7 @@ title: "deviceAppManagementTask resource type"
 description: "A device app management task."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

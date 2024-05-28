@@ -3,7 +3,7 @@ title: "timeOffRequest: decline"
 description: "Decline a timeoffrequest object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

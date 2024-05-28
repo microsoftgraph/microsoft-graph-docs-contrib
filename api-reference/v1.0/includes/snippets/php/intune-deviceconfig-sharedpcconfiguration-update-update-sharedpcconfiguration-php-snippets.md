@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SharedPCConfiguration;
+use Microsoft\Graph\Generated\Models\SharedPCAccountManagerPolicy;
+use Microsoft\Graph\Generated\Models\AccountDeletionPolicy;
+use Microsoft\Graph\Generated\Models\AllowedAccounts;
+use Microsoft\Kiota\Abstractions\Types\Time;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

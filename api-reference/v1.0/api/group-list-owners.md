@@ -4,7 +4,7 @@ description: "Retrieve a list of the group's owners. The owners are a set of non
 ms.localizationpriority: high
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -26,6 +26,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-list-owners-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/owners/read` role permission. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator
+- Exchange Administrator - for Microsoft 365 groups only
+- SharePoint Administrator - for Microsoft 365 groups only
+- Teams Administrator - for Microsoft 365 groups only
+- Yammer Administrator - for Microsoft 365 groups only
+- Intune Administrator - for security groups only
 
 ## HTTP request
 

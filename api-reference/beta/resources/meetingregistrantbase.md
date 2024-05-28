@@ -3,7 +3,7 @@ title: "meetingRegistrantBase resource type"
 description: "Represents a base meeting registrant who has enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "A url that is reported in the alert as evidence."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.urlEvidence"
+  "@odata.type": "microsoft.graph.security.urlEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

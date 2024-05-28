@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptUserState"
 description: "Create a new deviceManagementScriptUserState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

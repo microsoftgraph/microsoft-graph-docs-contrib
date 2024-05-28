@@ -4,7 +4,7 @@ description: "Update the properties of the currently authenticated organization.
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +133,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

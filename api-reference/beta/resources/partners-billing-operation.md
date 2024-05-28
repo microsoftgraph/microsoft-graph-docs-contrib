@@ -3,7 +3,7 @@ title: "operation resource type"
 description: "Represents an operation to export the billing data of a partner."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/partners-billing-operation-get.md)|[microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md)|Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.|
+|[Get](../api/partners-billing-operation-get.md)|[microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md)|Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.|
 
 ## Properties
 

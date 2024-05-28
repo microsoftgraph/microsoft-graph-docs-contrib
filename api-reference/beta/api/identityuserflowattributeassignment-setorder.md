@@ -3,7 +3,7 @@ title: "identityUserFlowAttributeAssignment: setOrder"
 description: "Set the order of identityUserFlowAttributeAssignments being collected within a user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update plannerPlanConfiguration"
 description: "Update the properties of a plannerPlanConfiguration object for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [plan
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

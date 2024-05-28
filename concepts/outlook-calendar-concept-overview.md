@@ -3,7 +3,7 @@ title: "Outlook calendar API overview"
 description: "Use Outlook calendar to schedule meetings, manage emails and contacts, organize your time, and collaborate all in one place on the web, mobile, or desktop."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
@@ -103,7 +103,7 @@ Looking for the API reference for this service?
 
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
-- [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
+- [Propose meeting times in an Outlook calendar](outlook-calendar-meeting-proposals.md)
 - [Create or set an event as an online meeting in an Outlook calendar](outlook-calendar-online-meetings.md)
 - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
 - [Getting shared events](outlook-get-shared-events-calendars.md)

@@ -3,7 +3,7 @@ title: "onUserCreateStartHandler resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens during user creation."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

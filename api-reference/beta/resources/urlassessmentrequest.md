@@ -3,7 +3,7 @@ title: "urlAssessmentRequest resource type"
 description: "Used to create and retrieve a URL threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ Used to create and retrieve a URL threat assessment, derived from [threatAssessm
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Create a new URL assessment request by posting an **urlAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Read the properties and relationships of a **urlAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Create a new URL assessment request by posting an **urlAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Read the properties and relationships of a **urlAssessmentRequest** object. |
 
 ## Properties
 
@@ -44,7 +44,7 @@ Used to create and retrieve a URL threat assessment, derived from [threatAssessm
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

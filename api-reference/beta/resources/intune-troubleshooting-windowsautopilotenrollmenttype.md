@@ -3,7 +3,7 @@ title: "windowsAutopilotEnrollmentType enum type"
 description: "Intune Troubleshooting Windowsautopilotenrollmenttype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

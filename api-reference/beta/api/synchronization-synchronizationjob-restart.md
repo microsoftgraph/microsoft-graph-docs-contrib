@@ -4,7 +4,7 @@ description: "Restart the synchronization job, forcing it to reprocess all the o
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Restart synchronizationJob
@@ -57,7 +57,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

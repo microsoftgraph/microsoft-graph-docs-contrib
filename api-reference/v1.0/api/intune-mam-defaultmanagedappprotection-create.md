@@ -3,7 +3,7 @@ title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

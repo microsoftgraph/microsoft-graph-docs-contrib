@@ -3,7 +3,7 @@ title: "Create externalItem"
 description: "Create a new externalItem."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

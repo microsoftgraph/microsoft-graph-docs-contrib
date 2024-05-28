@@ -3,7 +3,7 @@ title: "contact resource type"
 description: "A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -26,20 +26,20 @@ by providing a [delta](../api/contact-delta.md) function.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get contact](../api/contact-get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
-|[Create](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
-|[Update](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
-|[Delete](../api/contact-delete.md) | None |Delete contact object. |
-|[delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
+|[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
+|[Update contact](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
+|[Delete contact](../api/contact-delete.md) | None |Delete contact object. |
+|[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
-|[Get contact with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Create one or more multi-value extended properties in a new or existing contact.  |
-|[Get contact with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get a contact that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Create one or more multi-value extended properties in a new or existing contact.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get a contact that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -103,7 +103,8 @@ The following is a JSON representation of the resource.
     "singleValueExtendedProperties"
   ],
   "keyProperty":"id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

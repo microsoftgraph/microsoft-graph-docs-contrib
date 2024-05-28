@@ -3,7 +3,7 @@ title: "Get cloudPcSharedUseServicePlan (deprecated)"
 description: "Read the properties and relationships of a cloudPcSharedUseServicePlan object."
 author: "GuoanTang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcShared
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/sharedUseS
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -3,7 +3,7 @@ title: "Delete deviceConfigurationConflictSummary"
 description: "Deletes a deviceConfigurationConflictSummary."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

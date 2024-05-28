@@ -1,9 +1,9 @@
 ---
 title: "virtualEventPresenterDetails resource type"
-description: "Detail information about a virtual event presenter."
-author: "awang119"
+description: "Represents detail information about a virtual event presenter."
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Detail information of a virtual event presenter.
+Represents detail information about a virtual event presenter.
 
 ## Properties
 

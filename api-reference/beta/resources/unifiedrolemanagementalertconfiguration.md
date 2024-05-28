@@ -3,7 +3,7 @@ title: "unifiedRoleManagementAlertConfiguration resource type"
 description: "An abstract type that exposes the tenant-specific configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -32,9 +32,9 @@ For more information about working with security alerts for Microsoft Entra role
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alertConfigurations](../api/rolemanagementalert-list-alertconfigurations.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|Get a list of the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) objects and their properties.|
-|[Get unifiedRoleManagementAlertConfiguration](../api/unifiedrolemanagementalertconfiguration-get.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|Read the properties and relationships of an [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.|
-|[Update unifiedRoleManagementAlertConfiguration](../api/unifiedrolemanagementalertconfiguration-update.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|Update the properties of an [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.|
+|[List](../api/rolemanagementalert-list-alertconfigurations.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|Get a list of the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) objects and their properties.|
+|[Get](../api/unifiedrolemanagementalertconfiguration-get.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|Read the properties and relationships of an [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.|
+|[Update](../api/unifiedrolemanagementalertconfiguration-update.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|Update the properties of an [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

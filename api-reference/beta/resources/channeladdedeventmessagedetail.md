@@ -3,7 +3,7 @@ title: "channelAddedEventMessageDetail resource type"
 description: "Represents the details of an event message about a channel added to a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

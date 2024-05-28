@@ -3,7 +3,7 @@ title: "logs resource type"
 description: "Global Secure Access network logs."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

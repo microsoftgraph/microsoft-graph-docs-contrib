@@ -2,8 +2,8 @@
 title: "List certificateBasedAuthConfigurations"
 description: "Get a list of certificatebasedauthconfiguration objects."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "identity-and-sign-in"
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

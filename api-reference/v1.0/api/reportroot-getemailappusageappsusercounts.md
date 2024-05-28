@@ -2,7 +2,7 @@
 title: "reportRoot: getEmailAppUsageAppsUserCounts"
 description: "Get the count of unique users per email app."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

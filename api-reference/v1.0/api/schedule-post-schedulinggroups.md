@@ -3,7 +3,7 @@ title: "Create schedulingGroup"
 description: "Create a new schedulingGroup."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

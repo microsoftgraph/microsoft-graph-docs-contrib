@@ -3,7 +3,7 @@ title: "groupPolicySettingMapping resource type"
 description: "The Group Policy setting to MDM/Intune mapping."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

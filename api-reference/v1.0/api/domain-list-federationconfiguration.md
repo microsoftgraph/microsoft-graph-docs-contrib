@@ -3,7 +3,7 @@ title: "List internalDomainFederations"
 description: "Read the properties of the internalDomainFederation object for the domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method does not support OData query parameters to help customize the respon
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domainsId}/federationConfiguration
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

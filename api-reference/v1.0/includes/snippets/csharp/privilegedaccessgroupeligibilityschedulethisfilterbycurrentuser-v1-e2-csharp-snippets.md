@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 using Microsoft.Graph.Models;
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.IdentityGovernance.PrivilegedAccess.Group.EligibilitySchedules.FilterByCurrentUserWithOn("principal").GetAsync((requestConfiguration) =>
+var result = await graphClient.IdentityGovernance.PrivilegedAccess.Group.EligibilitySchedules.FilterByCurrentUserWithOn("principal").GetAsFilterByCurrentUserWithOnGetResponseAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Filter = "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'";
 });

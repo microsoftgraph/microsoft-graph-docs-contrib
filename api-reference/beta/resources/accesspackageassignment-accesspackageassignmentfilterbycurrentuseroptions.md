@@ -3,7 +3,7 @@ title: "accessPackageAssignmentFilterByCurrentUserOptions enum type"
 description: "Options for current user to use as a filter on access package assignments list."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "enumPageType"
 ---
 

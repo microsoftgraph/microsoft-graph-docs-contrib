@@ -3,7 +3,7 @@ title: "Best practices for using Microsoft Teams activity feed notifications"
 description: "Get tips for enhancing the Microsoft Teams activity feed notification experience in Microsoft Graph and learn when to choose notifications or bot framework messages."
 author: "KirtiPereira"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 ---
 
 # Best practices for using Microsoft Teams activity feed notifications

@@ -4,7 +4,7 @@ description: "Retrieve the app installed in the personal scope of the specified 
 author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get installed app for user

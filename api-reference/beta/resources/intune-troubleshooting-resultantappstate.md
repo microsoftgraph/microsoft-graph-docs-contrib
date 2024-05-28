@@ -3,7 +3,7 @@ title: "resultantAppState enum type"
 description: "Not yet documented"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

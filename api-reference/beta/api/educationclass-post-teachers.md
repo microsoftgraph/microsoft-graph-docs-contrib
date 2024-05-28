@@ -3,7 +3,7 @@ title: "Add teacher"
 description: "Add a teacher to a class."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

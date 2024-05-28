@@ -1,10 +1,10 @@
 ---
 title: "sites: getAllSites"
-description: "List all sites across geographies in an organization - OneDrive API"
+description: "List all sites across geographies in an organization - OneDrive API."
 author: tushar20
 ms.author: tkanaujia
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 List [sites](../resources/site.md) across geographies in an organization. This API can also be used to enumerate all sites in a non-multi-geo tenant.
 
-For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
+For more information, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +50,7 @@ GET /sites/getAllSites
 }
 -->
 ``` http
-GET /sites/getAllSites
+GET https://graph.microsoft.com/v1.0/sites/getAllSites
 ```
 
 # [C#](#tab/csharp)
@@ -134,7 +134,7 @@ Content-type: application/json
 }
 ```
 
-This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items have been retrieved.
+This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items are retrieved.
 
 ### Example 2: Subsequent request
 

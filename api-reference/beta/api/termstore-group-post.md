@@ -3,7 +3,7 @@ title: "Create group"
 description: "Create a new group object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

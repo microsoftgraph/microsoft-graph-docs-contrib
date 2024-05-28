@@ -3,7 +3,7 @@ title: "List iosCertificateProfiles"
 description: "List properties and relationships of the iosCertificateProfile objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

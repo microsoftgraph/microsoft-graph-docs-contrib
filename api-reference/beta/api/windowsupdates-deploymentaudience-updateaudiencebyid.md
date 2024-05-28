@@ -3,7 +3,7 @@ title: "deploymentAudience: updateAudienceById"
 description: "Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 

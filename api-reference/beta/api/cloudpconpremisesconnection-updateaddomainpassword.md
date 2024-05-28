@@ -1,9 +1,9 @@
 ---
 title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
-description: "Update the Active Directory domain password for a successful Azure network connection. This API is supported when the onPremisesConnection's type is hybridAzureADJoin."
+description: "Update the Active Directory domain password for a successful Azure network connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -42,9 +42,9 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomain
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -59,6 +59,8 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,6 +113,8 @@ Content-Type: application/json
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

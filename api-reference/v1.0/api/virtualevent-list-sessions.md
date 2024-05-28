@@ -3,7 +3,7 @@ title: "List virtualEventSessions"
 description: "Get a list of all virtual event sessions under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

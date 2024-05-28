@@ -4,7 +4,7 @@ description: "Contains metadata about the source application in which the drive 
 title: driveItemSource resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # driveItemSource resource type
 

@@ -3,7 +3,7 @@ title: "Get tab in chat"
 description: "Retrieve the properties and relationships of the specified tab in a chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get_tabs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-tabs-permissions.md)]
 
-> **Note**: The TeamsTab.Read.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsTab.Read.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

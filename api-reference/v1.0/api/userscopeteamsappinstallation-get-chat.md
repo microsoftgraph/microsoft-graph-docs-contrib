@@ -4,7 +4,7 @@ description: "Retrieve one-on-one chat between the specified user and the Teams 
 author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get chat between user and teamsApp
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an instance of [
 
 ### Request
 
-The following is an example of a request that lists one-on-one chats between the specified user and the Teams app.
+The following example shows a request that lists one-on-one chats between the specified user and the Teams app.
 
 # [HTTP](#tab/http)
 <!-- {

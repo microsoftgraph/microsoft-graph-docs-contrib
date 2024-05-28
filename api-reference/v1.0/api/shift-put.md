@@ -3,7 +3,7 @@ title: "Replace shift"
 description: "Replace an existing shift."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

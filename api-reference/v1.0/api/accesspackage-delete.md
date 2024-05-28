@@ -3,7 +3,7 @@ title: "Delete accessPackage"
 description: "Delete accessPackage."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Delete accessPackage

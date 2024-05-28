@@ -3,7 +3,7 @@ title: "labelingOptions resource type"
 description: "Represents the labeling options that can be provided to the evaluation APIs."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

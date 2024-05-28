@@ -2,7 +2,7 @@
 title: "Manage app registration and API permission (deprecated)"
 description: "To integrate your application service with notifications, register your app with the Microsoft identity platform and declare the required API permissions (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 author: "merzink"
 ---
 

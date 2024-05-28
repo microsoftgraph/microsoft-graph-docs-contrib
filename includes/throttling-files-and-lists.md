@@ -1,7 +1,7 @@
 ---
 author: "spgraph-docs-team"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: sharepoint
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

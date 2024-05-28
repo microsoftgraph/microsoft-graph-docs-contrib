@@ -3,7 +3,7 @@ title: "Create chat"
 description: "Create a new chat object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "keyValue resource type"
 description: "Provides more relevant information about the sign-in request"
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -58,7 +58,7 @@ The configuration of this resource is shared by the following objects:
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

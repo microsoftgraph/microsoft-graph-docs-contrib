@@ -3,7 +3,7 @@ author: daspek
 title: itemAnalytics resource type
 description: The ItemAnalytics object provides analytics about activities that took place on an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # itemAnalytics resource type

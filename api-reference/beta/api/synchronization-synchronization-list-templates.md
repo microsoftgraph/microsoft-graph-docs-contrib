@@ -4,7 +4,7 @@ description: "List the synchronization templates associated with a given applica
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # List existing synchronization templates

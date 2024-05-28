@@ -3,7 +3,7 @@ title: "Delete open extension"
 description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
 ---
 

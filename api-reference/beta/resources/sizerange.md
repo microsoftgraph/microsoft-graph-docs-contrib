@@ -3,7 +3,7 @@ title: "sizeRange resource type"
 description: "Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
 ---
 
@@ -23,7 +23,7 @@ Specifies the maximum and minimum sizes (in kilobytes) that an incoming message 
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

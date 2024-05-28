@@ -4,7 +4,7 @@ description: "An incident in Microsoft 365 Defender is a collection of correlate
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -51,6 +51,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |description|String|A rich text string describing the incident|
 |recommendedActions|String|A rich text string that represents the actions that are reccomnded to take in order to resolve the incident |
 |recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting Kusto Query Language (KQL) queries related to the incident|
+|resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
 
 
 ### incidentStatus values 

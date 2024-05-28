@@ -3,7 +3,7 @@ title: "userAnalytics resource type"
 description: "The user's settings and activity statistics."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 
@@ -43,7 +43,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "activityStatistics"
   ],
-  "@odata.type": "microsoft.graph.userAnalytics"
+  "@odata.type": "microsoft.graph.userAnalytics",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

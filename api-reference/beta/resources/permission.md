@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # permission resource type
@@ -24,7 +24,7 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -283,10 +283,10 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-| [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
+| [Update permission](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete permission](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Grant access to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [Revoke grants on sharing link](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md

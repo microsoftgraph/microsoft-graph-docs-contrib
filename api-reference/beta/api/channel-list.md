@@ -4,7 +4,7 @@ description: "Retrieve the list of channels in this team."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List channels
@@ -22,17 +22,16 @@ Retrieve the list of [channels](../resources/channel.md) in this [team](../resou
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+<!-- { "blockType": "permissions", "name": "channel_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-list-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> [!NOTE]
+> - The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Group.Read.All, Group.ReadWrite.All, Directory.Read.All, and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -117,7 +116,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 #### Response
 
-The following is the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -140,7 +139,8 @@ Content-type: application/json
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
       "email": "someperson@microsoft.com",
-      "moderationSettings": null
+      "moderationSettings": null,
+      "isArchived": false
     }
   ]
 }
@@ -220,7 +220,8 @@ Content-type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
       "description": "test private team",
-      "membershipType": "private"
+      "membershipType": "private",
+      "isArchived": false,
     }
   ]
 }
@@ -307,6 +308,7 @@ Content-length: 262
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
             "email": "someperson@microsoft.com",
+            "isArchived": false,
             "moderationSettings": null
         }
     ]

@@ -4,7 +4,7 @@ description: "Validate that a Microsoft 365 group's display name or mail nicknam
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 

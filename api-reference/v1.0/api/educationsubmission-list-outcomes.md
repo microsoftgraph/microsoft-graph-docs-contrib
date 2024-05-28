@@ -3,7 +3,7 @@ title: "List outcomes"
 description: "Retrieve a list of educationOutcome objects."
 ms.localizationpriority: medium
 author: "AsBansal"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 

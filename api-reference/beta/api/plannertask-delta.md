@@ -3,7 +3,7 @@ title: "plannerTask: delta"
 description: "Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

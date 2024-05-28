@@ -3,7 +3,7 @@ title: "Json resource type"
 description: "Represents data returned in JSON format"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

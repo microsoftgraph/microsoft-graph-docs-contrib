@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilityScheduleRequest"
 description: "In PIM, read the details of a request for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

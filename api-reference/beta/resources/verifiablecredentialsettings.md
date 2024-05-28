@@ -3,7 +3,7 @@ title: "verifiableCredentialSettings resource type"
 description: "Settings for verifiable credential types that a requestor must present to a service such as Entitlement Management."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

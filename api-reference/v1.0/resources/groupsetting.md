@@ -4,7 +4,7 @@ description: "Group settings define the configurations that can be used to custo
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -25,11 +25,11 @@ Group settings apply to only Microsoft 365 groups.
 
 | Method                                          | Return Type                                | Description                                                  |
 | :---------------------------------------------- | :----------------------------------------- | :----------------------------------------------------------- |
-| [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md)            | Create a setting object based on a **groupSettingTemplate**. |
-| [Get setting](../api/groupsetting-get.md)       | [groupSetting](groupsetting.md)            | Read properties of a specific setting object.                |
-| [List settings](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
-| [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update the groupsetting object.                                  |
-| [Delete setting](../api/groupsetting-delete.md) | None                                       | Delete a setting object.                                     |
+| [Create](../api/group-post-settings.md) | [groupSetting](groupsetting.md)            | Create a setting object based on a **groupSettingTemplate**. |
+| [Get](../api/groupsetting-get.md)       | [groupSetting](groupsetting.md)            | Read properties of a specific setting object.                |
+| [List](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
+| [Update](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update the groupsetting object.                                  |
+| [Delete](../api/groupsetting-delete.md) | None                                       | Delete a setting object.                                     |
 
 ## Properties
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

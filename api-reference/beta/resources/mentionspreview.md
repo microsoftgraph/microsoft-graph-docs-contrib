@@ -3,7 +3,7 @@ title: "mentionsPreview resource type"
 description: "Represents information about mention objects in a resource instance."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Represents information about [mention](../resources/mention.md) objects in a res
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

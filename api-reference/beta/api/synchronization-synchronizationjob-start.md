@@ -4,7 +4,7 @@ description: "Start an existing synchronization job. If the job is in a paused s
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Start synchronizationJob
@@ -48,7 +48,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 ## Example
 
 ##### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ---
 
 ##### Response
-Here's an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

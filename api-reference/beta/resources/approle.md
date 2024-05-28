@@ -3,7 +3,7 @@ title: "appRole resource type"
 description: "Represents an application role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -33,7 +33,7 @@ With [appRoleAssignments](approleassignment.md), app roles can be assigned to us
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

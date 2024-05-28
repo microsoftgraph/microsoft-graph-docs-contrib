@@ -3,7 +3,7 @@ title: "Get trainingLanguageDetail"
 description: "Get the language details about an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

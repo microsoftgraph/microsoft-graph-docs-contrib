@@ -3,7 +3,7 @@ title: "segmentConfiguration resource type"
 description: "An abstract type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "blob resource type"
 description: "Represents a billing blob that contains exported data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

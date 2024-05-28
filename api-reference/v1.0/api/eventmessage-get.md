@@ -3,7 +3,7 @@ title: "Get eventMessage"
 description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -226,7 +226,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. The properties of the associated event are returned in the response.
+The following example shows the response. The properties of the associated event are returned in the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

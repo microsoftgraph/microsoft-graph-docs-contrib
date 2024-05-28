@@ -3,7 +3,7 @@ title: "approval resource type"
 description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -29,8 +29,8 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
-|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
+|[Get](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
+|[Filter by current user](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "bhartono"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-members-permissions.md)]
 
-> **Note**: The TeamsAppInstallation.Read.Chat and Chat.Manage.Chat pPermissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsAppInstallation.Read.Chat and Chat.Manage.Chat pPermissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +41,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/members/{membership-i
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 
@@ -110,7 +111,7 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!--
 {

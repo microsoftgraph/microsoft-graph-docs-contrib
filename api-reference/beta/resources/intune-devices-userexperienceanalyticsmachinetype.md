@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsMachineType enum type"
 description: "Indicates if machine is physical or virtual. Possible values are: physical or virtual"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

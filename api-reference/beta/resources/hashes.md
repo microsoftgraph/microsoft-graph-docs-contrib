@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Hashes
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # hashes resource type
 
@@ -31,7 +31,7 @@ Groups available hashes into a single structure for an item.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

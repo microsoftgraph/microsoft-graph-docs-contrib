@@ -3,7 +3,7 @@ title: "senddtmftonesoperation resource type"
 description: "The sendDtmfTones operation to obtain the result of the sendDtmfTones action."
 author: "jackry2023"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

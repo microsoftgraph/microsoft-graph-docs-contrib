@@ -3,7 +3,7 @@ title: "Delete permissionGrantPreApprovalPolicy"
 description: "Delete a permissionGrantPreApprovalPolicy object."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

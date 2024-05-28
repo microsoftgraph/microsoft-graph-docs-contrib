@@ -3,7 +3,7 @@ title: "Delete emailThreatSubmissionPolicy"
 description: "Delete an emailThreatSubmissionPolicy object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

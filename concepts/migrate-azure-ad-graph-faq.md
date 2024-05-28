@@ -1,11 +1,11 @@
 ---
 title: "Azure AD Graph to Microsoft Graph migration FAQ"
 description: "Provides answers to frequently asked questions about migrating from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.topic: faq
 ms.date: 06/22/2023
 #Customer intent: As a developer, I want to understand more about why I should migrate my app from Azure AD Graph to Microsoft Graph.
@@ -31,7 +31,7 @@ If you own an application's source code, search for the `https://graph.windows.n
 
 ### Step 2: Check the app's API permissions on the Microsoft Entra admin center
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a cloud application administrator.
 1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. In the text box, enter the app ID you retrieved in Step 1 and select **Apply**. The list has narrowed down to the specified app.
@@ -71,7 +71,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 ## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app, including its owner?
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a cloud application administrator.
 1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. Enter an app ID in the text box and select **Apply**. The list has narrowed down to the specified app.
@@ -106,7 +106,7 @@ To migrate your apps from Azure AD Graph to Microsoft Graph, follow the [App mig
 
 First, confirm the full list of apps owned by your tenant or third-party applications integrated in your tenant.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a cloud application administrator.
 1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the App registrations window, select the **All Applications** tab.
 1. Select the app to reveal the app's menu.

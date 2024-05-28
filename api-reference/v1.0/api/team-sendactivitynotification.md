@@ -3,7 +3,7 @@ title: "team: sendActivityNotification"
 description:  Send an activity feed notification in scope of a team.
 author: eddie-lee-msft
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
@@ -16,15 +16,13 @@ Send an activity feed notification in the scope of a team. For more information 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamsActivity.Send|
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+<!-- { "blockType": "permissions", "name": "team_sendactivitynotification" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-sendactivitynotification-permissions.md)]
 
->**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsActivity.Send.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -50,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|The topic of the notification. Specifies the resource being talked about.|
-|activityType|String|The activity type. Activity types must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
+|activityType|String|The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for the `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification.|
 |chainId|Int64|Optional. The chain ID for the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams shows the first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|

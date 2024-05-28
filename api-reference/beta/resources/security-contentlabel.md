@@ -3,7 +3,7 @@ title: "contentLabel resource type"
 description: "Describes the contentLabel object that defines Microsoft Purview Information Protection metadata on an object."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

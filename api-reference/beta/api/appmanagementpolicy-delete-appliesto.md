@@ -3,7 +3,7 @@ title: "Remove appliesTo"
 description: "Remove an appManagementPolicy from an application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -60,7 +60,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from an application.
+The following example shows a request to remove an appManagementPolicy from an application.
 
 
 # [HTTP](#tab/http)
@@ -124,7 +124,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from a service principal.
+The following example shows a request to remove an appManagementPolicy from a service principal.
 
 
 

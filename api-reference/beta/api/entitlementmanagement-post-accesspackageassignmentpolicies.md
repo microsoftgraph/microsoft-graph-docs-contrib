@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentPolicy"
 description: "Use this API to create a new accessPackageAssignmentPolicy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -151,7 +151,7 @@ The following example shows a more complex policy with two-stage approvals and a
 
 #### Request
 
-The following is an example of the request to create an access package assignment policy. 
+The following example shows a request to create an access package assignment policy. 
 
 
 # [HTTP](#tab/http)

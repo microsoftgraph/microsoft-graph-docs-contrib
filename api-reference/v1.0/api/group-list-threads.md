@@ -3,7 +3,7 @@ title: "List threads"
 description: "Get all the threads of a group."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

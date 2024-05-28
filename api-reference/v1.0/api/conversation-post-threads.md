@@ -3,7 +3,7 @@ title: "Create thread"
 description: "Create a new thread in the specified conversation. "
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

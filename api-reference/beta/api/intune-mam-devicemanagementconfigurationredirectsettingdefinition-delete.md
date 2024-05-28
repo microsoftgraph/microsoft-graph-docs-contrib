@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationRedirectSettingDefinition"
 description: "Deletes a deviceManagementConfigurationRedirectSettingDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

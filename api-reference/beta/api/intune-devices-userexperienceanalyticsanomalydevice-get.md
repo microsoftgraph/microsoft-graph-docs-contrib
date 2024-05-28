@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsAnomalyDevice"
 description: "Read properties and relationships of the userExperienceAnalyticsAnomalyDevice object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

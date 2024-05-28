@@ -3,7 +3,7 @@ title: "Create windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Create a new windowsDefenderAdvancedThreatProtectionConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deleteUserFromSharedAppleDevice action"
 description: "Delete user from shared Apple device"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

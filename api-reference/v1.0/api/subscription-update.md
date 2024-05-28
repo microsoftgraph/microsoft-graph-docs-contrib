@@ -3,7 +3,7 @@ title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 doc_type: apiPageType
 ---
 
@@ -108,9 +108,12 @@ PATCH /subscriptions/{id}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+The request body must include at least one of the properties listed.
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource. |
+| notificationUrl  |  String  | This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.|
 
 ## Response
 

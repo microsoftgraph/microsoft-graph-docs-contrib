@@ -3,7 +3,7 @@ title: "Remove internalSponsors"
 description: "Remove a user or group from the connected organization's internal sponsors."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

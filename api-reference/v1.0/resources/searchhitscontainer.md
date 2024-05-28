@@ -3,7 +3,7 @@ title: "searchHitsContainer resource type"
 description: "Represent the list of search results."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ Represent the list of search results.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "Create Outlook events in a shared or delegated calendar"
 description: "Learn how to create a meeting event in a shared or delegated Outlook calendar. You can share a calendar with other users or grant a delegate to act on your behalf."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create Outlook events in a shared or delegated calendar
@@ -776,11 +776,7 @@ Content-type: application/json
 ```
 
 
-## Next steps
-
-Find out more about:
+## Related content
 
 - [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md)
 - [Share or delegate a calendar in Outlook (preview)](outlook-share-or-delegate-calendar.md)
-- [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar) in Microsoft Graph v1.0.

@@ -3,7 +3,7 @@ title: "Get operation"
 description: "Read the properties and relationships of an operation object."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

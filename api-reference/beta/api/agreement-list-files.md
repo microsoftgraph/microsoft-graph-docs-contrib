@@ -3,7 +3,7 @@ title: "List files (terms of use agreement files)"
 description: "Retrieve all localized files related to an agreement."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

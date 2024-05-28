@@ -4,7 +4,7 @@ description: "Delete a Focused Inbox override specified by its ID."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # Delete inferenceClassificationOverride
@@ -43,7 +43,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

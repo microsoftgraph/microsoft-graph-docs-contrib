@@ -3,7 +3,7 @@ title: "messageUnpinnedEventMessageDetail resource type"
 description: "Represents the details of an event message about an unpinned chat message."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

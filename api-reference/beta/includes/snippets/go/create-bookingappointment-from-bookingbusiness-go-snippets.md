@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewBookingAppointment()
 customerEmailAddress := "jordanm@contoso.com"
@@ -88,6 +88,8 @@ invoiceId := "1001"
 requestBody.SetInvoiceId(&invoiceId) 
 invoiceStatus := graphmodels.OPEN_BOOKINGINVOICESTATUS 
 requestBody.SetInvoiceStatus(&invoiceStatus) 
+isCustomerAllowedToManageBooking := true
+requestBody.SetIsCustomerAllowedToManageBooking(&isCustomerAllowedToManageBooking) 
 invoiceUrl := "theInvoiceUrl"
 requestBody.SetInvoiceUrl(&invoiceUrl) 
 isLocationOnline := true
@@ -298,6 +300,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 appointments, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 

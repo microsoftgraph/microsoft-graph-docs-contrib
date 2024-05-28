@@ -3,7 +3,7 @@ title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

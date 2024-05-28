@@ -3,7 +3,7 @@ title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

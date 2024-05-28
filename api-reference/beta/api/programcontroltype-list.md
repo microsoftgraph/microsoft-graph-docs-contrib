@@ -3,7 +3,7 @@ title: "List programControlTypes (deprecated)"
 description: "In the Microsoft Entra access reviews feature, list all the programControlType objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 

@@ -3,7 +3,7 @@ title: "authenticationEventHandlerResult resource type"
 description: "An abstract type that defines the result of authentication to event listeners in Microsoft Entra sign-ins."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessReviewNotificationRecipientItem resource type"
 description: "Defines users or groups who will receive notifications access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

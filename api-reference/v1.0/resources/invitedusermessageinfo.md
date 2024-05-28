@@ -3,7 +3,7 @@ title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
 
 ## JSON representation
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json

@@ -3,7 +3,7 @@ title: "Delete windows10EasEmailProfileConfiguration"
 description: "Deletes a windows10EasEmailProfileConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "userRegistrationDetails resource type"
 description: "Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of, such as multifactor authentication, self-service password reset, and passwordless authentication."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userRegistrationDetails](../api/authenticationmethodsroot-list-userregistrationdetails.md)|[userRegistrationDetails](../resources/userregistrationdetails.md) collection|Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
-|[Get userRegistrationDetails](../api/userregistrationdetails-get.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
+|[List](../api/authenticationmethodsroot-list-userregistrationdetails.md)|[userRegistrationDetails](../resources/userregistrationdetails.md) collection|Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
+|[Get](../api/userregistrationdetails-get.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
 
 ## Properties
 

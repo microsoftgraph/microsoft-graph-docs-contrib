@@ -3,7 +3,7 @@ title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response with a [directoryDefiniti
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

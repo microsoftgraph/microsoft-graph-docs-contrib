@@ -3,7 +3,7 @@ title: "Get organizationalBrandingLocalization"
 description: "Read the properties and relationships of an organizationalBrandingLocalization object."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -254,7 +254,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -303,7 +303,7 @@ GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -329,7 +329,7 @@ The following example returns the **bannerLogo** object for the default locale. 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -342,7 +342,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -363,7 +363,7 @@ The following example returns the **bannerLogo** object for the `fr-FR` locale w
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -413,7 +413,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

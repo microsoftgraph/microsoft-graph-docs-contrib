@@ -3,7 +3,7 @@ title: "detectionAction resource type"
 description: "Describes the actions that will be taken after a detection is made by the custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "getCompliancePolicyNonComplianceReport action"
 description: "Intune Reporting Devicemanagementreports Getcompliancepolicynoncompliancereport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

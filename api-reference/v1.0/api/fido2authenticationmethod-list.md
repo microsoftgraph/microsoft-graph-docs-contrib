@@ -4,7 +4,7 @@ description: "Retrieve a list of the fido2AuthenticationMethod objects and their
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

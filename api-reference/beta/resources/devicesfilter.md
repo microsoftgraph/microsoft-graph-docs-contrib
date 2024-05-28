@@ -3,7 +3,7 @@ title: "devicesFilter resource type"
 description: "Defines a rule to filter the devices and whether devices satisfying the rule should be allowed or blocked."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

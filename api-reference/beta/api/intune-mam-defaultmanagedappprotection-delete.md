@@ -3,7 +3,7 @@ title: "Delete defaultManagedAppProtection"
 description: "Deletes a defaultManagedAppProtection."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

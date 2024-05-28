@@ -1,20 +1,19 @@
 ---
-title: "Update Outlook category"
-description: "Update the writable property, **color**, of the specified outlookCategory object. You can't modify the **displayName** property "
+title: "Update outlookCategory"
+description: "Update the writable property, **color**, of the specified outlookCategory object."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Update Outlook category
+# Update outlookCategory
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You can't modify the **displayName** property
-once you have created the category.
+Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You can't modify the **displayName** property once you have created the category.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,10 +45,10 @@ maintains their previous values or be recalculated based on changes to other pro
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [outlookCategory](../resources/outlookcategory.md) object in the response body.
 ## Example
-##### Request
-Here's an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,8 +98,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

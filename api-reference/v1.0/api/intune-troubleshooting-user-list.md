@@ -3,7 +3,7 @@ title: "List users"
 description: "List properties and relationships of the user objects."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

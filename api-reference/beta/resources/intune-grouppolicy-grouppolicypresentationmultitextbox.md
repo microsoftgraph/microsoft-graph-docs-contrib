@@ -3,7 +3,7 @@ title: "groupPolicyPresentationMultiTextBox resource type"
 description: "Represents an ADMX multiTextBox element and an ADMX multiText element."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

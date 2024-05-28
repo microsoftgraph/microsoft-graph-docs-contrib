@@ -3,7 +3,7 @@ title: "accessReviewStage: stop"
 description: "Stop an access review stage that's in progress."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

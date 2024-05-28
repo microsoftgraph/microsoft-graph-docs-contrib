@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\DeviceAppManagement\MobileAppConfigurations\Item\Assign\AssignPostRequestBody
+use Microsoft\Graph\Generated\Models\ManagedDeviceMobileAppConfigurationAssignment;
+use Microsoft\Graph\Generated\Models\AllLicensedUsersAssignmentTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

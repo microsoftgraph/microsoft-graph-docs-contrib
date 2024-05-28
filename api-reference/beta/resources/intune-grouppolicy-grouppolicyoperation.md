@@ -3,7 +3,7 @@ title: "groupPolicyOperation resource type"
 description: "The entity represents an group policy operation."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

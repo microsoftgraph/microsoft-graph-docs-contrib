@@ -4,7 +4,7 @@ description: "Add members in bulk to a team."
 author: "abshar-teams"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # conversationMember: add

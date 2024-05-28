@@ -3,7 +3,7 @@ title: "Create managedDeviceEncryptionState"
 description: "Create a new managedDeviceEncryptionState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

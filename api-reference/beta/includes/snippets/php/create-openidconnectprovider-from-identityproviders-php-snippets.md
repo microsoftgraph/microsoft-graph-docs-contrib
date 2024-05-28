@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectProvider;
+use Microsoft\Graph\Beta\Generated\Models\ClaimsMapping;
+use Microsoft\Graph\Beta\Generated\Models\ResponseMode;
+use Microsoft\Graph\Beta\Generated\Models\ResponseType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

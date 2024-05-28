@@ -3,7 +3,7 @@ title: "customAuthenticationExtension resource type"
 description: "Custom authentication extensions let you interact with external systems during a user authentication session."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -23,15 +23,25 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
 Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
 
+> [!NOTE]
+>
+> You can have a maximum of 100 custom extension policies.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List customAuthenticationExtensions](../api/identitycontainer-list-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md) collection|Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties.|
-|[Create customAuthenticationExtension](../api/identitycontainer-post-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[Get customAuthenticationExtension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|None|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[Delete customAuthenticationExtension](../api/customauthenticationextension-delete.md)|None|Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|[List custom authentication extensions](../api/identitycontainer-list-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md) collection|Retrieve a list of the object types that are derived from **customAuthenticationExtension**.|
+|[Create custom authentication extension](../api/identitycontainer-post-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Create a new object type that is derived from **customAuthenticationExtension**.|
+|[Get custom authentication extension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of an object type that is derived from **customAuthenticationExtension**.|
+|[Update custom authentication extension](../api/customauthenticationextension-update.md)|None|Update the properties of an object type that is derived from **customAuthenticationExtension**.|
+|[Delete custom authentication extension](../api/customauthenticationextension-delete.md)|None|Delete an object type that is derived from **customAuthenticationExtension**.|
+|[Validate authentication configuration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|**On attribute collection start**|||
+|[Get on attribute collection start](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+|[Update on attribute collection start](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+|**On attribute collection submit**|||
+|[Get on attribute collection submit](../api/onattributecollectionsubmitcustomextension-get.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
+|[Update on attribute collection submit](../api/onattributecollectionsubmitcustomextension-update.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
 
 ## Properties
 |Property|Type|Description|

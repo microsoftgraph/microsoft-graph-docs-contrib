@@ -3,7 +3,7 @@ title: "Get OneNote content and structure by using the OneNote API"
 description: "Get OneNote content and structure by sending a GET request to the target endpoint. Then use query string options to filter your queries and improve performance."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Get OneNote content and structure
@@ -68,14 +68,12 @@ Use the following resource paths to get pages, sections, section groups, noteboo
 
 Get pages (metadata) across all notebooks.
 
-`../pages[?filter,orderby,select,expand,top,skip,search,count]`
+`../pages[?filter,orderby,select,expand,top,skip,count]`
 
 Get pages (metadata) from a specific section.
 
-`../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
+`../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,count,pagelevel]`
  
-The `search` query string option is available for consumer notebooks only.
-
 The default sort order for pages is `lastModifiedTime desc`.
 
 The default query expands the parent section and selects the section's `id`, `name`, and `self` properties.
@@ -288,7 +286,7 @@ For more information about GET requests, see the following resources in the Micr
 
 ## Example GET requests
 
-You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
+You can query for OneNote entities to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
 
 **Remember:**
 
@@ -304,20 +302,19 @@ You can query for OneNote entities and search page content to get just the infor
 
   **Example**: `filter=tolower(name) eq 'spring'`
 
-### search & filter  
+### filter  
 
-Get all pages that contain the term *recipe* that were created by a specific app (`search` is available for consumer notebooks only).
-
+Get all pages that were created by a specific app.
 ```
-[GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
+[GET] ../pages?filter=createdByAppId eq 'WLID-000000004C12821A'
 ```
  
-### search & select  
+### select  
 
-Get the title, OneNote client links, and **contentUrl** link for all pages that contain the term *golgi app* (`search` is available for consumer notebooks only).
+Get the title, OneNote client links, and **contentUrl** link for all pages.
 
 ```
-[GET] ../pages?search=golgi app&select=title,links,contentUrl
+[GET] ../pages?select=title,links,contentUrl
 ```
  
 ### expand 
@@ -436,32 +433,32 @@ Get the first 20 pages ordered by **createdByAppId** property and then by most r
 [GET] ../pages?orderby=createdByAppId,createdTime desc
 ```
 
-### search & filter & top 
+### filter & top 
 
-Get the five newest pages created since January 1, 2015 that contain the phrase *cell division*. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc` (`search` is available for consumer notebooks only).
-
-```
-[GET] ../pages?search="cell division"&filter=createdTime ge 2015-01-01&top=5
-```
-
-### search & filter & top & skip  
-
-Get the next five pages in the result set (`search` is available for consumer notebooks only).
+Get the five newest pages created since January 1, 2015. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc`.
 
 ```
-[GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=5
+[GET] ../pages?filter=createdTime ge 2015-01-01&top=5
+```
+
+### filter & top & skip  
+
+Get the next five pages in the result set .
+
+```
+[GET] ../pages?filter=createdTime ge 2015-01-01&top=5&skip=5
 ```
 
 <br/>
 
-And the next five (`search` is available for consumer notebooks only).
+And the next five.
 
 ```
-[GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
+[GET] ../pages?filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
 > [!NOTE]
-> If both **search** and **filter** are applied to the same request, the results include only those entities that match both criteria.
+> If both **top** and **filter** are applied to the same request, the results include only those entities that match both criteria.
  
 ### select
 
@@ -522,7 +519,6 @@ When sending GET requests to Microsoft Graph, you can use OData query string opt
 | expand | <p>`expand=sections,sectionGroups`</p><p>The navigation properties to return inline in the response. The following properties are supported for **expand** expressions:<br /> - Pages: **parentNotebook**, **parentSection**<br /> - Sections: **parentNotebook**, **parentSectionGroup**<br /> - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> - Notebooks: **sections**, **sectionGroups**</p><p>By default, GET requests for pages expands **parentSection** and select the section's **id**, **name**, and **self** properties. Default GET requests for sections and section groups expand both **parentNotebook** and **parentSectionGroup**, and select the parents' **id**, **name**, and **self** properties. </p><p>Can be used for a single entity or a collection.<br />Separate multiple properties with commas.<br />Property names are case-sensitive.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#onenote-entity-properties) names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br /><br />**Example**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>The [properties](#onenote-entity-properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case-sensitive.</p> |  
-| search | <p>`search=cell div`</p><p>Available for consumer notebooks only.</p><p>The term or phrase to search for in the page title, page body, image alt text, and image OCR text. By default, search queries return results sorted by relevance.</p><p>OneNote uses Bing full-text search to support phrase search, stemming, spelling forgiveness, relevance and ranking, word breaking, multiple languages, and other full-text search features. Search strings are case-insensitive.</p><p>Applies only to pages in notebooks owned by the user. Indexed content is private and can only be accessed by the owner. Password-protected pages are not indexed. Applies only to the `pages` endpoint.</p> |  
 | select | <p>`select=id,title`</p><p>The [properties](#onenote-entity-properties) to return. Can be used for a single entity or for a collection. Separate multiple properties with commas. Property names are case-sensitive.</p> |  
 | skip | <p>`skip=10`</p><p>The number of entries to skip in the result set. Typically used for paging results.</p> |  
 | top | <p>`top=50`</p><p>The number of entries to return in the result set, up to a maximum of 100. The default value is 20.</p> |  

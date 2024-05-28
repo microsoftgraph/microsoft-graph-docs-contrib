@@ -3,7 +3,7 @@ title: "Delete azureDataLakeConnector"
 description: "Delete an azureDataLakeConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "bookingCustomer resource type"
 description: "Represents a customer of a bookingBusiness."
 ms.localizationpriority: Normal
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -20,9 +20,9 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List customers](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
-|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
-|[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
+|[List](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
+|[Create](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
+|[Get](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
 |[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
 |[Delete](../api/bookingcustomer-delete.md) | None |Delete a **bookingCustomer** object. |
 

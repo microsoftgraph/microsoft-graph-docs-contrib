@@ -3,7 +3,7 @@ title: "noDeviceRegistrationMembership resource type"
 description: "Indicates that no users are allowed to join or register devices."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

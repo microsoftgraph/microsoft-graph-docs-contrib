@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted groups, including group mem
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -105,7 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request 1
 
-Here's an example of the request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {

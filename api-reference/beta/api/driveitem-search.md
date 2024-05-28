@@ -4,7 +4,7 @@ description: "Search the hierarchy of items for items matching a query."
 ms.date: 09/10/2017
 title: Search for files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Search for driveItems within a drive

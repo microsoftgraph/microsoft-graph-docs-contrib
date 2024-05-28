@@ -4,7 +4,7 @@ description: "Defines a set of clauses that an object must satisfy to be conside
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # filterGroup resource type

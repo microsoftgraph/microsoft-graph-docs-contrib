@@ -3,7 +3,7 @@ title: "Use note tags on OneNote pages by using the OneNote API"
 description: "Use the data-tag attribute to add and update built-in note tags on a OneNote page. Learn how to work with note tags on lists and how to retrieve note tags."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Use note tags on OneNote pages

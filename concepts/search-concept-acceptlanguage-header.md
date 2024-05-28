@@ -3,7 +3,7 @@ title: "Supported language codes"
 description: "Get a list of the supported language codes for the Microsoft Search API in Microsoft Graph."
 author: "cxiang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Supported language codes

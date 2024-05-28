@@ -3,7 +3,7 @@ title: "deviceType enum type"
 description: "Device type."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

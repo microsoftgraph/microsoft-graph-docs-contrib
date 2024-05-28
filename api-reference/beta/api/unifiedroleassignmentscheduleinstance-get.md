@@ -3,7 +3,7 @@ title: "Get unifiedRoleAssignmentScheduleInstance"
 description: "Get the instance of an active role assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

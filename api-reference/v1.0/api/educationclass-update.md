@@ -3,7 +3,7 @@ title: "Update educationClass"
 description: "Update the properties of a class."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

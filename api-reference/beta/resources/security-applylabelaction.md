@@ -3,7 +3,7 @@ title: "applyLabelAction resource type"
 description: "Represents a set of actions that should be taken to apply or update a label."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

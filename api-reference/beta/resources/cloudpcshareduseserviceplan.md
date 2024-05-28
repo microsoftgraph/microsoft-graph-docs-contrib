@@ -3,7 +3,7 @@ title: "cloudPcSharedUseServicePlan resource type (deprecated)"
 description: "Represents a shared-use service plan available for use by up to three Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ Represents a shared-use service plan available for use by up to three Cloud PCs.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcSharedUseServicePlans](../api/virtualendpoint-list-shareduseserviceplans.md)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Get a list of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects and their properties.|
-|[Get cloudPcSharedUseServicePlan](../api/cloudpcshareduseserviceplan-get.md)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md)|Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.|
+|[List](../api/virtualendpoint-list-shareduseserviceplans.md)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Get a list of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects and their properties.|
+|[Get](../api/cloudpcshareduseserviceplan-get.md)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md)|Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.|
 
 ## Properties
 

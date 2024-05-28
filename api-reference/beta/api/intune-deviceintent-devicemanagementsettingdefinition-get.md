@@ -3,7 +3,7 @@ title: "Get deviceManagementSettingDefinition"
 description: "Read properties and relationships of the deviceManagementSettingDefinition object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

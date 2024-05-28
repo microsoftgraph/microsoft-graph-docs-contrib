@@ -3,7 +3,7 @@ title: "openShiftChangeRequest: decline"
 description: "Decline an openshift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -55,7 +55,7 @@ The following example shows how to call this API.
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,7 +80,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

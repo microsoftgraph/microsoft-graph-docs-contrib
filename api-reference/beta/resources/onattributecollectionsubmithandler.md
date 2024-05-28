@@ -3,7 +3,7 @@ title: "onAttributeCollectionSubmitHandler resource type"
 description: "Represents a step in a user flow defining what happens when the user submits attributes during the attribute collection stage."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

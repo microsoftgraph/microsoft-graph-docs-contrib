@@ -3,7 +3,7 @@ title: "verifiedCredentialClaims resource type"
 description: "Open type containing the key-value pair of the claims retrieved from the credentials."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

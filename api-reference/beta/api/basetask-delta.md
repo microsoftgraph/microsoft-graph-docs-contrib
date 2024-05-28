@@ -3,7 +3,7 @@ title: "baseTask: delta"
 description: "Get a set of baseTask resources that have been added, deleted, or updated in a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

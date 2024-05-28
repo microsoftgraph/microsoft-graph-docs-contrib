@@ -3,7 +3,7 @@ title: "Security enum values"
 description: "Microsoft Graph security subnamespace enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 author: "BenAlfasi"
 ---
 

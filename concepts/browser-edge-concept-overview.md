@@ -3,7 +3,7 @@ title: "Use the Edge API in Microsoft Graph to manage browsers"
 description: "Learn how to use the Edge API in Microsoft Graph to streamline the way you manage cloud site lists."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 ---
 
 # Use the Edge API in Microsoft Graph to manage browsers

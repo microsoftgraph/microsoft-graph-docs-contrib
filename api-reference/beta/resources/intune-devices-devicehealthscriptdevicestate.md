@@ -3,7 +3,7 @@ title: "deviceHealthScriptDeviceState resource type"
 description: "Contains properties for device run state of the device health script."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

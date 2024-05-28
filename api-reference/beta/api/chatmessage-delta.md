@@ -4,7 +4,7 @@ description: "Retrieve the list of messages (without the replies) in a channel o
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessage: delta
@@ -34,15 +34,14 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type                        |Permissions (from least to most privileged)  |
-|---------------------------------------|---------------------------------------------|
-|Delegated (work or school account)     | ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
-|Delegated (personal Microsoft account) | Not Supported                                |
-|Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+<!-- { "blockType": "permissions", "name": "chatmessage_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-delta-permissions.md)]
 
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+> [!NOTE]
+> - The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -66,8 +65,8 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 ### Optional OData query parameters
 
 The following [OData query parameters](/graph/query-parameters) are supported by this API:
-- `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
-- `$skip`, represents how many messages to skip at the beginning of the list.
+- `$top` represents maximum number of messages to fetch in a call. The upper limit is **50**.
+- `$skip` represents how many messages to skip at the beginning of the list.
 - `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any **reply chain (each channel post message and associated reply messages)** created or changed after the specified date time.
 - `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel message contains more than 1000 replies, `replies@odata.nextLink` is provided for pagination. 
 
@@ -575,7 +574,7 @@ Content-type: application/json
 
 ### Example 2: Retrieving additional changes
 
-Using the `@odata.deltaLink` from the last request in the last round, you'll be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request looks like the following, assuming you prefer to keep the same maximum page size in the response:
+When you use the `@odata.deltaLink` from the last request in the last round, you get only those messages that have changed (by being added, or updated) in that channel since then. Your request looks like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
 

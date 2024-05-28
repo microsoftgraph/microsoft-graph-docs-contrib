@@ -4,7 +4,7 @@ description: "An incident in Microsoft 365 Defender is a collection of correlate
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -46,6 +46,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |systemTags|String collection|The system tags associated with the incident.|
+|resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
 
 
 ### incidentStatus values 

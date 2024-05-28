@@ -3,7 +3,7 @@ title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_delete_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-delete-members-permissions.md)]
 
-> **Note**: The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

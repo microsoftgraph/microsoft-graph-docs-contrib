@@ -3,7 +3,7 @@ title: "accessPackageResource: refresh"
 description: "Refresh an accessPackageResource object from an origin system."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), refresh the [accessPackageResource](../resources/accesspackageresource.md) object to fetch the latest details for **displayName**, **description**, and **resourceType** from the origin system. For the `AadApplication` originSystem, this operation also updates the **displayName** and **description** for the [accessPackageResourceRole](../resources/accesspackageresourcerole.md). 
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), refresh the [accessPackageResource](../resources/accesspackageresource.md) object to fetch the latest details for **displayName**, **description**, and **resourceType** from the origin system. For the `AadApplication` originSystem, this operation also updates the **displayName** and **description** for the [accessPackageResourceRole](../resources/accesspackageresourcerole.md). 
 
 
 
@@ -50,7 +50,7 @@ If successful, this action returns a `200 OK` response code and no object in the
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

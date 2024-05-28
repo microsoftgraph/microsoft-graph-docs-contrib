@@ -3,7 +3,7 @@ title: "Create accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, create a new accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

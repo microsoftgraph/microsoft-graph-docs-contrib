@@ -11,9 +11,9 @@ $params = @{
 	status = "completed"
 	errorMessage = "Error Message value"
 	customLogFolders = @(
-		"Custom Log Folders value"
-	)
-	completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00")
+	"Custom Log Folders value"
+)
+completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00")
 }
 
 Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId -BodyParameter $params

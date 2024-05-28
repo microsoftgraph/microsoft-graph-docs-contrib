@@ -3,7 +3,7 @@ title: "resetPasscode action"
 description: "Reset passcode"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "zebraFotaDeploymentSettings resource type"
 description: "The Zebra FOTA deployment complex type that describes the settings required to create a FOTA deployment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

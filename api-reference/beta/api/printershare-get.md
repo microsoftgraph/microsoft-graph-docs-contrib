@@ -3,7 +3,7 @@ title: Get printerShare
 description: Retrieve the properties and relationships of a printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ By default, the response won't contain [printerCapabilities](../resources/printe
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

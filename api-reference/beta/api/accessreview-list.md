@@ -3,7 +3,7 @@ title: "List accessReviews (deprecated)"
 description: "Retrieve accessReview objects for a businessFlowTemplate."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

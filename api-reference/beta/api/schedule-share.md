@@ -3,7 +3,7 @@ title: "schedule: share"
 description: "Share a schedule time range with schedule members."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

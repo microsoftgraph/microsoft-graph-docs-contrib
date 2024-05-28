@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "identitySet resource type"
 description: "Represents a keyed collection of identity resources."
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

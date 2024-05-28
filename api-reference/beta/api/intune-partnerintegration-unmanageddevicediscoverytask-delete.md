@@ -3,7 +3,7 @@ title: "Delete unmanagedDeviceDiscoveryTask"
 description: "Deletes a unmanagedDeviceDiscoveryTask."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

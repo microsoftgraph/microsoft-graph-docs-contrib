@@ -3,7 +3,7 @@ title: "List timesOff"
 description: "Get the list of timesOff in this schedule."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
+The following example shows a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
 # [HTTP](#tab/http)
 <!-- {

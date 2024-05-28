@@ -3,7 +3,7 @@ title: "Get deviceManagementResourceAccessProfileAssignment"
 description: "Read properties and relationships of the deviceManagementResourceAccessProfileAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

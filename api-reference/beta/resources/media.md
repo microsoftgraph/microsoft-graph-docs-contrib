@@ -4,7 +4,7 @@ description: "The media resource contains metadata about the media (audio or vid
 title: media resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # media resource type
 

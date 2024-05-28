@@ -47,7 +47,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
+|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator chose to specify.|
 |directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. |
 
 ## Response
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnadssenter` for the locale `nb-NO`.
+The following example adds a localized label `Kostnadssenter` for the locale `no`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,7 +77,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]
@@ -143,11 +143,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
-        },
-        {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]

@@ -3,7 +3,7 @@ title: "synchronizationJob: provisionOnDemand"
 description: "Select a user and provision the account on-demand."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

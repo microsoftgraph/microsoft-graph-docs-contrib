@@ -3,7 +3,7 @@ title: "Get accessPackageResourceEnvironment"
 description: "Read the properties and relationships of an accessPackageResourceEnvironment object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

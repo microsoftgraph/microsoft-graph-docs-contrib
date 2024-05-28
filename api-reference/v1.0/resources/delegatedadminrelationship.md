@@ -3,7 +3,7 @@ title: "delegatedAdminRelationship resource type"
 description: "Represents the details of the delegated administrative privileges that a Microsoft partner has in a customer tenant."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -16,11 +16,11 @@ Represents a delegated admin relationship between a partner and customer.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Create a new **delegatedAdminRelationship** object.|
-|[List delegatedAdminRelationships](../api/tenantrelationship-list-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md) collection|Get a list of the **delegatedAdminRelationship** objects and their properties.|
-|[Get delegatedAdminRelationship](../api/delegatedadminrelationship-get.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Read the properties and relationships of a **delegatedAdminRelationship** object.|
-|[Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Update the properties of a **delegatedAdminRelationship** object.|
-|[Delete delegatedAdminRelationship](../api/delegatedadminrelationship-delete.md)|None|Delete a **delegatedAdminRelationship** object.|
+|[Create](../api/tenantrelationship-post-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Create a new **delegatedAdminRelationship** object.|
+|[List](../api/tenantrelationship-list-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md) collection|Get a list of the **delegatedAdminRelationship** objects and their properties.|
+|[Get](../api/delegatedadminrelationship-get.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Read the properties and relationships of a **delegatedAdminRelationship** object.|
+|[Update](../api/delegatedadminrelationship-update.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Update the properties of a **delegatedAdminRelationship** object.|
+|[Delete](../api/delegatedadminrelationship-delete.md)|None|Delete a **delegatedAdminRelationship** object.|
 
 
 ## Properties
@@ -61,7 +61,7 @@ Represents a delegated admin relationship between a partner and customer.
 |requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

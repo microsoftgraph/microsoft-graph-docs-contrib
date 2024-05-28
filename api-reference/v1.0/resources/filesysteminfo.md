@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: fileSystemInfo resource type
 ms.localizationpriority: medium
 description: "The fileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 

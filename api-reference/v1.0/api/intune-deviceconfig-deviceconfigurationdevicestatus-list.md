@@ -3,7 +3,7 @@ title: "List deviceConfigurationDeviceStatuses"
 description: "List properties and relationships of the deviceConfigurationDeviceStatus objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

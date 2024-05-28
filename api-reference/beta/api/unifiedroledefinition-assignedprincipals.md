@@ -4,7 +4,7 @@ description: "Get the list of security principals (users, groups, and service pr
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively. You can use the `$count` query parameter to also get the count.
+
+This API is supported for the directory (Microsoft Entra ID) provider only.
 
 To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
@@ -25,10 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_assignedprincipals" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-assignedprincipals-permissions.md)]
 
-If the caller doesn't have the permission to read properties for some of the objects included in the result set, the response follows the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
-
-To read the properties that may require permissions for the object, grant the permissions to retrieve information about the object. For more information, see permissions for [users](user-list.md#permissions), [groups](group-list.md#permissions), and [service principals](serviceprincipal-list.md#permissions).
-
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 

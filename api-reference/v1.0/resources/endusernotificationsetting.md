@@ -3,7 +3,7 @@ title: "endUserNotificationSetting resource type"
 description: "Represents an end user notification setting provided by an administrator during a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

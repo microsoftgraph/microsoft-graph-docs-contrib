@@ -3,7 +3,7 @@ title: "notebook resource type"
 description: "A OneNote notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ A OneNote notebook.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -73,13 +73,13 @@ Here is a JSON representation of the resource
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get notebook](../api/notebook-get.md) | [Notebook](notebook.md) |Read the properties and relationships of the notebook.|
-|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[Get recent notebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
 |[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Retrieve the properties and relationships of a notebook object using its URL path. |
 |[Create section group](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
 |[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
 |[Create section](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| Create a section by posting to the sections collection in the specified notebook.|
 |[List sections](../api/notebook-list-sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections in the specified notebook.|
-|[copyNotebook](../api/notebook-copynotebook.md)| None | Copies a notebook.|
+|[Copy notebook](../api/notebook-copynotebook.md)| None | Copies a notebook.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,7 +3,7 @@ title: "Add gradingCategory"
 description: "Add a gradingCategory to an assignment."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

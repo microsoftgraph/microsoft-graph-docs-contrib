@@ -3,7 +3,7 @@ title: "List androidForWorkApps"
 description: "List properties and relationships of the androidForWorkApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

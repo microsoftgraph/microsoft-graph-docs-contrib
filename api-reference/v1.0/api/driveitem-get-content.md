@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Download a file
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
 ---

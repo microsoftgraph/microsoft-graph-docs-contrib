@@ -3,7 +3,7 @@ title: "Delete windows10EnterpriseModernAppManagementConfiguration"
 description: "Deletes a windows10EnterpriseModernAppManagementConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

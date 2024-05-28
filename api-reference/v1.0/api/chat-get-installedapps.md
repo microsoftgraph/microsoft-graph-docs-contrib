@@ -3,7 +3,7 @@ title: "Get installed app in chat"
 description: "Get installed app in a chat."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -22,8 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get_installedapps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-installedapps-permissions.md)]
 
-> **Note:**
-The TeamsAppInstallation.ReadWriteAndConsentSelfForChat and TeamsAppInstallation.ReadWriteAndConsentForChat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsAppInstallation.ReadWriteAndConsentSelfForChat and TeamsAppInstallation.ReadWriteAndConsentForChat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ### Example 2: Get the set of resource-specific permissions consented for the app installed in the specified chat
 
-The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameterd is required to show the consented permission set.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameter is required to show the consented permission set.
 
 #### Request
 

@@ -5,6 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ScheduledPermissionsRequest;
+use Microsoft\Graph\Beta\Generated\Models\AwsPermissionsDefinition;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystem;
+use Microsoft\Graph\Beta\Generated\Models\AwsPolicyPermissionsDefinitionAction;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAwsPolicy;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
+use Microsoft\Graph\Beta\Generated\Models\SamlIdentitySource;
+use Microsoft\Graph\Beta\Generated\Models\IdentityType;
+use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Beta\Generated\Models\TicketInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

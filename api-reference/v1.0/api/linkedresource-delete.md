@@ -1,16 +1,16 @@
 ---
 title: "Delete linkedResource"
-description: "Deletes a linkedResource object."
+description: "Delete a linkedResource object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete linkedResource
 Namespace: microsoft.graph
 
-Deletes a [linkedResource](../resources/linkedresource.md) object.
+Delete a [linkedResource](../resources/linkedresource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -47,6 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -103,6 +104,3 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-

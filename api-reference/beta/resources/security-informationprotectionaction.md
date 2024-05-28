@@ -3,7 +3,7 @@ title: "informationProtectionAction resource type"
 description: "Describes the abstract informationProtectionAction entity."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

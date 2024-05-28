@@ -3,7 +3,7 @@ title: "Get tab in chat"
 description: "Retrieve the properties and relationships of the specified tab in a chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

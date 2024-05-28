@@ -3,7 +3,7 @@ title: "agreement resource type"
 description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

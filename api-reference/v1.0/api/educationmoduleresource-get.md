@@ -3,7 +3,7 @@ title: "Get educationModuleResource"
 description: "Get the properties of a specific resource on a module."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,6 @@ Get the properties of a [resource](../resources/educationmoduleresource.md) asso
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmoduleresource_get" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmoduleresource-get-permissions.md)]
 
 ## HTTP request

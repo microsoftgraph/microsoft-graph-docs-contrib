@@ -3,7 +3,7 @@ title: "List macOSOfficeSuiteApps"
 description: "List properties and relationships of the macOSOfficeSuiteApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

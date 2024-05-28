@@ -3,7 +3,7 @@ title: "Get companySubscription"
 description: "Get a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
 author: "arp19690"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

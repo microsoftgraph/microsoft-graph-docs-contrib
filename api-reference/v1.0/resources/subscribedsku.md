@@ -3,7 +3,7 @@ title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | Method                                             | Return Type                                  | Description                                                                 |
 | :------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------------- |
 | [Get subscribedSku](../api/subscribedsku-get.md)   | [subscribedSku](subscribedsku.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [List subscribedSkus](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
@@ -36,7 +36,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | servicePlans     | [servicePlanInfo](serviceplaninfo.md) collection | Information about the service plans that are available with the SKU. Not nullable.                                                                                                                                                                         |
 | skuId            | Guid                                             | The unique identifier (GUID) for the service SKU.                                                                                                                                                                                                         |
 | skuPartNumber    | String                                           | The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).                                                      |
-| subscriptionsIds | String collection                                    | A list of all subscription IDs associated with this SKU.                                                                                                                                                                                                  |
+| subscriptionIds | String collection                                    | A list of all subscription IDs associated with this SKU.                                                                                                                                                                                                  |
 
 ## Relationships
 
@@ -44,7 +44,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

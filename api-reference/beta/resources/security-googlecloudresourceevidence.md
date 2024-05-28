@@ -3,7 +3,7 @@ title: "googleCloudResourceEvidence resource type"
 description: "Represents a Google Cloud resource such as compute or Kubernetes cluster identifier."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

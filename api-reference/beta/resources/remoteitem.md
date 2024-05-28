@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # RemoteItem resource type

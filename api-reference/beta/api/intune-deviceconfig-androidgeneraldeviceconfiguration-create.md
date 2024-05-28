@@ -3,7 +3,7 @@ title: "Create androidGeneralDeviceConfiguration"
 description: "Create a new androidGeneralDeviceConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

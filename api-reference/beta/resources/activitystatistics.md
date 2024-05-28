@@ -3,7 +3,7 @@ title: "activityStatistics resource type"
 description: "Represents time spent on work activities, including email, meetings, focus work, chats, and calls."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 
@@ -37,7 +37,7 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the last complete week. |
+| [List activity statistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the last complete week. |
 
 ## Properties
 

@@ -3,8 +3,8 @@ title: "Manage Microsoft Entra role assignments using the privileged identity ma
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
-doc_type: resourcePageType
+doc_type: conceptualPageType
+ms.subservice: "entra-id-governance"
 ms.date: 10/12/2023
 ---
 
@@ -15,7 +15,7 @@ ms.date: 10/12/2023
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
-> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager (ARM)](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
 ## PIM APIs for managing active role assignments
 
@@ -125,7 +125,7 @@ All activities made through PIM for Microsoft Entra roles are logged in Microsof
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -140,7 +140,7 @@ The following permissions are supported for PIM for Microsoft Entra roles API op
 | RoleEligibilitySchedule.Read.Directory <br/> RoleEligibilitySchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage role eligibility operations.         |
 | RoleManagementAlert.Read.Directory <br/> RoleManagementAlert.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage security alerts for Microsoft Entra roles.         |
 
-For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID. 
+For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID.
 -->
 ## Licensing
 

@@ -3,7 +3,7 @@ title: "List publishedResources"
 description: "Retrieve a list of publishedResource objects."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

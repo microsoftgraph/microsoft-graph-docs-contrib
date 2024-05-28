@@ -3,7 +3,7 @@ title: "Get authenticationFlowsPolicy"
 description: "Read the properties and relationships of an authenticationFlowsPolicy object."
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

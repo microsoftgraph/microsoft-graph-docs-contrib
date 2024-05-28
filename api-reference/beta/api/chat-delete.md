@@ -2,7 +2,7 @@
 title: "Delete chat"
 description: "Delete a chat object."
 author: "sthapliyal"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---

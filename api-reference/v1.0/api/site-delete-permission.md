@@ -3,7 +3,7 @@ title: "Delete permission"
 description: "Delete a permission object on a site."
 author: "BarrySh"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -91,7 +91,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionI
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

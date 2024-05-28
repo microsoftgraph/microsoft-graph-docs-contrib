@@ -3,7 +3,7 @@ title: "Get serviceUpdateMessage"
 description: "Retrieve the properties and relationships of a serviceUpdateMessage object."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 

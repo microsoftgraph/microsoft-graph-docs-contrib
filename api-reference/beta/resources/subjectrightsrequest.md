@@ -20,14 +20,14 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List subjectRightsRequests](../api/subjectRightsRequest-list.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md) collection|Get a list of the [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.|
-|[Create subjectRightsRequest](../api/subjectRightsRequest-post.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[Get subjectRightsRequest](../api/subjectRightsRequest-get.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[Update subjectRightsRequest](../api/subjectRightsRequest-update.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[getFinalAttachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.|
-|[getFinalReport](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that were included by the privacy administrator.|
+|[List](../api/subjectRightsRequest-list.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md) collection|Get a list of the [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.|
+|[Create](../api/subjectRightsRequest-post.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[Get](../api/subjectRightsRequest-get.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[Update](../api/subjectRightsRequest-update.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[Get final attachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.|
+|[Get final report](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that were included by the privacy administrator.|
 |[List notes](../api/subjectRightsRequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
-|[Create authoredNote](../api/subjectRightsRequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
+|[Create note](../api/subjectRightsRequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
 ## Properties
 |Property|Type|Description|
@@ -66,7 +66,7 @@ Inherits from [entity](../resources/entity.md).
 |team|[team](../resources/team.md)|Information about the Microsoft Teams team that was created for the request.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -111,7 +111,7 @@ Here's a JSON representation of the resource.
     "mailboxLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
-    "pauseAfterDownload": "Boolean",
+    "pauseAfterEstimate": "Boolean",
     "regulations": [
         "String"
     ],

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
+Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
 
 ```

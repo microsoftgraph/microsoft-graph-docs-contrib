@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicyStatuses enum type"
 description: "Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

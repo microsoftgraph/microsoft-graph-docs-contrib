@@ -3,7 +3,7 @@ title: "educationLinkResource resource type"
 description: "A subclass of educationResource. This resource is a link and doesn't have any other data associated with it."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ A subclass of [educationResource](educationresource.md). This resource is a link
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

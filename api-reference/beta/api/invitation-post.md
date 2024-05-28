@@ -3,7 +3,7 @@ title: "Create invitation"
 description: "Create a new invitation. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

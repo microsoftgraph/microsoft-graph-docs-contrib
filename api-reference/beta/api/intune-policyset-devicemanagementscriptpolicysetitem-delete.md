@@ -3,7 +3,7 @@ title: "Delete deviceManagementScriptPolicySetItem"
 description: "Deletes a deviceManagementScriptPolicySetItem."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

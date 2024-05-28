@@ -3,7 +3,7 @@ title: "Create activityBasedTimeoutPolicy"
 description: "Create a new activityBasedTimeoutPolicy."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

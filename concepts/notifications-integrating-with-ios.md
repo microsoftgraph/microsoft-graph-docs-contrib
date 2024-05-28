@@ -2,7 +2,7 @@
 title: "Integrate your iOS app with the client-side SDK (deprecated)"
 description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for iOS apps (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ---
 
 # Integrate your iOS app with the client-side SDK for user notifications (deprecated)

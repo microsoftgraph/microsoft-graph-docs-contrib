@@ -3,7 +3,7 @@ title: "recommendation resource type"
 description: "Represents a Microsoft Entra ID best practice or improvement action recommended by Microsoft for your Microsoft Entra tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -24,13 +24,13 @@ Inherits from [recommendationBase](../resources/recommendationbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recommendations](../api/directory-list-recommendation.md)|[recommendation](../resources/recommendation.md) collection|Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.|
-|[Get recommendation](../api/recommendation-get.md)|[recommendation](../resources/recommendation.md)|Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.|
+|[List](../api/directory-list-recommendation.md)|[recommendation](../resources/recommendation.md) collection|Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.|
+|[Get](../api/recommendation-get.md)|[recommendation](../resources/recommendation.md)|Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.|
 |[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `postponed` to a specified date and time.|
 |[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `dismissed`.|
 |[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `completedByUser`.|
 |[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `active`.|
-|[Get tenantSecureScores](../api/recommendation-tenantsecurescores.md)|[tenantSecureScore](../resources/tenantsecurescore.md) collection|Get historical Secure Score data for your tenant. |
+|[Get tenant Secure Score](../api/recommendation-tenantsecurescores.md)|[tenantSecureScore](../resources/tenantsecurescore.md) collection|Get historical Secure Score data for your tenant. |
 
 ## Properties
 |Property|Type|Description|

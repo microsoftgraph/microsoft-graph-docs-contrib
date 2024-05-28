@@ -3,7 +3,7 @@ title: "timeClockSettings resource type"
 description: "Represents timeclock settings for a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents timeclock settings for a [schedule](schedule.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

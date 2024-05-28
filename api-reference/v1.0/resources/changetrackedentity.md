@@ -3,7 +3,7 @@ title: "changeTrackedEntity resource type"
 description: "Represents an entity to track changes made to any supported Shifts resource"
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

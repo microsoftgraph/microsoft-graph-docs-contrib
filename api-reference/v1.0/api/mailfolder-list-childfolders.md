@@ -3,7 +3,7 @@ title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and collection of [m
 The following example shows a request.
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,7 +140,7 @@ Content-type: application/json
 The next example uses the `includeHiddenFolders` query parameter to get a list of child folders under a specified mail folder including hidden mail folders. The response includes the "Clutters" folder that has the **isHidden** set to true.
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -188,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

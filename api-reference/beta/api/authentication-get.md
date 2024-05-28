@@ -1,19 +1,21 @@
 ---
-title: "Get authentication signInPreferences"
-description: "Read the properties of a user's authentication sign in preferences."
+title: "Get authentication method states"
+description: "Read the properties of a user's authentication method states, such as their sign-in preferences."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get authentication signInPreferences
+# Get authentication method states
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [signInPreferences](../resources/signInPreferences.md) object.
+Read the properties of a user's authentication method states. Use this API to retrieve the following information:
+
+- A user's [signInPreferences](../resources/signInPreferences.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
-
+To retrieve the sign-in preferences for a user:
 <!-- {
   "blockType": "ignored"
 }
@@ -45,12 +47,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [signInPreferences](../resources/signInPreferences.md) object in the response body.
+For sign-in preferences: If successful, this method returns a `200 OK` response code and a [signInPreferences](../resources/signInPreferences.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

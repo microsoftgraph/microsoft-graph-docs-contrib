@@ -3,7 +3,7 @@ title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "printJob: redirect"
 description: Redirect a print job to a different printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
