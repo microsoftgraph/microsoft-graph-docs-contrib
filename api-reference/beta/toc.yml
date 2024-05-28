@@ -2336,8 +2336,6 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: createToken action
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-                      - name: getDefaultTeamsDeviceNonGmsEnrollmentProfile action
-                        href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md
                   - name: Android device owner enrollment token type
                     href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Android enrollment company code
@@ -2570,8 +2568,6 @@ items:
                         href: api/intune-books-ebookinstallsummary-get.md
                       - name: Update
                         href: api/intune-books-ebookinstallsummary-update.md
-                  - name: Encrypted provisioning package extras
-                    href: resources/intune-androidforwork-encryptedprovisioningpackageextras.md
                   - name: Enrollment profile for non gms teams device
                     href: resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md
                   - name: Enterprise code signing certificate
