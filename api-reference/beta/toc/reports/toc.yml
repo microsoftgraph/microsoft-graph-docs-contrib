@@ -1,6 +1,44 @@
 items:
 - name: Identity and access reports
   items:
+  - name: Microsoft Entra recommendations (preview)
+    items:
+    - name: Overview
+      href: ../../resources/recommendations-api-overview.md
+    - name: Recommendation
+      items:
+      - name: Recommendation
+        href: ../../resources/recommendation.md
+      - name: List
+        href: ../../api/directory-list-recommendation.md
+      - name: Get
+        href: ../../api/recommendation-get.md
+      - name: Postpone
+        href: ../../api/recommendation-postpone.md
+      - name: Dismiss
+        href: ../../api/recommendation-dismiss.md
+      - name: Complete
+        href: ../../api/recommendation-complete.md
+      - name: Reactivate
+        href: ../../api/recommendation-reactivate.md
+      - name: Get tenant Secure Score
+        href: ../../api/recommendation-tenantsecurescores.md
+    - name: Impacted resource
+      items:
+      - name: Impacted resource
+        href: ../../resources/impactedresource.md
+      - name: List
+        href: ../../api/recommendation-list-impactedresources.md
+      - name: Get
+        href: ../../api/impactedresource-get.md
+      - name: Postpone
+        href: ../../api/impactedresource-postpone.md
+      - name: Dismiss
+        href: ../../api/impactedresource-dismiss.md
+      - name: Complete
+        href: ../../api/impactedresource-complete.md
+      - name: Reactivate
+        href: ../../api/impactedresource-reactivate.md
   - name: Microsoft Entra activity reports
     items:
     - name: Overview

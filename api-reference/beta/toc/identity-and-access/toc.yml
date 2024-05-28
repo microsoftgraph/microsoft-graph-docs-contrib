@@ -3068,7 +3068,85 @@ items:
       href: ../../api/trustframework-put-trustframeworkpolicy.md
     - name: Delete
       href: ../../api/trustframeworkpolicy-delete.md
-  - name: User flows for Microsoft Entra ID and Azure AD B2C
+  - name: User flows in external tenants
+    items:
+    - name: Authentication events flow
+      items:
+      - name: Authentication events flow
+        href: ../../resources/authenticationeventsflow.md
+      - name: List
+        href: ../../api/identitycontainer-list-authenticationeventsflows.md
+      - name: Create
+        href: ../../api/identitycontainer-post-authenticationeventsflows.md
+      - name: Get
+        href: ../../api/authenticationeventsflow-get.md
+      - name: Update
+        href: ../../api/authenticationeventsflow-update.md
+      - name: Delete
+        href: ../../api/authenticationeventsflow-delete.md
+      - name: Identity providers in a user flow
+        items:
+        - name: List
+          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+        - name: Add
+          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+        - name: Remove
+          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+      - name: User flow attributes
+        items:
+        - name: List
+          href: ../../api/identityuserflowattribute-list.md
+        - name: Create
+          href: ../../api/identityuserflowattribute-post.md
+        - name: Get
+          href: ../../api/identityuserflowattribute-get.md
+        - name: Update
+          href: ../../api/identityuserflowattribute-update.md
+        - name: Delete
+          href: ../../api/identityuserflowattribute-delete.md
+        - name: List attributes in a user flow
+          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+        - name: List attributes in a user flow
+          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+        - name: Add attribute to a user flow
+          href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+        - name: Remove attribute from a user flow
+          href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+      - name: Linked applications
+        items:
+        - name: List
+          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+        - name: Add
+          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+        - name: Remove
+          href: ../../api/authenticationconditionapplication-delete.md
+    - name: External users self service sign up events flow
+      href: ../../resources/externalusersselfservicesignupeventsflow.md
+    - name: Identity user flow attribute
+      items:
+      - name: Identity user flow attribute
+        href: ../../resources/identityuserflowattribute.md
+      - name: List
+        href: ../../api/identityuserflowattribute-list.md
+      - name: Create
+        href: ../../api/identityuserflowattribute-post.md
+      - name: Get
+        href: ../../api/identityuserflowattribute-get.md
+      - name: Update
+        href: ../../api/identityuserflowattribute-update.md
+      - name: Delete
+        href: ../../api/identityuserflowattribute-delete.md
+    - name: Authentication condition application
+      items:
+      - name: Authentication condition application
+        href: ../../resources/authenticationconditionapplication.md
+      - name: List applications
+        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+      - name: Add applications
+        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+      - name: Remove applications
+        href: ../../api/authenticationconditionapplication-delete.md
+  - name: User flows in workforce tenants and Azure AD B2C
     items:
     - name: Identity user flow
       items:
@@ -3210,84 +3288,6 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
-  - name: User flows for Microsoft Entra ID for customers (preview)
-    items:
-    - name: Authentication events flow
-      items:
-      - name: Authentication events flow
-        href: ../../resources/authenticationeventsflow.md
-      - name: List
-        href: ../../api/identitycontainer-list-authenticationeventsflows.md
-      - name: Create
-        href: ../../api/identitycontainer-post-authenticationeventsflows.md
-      - name: Get
-        href: ../../api/authenticationeventsflow-get.md
-      - name: Update
-        href: ../../api/authenticationeventsflow-update.md
-      - name: Delete
-        href: ../../api/authenticationeventsflow-delete.md
-      - name: Identity providers in a user flow
-        items:
-        - name: List
-          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
-        - name: Add
-          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
-        - name: Remove
-          href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
-      - name: User flow attributes
-        items:
-        - name: List
-          href: ../../api/identityuserflowattribute-list.md
-        - name: Create
-          href: ../../api/identityuserflowattribute-post.md
-        - name: Get
-          href: ../../api/identityuserflowattribute-get.md
-        - name: Update
-          href: ../../api/identityuserflowattribute-update.md
-        - name: Delete
-          href: ../../api/identityuserflowattribute-delete.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-        - name: Add attribute to a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
-        - name: Remove attribute from a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-      - name: Linked applications
-        items:
-        - name: List
-          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-        - name: Add
-          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-        - name: Remove
-          href: ../../api/authenticationconditionapplication-delete.md
-    - name: External users self service sign up events flow
-      href: ../../resources/externalusersselfservicesignupeventsflow.md
-    - name: Identity user flow attribute
-      items:
-      - name: Identity user flow attribute
-        href: ../../resources/identityuserflowattribute.md
-      - name: List
-        href: ../../api/identityuserflowattribute-list.md
-      - name: Create
-        href: ../../api/identityuserflowattribute-post.md
-      - name: Get
-        href: ../../api/identityuserflowattribute-get.md
-      - name: Update
-        href: ../../api/identityuserflowattribute-update.md
-      - name: Delete
-        href: ../../api/identityuserflowattribute-delete.md
-    - name: Authentication condition application
-      items:
-      - name: Authentication condition application
-        href: ../../resources/authenticationconditionapplication.md
-      - name: List applications
-        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-      - name: Add applications
-        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-      - name: Remove applications
-        href: ../../api/authenticationconditionapplication-delete.md
 - name: Multicloud permissions management (preview)
   items:
   - name: Overview
@@ -4013,6 +4013,42 @@ items:
       href: ../../api/networkaccess-reports-getdeviceusagesummary.md
     - name: Get destination summary
       href: ../../api/networkaccess-reports-getdestinationsummaries.md
+  - name: Remote network
+    items:
+    - name: Remote network
+      href: ../../resources/networkaccess-remotenetwork.md
+    - name: List
+      href: ../../api/networkaccess-connectivity-list-remotenetworks.md
+    - name: Create
+      href: ../../api/networkaccess-connectivity-post-remotenetworks.md
+    - name: Get
+      href: ../../api/networkaccess-remotenetwork-get.md
+    - name: Update
+      href: ../../api/networkaccess-remotenetwork-update.md
+    - name: Delete
+      href: ../../api/networkaccess-connectivity-delete-remotenetworks.md
+    - name: Device link
+      items:
+      - name: Device link
+        href: ../../resources/networkaccess-devicelink.md
+      - name: List deviceLinks
+        href: ../../api/networkaccess-remotenetwork-list-devicelinks.md
+      - name: Create deviceLink
+        href: ../../api/networkaccess-remotenetwork-post-devicelinks.md
+      - name: Get deviceLink
+        href: ../../api/networkaccess-devicelink-get.md
+      - name: Delete deviceLink
+        href: ../../api/networkaccess-devicelink-delete.md
+      - name: List deviceLinks for a branchSite (deprecated)
+        href: ../../api/networkaccess-branchsite-list-devicelinks.md
+      - name: Create deviceLink for a branchSite (deprecated)
+        href: ../../api/networkaccess-branchsite-post-devicelinks.md
+    - name: Remote network connectivity configuration
+      items:
+      - name: Remote network connectivity configuration
+        href: ../../resources/networkaccess-remotenetworkconnectivityconfiguration.md
+      - name: Get
+        href: ../../api/networkaccess-remotenetworkconnectivityconfiguration-get.md
   - name: Remote network health event
     href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
@@ -4139,6 +4175,18 @@ items:
         href: ../../api/networkaccess-filteringrule-delete.md
 - name: Partner customer administration
   items:
+  - name: Partner security alert
+    items:
+    - name: Overview
+      href: ../../resources/partner-security-partnersecurityalert-api-overview.md
+    - name: Partner security alert
+      href: ../../resources/partner-security-partnersecurityalert.md
+    - name: List
+      href: ../../api/partner-security-partnersecurityalert-list-securityalerts.md
+    - name: Get
+      href: ../../api/partner-security-partnersecurityalert-get.md
+    - name: Update
+      href: ../../api/partner-security-partnersecurityalert-update.md
   - name: Granular delegated admin privileges
     displayName: GDAP, Partner Center, CSP, VAR
     items:
