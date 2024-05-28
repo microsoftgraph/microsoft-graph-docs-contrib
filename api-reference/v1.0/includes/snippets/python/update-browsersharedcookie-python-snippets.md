@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.browser_shared_cookie import BrowserSharedCookie
+from msgraph.generated.models.browser_shared_cookie_source_environment import BrowserSharedCookieSourceEnvironment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

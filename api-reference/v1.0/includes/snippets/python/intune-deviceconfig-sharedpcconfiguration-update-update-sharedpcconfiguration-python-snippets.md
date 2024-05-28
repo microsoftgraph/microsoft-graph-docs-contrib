@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.shared_p_c_configuration import SharedPCConfiguration
 from msgraph.generated.models.shared_p_c_account_manager_policy import SharedPCAccountManagerPolicy
+from msgraph.generated.models.shared_p_c_account_deletion_policy_type import SharedPCAccountDeletionPolicyType
+from msgraph.generated.models.shared_p_c_allowed_account_type import SharedPCAllowedAccountType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

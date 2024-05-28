@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionPolicy;
+use Microsoft\Graph\Generated\Models\EnforcementLevel;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionResourceCollection;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionDataRecoveryCertificate;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionApp;
@@ -15,6 +16,9 @@ use Microsoft\Graph\Generated\Models\WindowsInformationProtectionProxiedDomainCo
 use Microsoft\Graph\Generated\Models\ProxiedDomain;
 use Microsoft\Graph\Generated\Models\WindowsInformationProtectionIPRangeCollection;
 use Microsoft\Graph\Generated\Models\IpRange;
+use Microsoft\Graph\Generated\Models\PinUppercaseLetters;
+use Microsoft\Graph\Generated\Models\PinLowercaseLetters;
+use Microsoft\Graph\Generated\Models\PinSpecialCharacters;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

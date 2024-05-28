@@ -21,7 +21,7 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) collection|Get a list of the [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) objects and their properties.|
+|[List](../api/gcpauthorizationsystem-list.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) collection|Get a list of the [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

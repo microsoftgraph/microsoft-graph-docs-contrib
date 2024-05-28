@@ -45,7 +45,7 @@ answers := []graphmodels.AccessPackageAnswerable {
 }
 requestBody.SetAnswers(answers)
 additionalData := map[string]interface{}{
-assignment := graphmodels.New()
+assignment := graph.New()
 accessPackageId := "977c7ff4-ef8f-4910-9d31-49048ddf3120"
 assignment.SetAccessPackageId(&accessPackageId) 
 	requestBody.SetAssignment(assignment)

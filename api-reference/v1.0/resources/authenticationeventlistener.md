@@ -13,9 +13,18 @@ Namespace: microsoft.graph
 
 To customize the authentication process, listeners can be registered which specify that for some event, on some conditions, some custom logic can be invoked. This is an abstract type from which the following types are derived.
 
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md) resource type
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
 
 Inherits from [entity](../resources/entity.md).
+
+> [!NOTE]
+>
+> You can have a maximum of 250 event listeners.
+
 
 ## Methods
 |Method|Return type|Description|
@@ -31,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
+|authenticationEventsFlowId|String|Indicates the authenticationEventListener is associated with an [authenticationEventsFlow](../resources/authenticationeventsflow.md). Read-only.
 
 ## Relationships
 None.
@@ -52,6 +62,7 @@ The following JSON representation shows the resource type.
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
+  "authenticationEventsFlowId": "String"
 }
 ```
 

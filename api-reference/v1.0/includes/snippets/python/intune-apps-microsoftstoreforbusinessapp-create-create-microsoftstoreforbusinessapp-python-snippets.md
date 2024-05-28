@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.microsoft_store_for_business_app import MicrosoftStoreForBusinessApp
 from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
+from msgraph.generated.models.microsoft_store_for_business_license_type import MicrosoftStoreForBusinessLicenseType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

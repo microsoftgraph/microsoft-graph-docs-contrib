@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RemediatePostRequestBody;
-use Microsoft\Graph\Generated\Models\AnalyzedEmail;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Security\Collaboration\AnalyzedEmails\MicrosoftGraphSecurityRemediate\RemediatePostRequestBody
+use Microsoft\Graph\Beta\Generated\Models\Security\Severity;
+use Microsoft\Graph\Beta\Generated\Models\Security\Action;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\AnalyzedEmail
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

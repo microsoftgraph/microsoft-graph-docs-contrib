@@ -18,7 +18,7 @@ Entity representing the catalog of content that you can approve for deployment.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the [catalogEntry](../resources/windowsupdates-catalogentry.md) resources from the entries navigation property. Returns **catalogEntry** resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
+|[List catalog entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the [catalogEntry](../resources/windowsupdates-catalogentry.md) resources from the entries navigation property. Returns **catalogEntry** resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
 
 ## Properties
 |Property|Type|Description|

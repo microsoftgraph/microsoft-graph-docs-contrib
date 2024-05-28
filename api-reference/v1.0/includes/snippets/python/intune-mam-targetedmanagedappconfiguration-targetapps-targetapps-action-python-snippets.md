@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.deviceappmanagement.targetedmanagedappconfigurations.item.target_apps.target_apps_post_request_body import TargetAppsPostRequestBody
 from msgraph.generated.models.managed_mobile_app import ManagedMobileApp
 from msgraph.generated.models.android_mobile_app_identifier import AndroidMobileAppIdentifier
+from msgraph.generated.models.targeted_managed_app_group_type import TargetedManagedAppGroupType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
