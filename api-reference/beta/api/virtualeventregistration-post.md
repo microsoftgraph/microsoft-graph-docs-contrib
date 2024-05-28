@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) attendee.
+[PLACEHOLDER DESCRIPTION: i.e Create a [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) attendee.]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
