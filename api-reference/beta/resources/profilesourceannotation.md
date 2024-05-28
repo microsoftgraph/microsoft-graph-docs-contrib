@@ -36,7 +36,7 @@ The following table shows the mapping between the **id** value and the source sy
 | 46a57efc-33f8-4eec-a512-b90039ad6187                                            | User initiated edits                      |
 | 107a83c9-714e-4d52-9d08-c303f081323b                                            | Photo Etag                                |
 
-*Microsoft Entra ID (the 2 Ids are due to implementation differences and will be combined into 1 eventually).
+>**Note:** The two Microsoft Entra IDs result from implementation differences and might be combined into one in the future.
 
 For more information about how to set the values of properties in the **profileSourceAnnotation** resource, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
