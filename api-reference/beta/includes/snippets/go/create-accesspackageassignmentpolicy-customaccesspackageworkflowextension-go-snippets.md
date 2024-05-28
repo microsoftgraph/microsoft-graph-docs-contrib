@@ -70,7 +70,7 @@ customExtensionHandlers := []graphmodels.CustomExtensionHandlerable {
 }
 requestBody.SetCustomExtensionHandlers(customExtensionHandlers)
 additionalData := map[string]interface{}{
-expiration := graphmodels.New()
+expiration := graph.New()
 type := "afterDuration"
 expiration.SetType(&type) 
 duration := "P365D"

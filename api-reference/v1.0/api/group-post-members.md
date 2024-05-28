@@ -30,8 +30,20 @@ The following table shows the least privileged permission that's required by eac
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
-> [!IMPORTANT]
-> To add members to a role-assignable group, the caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following least privileged roles are supported for this operation, except for role-assignable groups:
+
+- Group owners
+- Directory Writers
+- Groups Administrator
+- Identity Governance Administrator
+- User Administrator
+- Exchange Administrator - only for Microsoft 365 groups
+- SharePoint Administrator - only for Microsoft 365 groups
+- Teams Administrator - only for Microsoft 365 groups
+- Yammer Administrator - only for Microsoft 365 groups
+- Intune Administrator - only for security groups
+
+To add members to a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
 ## HTTP request
 
@@ -130,7 +142,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Add multiple members to a group in a single request
 
-This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Up to 20 members can be added in a single request. The POST operation isn't supported. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
 
 #### Request
 

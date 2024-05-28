@@ -18,8 +18,8 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
-| [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
+| [Get](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
+| [Update](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
 
 ## Properties  
 | Property | Type | Description | 

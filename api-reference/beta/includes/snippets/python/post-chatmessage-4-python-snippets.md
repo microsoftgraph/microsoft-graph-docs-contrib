@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.chat_message import ChatMessage
-from msgraph.generated.models.item_body import ItemBody
-from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.chat_message import ChatMessage
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.chat_message_attachment import ChatMessageAttachment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

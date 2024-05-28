@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.chats.item.installedapps.item.upgrade.upgrade_post_request_body import UpgradePostRequestBody
-from msgraph.generated.models.teams_app_permission_set import TeamsAppPermissionSet
-from msgraph.generated.models.teams_app_resource_specific_permission import TeamsAppResourceSpecificPermission
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.chats.item.installedapps.item.upgrade.upgrade_post_request_body import UpgradePostRequestBody
+from msgraph_beta.generated.models.teams_app_permission_set import TeamsAppPermissionSet
+from msgraph_beta.generated.models.teams_app_resource_specific_permission import TeamsAppResourceSpecificPermission
+from msgraph_beta.generated.models.teams_app_resource_specific_permission_type import TeamsAppResourceSpecificPermissionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

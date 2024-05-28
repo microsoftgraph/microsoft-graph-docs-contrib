@@ -7,15 +7,15 @@ items:
     items:
     - name: Community
       href: ../../resources/community.md
-    - name: Create community
+    - name: Create
       href: ../../api/employeeexperience-post-communities.md
-    - name: Get community
+    - name: Get
       href: ../../api/community-get.md
   - name: Engagement async operation
     items:
     - name: Engagement async operation
       href: ../../resources/engagementasyncoperation.md
-    - name: Get engagementAsyncOperation
+    - name: Get
       href: ../../api/engagementasyncoperation-get.md
 - name: Employee goals (preview)
   items:
@@ -23,9 +23,9 @@ items:
     items:
     - name: Goals export job
       href: ../../resources/goalsexportjob.md
-    - name: List goalsExportJobs
+    - name: List
       href: ../../api/goals-list-exportjobs.md
-    - name: Create goalsExportJob
+    - name: Create
       href: ../../api/goals-post-exportjobs.md
-    - name: Get goalsExportJob
+    - name: Get
       href: ../../api/goalsexportjob-get.md

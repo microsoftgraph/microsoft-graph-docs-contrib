@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.call import Call
-from msgraph.generated.models.modality import Modality
-from msgraph.generated.models.service_hosted_media_config import ServiceHostedMediaConfig
-from msgraph.generated.models.media_info import MediaInfo
-from msgraph.generated.models.join_meeting_id_meeting_info import JoinMeetingIdMeetingInfo
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.call import Call
+from msgraph_beta.generated.models.modality import Modality
+from msgraph_beta.generated.models.service_hosted_media_config import ServiceHostedMediaConfig
+from msgraph_beta.generated.models.media_info import MediaInfo
+from msgraph_beta.generated.models.join_meeting_id_meeting_info import JoinMeetingIdMeetingInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 
