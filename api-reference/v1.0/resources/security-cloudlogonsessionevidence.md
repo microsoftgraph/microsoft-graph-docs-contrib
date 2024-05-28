@@ -21,7 +21,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:----------|:-------|:---|
 | sessionId | String| The session id for the account reported in the alert. | 
 | account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the log-on session. |
-| protocol  | String| The auth protocol that is used in this session, if known. |
+| protocol  | String| The authentication protocol that is used in this session, if known. |
 | deviceName| String| The friendly name of the device, if known.  |
 | operatingSystem  | String| The operating system that the device is running, if known. |
 | browser| String | The browser that is used for the logon, if known. |
