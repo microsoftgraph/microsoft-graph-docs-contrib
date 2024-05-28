@@ -1,6 +1,6 @@
 ---
 title: "exchangeRestoreSession resource type"
-description: "Describes exchange mailbox restore session and its properties"
+description: "Represents restore-related tasks on artfiacts that are protected by an [Exchange protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore session APIs are used by Global Admin or Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
+Represents restore-related tasks on artfiacts that are protected by an [Exchange protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Global Admins or Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a mailbox protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create exchangeRestoreSession](../api/backuprestoreroot-post-exchangerestoresessions.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
-|[List exchangeRestoreSession](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) and their properties.|
-|[Update exchangeRestoreSession](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[Create](../api/backuprestoreroot-post-exchangerestoresessions.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[List](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) objects and their properties.|
+|[Update](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -31,26 +31,26 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restore session fails or completes with an error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resources/exchangerestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/exchangerestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 |Member | Description |
 |:------|:------------|
-|draft|All artifacts are in "added" status, restore session status is "draft".|
-|activating|All artifacts are in "scheduling" status, restore session status is "activating".|
-|active|All or any restore artifacts are in scheduled or inProgress status, restore session status will be active.|
-|completedWithError|Some restore artifacts in failed status, some in succeeded status and all the artifacts are in terminal state, restore session status will be completedWithErrors.|
-|completed| All restore artifacts are in succeeded status, restore session status will be completed.|
-|failed| All restore artifacts are in failed status, restore session status will be failed.|
+|draft|All artifacts are added.|
+|activating|All artifacts are scheduled.|
+|active|All or any restore artifacts are scheduled or in progress.|
+|completedWithError|Some artifacts failed to restore, and some succeeded.|
+|completed| All restore artifacts are succeeded.|
+|failed| All restore artifacts are failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of exchange mailbox restore point and destination relevant details that can be used to restore it|
+|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore Exchange mailboxes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
