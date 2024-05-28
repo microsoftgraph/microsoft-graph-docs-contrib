@@ -64,7 +64,7 @@ The following example shows the request body with the **shouldSetSpoSiteReadOnly
 
 ## Response
 
-If archiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
+If archiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header that specifies the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle the archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Examples
 
@@ -85,6 +85,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/arch
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "name": "archive_channel"
@@ -98,38 +99,43 @@ Content-Length: 0
 
 ### Example 2: Archive a channel when the team is archived
 
-The following example shows a request when the **team is archived**.
+The following example shows a request to archive a channel that fails because the team is archived; the team must be active to archive or unarchive a channel.
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "archive_channel_on_archived_team"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/archive
 ```
 
 #### Response
-The following example shows the `400` error response.
 
-<!-- { "blockType": "ignored" } -->
+The following example shows the `400 Bad Request` response code with a corresponding error message.
 
+<!-- {
+  "blockType": "response",
+  "name": "archive_channel_on_archived_team"
+}-->
 ```http
 http/1.1 400 Bad Request
 Content-Type: application/json
 Content-Length: 193
 
 {
-    "error": {
-        "code": "BadRequest",
-        "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
-        "innerError": {
-            "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
-            "code": "Unknown",
-            "innerError": {},
-            "date": "2023-12-11T04:26:35",
-            "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
-            "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
-        }
+  "error": {
+    "code": "BadRequest",
+    "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
+    "innerError": {
+      "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
+      "code": "Unknown",
+      "innerError": {},
+      "date": "2023-12-11T04:26:35",
+      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
     }
+  }
 }
-
 ```
