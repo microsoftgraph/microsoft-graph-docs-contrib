@@ -19,8 +19,8 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/backuprestoreroot-get.md) BackupRestore Service|[backupRestoreRoot](../resources/backuprestoreroot.md)|Get details of the Backup Storage service.|
-|[Enable](../api/backuprestoreroot-enable.md) BackupRestore Service|[backupRestoreRoot](../resources/backuprestoreroot.md)|Enable the Backup Storage service.|
+|[Get](../api/backuprestoreroot-get.md)|[backupRestoreRoot](../resources/backuprestoreroot.md)|Get details of the Backup Storage service.|
+|[Enable](../api/backuprestoreroot-enable.md)|[backupRestoreRoot](../resources/backuprestoreroot.md)|Enable the Backup Storage service.|
 
 ## Properties
 
