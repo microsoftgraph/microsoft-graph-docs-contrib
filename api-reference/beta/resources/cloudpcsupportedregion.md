@@ -19,7 +19,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List the supported regions that are available for creating Cloud PC connections.|
+|[List](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List the supported regions that are available for creating Cloud PC connections.|
 
 ## Properties
 

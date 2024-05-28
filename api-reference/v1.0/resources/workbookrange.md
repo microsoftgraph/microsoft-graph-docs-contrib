@@ -18,8 +18,8 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Range](../api/range-get.md) | [Range](workbookrange.md) |Read properties and relationships of range object.|
-|[Update](../api/range-update.md) | [Range](workbookrange.md)	|Update Range object. |
+|[Get range](../api/range-get.md) | [Range](workbookrange.md) |Read properties and relationships of range object.|
+|[Update range](../api/range-update.md) | [Range](workbookrange.md)	|Update Range object. |
 |[Boundingrect](../api/range-boundingrect.md)|[Range](workbookrange.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
 |[Cell](../api/range-cell.md)|[Range](workbookrange.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
 |[Column](../api/range-column.md)|[Range](workbookrange.md)|Gets a column contained in the range.|
@@ -38,7 +38,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |[Usedrange](../api/range-usedrange.md)|[Range](workbookrange.md)|Returns the used range of the given range object.|
 |[Clear](../api/range-clear.md)|None|Clear range values, format, fill, border, etc.|
 |[Delete](../api/range-delete.md)|None|Deletes the cells associated with the range.|
-|[Insert](../api/range-insert.md)|[Range](workbookrange.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
+|[Insert range](../api/range-insert.md)|[Range](workbookrange.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
 |[Merge](../api/range-merge.md)|None|Merge the range cells into one region in the worksheet.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
 |[Unmerge](../api/range-unmerge.md)|None|Unmerge the range cells into separate cells.|
