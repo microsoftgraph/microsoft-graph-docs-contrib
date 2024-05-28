@@ -1,7 +1,8 @@
 ---
 title: "List driveInclusionRules"
 description: "List drive inclusion rules associated with a OneDrive for Business protection policy."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -71,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.driveProtectionRule"
+  "@odata.type": "Collection(microsoft.graph.driveProtectionRule)"
 }
 -->
 ``` http
@@ -81,7 +82,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
 {
    "@odata.context": "/solutions/backupRestore/oneDriveForBusinessProtectionPolicies('71633878-8321-4950-bfaf-ed285bdd1461')/driveInclusionRules",
    "@odata.nextLink": "/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-   "values":
+   "value":
    [
       {
          "@odata.type": "#microsoft.graph.driveProtectionRule",

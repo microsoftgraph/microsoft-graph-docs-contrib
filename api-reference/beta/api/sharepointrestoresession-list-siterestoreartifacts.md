@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant
+List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant.
 
 ## Permissions
 
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.Read.All|Not available.|
 
 ## HTTP request
 
@@ -81,7 +81,7 @@ Content-Type: application/json
 {
   "@odata.id": "/solutions/backupRestore/sharepointRestoreSessions(845457dc-4bb2-4815-bef3-8628ebd1952e)",
   "@odata.nextLink": "/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/siteRestoreArtifacts?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values": [
+  "value": [
     {
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
       "destinationType": "inPlace",
@@ -89,8 +89,8 @@ Content-Type: application/json
       "startDateTime": "2023-12-04T12:18:55.2117521Z",
       "completionDateTime": "2023-12-04T13:22:12.7209691Z",
       "restoredSiteId": "42f0e20e-748a-4444-80bb-d641d1865574",
-      "restoredSiteName": "testsite101", // Newly Added
-      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite101R3" // Newly Added
+      "restoredSiteName": "testsite101",
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite101R3",
       "restorePoint": {
         "id": "c7e702b7-b5ee-4faf-9e43-5fd23b4fb0bf_1701648000_14_1",
         "protectionDateTime": "2023-12-04T00:00:00Z",
@@ -107,8 +107,8 @@ Content-Type: application/json
       "startDateTime": "2024-02-10T12:18:55.2117521Z",
       "completionDateTime": "2024-02-10T13:22:12.7209691Z",
       "restoredSiteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-      "restoredSiteName": "testsite102", // Newly Added
-      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite102R0" // Newly Added
+      "restoredSiteName": "testsite102",
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite102R0",
       "restorePoint": {
         "id": "28684b23-7f38-44bc-91c0-a3c92758030d_1601648000_14_1",
         "protectionDateTime": "2024-02-10T00:00:00Z",

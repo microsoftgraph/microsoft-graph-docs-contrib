@@ -1,7 +1,8 @@
 ---
 title: "Create sharePointProtectionPolicy"
-description: "Create a Protection Policy for a M365 service Sharepoint"
-author: "tushar20, manikantsinghms"
+description: "Create a protection policy for a M365 service SharePoint"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a Protection Policy for a M365 service Sharepoint. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a protection policy for a M365 service SharePoint. Policy will be created in `inactive` state. User can also provide a list of protection units under the policy.
 
 ## Permissions
 
@@ -21,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available.|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|Not Available.|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -44,10 +45,11 @@ POST /solutions/backupRestore/sharePointProtectionPolicies/
 ## Request body
 
 You can specify the following properties when creating a **sharePointProtectionPolicy** object.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the SharePoint Protection Policy.|
-|siteProtectionUnits|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy object. Refer to [site](../resources/site.md) for the format of siteId.|
+|displayName|String|Name of the SharePoint Protection Policy. Optional.|
+|siteProtectionUnits|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy object. Required. Refer to [site](../resources/site.md) for the format of siteId.|
 
 ## Response
 
@@ -97,7 +99,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
 
 {
   "@odata.context": " /solutions/backupRestore/$metadata#sharePointProtectionPolicies/$entity",

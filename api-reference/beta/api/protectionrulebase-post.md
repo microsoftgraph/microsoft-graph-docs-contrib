@@ -24,9 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -35,7 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/{protectionPolicyBase}/{protectionPolicyId}/{protectionRuleBase}
+POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules
+POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules
+POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules
 ```
 
 ## Request headers
@@ -48,29 +50,28 @@ GET /solutions/backupRestore/{protectionPolicyBase}/{protectionPolicyId}/{protec
 
 In the request body, supply a JSON representation of the [protectionRuleBase](../resources/protectionRuleBase.md) object.
 
-You can specify the following properties when creating a siteInclusionRule.
-
 ### Properties to create a new siteInclusionRule
 
+You can specify the following properties when creating a siteInclusionRule.
 |Property|Type|Description|
 |:---|:---|:---|
 |siteExpression|String|Contains site expression. [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples). Required.|
 
-You can specify the following properties when creating a driveInclusionRule.
 
 ### Properties to create a new driveInclusionRule
 
+You can specify the following properties when creating a driveInclusionRule.
 |Property|Type|Description|
 |:---|:---|:---|
 |driveExpression|String|Contains drive expression. [driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples). Required.|
 
-You can specify the following properties when creating a mailboxInclusionRule.
 
 ### Properties to create a new mailboxInclusionRule
 
+You can specify the following properties when creating a mailboxInclusionRule.
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [example](../resources/mailboxprotectionrule.md#mailboxexpression-examples) for usage details. Required|
+|mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples). Required|
 
 ## Response
 
@@ -93,9 +94,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules 
 Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 
 {
     "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
@@ -151,15 +149,12 @@ Create a new driveInclusionRule associated with a [oneDriveForBusinessProtection
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "onedriveforbusinessprotectionpolicy_create_driveinclusionrule"
+  "name": "onedriveforbusinessprotectionpolicy_create_driveinclusionrules"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules 
 Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 
 {
     "driveExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"

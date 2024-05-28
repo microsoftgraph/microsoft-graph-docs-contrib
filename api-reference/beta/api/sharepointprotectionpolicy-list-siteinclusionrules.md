@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [siteProtectionRule](../resources/siteprotectionrule.md) objects associated with a  [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Get a list of [siteProtectionRule](../resources/siteprotectionrule.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
@@ -73,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteProtectionRule"
+  "@odata.type": "Collection(microsoft.graph.siteProtectionRule)"
 }
 -->
 ``` http
@@ -83,7 +83,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
 {
   "@odata.context": "/solutions/backupRestore/sharePointProtectionPolicies('71633878-8321-4950-bfaf-ed285bdd1461')/siteInclusionRules",
   "@odata.nextLink": "/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values":
+  "value":
    [
       {
          "@odata.type": "#microsoft.graph.siteProtectionRule",

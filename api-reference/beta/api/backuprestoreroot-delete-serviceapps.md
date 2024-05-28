@@ -1,8 +1,8 @@
 ---
 title: "Delete serviceApp"
 description: "Delete a serviceApp."
-author: "tkanaujia"
-ms.reviewer: "maniksingh"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.ReadWrite.All|Not Available.|
+|Application|BackupRestore-Control.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -73,5 +73,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Update exchangeProtectionPolicy"
-description: "Updates the Protection Policy for Microsoft 365 service Exchange."
+description: "Updates the protection policy for Microsoft 365 service Exchange."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available.|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|Not Available.|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -48,8 +48,10 @@ In the request body, provide a JSON representation of following properties to up
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Optional|
-|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy. Required|
+|displayName|String|Display Name of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Optional.|
+|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy. Required.|
+
+To remove a **mailboxProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
 
 ## Response
 
@@ -60,8 +62,6 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 ### Request
 
 The following example shows a request.
-
-To remove a **mailboxProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
 
 <!-- {
   "blockType": "request",

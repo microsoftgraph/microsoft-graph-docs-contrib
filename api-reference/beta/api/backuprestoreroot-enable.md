@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not Available.|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|BackupRestore-Control.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -46,10 +46,10 @@ POST /solutions/backupRestore/enable
 
 In the request body, supply the **appOwnerTenantId** in which this application is registered.
 
-## Properties
+### Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|`AppOwnerTenantId` in which this application is registered. Required|
+|appOwnerTenantId|`AppOwnerTenantId` in which this application is registered. Required.|
 
 ## Response
 

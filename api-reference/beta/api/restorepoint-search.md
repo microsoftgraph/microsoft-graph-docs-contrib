@@ -1,6 +1,6 @@
 ---
 title: "restorePoint: search"
-description: "Search Restore Points for Protection Units."
+description: "Search restore points for protection units."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search Restore Points for [Protection Units](../resources/protectionpolicybase.md).
+Search restore points associated with [protectionUnit](../resources/protectionunitbase.md).
 
 ## Permissions
 
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
+|Delegated (work or school account)|BackupRestore-Search.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
+|Application|BackupRestore-Search.Read.All|Not available.|
 
 ## HTTP request
 
@@ -51,8 +51,8 @@ In the request body, supply a JSON representation of the following parameters.
 |:---|:---|:---|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
 |protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The time of creation of the protection unit.  Required.|
-|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Describes the preference to get Restore Point. The possible values are `oldest`, `latest`. Required.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Tag to get Restore Point type. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Required.|
+|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Describes the preference to get Restore Point. The possible values are `oldest`, `latest`. Optional.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Tag to get Restore Point type. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
 
 ### restorePointPreference values
 

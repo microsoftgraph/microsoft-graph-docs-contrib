@@ -1,6 +1,6 @@
 ---
 title: "Create exchangeRestoreSession"
-description: "Create a new Exchange restore session."
+description: "Create a new Exchange restore session object."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).
+Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) object.
 
 ## Permissions
 
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not Available.|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|Not Available.|
+|Application|BackupRestore-Restore.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -47,12 +47,12 @@ POST /solutions/backupRestore/exchangeRestoreSessions
 
 In the request body, supply a JSON representation of the [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
-You can specify the following properties when creating an **exchangeRestoreSession**.
+You can specify the following properties when creating an **exchangeRestoreSession** object.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) Required|
+|mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) Required.|
 
 
 ## Response

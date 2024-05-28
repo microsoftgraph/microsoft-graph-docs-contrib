@@ -1,7 +1,8 @@
 ---
 title: "List protectionPolicyBase"
 description: "List all the protection policies available in a tenant."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the Protection Policies available in a tenant.
+List all the protection policies available in a tenant.
 
 Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
 
@@ -71,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.protectionPolicyBase"
+  "@odata.type": "Collection(microsoft.graph.protectionPolicyBase)"
 }
 -->
 ``` http
@@ -80,8 +81,8 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
 
 {
   "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies",
-  "@odata.nextLink": "/solutions/backuprestore/ProtectionPolicies?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values": [
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backuprestore/ProtectionPolicies?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "value": [
     {
       "@odata.type": "#microsoft.graph.sharePointProtectionPolicy",
       "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
@@ -93,9 +94,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -105,9 +106,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "def@contoso.com",
+          "email": "User2@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -133,9 +134,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -145,9 +146,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "def@contoso.com",
+          "email": "User2@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -173,9 +174,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -185,9 +186,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "def@contoso.com",
+          "email": "User2@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",

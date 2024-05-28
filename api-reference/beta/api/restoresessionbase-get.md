@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get properties of [restoreSession](../resources/restoresessionbase.md) object by ID.
+Get properties of a [restoreSession](../resources/restoresessionbase.md) object by ID.
 
 ## Permissions
 
@@ -103,7 +103,6 @@ Content-Type: application/json
       "displayName": "Ryan"
     }
   },
-  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
-  "error": null
+  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z"
 }
 ```

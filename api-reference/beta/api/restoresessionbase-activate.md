@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -92,7 +92,7 @@ Content-Type: application/json
     },
     "user": {
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "User1"
     }
   },
   "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -103,7 +103,7 @@ Content-Type: application/json
     },
     "user": {
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "DEF"
+      "displayName": "User2"
     }
   },
   "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"

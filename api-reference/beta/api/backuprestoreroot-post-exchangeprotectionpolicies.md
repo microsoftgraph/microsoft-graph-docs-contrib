@@ -1,6 +1,6 @@
 ---
 title: "Create exchangeProtectionPolicy"
-description: "Create a Protection Policy for a M365 service Exchange."
+description: "Create a protection policy for a M365 service Exchange."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -23,9 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|Not Available|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -113,9 +113,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "abc@contoso.com",
+      "email": "User1@contoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "User1"
     }
   },
   "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -125,9 +125,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "def@constoso.com",
+      "email": "User2@constoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "DEF"
+      "displayName": "User2"
     }
   },
   "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",

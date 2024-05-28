@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for a Microsoft 365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) object to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
-
-To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the Id of the [siteprotectionunit](../resources/siteprotectionunit.md).
+Updates the protection policy for a Microsoft 365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) object to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 ## Permissions
 
@@ -24,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -73,6 +71,7 @@ To remove a **siteProtectionUnit** from the policy, specify the @removed annotat
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+Content-Type: application/json
 
 {
   "displayName": "SharePoint Policy - Inadvertent data loss",
@@ -137,9 +136,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -149,9 +148,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -168,9 +167,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -180,9 +179,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -199,9 +198,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -211,9 +210,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -230,9 +229,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -242,9 +241,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -261,9 +260,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -273,9 +272,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -306,9 +305,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -318,9 +317,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",

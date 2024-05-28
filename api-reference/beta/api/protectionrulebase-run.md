@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Activates a [protectionRuleBase](../resources/protectionrulebase.md).
 
-Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is `draft` -> `active`.
+Upon running the protection rule using the /run API, the status of protection pule transitions to active. The state transition is `draft` -> `active`.
 
 ## Permissions
 
@@ -24,9 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -35,7 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/backupRestore/{protectionPolicyBase}/{protectionPolicyBaseId}/{protectionRuleBase}/{protectionRuleBaseId}/run
+POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}/run
+POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/run
+POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
 ```
 
 ## Request headers
@@ -56,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [protectionRul
 
 ### Example 1 : Activate a siteInclusionRule associated with a SharePoint protection policy
 
-Activate a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Activate a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.
 
 #### Request
 
@@ -113,7 +115,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
 
 ### Example 2 : Activate a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
-Activate a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Activate a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
 
 ### Request
 
@@ -170,7 +172,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
 
 ### Example 3 : Activate a mailboxInclusionRule associated with an Exchange protection policy
 
-Activate a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Activate a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object.
 
 #### Request
 

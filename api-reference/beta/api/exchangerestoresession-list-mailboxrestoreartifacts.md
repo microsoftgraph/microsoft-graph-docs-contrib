@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifacts
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -52,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [mailboxRestoreArtifact] objects (../resources/mailboxrestoreartifact.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects in the response body.
 
 ## Examples
 
@@ -65,9 +61,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifacts
+GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/mailboxRestoreArtifacts
 ```
-
 
 ### Response
 

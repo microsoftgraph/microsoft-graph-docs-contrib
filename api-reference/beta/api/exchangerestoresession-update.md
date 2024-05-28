@@ -1,6 +1,6 @@
 ---
 title: "Update exchangeRestoreSession"
-description: "Update the properties of an Exchange Restore Session."
+description: "Update the properties of an Exchange restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).
-To remove, specify the @removed annotation in the request body for the respective Restore Point Artifact together with the Id of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md).
 
 ## Permissions
 
@@ -23,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not Available.|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|Not Available.|
+|Application|BackupRestore-Restore.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -50,7 +49,7 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects.|
+|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
 
 To remove an **exchangeRestoreSession**, specify the @removed annotation in the request body for the restore point artifact with the ID of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md).
 
@@ -69,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSessions/2b814d8c-71fd-4d00-a01a-31850bc5b32c
 Content-Type: application/json
 
 {

@@ -82,7 +82,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "values": [
     {
       "@odata.type": "#microsoft.graph.siteProtectionUnit",
@@ -98,9 +98,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -110,9 +110,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -132,9 +132,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -144,9 +144,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -166,9 +166,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -178,9 +178,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -199,9 +199,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -211,9 +211,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -233,9 +233,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -245,9 +245,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -287,7 +287,7 @@ HTTP/1.1 200 OK
 
 {
   "@odata.id": "/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
-  "@odata.nextLink": "/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteProtectionUnits?&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteProtectionUnits?&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "values": [
     {
       "@odata.type": "#microsoft.graph.siteProtectionUnit",
@@ -303,9 +303,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -315,9 +315,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -337,9 +337,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -349,9 +349,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -371,9 +371,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -383,9 +383,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -405,9 +405,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -417,9 +417,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -439,9 +439,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -451,9 +451,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",

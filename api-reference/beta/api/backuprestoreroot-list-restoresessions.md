@@ -80,7 +80,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "/solutions/backupRestore/$metadata#restoreSessions",
-  "@odata.nextLink": "/solutions/backupRestore/sharepointRestoreSessions?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "values": [
     {
       "@odata.type": "#microsoft.graph.sharepointRestoreSession",
@@ -93,7 +93,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2023-03-30T12-01-03.45Z",
@@ -104,7 +104,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
@@ -121,7 +121,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2023-03-30T12-01-03.45Z",
@@ -132,7 +132,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
@@ -149,7 +149,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2023-03-30T12-01-03.45Z",
@@ -160,7 +160,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
@@ -177,7 +177,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2023-03-30T12-01-03.45Z",
@@ -188,7 +188,7 @@ Content-Type: application/json
         },
         "user": {
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "DEF"
+          "displayName": "User2"
         }
       },
       "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",

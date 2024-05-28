@@ -1,6 +1,6 @@
 ---
 title: "Delete protectionPolicyBase"
-description: "Delete a Protection Policy"
+description: "Delete a protection policy"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a Protection Policy. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
+Delete a protection policy. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
+DELETE https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 Authorization: Bearer <Access-Token>
 ```
 

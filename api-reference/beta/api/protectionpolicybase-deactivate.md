@@ -1,6 +1,6 @@
 ---
 title: "protectionPolicyBase: deactivate"
-description: "Deactivate a Protection Policy"
+description: "Deactivate a protection policy"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deactivate a [Protection Policy](../resources/protectionpolicybase.md).
+Deactivate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -50,11 +50,11 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
 
-## Examples : Deactivate an active Protection Policy
+## Examples
 
-### Example 1
+### Example 1: Deactivate an active protection policy
 
-Deactivating the Protection Policy when it is in active state.
+Deactivating the protection policy when it is in active state.
 
 #### Request
 
@@ -81,7 +81,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
@@ -127,9 +127,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
 }
 ```
 
-### Example 2 : Deactivate a Protection Policy in updating state
+### Example 2 : Deactivate a protection policy in updating state
 
-Deactivating the Protection Policy when it is in updating state.
+Deactivating the protection policy when it is in updating state.
 
 #### Request
 
@@ -141,7 +141,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
+POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
 #### Response

@@ -1,6 +1,6 @@
 ---
 title: "Get protectionUnitBase"
-description: "Get a Protection Unit"
+description: "Get a protection unit by ID"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Protection Unit. Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.
+Get a protection unit by ID. Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.
 
 ## Permissions
 

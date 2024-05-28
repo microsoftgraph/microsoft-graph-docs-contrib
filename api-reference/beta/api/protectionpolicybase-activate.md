@@ -1,6 +1,6 @@
 ---
 title: "protectionPolicyBase: activate"
-description: "Activate a ProtectionPolicy"
+description: "Activate a protection policy"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a Protection Policy.
+Activate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -22,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -52,9 +52,9 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ## Examples
 
-### Example 1 : Activate an inactive Protection Policy
+### Example 1 : Activate an inactive protection policy
 
-Activate an inactive Protection Policy.
+Activate an inactive protection policy.
 
 #### Request
 
@@ -81,7 +81,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
   "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
@@ -127,9 +127,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
 }
 ```
 
-### Example 2 : Activate an active Protection Policy
+### Example 2 : Activate an active protection policy
 
-Activate an already active Protection Policy.
+Activate an already active protection policy.
 
 #### Request
 
@@ -141,7 +141,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/activate
+POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/activate
 ```
 
 #### Response
@@ -157,7 +157,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 400 Bad Request
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 
 {
   "error": {

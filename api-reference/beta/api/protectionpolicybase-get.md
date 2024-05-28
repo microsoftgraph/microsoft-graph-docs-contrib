@@ -1,6 +1,6 @@
 ---
 title: "Get protectionPolicyBase"
-description: "Get a Protection Policy by ID."
+description: "Get a protection policy by ID."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Protection Policy by ID. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
+Get a protection policy by ID. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
 
 ## Permissions
 

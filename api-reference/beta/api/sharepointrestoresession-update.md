@@ -1,6 +1,6 @@
 ---
 title: "Update sharePointRestoreSession"
-description: "Update the properties of a SharePoint Restore Session"
+description: "Update the properties of a SharePoint restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
-To remove, specify the @removed annotation in the request body for the respective Restore Point Artifact together with the Id of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
+Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
 
 ## Permissions
 
@@ -23,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -61,6 +60,9 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 ### Request
 
 The following example shows a request.
+
+To remove a **siteRestoreArtifact** from a site restore session, specify the @removed annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
+
 <!-- {
   "blockType": "request",
   "name": "sharepointrestoresession_update"
@@ -68,6 +70,7 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
+Content-Type: application/json
 
 {
   "siteRestoreArtifacts@delta": [
