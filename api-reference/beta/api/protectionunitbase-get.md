@@ -4,7 +4,7 @@ description: "Get a protection unit by ID"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
-ms.subservice: "m365-backup-storage"
+ms.subservice: "m365-backup-storge"
 doc_type: apiPageType
 ---
 # Get protectionUnitBase

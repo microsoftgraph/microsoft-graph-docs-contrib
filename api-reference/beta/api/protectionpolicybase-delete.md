@@ -4,7 +4,7 @@ description: "Delete a protection policy"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
-ms.subservice: "m365-backup-storage"
+ms.subservice: "m365-backup-storge"
 doc_type: apiPageType
 ---
 # Delete protectionPolicyBase
