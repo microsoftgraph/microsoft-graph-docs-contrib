@@ -1,0 +1,111 @@
+---
+title: "virtualEventRegistration: list virtualeventsession"
+description: "Get a list of sessions that an attendee registered for in a webinar."
+author: "halleclottey-msft"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
+doc_type: apiPageType
+---
+
+# virtualEventRegistration: list virtualeventsession 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a list of [sessions](../resources/virtualeventsession.md) that an attendee registered for in a [webinar](../resources/virtualeventwebinar.md). 
+
+Currently, we're only supporting single session webinars, so this API will only return a single session. 
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "virtualeventregistration-list-virtualeventsession-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-list-virtualeventsession-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md)* objects in the response body. 
+
+*Currently, only the session summary is returned, which is partial of the session object.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualeventregistrationsessions"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.virtualEventSession)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.virtualEventSession",
+      "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
+      "startDateTime": "2023-08-08T12:30:00Z",
+      "endDateTime": "2023-08-09T22:00:00Z",
+      "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+      "subject": "Session one",
+      "isBroadcast": null,
+      "broadcastSettings": null,
+      "capabilities": [],
+      "audioConferencing": null,
+      "chatInfo": null,
+      "videoTeleconferenceId": null,
+      "externalId": null,
+      "joinMeetingIdSettings": null,
+      "lobbyBypassSettings": null,
+      "isEntryExitAnnounced": null,
+      "allowedPresenters": null,
+      "allowAttendeeToEnableMic": null,
+      "allowAttendeeToEnableCamera": null,
+      "allowMeetingChat": null,
+      "shareMeetingChatHistoryDefault": null,
+      "allowTeamworkReactions": null,
+      "recordAutomatically": null,
+      "watermarkProtection": null,
+      "allowParticipantsToChangeName": null
+    }
+  ]
+}
+```
