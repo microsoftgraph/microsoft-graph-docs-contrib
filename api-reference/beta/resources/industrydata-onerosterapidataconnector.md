@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](../resources/indus
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) |
+| sourceSystem | [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

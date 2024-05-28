@@ -91,7 +91,8 @@ Content-Type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.referenceDefinition"
 }
 -->
 

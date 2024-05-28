@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.industryData.referenceValue](../resources/industr
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| value | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md) |
+| value | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

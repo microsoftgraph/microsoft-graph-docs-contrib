@@ -111,7 +111,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.industryData.oneRosterApiDataConnector"
+  "@odata.type": "microsoft.graph.industryData.oneRosterApiDataConnector"
 }
 -->
 ``` http
