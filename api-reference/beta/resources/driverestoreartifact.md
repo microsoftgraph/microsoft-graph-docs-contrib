@@ -13,45 +13,45 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore artifact refers to the onedrive unit's restore point and destination relevant details that can be used to restore it.
-
+Represents the restore point and destination details that can be used to restore a OneDrive for Business protection unit. 
 
 Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List driveRestoreArtifact](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) and their properties.|
+|[List](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the restore artifact.|
 |completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|Describes preference for restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restoration of restore artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|restoredSiteId|String|The new site identifier if destinationType is new, and input siteId for for inPlace.|
+|destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|The restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restoration fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|restoredSiteId|String|The new site identifier if **destinationType** is `new`, and the input site ID if the **destinationType** is `inPlace`.|
 |restoredSiteName|String|The name of the restored site.|
-|restoredSiteWebUrl|String|The web url of the site restored|
-|startDateTime|DateTimeOffset|The time when restoration of restore artifact is started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/driverestoreartifact.md#artifactrestorestatus-values)|The individual restoration status of the restore artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|restoredSiteWebUrl|String|The web URL of the restored site.|
+|startDateTime|DateTimeOffset|The time when the restoration started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|status|[artifactRestoreStatus](../resources/driverestoreartifact.md#artifactrestorestatus-values)|The individual restoration status of the restore artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### artifactRestoreStatus values
+
 |Member | Description |
 |:------|:------------|
-|added|Initial Status when restore artifact has been added to restore session.|
-|scheduling|Status when activate action is called on the restore session.|
-|scheduled|Status when activate action call is successfull on the restore session.|
-|inProgress|This state arrives when restore artifact is/has been picked for restoration.|
-|succeeded|The restore artifact has successfully restored.|
-|failed|This state arrives when restoration of artifact is failed.|
+|added|Initial status when the restore artifact is added to the restore session.|
+|scheduling|Status when the activate action is called on the restore session.|
+|scheduled|Status when the activate action call is successfull on the restore session.|
+|inProgress|The restore artifact is picked for restoration.|
+|succeeded|The restore artifact is successfully restored.|
+|failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ### destinationType values
 |Member | Description |
 |:------|:------------|
-|new|Restoration will be done at new location. eg. for SharePoint and One Drive new site will be created and content will be restore in newly created site. for Exchange restored folder will be created and content will be restored there.|
-|inPlace|restore will be done on the same location, e.g. on the same site, for one drive on same drive and for exchange artifact will be restored in same mailbox.|
+|new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
+|inPlace|Restoration will occur in the same location. For SharePoint, it will bbe on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
