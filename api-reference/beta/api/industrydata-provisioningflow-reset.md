@@ -97,7 +97,6 @@ POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioning
 
 ---
 
-
 ### Response
 
 The following example shows the response.

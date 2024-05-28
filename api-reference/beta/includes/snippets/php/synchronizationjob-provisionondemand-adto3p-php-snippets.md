@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\ProvisionOnDemand\ProvisionOnDemandPostRequestBody
+use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\ProvisionOnDemand\ProvisionOnDemandPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\SynchronizationJobApplicationParameters;
 use Microsoft\Graph\Beta\Generated\Models\SynchronizationJobSubject;
 

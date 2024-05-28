@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\BookingAppointment;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
-use Microsoft\Graph\Generated\Models\PriceType;
+use Microsoft\Graph\Generated\Models\BookingPriceType;
 use Microsoft\Graph\Generated\Models\BookingReminder;
-use Microsoft\Graph\Generated\Models\Recipients;
+use Microsoft\Graph\Generated\Models\BookingReminderRecipients;
 use Microsoft\Graph\Generated\Models\Location;
 use Microsoft\Graph\Generated\Models\PhysicalAddress;
 use Microsoft\Graph\Generated\Models\BookingCustomerInformationBase;
