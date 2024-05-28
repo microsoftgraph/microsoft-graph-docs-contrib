@@ -2225,16 +2225,6 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
-      - name: Compliant network named location
-        items:
-        - name: Compliant network named location
-          href: resources/compliantnetworknamedlocation.md
-        - name: List
-          href: api/conditionalaccessroot-list-namedlocations.md
-        - name: Get
-          href: api/compliantnetworknamedlocation-get.md
-        - name: Update
-          href: api/compliantnetworknamedlocation-update.md
     - name: Authentication context class reference
       items:
       - name: Authentication context class reference
