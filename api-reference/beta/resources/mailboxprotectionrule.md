@@ -1,7 +1,8 @@
 ---
 title: "mailboxProtectionRule resource type"
-description: "Describes mailbox protection rule and its properties"
-author: "tushar20, manikantsinghms"
+description: "Get a mailbox protection rule and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -13,20 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes Mailbox Protection Rule and its properties. It is associated to the exchange Mailbox Protection Policy.
+Get a mailbox protection rule associated with [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List mailboxProtectionRule](../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|Get a list of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and their properties.|
-|[Create mailboxProtectionRule](../api/exchangeprotectionpolicy-create-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
-|[Get mailboxProtectionRule](../api/exchangeprotectionpolicy-get-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
-|[Delete mailboxProtectionRule](../api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
-|[run](../api/exchangeprotectionpolicy-run-mailboxinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[Create mailboxProtectionRule](../api/protectionrulebase-post.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Get mailboxProtectionRule](../api/protectionrulebase-get.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Delete mailboxProtectionRule](../api/protectionrulebase-delete.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activates a mailbox protection rule.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated with the policy.|
@@ -40,6 +43,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### mailboxExpression examples
+
 The mailbox expression can be of following formats.
 | Property                                 | Operator                                   | Example                                                                  |
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -47,6 +51,7 @@ The mailbox expression can be of following formats.
 | `group.id` | `-in` |   `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375', '363cdbd0-f091-4644-93e4-64c1020c94d8']))`              |  
 
 ### protectionRuleStatus values
+
 |Member | Description |
 |:------|:------------|
 |draft | The initial status of protection rule upon creation is draft.|
@@ -55,11 +60,12 @@ The mailbox expression can be of following formats.
 |completedWithErrors | In case of any failures while applying the protection rule to the corresponding policy, the status of protectionRuleBase will be completedWithErrors. The state transition is active to completedWithErrors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
-
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -89,4 +95,3 @@ The following JSON representation shows the resource type.
   "mailboxExpression": "String"
 }
 ```
-

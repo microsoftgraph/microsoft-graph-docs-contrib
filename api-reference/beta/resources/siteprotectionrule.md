@@ -1,7 +1,8 @@
 ---
 title: "siteProtectionRule resource type"
-description: "Describes site protection rule and its properties"
-author: "tushar20, manikantsinghms"
+description: "Get a site protection rule and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes Site Protection Rule and its properties. It is associated to the SharePoint Protection Policy.
+Get a site protection rule associated with [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
@@ -22,10 +23,10 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List siteProtectionRule](../api/sharepointprotectionpolicy-list-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md) collection|Get a list of the [siteProtectionRule](../resources/siteprotectionrule.md) and their properties.|
-|[Create siteProtectionRule](../api/sharepointprotectionpolicy-create-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Create a new [siteProtectionRule](../resources/siteprotectionrule.md).|
-|[Get siteProtectionRule](../api/sharepointprotectionpolicy-get-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md).|
-|[Delete siteProtectionRule](../api/sharepointprotectionpolicy-delete-siteinclusionrules.md)|None|Delete a [siteProtectionRule](../resources/siteprotectionrule.md).|
-|[run](../api/sharepointprotectionpolicy-run-siteinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active.|
+|[Create siteProtectionRule](../api/protectionrulebase-post.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Create a new [siteProtectionRule](../resources/siteprotectionrule.md).|
+|[Get siteProtectionRule](../api/protectionrulebase-get.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md).|
+|[Delete siteProtectionRule](../api/protectionrulebase-delete.md)|None|Delete a [siteProtectionRule](../resources/siteprotectionrule.md).|
+|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activates a site protection rule.|
 
 ## Properties
 
