@@ -78,18 +78,10 @@
       "ChangeList": [
         {
           "Id": "51dbd39d-1565-4412-a8cd-f406956b7dbd",
-          "ApiChange": "Method",
+          "ApiChange": "Parameter",
           "ChangedApiName": "copy",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **copy** method from the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
-          "Target": "driveItem"
-        },
-        {
-          "Id": "51dbd39d-1565-4412-a8cd-f406956b7dbd",
-          "ApiChange": "Method",
-          "ChangedApiName": "copy",
-          "ChangeType": "Addition",
-          "Description": "Added the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem-copy?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Updated the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem-copy?view=graph-rest-beta) method to include the **childrenOnly** parameter.",
           "Target": "driveItem"
         }
       ],
