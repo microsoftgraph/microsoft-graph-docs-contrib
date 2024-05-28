@@ -19,15 +19,15 @@ items:
     href: ../../api/application-delete.md
   - name: Get delta
     href: ../../api/application-delta.md
-  - name: List deleted applications
+  - name: List deleted items
     href: ../../api/directory-deleteditems-list.md
-  - name: List deleted applications owned by user
+  - name: List deleted items owned by user
     href: ../../api/directory-deleteditems-getuserownedobjects.md
-  - name: Get deleted application
+  - name: Get deleted item
     href: ../../api/directory-deleteditems-get.md
-  - name: Permanently delete application
+  - name: Permanently delete item
     href: ../../api/directory-deleteditems-delete.md
-  - name: Restore deleted application
+  - name: Restore deleted item
     href: ../../api/directory-deleteditems-restore.md
   - name: Certificates and secrets
     items:
@@ -41,41 +41,41 @@ items:
       href: ../../api/application-removekey.md
   - name: Owners
     items:
-    - name: List owners
+    - name: List
       href: ../../api/application-list-owners.md
-    - name: Add owner
+    - name: Add
       href: ../../api/application-post-owners.md
-    - name: Remove owner
+    - name: Remove
       href: ../../api/application-delete-owners.md
   - name: Verified publisher
     items:
-    - name: Set verified publisher
+    - name: Set
       href: ../../api/application-setverifiedpublisher.md
-    - name: Unset verified publisher
+    - name: Unset
       href: ../../api/application-unsetverifiedpublisher.md
   - name: Application template
     items:
     - name: Application template
       href: ../../resources/applicationtemplate.md
-    - name: List applicationTemplate
+    - name: List
       href: ../../api/applicationtemplate-list.md
-    - name: Get applicationTemplate
+    - name: Get
       href: ../../api/applicationtemplate-get.md
-    - name: Instantiate applicationTemplate
+    - name: Instantiate
       href: ../../api/applicationtemplate-instantiate.md
   - name: Directory extension
     items:
     - name: Directory extension
       href: ../../resources/extensionproperty.md
-    - name: Create extensionProperties
+    - name: Create
       href: ../../api/application-post-extensionproperty.md
-    - name: List extensionProperties
+    - name: List
       href: ../../api/application-list-extensionproperty.md
-    - name: Get extensionProperty
+    - name: Get
       href: ../../api/extensionproperty-get.md
-    - name: Delete extensionProperty
+    - name: Delete
       href: ../../api/extensionproperty-delete.md
-    - name: Get available extensions
+    - name: Get available extension properties
       href: ../../api/directoryobject-getavailableextensionproperties.md
   - name: Federated identity credential
     items:
@@ -83,17 +83,17 @@ items:
       href: ../../resources/federatedidentitycredentials-overview.md
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
-    - name: List federatedIdentityCredentials
+    - name: List
       href: ../../api/application-list-federatedidentitycredentials.md
-    - name: Create federatedIdentityCredential
+    - name: Create
       href: ../../api/application-post-federatedidentitycredentials.md
-    - name: Get federatedIdentityCredential
+    - name: Get
       href: ../../api/federatedidentitycredential-get.md
-    - name: Update federatedIdentityCredential
+    - name: Update
       href: ../../api/federatedidentitycredential-update.md
-    - name: Upsert federatedIdentityCredential
+    - name: Upsert
       href: ../../api/federatedidentitycredential-upsert.md
-    - name: Delete federatedIdentityCredential
+    - name: Delete
       href: ../../api/federatedidentitycredential-delete.md
   - name: Policies
     items:
@@ -101,45 +101,45 @@ items:
       items:
       - name: Remote desktop security configuration
         href: ../../resources/remotedesktopsecurityconfiguration.md
-      - name: Create remoteDesktopSecurityConfiguration
+      - name: Create
         href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-      - name: Get remoteDesktopSecurityConfiguration
+      - name: Get
         href: ../../api/remotedesktopsecurityconfiguration-get.md
-      - name: Update remoteDesktopSecurityConfiguration
+      - name: Update
         href: ../../api/remotedesktopsecurityconfiguration-update.md
-      - name: Delete remoteDesktopSecurityConfiguration
+      - name: Delete
         href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
         href: ../../resources/tokenissuancepolicy.md
-      - name: List tokenIssuancePolicy
+      - name: List
         href: ../../api/tokenissuancepolicy-list.md
-      - name: Create tokenIssuancePolicy
+      - name: Create
         href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
-      - name: Get tokenIssuancePolicy
+      - name: Get
         href: ../../api/tokenissuancepolicy-get.md
-      - name: Update tokenIssuancePolicy
+      - name: Update
         href: ../../api/tokenissuancepolicy-update.md
-      - name: Delete tokenIssuancePolicy
+      - name: Delete
         href: ../../api/tokenissuancepolicy-delete.md
-      - name: List appliesTo
+      - name: List applied to applications
         href: ../../api/tokenissuancepolicy-list-appliesto.md
     - name: Token lifetime policy
       items:
       - name: Token lifetime policy
         href: ../../resources/tokenlifetimepolicy.md
-      - name: List tokenLifetimePolicies
+      - name: List
         href: ../../api/tokenlifetimepolicy-list.md
-      - name: Create tokenLifetimePolicy
+      - name: Create
         href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-      - name: Get tokenLifetimePolicy
+      - name: Get
         href: ../../api/tokenlifetimepolicy-get.md
-      - name: Update tokenLifetimePolicy
+      - name: Update
         href: ../../api/tokenlifetimepolicy-update.md
-      - name: Delete tokenLifetimePolicy
+      - name: Delete
         href: ../../api/tokenlifetimepolicy-delete.md
-      - name: List appliesTo
+      - name: List applied to applications
         href: ../../api/tokenlifetimepolicy-list-appliesto.md
 - name: Service principal
   items:
@@ -271,7 +271,7 @@ items:
     items:
     - name: Synchronization
       href: ../../resources/synchronization-synchronization.md
-    - name: acquireAccessToken
+    - name: Acquire access token
       href: ../../api/synchronization-synchronization-acquireaccesstoken.md
     - name: Add secrets
       href: ../../api/synchronization-serviceprincipal-put-synchronization.md
@@ -281,7 +281,7 @@ items:
       href: ../../resources/synchronization-synchronizationjob.md
     - name: List
       href: ../../api/synchronization-synchronization-list-jobs.md
-    - name: Get synchronizationJob
+    - name: Get
       href: ../../api/synchronization-synchronizationjob-get.md
     - name: Create
       href: ../../api/synchronization-synchronization-post-jobs.md
@@ -293,9 +293,9 @@ items:
       href: ../../api/synchronization-synchronizationjob-pause.md
     - name: Delete
       href: ../../api/synchronization-synchronizationjob-delete.md
-    - name: Get synchronizationSchema
+    - name: Get schema
       href: ../../api/synchronization-synchronizationschema-get.md
-    - name: Update synchronizationSchema
+    - name: Update schema
       href: ../../api/synchronization-synchronizationschema-update.md
     - name: Validate credentials
       href: ../../api/synchronization-synchronizationjob-validatecredentials.md
@@ -305,7 +305,7 @@ items:
       items:
       - name: Bulk upload
         href: ../../resources/synchronization-bulkupload.md
-      - name: Perform bulkUpload
+      - name: Perform bulk upload
         href: ../../api/synchronization-synchronizationjob-post-bulkupload.md
   - name: Synchronization schema
     items:
@@ -315,11 +315,11 @@ items:
       href: ../../api/synchronization-synchronizationschema-get.md
     - name: Update schema
       href: ../../api/synchronization-synchronizationschema-update.md
-    - name: Delete schema
+    - name: Reset schema
       href: ../../api/synchronization-synchronizationschema-delete.md
-    - name: List filter operators
+    - name: Get schema filter operators
       href: ../../api/synchronization-synchronizationschema-filteroperators.md
-    - name: List attribute mapping functions
+    - name: Get schema functions
       href: ../../api/synchronization-synchronizationschema-functions.md
     - name: Parse attribute mapping expression
       href: ../../api/synchronization-synchronizationschema-parseexpression.md
