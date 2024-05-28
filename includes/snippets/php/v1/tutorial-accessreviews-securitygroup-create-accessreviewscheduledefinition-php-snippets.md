@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewScope;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\Type;
+use Microsoft\Kiota\Abstractions\Types\Date;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

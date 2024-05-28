@@ -127,6 +127,7 @@ Content-Type: application/json
     {
       "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
       "inboundTrust": null,
+      "isInMultiTenantOrganization": false,
       "automaticUserConsentSettings": {
         "inboundAllowed": null,
         "outboundAllowed": null

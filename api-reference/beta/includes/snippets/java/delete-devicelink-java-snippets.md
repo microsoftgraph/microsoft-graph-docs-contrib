@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().connectivity().branches().byBranchSiteId("{branchSite-id}").deviceLinks().byDeviceLinkId("{deviceLink-id}").delete();
+graphClient.networkAccess().connectivity().remoteNetworks().byRemoteNetworkId("{remoteNetwork-id}").deviceLinks().byDeviceLinkId("{deviceLink-id}").delete();
 
 
 ```

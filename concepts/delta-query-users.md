@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.topic: tutorial
-ms.prod: change-notifications
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/12/2024

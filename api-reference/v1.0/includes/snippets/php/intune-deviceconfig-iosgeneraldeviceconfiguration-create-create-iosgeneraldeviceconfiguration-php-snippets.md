@@ -5,6 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosGeneralDeviceConfiguration;
+use Microsoft\Graph\Generated\Models\AppListItem;
+use Microsoft\Graph\Generated\Models\AppsVisibilityListType;
+use Microsoft\Graph\Generated\Models\CompliantAppListType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingAustralia;
+use Microsoft\Graph\Generated\Models\MovieRating;
+use Microsoft\Graph\Generated\Models\TvRating;
+use Microsoft\Graph\Generated\Models\MediaContentRatingCanada;
+use Microsoft\Graph\Generated\Models\MediaContentRatingFrance;
+use Microsoft\Graph\Generated\Models\MediaContentRatingGermany;
+use Microsoft\Graph\Generated\Models\MediaContentRatingIreland;
+use Microsoft\Graph\Generated\Models\MediaContentRatingJapan;
+use Microsoft\Graph\Generated\Models\MediaContentRatingNewZealand;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedKingdom;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedStates;
+use Microsoft\Graph\Generated\Models\IosNetworkUsageRule;
+use Microsoft\Graph\Generated\Models\MediaContentRatingApps;
+use Microsoft\Graph\Generated\Models\PasscodeRequiredType;
+use Microsoft\Graph\Generated\Models\SafariCookieSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

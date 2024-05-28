@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
+description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest, or a privilegedAccessGroupAssignmentScheduleRequest."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -18,14 +18,14 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
-|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
+|[Get](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
+|[Filter by current user](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier of the approval decision. <br/><li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|Identifier of the approval decision. <br/><li>In PIM for groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
 
 ## Relationships
 
@@ -35,7 +35,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -48,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
+DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 ```
 
 # [C#](#tab/csharp)
@@ -94,6 +95,8 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retenti
 ---
 
 ### Response
+Here's an example of the response.
+
 >
 <!-- {
   "blockType": "response",

@@ -19,7 +19,7 @@ Inherits from [commsOperation](commsoperation.md).
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get addLargeGalleryViewOperation](../api/addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md) | Get the status of an operation that adds the large gallery view to a call. |
+| [Get large gallery view operation status](../api/addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md) | Get the status of an operation that adds the large gallery view to a call. |
 
 ## Properties
 

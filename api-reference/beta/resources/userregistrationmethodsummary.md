@@ -19,7 +19,7 @@ Represents the summary of number of users registered for each authentication met
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) | Get the number of users registered for each authentication method. |
+| [List](../api/authenticationmethodsroot-usersregisteredbymethod.md) | [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) | Get the number of users registered for each authentication method. |
 
 ## Properties
 
@@ -30,7 +30,7 @@ Represents the summary of number of users registered for each authentication met
 |userRoles|includedUserRoles|The role type of the user. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
 |userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
 
-The value `privilegedAdmin` consists of the following privileged admin roles:
+The value `privilegedAdmin` consists of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global Administrator
 * Security Administrator

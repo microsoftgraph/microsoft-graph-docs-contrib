@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: activate
+# fileStorageContainer: activate  
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,13 @@ Namespace: microsoft.graph
 
 Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-A **fileStorageContainer** object is created in an inactive state, as indicated by the **status** property. A container must be activated within 24 hours after creation, or it is automatically deleted. Upon activation, the value of the status property changes from `inactive` to `active`.
+A **fileStorageContainer** object is created in an inactive state, as indicated by the **status** property. A container that isn't activated within 24 hours after creation is automatically deleted. Upon activation, the value of the status property changes from `inactive` to `active`.
 
-A **fileStorageContainer** can be activated by calling the activate API or any API that updates or modifies the **fileStorageContainer** or its content. For example, uploading a file to a **fileStorageContainer**, adding permission to a **fileStorageContainer**, creating a custom property on a **fileStorageContainer**, or updating the properties of a **fileStorageContainer** can activate it.
-
+A file storage container can be activated by calling this API or any API that updates or modifies it or its content. For example, uploading a file to a file storage container activates it. It's also activated when you add permissions to it or update them, or create a custom property on it.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_activate" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-activate-permissions.md)]

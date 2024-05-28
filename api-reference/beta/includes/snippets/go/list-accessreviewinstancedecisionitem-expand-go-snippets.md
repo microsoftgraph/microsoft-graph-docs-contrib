@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,16 +15,14 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Expand: [] string {"instance($expand=definition)"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 on := "reviewer"
 filterByCurrentUser, err := graphClient.IdentityGovernance().AccessReviews().Decisions().FilterByCurrentUserWithOn(&on).GetAsFilterByCurrentUserWithOnGetResponse(context.Background(), configuration)
 

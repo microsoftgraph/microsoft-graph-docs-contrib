@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

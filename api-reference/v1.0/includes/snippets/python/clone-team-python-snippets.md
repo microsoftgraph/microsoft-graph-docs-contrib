@@ -5,7 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.clone_post_request_body import ClonePostRequestBody
+from msgraph.generated.teams.item.clone.clone_post_request_body import ClonePostRequestBody
+from msgraph.generated.models.clonable_team_parts import ClonableTeamParts
+from msgraph.generated.models.team_visibility_type import TeamVisibilityType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

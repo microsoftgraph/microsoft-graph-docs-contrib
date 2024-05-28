@@ -215,6 +215,15 @@ Content-Type: application/json
         }
       ]
     }
+  },
+  "invitationRedemptionIdentityProviderConfiguration": 
+  { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation", 
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ],
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }
 ```

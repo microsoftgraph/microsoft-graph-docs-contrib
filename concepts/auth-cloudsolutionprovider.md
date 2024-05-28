@@ -4,7 +4,7 @@ description: "This article describes how to enable application access to partner
 author: koravvams
 ms.localizationpriority: high
 ms.subservice: "partner-customer-administration"
-ms.custom: graphiamtop20, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.custom: graphiamtop20, has-azure-ad-ps-ref
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application

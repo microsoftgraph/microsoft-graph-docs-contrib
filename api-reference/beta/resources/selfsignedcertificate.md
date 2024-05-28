@@ -31,7 +31,7 @@ Contains the public part of a signing certificate. It's the return type of the a
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

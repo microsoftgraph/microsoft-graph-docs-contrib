@@ -257,7 +257,24 @@ Namespace: microsoft.graph.networkaccess
 |southAfricaWest|
 |southAfricaNorth|
 |uaeNorth|
+|australiaEast|
+|westCentralUS|
+|centralIndia|
+|southEastAsia|
+|swedenCentral|
+|southIndia|
+|australiaSouthEast|
+|koreaCentral|
+|polandCentral|
+|brazilSouth|
+|japanEast|
+|japanWest|
+|koreaSouth|
+|italyNorth|
+|franceSouth|
+|israelCentral|
 |unknownFutureValue|
+
 
 ### status values 
 

@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\TimeOff;
+use Microsoft\Graph\Generated\Models\TimeOffItem;
+use Microsoft\Graph\Generated\Models\Theme;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

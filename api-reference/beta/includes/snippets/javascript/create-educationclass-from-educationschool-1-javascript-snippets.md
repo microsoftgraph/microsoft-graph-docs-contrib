@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/education/classes/11003/members/14008')
+await client.api('/education/classes/11003/members/14008/$ref')
 	.version('beta')
 	.delete();
 

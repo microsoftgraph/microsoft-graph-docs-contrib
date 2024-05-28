@@ -25,7 +25,7 @@ Represents a verified publisher of an [application](application.md). For more in
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

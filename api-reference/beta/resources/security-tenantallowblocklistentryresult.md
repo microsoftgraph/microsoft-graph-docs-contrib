@@ -28,7 +28,7 @@ Represents the result of a tenant allow block list entry. An entry for a tenant 
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.tenantAllowBlockListEntryResult"

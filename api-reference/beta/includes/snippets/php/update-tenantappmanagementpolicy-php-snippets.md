@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TenantAppManagementPolicy;
+use Microsoft\Graph\Beta\Generated\Models\AppManagementConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\RestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -19,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/sharepointsettings-get.md)|[microsoft.graph.sharepointSettings](../resources/sharepointsettings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
-|[Update settings](../api/sharepointsettings-update.md) | [microsoft.graph.sharepointSettings](../resources/sharepointsettings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
+|[Get](../api/sharepointsettings-get.md)|[microsoft.graph.sharepointSettings](../resources/sharepointsettings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
+|[Update](../api/sharepointsettings-update.md) | [microsoft.graph.sharepointSettings](../resources/sharepointsettings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
 
 ## Properties
 |Property|Type|Description|
@@ -81,7 +81,7 @@ Inherits from [entity](../resources/entity.md).
 | unknownFutureValue              | Evolvable enumeration sentinel value. Don't use.                                                                     |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharepointSettings",

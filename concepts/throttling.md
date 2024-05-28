@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
+ms.subservice: non-product-specific
 ms.date: 01/22/2024
 ms.custom: graphiamtop20
 #Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to avoid throttling and how to handle throttling when it occurs.

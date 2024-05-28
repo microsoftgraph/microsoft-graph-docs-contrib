@@ -5,6 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPolicy;
+use Microsoft\Graph\Beta\Generated\Models\State;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessConditionSet;
+use Microsoft\Graph\Beta\Generated\Models\RiskLevel;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessClientApp;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessApplications;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessUsers;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPlatforms;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessDevicePlatform;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessLocations;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessDeviceStates;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessGrantControls;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessGrantControl;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessSessionControls;
+use Microsoft\Graph\Beta\Generated\Models\CloudAppSecuritySessionControl;
+use Microsoft\Graph\Beta\Generated\Models\CloudAppSecurityType;
+use Microsoft\Graph\Beta\Generated\Models\SignInFrequencySessionControl;
+use Microsoft\Graph\Beta\Generated\Models\Type;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

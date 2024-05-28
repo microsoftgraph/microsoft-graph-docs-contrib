@@ -20,11 +20,11 @@ Represents a Microsoft Entra authentication context class reference. Authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationContextClassReference](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
-| [Create authenticationContextClassReference](../api/conditionalaccessroot-post-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
-| [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
-| [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | None | Update a authenticationContextClassReference object. |
-| [Delete authenticationContextClassReference](../api/authenticationcontextclassreference-delete.md) | None | Delete an authenticationContextClassReference object. |
+| [List](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
+| [Create](../api/conditionalaccessroot-post-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
+| [Get](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
+| [Update](../api/authenticationcontextclassreference-update.md) | None | Update a authenticationContextClassReference object. |
+| [Delete](../api/authenticationcontextclassreference-delete.md) | None | Delete an authenticationContextClassReference object. |
 
 
 ## Properties
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

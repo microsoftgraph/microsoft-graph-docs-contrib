@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionEvent
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\EventQuery
+use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\EventPropagationResult
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionEventStatus
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -14,7 +20,7 @@ $requestBody->setOdataType('#microsoft.graph.security.retentionEvent');
 $requestBody->setDisplayName('String');
 $requestBody->setDescription('String');
 $eventQueriesEventQuery1 = new EventQuery();
-$eventQueriesEventQuery1->setOdataType('microsoft.graph.security.eventQueries');
+$eventQueriesEventQuery1->setOdataType('microsoft.graph.security.eventQuery');
 $eventQueriesArray []= $eventQueriesEventQuery1;
 $requestBody->setEventQueries($eventQueriesArray);
 

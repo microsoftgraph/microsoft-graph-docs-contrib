@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.log_teleconference_device_quality_post_request_body import LogTeleconferenceDeviceQualityPostRequestBody
+from msgraph.generated.communications.calls.log_teleconference_device_quality.log_teleconference_device_quality_post_request_body import LogTeleconferenceDeviceQualityPostRequestBody
 from msgraph.generated.models.teleconference_device_quality import TeleconferenceDeviceQuality
 from msgraph.generated.models.teleconference_device_media_quality import TeleconferenceDeviceMediaQuality
 from msgraph.generated.models.teleconference_device_audio_quality import TeleconferenceDeviceAudioQuality

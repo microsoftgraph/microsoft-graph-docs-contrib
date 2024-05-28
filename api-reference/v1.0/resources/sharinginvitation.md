@@ -16,7 +16,7 @@ Groups invitation-related data items into a single structure.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

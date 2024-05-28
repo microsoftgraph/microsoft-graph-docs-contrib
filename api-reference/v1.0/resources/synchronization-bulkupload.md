@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the capability of the Microsoft Entra synchronization service to process bulk uploads.
+Represents the capability of the Microsoft Entra synchronization service to process bulk uploads. For more information, see [API-driven inbound provisioning concepts](/entra/identity/app-provisioning/inbound-provisioning-api-concepts).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Perform bulkUpload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
+|[Perform bulk upload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
 
 ## Properties
 

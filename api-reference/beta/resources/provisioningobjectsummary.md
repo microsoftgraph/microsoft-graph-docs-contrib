@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method  | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
+| [List](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
 
 
 ## Properties

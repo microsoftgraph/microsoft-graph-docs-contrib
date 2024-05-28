@@ -24,7 +24,7 @@ The program control type objects are automatically generated when the global adm
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
+|[List](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
 | Property       | Type    |Description|
@@ -47,7 +47,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

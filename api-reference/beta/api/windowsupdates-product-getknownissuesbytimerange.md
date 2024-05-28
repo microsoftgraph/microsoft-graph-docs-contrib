@@ -3,7 +3,7 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-update-business"
+ms.subservice: "windows-update-business"
 doc_type: apiPageType
 ---
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIs
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/windowsupdatesgetknownissuesbytimerange-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/windowsupdatesgetknownissuesbytimerange-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsPhone81GeneralConfiguration;
+use Microsoft\Graph\Generated\Models\AppListItem;
+use Microsoft\Graph\Generated\Models\CompliantAppListType;
+use Microsoft\Graph\Generated\Models\PasswordRequiredType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
