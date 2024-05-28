@@ -127,17 +127,17 @@ Content-Type: application/json
 Content-Length: 193
 
 {
-  "error": {
-    "code": "BadRequest",
-    "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
-    "innerError": {
-      "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
-      "code": "Unknown",
-      "innerError": {},
-      "date": "2023-12-11T04:26:35",
-      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
-      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
+    "error": {
+        "code": "BadRequest",
+        "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
+        "innerError": {
+            "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
+            "code": "Unknown",
+            "innerError": {},
+            "date": "2023-12-11T04:26:35",
+            "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+            "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
+        }
     }
-  }
 }
 ```
