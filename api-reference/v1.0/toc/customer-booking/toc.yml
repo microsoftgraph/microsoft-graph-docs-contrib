@@ -5,17 +5,17 @@ items:
   items:
   - name: Booking appointment
     href: ../../resources/bookingappointment.md
-  - name: List appointments
+  - name: List
     href: ../../api/bookingbusiness-list-appointments.md
-  - name: Create bookingAppointment
+  - name: Create
     href: ../../api/bookingbusiness-post-appointments.md
-  - name: Get bookingAppointment
+  - name: Get
     href: ../../api/bookingappointment-get.md
   - name: Update
     href: ../../api/bookingappointment-update.md
   - name: Delete
     href: ../../api/bookingappointment-delete.md
-  - name: Cancel
+  - name: Cancel appointment
     href: ../../api/bookingappointment-cancel.md
 - name: Booking business
   items:
@@ -61,33 +61,33 @@ items:
   items:
   - name: Booking currency
     href: ../../resources/bookingcurrency.md
-  - name: List bookingCurrencies
+  - name: List
     href: ../../api/bookingcurrency-list.md
-  - name: Get bookingCurrency
+  - name: Get
     href: ../../api/bookingcurrency-get.md
 - name: Booking custom question
   items:
   - name: Booking custom question
     href: ../../resources/bookingcustomquestion.md
-  - name: List bookingCustomQuestions
+  - name: List
     href: ../../api/bookingbusiness-list-customquestions.md
-  - name: Create bookingCustomQuestion
+  - name: Create
     href: ../../api/bookingbusiness-post-customquestions.md
-  - name: Get bookingCustomQuestion
+  - name: Get
     href: ../../api/bookingcustomquestion-get.md
-  - name: Update bookingCustomQuestion
+  - name: Update
     href: ../../api/bookingcustomquestion-update.md
-  - name: Delete bookingCustomQuestion
+  - name: Delete
     href: ../../api/bookingcustomquestion-delete.md
 - name: Booking customer
   items:
   - name: Booking customer
     href: ../../resources/bookingcustomer.md
-  - name: List customers
+  - name: List
     href: ../../api/bookingbusiness-list-customers.md
-  - name: Create bookingCustomer
+  - name: Create
     href: ../../api/bookingbusiness-post-customers.md
-  - name: Get bookingCustomer
+  - name: Get
     href: ../../api/bookingcustomer-get.md
   - name: Update
     href: ../../api/bookingcustomer-update.md
@@ -97,11 +97,11 @@ items:
   items:
   - name: Booking service
     href: ../../resources/bookingservice.md
-  - name: List services
+  - name: List
     href: ../../api/bookingbusiness-list-services.md
-  - name: Create bookingService
+  - name: Create
     href: ../../api/bookingbusiness-post-services.md
-  - name: Get bookingService
+  - name: Get
     href: ../../api/bookingservice-get.md
   - name: Update
     href: ../../api/bookingservice-update.md
@@ -111,11 +111,11 @@ items:
   items:
   - name: Booking staff member
     href: ../../resources/bookingstaffmember.md
-  - name: List staff members
+  - name: List
     href: ../../api/bookingbusiness-list-staffmembers.md
-  - name: Create bookingStaff
+  - name: Create
     href: ../../api/bookingbusiness-post-staffmembers.md
-  - name: Get bookingStaffMember
+  - name: Get
     href: ../../api/bookingstaffmember-get.md
   - name: Update
     href: ../../api/bookingstaffmember-update.md
