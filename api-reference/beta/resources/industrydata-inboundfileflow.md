@@ -22,10 +22,7 @@ Inherits from [inboundFlow](industrydata-inboundflow.md).
 | Method                                                                  | Return type                                                                                | Description                                                                                            |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | [Create](../api/industrydata-inboundfileflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)                    | Create a new **inboundFileFlow** object.                                                               |
-| [List](../api/industrydata-inboundfileflow-list.md)    | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundfileflow.md) collection | Get a list of the [inboundFileFlow](industrydata-inboundfileflow.md) objects and their properties.     |
-| [Get](../api/industrydata-inboundfileflow-get.md)       | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundfileflow.md)            | Read the properties and relationships of an [inboundFileFlow](industrydata-inboundfileflow.md) object. |
 | [Update](../api/industrydata-inboundfileflow-update.md) | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundfileflow.md)            | Update the properties of an [inboundFileFlow](industrydata-inboundfileflow.md) object.                 |
-| [Delete](../api/industrydata-inboundfileflow-delete.md) | None                                                                                       | Delete an [inboundFileFlow](industrydata-inboundfileflow.md) object.                                   |
 
 ## Properties
 
