@@ -916,8 +916,9 @@ items:
     - name: Delete tiIndicators
       href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission (preview)
-  href: ../../resources/security-threatsubmission.md
   items:
+  - name: Threat submission
+    href: ../../resources/security-threatsubmission.md
   - name: Email threat submission
     items:
     - name: Email threat submission

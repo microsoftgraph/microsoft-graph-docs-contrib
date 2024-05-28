@@ -5,7 +5,6 @@ author: "caigen"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-toc.title: Threat submission (preview)
 ---
 
 # threatSubmission resource type
