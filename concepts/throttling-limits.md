@@ -372,11 +372,11 @@ Limits are expressed as requests per second (rps).
 
 A maximum of four requests per second per app can be issued on a given team.
 
-A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel.md) or [chat](/graph/api/resources/chat.md) or [message](/graph/api/resources/chatmessage.md).
+A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) or [message](/graph/api/resources/chatmessage).
 
 A maximum of one request per second per user can be issued when doing POST message in a given chat or channel (This throttling limit doesn't apply to [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-A maximum of five requests per second per user can be issued when doing [List Chats](/graph/api/chat-list.md) or [Get Chat](/graph/api/chat-get.md) or [chat:removeAllAccessForUser](/graph/api/Chat-removeAllAccessForUser.md)
+A maximum of five requests per second per user can be issued when doing [List Chats](/graph/api/chat-list.md) or [Get Chat](/graph/api/chat-get) or [chat:removeAllAccessForUser](/graph/api/Chat-removeAllAccessForUser)
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
