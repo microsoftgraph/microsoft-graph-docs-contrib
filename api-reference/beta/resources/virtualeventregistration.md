@@ -1,7 +1,7 @@
 ---
 title: "virtualEventRegistration resource type"
 description: "Represents an attendee's registration record of a virtual event."
-author: "frankpeng7"
+author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
@@ -23,6 +23,10 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
 |[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
+|[Cancel virtualEventRegistration](../api/virtualeventregistration-cancel.md)|None|Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
+|[Create virtualEventRegistration](../api/virtualeventregistration-post.md)|None|Create a [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) registrant.|
+|[List virtualEventRegistration Session](../api/virtualeventregistration-list-virtualeventsession.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of [sessions](../resources/virtualeventsession.md) that an attendee registered for in a [webinar](../resources/virtualeventwebinar.md).|
+
 
 ## Properties
 
@@ -37,6 +41,8 @@ Inherits from [entity](../resources/entity.md).
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
+|preferredTimezone|String|The registrant's time zone details.|
+|preferredLanguage|String|The registrant's preferred language.|
 
 ### virtualEventAttendeeRegistrationStatus values
 
@@ -71,6 +77,8 @@ The following JSON representation shows the resource type
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
-  "userId": "String"
+  "userId": "String",
+  "preferredTimezone": "String",
+  "preferredLanguage": "String"
 }
 ```
