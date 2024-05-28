@@ -20,15 +20,15 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List forwardingProfiles](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects and their properties.|
-|[Get forwardingProfile](../api/networkaccess-forwardingprofile-get.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
-|[Update forwardingProfile](../api/networkaccess-forwardingprofile-update.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
+|[List](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects and their properties.|
+|[Get](../api/networkaccess-forwardingprofile-get.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
+|[Update forwarding profile for branch](../api/networkaccess-forwardingprofile-update.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|Specifies the users, groups, devices, and branch locations whose traffic is associated with the given traffic forwarding profile.|
+|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.|
 |description|String|Profile description. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 |id|String|Identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
   "trafficForwardingType": "String",
   "associations": [
     {
-      "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
+      "@odata.type": "microsoft.graph.networkaccess.association"
     }
   ],
   "priority": "Integer"

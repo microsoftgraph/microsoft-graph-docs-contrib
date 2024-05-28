@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IdentityApiConnector;
+use Microsoft\Graph\Beta\Generated\Models\Pkcs12Certificate;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

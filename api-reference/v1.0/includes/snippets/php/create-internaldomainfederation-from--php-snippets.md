@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\InternalDomainFederation;
+use Microsoft\Graph\Generated\Models\PreferredAuthenticationProtocol;
+use Microsoft\Graph\Generated\Models\PromptLoginBehavior;
+use Microsoft\Graph\Generated\Models\FederatedIdpMfaBehavior;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

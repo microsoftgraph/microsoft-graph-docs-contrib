@@ -15,7 +15,7 @@ var requestBody = new InsightsSettings
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Organization["{organization-id}"].Settings.ItemInsights.PatchAsync(requestBody);
+var result = await graphClient.Admin.People.ItemInsights.PatchAsync(requestBody);
 
 
 ```

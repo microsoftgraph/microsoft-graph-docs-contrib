@@ -63,7 +63,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -77,7 +77,6 @@ Here's a JSON representation of the resource.
 {
  "@odata.type": "#microsoft.graph.accessReviewInstance",
  "id": "string (identifier)",
- "displayName": "string",
  "startDateTime": "string (timestamp)",
  "endDateTime": "string (timestamp)",
  "status": "string",

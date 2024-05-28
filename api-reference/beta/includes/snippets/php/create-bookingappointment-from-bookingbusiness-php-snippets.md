@@ -5,6 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingAppointment;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\InvoiceStatus;
+use Microsoft\Graph\Beta\Generated\Models\PriceType;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminder;
+use Microsoft\Graph\Beta\Generated\Models\Recipients;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformationBase;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformation;
+use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\OutlookGeoCoordinates;
+use Microsoft\Graph\Beta\Generated\Models\BookingQuestionAnswer;
+use Microsoft\Graph\Beta\Generated\Models\AnswerInputType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -3,7 +3,7 @@ title: "Update contentApproval"
 description: "Update the properties of a contentApproval object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 

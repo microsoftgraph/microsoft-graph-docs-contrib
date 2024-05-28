@@ -4,8 +4,9 @@ description: "Learn how an app obtains an access token from the Microsoft identi
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: tutorial
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can run with it's own identity, without a signed in user, and call Microsoft Graph to access resources in a tenant.

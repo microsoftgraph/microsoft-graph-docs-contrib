@@ -3,7 +3,7 @@ title: "cloudClipboardItemPayload resource type"
 description: "Contains the specific details of the content found within a cloudClipboardItem."
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 ---
 

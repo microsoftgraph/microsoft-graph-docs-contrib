@@ -9,9 +9,9 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	isDefault = $true
 	supportedServices = @(
-		"Email"
-		"OfficeCommunicationsOnline"
-	)
+	"Email"
+"OfficeCommunicationsOnline"
+)
 }
 
 Update-MgBetaDomain -DomainId $domainId -BodyParameter $params

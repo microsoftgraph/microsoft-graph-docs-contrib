@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EducationRubric;
+use Microsoft\Graph\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Generated\Models\ContentType;
+use Microsoft\Graph\Generated\Models\RubricLevel;
+use Microsoft\Graph\Generated\Models\EducationAssignmentPointsGradeType;
+use Microsoft\Graph\Generated\Models\RubricQuality;
+use Microsoft\Graph\Generated\Models\RubricCriterion;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

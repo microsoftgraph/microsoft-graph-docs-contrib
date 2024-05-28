@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.year_time_period_definition import YearTimePeriodDefinition
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.industry_data.year_time_period_definition import YearTimePeriodDefinition
 
 graph_client = GraphServiceClient(credentials, scopes)
 

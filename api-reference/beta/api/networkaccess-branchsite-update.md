@@ -1,5 +1,5 @@
 ---
-title: "Update branch"
+title: "Update branch (deprecated)"
 description: "Update the configuration or properties of a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,10 +7,13 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Update branchSite
+# Update branchSite (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Update the configuration or properties of a specific branch.
 

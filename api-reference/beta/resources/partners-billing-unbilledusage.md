@@ -21,7 +21,7 @@ Represents details for unbilled Azure usage data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export unbilled Azure usage data for a specific billing period and currency.|
+|[Export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export unbilled Azure usage data for a specific billing period and currency.|
 
 ## Properties
 

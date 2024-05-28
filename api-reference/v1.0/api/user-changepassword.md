@@ -4,7 +4,7 @@ description: "Update your own password."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 

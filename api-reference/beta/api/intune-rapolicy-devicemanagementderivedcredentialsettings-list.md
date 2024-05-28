@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-List properties and relationships of the [deviceManagementDerivedCredentialSettings](../resources/intune-rapolicy-devicemanagementderivedcredentialsettings.md) objects.
+List properties and relationships of the [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -47,7 +47,7 @@ GET /deviceManagement/derivedCredentials
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [deviceManagementDerivedCredentialSettings](../resources/intune-rapolicy-devicemanagementderivedcredentialsettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) objects in the response body.
 
 ## Example
 

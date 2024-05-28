@@ -43,7 +43,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "activityStatistics"
   ],
-  "@odata.type": "microsoft.graph.userAnalytics"
+  "@odata.type": "microsoft.graph.userAnalytics",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

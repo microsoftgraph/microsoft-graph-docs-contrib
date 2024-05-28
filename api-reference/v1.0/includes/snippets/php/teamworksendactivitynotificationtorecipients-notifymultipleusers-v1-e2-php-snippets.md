@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teamwork\SendActivityNotificationToRecipients\SendActivityNotificationToRecipientsPostRequestBody
+use Microsoft\Graph\Generated\Models\TeamworkActivityTopic;
+use Microsoft\Graph\Generated\Models\Source;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Generated\Models\TeamworkNotificationRecipient;
+use Microsoft\Graph\Generated\Models\AadUserNotificationRecipient;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

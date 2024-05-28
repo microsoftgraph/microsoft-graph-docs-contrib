@@ -24,7 +24,7 @@ Represents the topic of an activity feed notification.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkActivityTopic"

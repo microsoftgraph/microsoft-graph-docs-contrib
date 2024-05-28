@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md)
+Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -33,7 +33,8 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note:** The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

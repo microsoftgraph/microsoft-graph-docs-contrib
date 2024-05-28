@@ -43,7 +43,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, the method returns a `200 OK` response code and collection of [WorkbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.
+If successful, the method returns a `200 OK` response code and collection of [workbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.
 ## Example
 ##### Request
 The following example shows a request.

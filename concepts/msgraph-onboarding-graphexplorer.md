@@ -61,6 +61,7 @@ Use the following steps to try education API calls in Graph Explorer:
 12. Try more queries. For more examples, see the [education API reference content](/graph/api/resources/education-overview).
 
 
-## Next steps
+## Next step
 
-- [Working with education APIs in Microsoft Graph](/graph/api/resources/education-overview)
+> [!div class="nextstepaction"]
+> [Working with education APIs in Microsoft Graph](/graph/api/resources/education-overview)

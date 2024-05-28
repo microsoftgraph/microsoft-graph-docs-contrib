@@ -6,8 +6,8 @@ ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
-ms.date: 03/22/2024
+ms.subservice: entra-id-governance
+ms.date: 03/25/2024
 #Customer intent: As a developer integrating I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
@@ -17,11 +17,9 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 In this tutorial, you learn how to:
 
+> [!div class="checklist"]
 > * Create a recurring access review of Microsoft 365 groups with guests.
 > * Investigate the decisions that are applied to access reviews.
-
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -164,6 +162,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
 } -->
 
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -303,6 +302,8 @@ In this response, the scope includes the test group because it has a guest. In t
   "@odata.type": "microsoft.graph.accessReviewInstance",
   "isCollection": "true"
 } -->
+
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -385,6 +386,8 @@ The following response shows the decision taken for the instance of the review.
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
   "isCollection": "true"
 } -->
+
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

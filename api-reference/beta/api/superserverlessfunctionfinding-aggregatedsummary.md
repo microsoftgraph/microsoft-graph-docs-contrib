@@ -4,7 +4,7 @@ description: "View the raw count of super serverless functions in the specified 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 

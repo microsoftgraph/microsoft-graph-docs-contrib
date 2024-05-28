@@ -5,6 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Worksheets\Item\Charts\Item\SetPosition\SetPositionPostRequestBody
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

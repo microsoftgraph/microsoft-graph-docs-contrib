@@ -3,7 +3,7 @@ title: "windowsSettingInstance resource type"
 description: "Represents a setting instance from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List instances](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
-|[Get windowsSettingInstance](../api/windowssettinginstance-get.md)|[windowsSettingInstance](../resources/windowssettinginstance.md)|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object.|
+|[List](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
+|[Get](../api/windowssettinginstance-get.md)|[windowsSettingInstance](../resources/windowssettinginstance.md)|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object.|
 
 ## Properties
 |Property|Type|Description|

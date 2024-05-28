@@ -24,3 +24,4 @@ Supported setting types
 |configuration|1|Configuration setting type.|
 |compliance|2|Compliance setting type.|
 |unknownFutureValue|8|Evolvable enumeration sentinel value. Do not use.|
+|inventory|16|Inventory Setting type.|

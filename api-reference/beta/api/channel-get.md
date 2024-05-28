@@ -25,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
+
 <!-- { "blockType": "permissions", "name": "channel_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-get-permissions.md)]
 
@@ -154,6 +155,7 @@ HTTP/1.1 200 OK
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "standard",
+    "isArchived": false,
     "moderationSettings": {
         "userNewMessageRestriction": "everyone",
         "replyRestriction": "everyone",
@@ -185,6 +187,7 @@ Content-type: application/json
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "standard",
+    "isArchived": false,
     "moderationSettings": {
         "userNewMessageRestriction": "moderators",
         "replyRestriction": "everyone",
@@ -214,6 +217,7 @@ Content-type: application/json
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "private",
+    "isArchived": false,
     "moderationSettings": null
 }
 ```

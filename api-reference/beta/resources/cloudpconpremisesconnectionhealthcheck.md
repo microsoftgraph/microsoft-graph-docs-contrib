@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "Represents the result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Represents the result of a Cloud PC Azure network connection health check.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[Run health checks](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## Properties
 

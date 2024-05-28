@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta users pending-access-review-instances batch-record-decisions post --user-id {user-id} --access-review-instance-id {accessReviewInstance-id} --body '{\
   "decision": "Approve",\
   "justification": "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team",\

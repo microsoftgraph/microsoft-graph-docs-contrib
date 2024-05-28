@@ -3,7 +3,7 @@ title: "Get windowsSetting"
 description: "Read the properties and relationships of a windowsSetting object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object by passing the ID of the setting in the URL. This method gets the setting for the signed-in user.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -85,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows/{windowsSettingId}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-windowssetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-windowssetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

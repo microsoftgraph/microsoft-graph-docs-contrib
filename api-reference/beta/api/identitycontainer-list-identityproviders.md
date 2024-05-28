@@ -27,11 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_identityproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-identityproviders-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity Provider Administrator
-* External ID user flow administrator
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 

@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\InferenceClassificationOverride;
+use Microsoft\Graph\Generated\Models\ClassifyAs;
+use Microsoft\Graph\Generated\Models\EmailAddress;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Education
 
-Remove-MgEducationSchoolUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
+Remove-MgEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
 
 ```

@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewScheduledPermissionsRequest()
 requestedPermissions := graphmodels.NewAwsPermissionsDefinition()
@@ -50,7 +50,7 @@ effect := graphmodels.ALLOW_AWSSTATEMENTEFFECT
 awsStatement.SetEffect(&effect) 
 condition := graphmodels.NewAwsCondition()
 additionalData := map[string]interface{}{
-numericLessThanEquals := graphmodels.New()
+numericLessThanEquals := graph.New()
 aws:MultiFactorAuthAge := "3600"
 numericLessThanEquals.SetAws:MultiFactorAuthAge(&aws:MultiFactorAuthAge) 
 	condition.SetNumericLessThanEquals(numericLessThanEquals)
@@ -80,7 +80,7 @@ effect := graphmodels.ALLOW_AWSSTATEMENTEFFECT
 awsStatement1.SetEffect(&effect) 
 condition := graphmodels.NewAwsCondition()
 additionalData := map[string]interface{}{
-numericLessThanEquals := graphmodels.New()
+numericLessThanEquals := graph.New()
 aws:MultiFactorAuthAge := "3600"
 numericLessThanEquals.SetAws:MultiFactorAuthAge(&aws:MultiFactorAuthAge) 
 	condition.SetNumericLessThanEquals(numericLessThanEquals)
@@ -152,6 +152,7 @@ ticketApproverIdentityId := "alexmanager@contoso.com"
 ticketInfo.SetTicketApproverIdentityId(&ticketApproverIdentityId) 
 requestBody.SetTicketInfo(ticketInfo)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 scheduledPermissionsRequests, err := graphClient.IdentityGovernance().PermissionsManagement().ScheduledPermissionsRequests().Post(context.Background(), requestBody, nil)
 
 

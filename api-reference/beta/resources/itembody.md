@@ -23,7 +23,7 @@ Represents properties of the body of an item, such as a message, event or group 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

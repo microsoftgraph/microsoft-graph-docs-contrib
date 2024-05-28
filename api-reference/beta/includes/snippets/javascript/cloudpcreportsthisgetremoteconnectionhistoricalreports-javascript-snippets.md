@@ -18,10 +18,10 @@ const stream = {
         'UsageInHour',
         'RoundTripTimeInMsP50',
         'AvailableBandwidthInMBpsP50',
-        'RemoteSignInTimeInSec',
+        'RemoteSignInTimeInSec'
     ],
     top: 25,
-    skip: 0,
+    skip: 0
 };
 
 await client.api('/deviceManagement/virtualEndpoint/reports/getRemoteConnectionHistoricalReports')

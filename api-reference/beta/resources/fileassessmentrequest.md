@@ -21,8 +21,8 @@ The file can be a text file or Word document or binary file received in an email
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Create a new file assessment request by posting a **fileAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read the properties and relationships of a **fileAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Create a new file assessment request by posting a **fileAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read the properties and relationships of a **fileAssessmentRequest** object. |
 
 ## Properties
 
@@ -47,7 +47,7 @@ The file can be a text file or Word document or binary file received in an email
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

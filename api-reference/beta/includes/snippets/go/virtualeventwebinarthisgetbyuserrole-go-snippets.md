@@ -5,18 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 role := "{role}"
-getByUserRole, err := graphClient.Solutions().VirtualEvents().Webinars().GetByUserRoleWithRole(&role).Get(context.Background(), nil)
+getByUserRole, err := graphClient.Solutions().VirtualEvents().Webinars().GetByUserRoleWithRole(&role).GetAsGetByUserRoleWithRoleGetResponse(context.Background(), nil)
 
 
 ```

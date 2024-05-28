@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Simulation;
+use Microsoft\Graph\Generated\Models\AttackTechnique;
+use Microsoft\Graph\Generated\Models\AttackType;
+use Microsoft\Graph\Generated\Models\Status;
+use Microsoft\Graph\Generated\Models\AddressBookAccountTargetContent;
+use Microsoft\Graph\Generated\Models\Type;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

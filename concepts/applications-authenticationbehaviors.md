@@ -4,6 +4,7 @@ description: "Manage the application authenticationBehaviors to adopt new breaki
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: medbhargava
+ms.topic: how-to
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.subservice: entra-applications

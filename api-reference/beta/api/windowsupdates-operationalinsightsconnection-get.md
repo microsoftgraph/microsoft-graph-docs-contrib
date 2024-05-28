@@ -3,7 +3,7 @@ title: "Get operationalInsightsConnection"
 description: "Read the properties and relationships of an operationalInsightsConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 

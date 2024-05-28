@@ -35,7 +35,7 @@ Represents settings related to a [live event](/microsoftteams/teams-live-events/
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

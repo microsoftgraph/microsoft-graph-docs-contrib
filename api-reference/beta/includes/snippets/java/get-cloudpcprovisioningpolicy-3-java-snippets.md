@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcProvisioningPolicy result = graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().byCloudPcProvisioningPolicyId("{cloudPcProvisioningPolicy-id}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"id", "description", "displayName", "domainJoinConfiguration", "imageDisplayName", "imageId", "imageType", "onPremisesConnectionId", "windowsSetting", "managedBy", "cloudPcGroupDisplayName", "gracePeriodInHours", "localAdminEnabled", "alternateResourceUrl"};
+	requestConfiguration.queryParameters.select = new String []{"id", "description", "displayName", "domainJoinConfigurations", "imageDisplayName", "imageId", "imageType", "windowsSetting", "managedBy", "cloudPcGroupDisplayName", "gracePeriodInHours", "localAdminEnabled", "alternateResourceUrl"};
 });
 
 

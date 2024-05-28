@@ -20,10 +20,10 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookRangeFormat](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |Read properties and relationships of rangeFormat object.|
+|[Get range format](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |Read properties and relationships of rangeFormat object.|
 |[Create workbookRangeBorder](../api/rangeformat-post-borders.md) |[workbookRangeBorder](workbookrangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
 |[List borders](../api/rangeformat-list-borders.md) |[workbookRangeBorder](workbookrangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md)	|Update RangeFormat object. |
+|[Update range format](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md)	|Update RangeFormat object. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
@@ -46,7 +46,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

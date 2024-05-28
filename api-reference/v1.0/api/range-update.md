@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [Range](../resources/workbookrange.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call. 

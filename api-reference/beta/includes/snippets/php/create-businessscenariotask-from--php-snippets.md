@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioTask;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioGroupTarget;
+use Microsoft\Graph\Beta\Generated\Models\TaskTargetKind;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioProperties;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

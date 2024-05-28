@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AndroidManagedAppProtection;
+use Microsoft\Graph\Generated\Models\AllowedInboundDataTransferSources;
+use Microsoft\Graph\Generated\Models\AllowedOutboundDataTransferDestinations;
+use Microsoft\Graph\Generated\Models\AllowedOutboundClipboardSharingLevel;
+use Microsoft\Graph\Generated\Models\PinCharacterSet;
+use Microsoft\Graph\Generated\Models\ManagedAppDataStorageLocation;
+use Microsoft\Graph\Generated\Models\ManagedBrowser;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

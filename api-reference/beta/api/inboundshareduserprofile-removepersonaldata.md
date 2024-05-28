@@ -1,7 +1,8 @@
 ---
 title: "inboundSharedUserProfile: removePersonalData"
 description: "Create a request to remove the personal data for an inboundSharedUserProfile."
-author: "jkdouglas"
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
