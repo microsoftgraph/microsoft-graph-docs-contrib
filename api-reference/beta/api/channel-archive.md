@@ -138,8 +138,6 @@ The following example shows a request to archive a channel that fails because th
 
 #### Request
 
-The following example shows a request.
-
 <!-- {
   "blockType": "request",
   "name": "archive_channel_on_archived_team"
