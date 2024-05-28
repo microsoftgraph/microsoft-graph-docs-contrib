@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ios_mobile_app_configuration import IosMobileAppConfiguration
 from msgraph.generated.models.app_configuration_setting_item import AppConfigurationSettingItem
+from msgraph.generated.models.mdm_app_config_key_type import MdmAppConfigKeyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

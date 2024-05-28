@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.compliance.ediscovery.cases.item.source_collections.item.source_collection_item_request_builder import SourceCollectionItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.compliance.ediscovery.cases.item.source_collections.item.source_collection_item_request_builder import SourceCollectionItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBui
 		expand = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"],
 )
 
-request_configuration = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

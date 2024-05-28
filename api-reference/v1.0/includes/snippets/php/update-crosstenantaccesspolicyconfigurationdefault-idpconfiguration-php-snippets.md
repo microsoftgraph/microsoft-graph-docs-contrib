@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyConfigurationDefault;
 use Microsoft\Graph\Generated\Models\DefaultInvitationRedemptionIdentityProviderConfiguration;
 use Microsoft\Graph\Generated\Models\B2bIdentityProvidersType;
+use Microsoft\Graph\Generated\Models\FallbackIdentityProvider;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -20,10 +20,10 @@ A group of user calendars.
 | [List calendar groups](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) collection | Get the user's calendar groups.                               |
 | [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Create a new calendar group.                                  |
 | [Get calendar group](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Read properties and relationships of a calendar group object. |
-| [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Update calendarGroup object.                                  |
-| [Delete](../api/calendargroup-delete.md)                    | None                               | Delete calendarGroup object.                                  |
-| [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | List calendars in a calendar group.                           |
-| [Create Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Create a new Calendar in a calendar group.                    |
+| [Update calendar group](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Update calendarGroup object.                                  |
+| [Delete calendar group](../api/calendargroup-delete.md)                    | None                               | Delete calendarGroup object.                                  |
+| [List calendars in calendar group](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | List calendars in a calendar group.                           |
+| [Create calendar in calendar group](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Create a new Calendar in a calendar group.                    |
 
 ## Properties
 
