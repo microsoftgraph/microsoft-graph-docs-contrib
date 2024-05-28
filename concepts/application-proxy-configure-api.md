@@ -7,7 +7,7 @@ ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 02/28/2024
+ms.date: 05/20/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to Configure Microsoft Entra application proxy u
 ## Prerequisites
 
 - Install a connector and complete the [prerequisites](/entra/identity/app-proxy/application-proxy-add-on-premises-application#prerequisites) for application proxy so that connectors can communicate with Microsoft Entra services.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the Cloud Application Administrator role.
 - Grant yourself the Microsoft Graph `Directory.ReadWrite.All` delegated permission.
 - Have a test user to assign to the application.
 

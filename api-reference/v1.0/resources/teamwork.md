@@ -17,8 +17,8 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
-|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
+|[List](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
+|[Get](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
 
 ## Properties
 
