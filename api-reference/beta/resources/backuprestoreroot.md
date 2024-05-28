@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-BackupRestoreRoot resource of M365 Backup and Storage.
+Represents the Microsoft 365 Backup Storage service in a tenant.
 
 ## Methods
 
@@ -26,30 +26,30 @@ BackupRestoreRoot resource of M365 Backup and Storage.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|ID of the BackupRestoreRoot|
-|serviceStatus|[serviceStatus](../resources/servicestatus.md) collection|Represents tenant level service status related to Backup service.|
+|id|String|ID of the Backup Storage service.|
+|serviceStatus|[serviceStatus](../resources/servicestatus.md) collection|Represents the tenant-level status of the Backup Storage service.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|List of Drive Inclusion Rules applied to the tenant.|
-|driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|List of Drive Protection Units in the tenant.|
-|exchangeProtectionPolicies|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) collection|List of Exchange Protection Policies in the tenant.|
-|exchangeRestoreSessions|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|List of Exchange Restore Session available in the tenant.|
-|mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|List of Mailbox Inclusion Rules applied to the tenant.|
-|mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|List of Mailbox Protection Units in the tenant.|
-|oneDriveForBusinessProtectionPolicies|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) collection|List of OneDriveForBusiness Protection Policies in the tenant.|
-|oneDriveForBusinessRestoreSessions|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|List of OneDriveForBusiness Restore Session available in the tenant.|
-|protectionPolicies|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|List of Protection Policies in the tenant.|
-|protectionUnits|[protectionUnitBase](../resources/protectionunitbase.md) collection|List of Protection Units in the tenant.|
-|restorePoints|[restorePoint](../resources/restorepoint.md) collection|List of Restore Points in the tenant.|
-|restoreSessions|[restoreSessionBase](../resources/restoresessionbase.md) collection|List of Restore Sessions in the tenant.|
-|serviceApps|[serviceApp](../resources/serviceapp.md) collection|List of BackupRestore Service Apps in the tenant.|
-|sharePointProtectionPolicies|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|List of SharePoint Protection Policies in the tenant.|
-|sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|List of SharePoint Restore Session available in the tenant.|
-|siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|List of Site Inclusion Rules applied to the tenant.|
-|siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|List of Site Protection Units in the tenant.|
+|driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
+|driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|The list of drive protection units in the tenant.|
+|exchangeProtectionPolicies|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) collection|The list of Exchange protection policies in the tenant.|
+|exchangeRestoreSessions|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|The list of Exchange restore sessions available in the tenant.|
+|mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The list of mailbox inclusion rules applied to the tenant.|
+|mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|The list of mailbox protection units in the tenant.|
+|oneDriveForBusinessProtectionPolicies|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) collection|The list of OneDrive for Business protection policies in the tenant.|
+|oneDriveForBusinessRestoreSessions|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|The list of OneDrive for Business restore sessions available in the tenant.|
+|protectionPolicies|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|List of protection policies in the tenant.|
+|protectionUnits|[protectionUnitBase](../resources/protectionunitbase.md) collection|List of protection units in the tenant.|
+|restorePoints|[restorePoint](../resources/restorepoint.md) collection|List of restore points in the tenant.|
+|restoreSessions|[restoreSessionBase](../resources/restoresessionbase.md) collection|List of restore sessions in the tenant.|
+|serviceApps|[serviceApp](../resources/serviceapp.md) collection|List of Backup Storage apps in the tenant.|
+|sharePointProtectionPolicies|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|The list of SharePoint protection policies in the tenant.|
+|sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
+|siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
+|siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
 
 ## JSON representation
 
