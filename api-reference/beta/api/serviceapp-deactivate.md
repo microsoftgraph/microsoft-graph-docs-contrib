@@ -1,8 +1,8 @@
 ---
 title: "serviceApp: deactivate"
 description: "Deactivate a serviceApp"
-author: "tkanaujia"
-ms.reviewer: "maniksingh"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
