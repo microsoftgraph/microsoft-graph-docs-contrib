@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Describes a drive protection rule and its properties"
+description: "Describes a drive protection rule associated with a OneDrive for Buisness protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a drive protection rule associated with [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and its properties.
+Describes a protection rule associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
@@ -22,11 +22,11 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) and their properties.|
-|[Create driveProtectionRule](../api/protectionrulebase-post.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[Get driveProtectionRule](../api/protectionrulebase-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[Delete driveProtectionRule](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activates a drive protection rule.|
+|[List](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) objects and their properties.|
+|[Create](../api/protectionrulebase-post.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Get](../api/protectionrulebase-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Delete](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a drive protection rule.|
 
 ## Properties
 
@@ -35,7 +35,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |createdBy|[identitySet](../resources/identityset.md) entitySet|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
-|driveExpression|String|Contains drive expression.[driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples)|
+|driveExpression|String|Contains a drive expression. For an example, see [driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples).|
 |error|[publicError](../resources/publicerror.md)|If the operation fails, contains the details of the error.|
 |isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
@@ -44,7 +44,8 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
 ### driveExpression examples
 
-The drive expression can be of following formats.
+The following table shows possible formats for the drive expression.
+
 | Property                                 | Operator                                   | Example                                                                  |
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
 | `memberOf`      | `-any` |  `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375']))`         |
@@ -55,9 +56,9 @@ The drive expression can be of following formats.
 |Member | Description |
 |:------|:------------|
 |draft | The initial status of protection rule upon creation is draft.|
-|active | Upon running the protection rule using the /run API, the status of protection rule transitions to active. The state transition is draft to active.|
-|completed |Once the protection rule is successfully applied to the corresponding policy, the status of protection rule will be completed. The state transition is active to completed.|
-|completedWithErrors | In case of any failures while applying the protection rule to the corresponding policy, the status of protectionRuleBase will be completedWithErrors. The state transition is active to completedWithErrors.|
+|active | The status of the protection rule upon using the `/run` API.|
+|completed | The status of the protection rule after it is successfully applied to the corresponding policy.|
+|completedWithErrors | The status of the protection rule after it is applied to the corresponding policy and any failures occurred.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
