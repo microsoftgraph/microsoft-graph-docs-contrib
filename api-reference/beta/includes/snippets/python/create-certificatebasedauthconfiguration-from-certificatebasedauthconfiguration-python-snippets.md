@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.certificate_based_auth_configuration import CertificateBasedAuthConfiguration
-from msgraph.generated.models.certificate_authority import CertificateAuthority
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.certificate_based_auth_configuration import CertificateBasedAuthConfiguration
+from msgraph_beta.generated.models.certificate_authority import CertificateAuthority
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.organization.item.branding.branding_request_builder import BrandingRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.organizational_branding import OrganizationalBranding
 
 graph_client = GraphServiceClient(credentials, scopes)
@@ -15,7 +16,7 @@ request_body = OrganizationalBranding(
 	username_hint_text = "DefaultHint",
 )
 
-request_configuration = BrandingRequestBuilder.BrandingRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Accept-Language", "0")
 
 

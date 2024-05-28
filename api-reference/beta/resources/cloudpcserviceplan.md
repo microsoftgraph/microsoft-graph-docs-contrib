@@ -21,7 +21,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the currently available service plans that the organization can purchase for the Cloud PCs.|
+|[List](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the currently available service plans that the organization can purchase for the Cloud PCs.|
 
 ## Properties
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.inference_classification_override import InferenceClassificationOverride
+from msgraph.generated.models.inference_classification_type import InferenceClassificationType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

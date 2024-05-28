@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Workflow;
-use Microsoft\Graph\Generated\Models\OnDemandExecutionOnly;
-use Microsoft\Graph\Generated\Models\Task;
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\IdentityGovernance\Workflow
+use Microsoft\Graph\Generated\Models\IdentityGovernance\Category;
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\IdentityGovernance\OnDemandExecutionOnly
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\IdentityGovernance\Task
 use Microsoft\Graph\Generated\Models\KeyValuePair;
 
 

@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.user import User
-from msgraph.generated.models.custom_security_attribute_value import CustomSecurityAttributeValue
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.user import User
+from msgraph_beta.generated.models.custom_security_attribute_value import CustomSecurityAttributeValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

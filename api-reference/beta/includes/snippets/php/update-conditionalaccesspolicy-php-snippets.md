@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ConditionalAccessPolicy;
-use Microsoft\Graph\Generated\Models\ConditionalAccessConditionSet;
-use Microsoft\Graph\Generated\Models\RiskLevel;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPolicy;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessConditionSet;
+use Microsoft\Graph\Beta\Generated\Models\RiskLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

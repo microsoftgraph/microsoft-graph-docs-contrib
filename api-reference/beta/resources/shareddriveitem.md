@@ -40,7 +40,6 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
   "permission": { "@odata.type": "microsoft.graph.permission" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
   "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
@@ -80,7 +79,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 | Method                                  | REST Path                |
 | :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
+| [Use sharing links](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## Remarks
 

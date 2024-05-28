@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta security attack-simulation training-campaigns patch --training-campaign-id {trainingCampaign-id} --body '{\
     "displayName": "Graph Training Campaign",\
     "description": "Graph Training Campaign Description",\
