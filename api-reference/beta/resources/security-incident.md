@@ -52,7 +52,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |recommendedActions|String|A rich text string that represents the actions that are reccomnded to take in order to resolve the incident |
 |recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting Kusto Query Language (KQL) queries related to the incident|
 |resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
-|summary|String|The summary of an incident provided by Defender Experts. The incident summary is also available when an incident is automatically disrupted through attack disruption.|
+|summary|String|Provides an overview of an attack. When applicable, the summary contains details of what occurred, impacted assets and type of attack.|
 
 
 ### incidentStatus values 
