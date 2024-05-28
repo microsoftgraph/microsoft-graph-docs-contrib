@@ -49,6 +49,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **preferredTimezone** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "change",
+          "Description": "Added **userId** filter to the List method of the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "change",
+          "Description": "Added **email** filter to the List method of the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
         }
       ],
       "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
