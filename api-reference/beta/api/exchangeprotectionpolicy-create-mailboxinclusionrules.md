@@ -1,7 +1,8 @@
 ---
 title: "Create mailboxProtectionRule"
 description: "Create a mailbox protection rule for an Exchange protection policy."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md) associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The status of a protection rule on creation is `active`. After the rule is applied, the status is either `completed` or `completedWithErrors`.
 
@@ -47,12 +48,11 @@ POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPoli
 
 In the request body, supply a JSON representation of the [mailboxInclusionRule](../resources/mailboxprotectionrule.md) object.
 
-You can specifiy the following properties when creating a **mailboxInclusionRule**.
+You can specify the following properties when creating a **mailboxInclusionRule**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [example](../resources/mailboxprotectionrule.md#mailboxexpression-examples) for usage details. Required|
-
 
 ## Response
 

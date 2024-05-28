@@ -1,7 +1,8 @@
 ---
 title: "driveInclusionRule: run"
-description: "Activate a driveInclusionRule."
-author: "tushar20, manikantsinghms"
+description: "Activates a drive inclusion rule associated with a OneDriveForBusiness protection policy"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,19 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a [driveInclusionRule](../resources/driveprotectionrule.md)
-Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is draft -> active.
+Activate a [driveInclusionRule](../resources/driveprotectionrule.md) associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+
+Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is `draft` -> `active`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessprotectionpolicy-run-driveinclusionrules-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-run-driveinclusionrules-permissions.md)] -->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -55,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [protectionRuleBase](../resources/protectionrulebase.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) object in the response body.
 
 ## Examples
 
@@ -68,9 +63,8 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
-
 
 ### Response
 
@@ -85,7 +79,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Content-Location: solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.protectionRuleBase",
@@ -112,4 +106,3 @@ Content-Location: solutions/backupRestore/oneDriveForBusinessProtectionPolicies/
    "isAutoApplyEnabled": false
 }
 ```
-

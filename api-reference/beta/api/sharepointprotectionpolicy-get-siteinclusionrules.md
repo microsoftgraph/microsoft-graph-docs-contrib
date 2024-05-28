@@ -1,7 +1,8 @@
 ---
 title: "Get siteInclusionRule"
 description: "Get Site Inclusion Rule in a SharePoint Protection Policy."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -15,18 +16,11 @@ Namespace: microsoft.graph
 
 Get a [siteInclusionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-get-siteinclusionrules-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-get-siteinclusionrules-permissions.md)]-->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -70,7 +64,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
 ### Response
@@ -85,7 +79,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.siteProtectionRule",

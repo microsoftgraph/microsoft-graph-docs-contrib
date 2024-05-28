@@ -1,6 +1,6 @@
 ---
 title: "List driveInclusionRules"
-description: "Get a list of the drive inclusion rules associated with a OneDrive for Business protection policy."
+description: "List drive inclusion rules associated with a OneDrive for Business protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [driveProtectionRule](../resources/driveprotectionrule.md) bojects associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a list of [driveProtectionRule](../resources/driveprotectionrule.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -38,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -54,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) object in the response body.
 
 ## Examples
 
@@ -67,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
+GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
 ```
 
 ### Response
@@ -81,7 +76,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
 
 {
    "@odata.context": "/solutions/backupRestore/oneDriveForBusinessProtectionPolicies('71633878-8321-4950-bfaf-ed285bdd1461')/driveInclusionRules",

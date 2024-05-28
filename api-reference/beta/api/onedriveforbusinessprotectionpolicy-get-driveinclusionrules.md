@@ -1,7 +1,8 @@
 ---
 title: "Get driveInclusionRule"
-description: "Get the drive inclusion rules associated with a OneDrive for Business protection policy."
-author: "tushar20, manikantsinghms"
+description: "Get a drive inclusion rule associated with an OneDrive for Business protection policy."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [driveProtectionRule](../resources/driveprotectionrule.md) object associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a [driveProtectionRule](../resources/driveprotectionrule.md) object associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
@@ -36,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -84,7 +81,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.driveProtectionRule",

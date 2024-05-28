@@ -1,7 +1,8 @@
 ---
 title: "List siteInclusionRules"
-description: "List Site Inclusion Rules in a SharePoint Protection Policy."
-author: "tushar20, manikantsinghms"
+description: "List site inclusion rules in a SharePoint protection policy."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,20 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [siteProtectionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Get a list of [siteProtectionRule](../resources/siteprotectionrule.md) objects associated with a  [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-list-siteinclusionrules-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-list-siteinclusionrules-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -43,10 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -59,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [siteProtectionRule](../resources/siteprotectionrule.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [siteProtectionRule](../resources/siteprotectionrule.md) object in the response body.
 
 ## Examples
 
@@ -73,7 +64,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
 ```
 
 ### Response
@@ -87,7 +78,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
 
 {
   "@odata.context": "/solutions/backupRestore/sharePointProtectionPolicies('71633878-8321-4950-bfaf-ed285bdd1461')/siteInclusionRules",

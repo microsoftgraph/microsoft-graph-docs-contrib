@@ -1,7 +1,8 @@
 ---
 title: "Delete siteInclusionRule"
 description: "Delete a siteInclusionRule."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,18 +15,12 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [siteInclusionRule](../resources/siteprotectionrule.md).
-Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [siteInclusionRule](../resources/siteprotectionrule.md) will not remove the Protection Units corresponding to the rule from the SharePoint protection policy.
+
+Deletion of a rule is allowed once it reaches the `completed` or `completedWithErrors` state. Deletion of a [siteInclusionRule](../resources/siteprotectionrule.md) will not remove the protection units corresponding to the rule from the SharePoint protection policy.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-delete-siteinclusionrules-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-delete-siteinclusionrules-permissions.md)] -->
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference)
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -68,9 +63,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/backupRestore/siteInclusionRules/{siteProtectionRuleId}
+DELETE https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/51633878-8321-4950-bfaf-ed285bdd1461
 ```
-
 
 ### Response
 
@@ -84,4 +78,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

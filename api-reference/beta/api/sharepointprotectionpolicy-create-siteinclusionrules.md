@@ -1,7 +1,8 @@
 ---
 title: "Create siteInclusionRules"
-description: "Create Site Inclusion Rules in a SharePoint Protection Policy."
-author: "tushar20, manikantsinghms"
+description: "Create a new site inclusion rule in a SharePoint protection policy."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,19 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [siteInclusionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+Create a new [siteInclusionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-create-siteinclusionrule-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-siteinclusionrule-permissions.md)] -->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -53,6 +48,14 @@ POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtection
 
 In the request body, supply a JSON representation of the [siteProtectionRule](../resources/siteprotectionrule.md) object.
 
+You can specify the following properties when creating a siteInclusionRule.
+
+### Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|siteExpression|String|Contains site expression. [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples). Required.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [siteProtectionRule](../resources/siteprotectionrule.md) object in the response body.
@@ -68,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules 
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules 
 Content-Type: application/json
 Application: application/json
 Odata-Version: 4.0
@@ -90,7 +93,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.siteProtectionRule",
