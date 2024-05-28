@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: create"
-description: "Create a registation record for a webinar registrant."
+description: "Create a registation record for a webinar attendee."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) registrant.
+Create a [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) attendee.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
