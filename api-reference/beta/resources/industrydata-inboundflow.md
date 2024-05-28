@@ -19,16 +19,14 @@ By default, the inbound flow activates twice (2x) daily. For more details, see [
 
 Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
-Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
+Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md) and [inboundApiFlow](../resources/industrydata-inboundapiflow.md).
 
 ## Methods
 
 | Method                                                          | Return type                                                                        | Description                                                                                    |
 | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Create](../api/industrydata-inboundflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Create a new [inboundFlow](industrydata-inboundflow.md) object.                                |
-| [List](../api/industrydata-inboundflow-list.md)    | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
+| [List](../api/industrydata-inboundflow-list.md)     | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
 | [Get](../api/industrydata-inboundflow-get.md)       | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](industrydata-inboundflow.md) object. |
-| [Update](../api/industrydata-inboundflow-update.md) | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](industrydata-inboundflow.md) object.                 |
 | [Delete](../api/industrydata-inboundflow-delete.md) | None                                                                               | Delete an [inboundFlow](industrydata-inboundflow.md) object.                                   |
 
 ## Properties

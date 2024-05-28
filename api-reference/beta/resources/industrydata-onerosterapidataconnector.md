@@ -22,10 +22,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](../resources/indus
 |Method|Return type|Description|
 |:---|:---|:---|
 | [Create oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-post.md)   | [microsoft.graph.industryData.onerosterapidataconnector](industrydata-onerosterapidataconnector.md)                         | Create a new [onerosterapidataconnector](industrydata-onerosterapidataconnector.md) object.                                                                         |
-| [List oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-list.md)     | [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) collection | Get a list of the [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) objects and their properties.    |
-| [Get oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-get.md)       | [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md)            | Read the properties and relationships of a [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) object. |
 | [Update oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-update.md) | [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md)            | Update the properties of a [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) object.                 |
-| [Delete oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-delete.md) | None                                                                                                                        | Delete a [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) object.                                   |
 
 ## Properties
 |Property|Type|Description|
