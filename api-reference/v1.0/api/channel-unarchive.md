@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Restore an archived [channel](../resources/channel.md). Unarchiving restores the ability for users to send messages and edit the channel. Channels are archived via the [channel: archive](channel-archive.md) method.
 
-Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
+Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchiving operation completes successfully, which might occur after this method responds.
 
 > **Note**: An archived channel that belongs to an archived team can't be unarchived. Unarchive the team before you unarchive the channel; otherwise, the request fails.
 
