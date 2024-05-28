@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPolicy](../resources/protectionpolicybase.md).
+Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.
 
 ## Methods
 
@@ -28,23 +28,23 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the restore point.|
-|protectionDateTime|DateTimeOffset|Date time when restore point was created.|
+|protectionDateTime|DateTimeOffset|Date time when the restore point was created.|
 |expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of of restore points..The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of restore points. The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
 
 ### restorePointTags values
 
 |Member | Description |
 |:------|:------------|
-|none   | No Tag      |
-|fastRestore | Tag to get fast restore point.|
-|unknownFutureValue | Marker value for future compatibility.|
+|none   | No tag.      |
+|fastRestore | Get a fast restore point.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|Protection Units refers to the site/drive/mailbox units that are being protected under the Protection Policy.|
+|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|The site, drive, or mailbox units that are protected under a protection policy.|
 
 ## JSON representation
 
