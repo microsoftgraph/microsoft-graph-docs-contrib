@@ -1,6 +1,6 @@
 ---
 title: "channel: archive"
-description: "Archive a channel in a team. "
+description: "Archive a channel in a team."
 author: "sumitgupta3"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Archive a [channel](../resources/channel.md) in a team. When a channel is archived, users can't send new messages or react to existing messages in the channel, edit the channel settings, or make other changes to the channel.
 
-You can delete an archived channel, or add and remove members from it. If you archive a team, its channels are archived for you.
+You can delete an archived channel or add and remove members from it. If you archive a team, its channels are also archived.
 
-Archiving is asynchronous; a channel is archived after the asynchronous archiving operation completes successfully, which might occur after the response returns.
+Archiving is an asynchronous operation; a channel is archived after the asynchronous archiving operation completes successfully, which might occur after the response returns.
 
-A channel without an owner, or that belongs to a [group](../resources/group.md) that has no owner, can't be archived.
+A channel without an owner or that belongs to a [group](../resources/group.md) that has no owner, can't be archived.
 
-To restore a channel from its archived state, use the [unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
+To restore a channel from its archived state, use the [channel: unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "channel_archive" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-archive-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't members of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,23 +42,30 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 
 ## Request headers
 
-| Header       | Value |
+| Name       |Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json  |
 
 ## Request body
 
-In the request, you can optionally include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
-```JSON
+In the request body, you can optionally provide a JSON object with the following parameter.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|shouldSetSpoSiteReadOnlyForMembers|Boolean|Defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. If you set it to `false` or omit the parameter, this step is skipped.|
+
+The following example shows the request body with the **shouldSetSpoSiteReadOnlyForMembers** set to `true`.
+
+```json
 {
-    "shouldSetSpoSiteReadOnlyForMembers": true
+  "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether results in this step being skipped.
 
 ## Response
 
-If archiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
+If archiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header that specifies the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle the archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Examples
 
@@ -127,20 +134,29 @@ Content-Length: 0
 
 ### Example 2: Archive a channel when the team is archived
 
-The following example shows a request when the **team is archived**.
+The following example shows a request to archive a channel that fails because the team is archived; the team must be active to archive or unarchive a channel.
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "archive_channel_on_archived_team"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
 ```
 
 #### Response
-The following example shows the `400` error response.
+The following example shows the `400 Bad Request` response code with a corresponding error message.
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "response",
+  "name": "archive_channel_on_archived_team",
+  "@odata.type": "microsoft.graph.publicError",
+  "truncated": true
+}-->
 ```http
 http/1.1 400 Bad Request
 Content-Type: application/json
@@ -160,7 +176,6 @@ Content-Length: 193
         }
     }
 }
-
 ```
 
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
