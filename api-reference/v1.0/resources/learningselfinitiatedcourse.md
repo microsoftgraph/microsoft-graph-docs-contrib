@@ -48,7 +48,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Int32",
-  "externalCourseActivityId": "String",
+  "externalcourseActivityId": "String",
   "id": "String (identifier)",
   "learningContentId": "String",
   "learningProviderId": "String",

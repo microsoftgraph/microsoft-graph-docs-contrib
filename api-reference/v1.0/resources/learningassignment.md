@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Int32",
   "dueDateTime": "String (timestamp)",
-  "externalCourseActivityId": "String",
+  "externalcourseActivityId": "String",
   "id": "String (identifier)",
   "learnerUserId": "String",
   "learningContentId": "String",

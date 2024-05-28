@@ -152,7 +152,7 @@ Content-Type: application/json
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"
   },
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
@@ -177,7 +177,7 @@ The following example shows a request to get the details of a learning course ac
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalcourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
 ```
 
 # [C#](#tab/csharp)
@@ -231,7 +231,7 @@ Content-Type: application/json
   "assignmentType": "required",
   "completedDateTime": null,
   "completionPercentage": null,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "dueDateTime": {
     "dateTime": "2022-09-22T16:05:00.0000000",
@@ -316,7 +316,7 @@ Content-Type: application/json
   "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
   "completedDateTime": null,
   "completionPercentage": 20,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "dueDateTime": {
     "dateTime": "2022-09-22T16:05:00.0000000",
