@@ -41,8 +41,8 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 
 ## Request headers
 
-| Name       |Description|
-|:---------------|:--------|
+|Name|Description|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
