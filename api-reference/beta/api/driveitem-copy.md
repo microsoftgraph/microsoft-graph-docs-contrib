@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-description: "Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name."
+description: "Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name."
 ms.date: 09/10/2017
 title: "driveItem: copy"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_copy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-copy-permissions.md)]
 
-**Note:** SharePoint Embedded requires FileStorageContainer.Selected to access the content of the container. For more information, see [SharePoint Embedded authentication and authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#access-on-behalf-of-a-user)
+>**Note:** SharePoint Embedded requires the FileStorageContainer.Selected permission to access the content of the container. For more information, see [SharePoint Embedded authentication and authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#access-on-behalf-of-a-user)
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
-**Note:** The _conflictBehavior_ isn't supported for OneDrive Consumer.
+**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 
 ## Request body
 
@@ -57,9 +57,9 @@ In the request body, provide a JSON object with the following parameters.
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
-| childrenOnly    | bool                                           | Optional. Default is false. If set to true, it will the copy the driveItem's children only without copying the driveItem itself. Valid on for folder items. |
+| childrenOnly    | Boolean                                        | Optional. Default is `false`. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. Valid on folder items. |
 
-**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
+**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 
 ## Response
 
@@ -67,12 +67,12 @@ Returns details about how to [monitor the progress](/graph/long-running-actions-
 
 ## Examples
 
-This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+### Example 1: Copy a file to a folder
+
+The following example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file is named `contoso plan (copy).txt`.
 
-### Request 1
-
-The following example shows a request.
+#### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -138,12 +138,12 @@ You can use this information to [determine when the copy finished](/graph/long-r
 
 
 
-### Request 2
+### Example 2: Copy the children in a folder
 
-This example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The new copy of the file is named `contoso plan (copy).txt`. The childrenOnly boolean set to true.
+The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The new copy of the file is named `contoso plan (copy).txt`. The `childrenOnly` Boolean parameter is set to `true`.
 
-# [HTTP](#tab/http)
+#### Request 
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -159,10 +159,7 @@ Content-Type: application/json
   "childrenOnly": true
 }
 ```
-
----
-
-### Response
+#### Response
 
 The following example shows the response.
 
