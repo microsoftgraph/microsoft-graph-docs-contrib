@@ -21,11 +21,11 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 | Method                                     | Return type                      | Description                                           |
 | :----------------------------------------- | :------------------------------- | :---------------------------------------------------- |
-| [List timeOff](../api/schedule-list-timesoff.md)   | [timeOff](timeoff.md) collection | Get the list of **timeOff** objects in a schedule. |
-| [Create timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md)            | Create a new **timeOff** object.                      |
-| [Get timeOff](../api/timeoff-get.md)               | [timeOff](timeoff.md)            | Get a **timeOff** object by ID.                       |
-| [Replace timeOff](../api/timeoff-put.md)           | [timeOff](timeoff.md)            | Replace a **timeOff** object.                         |
-| [Delete timeOff](../api/timeoff-delete.md)         | None                             | Delete a **timeOff** object from the schedule.        |
+| [List](../api/schedule-list-timesoff.md)   | [timeOff](timeoff.md) collection | Get the list of **timeOff** objects in a schedule. |
+| [Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md)            | Create a new **timeOff** object.                      |
+| [Get](../api/timeoff-get.md)               | [timeOff](timeoff.md)            | Get a **timeOff** object by ID.                       |
+| [Replace](../api/timeoff-put.md)           | [timeOff](timeoff.md)            | Replace a **timeOff** object.                         |
+| [Delete](../api/timeoff-delete.md)         | None                             | Delete a **timeOff** object from the schedule.        |
 | [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None    |Stage the deletion of a [timeOff](timeoff.md) in a [schedule](schedule.md) in draft mode.|
 
 ## Properties

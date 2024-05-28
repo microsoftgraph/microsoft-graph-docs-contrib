@@ -13100,7 +13100,7 @@ items:
                     items:
                       - name: List
                         href: api/authentication-list-methods.md
-                  - name: Authentication sign-in preferences
+                  - name: Authentication method states
                     href: resources/authentication.md
                     items:
                       - name: Get
@@ -13924,7 +13924,7 @@ items:
                       - name: Get
                         href: api/customclaimspolicy-get.md
                       - name: Create or replace
-                        href: api/serviceprincipal-put-customclaimspolicy.md
+                        href: api/serviceprincipal-put-claimspolicy.md
                       - name: Update
                         href: api/customclaimspolicy-update.md
                   - name: Continuous access evaluation policy

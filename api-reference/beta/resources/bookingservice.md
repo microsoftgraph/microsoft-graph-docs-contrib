@@ -21,9 +21,9 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
+|[List](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
+|[Create](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
+|[Get](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
 |[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 |[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 

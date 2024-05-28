@@ -17,8 +17,8 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
-|[List callRecordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get callRecording](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
+|[List](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
 

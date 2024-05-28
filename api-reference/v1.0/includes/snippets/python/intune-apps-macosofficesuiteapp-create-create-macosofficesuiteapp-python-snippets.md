@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mac_o_s_office_suite_app import MacOSOfficeSuiteApp
 from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

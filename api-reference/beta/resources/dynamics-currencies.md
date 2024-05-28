@@ -20,10 +20,10 @@ Represents a currency used in Dynamics 365 Business Central.
 ## Methods
 | Method                                                  |Return Type|Description       |
 |:--------------------------------------------------------|:----------|:-----------------|
-|[Get currency](../api/dynamics-currencies-get.md)      |[currency](dynamics-currencies.md) |Get a currency.   |
-|[Create currency](../api/dynamics-create-currencies.md)  |[currency](dynamics-currencies.md) |Create a currency.|
-|[Update currency](../api/dynamics-currencies-update.md) |[currency](dynamics-currencies.md) |Update a currency.|
-|[Delete currency](../api/dynamics-currencies-delete.md)|None       |Delete a currency.|
+|[Get currencies](../api/dynamics-currencies-get.md)      |[currency](dynamics-currencies.md) |Get a currency.   |
+|[Create currencies](../api/dynamics-create-currencies.md)  |[currency](dynamics-currencies.md) |Create a currency.|
+|[Update currencies](../api/dynamics-currencies-update.md) |[currency](dynamics-currencies.md) |Update a currency.|
+|[Delete currencies](../api/dynamics-currencies-delete.md)|None       |Delete a currency.|
 
 ## Properties
 | Property	            | Type	 |Description                                                   |

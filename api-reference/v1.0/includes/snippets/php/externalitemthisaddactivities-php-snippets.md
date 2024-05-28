@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AddActivitiesPostRequestBody;
-use Microsoft\Graph\Generated\Models\ExternalActivity;
-use Microsoft\Graph\Generated\Models\Identity;
+use Microsoft\Graph\Generated\External\Connections\Item\Items\Item\MicrosoftGraphExternalConnectorsAddActivities\AddActivitiesPostRequestBody
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\ExternalConnectors\ExternalActivity
+use Microsoft\Graph\Generated\Models\ExternalConnectors\Type;
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\ExternalConnectors\Identity
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
