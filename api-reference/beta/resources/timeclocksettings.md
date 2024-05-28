@@ -23,7 +23,7 @@ Represents timeclock settings for a [schedule](schedule.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

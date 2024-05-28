@@ -10,11 +10,11 @@ $params = @{
 	description = "Self help community for golf"
 	displayName = "Golf Assist"
 	groupTypes = @(
-		"Unified"
-	)
-	mailEnabled = $true
-	mailNickname = "golfassist"
-	securityEnabled = $false
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "golfassist"
+securityEnabled = $false
 }
 
 Update-MgBetaGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 

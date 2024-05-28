@@ -19,7 +19,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 
 | Property          | Type                 | Description|
 |:------------------|:---------------------|:----------------------------------|
-|   associatedHubsUrls         | String collection | List of canonical URLs for hub sites with which this content type is associated to. This contains all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
+|   associatedHubsUrls         | String collection | List of canonical URLs for hub sites with which this content type is associated to. This contains all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type is applied to the lists in the enforced sites.|
 |   documentSet         | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
 |   documentTemplate    | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
 |   description     | String               | The descriptive text for the item.|
@@ -31,7 +31,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 |   name            | String               | The name of the content type.|
 |   order           | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.|
 |   parentId        | String               | The unique identifier of the content type.|
-|   propagateChanges     | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
+|   propagateChanges     | Boolean              | If `true`, any changes made to the content type are pushed to inherited content types and lists that implement the content type.|
 |   readOnly        | Boolean              | If `true`, the content type can't be modified unless this value is first set to `false`.|
 |   sealed          | Boolean              | If `true`, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
 
@@ -40,10 +40,10 @@ Represents a content type in SharePoint. Content types allow you to define a set
 | Relationship    | Type                      | Description|
 |:----------------|:--------------------------|:-------------------------------|
 |   base     | [contentType][]  | Parent contentType from which this content type is derived. |
-|   columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type|
 |   baseTypes     | [contentType][] collection     | The collection of content types that are ancestors of this content type.|
+|   columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type.|
 |   columnPositions         | [columnDefinition][] collection | Column order information in a content type.|
-|   columns       | [columnDefinition][] collection  | The collection of column definitions for this contentType.|
+|   columns       | [columnDefinition][] collection  | The collection of column definitions for this content type.|
 
 For more information, see [Introduction to content types and content type publishing][contentTypeIntro].
 
@@ -51,14 +51,14 @@ For more information, see [Introduction to content types and content type publis
 [contentTypeIntro]: https://support.office.com/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
-[columnDefinition]: columnDefinition.md
-[contentType]: contentType.md
-[documentSet]: documentSet.md
-[documentSetContent]: documentSetContent.md
+[columnDefinition]: columndefinition.md
+[contentType]: contenttype.md
+[documentSet]: documentset.md
+[documentSetContent]: documentsetcontent.md
 
 ## JSON representation
 
-Here's a JSON representation of a resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 

@@ -19,11 +19,11 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List activityBasedTimeoutPolicies](../api/activitybasedtimeoutpolicy-list.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Read properties and relationships of activityBasedTimeoutPolicy objects. |
-| [Create activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Create an activityBasedTimeoutPolicy object. |
-| [Get activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-get.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Read properties and relationships of an activityBasedTimeoutPolicy object. |
-| [Update activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-update.md) | None | Update an activityBasedTimeoutPolicy object. |
-| [Delete activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-delete.md) | None | Delete an activityBasedTimeoutPolicy object. |
+| [List](../api/activitybasedtimeoutpolicy-list.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Read properties and relationships of activityBasedTimeoutPolicy objects. |
+| [Create](../api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Create an activityBasedTimeoutPolicy object. |
+| [Get](../api/activitybasedtimeoutpolicy-get.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Read properties and relationships of an activityBasedTimeoutPolicy object. |
+| [Update](../api/activitybasedtimeoutpolicy-update.md) | None | Update an activityBasedTimeoutPolicy object. |
+| [Delete](../api/activitybasedtimeoutpolicy-delete.md) | None | Delete an activityBasedTimeoutPolicy object. |
 
 ## Properties
 
@@ -64,7 +64,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

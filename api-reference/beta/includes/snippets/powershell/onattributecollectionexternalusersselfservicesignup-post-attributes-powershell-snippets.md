@@ -10,6 +10,6 @@ $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/identity/userFlowAttributes/city"
 }
 
-New-MgBetaIdentityAuthenticationEventFlowAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
 ```

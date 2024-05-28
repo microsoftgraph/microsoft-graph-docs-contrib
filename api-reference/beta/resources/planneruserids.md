@@ -22,14 +22,15 @@ Properties of an Open Type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerUserIds"
+  "@odata.type": "microsoft.graph.plannerUserIds",
+  "openType": true
 }-->
 
 ```json

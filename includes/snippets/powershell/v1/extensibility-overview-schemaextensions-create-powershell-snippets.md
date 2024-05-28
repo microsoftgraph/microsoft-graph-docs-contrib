@@ -10,22 +10,22 @@ $params = @{
 	id = "graphLearnCourses"
 	description = "Graph Learn training courses extensions"
 	targetTypes = @(
-		"user"
-	)
-	properties = @(
-		@{
-			name = "courseId"
-			type = "Integer"
-		}
-		@{
-			name = "courseName"
-			type = "String"
-		}
-		@{
-			name = "courseType"
-			type = "String"
-		}
-	)
+	"user"
+)
+properties = @(
+	@{
+		name = "courseId"
+		type = "Integer"
+	}
+	@{
+		name = "courseName"
+		type = "String"
+	}
+	@{
+		name = "courseType"
+		type = "String"
+	}
+)
 }
 
 New-MgSchemaExtension -BodyParameter $params

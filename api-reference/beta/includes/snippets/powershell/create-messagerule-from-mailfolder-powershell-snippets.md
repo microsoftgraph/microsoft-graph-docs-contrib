@@ -12,20 +12,20 @@ $params = @{
 	isEnabled = $true
 	conditions = @{
 		senderContains = @(
-			"adele"
-		)
-	}
-	actions = @{
-		forwardTo = @(
-			@{
-				emailAddress = @{
-					name = "Alex Wilbur"
-					address = "AlexW@contoso.com"
-				}
+		"adele"
+	)
+}
+actions = @{
+	forwardTo = @(
+		@{
+			emailAddress = @{
+				name = "Alex Wilbur"
+				address = "AlexW@contoso.com"
 			}
-		)
-		stopProcessingRules = $true
-	}
+		}
+	)
+	stopProcessingRules = $true
+}
 }
 
 # A UPN can also be used as -UserId.

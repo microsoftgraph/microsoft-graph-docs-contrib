@@ -18,8 +18,8 @@ For details about how to use this resource to add pull printing support to Unive
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Get a list of printTaskTriggers associated with a particular [printer](printer.md). |
-| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get the printTaskTrigger associated with a particular [printTask](printtask.md). |
+| [List task triggers](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Get a list of printTaskTriggers associated with a particular [printer](printer.md). |
+| [Get task trigger](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get the printTaskTrigger associated with a particular [printTask](printtask.md). |
 
 ## Properties
 |Property|Type|Description|
@@ -41,7 +41,7 @@ For details about how to use this resource to add pull printing support to Unive
 |definition|[printTaskDefinition](printtaskdefinition.md)|An abstract definition that is used to create a [printTask](printtask.md) when triggered by a print event. Read-only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

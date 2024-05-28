@@ -20,7 +20,7 @@ The client defines the properties of an Open Type, and the client should provide
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

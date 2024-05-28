@@ -5,6 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesPostRequestBody
+use Microsoft\Graph\Beta\Generated\Models\AttendeeBase;
+use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraint;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraintItem;
+use Microsoft\Graph\Beta\Generated\Models\TimeConstraint;
+use Microsoft\Graph\Beta\Generated\Models\ActivityDomain;
+use Microsoft\Graph\Beta\Generated\Models\TimeSlot;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

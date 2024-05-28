@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\OnPremisesDirectorySynchronization;
+use Microsoft\Graph\Generated\Models\OnPremisesDirectorySynchronizationConfiguration;
+use Microsoft\Graph\Generated\Models\OnPremisesAccidentalDeletionPrevention;
+use Microsoft\Graph\Generated\Models\SynchronizationPreventionType;
+use Microsoft\Graph\Generated\Models\OnPremisesDirectorySynchronizationFeature;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

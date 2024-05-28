@@ -13,18 +13,18 @@ $params = @{
 	search = ""
 	filter = ""
 	select = @(
-		"CloudPcId"
-		"ManagedDeviceName"
-		"UserPrincipalName"
-		"UsageInsight"
-		"CurrentSize"
-		"RecommendedSize"
-		"UsageInHour"
-		"DevicePerfSummary"
-	)
-	orderBy = @(
-		"ManagedDeviceName"
-	)
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"UsageInsight"
+"CurrentSize"
+"RecommendedSize"
+"UsageInHour"
+"DevicePerfSummary"
+)
+orderBy = @(
+"ManagedDeviceName"
+)
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewManagedDevice()
 userId := "User Id value"
@@ -213,7 +213,10 @@ ethernetMacAddress := "Ethernet Mac Address value"
 requestBody.SetEthernetMacAddress(&ethernetMacAddress) 
 physicalMemoryInBytes := int64(5)
 requestBody.SetPhysicalMemoryInBytes(&physicalMemoryInBytes) 
+enrollmentProfileName := "Enrollment Profile Name value"
+requestBody.SetEnrollmentProfileName(&enrollmentProfileName) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 managedDevices, err := graphClient.DeviceManagement().ManagedDevices().Post(context.Background(), requestBody, nil)
 
 

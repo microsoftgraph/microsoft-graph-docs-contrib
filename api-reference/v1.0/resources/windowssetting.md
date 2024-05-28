@@ -3,7 +3,7 @@ title: "windowsSetting resource type"
 description: "Represents settings from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 ---
 

@@ -22,7 +22,7 @@ Specifies settings for nonweb app or nonweb API (for example, mobile or other pu
 |redirectUris|String collection| Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

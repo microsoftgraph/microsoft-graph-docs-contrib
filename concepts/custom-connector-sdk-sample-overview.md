@@ -22,6 +22,7 @@ The sample code included in the [Develop your connector](/graph/custom-connector
 
 ![A diagram of the architecture of an SDK-based connector](images/connectors-sdk/architecture.png)
 
-## Next steps
+## Next step
 
-* [Develop your connector](/graph/custom-connector-sdk-sample-create)
+> [!div class="nextstepaction"]
+> [Develop your connector](/graph/custom-connector-sdk-sample-create)

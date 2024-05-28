@@ -1,5 +1,5 @@
 ---
-title: "WorksheetProtectionOptions resource type"
+title: "workbookWorksheetProtectionOptions resource type"
 description: "Represents the options in sheet protection."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# WorksheetProtectionOptions resource type
+# workbookWorksheetProtectionOptions resource type
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ Represents the options in sheet protection.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

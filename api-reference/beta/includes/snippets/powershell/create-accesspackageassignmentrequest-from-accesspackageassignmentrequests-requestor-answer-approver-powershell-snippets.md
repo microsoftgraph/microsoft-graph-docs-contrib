@@ -29,6 +29,9 @@ $params = @{
 			}
 		}
 	)
+	assignment = @{
+		accessPackageId = "977c7ff4-ef8f-4910-9d31-49048ddf3120"
+	}
 }
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params

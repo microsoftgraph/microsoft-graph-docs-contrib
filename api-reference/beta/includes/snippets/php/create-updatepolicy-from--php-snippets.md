@@ -5,6 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\UpdatePolicy
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DeploymentAudience
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ComplianceChange
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ContentApproval
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ComplianceChangeRule
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ContentApprovalRule
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DriverUpdateFilter
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DeploymentSettings
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ScheduleSettings
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\RateDrivenRolloutSettings
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

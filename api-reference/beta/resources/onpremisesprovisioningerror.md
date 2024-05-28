@@ -25,7 +25,7 @@ Represents directory synchronization errors for the [user](user.md), [group](gro
 |value|String| Value of the property causing the error. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

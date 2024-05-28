@@ -26,7 +26,7 @@ Represents a Network Interface Card (NIC) associated with this host.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

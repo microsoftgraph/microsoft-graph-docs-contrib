@@ -1,6 +1,6 @@
 ---
 title: "teamsTab resource type"
-description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+description: "Represents a tab pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
 ms.subservice: "teams"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
+
+For more information about tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 ## Methods
 
@@ -39,7 +41,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
 |  displayName            |   string                  |  Name of the tab.     |
 |  name (deprecated)      |   string                  |  Name of the tab.     |
-|  teamsAppId (deprecated)|   string             |  App definition identifier of the tab. This value cannot be changed after tab creation. Because this property is deprecated, we recommend expanding **teamsApp** to retrieve the application that is linked to the tab. |
+|  teamsAppId (deprecated)|   string             |  App definition identifier of the tab. This value can't be changed after tab creation. Because this property is deprecated, we recommend expanding **teamsApp** to retrieve the application that is linked to the tab. |
 |  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs.     |
 |  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
@@ -52,7 +54,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {

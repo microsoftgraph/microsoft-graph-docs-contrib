@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Security\InformationProtection\SensitivityLabels\Microsoft\Graph\Security\ExtractContentLabel\ExtractContentLabelRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Users\Item\Security\InformationProtection\SensitivityLabels\MicrosoftGraphSecurityExtractContentLabel\ExtractContentLabelPostRequestBody
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\ContentInfo
+use Microsoft\Graph\Beta\Generated\Models\Security\State;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\KeyValuePair
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

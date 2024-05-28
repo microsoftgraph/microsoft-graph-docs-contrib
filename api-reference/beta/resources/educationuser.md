@@ -21,13 +21,13 @@ This object provides a targeted subset of properties from the core [user] object
 
 | Method                                               | Return Type                                  | Description                                                                   |
 | :--------------------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
-| [Get educationUser](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
+| [Get user](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
 | [List classes](../api/educationuser-list-classes.md) | [educationClass] collection                  | Get the **educationClass** object collection for which the user is member.    |
 | [List schools](../api/educationuser-list-schools.md) | [educationSchool] collection                 | Get the **educationSchool** object collection for which the user is a member. |
 | [Get user](../api/educationuser-get-user.md)         | [user]                                       | Get the simple directory **user** that corresponds to this **educationUser**. |
 | [Update](../api/educationuser-update.md)             | [educationUser]                              | Update an **educationUser** object.                                           |
-| [Delete](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
-| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
+| [Delete user](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
+| [Get delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
 
 ## Properties
 
@@ -49,6 +49,7 @@ This object provides a targeted subset of properties from the core [user] object
 | mailingAddress       | [physicalAddress]            | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                                                                       |
 | middleName           | String                       | The middle name of user.                                                                                                                                                                      |
 | mobilePhone          | String                       | The primary cellular telephone number for the user.                                                                                                                                           |
+| officeLocation       | String                       | The office location for the user.                                                                                                                                          |
 | onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the Microsoft Entra user with its Active Directory counterpart.                                                                                                 |
 | passwordPolicies     | String                       | Specifies password policies for the user. See standard [user] resource for more details.                                                                                                |
 | passwordProfile      | [passwordProfile]            | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. See standard [user] resource for more details. |
@@ -79,7 +80,7 @@ This object provides a targeted subset of properties from the core [user] object
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

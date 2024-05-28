@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPC result = graphClient.deviceManagement().virtualEndpoint().cloudPCs().byCloudPCId("{cloudPC-id}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "imageDisplayName", "lastModifiedDateTime", "lastRemoteActionResult", "lastLoginResult", "connectivityResult"};
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "imageDisplayName", "lastModifiedDateTime", "lastRemoteActionResult", "lastLoginResult", "connectivityResult", "allotmentDisplayName"};
 });
 
 

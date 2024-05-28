@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Application application = new Application();
 LinkedList<String> identifierUris = new LinkedList<String>();
-identifierUris.add("https://contosoiwaapp-contoso.msappproxy.net");
+identifierUris.add("api://32977d3b-ee0e-4614-9f50-f583a07842d2");
 application.setIdentifierUris(identifierUris);
 WebApplication web = new WebApplication();
 LinkedList<String> redirectUris = new LinkedList<String>();

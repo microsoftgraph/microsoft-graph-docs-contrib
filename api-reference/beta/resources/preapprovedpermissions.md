@@ -29,7 +29,7 @@ A **preApprovedPermissions** type describes the set of permissions that are pre-
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.preApprovedPermissions"

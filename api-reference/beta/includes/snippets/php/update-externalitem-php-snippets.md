@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\ExternalItem
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\Acl
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Type;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\AccessType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

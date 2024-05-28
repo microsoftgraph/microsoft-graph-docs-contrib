@@ -4,6 +4,7 @@ description: "Your app must be registered with Microsoft Entra ID. Registering y
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: quickstart
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20

@@ -19,8 +19,8 @@ Represents a member of an [externalGroup](externalconnectors-externalgroup.md) u
 
 | Method                                                              | Return type         | Description                              |
 |:--------------------------------------------------------------------|:--------------------|:-----------------------------------------|
-| [Create externalGroupMember](../api/externalconnectors-externalgroup-post-members.md) | [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) | Create a new **externalGroupMember** object. |
-| [Delete externalGroupMember](../api/externalconnectors-externalgroupmember-delete.md)  | None                | Delete an **externalGroupMember** object.   |
+| [Create](../api/externalconnectors-externalgroup-post-members.md) | [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) | Create a new **externalGroupMember** object. |
+| [Delete](../api/externalconnectors-externalgroupmember-delete.md)  | None                | Delete an **externalGroupMember** object.   |
 
 ## Properties
 
@@ -36,7 +36,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

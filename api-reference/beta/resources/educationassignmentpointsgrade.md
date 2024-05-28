@@ -26,7 +26,7 @@ which will add the who data to this property. The max points are stored in the *
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

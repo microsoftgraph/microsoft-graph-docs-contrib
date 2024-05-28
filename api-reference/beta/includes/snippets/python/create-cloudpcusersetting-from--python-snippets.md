@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.cloud_pc_user_setting import CloudPcUserSetting
-from msgraph.generated.models.cloud_pc_restore_point_setting import CloudPcRestorePointSetting
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.cloud_pc_user_setting import CloudPcUserSetting
+from msgraph_beta.generated.models.cloud_pc_restore_point_setting import CloudPcRestorePointSetting
+from msgraph_beta.generated.models.cloud_pc_restore_point_frequency_type import CloudPcRestorePointFrequencyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
