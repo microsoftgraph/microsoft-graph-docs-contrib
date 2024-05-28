@@ -124,12 +124,24 @@ Content-Type: application/json
 
 ---
 
-This example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The new copy of the file is named `contoso plan (copy).txt`. The childrenOnly boolean set to true.
+### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+```
+The value of the `Location` header provides a URL for a service that returns the current state of the copy operation.
+You can use this information to [determine when the copy finished](/graph/long-running-actions-overview).
+
+
 
 ### Request 2
 
-The following example shows a request.
+This example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The new copy of the file is named `contoso plan (copy).txt`. The childrenOnly boolean set to true.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
@@ -147,38 +159,6 @@ Content-Type: application/json
   "childrenOnly": true
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/copy-item-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/copy-item-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/copy-item-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/copy-item-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/copy-item-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
