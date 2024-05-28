@@ -1,6 +1,6 @@
 ---
 title: "siteProtectionRule resource type"
-description: "Get a site protection rule and its properties"
+description: "Describes a site protection rule and its properties"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a site protection rule associated with [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) and its properties.
+Describes a site protection rule associated with [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 

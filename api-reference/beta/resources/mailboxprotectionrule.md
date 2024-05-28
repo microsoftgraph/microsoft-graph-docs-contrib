@@ -1,6 +1,6 @@
 ---
 title: "mailboxProtectionRule resource type"
-description: "Get a mailbox protection rule and its properties"
+description: "Describes a mailbox protection rule and its properties"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a mailbox protection rule associated with [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and its properties.
+Describes a mailbox protection rule associated with [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 

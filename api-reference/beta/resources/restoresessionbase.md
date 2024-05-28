@@ -1,7 +1,8 @@
 ---
 title: "restoreSessionBase resource type"
-description: "Describes restore session and its properties"
-author: "tushar20, manikantsinghms"
+description: "Describes a restore session and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -16,12 +17,13 @@ Namespace: microsoft.graph
 Restore session APIs are used by Global Admin or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts which are protected as part of Protection Policy.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restoreSessionBase objects](../api/restoresession-list.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
-|[Get restoreSessionBase](../api/restoresession-get.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Read the properties and relationships of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[Delete restoreSessionBase](../api/restoresession-delete.md)|None|Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[activate](../api/restoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session.|
+|[List restoreSessionBase](../api/backupresotreroot-list-restoresessions.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
+|[Get restoreSessionBase](../api/restoresessionbase-get.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Read the properties and relationships of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
+|[Delete restoreSessionBase](../api/restoresessionbase-delete.md)|None|Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.|
+|[activate](../api/restoresessionbase-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session.|
 
 ## Properties
 

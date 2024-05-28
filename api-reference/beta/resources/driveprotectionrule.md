@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Get a drive protection rule and its properties"
+description: "Describes a drive protection rule and its properties"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a drive protection rule associated with [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and its properties.
+Describes a drive protection rule associated with [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
