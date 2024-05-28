@@ -1,7 +1,8 @@
 ---
 title: "List serviceApp"
 description: "Get a list of the serviceApp and their properties."
-author: "maniksingh, tkanaujia"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
