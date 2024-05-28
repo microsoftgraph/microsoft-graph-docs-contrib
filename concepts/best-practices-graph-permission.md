@@ -8,9 +8,7 @@ ms.author: v-sdhakshina
 
 # Best practices for using Microsoft Graph permissions
 
-To create a Microsoft Teams app with advanced collaborative features, you need to balance the need for Microsoft Graph permissions with the assurance that customers grant those permissions. Customers might not use apps or app features due to permission concerns. This can minimize the app's adoption and usage. We recommend you design Teams apps with a focus on customer privacy and security.
-
-When you create a Microsoft Teams app with advanced collaboration, only grant the minimum permissions necessary for your app, because decision-makers in organizations that might use your app can be wary of the security risks of apps with unnecessary permissions.
+When you create a Microsoft Teams app with advanced collaboration, only grant the minimum permissions necessary for your app, because users in organizations might not use apps or app features due to permission concerns. This can minimize the app's adoption and usage. We recommend you design Teams apps with a focus on customer privacy and security.
 
 This article describes some best practices for using Microsoft Graph permissions when building a Teams app.
 
@@ -20,15 +18,15 @@ Microsoft Graph offers granular permissions that allow an app to request only th
 
 * When an app is designed to only read the signed-in user’s profile information, it requires the `User.Read` permission, which is the least privileged permission to access the user’s details. The `User.ReadWrite` permission is unnecessary, as its over-privileges the app, which doesn't need to modify the user’s profile.<br>
 
-* Apps that need to read tenant groups without a signed-in user must request `Group.Read.All` application permission.<br>
+* Apps that need to read tenant groups without a signed-in user require `Group.Read.All` application permission.<br>
 
-* Apps that manage dynamic jobs and sync with the user’s Outlook calendar to read and update requires `Calendars.ReadWrite` permission.
+* Apps that manage dynamic jobs and sync with the user’s Outlook calendar to read and update require `Calendars.ReadWrite` permission.
 
 To reduce privacy and security risks, follow the principle of least privilege by assigning only necessary Microsoft Graph permissions when creating your app. For more information, see [enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) and [building apps that secure identity through permissions and consent](/security/zero-trust/develop/identity).
 
 ### Identify the implementation that uses the least possible permissions
 
-* **Feature development**: Before implementation, explore all options including their pros and cons. Consider simpler implementations that deliver similar value without requiring permissions.
+* **Feature development**: Before implementing a feature, consider whether you can opt for a simpler feature that delivers similar value while requiring more limited permissions.
 * **Recreating features**: Avoid recreating existing platform features for minor customizations. Evaluate if the added value exceeds the potential customer challenges. Use native capabilities or launch a platform feature request when possible. The following examples describes some scenarios where you can identify the implementation that uses the least possible permissions:
 
 * If an app is available on the store, it can use its persistent ID instead of using `AppCatalog.Read.All` to get its app ID.
@@ -36,13 +34,18 @@ To reduce privacy and security risks, follow the principle of least privilege by
 
 ### Request the lowest level of permissions possible for the endpoints used
 
-* **Permission levels**: Permissions have various levels. Application permissions give direct access to the app without user interaction. Delegated permissions require user interaction and provide access for about an hour after the user intervenes. Resource-specific consent (RSC) permissions, which also have both levels, are restricted to the domain where the app is installed. We don't recommend you use both application and delegated permissions together in the same app. For more information, see [Microsoft Graph permissions](permissions-overview.md).
+* **Permission levels**: Different levels of permissions vary in their convenience, power, and scope.
 
-* **API Endpoint Access**: You can use the URL `https://learn.microsoft.com/en-us/graph/api/{api_endpoint}` to get a list of permissions that allow the `api_endpoint` call. For example, the `user-get` endpoint can use many permissions like `User.Read`, `User.ReadWrite`, and so on. If the app only needs the current user’s data, it should use `User.Read` instead of `Directory.ReadWrite.All`.
+  * **Application permissions** give direct access to the app without user interaction.
+  * **Delegated permissions** require user interaction and provide access for about an hour after the user intervenes.
 
-     If an endpoint can use RSC permissions, they’re the best for privacy. Next are delegated permissions, which need user action to access the Graph. Lastly, application permissions are the most sensitive to privacy. For example, if you want to send a message to a chat with the app, use `ChatMessage.Send.Chat` (an RSC permission). It’s better than `Chat.ReadWrite` (a Microsoft Graph permission), which also allows you to read messages.
+    Resource-specific consent (RSC) permissions, which also have both levels, are restricted to the domain where the app is installed. We don't recommend you use both application and delegated permissions together in the same app. For more information, see [Microsoft Graph permissions](permissions-overview.md).
 
-     Consider creating a dashboard that uses RSC permissions, so that the admins of your app can see and manage where the permissions are being used. For example, admins can see which chats have granted the app permissions and can remove these permissions if needed. This reassures customers that they control how their users use the permissions.
+* **API Endpoint Access**: You can use the URL `https://learn.microsoft.com/en-us/graph/api/{api_endpoint}` to get a list of permissions that allow the `api_endpoint` call. The `user-get` endpoint can use many permissions like `User.Read`, `User.ReadWrite`, and so on. If the app only needs the current user’s data, it should use `User.Read` instead of `Directory.ReadWrite.All`.
+
+     When considering privacy, the most preferable permissions for an endpoint are RSC permissions as they offer a higher level of privacy. Next are delegated permissions, which require user action to access the Graph. Lastly, application permissions are the most sensitive to privacy. For instance, to send a message to a chat with the app, it’s recommended to use `ChatMessage.Send.Chat`, which is an RSC permission, `over Chat.ReadWrite`, a Microsoft Graph permission that also permits reading messages.
+
+     Consider creating a dashboard that uses RSC permissions, so that the admins of your app can see and manage where the permissions are being used. Admins can see which chats have granted the app permissions and can remove these permissions if needed. This reassures customers that they control how their users use the permissions.
 
 ## Maximize app value and user experience for customers with limited permissions
 
