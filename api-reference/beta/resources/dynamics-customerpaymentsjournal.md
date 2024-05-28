@@ -21,10 +21,10 @@ Represents a customer payment journal in Dynamics 365 Business Central.
 
 | Method               | Return Type             |Description                      |
 |:---------------------|:------------------------|:--------------------------------|
-|[Get customerPaymentJournal](../api/dynamics-customerpaymentsjournal-get.md)      |customerPaymentJournals|Gets a customer payment journal.   |
-|[Post customerPaymentJournal](../api/dynamics-create-customerpaymentsjournal.md)  |customerPaymentJournals|Creates a customer payment journal.|
-|[Patch customerPaymentJournal](../api/dynamics-customerpaymentsjournal-update.md) |customerPaymentJournals|Updates a customer payment journal.|
-|[Delete customerPaymentJournal](../api/dynamics-customerpaymentsjournal-delete.md)|none                     |Deletes a customer payment journal.|
+|[Get customer payments journal](../api/dynamics-customerpaymentsjournal-get.md)      |customerPaymentJournals|Gets a customer payment journal.   |
+|[Create customer payments journal](../api/dynamics-create-customerpaymentsjournal.md)  |customerPaymentJournals|Creates a customer payment journal.|
+|[Update customer payments journal](../api/dynamics-customerpaymentsjournal-update.md) |customerPaymentJournals|Updates a customer payment journal.|
+|[Delete customer payments journal](../api/dynamics-customerpaymentsjournal-delete.md)|none                     |Deletes a customer payment journal.|
 
 ## Properties
 | Property	         | Type	                 |Description                                                             |

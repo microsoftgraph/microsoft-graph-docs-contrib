@@ -21,7 +21,7 @@ Represents a general ledger entry in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[Get generalLedgerEntry](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntry|Get a general ledger entry object.|
+|[Get general ledger entries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntry|Get a general ledger entry object.|
 
 ## Properties
 | Property	         | Type	                 |Description                                  |

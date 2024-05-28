@@ -18,22 +18,22 @@ Represents an Excel table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table-get.md) | [workbookTable](workbooktable.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table-post-columns.md) |[workbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[Get table](../api/table-get.md) | [workbookTable](workbooktable.md) |Read properties and relationships of table object.|
+|[Create column](../api/table-post-columns.md) |[workbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
 |[List columns](../api/table-list-columns.md) |[workbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table-post-rows.md) |[workbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[Create row](../api/table-post-rows.md) |[workbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
 |[List rows](../api/table-list-rows.md) |[workbookTableRow]( workbooktablerow.md) collection| Get a TableRow object collection.|
-|[Update](../api/table-update.md) | [workbookTable](workbooktable.md)	|Update Table object. |
+|[Update table](../api/table-update.md) | [workbookTable](workbooktable.md)	|Update Table object. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](workbookrange.md)|Gets the range object associated with the data body of the table.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](workbookrange.md)|Gets the range object associated with header row of the table.|
-|[Range](../api/table-range.md)|[Range](workbookrange.md)|Gets the range object associated with the entire table.|
+|[Get range](../api/table-range.md)|[Range](workbookrange.md)|Gets the range object associated with the entire table.|
 |[Totalrowrange](../api/table-totalrowrange.md)|[Range](workbookrange.md)|Gets the range object associated with totals row of the table.|
 |[Clearfilters](../api/table-clearfilters.md)|None|Clears all the filters currently applied on the table.|
 |[Converttorange](../api/table-converttorange.md)|[Range](workbookrange.md)|Converts the table into a normal range of cells. All data is preserved.|
-|[Delete](../api/table-delete.md)|None|Deletes the table.|
+|[Delete table](../api/table-delete.md)|None|Deletes the table.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
 |[List](../api/table-list.md) | [workbookTable](workbooktable.md) collection |Get table object collection. |
-|[Add](../api/tablecollection-add.md)|[workbookTable](workbooktable.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is thrown.|
+|[Add table](../api/tablecollection-add.md)|[workbookTable](workbooktable.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is thrown.|
 
 ## Properties
 | Property	   | Type	|Description|
