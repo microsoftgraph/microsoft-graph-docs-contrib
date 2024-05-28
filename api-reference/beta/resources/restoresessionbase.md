@@ -20,7 +20,7 @@ Restore session APIs are used by Global Admin or SharePoint Online Admin for Sha
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restoreSessionBase](../api/backupresotreroot-list-restoresessions.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
+|[List restoreSessionBase](../api/backuprestoreroot-list-restoresessions.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
 |[Get restoreSessionBase](../api/restoresessionbase-get.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Read the properties and relationships of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
 |[Delete restoreSessionBase](../api/restoresessionbase-delete.md)|None|Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.|
 |[activate](../api/restoresessionbase-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session.|

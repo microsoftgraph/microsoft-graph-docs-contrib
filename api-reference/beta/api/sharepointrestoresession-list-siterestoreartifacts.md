@@ -94,10 +94,7 @@ Content-Type: application/json
       "restorePoint": {
         "id": "c7e702b7-b5ee-4faf-9e43-5fd23b4fb0bf_1701648000_14_1",
         "protectionDateTime": "2023-12-04T00:00:00Z",
-        "expirationDateTime": {
-          "dateTime": "2023-12-18T00:00:00.0000000",
-          "timeZone": ""
-        }
+        "expirationDateTime": "2023-12-18T00:00:00Z"
       }
     },
     {
@@ -112,10 +109,7 @@ Content-Type: application/json
       "restorePoint": {
         "id": "28684b23-7f38-44bc-91c0-a3c92758030d_1601648000_14_1",
         "protectionDateTime": "2024-02-10T00:00:00Z",
-        "expirationDateTime": {
-            "dateTime": "2024-02-25T00:00:00.0000000",
-            "timeZone": ""
-        }
+        "expirationDateTime": "2024-02-24T00:00:00Z"
       }
     }
   ]

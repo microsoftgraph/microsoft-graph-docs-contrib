@@ -81,7 +81,7 @@ Content-Type: application/json
 {
   "@odata.context": "/solutions/backupRestore/$metadata#restoreSessions",
   "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values": [
+  "value": [
     {
       "@odata.type": "#microsoft.graph.sharepointRestoreSession",
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",

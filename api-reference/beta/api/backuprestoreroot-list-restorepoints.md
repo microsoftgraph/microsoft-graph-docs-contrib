@@ -82,7 +82,7 @@ Content-Type: application/json
 {
   "@odata.context": "/solutions/backupRestore/restorePoints",
   "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0k2NDUwOTgzMg%3d%3d",
-  "values": [
+  "value": [
     {
       "@odata.type": "#microsoft.graph.restorePoint",
       "id": "cdf4a823-sfde-ki2s-kmsj-clu2nsdkk2as",
