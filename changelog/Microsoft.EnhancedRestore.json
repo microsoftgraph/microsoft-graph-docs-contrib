@@ -551,23 +551,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "run",
           "ChangeType": "Addition",
-          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/sharepointprotectionpolicy-run-siteinclusionrules?view=graph-rest-beta) method to the [siteProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionRule?view=graph-rest-beta) resource.",
-          "Target": "run"
-        },
-        {
-          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
-          "ApiChange": "Method",
-          "ChangedApiName": "run",
-          "ChangeType": "Addition",
-          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/exchangeprotectionpolicy-run-mailboxinclusionrules?view=graph-rest-beta) method to the [mailboxProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionRule?view=graph-rest-beta) resource.",
-          "Target": "run"
-        },
-        {
-          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
-          "ApiChange": "Method",
-          "ChangedApiName": "run",
-          "ChangeType": "Addition",
-          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules?view=graph-rest-beta) method to the [driveProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionRule?view=graph-rest-beta) resource.",
+          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/protectionrulebase-run?view=graph-rest-beta) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource.",
           "Target": "run"
         },
         {

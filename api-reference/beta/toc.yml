@@ -15367,16 +15367,16 @@ items:
           - name: Overview
             href: resources/backuprestoreroot.md
           - name: Onboarding & Offboarding
-            href: resources/backuprestoreoort.md
+            href: resources/backuprestoreroot.md
             items:
               - name: Create Service App
-                href: api/backuprestoreroot-post-sharepointprotectionpolicies.md
+                href: api/backuprestoreroot-post-serviceapps.md
               - name: Activate Service App
                 href: api/serviceapp-activate.md
               - name: Deactivate Service App
                 href: api/serviceapp-deactivate-md
               - name: Delete Service App
-                href: api/backuprestoreroot-delete-serviceapp.md
+                href: api/backuprestoreroot-delete-serviceapps.md
               - name: List Service Apps
                 href: api/backuprestoreroot-list-serviceapps.md
               - name: Get Service App
@@ -15395,7 +15395,7 @@ items:
               - name: Create OneDrive Protection Policy
                 href: api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies.md
               - name: List Protection Policies
-                href: resources/protectionpolicybase-list.md
+                href: resources/backuprestoreroot-list-protectionpolicies.md
               - name: Get Protection Policy
                 href: api/protectionpolicybase-get.md
               - name: Update SharePoint Protection Policy
@@ -15420,7 +15420,7 @@ items:
             href: resoucres/protectionunitbase.md
             items:
               - name: List Site Protection Units
-                href: api/siteprotectionunit-list.md
+                href: api/backuprestoreroot-list-siteprotectionunits.md
               - name: List Mailbox Protection Units
                 href: api/backuprestoreroot-list-mailboxprotectionunits.md
               - name: List Drive Protection Units
@@ -15430,41 +15430,25 @@ items:
           - name: Protection Rule
             href: resources/protectionrulebase.md
             items:
-              - name: Create Site Inclusion Rule
-                href: api/sharepointprotectionpolicy-create-siteinclusionrules.md
-              - name: Create Mailbox Inclusion Rule
-                href: api/exchangeprotectionpolicy-create-mailboxinclusionrules.md
-              - name: Create UserDrive Inclusion Rule
-                href: api/onedriveforbusinessprotectionpolicy-create-driveinclusionrules.md
+              - name: Create Protection Rule
+                href: api/protectionrulebase-post.md
               - name: List Site Inclusion Rules
                 href: api/sharepointprotectionpolicy-list-siteinclusionrules.md
               - name: List Mailbox Inclusion Rules
                 href: api/exchangeprotectionpolicy-list-mailboxinclusionrules.md
               - name: List OneDrive Inclusion Rules
                 href: api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md
-              - name: Get SharePoint Inclusion Rules
-                href: api/sharepointprotectionpolicy-get-siteinclusionrules.md
-              - name: Get Mailbox Inclusion Rules
-                href: api/exchangeprotectionpolicy-get-mailboxinclusionrules.md
-              - name: Get OneDrive Inclusion Rules
-                href: api/onedriveforbusinessprotectionpolicy-get-driveinclusionrules.md
-              - name: Remove SharePoint Inclusion Rule
-                href: api/sharepointprotectionpolicy-delete-siteinclusionrules.md
-              - name: Remove Exchange Inclusion Rule
-                href: api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md
-              - name: Remove OneDrive Inclusion Rule
-                href: api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md
-              - name: Run Site Inclusion Rule
-                href: api/sharepointprotectionpolicy-run-siteinclusionrules.md
-              - name: Run Mailbox Inclusion Rule
-                href: api/exchangeprotectionpolicy-run-mailboxinclusionrules.md
-              - name: Run OneDrive Inclusion Rule
-                href: api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules.md
+              - name: Get Protection Rule
+                href: api/protectionrulebase-get.md
+              - name: Remove Protection Rule
+                href: api/protectionrulebase-delete.md
+              - name: Run Protection Rule
+                href: api/protectionrulebase-run.md
           - name: Restore Point
             href: resources/restorepoint.md
             items:
               - name: List Restore Point
-                href: api/restorepoint-list.md
+                href: api/backuprestoreroot-list-restorepoints.md
               - name: Search Restore Point
                 href: api/restorepoint-search.md
           - name: Restore Session
@@ -15477,9 +15461,9 @@ items:
               - name: Create OneDrive Restore Session
                 href: api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md
               - name: List Restore Session
-                href: api/restoresession-list.md
+                href: api/backuprestoreroot-list-restoresessions.md
               - name: Get Restore Session
-                href: api/restoresession-get.md
+                href: api/restoresessionbase-get.md
               - name: Update SharePoint Restore Session
                 href: api/sharepointrestoresession-update.md
               - name: Update Mailbox Restore Session
@@ -15487,11 +15471,11 @@ items:
               - name: Update OneDrive Restore Session
                 href: api/onedriveforbusinessrestoresession-update.md
               - name: Delete Restore Session
-                href: api/restoresession-delete.md
+                href: api/restoresessionbase-delete.md
               - name: Activate Restore Session
-                href: api/restoresession-activate.md
+                href: api/restoresessionbase-activate.md
           - name: Restore Artifact
-            href: resources/restoreartifactbasemd
+            href: resources/restoreartifactbase.md
             items:
               - name: List Site Artifact
                 href: api/sharepointrestoresession-list-siterestoreartifacts.md
