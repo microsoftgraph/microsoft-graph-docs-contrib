@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a protection rule associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Describes a protection rule associated with a [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
