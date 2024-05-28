@@ -40,7 +40,7 @@ An unexpected error occurred and the request failed.
 The service is not currently available.
 
 ### 10003
-The current user's account exceeded the maximum number of active requests. Your app will have to repeat the request.
+The current user's account exceeded the maximum number of active requests. Your app needs to repeat the request.
 
 ### 10004
 The service can't create a page in the requested section because that section is protected by a password.
@@ -52,10 +52,10 @@ The request contains more than the maximum number of image tags in which the **d
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
 
 ### 10007
-The server is too busy to handle the incoming request at this moment. Please try again later.
+The server is too busy to handle the incoming request at this moment. Try again later.
 
 ### 10008
-One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Please make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
+One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
 
 ### 10012
 Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see [Set up a library to require check-out of files](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
@@ -63,13 +63,13 @@ Unable to create or update the entity because the library that contains the note
 Either remove the check-out requirement from the library, or move the notebook.
 
 ### 10013
-One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
+One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
 
 ### 10014
-Azure Key Vault is too busy to handle the incoming request at this moment. Please try again later.
+Azure Key Vault is too busy to handle the incoming request at this moment. Try again later.
 
 ### 10015
-SharePoint is currently unavailable. Please try again later.
+SharePoint is currently unavailable. Try again later.
 
 ### 10016
 Document library on the user or group's OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
@@ -95,13 +95,13 @@ The request contains two or more "Presentation" parts. Exactly one is required.
 The content type of the "Presentation" part can be only text/HTML or application/XHTML+XML. 
 
 ### 20004
-The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
+The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API ignores the **src** property and uses the **data-render-src** property. 
 
 ### 20005
 The request URI is too long. The maximum size of the URI (including all parameters and data) is 16 KB or 16,384 characters.
 
 ### 20006
-The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API will ignore the **image** tag. 
+The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API ignores the **image** tag. 
 
 ### 20007
 The "Presentation" part HTML contains a created date/time string that does not match any of the allowed formats. 
@@ -284,7 +284,7 @@ The **select** or **expand** expression in your request contains an invalid term
 The `style="position:absolute"` attribute is specified on an element, but the **body** element does not specify `data-absolute-enabled="true"`, which is required to support positioning. All position settings will be ignored. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20147
-The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings will be ignored and its content will render inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
+The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings is ignored and its content renders inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20148
 The `style="position:absolute"` attribute is specified on an element type that does not support it. Only **div**, **img**, and **object** elements that are direct children of the page body support positioning. See [Create absolute positioned elements](onenote-abs-pos.md).
