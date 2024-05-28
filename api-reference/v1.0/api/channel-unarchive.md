@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header that specifies the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle the unarchiving of the channel in a team. Check the status of the unarchiving operation by making a GET request to this location.
 
-## Example
+## Examples
 
 ### Example 1: Unarchive a channel
 
@@ -101,7 +101,7 @@ The following example shows the `400 Bad Request` response code with a correspon
 <!-- {
   "blockType": "response",
   "name": "unarchive_channel_on_archived_team",
-  "@odata.type": "odata.error",
+  "@odata.type": "microsoft.graph.publicError",
   "truncated": true
 }-->
 ```http
