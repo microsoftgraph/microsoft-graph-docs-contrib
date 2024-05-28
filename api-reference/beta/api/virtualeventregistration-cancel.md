@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: cancel"
-description: "Cancel a registrant's registration record for a webinar."
+description: "Cancel an attendee's registration record for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). [PLACEHOLDER: who can cancel a registration]
+Cancel an attendee's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). [PLACEHOLDER: who can cancel a registration]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
