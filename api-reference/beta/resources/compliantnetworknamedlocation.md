@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Represents a Microsoft Entra ID named location defined by Global Secure Access. Automatically created with the name "All Compliant Network Locations" when you enable Global Secure Access signaling for Conditional Access. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy.
 
+For more information, see [Enable compliant network check with Conditional Access](/entra/global-secure-access/how-to-compliant-network).
 
 Inherits from [namedLocation](../resources/namedlocation.md).
 
@@ -29,11 +30,11 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |compliantNetworkType|compliantNetworkType|Type of compliant network. Currently the only possible value is `allTenantCompliantNetworks`.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedlocation.md).|
-|displayName|String|Human-readable name of the location. Required. Not changeable. Inherited from [namedLocation](../resources/namedlocation.md).|
-|id|String|Identifier of a namedLocation object. Read-only. Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|The timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedlocation.md).|
+|displayName|String|Human-readable name of the location. Required. Always "All Compliant Network Locations". Inherited from [namedLocation](../resources/namedlocation.md).|
+|id|String|Identifier of the object. Read-only. Inherited from [entity](../resources/entity.md).|
 |isTrusted|Boolean|`true` if this location is explicitly trusted. Optional. Default value is `false`.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedlocation.md).|
+|modifiedDateTime|DateTimeOffset|The timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedlocation.md).|
 
 ## Relationships
 None.
@@ -58,10 +59,3 @@ The following JSON representation shows the resource type.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
-## Related content
-
-+ [Enable compliant network check with Conditional Access](/azure/global-secure-access/how-to-compliant-network)
-+ [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
-+ [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
-+ [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
