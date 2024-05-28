@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 Archive a [channel](../resources/channel.md) in a team. When a channel is archived, users can't send new messages or react to existing messages in the channel, edit the channel settings, or make other changes to the channel.
 
-You can delete an archived channel, or add and remove members from it. If you archive a team, its channels are archived for you.
+You can delete an archived channel or add and remove members from it. If you archive a team, its channels are also archived.
 
-Archiving is asynchronous; a channel is archived after the asynchronous archiving operation completes successfully, which might occur after the response returns.
+Archiving is an asynchronous operation; a channel is archived after the asynchronous archiving operation completes successfully, which might occur after the response returns.
 
-A channel without an owner, or that belongs to a [group](../resources/group.md) that has no owner, can't be archived.
+A channel without an owner or that belongs to a [group](../resources/group.md) that has no owner, can't be archived.
 
-To restore a channel from its archived state, use the [unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
+To restore a channel from its archived state, use the [channel: unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -117,7 +117,9 @@ The following example shows the `400 Bad Request` response code with a correspon
 
 <!-- {
   "blockType": "response",
-  "name": "archive_channel_on_archived_team"
+  "name": "archive_channel_on_archived_team",
+  "@odata.type": "odata.error",
+  "truncated": true
 }-->
 ```http
 http/1.1 400 Bad Request
