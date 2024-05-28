@@ -18648,6 +18648,12 @@ items:
                             href: api/virtualeventregistration-list.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
+                          - name: Cancel
+                            href: api/virtualeventregistration-cancel.md
+                          - name: Create
+                            href: api/virtualeventregistration-post.md
+                          - name: List Session
+                            href: api/virtualeventregistration-list-virtualeventsession.md
                       - name: Registration configuration
                         href: resources/virtualeventwebinarregistrationconfiguration.md
                         items:
