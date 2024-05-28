@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [sessions](../resources/virtualeventsession.md) that an attendee registered for in a [webinar](../resources/virtualeventwebinar.md). 
+[PLACEHOLDER DESCRIPTION: i.e Get a list of [sessions](../resources/virtualeventsession.md) that an attendee registered for in a [webinar](../resources/virtualeventwebinar.md).]
 
 Currently, we're only supporting single session webinars, so this API will only return a single session. 
 
