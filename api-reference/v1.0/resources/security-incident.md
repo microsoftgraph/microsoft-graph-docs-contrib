@@ -47,7 +47,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |systemTags|String collection|The system tags associated with the incident.|
 |resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
-|summary|String|The summary of an incident provided by Defender Experts. The incident summary is also available when an incident is automatically disrupted through attack disruption.|
+|summary|String|Provides an overview of an attack. When applicable, the summary contains details of what occurred, impacted assets and type of attack.|
 
 
 ### incidentStatus values 
