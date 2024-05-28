@@ -85,6 +85,8 @@ items:
       items:
       - name: Call record
         href: ../../resources/callrecords-callrecord.md
+      - name: List callRecords
+        href: ../../api/callrecords-cloudcommunications-list-callrecords.md
       - name: Get call record
         href: ../../api/callrecords-callrecord-get.md
       - name: List PSTN calls
@@ -97,6 +99,12 @@ items:
         href: ../../resources/callrecords-directroutinglogrow.md
       - name: List direct routing calls
         href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: Participant
+      items:
+      - name: Participant
+        href: ../../resources/callrecords-participant.md
+      - name: List
+        href: ../../api/callrecords-callrecord-list-participants_v2.md
     - name: PSTN call log row
       items:
       - name: PSTN call log row
