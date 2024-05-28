@@ -16,6 +16,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2024: New and generally available
+
+### Identity and access | Identity and sign-in
+
+Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
+
 ## May 2024: New in preview only
 
 ### Change notifications
@@ -88,6 +94,10 @@ Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-
 ### Groups
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
+
+### Reports | Identity and access reports
+
+Added the **lastSuccessfulSignInDateTime** and **lastSuccessfulSignInRequestId** properties to the [signInActivity](/graph/api/resources/signinactivity) resource. Use the **lastSuccessfulSignInDateTime** property to get the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
 
 ### Security | Legacy alerts
 

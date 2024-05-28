@@ -5,14 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Workflow;
-use Microsoft\Graph\Generated\Models\TriggerAndScopeBasedConditions;
-use Microsoft\Graph\Generated\Models\RuleBasedSubjectSet;
-use Microsoft\Graph\Generated\Models\AttributeChangeTrigger;
-use Microsoft\Graph\Generated\Models\TriggerAttribute;
-use Microsoft\Graph\Generated\Models\Task;
-use Microsoft\Graph\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\Workflow
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Category;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\TriggerAndScopeBasedConditions
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\RuleBasedSubjectSet
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\AttributeChangeTrigger
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\TriggerAttribute
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\Task
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

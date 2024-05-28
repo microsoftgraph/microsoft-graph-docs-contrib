@@ -21,8 +21,8 @@ When an app creates a session, a **activityHistoryItem** object should be added 
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace activityHistoryItem](../api/projectrome-put-historyitem.md) | [activityHistoryItem](projectrome-historyitem.md) | Create or replace an existing **activityHistoryItem** for that activity (upsert). The ID needs to be a GUID.|
-|[Delete a activityHistoryItem](../api/projectrome-delete-historyitem.md) | No Content | Delete the specified **activityHistoryItem** for that activity.|
+|[Create or replace a history item](../api/projectrome-put-historyitem.md) | [activityHistoryItem](projectrome-historyitem.md) | Create or replace an existing **activityHistoryItem** for that activity (upsert). The ID needs to be a GUID.|
+|[Delete a history item](../api/projectrome-delete-historyitem.md) | No Content | Delete the specified **activityHistoryItem** for that activity.|
 
 ## Properties
 

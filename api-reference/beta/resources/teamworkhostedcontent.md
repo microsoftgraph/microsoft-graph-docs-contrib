@@ -19,7 +19,7 @@ Represents rich content like images and code snippets in Microsoft Teams. For ri
 
 | Method                                            | Return Type                                       | Description                                                    | 
 | :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
-| [Get app icon bytes](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Get the bytes of the hosted content backing a Teams app icon. |
+| [Get icon](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Get the bytes of the hosted content backing a Teams app icon. |
 
 ## Properties
 |Property|Type|Description|

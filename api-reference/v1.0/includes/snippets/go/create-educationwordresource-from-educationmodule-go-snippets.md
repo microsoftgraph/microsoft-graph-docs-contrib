@@ -20,7 +20,7 @@ resource := graphmodels.NewEducationWordResource()
 displayName := "Word_file.docx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
-file := graphmodels.New()
+file := graph.New()
 odataid := "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3XYXSBRKMQM5GISQGPVO6BNO27"
 file.SetOdataid(&odataid) 
 	resource.SetFile(file)

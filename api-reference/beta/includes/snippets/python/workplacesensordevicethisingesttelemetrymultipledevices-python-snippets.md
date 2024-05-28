@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.workplace.sensordevices.ingest_telemetry.ingest_telemetry_post_request_body import IngestTelemetryPostRequestBody
-from msgraph.generated.models.workplace_sensor_device_telemetry import WorkplaceSensorDeviceTelemetry
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.workplace.sensordevices.ingest_telemetry.ingest_telemetry_post_request_body import IngestTelemetryPostRequestBody
+from msgraph_beta.generated.models.workplace_sensor_device_telemetry import WorkplaceSensorDeviceTelemetry
+from msgraph_beta.generated.models.workplace_sensor_type import WorkplaceSensorType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

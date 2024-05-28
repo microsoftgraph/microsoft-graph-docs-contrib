@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\EducationAssignment;
 use Microsoft\Graph\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Generated\Models\ContentType;
+use Microsoft\Graph\Generated\Models\AddedStudentAction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
