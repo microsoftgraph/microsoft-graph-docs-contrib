@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [protectionRuleBase](../resources/protectionrulebase.md) in a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
-Deletion of a rule is allowed once it reaches the `completed` or `completedWithErrors` state. Deletion of a [protectionRuleBase](../resources/protectionRuleBase.md) will not remove the protection units corresponding to the rule from the [protectionPolicyBase](../resources/protectionpolicybase.md).
+Deletion of a rule is allowed once it reaches the `completed` or `completedWithErrors` state. Deletion of a [protectionRuleBase](../resources/protectionRuleBase.md) does not remove protection units corresponding to the rule from the [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1 : Delete a siteInclusionRule associated with a SharePoint protection policy
+### Example 1: Delete a siteInclusionRule associated with a SharePoint protection policy
 
 Delete a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
@@ -85,7 +85,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2 : Delete a driveInclusionRule associated with an OneDriveForBusiness protection policy
+### Example 2: Delete a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
 Delete a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
@@ -114,7 +114,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3 : Delete a mailboxInclusionRule associated with an Exchange protection policy
+### Example 3: Delete a mailboxInclusionRule associated with an Exchange protection policy
 
 Delete a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
