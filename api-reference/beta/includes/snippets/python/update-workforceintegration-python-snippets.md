@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.workforce_integration import WorkforceIntegration
-from msgraph.generated.models.workforce_integration_encryption import WorkforceIntegrationEncryption
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.workforce_integration import WorkforceIntegration
+from msgraph_beta.generated.models.workforce_integration_encryption import WorkforceIntegrationEncryption
+from msgraph_beta.generated.models.workforce_integration_encryption_protocol import WorkforceIntegrationEncryptionProtocol
+from msgraph_beta.generated.models.workforce_integration_supported_entities import WorkforceIntegrationSupportedEntities
 
 graph_client = GraphServiceClient(credentials, scopes)
 

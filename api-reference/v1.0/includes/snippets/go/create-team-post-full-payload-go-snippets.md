@@ -150,7 +150,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
 	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
-discoverySettings := graphmodels.New()
+discoverySettings := graph.New()
 	showInTeamsSearchAndSuggestions := true
 discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
 	requestBody.SetDiscoverySettings(discoverySettings)

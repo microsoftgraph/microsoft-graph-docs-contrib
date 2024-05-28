@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.sites.item.pages.item.graph.site_page.site_page_request_builder import SitePageRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.sites.item.pages.item.graph.site_page.site_page_request_builder import SitePageRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = SitePageRequestBuilder.SitePageRequestBuilderGetQueryParameters(
 		select = ["id","name"],
 )
 
-request_configuration = SitePageRequestBuilder.SitePageRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

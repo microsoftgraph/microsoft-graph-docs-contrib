@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.education_rubric import EducationRubric
 from msgraph.generated.models.education_item_body import EducationItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.rubric_level import RubricLevel
 from msgraph.generated.models.education_assignment_points_grade_type import EducationAssignmentPointsGradeType
 from msgraph.generated.models.rubric_quality import RubricQuality

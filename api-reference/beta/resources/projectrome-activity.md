@@ -25,8 +25,8 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace userActivity](../api/projectrome-put-activity.md) | [userActivity](projectrome-activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
-|[Delete an userActivity](../api/projectrome-delete-activity.md) | No Content | Deletes the specified activity for that user from your app.|
+|[Create or replace an activity](../api/projectrome-put-activity.md) | [userActivity](projectrome-activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
+|[Delete activity](../api/projectrome-delete-activity.md) | No Content | Deletes the specified activity for that user from your app.|
 |[Get activities](../api/projectrome-get-activities.md) | Collection of [userActivity](projectrome-activity.md) | Gets the activities for your app for a given user.|
 |[Get recent activities](../api/projectrome-get-recent-activities.md) | Collection of [userActivity](projectrome-activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [activityHistoryItems](projectrome-historyitem.md).|
 
