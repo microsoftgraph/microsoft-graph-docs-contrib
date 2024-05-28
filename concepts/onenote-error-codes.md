@@ -1,6 +1,6 @@
 ---
 title: "Error codes for the OneNote API in Microsoft Graph"
-description: "Find information about error codes that are returned by the OneNote API in Microsoft Graph whenever a request that is sent through the API fails."
+description: "Find information about error codes that the OneNote API in Microsoft Graph returns when a request that is sent through the API fails."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
@@ -8,7 +8,7 @@ ms.subservice: "onenote"
 
 # Error codes for the OneNote API in Microsoft Graph
 
-This article describes error codes that are returned by the OneNote API in Microsoft Graph whenever a request that is sent through the API fails.
+This article describes error codes that the OneNote API in Microsoft Graph returns when a request that is sent through the API fails.
 
 ## Error response example
 
@@ -40,7 +40,7 @@ An unexpected error occurred and the request failed.
 The service is not currently available.
 
 ### 10003
-The current user's account has exceeded the maximum number of active requests. Your app will have to repeat the request.
+The current user's account exceeded the maximum number of active requests. Your app will have to repeat the request.
 
 ### 10004
 The service can't create a page in the requested section because that section is protected by a password.
@@ -341,7 +341,7 @@ The number of maximum sections is exceeded for this request. To get pages for ac
 Something is wrong with the user's account.
 
 ### 30101
-The user account has exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/).
+The user account exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/).
 
 ### 30102
 Nothing more can be added to the requested section because it has reached its maximum size.
