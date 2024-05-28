@@ -20,7 +20,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create exchangeRestoreSession](../api/exchangerestoresession-create.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[Create exchangeRestoreSession](../api/backuprestoreroot-post-exchangerestoresessions.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
 |[List exchangeRestoreSession](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) and their properties.|
 |[Update exchangeRestoreSession](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
 

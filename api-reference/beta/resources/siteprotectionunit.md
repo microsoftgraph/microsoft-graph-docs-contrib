@@ -1,7 +1,8 @@
 ---
 title: "siteProtectionUnit resource type"
 description: "Describes a site protection unit"
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-siteProtectionUnit represents the protectionUnit associated with the SharePoint site.
+Site protection unit represents the protectionUnit associated with the SharePoint site.
 
 Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
@@ -21,7 +22,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteProtectionUnit](../api/siteprotectionunit-list.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) and their properties.|
+|[List siteProtectionUnit](../api/backuprestoreroot-list-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) and their properties.|
 
 ## Properties
 

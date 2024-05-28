@@ -1,7 +1,8 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Describes drive Protection Rule and its properties"
-author: "tushar20, manikantsinghms"
+description: "Describes a drive protection rule and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -13,20 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes drive Protection Rule and its properties. It is associated to the OneDrive for Business Protection Policy.
+Describes a drive protection rule associated with [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) and its properties.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) and their properties.|
-|[Create driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-create-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[Get driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-get-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[Delete driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
-|[run](../api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[Create driveProtectionRule](../api/protectionrulebase-post.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Get driveProtectionRule](../api/protectionrulebase-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Delete driveProtectionRule](../api/protectionrulebase-delete.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activates a drive protection rule.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated with the policy.|
@@ -40,6 +43,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |status|[protectionRuleStatus](../resources/driveprotectionrule.md#protectionrulestatus-values )|The status of the protection rule. The following are the possible values: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### driveExpression examples
+
 The drive expression can be of following formats.
 | Property                                 | Operator                                   | Example                                                                  |
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -47,6 +51,7 @@ The drive expression can be of following formats.
 | `group.id` | `-in` |   `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375', '363cdbd0-f091-4644-93e4-64c1020c94d8']))`              |  
 
 ### protectionRuleStatus values
+
 |Member | Description |
 |:------|:------------|
 |draft | The initial status of protection rule upon creation is draft.|
@@ -56,9 +61,11 @@ The drive expression can be of following formats.
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -88,4 +95,3 @@ The following JSON representation shows the resource type.
   "driveExpression": "String"
 }
 ```
-

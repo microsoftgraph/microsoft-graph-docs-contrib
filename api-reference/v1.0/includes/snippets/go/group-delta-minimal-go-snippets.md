@@ -19,10 +19,10 @@ import (
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphgroups.GroupsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsDeltaWithRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","description","mailNickname"},
 }
-configuration := &graphgroups.GroupsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsDeltaWithRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

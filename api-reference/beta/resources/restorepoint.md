@@ -1,7 +1,8 @@
 ---
 title: "restorePoint resource type"
-description: "Describes Restore Point and its properties"
-author: "tushar20, manikantsinghms"
+description: "Describes a restore point and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -19,7 +20,7 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restorePoint](../api/restorepoint-list.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
+|[List restorePoint](../api/backuprestoreroot-list-restorepoints.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
 |[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md).|
 
 ## Properties

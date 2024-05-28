@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Admin\Windows\Updates\Products\Microsoft\Graph\WindowsUpdates\FindByKbNumber(kbNumber={kbNumber})\FindByKbNumberWithKbNumberRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Admin\Windows\Updates\Products\Microsoft\Graph\WindowsUpdates\FindByKbNumber(kbNumber={kbNumber})\FindByKbNumberWithKbNumberRequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

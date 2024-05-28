@@ -1,7 +1,8 @@
 ---
 title: "serviceApp: activate"
 description: "Activate a serviceApp"
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -19,17 +20,11 @@ Activate a [serviceApp](../resources/serviceapp.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "serviceapp-activate-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/serviceapp-activate-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|BackupRestore-Control.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -53,7 +48,7 @@ You can specify the following properties when creating a **serviceApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|effectiveDateTime|DateTimeOffset|The time to activate the serviceApp.|
+|effectiveDateTime|DateTimeOffset|The time to activate the serviceApp. Required.|
 
 ## Response
 
@@ -70,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}/activate
+POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}/activate
 Authorization: Bearer <Access-Token>
 
 {
@@ -93,20 +88,20 @@ HTTP/1.1 202 Accepted
 Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 
 {
-    "@odata.type": "#microsoft.graph.serviceApp",
-    "id":"71633878-8321-4950-bfaf-ed285bdd1461",
-    "status" : "pendingActive",
-    "registrationDateTime":"2023-06-19T12-01-03.45Z",
-    "effectiveDateTime": "2024-04-19T12-01-03.45Z",   
-    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
-    "lastModifiedBy":{
-        "application":{
-            "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
-        },
-        "user":{
-            "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
-        }
-    }
+  "@odata.type": "#microsoft.graph.serviceApp",
+  "id":"71633878-8321-4950-bfaf-ed285bdd1461",
+  "status" : "pendingActive",
+  "registrationDateTime":"2023-06-19T12-01-03.45Z",
+  "effectiveDateTime": "2024-04-19T12-01-03.45Z",   
+  "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+  "lastModifiedBy":{
+      "application":{
+          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
+      },
+      "user":{
+          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
+      }
+  }
 }
 ```
 

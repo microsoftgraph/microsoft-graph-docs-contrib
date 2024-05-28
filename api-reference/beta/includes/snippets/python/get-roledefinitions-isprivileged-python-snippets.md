@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.role_management.directory.role_definitions.role_definitions_request_builder import RoleDefinitionsRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.role_management.directory.role_definitions.role_definitions_request_builder import RoleDefinitionsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RoleDefinitionsRequestBuilder.RoleDefinitionsRequestBuilderGetQue
 		filter = "isPrivileged eq true",
 )
 
-request_configuration = RoleDefinitionsRequestBuilder.RoleDefinitionsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

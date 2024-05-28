@@ -1,9 +1,10 @@
 ---
 title: "Get protectionPolicyBase"
-description: "Get a Protection Policy by ID."
-author: "tushar20, manikantsinghms"
+description: "Get a protection policy by ID."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
-ms.subservice: "m365-backup-storge"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 # Get protectionPolicyBase
@@ -12,18 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Protection Policy by ID. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
+Get a protection policy by ID. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "protectionpolicybase-get-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-get-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -39,10 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/protectionPolicies/{protectionPolicyBaseId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -69,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
 ```
 
@@ -84,7 +75,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 
 {
    "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
@@ -99,9 +90,9 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815
          "displayName":"Microsoft Enhanced Restore"
       },
       "user":{
-         "email":"abc@contoso.com",
+         "email":"ryan@contoso.com",
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
-         "displayName":"ABC"
+         "displayName":"Ryan"
       }
    },
    "createdDateTime":"2015-06-19T12-01-03.45Z",
@@ -111,9 +102,9 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815
          "displayName":"Microsoft Enhanced Restore"
       },
       "user":{
-         "email":"def@contoso.com",
+         "email":"rian@contoso.com",
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
-         "displayName":"DEF"
+         "displayName":"Rian"
       }
    },
    "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",

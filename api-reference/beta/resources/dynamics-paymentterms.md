@@ -21,10 +21,10 @@ Represents a payment term in Dynamics 365 Business Central.
 
 | Method                                                      | Return Type|Description            |
 |:------------------------------------------------------------|:-----------|:----------------------|
-|[Get paymentTerm](../api/dynamics-paymentterms-get.md)      |**paymentTerm**|Get a payment terms object.   |
-|[Post paymentTerm](../api/dynamics-create-paymentterms.md)  |**paymentTerm**|Create a payment terms object.|
-|[Patch paymentTerm](../api/dynamics-paymentterms-update.md) |**paymentTerm**|Update a payment terms object.|
-|[Delete paymentTerm](../api/dynamics-paymentterms-delete.md)|none            |Delete a payment terms object.|
+|[Get payment terms](../api/dynamics-paymentterms-get.md)      |**paymentTerm**|Get a payment terms object.   |
+|[Create payment terms](../api/dynamics-create-paymentterms.md)  |**paymentTerm**|Create a payment terms object.|
+|[Update payment terms](../api/dynamics-paymentterms-update.md) |**paymentTerm**|Update a payment terms object.|
+|[Delete payment terms](../api/dynamics-paymentterms-delete.md)|none            |Delete a payment terms object.|
 
 ## Properties
 | Property	                   | Type	  |Description                                                |

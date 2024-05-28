@@ -1,36 +1,30 @@
 ---
-title: "search restorePoint"
-description: "Search Restore Points for Protection Units."
-author: "tushar20, manikantsinghms"
+title: "restorePoint: search"
+description: "Search restore points for protection units."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Search restorePoint
+# restorePoint: search
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search Restore Points for [Protection Units](../resources/protectionpolicybase.md).
+Search restore points associated with [protectionUnit](../resources/protectionunitbase.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "restorepoint-search-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/restorepoint-search-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
+|Delegated (work or school account)|BackupRestore-Search.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
+|Application|BackupRestore-Search.Read.All|Not available.|
 
 ## HTTP request
 
@@ -51,26 +45,25 @@ POST /solutions/backupRestore/restorePoints/search
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
-
-The following table lists the parameters that are required when you call this action.
+In the request body, supply a JSON representation of the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|protectionUnitIds|String collection|The unique identitifer of the Protection Unit|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The time of creation of the Protection Unit|
-|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Describes the preference to get Restore Point. The possible values are `oldest`, `latest`|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Tag to get Restore Point type. The possible values are `None`, `FastRestore`, `UnknownFutureValue`|
+|protectionUnitIds|String collection|The ID of the protection units. Required.|
+|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The time of creation of the protection unit.  Required.|
+|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Describes the preference to get Restore Point. The possible values are `oldest`, `latest`. Optional.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Tag to get Restore Point type. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
 
 ### restorePointPreference values
+
 |Member | Description |
 |:------|:------------|
-|latest | Returns the latest restore point for a given protection timeperiod |
-|oldest | Returns the oldest restore point for a given protection timeperiod |
+|latest | Returns the latest restore point for a given protection time period.|
+|oldest | Returns the oldest restore point for a given protection time period.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
 
 ## Examples
 
@@ -87,17 +80,15 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/sear
 Content-Type: application/json
 
 {
-  "protectionUnitIds": [
-    "String"
-  ],
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String"
+    "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a", "43014d8c-71fe-4d00-a01a-31850bc5b42b", "63014d8c-71fe-4d00-a01a-31850bc5b42c", "83014d8c-71fe-4d00-a01a-31850bc5b42d"],
+    "protectionTimePeriod": {
+        "startDateTime": "2021-01-01T00:00:00Z",
+        "endDateTime": "2021-01-08T00:00:00Z"
+    },
+    "restorePointPreference": "latest",
+    "tags": "fastRestore"
 }
 ```
-
 
 ### Response
 
@@ -114,9 +105,55 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.restorePointSearchResponse"
-  }
+    "@odata.context":"/solutions/backupRestore/$metadata#restorePoints",
+    "searchResponseId": "M2UyZDAwMDAwMDMxMzkzYTMyNj",
+    "searchResults": [
+        {
+            "restorePoint": {
+                "@odata.type": "#microsoft.graph.restorePoint",
+                "id":"1f1fccc3-a642-4f61-bf49-f37b9a888279",
+                "protectionDateTime":"2023-01-04T00:00:00Z",
+                "expirationDateTime":"2024-01-04T00:00:00Z",
+                "protectionUnit":{
+                   "@odata.type": "#microsoft.graph.siteProtectionUnit",
+                   "id":"23014d8c-71fe-4d00-a01a-31850bc5b42a",
+                   "siteId":"344d9337-d8f0-456e-92cd-00a3abdd2093",
+                   "policyId":"9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+               },
+               "tags": "fastRestore"
+            }
+        },
+        {
+            "restorePoint": {
+                "@odata.type": "#microsoft.graph.restorePoint",
+                "id":"cdf4a823-sfde-ki2s-kmsj-clu2nsdk43ga",
+                "protectionDateTime":"2023-01-03T00:00:00Z",
+                "expirationDateTime":"2024-01-03T00:00:00Z",
+                "protectionUnit":{
+                   "@odata.type": "#microsoft.graph.siteProtectionUnit",
+                   "id":"43014d8c-71fe-4d00-a01a-31850bc5b42b",
+                   "siteId":"344d9337-d8f0-456e-92cd-00a3abdd2093",
+                   "policyId":"9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+               },
+               "tags": "fastRestore"
+            }
+        },
+        {
+            "restorePoint": {
+                "@odata.type": "#microsoft.graph.restorePoint",
+                "id":"1f1fccc3-a642-4f61-bf49-f37b9a888280",
+                "protectionDateTime":"2023-01-02T00:00:00Z",
+                "expirationDateTime":"2024-01-02T00:00:00Z",
+                "protectionUnit":{
+                   "@odata.type": "#microsoft.graph.siteProtectionUnit",
+                   "id":"83014d8c-71fe-4d00-a01a-31850bc5b42c",
+                   "siteId":"344d9337-d8f0-456e-92cd-00a3abdd2093",
+                   "policyId":"9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+                },
+                "tags": "fastRestore"
+            }
+        }
+    ],
+    "noResultProtectionUnitIds": ["63014d8c-71fe-4d00-a01a-31850bc5b42c"]
 }
 ```
-

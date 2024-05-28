@@ -1,7 +1,8 @@
 ---
 title: "Update sharePointRestoreSession"
-description: "Update the properties of a SharePoint Restore Session"
-author: "tushar20, manikantsinghms"
+description: "Update the properties of a SharePoint restore session."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,25 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
-To remove, specify the @removed annotation in the request body for the respective Restore Point Artifact together with the Id of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
+Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointrestoresession-update-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-update-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -56,15 +49,7 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md)|
-<!-- |id|String|The unique identifier of the restore session updated|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
-|completedDateTime|DateTimeOffset|The time of creation of the restore session.|
-|createdBy|identitySet|The identity of person who created the restore session.|
-|createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
-|lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.| -->
+|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md). Required.|
 
 ## Response
 
@@ -75,6 +60,9 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 ### Request
 
 The following example shows a request.
+
+To remove a **siteRestoreArtifact** from a site restore session, specify the @removed annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
+
 <!-- {
   "blockType": "request",
   "name": "sharepointrestoresession_update"
@@ -82,6 +70,7 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
+Content-Type: application/json
 
 {
   "siteRestoreArtifacts@delta": [

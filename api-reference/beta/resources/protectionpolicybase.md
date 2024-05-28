@@ -21,7 +21,7 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List protectionPolicyBase](../api/protectionpolicybase-list.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get a list of the [protectionPolicyBase](../resources/protectionpolicybase.md) and their properties.|
+|[List protectionPolicyBase](../api/backuprestoreroot-list-protectionpolicies.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get a list of the [protectionPolicyBase](../resources/protectionpolicybase.md) and their properties.|
 |[Get protectionPolicyBase](../api/protectionpolicybase-get.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |[Delete protectionPolicyBase](../api/protectionpolicybase-delete.md)|None|Delete a [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |[activate](../api/protectionpolicybase-activate.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Activate an inactive protection policy.|

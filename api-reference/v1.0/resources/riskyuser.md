@@ -22,10 +22,10 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List riskyUsers](../api/riskyuser-list.md)|[riskyUser](../resources/riskyuser.md) collection|Get a list of the **riskyUser** objects and their properties.|
-|[Get riskyUser](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Read the properties and relationships of a **riskyUser** object.|
-|[Dismiss a riskyUser](../api/riskyuser-dismiss.md)|None|Dismiss the risk of one or more **riskyUser** objects. |
-|[Confirm a riskyUser as compromised](../api/riskyuser-confirmcompromised.md)|None|Confirm one or more **riskyUser** objects as compromised.|
+|[List risky users](../api/riskyuser-list.md)|[riskyUser](../resources/riskyuser.md) collection|Get a list of the **riskyUser** objects and their properties.|
+|[Get risky user](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Read the properties and relationships of a **riskyUser** object.|
+|[Dismiss](../api/riskyuser-dismiss.md)|None|Dismiss the risk of one or more **riskyUser** objects. |
+|[Confirm compromised](../api/riskyuser-confirmcompromised.md)|None|Confirm one or more **riskyUser** objects as compromised.|
 |[List history](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Get the **riskyUserHistoryItems** from the history navigation property.|
 |[Get history](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Read the properties and relationships of a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object.|
 

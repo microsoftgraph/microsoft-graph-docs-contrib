@@ -1,7 +1,8 @@
 ---
 title: "backupRestoreRoot: enable"
 description: "Enable the Microsoft 365 Backup Storage service for a tenant."
-author: "maniksingh, tkanaujia"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -21,9 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not supported.|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|BackupRestore-Control.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -44,6 +45,11 @@ POST /solutions/backupRestore/enable
 ## Request body
 
 In the request body, supply the **appOwnerTenantId** in which this application is registered.
+
+### Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|appOwnerTenantId|`AppOwnerTenantId` in which this application is registered. Required.|
 
 ## Response
 

@@ -20,8 +20,6 @@ displayName := "HR provisioning policy"
 requestBody.SetDisplayName(&displayName) 
 description := "Provisioning policy for India HR employees"
 requestBody.SetDescription(&description) 
-onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
-requestBody.SetOnPremisesConnectionId(&onPremisesConnectionId) 
 imageId := "Image ID value"
 requestBody.SetImageId(&imageId) 
 imageDisplayName := "Image Display Name value"
@@ -36,6 +34,10 @@ windowsSetting := graphmodels.NewCloudPcWindowsSetting()
 locale := "en-US"
 windowsSetting.SetLocale(&locale) 
 requestBody.SetWindowsSetting(windowsSetting)
+additionalData := map[string]interface{}{
+	"onPremisesConnectionId" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Patch(context.Background(), requestBody, nil)

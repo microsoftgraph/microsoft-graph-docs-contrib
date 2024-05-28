@@ -1,9 +1,10 @@
 ---
 title: "Get protectionUnitBase"
-description: "Get a Protection Unit"
-author: "tushar20, manikantsinghms"
+description: "Get a protection unit by ID"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
-ms.subservice: "m365-backup-storge"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 # Get protectionUnitBase
@@ -12,18 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Protection Unit. Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md).
+Get a protection unit by ID. Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "protectionunitbase-get-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-get-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -40,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -56,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [protectionUnitBase](../resources/protectionunitbase.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [protectionUnitBase](../resources/protectionunitbase.md) object in the response body.
 
 ## Examples
 
@@ -69,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
+GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
 ```
 
 ### Response
@@ -95,9 +86,9 @@ HTTP/1.1 200 OK
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "abc@contoso.com",
+      "email": "rian@contoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "Rian"
     }
   },
   "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -107,12 +98,11 @@ HTTP/1.1 200 OK
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "abc@contoso.com",
+      "email": "ryan@contoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "Ryan"
     }
   },
   "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-  "error": null
 }
 ```

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.learning_content import LearningContent
+from msgraph.generated.models.level import Level
 
 graph_client = GraphServiceClient(credentials, scopes)
 

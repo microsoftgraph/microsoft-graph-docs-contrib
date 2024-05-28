@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ForwardingOptions;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\ForwardingOptions
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\SkipDnsLookupState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -1,7 +1,8 @@
 ---
 title: "Update exchangeProtectionPolicy"
-description: "Updates the Protection Policy for Microsoft 365 service Exchange."
-author: "tushar20, manikantsinghms"
+description: "Updates the protection policy for Microsoft 365 service Exchange."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -15,23 +16,15 @@ Namespace: microsoft.graph
 
 Updates the Protection Policy for Microsoft 365 service Exchange. Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the ID of the [mailboxprotectionunit](../resources/mailboxprotectionunit.md).
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "exchangeprotectionpolicy_update_permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-update-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -51,34 +44,39 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 ## Request body
 
+In the request body, provide a JSON representation of following properties to update **exchangeProtectionPolicy** object.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/exchangeprotectionpolicy.md)|
-|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy.|
+|displayName|String|Display Name of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Optional.|
+|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy. Required.|
+
+To remove a **mailboxProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) in the response body.
+If successful, this method returns a `200 OK` response code and an updated [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_update"
 }
 -->
 ``` http
-PATCH /solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
 
 {
   "displayName": "Exchange Policy - Inadvertent data loss",
   "mailboxProtectionUnits@delta": [
     {
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" //Create a new user Protection unit and add it under the policy.
+      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
       "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
@@ -126,9 +124,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -138,9 +136,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
@@ -156,9 +154,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -168,9 +166,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
@@ -186,9 +184,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -198,9 +196,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"

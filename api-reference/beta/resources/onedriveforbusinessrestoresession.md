@@ -20,7 +20,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-create.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
+|[Create oneDriveForBusinessRestoreSession](../api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 |[List oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|Get a list of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) and their properties.|
 |[Update oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-update.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Update the properties of an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 

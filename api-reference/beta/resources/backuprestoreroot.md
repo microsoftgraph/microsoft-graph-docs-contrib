@@ -66,10 +66,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.backupRestoreRoot",
   "id": "String (identifier)",
-  "serviceStatus": [
-    {
-      "@odata.type": "microsoft.graph.serviceStatus"
-    }
-  ]
+  "serviceStatus": {
+    "@odata.type": "microsoft.graph.serviceStatus"
+  }
 }
 ```

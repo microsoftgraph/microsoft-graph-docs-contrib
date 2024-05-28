@@ -16,7 +16,7 @@ Represents the status of a long-running operation on a [site](../resources/site.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md) on a [site](../resources/site.md) or a [list](../resources/list.md).|
+|[Get](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md) on a [site](../resources/site.md) or a [list](../resources/list.md).|
 
 ## Properties
 

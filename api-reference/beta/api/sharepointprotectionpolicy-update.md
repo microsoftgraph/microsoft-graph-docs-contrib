@@ -1,36 +1,30 @@
 ---
 title: "Update sharePointProtectionPolicy"
-description: "Updates the Protection Policy for a M365 service SharePoint Online"
-author: "tushar20, manikantsinghms"
+description: "Updates the protection policy for a Microsoft 365 service SharePoint Online."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
+
 # Update sharePointProtectionPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for a M365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
-
-To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the Id of the [siteprotectionunit](../resources/siteprotectionunit.md).
+Updates the protection policy for a Microsoft 365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) object to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-update-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-update-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
 
 ## HTTP request
 
@@ -51,10 +45,12 @@ PATCH /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectio
 
 ## Request body
 
+In the request body, provide a JSON representation of following properties to update **sharePointProtectionPolicy** object.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|
-|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
+|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
 
 ## Response
 
@@ -65,13 +61,17 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 ### Request
 
 The following example shows a request.
+
+To remove a **siteProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
+
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_update"
 }
 -->
 ``` http
-PATCH /solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+Content-Type: application/json
 
 {
   "displayName": "SharePoint Policy - Inadvertent data loss",
@@ -136,9 +136,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -148,9 +148,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -167,9 +167,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -179,9 +179,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -198,9 +198,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -210,9 +210,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -229,9 +229,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -241,9 +241,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -260,9 +260,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -272,9 +272,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
@@ -305,9 +305,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -317,9 +317,9 @@ HTTP/1.1 200 OK
           "displayName": "Microsoft Enhanced Restore"
         },
         "user": {
-          "email": "abc@contoso.com",
+          "email": "User1@contoso.com",
           "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
+          "displayName": "User1"
         }
       },
       "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",

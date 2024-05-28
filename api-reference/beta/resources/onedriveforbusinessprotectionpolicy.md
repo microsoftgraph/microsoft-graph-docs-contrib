@@ -21,7 +21,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create oneDriveForBusinessProtectionPolicy](../api/onedriveforbusinessprotectionpolicy-create.md)|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|Create a new [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[Create oneDriveForBusinessProtectionPolicy](../api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies.md)|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|Create a new [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 |[Update oneDriveForBusinessProtectionPolicy](../api/onedriveforbusinessprotectionpolicy-update.md)|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|Update the properties of an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 
 ## Properties
