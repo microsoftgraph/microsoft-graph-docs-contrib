@@ -40,7 +40,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |Member | Description |
 |:------|:------------|
 |active | All units are protected.|
-|activeWithErrors | Some units are protected while others are unprotected.|
+|activeWithErrors | Some units are protected and others are unprotected.|
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|

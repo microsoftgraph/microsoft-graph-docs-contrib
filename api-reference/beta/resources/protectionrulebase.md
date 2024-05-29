@@ -13,13 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Protection Rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. There is one type of Protection Rule:
+Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
-Inclusion rules: Rules that indicate that a protection policy should match the specified criteria.
+Protection rules can be static or dynamic, which means that the rules can run one time or at regular intervals.
 
-Protection rules can be static or dynamic, which means the rules can run one time or at regular intervals.
-
-This is an abstract type. This is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and [driveProtectionRule](../resources/driveprotectionrule.md).
+This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
 
 ## Properties
 
@@ -39,8 +37,8 @@ This is an abstract type. This is the base type for [siteProtectionRule](../reso
 |Member | Description |
 |:------|:------------|
 |draft | The initial status of the protection rule upon creation.|
-|active | The status of the protection rule when it is running.|
-|completed | The status of the protection rule when it is successfully applied to the corresponding policy.|
+|active | The status of the protection rule when it's running.|
+|completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.    |
 
