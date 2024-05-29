@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DeviceManagementExchangeConnector;
+use Microsoft\Graph\Generated\Models\DeviceManagementExchangeConnectorStatus;
+use Microsoft\Graph\Generated\Models\DeviceManagementExchangeConnectorType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

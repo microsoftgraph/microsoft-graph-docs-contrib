@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\PrintTask;
 use Microsoft\Graph\Generated\Models\PrintTaskStatus;
+use Microsoft\Graph\Generated\Models\PrintTaskProcessingState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -23,11 +23,11 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List trainingCampaigns](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
-|[Create trainingCampaign](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Get trainingCampaign](../api/trainingcampaign-get.md)|[trainingCampaign](../resources/trainingcampaign.md)|Read the properties and relationships of a [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Update trainingCampaign](../api/trainingcampaign-update.md)|[trainingCampaign](../resources/trainingcampaign.md)|Update the properties of a [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Delete trainingCampaign](../api/attacksimulationroot-delete-trainingcampaigns.md)|None|Delete a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[List](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
+|[Create](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Get](../api/trainingcampaign-get.md)|[trainingCampaign](../resources/trainingcampaign.md)|Read the properties and relationships of a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Update](../api/trainingcampaign-update.md)|[trainingCampaign](../resources/trainingcampaign.md)|Update the properties of a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Delete](../api/attacksimulationroot-delete-trainingcampaigns.md)|None|Delete a [trainingCampaign](../resources/trainingcampaign.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -4029,6 +4029,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f5ff0769-8a87-4b52-8fe3-ab614dba6d92",
+          "ApiChange": "Property",
+          "ChangedApiName": "supportedServices",
+          "ChangeType": "Change",
+          "Description": "Added `CustomUrlDomain` as one of the values for the **supportedServices** property of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource type. Use this value to associate the custom domain name with a custom URL domain in Microsoft Entra External ID in external tenants.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "f5ff0769-8a87-4b52-8fe3-ab614dba6d92",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-28T00:00:00.3710897Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
           "ApiChange": "Enum type",
           "ChangedApiName": "x509CertificateAuthenticationMode",
@@ -12747,6 +12765,48 @@
       "CreatedDateTime": "2023-12-07T12:54:51.8497231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-1.0) resource.",
+          "Target": "contentCustomization"
+        },
+        {
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCustomization** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCustomization** property to the [organizationalBranding](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCustomization** property to the [organizationalBrandingLocalization](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingLocalization"
+        }
+      ],
+      "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-23T07:03:44.8496431Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

@@ -5,21 +5,21 @@ items:
   items:
   - name: Directory extension
     href: ../../resources/extensionproperty.md
-  - name: Create extensionProperties
+  - name: Create
     href: ../../api/application-post-extensionproperty.md
-  - name: List extensionProperties
+  - name: List
     href: ../../api/application-list-extensionproperty.md
-  - name: Get extensionProperty
+  - name: Get
     href: ../../api/extensionproperty-get.md
-  - name: Delete extensionProperty
+  - name: Delete
     href: ../../api/extensionproperty-delete.md
 - name: Open type extension
   items:
   - name: Open type extension
     href: ../../resources/opentypeextension.md
-  - name: Create
+  - name: Create open extension
     href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get
+  - name: Get open extension
     href: ../../api/opentypeextension-get.md
   - name: Update
     href: ../../api/opentypeextension-update.md

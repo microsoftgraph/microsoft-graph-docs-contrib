@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
 from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
 from msgraph.generated.models.conditional_access_applications import ConditionalAccessApplications
 from msgraph.generated.models.conditional_access_users import ConditionalAccessUsers

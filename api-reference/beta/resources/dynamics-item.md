@@ -22,8 +22,8 @@ Represents an item in Dynamics 365 Business Central.
 | Method                                      |Return Type|Description |
 |:--------------------------------------------|:----------|:-----------|
 |[Get item](../api/dynamics-item-get.md)      |item     |Gets an item object.   |
-|[Post item](../api/dynamics-create-item.md)  |item     |Creates an item object.|
-|[Patch item](../api/dynamics-item-update.md)  |item     |Updates an item object.|
+|[Create item](../api/dynamics-create-item.md)  |item     |Creates an item object.|
+|[Update item](../api/dynamics-item-update.md)  |item     |Updates an item object.|
 |[Delete item](../api/dynamics-item-delete.md)|none      |Deletes an item object.|
 
 ## Properties
