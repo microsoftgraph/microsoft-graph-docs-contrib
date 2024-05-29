@@ -28,6 +28,22 @@
           ]
         },
         {
+          "name": "Service principal",
+          "childNodes": [
+            {
+              "name": "Policies",
+              "resources": [
+                "claimsMappingPolicy",
+                "homeRealmDiscoveryPolicy",
+                "permissionGrantPolicy",
+                "permissionGrantConditionSet",
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy"
+              ]
+            }
+          ]
+        },
+        {
           "name": "Synchronization",
           "overview": "../../resources/synchronization-overview.md",
           "shouldSort": true,
@@ -35,7 +51,8 @@
             "synchronization",
             "synchronizationTemplate",
             "synchronizationJob",
-            "synchronizationSchema"
+            "synchronizationSchema",
+            "directoryDefinition"
           ],
           "childNodes": [
             {
@@ -1516,6 +1533,7 @@
               "resources": [
                 "microsoft.graph.callRecords.callRecord",
                 "microsoft.graph.callRecords.directRoutingLogRow",
+                "microsoft.graph.callRecords.participant",
                 "microsoft.graph.callRecords.pstnCallLogRow",
                 "microsoft.graph.callRecords.session"
               ]

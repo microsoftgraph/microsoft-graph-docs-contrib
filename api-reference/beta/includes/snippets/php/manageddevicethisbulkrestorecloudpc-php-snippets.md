@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\BulkRestoreCloudPc\BulkRestoreCloudPcPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\TimeRange;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\BulkRestoreCloudPc\BulkRestoreCloudPcPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\RestoreTimeRange;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

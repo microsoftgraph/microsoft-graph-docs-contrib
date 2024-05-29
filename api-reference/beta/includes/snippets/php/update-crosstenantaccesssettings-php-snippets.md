@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\CrossTenantAccessSettings
-use Microsoft\Graph\Beta\Generated\Models\Networkaccess\NetworkPacketTaggingStatus;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\CrossTenantAccessSettings;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Status;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\ConditionalAccessSettings
-use Microsoft\Graph\Beta\Generated\Models\Networkaccess\SignalingStatus;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\ConditionalAccessSettings;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Status;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

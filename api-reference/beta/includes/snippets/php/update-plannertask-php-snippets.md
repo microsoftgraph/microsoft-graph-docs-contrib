@@ -14,7 +14,7 @@ use Microsoft\Graph\Beta\Generated\Models\PlannerAppliedCategories;
 use Microsoft\Graph\Beta\Generated\Models\PlannerTaskRecurrence;
 use Microsoft\Graph\Beta\Generated\Models\PlannerRecurrenceSchedule;
 use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
