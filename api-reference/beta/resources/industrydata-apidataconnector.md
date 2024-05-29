@@ -17,7 +17,7 @@ Represents an abstract type that provides the resources to establish a connectio
 
 Inherits from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).
 
-Base type of [oneRosterApiDataConnector](industrydata-oneRosterApiDataConnector.md).
+Base type of [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-oneRosterApiDataConnector.md).
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +30,7 @@ Base type of [oneRosterApiDataConnector](industrydata-oneRosterApiDataConnector.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sourceSystem|[sourceSystemDefinition](industrydata-sourcesystemdefinition.md)|The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)|
+|sourceSystem|[microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)|The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

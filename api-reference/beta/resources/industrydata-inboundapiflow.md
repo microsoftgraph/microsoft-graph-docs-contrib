@@ -37,8 +37,8 @@ Inherits from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflo
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) |
-| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)                              |
+| dataConnector | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) |
+| year          | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)                              |
 
 ## JSON representation
 The following JSON representation shows the resource type.

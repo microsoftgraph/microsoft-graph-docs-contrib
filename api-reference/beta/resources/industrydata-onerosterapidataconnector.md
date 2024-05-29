@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-post.md)   | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)                         | Create a new [onerosterapidataconnector](industrydata-onerosterapidataconnector.md) object.                                                                         |
+| [Create oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-post.md)   | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)                         | Create a new [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                                                                         |
 | [Update oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-update.md) | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)            | Update the properties of a [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                 |
 
 ## Properties
@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| sourceSystem | [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.
