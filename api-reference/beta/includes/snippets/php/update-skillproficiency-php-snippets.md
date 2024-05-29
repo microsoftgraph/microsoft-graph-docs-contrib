@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\SkillProficiency;
-use Microsoft\Graph\Beta\Generated\Models\Proficiency;
+use Microsoft\Graph\Beta\Generated\Models\SkillProficiencyLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

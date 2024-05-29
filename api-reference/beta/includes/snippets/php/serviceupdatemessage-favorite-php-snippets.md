@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Admin\ServiceAnnouncement\Messages\Favorite\FavoritePostRequestBody
+use Microsoft\Graph\Beta\Generated\Admin\ServiceAnnouncement\Messages\Favorite\FavoritePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

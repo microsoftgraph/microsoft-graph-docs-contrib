@@ -6,14 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\Workflow
-use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Category;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\TriggerAndScopeBasedConditions
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\GroupBasedSubjectSet
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Workflow;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\LifecycleWorkflowCategory;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\TriggerAndScopeBasedConditions;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\GroupBasedSubjectSet;
 use Microsoft\Graph\Beta\Generated\Models\Group;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\MembershipChangeTrigger
-use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\ChangeType;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\Task
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\MembershipChangeTrigger;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\MembershipChangeType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Task;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\LifecycleTaskCategory;
 use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
 

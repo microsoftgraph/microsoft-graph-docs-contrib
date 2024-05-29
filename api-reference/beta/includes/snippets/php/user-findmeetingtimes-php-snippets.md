@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesPostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\AttendeeBase;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
 use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
 use Microsoft\Graph\Beta\Generated\Models\LocationConstraint;
 use Microsoft\Graph\Beta\Generated\Models\LocationConstraintItem;

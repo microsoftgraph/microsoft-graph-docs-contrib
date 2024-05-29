@@ -10,7 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageHostedContent;
 
 

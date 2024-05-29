@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\ReviewSets\Item\MicrosoftGraphSecurityAddToReviewSet\AddToReviewSetPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\EdiscoverySearch
+use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\ReviewSets\Item\MicrosoftGraphSecurityAddToReviewSet\AddToReviewSetPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Security\EdiscoverySearch;
 use Microsoft\Graph\Beta\Generated\Models\Security\AdditionalDataOptions;
 
 
