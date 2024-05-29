@@ -1887,6 +1887,88 @@
       "CreatedDateTime": "2024-04-15T17:42:49.507591Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerArchivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `plannerArchivalInfo` resource type.",
+          "Target": "plannerArchivalInfo"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to **plannerBucket**.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to **plannerBucket**.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to **plannerPlan**.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to **plannerPlan**.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to **plannerTask**.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to **plannerTask**.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the `archive` method to **plannerPlan**.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the `unarchive` method to **plannerPlan**.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-29T17:13:44.4758634Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
