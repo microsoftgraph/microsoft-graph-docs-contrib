@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Reports\Partners\Billing\Usage\Unbilled\MicrosoftGraphPartnersBillingExport\ExportPostRequestBody
+use Microsoft\Graph\Generated\Reports\Partners\Billing\Usage\Unbilled\MicrosoftGraphPartnersBillingExport\ExportPostRequestBody;
 use Microsoft\Graph\Generated\Models\Partners\Billing\AttributeSet;
 use Microsoft\Graph\Generated\Models\Partners\Billing\BillingPeriod;
 

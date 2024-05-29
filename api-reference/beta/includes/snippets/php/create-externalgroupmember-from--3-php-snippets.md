@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\Identity
-use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Type;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Identity;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\IdentityType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
