@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AndroidGeneralDeviceConfiguration;
 use Microsoft\Graph\Generated\Models\AppListItem;
-use Microsoft\Graph\Generated\Models\CompliantAppListType;
-use Microsoft\Graph\Generated\Models\PasswordRequiredType;
+use Microsoft\Graph\Generated\Models\AppListType;
+use Microsoft\Graph\Generated\Models\AndroidRequiredPasswordType;
 use Microsoft\Graph\Generated\Models\WebBrowserCookieSettings;
 
 

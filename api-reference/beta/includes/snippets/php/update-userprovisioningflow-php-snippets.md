@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserProvisioningFlow
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserManagementOptions
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\AdditionalUserAttributes
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\AdditionalUserOptions
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserCreationOptions
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserConfiguration
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\SimplePasswordSettings
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserProvisioningFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserManagementOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserAttributes;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserCreationOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SimplePasswordSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

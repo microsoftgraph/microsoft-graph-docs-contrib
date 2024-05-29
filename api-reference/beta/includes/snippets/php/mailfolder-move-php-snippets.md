@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\MailFolders\Item\Move\MovePostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\MailFolders\Item\Move\MovePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

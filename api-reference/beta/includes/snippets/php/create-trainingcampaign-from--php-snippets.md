@@ -9,13 +9,14 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\TrainingCampaign;
 use Microsoft\Graph\Beta\Generated\Models\EmailIdentity;
 use Microsoft\Graph\Beta\Generated\Models\AccountTargetContent;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\AccountTargetContentType;
 use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationSetting;
-use Microsoft\Graph\Beta\Generated\Models\NotificationPreference;
-use Microsoft\Graph\Beta\Generated\Models\SettingType;
+use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationPreference;
+use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationSettingType;
 use Microsoft\Graph\Beta\Generated\Models\TrainingSetting;
+use Microsoft\Graph\Beta\Generated\Models\TrainingSettingType;
 use Microsoft\Graph\Beta\Generated\Models\CampaignSchedule;
-use Microsoft\Graph\Beta\Generated\Models\Status;
+use Microsoft\Graph\Beta\Generated\Models\CampaignStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

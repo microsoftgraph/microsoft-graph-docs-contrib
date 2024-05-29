@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Admin\Windows\Updates\UpdatableAssets\MicrosoftGraphWindowsUpdatesUnenrollAssetsById\UnenrollAssetsByIdPostRequestBody
+use Microsoft\Graph\Beta\Generated\Admin\Windows\Updates\UpdatableAssets\MicrosoftGraphWindowsUpdatesUnenrollAssetsById\UnenrollAssetsByIdPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\UpdateCategory;
 
 
