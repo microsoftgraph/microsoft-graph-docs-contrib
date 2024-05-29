@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Describes a drive protection rule associated with a OneDrive for Buisness protection policy."
+description: "Represents a drive protection rule associated with a OneDrive for Buisness protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a protection rule associated with a [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
+Represents a protection rule associated with a [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 

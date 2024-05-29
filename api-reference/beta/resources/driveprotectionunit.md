@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a protection unit associated with OneDrive for Business.
+Represents a protection unit associated with a OneDrive for Business protection policy.
 
 Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
