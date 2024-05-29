@@ -20,7 +20,7 @@ Represents the policy scope of the Microsoft Entra tenant that controls the abil
 |:---|:---|:---|
 |allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed.|
 |isAdminConfigurable|Boolean|Determines if administrators can modify this policy.|
-|localAdmins|[localAdminSettings](../resources/localAdminSettings.md)|Determines who is to become a local administrator on joined devices.|
+|localAdmins|[localAdminSettings](../resources/localAdminSettings.md)|Determines who becomes a local administrator on joined devices.|
 
 ## Relationships
 
