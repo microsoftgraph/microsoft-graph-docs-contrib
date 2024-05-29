@@ -25,21 +25,21 @@ https://graph.microsoft.com/{version}/solutions/
 To access Bookings businesses, use the following syntax:
 
 ```http
-https://graph.microsoft.com/{version}/solutions/bookingBusinesses
+https://graph.microsoft.com/{version}/solutions/bookingBusinesses 
 ```
 
 To access Bookings currencies, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/solutions/bookingCurrencies
+https://graph.microsoft.com/{version}/solutions/bookingCurrencies 
 ```
 
 To access business scenarios, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/solutions/businessScenarios
+https://graph.microsoft.com/{version}/solutions/businessScenarios 
 ```
 
 To access virtual event webinars, use the following syntax:
@@ -56,18 +56,19 @@ To access virtual event town halls, use the following syntax:
 https://graph.microsoft.com/{version}/solutions/virtualEvents/townhalls
 ```
 
-To access approvals, use the following syntax:
+To access approval items, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/solutions/approval
+https://graph.microsoft.com/{version}/solutions/approval/approvalItems
 ```
+
 
 ## Methods
 None.
 
 ## Properties
-None.
+None. 
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -76,7 +77,7 @@ None.
 |bookingCurrencies|[bookingcurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
 |virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
-|approvalSolution|[approvalSolution](approvalsolution.md)| Approval navigation property that allows you to manage your [approvalItems](approvalitem.md).|
+|approvalItems|[approvalitem](approvalitem.md) collection | A collection of approval items.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -90,4 +91,3 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.solutionsRoot"
 }
-```
