@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\ExtractLabel\ExtractLabelRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\ExtractLabel\ExtractLabelPostRequestBody
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\ExtractLabel\ExtractLabelPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\ContentInfo;
-use Microsoft\Graph\Beta\Generated\Models\Format;
-use Microsoft\Graph\Beta\Generated\Models\State;
+use Microsoft\Graph\Beta\Generated\Models\ContentFormat;
+use Microsoft\Graph\Beta\Generated\Models\ContentState;
 use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
 

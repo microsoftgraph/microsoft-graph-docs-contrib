@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\ExternalConnection
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\ExternalConnection;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

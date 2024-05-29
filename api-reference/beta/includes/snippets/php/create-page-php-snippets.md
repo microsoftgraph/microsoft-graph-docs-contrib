@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\SitePage;
-use Microsoft\Graph\Beta\Generated\Models\PageLayout;
+use Microsoft\Graph\Beta\Generated\Models\PageLayoutType;
 use Microsoft\Graph\Beta\Generated\Models\TitleArea;
-use Microsoft\Graph\Beta\Generated\Models\Layout;
-use Microsoft\Graph\Beta\Generated\Models\TextAlignment;
+use Microsoft\Graph\Beta\Generated\Models\TitleAreaLayoutType;
+use Microsoft\Graph\Beta\Generated\Models\TitleAreaTextAlignmentType;
 use Microsoft\Graph\Beta\Generated\Models\CanvasLayout;
 use Microsoft\Graph\Beta\Generated\Models\HorizontalSection;
-use Microsoft\Graph\Beta\Generated\Models\Emphasis;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSectionLayoutType;
+use Microsoft\Graph\Beta\Generated\Models\SectionEmphasisType;
 use Microsoft\Graph\Beta\Generated\Models\HorizontalSectionColumn;
 use Microsoft\Graph\Beta\Generated\Models\WebPart;
 

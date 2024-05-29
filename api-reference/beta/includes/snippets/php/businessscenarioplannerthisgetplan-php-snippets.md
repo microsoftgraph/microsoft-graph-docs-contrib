@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Solutions\BusinessScenarios\Item\Planner\GetPlan\GetPlanPostRequestBody
+use Microsoft\Graph\Beta\Generated\Solutions\BusinessScenarios\Item\Planner\GetPlan\GetPlanPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioGroupTarget;
-use Microsoft\Graph\Beta\Generated\Models\TaskTargetKind;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskTargetKind;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

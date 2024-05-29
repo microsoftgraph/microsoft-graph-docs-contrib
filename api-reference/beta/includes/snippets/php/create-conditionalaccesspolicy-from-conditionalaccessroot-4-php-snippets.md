@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPolicy;
-use Microsoft\Graph\Beta\Generated\Models\State;
+use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessPolicyState;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessConditionSet;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessApplications;
 use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessUsers;

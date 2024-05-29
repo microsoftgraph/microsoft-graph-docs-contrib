@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\SubscribeToTone\SubscribeToTonePostRequestBody
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\SubscribeToTone\SubscribeToTonePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

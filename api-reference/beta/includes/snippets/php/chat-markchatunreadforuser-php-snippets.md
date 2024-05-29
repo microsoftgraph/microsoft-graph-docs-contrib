@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Chats\Item\MarkChatUnreadForUser\MarkChatUnreadForUserPostRequestBody
+use Microsoft\Graph\Beta\Generated\Chats\Item\MarkChatUnreadForUser\MarkChatUnreadForUserPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\TeamworkUserIdentity;
 
 
