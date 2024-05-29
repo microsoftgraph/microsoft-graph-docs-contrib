@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/users/37b16a99-97fe-47fe-9a58-4257059b3463/
 
 ---
 
-
 ### Response
 
 The following example shows the response.

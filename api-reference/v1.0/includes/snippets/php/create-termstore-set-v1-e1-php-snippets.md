@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\TermStore\Set
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\TermStore\Group
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\TermStore\LocalizedName
+use Microsoft\Graph\Generated\Models\TermStore\Set;
+use Microsoft\Graph\Generated\Models\TermStore\Group;
+use Microsoft\Graph\Generated\Models\TermStore\LocalizedName;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

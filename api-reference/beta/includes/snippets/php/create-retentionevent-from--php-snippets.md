@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionEvent
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\EventQuery
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionEvent;
+use Microsoft\Graph\Beta\Generated\Models\Security\EventQuery;
 use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\EventPropagationResult
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionEventStatus
+use Microsoft\Graph\Beta\Generated\Models\Security\EventPropagationResult;
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionEventStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
