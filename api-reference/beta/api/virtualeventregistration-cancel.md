@@ -3,7 +3,7 @@ title: "virtualEventRegistration: cancel"
 description: "Cancel an attendee's registration record for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.service: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
