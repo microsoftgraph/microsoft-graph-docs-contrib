@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase resource type"
-description: "Describes Protection Unit and its properties"
+description: "Represents a site, drive, or mailbox that is protected by a protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection Units refers to the site/drive/mailbox units that are being protected under the Protection Policy.
+Represents a site, drive, or mailbox that is protected by a [protection policy](protectionpolicybase.md).
+
 This is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get protectionUnitBase](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
+|[Get](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
 
 ## Properties
 |Property|Type|Description|

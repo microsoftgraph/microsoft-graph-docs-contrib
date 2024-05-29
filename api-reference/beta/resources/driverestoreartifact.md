@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the restore point and destination details that can be used to restore a OneDrive for Business protection unit. 
+Represents the restore point and destination details that can be used to restore a OneDrive for Business [protection unit](protectionunitbase.md). 
 
 Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
@@ -39,11 +39,11 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
 |Member | Description |
 |:------|:------------|
-|added|Initial status when the restore artifact is added to the restore session.|
-|scheduling|Status when the activate action is called on the restore session.|
-|scheduled|Status when the activate action call is successfull on the restore session.|
-|inProgress|The restore artifact is picked for restoration.|
-|succeeded|The restore artifact is successfully restored.|
+|added|The restore artifact was added to the restore session.|
+|scheduling|The activate action was called on the restore session.|
+|scheduled|The activate action call was successful on the restore session.|
+|inProgress|The restore artifact was picked for restoration.|
+|succeeded|The restore artifact was successfully restored.|
 |failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 

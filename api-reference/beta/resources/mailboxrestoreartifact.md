@@ -1,6 +1,6 @@
 ---
 title: "mailboxRestoreArtifact resource type"
-description: "Describes mailbox restore artifact and its properties"
+description: "Represents the restore point and destination details that can be used to restore a mailbox protection unit."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,49 +13,51 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore artifact refers to the mailbox unit's restore point and destination relevant details that can be used to restore it.
+Represents the restore point and destination details that can be used to restore a mailbox [protection unit](protectionunitbase.md).
 
 Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List mailboxRestoreArtifact](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get a list of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) and their properties.|
+|[List](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get a list of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the restore artifact.|
-|completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Describes preference for restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restoration of restore artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |restoredFolderId|String|The new restored folder identifier for the user.|
-|restoredFolderName|String|The new restored folder name of the user.|
-|startDateTime|DateTimeOffset|The time when restoration of restore artifact is started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The individual restoration status of the restore artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|restoredFolderName|String|The new restored folder name.|
+|startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).T he possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### artifactRestoreStatus values
+
 |Member | Description |
 |:------|:------------|
-|added|Initial Status when restore artifact has been added to restore session.|
-|scheduling|Status when activate action is called on the restore session.|
-|scheduled|Status when activate action call is successfull on the restore session.|
-|inProgress|Status when restore artifact is/has been picked for restoration.|
-|succeeded|Status when the restore artifact has successfully restored.|
-|failed|Status when restoration of artifact is failed.|
+|added|The restore artifact was added to the restore session.|
+|scheduling|The activate action was called on the restore session.|
+|scheduled|The activate action call was successful on the restore session.|
+|inProgress|The restore artifact was picked for restoration.|
+|succeeded|The restore artifact was successfully restored.|
+|failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ### destinationType values
+
 |Member | Description |
 |:------|:------------|
-|new|Restoration will be done at new location. eg. for SharePoint and One Drive new site will be created and content will be restore in newly created site. for Exchange restored folder will be created and content will be restored there.|
-|inPlace|restore will be done on the same location, e.g. on the same site, for one drive on same drive and for exchange artifact will be restored in same mailbox.|
+|new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
+|inPlace|Restoration will occur in the same location. For SharePoint, it will bbe on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the mailbox unit's restore point and destination relevant details that can be used to restore it. Inherited from [microsoft.graph.restoreArtifactBase](../resources/restoreartifactbase.md)|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an artifact is protected by a protection policy and can be restored. Inherited from [microsoft.graph.restoreArtifactBase](../resources/restoreartifactbase.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
