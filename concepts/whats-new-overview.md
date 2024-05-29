@@ -72,7 +72,7 @@ Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/gr
 
 ### Security | Alerts and incidents
 
-Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
+Use the **summary** property to get or set details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
 ### Security | eDiscovery
 
