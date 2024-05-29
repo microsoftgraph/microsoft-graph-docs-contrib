@@ -3,7 +3,7 @@ title: "Update externalItem"
 description: "Update the properties of an externalitem."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

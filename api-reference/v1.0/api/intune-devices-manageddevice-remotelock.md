@@ -3,7 +3,7 @@ title: "remoteLock action"
 description: "Remote lock"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

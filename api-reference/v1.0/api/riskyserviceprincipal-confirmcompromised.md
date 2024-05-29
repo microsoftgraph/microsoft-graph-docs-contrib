@@ -3,7 +3,7 @@ title: "riskyServicePrincipal: confirmCompromised"
 description: "Confirm one or more riskyServicePrincipal objects as compromised."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

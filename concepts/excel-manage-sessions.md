@@ -3,7 +3,7 @@ title: "Manage sessions and persistence in Excel"
 description: "Learn how to use the Excel API in Microsoft Graph in the most efficient way possible. Learn about the three modes to call the APIs and the related request types."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Manage sessions and persistence in Excel
@@ -35,7 +35,7 @@ Suggested [error handling](workbook-error-handling.md) for Excel APIs is based o
 
 To learn how to create and use sessions, see the [Create session reference topic](/graph/api/workbook-createsession).
 
-## See also
+## Related content
 
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

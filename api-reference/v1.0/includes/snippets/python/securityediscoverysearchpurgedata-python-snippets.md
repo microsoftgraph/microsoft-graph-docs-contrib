@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.security.cases.ediscoverycases.item.searches.item.microsoft_graph_security_purge_data.purge_data_post_request_body import PurgeDataPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

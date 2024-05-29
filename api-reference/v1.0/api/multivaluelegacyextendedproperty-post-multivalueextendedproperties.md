@@ -3,7 +3,7 @@ title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -355,7 +355,7 @@ Content-type: application/json
   "organizer": {
       "emailAddress": {
           "name": "MOD Administrator",
-          "address": "admin@M365x39866865.OnMicrosoft.com"
+          "address": "admin@contoso.com"
       }
   },
   "onlineMeeting": null

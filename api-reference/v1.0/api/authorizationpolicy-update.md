@@ -1,10 +1,10 @@
 ---
-title: "Update authorizationpolicy"
+title: "Update authorizationPolicy"
 description: "Update the properties of authorizationPolicy object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`. `everyone` is the default setting for all cloud environments except US Government. For more information, see [allowInvitesFrom values](../resources/authorizationpolicy.md#allowinvitesfrom-values). |
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`. |
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email-based subscriptions. |
-|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Service Password Reset feature on the tenant. |
+|allowedToUseSSPR|Boolean|  Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR). For more information, see [Self-service password reset for administrators](/entra/identity/authentication/concept-sspr-policy#administrator-reset-policy-differences). |
 |blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. This also disables user-based access to the legacy service endpoint used by MSOL PowerShell. This doesn't affect Microsoft Entra Connect or Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Specifies certain customizable permissions for default user role. |
 |description|String| Description of this policy.|
@@ -67,7 +67,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 #### Request
 
-Here's example of the request. In this example, guest access level is modified to Restricted Guest User.
+The following example shows a request. In this example, guest access level is modified to Restricted Guest User.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,6 +107,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-allowemailverifieduserstojoinorganization-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-allowemailverifieduserstojoinorganization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-allowemailverifieduserstojoinorganization-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +119,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -129,7 +133,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -169,6 +173,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-blockmsolpowershell-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-blockmsolpowershell-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-blockmsolpowershell-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -177,7 +185,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -191,7 +199,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -233,6 +241,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -241,7 +253,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -255,7 +267,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -295,6 +307,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-allowedtousesspr-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-allowedtousesspr-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-allowedtousesspr-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -303,7 +319,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -317,7 +333,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -359,6 +375,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-disableusercontent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-disableusercontent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-disableusercontent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -367,7 +387,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -425,6 +445,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -433,7 +457,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### Response
 
-Here's example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

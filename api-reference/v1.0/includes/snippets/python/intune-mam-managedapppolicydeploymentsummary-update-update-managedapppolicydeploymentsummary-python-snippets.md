@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_app_policy_deployment_summary import ManagedAppPolicyDeploymentSummary
+from msgraph.generated.models.managed_app_policy_deployment_summary_per_app import ManagedAppPolicyDeploymentSummaryPerApp
+from msgraph.generated.models.android_mobile_app_identifier import AndroidMobileAppIdentifier
 
 graph_client = GraphServiceClient(credentials, scopes)
 

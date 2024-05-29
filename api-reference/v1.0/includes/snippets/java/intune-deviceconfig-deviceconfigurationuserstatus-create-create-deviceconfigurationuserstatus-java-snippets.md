@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceConfigurationUserStatus deviceConfigurationUserStatus = new DeviceConfigurationUserStatus();
-deviceConfigurationUserStatus.userDisplayName = "User Display Name value";
-deviceConfigurationUserStatus.devicesCount = 12;
-deviceConfigurationUserStatus.status = ComplianceStatus.NOT_APPLICABLE;
-deviceConfigurationUserStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-deviceConfigurationUserStatus.userPrincipalName = "User Principal Name value";
+deviceConfigurationUserStatus.setOdataType("#microsoft.graph.deviceConfigurationUserStatus");
+deviceConfigurationUserStatus.setUserDisplayName("User Display Name value");
+deviceConfigurationUserStatus.setDevicesCount(12);
+deviceConfigurationUserStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+deviceConfigurationUserStatus.setLastReportedDateTime(lastReportedDateTime);
+deviceConfigurationUserStatus.setUserPrincipalName("User Principal Name value");
+DeviceConfigurationUserStatus result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").userStatuses().post(deviceConfigurationUserStatus);
 
-graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}").userStatuses()
-	.buildRequest()
-	.post(deviceConfigurationUserStatus);
 
 ```

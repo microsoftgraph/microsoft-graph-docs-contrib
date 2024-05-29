@@ -3,7 +3,7 @@ title: "Update place"
 description: "Update the properties of place object."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: calendar
+ms.subservice: calendar
 doc_type: "apiPageType"
 ---
 
@@ -192,10 +192,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_roomlist",
-  "sampleKeys": ["Building1RroomList@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Building1RroomList@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.com
 Content-type: application/json
 
 {

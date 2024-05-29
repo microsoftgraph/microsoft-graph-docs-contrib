@@ -61,7 +61,6 @@ The Microsoft Graph Java SDK is included in the following packages:
 - [microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java): Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API.
 - [microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java): Contains the models and request builders for accessing the `beta` endpoint with the fluent API.
 - [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): The core library for making calls to Microsoft Graph.
-- [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK.
 
 To install the Microsoft Graph Java SDK, you can use one of these two options:
 
@@ -74,7 +73,9 @@ To install the Microsoft Graph Java SDK, you can use one of these two options:
 
     dependency {
         // Include the sdk as a dependency
-        implementation 'com.microsoft.graph:microsoft-graph:5.+'
+        implementation 'com.microsoft.graph:microsoft-graph:6.+'
+        // Beta
+        implementation 'com.microsoft.graph:microsoft-graph-beta:6.+'
         // Include Azure identity for authentication
         implementation 'com.azure:azure-identity:1.+'
     }
@@ -86,12 +87,17 @@ To install the Microsoft Graph Java SDK, you can use one of these two options:
     <dependency>
         <groupId>com.microsoft.graph</groupId>
         <artifactId>microsoft-graph</artifactId>
-        <version>[5.0,)</version>
+        <version>[6.0,)</version>
+    </dependency>
+    <dependency>
+        <groupId>com.microsoft.graph</groupId>
+        <artifactId>microsoft-graph-beta</artifactId>
+        <version>[6.0,)</version>
     </dependency>
     <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-identity</artifactId>
-        <version>[1.3,)</version>
+        <version>[1.11,)</version>
     </dependency>
   ```
 
@@ -151,7 +157,7 @@ The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-p
 pip install msgraph-sdk
 ```
 
-## See also
+## Related content
 
 - For more information, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).

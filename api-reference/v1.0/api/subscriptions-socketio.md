@@ -2,7 +2,7 @@
 author: daspek
 title: "Get websocket endpoint"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
 doc_type: apiPageType
 ---

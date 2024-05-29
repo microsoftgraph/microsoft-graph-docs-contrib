@@ -3,7 +3,7 @@ title: "systemCredentialPreferences resource type"
 description: "Dynamically detects and prompts users with their preferred multifactor authentication method from the registered methods."
 author: "msft-poulomi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

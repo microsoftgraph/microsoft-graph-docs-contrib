@@ -3,7 +3,7 @@ title: "Get agreementFile"
 description: "Retrieve the details of an agreement file, including the language and version information."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

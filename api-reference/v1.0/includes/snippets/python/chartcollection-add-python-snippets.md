@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.items.item.workbook.worksheets.item.charts.add.add_post_request_body import AddPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

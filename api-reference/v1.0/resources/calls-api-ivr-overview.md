@@ -3,7 +3,7 @@ title: "IVR scenarios in calls"
 description: "The following are the Interactive Voice Response (IVR) scenarios that the calling APIs in Microsoft Graph support:"
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: conceptualPageType
 ---
 

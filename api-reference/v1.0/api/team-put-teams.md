@@ -3,7 +3,7 @@ title: "Create team from group"
 description: "Create a new team under a group."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -174,7 +174,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

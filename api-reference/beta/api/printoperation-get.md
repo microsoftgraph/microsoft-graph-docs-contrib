@@ -3,7 +3,7 @@ title: Get printOperation
 description: Retrieve a printOperation.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

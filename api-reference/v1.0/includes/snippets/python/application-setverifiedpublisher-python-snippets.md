@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.applications.item.set_verified_publisher.set_verified_publisher_post_request_body import SetVerifiedPublisherPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

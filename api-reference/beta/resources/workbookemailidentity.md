@@ -3,7 +3,7 @@ title: "workbookEmailIdentity resource type"
 description: "Represents an identity of an actor."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

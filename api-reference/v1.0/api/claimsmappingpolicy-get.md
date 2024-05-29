@@ -3,7 +3,7 @@ title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of a claimsMappingPolicy object."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

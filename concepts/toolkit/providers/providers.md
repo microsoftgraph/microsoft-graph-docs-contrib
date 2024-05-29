@@ -33,7 +33,11 @@ To use a provider in your app, you need to initialize a new provider and then se
 You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MSAL2 provider.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+<script type="module">
+  import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
 <mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
 
@@ -56,10 +60,15 @@ Providers.globalProvider = new Msal2Provider({
 We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](../providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MSAL2 Provider.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
-<mgt-msal2-provider client-id="YOUR_CLIENT_ID"
-                   scopes="user.read,people.read"
-                   ></mgt-msal2-provider>
+<script type="module">
+  import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
+<mgt-msal2-provider
+  client-id="YOUR_CLIENT_ID"
+  scopes="user.read,people.read"
+></mgt-msal2-provider>
 ```
 
 If you're initializing the provider in code, provide the permission scopes in an array in the `scopes` property.
@@ -80,9 +89,14 @@ You can find the list of permission scopes required by each component in the **M
 You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Microsoft Entra ID-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
-<mgt-msal2-provider client-id="YOUR_CLIENT_ID"
-                    custom-hosts="myapi.com,anotherapi.com"
+<script type="module">
+  import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
+<mgt-msal2-provider 
+  client-id="YOUR_CLIENT_ID"
+  custom-hosts="myapi.com,anotherapi.com"
 ></mgt-msal2-provider>
 ```
 
@@ -236,7 +250,11 @@ if (TeamsProvider.isAvailable) {
 When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MSAL2 provider and the Login component.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+<script type="module">
+  import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
 <mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```

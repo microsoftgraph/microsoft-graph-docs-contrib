@@ -14,7 +14,7 @@ var requestBody = new GetAvailableExtensionPropertiesPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsGetAvailableExtensionPropertiesPostResponseAsync(requestBody);
 
 
 ```

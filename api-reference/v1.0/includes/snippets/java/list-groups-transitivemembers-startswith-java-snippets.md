@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-UserCollectionPage user = graphClient.groups("{id}").transitiveMembers().microsoft.graph.user()
-	.buildRequest( requestOptions )
-	.filter("startswith(displayName, 'a')")
-	.orderBy("displayName")
-	.get();
+UserCollectionResponse result = graphClient.groups().byGroupId("{group-id}").transitiveMembers().graphUser().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.orderby = new String []{"displayName"};
+	requestConfiguration.queryParameters.filter = "startswith(displayName, 'a')";
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

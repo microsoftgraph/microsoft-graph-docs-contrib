@@ -3,7 +3,7 @@ title: "workbookTableSort resource type"
 description: "Manages sorting operations on Table objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ Manages sorting operations on Table objects.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

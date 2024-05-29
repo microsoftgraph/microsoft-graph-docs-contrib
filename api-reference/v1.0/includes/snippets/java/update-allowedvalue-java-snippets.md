@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AllowedValue allowedValue = new AllowedValue();
-allowedValue.isActive = false;
+allowedValue.setIsActive(false);
+AllowedValue result = graphClient.directory().customSecurityAttributeDefinitions().byCustomSecurityAttributeDefinitionId("{customSecurityAttributeDefinition-id}").allowedValues().byAllowedValueId("{allowedValue-id}").patch(allowedValue);
 
-graphClient.directory().customSecurityAttributeDefinitions("Engineering_Project").allowedValues("Alpine")
-	.buildRequest()
-	.patch(allowedValue);
 
 ```

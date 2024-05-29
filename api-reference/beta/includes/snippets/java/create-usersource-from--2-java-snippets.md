@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserSource userSource = new UserSource();
-userSource.email = "adelev@contoso.com";
-userSource.includedSources = EnumSet.of(SourceType.MAILBOX);
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("c816dd6f-5af8-40c5-a760-331361e05c60").legalHolds("387566cc-38ae-4e85-ab4b-cd2dd34faa07").userSources()
-	.buildRequest()
-	.post(userSource);
+com.microsoft.graph.beta.models.ediscovery.UserSource userSource = new com.microsoft.graph.beta.models.ediscovery.UserSource();
+userSource.setEmail("adelev@contoso.com");
+userSource.setIncludedSources(EnumSet.of(com.microsoft.graph.beta.models.ediscovery.SourceType.Mailbox));
+com.microsoft.graph.models.ediscovery.UserSource result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").legalHolds().byLegalHoldId("{legalHold-id}").userSources().post(userSource);
+
 
 ```

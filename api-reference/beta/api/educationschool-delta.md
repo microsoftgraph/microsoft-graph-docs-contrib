@@ -3,7 +3,7 @@ title: "educationSchool: delta"
 description: "Get newly created or updated schools without having to perform a full read of the entire school collection."
 ms.localizationpriority: medium
 author: "mlafleur"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -60,7 +60,7 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

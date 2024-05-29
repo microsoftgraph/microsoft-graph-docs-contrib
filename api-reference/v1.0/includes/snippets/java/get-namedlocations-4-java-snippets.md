@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-NamedLocationCollectionPage namedLocations = graphClient.identity().conditionalAccess().namedLocations()
-	.buildRequest()
-	.filter("microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+NamedLocationCollectionResponse result = graphClient.identity().conditionalAccess().namedLocations().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')";
+});
+
 
 ```

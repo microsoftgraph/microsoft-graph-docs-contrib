@@ -3,7 +3,7 @@ title: "assignmentFilterOperator enum type"
 description: "Represents the different type of operators which can be used to craft the AssignmentFilter rule."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

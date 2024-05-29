@@ -3,7 +3,7 @@ title: "Delete sideLoadingKey"
 description: "Deletes a sideLoadingKey."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

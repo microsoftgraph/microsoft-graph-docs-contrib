@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PrivilegedAccessGroupEligibilityScheduleRequest;
+use Microsoft\Graph\Beta\Generated\Models\PrivilegedAccessGroupRelationships;
+use Microsoft\Graph\Beta\Generated\Models\ScheduleRequestActions;
+use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

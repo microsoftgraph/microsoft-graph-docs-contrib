@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-int int32 = graphClient.groups("{id}").members().microsoft.graph.user().count()
-	.buildRequest( requestOptions )
-	.get();
+graphClient.groups().byGroupId("{group-id}").members().graphUser().count().get(requestConfiguration -> {
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

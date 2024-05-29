@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph connectors API"
 description: "Use the Microsoft Graph connectors API to index external data that powers intelligent experiences in Microsoft 365."
 ms.localizationpriority: high
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
 ---
 
@@ -49,11 +49,10 @@ The following are current known limitations:
 - An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
 - Maximum size of an **externalItem** entity is 4 MB.
-- Sorting results is not supported.
 
 ## Next steps
 
-- See the [Microsoft Graph connectors overview](https://learn.microsoft.com/graph/connecting-external-content-connectors-overview).
+- See the [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md), and [externalItem](externalconnectors-externalitem.md) resources.
 - Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation).
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample).

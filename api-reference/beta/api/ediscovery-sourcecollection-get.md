@@ -143,7 +143,7 @@ Content-Type: application/json
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalname": "admin@contoso.onmicrosoft.com"
+            "userPrincipalname": "admin@contoso.com"
         }
     },
     "addToReviewSetOperation": {

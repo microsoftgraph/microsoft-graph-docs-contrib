@@ -10,10 +10,10 @@ $params = @{
 	description = "Library Assist"
 	displayName = "Library Assist"
 	groupTypes = @(
-		"Unified"
-	)
-	mailEnabled = $true
-	mailNickname = "library-help"
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "library-help"
 }
 
 Update-MgGroup -GroupId $groupId -BodyParameter $params

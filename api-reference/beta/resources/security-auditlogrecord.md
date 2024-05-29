@@ -3,7 +3,7 @@ title: "auditLogRecord resource type"
 description: "Represents an audit log entry that contains standard audit attributes and auditData specific to the Microsoft 365 service."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 | Method                                                                   | Return type                                                                                   | Description                                                                                                                           |
 | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [List auditLogRecords](../api/security-auditlogquery-list-records.md)    | [auditLogRecord](../resources/security-auditlogrecord.md) collection | Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.    |
+| [List](../api/security-auditlogquery-list-records.md)    | [auditLogRecord](../resources/security-auditlogrecord.md) collection | Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.    |
 
 ## Properties
 

@@ -3,7 +3,7 @@ title: "Create calendarPermission"
 description: "Create the calendarpermission object."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -29,7 +29,7 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 Create the specified permissions of a user's primary calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 
@@ -38,7 +38,7 @@ POST /users/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of a group calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -46,7 +46,7 @@ POST /groups/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of the user calendar that contains the identified event:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -76,7 +76,7 @@ The following example shows a request.
 
 
 # [HTTP](#tab/http)
-<!-- { 
+<!-- {
   "blockType": "request",
   "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
   "name": "create_calendarpermission"
@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e
 {
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     },
     "isInsideOrganization": true,
     "isRemovable": true,
@@ -118,6 +118,10 @@ POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-calendarpermission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-calendarpermission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -155,7 +159,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     }
 }
 ```

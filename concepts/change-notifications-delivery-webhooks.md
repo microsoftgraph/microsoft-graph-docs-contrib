@@ -4,7 +4,8 @@ description: "Change notifications can be delivered via different channels, incl
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: how-to
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/03/2024
@@ -19,7 +20,9 @@ You can create a subscription to the resource for which you want to be notified 
 
 The article guides you through the process of implementing your webhook endpoint, subscribing to and managing Microsoft Graph subscriptions, and how to receive change notifications through webhooks.
 
-## Implementing a webhook endpoint
+For details about how to create change notifications, see [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview).
+
+## Considerations for a webhook endpoint
 Before you can receive a notification via webhooks, you must create a publicly accessible, HTTPS-secured endpoint that is addressable via URL. If your endpoint isn't publicly accessible, Microsoft Graph won't send notifications to your endpoint.
 
 Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service may begin to drop notifications. Dropped notifications can't be recovered.
@@ -332,7 +335,7 @@ In this article, you learned how to receive change notifications through webhook
 3. As long as the subscription is still valid and changes occur to the subscribed resource, Microsoft Graph will send change notifications to the **notificationUrl** endpoint.
 4. Regularly renew the subscription to maintain its validity and continue receiving updates on the subscribed changes.
 
-## See also
+## Related content
 
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type

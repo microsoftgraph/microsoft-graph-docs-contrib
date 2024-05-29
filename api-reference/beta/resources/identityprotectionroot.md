@@ -3,7 +3,7 @@ title: "identityProtectionRoot resource type"
 description: "Container for navigation properties for Microsoft Graph identity protection resources."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

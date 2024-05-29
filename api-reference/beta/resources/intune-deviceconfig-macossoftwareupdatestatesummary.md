@@ -3,7 +3,7 @@ title: "macOSSoftwareUpdateStateSummary resource type"
 description: "MacOS software update state summary for a device and user"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

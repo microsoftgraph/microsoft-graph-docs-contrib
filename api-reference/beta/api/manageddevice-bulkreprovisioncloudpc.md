@@ -3,7 +3,7 @@ title: "managedDevice: bulkReprovisionCloudPc"
 description: "Bulk reprovision a set of Cloud PC devices with Intune managed device IDs."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -79,10 +79,6 @@ Content-Type: application/json
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/manageddevice-bulkreprovisioncloudpc-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/manageddevice-bulkreprovisioncloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

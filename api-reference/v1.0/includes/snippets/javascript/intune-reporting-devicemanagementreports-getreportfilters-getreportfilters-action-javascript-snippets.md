@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const stream = Content-type: application/json
-Content-length: 278
-
-{
+const stream = {
   name: 'Name value',
   select: [
     'Select value'

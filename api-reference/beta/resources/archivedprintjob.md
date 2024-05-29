@@ -3,7 +3,7 @@ title: archivedPrintJob resource type
 description: A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This isn't an active print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

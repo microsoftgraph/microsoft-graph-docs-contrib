@@ -3,7 +3,7 @@ title: "List servicePlans"
 description: "List the currently available service plans that an organization can purchase for their Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

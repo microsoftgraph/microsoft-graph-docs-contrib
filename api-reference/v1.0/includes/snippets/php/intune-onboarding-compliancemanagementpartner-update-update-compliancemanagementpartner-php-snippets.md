@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ComplianceManagementPartner;
+use Microsoft\Graph\Generated\Models\DeviceManagementPartnerTenantState;
+use Microsoft\Graph\Generated\Models\ComplianceManagementPartnerAssignment;
+use Microsoft\Graph\Generated\Models\ConfigurationManagerCollectionAssignmentTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

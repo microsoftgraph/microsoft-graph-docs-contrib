@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateClassificationResults\EvaluateClassificationResultsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateClassificationResults\EvaluateClassificationResultsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ContentInfo;
+use Microsoft\Graph\Beta\Generated\Models\ContentFormat;
+use Microsoft\Graph\Beta\Generated\Models\ContentState;
+use Microsoft\Graph\Beta\Generated\Models\ClassificationResult;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

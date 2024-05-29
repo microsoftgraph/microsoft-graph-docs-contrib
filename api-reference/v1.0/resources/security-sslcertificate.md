@@ -3,7 +3,7 @@ title: "sslCertificate resource type"
 description: "Represents an SSL certificate that enables secure and encrypted communication, verifying website identity and protecting sensitive information to build user trust."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sslCertificates](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
-|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
+|[List](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+|[Get](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
 
 ## Properties
 

@@ -4,7 +4,7 @@ description: "Create an event in the user's default calendar or specified calend
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create event
@@ -17,8 +17,8 @@ Create an [event](../resources/event.md) in the user's default calendar or speci
 
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
 
-You can specify the time zone for each of the start and end times of the event as part of their values, because the 
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+You can specify the time zone for each of the start and end times of the event as part of their values, because the
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server.
 
 When an event is sent, the server sends invitations to all the attendees.
 
@@ -75,20 +75,20 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+In the request body, supply a JSON representation of the [event](../resources/event.md) object.
 
 Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [event](../resources/event.md) object in the response body.
 
 ## Examples
 
 ### Example 1: Create an event in the specified time zone, and assign the event an optional transactionId value
 
 #### Request
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the start and end times in the response. It also sets the transactionId property to reduce unnecessary retries on the server.
+The following example shows a request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the start and end times in the response. It also sets the **transactionId** property to reduce unnecessary retries on the server.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +120,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -165,10 +165,11 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-Note: The response object shown here might be shortened for readability.
+
+The following example shows the response that demonstrates how the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -183,6 +184,8 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt9AHjAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
     "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
     "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
@@ -191,7 +194,6 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -254,14 +256,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     }
 }
@@ -271,9 +273,7 @@ Content-type: application/json
 ### Example 2: Create an event that occurs in multiple locations
 
 #### Request
-The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
-
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+The next example request specifies three locations where the organizer and attendees can attend the meeting from.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -302,14 +302,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address": "DanaS@contoso.onmicrosoft.com",
+        "address": "DanaS@contoso.com",
         "name": "Dana Swope"
       },
       "type": "Required"
     },
     {
       "emailAddress": {
-        "address": "AlexW@contoso.onmicrosoft.com",
+        "address": "AlexW@contoso.com",
         "name": "Alex Wilber"
       },
       "type": "Required"
@@ -380,9 +380,9 @@ Content-type: application/json
 ---
 
 #### Response
-The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
+The following example response shows the created event that specifies information for the three locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -397,6 +397,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "createdDateTime":"2017-08-30T07:06:33.8673345Z",
   "lastModifiedDateTime":"2017-08-30T07:06:34.5079772Z",
   "changeKey":"y53lbKh6jkaxHzFwGhgyxgAAz3IKMA==",
@@ -405,7 +407,6 @@ Content-type: application/json
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "uid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
@@ -490,7 +491,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"DanaS@contoso.onmicrosoft.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -501,14 +502,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"AlexW@contoso.onmicrosoft.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"AdeleV@contoso.onmicrosoft.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -561,7 +562,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AdeleV@contoso.onmicrosoft.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -604,10 +605,9 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response.
-Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -622,6 +622,8 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
     "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
     "id":"AAMkADQwMD",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-10-07T04:59:12.9698856Z",
     "lastModifiedDateTime":"2017-10-07T04:59:13.8136423Z",
     "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==",
@@ -630,7 +632,6 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -711,14 +712,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
         }
     },
     "OnlineMeeting":null
@@ -729,7 +730,6 @@ Content-type: application/json
 
 #### Request
 The fourth example shows how to create a daily recurring event. The event occurs from 12:00pm to 2:00pm, every day starting February 25, 2020, for two occurrences.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -761,7 +761,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AlexW@contoso.OnMicrosoft.com",
+        "address":"AlexW@contoso.com",
         "name": "Alex Wilbur"
       },
       "type": "required"
@@ -815,10 +815,9 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response.
-Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring_daily",
@@ -833,13 +832,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
     "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLSg==\"",
     "id": "AAMkADU5NWAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime": "2020-02-18T22:13:47.2967773Z",
     "lastModifiedDateTime": "2020-02-18T22:13:47.7398267Z",
     "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLSg==",
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E0080000000027B6D5B0A8E6D50100000000000000001000000065CD4D206C79D44CBF53D42B6E79CE55",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -918,14 +918,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Adele Vance",
-            "address": "AdeleV@contoso.OnMicrosoft.com"
+            "address": "AdeleV@contoso.com"
         }
     }
 }
@@ -935,7 +935,7 @@ Content-type: application/json
 ### Example 5: Create and enable an event as an online meeting
 
 #### Request
-Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
+The following example shows a request that creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
 # [HTTP](#tab/http)
@@ -968,7 +968,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -1014,10 +1014,11 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-Note: The response object shown here might be shortened for readability.
+
+The following example shows the response that demonstrates how the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",
@@ -1032,6 +1033,8 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt8AHjAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
     "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
     "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
@@ -1040,7 +1043,6 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -1101,14 +1103,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     },
     "onlineMeeting": {
@@ -1121,7 +1123,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 
 - [Schedule repeating appointments as recurring events in Outlook](/graph/outlook-schedule-recurring-events)
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

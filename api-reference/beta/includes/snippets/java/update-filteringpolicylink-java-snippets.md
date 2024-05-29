@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-FilteringPolicyLink policyLink = new FilteringPolicyLink();
-policyLink.state = Status.DISABLED;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkaccess().filteringProfiles("9020f79d-71f6-4650-83a9-6b532479578f").policies("d00cf227-8645-4ab8-bd99-a9b455fd83a3")
-	.buildRequest()
-	.patch(policyLink);
+com.microsoft.graph.beta.models.networkaccess.FilteringPolicyLink policyLink = new com.microsoft.graph.beta.models.networkaccess.FilteringPolicyLink();
+policyLink.setOdataType("#microsoft.graph.networkaccess.filteringPolicyLink");
+policyLink.setState(com.microsoft.graph.beta.models.networkaccess.Status.Disabled);
+com.microsoft.graph.models.networkaccess.PolicyLink result = graphClient.networkAccess().filteringProfiles().byFilteringProfileId("{filteringProfile-id}").policies().byPolicyLinkId("{policyLink-id}").patch(policyLink);
+
 
 ```

@@ -3,7 +3,7 @@ title: "filteringRule resource type"
 description: "A rule that is used to filter traffic in Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,10 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filteringRules](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) objects and their properties.|
-|[Get filteringRule](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Get a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
-|[Update filteringRule](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Update the properties of a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
-|[Delete filteringRule](../api/networkaccess-filteringrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
+|[List](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) objects and their properties.|
+|[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Get a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
+|[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Update the properties of a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
+|[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
 
 ## Properties
 |Property|Type|Description|

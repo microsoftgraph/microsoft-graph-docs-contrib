@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("workbook-session-id", "{session-id}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook()
-	.refreshSession()
-	.buildRequest( requestOptions )
-	.post();
+com.microsoft.graph.beta.drives.item.items.item.workbook.refreshsession.RefreshSessionPostRequestBody refreshSessionPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.refreshsession.RefreshSessionPostRequestBody();
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().refreshSession().post(refreshSessionPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("workbook-session-id", "{session-id}");
+});
+
 
 ```

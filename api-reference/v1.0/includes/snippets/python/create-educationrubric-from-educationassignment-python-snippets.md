@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reference_update import ReferenceUpdate
 
 graph_client = GraphServiceClient(credentials, scopes)
 

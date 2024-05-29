@@ -3,7 +3,7 @@ title: "Create retentionEvent"
 description: "Create a new retentionEvent object."
 author: "sseth" 
 ms.localizationpriority: medium
-ms.prod: "security" 
+ms.subservice: "security" 
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,10 @@ Content-length: 616
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-retentionevent-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-retentionevent-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ContactMergeSuggestions contactMergeSuggestions = new ContactMergeSuggestions();
-contactMergeSuggestions.isEnabled = false;
+contactMergeSuggestions.setIsEnabled(false);
+ContactMergeSuggestions result = graphClient.me().settings().contactMergeSuggestions().patch(contactMergeSuggestions);
 
-graphClient.me().settings().contactMergeSuggestions()
-	.buildRequest()
-	.patch(contactMergeSuggestions);
 
 ```

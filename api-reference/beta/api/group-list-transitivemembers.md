@@ -2,8 +2,9 @@
 title: "List group transitive members"
 description: "Get a list of the group's members."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -26,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_transitivemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-transitivemembers-permissions.md)]
 
-> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
 
 ## HTTP request
 

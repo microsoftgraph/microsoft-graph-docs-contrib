@@ -3,7 +3,7 @@ title: "Get shiftPreferences"
 description: "Get a shift preference by ID."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

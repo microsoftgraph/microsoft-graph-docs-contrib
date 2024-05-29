@@ -42,7 +42,7 @@ Keep the following considerations in mind when you use metered APIs and services
 
 [!INCLUDE [Metered API Known Limitations](includes/metered-api-known-limitations.md)]
 
-## See also
+## Related content
 
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)

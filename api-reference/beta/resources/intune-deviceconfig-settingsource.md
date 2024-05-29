@@ -3,7 +3,7 @@ title: "settingSource resource type"
 description: "Intune Deviceconfig Settingsource Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

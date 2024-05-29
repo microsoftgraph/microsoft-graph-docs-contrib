@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryReviewTag ediscoveryReviewTag = new EdiscoveryReviewTag();
-ediscoveryReviewTag.displayName = "My tag API";
-ediscoveryReviewTag.description = "Use Graph API to create tags";
-ediscoveryReviewTag.childSelectability = ChildSelectability.MANY;
-ediscoveryReviewTag.additionalDataManager().put("parent@odata.bind", new JsonPrimitive(""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1fd645").tags()
-	.buildRequest()
-	.post(ediscoveryReviewTag);
+com.microsoft.graph.models.security.EdiscoveryReviewTag ediscoveryReviewTag = new com.microsoft.graph.models.security.EdiscoveryReviewTag();
+ediscoveryReviewTag.setDisplayName("My tag API");
+ediscoveryReviewTag.setDescription("Use Graph API to create tags");
+ediscoveryReviewTag.setChildSelectability(com.microsoft.graph.models.security.ChildSelectability.Many);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("parent@odata.bind", "");
+ediscoveryReviewTag.setAdditionalData(additionalData);
+com.microsoft.graph.models.security.EdiscoveryReviewTag result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").tags().post(ediscoveryReviewTag);
+
 
 ```

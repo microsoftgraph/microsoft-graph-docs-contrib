@@ -3,7 +3,7 @@ title: "accessReviewScope resource type"
 description: "Represents the entities that need to be reviewed in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

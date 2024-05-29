@@ -3,7 +3,7 @@ title: "List landingPages"
 description: "Get a list of the landingPage objects and their properties."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

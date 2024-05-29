@@ -3,7 +3,7 @@ title: "vpnServerCertificateType enum type"
 description: "The type of certificate the VPN server will present to the VPN client for authentication"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat."
 ms.localizationpriority: high
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -25,15 +25,13 @@ This method supports federation. To list chat messages in application context, t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_list_messages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-list-messages-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatMessage.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -54,7 +52,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$orderby](/graph/query-parameters#orderby-parameter)  | Currently supports the **lastModifiedDateTime** (default) and **createdDateTime** properties in descending order. The ascending order is currently not supported.|
 | [$filter](/graph/query-parameters#filter-parameter) | Sets the date range filter for the **lastModifiedDateTime** and **createdDateTime** properties. The **lastModifiedDateTime** property supports the `gt` and `lt` operators. The **createdDateTime** property supports the `lt` operator. You can only filter results if the request URL contains the `$orderby` and `$filter` query parameters configured for the same property; otherwise, the `$filter` query option is ignored.|
 
-The other [OData query parameters](/graph/query-parameters) are not currently supported.
+The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request headers
 
@@ -74,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List chat messages sorted by creation date
 
-The following is an example of a request that lists the top two messages (`$top=2`) and sorts them by the **createdDateTime** property (`$orderby=createdDateTime`).
+The following example shows a request that lists the top two messages (`$top=2`) and sorts them by the **createdDateTime** property (`$orderby=createdDateTime`).
 
 #### Request
 
@@ -222,7 +220,7 @@ Content-type: application/json
 
 ### Example 2: List chat messages filtered by last modified date range
 
-The following is an example of a request that lists the top two messages (`$top=2`), sorts them in descending order by the **lastModifiedDateTime** property (`$orderby=lastModifiedDateTime desc`), and filters the results for a specific date range (`$filter=lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z`).
+The following example shows a request that lists the top two messages (`$top=2`), sorts them in descending order by the **lastModifiedDateTime** property (`$orderby=lastModifiedDateTime desc`), and filters the results for a specific date range (`$filter=lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z`).
 
 #### Request
 

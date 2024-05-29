@@ -3,7 +3,7 @@ title: "List rubrics"
 description: "Retrieve a list of educationrubric objects."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 

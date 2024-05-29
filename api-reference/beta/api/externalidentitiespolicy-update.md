@@ -3,7 +3,7 @@ title: "Update externalIdentitiesPolicy"
 description: "Update the settings of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -91,6 +91,10 @@ PATCH https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-externalidentitiespolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-externalidentitiespolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

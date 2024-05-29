@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_tab import TeamsTab
 
 graph_client = GraphServiceClient(credentials, scopes)
 

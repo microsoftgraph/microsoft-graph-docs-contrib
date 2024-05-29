@@ -44,7 +44,7 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: This solution requires custom code to maintain subscriptions, and encryption keys to process the data. Because this solution doesn't require elasticity and the ability to react to an unexpected volume of events, it's less complex than integration with webhooks in push mode. This solution has medium complexity.
 
-## See also
+## Related content
 
 - [Change notifications](./../change-notifications-overview.md)
 - [Real-time presence with Microsoft 365](/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)

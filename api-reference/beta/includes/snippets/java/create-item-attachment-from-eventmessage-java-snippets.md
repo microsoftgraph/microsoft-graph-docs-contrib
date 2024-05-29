@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ItemAttachment attachment = new ItemAttachment();
-attachment.name = "name-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Attachment attachment = new Attachment();
+attachment.setOdataType("#Microsoft.OutlookServices.ItemAttachment");
+attachment.setName("name-value");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
 Message item = new Message();
-attachment.item = item;
+item.setOdataType("microsoft.graph.message");
+additionalData.put("item", item);
+attachment.setAdditionalData(additionalData);
+Attachment result = graphClient.me().events().byEventId("{event-id}").attachments().post(attachment);
 
-graphClient.me().events("{id}").attachments()
-	.buildRequest()
-	.post(attachment);
 
 ```

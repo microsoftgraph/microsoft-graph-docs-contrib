@@ -4,7 +4,7 @@ title: "identity resource type"
 description: "Represents an identity of an actor."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # identity resource type
 

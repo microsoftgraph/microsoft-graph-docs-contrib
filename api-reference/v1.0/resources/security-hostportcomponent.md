@@ -3,7 +3,7 @@ title: "hostPortComponent resource type"
 description: "Represents a web component that runs on a specific hostPort."
 author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

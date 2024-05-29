@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-418
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -118,7 +118,7 @@ Content-Type: application/json
             "releasedDateTime": null,
             "id": "0053a61a3b6c42738f7606791716a22a",
             "displayName": "Alex Wilber",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "acknowledgedDateTime": "0001-01-01T00:00:00Z"
         }
     ]

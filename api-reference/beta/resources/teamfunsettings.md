@@ -3,7 +3,7 @@ title: "teamFunSettings resource type"
 description: "Settings to configure use of Giphy, memes, and stickers in the team."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

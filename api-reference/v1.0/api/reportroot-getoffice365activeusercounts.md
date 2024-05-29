@@ -2,7 +2,7 @@
 title: "reportRoot: getOffice365ActiveUserCounts"
 description: "Get the count of daily active users in the reporting period by product."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

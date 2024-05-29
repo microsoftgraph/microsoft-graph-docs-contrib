@@ -2,8 +2,9 @@
 title: "Add owners"
 description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object."
 ms.localizationpriority: high
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -23,6 +24,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_post_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-post-owners-permissions.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the required role permission. The following least privileged roles are supported for this operation:
+
+| Microsoft Entra role | Limitations | Key role permission |
+|--|--|--|
+| Group owners | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| User Administrator | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Directory Writers | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Groups Administrator | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| Exchange Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| SharePoint Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Teams Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Yammer Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Intune Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Manager | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Windows 365 Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
 
 ## HTTP request
 
@@ -51,7 +69,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of the request that adds a user as a group owner.
+The following example shows a request that adds a user as a group owner.
 
 # [HTTP](#tab/http)
 
@@ -119,7 +137,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

@@ -3,7 +3,7 @@ title: "containerImageEvidence resource type"
 description: "Represents a container image entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "partners resource type"
 description: "Represents billing details for a Microsoft direct partner."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

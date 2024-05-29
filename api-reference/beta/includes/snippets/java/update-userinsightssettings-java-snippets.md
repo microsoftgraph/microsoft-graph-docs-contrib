@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UserInsightsSettings userInsightsSettings = new UserInsightsSettings();
-userInsightsSettings.isEnabled = false;
+userInsightsSettings.setIsEnabled(false);
+UserInsightsSettings result = graphClient.users().byUserId("{user-id}").settings().itemInsights().patch(userInsightsSettings);
 
-graphClient.users("{userId}").settings().itemInsights()
-	.buildRequest()
-	.patch(userInsightsSettings);
 
 ```

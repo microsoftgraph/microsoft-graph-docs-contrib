@@ -3,7 +3,7 @@ title: "Delete mobileAppCategory"
 description: "Deletes a mobileAppCategory."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

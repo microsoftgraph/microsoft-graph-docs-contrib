@@ -3,7 +3,7 @@ title: "Remove service principal owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

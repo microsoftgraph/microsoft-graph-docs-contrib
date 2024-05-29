@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleManagementPolicyAssignmentCollectionPage roleManagementPolicyAssignments = graphClient.policies().roleManagementPolicyAssignments()
-	.buildRequest()
-	.filter("scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleManagementPolicyAssignmentCollectionResponse result = graphClient.policies().roleManagementPolicyAssignments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'";
+});
+
 
 ```

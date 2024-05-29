@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityDetail"
 description: "Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and nonlicensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
@@ -97,7 +97,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -142,7 +142,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

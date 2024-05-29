@@ -3,7 +3,7 @@ title: "activeUsersMetric resource type"
 description: "Represents insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsers](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of daily [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly activeUsers](../api/monthlyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of monthly [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of daily [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly](../api/monthlyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of monthly [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "List recentPrinterShares"
 description: "Get a list of printer shares recently used by the signed-in user."
 author: "mayankbansal018"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 
@@ -57,10 +57,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/print/recentPrinterShares
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recentprintershares-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recentprintershares-javascript-snippets.md)]

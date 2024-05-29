@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.check_member_groups.check_member_groups_post_request_body import CheckMemberGroupsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

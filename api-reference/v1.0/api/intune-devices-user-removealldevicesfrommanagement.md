@@ -3,7 +3,7 @@ title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -55,10 +55,6 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/removeAllDevicesFromManagement
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-devices-user-removealldevicesfrommanagement-removealldevicesfrommanagement-action-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-user-removealldevicesfrommanagement-removealldevicesfrommanagement-action-javascript-snippets.md)]

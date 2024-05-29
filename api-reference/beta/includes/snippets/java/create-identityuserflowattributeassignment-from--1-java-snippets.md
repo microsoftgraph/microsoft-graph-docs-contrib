@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityUserFlowAttributeAssignment identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment();
-identityUserFlowAttributeAssignment.isOptional = false;
-identityUserFlowAttributeAssignment.requiresVerification = false;
-identityUserFlowAttributeAssignment.userInputType = IdentityUserFlowAttributeInputType.TEXT_BOX;
-identityUserFlowAttributeAssignment.displayName = "Shoe size";
-LinkedList<UserAttributeValuesItem> userAttributeValuesList = new LinkedList<UserAttributeValuesItem>();
-identityUserFlowAttributeAssignment.userAttributeValues = userAttributeValuesList;
+identityUserFlowAttributeAssignment.setIsOptional(false);
+identityUserFlowAttributeAssignment.setRequiresVerification(false);
+identityUserFlowAttributeAssignment.setUserInputType(IdentityUserFlowAttributeInputType.TextBox);
+identityUserFlowAttributeAssignment.setDisplayName("Shoe size");
+LinkedList<UserAttributeValuesItem> userAttributeValues = new LinkedList<UserAttributeValuesItem>();
+identityUserFlowAttributeAssignment.setUserAttributeValues(userAttributeValues);
 IdentityUserFlowAttribute userAttribute = new IdentityUserFlowAttribute();
-userAttribute.id = "extension_guid_shoeSize";
-identityUserFlowAttributeAssignment.userAttribute = userAttribute;
+userAttribute.setId("extension_guid_shoeSize");
+identityUserFlowAttributeAssignment.setUserAttribute(userAttribute);
+IdentityUserFlowAttributeAssignment result = graphClient.identity().b2cUserFlows().byB2cIdentityUserFlowId("{b2cIdentityUserFlow-id}").userAttributeAssignments().post(identityUserFlowAttributeAssignment);
 
-graphClient.identity().b2cUserFlows("B2C_1_Consumer").userAttributeAssignments()
-	.buildRequest()
-	.post(identityUserFlowAttributeAssignment);
 
 ```

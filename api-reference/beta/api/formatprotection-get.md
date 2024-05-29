@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of formatprotection obje
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # Get formatProtection
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [formatProtection](../resources/formatprotection.md) object in the response body.
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 ```
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

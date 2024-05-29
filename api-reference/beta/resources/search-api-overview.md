@@ -3,8 +3,8 @@ title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
 author: "njerigrevious"
-ms.prod: "search"
-doc_type: resourcePageType
+doc_type: conceptualPageType
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to query data
@@ -177,7 +177,7 @@ See [Use search display layout](/graph/search-concept-display-layout) for exampl
 
 ## Guest search
 
-The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**.
 
 ## Error handling
 
@@ -193,29 +193,29 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
-| Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
-|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
-|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+    | Entity Type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
+    |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
+    | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
+    | externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
+    | qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API doesn't support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support custom sort for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- The search API doesn't support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, or **drive**.
+- The search API doesn't support aggregations for **acronym**, **bookmark**, **message**, **event**, **site**, **person**, **qna**, or **drive**.
 
-- The search API doesn't support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support xrank for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Guest search doesn't support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
@@ -242,7 +242,7 @@ We recommend that you update existing apps to use the current property and type 
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)

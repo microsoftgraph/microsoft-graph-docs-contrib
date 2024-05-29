@@ -2,7 +2,7 @@
 title: "chatMessage: unsetReaction"
 description: "Unset a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---

@@ -3,7 +3,7 @@ title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SecureScoreControlProfile secureScoreControlProfile = new SecureScoreControlProfile();
-secureScoreControlProfile.controlStateUpdates = "controlStateUpdates-value";
+secureScoreControlProfile.setControlStateUpdates("controlStateUpdates-value");
+SecureScoreControlProfile result = graphClient.security().secureScoreControlProfiles().bySecureScoreControlProfileId("{secureScoreControlProfile-id}").patch(secureScoreControlProfile);
 
-graphClient.security().secureScoreControlProfiles("AdminMFA")
-	.buildRequest()
-	.patch(secureScoreControlProfile);
 
 ```

@@ -3,7 +3,7 @@ title: "managedDevice: reprovisionCloudPc (deprecated)"
 description: "Reprovision Cloud PC with an Intune managed device ID. "
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

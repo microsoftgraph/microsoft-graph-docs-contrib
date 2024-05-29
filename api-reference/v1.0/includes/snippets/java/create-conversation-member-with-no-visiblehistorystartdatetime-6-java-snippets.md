@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AadUserConversationMember conversationMember = new AadUserConversationMember();
-conversationMember.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d"));
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("owner");
-conversationMember.roles = rolesList;
-conversationMember.tenantId = "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1";
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("owner");
+conversationMember.setRoles(roles);
+conversationMember.setTenantId("4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/v1.0/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d");
+conversationMember.setAdditionalData(additionalData);
+ConversationMember result = graphClient.chats().byChatId("{chat-id}").members().post(conversationMember);
 
-graphClient.chats("19:cf66807577b149cca1b7af0c32eec122@thread.v2").members()
-	.buildRequest()
-	.post(conversationMember);
 
 ```

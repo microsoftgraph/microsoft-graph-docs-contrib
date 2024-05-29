@@ -3,7 +3,7 @@ title: "onAttributeCollectionStartCustomExtensionHandler resource type"
 description: "Used for creating a new custom extension based on the onAttributeCollectionStart event to configure the collection of attributes upon user sign-up."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

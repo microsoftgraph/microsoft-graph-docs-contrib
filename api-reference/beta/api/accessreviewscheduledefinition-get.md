@@ -3,7 +3,7 @@ title: "Get accessReviewScheduleDefinition"
 description: "Retrieve an accessReviewScheduleDefinition object."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -149,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)

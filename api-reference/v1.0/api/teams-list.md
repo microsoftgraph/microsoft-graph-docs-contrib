@@ -3,7 +3,7 @@ title: "List teams"
 description: "List all teams in an organization."
 author: "pruthvi0105"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -295,5 +295,5 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

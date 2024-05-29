@@ -2,8 +2,9 @@
 title: "List a user's memberships (direct and transitive)"
 description: "Get groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "users"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -58,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

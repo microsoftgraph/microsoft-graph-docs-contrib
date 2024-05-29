@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 title: Download a file
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Download the contents of a driveItem
@@ -11,7 +11,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
@@ -46,7 +45,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 ## Example
 
-Here's an example to download a complete file.
+The following example shows a request on how to download a complete file.
 
 ### Request
 
@@ -93,8 +92,10 @@ GET /me/drive/items/{item-id}/content
 
 ### Response
 
+The following example shows the response.
+
 Returns a `302 Found` response redirecting to a preauthenticated download URL for the file.
-This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+It's the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries follow the 302 redirection and start downloading the file immediately.
@@ -109,7 +110,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
 ## Downloading files in JavaScript apps
-To download files in a JavaScript app, you can't use the `/content` API, because this responds with a `302` redirect.
+To download files in a JavaScript app, you can't use the `/content` API, because it responds with a `302` redirect.
 A `302` redirect is explicitly prohibited when a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) _preflight_ is required, such as when providing the **Authorization** header.
 
 Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` directs to.
@@ -143,7 +144,7 @@ You can then make an XMLHttpRequest for the URL provided in `@microsoft.graph.do
 To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
 You must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -164,8 +165,7 @@ Content-Range: bytes 0-1023/2048
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+See [Error responses][error-response] for more info about how errors are returned.
 
 [error-response]: /graph/errors
 
@@ -180,5 +180,3 @@ how errors are returned.
   ]
 }
 -->
-
-

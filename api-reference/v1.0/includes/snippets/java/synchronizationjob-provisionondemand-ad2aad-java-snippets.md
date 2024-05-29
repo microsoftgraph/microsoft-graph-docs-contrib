@@ -4,26 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<SynchronizationJobApplicationParameters> parametersList = new LinkedList<SynchronizationJobApplicationParameters>();
-SynchronizationJobApplicationParameters parameters = new SynchronizationJobApplicationParameters();
-parameters.ruleId = "6c409270-f78a-4bc6-af23-7cf3ab6482fe";
-LinkedList<SynchronizationJobSubject> subjectsList = new LinkedList<SynchronizationJobSubject>();
-SynchronizationJobSubject subjects = new SynchronizationJobSubject();
-subjects.objectId = "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com";
-subjects.objectTypeName = "user";
-subjectsList.add(subjects);
-parameters.subjects = subjectsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-parametersList.add(parameters);
+com.microsoft.graph.serviceprincipals.item.synchronization.jobs.item.provisionondemand.ProvisionOnDemandPostRequestBody provisionOnDemandPostRequestBody = new com.microsoft.graph.serviceprincipals.item.synchronization.jobs.item.provisionondemand.ProvisionOnDemandPostRequestBody();
+LinkedList<SynchronizationJobApplicationParameters> parameters = new LinkedList<SynchronizationJobApplicationParameters>();
+SynchronizationJobApplicationParameters synchronizationJobApplicationParameters = new SynchronizationJobApplicationParameters();
+synchronizationJobApplicationParameters.setRuleId("6c409270-f78a-4bc6-af23-7cf3ab6482fe");
+LinkedList<SynchronizationJobSubject> subjects = new LinkedList<SynchronizationJobSubject>();
+SynchronizationJobSubject synchronizationJobSubject = new SynchronizationJobSubject();
+synchronizationJobSubject.setObjectId("CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com");
+synchronizationJobSubject.setObjectTypeName("user");
+subjects.add(synchronizationJobSubject);
+synchronizationJobApplicationParameters.setSubjects(subjects);
+parameters.add(synchronizationJobApplicationParameters);
+provisionOnDemandPostRequestBody.setParameters(parameters);
+StringKeyStringValuePair result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").synchronization().jobs().bySynchronizationJobId("{synchronizationJob-id}").provisionOnDemand().post(provisionOnDemandPostRequestBody);
 
-graphClient.servicePrincipals("3e916d82-dd59-4944-824d-93092908fd8d").synchronization().jobs("264ea562-28cd-42b1-93e0-8de1f0560581")
-	.provisionOnDemand(SynchronizationJobProvisionOnDemandParameterSet
-		.newBuilder()
-		.withParameters(parametersList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

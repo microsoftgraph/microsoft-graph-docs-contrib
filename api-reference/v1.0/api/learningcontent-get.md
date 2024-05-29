@@ -3,7 +3,7 @@ title: "Get learningContent"
 description: "Get the specified learningContent resource which represents the metadata of the specified provider's ingested content."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -137,6 +137,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -190,7 +191,7 @@ GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/137273
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-learningcontent-externalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -236,6 +237,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [

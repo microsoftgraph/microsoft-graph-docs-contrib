@@ -3,7 +3,7 @@ title: "azureAdTokenAuthentication resource type"
 description: "Defines the Microsoft Entra application used to authenticate with a custom access package workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

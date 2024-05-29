@@ -3,7 +3,7 @@ title: "Get userFlow (deprecated)"
 description: "Retrieve the properties and relationships of userflow object."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

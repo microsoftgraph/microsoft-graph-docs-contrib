@@ -3,7 +3,7 @@ title: "Create windowsInformationProtectionAppLearningSummary"
 description: "Create a new windowsInformationProtectionAppLearningSummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

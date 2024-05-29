@@ -3,7 +3,7 @@ title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -21,13 +21,13 @@ This object provides a targeted subset of properties from the core [user] object
 
 | Method                                               | Return Type                                  | Description                                                                   |
 | :--------------------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
-| [Get educationUser](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
+| [Get user](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
 | [List classes](../api/educationuser-list-classes.md) | [educationClass] collection                  | Get the **educationClass** object collection for which the user is member.    |
 | [List schools](../api/educationuser-list-schools.md) | [educationSchool] collection                 | Get the **educationSchool** object collection for which the user is a member. |
 | [Get user](../api/educationuser-get-user.md)         | [user]                                       | Get the simple directory **user** that corresponds to this **educationUser**. |
 | [Update](../api/educationuser-update.md)             | [educationUser]                              | Update an **educationUser** object.                                           |
-| [Delete](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
-| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
+| [Delete user](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
+| [Get delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
 
 ## Properties
 
@@ -44,11 +44,12 @@ This object provides a targeted subset of properties from the core [user] object
 | externalSource       | String                       | The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`.                          |
 | externalSourceDetail | String                       | The name of the external source this resource was generated from.                                                                                                                            |
 | givenName            | String                       | The given name (first name) of the user. Supports \$filter.                                                                                                                                   |
-| mail                 | String                       | The SMTP address for the user; for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports \$filter.                                                                                     |
+| mail                 | String                       | The SMTP address for the user; for example, "jeff@contoso.com". Read-Only. Supports \$filter.                                                                                     |
 | mailNickname         | String                       | The mail alias for the user. This property must be specified when a user is created. Supports \$filter.                                                                                       |
 | mailingAddress       | [physicalAddress]            | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                                                                       |
 | middleName           | String                       | The middle name of user.                                                                                                                                                                      |
 | mobilePhone          | String                       | The primary cellular telephone number for the user.                                                                                                                                           |
+| officeLocation       | String                       | The office location for the user.                                                                                                                                          |
 | onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the Microsoft Entra user with its Active Directory counterpart.                                                                                                 |
 | passwordPolicies     | String                       | Specifies password policies for the user. See standard [user] resource for more details.                                                                                                |
 | passwordProfile      | [passwordProfile]            | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. See standard [user] resource for more details. |
@@ -79,7 +80,7 @@ This object provides a targeted subset of properties from the core [user] object
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

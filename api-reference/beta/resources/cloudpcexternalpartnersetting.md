@@ -3,7 +3,7 @@ title: "cloudPcExternalPartnerSetting resource type"
 description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -18,10 +18,10 @@ Represents an external partner setting on Cloud PC.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcExternalPartnerSettings](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
-|[Create cloudPcExternalPartnerSetting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
-|[Get cloudPcExternalPartnerSetting](../api/cloudpcexternalpartnersetting-get.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Read the properties and relationships of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
-|[Update cloudPcExternalPartnerSetting](../api/cloudpcexternalpartnersetting-update.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Update the properties of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
+|[List](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
+|[Create](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
+|[Get](../api/cloudpcexternalpartnersetting-get.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Read the properties and relationships of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
+|[Update](../api/cloudpcexternalpartnersetting-update.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Update the properties of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +46,7 @@ Represents an external partner setting on Cloud PC.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

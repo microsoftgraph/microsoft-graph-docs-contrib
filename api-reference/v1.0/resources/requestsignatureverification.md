@@ -3,7 +3,7 @@ title: "requestSignatureVerification resource type"
 description: "Specifies whether this application requires Microsoft Entra ID to verify the signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

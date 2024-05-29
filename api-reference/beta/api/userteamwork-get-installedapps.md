@@ -4,7 +4,7 @@ description: "Retrieve the app installed in the personal scope of the specified 
 author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get installed app for user
@@ -217,6 +217,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

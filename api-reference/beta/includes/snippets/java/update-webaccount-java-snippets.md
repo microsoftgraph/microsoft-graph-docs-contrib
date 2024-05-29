@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WebAccount webAccount = new WebAccount();
-webAccount.webUrl = "https://github.com/innocenty.popov";
+webAccount.setWebUrl("https://github.com/innocenty.popov");
+WebAccount result = graphClient.me().profile().webAccounts().byWebAccountId("{webAccount-id}").patch(webAccount);
 
-graphClient.me().profile().webAccounts("{id}")
-	.buildRequest()
-	.patch(webAccount);
 
 ```

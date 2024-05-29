@@ -3,7 +3,7 @@ title: "assign action"
 description: "Not yet documented"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,6 @@ If successful, this action returns a `204 No Content` response code.
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assign
-
 Content-type: application/json
 Content-length: 319
 

@@ -3,7 +3,7 @@ title: "cloudPcReports: getTotalAggregatedRemoteConnectionReports"
 description: "Get the total aggregated remote connection usage of a Cloud PC during a given time span."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |search|String|Specifies a string to search|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as select parameter|
@@ -62,9 +62,8 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.gettotalaggregatedremoteconnectionreports"
@@ -84,44 +83,12 @@ Content-length: 199
         "ManagedDeviceName",
         "UserPrincipalName",
         "TotalUsageInHour",
-        "DaysSinceLastSignIn"
+        "LastActiveTime",
+        "PcType",
+        "CreatedDate"
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -156,17 +123,27 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "DaysSinceLastSignIn",
-            "PropertyType": "Int64"
+            "Column": "LastActiveTime",
+            "PropertyType": "DateTime"
+        },
+        {
+            "Column": "PcType",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "CreatedDate",
+            "PropertyType": "DateTime"
         }
     ],
     "Values": [
         [
             "40f9315c-5b63-4126-9f89-b7dcb145ffff",
             "CPC-DisplayName",
-            "connie@cpccontoso.onmicrosoft.com",
+            "connie@contoso.com",
             66.36944444444444,
-            0
+            "2023-04-17T01:43:18",
+            "Cloud PC Enterprise 8vCPU/32GB/512GB",
+            "2022-03-30T13:48:38"
         ]
     ]
 }

@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_assignment_schedule_request import UnifiedRoleAssignmentScheduleRequest
+from msgraph.generated.models.unified_role_schedule_request_actions import UnifiedRoleScheduleRequestActions
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

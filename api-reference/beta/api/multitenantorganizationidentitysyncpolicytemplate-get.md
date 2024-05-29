@@ -3,7 +3,7 @@ title: "Get multiTenantOrganizationIdentitySyncPolicyTemplate"
 description: "Get the cross-tenant access policy template with user synchronization settings for a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

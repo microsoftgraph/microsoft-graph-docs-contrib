@@ -3,7 +3,7 @@ title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ The recurrence pattern and range. This shared object is used to define the recur
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

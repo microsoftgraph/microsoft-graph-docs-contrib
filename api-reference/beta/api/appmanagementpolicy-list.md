@@ -3,7 +3,7 @@ title: "List appManagementPolicies"
 description: "Get a list of application management policies."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "appmanagementpolicy_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-list-permissions.md)]
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## Optional query parameters
 

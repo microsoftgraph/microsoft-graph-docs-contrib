@@ -3,7 +3,7 @@ title: "Get appRoleAssignment"
 description: "Read the properties and relationships of an appRoleAssignment object."
 author: "psignoret"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [appRoleAssignment](../resources/approleassignment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

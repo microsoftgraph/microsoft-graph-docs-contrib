@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.app_management_policy import AppManagementPolicy
+from msgraph.generated.models.app_management_configuration import AppManagementConfiguration
+from msgraph.generated.models.password_credential_configuration import PasswordCredentialConfiguration
+from msgraph.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
+from msgraph.generated.models.key_credential_configuration import KeyCredentialConfiguration
+from msgraph.generated.models.app_key_credential_restriction_type import AppKeyCredentialRestrictionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

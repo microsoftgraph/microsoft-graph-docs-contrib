@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.url_assessment_request import UrlAssessmentRequest
+from msgraph.generated.models.threat_expected_assessment import ThreatExpectedAssessment
+from msgraph.generated.models.threat_category import ThreatCategory
 
 graph_client = GraphServiceClient(credentials, scopes)
 

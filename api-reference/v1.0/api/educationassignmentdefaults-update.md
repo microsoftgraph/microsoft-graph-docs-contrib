@@ -3,7 +3,7 @@ title: "Update educationAssignmentDefaults"
 description: "Update the properties of an educationAssignmentDefaults object."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -126,6 +126,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

@@ -3,7 +3,7 @@ title: "blobContainerEvidence resource type"
 description: "Represents a storage blob container."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

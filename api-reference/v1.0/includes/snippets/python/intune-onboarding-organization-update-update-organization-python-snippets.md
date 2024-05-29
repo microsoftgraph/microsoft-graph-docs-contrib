@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.organization import Organization
+from msgraph.generated.models.mdm_authority import MdmAuthority
 
 graph_client = GraphServiceClient(credentials, scopes)
 

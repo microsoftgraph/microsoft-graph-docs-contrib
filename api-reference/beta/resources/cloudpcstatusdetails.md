@@ -3,7 +3,7 @@ title: "cloudPcStatusDetails resource type"
 description: "Represents details about the status of a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: List printServiceEndpoints
 description: Retrieve a list of endpoints exposed by a print service.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

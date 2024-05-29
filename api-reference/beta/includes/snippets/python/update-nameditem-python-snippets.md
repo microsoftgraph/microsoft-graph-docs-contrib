@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.workbook_named_item import WorkbookNamedItem
+from msgraph_beta.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 

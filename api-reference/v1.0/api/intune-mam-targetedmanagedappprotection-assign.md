@@ -3,7 +3,7 @@ title: "assign action"
 description: "Not yet documented"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappprotection_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
 Content-type: application/json
 Content-length: 338
 

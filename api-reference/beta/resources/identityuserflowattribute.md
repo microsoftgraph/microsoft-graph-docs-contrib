@@ -3,7 +3,7 @@ title: "identityUserFlowAttribute resource type"
 description: "Represents attributes that can be added to a user flow in a Microsoft Entra workforce tenant, a Microsoft Entra ID for customers tenant, and an Azure AD B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "nanguil"
 ---
 
@@ -33,15 +33,15 @@ Configuring user flow attributes in your Microsoft Entra ID or Azure AD B2C tena
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. This can't be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
+|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. Can't be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
 |displayName|String|The display name of the user flow attribute. <br/><br/> Supports `$filter` (`eq`, `ne`). |
-|description|String|The description of the user flow attribute that's shown to the user at the time of sign-up.|
-|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created. <br/><br/> Supports `$filter` (`eq`, `ne`). |
-|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn`, `custom`, `required`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). |
+|description|String|The description of the user flow attribute that's shown to the user at the time of sign up.|
+|id|String|The identifier of the user flow attribute. Read-only. <br/><br/> Supports `$filter` (`eq`, `ne`). |
+|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. Read-only. Depending on the type of attribute, the values for this property are `builtIn`, `custom`, `required`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

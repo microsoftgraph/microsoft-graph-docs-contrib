@@ -3,7 +3,7 @@ title: "Create webApp"
 description: "Create a new webApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

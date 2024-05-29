@@ -3,7 +3,7 @@ title: "accessPackageResourceAttributeSource resource type"
 description: "An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

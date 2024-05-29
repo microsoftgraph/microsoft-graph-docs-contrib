@@ -3,7 +3,7 @@ title: "powerliftDownloadRequest resource type"
 description: "Request used to download app diagnostic files."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

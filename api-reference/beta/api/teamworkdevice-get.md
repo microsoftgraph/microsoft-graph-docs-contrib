@@ -3,7 +3,7 @@ title: "Get teamworkDevice"
 description: "Get the properties of a Microsoft Teams-enabled device, including device type, hardware detail, activity state, and health status information."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

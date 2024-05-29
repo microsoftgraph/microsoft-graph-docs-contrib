@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.drives("22e064df-3562-4a3c-98c3-74721ca06aa0").items("44d372fc-2eb6-4c85-8538-f3a0386a568f").retentionLabel()
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").retentionLabel().delete();
+
 
 ```

@@ -3,7 +3,7 @@ title: "usageDetails resource type"
 description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) or modified (edited) by the user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Complex type containing properties of [Used](insights-used.md) items. Informatio
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

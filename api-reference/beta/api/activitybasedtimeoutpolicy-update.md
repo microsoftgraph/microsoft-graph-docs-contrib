@@ -3,7 +3,7 @@ title: "Update activitybasedtimeoutpolicy"
 description: "Update the properties of an activityBasedTimeoutPolicy object."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

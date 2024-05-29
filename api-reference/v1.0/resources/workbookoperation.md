@@ -3,7 +3,7 @@ title: "workbookOperation resource type"
 description: "Represents the status of a long-running workbook operation."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Represents the status of a long-running workbook operation.
 |id|String| The operation ID. Read-only.|
 |resourceLocation|String| The resource URI for the result.|
 |status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|StatusCode| integer| Status code of the operation. | 
+|statusCode| integer| Status code of the operation. | 
 
 ## Relationships
 
@@ -35,7 +35,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

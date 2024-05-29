@@ -3,7 +3,7 @@ title: "sortProperty resource type"
 description: "Indicates the order to sort search results"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

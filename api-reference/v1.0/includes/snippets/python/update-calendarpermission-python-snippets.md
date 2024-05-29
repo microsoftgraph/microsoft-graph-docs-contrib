@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.calendar_permission import CalendarPermission
+from msgraph.generated.models.calendar_role_type import CalendarRoleType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

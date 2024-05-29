@@ -2,8 +2,9 @@
 title: "Generate proof of possession tokens for rolling keys"
 description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
 ms.localizationpriority: high
-ms.prod: "applications"
-author: "FaithOmbongi"
+ms.subservice: entra-applications
+ms.topic: how-to
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
 ms.date: 06/22/2023
@@ -20,10 +21,10 @@ As part of the request validation for these methods, a proof of possession of an
 
 The token should contain the following claims:
 
-- `aud` - Audience needs to be `00000003-0000-0000-c000-000000000000` which is the **appId** of the Microsoft Graph service principal.
-- `iss` - Issuer needs to be the object ID of the application that's making the call (not the appId).
-- `nbf` - Not before time.
-- `exp` - Expiration time should be "nbf" + 10 mins.
+- **aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.
+- **iss**: Issuer should be the ID of the **application** or **servicePrincipal** object that initiates the request.
+- **nbf**: Not before time.
+- **exp**: Expiration time should be the value of **nbf** + 10 minutes.
 
 You can use the following code examples to generate this proof of possession token.
 
@@ -50,7 +51,7 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
             X509Certificate2 signingCert = new X509Certificate2(pfxFilePath, password);
 
             // audience
-            string aud = $"00000003-0000-0000-c000-000000000000";
+            string aud = $"00000002-0000-0000-c000-000000000000";
 
             // aud and iss are the only required claims.
             var claims = new Dictionary<string, object>()
@@ -103,8 +104,8 @@ param (
 Install-Module Microsoft.Graph.Authentication -Scope CurrentUser
 Import-Module Microsoft.Graph.Authentication
 
-# audience is Microsoft Graph
-$aud = "00000003-0000-0000-c000-000000000000"
+# audience
+$aud = "00000002-0000-0000-c000-000000000000"
 
 # aud and iss are the only required claims.
 $claims = [System.Collections.Generic.Dictionary[string,object]]::new()
@@ -128,7 +129,7 @@ Write-Output $token
 
 You can also generate the proof using signature in Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload or an **Authentication_MissingOrMalformed** error will be returned.
 
-## Next steps
+## Related content
 
 Now that you have your proof of possession token, you can use it to:
 - [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from your application.

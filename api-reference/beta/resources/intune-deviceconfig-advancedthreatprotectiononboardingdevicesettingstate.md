@@ -3,7 +3,7 @@ title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
 description: "ATP onboarding State for a given device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

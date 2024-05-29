@@ -3,7 +3,7 @@ title: "plannerTaskCreation resource type"
 description: "Contains information about the origin of the plannerTask."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

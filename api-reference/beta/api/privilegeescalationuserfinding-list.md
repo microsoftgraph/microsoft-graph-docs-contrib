@@ -4,7 +4,7 @@ description: "Get a list of the privilegeEscalationUserFinding objects and their
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
 # [C#](#tab/csharp)

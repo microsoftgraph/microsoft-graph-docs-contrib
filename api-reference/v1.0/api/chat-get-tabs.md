@@ -3,7 +3,7 @@ title: "Get tab in chat"
 description: "Retrieve the properties and relationships of the specified tab in a chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -133,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get tab in channel](channel-get-tabs.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

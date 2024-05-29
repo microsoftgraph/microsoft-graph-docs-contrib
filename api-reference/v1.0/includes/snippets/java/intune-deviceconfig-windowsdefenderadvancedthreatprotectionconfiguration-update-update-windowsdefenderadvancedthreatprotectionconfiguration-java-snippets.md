@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WindowsDefenderAdvancedThreatProtectionConfiguration deviceConfiguration = new WindowsDefenderAdvancedThreatProtectionConfiguration();
-deviceConfiguration.description = "Description value";
-deviceConfiguration.displayName = "Display Name value";
-deviceConfiguration.version = 7;
-deviceConfiguration.allowSampleSharing = true;
-deviceConfiguration.enableExpeditedTelemetryReporting = true;
+deviceConfiguration.setOdataType("#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration");
+deviceConfiguration.setDescription("Description value");
+deviceConfiguration.setDisplayName("Display Name value");
+deviceConfiguration.setVersion(7);
+deviceConfiguration.setAllowSampleSharing(true);
+deviceConfiguration.setEnableExpeditedTelemetryReporting(true);
+DeviceConfiguration result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").patch(deviceConfiguration);
 
-graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}")
-	.buildRequest()
-	.patch(deviceConfiguration);
 
 ```

@@ -3,7 +3,7 @@ title: "List members of a chat"
 description: "Retrieve members of a chat."
 author: "anandjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:09ddc990-3821-4ceb-8019-24d3999
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -132,7 +132,7 @@ Content-type: application/json
             "displayName": "Megan Bowen",
             "visibleHistoryStartDateTime": "2021-11-25T01:56:31.313Z",
             "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
-            "email": "MeganB@M365x214355.onmicrosoft.com",
+            "email": "MeganB@contoso.com",
             "tenantId": "dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
         }
     ]

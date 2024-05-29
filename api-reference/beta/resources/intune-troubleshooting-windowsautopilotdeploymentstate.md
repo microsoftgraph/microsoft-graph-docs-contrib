@@ -3,7 +3,7 @@ title: "windowsAutopilotDeploymentState enum type"
 description: "Deployment states for Autopilot devices"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Package
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # Package resource type
 
@@ -28,6 +28,8 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
   "type": "oneNote"
 }
 ```
+
+## Properties
 
 | Property Name | Type   | Description                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

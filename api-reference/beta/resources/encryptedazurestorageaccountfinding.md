@@ -4,7 +4,7 @@ description: "Represents the findings for Azure encrypted storage accounts."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedAzureStorageAccountFinding objects](../api/encryptedazurestorageaccountfinding-list.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) collection|Get a list of the [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) objects and their properties.|
-|[Get encryptedAzureStorageAccountFinding](../api/encryptedazurestorageaccountfinding-get.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md)|Read the properties and relationships of an [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) object.|
+|[List](../api/encryptedazurestorageaccountfinding-list.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) collection|Get a list of the [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) objects and their properties.|
+|[Get](../api/encryptedazurestorageaccountfinding-get.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md)|Read the properties and relationships of an [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) object.|
 
 
 ## Properties

@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AgreementFileLocalization agreementFileLocalization = new AgreementFileLocalization();
-agreementFileLocalization.fileName = "Contoso ToU for guest users (French)";
-agreementFileLocalization.language = "fr-FR";
-agreementFileLocalization.isDefault = false;
-agreementFileLocalization.isMajorVersion = false;
-agreementFileLocalization.displayName = "Contoso ToU for guest users (French)";
+agreementFileLocalization.setFileName("Contoso ToU for guest users (French)");
+agreementFileLocalization.setLanguage("fr-FR");
+agreementFileLocalization.setIsDefault(false);
+agreementFileLocalization.setIsMajorVersion(false);
+agreementFileLocalization.setDisplayName("Contoso ToU for guest users (French)");
 AgreementFileData fileData = new AgreementFileData();
-fileData.data = Base64.getDecoder().decode("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data");
-agreementFileLocalization.fileData = fileData;
+byte[] data = Base64.getDecoder().decode("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data");
+fileData.setData(data);
+agreementFileLocalization.setFileData(fileData);
+AgreementFileLocalization result = graphClient.identityGovernance().termsOfUse().agreements().byAgreementId("{agreement-id}").files().post(agreementFileLocalization);
 
-graphClient.identityGovernance().termsOfUse().agreements("94410bbf-3d3e-4683-8149-f034e55c39dd").files()
-	.buildRequest()
-	.post(agreementFileLocalization);
 
 ```

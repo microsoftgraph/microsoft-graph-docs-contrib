@@ -17,7 +17,7 @@ In the [Azure portal](https://aka.ms/mgdcinazure) experience, developers and ten
 ### Landing page
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how Global Administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
+> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how Global Administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=1)
 
 The first screen of the Azure portal experience prompts you to register your first app with Data Connect, or load existing registrations into a summary table view.
 
@@ -70,7 +70,7 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 > [!NOTE]
 > If you select Microsoft Fabric as the Compute Type, the app only supports Copy Activity type.
 
-- **Workspace** (required): Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces).
+- **Workspace** (required): Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
 - **Lakehouse** (required): Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
@@ -82,9 +82,19 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For more information about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
 
-The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. For more information about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md). You can select each dataset that the app requests for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
+The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app requests for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
 
 ![Screenshot that shows the Datasets column selected during the operation of the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
+
+##### Scope selection
+
+You can configure the scope for each dataset in three ways:
+
+- **All information**: The default option. If you leave the field blank, the entire scope of the dataset is registered.
+- **Select users or groups within the organization**: Enter the object IDs of the users or groups separated by commas. Learn more about [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal).
+- **Specific predicates**: Use the filtering mechanism similar to that of Microsoft Graph APIs to specify a scope within a column of the dataset. Learn more about [user selection](./data-connect-filtering.md#user-selection).
+
+For more information about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md).
 
 When you're finished, choose **Next : Review + create**.
 

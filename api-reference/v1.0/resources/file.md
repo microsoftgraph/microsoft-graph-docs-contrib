@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: File resource type
 ms.localizationpriority: medium
 description: "The File resource groups file-related data items into a single structure."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ In addition to other properties, files have a **content** relationship that cont
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

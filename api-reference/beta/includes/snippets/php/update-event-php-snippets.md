@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Event;
+use Microsoft\Graph\Beta\Generated\Models\ResponseStatus;
+use Microsoft\Graph\Beta\Generated\Models\ResponseType;
+use Microsoft\Graph\Beta\Generated\Models\OnlineMeetingProviderType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -17,7 +22,6 @@ $responseStatus->setResponse(new ResponseType('none'));
 $responseStatus->setTime(new \DateTime('2016-10-19T10:37:00Z'));
 $requestBody->setResponseStatus($responseStatus);
 $requestBody->setRecurrence(null);
-$requestBody->setUid('iCalUId-value');
 $requestBody->setReminderMinutesBeforeStart(99);
 $requestBody->setIsOnlineMeeting(true);
 $requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsForBusiness'));

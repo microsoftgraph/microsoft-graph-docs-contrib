@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of servicePrincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 ### Example 1: Retrieve a service principal by its ID
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -170,7 +170,7 @@ Content-type: application/json
 ### Example 2: Retrieve the specific properties of a service principal
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -217,7 +217,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7408235b-7540-4850-82fe-a
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -298,7 +298,7 @@ To get custom security attribute assignments, the calling principal must be assi
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -345,7 +345,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}?$select=customSecuri
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

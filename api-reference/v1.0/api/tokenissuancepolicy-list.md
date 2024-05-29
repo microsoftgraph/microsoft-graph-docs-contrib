@@ -3,7 +3,7 @@ title: "List tokenIssuancePolicy"
 description: "Get a list of tokenIssuancePolicy objects."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

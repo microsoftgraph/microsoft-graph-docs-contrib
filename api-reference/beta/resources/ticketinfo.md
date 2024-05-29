@@ -3,7 +3,7 @@ title: "ticketInfo resource type"
 description: "Represents ticket information related to role assignment and eligibility requests in PIM, and scheduled permissions requests in Permissions Management."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

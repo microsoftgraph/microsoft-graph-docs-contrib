@@ -3,7 +3,7 @@ title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 ---
 
 # Device management in Microsoft Intune

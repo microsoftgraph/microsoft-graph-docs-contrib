@@ -3,7 +3,7 @@ title: "Get accessPackageCatalog"
 description: "Retrieve the properties and relationships of accesspackagecatalog object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get accessPackageCatalog

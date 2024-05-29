@@ -3,7 +3,7 @@ title: "Get androidForWorkCompliancePolicy"
 description: "Read properties and relationships of the androidForWorkCompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1653
+Content-Length: 2008
 
 {
   "value": {
@@ -85,6 +87,13 @@ Content-Length: 1653
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "workProfilePasswordExpirationInDays": 3,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfileInactiveBeforeScreenLockInMinutes": 12,
+    "workProfilePreviousPasswordBlockCount": 5,
+    "workProfilePasswordRequiredType": "lowSecurityBiometric",
+    "workProfileRequiredPasswordComplexity": "low",
+    "workProfileRequirePassword": true,
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
     "securityRequireVerifyApps": true,

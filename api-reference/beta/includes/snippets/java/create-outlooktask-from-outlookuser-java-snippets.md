@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OutlookTask outlookTask = new OutlookTask();
-outlookTask.subject = "Shop for children's weekend";
+outlookTask.setSubject("Shop for children's weekend");
 DateTimeTimeZone startDateTime = new DateTimeTimeZone();
-startDateTime.dateTime = "2016-05-03T09:00:00";
-startDateTime.timeZone = "Eastern Standard Time";
-outlookTask.startDateTime = startDateTime;
+startDateTime.setDateTime("2016-05-03T09:00:00");
+startDateTime.setTimeZone("Eastern Standard Time");
+outlookTask.setStartDateTime(startDateTime);
 DateTimeTimeZone dueDateTime = new DateTimeTimeZone();
-dueDateTime.dateTime = "2016-05-05T16:00:00";
-dueDateTime.timeZone = "Eastern Standard Time";
-outlookTask.dueDateTime = dueDateTime;
+dueDateTime.setDateTime("2016-05-05T16:00:00");
+dueDateTime.setTimeZone("Eastern Standard Time");
+outlookTask.setDueDateTime(dueDateTime);
+OutlookTask result = graphClient.me().outlook().tasks().post(outlookTask, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-graphClient.me().outlook().tasks()
-	.buildRequest( requestOptions )
-	.post(outlookTask);
 
 ```

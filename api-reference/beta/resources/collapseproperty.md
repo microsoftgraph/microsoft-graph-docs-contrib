@@ -3,7 +3,7 @@ title: "collapseProperty resource type"
 description: "Specifies the collapse criteria of search results."
 ms.localizationpriority: medium
 author: "cxiang"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

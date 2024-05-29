@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault"
 description: "Reset any changes made to the default configuration in a cross-tenant access policy back to the system default."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

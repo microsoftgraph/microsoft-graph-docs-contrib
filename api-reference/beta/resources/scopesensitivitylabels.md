@@ -3,7 +3,7 @@ title: "scopeSensitivityLabels resource type"
 description: "Defines the sensitivity labels for groups that are included in a permissionGrantPreApprovalPolicy, or included or excluded in a permissionGrantPolicy."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

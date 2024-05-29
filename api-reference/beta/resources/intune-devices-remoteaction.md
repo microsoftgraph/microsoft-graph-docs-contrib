@@ -3,7 +3,7 @@ title: "remoteAction enum type"
 description: "Remote actions Intune supports."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -57,3 +57,5 @@ Remote actions Intune supports.
 |removeDeviceFirmwareConfigurationInterfaceManagement|36|Indicate IT Admin initiates an action to remove devices from Device Firmware Configuration Interface management|
 |pauseConfigurationRefresh|37|Indicates an action has been initiated to pause configuration refresh for the device.|
 |initiateDeviceAttestation|38|Indicates remote device action to intiate Mobile Device Management (MDM) attestation if device is capable for it.|
+|changeAssignments|39|Indicates remote device action to override assignments for a Device.|
+|delete|40|Indicates remote device action to delete a device from Intune portal.|

@@ -4,54 +4,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.subject = "Family reunion";
+event.setSubject("Family reunion");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "Let's get together this Thanksgiving!";
-event.body = body;
+body.setContentType(BodyType.Html);
+body.setContent("Let's get together this Thanksgiving!");
+event.setBody(body);
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2015-11-26T09:00:00";
-start.timeZone = "Pacific Standard Time";
-event.start = start;
+start.setDateTime("2015-11-26T09:00:00");
+start.setTimeZone("Pacific Standard Time");
+event.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2015-11-29T21:00:00";
-end.timeZone = "Pacific Standard Time";
-event.end = end;
-LinkedList<Attendee> attendeesList = new LinkedList<Attendee>();
-Attendee attendees = new Attendee();
+end.setDateTime("2015-11-29T21:00:00");
+end.setTimeZone("Pacific Standard Time");
+event.setEnd(end);
+LinkedList<Attendee> attendees = new LinkedList<Attendee>();
+Attendee attendee = new Attendee();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "Terrie@contoso.com";
-emailAddress.name = "Terrie Barrera";
-attendees.emailAddress = emailAddress;
-attendees.type = AttendeeType.REQUIRED;
-attendeesList.add(attendees);
-Attendee attendees1 = new Attendee();
+emailAddress.setAddress("Terrie@contoso.com");
+emailAddress.setName("Terrie Barrera");
+attendee.setEmailAddress(emailAddress);
+attendee.setType(AttendeeType.Required);
+attendees.add(attendee);
+Attendee attendee1 = new Attendee();
 EmailAddress emailAddress1 = new EmailAddress();
-emailAddress1.address = "Lauren@contoso.com";
-emailAddress1.name = "Lauren Solis";
-attendees1.emailAddress = emailAddress1;
-attendees1.type = AttendeeType.REQUIRED;
-attendeesList.add(attendees1);
-event.attendees = attendeesList;
-LinkedList<MultiValueLegacyExtendedProperty> multiValueExtendedPropertiesList = new LinkedList<MultiValueLegacyExtendedProperty>();
-MultiValueLegacyExtendedProperty multiValueExtendedProperties = new MultiValueLegacyExtendedProperty();
-multiValueExtendedProperties.id = "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation";
-LinkedList<String> valueList = new LinkedList<String>();
-valueList.add("Food");
-valueList.add("Hiking");
-valueList.add("Swimming");
-multiValueExtendedProperties.value = valueList;
-multiValueExtendedPropertiesList.add(multiValueExtendedProperties);
-MultiValueLegacyExtendedPropertyCollectionResponse multiValueLegacyExtendedPropertyCollectionResponse = new MultiValueLegacyExtendedPropertyCollectionResponse();
-multiValueLegacyExtendedPropertyCollectionResponse.value = multiValueExtendedPropertiesList;
-MultiValueLegacyExtendedPropertyCollectionPage multiValueLegacyExtendedPropertyCollectionPage = new MultiValueLegacyExtendedPropertyCollectionPage(multiValueLegacyExtendedPropertyCollectionResponse, null);
-event.multiValueExtendedProperties = multiValueLegacyExtendedPropertyCollectionPage;
+emailAddress1.setAddress("Lauren@contoso.com");
+emailAddress1.setName("Lauren Solis");
+attendee1.setEmailAddress(emailAddress1);
+attendee1.setType(AttendeeType.Required);
+attendees.add(attendee1);
+event.setAttendees(attendees);
+LinkedList<MultiValueLegacyExtendedProperty> multiValueExtendedProperties = new LinkedList<MultiValueLegacyExtendedProperty>();
+MultiValueLegacyExtendedProperty multiValueLegacyExtendedProperty = new MultiValueLegacyExtendedProperty();
+multiValueLegacyExtendedProperty.setId("StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation");
+LinkedList<String> value = new LinkedList<String>();
+value.add("Food");
+value.add("Hiking");
+value.add("Swimming");
+multiValueLegacyExtendedProperty.setValue(value);
+multiValueExtendedProperties.add(multiValueLegacyExtendedProperty);
+event.setMultiValueExtendedProperties(multiValueExtendedProperties);
+Event result = graphClient.me().events().post(event);
 
-graphClient.me().events()
-	.buildRequest()
-	.post(event);
 
 ```

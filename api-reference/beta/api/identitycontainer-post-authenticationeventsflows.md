@@ -3,7 +3,7 @@ title: "Create authenticationEventsFlow"
 description: "Create a new authenticationEventsFlow object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -62,12 +62,10 @@ If successful, this method returns a `201 Created` response code and a JSON repr
 
 ## Examples
 
-<a name='example-1-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-on-an-azure-ad-customer-tenant'></a>
-
-### Example 1: Create a basic External Identities sign-up and sign-in user flow on a Microsoft Entra customer tenant
+### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
 #### Request
-The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
+The following example shows a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
 
 - Allow sign up and sign in.
 - Allow users to create a local email with password account.
@@ -256,12 +254,10 @@ Content-Type: application/json
 }
 ```
 
-<a name='example-2-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-with-an-attached-application-on-an-azure-ad-customer-tenant'></a>
-
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on a Microsoft Entra customer tenant
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
 
 #### Request
-The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
+The following example shows a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
 
 - Allow sign up and sign in.
 - Allow users to create a local email with password account.
@@ -468,7 +464,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request. In this example, you create a user flow named "Woodgrove Drive User Flow" with the following configuration
+The following example shows a request. In this example, you create a user flow named "Woodgrove Drive User Flow" with the following configuration
 
 - Allow sign up and sign in.
 - Allow users to create a local email with password account, or authenticate with Google or Facebook

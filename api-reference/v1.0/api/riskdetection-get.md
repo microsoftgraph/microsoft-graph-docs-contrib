@@ -3,7 +3,7 @@ title: "Get riskDetection"
 description: "Read the properties and relationships of a riskDetection object."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

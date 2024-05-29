@@ -3,15 +3,13 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Convert to other formats
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Use this API to retrieve the contents of an item in a specific format."
 doc_type: apiPageType
 ---
 # Download a file in another format
 
 Namespace: microsoft.graph
-
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
@@ -49,6 +47,7 @@ The following values are valid for the **format** parameter:
 | Format value | Description                        | Supported source extensions
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
+| html         | Converts the item into HTML format.| loop, fluid, wbtx
 
 ## Request headers
 

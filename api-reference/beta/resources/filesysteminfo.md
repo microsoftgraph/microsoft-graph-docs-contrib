@@ -4,7 +4,7 @@ description: "The fileSystemInfo resource contains properties that are reported 
 title: fileSystemInfo resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # fileSystemInfo resource type

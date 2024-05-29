@@ -3,7 +3,7 @@ title: "cloudPcReports: getFrontlineReport"
 description: "Get the Windows 365 Frontline reports, such as real-time or historical data reports."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

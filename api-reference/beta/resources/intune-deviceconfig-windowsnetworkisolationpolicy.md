@@ -3,7 +3,7 @@ title: "windowsNetworkIsolationPolicy resource type"
 description: "Windows Network Isolation Policy"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

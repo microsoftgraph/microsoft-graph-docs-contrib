@@ -3,7 +3,7 @@ title: "resourceConnection resource type"
 description: "Represents connections to external resources from which more specialized connections are derived."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -20,9 +20,9 @@ This resource type is abstract.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List resourceConnections](../api/adminwindowsupdates-list-resourceconnections.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Get a list of the [resourceConnection](../resources/windowsupdates-resourceconnection.md) objects and their properties.|
-|[Get resourceConnection](../api/windowsupdates-resourceconnection-get.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md)|Read the properties and relationships of a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
-|[Delete resourceConnection](../api/windowsupdates-resourceconnection-delete.md)|None|Delete a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
+|[List](../api/adminwindowsupdates-list-resourceconnections.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Get a list of the [resourceConnection](../resources/windowsupdates-resourceconnection.md) objects and their properties.|
+|[Get](../api/windowsupdates-resourceconnection-get.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md)|Read the properties and relationships of a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
+|[Delete](../api/windowsupdates-resourceconnection-delete.md)|None|Delete a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ This resource type is abstract.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

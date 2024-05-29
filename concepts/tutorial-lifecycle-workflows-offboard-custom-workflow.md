@@ -1,33 +1,36 @@
 ---
 title: "Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs"
 description: "Learn how to complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
-ms.prod: "governance"
-ms.date: 11/08/2022
+ms.subservice: entra-id-governance
+ms.topic: tutorial
+ms.date: 03/19/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides step-by-step guidance for completing a real-time employee termination with Lifecycle Workflows using Microsoft Graph. In this scenario, the emplyee termination isn't scheduled. See [Schedule employee offboarding tasks with Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-scheduled-leaver) for a scheduled scenario.
+This tutorial provides step-by-step guidance for completing a real-time employee termination with Lifecycle Workflows APIs in Microsoft Graph. In this scenario, the employee termination isn't scheduled. See [Schedule employee offboarding tasks with Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-scheduled-leaver) for a scheduled scenario.
 
-This post off-boarding scenario will run a workflow on-demand and accomplish the following tasks:
-
-1. Remove all licenses for user
-2. Remove user from all Teams
-3. Delete user account
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> * Configure a lifecycle workflow to run the following tasks in sequence:
+>   * Remove the user from all groups
+>   * Remove user from all Teams
+>   * Delete user account
+> * Monitor the status of the workflow and its associated tasks.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra](https://www.microsoft.com/security/business/microsoft-entra-pricing).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Microsoft Entra role.
-+ Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
-+ Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
++ This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
++ Create a test user account that you use to represent an employee leaving your organization. This test user account is deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
 ## Create a "leaver" workflow
 
@@ -39,14 +42,13 @@ The following request creates an offboarding workflow with the following setting
 + The workflow doesn't include execution conditions. Execution conditions, even when defined, are bypassed for workflows that are run on-demand.
 + Three workflow tasks are enabled to run in sequence: the user is removed from all groups, then removed from all teams, then their user account is deleted.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_lifecycle_workflows_leaverondemand_create_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows
+POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows
 Content-type: application/json
 
 {
@@ -91,35 +93,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-leaverondemand-create-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-leaverondemand-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -140,8 +142,8 @@ Content-Type: application/json
     "category": "leaver",
     "description": "Execute real-time termination tasks for employees on their last day of work",
     "displayName": "Real-time employee termination",
-    "lastModifiedDateTime": "2022-10-04T08:33:01.0619748Z",
-    "createdDateTime": "2022-10-04T08:33:01.0619653Z",
+    "lastModifiedDateTime": "2024-03-03T08:33:01.0619748Z",
+    "createdDateTime": "2024-03-03T08:33:01.0619653Z",
     "deletedDateTime": null,
     "id": "368dfba3-2303-4e02-b258-87d742187e1b",
     "isEnabled": true,
@@ -156,10 +158,9 @@ Content-Type: application/json
 
 ## Run the workflow
 
-### Request
+In the following request, the user that's the target of the workflow is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
 
-In the following request, the user for whom the workflow will run is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
-
+The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -167,7 +168,7 @@ In the following request, the user for whom the workflow will run is identified 
   "name": "tutorial_lifecycle_workflows_leaverondemand_run_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/activate
+POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/activate
 
 {
     "subjects": [
@@ -179,56 +180,50 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-leaverondemand-run-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
 
 ## Check tasks and workflow status
 
 At any time, you can monitor the status of the workflows and the tasks at three levels.
 
-### Request
+- Monitor tasks at the user level.
+- Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
+- Retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
 
-The following request retrieves the summary of tasks run at the user level.
+### Option 1: Monitor tasks for a workflow at the user level
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -236,44 +231,44 @@ The following request retrieves the summary of tasks run at the user level.
   "name": "tutorial_lifecycle_workflows_leaverondemand_list_userProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -289,11 +284,11 @@ Content-Type: application/json
     "value": [
         {
             "id": "bc5b9d36-55fb-4036-8551-582668a6b78e",
-            "completedDateTime": "2022-10-04T08:37:47.3197648Z",
+            "completedDateTime": "2024-03-03T08:37:47.3197648Z",
             "failedTasksCount": 0,
             "processingStatus": "completed",
-            "scheduledDateTime": "2022-10-04T08:37:28.3040665Z",
-            "startedDateTime": "2022-10-04T08:37:32.1018797Z",
+            "scheduledDateTime": "2024-03-03T08:37:28.3040665Z",
+            "startedDateTime": "2024-03-03T08:37:32.1018797Z",
             "totalTasksCount": 3,
             "totalUnprocessedTasksCount": 0,
             "workflowExecutionType": "onDemand",
@@ -306,10 +301,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Option 2: Get the aggregate high-level summary of the user-level results for a workflow, within a specified period
 
-You can request the aggregate high-level summary of the user-level results for a workflow, within a specified period.
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -317,44 +311,44 @@ You can request the aggregate high-level summary of the user-level results for a
   "name": "tutorial_lifecycle_workflows_leaverondemand_list_userProcessingResults.summary"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -375,7 +369,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Option 3: Retrieve the detailed log of all tasks that were executed for a specific user in the workflow
+
+#### Request
 
 You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
 
@@ -386,44 +382,44 @@ You can also retrieve the detailed log of all tasks that were executed for a spe
   "name": "tutorial_lifecycle_workflows_leaverondemand_list_taskProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/bc5b9d36-55fb-4036-8551-582668a6b78e/taskProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/bc5b9d36-55fb-4036-8551-582668a6b78e/taskProcessingResults
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -438,11 +434,11 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('368dfba3-2303-4e02-b258-87d742187e1b')/userProcessingResults('bc5b9d36-55fb-4036-8551-582668a6b78e')/taskProcessingResults",
     "value": [
         {
-            "completedDateTime": "2022-10-04T08:37:37.1440809Z",
-            "createdDateTime": "2022-10-04T08:37:32.6985496Z",
+            "completedDateTime": "2024-03-03T08:37:37.1440809Z",
+            "createdDateTime": "2024-03-03T08:37:32.6985496Z",
             "id": "0819ee66-f85c-49a2-bdbd-3bbdbb3c1797",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-04T08:37:36.2260254Z",
+            "startedDateTime": "2024-03-03T08:37:36.2260254Z",
             "failureReason": null,
             "subject": {
                 "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
@@ -460,11 +456,11 @@ Content-Type: application/json
             }
         },
         {
-            "completedDateTime": "2022-10-04T08:37:42.8173083Z",
-            "createdDateTime": "2022-10-04T08:37:32.76041Z",
+            "completedDateTime": "2024-03-03T08:37:42.8173083Z",
+            "createdDateTime": "2024-03-03T08:37:32.76041Z",
             "id": "f1e16080-0117-41ba-9632-74eb60a4b005",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-04T08:37:38.383087Z",
+            "startedDateTime": "2024-03-03T08:37:38.383087Z",
             "failureReason": null,
             "subject": {
                 "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
@@ -482,11 +478,11 @@ Content-Type: application/json
             }
         },
         {
-            "completedDateTime": "2022-10-04T08:37:46.8305324Z",
-            "createdDateTime": "2022-10-04T08:37:33.0279549Z",
+            "completedDateTime": "2024-03-03T08:37:46.8305324Z",
+            "createdDateTime": "2024-03-03T08:37:33.0279549Z",
             "id": "21d40600-259a-4581-a011-0a56d2ee6e7a",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-04T08:37:46.3131624Z",
+            "startedDateTime": "2024-03-03T08:37:46.3131624Z",
             "failureReason": null,
             "subject": {
                 "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
@@ -507,8 +503,8 @@ Content-Type: application/json
 }
 ```
 
-## Next steps
+## Related content
 
-- [Execute employee offboarding tasks in real-time on their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-offboard-custom-workflow-portal)
+- [Execute employee offboarding tasks in real-time on their last day of work with the Microsoft Entra admin center](/entra/id-governance/tutorial-offboard-custom-workflow-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

@@ -3,7 +3,7 @@ title: "Create ContactFolder"
 description: "Create a new contactFolder under the user's default contacts folder."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and [ContactFolde
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +101,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

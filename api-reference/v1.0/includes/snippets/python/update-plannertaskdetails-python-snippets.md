@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.tasks.item.details.details_request_builder import DetailsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph.generated.models.planner_task_details import PlannerTaskDetails
+from msgraph.generated.models.planner_preview_type import PlannerPreviewType
+from msgraph.generated.models.planner_external_references import PlannerExternalReferences
+from msgraph.generated.models.planner_external_reference import PlannerExternalReference
+from msgraph.generated.models.planner_checklist_items import PlannerChecklistItems
+from msgraph.generated.models.planner_checklist_item import PlannerChecklistItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -41,7 +49,7 @@ request_body = PlannerTaskDetails(
 	),
 )
 
-request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "return=representation")
 request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 

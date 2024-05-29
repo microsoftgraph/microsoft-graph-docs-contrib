@@ -3,7 +3,7 @@ title: "focusActivityStatistics resource type"
 description: "Represents information about individual focus work for users"
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 

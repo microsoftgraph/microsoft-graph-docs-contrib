@@ -3,7 +3,7 @@ title: "Add multiTenantOrganizationMember"
 description: "Add a tenant to a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

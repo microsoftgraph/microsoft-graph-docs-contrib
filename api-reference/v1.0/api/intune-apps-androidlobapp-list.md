@@ -3,7 +3,7 @@ title: "List androidLobApps"
 description: "List properties and relationships of the androidLobApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "callTranscriptionInfo resource type"
 description: "Represents a single DTMF event."
 author: "rzhang"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

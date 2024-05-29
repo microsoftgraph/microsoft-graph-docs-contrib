@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const updateWindowsDeviceAccount = Content-type: application/json
-Content-length: 532
-
-{
+const updateWindowsDeviceAccount = {
   updateWindowsDeviceAccountActionParameter: {
     '@odata.type': 'microsoft.graph.updateWindowsDeviceAccountActionParameter',
     deviceAccount: {

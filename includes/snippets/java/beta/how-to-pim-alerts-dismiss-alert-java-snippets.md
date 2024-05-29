@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleManagementAlert unifiedRoleManagementAlert = new UnifiedRoleManagementAlert();
-unifiedRoleManagementAlert.isActive = false;
+unifiedRoleManagementAlert.setIsActive(false);
+UnifiedRoleManagementAlert result = graphClient.identityGovernance().roleManagementAlerts().alerts().byUnifiedRoleManagementAlertId("{unifiedRoleManagementAlert-id}").patch(unifiedRoleManagementAlert);
 
-graphClient.identityGovernance().roleManagementAlerts().alerts("DirectoryRole_3b0e753b-22fa-4c16-9bf2-470b80be80d6_RolesAssignedOutsidePimAlert")
-	.buildRequest()
-	.patch(unifiedRoleManagementAlert);
 
 ```

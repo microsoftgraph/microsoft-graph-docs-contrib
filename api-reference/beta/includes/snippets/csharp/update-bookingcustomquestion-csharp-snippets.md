@@ -20,7 +20,7 @@ var requestBody = new BookingCustomQuestion
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions["{bookingCustomQuestion-id}"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions["{bookingCustomQuestion-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -3,7 +3,7 @@ title: "longRunningOperation resource type"
 description: "Represents the status of a long-running operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Base type of [attackSimulationOperation](../resources/attacksimulationoperation.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get longRunningOperation](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
+|[Get](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
 
 ## Properties
 

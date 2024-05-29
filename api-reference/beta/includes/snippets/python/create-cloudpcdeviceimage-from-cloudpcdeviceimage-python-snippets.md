@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.cloud_pc_device_image import CloudPcDeviceImage
 
 graph_client = GraphServiceClient(credentials, scopes)
 

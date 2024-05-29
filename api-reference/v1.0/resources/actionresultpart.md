@@ -3,7 +3,7 @@ title: "actionResultPart resource type"
 description: "Abstract type to model responses of bulk operations."
 author: "abshar-teams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-## See also
+## Related content
 
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
 

@@ -3,7 +3,7 @@ title: "userFeedback resource type"
 description: "The userFeedback type."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

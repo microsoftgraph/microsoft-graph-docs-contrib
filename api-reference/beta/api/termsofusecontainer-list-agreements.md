@@ -3,7 +3,7 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

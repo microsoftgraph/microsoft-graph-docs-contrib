@@ -3,7 +3,7 @@ title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a list of [trend
 
 ## Example
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request",
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/trending
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
+The following example shows the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
 
 
 <!-- {

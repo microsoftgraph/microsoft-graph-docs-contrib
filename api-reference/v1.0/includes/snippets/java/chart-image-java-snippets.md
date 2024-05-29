@@ -4,16 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String string = graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}")
-	.image(WorkbookChartImageParameterSet
-		.newBuilder()
-		.withWidth(640)
-		.withHeight(480)
-		.withFittingMode("fit")
-		.build())
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").imageWithWidthWithHeightWithFittingMode("{fittingMode}", 1, 1).get();
+
 
 ```

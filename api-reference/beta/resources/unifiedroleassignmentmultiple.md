@@ -4,7 +4,7 @@ description: "A role definition assigned to an array of principals (typically a 
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -28,11 +28,11 @@ The following RBAC providers are currently supported:
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List roleAssignments](../api/rbacapplicationmultiple-list-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) collection | Read a list of **unifiedRoleAssignmentMultiple** objects and their properties. |
-| [Create unifiedRoleAssignmentMultiple](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new **unifiedRoleAssignmentMultiple** by posting to the **roleAssignment** collection. |
-| [Get unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-get.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Read properties and relationships of **unifiedRoleAssignmentMultiple** object. |
-| [Update unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-update.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Update an existing **unifiedRoleAssignmentMultiple** object. |
-| [Delete unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | None | Delete **unifiedRoleAssignmentMultiple** object. |
+| [List](../api/rbacapplicationmultiple-list-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) collection | Read a list of **unifiedRoleAssignmentMultiple** objects and their properties. |
+| [Create](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new **unifiedRoleAssignmentMultiple** by posting to the **roleAssignment** collection. |
+| [Get](../api/unifiedroleassignmentmultiple-get.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Read properties and relationships of **unifiedRoleAssignmentMultiple** object. |
+| [Update](../api/unifiedroleassignmentmultiple-update.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Update an existing **unifiedRoleAssignmentMultiple** object. |
+| [Delete](../api/unifiedroleassignmentmultiple-delete.md) | None | Delete **unifiedRoleAssignmentMultiple** object. |
 
 ## Properties
 

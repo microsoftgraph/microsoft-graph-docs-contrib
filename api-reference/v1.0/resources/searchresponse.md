@@ -3,7 +3,7 @@ title: "searchResponse resource type"
 description: "Description of the searchResponse"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

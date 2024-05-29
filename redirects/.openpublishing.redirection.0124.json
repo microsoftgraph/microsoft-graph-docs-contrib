@@ -24,6 +24,11 @@
       "source_path_from_root": "/concepts/webhooks-with-resource-data.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/change-notifications-with-resource-data",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/toolkit/components/tasks.md",
+      "redirect_url": "https://learn.microsoft.com/graph/toolkit/components/planner",
+      "redirect_document_id": true
     }
   ]
 }

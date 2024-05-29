@@ -3,7 +3,7 @@ title: "targetedManagedAppGroupType enum type"
 description: "Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

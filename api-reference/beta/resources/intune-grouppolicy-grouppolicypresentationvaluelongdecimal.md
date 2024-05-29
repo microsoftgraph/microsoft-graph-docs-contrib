@@ -3,7 +3,7 @@ title: "groupPolicyPresentationValueLongDecimal resource type"
 description: "The entity represents an unsigned long value of a long decimal text box presentation on a policy definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

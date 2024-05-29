@@ -3,7 +3,7 @@ title: "Cross-tenant access settings API overview"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 09/13/2022
 ---
@@ -379,6 +379,6 @@ Check if the guest user is from an externally federated partner before trying Az
 
 Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Microsoft Entra organizations. Tenant Restrictions are for controlling how your employees use **other Microsoft Entra organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require more signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
-## See also
+## Related content
 
 - [Tutorial: Configure cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json) 

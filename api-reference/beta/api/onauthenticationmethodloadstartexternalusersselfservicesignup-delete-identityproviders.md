@@ -3,7 +3,7 @@ title: "Remove identityProvider (from a user flow)"
 description: "Remove an identity provider from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ## Examples
 
 #### Request
-Here's an example of a request to remove Facebook as an identity provider option for account creation.
+The following example shows a request to remove Facebook as an identity provider option for account creation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

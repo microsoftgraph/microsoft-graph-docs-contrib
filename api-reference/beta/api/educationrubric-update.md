@@ -3,7 +3,7 @@ title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 

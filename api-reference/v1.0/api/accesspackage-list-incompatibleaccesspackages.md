@@ -3,7 +3,7 @@ title: "List incompatibleAccessPackages"
 description: "Retrieve a list of accesspackages whose access rights are incompatible with a specific access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

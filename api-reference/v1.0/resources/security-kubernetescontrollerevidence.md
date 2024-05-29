@@ -3,7 +3,7 @@ title: "kubernetesControllerEvidence resource type"
 description: "Represents a base entity type for a Kubernetes controller."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

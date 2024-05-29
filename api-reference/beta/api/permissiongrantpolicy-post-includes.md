@@ -3,7 +3,7 @@ title: "Create permissionGrantConditionSet in includes collection of permissionG
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -203,7 +203,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

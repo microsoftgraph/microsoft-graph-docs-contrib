@@ -3,7 +3,7 @@ title: "List retentionEventTypes"
 description: "Get a list of the retentionEventType objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

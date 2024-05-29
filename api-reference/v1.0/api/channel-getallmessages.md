@@ -3,7 +3,7 @@ title: "channel: getAllMessages"
 description: "Retrieve all messages across channels in a team."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -208,6 +208,6 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

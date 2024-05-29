@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
-administrativeUnit.displayName = "Greater Seattle District Technical Schools";
+administrativeUnit.setDisplayName("Greater Seattle District Technical Schools");
+AdministrativeUnit result = graphClient.directory().administrativeUnits().byAdministrativeUnitId("{administrativeUnit-id}").patch(administrativeUnit);
 
-graphClient.directory().administrativeUnits("4d7ea995-bc0f-45c0-8c3e-132e93bf95f8")
-	.buildRequest()
-	.patch(administrativeUnit);
 
 ```

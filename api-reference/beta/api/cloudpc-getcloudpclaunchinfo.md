@@ -3,7 +3,7 @@ title: "cloudPC: getCloudPcLaunchInfo"
 description: "Get the Cloud PC launch information for the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

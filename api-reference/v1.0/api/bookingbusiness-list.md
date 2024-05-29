@@ -3,7 +3,7 @@ title: "List bookingBusinesses"
 description: "Get a collection of bookingBusiness objects that have been created for the tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ This operation returns only the **id** and **displayName** of each Microsoft Boo
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -120,11 +120,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@contoso.onmicrosoft.com",
+            "id":"Fabrikam@contoso.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -161,7 +161,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"AdventureWorksCycles@M365B960066.onmicrosoft.com",
+            "id":"AdventureWorksCycles@contoso.com",
             "displayName":"Adventure Works Cycles",
         }
     ]

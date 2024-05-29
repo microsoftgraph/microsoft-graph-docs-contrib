@@ -3,7 +3,8 @@ title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 ms.localizationpriority: high
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -134,8 +135,8 @@ Content-type: application/json
   "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
   "displayName": "Sara Davis",
   "jobTitle": "Finance VP",
-  "mail": "SaraD@contoso.onmicrosoft.com",
-  "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+  "mail": "SaraD@contoso.com",
+  "userPrincipalName": "SaraD@contoso.com"
 }
 ```
 

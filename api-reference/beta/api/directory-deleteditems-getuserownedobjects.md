@@ -3,7 +3,7 @@ title: "List deleted items (directory objects) owned by a user"
 description: "Retrieves a list of recently deleted application or group objects that are owned by the specified user."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,10 +71,6 @@ Content-type: application/json
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directory-deleteditem-getuserownedobjects-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-getuserownedobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,7 +79,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

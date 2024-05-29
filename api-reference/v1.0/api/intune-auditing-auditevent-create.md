@@ -3,7 +3,7 @@ title: "Create auditEvent"
 description: "Create a new auditEvent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -133,6 +133,10 @@ Content-length: 1496
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-auditing-auditevent-create-create-auditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-auditing-auditevent-create-create-auditevent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

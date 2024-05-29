@@ -3,7 +3,7 @@ title: "Get entitlementManagementSettings"
 description: "Retrieve the properties of the entitlementManagementSettings object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

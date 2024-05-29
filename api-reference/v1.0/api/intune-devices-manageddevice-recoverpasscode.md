@@ -3,7 +3,7 @@ title: "recoverPasscode action"
 description: "Recover passcode"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

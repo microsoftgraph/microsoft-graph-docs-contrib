@@ -3,7 +3,7 @@ title: Update printTaskDefinition
 description: Update a task definition.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

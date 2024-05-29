@@ -3,7 +3,7 @@ title: "Create educationRubric"
 description: "Create a new educationRubric object."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -52,7 +52,7 @@ If successful, this method returns `201 Created` response code and a new [educat
 
 #### Request
 
-The following is an example of the request to post a credit rubric (a rubric with no points).
+The following example shows a request to post a credit rubric (a rubric with no points).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -255,7 +255,7 @@ Content-type: application/json
 
 ### Example 2: Posting a Points Rubric
 
-The following is an example of the request to post a rubric with points.
+The following example shows a request to post a rubric with points.
 
 # [HTTP](#tab/http)
 <!-- {

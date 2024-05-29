@@ -3,7 +3,7 @@ title: "List payloads"
 description: "Get a list of payloads for attack simulation campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads?$filter=
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-payloads-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-payloads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

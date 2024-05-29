@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyConfigurationPartner;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyB2BSetting;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyTargetConfiguration;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyTargetConfigurationAccessType;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyTarget;
+use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyTargetType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

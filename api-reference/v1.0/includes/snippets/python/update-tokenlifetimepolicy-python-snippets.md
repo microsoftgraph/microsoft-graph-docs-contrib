@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.token_lifetime_policy import TokenLifetimePolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

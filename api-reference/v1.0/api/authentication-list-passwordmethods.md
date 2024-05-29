@@ -4,7 +4,7 @@ description: "Retrieve a user's passwordAuthenticationMethod objects. This will 
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

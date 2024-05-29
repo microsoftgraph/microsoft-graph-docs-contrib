@@ -2,8 +2,9 @@
 title: "Add custom data to users using open extensions"
 description: "Learn how to add an open extension to a user's profile, query it, change and delete the extension."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.prod: "extensions"
+ms.subservice: extensions
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial
@@ -73,7 +74,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/openextensions-users-create-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -232,7 +233,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/openextensions-users-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

@@ -3,7 +3,7 @@ title: "educationWordResource resource type"
 description: "A subclass of educationResource. This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the "
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

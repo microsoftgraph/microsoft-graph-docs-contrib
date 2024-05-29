@@ -3,7 +3,7 @@ title: "containerEvidence resource type"
 description: "Represents a container that runs within a Kubernetes pod context or on Docker."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

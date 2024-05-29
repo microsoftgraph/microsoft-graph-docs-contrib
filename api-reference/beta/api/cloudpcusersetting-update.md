@@ -3,7 +3,7 @@ title: "Update cloudPcUserSetting"
 description: "Update the properties of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,6 +83,7 @@ Content-Type: application/json
   "selfServiceEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false,

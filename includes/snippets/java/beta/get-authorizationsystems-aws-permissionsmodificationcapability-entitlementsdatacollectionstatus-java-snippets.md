@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AuthorizationSystemCollectionPage authorizationSystems = graphClient.external().authorizationSystems()
-	.buildRequest()
-	.filter("authorizationSystemType eq 'aws' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AuthorizationSystemCollectionResponse result = graphClient.external().authorizationSystems().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "authorizationSystemType eq 'aws' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'";
+});
+
 
 ```

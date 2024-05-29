@@ -18,7 +18,7 @@ In this topic, you'll configure app-only access for a simple script to list user
 
 Before you can use app-only access with the SDK, you need the following:
 
-- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [See also](#see-also) section.
+- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [Related content](#related-content) section.
 - [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Microsoft Entra ID, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Certificate
@@ -141,6 +141,6 @@ Finally, sign out of the CLI.
 mgc logout
 ```
 
-## See also
+## Related content
 
 - [How to: Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,20 +15,18 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 
 requestTop := int32(2)
 
-requestParameters := &graphteams.TeamItemChannelItemMessagesDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphteams.TeamItemChannelItemMessagesDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

@@ -3,7 +3,7 @@ title: "List places"
 description: "Retrieve a list of place objects."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -206,7 +206,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
     },
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
@@ -237,7 +238,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "282c6d10-f8d4-441e-9f7f-edd2e554f61d"
     }
   ]
 }
@@ -302,7 +304,8 @@ Content-type: application/json
       "isWheelChairAccessible": false,
       "tags": [
         "bean bags"
-      ]
+      ],
+      "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
     },
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
@@ -329,7 +332,8 @@ Content-type: application/json
       "tags": [
         "benches",
         "nice view"
-      ]
+      ],
+      "placeId": "ca4e4ca8-4e92-4a83-afe4-5104c0ca1de3"
     }
   ]
 }
@@ -417,7 +421,8 @@ Content-type: application/json
       },
       "geoCoordinates": null,
       "phone": null,
-      "emailAddress": "bldg1@contoso.com"
+      "emailAddress": "bldg1@contoso.com",
+      "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
     },
     {
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1706",
@@ -431,7 +436,8 @@ Content-type: application/json
       },
       "geoCoordinates": null,
       "phone": null,
-      "emailAddress": "bldg2@contoso.com"
+      "emailAddress": "bldg2@contoso.com",
+      "placeId": "25709e2a-4c17-49ab-b591-1daf8d9b786d"
     }
   ]
 }
@@ -538,7 +544,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
     }
   ]
 }
@@ -641,7 +648,8 @@ Content-type: application/json
       "tags": [
         "benches",
         "nice view"
-      ]
+      ],
+      "placeId": "ca4e4ca8-4e92-4a83-afe4-5104c0ca1de3"
     }
   ]
 }

@@ -1,10 +1,11 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: concept-article
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/12/2024
@@ -141,7 +142,8 @@ Delta query is currently supported for the following resources. Some resources t
 | [contactFolder](/graph/api/resources/contactfolder)                 | [contactFolder: delta](/graph/api/contactfolder-delta) function                 |
 | [contact](/graph/api/resources/contact) resource                    | [contact: delta](/graph/api/contact-delta) function                             |
 | [plannerBucket](/graph/api/resources/plannerbucket) *               | [plannerBucket: delta](/graph/api/plannerbucket-delta) function                 |
-| [plannerUser](/graph/api/resources/planneruser) <sup>2</sup>         | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
+| [plannerUser](/graph/api/resources/planneruser) <sup>2</sup>        | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
+| [sites](/graph/api/resources/site)                                  | [delta](/graph/api/site-delta) function of the [site](/graph/api/resources/site) resource                |
 | [servicePrincipal](/graph/api/resources/serviceprincipal)           | [servicePrincipal: delta](/graph/api/serviceprincipal-delta) function           |
 | [todoTask](/graph/api/resources/todotask)                           | [todoTask: delta](/graph/api/todotask-delta) function                           |
 | [todoTaskList](/graph/api/resources/todotasklist)                   | [todoTaskList: delta](/graph/api/todotasklist-delta) function                   |
@@ -195,7 +197,9 @@ An app can use Microsoft Graph [change notifications](./webhooks.md) to subscrib
 
 Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 
-## Delta query request examples
+## Related content
+
+Learn more about delta query in the following tutorials:
 
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
 - [Get incremental changes to messages in a folder](./delta-query-messages.md)

@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
 description: "Represents the target of a review as a service principal target."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreview
 ## Properties
 | Property | Type | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | String | The identifier of the service principal whose access is being reviewed. |
+| servicePrincipalId | String | The identifier of the service principal whose access is being reviewed. |
 | servicePrincipalDisplayName | String | The display name of the service principal whose access is being reviewed. |
 | appId | String | The appId for the service principal entity being reviewed. |
 

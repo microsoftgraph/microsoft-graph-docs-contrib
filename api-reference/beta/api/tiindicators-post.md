@@ -3,7 +3,7 @@ title: "Create threat intelligence indicator"
 description: "Create a new tiIndicator."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

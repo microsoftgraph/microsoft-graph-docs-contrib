@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get SharePoint site by path
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType
 ---
@@ -53,7 +53,7 @@ To access the root SharePoint site with a relative path:
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET /sites/{hostname}:/{relative-path}
+GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{relative-path}
 ```
 
 ### Response
@@ -69,6 +69,7 @@ Content-Type: application/json
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
   "displayName": "OneDrive Team Site",
+  "isPersonalSite": false,
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
   "lastModifiedDateTime": "2017-05-09T20:56:01Z",

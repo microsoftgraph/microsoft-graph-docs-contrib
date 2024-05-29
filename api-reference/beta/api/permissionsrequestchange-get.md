@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a permissionsRequestChang
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

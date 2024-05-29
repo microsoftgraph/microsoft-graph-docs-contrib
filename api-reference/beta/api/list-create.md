@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Create a new list in a site."
 title: Create a SharePoint List
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Create a new list
@@ -62,7 +62,7 @@ If the **list** facet or **template** is not specified, the list defaults to the
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/lists
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 Content-Type: application/json
 
 {

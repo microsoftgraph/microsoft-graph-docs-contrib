@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicy resource type"
 description: "Intune Unlock Windowsdefenderapplicationcontrolsupplementalpolicy Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "rubricLevel resource type"
 description: "A level of a rubric"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ A level of a rubric. See [educationRubric](educationrubric.md) for a description
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

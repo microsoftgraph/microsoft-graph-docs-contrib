@@ -1,12 +1,13 @@
 ---
 title: "Permissions differences between Azure AD Graph and Microsoft Graph"
-description: "Describes permissions differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
-author: "FaithOmbongi"
+description: "Describes permissions differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph."
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 01/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 #Customer intent: As a developer migrating apps from Azure AD Graph to Microsoft Graph, I want to understand the differences in permissions between the two APIs, so that I can grant the rightly scoped Microsoft Graph permissions to my app.
 ---
 
@@ -306,4 +307,5 @@ Not applicable.
 
 ## Next step
 
-> Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) and review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

@@ -3,7 +3,7 @@ title: "cloudPcForensicStorageAccount resource type"
 description: "Represents a Cloud PC storage account for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

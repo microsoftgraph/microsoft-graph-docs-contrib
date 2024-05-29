@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.enriched_audit_logs import EnrichedAuditLogs
+from msgraph_beta.generated.models.networkaccess.enriched_audit_logs_settings import EnrichedAuditLogsSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

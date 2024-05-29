@@ -3,7 +3,7 @@ title: "List rosterPlans"
 description: "Get the list of plannerPlans that are contained by the plannerRosters of which the user is a member."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

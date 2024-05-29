@@ -2,7 +2,7 @@
 title: "reportRoot: getEmailAppUsageUserCounts"
 description: "Get the count of unique users that connected to Exchange Online using any email app."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

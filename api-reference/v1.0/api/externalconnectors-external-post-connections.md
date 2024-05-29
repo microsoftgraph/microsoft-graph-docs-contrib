@@ -3,7 +3,7 @@ title: "Create externalConnection"
 description: "Create a new externalConnection object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

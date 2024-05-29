@@ -3,7 +3,7 @@ title: "List allowedMembers"
 description: "Get the list of conversationMembers who can access a shared channel."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -151,6 +151,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)

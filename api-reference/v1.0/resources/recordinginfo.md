@@ -3,7 +3,7 @@ title: "recordingInfo resource type"
 description: "Represents recording information for a participant."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

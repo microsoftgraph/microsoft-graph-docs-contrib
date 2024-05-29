@@ -3,7 +3,7 @@ title: "Get delegatedAdminRelationshipOperation"
 description: "Read the properties of a delegatedAdminRelationshipOperation object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 

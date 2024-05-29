@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get listItem

@@ -1,9 +1,10 @@
 ---
 title: "List a user's direct memberships"
 description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation isn't transitive."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -22,9 +23,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_list_memberof" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-permissions.md)]
 
-> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> [!TIP]
+> - Calling the `/me/memberOf` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when you use the `/me/memberOf` endpoint.
+> - To list the members of a group with hidden membership, the `Member.Read.Hidden` permission is required.
 
 ## HTTP request
 

@@ -3,7 +3,7 @@ title: "Update softwareUpdateStatusSummary"
 description: "Update the properties of a softwareUpdateStatusSummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,10 +99,6 @@ Content-length: 518
   "notApplicableUserCount": 6
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-softwareupdatestatussummary-update-update-softwareupdatestatussummary-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-softwareupdatestatussummary-update-update-softwareupdatestatussummary-javascript-snippets.md)]

@@ -3,7 +3,7 @@ title: "provisioningSystem resource type"
 description: "Represents the system that a user was provisioned to or from."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

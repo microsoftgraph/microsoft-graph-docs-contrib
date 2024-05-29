@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ImportedWindowsAutopilotDeviceIdentity;
+use Microsoft\Graph\Generated\Models\ImportedWindowsAutopilotDeviceIdentityState;
+use Microsoft\Graph\Generated\Models\ImportedWindowsAutopilotDeviceIdentityImportStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

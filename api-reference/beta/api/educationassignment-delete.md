@@ -3,7 +3,7 @@ title: "Delete educationAssignment"
 description: "Delete an existing assignment. Only teachers within a class can delete assignments."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

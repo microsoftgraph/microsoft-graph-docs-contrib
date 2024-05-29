@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.edition_upgrade_configuration import EditionUpgradeConfiguration
+from msgraph.generated.models.edition_upgrade_license_type import EditionUpgradeLicenseType
+from msgraph.generated.models.windows10_edition_type import Windows10EditionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

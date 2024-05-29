@@ -12,8 +12,8 @@ $params = @{
 	actionType = "notification"
 	notificationTemplateId = "Notification Template Id value"
 	notificationMessageCCList = @(
-		"Notification Message CCList value"
-	)
+	"Notification Message CCList value"
+)
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -DeviceComplianceActionItemId $deviceComplianceActionItemId -BodyParameter $params

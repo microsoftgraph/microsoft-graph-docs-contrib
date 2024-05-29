@@ -3,8 +3,9 @@ title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Update governanceRoleSetting

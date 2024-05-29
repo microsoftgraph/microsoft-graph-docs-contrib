@@ -3,7 +3,7 @@ title: "accessPackageResourceScope resource type"
 description: "In Microsoft Entra entitlement management, an access package resource scope is a reference to a scope within a resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "accessReviewHistoryInstance: generateDownloadUri"
 description: "Generate a URI that can be used to retrieve review history data."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Tag tag = new Tag();
-tag.description = "This is an updated description.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("47746044-fd0b-4a30-acfc-5272b691ba5b").tags("e54b3f535b434a9a8743b84e34c00504")
-	.buildRequest()
-	.patch(tag);
+com.microsoft.graph.beta.models.ediscovery.Tag tag = new com.microsoft.graph.beta.models.ediscovery.Tag();
+tag.setDescription("This is an updated description.");
+com.microsoft.graph.models.ediscovery.Tag result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").tags().byTagId("{tag-id}").patch(tag);
+
 
 ```

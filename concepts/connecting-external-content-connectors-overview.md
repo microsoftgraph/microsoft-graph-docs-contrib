@@ -4,7 +4,7 @@ description: "Use Microsoft Graph connectors to bring content from external serv
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connectors overview
@@ -22,7 +22,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Microsoft 365 app](https://microsoft365.com) (formerly known as [Office.com](https://office.com))
 
 >[!NOTE]
->For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#microsoft-365-copilot). 
+>For details about how to build a Microsoft Graph connector that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#microsoft-365-copilot). 
 
 ## Get started with custom connectors
 
@@ -40,7 +40,7 @@ To get started, see the following:
 - [Build your first custom Microsoft Graph connector using APIs](/graph/connecting-external-content-build-quickstart)
 - [Build your first custom Microsoft Graph connector using the SDK](/graph/custom-connector-sdk-sample-overview)
 
-## Next steps
+## Related content
 
 * [Work with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-overview)
 * [Use Postman with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-postman)

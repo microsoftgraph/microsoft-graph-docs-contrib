@@ -3,7 +3,7 @@ title: "List allowedMembers"
 description: "Get the list of conversationMember resources from the allowedMembers navigation property."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -152,6 +152,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)

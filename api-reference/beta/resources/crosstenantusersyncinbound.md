@@ -3,7 +3,7 @@ title: "crossTenantUserSyncInbound resource type"
 description: "Defines whether users can be synchronized from the partner tenant."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

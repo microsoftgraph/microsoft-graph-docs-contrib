@@ -29,7 +29,7 @@ var requestBody = new AppRoleAssignmentsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsAppRoleAssignmentsPostResponseAsync(requestBody);
 
 
 ```

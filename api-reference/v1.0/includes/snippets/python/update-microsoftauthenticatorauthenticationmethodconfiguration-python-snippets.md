@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.microsoft_authenticator_authentication_method_configuration import MicrosoftAuthenticatorAuthenticationMethodConfiguration
+from msgraph.generated.models.authentication_method_state import AuthenticationMethodState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

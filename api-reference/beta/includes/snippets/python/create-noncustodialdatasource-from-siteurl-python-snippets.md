@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.ediscovery.noncustodial_data_source import NoncustodialDataSource
+from msgraph_beta.generated.models.ediscovery.site_source import SiteSource
+from msgraph_beta.generated.models.site import Site
 
 graph_client = GraphServiceClient(credentials, scopes)
 

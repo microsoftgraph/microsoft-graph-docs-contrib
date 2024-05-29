@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies
+GET /solutions/bookingCurrencies
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.
@@ -50,7 +50,7 @@ The following example shows a request.
   "name": "get_bookingcurrencies"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingCurrencies
+GET https://graph.microsoft.com/beta/solutions/bookingCurrencies
 ```
 
 # [C#](#tab/csharp)
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingcurrencies-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingcurrencies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

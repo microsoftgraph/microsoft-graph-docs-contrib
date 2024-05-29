@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AuthenticationCombinationConfiguration authenticationCombinationConfiguration = new AuthenticationCombinationConfiguration();
-LinkedList<AuthenticationMethodModes> appliesToCombinationsList = new LinkedList<AuthenticationMethodModes>();
-appliesToCombinationsList.add(AuthenticationMethodModes.FIDO2);
-authenticationCombinationConfiguration.appliesToCombinations = appliesToCombinationsList;
+LinkedList<AuthenticationMethodModes> appliesToCombinations = new LinkedList<AuthenticationMethodModes>();
+appliesToCombinations.add(AuthenticationMethodModes.Fido2);
+authenticationCombinationConfiguration.setAppliesToCombinations(appliesToCombinations);
+AuthenticationCombinationConfiguration result = graphClient.identity().conditionalAccess().authenticationStrength().policies().byAuthenticationStrengthPolicyId("{authenticationStrengthPolicy-id}").combinationConfigurations().byAuthenticationCombinationConfigurationId("{authenticationCombinationConfiguration-id}").patch(authenticationCombinationConfiguration);
 
-graphClient.identity().conditionalAccess().authenticationStrength().policies("0e371351-6419-4c8a-8047-61eef0212ffb").combinationConfigurations("4643f174-fe85-42b8-8b84-516775750a30")
-	.buildRequest()
-	.patch(authenticationCombinationConfiguration);
 
 ```

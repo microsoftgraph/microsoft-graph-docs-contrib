@@ -3,7 +3,7 @@ title: "domainIdentitySource resource type"
 description: "The domainIdentitySource type identifies a non-tenant domain as an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # domainIdentitySource resource type
@@ -24,7 +24,7 @@ When you're [creating a new connectedOrganization](../api/entitlementmanagement-
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.domainIdentitySource",

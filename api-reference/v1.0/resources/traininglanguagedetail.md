@@ -3,7 +3,7 @@ title: "trainingLanguageDetail resource type"
 description: "Represents an attack simulation training language detail."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
+|[Get](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
 
 ## Properties
 

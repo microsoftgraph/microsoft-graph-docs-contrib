@@ -3,7 +3,7 @@ title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

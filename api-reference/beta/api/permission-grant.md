@@ -3,7 +3,7 @@ author: kevklam
 title: Grant permission
 description: Grant a list of users access to use the specified link
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # permission: grant

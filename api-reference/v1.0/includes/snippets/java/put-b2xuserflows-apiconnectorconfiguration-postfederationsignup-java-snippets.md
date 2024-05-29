@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-IdentityApiConnector identityApiConnector = new IdentityApiConnector();
-identityApiConnector.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identity().b2xUserFlows("B2X_1_testuserflow").postFederationSignup().reference()
-	.buildRequest()
-	.put(identityApiConnector);
+com.microsoft.graph.models.ReferenceUpdate referenceUpdate = new com.microsoft.graph.models.ReferenceUpdate();
+referenceUpdate.setOdataId("https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}");
+graphClient.identity().b2xUserFlows().byB2xIdentityUserFlowId("{b2xIdentityUserFlow-id}").apiConnectorConfiguration().postFederationSignup().ref().put(referenceUpdate);
+
 
 ```

@@ -3,7 +3,7 @@ title: List monthlyPrintUsageByUser
 description: Retrieve a list of monthly print usage summaries, grouped by user.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

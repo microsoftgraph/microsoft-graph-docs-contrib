@@ -3,7 +3,7 @@ title: "Create call"
 description: "Create a new call."
 author: rahulva-msft
 ms.localizationpriority: medium
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 doc_type: apiPageType
 ---
 
@@ -17,18 +17,16 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-|:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not supported.                                                                          |
-| Delegated (personal Microsoft account) | Not supported.                                                                          |
-| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
+<!-- { "blockType": "permissions", "name": "application_post_calls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-calls-permissions.md)]
 
-> **Notes:** 
+> [!NOTE]
 > - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
-> - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
-> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
+Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -1522,7 +1520,7 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -1685,7 +1683,7 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

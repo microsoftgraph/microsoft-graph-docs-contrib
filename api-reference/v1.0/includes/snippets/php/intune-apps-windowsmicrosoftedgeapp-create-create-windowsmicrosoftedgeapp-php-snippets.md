@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsMicrosoftEdgeApp;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\MicrosoftEdgeChannel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

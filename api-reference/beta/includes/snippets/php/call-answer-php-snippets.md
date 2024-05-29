@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Answer\AnswerPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\AppHostedMediaConfig;
+use Microsoft\Graph\Beta\Generated\Models\Modality;
+use Microsoft\Graph\Beta\Generated\Models\IncomingCallOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

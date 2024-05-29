@@ -3,7 +3,7 @@ title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -99,14 +99,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "frannis@contoso.onmicrosoft.com"
+          "address": "frannis@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -185,7 +185,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "AlexW@contoso.OnMicrosoft.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
@@ -272,7 +272,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "meganb@contoso.onmicrosoft.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -414,7 +414,7 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "address": "meganb@contoso.onmicrosoft.com"
+        "address": "meganb@contoso.com"
       }
     }
   ],

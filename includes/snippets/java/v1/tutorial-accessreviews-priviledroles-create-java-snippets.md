@@ -4,57 +4,62 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReviewScheduleDefinition();
-accessReviewScheduleDefinition.displayName = "Review access of users and groups to privileged roles";
-accessReviewScheduleDefinition.descriptionForAdmins = "Review access of users and groups to privileged roles";
+accessReviewScheduleDefinition.setDisplayName("Review access of users and groups to privileged roles");
+accessReviewScheduleDefinition.setDescriptionForAdmins("Review access of users and groups to privileged roles");
 PrincipalResourceMembershipsScope scope = new PrincipalResourceMembershipsScope();
-LinkedList<AccessReviewScope> principalScopesList = new LinkedList<AccessReviewScope>();
-AccessReviewQueryScope principalScopes = new AccessReviewQueryScope();
-principalScopes.query = "/users";
-principalScopes.queryType = "MicrosoftGraph";
-principalScopesList.add(principalScopes);
-AccessReviewQueryScope principalScopes1 = new AccessReviewQueryScope();
-principalScopes1.query = "/groups";
-principalScopes1.queryType = "MicrosoftGraph";
-principalScopesList.add(principalScopes1);
-scope.principalScopes = principalScopesList;
-LinkedList<AccessReviewScope> resourceScopesList = new LinkedList<AccessReviewScope>();
-AccessReviewQueryScope resourceScopes = new AccessReviewQueryScope();
-resourceScopes.query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1";
-resourceScopes.queryType = "MicrosoftGraph";
-resourceScopesList.add(resourceScopes);
-scope.resourceScopes = resourceScopesList;
-accessReviewScheduleDefinition.scope = scope;
-LinkedList<AccessReviewReviewerScope> reviewersList = new LinkedList<AccessReviewReviewerScope>();
-AccessReviewReviewerScope reviewers = new AccessReviewReviewerScope();
-reviewers.query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85";
-reviewers.queryType = "MicrosoftGraph";
-reviewersList.add(reviewers);
-accessReviewScheduleDefinition.reviewers = reviewersList;
+scope.setOdataType("#microsoft.graph.principalResourceMembershipsScope");
+LinkedList<AccessReviewScope> principalScopes = new LinkedList<AccessReviewScope>();
+AccessReviewQueryScope accessReviewScope = new AccessReviewQueryScope();
+accessReviewScope.setOdataType("#microsoft.graph.accessReviewQueryScope");
+accessReviewScope.setQuery("/users");
+accessReviewScope.setQueryType("MicrosoftGraph");
+principalScopes.add(accessReviewScope);
+AccessReviewQueryScope accessReviewScope1 = new AccessReviewQueryScope();
+accessReviewScope1.setOdataType("#microsoft.graph.accessReviewQueryScope");
+accessReviewScope1.setQuery("/groups");
+accessReviewScope1.setQueryType("MicrosoftGraph");
+principalScopes.add(accessReviewScope1);
+scope.setPrincipalScopes(principalScopes);
+LinkedList<AccessReviewScope> resourceScopes = new LinkedList<AccessReviewScope>();
+AccessReviewQueryScope accessReviewScope2 = new AccessReviewQueryScope();
+accessReviewScope2.setOdataType("#microsoft.graph.accessReviewQueryScope");
+accessReviewScope2.setQuery("/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1");
+accessReviewScope2.setQueryType("MicrosoftGraph");
+resourceScopes.add(accessReviewScope2);
+scope.setResourceScopes(resourceScopes);
+accessReviewScheduleDefinition.setScope(scope);
+LinkedList<AccessReviewReviewerScope> reviewers = new LinkedList<AccessReviewReviewerScope>();
+AccessReviewReviewerScope accessReviewReviewerScope = new AccessReviewReviewerScope();
+accessReviewReviewerScope.setQuery("/users/2560f739-2e0e-4550-9fa0-1a1e67ae0ab8");
+accessReviewReviewerScope.setQueryType("MicrosoftGraph");
+reviewers.add(accessReviewReviewerScope);
+accessReviewScheduleDefinition.setReviewers(reviewers);
 AccessReviewScheduleSettings settings = new AccessReviewScheduleSettings();
-settings.mailNotificationsEnabled = true;
-settings.reminderNotificationsEnabled = true;
-settings.justificationRequiredOnApproval = true;
-settings.defaultDecisionEnabled = false;
-settings.defaultDecision = "None";
-settings.instanceDurationInDays = 3;
-settings.recommendationsEnabled = false;
+settings.setMailNotificationsEnabled(true);
+settings.setReminderNotificationsEnabled(true);
+settings.setJustificationRequiredOnApproval(true);
+settings.setDefaultDecisionEnabled(false);
+settings.setDefaultDecision("None");
+settings.setInstanceDurationInDays(1);
+settings.setRecommendationsEnabled(false);
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.ABSOLUTE_MONTHLY;
-pattern.interval = 3;
-recurrence.pattern = pattern;
+pattern.setType(RecurrencePatternType.AbsoluteMonthly);
+pattern.setInterval(3);
+recurrence.setPattern(pattern);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NO_END;
-range.startDate = new DateOnly(1900,1,1);
-recurrence.range = range;
-settings.recurrence = recurrence;
-accessReviewScheduleDefinition.settings = settings;
+range.setType(RecurrenceRangeType.NoEnd);
+LocalDate startDate = LocalDate.parse("2024-03-25");
+range.setStartDate(startDate);
+recurrence.setRange(range);
+settings.setRecurrence(recurrence);
+accessReviewScheduleDefinition.setSettings(settings);
+AccessReviewScheduleDefinition result = graphClient.identityGovernance().accessReviews().definitions().post(accessReviewScheduleDefinition);
 
-graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.post(accessReviewScheduleDefinition);
 
 ```

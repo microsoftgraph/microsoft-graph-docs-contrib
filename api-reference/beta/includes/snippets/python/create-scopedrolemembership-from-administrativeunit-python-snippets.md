@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.scoped_role_membership import ScopedRoleMembership
+from msgraph_beta.generated.models.identity import Identity
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -1,7 +1,7 @@
 ---
 author: "AlexFilipin"
 ms.localizationpriority: high
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.topic: include
 ---
 

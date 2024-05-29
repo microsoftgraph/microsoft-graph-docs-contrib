@@ -3,7 +3,7 @@ title: "microsoftStoreForBusinessLicenseType enum type"
 description: "Intune Apps Microsoftstoreforbusinesslicensetype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

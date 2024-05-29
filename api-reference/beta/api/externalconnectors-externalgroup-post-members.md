@@ -3,7 +3,7 @@ title: "Create externalGroupMember"
 description: "Create a new externalGroupMember object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

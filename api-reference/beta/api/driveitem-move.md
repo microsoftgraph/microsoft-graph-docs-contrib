@@ -4,7 +4,7 @@ description: "To move a DriveItem to a new parent item, your app requests to upd
 ms.date: 09/10/2017
 title: Move a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
@@ -68,7 +68,7 @@ This example moves an item specified by {item-id} into a folder in the user's dr
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
-PATCH /me/drive/items/{item-id}
+PATCH https://graph.microsoft.com/beta/me/drive/items/{item-id}
 Content-type: application/json
 
 {

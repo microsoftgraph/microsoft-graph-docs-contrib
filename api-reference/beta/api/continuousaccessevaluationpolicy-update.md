@@ -3,7 +3,7 @@ title: "Update continuousAccessEvaluationPolicy"
 description: "Update the properties of a continuousAccessEvaluationPolicy object."
 author: "Jerrysai-zz"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

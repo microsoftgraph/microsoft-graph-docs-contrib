@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.profile_card_property import ProfileCardProperty
+from msgraph.generated.models.profile_card_annotation import ProfileCardAnnotation
+from msgraph.generated.models.display_name_localization import DisplayNameLocalization
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +18,7 @@ request_body = ProfileCardProperty(
 			display_name = "Cost Center",
 			localizations = [
 				DisplayNameLocalization(
-					language_tag = "ru-RU",
+					language_tag = "ru",
 					display_name = "центр затрат",
 				),
 			],

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.organization.item.branding.branding_delete_request_body import BrandingDeleteRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

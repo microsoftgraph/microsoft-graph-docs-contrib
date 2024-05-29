@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-BranchSite branchSite = new BranchSite();
-branchSite.name = "My updated branch";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().connectivity().branches("{branchSiteId}")
-	.buildRequest()
-	.patch(branchSite);
+com.microsoft.graph.beta.models.networkaccess.BranchSite branchSite = new com.microsoft.graph.beta.models.networkaccess.BranchSite();
+branchSite.setName("My updated branch");
+com.microsoft.graph.models.networkaccess.BranchSite result = graphClient.networkAccess().connectivity().branches().byBranchSiteId("{branchSite-id}").patch(branchSite);
+
 
 ```

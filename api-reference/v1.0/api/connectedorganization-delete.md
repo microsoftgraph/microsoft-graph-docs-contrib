@@ -3,7 +3,7 @@ title: "Delete connectedOrganization"
 description: "Delete connectedOrganization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Delete connectedOrganization

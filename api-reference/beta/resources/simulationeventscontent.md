@@ -3,7 +3,7 @@ title: "simulationEventsContent resource type"
 description: "Represents simulation events in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

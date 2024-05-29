@@ -3,7 +3,7 @@ title: "Create offerShiftRequest"
 description: "Create an instance of an offerShiftRequest."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

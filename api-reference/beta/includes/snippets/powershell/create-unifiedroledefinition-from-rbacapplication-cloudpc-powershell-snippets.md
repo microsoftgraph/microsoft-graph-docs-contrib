@@ -12,11 +12,11 @@ $params = @{
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
-				"Microsoft.CloudPC/CloudPCs/Read"
-			)
-		}
-	)
-	condition = "null"
+			"Microsoft.CloudPC/CloudPCs/Read"
+		)
+	}
+)
+condition = "null"
 }
 
 New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params

@@ -3,7 +3,7 @@ title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members."
 author: Jordanndahl
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -24,9 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_transitivemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-transitivemembers-permissions.md)]
 
-> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
 
 ## HTTP request
 

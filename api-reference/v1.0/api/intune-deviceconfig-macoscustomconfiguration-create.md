@@ -3,7 +3,7 @@ title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get post"
 description: "Get the properties and relationships of a post in a specified thread. You can specify both the parent "
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a post in a specified thread. You can specify both the parent 
+Get the properties and relationships of a post in a specified thread. You can specify both the parent
 conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,19 +124,19 @@ Content-type: application/json
     "from":{
         "emailAddress":{
             "name":"Marketing",
-            "address":"Marketing@M365B489948.onmicrosoft.com"
+            "address":"Marketing@contoso.com"
         }
     },
     "sender":{
         "emailAddress":{
             "name":"Marketing",
-            "address":"Marketing@M365B489948.onmicrosoft.com"
+            "address":"Marketing@contoso.com"
         }
     }
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

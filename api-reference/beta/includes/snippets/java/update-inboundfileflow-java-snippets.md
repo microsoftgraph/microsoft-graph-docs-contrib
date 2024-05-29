@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-InboundFlow inboundFlow = new InboundFlow();
-inboundFlow.displayName = "My Inbound Flow";
-inboundFlow.effectiveDateTime = OffsetDateTimeSerializer.deserialize("2022-03-12T11:10:46.924769+00:00");
-inboundFlow.expirationDateTime = OffsetDateTimeSerializer.deserialize("2023-03-12T11:10:46.924769+00:00");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().inboundFlows("7bd62d17-8c37-4494-f68d-08daddab2911")
-	.buildRequest()
-	.patch(inboundFlow);
+com.microsoft.graph.beta.models.industrydata.InboundFlow inboundFlow = new com.microsoft.graph.beta.models.industrydata.InboundFlow();
+inboundFlow.setOdataType("#microsoft.graph.industryData.inboundFlow");
+inboundFlow.setDisplayName("My Inbound Flow");
+OffsetDateTime effectiveDateTime = OffsetDateTime.parse("2022-03-12T16:40:46.924769+05:30");
+inboundFlow.setEffectiveDateTime(effectiveDateTime);
+OffsetDateTime expirationDateTime = OffsetDateTime.parse("2023-03-12T16:40:46.924769+05:30");
+inboundFlow.setExpirationDateTime(expirationDateTime);
+com.microsoft.graph.models.industrydata.InboundFlow result = graphClient.external().industryData().inboundFlows().byInboundFlowId("{inboundFlow-id}").patch(inboundFlow);
+
 
 ```

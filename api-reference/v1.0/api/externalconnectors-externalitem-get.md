@@ -3,7 +3,7 @@ title: "Get externalItem"
 description: "Read the properties and relationships of an externalItem object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ChatGetAllMessagesCollectionPage getAllMessages = graphClient.users("0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5").chats()
-	.getAllMessages()
-	.buildRequest()
-	.top(2)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.users().byUserId("{user-id}").chats().getAllMessages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.top = 2;
+});
+
 
 ```

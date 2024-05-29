@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Tasks\Item\Details\DetailsRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskDetails;
+use Microsoft\Graph\Beta\Generated\Models\PlannerPreviewType;
+use Microsoft\Graph\Beta\Generated\Models\PlannerExternalReferences;
+use Microsoft\Graph\Beta\Generated\Models\PlannerExternalReference;
+use Microsoft\Graph\Beta\Generated\Models\PlannerChecklistItems;
+use Microsoft\Graph\Beta\Generated\Models\PlannerChecklistItem;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

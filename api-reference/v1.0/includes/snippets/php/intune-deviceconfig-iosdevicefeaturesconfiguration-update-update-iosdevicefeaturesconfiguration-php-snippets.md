@@ -5,6 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosDeviceFeaturesConfiguration;
+use Microsoft\Graph\Generated\Models\IosHomeScreenItem;
+use Microsoft\Graph\Generated\Models\IosHomeScreenFolder;
+use Microsoft\Graph\Generated\Models\IosHomeScreenFolderPage;
+use Microsoft\Graph\Generated\Models\IosHomeScreenApp;
+use Microsoft\Graph\Generated\Models\IosHomeScreenPage;
+use Microsoft\Graph\Generated\Models\IosNotificationSettings;
+use Microsoft\Graph\Generated\Models\IosNotificationAlertType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

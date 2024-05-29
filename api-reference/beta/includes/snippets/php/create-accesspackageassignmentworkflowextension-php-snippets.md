@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CustomCalloutExtension;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignmentWorkflowExtension;
+use Microsoft\Graph\Beta\Generated\Models\LogicAppTriggerEndpointConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AzureAdPopTokenAuthentication;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

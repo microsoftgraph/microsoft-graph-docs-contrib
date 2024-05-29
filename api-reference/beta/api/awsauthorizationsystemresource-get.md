@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an awsAuthorizationSystem
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -64,10 +64,6 @@ The following example shows a request to get an AWS resource for a provided AWS 
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/resources/YXJuOmF3czpzMzo6OnRlc3RidWNrZXQ
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-awsauthorizationsystemresource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-awsauthorizationsystemresource-javascript-snippets.md)]

@@ -3,7 +3,7 @@ title: "accessPackageResource resource type"
 description: "An access package resource is a reference to a resource associated with a catalog the roles for which can be used in one or more access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog. The roles for the access package resource can be used in one or more access packages.  To request to associate a resource with an access package catalog, or remove a resource from a catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog. The roles for the access package resource can be used in one or more access packages. To request to associate a resource with an access package catalog, or remove a resource from a catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| [List](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 
 
 ## Properties
@@ -30,7 +30,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |displayName|String|The display name of the resource, such as the application name, group name or site name.|
 |id|String| Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, this is the identifier of the group. |
+|originId|String|The unique identifier of the resource in the origin system. For a Microsoft Entra group, this is the identifier of the group. |
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
 
 ## Relationships

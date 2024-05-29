@@ -3,7 +3,7 @@ title: "assignedTrainingInfo resource type"
 description: "Represents assignment information of a training in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

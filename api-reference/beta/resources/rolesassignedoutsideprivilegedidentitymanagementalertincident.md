@@ -3,7 +3,7 @@ title: "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident resource t
 description: "Represents an alert incident that is triggered if roles have been assigned outside of Privileged Identity Management in the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -21,6 +21,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |Property|Type|Description|
 |:---|:---|:---|
 |assigneeDisplayName|String|Display name of the subject that the incident applies to.|
+|assignmentCreatedDateTime|DateTimeOffset|Date and time of assignment creation.|
 |assigneeId|String|The identifier of the subject that the incident applies to.|
 |assigneeUserPrincipalName|String|User principal name of the subject that the incident applies to. Applies to user principals.|
 |id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|

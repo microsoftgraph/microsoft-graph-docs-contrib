@@ -3,7 +3,7 @@ title: "accessReviewStageSettings resource type"
 description: "In Microsoft Entra access reviews, the accessReviewStageSettings represent the settings of the stages associated with a multi-stage access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Represents the settings of the stages associated with a [multi-stage access revi
 |stageId|String|Unique identifier of the **accessReviewStageSettings**. The **stageId** is used in **dependsOn** property to indicate the stage relationship. Required. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewStageSettings"

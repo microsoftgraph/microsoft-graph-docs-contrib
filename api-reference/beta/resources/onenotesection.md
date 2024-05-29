@@ -3,7 +3,7 @@ title: "onenoteSection resource type"
 description: "A section in a OneNote notebook. Sections can contain pages."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: notes
+ms.subservice: onenote
 author: "jewan-microsoft"
 ---
 
@@ -43,13 +43,13 @@ A section in a OneNote notebook. Sections can contain pages.
 |[Get section](../api/section-get.md) | [onenoteSection](onenotesection.md) |Read the properties and relationships of the section.|
 |[Create page](../api/section-post-pages.md) |[onenotePage](onenotepage.md)| Create a page by posting to the pages collection in the specified section.|
 |[List pages](../api/section-list-pages.md) |[onenotePage](onenotepage.md) collection| Get a collection of pages in the specified section.|
-|[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
+|[Copy to notebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
+|[Copy to section group](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

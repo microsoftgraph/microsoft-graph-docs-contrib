@@ -3,7 +3,7 @@ title: "Create table"
 description: "Use this API to create a new Table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -44,11 +44,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookTable](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_table_from_worksheet_01"
@@ -63,7 +63,7 @@ Content-type: application/json
 }
 ```
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,7 +4,7 @@ description: "Schema extensions allow you to define a schema to extend and add s
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -67,7 +67,7 @@ The owner app can move the extension through different states of a lifecycle, us
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -89,7 +89,7 @@ Here is a JSON representation of the resource.
 
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 

@@ -3,7 +3,7 @@ title: "Get accessReviewStage"
 description: "Read the properties and relationships of an accessReviewStage object."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

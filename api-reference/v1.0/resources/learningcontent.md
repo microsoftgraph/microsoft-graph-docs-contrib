@@ -3,7 +3,7 @@ title: "learningContent resource type"
 description: "Represents the metadata of content for employee learning."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningContents](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.|
-|[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.|
-|[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
-|[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
+|[List](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.|
+|[Get](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.|
+|[Update](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
+|[Delete](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
 
 ## Properties
 
@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
+|level|Level|The difficulty level of the learning content. Possible values are: `Beginner`, `Intermediate`, `Advanced`, `unknownFutureValue`. Optional.|
 |id|String|The unique identifier for the learning content. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
 |isActive|Boolean|Indicates whether the content is active or not. Inactive content doesn't show up in the UI. The default value is `true`. Optional.|
 |isPremium|Boolean|Indicates whether the learning content requires the user to sign-in on the learning provider platform or not. The default value is `false`. Optional.|
@@ -47,6 +48,14 @@ Inherits from [entity](../resources/entity.md).
 |sourceName|String|The source name of the learning content, such as `LinkedIn Learning` or `Coursera`. Optional.|
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
 |title|String|The title of the learning content. Required.|
+
+## Level values
+|Member|Description|
+|:---|:---|
+|Beginner|For learning content at a beginner level.|
+|Intermediate|For learning content at an intermediate level.|
+|Advanced|For learning content at an advanced level.|
+|UnknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
@@ -79,6 +88,7 @@ The following is a JSON representation of the resource.
     "duration": "String (duration)",
     "externalId": "String",
     "format": "String",
+    "level": "String",
     "id": "String (identifier)",
     "isActive": "Boolean",
     "isPremium": "Boolean",

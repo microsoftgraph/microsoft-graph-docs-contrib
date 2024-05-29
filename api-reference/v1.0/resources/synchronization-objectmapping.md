@@ -4,7 +4,7 @@ description: "Defines how a given object should be synchronized from source dire
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # objectMapping resource type

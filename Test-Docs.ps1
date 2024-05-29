@@ -8,25 +8,35 @@ $apiDoctorNuGetVersion = $env:API_DOCTOR_NUGET_VERSION
 $apiDoctorGitRepoUrl = $env:API_DOCTOR_GIT_REPO_URL
 $apiDoctorGitBranch = $env:API_DOCTOR_GIT_BRANCH
 $docsRepoPath = (Get-Location).Path
-$docsSubPath = $env:APIDOCTOR_DOCSUBPATH
+$docsSubPath = $env:DOCS_SUB_PATH
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
 
-Write-Host "Repository location: ", $docsRepoPath
+if ($useNuGetPackage -eq $true) {
+	Write-Host "API Doctor NuGet Version: ", $apiDoctorNuGetVersion
+}
+else {
+	Write-Host "API Doctor Git Repo:"
+    Write-Host "- URL: $apiDoctorGitRepoUrl"
+    Write-Host "- Branch: $apiDoctorGitBranch"
+}
+
+Write-Host "Repository Location: ", $docsRepoPath
+Write-Host "Docs Subpath: ", $docsSubPath
 
 # Check if API Doctor source has been set
-if ($useNuGetPackage -and [string]::IsNullOrWhiteSpace($apiDoctorNuGetVersion)) {
+if ($useNuGetPackage -eq $true -and [string]::IsNullOrWhiteSpace($apiDoctorNuGetVersion)) {
 	Write-Host "API Doctor NuGet package version has not been set. Aborting..."
 	exit 1
 }
-elseif (!$useNuGetPackage -and [string]::IsNullOrWhiteSpace($apiDoctorGitRepoUrl)) {
+elseif ($useNuGetPackage -eq $false -and [string]::IsNullOrWhiteSpace($apiDoctorGitRepoUrl)) {
 	Write-Host "API Doctor Git Repo URL has not been set. Aborting..."
 	exit 1
 }
 
 # Check if docs subpath has been set
 if ([string]::IsNullOrWhiteSpace($docsSubPath)) {
-	Write-Host "API Doctor subpath has not been set. Aborting..."
+	Write-Host "Docs subpath has not been set. Aborting..."
 	exit 1
 }
 
@@ -56,7 +66,7 @@ else {
 	$apidocPath = Join-Path $docsRepoPath -ChildPath "apidoctor"
 	New-Item -ItemType Directory -Force -Path $apidocPath
 	
-	if ($useNuGetPackage) {		
+	if ($useNuGetPackage -eq $true) {		
 		# Install API Doctor from NuGet
 		Write-Host "Running nuget.exe from ", $nugetPath
 		$nugetParams = "install", "ApiDoctor", "-Version", $apiDoctorNuGetVersion, "-OutputDirectory", $apidocPath, "-NonInteractive", "-DisableParallelProcessing"
@@ -64,7 +74,7 @@ else {
 
 		if ($LastExitCode -ne 0) { 
 			# NuGet error, so we can't proceed
-			Write-Host "Error installing API Doctor from NuGet. Aborting."
+			Write-Host "Error installing API Doctor from NuGet. Aborting..."
 			Remove-Item $nugetPath
 			exit $LastExitCode
 		}

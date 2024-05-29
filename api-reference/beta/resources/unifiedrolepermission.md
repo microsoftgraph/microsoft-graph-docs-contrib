@@ -3,7 +3,7 @@ title: "unifiedRolePermission resource type"
 description: "A directory role permission is a collection of allowed resource actions and conditions."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -86,7 +86,7 @@ The following is a JSON representation of the resource.
   "condition": "String"
 }
 ```
-## See also
+## Related content
 
 - [Administrator role permissions in Microsoft Entra](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
 - [Application registration subtypes and permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 

@@ -14,10 +14,14 @@ In this step, you'll create a web app and enable authentication with the Microso
 
 1. Select `CTRL + SPACE` and choose **HTML sample** from the options.
 
-1. To enable authentication with Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** inside the `<body></body>` section:
+1. To enable authentication with Microsoft Graph Toolkit via a CDN, add the following script tag in **index.html** inside the `<body></body>` section:
 
     ```HTML
-    <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+    <script type="module">
+        import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+        registerMgtMsal2Provider();
+        registerMgtComponents();
+    </script>
     ```
 
 ### Initialize the MSAL2 provider
@@ -58,7 +62,11 @@ In this step, you'll create a web app and enable authentication with the Microso
       <script src='main.js'></script>
     </head>
     <body>
-      <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+      <script type="module">
+        import { registerMgtComponents, registerMgtMsal2Provider } from "https://unpkg.com/@microsoft/mgt@4";
+        registerMgtMsal2Provider();
+        registerMgtComponents();
+      </script>
       <mgt-msal2-provider
           client-id="<YOUR_CLIENT_ID>"
           scopes="User.Read,

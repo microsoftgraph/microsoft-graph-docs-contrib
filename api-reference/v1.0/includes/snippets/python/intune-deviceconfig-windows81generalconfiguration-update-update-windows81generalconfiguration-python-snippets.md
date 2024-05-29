@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows81_general_configuration import Windows81GeneralConfiguration
+from msgraph.generated.models.internet_site_security_level import InternetSiteSecurityLevel
+from msgraph.generated.models.site_security_level import SiteSecurityLevel
+from msgraph.generated.models.required_password_type import RequiredPasswordType
+from msgraph.generated.models.windows_user_account_control_settings import WindowsUserAccountControlSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

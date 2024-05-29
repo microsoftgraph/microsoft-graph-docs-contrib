@@ -3,7 +3,7 @@ title: "Send emails with MIME content using the Outlook mail API"
 description: "Email clients can send messages through Exchange in a MIME message format and communicate across multiple email platforms."
 author: "isvargasmsft"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Send messages with MIME content

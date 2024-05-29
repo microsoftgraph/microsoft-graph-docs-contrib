@@ -4,25 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UpdateCategory updateCategory = UpdateCategory.FEATURE;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
+com.microsoft.graph.beta.admin.windows.updates.updatableassets.microsoftgraphwindowsupdatesunenrollassetsbyid.UnenrollAssetsByIdPostRequestBody unenrollAssetsByIdPostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.updatableassets.microsoftgraphwindowsupdatesunenrollassetsbyid.UnenrollAssetsByIdPostRequestBody();
+unenrollAssetsByIdPostRequestBody.setUpdateCategory(com.microsoft.graph.beta.models.windowsupdates.UpdateCategory.Feature);
+unenrollAssetsByIdPostRequestBody.setMemberEntityType("#microsoft.graph.windowsUpdates.azureADDevice");
+LinkedList<String> ids = new LinkedList<String>();
+ids.add("String");
+ids.add("String");
+ids.add("String");
+unenrollAssetsByIdPostRequestBody.setIds(ids);
+graphClient.admin().windows().updates().updatableAssets().microsoftGraphWindowsUpdatesUnenrollAssetsById().post(unenrollAssetsByIdPostRequestBody);
 
-LinkedList<String> idsList = new LinkedList<String>();
-idsList.add("String");
-idsList.add("String");
-idsList.add("String");
-
-graphClient.admin().windows().updates().updatableAssets()
-	.unenrollAssetsById(UpdatableAssetUnenrollAssetsByIdParameterSet
-		.newBuilder()
-		.withUpdateCategory(updateCategory)
-		.withMemberEntityType(memberEntityType)
-		.withIds(idsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

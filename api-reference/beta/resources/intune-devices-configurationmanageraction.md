@@ -3,7 +3,7 @@ title: "configurationManagerAction resource type"
 description: "Parameter for action triggerConfigurationManagerAction"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

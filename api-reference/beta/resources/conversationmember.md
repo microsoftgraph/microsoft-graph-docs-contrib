@@ -3,7 +3,7 @@ title: "conversationMember resource type"
 description: "Represents a user in a conversation."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [aadUserConversationMember](aaduserconversationmember.md)
 - [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)

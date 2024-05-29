@@ -3,7 +3,7 @@ title: "accessReviewStageSettings resource type"
 description: "Represents the settings of the stages that are associated with a multi-stage access review."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update assignment and grade data"
 description: "Use Microsoft Graph APIs to update assignment and grade data for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "printer: create"
 description: Create (register) a printer with the Universal Print service.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

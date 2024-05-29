@@ -3,7 +3,7 @@ title: "List effectiveRules"
 description: "Get the unifiedRoleManagementPolicyRule resources from the effectiveRules navigation property."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicy_list_effectiverules" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicy-list-effectiverules-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

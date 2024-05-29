@@ -3,7 +3,7 @@ title: "Get change notifications for messages in Teams channels and chats using 
 description: "Change notifications enable you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -425,7 +425,7 @@ The payload looks like the following. This payload is for a message sent in a ch
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation returns the updated message.
 
-## See also
+## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)

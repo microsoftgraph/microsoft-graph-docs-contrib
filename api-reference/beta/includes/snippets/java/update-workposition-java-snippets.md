@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkPosition workPosition = new WorkPosition();
-workPosition.isCurrent = true;
+workPosition.setIsCurrent(true);
+WorkPosition result = graphClient.me().profile().positions().byWorkPositionId("{workPosition-id}").patch(workPosition);
 
-graphClient.me().profile().positions("{id}")
-	.buildRequest()
-	.patch(workPosition);
 
 ```

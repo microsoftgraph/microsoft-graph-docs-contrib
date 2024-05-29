@@ -3,7 +3,7 @@ title: "deviceConfigurationDeviceOverview resource type"
 description: "Intune Deviceconfig Deviceconfigurationdeviceoverview Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

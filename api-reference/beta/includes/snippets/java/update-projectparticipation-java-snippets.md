@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProjectParticipation projectParticipation = new ProjectParticipation();
-projectParticipation.allowedAudiences = EnumSet.of(AllowedAudiences.ORGANIZATION);
+projectParticipation.setAllowedAudiences(EnumSet.of(AllowedAudiences.Organization));
 CompanyDetail client = new CompanyDetail();
-client.department = "Corporate Marketing";
-client.webUrl = "https://www.contoso.com";
-projectParticipation.client = client;
+client.setDepartment("Corporate Marketing");
+client.setWebUrl("https://www.contoso.com");
+projectParticipation.setClient(client);
+ProjectParticipation result = graphClient.me().profile().projects().byProjectParticipationId("{projectParticipation-id}").patch(projectParticipation);
 
-graphClient.me().profile().projects("{id}")
-	.buildRequest()
-	.patch(projectParticipation);
 
 ```

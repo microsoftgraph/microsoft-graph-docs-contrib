@@ -3,7 +3,7 @@ title: "Create plannerBucket"
 description: "Create a new plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

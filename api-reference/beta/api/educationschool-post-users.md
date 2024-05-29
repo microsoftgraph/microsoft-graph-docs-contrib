@@ -3,7 +3,7 @@ title: "Add educationUser to an educationSchool"
 description: "Add a user to a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

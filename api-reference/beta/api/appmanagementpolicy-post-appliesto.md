@@ -3,7 +3,7 @@ title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
 ## HTTP request
 
@@ -59,7 +59,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-The following is an example of the request to assign an appManagementPolicy to an application.
+The following example shows a request to assign an appManagementPolicy to an application.
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to assign an appManagementPolicy to a service principal.
+The following example shows a request to assign an appManagementPolicy to a service principal.
 
 
 
@@ -159,7 +159,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

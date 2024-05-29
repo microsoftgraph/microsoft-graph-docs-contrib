@@ -3,7 +3,7 @@ title: "Get started with the cloud communications API"
 description: "Use the cloud communications API in Microsoft Graph to build bots for your customers. Learn how to register your bot and then manage the state of your bot."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Register a bot with the cloud communications API
@@ -65,6 +65,6 @@ For more examples, see the [Communications samples repository](https://microsoft
 
 In the requests to our APIs, sensitive data shouldn't be sent in client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs are logged on the server side for diagnostics.
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)

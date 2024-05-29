@@ -3,7 +3,7 @@ title: "Start sync after uploading files to an educationSynchronizationProfile"
 description: "Verify the files uploaded to a specific school data synchronization profile in the tenant. If the verification is successful, synchronization starts on the profile. Otherwise, the response contains errors and warnings. If the response contains errors, the synchronization won't start. If the response contains only warnings, synchronization starts."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code. If unsuccessful, it
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

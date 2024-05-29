@@ -3,7 +3,7 @@ title: "deviceActionPayloadIntent enum type"
 description: "A list of possible intent values on the policy or app when executing this action on the managed device. For example, if the policy or app is intended to be removed on the managed device, then the intent value is remove, and if the policy or app already intended to remove through previous actions and is now intended to be restored on the managed device, then the intent value is restore"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

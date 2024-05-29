@@ -3,7 +3,7 @@ title: "Delete iosGeneralDeviceConfiguration"
 description: "Deletes a iosGeneralDeviceConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

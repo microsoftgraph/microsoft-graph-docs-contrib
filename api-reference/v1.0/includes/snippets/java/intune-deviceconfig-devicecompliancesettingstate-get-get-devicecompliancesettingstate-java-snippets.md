@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DeviceComplianceSettingState deviceComplianceSettingState = graphClient.deviceManagement().deviceCompliancePolicySettingStateSummaries("{deviceCompliancePolicySettingStateSummaryId}").deviceComplianceSettingStates("{deviceComplianceSettingStateId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DeviceComplianceSettingState result = graphClient.deviceManagement().deviceCompliancePolicySettingStateSummaries().byDeviceCompliancePolicySettingStateSummaryId("{deviceCompliancePolicySettingStateSummary-id}").deviceComplianceSettingStates().byDeviceComplianceSettingStateId("{deviceComplianceSettingState-id}").get();
+
 
 ```

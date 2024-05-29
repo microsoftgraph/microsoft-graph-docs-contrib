@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.workbook.worksheets.item.protection.protect.protect_post_request_body import ProtectPostRequestBody
+from msgraph_beta.generated.models.workbook_worksheet_protection_options import WorkbookWorksheetProtectionOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

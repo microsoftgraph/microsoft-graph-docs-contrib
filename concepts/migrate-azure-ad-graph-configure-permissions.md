@@ -1,11 +1,11 @@
 ---
 title: "Configure Azure AD Graph permissions for an app registration"
 description: "Before Azure AD Graph is retired, you can use these options to configure Azure AD Graph permissions for an app registration."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.topic: how-to
 zone_pivot_groups: configure-azure-ad-graph-permissions
 ms.date: 12/19/2023
@@ -31,16 +31,16 @@ Your app might still temporarily require Azure AD Graph permissions to access re
 The steps in this article require two sets of privileges:
 
 - Privileges to add permissions to an app registration
-- Privileges to grant those permissions to the app registration. 
+- Privileges to grant those permissions to the app registration
 
-A user with the *Global Administrator* role can do both, while a user with the *Application Administrator* or *Cloud Application Administrator* role can only add the permissions. To help you enforce separation of duties and least privilege access, separate the tasks of adding permissions and granting permissions to different users. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+A user with at least the *Privileged Role Administrator* role can do both, while a user with the *Application Administrator* or *Cloud Application Administrator* role can only add the permissions. To help you enforce separation of duties and least privilege access, separate the tasks of adding permissions and granting permissions to different users. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 <!-- start the msgraph page-->
 ::: zone pivot="msgraph"
 
 In addition, you need the following resources and privileges:
 
-- Run the HTTP requests in a tool of your choice, for example through a custom app, through [Graph Explorer](https://aka.ms/ge), or Postman.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to run the HTTP requests.
 - The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
 ## Use the Microsoft Graph applications API
@@ -265,7 +265,7 @@ Verify that your app registration has the Azure AD Graph API permissions you add
 
 ### Step 4: Grant admin consent
 
-Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator and grant admin consent for the permissions to the app registration.
+Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a privileged role administrator and grant admin consent for the permissions to the app registration.
 
 ## Grant API permissions without using the consent prompt
 
@@ -415,14 +415,14 @@ Welcome To Microsoft Graph!
 
 #### Step 4: Grant admin consent
 
-Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator and grant admin consent for the permissions to the app registration.
+Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a privileged role administrator and grant admin consent for the permissions to the app registration.
 
 ## Grant API permissions without using the consent prompt
 
 When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 -->
 
-## See also
+## Related content
 
 - [application object](/graph/api/resources/application)
 - [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)

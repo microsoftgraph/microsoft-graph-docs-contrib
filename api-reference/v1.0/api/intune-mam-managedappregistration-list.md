@@ -3,7 +3,7 @@ title: "List managedAppRegistrations"
 description: "List properties and relationships of the managedAppRegistration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

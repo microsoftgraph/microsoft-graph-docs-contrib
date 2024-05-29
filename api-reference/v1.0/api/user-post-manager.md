@@ -3,7 +3,8 @@ title: "Assign manager"
 description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 

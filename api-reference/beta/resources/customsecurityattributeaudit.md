@@ -3,7 +3,7 @@ title: "customSecurityAttributeAudit resource type"
 description: "Represents a custom security attribute audit log."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List customSecurityAttributeAudits](../api/auditlogroot-list-customsecurityattributeaudits.md)|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|List the custom security attribute audit items in the collection and their properties.|
-|[Get customSecurityAttributeAudit](../api/customsecurityattributeaudit-get.md)|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md)|Get a specific custom security attribute audit item and its properties.|
+|[List](../api/auditlogroot-list-customsecurityattributeaudits.md)|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|List the custom security attribute audit items in the collection and their properties.|
+|[Get](../api/customsecurityattributeaudit-get.md)|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md)|Get a specific custom security attribute audit item and its properties.|
 
 ## Properties
 |Property|Type|Description|

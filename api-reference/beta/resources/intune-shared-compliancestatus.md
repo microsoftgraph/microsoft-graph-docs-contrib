@@ -3,7 +3,7 @@ title: "complianceStatus enum type"
 description: "Intune Shared Compliancestatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

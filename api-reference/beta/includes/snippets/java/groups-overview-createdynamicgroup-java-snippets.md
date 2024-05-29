@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "Marketing department folks";
-group.displayName = "Marketing department";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("Unified");
-groupTypesList.add("DynamicMembership");
-group.groupTypes = groupTypesList;
-group.mailEnabled = true;
-group.mailNickname = "marketing";
-group.securityEnabled = false;
-group.membershipRule = "user.department -eq \"Marketing\"";
-group.membershipRuleProcessingState = "on";
+group.setDescription("Marketing department folks");
+group.setDisplayName("Marketing department");
+LinkedList<String> groupTypes = new LinkedList<String>();
+groupTypes.add("Unified");
+groupTypes.add("DynamicMembership");
+group.setGroupTypes(groupTypes);
+group.setMailEnabled(true);
+group.setMailNickname("marketing");
+group.setSecurityEnabled(false);
+group.setMembershipRule("user.department -eq \"Marketing\"");
+group.setMembershipRuleProcessingState("on");
+Group result = graphClient.groups().post(group);
 
-graphClient.groups()
-	.buildRequest()
-	.post(group);
 
 ```

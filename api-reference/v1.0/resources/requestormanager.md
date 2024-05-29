@@ -3,7 +3,7 @@ title: "requestorManager complex type"
 description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # requestorManager complex type
@@ -21,7 +21,7 @@ It's a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value 
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestorManager",
