@@ -69,4 +69,4 @@ Some of these resources support rich notifications (notifications with resource 
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
-[approvals]: /graph/api/resources/approvalItems
+[approvals]: /graph/api/resources/approvalItem

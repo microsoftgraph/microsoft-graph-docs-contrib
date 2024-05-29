@@ -29,7 +29,7 @@ In general, subscription operations require read permission to the resource. For
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Application                            | [alert][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## Related content
 
@@ -63,3 +63,4 @@ In general, subscription operations require read permission to the resource. For
 [onlineMeeting]: ./onlinemeeting.md
 [callTranscript]: ./calltranscript.md
 [callRecording]: ./callrecording.md
+[approvals]: ./approvalitem.md

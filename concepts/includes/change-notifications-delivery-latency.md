@@ -64,4 +64,4 @@ The following table lists the latency to expect between an event happening in th
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
 [calendar]: /graph/api/resources/calendar
-[approvals]: /graph/api/resources/approvalItems
+[approvals]: /graph/api/resources/approvalItem

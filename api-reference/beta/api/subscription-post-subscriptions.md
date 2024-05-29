@@ -33,6 +33,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported.  | Not supported.  | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> Any recording becomes available in the tenant. | Not supported. | Not supported. | OnlineMeetingRecording.Read.All |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/{onlineMeetingId}/recordings`  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported. | OnlineMeetingRecording.Read.All |
@@ -217,6 +218,7 @@ The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
+|[approvalItems](../resources/approvalItem.md)|`solution/approval/approvalItems`|
 |[callRecord](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[callRecording](../resources/callrecording.md)| `communications/onlineMeetings/getAllRecordings`, `communications/onlineMeetings/{onlineMeetingId}/recordings`, `users/{userId}/onlineMeetings/getAllRecordings`, `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllRecordings`|
 |[callTranscript](../resources/calltranscript.md) | `communications/onlineMeetings/getAllTranscripts`, `communications/onlineMeetings/{onlineMeetingId}/transcripts`, `users/{userId}/onlineMeetings/getAllTranscripts`, `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTranscripts`|

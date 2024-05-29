@@ -59,4 +59,4 @@ Currently, subscriptions are enabled for the following resources.
 [baseTask]: /graph/api/resources/basetask
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
-[approvals]: /graph/api/resources/approvals
+[approvals]: /graph/api/resources/approvalItem
