@@ -1,6 +1,6 @@
 ---
 title: "restorePointSearchResponse resource type"
-description: "Contains collection of Protection Unit for which no Restore Point found and a collection of Restore Point for Protection Units with protection history in specified time period."
+description: "Contains a collection of protection units for which no restore point is found and a collection of restore points for the protectionUnit objects with a protection history in the specified time period."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Contains collection of Protection Unit for which no [restorePoints](../resources/restorepoint.md) found and a collection of Restore Point for [protectionUnits](../resources/protectionunitbase.md) with protection history in specified time period.
+Contains a collection of protection units for which no [restorePoint](../resources/restorepoint.md) is found and a collection of restore points for the [protectionUnit](../resources/protectionunitbase.md) objects with a protection history in the specified time period.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|noResultProtectionUnitIds|String collection|Contains list of protection unit with restore points.|
-|searchResponseId|String|Unique identifier of the search response.|
-|searchResults|[restorePointSearchResult](../resources/restorepointsearchresult.md) collection|Collection of restore points.|
+|noResultProtectionUnitIds|String collection|Contains  alist of protection units with no restore points.|
+|searchResponseId|String|The unique identifier of the search response.|
+|searchResults|[restorePointSearchResult](../resources/restorepointsearchresult.md) collection|Contains a collection of restore points.|
 
 ## Relationships
 None.

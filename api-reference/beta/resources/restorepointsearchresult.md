@@ -1,6 +1,6 @@
 ---
 title: "restorePointSearchResult resource type"
-description: "Get a list of available Restore Points for provided Protection Units"
+description: "Contains a list of restorePoint objects associated with a protectionUnit."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,18 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of available [restorePoints](../resources/restorepoint.md) for provided [protectionUnits](../resources/protectionunitbase.md).
+Contains a list of [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPolicy](../resources/protectionpolicybase.md).|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.|
 
 ## JSON representation
 

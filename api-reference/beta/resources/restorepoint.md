@@ -1,6 +1,6 @@
 ---
 title: "restorePoint resource type"
-description: "Describes a restore point and its properties"
+description: "Represents the date and time when an artifact is protected by a protectionPolicy and can be restored."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -20,8 +20,8 @@ Represents the date and time when an [artifact](../resources/restoreartifactbase
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restorePoint](../api/backuprestoreroot-list-restorepoints.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
-|[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md).|
+|[List](../api/backuprestoreroot-list-restorepoints.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of [restorePoint](../resources/restorepoint.md) objects and their properties.|
+|[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search for the restore points associated with a [protectionUnit](../resources/protectionunitbase.md).|
 
 ## Properties
 
@@ -30,7 +30,7 @@ Represents the date and time when an [artifact](../resources/restoreartifactbase
 |id|String|ID of the restore point.|
 |protectionDateTime|DateTimeOffset|Date time when the restore point was created.|
 |expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of restore points. The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
 
 ### restorePointTags values
 

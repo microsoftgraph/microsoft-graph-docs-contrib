@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search restore points associated with [protectionUnit](../resources/protectionunitbase.md).
+Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
 
 ## Permissions
 
@@ -50,9 +50,9 @@ In the request body, supply a JSON representation of the following parameters.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The time of creation of the protection unit.  Required.|
-|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Describes the preference to get Restore Point. The possible values are `oldest`, `latest`. Optional.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Tag to get Restore Point type. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
+|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period.  Required.|
+|restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Indicates which restore point to return. The possible values are `oldest`, `latest`. Optional.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
 
 ### restorePointPreference values
 
