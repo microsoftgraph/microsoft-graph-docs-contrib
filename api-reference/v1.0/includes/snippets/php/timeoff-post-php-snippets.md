@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\TimeOff;
 use Microsoft\Graph\Generated\Models\TimeOffItem;
-use Microsoft\Graph\Generated\Models\Theme;
+use Microsoft\Graph\Generated\Models\ScheduleEntityTheme;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

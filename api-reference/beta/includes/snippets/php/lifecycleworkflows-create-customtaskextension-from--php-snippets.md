@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\CustomTaskExtension
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\CustomTaskExtension;
 use Microsoft\Graph\Beta\Generated\Models\LogicAppTriggerEndpointConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AzureAdTokenAuthentication;
 use Microsoft\Graph\Beta\Generated\Models\CustomExtensionClientConfiguration;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IdentityGovernance\CustomTaskExtensionCallbackConfiguration
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\CustomTaskExtensionCallbackConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\NotificationMessageTemplate;
-use Microsoft\Graph\Generated\Models\BrandingOptions;
+use Microsoft\Graph\Generated\Models\NotificationTemplateBrandingOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

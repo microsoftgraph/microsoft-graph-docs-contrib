@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\Restart\RestartRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\Restart\RestartPostRequestBody
+use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\Restart\RestartPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\SynchronizationJobRestartCriteria;
-use Microsoft\Graph\Beta\Generated\Models\ResetScope;
+use Microsoft\Graph\Beta\Generated\Models\SynchronizationJobRestartScope;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

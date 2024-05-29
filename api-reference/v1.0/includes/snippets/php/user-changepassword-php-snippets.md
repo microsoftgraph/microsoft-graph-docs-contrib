@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\ChangePassword\ChangePasswordPostRequestBody
+use Microsoft\Graph\Generated\Users\Item\ChangePassword\ChangePasswordPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

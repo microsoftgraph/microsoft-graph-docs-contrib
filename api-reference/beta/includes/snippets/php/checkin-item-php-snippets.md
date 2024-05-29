@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Checkin\CheckinPostRequestBody
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Checkin\CheckinPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

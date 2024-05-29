@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\ContentApproval
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\CatalogContent
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\FeatureUpdateCatalogEntry
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DeploymentSettings
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ContentApproval;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\CatalogContent;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\FeatureUpdateCatalogEntry;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
