@@ -76,7 +76,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Supports `$expand`.|
 |federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Supports `$expand`.|
-|rootDomain|[domain](domain.md)| Root domain of a sub domain. Read-only, Nullable. Supports `$expand`.|
+|rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
