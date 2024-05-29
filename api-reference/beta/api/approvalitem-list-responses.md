@@ -3,7 +3,7 @@ title: "List responses"
 description: "Get the approvalItemResponse resources from the responses navigation property."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: apiPageType
 ---
 

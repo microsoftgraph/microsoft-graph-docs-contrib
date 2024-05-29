@@ -3,7 +3,7 @@ title: "approvalItem: cancel"
 description: "Cancel the approval item. The owner of the approval can trigger this endpoint."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: apiPageType
 ---
 

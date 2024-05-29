@@ -3,7 +3,7 @@ title: "approvalSolution: provision"
 description: "Provisions ApprovalSolution on behalf of the tenant."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get approvalSolution"
 description: "Read the provisioning state of approvalSolution for a tenant."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: apiPageType
 ---
 
