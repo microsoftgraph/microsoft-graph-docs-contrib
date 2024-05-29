@@ -72,7 +72,8 @@ Content-type: application/json
   "isDefault": true,
   "supportedServices": [
     "Email",
-    "OfficeCommunicationsOnline"
+    "OfficeCommunicationsOnline",
+    "CustomUrlDomain"
   ]
 }
 ```

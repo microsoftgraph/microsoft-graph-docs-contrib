@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\OnPremisesDirectorySynchronization;
 use Microsoft\Graph\Beta\Generated\Models\OnPremisesDirectorySynchronizationConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\OnPremisesAccidentalDeletionPrevention;
-use Microsoft\Graph\Beta\Generated\Models\SynchronizationPreventionType;
+use Microsoft\Graph\Beta\Generated\Models\OnPremisesDirectorySynchronizationDeletionPreventionType;
 use Microsoft\Graph\Beta\Generated\Models\OnPremisesDirectorySynchronizationFeature;
 
 

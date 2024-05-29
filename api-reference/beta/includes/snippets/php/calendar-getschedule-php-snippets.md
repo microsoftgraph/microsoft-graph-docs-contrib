@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Users\Item\Calendar\GetSchedule\GetScheduleRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\Users\Item\Calendar\GetSchedule\GetSchedulePostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\Calendar\GetSchedule\GetSchedulePostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 

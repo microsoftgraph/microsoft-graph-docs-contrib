@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\OnlineMeetings\Item\SendVirtualAppointmentSms\SendVirtualAppointmentSmsPostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\OnlineMeetings\Item\SendVirtualAppointmentSms\SendVirtualAppointmentSmsPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\AttendeeNotificationInfo;
-use Microsoft\Graph\Beta\Generated\Models\MessageType;
+use Microsoft\Graph\Beta\Generated\Models\VirtualAppointmentMessageType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

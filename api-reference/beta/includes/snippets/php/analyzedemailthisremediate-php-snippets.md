@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Security\Collaboration\AnalyzedEmails\MicrosoftGraphSecurityRemediate\RemediatePostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\Security\Severity;
-use Microsoft\Graph\Beta\Generated\Models\Security\Action;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\AnalyzedEmail
+use Microsoft\Graph\Beta\Generated\Security\Collaboration\AnalyzedEmails\MicrosoftGraphSecurityRemediate\RemediatePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Security\RemediationSeverity;
+use Microsoft\Graph\Beta\Generated\Models\Security\RemediationAction;
+use Microsoft\Graph\Beta\Generated\Models\Security\AnalyzedEmail;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
