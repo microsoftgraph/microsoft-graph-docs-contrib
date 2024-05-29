@@ -1,6 +1,6 @@
 ---
 title: "retentionSetting resource type"
-description: "Details of all the retention settings for the Protection Policy"
+description: "Contains the details of the retention settings for a protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of all the retention settings for the Protection Policy.
+Contains the details of the retention settings for a protection policy.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|interval|String|Frequency of the backup.|
-|period|Duration|Period to retain the protected data for single Microsoft 365 service.|
+|interval|String|The frequency of the backup.|
+|period|Duration|The period of time to retain the protected data for a single Microsoft 365 service.|
 
 ## Relationships
 

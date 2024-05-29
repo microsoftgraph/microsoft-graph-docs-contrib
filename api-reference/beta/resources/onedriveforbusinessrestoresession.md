@@ -45,8 +45,8 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |activating|All artifacts are scheduled.|
 |active|All or any restore artifacts are scheduled or in progress.|
 |completedWithError|Some artifacts failed to restore, and some succeeded.|
-|completed| All restore artifacts are succeeded.|
-|failed| All restore artifacts are failed.|
+|completed| All restore artifacts successfully restored.|
+|failed| All restore artifacts failed to restore.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

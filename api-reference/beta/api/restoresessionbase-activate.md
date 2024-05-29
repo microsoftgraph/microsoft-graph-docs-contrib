@@ -1,6 +1,6 @@
 ---
 title: "restoreSessionBase: activate"
-description: "Activates a draft restore session"
+description: "Activate a draft restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activates a draft [restoreSessionBase](../resources/restoresessionbase.md) object identified by an ID.
+Activate a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
 
 ## Permissions
 
