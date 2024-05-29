@@ -48,7 +48,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
-**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
+>**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 
 ## Request body
 
@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. Default is `false`. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. Valid on folder items. |
 
-**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
+>**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 
 ## Response
 
