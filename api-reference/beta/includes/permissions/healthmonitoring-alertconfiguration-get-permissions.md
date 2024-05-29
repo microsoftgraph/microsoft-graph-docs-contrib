@@ -8,6 +8,6 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|HealthMonitoringAlertConfig.Read.All|HealthMonitoringAlertConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|HealthMonitoringAlertConfig.Read.All|Not available.|
+|Application|HealthMonitoringAlertConfig.Read.All|HealthMonitoringAlertConfig.ReadWrite.All|
 
 

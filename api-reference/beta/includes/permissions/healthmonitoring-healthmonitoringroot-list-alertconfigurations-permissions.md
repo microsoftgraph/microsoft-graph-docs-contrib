@@ -6,8 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|HealthMonitoringAlertConfig.Read.All|Not available.|
+|Delegated (work or school account)|HealthMonitoringAlertConfig.Read.All|HealthMonitoringAlertConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|HealthMonitoringAlertConfig.Read.All|Not available.|
-
+|Application|HealthMonitoringAlertConfig.Read.All|HealthMonitoringAlertConfig.ReadWrite.All|
 

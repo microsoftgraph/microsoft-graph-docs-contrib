@@ -72,20 +72,7 @@ PATCH https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{alertId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.alert",
-  "alertType": "String",
-  "scenario": "String",
-  "category": "String",
-  "state": "String",
-  "enrichment": {
-    "@odata.type": "microsoft.graph.healthMonitoring.enrichment"
-  },
-  "signals": {
-    "@odata.type": "microsoft.graph.healthMonitoring.signals"
-  },
-  "documentation": {
-    "@odata.type": "microsoft.graph.healthMonitoring.documentation"
-  }
+  "state": "String"
 }
 ```
 
