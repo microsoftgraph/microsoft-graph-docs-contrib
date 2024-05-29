@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\EducationRubricOutcome;
 use Microsoft\Graph\Beta\Generated\Models\RubricQualityFeedbackModel;
 use Microsoft\Graph\Beta\Generated\Models\EducationItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\RubricQualitySelectedColumnModel;
 
 

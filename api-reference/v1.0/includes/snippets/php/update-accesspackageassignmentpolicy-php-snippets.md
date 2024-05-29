@@ -10,7 +10,7 @@ use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
 use Microsoft\Graph\Generated\Models\AllowedTargetScope;
 use Microsoft\Graph\Generated\Models\SubjectSet;
 use Microsoft\Graph\Generated\Models\ExpirationPattern;
-use Microsoft\Graph\Generated\Models\Type;
+use Microsoft\Graph\Generated\Models\ExpirationPatternType;
 use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequestorSettings;
 use Microsoft\Graph\Generated\Models\AccessPackageAssignmentApprovalSettings;
 use Microsoft\Graph\Generated\Models\AccessPackageApprovalStage;

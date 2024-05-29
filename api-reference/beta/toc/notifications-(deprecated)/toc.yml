@@ -5,5 +5,5 @@ items:
   items:
   - name: Notification
     href: ../../resources/projectrome-notification.md
-  - name: Create notification
+  - name: Create and send a notification (deprecated)
     href: ../../api/user-post-notifications.md

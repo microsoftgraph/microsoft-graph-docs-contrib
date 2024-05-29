@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\ClassGroupProvisioningFlow
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\ClassGroupConfiguration
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\AdditionalClassGroupAttributes
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\AdditionalClassGroupOptions
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\EnrollmentMappings
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\SectionRoleReferenceValue
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\ClassGroupProvisioningFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\ClassGroupConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalClassGroupAttributes;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalClassGroupOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\EnrollmentMappings;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SectionRoleReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
