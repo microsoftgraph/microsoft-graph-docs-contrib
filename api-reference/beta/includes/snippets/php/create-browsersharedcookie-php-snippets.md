@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\BrowserSharedCookie;
-use Microsoft\Graph\Beta\Generated\Models\SourceEnvironment;
+use Microsoft\Graph\Beta\Generated\Models\BrowserSharedCookieSourceEnvironment;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

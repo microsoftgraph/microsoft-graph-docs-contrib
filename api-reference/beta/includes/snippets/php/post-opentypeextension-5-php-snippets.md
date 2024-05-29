@@ -10,7 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\Conversation;
 use Microsoft\Graph\Beta\Generated\Models\ConversationThread;
 use Microsoft\Graph\Beta\Generated\Models\Post;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\Extension;
 use Microsoft\Graph\Beta\Generated\Models\OpenTypeExtension;
 

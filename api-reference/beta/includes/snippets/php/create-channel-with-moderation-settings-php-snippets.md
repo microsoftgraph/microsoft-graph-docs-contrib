@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Channel;
-use Microsoft\Graph\Beta\Generated\Models\MembershipType;
+use Microsoft\Graph\Beta\Generated\Models\ChannelMembershipType;
 use Microsoft\Graph\Beta\Generated\Models\ChannelModerationSettings;
 use Microsoft\Graph\Beta\Generated\Models\UserNewMessageRestriction;
 use Microsoft\Graph\Beta\Generated\Models\ReplyRestriction;

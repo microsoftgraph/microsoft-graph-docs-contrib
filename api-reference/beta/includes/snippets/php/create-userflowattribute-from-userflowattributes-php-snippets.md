@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttribute;
-use Microsoft\Graph\Beta\Generated\Models\DataType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeDataType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
