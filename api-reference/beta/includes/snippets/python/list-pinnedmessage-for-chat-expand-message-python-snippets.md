@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.chats.item.pinned_messages.pinned_messages_request_builder import PinnedMessagesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.chats.item.pinned_messages.pinned_messages_request_builder import PinnedMessagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = PinnedMessagesRequestBuilder.PinnedMessagesRequestBuilderGetQuery
 		expand = ["message"],
 )
 
-request_configuration = PinnedMessagesRequestBuilder.PinnedMessagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.m365_apps_installation_options import M365AppsInstallationOptions
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.m365_apps_installation_options import M365AppsInstallationOptions
+from msgraph_beta.generated.models.apps_update_channel_type import AppsUpdateChannelType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

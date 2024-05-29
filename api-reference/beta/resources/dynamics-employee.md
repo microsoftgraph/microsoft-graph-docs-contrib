@@ -22,8 +22,8 @@ Represents an employee in Dynamics 365 Business Central.
 | Method                                              | Return Type|Description               |
 |:----------------------------------------------------|:-----------|:-------------------------|
 |[Get employee](../api/dynamics-employee-get.md)      |employee  |Get an employee object.   |
-|[Post employee](../api/dynamics-create-employee.md)  |employee  |Create an employee object.|
-|[Patch employee](../api/dynamics-employee-update.md) |employee  |Update an employee object.|
+|[Create employee](../api/dynamics-create-employee.md)  |employee  |Create an employee object.|
+|[Update employee](../api/dynamics-employee-update.md) |employee  |Update an employee object.|
 |[Delete employee](../api/dynamics-employee-delete.md)|none       |Delete an employee object.|
 
 ## Properties

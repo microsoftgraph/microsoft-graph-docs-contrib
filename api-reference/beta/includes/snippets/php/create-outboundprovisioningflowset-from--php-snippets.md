@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\OutboundProvisioningFlowSet;
-use Microsoft\Graph\Generated\Models\BasicFilter;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\OutboundProvisioningFlowSet;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\BasicFilter;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\FilterOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

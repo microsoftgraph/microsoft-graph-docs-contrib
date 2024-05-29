@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Message;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
+use Microsoft\Graph\Generated\Models\InferenceClassificationType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

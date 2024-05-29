@@ -8,45 +8,45 @@ items:
     items:
     - name: Browser shared cookie
       href: ../../resources/browsersharedcookie.md
-    - name: List browserSharedCookies
+    - name: List
       href: ../../api/browsersitelist-list-sharedcookies.md
-    - name: Create browserSharedCookie
+    - name: Create
       href: ../../api/browsersitelist-post-sharedcookies.md
-    - name: Get browserSharedCookie
+    - name: Get
       href: ../../api/browsersharedcookie-get.md
-    - name: Update browserSharedCookie
+    - name: Update
       href: ../../api/browsersharedcookie-update.md
-    - name: Delete browserSharedCookie
+    - name: Delete
       href: ../../api/browsersitelist-delete-sharedcookies.md
   - name: Browser site
     items:
     - name: Browser site
       href: ../../resources/browsersite.md
-    - name: List browserSites
+    - name: List
       href: ../../api/browsersitelist-list-sites.md
-    - name: Create browserSite
+    - name: Create
       href: ../../api/browsersitelist-post-sites.md
-    - name: Get browserSite
+    - name: Get
       href: ../../api/browsersite-get.md
-    - name: Update browserSite
+    - name: Update
       href: ../../api/browsersite-update.md
-    - name: Delete browserSite
+    - name: Delete
       href: ../../api/browsersitelist-delete-sites.md
   - name: Browser site list
     items:
     - name: Browser site list
       href: ../../resources/browsersitelist.md
-    - name: List browserSiteLists
+    - name: List
       href: ../../api/internetexplorermode-list-sitelists.md
-    - name: Create browserSiteList
+    - name: Create
       href: ../../api/internetexplorermode-post-sitelists.md
-    - name: Get browserSiteList
+    - name: Get
       href: ../../api/browsersitelist-get.md
-    - name: Update browserSiteList
+    - name: Update
       href: ../../api/browsersitelist-update.md
-    - name: Delete browserSiteList
+    - name: Delete
       href: ../../api/internetexplorermode-delete-sitelists.md
-    - name: Publish a browserSiteList
+    - name: Publish
       href: ../../api/browsersitelist-publish.md
   - name: Complex types
     items:
@@ -68,9 +68,9 @@ items:
     items:
     - name: Cloud PC
       href: ../../resources/cloudpc.md
-    - name: List cloudPCs
+    - name: List
       href: ../../api/virtualendpoint-list-cloudpcs.md
-    - name: Get cloudPC
+    - name: Get
       href: ../../api/cloudpc-get.md
     - name: End grace period
       href: ../../api/cloudpc-endgraceperiod.md
@@ -86,63 +86,63 @@ items:
     items:
     - name: Cloud PC audit event
       href: ../../resources/cloudpcauditevent.md
-    - name: List auditEvents
+    - name: List
       href: ../../api/virtualendpoint-list-auditevents.md
-    - name: Get cloudPcAuditEvent
+    - name: Get
       href: ../../api/cloudpcauditevent-get.md
-    - name: getAuditActivityTypes function
+    - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
       href: ../../resources/cloudpconpremisesconnection.md
-    - name: List onPremisesConnections
+    - name: List
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
-    - name: Get cloudPcOnPremisesConnection
+    - name: Get
       href: ../../api/cloudpconpremisesconnection-get.md
-    - name: Create cloudPcOnPremisesConnection
+    - name: Create
       href: ../../api/virtualendpoint-post-onpremisesconnections.md
-    - name: Update cloudPcOnPremisesConnection
+    - name: Update
       href: ../../api/cloudpconpremisesconnection-update.md
-    - name: Delete cloudPcOnPremisesConnection
+    - name: Delete
       href: ../../api/cloudpconpremisesconnection-delete.md
-    - name: RunHealthChecks of a cloudPcOnPremisesConnection
+    - name: Run health checks
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
   - name: Cloud PC device image
     items:
     - name: Cloud PC device image
       href: ../../resources/cloudpcdeviceimage.md
-    - name: List deviceImages
+    - name: List
       href: ../../api/virtualendpoint-list-deviceimages.md
-    - name: Get cloudPcDeviceImage
+    - name: Get
       href: ../../api/cloudpcdeviceimage-get.md
-    - name: Create cloudPcDeviceImage
+    - name: Create
       href: ../../api/virtualendpoint-post-deviceimages.md
-    - name: Delete cloudPcDeviceImage
+    - name: Delete
       href: ../../api/cloudpcdeviceimage-delete.md
-    - name: getSourceImages
+    - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
   - name: Cloud PC gallery image
     items:
     - name: Cloud PC gallery image
       href: ../../resources/cloudpcgalleryimage.md
-    - name: List galleryImages
+    - name: List
       href: ../../api/virtualendpoint-list-galleryimages.md
-    - name: Get cloudPcGalleryImage
+    - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
   - name: Cloud PC provisioning policy
     items:
     - name: Cloud PC provisioning policy
       href: ../../resources/cloudpcprovisioningpolicy.md
-    - name: List provisioningPolicies
+    - name: List
       href: ../../api/virtualendpoint-list-provisioningpolicies.md
-    - name: Create cloudPcProvisioningPolicy
+    - name: Create
       href: ../../api/virtualendpoint-post-provisioningpolicies.md
-    - name: Get cloudPcProvisioningPolicy
+    - name: Get
       href: ../../api/cloudpcprovisioningpolicy-get.md
-    - name: Update cloudPcProvisioningPolicy
+    - name: Update
       href: ../../api/cloudpcprovisioningpolicy-update.md
-    - name: Delete cloudPcProvisioningPolicy
+    - name: Delete
       href: ../../api/cloudpcprovisioningpolicy-delete.md
     - name: Assign
       href: ../../api/cloudpcprovisioningpolicy-assign.md
@@ -150,15 +150,15 @@ items:
     items:
     - name: Cloud PC user setting
       href: ../../resources/cloudpcusersetting.md
-    - name: List userSettings
+    - name: List
       href: ../../api/virtualendpoint-list-usersettings.md
-    - name: Create cloudPcUserSetting
+    - name: Create
       href: ../../api/virtualendpoint-post-usersettings.md
-    - name: Get cloudPcUserSetting
+    - name: Get
       href: ../../api/cloudpcusersetting-get.md
-    - name: Update cloudPcUserSetting
+    - name: Update
       href: ../../api/cloudpcusersetting-update.md
-    - name: Delete cloudPcUserSetting
+    - name: Delete
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
@@ -191,13 +191,13 @@ items:
     items:
     - name: Print connector
       href: ../../resources/printconnector.md
-    - name: List connectors
+    - name: List
       href: ../../api/print-list-connectors.md
-    - name: Get connector
+    - name: Get
       href: ../../api/printconnector-get.md
-    - name: Update connector
+    - name: Update
       href: ../../api/printconnector-update.md
-    - name: Delete connector
+    - name: Delete
       href: ../../api/printconnector-delete.md
   - name: Print document
     items:
@@ -213,7 +213,7 @@ items:
       href: ../../resources/printjob.md
     - name: Get
       href: ../../api/printjob-get.md
-    - name: Create
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: Update
       href: ../../api/printjob-update.md
@@ -223,23 +223,23 @@ items:
       href: ../../api/printjob-cancel.md
     - name: Abort
       href: ../../api/printjob-abort.md
-    - name: Redirect (to another printer)
+    - name: Redirect
       href: ../../api/printjob-redirect.md
   - name: Print operation
     items:
     - name: Print operation
       href: ../../resources/printoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Print service
     items:
     - name: Print service
       href: ../../resources/printservice.md
-    - name: List services
+    - name: List
       href: ../../api/print-list-services.md
-    - name: Get service
+    - name: Get
       href: ../../api/printservice-get.md
-    - name: List endpoints
+    - name: List a service's endpoints
       href: ../../api/printservice-list-endpoints.md
   - name: Print service endpoint
     items:
@@ -269,9 +269,9 @@ items:
     items:
     - name: Print task trigger
       href: ../../resources/printtasktrigger.md
-    - name: List
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Get
+    - name: Get task trigger
       href: ../../api/printtasktrigger-get.md
   - name: Printer
     items:
@@ -285,27 +285,27 @@ items:
       href: ../../api/printer-update.md
     - name: Delete
       href: ../../api/printer-delete.md
-    - name: restoreFactoryDefaults
+    - name: Restore factory defaults
       href: ../../api/printer-restorefactorydefaults.md
-    - name: List jobs
+    - name: List print jobs
       href: ../../api/printer-list-jobs.md
-    - name: Create job
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: List connectors
       href: ../../api/printer-list-connectors.md
-    - name: List shares
+    - name: List printerShares
       href: ../../api/printer-list-shares.md
-    - name: List taskTriggers
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Create taskTrigger
+    - name: Create task trigger
       href: ../../api/printer-post-tasktriggers.md
-    - name: Delete taskTrigger
+    - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
   - name: Printer create operation
     items:
     - name: Printer create operation
       href: ../../resources/printercreateoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Printer share
     items:
@@ -319,21 +319,21 @@ items:
       href: ../../api/printershare-update.md
     - name: Delete
       href: ../../api/printershare-delete.md
-    - name: List jobs
+    - name: List jobs for a printer share
       href: ../../api/printershare-list-jobs.md
-    - name: Create job
+    - name: Create job for a printer share
       href: ../../api/printershare-post-jobs.md
-    - name: List allowedUsers
+    - name: List allowed users
       href: ../../api/printershare-list-allowedusers.md
-    - name: Add allowedUser
+    - name: Create allowed user
       href: ../../api/printershare-post-allowedusers.md
-    - name: Remove allowedUser
+    - name: Delete allowed user
       href: ../../api/printershare-delete-alloweduser.md
-    - name: List allowedGroups
+    - name: List allowed groups
       href: ../../api/printershare-list-allowedgroups.md
-    - name: Add allowedGroup
+    - name: Create allowed group
       href: ../../api/printershare-post-allowedgroups.md
-    - name: Remove allowedGroup
+    - name: Delete allowed group
       href: ../../api/printershare-delete-allowedgroup.md
   - name: Reports
     items:
@@ -341,9 +341,9 @@ items:
       items:
       - name: Print usage by printer
         href: ../../resources/printusagebyprinter.md
-      - name: List (daily)
+      - name: List daily reports by printer
         href: ../../api/reportroot-list-dailyprintusagebyprinter.md
-      - name: List (monthly)
+      - name: List monthly reports by printer
         href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
       - name: Get
         href: ../../api/printUsageByPrinter-get.md
@@ -351,9 +351,9 @@ items:
       items:
       - name: Print usage by user
         href: ../../resources/printusagebyuser.md
-      - name: List (daily)
+      - name: List daily reports by user
         href: ../../api/reportroot-list-dailyprintusagebyuser.md
-      - name: List (monthly)
+      - name: List monthly reports by user
         href: ../../api/reportroot-list-monthlyprintusagebyuser.md
       - name: Get
         href: ../../api/printusagebyuser-get.md
@@ -3201,7 +3201,7 @@ items:
     items:
     - name: Service announcement
       href: ../../resources/serviceannouncement.md
-    - name: List healthOverviews
+    - name: List health overviews
       href: ../../api/serviceannouncement-list-healthoverviews.md
     - name: List issues
       href: ../../api/serviceannouncement-list-issues.md
@@ -3211,19 +3211,19 @@ items:
     items:
     - name: Service announcement attachment
       href: ../../resources/serviceannouncementattachment.md
-    - name: Get serviceAnnouncementAttachment
+    - name: Get
       href: ../../api/serviceannouncementattachment-get.md
   - name: Service health
     items:
     - name: Service health
       href: ../../resources/servicehealth.md
-    - name: Get serviceHealth
+    - name: Get service health
       href: ../../api/servicehealth-get.md
   - name: Service health issue
     items:
     - name: Service health issue
       href: ../../resources/servicehealthissue.md
-    - name: Get serviceHealthIssue
+    - name: Get issue
       href: ../../api/servicehealthissue-get.md
     - name: Get post-incident review report
       href: ../../api/servicehealthissue-incidentreport.md
@@ -3231,21 +3231,21 @@ items:
     items:
     - name: Service update message
       href: ../../resources/serviceupdatemessage.md
-    - name: Get serviceUpdateMessage
+    - name: Get message
       href: ../../api/serviceupdatemessage-get.md
-    - name: markRead
+    - name: Mark read status
       href: ../../api/serviceupdatemessage-markread.md
-    - name: markUnread
+    - name: Mark unread status
       href: ../../api/serviceupdatemessage-markunread.md
-    - name: archive
+    - name: Archive status
       href: ../../api/serviceupdatemessage-archive.md
-    - name: unarchive
+    - name: Unarchive status
       href: ../../api/serviceupdatemessage-unarchive.md
-    - name: favorite
+    - name: Mark favorite status
       href: ../../api/serviceupdatemessage-favorite.md
-    - name: unfavorite
+    - name: Remove favorite status
       href: ../../api/serviceupdatemessage-unfavorite.md
-    - name: List attachments
+    - name: List message attachments
       href: ../../api/serviceupdatemessage-list-attachments.md
   - name: Complex types
     items:

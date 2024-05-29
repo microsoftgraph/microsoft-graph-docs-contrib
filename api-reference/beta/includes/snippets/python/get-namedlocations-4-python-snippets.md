@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity.conditional_access.named_locations.named_locations_request_builder import NamedLocationsRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.conditional_access.named_locations.named_locations_request_builder import NamedLocationsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = NamedLocationsRequestBuilder.NamedLocationsRequestBuilderGetQuery
 		filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')",
 )
 
-request_configuration = NamedLocationsRequestBuilder.NamedLocationsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

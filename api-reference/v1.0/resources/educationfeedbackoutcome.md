@@ -17,7 +17,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 

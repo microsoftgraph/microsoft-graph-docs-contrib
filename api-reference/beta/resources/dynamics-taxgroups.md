@@ -20,10 +20,10 @@ Represents a taxGroup object in Dynamics 365 Business Central.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get taxGroup](../api/dynamics-taxgroups-get.md)|taxGroup|Get a tax group object.|
-|[Post taxGroup](../api/dynamics-create-taxgroups.md)|taxGroup|Create a tax group object.|
-|[Patch taxGroup](../api/dynamics-taxgroups-update.md)|taxGroup|Update a tax group object.|
-|[Delete taxGroup](../api/dynamics-taxgroups-delete.md)|None|Delete a tax group object.|
+|[Get tax groups](../api/dynamics-taxgroups-get.md)|taxGroup|Get a tax group object.|
+|[Create tax groups](../api/dynamics-create-taxgroups.md)|taxGroup|Create a tax group object.|
+|[Update tax groups](../api/dynamics-taxgroups-update.md)|taxGroup|Update a tax group object.|
+|[Delete tax groups](../api/dynamics-taxgroups-delete.md)|None|Delete a tax group object.|
 
 ## Properties
 | Property	   | Type	|Description|
