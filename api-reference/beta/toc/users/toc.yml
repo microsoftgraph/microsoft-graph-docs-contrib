@@ -392,33 +392,33 @@ items:
 - name: Approvals
   items:
   - name: Approval solution
-    href: resources/approvalsolution.md
+    href: ../../resources/approvalsolution.md
   - name: Approval item
-    href: resources/approvalitem.md
+    href: ../../resources/approvalitem.md
   - name: Provision approval solution
-    href: api/approvalsolution-provision.md
+    href: ../../api/approvalsolution-provision.md
   - name: Get approval solution
-    href: api/approvalsolution-get.md
+    href: ../../api/approvalsolution-get.md
   - name: Create approval item
-    href: api/approvalsolution-post-approvalitems.md
+    href: ../../api/approvalsolution-post-approvalitems.md
   - name: Get approval operation
-    href: api/approvaloperation-get.md
+    href: ../../api/approvaloperation-get.md
   - name: Get approval item
-    href: api/approvalitem-get.md
+    href: ../../api/approvalitem-get.md
   - name: List approval items
-    href: api/approvalsolution-list-approvalitems.md
+    href: ../../api/approvalsolution-list-approvalitems.md
   - name: List approval item requests
-    href: api/approvalitem-list-requests.md
+    href: ../../api/approvalitem-list-requests.md
   - name: List approval item responses
-    href: api/approvalitem-list-responses.md
+    href: ../../api/approvalitem-list-responses.md
   - name: Get approval item request
-    href: api/approvalitemrequest-get.md
+    href: ../../api/approvalitemrequest-get.md
   - name: Get approval item response
-    href: api/approvalitemresponse-get.md
+    href: ../../api/approvalitemresponse-get.md
   - name: Post approval item response
-    href: api/approvalitem-post-responses.md
+    href: ../../api/approvalitem-post-responses.md
   - name: Cancel approval item
-    href: api/approvalitem-cancel.md
+    href: ../../api/approvalitem-cancel.md
 - name: To-do task
   items:
   - name: To-do task
