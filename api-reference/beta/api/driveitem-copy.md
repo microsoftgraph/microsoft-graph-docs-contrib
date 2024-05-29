@@ -48,7 +48,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
-**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
+>**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 
 ## Request body
 
@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. Default is `false`. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. Valid on folder items. |
 
-**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
+>**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 
 ## Response
 
@@ -76,7 +76,7 @@ The new copy of the file is named `contoso plan (copy).txt`.
 #### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-1", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -145,7 +145,7 @@ The following example copies the children in a folder identified by `{item-id}` 
 The new copy of the file is named `contoso plan (copy).txt`. The `childrenOnly` Boolean parameter is set to `true`.
 
 #### Request 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-2", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -156,7 +156,7 @@ Content-Type: application/json
     "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
-  "name": "contoso plan (copy).txt".
+  "name": "contoso plan (copy).txt",
   "childrenOnly": true
 }
 ```
