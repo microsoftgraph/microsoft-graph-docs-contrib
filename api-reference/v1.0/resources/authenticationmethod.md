@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethod resource type"
-description: "Represents an authentication method registered to a user."
+description: "An abstract type that represents an authentication method registered to a user."
 ms.localizationpriority: medium
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents an authentication method registered to a user. An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.
+An abstract type that represents an authentication method registered to a user. An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.
 
 The **authenticationMethod** resource type is an abstract type that's inherited by the following derived types:
 
@@ -32,7 +32,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
+| [List](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
 
 ## Properties
 

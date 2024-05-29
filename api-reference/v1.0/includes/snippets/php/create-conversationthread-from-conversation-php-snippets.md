@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ConversationThread;
 use Microsoft\Graph\Generated\Models\Post;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

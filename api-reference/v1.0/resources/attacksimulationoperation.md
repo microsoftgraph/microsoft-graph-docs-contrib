@@ -19,7 +19,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get attackSimulationOperation](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a long-running operation request for a tenant.|
+|[Get](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a long-running operation request for a tenant.|
 
 ## Properties
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.trustframework.keysets.item.generate_key.generate_key_post_request_body import GenerateKeyPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.trustframework.keysets.item.generate_key.generate_key_post_request_body import GenerateKeyPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -24,11 +24,11 @@ Represents a timecard entry in the schedule.
 |[Get](../api/timecard-get.md) | [timeCard](timecard.md) | Get a **timecard** object by ID.|
 |[Replace](../api/timecard-replace.md) | None | Replace a **timecard** object.|
 |[Delete](../api/timecard-delete.md) | None | Delete a **timecard** object from the schedule.|
-|[clockIn](../api/timecard-clockin.md) | [timeCard](timecard.md) | Clock in to start a **timecard**.|
-|[clockOut](../api/timecard-clockout.md) | None | Clock out to end an open **timecard**.|
-|[startBreak](../api/timecard-startbreak.md) | None | Start a **timeCardBreak** in a specific **timecard**.|
-|[endBreak](../api/timecard-endbreak.md) | None | End the open **timeCardBreak** in a specific **timecard**.|
-|[confirmTimeCard](../api/timecard-confirm.md) | None | Confirm a **timecard** record.|
+|[Clock in](../api/timecard-clockin.md) | [timeCard](timecard.md) | Clock in to start a **timecard**.|
+|[Clock out](../api/timecard-clockout.md) | None | Clock out to end an open **timecard**.|
+|[Start break](../api/timecard-startbreak.md) | None | Start a **timeCardBreak** in a specific **timecard**.|
+|[End break](../api/timecard-endbreak.md) | None | End the open **timeCardBreak** in a specific **timecard**.|
+|[Confirm](../api/timecard-confirm.md) | None | Confirm a **timecard** record.|
 
 ## Properties
 |Property               |Type           |Description                                                                |

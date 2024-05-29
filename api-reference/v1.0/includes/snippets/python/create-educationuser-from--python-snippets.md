@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.education_user import EducationUser
+from msgraph.generated.models.education_user_role import EducationUserRole
+from msgraph.generated.models.education_external_source import EducationExternalSource
 from msgraph.generated.models.physical_address import PhysicalAddress
 from msgraph.generated.models.education_student import EducationStudent
 from msgraph.generated.models.education_teacher import EducationTeacher
