@@ -1076,7 +1076,9 @@
       "overview": "../../resources/social-overview.md",
       "resources": [
         "person",
-        "peopleAdminSettings"
+        "peopleAdminSettings",
+        "insightsSettings",
+        "pronounsSettings"
       ],
       "childNodes": [
         {
