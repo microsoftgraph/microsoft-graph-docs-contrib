@@ -61,4 +61,4 @@ ms.localizationpriority: high
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
-[approvals]: /graph/api/resources/approvals
+[approvals]: /graph/api/resources/approvalItems
