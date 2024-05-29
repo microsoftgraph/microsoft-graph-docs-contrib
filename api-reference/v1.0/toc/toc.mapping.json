@@ -1533,6 +1533,7 @@
               "resources": [
                 "microsoft.graph.callRecords.callRecord",
                 "microsoft.graph.callRecords.directRoutingLogRow",
+                "microsoft.graph.callRecords.participant",
                 "microsoft.graph.callRecords.pstnCallLogRow",
                 "microsoft.graph.callRecords.session"
               ]

@@ -22,6 +22,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
 
+### Teamwork and communications | Calls and online meetings
+
+Get the list of [callRecord](/graph/api/resources/callrecords-callrecord) objects and their properties and the associated [participant](/graph/api/resources/callrecords-participant) objects for each **callRecord** using the following APIs:
+
+- [List callRecords](/graph/api/callrecords-cloudcommunications-list-callrecords)
+- [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2)
+
+The following properties are deprecated:
+
+- **organizer** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **organizer_v2** relationship.
+- **participants** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **participants_v2** relationship.
+- **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
+
 ## May 2024: New in preview only
 
 ### Change notifications
