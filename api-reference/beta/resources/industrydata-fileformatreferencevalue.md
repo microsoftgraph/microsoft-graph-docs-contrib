@@ -13,19 +13,19 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a `RefFileFormat` entry in a collection of [referenceDefinition](industrydata-referencedefinition.md) objects.
+Represents a pointer to a `RefFileFormat` entry in a collection of [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) objects.
 
 Inherits from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| code | String | The code of the desired [referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).The possible values are: `schoolDataSyncV1`, `schoolDataSyncV2Rev1` |
+| code | String | The code of the desired [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).The possible values are: `schoolDataSyncV1`, `schoolDataSyncV2Rev1` |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| value | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md) |
+| value | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

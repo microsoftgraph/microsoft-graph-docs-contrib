@@ -36,7 +36,7 @@ items:
   - name: Delete
     href: ../../api/industrydata-inboundflow-delete.md
   - name: Inbound API flow
-    href: resources/industrydata-inboundapiflow.md
+    href: ../../resources/industrydata-inboundapiflow.md
     items:
     - name: Create
       href: ../../api/industrydata-inboundapiflow-post.md
@@ -62,21 +62,21 @@ items:
   - name: Validate
     href: ../../api/industrydata-industrydataconnector-validate.md
   - name: Azure Data Lake connector
-    href: resources/industrydata-azuredatalakeconnector.md
+    href: ../../resources/industrydata-azuredatalakeconnector.md
     items:
     - name: Create
-      href: api/industrydata-azuredatalakeconnector-post.md
+      href: ../../api/industrydata-azuredatalakeconnector-post.md
     - name: Update
-      href: api/industrydata-azuredatalakeconnector-update.md
+      href: ../../api/industrydata-azuredatalakeconnector-update.md
     - name: Get upload session
-      href: api/industrydata-azuredatalakeconnector-getuploadsession.md
+      href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
   - name: One Roster API data connector
-    href: resources/industrydata-onerosterapidataconnector.md
+    href: ../../resources/industrydata-onerosterapidataconnector.md
     items:
     - name: Create
-      href: api/industrydata-onerosterapidataconnector-post.md
+      href: ../../api/industrydata-onerosterapidataconnector-post.md
     - name: Update
-      href: api/industrydata-onerosterapidataconnector-update.md
+      href: ../../api/industrydata-onerosterapidataconnector-update.md
 - name: Industry data run
   items:
   - name: Industry data run
