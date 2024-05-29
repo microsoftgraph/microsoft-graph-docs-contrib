@@ -76,7 +76,7 @@ The new copy of the file is named `contoso plan (copy).txt`.
 #### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-1", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -145,7 +145,7 @@ The following example copies the children in a folder identified by `{item-id}` 
 The new copy of the file is named `contoso plan (copy).txt`. The `childrenOnly` Boolean parameter is set to `true`.
 
 #### Request 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item-2", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -156,7 +156,7 @@ Content-Type: application/json
     "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
-  "name": "contoso plan (copy).txt".
+  "name": "contoso plan (copy).txt",
   "childrenOnly": true
 }
 ```
