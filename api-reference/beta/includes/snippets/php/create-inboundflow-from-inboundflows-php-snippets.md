@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\InboundFileFlow
-use Microsoft\Graph\Beta\Generated\Models\IndustryData\DataDomain;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\InboundFileFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\InboundDomain;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

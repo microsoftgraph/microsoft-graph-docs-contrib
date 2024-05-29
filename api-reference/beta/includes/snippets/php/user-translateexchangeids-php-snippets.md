@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\TranslateExchangeIds\TranslateExchangeIdsPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\SourceIdType;
-use Microsoft\Graph\Beta\Generated\Models\TargetIdType;
+use Microsoft\Graph\Beta\Generated\Users\Item\TranslateExchangeIds\TranslateExchangeIdsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ExchangeIdFormat;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
