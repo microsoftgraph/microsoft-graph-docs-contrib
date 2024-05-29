@@ -15,17 +15,17 @@ Namespace: microsoft.graph.industryData
 
 Represents a pointer to a `RefFileFormat` entry in a collection of [referenceDefinition](industrydata-referencedefinition.md) objects.
 
-Inherits from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md).
+Inherits from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| code | String | The code of the desired [referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md). |
+| code | String | The code of the desired [referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md). |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| value | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md) |
+| value | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.
