@@ -3,7 +3,7 @@ title: "List alert objects"
 description: "Get a list of the microsoft.graph.healthMonitoring.alert objects and their properties."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

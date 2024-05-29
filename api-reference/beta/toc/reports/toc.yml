@@ -571,22 +571,22 @@ items:
 - name: Microsoft Entra health monitoring
   items:
     - name: Overview
-      href: resources/healthmonitoring-overview.md
+      href: ../../resources/healthmonitoring-overview.md
     - name: Alert
-      href: resources/healthmonitoring-alert.md
+      href: ../../resources/healthmonitoring-alert.md
       items:
       - name: List
-        href: healthmonitoring-healthmonitoringroot-list-alerts.md
+        href: ../../api/healthmonitoring-healthmonitoringroot-list-alerts.md
       - name: Get 
-        href: healthmonitoring-alert-get.md
+        href: ../../api/healthmonitoring-alert-get.md
       - name: Update
-        href: healthmonitoring-alert-update.md
+        href: ../../api/healthmonitoring-alert-update.md
     - name: Alert configuration
-      href: resources/healthmonitoring-alertconfiguration.md
+      href: ../../resources/healthmonitoring-alertconfiguration.md
       items:
       - name: List
-        href: healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
+        href: ../../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
       - name: Get
-        href: healthmonitoring-alertconfiguration-get.md
-      - name: List
-        href: healthmonitoring-alertconfiguration-update.md
+        href: ../../api/healthmonitoring-alertconfiguration-get.md
+      - name: Update
+        href: ../../api/healthmonitoring-alertconfiguration-update.md

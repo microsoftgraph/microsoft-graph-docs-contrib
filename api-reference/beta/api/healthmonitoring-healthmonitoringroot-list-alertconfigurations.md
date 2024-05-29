@@ -3,7 +3,7 @@ title: "List alertConfiguration objects"
 description: "Get a list of the microsoft.graph.healthMonitoring.alertConfiguration objects and their properties."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [alertConfiguration](../resources/alertconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects in the response body.
 
 ## Examples
 

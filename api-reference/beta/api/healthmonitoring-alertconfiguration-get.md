@@ -3,7 +3,7 @@ title: "Get alertConfiguration"
 description: "Read the properties and relationships of a microsoft.graph.healthMonitoring.alertConfiguration object."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

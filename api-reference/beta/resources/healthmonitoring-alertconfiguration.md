@@ -3,7 +3,7 @@ title: "alertConfiguration resource type"
 description: "Represents the configuration of an alert type defining behavior that occurs when an alert is created."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md)|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) collection|Get a list of the [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.|
-|[Create](../api/healthmonitoring-healthmonitoringroot-post-alertconfigurations.md)|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md)|Create a new [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object.|
 |[Get](../api/healthmonitoring-alertconfiguration-get.md)|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md)|Read the properties and relationships of a [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object.|
 |[Update](../api/healthmonitoring-alertconfiguration-update.md)|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md)|Update the properties of a [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object.|
 

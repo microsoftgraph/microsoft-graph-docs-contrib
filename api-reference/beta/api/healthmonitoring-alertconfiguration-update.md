@@ -3,7 +3,7 @@ title: "Update alertConfiguration"
 description: "Update the properties of a microsoft.graph.healthMonitoring.alertConfiguration object."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,6 @@ PATCH /reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |emailNotificationConfigurations|[microsoft.graph.healthMonitoring.emailNotificationConfiguration](../resources/healthmonitoring-emailnotificationconfiguration.md) collection|Email notification settings for the particular alert type.|
