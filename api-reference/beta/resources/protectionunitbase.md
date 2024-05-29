@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase resource type"
-description: "Represents a site, drive, or mailbox that is protected by a protection policy."
+description: "Represents a site, drive, or mailbox that's protected by a protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a site, drive, or mailbox that is protected by a [protection policy](protectionpolicybase.md).
+Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md).
 
 This is an abstract type.
 
@@ -29,19 +29,19 @@ This is an abstract type.
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
-|error|[publicError](../resources/publicerror.md)|Describes error occurred while creating a protection unit.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this protection unit.|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|Status of the protection unit.The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of this unit has been requested to be enabled. This state arrives when policy is activated or new units are added to active policy.|
-|protected | SProtection unit is successfully enabled for protection.|
-|unprotectRequested |Protection of unit has been requested to be disabled. This state arrives when policy is deactivated.|
-|unprotected | Protection unit is successfully disabled for protection.|
-|removeRequested |Already protected unit has been requested to be removed from policy. This state arrives when the user wants to explicitly remove units from the policy. |
+|protectRequested | Protection of the unit was requested. This is the state when a policy is activated or new units are added to an active policy.|
+|protected | The protection unit is successfully enabled.|
+|unprotectRequested | Disabling protection of the unit was requested. This is the state when a policy is deactivated.|
+|unprotected | The protection unit is successfully disabled.|
+|removeRequested |A request to remove the protected unit from the policy was made. The user wants to explicitly remove units from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

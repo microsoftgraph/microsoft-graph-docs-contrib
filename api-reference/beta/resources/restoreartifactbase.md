@@ -1,6 +1,6 @@
 ---
 title: "restoreArtifactBase resource type"
-description: "Describes restore artifact and its properties"
+description: "Represents the restore point and destination details that can be used to restore a site, drive, or mailbox protection unit."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore Artifact refers to the site/drive/mailbox units' restore point and destination relevant details that can be used to restore it.
+Represents the restore point and destination details that can be used to restore a site, drive, or mailbox [protection unit](protectionunitbase.md).
 
 ## Properties
 
@@ -21,8 +21,8 @@ Restore Artifact refers to the site/drive/mailbox units' restore point and desti
 |:---|:---|:---|
 |id|String|The unique identifier of the restore artifact.|
 |completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed.|
-|destinationType|destinationType|Describes preference for restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
-|error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
+|destinationType|destinationType|Indicates the restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|publicError|Contains error details if the restore session fails or completes with an error.|
 |startDateTime|DateTimeOffset|The time when restoration of restore artifact is started.|
 |status|artifactRestoreStatus|The individual restoration status of the restore artifact. The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
@@ -30,19 +30,19 @@ Restore Artifact refers to the site/drive/mailbox units' restore point and desti
 
 |Member | Description |
 |:------|:------------|
-|added|Initial Status when restore artifact has been added to restore session.|
-|scheduling|Status when activate action is called on the restore session.|
-|scheduled|Status when activate action call is successful on the restore session.|
-|inProgress|Status when restore artifact has been picked for restoration.|
-|succeeded|The restore artifact has successfully restored.|
-|failed|Status when restoration of artifact is failed.|
+|added|The restore artifact was added to the restore session.|
+|scheduling|The activate action was called on the restore session.|
+|scheduled|The activate action call was successful on the restore session.|
+|inProgress|The restore artifact was picked for restoration.|
+|succeeded|The restore artifact was successfully restored.|
+|failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)| RestorePoints represent the timestamp when an artifact is protected (as per Protection Policy).|
+|restorePoint|[restorePoint](../resources/restorepoint.md)| Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.|
 
 ## JSON representation
 

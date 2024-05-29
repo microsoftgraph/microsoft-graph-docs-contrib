@@ -44,7 +44,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |protected | The protection unit is successfully enabled.|
 |unprotectRequested | Disabling protection of the unit was requested. This is the state when a policy is deactivated.|
 |unprotected | The protection unit is successfully disabled.|
-|removeRequested |A request to remove the prtoected unit from the policy was made. The user wants to explicitly remove units from the policy. |
+|removeRequested |A request to remove the protected unit from the policy was made. The user wants to explicitly remove units from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
