@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DirectoryObjects\GetByIds\GetByIdsPostRequestBody
+use Microsoft\Graph\Beta\Generated\DirectoryObjects\GetByIds\GetByIdsPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

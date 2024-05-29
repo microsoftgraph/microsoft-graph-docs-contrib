@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\CalendarPermission;
-use Microsoft\Graph\Beta\Generated\Models\Role;
+use Microsoft\Graph\Beta\Generated\Models\CalendarRoleType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

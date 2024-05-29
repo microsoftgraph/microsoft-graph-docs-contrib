@@ -135,7 +135,7 @@ Content-Type: application/json
       "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
       "completedDateTime": null,
       "completionPercentage": null,
-      "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+      "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
       "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
       "dueDateTime": {
         "dateTime": "2022-09-22T16:05:00.0000000",
@@ -158,7 +158,7 @@ Content-Type: application/json
       "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
       "completedDateTime": null,
       "completionPercentage": null,
-      "externalcourseActivityId": null,
+      "externalCourseActivityId": null,
       "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
       "dueDateTime": {
         "dateTime": "2022-09-22T16:05:00.0000000",
@@ -178,7 +178,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
       "completedDateTime": null,
       "completionPercentage": 20,
-      "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+      "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
       "id": "be2f4d76-e020-11ec-9d64-0242ac120002",
       "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
       "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
@@ -221,7 +221,7 @@ Content-Type: application/json
       "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
       "completedDateTime": null,
       "completionPercentage": null,
-      "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+      "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
       "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
       "dueDateTime": {
         "dateTime": "2022-09-22T16:05:00.0000000",
@@ -244,7 +244,7 @@ Content-Type: application/json
       "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
       "completedDateTime": null,
       "completionPercentage": null,
-      "externalcourseActivityId": null,
+      "externalCourseActivityId": null,
       "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
       "dueDateTime": {
         "dateTime": "2022-09-22T16:05:00.0000000",
@@ -264,7 +264,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
       "completedDateTime": null,
       "completionPercentage": 20,
-      "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+      "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
       "id": "be2f4d76-e020-11ec-9d64-0242ac120002",
       "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
       "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
