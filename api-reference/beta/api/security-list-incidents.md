@@ -177,7 +177,8 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.security.recommendedHuntingQuery",
                 "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
             }
-        ]
+        ],
+	"summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
     }
   ]
 }
@@ -441,7 +442,8 @@ Content-Type: application/json
                     }
                 ]
             }
-        ]
+        ],
+	"summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
     }
   ]
 }
