@@ -1,6 +1,6 @@
 ---
 title: "Get rootDomain"
-description: "Get the root domain of a sub domain."
+description: "Get the root domain of a subdomain."
 author: "shilpi-kansal"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [root domain](../resources/domain.md) of a sub domain.
-The API returns a single object which is the root domain of the specified sub domain.
+Get the [root domain](../resources/domain.md) of a subdomain.
+The API returns a single object which is the root domain of the specified subdomain.
 
 ## Permissions
 
