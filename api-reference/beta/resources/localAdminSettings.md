@@ -19,7 +19,7 @@ Controls local administrators on Microsoft Entra joined devices.
 |Property|Type|Description|
 |:---|:---|:---|
 |enableGlobalAdmins|Boolean|Whether or not global administrators are local administrators on all Microsoft Entra joined devices. This setting only applies to future registrations. Default is `true`.|
-|registeringUsers|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines the users\groups that become local administrators on Microsoft Entra joined devices on the device they are registering.|
+|registeringUsers|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines the users and groups that become local administrators on Microsoft Entra joined devices that they register.|
 
 ## Relationships
 
