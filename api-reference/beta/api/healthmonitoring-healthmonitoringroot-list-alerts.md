@@ -38,7 +38,9 @@ GET /reports/healthMonitoring/alerts
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 alert objects.
+
+When no `$expand` query parameter is added, this API won't return `resourceSampling` property by default. To view `resourceSampling` in [directoryObjectImpactSummary](../resources//healthmonitoring-directoryobjectimpactsummary.md), you can add `$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling`.
 
 ## Request headers
 
@@ -52,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [alert](../resources/alert.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [alert](../resources/healthmonitoring-alert.md) objects in the response body.
 
 ## Examples
 

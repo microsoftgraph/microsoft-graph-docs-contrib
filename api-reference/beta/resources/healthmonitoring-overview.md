@@ -19,7 +19,9 @@ Use the Microsoft Entra health monitoring API to view anomalous usage pattern fo
 **TODO: Do we require user to have specific licenses?**
 
 ## Common requests
+
 The following table lists some common requests that you can use with this API.
+
 |  Scenarios  | API |
 | ----------- | ----------- |
 | Retrieve all alerts of a Microsoft Entra tenant | [List alerts](../api/healthmonitoring-healthmonitoringroot-list-alerts.md) |

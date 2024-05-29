@@ -38,7 +38,9 @@ GET /reports/healthMonitoring/alerts/{alertId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+When no `$expand` query parameter is added, this API won't return `resourceSampling` property by default. To view `resourceSampling` in [directoryObjectImpactSummary](../resources//healthmonitoring-directoryobjectimpactsummary.md), you can add `$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling`.
 
 ## Request headers
 
