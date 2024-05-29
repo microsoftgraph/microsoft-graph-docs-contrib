@@ -43,10 +43,7 @@ When customers are looking for insights and analytics beyond Viva Insights, Data
 
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
-Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the [Microsoft Graph Data Connect team](mailto:dataconnect@microsoft.com).
-
->[!NOTE]
->Your tenant admin will need to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, it will expire and you will need to restart the consent process by kicking off your pipelines again. The overhead time does not include time taken in consent approval.
+Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please create a new Azure Support request with the details in the section above.
 
 ## What regions is Microsoft Graph Data Connect available in?
 
@@ -75,8 +72,6 @@ New datasets are added to Microsoft Graph Data Connect regularly. For a complete
 
 ## Which datasets are in preview and which are generally available?
 
-Datasets for the OneDrive/SharePoint and Viva Insights are currently available for customers in preview or for those who have the Viva Insights license, respectively.
-
 For information about datasets that are generally available or in preview only, see [Dataset, regions, and sinks](/graph/data-connect-datasets#datasets).
 
 ## How is billing calculated?
@@ -89,9 +84,9 @@ Instead, the customer will be billed for 20 units because Microsoft Graph Data C
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
-For datasets like OneDrive/SharePoint and Viva Insights, make sure that you meet the criteria described in [Datasets, regions, and sinks](/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
+For preview datasets, make sure that you meet the criteria described in [Datasets, regions, and sinks](/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
 
-For questions, contact the [Microsoft Graph Data Connect team](mailto:dataconnect@microsoft.com).
+For questions, please create a new Azure Support request with the details in the section above.
 
 ## What scenarios is Microsoft Graph Data Connect best for?
 
@@ -109,54 +104,9 @@ If you create an Azure managed application for others to use in their tenants, y
 
 For more information about building your application with Azure Synapse or Azure Data Factory, see the [Data Connect quick start](/graph/data-connect-quickstart?tabs=Microsoft365).
 
-
-## How can I check for pending Privileged Access Management (PAM) requests?
-
-Before Microsoft Graph Data Connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. 
-
-The first time you trigger a pipeline, it waits for a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
-
-![Screenshot of the pipeline run status pane with a status of ConsentPending](images/data-connect-tips.png)
-
-During development, it's a good idea to make sure that your pipeline runs aren't stuck on **ConsentPending**, especially after you make a change to your pipeline. For example, if you add an additional field to the schema, the next pipeline run issues a new PAM request that has to be approved. Don't waste time waiting on a pipeline that's waiting for your approval.
-
-Note that consent requests will expire after 24 hours if not approved and the pipeline will fail. Additionally, PAM approval is valid for only 6 months (unless revoked).
-
-## How can I approve PAM requests via the Microsoft 365 admin center?
-
-To approve using the PAM UX, visit the PAM interface in the Microsoft 365 admin center. The admin center provides an easy and user-friendly way to view and approve/deny/revoke PAM requests.
-
-To approve a request:
-- When enabling Microsoft Graph Data Connect, you must be within the approver’s group.
-- Users must have a Global Admin role.
-- Users must have an Exchange Online license assigned.
-
-Use the following steps to approve or deny a PAM request:
-
-1. Sign in the PAM interface at [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess).
-2. On the right pane, click **Settings** > **Org Settings** > **Services** > **Microsoft Graph Data Connect**.
-3. Locate the request.
-4. Review the request details.
-5. Add deny list scrubbing if needed.
-6. Approve or deny the request.
-
-For more details, see the [Data Connect quick start](/graph/data-connect-quickstart?tabs=Microsoft365).
-
-## Will every pipeline run trigger a new consent request?
+## Will every pipeline run require a new consent request?
  
-As long as the scope of the data being extracted remains the same for datasets, columns, users, etc, the pipeline run will NOT trigger a new consent request. Instead, the pipeline will use the approved consent which will last for 6 months. Running a pipeline with the same scope for different dates will NOT trigger a new consent either.
-
-## How do I trigger a new consent request?
-
-A new consent request will be triggered if the scope of data changes-- such as adding new dataset, selecting more columns, or adding other users. A new consent can also be triggered when changing the pipeline or activity name in Azure Synapse or Azure Data Factory.
-
-## Why do I need a second user to approve PAM requests?
-
-When you request a dataset pipeline run, Microsoft Graph Data Connect service will verify and then trigger a PAM approval request if needed. The request is sent to the approver group defined for the tenant when enabling Microsoft Graph Data Connect in the Microsoft Admin Center. 
-
-However, even if this account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed."
-
-For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+As long as the scope of the data being extracted remains the same for datasets, columns, users, and sink, the pipeline run will NOT require a new consent request. Instead, the pipeline will use the approved active consent. Running a pipeline with the same scope for different dates will NOT require a new consent.
 
 ## Can I deduplicate emails when needed?
 
