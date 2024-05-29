@@ -372,7 +372,7 @@ Limits are expressed as requests per second (rps).
 
 A maximum of four requests per second per app can be issued on a given team.
 
-A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) or [message](/graph/api/resources/chatmessage).
+A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat).
 
 A maximum of four requests per minute per app per tenant per chat can be issued when doing [Post chat member](/graph/api/chat-post-members) or [Delete chat member](/graph/api/chat-delete-members)
 
