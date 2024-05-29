@@ -61,11 +61,11 @@ items:
     items:
     - name: Application template
       href: ../../resources/applicationtemplate.md
-    - name: List applicationTemplate
+    - name: List
       href: ../../api/applicationtemplate-list.md
-    - name: Get applicationTemplate
+    - name: Get
       href: ../../api/applicationtemplate-get.md
-    - name: Instantiate applicationTemplate
+    - name: Instantiate
       href: ../../api/applicationtemplate-instantiate.md
   - name: Federated identity credential
     displayName: Workload identity federation, workload identities
@@ -74,17 +74,17 @@ items:
       href: ../../resources/federatedidentitycredentials-overview.md
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
-    - name: List federatedIdentityCredentials
+    - name: List
       href: ../../api/application-list-federatedidentitycredentials.md
-    - name: Create federatedIdentityCredential
+    - name: Create
       href: ../../api/application-post-federatedidentitycredentials.md
-    - name: Get federatedIdentityCredential
+    - name: Get
       href: ../../api/federatedidentitycredential-get.md
-    - name: Update federatedIdentityCredential
+    - name: Update
       href: ../../api/federatedidentitycredential-update.md
-    - name: Upsert federatedIdentityCredential
+    - name: Upsert
       href: ../../api/federatedidentitycredential-upsert.md
-    - name: Delete federatedIdentityCredential
+    - name: Delete
       href: ../../api/federatedidentitycredential-delete.md
   - name: Policies
     items:
@@ -92,33 +92,33 @@ items:
       items:
       - name: Token issuance policy
         href: ../../resources/tokenissuancepolicy.md
-      - name: Create tokenIssuancePolicy
+      - name: Create
         href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
-      - name: Get tokenIssuancePolicy
+      - name: Get
         href: ../../api/tokenissuancepolicy-get.md
-      - name: List tokenIssuancePolicy
+      - name: List
         href: ../../api/tokenissuancepolicy-list.md
-      - name: Update tokenIssuancePolicy
+      - name: Update
         href: ../../api/tokenissuancepolicy-update.md
-      - name: Delete tokenIssuancePolicy
+      - name: Delete
         href: ../../api/tokenissuancepolicy-delete.md
-      - name: List appliesTo
+      - name: List applied to applications
         href: ../../api/tokenissuancepolicy-list-appliesto.md
     - name: Token lifetime policy
       items:
       - name: Token lifetime policy
         href: ../../resources/tokenlifetimepolicy.md
-      - name: List tokenLifetimePolicies
+      - name: List
         href: ../../api/tokenlifetimepolicy-list.md
-      - name: Create tokenLifetimePolicy
+      - name: Create
         href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-      - name: Get tokenLifetimePolicy
+      - name: Get
         href: ../../api/tokenlifetimepolicy-get.md
-      - name: Update tokenLifetimePolicy
+      - name: Update
         href: ../../api/tokenlifetimepolicy-update.md
-      - name: Delete tokenLifetimePolicy
+      - name: Delete
         href: ../../api/tokenlifetimepolicy-delete.md
-      - name: List appliesTo
+      - name: List applied to applications
         href: ../../api/tokenlifetimepolicy-list-appliesto.md
 - name: On-premises publishing
   items:
@@ -128,9 +128,9 @@ items:
     items:
     - name: Connector
       href: ../../resources/connector.md
-    - name: List connectors
+    - name: List
       href: ../../api/connector-list.md
-    - name: Get connector
+    - name: Get
       href: ../../api/connector-get.md
     - name: List memberOf
       href: ../../api/connector-list-memberof.md
@@ -140,15 +140,15 @@ items:
     items:
     - name: Connector group
       href: ../../resources/connectorgroup.md
-    - name: List connectorGroup
+    - name: List
       href: ../../api/connectorgroup-list.md
-    - name: Create connectorGroup
+    - name: Create
       href: ../../api/connectorgroup-post.md
-    - name: Get connectorGroup
+    - name: Get
       href: ../../api/connectorgroup-get.md
-    - name: Update connectorGroup
+    - name: Update
       href: ../../api/connectorgroup-update.md
-    - name: Delete connectorGroup
+    - name: Delete
       href: ../../api/connectorgroup-delete.md
     - name: List members
       href: ../../api/connectorgroup-list-members.md
@@ -162,53 +162,53 @@ items:
     items:
     - name: On-premises agent
       href: ../../resources/onpremisesagent.md
-    - name: List onPremisesAgents
+    - name: List
       href: ../../api/onpremisesagent-list.md
-    - name: Get onPremisesAgent
+    - name: Get
       href: ../../api/onpremisesagent-get.md
-    - name: Assign onPremisesAgent to onPremisesAgentGroup
+    - name: Assign to agent group
       href: ../../api/onpremisesagent-post-agentgroups.md
-    - name: Remove onpremisesAgent from an onPremisesAgentGroup
+    - name: Remove from agent group
       href: ../../api/onpremisesagent-delete-agentgroups.md
   - name: On-premises agent group
     items:
     - name: On-premises agent group
       href: ../../resources/onpremisesagentgroup.md
-    - name: List onPremisesAgentGroups
+    - name: List
       href: ../../api/onpremisesagentgroup-list.md
-    - name: Get onPremisesAgentGroup
+    - name: Get
       href: ../../api/onpremisesagentgroup-get.md
-    - name: Create onPremisesAgentGroup
+    - name: Create
       href: ../../api/onpremisesagentgroup-post.md
-    - name: Update onPremisesAgentGroup
+    - name: Update
       href: ../../api/onpremisesagentgroup-update.md
-    - name: Delete  onPremisesAgentGroup
+    - name: Delete
       href: ../../api/onpremisesagentgroup-delete.md
   - name: On-premises publishing profile
     items:
     - name: On-premises publishing profile
       href: ../../resources/onpremisespublishingprofile.md
-    - name: Get onPremisesPublishingProfile
+    - name: Get
       href: ../../api/onpremisespublishingprofile-get.md
-    - name: Update onPremisesPublishingProfile
+    - name: Update
       href: ../../api/onpremisespublishingprofile-update.md
   - name: Published resource
     items:
     - name: Published resource
       href: ../../resources/publishedresource.md
-    - name: List publishedResources
+    - name: List
       href: ../../api/publishedresource-list.md
-    - name: Get publishedResource
+    - name: Get
       href: ../../api/publishedresource-get.md
-    - name: Create publishedResource
+    - name: Create
       href: ../../api/publishedresource-post.md
-    - name: Update publishedResource
+    - name: Update
       href: ../../api/publishedresource-update.md
-    - name: Delete  publishedResource
+    - name: Delete
       href: ../../api/publishedresource-delete.md
-    - name: Assign publishedResource to onPremisesAgentGroup
+    - name: Assign to agent group
       href: ../../api/publishedresource-post-agentgroups.md
-    - name: Remove publishedResource from onPremisesAgentGroup
+    - name: Remove from agent group
       href: ../../api/publishedresource-delete-agentgroups.md
   - name: Complex types
     items:
@@ -346,6 +346,8 @@ items:
       href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
     - name: Remove claimsMappingPolicy
       href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+    - name: Create or replace customClaimsPolicy
+      href: ../../api/serviceprincipal-put-claimspolicy.md
     - name: Assign homeRealmDiscoveryPolicy
       href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
     - name: List homeRealmDiscoveryPolicies
@@ -388,7 +390,7 @@ items:
     items:
     - name: Synchronization
       href: ../../resources/synchronization-synchronization.md
-    - name: acquireAccessToken
+    - name: Acquire access token
       href: ../../api/synchronization-synchronization-acquireaccesstoken.md
     - name: Add secrets
       href: ../../api/synchronization-serviceprincipal-put-synchronization.md
@@ -408,7 +410,7 @@ items:
       href: ../../resources/synchronization-synchronizationjob.md
     - name: List
       href: ../../api/synchronization-synchronization-list-jobs.md
-    - name: Get synchronizationJob
+    - name: Get
       href: ../../api/synchronization-synchronizationjob-get.md
     - name: Create
       href: ../../api/synchronization-synchronization-post-jobs.md
@@ -420,19 +422,19 @@ items:
       href: ../../api/synchronization-synchronizationjob-pause.md
     - name: Delete
       href: ../../api/synchronization-synchronizationjob-delete.md
-    - name: Get synchronizationSchema
+    - name: Get schema
       href: ../../api/synchronization-synchronizationschema-get.md
-    - name: Update synchronizationSchema
+    - name: Update schema
       href: ../../api/synchronization-synchronizationschema-update.md
     - name: Validate credentials
       href: ../../api/synchronization-synchronizationjob-validatecredentials.md
-    - name: provisionOnDemand
+    - name: Provision on demand
       href: ../../api/synchronization-synchronizationjob-provisionondemand.md
     - name: Bulk upload
       items:
       - name: Bulk upload
         href: ../../resources/synchronization-bulkupload.md
-      - name: Perform bulkUpload
+      - name: Perform bulk upload
         href: ../../api/synchronization-synchronizationjob-post-bulkupload.md
   - name: Synchronization schema
     items:
@@ -442,11 +444,11 @@ items:
       href: ../../api/synchronization-synchronizationschema-get.md
     - name: Update schema
       href: ../../api/synchronization-synchronizationschema-update.md
-    - name: Delete schema
+    - name: Reset schema
       href: ../../api/synchronization-synchronizationschema-delete.md
-    - name: List filter operators
+    - name: Get schema filter operators
       href: ../../api/synchronization-synchronizationschema-filteroperators.md
-    - name: List attribute mapping functions
+    - name: Get schema functions
       href: ../../api/synchronization-synchronizationschema-functions.md
     - name: Parse attribute mapping expression
       href: ../../api/synchronization-synchronizationschema-parseexpression.md

@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.android_lob_app import AndroidLobApp
 from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
 from msgraph.generated.models.android_minimum_operating_system import AndroidMinimumOperatingSystem
 
 graph_client = GraphServiceClient(credentials, scopes)

@@ -20,7 +20,7 @@ Represents an [agedAccountsPayable](dynamics-agedaccountspayable.md) object in D
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get agedAccountsPayable](../api/dynamics-agedaccountspayable-get.md)|agedAccountsPayable|Get an **agedAccountsPayable** object|
+|[Get aged accounts payable](../api/dynamics-agedaccountspayable-get.md)|agedAccountsPayable|Get an **agedAccountsPayable** object|
 
 ## Properties
 | Property	    | Type	   |Description                                 |

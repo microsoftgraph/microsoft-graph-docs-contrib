@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.calendar.get_schedule.get_schedule_request_builder import GetScheduleRequestBuilder
-from msgraph.generated.users.item.calendar.get_schedule.get_schedule_post_request_body import GetSchedulePostRequestBody
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.calendar.get_schedule.get_schedule_request_builder import GetScheduleRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.users.item.calendar.get_schedule.get_schedule_post_request_body import GetSchedulePostRequestBody
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -27,7 +28,7 @@ request_body = GetSchedulePostRequestBody(
 	availability_view_interval = 60,
 )
 
-request_configuration = GetScheduleRequestBuilder.GetScheduleRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
 

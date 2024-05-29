@@ -17,8 +17,8 @@ A container for on-premises directory synchronization functionalities that are a
 
 | Method                                                                                           | Return type                                                                              | Description                                                                                                                                  |
 | :----------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get onPremisesDirectorySynchronization](../api/onpremisesdirectorysynchronization-get.md)       | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | Read the properties and relationships of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object. |
-| [Update onPremisesDirectorySynchronization](../api/onpremisesdirectorysynchronization-update.md) | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | Update the properties of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object.                 |
+| [Get](../api/onpremisesdirectorysynchronization-get.md)       | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | Read the properties and relationships of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object. |
+| [Update](../api/onpremisesdirectorysynchronization-update.md) | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | Update the properties of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object.                 |
 
 ## Properties
 

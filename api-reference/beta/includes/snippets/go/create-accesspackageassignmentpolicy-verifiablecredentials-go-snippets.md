@@ -68,7 +68,7 @@ credentialTypes := []graphmodels.VerifiableCredentialTypeable {
 verifiableCredentialSettings.SetCredentialTypes(credentialTypes)
 requestBody.SetVerifiableCredentialSettings(verifiableCredentialSettings)
 additionalData := map[string]interface{}{
-expiration := graphmodels.New()
+expiration := graph.New()
 type := "afterDuration"
 expiration.SetType(&type) 
 duration := "P365D"

@@ -19,8 +19,8 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
+|[List](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
+|[Get](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
 
 ## Properties
 | Property       | Type    |Description|

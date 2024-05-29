@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event webinar](virtualeventwebinar.md), and [business scenario](businessscenario-overview.md) APIs.
+The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event](virtualevent.md), and [business scenario](businessscenario-overview.md) APIs.
 
 All Microsoft Graph calls to resources under `/solutions` use the following service root URL:
 
@@ -25,28 +25,35 @@ https://graph.microsoft.com/{version}/solutions/
 To access Bookings businesses, use the following syntax:
 
 ```http
-https://graph.microsoft.com/{version}/solutions/bookingBusinesses 
+https://graph.microsoft.com/{version}/solutions/bookingBusinesses
 ```
 
 To access Bookings currencies, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/solutions/bookingCurrencies 
+https://graph.microsoft.com/{version}/solutions/bookingCurrencies
 ```
 
 To access business scenarios, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/solutions/businessScenarios 
+https://graph.microsoft.com/{version}/solutions/businessScenarios
 ```
 
 To access virtual event webinars, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/virtualEvents/webinars
+https://graph.microsoft.com/{version}/solutions/virtualEvents/webinars
+```
+
+To access virtual event town halls, use the following syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/solutions/virtualEvents/townhalls
 ```
 
 To access approvals, use the following syntax:
@@ -60,7 +67,7 @@ https://graph.microsoft.com/{version}/solutions/approval
 None.
 
 ## Properties
-None. 
+None.
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -68,7 +75,7 @@ None.
 |bookingBusinesses|[bookingBusiness](bookingbusiness.md) collection | A collection of businesses in Microsoft Bookings. Read-only. Nullable.|
 |bookingCurrencies|[bookingcurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
-|virtualEvents|virtualEventsRoot collection | A collection of virtual events.|
+|virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
 |approval|[approvalSolution](../resources/approvalsolution.md)| Approval navigation property that allows you to manage your [approvalItems](approvalitem.md).|
 
 ## JSON representation
@@ -79,7 +86,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.solutionsRoot"
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.solutionsRoot"
 }

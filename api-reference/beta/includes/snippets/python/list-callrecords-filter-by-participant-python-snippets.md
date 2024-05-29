@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.call_records.call_records_request_builder import CallRecordsRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.call_records.call_records_request_builder import CallRecordsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = CallRecordsRequestBuilder.CallRecordsRequestBuilderGetQueryParame
 		filter = "participants_v2/any(p:p/id eq '821809f5-0000-0000-0000-3b5136c0e777')",
 )
 
-request_configuration = CallRecordsRequestBuilder.CallRecordsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 
