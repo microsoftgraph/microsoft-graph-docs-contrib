@@ -1,0 +1,38 @@
+---
+title: "Dictionary resource type"
+description: "Represents a dictionary type"
+author: "huatang92"
+ms.localizationpriority: medium
+ms.subservice: "entra-health-monitoring"
+doc_type: resourcePageType
+---
+
+# Dictionary resource type
+
+Namespace: microsoft.graph.healthMonitoring
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a dictionary type
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.healthMonitoring.Dictionary"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.healthMonitoring.Dictionary"
+}
+```
+

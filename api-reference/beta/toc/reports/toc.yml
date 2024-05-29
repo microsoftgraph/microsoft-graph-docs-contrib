@@ -568,3 +568,22 @@ items:
       href: ../../resources/partners-billing-unbilledusage.md
     - name: Export
       href: ../../api/partners-billing-unbilledusage-export.md
+- name: Microsoft Entra health monitoring
+  href: resources/healthmonitoring-overview.md
+  items:
+    - name: Alert
+      href: resources/healthmonitoring-alert.md
+      - name: List
+        href: healthmonitoring-healthmonitoringroot-list-alerts.md
+      - name: Get 
+        href: healthmonitoring-alert-get.md
+      - name: Update
+        href: healthmonitoring-alert-update.md
+    - name: Alert configuration
+      href: resources/healthmonitoring-alertconfiguration.md
+      - name: List
+        href: healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
+      - name: Get
+        href: healthmonitoring-alertconfiguration-get.md
+      - name: List
+        href: healthmonitoring-alertconfiguration-update.md
