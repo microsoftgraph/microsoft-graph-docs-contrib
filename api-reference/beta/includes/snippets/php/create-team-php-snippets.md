@@ -10,7 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\Team;
 use Microsoft\Graph\Beta\Generated\Models\TeamMemberSettings;
 use Microsoft\Graph\Beta\Generated\Models\TeamMessagingSettings;
 use Microsoft\Graph\Beta\Generated\Models\TeamFunSettings;
-use Microsoft\Graph\Beta\Generated\Models\GiphyContentRating;
+use Microsoft\Graph\Beta\Generated\Models\GiphyRatingType;
 use Microsoft\Graph\Beta\Generated\Models\TeamDiscoverySettings;
 
 

@@ -53,6 +53,7 @@ In the request body, supply a JSON representation of the [protectionRuleBase](..
 ### Properties to create a new siteInclusionRule
 
 You can specify the following properties when creating a siteInclusionRule.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |siteExpression|String|Contains site expression. [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples). Required.|
@@ -61,6 +62,7 @@ You can specify the following properties when creating a siteInclusionRule.
 ### Properties to create a new driveInclusionRule
 
 You can specify the following properties when creating a driveInclusionRule.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |driveExpression|String|Contains drive expression. [driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples). Required.|
@@ -69,6 +71,7 @@ You can specify the following properties when creating a driveInclusionRule.
 ### Properties to create a new mailboxInclusionRule
 
 You can specify the following properties when creating a mailboxInclusionRule.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples). Required|

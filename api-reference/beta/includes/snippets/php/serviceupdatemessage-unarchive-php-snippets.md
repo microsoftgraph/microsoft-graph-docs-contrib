@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Admin\ServiceAnnouncement\Messages\Unarchive\UnarchivePostRequestBody
+use Microsoft\Graph\Beta\Generated\Admin\ServiceAnnouncement\Messages\Unarchive\UnarchivePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

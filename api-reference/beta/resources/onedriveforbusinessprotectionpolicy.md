@@ -1,7 +1,8 @@
 ---
 title: "oneDriveForBusinessProtectionPolicy resource type"
 description: "Contains details about protection policies applied to Microsoft 365 data in an organization. "
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

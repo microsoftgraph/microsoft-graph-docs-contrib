@@ -1,7 +1,8 @@
 ---
 title: "serviceApp resource type"
 description: "Represents a service application being registered as a Backup service control app"
-author: "manikantsinghms, tushar20"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

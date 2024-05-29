@@ -1,7 +1,8 @@
 ---
 title: "driveProtectionUnit resource type"
 description: "Represents a protection unit associated with OneDrive for Business."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

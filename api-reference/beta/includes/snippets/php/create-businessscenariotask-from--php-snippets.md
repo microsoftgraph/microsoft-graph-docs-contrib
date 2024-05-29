@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioTask;
 use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioGroupTarget;
-use Microsoft\Graph\Beta\Generated\Models\TaskTargetKind;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskTargetKind;
 use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioProperties;
 
 

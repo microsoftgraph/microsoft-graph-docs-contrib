@@ -1,7 +1,8 @@
 ---
 title: "exchangeProtectionPolicy resource type"
 description: "Represents the plan defined by the Global Admin or Exchange Online Admin to protect Exchange Online."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

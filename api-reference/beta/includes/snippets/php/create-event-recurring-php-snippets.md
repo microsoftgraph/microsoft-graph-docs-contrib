@@ -8,17 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Event;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
 use Microsoft\Graph\Beta\Generated\Models\DayOfWeek;
 use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
 use Microsoft\Kiota\Abstractions\Types\Date;
 use Microsoft\Graph\Beta\Generated\Models\Location;
 use Microsoft\Graph\Beta\Generated\Models\Attendee;
 use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

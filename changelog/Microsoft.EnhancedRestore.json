@@ -511,7 +511,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/restoresession-activate?view=graph-rest-beta) method to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/restoresessionbase-activate?view=graph-rest-beta) method to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource.",
           "Target": "activate"
         },
         {

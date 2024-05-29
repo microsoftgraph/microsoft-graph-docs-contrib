@@ -7,9 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\LanguageProficiency;
-use Microsoft\Graph\Beta\Generated\Models\Spoken;
-use Microsoft\Graph\Beta\Generated\Models\Written;
-use Microsoft\Graph\Beta\Generated\Models\Reading;
+use Microsoft\Graph\Beta\Generated\Models\LanguageProficiencyLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

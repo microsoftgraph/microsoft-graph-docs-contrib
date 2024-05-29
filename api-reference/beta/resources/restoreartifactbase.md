@@ -1,7 +1,8 @@
 ---
 title: "restoreArtifactBase resource type"
-description: "Represents the restore point and destination details that can be used to restore a site, drive, or mailbox protection unit."
-author: "tushar20, manikantsinghms"
+description: "Describes restore artifact and its properties"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

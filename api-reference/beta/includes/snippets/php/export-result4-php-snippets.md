@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\Searches\Item\MicrosoftGraphSecurityExportResult\ExportResultPostRequestBody
+use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\Searches\Item\MicrosoftGraphSecurityExportResult\ExportResultPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\Security\ExportCriteria;
 use Microsoft\Graph\Beta\Generated\Models\Security\ExportLocation;
 use Microsoft\Graph\Beta\Generated\Models\Security\AdditionalOptions;

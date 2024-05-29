@@ -1,7 +1,8 @@
 ---
 title: "mailboxRestoreArtifact resource type"
 description: "Represents the restore point and destination details that can be used to restore a mailbox protection unit."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

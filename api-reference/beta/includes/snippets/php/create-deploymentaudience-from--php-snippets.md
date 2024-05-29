@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DeploymentAudience
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentAudience;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

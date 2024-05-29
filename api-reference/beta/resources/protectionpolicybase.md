@@ -1,7 +1,8 @@
 ---
 title: "protectionPolicyBase resource"
 description: "Contains details about protection policies applied to Microsoft 365 data."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -36,7 +37,7 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.||
+|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 

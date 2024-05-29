@@ -1,7 +1,8 @@
 ---
 title: "mailboxProtectionUnit resource type"
 description: "Represents an Exchange mailbox that has an Exchange protection policy applied."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
