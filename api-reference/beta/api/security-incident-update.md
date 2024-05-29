@@ -162,7 +162,9 @@ Content-Type: application/json
         {
              "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'   | join AlertEvidence on AlertId   | distinct DeviceId"
         }
-    ]
+    ],
+     "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
+
 }
 ```
 
