@@ -70,7 +70,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
-| createdBy | [identitySet](../resources/identityset.md) | The user or application that created the chat. Supports `$filter` (`eq`). Read-only.  |
+| createdBy | [identitySet](../resources/identityset.md) | The user or application that created the chat. |
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
