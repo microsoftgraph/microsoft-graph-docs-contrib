@@ -1,7 +1,7 @@
 ---
 title: "virtualEventRegistrationQuestion resource type"
 description: "Information about a virtual event registration question."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType

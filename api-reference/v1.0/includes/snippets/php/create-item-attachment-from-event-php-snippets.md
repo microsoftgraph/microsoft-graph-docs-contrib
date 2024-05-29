@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ItemAttachment;
 use Microsoft\Graph\Generated\Models\Event;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 
 

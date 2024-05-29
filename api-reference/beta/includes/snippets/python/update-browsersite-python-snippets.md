@@ -4,8 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.browser_site import BrowserSite
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.browser_site import BrowserSite
+from msgraph_beta.generated.models.browser_site_target_environment import BrowserSiteTargetEnvironment
+from msgraph_beta.generated.models.browser_site_merge_type import BrowserSiteMergeType
+from msgraph_beta.generated.models.browser_site_compatibility_mode import BrowserSiteCompatibilityMode
 
 graph_client = GraphServiceClient(credentials, scopes)
 

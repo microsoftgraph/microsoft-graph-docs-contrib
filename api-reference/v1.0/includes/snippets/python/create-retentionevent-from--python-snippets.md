@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.retention_event import RetentionEvent
+from msgraph.generated.models.security.retention_event import RetentionEvent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

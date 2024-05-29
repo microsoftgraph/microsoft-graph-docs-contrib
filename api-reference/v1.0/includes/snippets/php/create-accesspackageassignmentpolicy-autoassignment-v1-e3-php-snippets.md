@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Generated\Models\AllowedTargetScope;
 use Microsoft\Graph\Generated\Models\SubjectSet;
 use Microsoft\Graph\Generated\Models\AttributeRuleMembers;
 use Microsoft\Graph\Generated\Models\AccessPackageAutomaticRequestSettings;

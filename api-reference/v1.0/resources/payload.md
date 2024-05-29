@@ -19,9 +19,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List payload](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
-|[Get payload](../api/payload-get.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
-|[Get payloadDetail](../api/payloaddetail-get.md)|[payloadDetail](../resources/payloaddetail.md)|Get an attack simulation campaign payload detail for a tenant.|
+|[List](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
+|[Get](../api/payload-get.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
+|[Get payload detail](../api/payloaddetail-get.md)|[payloadDetail](../resources/payloaddetail.md)|Get an attack simulation campaign payload detail for a tenant.|
 
 ## Properties
 

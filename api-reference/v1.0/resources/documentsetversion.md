@@ -18,11 +18,11 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [versions of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
-|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [version of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
-|[Get documentSetVersion](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [version of a document set](../resources/documentsetversion.md) in a list.|
-|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [document set version](../resources/documentsetversion.md).|
+|[List](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [versions of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
+|[Create](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [version of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
+|[Get](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
+|[Delete](../api/documentsetversion-delete.md)|None|Delete a [version of a document set](../resources/documentsetversion.md) in a list.|
+|[Restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [document set version](../resources/documentsetversion.md).|
 
 
 ## Properties
