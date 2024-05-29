@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Soft deletes a [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object. This leaves the reference definition in the disabled state.
+You can disable but not delete a customer defined [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md). This is because historical data may be tied to the code value from previous data runs. Disabling keeps the integrity of the data but allows you to no longer allow future uploaded data records to be associated to the LoV based on the passed Reference Code value.
 
 ## Permissions
 

@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.industryData.referenceValue](industrydata-referen
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| code | String | The code of the desired [referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md). |
+| code | String | The code of the desired [referenceDefinition](industrydata-referencedefinition.md) entry. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).The possible values are: `schoolDataSyncV1`, `schoolDataSyncV2Rev1` |
 
 ## Relationships
 |Relationship|Type|Description|

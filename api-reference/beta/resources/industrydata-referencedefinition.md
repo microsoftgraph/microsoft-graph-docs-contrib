@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an enumerated reference value. Each supported industry domain receives a distinct collection of default and customers can further customize them by overriding default values or adding new values to the tenant. The **referenceDefinitions** are used extensively throughout the system, both for configuration and validating data during transformation.
+Represents an enumerated reference value. Each supported industry domain receives a distinct collection of default values and customers can further customize them by overriding default values or adding new values to the tenant. The **referenceDefinitions** are used extensively throughout the system, both for configuration and validating data during transformation.
 
 Each **referenceDefinition** uses a composite identifier of `{referenceType}-{code}`. This provides a more natural developer experience as the vast majority of code values are defined by a standard body, which allows developers in specific industry domains to better recognize the format.
 
