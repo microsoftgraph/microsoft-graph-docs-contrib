@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\EnrichedAuditLogs
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\EnrichedAuditLogsSettings
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\EnrichedAuditLogs;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\EnrichedAuditLogsSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
