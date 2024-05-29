@@ -85,7 +85,7 @@ Content-Type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#requests/$entity",
-  "values":[
+  "value":[
     {
       "id":"9d4c5640-1da7-4739-924f-d10b70c734c1",
       "owner":{
