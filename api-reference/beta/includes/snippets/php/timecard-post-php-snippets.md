@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\TimeCard;
 use Microsoft\Graph\Beta\Generated\Models\TimeCardEvent;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\TimeCardBreak;
 
 

@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Reject\RejectPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\Reason;
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Reject\RejectPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\RejectReason;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

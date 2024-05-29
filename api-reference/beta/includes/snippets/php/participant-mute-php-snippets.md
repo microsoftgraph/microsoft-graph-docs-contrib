@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Participants\Item\Mute\MutePostRequestBody
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Participants\Item\Mute\MutePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

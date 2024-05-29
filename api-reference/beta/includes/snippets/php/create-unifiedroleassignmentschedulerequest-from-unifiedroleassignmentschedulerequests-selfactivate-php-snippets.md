@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleAssignmentScheduleRequest;
 use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
 use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPatternType;
 use Microsoft\Graph\Beta\Generated\Models\TicketInfo;
 
 

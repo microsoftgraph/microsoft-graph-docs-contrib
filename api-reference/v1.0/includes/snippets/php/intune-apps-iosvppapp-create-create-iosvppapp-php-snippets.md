@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\IosVppApp;
 use Microsoft\Graph\Generated\Models\MimeContent;
-use Microsoft\Graph\Generated\Models\PublishingState;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
 use Microsoft\Graph\Generated\Models\VppLicensingType;
 use Microsoft\Graph\Generated\Models\IosDeviceType;
 use Microsoft\Graph\Generated\Models\VppTokenAccountType;

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeAssignment;
-use Microsoft\Graph\Beta\Generated\Models\UserInputType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeInputType;
 use Microsoft\Graph\Beta\Generated\Models\UserAttributeValuesItem;
 use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttribute;
 
