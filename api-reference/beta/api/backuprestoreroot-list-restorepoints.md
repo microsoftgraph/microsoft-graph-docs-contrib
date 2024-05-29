@@ -34,8 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/restorePoints
+GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
 ```
+
+## Required query parameters
+This method supports two required `$expand` and `$filter` [OData Query Parameters](/graph/query-parameters) as shown in [example](../api/backuprestoreroot-list-restorepoints.md#request). 
+Method isn't available without the required query parameters.
 
 ## Request headers
 
@@ -62,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
 ```
 
 ### Response
