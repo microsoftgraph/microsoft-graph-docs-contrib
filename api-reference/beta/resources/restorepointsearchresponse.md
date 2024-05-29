@@ -1,7 +1,8 @@
 ---
 title: "restorePointSearchResponse resource type"
 description: "Contains collection of Protection Unit for which no Restore Point found and a collection of Restore Point for Protection Units with protection history in specified time period."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

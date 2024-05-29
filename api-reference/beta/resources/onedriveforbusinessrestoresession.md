@@ -1,7 +1,8 @@
 ---
 title: "oneDriveForBusinessRestoreSession resource type"
 description: "epresents restore-related tasks on artifacts that are protected by a OneDrive protection policy."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

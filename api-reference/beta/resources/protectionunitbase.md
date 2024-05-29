@@ -1,7 +1,8 @@
 ---
 title: "protectionUnitBase resource type"
 description: "Represents a site, drive, or mailbox that is protected by a protection policy."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

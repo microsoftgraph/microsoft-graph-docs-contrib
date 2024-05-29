@@ -1,7 +1,8 @@
 ---
 title: "backupRestoreRoot resource type"
 description: "BackupRestoreRoot resource of Microsoft 365 Backup and Storage"
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -27,7 +28,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the Backup Storage service.|
-|serviceStatus|[serviceStatus](../resources/servicestatus.md) collection|Represents the tenant-level status of the Backup Storage service.|
+|serviceStatus|[serviceStatus](../resources/servicestatus.md)|Represents the tenant-level status of the Backup Storage service.|
 
 ## Relationships
 

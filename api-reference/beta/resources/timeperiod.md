@@ -1,7 +1,8 @@
 ---
 title: "timePeriod resource type"
 description: "Contains start and end date time for a time period."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

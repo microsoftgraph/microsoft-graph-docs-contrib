@@ -1,7 +1,8 @@
 ---
 title: "serviceStatus resource type"
 description: "Represents tenant level service status related to Backup service."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

@@ -1,7 +1,8 @@
 ---
 title: "restorePointSearchResult resource type"
 description: "Get a list of available Restore Points for provided Protection Units"
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
