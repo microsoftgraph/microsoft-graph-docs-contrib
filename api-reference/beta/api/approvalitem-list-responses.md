@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.approval.approvalItemResponse)"
+  "@odata.type": "Collection(microsoft.graph.approvalItemResponse)"
 }
 -->
 ``` http
