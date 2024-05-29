@@ -3,7 +3,7 @@ title: "Health Monitoring enum values"
 description: "Microsoft Graph Health Monitoring enumeration values"
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: enumTypes
 ---
 

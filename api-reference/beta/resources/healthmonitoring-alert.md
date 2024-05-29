@@ -3,7 +3,7 @@ title: "alert resource type"
 description: "Represents an alert that was detected by the health monitoring system for anomalous usage patterns found in an Microsoft Entra tenant."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

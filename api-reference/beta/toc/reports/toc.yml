@@ -574,6 +574,7 @@ items:
       href: resources/healthmonitoring-overview.md
     - name: Alert
       href: resources/healthmonitoring-alert.md
+      items:
       - name: List
         href: healthmonitoring-healthmonitoringroot-list-alerts.md
       - name: Get 
@@ -582,6 +583,7 @@ items:
         href: healthmonitoring-alert-update.md
     - name: Alert configuration
       href: resources/healthmonitoring-alertconfiguration.md
+      items:
       - name: List
         href: healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
       - name: Get

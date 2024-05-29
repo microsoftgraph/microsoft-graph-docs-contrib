@@ -3,7 +3,7 @@ title: "healthMonitoringRoot resource type"
 description: "Represents a container for navigation properties of resources for  Microsoft Entra Health Monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

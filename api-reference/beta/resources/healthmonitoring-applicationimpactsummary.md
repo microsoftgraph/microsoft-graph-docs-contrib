@@ -3,7 +3,7 @@ title: "applicationImpactSummary resource type"
 description: "Represents a summary of an impacted resource in application type."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

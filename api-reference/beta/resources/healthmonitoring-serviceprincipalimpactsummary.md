@@ -3,7 +3,7 @@ title: "servicePrincipalImpactSummary resource type"
 description: "Represent a summary of an impacted resource in service principal type."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

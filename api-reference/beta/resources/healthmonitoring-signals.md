@@ -3,7 +3,7 @@ title: "signals resource type"
 description: "Represent a collection of signals that are used in the generation of the alert."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

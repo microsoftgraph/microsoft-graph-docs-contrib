@@ -3,7 +3,7 @@ title: "Overview"
 description: "Use the Microsoft Entra health monitoring API to view anomalous usage pattern for your tenant and receive alert notification"
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

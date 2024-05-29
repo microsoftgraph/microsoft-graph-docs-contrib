@@ -3,7 +3,7 @@ title: "enrichment resource type"
 description: "Represent a set of properties that add context to the alert."
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

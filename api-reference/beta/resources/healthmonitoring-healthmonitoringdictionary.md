@@ -3,7 +3,7 @@ title: "healthMonitoringDictionary resource type"
 description: "Represents a dictionary type used in Health Monitoring"
 author: "huatang92"
 ms.localizationpriority: medium
-ms.subservice: "entra-health-monitoring"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
