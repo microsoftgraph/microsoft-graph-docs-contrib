@@ -73,6 +73,9 @@ items:
     displayName: Azure AD, Microsoft identity platform, Identity and access
   - name: Industry data ETL (preview)
     href: toc/industry-data-etl-(preview)/toc.yml
+  - name: Backup storage
+    href: toc/backup-storage/toc.yml
+    displayName: M365 Backup Storage, Microsoft Backup Storage
   - name: Mail
     href: toc/mail/toc.yml
     displayName: Outlook, Outlook mail
