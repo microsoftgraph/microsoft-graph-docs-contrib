@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [PLACEHOLDER DESCRIPTION: i.e Get a list of [sessions](../resources/virtualeventsession.md) that an attendee registered for in a [webinar](../resources/virtualeventwebinar.md).]
 
-Currently, we're only supporting single session webinars, so this API will only return a single session. 
+Currently, we're only able to support single session webinars, so for the time being, this API will only return a single session. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md)* objects in the response body. 
 
-*Currently, only the session summary is returned, which is partial of the session object.
+*Currently, this API is only able to return the session summary, which is a partial representation of the full session object.
 
 ## Examples
 
