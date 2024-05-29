@@ -3,7 +3,7 @@ title: "virtualEventRegistration: list virtualeventsession"
 description: "Get a list of sessions that an attendee registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.service: "cloud-communications"
 doc_type: apiPageType
 ---
 
