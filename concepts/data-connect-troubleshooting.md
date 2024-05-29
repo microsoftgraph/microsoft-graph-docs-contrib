@@ -10,35 +10,17 @@ ms.subservice: "data-connect"
 
 Microsoft Graph Data Connect enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
 
-For more questions, reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
+## Issues with finding an application in the Azure Portal experience
 
-## Issues with service principal check when running your first pipeline
+If you're finding an application in the MGDC Azure Portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
 
-If you're having issues running your pipelines for the first time, verify that you have defined the owners for the Source Linked Service as follows:
+## Issues with approving an application
 
-- The service principal's owner must be a valid user account within the tenant, not another service principal. 
+To approve an application in the Admin Center, the user must be a global admin. An E5 license is not required.
 
-- The owner’s account must have:
+## Renewing an application consent
 
-    - A valid mailbox, either via an Exchange Online license or an Exchange Online plan within an Office 365 or Microsoft 365 license.
-
-    - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user doesn't have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
-        **Note:** This account doesn't need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
-
-    - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
-
-- If the owning member is no longer valid in a tenant's system, pipelines fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
-
-## PAM approver issues
-
-If you're having issues approving jobs within your tenant for your specified pipeline runs or extractions, verify that the approvers in your tenant meet the following criteria. Certain privileges must be granted to designated approvers to successfully approve jobs.
-
-- Approvers must be active user accounts within the tenant, not other service principals or groups.
-
-- The user account must have an Office 365 or Microsoft 365 E5 license with Exchange Online capabilities and a mailbox.
-
-- If approvers want to approve jobs through the Microsoft 365 admin center, they need global admin privileges. Global admin privileges aren't needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
-
+You can renew an app authorization before the expiry date. The global admin can click on the consented application and approve it again to extend the consent validity.
 
 ## Multi-geo tenant extraction issues
 
@@ -134,20 +116,6 @@ The following example describes how to troubleshoot network access issue:
 7.	For the ADF destination linked service to also access the destination storage account, they need to create and use an Integration Runtime on the West Europe region, or use auto resolve IR instead.
 
 8.	 The user lists these IP addresses and moves the destination storage to North Europe because the Office region is EUR, and the Azure region is West Europe. 
-
-## Issues with running your pipeline using mapping data flows 
-
-First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with a `Consent Pending` error. This triggers a consent request for the tenant admin, who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request. To resolve the issue:
-
-1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
-
-    a. If not approved in that timeframe, subsequent runs fail with the same error and regenerate a consent request.
-
-    b. When approved, the pipeline can be rerun at any time to retrieve data.
-
-    ![An image that shows the error the first time  Microsoft Graph Data Connect and the mapping data flow runs](images/data-connect-mdf-error.png)
-
-2. Verify that the destination storage is set up correctly to allow the app to write data into it.
 
 ## Issues with app registration
 
