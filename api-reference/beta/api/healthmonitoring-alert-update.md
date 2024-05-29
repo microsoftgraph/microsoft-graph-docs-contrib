@@ -1,7 +1,7 @@
 ---
 title: "Update alert"
 description: "Update the properties of a microsoft.graph.healthMonitoring.alert object."
-author: "*huatang92"
+author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
