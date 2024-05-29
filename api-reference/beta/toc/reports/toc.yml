@@ -569,8 +569,9 @@ items:
     - name: Export
       href: ../../api/partners-billing-unbilledusage-export.md
 - name: Microsoft Entra health monitoring
-  href: resources/healthmonitoring-overview.md
   items:
+    - name: Overview
+      href: resources/healthmonitoring-overview.md
     - name: Alert
       href: resources/healthmonitoring-alert.md
       - name: List
