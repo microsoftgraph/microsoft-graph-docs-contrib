@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RestorePostRequestBody;
+use Microsoft\Graph\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\Item\Restore\RestorePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

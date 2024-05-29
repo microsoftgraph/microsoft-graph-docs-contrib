@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationDefault()
 invitationRedemptionIdentityProviderConfiguration := graphmodels.NewDefaultInvitationRedemptionIdentityProviderConfiguration()
@@ -30,6 +30,7 @@ fallbackIdentityProvider := graphmodels.EMAILONETIMEPASSCODE_B2BIDENTITYPROVIDER
 invitationRedemptionIdentityProviderConfiguration.SetFallbackIdentityProvider(&fallbackIdentityProvider) 
 requestBody.SetInvitationRedemptionIdentityProviderConfiguration(invitationRedemptionIdentityProviderConfiguration)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 default, err := graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(context.Background(), requestBody, nil)
 
 

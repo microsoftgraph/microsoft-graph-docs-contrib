@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.azure_data_lake_connector import AzureDataLakeConnector
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.industry_data.azure_data_lake_connector import AzureDataLakeConnector
 
 graph_client = GraphServiceClient(credentials, scopes)
 

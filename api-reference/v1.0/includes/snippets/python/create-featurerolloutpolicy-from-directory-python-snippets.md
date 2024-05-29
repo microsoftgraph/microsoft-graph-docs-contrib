@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.feature_rollout_policy import FeatureRolloutPolicy
+from msgraph.generated.models.staged_feature_name import StagedFeatureName
 
 graph_client = GraphServiceClient(credentials, scopes)
 

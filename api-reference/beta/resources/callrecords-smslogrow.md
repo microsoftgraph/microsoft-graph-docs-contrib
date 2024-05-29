@@ -22,7 +22,7 @@ For those countries, the three or four last digits of the external phone number 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getSmsLog](../api/callrecords-callrecord-getsmslog.md) | [microsoft.graph.callRecords.smsLogRow](callrecords-smslogrow.md) collection | Get the log of a sent/received SMS as a collection of [smsLogRow](../resources/callrecords-smslogrow.md) entries. |
+| [Get SMS log](../api/callrecords-callrecord-getsmslog.md) | [microsoft.graph.callRecords.smsLogRow](callrecords-smslogrow.md) collection | Get the log of a sent/received SMS as a collection of [smsLogRow](../resources/callrecords-smslogrow.md) entries. |
 
 ## Properties
 

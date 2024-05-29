@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.drives.item.items.item.workbook.create_session.create_session_request_builder import CreateSessionRequestBuilder
-from msgraph.generated.drives.item.items.item.workbook.create_session.create_session_post_request_body import CreateSessionPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.workbook.create_session.create_session_request_builder import CreateSessionRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.drives.item.items.item.workbook.create_session.create_session_post_request_body import CreateSessionPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ request_body = CreateSessionPostRequestBody(
 	persist_changes = True,
 )
 
-request_configuration = CreateSessionRequestBuilder.CreateSessionRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "respond-async")
 
 

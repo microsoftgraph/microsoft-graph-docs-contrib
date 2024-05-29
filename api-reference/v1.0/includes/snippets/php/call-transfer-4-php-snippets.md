@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\TransferPostRequestBody;
+use Microsoft\Graph\Generated\Communications\Calls\Item\Transfer\TransferPostRequestBody;
 use Microsoft\Graph\Generated\Models\InvitationParticipantInfo;
 use Microsoft\Graph\Generated\Models\IdentitySet;
 use Microsoft\Graph\Generated\Models\Identity;
