@@ -3,7 +3,7 @@ title: "virtualEventRegistration: create"
 description: "Create a registation record for a webinar attendee."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
