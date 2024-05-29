@@ -194,7 +194,6 @@ Content-Type: application/json
 #### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventregistration-get-byuseridoremail"
