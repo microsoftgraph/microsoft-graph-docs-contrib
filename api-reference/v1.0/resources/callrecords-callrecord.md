@@ -17,8 +17,8 @@ Represents a single peer-to-peer call or a group call between multiple participa
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List callRecords](../api/callrecords-cloudcommunications-list-callrecords.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
-| [Get call record](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
+| [List](../api/callrecords-cloudcommunications-list-callrecords.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
+| [Get](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
 | [List PSTN calls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
 | [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
 
