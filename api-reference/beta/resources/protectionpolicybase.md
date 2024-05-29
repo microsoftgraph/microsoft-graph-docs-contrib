@@ -37,7 +37,7 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.||
+|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of protection units of the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 
