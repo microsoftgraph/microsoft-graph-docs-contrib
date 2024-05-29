@@ -1,6 +1,6 @@
 ---
 title: "exchangeRestoreSession resource type"
-description: "Represents restore-related tasks on artfiacts that are protected by an [Exchange protection policy."
+description: "Represents restore-related tasks on artifacts that are protected by an Exchange protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents restore-related tasks on artfiacts that are protected by an [Exchange protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Global Admins or Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a mailbox protection policy.
+Represents restore-related tasks on artifacts that are protected by an [Exchange protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Global Admins or Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a mailbox protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
