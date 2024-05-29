@@ -15,7 +15,7 @@ $requestBody = new GetTotalAggregatedRemoteConnectionReportsPostRequestBody();
 $requestBody->setTop(25);
 $requestBody->setSkip(0);
 $requestBody->setFilter('(TotalUsageInHour ge 40 and TotalUsageInHour le 80)');
-$requestBody->setSelect(['CloudPcId', 'ManagedDeviceName', 'UserPrincipalName', 'TotalUsageInHour', 'DaysSinceLastSignIn', 	]);
+$requestBody->setSelect(['CloudPcId', 'ManagedDeviceName', 'UserPrincipalName', 'TotalUsageInHour', 'LastActiveTime', 'PcType', 'CreatedDate' 	]);
 
 $graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->getTotalAggregatedRemoteConnectionReports()->post($requestBody)->wait();
 
