@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ValidatePropertiesPostRequestBody;
+use Microsoft\Graph\Generated\DirectoryObjects\ValidateProperties\ValidatePropertiesPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

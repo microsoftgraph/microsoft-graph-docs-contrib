@@ -20,9 +20,9 @@ Represents a Microsoft Entra user that shared their profile data with an externa
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofiles.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
-|[Get outboundSharedUserProfile](../api/outboundshareduserprofile-get.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve a specific outboundSharedUserProfile from the directory.|
-|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](../resources/tenantreference.md) collection| Get all Microsoft Entra tenants that a user shared their data with as a Microsoft Entra B2B direct connect user.|
+|[List](../api/directory-list-outboundshareduserprofiles.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
+|[Get](../api/outboundshareduserprofile-get.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve a specific outboundSharedUserProfile from the directory.|
+|[List tenant references](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](../resources/tenantreference.md) collection| Get all Microsoft Entra tenants that a user shared their data with as a Microsoft Entra B2B direct connect user.|
 |[Remove personal data](../api/tenantreference-removepersonaldata.md)|None| Create a request to remove all personal data associated with a remote user in an external Microsoft Entra tenant.|
 
 ## Properties
