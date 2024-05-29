@@ -24,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_copy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-copy-permissions.md)]
 
-
->**Note:** SharePoint Embedded requires the FileStorageContainer.Selected permission to access the content of the container. For more information, see [SharePoint Embedded authentication and authorization](/sharepoint/dev/embedded/concepts/app-concepts/auth#access-on-behalf-of-a-user)
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
