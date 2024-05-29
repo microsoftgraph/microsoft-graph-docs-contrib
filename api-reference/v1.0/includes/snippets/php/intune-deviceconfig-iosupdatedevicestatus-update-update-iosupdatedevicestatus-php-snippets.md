@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\IosUpdateDeviceStatus;
+use Microsoft\Graph\Generated\Models\IosUpdatesInstallStatus;
+use Microsoft\Graph\Generated\Models\ComplianceStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.teams.item.schedule.timecards.item.clock_out.clock_out_post_request_body import ClockOutPostRequestBody
-from msgraph.generated.models.item_body import ItemBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.teams.item.schedule.timecards.item.clock_out.clock_out_post_request_body import ClockOutPostRequestBody
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

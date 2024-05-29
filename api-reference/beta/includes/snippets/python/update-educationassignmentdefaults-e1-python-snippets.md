@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.education_assignment_defaults import EducationAssignmentDefaults
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.education_assignment_defaults import EducationAssignmentDefaults
+from msgraph_beta.generated.models.education_added_student_action import EducationAddedStudentAction
+from msgraph_beta.generated.models.education_add_to_calendar_options import EducationAddToCalendarOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

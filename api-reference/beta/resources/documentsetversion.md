@@ -20,11 +20,11 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get the [documentSetVersion](../resources/documentsetversion.md) resources from the **documentSetVersions** navigation property.|
-|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Get documentSetVersion](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [documentSetVersion](../resources/documentsetversion.md).|
+|[List](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get the [documentSetVersion](../resources/documentsetversion.md) resources from the **documentSetVersions** navigation property.|
+|[Create](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [documentSetVersion](../resources/documentsetversion.md) object.|
+|[Get](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
+|[Delete](../api/documentsetversion-delete.md)|None|Delete a [documentSetVersion](../resources/documentsetversion.md) object.|
+|[Restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [documentSetVersion](../resources/documentsetversion.md).|
 
 
 ## Properties

@@ -5,11 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\TimeCard;
-use Microsoft\Graph\Generated\Models\TimeCardEvent;
-use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\TimeCardBreak;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TimeCard;
+use Microsoft\Graph\Beta\Generated\Models\TimeCardEvent;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\TimeCardBreak;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

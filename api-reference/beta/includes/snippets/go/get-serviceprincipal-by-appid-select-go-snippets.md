@@ -11,14 +11,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphserviceprincipals(appid='{appid}') "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals(appid='{appid}')"
+	  graphserviceprincipalswithappid "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipalswithappid"
 	  //other-imports
 )
 
-requestParameters := &graphserviceprincipals(appid='{appid}').ServicePrincipals(appId='{appId}')RequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipalswithappid.ServicePrincipalsWithAppIdRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","appRoles","publishedPermissionScopes","resourceSpecificApplicationPermissions"},
 }
-configuration := &graphserviceprincipals(appid='{appid}').ServicePrincipals(appId='{appId}')RequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipalswithappid.ServicePrincipalsWithAppIdRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
