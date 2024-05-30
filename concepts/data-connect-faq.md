@@ -8,14 +8,14 @@ ms.subservice: "data-connect"
 
 # Microsoft Graph Data Connect frequently asked questions
 
-Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
+Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
 
-For more questions, see [troubleshooting](data-connect-troubleshooting.md), or create a new Azure Support request with the following selections:
+For more questions, see [troubleshooting](data-connect-troubleshooting.md) or create a new Azure support request with the following selections:
 
-- Service type: select **Microsoft Graph High-Capacity APIs**
-- Problem type: select **Microsoft Graph Data Connect (MGDC)**
+- **Service type**: Choose **Microsoft Graph High-Capacity APIs**
+- **Problem type**: Choose **Microsoft Graph Data Connect (MGDC)**
 
-![A screenshot that shows the selection of topics in the Azure Support request to refer to an issue with Microsoft Graph Data Connect.](images/AzureSupportRequestMGDC.png)
+![A screenshot that shows the selection of topics in an Azure support request to refer to an issue with Microsoft Graph Data Connect.](images/azuresupportrequestmgdc.png)
 
 ## Is Microsoft Graph Data Connect right for me?
 
@@ -43,7 +43,7 @@ When customers are looking for insights and analytics beyond Viva Insights, Data
 
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
-Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please create a new Azure Support request with the details in the section above.
+Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please create a new Azure support request, including the details mentioned in the previous section.
 
 ## What regions is Microsoft Graph Data Connect available in?
 
@@ -86,7 +86,7 @@ Instead, the customer will be billed for 20 units because Microsoft Graph Data C
 
 For preview datasets, make sure that you meet the criteria described in [Datasets, regions, and sinks](/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
 
-For questions, please create a new Azure Support request with the details in the section above.
+For questions, create a new Azure support request, including the details mentioned in the previous section.
 
 ## What scenarios is Microsoft Graph Data Connect best for?
 
@@ -106,7 +106,7 @@ For more information about building your application with Azure Synapse or Azure
 
 ## Will every pipeline run require a new consent request?
  
-As long as the scope of the data being extracted remains the same for datasets, columns, users, and sink, the pipeline run will NOT require a new consent request. Instead, the pipeline will use the approved active consent. Running a pipeline with the same scope for different dates will NOT require a new consent.
+As long as the scope of the data being extracted remains the same for datasets, columns, users, and sink, the pipeline run doesn't require a new consent request. Instead, the pipeline uses the approved active consent. Running a pipeline with the same scope for different dates doesn't require a new consent.
 
 ## Can I deduplicate emails when needed?
 
