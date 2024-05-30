@@ -1,6 +1,6 @@
 ---
 title: "driveRestoreArtifact resource type"
-description: "Describes onedrive restore artifact and its properties"
+description: "Represents the restore point and destination details that can be used to restore a drive protection unit."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the restore point and destination details that can be used to restore a OneDrive for Business [protection unit](protectionunitbase.md). 
+Represents the restore point and destination details that can be used to restore a [drive protection unit](driveprotectionunit.md). 
 
 Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
@@ -52,13 +52,13 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |Member | Description |
 |:------|:------------|
 |new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
-|inPlace|Restoration will occur in the same location. For SharePoint, it will bbe on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
+|inPlace|Restoration will occur in the same location. For SharePoint, it will be on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the onedrive unit's restore point and destination relevant details that can be used to restore it. Inherited from [microsoft.graph.restoreArtifactBase](../resources/restoreartifactbase.md)|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the onedrive unit's restore point and destination relevant details that can be used to restore it. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

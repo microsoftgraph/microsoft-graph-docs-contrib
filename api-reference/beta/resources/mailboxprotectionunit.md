@@ -41,7 +41,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 ### protectionUnitStatus values
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of this unit was requested. Applies when a policy is activated or new units are added to an active policy.|
+|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
 |protected | Protection was successfully enabled for the unit.|
 |unprotectRequested |A request was made to deactivate protection for the unit.|
 |unprotected | Protection was successfully disabled for the unit.|

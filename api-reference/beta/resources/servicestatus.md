@@ -1,6 +1,6 @@
 ---
 title: "serviceStatus resource type"
-description: "Represents tenant level service status related to Backup service."
+description: "Represents the tenant-level service status of the backup service."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,32 +14,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant level service status related to Backup service.
+Represents the tenant-level service status of the backup service.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |backupServiceConsumer|[backupServiceConsumer](../resources/servicestatus.md#backupserviceconsumer-values)|The type of consumer. The possible values are: `unknown`, `firstparty`, `thirdparty`, `unknownFutureValue`.|
-|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason of service disablement. The possible values are: `none`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
+|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
 |gracePeriodDateTime|DateTimeOffset|The expiration time of the grace period.|
 |restoreAllowedTillDateTime|DateTimeOffset|The expiration time of the restoration allowed period.|
-|status|[backupServiceStatus](../resources/servicestatus.md#backupservicestatus-values)|Status of the service. This also controls what capabilities can be used with different statuses. The possible values are: `disabled`, `enabled`, `protectionChangeLocked`, `restoreLocked`, `unknownFutureValue`.|
+|status|[backupServiceStatus](../resources/servicestatus.md#backupservicestatus-values)|Status of the service. This value indicates what capabilities can be used. The possible values are: `disabled`, `enabled`, `protectionChangeLocked`, `restoreLocked`, `unknownFutureValue`.|
 
 ### backupServiceConsumer values
-
-This represents the type of consumer that is using the service.
 
 |Member | Description |
 |:------|:------------|
 |none | Default value. No consumer is using the service.|
-|firstparty | Microsoft Admin Center is Backup service control app.|
-|thirdparty | An ISV app is Backup service control app.|
+|firstparty | Microsoft Admin Center is the backup service control app.|
+|thirdparty | An ISV app is the backup service control app.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ### disableReason values
-
-This represents the reason for locking the service.
 
 |Member | Description |
 |:------|:------------|
@@ -50,14 +46,12 @@ This represents the reason for locking the service.
 
 ### backupServiceStatus values
 
-This represents current status of the service.
-
 |Member | Description |
 |:------|:------------|
-|disabled | Service is disabled. This is the default state. Service is not enabled for the tenant.|
-|enabled | Service is enabled. New protection policy can be created/modified and restore is allowed.|
-|protectionChangeLocked | Service is locked with no change in protection allowed. New protection policy can't be created or updated. No new protection items can be added or removed.|
-|restoreLocked | Service is locked with no protection change and no restore. Protection policy can't be created or updated. No new protection items can be added or removed. No restore can be performed.|
+|disabled | Service is disabled. This is the default state. The service is not enabled for the tenant.|
+|enabled | Service is enabled. A new protection policy can be created or modified and restore is allowed.|
+|protectionChangeLocked | Service is locked with no change in protection allowed. A new protection policy can't be created or updated. No new protection items can be added or removed.|
+|restoreLocked | Service is locked with no protection change and no restore. The protection policy can't be created or updated. No new protection items can be added or removed. No restore can be performed.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

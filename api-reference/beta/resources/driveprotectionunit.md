@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionUnit resource type"
-description: "Represents a protection unit associated with OneDrive for Business."
+description: "Represents a protection unit associated with a OneDrive for Business protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a protection unit associated with a OneDrive for Business protection policy.
+Represents a protection unit associated with a [OneDrive for Business protection policy](onedriveforbusinessprotectionpolicy.md).
 
 Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
@@ -39,13 +39,13 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |status|[protectionUnitStatus](../resources/driveprotectionunit.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
-|Member | Description |
+||Member | Description |
 |:------|:------------|
-|protectRequested | Protection of the unit was requested. This is the state when a policy is activated or new units are added to an active policy.|
-|protected | The protection unit is successfully enabled.|
-|unprotectRequested | Disabling protection of the unit was requested. This is the state when a policy is deactivated.|
-|unprotected | The protection unit is successfully disabled.|
-|removeRequested |A request to remove the protected unit from the policy was made. The user wants to explicitly remove units from the policy. |
+|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
+|protected | Protection was successfully enabled for the unit.|
+|unprotectRequested |A request was made to deactivate protection for the unit.|
+|unprotected | Protection was successfully disabled for the unit.|
+|removeRequested |A user requested removal of the protected unit from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

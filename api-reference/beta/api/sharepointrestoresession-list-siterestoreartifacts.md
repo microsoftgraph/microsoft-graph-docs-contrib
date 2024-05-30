@@ -1,6 +1,6 @@
 ---
 title: "List siteRestoreArtifacts"
-description: "List all the siteRestoreArtifacts for a SharePoint restore session for the tenant."
+description: "List all the siteRestoreArtifact objects for a SharePoint restore session for the tenant."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant.
+List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) objects for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects in the response body.
 
 ## Examples
 

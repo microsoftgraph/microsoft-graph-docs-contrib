@@ -1,6 +1,6 @@
 ---
 title: "serviceApp resource type"
-description: "Represents a service application being registered as a Backup service control app"
+description: "Represents a service application that's registered as a backup service control app."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,39 +14,39 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a service application being registered as a Backup service control app.
+Represents a service application that's registered as a backup service control app.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceApp](../api/backuprestoreroot-list-serviceapps.md)|[serviceApp](../resources/serviceapp.md) collection|Get a list of the [serviceApp](../resources/serviceapp.md) and their properties.|
-|[Create serviceApp](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
-|[Get serviceApp](../api/serviceapp-get.md)|[serviceApp](../resources/serviceapp.md)|Read the properties and relationships of a [serviceApp](../resources/serviceapp.md).|
-|[Delete serviceApp](../api/backuprestoreroot-delete-serviceapps.md)|None|Delete a [serviceApp](../resources/serviceapp.md).|
-|[activate](../api/serviceapp-activate.md)|[serviceApp](../resources/serviceapp.md)|Activate a serviceApp on behalf of the signed-in user.|
-|[deactivate](../api/serviceapp-deactivate.md)|[serviceApp](../resources/serviceapp.md)|Deactivate a serviceApp on behalf of the signed-in user.|
+|[List](../api/backuprestoreroot-list-serviceapps.md)|[serviceApp](../resources/serviceapp.md) collection|Get a list of the [serviceApp](../resources/serviceapp.md) objects and their properties.|
+|[Create](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
+|[Get](../api/serviceapp-get.md)|[serviceApp](../resources/serviceapp.md)|Read the properties and relationships of a [serviceApp](../resources/serviceapp.md).|
+|[Delete](../api/backuprestoreroot-delete-serviceapps.md)|None|Delete a [serviceApp](../resources/serviceapp.md).|
+|[Activate](../api/serviceapp-activate.md)|[serviceApp](../resources/serviceapp.md)|Activate a service app on behalf of the signed-in user.|
+|[Deactivate](../api/serviceapp-deactivate.md)|[serviceApp](../resources/serviceapp.md)|Deactivate a service app on behalf of the signed-in user.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|application|[identity](../resources/identity.md)|AAD Application ID.|
-|effectiveDateTime|DateTimeOffset|Timestamp of effective activation of the service app entity.|
-|id|String|The unique identifier of a service app.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this entity.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity.|
-|registrationDateTime|DateTimeOffset|Timestamp of creation of the service app entity.|
-|status|[serviceAppStatus](../resources/serviceapp.md#serviceappstatus-values)|Status of the service app. This controls whether application can be used to control Backup service or not.The possible values are: `inactive`, `active`, `pendingActive`, `pendingInactive`, `unknownFutureValue`.|
+|application|[identity](../resources/identity.md)|The Entra ID application ID.|
+|effectiveDateTime|DateTimeOffset|Timestamp of the effective activation of the service app.|
+|id|String|The unique identifier of the service app.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the entity.|
+|registrationDateTime|DateTimeOffset|Timestamp of the creation of the service app entity.|
+|status|[serviceAppStatus](../resources/serviceapp.md#serviceappstatus-values)|The status of the service app. This value indicates whether or not the application can be used to control the backup service. The possible values are: `inactive`, `active`, `pendingActive`, `pendingInactive`, `unknownFutureValue`.|
 
 ### serviceAppStatus values
 
 |Member | Description |
 |:------|:------------|
-|inactive|The app is registered with backup service.|
-|active|The app is active to be used as backup service control app.|
-|pendingActive|This app is requested to be activated but not yet active. This app can't be used to control/manage the backup service. This app will have ReadOnly access to the Protection Policies and Protection Units.|
-|pendingInactive|This app is requested to be inactive but not yet inactive. This app can be used to control the backup service until effective date.|
+|inactive|The app is registered with the backup service.|
+|active|The app is actively in use as a backup service control app.|
+|pendingActive|A request was made to activate the app but it's not yet active. The app can't be used to control or manage the backup service and has read-only access to the protection policies and protection units.|
+|pendingInactive|A request was made to deactivate the app but the app isn't yet inactive. The app can be used to control the backup service until the effective date.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

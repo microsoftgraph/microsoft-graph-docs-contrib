@@ -1,6 +1,6 @@
 ---
 title: "siteRestoreArtifact resource type"
-description: "Describes site restore artifact and its properties"
+description: "Represents the restore point and destination details that can be used to restore a site protection unit."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore Artifact refers to the site unit's restore point and destination relevant details that can be used to restore it.
+Represents the restore point and destination details that can be used to restore a [site protection unit](siteprotectionunit.md).
 
 Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
@@ -22,47 +22,45 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteRestoreArtifact](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Get a list of the [siteRestoreArtifact](../resources/siterestoreartifact.md) and their properties.|
+|[List](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Get a list of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects and their properties.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the Restore Artifact.|
-|completionDateTime|DateTimeOffset|The time when restoration of Restore Artifact. is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|destinationType|[destinationType](../resources/siterestoreartifact.md#destinationtype-values)|Describes preference for restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restoration of Restore Artifact. fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|restoredSiteId|String|The new site identifier if destinationType is new, and input siteId for for inPlace.|
+|id|String|The unique identifier of the restore artifact.|
+|completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|destinationType|[destinationType](../resources/siterestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the restore artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|restoredSiteId|String|The new site identifier if the value of the **destinationType** property is `new`, and the existing site ID if the value is `inPlace`.|
 |restoredSiteName|String|The name of the restored site.|
-|restoredSiteWebUrl|String|The web url of the site restored.|
-|startDateTime|DateTimeOffset|The time when restoration of Restore Artifact. is started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/siterestoreartifact.md#artifactrestorestatus-values)|The individual restoration status of the Restore Artifact.. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|restoredSiteWebUrl|String|The web URL of the restored site.|
+|startDateTime|DateTimeOffset|The time when restoration of the restore artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|status|[artifactRestoreStatus](../resources/siterestoreartifact.md#artifactrestorestatus-values)|The restoration status of the restore artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### artifactRestoreStatus values
 
 |Member | Description |
 |:------|:------------|
-|added|Initial Status when Restore Artifact has been added to Restore Session.|
-|scheduling|Status when activate action is called on the Restore Session.|
-|scheduled|Status when activate action call is successful on the Restore Session.|
-|inProgress|Status when Restore Artifact is/has been picked for restoration.|
-|succeeded|The Restore Artifact has successfully restored.|
-|failed|Status when restoration of artifact is failed.|
+|added|The restore artifact was added to the restore session.|
+|scheduling|The activate action was called on the restore session.|
+|scheduled|The activate action call was successful on the restore session.|
+|inProgress|The restore artifact was picked for restoration.|
+|succeeded|The restore artifact was successfully restored.|
+|failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
-
-### destinationType values
 
 |Member | Description |
 |:------|:------------|
-|new|Restoration will be done at new location. eg. for SharePoint and OneDrive new site will be created and content will be restore in newly created site. for Exchange restored folder will be created and content will be restored there.|
-|inPlace|Restore will be done on the same location, e.g. on the same site, for one drive on same drive and for Exchange Artifact will be restored in same mailbox.|
+|new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
+|inPlace|Restoration will occur in the same location. For SharePoint, it will bbe on the same site, for OneDrive, on the same drive, and for Exchange, the artifact will be restored in the same mailbox.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the site unit's Restore Point and destination relevant details that can be used to restore it. Inherited from [microsoft.graph.restoreArtifactBase](../resources/restoreartifactbase.md).|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an artifact is protected by a protection policy and can be restored. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 
 ## JSON representation
 

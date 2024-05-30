@@ -1,6 +1,6 @@
 ---
 title: "serviceApp: activate"
-description: "Activate a serviceApp"
+description: "Activate a serviceApp."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -44,15 +44,15 @@ POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 
 ## Request body
 
-You can specify the following properties when creating a **serviceApp**.
+You can specify the following properties you activate a **serviceApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|effectiveDateTime|DateTimeOffset|The time to activate the serviceApp. Required.|
+|effectiveDateTime|DateTimeOffset|The date time to activate the serviceApp. Required.|
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [serviceApp](../resources/serviceapp.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [serviceApp](../resources/serviceapp.md) object in the response body.
 
 ## Examples
 

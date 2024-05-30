@@ -1,6 +1,6 @@
 ---
 title: "serviceApp: deactivate"
-description: "Deactivate a serviceApp"
+description: "Deactivate a serviceApp."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium

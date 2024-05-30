@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the plan defined by the Global Admin or Exchange Online Admin to protect Exchange Online. The Exchange protection policy defines  what mailbox data to protect, when to protect it, and for what time period to retain the protected data.
+Represents the plan defined by the Exchange Online Admin to protect Exchange Online. The Exchange protection policy defines  what mailbox data to protect, when to protect it, and for what time period to retain the protected data.
 
 Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 

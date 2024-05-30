@@ -1,6 +1,6 @@
 ---
 title: "siteProtectionUnit resource type"
-description: "Describes a site protection unit"
+description: "Represents a SharePoint site that has a SharePoint protection policy applied."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Site protection unit represents the protectionUnit associated with the SharePoint site.
+Represents a SharePoint site that has a [SharePoint protection policy](sharepointprotectionpolicy.md) applied.
 
 Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
@@ -22,33 +22,33 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteProtectionUnit](../api/backuprestoreroot-list-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) and their properties.|
+|[List](../api/backuprestoreroot-list-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of [siteProtectionUnit](../resources/siteprotectionunit.md) objects and their properties.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the Protection Unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|createdDateTime|DateTimeOffset|The time of creation of the Protection Unit.  Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the enablement/disablement of Protection Unit fails. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|id|String|Unique identifier of the protection policy associated with this Protection Unit.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the Protection Unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|lastModifiedDateTime|DateTimeOffset|The time of last modification of the Protection Unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|policyId|String|Unique identifier of the protection policy associated with this Protection Unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|createdDateTime|DateTimeOffset|The time of creation of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|error|[publicError](../resources/publicerror.md)|Contains error details if enabling or disabling the protection unit fails. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|id|String|Unique identifier of the protection policy associated with this protection unit.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |siteId|String|Unique identifier of the SharePoint site.|
 |siteName|String|Name of the SharePoint site.|
-|siteWebUrl|String|WebUrl of the SharePoint site.|
-|status|[protectionUnitStatus](../resources/siteprotectionunit.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the Protection Unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|siteWebUrl|String|The web URL of the SharePoint site.|
+|status|[protectionUnitStatus](../resources/siteprotectionunit.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
 
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of this unit has been requested to be enabled. This state arrives when policy is activated or new units are added to active policy.|
-|protected | Protection unit is successfully enabled for protection.|
-|unprotectRequested |Protection of unit has been requested to be disabled. This state arrives when policy is deactivated.|
-|unprotected | Protection unit is successfully disabled for protection.|
-|removeRequested |Already protected unit has been requested to be removed from policy. This state arrives when the user wants to explicitly remove units from the policy. |
+|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
+|protected | Protection was successfully enabled for the unit.|
+|unprotectRequested |A request was made to deactivate protection for the unit.|
+|unprotected | Protection was successfully disabled for the unit.|
+|removeRequested |A user requested removal of the protected unit from the policy. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
