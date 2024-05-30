@@ -8,7 +8,7 @@ Microsoft Graph Data Connect (Data Connect) augments transactional APIs with an 
 
 ![An architectural diagram of Microsoft Graph Data Connect, showing defined data controls, extending Office 365 data into Azure, and enabling big data and machine learning.](../concepts/images/data-connect-mgdc-capabilities.PNG)
 
-Data Connect uses Microsoft Fabric, Azure Synapse or Azure Data Factory to copy Microsoft 365 data to your application's storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Azure, letting you access the most applicable development and hosting tools available.
+Data Connect uses Microsoft Fabric, Azure Synapse, or Azure Data Factory to copy Microsoft 365 data to your application's storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Azure, letting you access the most applicable development and hosting tools available.
 
 Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
