@@ -59,6 +59,7 @@ This method supports the `$select`, `$expand`, and `$top` [OData query parameter
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|deltaExcludeParent| String. If this request header is included, the response includes the items that have changed, and not the parent items in the hierarchy.|
 
 ## Request body
 

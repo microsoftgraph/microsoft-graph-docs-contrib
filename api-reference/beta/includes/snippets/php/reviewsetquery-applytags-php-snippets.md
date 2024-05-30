@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ApplyTagsPostRequestBody;
-use Microsoft\Graph\Generated\Models\Tag;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Compliance\Ediscovery\Cases\Item\ReviewSets\Item\Queries\Item\MicrosoftGraphEdiscoveryApplyTags\ApplyTagsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Ediscovery\Tag;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

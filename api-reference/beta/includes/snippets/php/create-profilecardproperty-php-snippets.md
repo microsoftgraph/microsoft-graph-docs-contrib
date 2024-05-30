@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ProfileCardProperty;
-use Microsoft\Graph\Generated\Models\ProfileCardAnnotation;
-use Microsoft\Graph\Generated\Models\DisplayNameLocalization;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardProperty;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardAnnotation;
+use Microsoft\Graph\Beta\Generated\Models\DisplayNameLocalization;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

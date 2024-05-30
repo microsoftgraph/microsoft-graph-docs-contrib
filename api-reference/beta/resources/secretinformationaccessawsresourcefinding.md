@@ -4,7 +4,7 @@ description: "View AWS resources that have privileges to read, modify, or delete
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List secretInformationAccessAwsResourceFinding objects](../api/secretinformationaccessawsresourcefinding-list.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) collection|Get a list of the [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) objects and their properties.|
-|[Get secretInformationAccessAwsResourceFinding](../api/secretinformationaccessawsresourcefinding-get.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md)|Read the properties and relationships of a [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) object.|
+|[List](../api/secretinformationaccessawsresourcefinding-list.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) collection|Get a list of the [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) objects and their properties.|
+|[Get](../api/secretinformationaccessawsresourcefinding-get.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md)|Read the properties and relationships of a [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) object.|
 
 
 ## Properties

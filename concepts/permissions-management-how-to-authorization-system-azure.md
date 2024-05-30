@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: multicloud-permissions-management
+ms.subservice: entra-permissions-management
 ms.date: 01/05/2024
 #CustomerIntent: As a developer, I want a one-stop shop for all the common tasks I can program through the permissions management APIs so that I don't have to visit all API docs one at a time.
 ---

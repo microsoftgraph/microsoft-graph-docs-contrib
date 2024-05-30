@@ -1,0 +1,46 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Search API,querying,indexing",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Search API](https://learn.microsoft.com/en-us/graph/search-concept-overview) that constitutes [querying](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://learn.microsoft.com/en-us/graph/api/resources/connectors-api-overview?view=graph-rest-beta) capabilities.",
+          "Target": "Microsoft Search API,querying,indexing"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "query",
+          "ChangeType": "Addition",
+          "Description": "Added the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) action.",
+          "Target": "query"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](https://learn.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](https://learn.microsoft.com/en-us/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](https://learn.microsoft.com/en-us/graph/api/resources/searchhitscontainer?view=graph-rest-beta), and [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) complex types.",
+          "Target": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://learn.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and **externalFile** entities, and methods exposed by these entities.",
+          "Target": "externalConnection,schema,externalItem,externalFile"
+        }
+      ],
+      "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }
+  ]
+}

@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+|[Discover](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 
@@ -59,11 +59,6 @@ The following JSON representation shows the resource type.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

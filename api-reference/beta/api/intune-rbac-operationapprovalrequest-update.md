@@ -59,7 +59,6 @@ The following table shows the properties that are required when you create the [
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval status of the request. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`. Default value is `unknown`. Read-only. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
 |requestJustification|String|Indicates the justification for creating the request. Maximum length of justification is 1024 characters. For example: 'Needed for Feb 2023 application baseline updates.' Read-only. This property is read-only.|
 |approvalJustification|String|Indicates the justification for approving or rejecting the request. Maximum length of justification is 1024 characters. For example: 'Approved per Change 23423 - needed for Feb 2023 application baseline updates.' Read-only. This property is read-only.|
-|operationApprovalPolicies|String|The operational approval policies used in the request. Indicates the policy and platform combinations that are required for this request to be approved or rejected. Read-only. This property is read-only.|
 |requiredOperationApprovalPolicyTypes|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md) collection|Indicates the approval policy types required by the request in order for the request to be approved or rejected. Read-only. This property is read-only. Possible values are: `unknown`, `deviceAction`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicy`, `configurationPolicy`, `appProtectionPolicy`, `policySet`, `filter`, `endpointSecurityPolicy`, `apps`, `script`, `role`, `deviceResetPasscode`, `customOrganizationalMessage`, `unknownFutureValue`.|
 
 
@@ -74,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 Content-type: application/json
-Content-length: 1486
+Content-length: 1417
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -119,7 +118,6 @@ Content-length: 1486
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
   "approvalJustification": "Approval Justification value",
-  "operationApprovalPolicies": "Operation Approval Policies value",
   "requiredOperationApprovalPolicyTypes": [
     "deviceAction"
   ]
@@ -131,7 +129,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1599
+Content-Length: 1530
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -178,7 +176,6 @@ Content-Length: 1599
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
   "approvalJustification": "Approval Justification value",
-  "operationApprovalPolicies": "Operation Approval Policies value",
   "requiredOperationApprovalPolicyTypes": [
     "deviceAction"
   ]

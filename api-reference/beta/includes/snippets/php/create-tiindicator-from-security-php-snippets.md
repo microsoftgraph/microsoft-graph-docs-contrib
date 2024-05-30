@@ -5,8 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\TiIndicator;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TiIndicator;
+use Microsoft\Graph\Beta\Generated\Models\TiAction;
+use Microsoft\Graph\Beta\Generated\Models\FileHashType;
+use Microsoft\Graph\Beta\Generated\Models\TlpLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

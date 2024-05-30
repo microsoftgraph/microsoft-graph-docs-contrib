@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.update_windows_device_account_post_request_body import UpdateWindowsDeviceAccountPostRequestBody
+from msgraph.generated.devicemanagement.manageddevices.item.update_windows_device_account.update_windows_device_account_post_request_body import UpdateWindowsDeviceAccountPostRequestBody
 from msgraph.generated.models.update_windows_device_account_action_parameter import UpdateWindowsDeviceAccountActionParameter
 from msgraph.generated.models.windows_device_account import WindowsDeviceAccount
 

@@ -3,7 +3,7 @@ title: "relyingPartyDetailedSummary resource type"
 description: "Represents the summary of AD FS relying parties' information on daily, weekly, or monthly frequency."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: entra-monitoring-health
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
+|[Get relying party detailed summary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
 
 ## Properties
 

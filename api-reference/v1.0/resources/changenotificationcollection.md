@@ -4,7 +4,7 @@ description: "Represents a collection of subscription notifications sent to the 
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # changeNotificationCollection resource type

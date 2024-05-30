@@ -39,6 +39,7 @@ Inherits from [deviceManagementResourceAccessProfileBase](../resources/intune-ra
 |creationDateTime|DateTimeOffset|DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |roleScopeTagIds|String collection|Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |authenticationCertificateId|Guid|ID to the Authentication Certificate|
 |customXmlFileName|String|Custom Xml file name.|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 byte encoding)|
@@ -67,6 +68,12 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "String"
+    }
   ],
   "authenticationCertificateId": "Guid",
   "customXmlFileName": "String",

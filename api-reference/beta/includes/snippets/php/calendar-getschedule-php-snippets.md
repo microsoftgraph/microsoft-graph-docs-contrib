@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\Calendar\GetSchedule\GetScheduleRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\GetSchedulePostRequestBody;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Calendar\GetSchedule\GetScheduleRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Users\Item\Calendar\GetSchedule\GetSchedulePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

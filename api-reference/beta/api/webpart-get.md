@@ -63,7 +63,7 @@ The following example shows a request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e
 ```
 
 #### Response
@@ -92,15 +92,15 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a webPart object using select and expand
+### Example 2: Get a webPart object using select
 #### Request
 
-With `select` statement, you can retrieve selected webpart metadata in a request.
+With `$select` statement, you can retrieve selected webpart metadata in a request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}?select=id
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e?$select=id
 ```
 
 #### Response

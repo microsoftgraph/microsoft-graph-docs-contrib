@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.reply_post_request_body import ReplyPostRequestBody
+from msgraph.generated.users.item.messages.item.reply.reply_post_request_body import ReplyPostRequestBody
 from msgraph.generated.models.message import Message
 from msgraph.generated.models.recipient import Recipient
 from msgraph.generated.models.email_address import EmailAddress

@@ -3,7 +3,7 @@ title: "Add sponsor"
 description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 

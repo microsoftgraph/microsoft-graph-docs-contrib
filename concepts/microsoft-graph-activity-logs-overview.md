@@ -3,7 +3,7 @@ title: "Access Microsoft Graph activity logs"
 description: "Microsoft Graph activity logs are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: yiheguo
+ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: non-product-specific
@@ -18,9 +18,9 @@ All logs for API requests made from line of business applications, API clients, 
 
 This service is available in the following [national cloud deployments](/graph/deployments).
 
-| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
-|--------------------|------------------|------------------------|----------------------------|
-| :white_check_mark: | :x:              | :x:                    | :x:                        |
+| Global service     | US Government L4   | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|--------------------|------------------------|----------------------------|
+| :white_check_mark: | :white_check_mark: | :white_check_mark:     | :x:                        |
 
 ## Prerequisites
 
