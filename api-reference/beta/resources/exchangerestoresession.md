@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents restore-related tasks on artifacts that are protected by an [Exchange protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Global Admins or Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a mailbox protection policy.
+Represents restore-related tasks on artifacts that are protected by an [Exchange protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a mailbox protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 

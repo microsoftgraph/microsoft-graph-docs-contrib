@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents restore-related tasks on artifacts that are protected by a [OneDrive protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by Global Admins to perform restore-related tasks on artifacts that are protected as part of a OneDrive protection policy.
+Represents restore-related tasks on artifacts that are protected by a [OneDrive protection policy](exchangeprotectionpolicy.md). Restore session APIs are used by SharePoint Admins to perform restore-related tasks on artifacts that are protected as part of a OneDrive protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
