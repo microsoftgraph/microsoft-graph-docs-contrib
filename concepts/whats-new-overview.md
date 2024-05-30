@@ -62,6 +62,10 @@ Use the new [Bicep templates for Microsoft Graph resources](https://aka.ms/graph
 
 Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
 
+### Microsoft 365 Backup Storage
+
+- Enables partners to build customized versions of their applications integrated with the Microsoft 365 Backup Storage platform, ensuring exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. Business continuity assurance is a critical concern for many companies. Microsoft 365 Backup Storage APIs provide peace of mind by delivering reliable, performant and at-scale backup/restore confidence.
+
 ### Search
 
 Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
