@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: OneDrive for Business protection policy
 ---
 
 # oneDriveForBusinessProtectionPolicy resource type
