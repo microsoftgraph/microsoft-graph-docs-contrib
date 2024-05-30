@@ -44,7 +44,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -164,7 +164,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
