@@ -1,16 +1,6 @@
 items:
 - name: Overview
   href: ../../resources/industrydata-overview.md
-- name: Azure Data Lake connector
-  items:
-  - name: Azure Data Lake connector
-    href: ../../resources/industrydata-azuredatalakeconnector.md
-  - name: Create
-    href: ../../api/industrydata-azuredatalakeconnector-post.md
-  - name: Update
-    href: ../../api/industrydata-azuredatalakeconnector-update.md
-  - name: Get upload session
-    href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
 - name: File validate operation
   items:
   - name: File validate operation
@@ -19,14 +9,6 @@ items:
     href: ../../api/industrydata-filevalidateoperation-list.md
   - name: Get
     href: ../../api/industrydata-filevalidateoperation-get.md
-- name: Inbound file flow
-  items:
-  - name: Inbound file flow
-    href: ../../resources/industrydata-inboundfileflow.md
-  - name: Create
-    href: ../../api/industrydata-inboundfileflow-post.md
-  - name: Update
-    href: ../../api/industrydata-inboundfileflow-update.md
 - name: Inbound flow
   items:
   - name: Inbound flow
@@ -37,6 +19,22 @@ items:
     href: ../../api/industrydata-inboundflow-get.md
   - name: Delete
     href: ../../api/industrydata-inboundflow-delete.md
+  - name: Inbound API flow
+    items:
+    - name: Inbound API flow
+      href: ../../resources/industrydata-inboundapiflow.md
+    - name: Create inboundApiFlow
+      href: ../../api/industrydata-inboundapiflow-post.md
+    - name: Update inboundApiFlow
+      href: ../../api/industrydata-inboundapiflow-update.md
+  - name: Inbound file flow
+    items:
+    - name: Inbound file flow
+      href: ../../resources/industrydata-inboundfileflow.md
+    - name: Create
+      href: ../../api/industrydata-inboundfileflow-post.md
+    - name: Update
+      href: ../../api/industrydata-inboundfileflow-update.md
 - name: Industry data connector
   items:
   - name: Industry data connector
@@ -49,6 +47,24 @@ items:
     href: ../../api/industrydata-industrydataconnector-delete.md
   - name: Validate
     href: ../../api/industrydata-industrydataconnector-validate.md
+  - name: Azure Data Lake connector
+    items:
+    - name: Azure Data Lake connector
+      href: ../../resources/industrydata-azuredatalakeconnector.md
+    - name: Create
+      href: ../../api/industrydata-azuredatalakeconnector-post.md
+    - name: Update
+      href: ../../api/industrydata-azuredatalakeconnector-update.md
+    - name: Get upload session
+      href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
+  - name: One roster API data connector
+    items:
+    - name: One roster API data connector
+      href: ../../resources/industrydata-onerosterapidataconnector.md
+    - name: Create oneRosterApiDataConnector
+      href: ../../api/industrydata-onerosterapidataconnector-post.md
+    - name: Update oneRosterApiDataConnector
+      href: ../../api/industrydata-onerosterapidataconnector-update.md
 - name: Industry data run
   items:
   - name: Industry data run
