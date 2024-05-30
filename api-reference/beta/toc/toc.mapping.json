@@ -2582,6 +2582,7 @@
               "resources": [
                 "virtualEventPresenter",
                 "virtualEventRegistration",
+                "virtualEventWebinarRegistrationConfiguration",
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"

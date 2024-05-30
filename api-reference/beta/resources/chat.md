@@ -1,6 +1,6 @@
 ---
 title: "chat resource type"
-description: "A chat is a collection of chatMessages between one or more participants."
+description: "Represents a chat that is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
+Represents a chat that is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then some of the listed methods will transitively impact the meeting.
+> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, some of the listed methods transitively impact the meeting.
 
 ## Methods
 
@@ -48,7 +48,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add app in chat](../api/chat-post-installedapps.md) | | Add (install) an app in a chat (and associated meeting).|
 |[Upgrade app installed in chat](../api/chat-teamsappinstallation-upgrade.md) | None | Update to the latest version of the app installed in chat (and associated meeting).|
 |[Remove app from chat](../api/chat-delete-installedapps.md) | None | Remove (uninstall) app from a chat (and associated meeting).|
-|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this chat.|
+|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions granted to the apps in this chat.|
 | **Tabs** |||
 |[List tabs in chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a chat (and associated meeting).|
 |[Get tab in chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a chat (and associated meeting).|
@@ -70,6 +70,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
+| createdBy | [identitySet](../resources/identityset.md) | The user or application that created the chat. Read-only. |
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
@@ -85,17 +86,17 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 | Member             | Description               |
 | :----------------- | :------------------------ |
-|oneOnOne            | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
+|oneOnOne            | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members can't be removed/added.|
 |group               | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
-|unknownFutureValue  | Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
-| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. `Null` if no messages are sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 | operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. |
@@ -116,6 +117,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "chatType": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "isHiddenForAllMembers": "Boolean",
