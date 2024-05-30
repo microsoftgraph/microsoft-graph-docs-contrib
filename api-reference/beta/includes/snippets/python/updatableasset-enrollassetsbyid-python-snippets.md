@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.admin.windows.updates.updatableassets.microsoft_graph_windows_updates_enroll_assets_by_id.enroll_assets_by_id_post_request_body import EnrollAssetsByIdPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.admin.windows.updates.updatableassets.microsoft_graph_windows_updates_enroll_assets_by_id.enroll_assets_by_id_post_request_body import EnrollAssetsByIdPostRequestBody
+from msgraph_beta.generated.models.update_category import UpdateCategory
 
 graph_client = GraphServiceClient(credentials, scopes)
 

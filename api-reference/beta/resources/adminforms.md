@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminForms](../api/adminforms-get.md)|[adminForms](../resources/adminforms.md)|Read the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
-|[Update adminForms](../api/adminforms-update.md)|[adminForms](../resources/adminforms.md)|Update the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
+|[Get](../api/adminforms-get.md)|[adminForms](../resources/adminforms.md)|Read the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
+|[Update](../api/adminforms-update.md)|[adminForms](../resources/adminforms.md)|Update the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -18,7 +18,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get caseOperation](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method provides downloadUrl, fileName and size of exported content |
+|[Get case operation by ID](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method provides downloadUrl, fileName and size of exported content |
 
 ## Properties
 |Property|Type|Description|

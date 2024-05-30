@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreateUploadSessionPostRequestBody;
-use Microsoft\Graph\Generated\Models\PrintDocumentUploadProperties;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Print\Shares\Item\Jobs\Item\Documents\Item\CreateUploadSession\CreateUploadSessionPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\PrintDocumentUploadProperties;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

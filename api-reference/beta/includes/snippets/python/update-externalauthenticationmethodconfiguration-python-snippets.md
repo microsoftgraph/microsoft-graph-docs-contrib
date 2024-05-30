@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.external_authentication_method_configuration import ExternalAuthenticationMethodConfiguration
-from msgraph.generated.models.authentication_method_target import AuthenticationMethodTarget
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.external_authentication_method_configuration import ExternalAuthenticationMethodConfiguration
+from msgraph_beta.generated.models.authentication_method_target import AuthenticationMethodTarget
+from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
+from msgraph_beta.generated.models.authentication_method_state import AuthenticationMethodState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -1,6 +1,6 @@
 ---
 title: "contentModel: removeFromDrive"
-description: "Remove a content model object from the document library."
+description: "Remove a content model object from a SharePoint document library."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [contentModel](../resources/contentmodel.md) from the document library.
+Remove a [contentModel](../resources/contentmodel.md) from a SharePoint document library.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|driveId|String|Drive ID from which the model is removed. |
+|driveId|String|The ID of the drive from which the model is to be removed. |
 
 
 

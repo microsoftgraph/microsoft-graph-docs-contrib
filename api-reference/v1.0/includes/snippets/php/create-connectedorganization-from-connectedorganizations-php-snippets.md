@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ConnectedOrganization;
 use Microsoft\Graph\Generated\Models\IdentitySource;
 use Microsoft\Graph\Generated\Models\DomainIdentitySource;
+use Microsoft\Graph\Generated\Models\ConnectedOrganizationState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

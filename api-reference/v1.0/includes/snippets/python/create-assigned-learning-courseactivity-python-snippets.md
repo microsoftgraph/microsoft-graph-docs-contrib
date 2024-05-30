@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.learning_assignment import LearningAssignment
+from msgraph.generated.models.assignment_type import AssignmentType
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
+from msgraph.generated.models.course_status import CourseStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

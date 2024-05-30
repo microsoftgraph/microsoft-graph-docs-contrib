@@ -20,22 +20,22 @@ The extracted metadata is added to columns in the document library. Columns are 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/contentmodel-get.md)|[contentModel](../resources/contentmodel.md)|Read the properties and relationships of a contentModel object.|
-|[getAppliedDrives](../api/contentmodel-getapplieddrives.md)|[contentModelUsage](../resources/contentmodelusage.md) collection|List all the applied document libraries of a contentModel.|
-|[getByName](../api/contentmodel-getbyname.md)|[contentModel](../resources/contentmodel.md)|Read the properties and relationships of a contentModel object by its model name.|
-|[addToDrive](../api/contentmodel-addtodrive.md)|[contentModelUsage](../resources/contentmodelusage.md)|Automatically processes new documents in the library.|
-|[removeFromDrive](../api/contentmodel-removefromdrive.md)|None|Remove the contentModel from the document library.|
+|[Get](../api/contentmodel-get.md)|[contentModel](../resources/contentmodel.md)|Read the properties and relationships of a **contentModel** object.|
+|[Get applied drives](../api/contentmodel-getapplieddrives.md)|[contentModelUsage](../resources/contentmodelusage.md) collection|List all the [contentModelUsage](../resources/contentmodel.md) information related to an applied **contentModel**.|
+|[Get by name](../api/contentmodel-getbyname.md)|[contentModel](../resources/contentmodel.md)|Read the properties and relationships of a **contentModel** object by its model name.|
+|[Add to drive](../api/contentmodel-addtodrive.md)|[contentModelUsage](../resources/contentmodelusage.md)|Automatically process new documents in the library.|
+|[Remove from drive](../api/contentmodel-removefromdrive.md)|None|Remove the **contentModel** from the document library.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which created the item. Read-only.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or applicationthat created the item. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only.|
 |id|String|The ID of the content model. Read-only.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|	Identity of the user, device, or application, which modified the item. Read-only.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|	Identity of the user, device, or application that modified the item. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of item last modification. Read-only.|
-|modelType|contentModelType|The type of the contentModel. The possible values are: `teachingMethod`, `layoutMethod`, `freeformSelectionMethod`, `prebuiltContractModel`, `prebuiltInvoiceModel`, `prebuiltReceiptModel`, `unknownFutureValue`.|
-|name|String|The name of the contentModel.|
+|modelType|contentModelType|The type of the **contentModel**. The possible values are: `teachingMethod`, `layoutMethod`, `freeformSelectionMethod`, `prebuiltContractModel`, `prebuiltInvoiceModel`, `prebuiltReceiptModel`, `unknownFutureValue`.|
+|name|String|The name of the **contentModel**.|
 
 ## Relationships
 None.

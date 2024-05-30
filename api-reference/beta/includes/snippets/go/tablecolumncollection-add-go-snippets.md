@@ -16,13 +16,13 @@ import (
 )
 
 requestBody := graphdrives.NewAddPostRequestBody()
-index := graphmodels.Newindex()
+index := graph.Newindex()
 requestBody.SetIndex(index)
 
 
-json := graphmodels.NewJson()
+json := graph.NewJson()
 
-values := []graphmodels.Jsonable {
+values := []graph.Jsonable {
 	json,
 }
 requestBody.SetValues(values)

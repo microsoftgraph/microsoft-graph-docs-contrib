@@ -16,7 +16,7 @@ Contains the management details of a service in the customer tenant that's manag
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminServiceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
+|[List](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
 
 
 ## Properties

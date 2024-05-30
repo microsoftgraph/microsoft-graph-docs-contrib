@@ -1,6 +1,6 @@
 ---
 title: "Create documentProcessingJob"
-description: "Creates a new document processing job object."
+description: "Create a new document processing job object."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [documentProcessingJob](../resources/documentprocessingjob.md) object. The job is to queue a document, or all documents in a folder to process by the applied content models.
+Create a new [documentProcessingJob](../resources/documentprocessingjob.md) object. The document processing job queues a document, or all documents in a folder, for processing by the applied content models.
 
 ## Permissions
 
@@ -47,12 +47,12 @@ POST /sites/{sitesId}/documentProcessingJobs
 
 In the request body, supply a JSON representation of the [documentProcessingJob](../resources/documentprocessingjob.md) object.
 
-You can specify the following properties when creating a **documentProcessingJob**.
+You can specify the following properties when you create a **documentProcessingJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|jobType|documentProcessingJobType|Document processing job type. The possible values are: `file`, `folder`. Optional.|
-|status|documentProcessingJobStatus|Document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
+|jobType|documentProcessingJobType|The document processing job type. The possible values are: `file`, `folder`. Optional.|
+|status|documentProcessingJobStatus|The document processing job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only. Optional.|
 |listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. Use GET [driveItem](../resources/driveitem.md) resource operation and read  [sharepointIds](../resources/sharepointids.md) property to get listItemUniqueId.|
 

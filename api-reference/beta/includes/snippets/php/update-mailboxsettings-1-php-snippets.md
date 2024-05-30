@@ -5,10 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\MailboxSettings;
-use Microsoft\Graph\Generated\Models\AutomaticRepliesSetting;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\MailboxSettings;
+use Microsoft\Graph\Beta\Generated\Models\AutomaticRepliesSetting;
+use Microsoft\Graph\Beta\Generated\Models\AutomaticRepliesStatus;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

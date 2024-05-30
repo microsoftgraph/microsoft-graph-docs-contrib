@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.enterprise_code_signing_certificate import EnterpriseCodeSigningCertificate
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.enterprise_code_signing_certificate import EnterpriseCodeSigningCertificate
+from msgraph_beta.generated.models.certificate_status import CertificateStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

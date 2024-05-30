@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides information on where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied, including information about the model itself, like the model version.
+Contains information about where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied, including information about the model itself, such as the model version.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which first applied the [contentModel](../resources/contentmodel.md) to the library.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application that first applied the [contentModel](../resources/contentmodel.md) to the library.|
 |createdDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is first applied.|
 |driveId|String|The ID of the drive where the [contentModel](../resources/contentmodel.md) is applied.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which last applied the [contentModel](../resources/contentmodel.md) to the library.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application that last applied the [contentModel](../resources/contentmodel.md) to the library.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is last applied.|
 |modelId|String|The ID of the [contentModel](../resources/contentmodel.md).|
 |modelVersion|String|The version of the current applied [contentModel](../resources/contentmodel.md).|
