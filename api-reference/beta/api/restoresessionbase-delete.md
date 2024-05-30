@@ -1,6 +1,6 @@
 ---
 title: "Delete restoreSessionBase"
-description: "Deletes a draft restoreSessionBase"
+description: "Delete a draft restoreSessionBase"
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
+Delete a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
 
 ## Permissions
 

@@ -37,9 +37,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
 ```
 
-## Required query parameters
-This method supports two required `$expand` and `$filter` [OData Query Parameters](/graph/query-parameters) as shown in [example](../api/backuprestoreroot-list-restorepoints.md#request). 
-Method isn't available without the required query parameters.
+## Optional query parameters
+This method supports the `$expand` and `$filter` [OData puery parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request). 
+
+The two query parameters are required.
 
 ## Request headers
 

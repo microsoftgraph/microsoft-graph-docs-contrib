@@ -1,6 +1,6 @@
 ---
 title: "Get restoreSessionBase"
-description: "Get properties of restoreSessionBase by ID."
+description: "Get the properties of restoreSessionBase by ID."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get properties of a [restoreSession](../resources/restoresessionbase.md) object by ID.
+Get the properties of a [restoreSession](../resources/restoresessionbase.md) object by ID.
 
 ## Permissions
 

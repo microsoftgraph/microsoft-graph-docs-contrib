@@ -47,12 +47,11 @@ POST /solutions/backupRestore/exchangeRestoreSessions
 
 In the request body, supply a JSON representation of the [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
-You can specify the following properties when creating an **exchangeRestoreSession** object.
+You can specify the following properties when you create an **exchangeRestoreSession** object.
 
-## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) Required.|
+|mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
 
 
 ## Response

@@ -21,7 +21,7 @@ Represents a service application that's registered as a backup service control a
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/backuprestoreroot-list-serviceapps.md)|[serviceApp](../resources/serviceapp.md) collection|Get a list of the [serviceApp](../resources/serviceapp.md) objects and their properties.|
-|[Create](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
+|[Create](../api/backuprestoreroot-post-serviceapps.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
 |[Get](../api/serviceapp-get.md)|[serviceApp](../resources/serviceapp.md)|Read the properties and relationships of a [serviceApp](../resources/serviceapp.md).|
 |[Delete](../api/backuprestoreroot-delete-serviceapps.md)|None|Delete a [serviceApp](../resources/serviceapp.md).|
 |[Activate](../api/serviceapp-activate.md)|[serviceApp](../resources/serviceapp.md)|Activate a service app on behalf of the signed-in user.|

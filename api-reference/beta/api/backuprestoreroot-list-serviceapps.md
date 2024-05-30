@@ -1,6 +1,6 @@
 ---
-title: "List serviceApp"
-description: "Get a list of the serviceApp and their properties."
+title: "List serviceApps"
+description: "Get a list of serviceApp objects and their properties."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List serviceApp
+# List serviceApps
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [serviceApp](../resources/serviceapp.md) and their properties.
+Get a list of [serviceApp](../resources/serviceapp.md) objects and their properties.
 
 ## Permissions
 

@@ -47,11 +47,11 @@ POST /solutions/backupRestore/sharePointRestoreSessions
 
 In the request body, supply a JSON representation of the [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-You can specify the following properties when creating a **sharePointRestoreSession** object.
+You can specify the following properties when you create a **sharePointRestoreSession** object.
 
 |Property|Type|Description|
  |:---|:---|:---|
- |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md). Required.|
+ |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
 
 
 ## Response
