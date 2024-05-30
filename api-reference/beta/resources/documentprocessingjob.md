@@ -26,7 +26,7 @@ Contains information related to the processing of a document or documents in a f
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only.|
 |Id|String|The ID of the document processing job. Read-only.|
 |jobType|documentProcessingJobType|The document processing job type. The possible values are: `file`, `folder`|
-|listItemUniqueId|String|The unique ID of the file or folder to process. It's one of the sharepointIds. Check the [driveItem](../resources/driveitem.md) resource to get listItemUniqueId. Or [sharepointids](../resources/sharepointids.md) for more details.|
+|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. Use GET [driveItem](../resources/driveitem.md) resource operation and read  [sharepointIds](../resources/sharepointids.md) property to get listItemUniqueId.|
 |status|documentProcessingJobStatus|The document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
