@@ -10,17 +10,17 @@ ms.subservice: "data-connect"
 
 Microsoft Graph Data Connect enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
 
-## Issues with finding an application in the Azure Portal experience
+## Issues with finding an application in the Azure portal experience
 
-If you're finding an application in the MGDC Azure Portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
+If you can find an application in the Data Connect Azure portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
 
 ## Issues with approving an application
 
-To approve an application in the Admin Center, the user must be a global admin. An E5 license is not required.
+To approve an application in the admin center, the user must be a global admin. An E5 license isn't required.
 
 ## Renewing an application consent
 
-You can renew an app authorization before the expiry date. The global admin can click on the consented application and approve it again to extend the consent validity.
+You can renew an app authorization before the expiration date. The global admin can click on the consented application and approve it again to extend the consent validity.
 
 ## Multi-geo tenant extraction issues
 
