@@ -3,7 +3,7 @@ title: "group: deletePasswordSingleSignOnCredentials"
 description: "Delete password-based single sign-on credentials for a service principal that is associated to a group."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "groups"
 doc_type: apiPageType
 ---
 
