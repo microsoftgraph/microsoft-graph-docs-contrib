@@ -146,7 +146,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Sample and Schema | License |
 | --- | --- | --- | --- |
-| VivaInsightsDataset_Report_v1_[Viva Insights query name] | Contains metrics according to the query authored by the user in Viva Insights. | (Varies per report) | Requires Viva Insights license |
+| VivaInsightsDataset_Report_v1_[Viva Insights query name] | Contains metrics according to the query authored by the user in Viva Insights. | Varies per report. | Requires Viva Insights license. |
 
 
 ## Regions
