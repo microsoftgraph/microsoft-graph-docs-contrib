@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicy;
-use Microsoft\Graph\Beta\Generated\Models\ImageType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicyImageType;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSettings;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSetting;
 

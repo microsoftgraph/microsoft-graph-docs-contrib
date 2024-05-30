@@ -9,9 +9,9 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\EducationUser;
 use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
-use Microsoft\Graph\Beta\Generated\Models\ExternalSource;
+use Microsoft\Graph\Beta\Generated\Models\EducationExternalSource;
 use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Beta\Generated\Models\PrimaryRole;
+use Microsoft\Graph\Beta\Generated\Models\EducationUserRole;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
