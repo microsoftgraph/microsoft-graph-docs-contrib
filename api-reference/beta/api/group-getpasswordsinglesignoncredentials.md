@@ -3,7 +3,7 @@ title: "group: getPasswordSingleSignOnCredentials"
 description: "Get the list of password-based single sign-on credentials for a group. This API returns the encrypted passwords as null."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "groups"
 doc_type: apiPageType
 ---
 
