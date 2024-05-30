@@ -83,6 +83,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+|deviceRegionName|String|The geographical region name where the Cloud PC is currently provisioned. Example values: westus3, eastus2, southeastasia. Read-only.|
 
 ### cloudPcDiskEncryptionState values
 
