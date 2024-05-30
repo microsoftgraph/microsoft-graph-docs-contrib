@@ -44,12 +44,11 @@ POST /solutions/backupRestore/enable
 
 ## Request body
 
-In the request body, supply the **appOwnerTenantId** in which this application is registered.
+In the request body, supply a JSON representation of the following parameter.
 
-### Properties
-|Property|Type|Description|
+|Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|`AppOwnerTenantId` in which this application is registered. Required.|
+|appOwnerTenantId|String|The ID of the tenant in which this application is registered. Required.|
 
 ## Response
 

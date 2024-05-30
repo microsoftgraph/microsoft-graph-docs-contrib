@@ -1,6 +1,6 @@
 ---
 title: "Delete protectionRuleBase"
-description: "Delete a protection rule associated with a protection policy."
+description: "Delete a protection rule from a protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [protectionRuleBase](../resources/protectionrulebase.md) in a [protectionPolicyBase](../resources/protectionpolicybase.md).
+Delete a [protection rule](../resources/protectionrulebase.md) from a [protection policy](../resources/protectionpolicybase.md).
 
-Deletion of a rule is allowed once it reaches the `completed` or `completedWithErrors` state. Deletion of a [protectionRuleBase](../resources/protectionRuleBase.md) does not remove protection units corresponding to the rule from the [protectionPolicyBase](../resources/protectionpolicybase.md).
+You can delete a rule when the state is `completed` or `completedWithErrors`. Deleting a [protection rule](../resources/protectionRuleBase.md) doesn't remove the corresponding [protection units](../resources/protectionunitbase) from the [protection policy](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Delete a siteInclusionRule associated with a SharePoint protection policy
 
-Delete a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+The following example shows how to delete a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 #### Request
 
@@ -75,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtec
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -87,7 +87,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Delete a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
-Delete a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+The following example shows how to delete a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 #### Request
 
@@ -104,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusin
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -116,7 +116,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Delete a mailboxInclusionRule associated with an Exchange protection policy
 
-Delete a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to delete a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 #### Request
 
@@ -133,7 +133,7 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtecti
 #### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

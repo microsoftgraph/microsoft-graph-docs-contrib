@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase: run"
-description: "Activates a protection rule associated with a protection policy."
+description: "Activate a protection rule associated with a protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activates a [protectionRuleBase](../resources/protectionrulebase.md).
+Activate a [protection rule](../resources/protectionrulebase.md).
 
-Upon running the protection rule using the /run API, the status of protection pule transitions to active. The state transition is `draft` -> `active`.
+Upon activating the protection rule, the status transitions to `active`.
 
 ## Permissions
 
@@ -56,9 +56,9 @@ If successful, this action returns a `200 OK` response code and a [protectionRul
 
 ## Examples
 
-### Example 1 : Activate a siteInclusionRule associated with a SharePoint protection policy
+### Example 1: Activate a siteInclusionRule associated with a SharePoint protection policy
 
-Activate a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.
+The following example shows how to activate a **siteInclusionRule** associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.
 
 #### Request
 
@@ -113,9 +113,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
 }
 ```
 
-### Example 2 : Activate a driveInclusionRule associated with an OneDriveForBusiness protection policy
+### Example 2: Activate a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
-Activate a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
+The following example shows how to activate a **driveInclusionRule**associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
 
 ### Request
 
@@ -170,9 +170,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
 }
 ```
 
-### Example 3 : Activate a mailboxInclusionRule associated with an Exchange protection policy
+### Example 3: Activate a mailboxInclusionRule associated with an Exchange protection policy
 
-Activate a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object.
+The following example shows how to activate a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object.
 
 #### Request
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [protectionRuleBase](../resources/protectionrulebase.md) in a [protectionPolicyBase](../resources/protectionpolicybase.md).
+Get a [protection rule](../resources/protectionrulebase.md) that's associated with a [protection policy](../resources/protectionpolicybase.md). You can use this operation to get [mailbox](../resources/drivemailboxprotectionrule.md)), [drive](../resources/driveprotectionrule.md), and [site](../resources/siteprotectionrule.md)) protection rules.
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
@@ -56,9 +56,9 @@ If successful, this method returns a `200 OK` response code and a [protectionRul
 
 ## Examples
 
-### Example 1 : Get siteInclusionRule associated with a SharePoint protection policy
+### Example 1: Get siteInclusionRule associated with a SharePoint protection policy
 
-Get a siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+The following example shows how to get a **siteInclusionRule** associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 #### Request
 
@@ -114,9 +114,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
 }
 ```
 
-### Example 2 : Get a driveInclusionRule associated with an OneDriveForBusiness protection policy
+### Example 2: Get a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
-Get a driveInclusionRule associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+he following example shows how to get a **driveInclusionRule** associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 #### Request
 
@@ -174,9 +174,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
 }
 ```
 
-### Example 3 : Get a mailboxInclusionRule associated with an Exchange protection policy
+### Example 3: Get a mailboxInclusionRule associated with an Exchange protection policy
 
-Get a mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+he following example shows how to get a **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 ### Request
 

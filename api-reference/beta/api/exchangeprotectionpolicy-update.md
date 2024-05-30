@@ -1,6 +1,6 @@
 ---
 title: "Update exchangeProtectionPolicy"
-description: "Updates the protection policy for Microsoft 365 service Exchange."
+description: "Update an Exchange protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for Microsoft 365 service Exchange. Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Update an [Exchange protection policy](../resources/exchangeprotectionpolicy.md). This method adds a [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
 
 ## Permissions
 
@@ -44,14 +44,14 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 ## Request body
 
-In the request body, provide a JSON representation of following properties to update **exchangeProtectionPolicy** object.
+In the request body, provide a JSON representation of the following properties to update the **exchangeProtectionPolicy** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Optional.|
-|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy. Required.|
+|mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of **mailboxProtectionUnit** objects to be added to or removed from the Exchange protection policy. Required.|
 
-To remove a **mailboxProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
+To remove a **mailboxProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
 
 ## Response
 

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 
 ## Examples
 
-### Example 1: List all mailboxProtectionUnits in a tenant.
+### Example 1: List all mailboxProtectionUnits in a tenant
 
 #### Request
 

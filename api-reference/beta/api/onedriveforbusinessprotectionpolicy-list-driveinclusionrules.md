@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [driveProtectionRule](../resources/driveprotectionrule.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) objects that are associated with a [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
@@ -137,7 +137,6 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
       {
          "@odata.type": "#microsoft.graph.driveProtectionRule",
          "id":"9253d7a1-06fb-48b5-9cbd-d33c310de042",
-         // Since the group.id does not exists, hence the status 'completedWithErrors'
          "status" : "completedWithErrors",
          "createdBy":{
             "application":{

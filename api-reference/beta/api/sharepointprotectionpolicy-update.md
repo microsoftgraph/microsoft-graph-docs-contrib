@@ -1,6 +1,6 @@
 ---
 title: "Update sharePointProtectionPolicy"
-description: "Updates the protection policy for a Microsoft 365 service SharePoint Online."
+description: "Update a SharePoint protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the protection policy for a Microsoft 365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) object to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [sharepointprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
 
 ## Permissions
 
@@ -50,7 +50,9 @@ In the request body, provide a JSON representation of following properties to up
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
-|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
+|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of siteProtectionUnit objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
+
+To remove a **siteProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
 
 ## Response
 
@@ -61,8 +63,6 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 ### Request
 
 The following example shows a request.
-
-To remove a **siteProtectionUnit** from the policy, specify the @removed annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
 
 <!-- {
   "blockType": "request",

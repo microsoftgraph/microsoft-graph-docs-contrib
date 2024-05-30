@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 
 ## Examples
 
-### Example 1 : List all the siteProtectionUnits in a tenant
+### Example 1: List all the siteProtectionUnits in a tenant
 
 The following example shows how to get a list of all the **siteProtectionUnits** objects in a tenant.
 
@@ -257,7 +257,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: List the siteProtectionUnits associated with a SharePoint protection policy.
+### Example 2: List the siteProtectionUnits associated with a SharePoint protection policy
 
 The following example shows how to list all the **siteProtectionUnits** associated with a **sharePointProtectionPolicy**.
 

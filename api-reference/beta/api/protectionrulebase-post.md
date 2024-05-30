@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [protectionRuleBase](../resources/protectionrulebase.md) associated with a [protectionPolicyBase](../resources/protectionpolicybase.md).
+Create a new [protection rule](../resources/protectionrulebase.md) associated with a [protection policy](../resources/protectionpolicybase.md). You can use this method to create a [mailbox](../resources/mailboxprotectionrule.md), [driveProtectionRule](../resources/driveprotectionrule.md), or [siteIProtectionRule](../resources/siteprotectionrule.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
@@ -52,29 +52,29 @@ In the request body, supply a JSON representation of the [protectionRuleBase](..
 
 ### Properties to create a new siteInclusionRule
 
-You can specify the following properties when creating a siteInclusionRule.
+You can specify the following properties when you create a **siteInclusionRule**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|siteExpression|String|Contains site expression. [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples). Required.|
+|siteExpression|String|Contains the [site expression](../resources/siteprotectionrule.md#siteexpression-examples). Required.|
 
 
 ### Properties to create a new driveInclusionRule
 
-You can specify the following properties when creating a driveInclusionRule.
+You can specify the following properties when you create a **driveInclusionRule**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|driveExpression|String|Contains drive expression. [driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples). Required.|
+|driveExpression|String|Contains the [drive expression](../resources/driveprotectionrule.md#driveexpression-examples). Required.|
 
 
 ### Properties to create a new mailboxInclusionRule
 
-You can specify the following properties when creating a mailboxInclusionRule.
+You can specify the following properties when you create a **mailboxInclusionRule**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples). Required|
+|mailboxExpression|String|Contains the [mailbox expression](../resources/mailboxprotectionrule.md#mailboxexpression-examples). Supports `memberOf` and `group.id` properties. Required|
 
 ## Response
 
@@ -82,9 +82,9 @@ If successful, this method returns a `201 Created` response code and a [protecti
 
 ## Examples
 
-### Example 1 : Create a new siteInclusionRule associated with a SharePoint protection policy
+### Example 1: Create a new siteInclusionRule associated with a SharePoint protection policy
 
-Create a new siteInclusionRule associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+The following example shows how to create a new **siteInclusionRule** associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 #### Request
 
@@ -143,9 +143,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
 }
 ```
 
-### Example 2 : Create a new driveInclusionRule associated with a OneDriveForBusiness protection policy
+### Example 2: Create a new driveInclusionRule associated with a OneDriveForBusiness protection policy
 
-Create a new driveInclusionRule associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+The following example shows how to create a new **driveInclusionRule** associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 #### Request
 
@@ -204,9 +204,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
 }
 ```
 
-### Example 3 : Create a new mailboxInclusionRule associated with an Exchange protection policy
+### Example 3: Create a new mailboxInclusionRule associated with an Exchange protection policy
 
-Create a new mailboxInclusionRule associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+The following example shows how to create a new **mailboxInclusionRule** associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 #### Request
 
