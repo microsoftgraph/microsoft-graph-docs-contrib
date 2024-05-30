@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### fileStorageContainerOwnershipType values
+
+| Member             |
+|:-------------------|
+| tenantOwned        |
+| unknownfuturevalue |
+
+### groupAccessType values
+
+| Member             |
+|:-------------------|
+| none               |
+| private            |
+| secret             |
+| public             |
+
 ### fileStorageContainerStatus values
 
 | Member             |
@@ -98,9 +114,10 @@ Namespace: microsoft.graph
 
 | Member             |
 | :----------------- |
-| Required           |
-| Recommeded         |
-| UnknownFutureValue |
+| required           |
+| recommeded         |
+| unknownFutureValue |
+| peerRecommeded     |
 
 ### courseStatus values
 
@@ -4730,6 +4747,87 @@ Possible values for user account types (group membership), per Windows definitio
 |authenticationTransfer|
 |unknownFutureValue|
 
+### claimConditionUserType values
+
+|Member|
+|:---|
+|any|
+|members|
+|allGuests|
+|aadGuests|
+|externalGuests|
+|unknownFutureValue|
+
+### filterType values
+
+|Member|
+|:---|
+|prefix|
+|suffix|
+|contains|
+|unknownFutureValue|
+
+### matchOn values
+
+|Member|
+|:---|
+|displayName|
+|samAccountName|
+|unknownFutureValue|
+
+### samlAttributeNameFormat values
+
+|Member|
+|:---|
+|unspecified|
+|uri|
+|basic|
+|unknownFutureValue|
+
+### samlNameIDFormat values
+
+|Member|
+|:---|
+|default|
+|unspecified|
+|emailAddress|
+|windowsDomainQualifiedName|
+|persistent|
+|unknownFutureValue|
+
+### samlSLOBindingType values
+
+|Member|
+|:---|
+|httpRedirect|
+|httpPost|
+|unknownFutureValue|
+
+### tokenFormat values
+
+|Member|
+|:---|
+|saml|
+|jwt|
+|unknownFutureValue|
+
+### transformationExtractType values
+
+|Member|
+|:---|
+|prefix|
+|suffix|
+|unknownFutureValue|
+
+### transformationTrimType values
+
+|Member|
+|:---|
+|leading|
+|trailing|
+|leadingAndTrailing|
+|unknownFutureValue|
+
 ### sharingRole values 
 
 |Member|
@@ -4772,3 +4870,24 @@ Possible values for user account types (group membership), per Windows definitio
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### meetingRequestType values 
+
+|Member|
+|:---|
+|none|
+|newMeetingRequest|
+|fullUpdate|
+|informationalUpdate|
+|silentUpdate|
+|outdated|
+|principalWantsCopy|

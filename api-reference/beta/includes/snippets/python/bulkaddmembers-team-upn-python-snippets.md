@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.teams.item.members.add.add_post_request_body import AddPostRequestBody
-from msgraph.generated.models.conversation_member import ConversationMember
-from msgraph.generated.models.aad_user_conversation_member import AadUserConversationMember
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.teams.item.members.add.add_post_request_body import AddPostRequestBody
+from msgraph_beta.generated.models.conversation_member import ConversationMember
+from msgraph_beta.generated.models.aad_user_conversation_member import AadUserConversationMember
 
 graph_client = GraphServiceClient(credentials, scopes)
 

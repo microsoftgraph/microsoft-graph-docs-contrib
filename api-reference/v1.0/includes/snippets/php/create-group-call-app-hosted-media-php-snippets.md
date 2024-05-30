@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Call;
+use Microsoft\Graph\Generated\Models\CallDirection;
 use Microsoft\Graph\Generated\Models\ParticipantInfo;
 use Microsoft\Graph\Generated\Models\IdentitySet;
 use Microsoft\Graph\Generated\Models\Identity;

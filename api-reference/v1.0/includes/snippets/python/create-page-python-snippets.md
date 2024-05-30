@@ -6,9 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.site_page import SitePage
+from msgraph.generated.models.page_layout_type import PageLayoutType
 from msgraph.generated.models.title_area import TitleArea
+from msgraph.generated.models.title_area_layout_type import TitleAreaLayoutType
+from msgraph.generated.models.title_area_text_alignment_type import TitleAreaTextAlignmentType
 from msgraph.generated.models.canvas_layout import CanvasLayout
 from msgraph.generated.models.horizontal_section import HorizontalSection
+from msgraph.generated.models.horizontal_section_layout_type import HorizontalSectionLayoutType
+from msgraph.generated.models.section_emphasis_type import SectionEmphasisType
 from msgraph.generated.models.horizontal_section_column import HorizontalSectionColumn
 from msgraph.generated.models.web_part import WebPart
 

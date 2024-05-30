@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ApplyPostRequestBody;
+use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Columns\Item\Filter\Apply\ApplyPostRequestBody;
 use Microsoft\Graph\Generated\Models\WorkbookFilterCriteria;
 use Microsoft\Graph\Generated\Models\WorkbookIcon;
 use Microsoft\Graph\Generated\Models\Json;

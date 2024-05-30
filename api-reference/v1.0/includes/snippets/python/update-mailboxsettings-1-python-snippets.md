@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mailbox_settings import MailboxSettings
 from msgraph.generated.models.automatic_replies_setting import AutomaticRepliesSetting
+from msgraph.generated.models.automatic_replies_status import AutomaticRepliesStatus
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)

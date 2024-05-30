@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity_governance.lifecycle_workflows.workflow_templates.workflow_templates_request_builder import WorkflowTemplatesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity_governance.lifecycle_workflows.workflow_templates.workflow_templates_request_builder import WorkflowTemplatesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = WorkflowTemplatesRequestBuilder.WorkflowTemplatesRequestBuilderGe
 		filter = "category eq 'leaver'",
 )
 
-request_configuration = WorkflowTemplatesRequestBuilder.WorkflowTemplatesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

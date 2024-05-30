@@ -34,23 +34,23 @@ This resource supports:
 |[Upsert application](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[Get delta](../api/application-delta.md)|[application](application.md)|Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.|
-|[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
-| [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that a user owns. |
-|[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
-|[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
-|[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|[List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that a user owns. |
+|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Permanently delete item](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
+|[Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
 |**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
 |[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
 |**Owners**| | |
-|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application.|
-|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals.|
-|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
+|[List](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application.|
+|[Add](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals.|
+|[Remove](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
 |**Verified publisher**| | |
-|[Set verified publisher](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
-|[Unset verified publisher](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
+|[Set](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
+|[Unset](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
 
 ## Properties
 

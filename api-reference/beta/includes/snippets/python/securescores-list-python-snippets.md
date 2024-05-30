@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.secure_scores.secure_scores_request_builder import SecureScoresRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.secure_scores.secure_scores_request_builder import SecureScoresRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = SecureScoresRequestBuilder.SecureScoresRequestBuilderGetQueryPara
 		top = 1,
 )
 
-request_configuration = SecureScoresRequestBuilder.SecureScoresRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 
