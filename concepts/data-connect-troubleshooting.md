@@ -8,7 +8,7 @@ ms.subservice: "data-connect"
 
 # Troubleshoot Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
+Microsoft Graph Data Connect (Data Connect) enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Data Connect.
 
 ## Issues with finding an application in the Azure portal experience
 
@@ -24,7 +24,7 @@ You can renew an app authorization before the expiration date. The global admin 
 
 ## Multi-geo tenant extraction issues
 
-Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers can't use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
+Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Data Connect, be aware that when customers request data, they can only extract data for one region. Customers can't use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
 
 Keep the following in mind when customers with multi-geo tenants extract data:
 
@@ -57,7 +57,7 @@ If the destination storage account needs to be closed for public access, you nee
 1. Find an Office-to-Azure region mapping. To look up which Office region you will be extracting user data from, see the following table.
 
 > [!NOTE]
-> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect doesn't extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it only extracts the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
+> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Data Connect doesn't extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it only extracts the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
 
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see the following table). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
@@ -119,11 +119,11 @@ The following example describes how to troubleshoot network access issue:
 
 ## Issues with app registration
 
-The following scenarios provide troubleshooting information for registering a Microsoft Entra app with Microsoft Graph Data Connect.
+The following scenarios provide troubleshooting information for registering a Microsoft Entra app with Data Connect.
 
 ### No authorization
 
-In the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
+In the [Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
 
 ![Screenshot that shows an error encountered during the creation of a billing resource.](images/app-registration-unable-create-resource.png)
 
