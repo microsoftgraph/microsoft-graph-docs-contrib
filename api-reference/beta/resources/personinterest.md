@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemfacet.md).
 
 | Method                                                    | Return Type                         | Description                                                           |
 |:----------------------------------------------------------|:------------------------------------|:----------------------------------------------------------------------|
-|[List interests](../api/profile-list-interests.md)|[personInterest](../resources/personinterest.md) collection|Get the personInterest resources from the interests navigation property.|
-|[Create personInterest](../api/profile-post-interests.md)|[personInterest](../resources/personinterest.md)|Create a new personInterest object.|
-|[Get personInterest](../api/personinterest-get.md)|[personInterest](../resources/personinterest.md)|Read the properties and relationships of a [personInterest](../resources/personinterest.md) object.|
-|[Update personInterest](../api/personinterest-update.md)|[personInterest](../resources/personinterest.md)|Update the properties of a [personInterest](../resources/personinterest.md) object.|
-|[Delete personInterest](../api/personinterest-delete.md)|None|Deletes a [personInterest](../resources/personinterest.md) object.|
+|[List](../api/profile-list-interests.md)|[personInterest](../resources/personinterest.md) collection|Get the personInterest resources from the interests navigation property.|
+|[Create](../api/profile-post-interests.md)|[personInterest](../resources/personinterest.md)|Create a new personInterest object.|
+|[Get](../api/personinterest-get.md)|[personInterest](../resources/personinterest.md)|Read the properties and relationships of a [personInterest](../resources/personinterest.md) object.|
+|[Update](../api/personinterest-update.md)|[personInterest](../resources/personinterest.md)|Update the properties of a [personInterest](../resources/personinterest.md) object.|
+|[Delete](../api/personinterest-delete.md)|None|Deletes a [personInterest](../resources/personinterest.md) object.|
 
 ## Properties
 

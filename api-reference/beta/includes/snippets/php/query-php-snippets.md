@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\QueryPostRequestBody;
-use Microsoft\Graph\Generated\Models\SearchRequest;
-use Microsoft\Graph\Generated\Models\EntityType;
-use Microsoft\Graph\Generated\Models\SearchQuery;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Search\Query\QueryPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\SearchRequest;
+use Microsoft\Graph\Beta\Generated\Models\EntityType;
+use Microsoft\Graph\Beta\Generated\Models\SearchQuery;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

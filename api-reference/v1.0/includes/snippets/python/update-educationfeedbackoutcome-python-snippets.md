@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.education_feedback_outcome import EducationFeedbackOutcome
 from msgraph.generated.models.education_feedback import EducationFeedback
 from msgraph.generated.models.education_item_body import EducationItemBody
+from msgraph.generated.models.body_type import BodyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

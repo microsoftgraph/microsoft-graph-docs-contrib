@@ -1,7 +1,7 @@
 ---
 title: "onAttributeCollectionStartListener resource type"
 description: "A listener for the start of the user attribute collection stage of a sign up flow represented by an externalUsersSelfServiceSignUpEventsFlow object."
-author: "garrodonnell"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

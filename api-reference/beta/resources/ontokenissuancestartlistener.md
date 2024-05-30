@@ -52,11 +52,6 @@ The following JSON representation shows the resource type.
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
   "authenticationEventsFlowId": "String",
   "handler": {
     "@odata.type": "microsoft.graph.onTokenIssuanceStartHandler"

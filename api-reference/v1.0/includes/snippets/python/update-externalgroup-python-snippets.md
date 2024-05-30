@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.external_group import ExternalGroup
+from msgraph.generated.models.external_connectors.external_group import ExternalGroup
 
 graph_client = GraphServiceClient(credentials, scopes)
 

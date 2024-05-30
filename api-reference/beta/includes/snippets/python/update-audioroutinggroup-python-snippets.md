@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.audio_routing_group import AudioRoutingGroup
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.audio_routing_group import AudioRoutingGroup
+from msgraph_beta.generated.models.routing_mode import RoutingMode
 
 graph_client = GraphServiceClient(credentials, scopes)
 

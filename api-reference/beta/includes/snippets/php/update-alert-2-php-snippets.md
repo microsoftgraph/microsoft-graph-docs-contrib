@@ -5,10 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Security\Alerts\Item\AlertItemRequestBuilderPatchRequestConfiguration;
-use Microsoft\Graph\Generated\Models\Alert;
-use Microsoft\Graph\Generated\Models\SecurityVendorInformation;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Security\Alerts\Item\AlertItemRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Alert;
+use Microsoft\Graph\Beta\Generated\Models\AlertFeedback;
+use Microsoft\Graph\Beta\Generated\Models\AlertStatus;
+use Microsoft\Graph\Beta\Generated\Models\SecurityVendorInformation;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

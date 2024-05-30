@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Security\Alerts\Item\AlertItemRequestBuilderPatchRequestConfiguration;
 use Microsoft\Graph\Generated\Models\Alert;
+use Microsoft\Graph\Generated\Models\AlertFeedback;
+use Microsoft\Graph\Generated\Models\AlertStatus;
 use Microsoft\Graph\Generated\Models\SecurityVendorInformation;
 
 

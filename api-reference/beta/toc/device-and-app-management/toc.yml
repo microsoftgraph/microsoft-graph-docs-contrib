@@ -8,45 +8,45 @@ items:
     items:
     - name: Browser shared cookie
       href: ../../resources/browsersharedcookie.md
-    - name: List browserSharedCookies
+    - name: List
       href: ../../api/browsersitelist-list-sharedcookies.md
-    - name: Create browserSharedCookie
+    - name: Create
       href: ../../api/browsersitelist-post-sharedcookies.md
-    - name: Get browserSharedCookie
+    - name: Get
       href: ../../api/browsersharedcookie-get.md
-    - name: Update browserSharedCookie
+    - name: Update
       href: ../../api/browsersharedcookie-update.md
-    - name: Delete browserSharedCookie
+    - name: Delete
       href: ../../api/browsersitelist-delete-sharedcookies.md
   - name: Browser site
     items:
     - name: Browser site
       href: ../../resources/browsersite.md
-    - name: List browserSites
+    - name: List
       href: ../../api/browsersitelist-list-sites.md
-    - name: Create browserSite
+    - name: Create
       href: ../../api/browsersitelist-post-sites.md
-    - name: Get browserSite
+    - name: Get
       href: ../../api/browsersite-get.md
-    - name: Update browserSite
+    - name: Update
       href: ../../api/browsersite-update.md
-    - name: Delete browserSite
+    - name: Delete
       href: ../../api/browsersitelist-delete-sites.md
   - name: Browser site list
     items:
     - name: Browser site list
       href: ../../resources/browsersitelist.md
-    - name: List browserSiteLists
+    - name: List
       href: ../../api/internetexplorermode-list-sitelists.md
-    - name: Create browserSiteList
+    - name: Create
       href: ../../api/internetexplorermode-post-sitelists.md
-    - name: Get browserSiteList
+    - name: Get
       href: ../../api/browsersitelist-get.md
-    - name: Update browserSiteList
+    - name: Update
       href: ../../api/browsersitelist-update.md
-    - name: Delete browserSiteList
+    - name: Delete
       href: ../../api/internetexplorermode-delete-sitelists.md
-    - name: Publish a browserSiteList
+    - name: Publish
       href: ../../api/browsersitelist-publish.md
   - name: Complex types
     items:
@@ -60,7 +60,7 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
-- name: Cloud PC (preview)
+- name: Cloud PC
   items:
   - name: Overview
     href: ../../resources/cloudpc-api-overview.md
@@ -136,109 +136,109 @@ items:
     items:
     - name: Cloud PC audit event
       href: ../../resources/cloudpcauditevent.md
-    - name: List auditEvents
+    - name: List
       href: ../../api/virtualendpoint-list-auditevents.md
-    - name: Get cloudPcAuditEvent
+    - name: Get
       href: ../../api/cloudpcauditevent-get.md
-    - name: getAuditActivityTypes function
+    - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
   - name: Cloud PC cross cloud government organization mapping
     items:
     - name: Cloud PC cross cloud government organization mapping
       href: ../../resources/cloudpccrosscloudgovernmentorganizationmapping.md
-    - name: Create cloudPcCrossCloudGovernmentOrganizationMapping
+    - name: Create
       href: ../../api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
-    - name: Get cloudPcCrossCloudGovernmentOrganizationMapping
+    - name: Get
       href: ../../api/cloudpccrosscloudgovernmentorganizationmapping-get.md
   - name: Cloud PC device image
     items:
     - name: Cloud PC device image
       href: ../../resources/cloudpcdeviceimage.md
-    - name: List deviceImages
+    - name: List
       href: ../../api/virtualendpoint-list-deviceimages.md
-    - name: Get cloudPcDeviceImage
+    - name: Get
       href: ../../api/cloudpcdeviceimage-get.md
-    - name: Create cloudPcDeviceImage
+    - name: Create
       href: ../../api/virtualendpoint-post-deviceimages.md
-    - name: Delete cloudPcDeviceImage
+    - name: Delete
       href: ../../api/cloudpcdeviceimage-delete.md
-    - name: getSourceImages
+    - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Reupload cloudPcDeviceImage
+    - name: Re-upload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:
     - name: Cloud PC external partner setting
       href: ../../resources/cloudpcexternalpartnersetting.md
-    - name: List cloudPcExternalPartnerSettings
+    - name: List
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create cloudPcExternalPartnerSetting
+    - name: Create
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
-    - name: Get cloudPcExternalPartnerSetting
+    - name: Get
       href: ../../api/cloudpcexternalpartnersetting-get.md
-    - name: Update cloudPcExternalPartnerSetting
+    - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
   - name: Cloud PC front line service plan
     items:
     - name: Cloud PC front line service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
-    - name: List cloudPcFrontLineServicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
-    - name: Get cloudPcFrontLineServicePlan
+    - name: Get
       href: ../../api/cloudpcfrontlineserviceplan-get.md
   - name: Cloud PC gallery image
     items:
     - name: Cloud PC gallery image
       href: ../../resources/cloudpcgalleryimage.md
-    - name: List galleryImages
+    - name: List
       href: ../../api/virtualendpoint-list-galleryimages.md
-    - name: Get cloudPcGalleryImage
+    - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
       href: ../../resources/cloudpconpremisesconnection.md
-    - name: List onPremisesConnections
+    - name: List
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
-    - name: Get cloudPcOnPremisesConnection
+    - name: Get
       href: ../../api/cloudpconpremisesconnection-get.md
-    - name: Create cloudPcOnPremisesConnection
+    - name: Create
       href: ../../api/virtualendpoint-post-onpremisesconnections.md
-    - name: Update cloudPcOnPremisesConnection
+    - name: Update
       href: ../../api/cloudpconpremisesconnection-update.md
-    - name: Delete cloudPcOnPremisesConnection
+    - name: Delete
       href: ../../api/cloudpconpremisesconnection-delete.md
-    - name: RunHealthChecks of a cloudPcOnPremisesConnection
+    - name: Run health checks
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
-    - name: updateAdDomainPassword
+    - name: Update Active Directory domain password
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
   - name: Cloud PC organization settings
     items:
     - name: Cloud PC organization settings
       href: ../../resources/cloudpcorganizationsettings.md
-    - name: Get cloudPcOrganizationSettings
+    - name: Get
       href: ../../api/cloudpcorganizationsettings-get.md
-    - name: Update cloudPcOrganizationSettings
+    - name: Update
       href: ../../api/cloudpcorganizationsettings-update.md
   - name: Cloud PC provisioning policy
     items:
     - name: Cloud PC provisioning policy
       href: ../../resources/cloudpcprovisioningpolicy.md
-    - name: List provisioningPolicies
+    - name: List
       href: ../../api/virtualendpoint-list-provisioningpolicies.md
-    - name: Get cloudPcProvisioningPolicy
+    - name: Get
       href: ../../api/cloudpcprovisioningpolicy-get.md
-    - name: Create cloudPcProvisioningPolicy
+    - name: Create
       href: ../../api/virtualendpoint-post-provisioningpolicies.md
-    - name: Update cloudPcProvisioningPolicy
+    - name: Update
       href: ../../api/cloudpcprovisioningpolicy-update.md
-    - name: Delete cloudPcProvisioningPolicy
+    - name: Delete
       href: ../../api/cloudpcprovisioningpolicy-delete.md
-    - name: Assign cloudPcProvisioningPolicy
+    - name: Assign
       href: ../../api/cloudpcprovisioningpolicy-assign.md
-    - name: Apply cloudPcProvisioningPolicy
+    - name: Apply
       href: ../../api/cloudpcprovisioningpolicy-apply.md
-    - name: applyConfig
+    - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
   - name: Cloud PC reports
     items:
@@ -272,51 +272,51 @@ items:
       items:
       - name: Cloud PC export job
         href: ../../resources/cloudpcexportjob.md
-      - name: Create cloudPcExportJob
+      - name: Create export job
         href: ../../api/cloudpcreports-post-exportjobs.md
-      - name: Get cloudPcExportJob
+      - name: Get export job
         href: ../../api/cloudpcexportjob-get.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
       href: ../../resources/cloudpcserviceplan.md
-    - name: List servicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-serviceplans.md
   - name: Cloud PC shared use service plan
     items:
     - name: Cloud PC shared use service plan
       href: ../../resources/cloudpcshareduseserviceplan.md
-    - name: List cloudPcSharedUseServicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: Get cloudPcSharedUseServicePlan
+    - name: Get
       href: ../../api/cloudpcshareduseserviceplan-get.md
   - name: Cloud PC snapshot
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List snapshots
+    - name: List
       href: ../../api/virtualendpoint-list-snapshots.md
-    - name: Get cloudPcSnapshot
+    - name: Get
       href: ../../api/cloudpcsnapshot-get.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
       href: ../../resources/cloudpcsupportedregion.md
-    - name: List supportedRegions
+    - name: List
       href: ../../api/virtualendpoint-list-supportedregions.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting
       href: ../../resources/cloudpcusersetting.md
-    - name: List cloudPcUserSettings
+    - name: List
       href: ../../api/virtualendpoint-list-usersettings.md
-    - name: Get cloudPcUserSetting
+    - name: Get
       href: ../../api/cloudpcusersetting-get.md
-    - name: Create cloudPcUserSetting
+    - name: Create
       href: ../../api/virtualendpoint-post-usersettings.md
-    - name: Update cloudPcUserSetting
+    - name: Update
       href: ../../api/cloudpcusersetting-update.md
-    - name: Delete cloudPcUserSetting
+    - name: Delete
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
@@ -366,6 +366,16 @@ items:
       href: ../../api/virtualendpoint-list-bulkactions.md
     - name: Create cloudPcBulkAction
       href: ../../api/virtualendpoint-post-bulkactions.md
+  - name: Cloud PC bulk action
+    items:
+    - name: Cloud PC bulk action
+      href: ../../resources/cloudpcbulkaction.md
+    - name: List
+      href: ../../api/virtualendpoint-list-bulkactions.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Get
+      href: ../../api/cloudpcbulkaction-get.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -375,13 +385,13 @@ items:
       items:
       - name: Alert record
         href: ../../resources/devicemanagement-alertrecord.md
-      - name: List alertRecords
+      - name: List
         href: ../../api/devicemanagement-alertrecord-list.md
-      - name: Get alertRecord
+      - name: Get
         href: ../../api/devicemanagement-alertrecord-get.md
-      - name: getPortalNotifications
+      - name: Get portal notifications
         href: ../../api/devicemanagement-alertrecord-getportalnotifications.md
-      - name: setPortalNotificationAsSent
+      - name: Set portal notification as sent
         href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
     - name: Alert rule
       href: ../../resources/devicemanagement-alertrule.md
@@ -395,8 +405,22 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk power off
+      href: ../../resources/cloudpcbulkpoweroff.md
+    - name: Cloud PC bulk power on
+      href: ../../resources/cloudpcbulkpoweron.md
     - name: Cloud PC bulk remote action result
       href: ../../resources/cloudpcbulkremoteactionresult.md
+    - name: Cloud PC bulk reprovision
+      href: ../../resources/cloudpcbulkreprovision.md
+    - name: Cloud PC bulk resize
+      href: ../../resources/cloudpcbulkresize.md
+    - name: Cloud PC bulk restart
+      href: ../../resources/cloudpcbulkrestart.md
+    - name: Cloud PC bulk restore
+      href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk troubleshoot
+      href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC connectivity event
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
@@ -486,13 +510,13 @@ items:
     items:
     - name: Print connector
       href: ../../resources/printconnector.md
-    - name: List connectors
+    - name: List
       href: ../../api/print-list-connectors.md
-    - name: Get connector
+    - name: Get
       href: ../../api/printconnector-get.md
-    - name: Update connector
+    - name: Update
       href: ../../api/printconnector-update.md
-    - name: Delete connector
+    - name: Delete
       href: ../../api/printconnector-delete.md
   - name: Print document
     items:
@@ -508,7 +532,7 @@ items:
       href: ../../resources/printjob.md
     - name: Get
       href: ../../api/printjob-get.md
-    - name: Create
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: Update
       href: ../../api/printjob-update.md
@@ -518,23 +542,23 @@ items:
       href: ../../api/printjob-cancel.md
     - name: Abort
       href: ../../api/printjob-abort.md
-    - name: Redirect (to another printer)
+    - name: Redirect
       href: ../../api/printjob-redirect.md
   - name: Print operation
     items:
     - name: Print operation
       href: ../../resources/printoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Print service
     items:
     - name: Print service
       href: ../../resources/printservice.md
-    - name: List services
+    - name: List
       href: ../../api/print-list-services.md
-    - name: Get service
+    - name: Get
       href: ../../api/printservice-get.md
-    - name: List endpoints
+    - name: List a service's endpoints
       href: ../../api/printservice-list-endpoints.md
   - name: Print service endpoint
     items:
@@ -564,9 +588,9 @@ items:
     items:
     - name: Print task trigger
       href: ../../resources/printtasktrigger.md
-    - name: List
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Get
+    - name: Get task trigger
       href: ../../api/printtasktrigger-get.md
   - name: Printer
     items:
@@ -580,25 +604,25 @@ items:
       href: ../../api/printer-update.md
     - name: Delete
       href: ../../api/printer-delete.md
-    - name: restoreFactoryDefaults
+    - name: Restore factory defaults
       href: ../../api/printer-restorefactorydefaults.md
-    - name: List jobs
+    - name: List print jobs
       href: ../../api/printer-list-jobs.md
-    - name: Create job
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: List connectors
       href: ../../api/printer-list-connectors.md
-    - name: List taskTriggers
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Create taskTrigger
+    - name: Create task trigger
       href: ../../api/printer-post-tasktriggers.md
-    - name: Delete taskTrigger
+    - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
   - name: Printer create operation
     items:
     - name: Printer create operation
       href: ../../resources/printercreateoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Printer share
     items:
@@ -614,21 +638,21 @@ items:
       href: ../../api/printershare-delete.md
     - name: List jobs
       href: ../../api/printershare-list-jobs.md
-    - name: Create job
+    - name: Create job for a printer share
       href: ../../api/printershare-post-jobs.md
-    - name: List allowedUsers
+    - name: List allowed users
       href: ../../api/printershare-list-allowedusers.md
-    - name: Add allowedUser
+    - name: Create allowed user
       href: ../../api/printershare-post-allowedusers.md
-    - name: Remove allowedUser
+    - name: Delete allowed user
       href: ../../api/printershare-delete-alloweduser.md
-    - name: List allowedGroups
+    - name: List allowed groups
       href: ../../api/printershare-list-allowedgroups.md
-    - name: Add allowedGroup
+    - name: Create allowed group
       href: ../../api/printershare-post-allowedgroups.md
-    - name: Remove allowedGroup
+    - name: Delete allowed group
       href: ../../api/printershare-delete-allowedgroup.md
-    - name: List recentPrinterShares
+    - name: List recent shares
       href: ../../api/print-list-recentshares.md
   - name: Reports
     items:
@@ -636,9 +660,9 @@ items:
       items:
       - name: Print usage by printer
         href: ../../resources/printusagebyprinter.md
-      - name: List (daily)
+      - name: List daily reports by printer
         href: ../../api/reportroot-list-dailyprintusagebyprinter.md
-      - name: List (monthly)
+      - name: List monthly reports by printer
         href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
       - name: Get
         href: ../../api/printUsageByPrinter-get.md
@@ -646,9 +670,9 @@ items:
       items:
       - name: Print usage by user
         href: ../../resources/printusagebyuser.md
-      - name: List (daily)
+      - name: List daily reports by user
         href: ../../api/reportroot-list-dailyprintusagebyuser.md
-      - name: List (monthly)
+      - name: List monthly reports by user
         href: ../../api/reportroot-list-monthlyprintusagebyuser.md
       - name: Get
         href: ../../api/printusagebyuser-get.md
@@ -666,17 +690,17 @@ items:
       items:
       - name: Unified storage quota
         href: ../../resources/unifiedstoragequota.md
-      - name: Get unifiedStorageQuota
+      - name: Get
         href: ../../api/unifiedstoragequota-get.md
-      - name: List serviceStorageQuotaBreakdown
+      - name: List
         href: ../../api/unifiedstoragequota-list-services.md
     - name: Service storage quota breakdown
       items:
       - name: Service storage quota breakdown
         href: ../../resources/servicestoragequotabreakdown.md
-      - name: List serviceStorageQuotaBreakdown
+      - name: List
         href: ../../api/unifiedstoragequota-list-services.md
-      - name: Get serviceStorageQuotaBreakdown
+      - name: Get
         href: ../../api/servicestoragequotabreakdown-get.md
   - name: Complex types
     items:
@@ -8195,13 +8219,13 @@ items:
       items:
       - name: RBAC application multiple
         href: ../../resources/rbacapplicationmultiple.md
-      - name: Create unifiedRoleDefinition
+      - name: Create role definition
         href: ../../api/rbacapplication-post-roledefinitions.md
-      - name: List roleDefinitions
+      - name: List role definitions
         href: ../../api/rbacapplication-list-roledefinitions.md
-      - name: Create unifiedRoleAssignmentMultiple
+      - name: Create
         href: ../../api/rbacapplicationmultiple-post-roleassignments.md
-      - name: List roleAssignments
+      - name: List
         href: ../../api/rbacapplicationmultiple-list-roleassignments.md
     - name: Resource operation
       items:
@@ -8492,51 +8516,51 @@ items:
     items:
     - name: Microsoft Entra device
       href: ../../resources/windowsupdates-azureaddevice.md
-    - name: List azureADDevice resources
+    - name: List Microsoft Entra devices
       href: ../../api/adminwindowsupdates-list-updatableassets-azureaddevice.md
-    - name: Get azureADDevice
+    - name: Get Microsoft Entra device
       href: ../../api/windowsupdates-azureaddevice-get.md
-    - name: Delete azureADDevice
+    - name: Delete Microsoft Entra device
       href: ../../api/windowsupdates-azureaddevice-delete.md
-    - name: Enroll azureADDevice resources in management
+    - name: Enroll in update management
       href: ../../api/windowsupdates-updatableasset-enrollassets.md
-    - name: Enroll azureADDevice resources in management (by ID)
+    - name: Enroll by ID
       href: ../../api/windowsupdates-updatableasset-enrollassetsbyid.md
-    - name: Unenroll azureADDevice resources from management
+    - name: Unenroll from update management
       href: ../../api/windowsupdates-updatableasset-unenrollassets.md
-    - name: Unenroll azureADDevice resources from management (by ID)
+    - name: Unenroll by ID
       href: ../../api/windowsupdates-updatableasset-unenrollassetsbyid.md
   - name: Catalog
     items:
     - name: Catalog
       href: ../../resources/windowsupdates-catalog.md
-    - name: List entries
+    - name: List catalog entries
       href: ../../api/windowsupdates-catalog-list-entries.md
   - name: Compliance change
     items:
     - name: Compliance change
       href: ../../resources/windowsupdates-compliancechange.md
-    - name: List complianceChanges
+    - name: List
       href: ../../api/windowsupdates-updatepolicy-list-compliancechanges.md
-    - name: Get complianceChange
+    - name: Get
       href: ../../api/windowsupdates-compliancechange-get.md
-    - name: Update complianceChange
+    - name: Update
       href: ../../api/windowsupdates-compliancechange-update.md
-    - name: Delete complianceChange
+    - name: Delete
       href: ../../api/windowsupdates-compliancechange-delete.md
   - name: Content approval
     items:
     - name: Content approval
       href: ../../resources/windowsupdates-contentapproval.md
-    - name: List contentApprovals
+    - name: List
       href: ../../api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
-    - name: Create contentApproval
+    - name: Create
       href: ../../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
-    - name: Get contentApproval
+    - name: Get
       href: ../../api/windowsupdates-contentapproval-get.md
-    - name: Update contentApproval
+    - name: Update
       href: ../../api/windowsupdates-contentapproval-update.md
-    - name: Delete contentApproval
+    - name: Delete
       href: ../../api/windowsupdates-contentapproval-delete.md
   - name: Deployment
     items:
@@ -8552,23 +8576,23 @@ items:
       href: ../../api/windowsupdates-deployment-update.md
     - name: Delete deployment
       href: ../../api/windowsupdates-deployment-delete.md
-    - name: List audience members
+    - name: List members
       href: ../../api/windowsupdates-deploymentaudience-list-members.md
-    - name: List audience exclusions
+    - name: List exclusions
       href: ../../api/windowsupdates-deploymentaudience-list-exclusions.md
-    - name: Update audience members and exclusions
+    - name: Update members and exclusions
       href: ../../api/windowsupdates-deploymentaudience-updateaudience.md
   - name: Deployment audience
     items:
     - name: Deployment audience
       href: ../../resources/windowsupdates-deploymentaudience.md
-    - name: List deploymentAudiences
+    - name: List
       href: ../../api/adminwindowsupdates-list-deploymentaudiences.md
-    - name: Create deploymentAudience
+    - name: Create
       href: ../../api/adminwindowsupdates-post-deploymentaudiences.md
-    - name: Get deploymentAudience
+    - name: Get
       href: ../../api/windowsupdates-deploymentaudience-get.md
-    - name: Delete deploymentAudience
+    - name: Delete
       href: ../../api/windowsupdates-deploymentaudience-delete.md
     - name: List members
       href: ../../api/windowsupdates-deploymentaudience-list-members.md
@@ -8576,17 +8600,17 @@ items:
       href: ../../api/windowsupdates-deploymentaudience-list-exclusions.md
     - name: Update members and exclusions
       href: ../../api/windowsupdates-deploymentaudience-updateaudience.md
-    - name: Update members and exclusions (by ID)
+    - name: Update by ID
       href: ../../api/windowsupdates-deploymentaudience-updateaudiencebyid.md
   - name: Operational insights connection
     items:
     - name: Operational insights connection
       href: ../../resources/windowsupdates-operationalinsightsconnection.md
-    - name: List operationalInsightsConnections
+    - name: List
       href: ../../api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
-    - name: Create operationalInsightsConnection
+    - name: Create
       href: ../../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
-    - name: Get operationalInsightsConnection
+    - name: Get
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operationalInsightsConnection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
@@ -8604,39 +8628,39 @@ items:
     items:
     - name: Resource connection
       href: ../../resources/windowsupdates-resourceconnection.md
-    - name: List resourceConnections
+    - name: List
       href: ../../api/adminwindowsupdates-list-resourceconnections.md
-    - name: Get resourceConnection
+    - name: Get
       href: ../../api/windowsupdates-resourceconnection-get.md
-    - name: Delete resourceConnection
+    - name: Delete
       href: ../../api/windowsupdates-resourceconnection-delete.md
   - name: Updatable asset
     items:
     - name: Updatable asset
       href: ../../resources/windowsupdates-updatableasset.md
-    - name: List updatableAsset resources
+    - name: List updatable assets
       href: ../../api/adminwindowsupdates-list-updatableassets.md
-    - name: Create updatableAssetGroup
+    - name: Create updatable asset group
       href: ../../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md
-    - name: Get updatableAsset
+    - name: Get updatable asset
       href: ../../api/windowsupdates-updatableasset-get.md
-    - name: Delete updatableAsset
+    - name: Delete updatable asset
       href: ../../api/windowsupdates-updatableasset-delete.md
-    - name: Enroll asset in management
+    - name: Enroll in update management
       href: ../../api/windowsupdates-updatableasset-enrollassets.md
-    - name: Enroll asset in management (by ID)
+    - name: Enroll by ID
       href: ../../api/windowsupdates-updatableasset-enrollassetsbyid.md
-    - name: Unenroll asset from management
+    - name: Unenroll from update management
       href: ../../api/windowsupdates-updatableasset-unenrollassets.md
-    - name: Unenroll asset from management (by ID)
+    - name: Unenroll by ID
       href: ../../api/windowsupdates-updatableasset-unenrollassetsbyid.md
-    - name: Add members to group
+    - name: Add members
       href: ../../api/windowsupdates-updatableassetgroup-addmembers.md
-    - name: Add members to group (by ID)
+    - name: Add members by ID
       href: ../../api/windowsupdates-updatableassetgroup-addmembersbyid.md
-    - name: Remove members from group
+    - name: Remove members
       href: ../../api/windowsupdates-updatableassetgroup-removemembers.md
-    - name: Remove members from group (by ID)
+    - name: Remove members by ID
       href: ../../api/windowsupdates-updatableassetgroup-removemembersbyid.md
   - name: Updatable asset group
     items:
@@ -8801,121 +8825,121 @@ items:
     items:
     - name: Aggregated policy compliance
       href: ../../resources/managedtenants-aggregatedpolicycompliance.md
-    - name: List aggregatedPolicyCompliances
+    - name: List aggregated policy compliances
       href: ../../api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
   - name: Audit event
     items:
     - name: Audit event
       href: ../../resources/managedtenants-auditevent.md
-    - name: List auditEvents
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-auditevents.md
-    - name: Get auditEvent
+    - name: Get
       href: ../../api/managedtenants-auditevent-get.md
   - name: Cloud PC connection
     items:
     - name: Cloud PC connection
       href: ../../resources/managedtenants-cloudpcconnection.md
-    - name: List cloudPcConnections
+    - name: List cloud PC connections
       href: ../../api/managedtenants-managedtenant-list-cloudpcconnections.md
-    - name: Get cloudPcConnection
+    - name: Get cloud PC connection
       href: ../../api/managedtenants-cloudpcconnection-get.md
   - name: Cloud PC device
     items:
     - name: Cloud PC device
       href: ../../resources/managedtenants-cloudpcdevice.md
-    - name: List cloudPcDevices
+    - name: List cloud PC devices
       href: ../../api/managedtenants-managedtenant-list-cloudpcdevices.md
-    - name: Get cloudPcDevice
+    - name: Get cloud PC device
       href: ../../api/managedtenants-cloudpcdevice-get.md
   - name: Cloud PC overview
     items:
     - name: Cloud PC overview
       href: ../../resources/managedtenants-cloudpcoverview.md
-    - name: List cloudPcOverviews
+    - name: List cloud PC overviews
       href: ../../api/managedtenants-managedtenant-list-cloudpcsoverview.md
-    - name: Get cloudPcOverview
+    - name: Get cloud PC overview
       href: ../../api/managedtenants-cloudpcoverview-get.md
   - name: Conditional access policy coverage
     items:
     - name: Conditional access policy coverage
       href: ../../resources/managedtenants-conditionalaccesspolicycoverage.md
-    - name: List conditionalAccessPolicyCoverages
+    - name: List conditional access coverages
       href: ../../api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
-    - name: Get conditionalAccessPolicyCoverage
+    - name: Get conditional access policy coverage
       href: ../../api/managedtenants-conditionalaccesspolicycoverage-get.md
   - name: Credential user registrations summary
     items:
     - name: Credential user registrations summary
       href: ../../resources/managedtenants-credentialuserregistrationssummary.md
-    - name: List credentialUserRegistrationsSummaries
+    - name: List credential user registration summaries
       href: ../../api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
-    - name: Get credentialUserRegistrationsSummary
+    - name: Get credential user registrations summary
       href: ../../api/managedtenants-credentialuserregistrationssummary-get.md
   - name: Device compliance policy setting state summary
     items:
     - name: Device compliance policy setting state summary
       href: ../../resources/managedtenants-devicecompliancepolicysettingstatesummary.md
-    - name: List deviceCompliancePolicySettingStateSummary
+    - name: List device compliance policy setting state summary
       href: ../../api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
-    - name: Get deviceCompliancePolicySettingStateSummary
+    - name: Get device compliance policy setting state summary
       href: ../../api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
   - name: Managed device compliance
     items:
     - name: Managed device compliance
       href: ../../resources/managedtenants-manageddevicecompliance.md
-    - name: List managedDeviceCompliances
+    - name: List managed device compliances
       href: ../../api/managedtenants-managedtenant-list-manageddevicecompliances.md
-    - name: Get managedDeviceCompliance
+    - name: Get managed device compliance
       href: ../../api/managedtenants-manageddevicecompliance-get.md
   - name: Managed device compliance trend
     items:
     - name: Managed device compliance trend
       href: ../../resources/managedtenants-manageddevicecompliancetrend.md
-    - name: List managedDeviceComplianceTrends
+    - name: List managed device compliance trend
       href: ../../api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
-    - name: Get managedDeviceComplianceTrend
+    - name: Get managed device compliance trend
       href: ../../api/managedtenants-manageddevicecompliancetrend-get.md
   - name: Management action
     items:
     - name: Management action
       href: ../../resources/managedtenants-managementaction.md
-    - name: List managementActions
+    - name: List management action
       href: ../../api/managedtenants-managedtenant-list-managementactions.md
-    - name: Get managementAction
+    - name: Get management action
       href: ../../api/managedtenants-managementaction-get.md
-    - name: apply
+    - name: Apply management action
       href: ../../api/managedtenants-managementaction-apply.md
   - name: Management action tenant deployment status
     items:
     - name: Management action tenant deployment status
       href: ../../resources/managedtenants-managementactiontenantdeploymentstatus.md
-    - name: List managementActionTenantDeploymentStatus
+    - name: List management action deployment statuses
       href: ../../api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
-    - name: Get managementActionTenantDeploymentStatus
+    - name: Get management action deployment status
       href: ../../api/managedtenants-managementactiontenantdeploymentstatus-get.md
-    - name: changeDeploymentStatus
+    - name: Change management action deployment status
       href: ../../api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
   - name: Management intent
     items:
     - name: Management intent
       href: ../../resources/managedtenants-managementintent.md
-    - name: List managementIntents
+    - name: List management intents
       href: ../../api/managedtenants-managedtenant-list-managementintents.md
-    - name: Get managementIntent
+    - name: Get management intent
       href: ../../api/managedtenants-managementintent-get.md
   - name: Management template
     items:
     - name: Management template
       href: ../../resources/managedtenants-managementtemplate.md
-    - name: List managementTemplates
+    - name: List management templates
       href: ../../api/managedtenants-managedtenant-list-managementtemplates.md
-    - name: Get managementTemplate
+    - name: Get management template
       href: ../../api/managedtenants-managementtemplate-get.md
   - name: My role
     items:
     - name: My role
       href: ../../resources/managedtenants-myrole.md
-    - name: List myRoles
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-myroles.md
   - name: Tenant
     items:
@@ -8925,77 +8949,77 @@ items:
       href: ../../api/managedtenants-managedtenant-list-tenants.md
     - name: Get tenant
       href: ../../api/managedtenants-tenant-get.md
-    - name: offboardTenant
+    - name: Offboard tenant
       href: ../../api/managedtenants-tenant-offboardtenant.md
-    - name: resetTenantOnboardingStatus
+    - name: Reset tenant onboarding status
       href: ../../api/managedtenants-tenant-resettenantonboardingstatus.md
   - name: Tenant customized information
     items:
     - name: Tenant customized information
       href: ../../resources/managedtenants-tenantcustomizedinformation.md
-    - name: List tenantCustomizedInformations
+    - name: List tenant customized information
       href: ../../api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
-    - name: Get tenantCustomizedInformation
+    - name: Get tenant customized information
       href: ../../api/managedtenants-tenantcustomizedinformation-get.md
-    - name: Update tenantCustomizedInformation
+    - name: Update tenant customized information
       href: ../../api/managedtenants-tenantcustomizedinformation-update.md
   - name: Tenant detailed information
     items:
     - name: Tenant detailed information
       href: ../../resources/managedtenants-tenantdetailedinformation.md
-    - name: List tenantDetailedInformation
+    - name: List tenant detailed information
       href: ../../api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
-    - name: Get tenantDetailedInformation
+    - name: Get tenant detailed information
       href: ../../api/managedtenants-tenantdetailedinformation-get.md
   - name: Tenant group
     items:
     - name: Tenant group
       href: ../../resources/managedtenants-tenantgroup.md
-    - name: List tenantGroups
+    - name: List tenant groups
       href: ../../api/managedtenants-managedtenant-list-tenantgroups.md
-    - name: Get tenantGroup
+    - name: Get tenant group
       href: ../../api/managedtenants-tenantgroup-get.md
-    - name: tenantSearch
+    - name: Search for tenant
       href: ../../api/managedtenants-tenantgroup-tenantsearch.md
   - name: Tenant tag
     items:
     - name: Tenant tag
       href: ../../resources/managedtenants-tenanttag.md
-    - name: List tenantTags
+    - name: List tenant tags
       href: ../../api/managedtenants-managedtenant-list-tenanttags.md
-    - name: Create tenantTag
+    - name: Create tenant tag
       href: ../../api/managedtenants-managedtenant-post-tenanttags.md
-    - name: Get tenantTag
+    - name: Get tenant tag
       href: ../../api/managedtenants-tenanttag-get.md
-    - name: Update tenantTag
+    - name: Update tenant tag
       href: ../../api/managedtenants-tenanttag-update.md
-    - name: Delete tenantTag
+    - name: Delete tenant tag
       href: ../../api/managedtenants-tenanttag-delete.md
-    - name: assignTag
+    - name: Assign tenant tag
       href: ../../api/managedtenants-tenanttag-assigntag.md
-    - name: unassignTag
+    - name: Unassign tenant tag
       href: ../../api/managedtenants-tenanttag-unassigntag.md
   - name: Tenant usage
     items:
     - name: Tenant usage
       href: ../../resources/managedtenants-tenantusage.md
-    - name: List tenantUsage
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-tenantusage.md
   - name: Windows device malware state
     items:
     - name: Windows device malware state
       href: ../../resources/managedtenants-windowsdevicemalwarestate.md
-    - name: List windowsDeviceMalwareStates
+    - name: List Windows device malware states
       href: ../../api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-    - name: Get windowsDeviceMalwareState
+    - name: Get Windows device malware state
       href: ../../api/managedtenants-windowsdevicemalwarestate-get.md
   - name: Windows protection state
     items:
     - name: Windows protection state
       href: ../../resources/managedtenants-windowsprotectionstate.md
-    - name: List windowsProtectionStates
+    - name: List Windows protection state
       href: ../../api/managedtenants-managedtenant-list-windowsprotectionstates.md
-    - name: Get windowsProtectionState
+    - name: Get Windows protection state
       href: ../../api/managedtenants-windowsprotectionstate-get.md
   - name: Complex types
     items:
@@ -9055,7 +9079,7 @@ items:
     items:
     - name: Service announcement
       href: ../../resources/serviceannouncement.md
-    - name: List healthOverviews
+    - name: List health overviews
       href: ../../api/serviceannouncement-list-healthoverviews.md
     - name: List issues
       href: ../../api/serviceannouncement-list-issues.md
@@ -9065,19 +9089,19 @@ items:
     items:
     - name: Service announcement attachment
       href: ../../resources/serviceannouncementattachment.md
-    - name: Get serviceAnnouncementAttachment
+    - name: Get
       href: ../../api/serviceannouncementattachment-get.md
   - name: Service health
     items:
     - name: Service health
       href: ../../resources/servicehealth.md
-    - name: Get serviceHealth
+    - name: Get service health
       href: ../../api/servicehealth-get.md
   - name: Service health issue
     items:
     - name: Service health issue
       href: ../../resources/servicehealthissue.md
-    - name: Get serviceHealthIssue
+    - name: Get issue
       href: ../../api/servicehealthissue-get.md
     - name: Get post-incident review report
       href: ../../api/servicehealthissue-incidentreport.md
@@ -9085,21 +9109,21 @@ items:
     items:
     - name: Service update message
       href: ../../resources/serviceupdatemessage.md
-    - name: Get serviceUpdateMessage
+    - name: Get message
       href: ../../api/serviceupdatemessage-get.md
-    - name: markRead
+    - name: Mark read status
       href: ../../api/serviceupdatemessage-markread.md
-    - name: markUnread
+    - name: Mark unread status
       href: ../../api/serviceupdatemessage-markunread.md
-    - name: archive
+    - name: Archive status
       href: ../../api/serviceupdatemessage-archive.md
-    - name: unarchive
+    - name: Unarchive status
       href: ../../api/serviceupdatemessage-unarchive.md
-    - name: favorite
+    - name: Mark favorite status
       href: ../../api/serviceupdatemessage-favorite.md
-    - name: unfavorite
+    - name: Remove favorite status
       href: ../../api/serviceupdatemessage-unfavorite.md
-    - name: List attachments
+    - name: List message attachments
       href: ../../api/serviceupdatemessage-list-attachments.md
   - name: Complex types
     items:

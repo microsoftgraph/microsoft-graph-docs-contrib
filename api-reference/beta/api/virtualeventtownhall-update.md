@@ -1,7 +1,7 @@
 ---
 title: "Update virtualEventTownhall"
 description: "Update the properties of a virtualEventTownhall object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a v[virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,10 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventtownhall-update-permissions"
+  "name": "virtualevent-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-update-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -50,11 +50,12 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
-| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
+| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
+| displayName | String | Display name of the virtual event. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
 
@@ -136,7 +137,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "id": "fc6e8c15-2fd7-1dd5-caa0-87056e6a12be",
+  "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
   "status": "draft",
   "displayName": "The Impact of Tech on Our Lives",
   "description": {
