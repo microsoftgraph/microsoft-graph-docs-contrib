@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_alert"
+  "name": "healthmonitoring_get_alert"
 }
 -->
 ``` http
