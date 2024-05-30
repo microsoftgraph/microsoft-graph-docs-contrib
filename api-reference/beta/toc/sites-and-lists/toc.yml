@@ -163,9 +163,9 @@ items:
     href: ../../api/permission-grant.md
   - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
-- name: Sharepoint settings
+- name: SharePoint settings
   items:
-  - name: Sharepoint settings
+  - name: SharePoint settings
     href: ../../resources/sharepointsettings.md
   - name: Get
     href: ../../api/sharepointsettings-get.md

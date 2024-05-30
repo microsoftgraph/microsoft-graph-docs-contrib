@@ -466,7 +466,8 @@
         "drive",
         "driveItem",
         "bundle",
-        "permission"
+        "permission",
+        "fileStorageContainer"
       ]
     },
     {
