@@ -39,7 +39,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |status|[protectionUnitStatus](../resources/driveprotectionunit.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
-||Member | Description |
+|Member | Description |
 |:------|:------------|
 |protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
 |protected | Protection was successfully enabled for the unit.|
