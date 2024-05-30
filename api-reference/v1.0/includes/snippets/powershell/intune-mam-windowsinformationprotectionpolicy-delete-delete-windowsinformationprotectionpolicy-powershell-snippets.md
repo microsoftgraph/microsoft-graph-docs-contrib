@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
-Remove-MgDeviceAppMgtWindowInformationProtectionPolicy -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId
+Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId
 
 ```

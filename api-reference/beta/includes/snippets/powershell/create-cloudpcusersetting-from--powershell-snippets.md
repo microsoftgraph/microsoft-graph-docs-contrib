@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
@@ -13,10 +13,11 @@ $params = @{
 	localAdminEnabled = $true
 	restorePointSetting = @{
 		frequencyInHours = 16
+		frequencyType = "sixteenHours"
 		userRestoreEnabled = $true
 	}
 }
 
-New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
 
 ```

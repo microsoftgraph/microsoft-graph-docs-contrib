@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
-Get-MgDeviceAppMgtManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId
+Get-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId
 
 ```

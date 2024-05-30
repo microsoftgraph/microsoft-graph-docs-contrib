@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.linkedResource"
@@ -14,6 +14,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
+Update-MgBetaUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
 
 ```

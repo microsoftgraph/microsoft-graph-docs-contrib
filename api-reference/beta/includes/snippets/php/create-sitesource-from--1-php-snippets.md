@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Ediscovery\SiteSource;
+use Microsoft\Graph\Beta\Generated\Models\Site;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SiteSource();
 $site = new Site();
 $site->setWebUrl('https://contoso.sharepoint.com/sites/HumanResources');
-
-
 $requestBody->setSite($site);
 
-
-$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->custodians()->byCustodianId('custodian-id')->siteSources()->post($requestBody);
-
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->custodians()->byCustodianId('custodian-id')->siteSources()->post($requestBody)->wait();
 
 ```

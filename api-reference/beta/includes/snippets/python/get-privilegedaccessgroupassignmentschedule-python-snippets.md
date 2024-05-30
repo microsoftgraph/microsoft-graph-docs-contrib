@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.identity_governance.privileged_access.group.assignment_schedules.by_assignment_schedule_id('privilegedAccessGroupAssignmentSchedule-id').get()
+result = await graph_client.identity_governance.privileged_access.group.assignment_schedules.by_privileged_access_group_assignment_schedule_id('privilegedAccessGroupAssignmentSchedule-id').get()
 
 
 ```

@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PronounsSettings
 {
 	IsEnabledInOrganization = true,
 };
-var result = await graphClient.Organization["{organization-id}"].Settings.Pronouns.PatchAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.People.Pronouns.PatchAsync(requestBody);
 
 
 ```

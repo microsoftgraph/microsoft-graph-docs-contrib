@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.administrative_unit import AdministrativeUnit
 
-request_body = AdministrativeUnit()
-request_body.display_name = 'Greater Seattle District Technical Schools'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = AdministrativeUnit(
+	display_name = "Greater Seattle District Technical Schools",
+)
 
-
-
-result = await client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body = request_body)
+result = await graph_client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body)
 
 
 ```

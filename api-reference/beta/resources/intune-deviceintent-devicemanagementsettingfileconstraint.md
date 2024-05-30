@@ -3,7 +3,7 @@ title: "deviceManagementSettingFileConstraint resource type"
 description: "Constraint enforcing the file extension is acceptable for a given setting"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

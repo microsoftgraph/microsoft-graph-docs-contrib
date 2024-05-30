@@ -11,23 +11,23 @@ const options = {
 const client = Client.init(options);
 
 const reply = {
-  message: {  
+  message: {
     toRecipients: [
       {
         emailAddress: {
-          address: 'samanthab@contoso.onmicrosoft.com',
+          address: 'samanthab@contoso.com',
           name: 'Samantha Booth'
         }
       },
       {
         emailAddress: {
-          address: 'randiw@contoso.onmicrosoft.com',
+          address: 'randiw@contoso.com',
           name: 'Randi Welch'
         }
       }
      ]
   },
-  comment: 'Samantha, Randi, would you name the group please?' 
+  comment: 'Samantha, Randi, would you name the group please?'
 };
 
 await client.api('/me/messages/AAMkADA1MTAAAAqldOAAA=/reply')

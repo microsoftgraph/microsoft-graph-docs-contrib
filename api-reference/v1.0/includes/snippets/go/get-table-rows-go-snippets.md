@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestTop := int32(5)
@@ -27,7 +27,8 @@ configuration := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuild
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Rows().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+rows, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Rows().Get(context.Background(), configuration)
 
 
 ```

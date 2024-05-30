@@ -3,7 +3,7 @@ title: "featureUpdateCatalogEntry resource type"
 description: "Represents metadata for a Windows 10 feature update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -22,6 +22,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|buildNumber|String|The build number of the feature update. Read-only.|
 |deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |displayName|String|The display name of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
@@ -44,6 +45,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+  "buildNumber": "String",
   "deployableUntilDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
@@ -51,4 +53,3 @@ The following is a JSON representation of the resource.
   "version": "String"
 }
 ```
-

@@ -4,12 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "extension-policy"
 	description = "test"
 	accessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	expiration = @{
+		type = "afterDuration"
+		duration = "P365D"
+	}
 	canExtend = $false
 	requestApprovalSettings = $null
 	requestorSettings = @{
@@ -38,6 +42,6 @@ $params = @{
 	)
 }
 
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
 ```

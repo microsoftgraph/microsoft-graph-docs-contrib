@@ -17,7 +17,7 @@ $params = @{
 	}
 }
 
-Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
 
 
 ```

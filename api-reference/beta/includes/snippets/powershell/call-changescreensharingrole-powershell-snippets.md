@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	role = "viewer"
 }
 
-Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
+Rename-MgBetaCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
 
 ```

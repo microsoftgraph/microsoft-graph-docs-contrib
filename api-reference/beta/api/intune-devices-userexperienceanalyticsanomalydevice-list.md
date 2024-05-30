@@ -3,7 +3,7 @@ title: "List userExperienceAnalyticsAnomalyDevices"
 description: "List properties and relationships of the userExperienceAnalyticsAnomalyDevice objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [userExperienceAnalyticsAnomalyDevice](../resources/intune-devices-userexperienceanalyticsanomalydevice.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ GET /deviceManagement/userExperienceAnalyticsAnomalyDevice
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -76,7 +78,8 @@ Content-Length: 731
       "anomalyId": "Anomaly Id value",
       "anomalyOnDeviceFirstOccurrenceDateTime": "2017-01-01T00:00:47.4723614-08:00",
       "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00",
-      "correlationGroupId": "Correlation Group Id value"
+      "correlationGroupId": "Correlation Group Id value",
+      "deviceStatus": "affected"
     }
   ]
 }

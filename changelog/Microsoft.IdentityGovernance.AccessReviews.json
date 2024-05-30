@@ -767,7 +767,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "generateDownloadUri",
           "ChangeType": "Addition",
-          "Description": "Added the [generateDownloadUri](https://learn.microsoft.com/en-us/graph/api/accessReviewHistoryDefinition-generateDownloadUri?view=graph-rest-beta) method to the [accessReviewHistoryDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the **generateDownloadUri** method to the [accessReviewHistoryDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
           "Target": "accessReviewHistoryDefinition"
         }
       ],
@@ -1249,6 +1249,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-27T08:30:40.3980156Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39bd7376-2fa4-4069-9a8e-a7e2c6b29b3c",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopApplyDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopApplyDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-stopapplydecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstance"
+        }
+      ],
+      "Id": "39bd7376-2fa4-4069-9a8e-a7e2c6b29b3c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-25T20:53:38.0340041Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

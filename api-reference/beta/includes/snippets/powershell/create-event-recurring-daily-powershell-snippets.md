@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -26,7 +26,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "AlexW@contoso.OnMicrosoft.com"
+				address = "AlexW@contoso.com"
 				name = "Alex Wilbur"
 			}
 			type = "required"
@@ -46,6 +46,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserEvent -UserId $userId -BodyParameter $params
+New-MgBetaUserEvent -UserId $userId -BodyParameter $params
 
 ```

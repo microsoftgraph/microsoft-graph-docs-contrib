@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\ServicePrincipalItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new ServicePrincipalRequestBuilderGetRequestConfiguration();
-$queryParameters = ServicePrincipalRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new ServicePrincipalItemRequestBuilderGetRequestConfiguration();
+$queryParameters = ServicePrincipalItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["customSecurityAttributes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->get($requestConfiguration)->wait();
 
 ```

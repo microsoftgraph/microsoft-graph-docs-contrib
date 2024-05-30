@@ -6,14 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Groups.Item.ValidateProperties;
 
-var requestBody = new Microsoft.Graph.Beta.Groups.Item.ValidateProperties.ValidatePropertiesPostRequestBody
+var requestBody = new ValidatePropertiesPostRequestBody
 {
 	DisplayName = "Myprefix_test_mysuffix",
 	MailNickname = "Myprefix_test_mysuffix",
 	OnBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Groups["{group-id}"].ValidateProperties.PostAsync(requestBody);
 
 

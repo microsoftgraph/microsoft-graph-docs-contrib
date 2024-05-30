@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new LearningContent
 {
@@ -19,6 +20,7 @@ var requestBody = new LearningContent
 	NumberOfPages = 9,
 	Duration = TimeSpan.Parse("PT20M"),
 	Format = "Book",
+	Level = Level.Beginner,
 	CreatedDateTime = DateTimeOffset.Parse("2018-01-01T00:00:00Z"),
 	LastModifiedDateTime = DateTimeOffset.Parse("2021-04-01T04:26:06.1995367Z"),
 	Contributors = new List<string>
@@ -40,6 +42,8 @@ var requestBody = new LearningContent
 	IsPremium = false,
 	IsSearchable = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.EmployeeExperience.LearningProviders["{learningProvider-id}"].LearningContents["{learningContent-id}"].PatchAsync(requestBody);
 
 

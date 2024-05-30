@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphrolemanagement "github.com/microsoftgraph/msgraph-sdk-go/rolemanagement"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestParameters := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentScheduleRequestItemRequestBuilderGetQueryParameters{
 	Select: [] string {"principalId","action","roleDefinitionId"},
@@ -23,7 +23,8 @@ configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentSched
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().ByRoleAssignmentScheduleRequestId("unifiedRoleAssignmentScheduleRequest-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+roleAssignmentScheduleRequests, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().ByUnifiedRoleAssignmentScheduleRequestId("unifiedRoleAssignmentScheduleRequest-id").Get(context.Background(), configuration)
 
 
 ```

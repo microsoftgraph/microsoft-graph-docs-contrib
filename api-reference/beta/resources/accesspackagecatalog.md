@@ -3,7 +3,7 @@ title: "accessPackageCatalog resource type"
 description: "An access package catalog is a container for access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. Azure AD entitlement management includes a built-in catalog named **General**.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. Microsoft Entra entitlement management includes a built-in catalog named **General**.
 
 An access package catalog might also have linked resources that are used in those access packages to provide access. To view or change the membership of catalog-scoped roles, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
@@ -111,4 +111,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

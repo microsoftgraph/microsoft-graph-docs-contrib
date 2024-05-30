@@ -13,7 +13,7 @@ const client = Client.init(options);
 const calendarPermission = {
     emailAddress: {
         name: 'Samantha Booth',
-        address: 'samanthab@adatum.onmicrosoft.com'
+        address: 'samanthab@contoso.com'
     },
     isInsideOrganization: true,
     isRemovable: true,

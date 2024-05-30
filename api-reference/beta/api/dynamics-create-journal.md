@@ -1,11 +1,11 @@
 ---
-title: Create journals 
+title: Create journals
 description: Creates a journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 
@@ -15,21 +15,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a journal in Dynamics 365 Business Central. 
+Creates a journal in Dynamics 365 Business Central.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "dynamics_create_journal" } -->
+[!INCLUDE [permissions-table](../includes/permissions/dynamics-create-journal-permissions.md)]
 
 ## HTTP request
 
 ```http
-POST /financials/companies/{id}/journals/{id}
+POST /financials/companies/{id}/journals
 ```
 
 ## Optional query parameters
@@ -38,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header        |Value                     |
 |--------------|--------------------------|
-|Authorization |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type  |application/json          |
 
 ## Request body
@@ -51,7 +50,7 @@ If successful, this method returns ```201 Created``` response code and a **journ
 
 **Request**
 
-Here is an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals

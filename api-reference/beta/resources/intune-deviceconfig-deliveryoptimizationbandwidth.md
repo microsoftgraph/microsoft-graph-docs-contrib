@@ -3,7 +3,7 @@ title: "deliveryOptimizationBandwidth resource type"
 description: "Bandwidth restriction types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

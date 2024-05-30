@@ -3,7 +3,7 @@ title: "bookingCurrency resource type"
 description: "Represents a monetary currency supported by a bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -20,14 +20,14 @@ Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingCurrencies](../api/bookingcurrency-list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
-|[Get bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
+|[List](../api/bookingcurrency-list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
+|[Get](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD. Read-only.|
+|id|String| A three character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD. Read-only.|
 |symbol|String| The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.  |
 
 ## Relationships
@@ -36,7 +36,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

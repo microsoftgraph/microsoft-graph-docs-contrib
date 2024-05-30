@@ -3,7 +3,7 @@ title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's  per control data."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
@@ -18,9 +18,9 @@ Represents a tenant's secure score per control data. By default, this resource r
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
-|[Get secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
-|[Update securescorecontrolprofile](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Update an securescorecontrolprofile object. |
+|[List secure score control profiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[Get secure score control profile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[Update secure score control profiles](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Update an securescorecontrolprofile object. |
 
 
 ## Properties
@@ -41,9 +41,8 @@ Represents a tenant's secure score per control data. By default, this resource r
 |rank|Int32|Microsoft's stack ranking of control.|
 |remediation|String|Description of what the control will help remediate.|
 |remediationImpact|String|Description of the impact on users of the remediation.|
-|service|String|Service that owns the control (Exchange, Sharepoint, Azure AD).|
-|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
-elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
+|service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
+|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
 |tier|String|Control tier (Core, Defense in Depth, Advanced.)	|
 |title|String|Title of the control.|
 |userImpact|String|User impact of implementing control (low, moderate, high).	|
@@ -98,4 +97,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

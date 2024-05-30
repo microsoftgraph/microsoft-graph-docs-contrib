@@ -4,32 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PlannerPlanConfigurationLocalization plannerPlanConfigurationLocalization = new PlannerPlanConfigurationLocalization();
-plannerPlanConfigurationLocalization.languageTag = "en-us";
-plannerPlanConfigurationLocalization.planTitle = "Order Tracking";
-LinkedList<PlannerPlanConfigurationBucketLocalization> bucketsList = new LinkedList<PlannerPlanConfigurationBucketLocalization>();
-PlannerPlanConfigurationBucketLocalization buckets = new PlannerPlanConfigurationBucketLocalization();
-buckets.externalBucketId = "deliveryBucket";
-buckets.name = "Deliveries";
-bucketsList.add(buckets);
-PlannerPlanConfigurationBucketLocalization buckets1 = new PlannerPlanConfigurationBucketLocalization();
-buckets1.externalBucketId = "storePickupBucket";
-buckets1.name = "Pickup";
-bucketsList.add(buckets1);
-PlannerPlanConfigurationBucketLocalization buckets2 = new PlannerPlanConfigurationBucketLocalization();
-buckets2.externalBucketId = "specialOrdersBucket";
-buckets2.name = "Special Orders";
-bucketsList.add(buckets2);
-PlannerPlanConfigurationBucketLocalization buckets3 = new PlannerPlanConfigurationBucketLocalization();
-buckets3.externalBucketId = "returnProcessingBucket";
-buckets3.name = "Customer Returns";
-bucketsList.add(buckets3);
-plannerPlanConfigurationLocalization.buckets = bucketsList;
+plannerPlanConfigurationLocalization.setOdataType("#microsoft.graph.plannerPlanConfigurationLocalization");
+plannerPlanConfigurationLocalization.setLanguageTag("en-us");
+plannerPlanConfigurationLocalization.setPlanTitle("Order Tracking");
+LinkedList<PlannerPlanConfigurationBucketLocalization> buckets = new LinkedList<PlannerPlanConfigurationBucketLocalization>();
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization.setOdataType("microsoft.graph.plannerPlanConfigurationBucketLocalization");
+plannerPlanConfigurationBucketLocalization.setExternalBucketId("deliveryBucket");
+plannerPlanConfigurationBucketLocalization.setName("Deliveries");
+buckets.add(plannerPlanConfigurationBucketLocalization);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization1 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization1.setOdataType("microsoft.graph.plannerPlanConfigurationBucketLocalization");
+plannerPlanConfigurationBucketLocalization1.setExternalBucketId("storePickupBucket");
+plannerPlanConfigurationBucketLocalization1.setName("Pickup");
+buckets.add(plannerPlanConfigurationBucketLocalization1);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization2 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization2.setOdataType("microsoft.graph.plannerPlanConfigurationBucketLocalization");
+plannerPlanConfigurationBucketLocalization2.setExternalBucketId("specialOrdersBucket");
+plannerPlanConfigurationBucketLocalization2.setName("Special Orders");
+buckets.add(plannerPlanConfigurationBucketLocalization2);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization3 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization3.setOdataType("microsoft.graph.plannerPlanConfigurationBucketLocalization");
+plannerPlanConfigurationBucketLocalization3.setExternalBucketId("returnProcessingBucket");
+plannerPlanConfigurationBucketLocalization3.setName("Customer Returns");
+buckets.add(plannerPlanConfigurationBucketLocalization3);
+plannerPlanConfigurationLocalization.setBuckets(buckets);
+PlannerPlanConfigurationLocalization result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().planConfiguration().localizations().post(plannerPlanConfigurationLocalization);
 
-graphClient.solutions().businessScenarios("c5d514e6c6864911ac46c720affb6e4d").planner().planConfiguration().localizations()
-	.buildRequest()
-	.post(plannerPlanConfigurationLocalization);
 
 ```

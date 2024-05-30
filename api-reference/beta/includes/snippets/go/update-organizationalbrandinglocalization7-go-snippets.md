@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,16 +15,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewOrganizationalBrandingLocalization()
 signInPageText := "Welcome to Contoso France."
 requestBody.SetSignInPageText(&signInPageText) 
 usernameHintText := " "
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Localizations().ByLocalizationId("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+localizations, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Localizations().ByOrganizationalBrandingLocalizationId("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

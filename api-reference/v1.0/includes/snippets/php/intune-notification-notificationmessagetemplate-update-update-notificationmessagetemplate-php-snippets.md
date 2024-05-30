@@ -5,24 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\NotificationMessageTemplate;
+use Microsoft\Graph\Generated\Models\NotificationTemplateBrandingOptions;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new NotificationMessageTemplate();
-$requestBody->set@odatatype('#microsoft.graph.notificationMessageTemplate');
-
+$requestBody->setOdataType('#microsoft.graph.notificationMessageTemplate');
 $requestBody->setDisplayName('Display Name value');
-
 $requestBody->setDefaultLocale('Default Locale value');
+$requestBody->setBrandingOptions(new NotificationTemplateBrandingOptions('includeCompanyLogo'));
+$requestBody->setRoleScopeTagIds(['Role Scope Tag Ids value', 	]);
 
-$requestBody->setBrandingOptions(new NotificationTemplateBrandingOptions('includecompanylogo'));
-
-$requestBody->setRoleScopeTagIds(['Role Scope Tag Ids value', ]);
-
-
-
-$result = $graphServiceClient->deviceManagement()->notificationMessageTemplates()->byNotificationMessageTemplateId('notificationMessageTemplate-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->notificationMessageTemplates()->byNotificationMessageTemplateId('notificationMessageTemplate-id')->patch($requestBody)->wait();
 
 ```

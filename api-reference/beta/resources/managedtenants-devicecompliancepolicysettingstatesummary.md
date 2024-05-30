@@ -3,7 +3,7 @@ title: "deviceCompliancePolicySettingStateSummary resource type"
 description: "Represents a summary of device compliance policy setting states for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Represents a summary of device compliance policy setting states for a given mana
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceCompliancePolicySettingStateSummary](../api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md)|[microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) collection|Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) objects and their properties.|
-|[Get deviceCompliancePolicySettingStateSummary](../api/managedtenants-devicecompliancepolicysettingstatesummary-get.md)|[microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md)|Read the properties and relationships of a [deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) object.|
+|[List device compliance policy setting state summary](../api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md)|[microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) collection|Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) objects and their properties.|
+|[Get device compliance policy setting state summary](../api/managedtenants-devicecompliancepolicysettingstatesummary-get.md)|[microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md)|Read the properties and relationships of a [deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +37,7 @@ Represents a summary of device compliance policy setting states for a given mana
 |settingName|String|The name for the setting within the device compliance policy. Optional. Read-only.|
 |succeededDeviceCount|Int32|The number of devices in a succeeded state. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 
 ## Relationships
 None.

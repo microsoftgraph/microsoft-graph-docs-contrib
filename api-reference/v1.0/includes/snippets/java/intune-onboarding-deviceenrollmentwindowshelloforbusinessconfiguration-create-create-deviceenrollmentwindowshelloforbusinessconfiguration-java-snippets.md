@@ -4,28 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceEnrollmentWindowsHelloForBusinessConfiguration deviceEnrollmentConfiguration = new DeviceEnrollmentWindowsHelloForBusinessConfiguration();
-deviceEnrollmentConfiguration.displayName = "Display Name value";
-deviceEnrollmentConfiguration.description = "Description value";
-deviceEnrollmentConfiguration.priority = 8;
-deviceEnrollmentConfiguration.version = 7;
-deviceEnrollmentConfiguration.pinMinimumLength = 0;
-deviceEnrollmentConfiguration.pinMaximumLength = 0;
-deviceEnrollmentConfiguration.pinUppercaseCharactersUsage = WindowsHelloForBusinessPinUsage.REQUIRED;
-deviceEnrollmentConfiguration.pinLowercaseCharactersUsage = WindowsHelloForBusinessPinUsage.REQUIRED;
-deviceEnrollmentConfiguration.pinSpecialCharactersUsage = WindowsHelloForBusinessPinUsage.REQUIRED;
-deviceEnrollmentConfiguration.state = Enablement.ENABLED;
-deviceEnrollmentConfiguration.securityDeviceRequired = true;
-deviceEnrollmentConfiguration.unlockWithBiometricsEnabled = true;
-deviceEnrollmentConfiguration.remotePassportEnabled = true;
-deviceEnrollmentConfiguration.pinPreviousBlockCount = 5;
-deviceEnrollmentConfiguration.pinExpirationInDays = 3;
-deviceEnrollmentConfiguration.enhancedBiometricsState = Enablement.ENABLED;
+deviceEnrollmentConfiguration.setOdataType("#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration");
+deviceEnrollmentConfiguration.setDisplayName("Display Name value");
+deviceEnrollmentConfiguration.setDescription("Description value");
+deviceEnrollmentConfiguration.setPriority(8);
+deviceEnrollmentConfiguration.setVersion(7);
+deviceEnrollmentConfiguration.setPinMinimumLength(0);
+deviceEnrollmentConfiguration.setPinMaximumLength(0);
+deviceEnrollmentConfiguration.setPinUppercaseCharactersUsage(WindowsHelloForBusinessPinUsage.Required);
+deviceEnrollmentConfiguration.setPinLowercaseCharactersUsage(WindowsHelloForBusinessPinUsage.Required);
+deviceEnrollmentConfiguration.setPinSpecialCharactersUsage(WindowsHelloForBusinessPinUsage.Required);
+deviceEnrollmentConfiguration.setState(Enablement.Enabled);
+deviceEnrollmentConfiguration.setSecurityDeviceRequired(true);
+deviceEnrollmentConfiguration.setUnlockWithBiometricsEnabled(true);
+deviceEnrollmentConfiguration.setRemotePassportEnabled(true);
+deviceEnrollmentConfiguration.setPinPreviousBlockCount(5);
+deviceEnrollmentConfiguration.setPinExpirationInDays(3);
+deviceEnrollmentConfiguration.setEnhancedBiometricsState(Enablement.Enabled);
+DeviceEnrollmentConfiguration result = graphClient.deviceManagement().deviceEnrollmentConfigurations().post(deviceEnrollmentConfiguration);
 
-graphClient.deviceManagement().deviceEnrollmentConfigurations()
-	.buildRequest()
-	.post(deviceEnrollmentConfiguration);
 
 ```

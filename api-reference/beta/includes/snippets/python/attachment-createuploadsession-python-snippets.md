@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.messages.item.attachments.create_upload_session.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph_beta.generated.models.attachment_item import AttachmentItem
+from msgraph_beta.generated.models.attachment_type import AttachmentType
 
-request_body = CreateUploadSessionPostRequestBody()
-attachment_item = AttachmentItem()
-attachment_item.attachmenttype(AttachmentType.File('attachmenttype.file'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-attachment_item.name = 'flower'
+request_body = CreateUploadSessionPostRequestBody(
+	attachment_item = AttachmentItem(
+		attachment_type = AttachmentType.File,
+		name = "flower",
+		size = 3483322,
+	),
+)
 
-attachment_item.Size = 3483322
-
-
-request_body.attachment_item = attachment_item
-
-
-
-result = await client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(request_body)
 
 
 ```

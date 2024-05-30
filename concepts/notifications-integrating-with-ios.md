@@ -2,7 +2,7 @@
 title: "Integrate your iOS app with the client-side SDK (deprecated)"
 description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for iOS apps (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ---
 
 # Integrate your iOS app with the client-side SDK for user notifications (deprecated)
@@ -10,7 +10,7 @@ ms.prod: "notifications"
 > [!IMPORTANT]
 > The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
-After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for iOS apps.  
+After you [register your app](notifications-integration-app-registration.md) in the Microsoft Entra admin center and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for iOS apps.  
 
 With the client-side SDK, your app can perform the necessary registration steps to start receiving notifications published from your app server targeted at the user who is currently signed in. The SDK then manages the notifications on the client side, including receiving new incoming notifications, managing the state of notifications to achieve scenarios like universal dismiss, and retrieving full notification history. 
 
@@ -76,7 +76,7 @@ target 'iOSSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-	pod 'ProjectRomeSdk'
+    pod 'ProjectRomeSdk'
 
   # Pods for iOSSample
 ```
@@ -145,7 +145,7 @@ Microsoft Graph notifications, like many other resource types inside Microsoft G
 
 If you're using a Microsoft account, you will need to include the following permissions in your sign-in request: `wl.offline_access"`, `ccs.ReadWrite`, `wns.connect`, `asimovrome.telemetry`, and `https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp`. 
 
-If you're using an Azure AD account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
+If you're using a Microsoft Entra account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
 
 ## Adding the user account to the platform 
 
@@ -209,8 +209,8 @@ After the SDK successfully fetches the data changes, an event callback is invoke
     if (error) {
     } else {
         for (MCDUserNotification* notification in self.notifications) {
-		// Handle notification change based on change type;
-		}
+        // Handle notification change based on change type;
+        }
         }
     }
 }];
@@ -226,7 +226,7 @@ If a notification state change is initiated from this app client instance (for e
         [self dismissNotificationFromTrayWithId:notification.notificationId];
         notification.userActionState = MCDUserNotificationUserActionStateDismissed;
         [notification saveAsync:^(__unused MCDUserNotificationUpdateResult * _Nullable result, __unused NSError * _Nullable error) {
-		// handle result;
+        // handle result;
          }];
     }
 }
@@ -247,7 +247,7 @@ A notification is removed from the user notification store only if it is expired
 }
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) for Android apps.

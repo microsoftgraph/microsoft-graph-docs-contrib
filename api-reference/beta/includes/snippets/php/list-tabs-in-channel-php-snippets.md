@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\Channels\Item\Tabs\TabsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TabsRequestBuilderGetRequestConfiguration();
 $queryParameters = TabsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->expand = ["teamsApp"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->tabs()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->tabs()->get($requestConfiguration)->wait();
 
 ```

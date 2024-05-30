@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Plans\Item\PlannerPlanItemRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerPlan;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerPlan();
 $requestBody->setTitle('title-value');
-
-
-$requestConfiguration = new PlannerPlanRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new PlannerPlanItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
@@ -21,7 +22,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->plans()->byPlanId('plannerPlan-id')->patch($requestBody, $requestConfiguration);
-
+$result = $graphServiceClient->planner()->plans()->byPlannerPlanId('plannerPlan-id')->patch($requestBody, $requestConfiguration)->wait();
 
 ```

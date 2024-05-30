@@ -1,30 +1,30 @@
 ---
-title: "itemCategories resource type"
-description: "Represents a category for a number of items in Dynamics 365 Business Central."
+title: "itemCategory resource type"
+description: "Represents a category for many items in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# itemCategories resource type
+# itemCategory resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a category for a number of items in Dynamics 365 Business Central.
+Represents a category for many items in Dynamics 365 Business Central.
 
 ## Methods
 
 | Method                                                          | Return Type  |Description             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[Get itemCategories](../api/dynamics-itemcategories-get.md)      |[itemCategories](dynamics-itemcategories.md)|Get an item category.   |
-|[Post itemCategories](../api/dynamics-create-itemcategories.md)  |[itemCategories](dynamics-itemcategories.md)|Create an item category.|
-|[Patch itemCategories](../api/dynamics-itemcategories-update.md) |[itemCategories](dynamics-itemcategories.md)|Update an item category.|
-|[Delete itemCategories](../api/dynamics-itemcategories-delete.md)|None          |Delete an item category.|
+|[Get item categories](../api/dynamics-itemcategories-get.md)      |[itemCategory](dynamics-itemcategories.md)|Get an item category.   |
+|[Create item categories](../api/dynamics-create-itemcategories.md)  |[itemCategory](dynamics-itemcategories.md)|Create an item category.|
+|[Update item categories](../api/dynamics-itemcategories-update.md) |[itemCategory](dynamics-itemcategories.md)|Update an item category.|
+|[Delete item categories](../api/dynamics-itemcategories-delete.md)|None          |Delete an item category.|
 
 ## Properties
 
@@ -32,8 +32,8 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 |:-------------------|:-------|:-----------------------------------------------|
 |code                |String  |The item category code.                          |
 |displayName         |String  |The display name of the item category.                |
-|id                  |String  |The unique ID of the item category. Non-editable.|
-|lastModifiedDateTime|Datetime|The date and time when the item category was last modified. Read-Only.|  
+|id                  |String  |The unique ID of the item category. Noneditable.|
+|lastModifiedDateTime|Datetime|The date and time when the item category was last modified. Read-Only.|
 
 
 ## Relationships
@@ -42,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ```json
 {

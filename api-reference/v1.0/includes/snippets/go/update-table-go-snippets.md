@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewWorkbookTable()
 name := "name-value"
@@ -25,7 +25,8 @@ requestBody.SetShowTotals(&showTotals)
 style := "style-value"
 requestBody.SetStyle(&style) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tables, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

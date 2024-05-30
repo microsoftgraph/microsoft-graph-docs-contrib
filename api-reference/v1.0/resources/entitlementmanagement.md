@@ -3,7 +3,7 @@ title: "entitlementManagement resource type"
 description: "The container for entitlement management resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,10 @@ None.
 |assignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection| The assignment of an access package to a subject for a period of time.|
 |catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|A container for access packages.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|References to a directory or domain of another organization whose users can request access.|
-|settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| The settings that control the behavior of Azure AD entitlement management.|
+|resourceEnvironments|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection| A reference to the geolocation environments in which a resource is located.|
+|resourceRequests|[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) collection|Represents a request to add or remove a resource to or from a catalog respectively. |
+|resources|[accessPackageResource](../resources/accesspackageresource.md) collection|The resources associated with the catalogs. |
+|settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| The settings that control the behavior of Microsoft Entra entitlement management.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -49,5 +52,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-

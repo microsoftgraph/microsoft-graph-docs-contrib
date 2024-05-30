@@ -1,9 +1,9 @@
 ---
 title: "homeRealmDiscoveryPolicy resource type"
-description: "Represents a policy to control Azure Active Directory authentication behavior for federated users."
+description: "Represents a policy to control Microsoft Entra authentication behavior for federated users."
 ms.localizationpriority: medium
-author: "hpsin"
-ms.prod: "identity-and-sign-in"
+author: "nickludwig"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a policy to control Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. You can set **homeRealmDiscoveryPolicy** for all service principals in your organization, or for specific service principals in your organization. For more scenario and policy details, see [Configure Azure AD sign in behavior for an application by using a Home Realm Discovery policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) as well as [Sign-in to Azure Active Directory using email as an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin).
+Represents a policy to control Microsoft Entra authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. You can set **homeRealmDiscoveryPolicy** for all service principals in your organization, or for specific service principals in your organization. For more scenario and policy details, see [Configure Microsoft Entra sign-in behavior for an application by using a Home Realm Discovery policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) and [Sign-in to Microsoft Entra ID using email as an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin).
 
 Inherits from [stsPolicy](stsPolicy.md).
 
@@ -19,12 +19,12 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List homeRealmDiscoveryPolicies](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
-| [Create homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Create a homeRealmDiscoveryPolicy object. |
-| [Get homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
-| [Update homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
-| [Delete homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
-| [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [List](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
+| [Create](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Create a homeRealmDiscoveryPolicy object. |
+| [Get](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
+| [Update](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
+| [Delete](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
+| [List applied to applications](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
 
 ## Properties
 
@@ -58,12 +58,12 @@ The properties below form the JSON object that represents a token lifetime polic
   ]
 ```
 
-| Property	   | Type	|Description| 
+| Property       | Type    |Description| 
 |:---------------|:--------|:----------|
-|AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there is only one verified and federated domain in the tenant, then users will be taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there is more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
-|AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Azure Active Directory token endpoint. Only works if Password Hash Sync is enabled. Optional.|
-|AlternateIdLogin| Json |Set to `{\"Enabled\": true}` to allow Azure AD sign-in using email as [an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin). Only works when **IsOrganizationDefault** is set to `true`. Optional.|
-|PreferredDomain|String| Specifies a domain to accelerate sign-in to. It can be omitted if the tenant has only one federated domain. If it is omitted, and there is more than one verified federated domain, this policy has no effect. Required if **AccelerateToFederatedDomain** is `true`.|
+|AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there's only one verified and federated domain in the tenant, then users are taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there's more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
+|AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Microsoft Entra token endpoint. Only works if Password Hash Sync is enabled. Optional.|
+|AlternateIdLogin| Json |Set to `{\"Enabled\": true}` to allow Microsoft Entra sign-in using email as [an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin). Only works when **IsOrganizationDefault** is set to `true`. Optional.|
+|PreferredDomain|String| Specifies a domain to accelerate sign-in to. It can be omitted if the tenant has only one federated domain. If it's omitted, and there's more than one verified federated domain, this policy has no effect. Required if **AccelerateToFederatedDomain** is `true`.|
 
 ## Relationships
 
@@ -73,7 +73,7 @@ The properties below form the JSON object that represents a token lifetime polic
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

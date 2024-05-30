@@ -1,9 +1,9 @@
 ---
 title: "sendCustomNotificationToCompanyPortal action"
-description: "Not yet documented"
+description: "Intune Shared Devicemanagement Sendcustomnotificationtocompanyportal Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,9 +50,9 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationTitle|String|Not yet documented|
-|notificationBody|String|Not yet documented|
-|groupsToNotify|String collection|Not yet documented|
+|notificationTitle|String||
+|notificationBody|String||
+|groupsToNotify|String collection||
 
 
 

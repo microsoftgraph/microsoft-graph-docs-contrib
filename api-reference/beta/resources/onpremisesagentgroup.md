@@ -2,8 +2,8 @@
 title: "onPremisesAgentGroup resource type"
 description: "onPremisesAgentGroup resource type."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,11 +19,11 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
-| [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
-| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
-| [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
-| [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
+| [List](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
+| [Get](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
+| [Create](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
+| [Update](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
+| [Delete](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
 
 ## Properties
 

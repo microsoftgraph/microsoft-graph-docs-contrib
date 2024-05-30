@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleAssignmentMultiple;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleAssignmentMultiple();
 $requestBody->setDisplayName('NewName');
-
 $requestBody->setDescription('A new roleAssignment');
 
-
-
-$result = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->byRoleAssignmentId('unifiedRoleAssignmentMultiple-id')->patch($requestBody);
-
+$result = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->byUnifiedRoleAssignmentMultipleId('unifiedRoleAssignmentMultiple-id')->patch($requestBody)->wait();
 
 ```

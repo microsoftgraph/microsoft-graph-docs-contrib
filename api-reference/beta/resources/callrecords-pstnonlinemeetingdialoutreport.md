@@ -1,9 +1,9 @@
 ---
 title: "pstnOnlineMeetingDialoutReport resource type"
 description: "Represents a report of usage and money spent for the audio conferencing dial-out service over a selected period."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ All dial-out calls/duration/charge is counted under a meeting organizer. It's no
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) collection | Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of [pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries. |
+| [Get PSTN online meeting dial-out report](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) collection | Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of [pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries. |
 
 ## Properties
 
@@ -34,8 +34,8 @@ All dial-out calls/duration/charge is counted under a meeting organizer. It's no
 |totalCallSeconds|Int32|Total duration of all the calls within the selected time range, in seconds.|
 |usageLocation|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
-|userId|String|The unique identifier (GUID) of the user in Azure Active Directory.|
-|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID.|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 
 ## Relationships
 

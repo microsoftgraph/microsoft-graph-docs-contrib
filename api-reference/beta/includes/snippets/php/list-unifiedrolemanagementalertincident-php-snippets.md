@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\RoleManagementAlerts\Alerts\Item\AlertIncidents\AlertIncidentsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AlertIncidentsRequestBuilderGetRequestConfiguration();
 $queryParameters = AlertIncidentsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->top = 5;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->roleManagementAlerts()->alerts()->byAlertId('unifiedRoleManagementAlert-id')->alertIncidents()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->roleManagementAlerts()->alerts()->byUnifiedRoleManagementAlertId('unifiedRoleManagementAlert-id')->alertIncidents()->get($requestConfiguration)->wait();
 
 ```

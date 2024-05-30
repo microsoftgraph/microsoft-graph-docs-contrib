@@ -29,25 +29,25 @@ $params = @{
 	pinCharacterSet = "alphanumericAndSymbol"
 	periodBeforePinReset = "PT3M29.6631862S"
 	allowedDataStorageLocations = @(
-		"sharePoint"
-	)
-	contactSyncBlocked = $true
-	printBlocked = $true
-	fingerprintBlocked = $true
-	disableAppPinIfDevicePinIsSet = $true
-	minimumRequiredOsVersion = "Minimum Required Os Version value"
-	minimumWarningOsVersion = "Minimum Warning Os Version value"
-	minimumRequiredAppVersion = "Minimum Required App Version value"
-	minimumWarningAppVersion = "Minimum Warning App Version value"
-	managedBrowser = "microsoftEdge"
-	isAssigned = $true
-	appDataEncryptionType = "afterDeviceRestart"
-	minimumRequiredSdkVersion = "Minimum Required Sdk Version value"
-	deployedAppCount = 0
-	faceIdBlocked = $true
-	customBrowserProtocol = "Custom Browser Protocol value"
+	"sharePoint"
+)
+contactSyncBlocked = $true
+printBlocked = $true
+fingerprintBlocked = $true
+disableAppPinIfDevicePinIsSet = $true
+minimumRequiredOsVersion = "Minimum Required Os Version value"
+minimumWarningOsVersion = "Minimum Warning Os Version value"
+minimumRequiredAppVersion = "Minimum Required App Version value"
+minimumWarningAppVersion = "Minimum Warning App Version value"
+managedBrowser = "microsoftEdge"
+isAssigned = $true
+appDataEncryptionType = "afterDeviceRestart"
+minimumRequiredSdkVersion = "Minimum Required Sdk Version value"
+deployedAppCount = 0
+faceIdBlocked = $true
+customBrowserProtocol = "Custom Browser Protocol value"
 }
 
-New-MgDeviceAppMgtiOSManagedAppProtection -BodyParameter $params
+New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter $params
 
 ```

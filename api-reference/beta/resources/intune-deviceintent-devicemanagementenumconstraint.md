@@ -3,7 +3,7 @@ title: "deviceManagementEnumConstraint resource type"
 description: "Constraint that enforces the setting value is from a permitted set of strings"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

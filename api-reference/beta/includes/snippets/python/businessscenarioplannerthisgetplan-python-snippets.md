@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.solutions.businessscenarios.item.planner.get_plan.get_plan_post_request_body import GetPlanPostRequestBody
+from msgraph_beta.generated.models.business_scenario_group_target import BusinessScenarioGroupTarget
+from msgraph_beta.generated.models.planner_task_target_kind import PlannerTaskTargetKind
 
-request_body = GetPlanPostRequestBody()
-target = BusinessScenarioGroupTarget()
-target.@odata_type = 'microsoft.graph.businessScenarioGroupTarget'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target.tasktargetkind(PlannerTaskTargetKind.Group('plannertasktargetkind.group'))
+request_body = GetPlanPostRequestBody(
+	target = BusinessScenarioGroupTarget(
+		odata_type = "microsoft.graph.businessScenarioGroupTarget",
+		task_target_kind = PlannerTaskTargetKind.Group,
+		group_id = "7a339254-4b2b-4410-b295-c890a16776ee",
+	),
+)
 
-target.group_id = '7a339254-4b2b-4410-b295-c890a16776ee'
-
-
-request_body.target = target
-
-
-
-result = await client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.get_plan.post(request_body = request_body)
+result = await graph_client.solutions.business_scenarios.by_business_scenario_id('businessScenario-id').planner.get_plan.post(request_body)
 
 
 ```

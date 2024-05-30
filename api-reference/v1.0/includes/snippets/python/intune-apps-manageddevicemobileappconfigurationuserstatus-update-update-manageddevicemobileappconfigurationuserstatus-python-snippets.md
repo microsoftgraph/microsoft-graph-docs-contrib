@@ -4,26 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_device_mobile_app_configuration_user_status import ManagedDeviceMobileAppConfigurationUserStatus
+from msgraph.generated.models.compliance_status import ComplianceStatus
 
-request_body = ManagedDeviceMobileAppConfigurationUserStatus()
-request_body.@odata_type = '#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.user_display_name = 'User Display Name value'
+request_body = ManagedDeviceMobileAppConfigurationUserStatus(
+	odata_type = "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
+	user_display_name = "User Display Name value",
+	devices_count = 12,
+	status = ComplianceStatus.NotApplicable,
+	last_reported_date_time = "2017-01-01T00:00:17.7769392-08:00",
+	user_principal_name = "User Principal Name value",
+)
 
-request_body.DevicesCount = 12
-
-request_body.status(ComplianceStatus.NotApplicable('compliancestatus.notapplicable'))
-
-request_body.lastReportedDateTime = DateTime('2017-01-01T00:00:17.7769392-08:00')
-
-request_body.user_principal_name = 'User Principal Name value'
-
-
-
-
-result = await client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').user_statuses.by_user_statuse_id('managedDeviceMobileAppConfigurationUserStatus-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_managed_device_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').user_statuses.by_managed_device_mobile_app_configuration_user_status_id('managedDeviceMobileAppConfigurationUserStatus-id').patch(request_body)
 
 
 ```

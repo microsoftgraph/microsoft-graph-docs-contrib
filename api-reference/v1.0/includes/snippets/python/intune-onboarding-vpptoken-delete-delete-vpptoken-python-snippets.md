@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.device_app_management.vpp_tokens.by_vpp_token_id('vppToken-id').delete()
+await graph_client.device_app_management.vpp_tokens.by_vpp_token_id('vppToken-id').delete()
 
 
 ```

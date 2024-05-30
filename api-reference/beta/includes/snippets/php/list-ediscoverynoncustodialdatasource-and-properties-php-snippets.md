@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\NoncustodialDataSources\NoncustodialDataSourcesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new NoncustodialDataSourcesRequestBuilderGetRequestConfiguration();
 $queryParameters = NoncustodialDataSourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->expand = ["dataSource"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->get($requestConfiguration);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->get($requestConfiguration)->wait();
 
 ```

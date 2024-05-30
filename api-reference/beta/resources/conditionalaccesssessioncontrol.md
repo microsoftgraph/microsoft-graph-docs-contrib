@@ -2,8 +2,9 @@
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

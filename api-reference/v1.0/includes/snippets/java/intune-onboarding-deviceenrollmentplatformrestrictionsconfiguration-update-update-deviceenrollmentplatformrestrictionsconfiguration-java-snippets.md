@@ -4,46 +4,52 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceEnrollmentPlatformRestrictionsConfiguration deviceEnrollmentConfiguration = new DeviceEnrollmentPlatformRestrictionsConfiguration();
-deviceEnrollmentConfiguration.displayName = "Display Name value";
-deviceEnrollmentConfiguration.description = "Description value";
-deviceEnrollmentConfiguration.priority = 8;
-deviceEnrollmentConfiguration.version = 7;
+deviceEnrollmentConfiguration.setOdataType("#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration");
+deviceEnrollmentConfiguration.setDisplayName("Display Name value");
+deviceEnrollmentConfiguration.setDescription("Description value");
+deviceEnrollmentConfiguration.setPriority(8);
+deviceEnrollmentConfiguration.setVersion(7);
 DeviceEnrollmentPlatformRestriction iosRestriction = new DeviceEnrollmentPlatformRestriction();
-iosRestriction.platformBlocked = true;
-iosRestriction.personalDeviceEnrollmentBlocked = true;
-iosRestriction.osMinimumVersion = "Os Minimum Version value";
-iosRestriction.osMaximumVersion = "Os Maximum Version value";
-deviceEnrollmentConfiguration.iosRestriction = iosRestriction;
+iosRestriction.setOdataType("microsoft.graph.deviceEnrollmentPlatformRestriction");
+iosRestriction.setPlatformBlocked(true);
+iosRestriction.setPersonalDeviceEnrollmentBlocked(true);
+iosRestriction.setOsMinimumVersion("Os Minimum Version value");
+iosRestriction.setOsMaximumVersion("Os Maximum Version value");
+deviceEnrollmentConfiguration.setIosRestriction(iosRestriction);
 DeviceEnrollmentPlatformRestriction windowsRestriction = new DeviceEnrollmentPlatformRestriction();
-windowsRestriction.platformBlocked = true;
-windowsRestriction.personalDeviceEnrollmentBlocked = true;
-windowsRestriction.osMinimumVersion = "Os Minimum Version value";
-windowsRestriction.osMaximumVersion = "Os Maximum Version value";
-deviceEnrollmentConfiguration.windowsRestriction = windowsRestriction;
+windowsRestriction.setOdataType("microsoft.graph.deviceEnrollmentPlatformRestriction");
+windowsRestriction.setPlatformBlocked(true);
+windowsRestriction.setPersonalDeviceEnrollmentBlocked(true);
+windowsRestriction.setOsMinimumVersion("Os Minimum Version value");
+windowsRestriction.setOsMaximumVersion("Os Maximum Version value");
+deviceEnrollmentConfiguration.setWindowsRestriction(windowsRestriction);
 DeviceEnrollmentPlatformRestriction windowsMobileRestriction = new DeviceEnrollmentPlatformRestriction();
-windowsMobileRestriction.platformBlocked = true;
-windowsMobileRestriction.personalDeviceEnrollmentBlocked = true;
-windowsMobileRestriction.osMinimumVersion = "Os Minimum Version value";
-windowsMobileRestriction.osMaximumVersion = "Os Maximum Version value";
-deviceEnrollmentConfiguration.windowsMobileRestriction = windowsMobileRestriction;
+windowsMobileRestriction.setOdataType("microsoft.graph.deviceEnrollmentPlatformRestriction");
+windowsMobileRestriction.setPlatformBlocked(true);
+windowsMobileRestriction.setPersonalDeviceEnrollmentBlocked(true);
+windowsMobileRestriction.setOsMinimumVersion("Os Minimum Version value");
+windowsMobileRestriction.setOsMaximumVersion("Os Maximum Version value");
+deviceEnrollmentConfiguration.setWindowsMobileRestriction(windowsMobileRestriction);
 DeviceEnrollmentPlatformRestriction androidRestriction = new DeviceEnrollmentPlatformRestriction();
-androidRestriction.platformBlocked = true;
-androidRestriction.personalDeviceEnrollmentBlocked = true;
-androidRestriction.osMinimumVersion = "Os Minimum Version value";
-androidRestriction.osMaximumVersion = "Os Maximum Version value";
-deviceEnrollmentConfiguration.androidRestriction = androidRestriction;
+androidRestriction.setOdataType("microsoft.graph.deviceEnrollmentPlatformRestriction");
+androidRestriction.setPlatformBlocked(true);
+androidRestriction.setPersonalDeviceEnrollmentBlocked(true);
+androidRestriction.setOsMinimumVersion("Os Minimum Version value");
+androidRestriction.setOsMaximumVersion("Os Maximum Version value");
+deviceEnrollmentConfiguration.setAndroidRestriction(androidRestriction);
 DeviceEnrollmentPlatformRestriction macOSRestriction = new DeviceEnrollmentPlatformRestriction();
-macOSRestriction.platformBlocked = true;
-macOSRestriction.personalDeviceEnrollmentBlocked = true;
-macOSRestriction.osMinimumVersion = "Os Minimum Version value";
-macOSRestriction.osMaximumVersion = "Os Maximum Version value";
-deviceEnrollmentConfiguration.macOSRestriction = macOSRestriction;
+macOSRestriction.setOdataType("microsoft.graph.deviceEnrollmentPlatformRestriction");
+macOSRestriction.setPlatformBlocked(true);
+macOSRestriction.setPersonalDeviceEnrollmentBlocked(true);
+macOSRestriction.setOsMinimumVersion("Os Minimum Version value");
+macOSRestriction.setOsMaximumVersion("Os Maximum Version value");
+deviceEnrollmentConfiguration.setMacOSRestriction(macOSRestriction);
+DeviceEnrollmentConfiguration result = graphClient.deviceManagement().deviceEnrollmentConfigurations().byDeviceEnrollmentConfigurationId("{deviceEnrollmentConfiguration-id}").patch(deviceEnrollmentConfiguration);
 
-graphClient.deviceManagement().deviceEnrollmentConfigurations("{deviceEnrollmentConfigurationId}")
-	.buildRequest()
-	.patch(deviceEnrollmentConfiguration);
 
 ```

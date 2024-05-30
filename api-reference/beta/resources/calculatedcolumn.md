@@ -1,10 +1,10 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "The calculated column on a columnDefinition resource indicates that the data of the column is calculated based on other columns in the site."
 title: "calculatedColumn resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # calculatedColumn resource type

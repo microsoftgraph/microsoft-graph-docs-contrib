@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Me.Events.Item.SnoozeReminder;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.SnoozeReminder.SnoozeReminderPostRequestBody
+var requestBody = new SnoozeReminderPostRequestBody
 {
 	NewReminderTime = new DateTimeTimeZone
 	{
@@ -16,6 +18,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.SnoozeReminder.SnoozeR
 		TimeZone = "timeZone-value",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Events["{event-id}"].SnoozeReminder.PostAsync(requestBody);
 
 

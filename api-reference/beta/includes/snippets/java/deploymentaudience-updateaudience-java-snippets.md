@@ -4,26 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<UpdatableAsset> addMembersList = new LinkedList<UpdatableAsset>();
-AzureADDevice addMembers = new AzureADDevice();
-addMembers.id = "String (identifier)";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-addMembersList.add(addMembers);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = addMembersList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
+com.microsoft.graph.beta.admin.windows.updates.deploymentaudiences.item.microsoftgraphwindowsupdatesupdateaudience.UpdateAudiencePostRequestBody updateAudiencePostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.deploymentaudiences.item.microsoftgraphwindowsupdatesupdateaudience.UpdateAudiencePostRequestBody();
+LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset> addMembers = new LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset>();
+com.microsoft.graph.beta.models.windowsupdates.AzureADDevice updatableAsset = new com.microsoft.graph.beta.models.windowsupdates.AzureADDevice();
+updatableAsset.setOdataType("#microsoft.graph.windowsUpdates.azureADDevice");
+updatableAsset.setId("String (identifier)");
+addMembers.add(updatableAsset);
+updateAudiencePostRequestBody.setAddMembers(addMembers);
+graphClient.admin().windows().updates().deploymentAudiences().byDeploymentAudienceId("{deploymentAudience-id}").microsoftGraphWindowsUpdatesUpdateAudience().post(updateAudiencePostRequestBody);
 
-graphClient.admin().windows().updates().deploymentAudiences("2d477566-6976-4c2d-97eb-d2acd1c2864e")
-	.updateAudience(DeploymentAudienceUpdateAudienceParameterSet
-		.newBuilder()
-		.withAddMembers(addMembersList)
-		.withRemoveMembers(null)
-		.withAddExclusions(null)
-		.withRemoveExclusions(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

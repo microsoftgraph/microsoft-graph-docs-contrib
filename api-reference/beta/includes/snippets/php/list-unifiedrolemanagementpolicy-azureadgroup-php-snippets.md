@@ -5,18 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Policies\RoleManagementPolicies\RoleManagementPoliciesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RoleManagementPoliciesRequestBuilderGetRequestConfiguration();
 $queryParameters = RoleManagementPoliciesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'";
-$queryParameters->expand = ["rules($select=id)"];
+$queryParameters->expand = ["rules(\$select=id)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration);
-
+$result = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration)->wait();
 
 ```

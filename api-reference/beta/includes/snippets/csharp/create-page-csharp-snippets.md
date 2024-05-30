@@ -6,10 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SitePage
 {
+	OdataType = "#microsoft.graph.sitePage",
 	Name = "test.aspx",
 	Title = "test",
 	PageLayout = PageLayoutType.Article,
@@ -18,7 +20,7 @@ var requestBody = new SitePage
 	TitleArea = new TitleArea
 	{
 		EnableGradientEffect = true,
-		ImageWebUrl = "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+		ImageWebUrl = "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
 		Layout = TitleAreaLayoutType.ColorBlock,
 		ShowAuthor = true,
 		ShowPublishedDate = false,
@@ -137,6 +139,8 @@ var requestBody = new SitePage
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].Pages.PostAsync(requestBody);
 
 

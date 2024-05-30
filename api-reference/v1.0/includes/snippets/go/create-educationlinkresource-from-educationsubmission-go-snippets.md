@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationLinkResource()
@@ -23,7 +23,8 @@ link := "https://en.wikipedia.org/wiki/Main_Page"
 resource.SetLink(&link) 
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+resources, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

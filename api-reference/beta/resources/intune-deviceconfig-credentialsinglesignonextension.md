@@ -3,7 +3,7 @@ title: "credentialSingleSignOnExtension resource type"
 description: "Represents a Credential-type Single Sign-On extension profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

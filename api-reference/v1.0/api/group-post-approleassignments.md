@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
 ---
 
@@ -19,15 +19,14 @@ Use this API to assign an app role to a security group. All direct members of th
 
 Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_post_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-post-approleassignments-permissions.md)]
 
 ## HTTP request
 
@@ -43,14 +42,14 @@ POST /groups/{groupId}/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
-The following table shows the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
+The following table lists the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
 
 | Property | Type | Description |
 |--|--|--|
@@ -67,7 +66,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request. In this example, ID in the URL and value of **principalId** would both be the ID of the assigned group.
+The following example shows a request. In this example, ID in the URL and value of **principalId** would both be the ID of the assigned group.
 
 
 # [HTTP](#tab/http)
@@ -91,27 +90,39 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-1-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-create-approleassignment-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-create-approleassignment-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/group-create-approleassignment-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-create-approleassignment-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-create-approleassignment-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

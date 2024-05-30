@@ -5,32 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ConversationThread;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConversationThread();
 $additionalData = [
-		'originalStartTimeZone' => 'originalStartTimeZone-value', 
-		'originalEndTimeZone' => 'originalEndTimeZone-value', 
-		'responseStatus' => $requestBody = new ResponseStatus();
-$		requestBody->setResponse('');
-
-$		requestBody->setTime('datetime-value');
-
-
-$requestBody->setResponseStatus($responseStatus);
-
-		'uid' => 'iCalUId-value', 
-		'reminderMinutesBeforeStart' => 99,
-		'isReminderOn' => true,
+	'originalStartTimeZone' => 'originalStartTimeZone-value',
+	'originalEndTimeZone' => 'originalEndTimeZone-value',
+	'responseStatus' => [
+		'response' => '',
+		'time' => 'datetime-value',
+	],
+	'uid' => 'iCalUId-value',
+	'reminderMinutesBeforeStart' => 99,
+	'isReminderOn' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->patch($requestBody);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->patch($requestBody)->wait();
 
 ```

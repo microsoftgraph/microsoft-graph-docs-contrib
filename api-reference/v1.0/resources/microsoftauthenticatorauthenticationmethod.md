@@ -1,9 +1,10 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method."
-author: "mmcla"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,14 +19,14 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List microsoftAuthenticatorAuthenticationMethods](../api/microsoftauthenticatorauthenticationmethod-list.md)|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection|Get a list of the [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) objects and their properties.|
-|[Get microsoftAuthenticatorAuthenticationMethod](../api/microsoftauthenticatorauthenticationmethod-get.md)|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md)|Read the properties and relationships of a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.|
-|[Delete microsoftAuthenticatorAuthenticationMethod](../api/microsoftauthenticatorauthenticationmethod-delete.md)|None|Deletes a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.|
+|[List](../api/microsoftauthenticatorauthenticationmethod-list.md)|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection|Get a list of the [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) objects and their properties.|
+|[Get](../api/microsoftauthenticatorauthenticationmethod-get.md)|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md)|Read the properties and relationships of a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.|
+|[Delete](../api/microsoftauthenticatorauthenticationmethod-delete.md)|None|Deletes a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.|
+|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device isn't registered for passwordless Phone Sign-In.|
 |deviceTag|String|Tags containing app metadata.|
 |displayName|String|The name of the device on which this app is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
@@ -34,10 +35,10 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device is not registered for passwordless Phone Sign-In.|
+|device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device isn't registered for passwordless Phone Sign-In.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

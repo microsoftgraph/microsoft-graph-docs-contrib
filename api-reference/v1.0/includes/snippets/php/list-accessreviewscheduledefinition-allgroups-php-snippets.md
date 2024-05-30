@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\IdentityGovernance\AccessReviews\Definitions\DefinitionsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DefinitionsRequestBuilderGetRequestConfiguration();
 $queryParameters = DefinitionsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "contains(scope/microsoft.graph.accessReviewQueryScop
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->get($requestConfiguration)->wait();
 
 ```

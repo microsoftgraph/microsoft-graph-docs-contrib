@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a site resource by path
@@ -30,13 +30,10 @@ There is also a reserved site identifier, `root`, which always references the ro
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "site_getbypath" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-getbypath-permissions.md)]
 
 ## HTTP Request
 
@@ -45,7 +42,7 @@ To access the root SharePoint site with a relative path:
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
-GET /sites/{hostname}:/{relative-path}
+GET https://graph.microsoft.com/beta/sites/{hostname}:/{relative-path}
 ```
 
 ## Response
@@ -60,7 +57,7 @@ HTTP/1.1 200 OK
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
   "owner": {
-    "user": { 
+    "user": {
       "displayName": "Daron Spektor",
       "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
     }

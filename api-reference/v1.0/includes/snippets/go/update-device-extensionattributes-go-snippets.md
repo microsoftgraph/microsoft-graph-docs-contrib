@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,19 +15,17 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewDevice()
 additionalData := map[string]interface{}{
-extensionAttributes := graphmodels.New()
+extensionAttributes := graph.New()
 extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1) 
 	requestBody.SetExtensionAttributes(extensionAttributes)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+devices, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

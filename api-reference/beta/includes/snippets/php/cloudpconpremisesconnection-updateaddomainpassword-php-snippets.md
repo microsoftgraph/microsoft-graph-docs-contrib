@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\OnPremisesConnections\Item\UpdateAdDomainPassword\UpdateAdDomainPasswordPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateAdDomainPasswordPostRequestBody();
 $requestBody->setAdDomainPassword('AdDomainPassword value');
 
-
-
-$graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->updateAdDomainPassword()->post($requestBody);
-
+$graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byCloudPcOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->updateAdDomainPassword()->post($requestBody)->wait();
 
 ```

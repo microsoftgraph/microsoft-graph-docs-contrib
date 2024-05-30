@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+Get-MgBetaAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 
 ```

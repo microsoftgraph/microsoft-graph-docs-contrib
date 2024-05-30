@@ -15,7 +15,7 @@ const phoneAuthenticationMethod = {
   phoneType: 'mobile',
 };
 
-await client.api('/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7')
+await client.api('/users/kim@contoso.com/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7')
 	.version('beta')
 	.update(phoneAuthenticationMethod);
 

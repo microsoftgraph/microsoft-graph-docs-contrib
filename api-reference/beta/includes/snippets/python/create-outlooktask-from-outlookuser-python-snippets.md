@@ -4,37 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.outlook.tasks.tasks_request_builder import TasksRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.outlook_task import OutlookTask
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
-request_body = OutlookTask()
-request_body.subject = 'Shop for children\'s weekend'
+graph_client = GraphServiceClient(credentials, scopes)
 
-start_date_time = DateTimeTimeZone()
-start_date_time.date_time = '2016-05-03T09:00:00'
-
-start_date_time.time_zone = 'Eastern Standard Time'
-
-
-request_body.start_date_time = start_date_time
-due_date_time = DateTimeTimeZone()
-due_date_time.date_time = '2016-05-05T16:00:00'
-
-due_date_time.time_zone = 'Eastern Standard Time'
-
-
-request_body.due_date_time = due_date_time
-
-
-request_configuration = TasksRequestBuilder.TasksRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
-
+request_body = OutlookTask(
+	subject = "Shop for children's weekend",
+	start_date_time = DateTimeTimeZone(
+		date_time = "2016-05-03T09:00:00",
+		time_zone = "Eastern Standard Time",
+	),
+	due_date_time = DateTimeTimeZone(
+		date_time = "2016-05-05T16:00:00",
+		time_zone = "Eastern Standard Time",
+	),
 )
 
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-result = await client.me.outlook.tasks.post(request_body = request_body, request_configuration = request_configuration)
+
+result = await graph_client.me.outlook.tasks.post(request_body, request_configuration = request_configuration)
 
 
 ```

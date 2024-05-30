@@ -5,25 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ManagedMobileApp;
+use Microsoft\Graph\Generated\Models\AndroidMobileAppIdentifier;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedMobileApp();
-$requestBody->set@odatatype('#microsoft.graph.managedMobileApp');
-
+$requestBody->setOdataType('#microsoft.graph.managedMobileApp');
 $mobileAppIdentifier = new AndroidMobileAppIdentifier();
-$mobileAppIdentifier->set@odatatype('microsoft.graph.androidMobileAppIdentifier');
-
+$mobileAppIdentifier->setOdataType('microsoft.graph.androidMobileAppIdentifier');
 $mobileAppIdentifier->setPackageId('Package Id value');
-
-
 $requestBody->setMobileAppIdentifier($mobileAppIdentifier);
 $requestBody->setVersion('Version value');
 
-
-
-$result = $graphServiceClient->deviceAppManagement()->iosManagedAppProtections()->byIosManagedAppProtectionId('iosManagedAppProtection-id')->apps()->post($requestBody);
-
+$result = $graphServiceClient->deviceAppManagement()->iosManagedAppProtections()->byIosManagedAppProtectionId('iosManagedAppProtection-id')->apps()->post($requestBody)->wait();
 
 ```

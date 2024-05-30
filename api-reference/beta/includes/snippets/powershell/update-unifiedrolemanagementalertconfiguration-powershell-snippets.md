@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration"
@@ -13,6 +13,6 @@ $params = @{
 	percentageOfGlobalAdminsOutOfRolesThreshold = 
 }
 
-Update-MgIdentityGovernanceRoleManagementAlertConfiguration -UnifiedRoleManagementAlertConfigurationId $unifiedRoleManagementAlertConfigurationId -BodyParameter $params
+Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -UnifiedRoleManagementAlertConfigurationId $unifiedRoleManagementAlertConfigurationId -BodyParameter $params
 
 ```

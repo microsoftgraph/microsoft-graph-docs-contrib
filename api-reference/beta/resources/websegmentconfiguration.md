@@ -1,9 +1,9 @@
 ---
 title: "webSegmentConfiguration resource type"
-description: "Represents application segments for an on-premises wildcard application published through Azure AD Application Proxy."
+description: "Represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Azure AD Application Proxy.
+A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy.
 
 Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
@@ -21,7 +21,7 @@ Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Azure AD Application Proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
+|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
 
 
 ## JSON representation

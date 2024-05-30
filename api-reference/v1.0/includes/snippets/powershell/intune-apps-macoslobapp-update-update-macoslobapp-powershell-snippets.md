@@ -54,12 +54,12 @@ $params = @{
 	)
 	md5HashChunkSize = 
 	md5Hash = @(
-		"Md5Hash value"
-	)
-	ignoreVersionDetection = $true
-	installAsManaged = $true
+	"Md5Hash value"
+)
+ignoreVersionDetection = $true
+installAsManaged = $true
 }
 
-Update-MgDeviceAppMgtMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
 
 ```

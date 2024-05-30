@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device import Device
 
-request_body = Device()
-request_body.account_enabled = False
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Device(
+	account_enabled = False,
+)
 
-
-
-result = await client.devices.by_device_id('device-id').patch(request_body = request_body)
+result = await graph_client.devices.by_device_id('device-id').patch(request_body)
 
 
 ```

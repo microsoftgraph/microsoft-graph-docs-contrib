@@ -3,7 +3,7 @@ title: "eventMessage resource type"
 description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -154,19 +154,19 @@ Here is a JSON representation of the resource
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
-|[Delete](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
-|[copy](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
-|[createForward](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[forward](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
-|[move](../api/message-move.md)|[message](message.md)|Move a message to a folder. This creates a new copy of the message in the destination folder.|
-|[reply](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
-|[replyAll](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
-|[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
-|[unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
+|[Get event message](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Update event message](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
+|[Delete event message](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
+|[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
+|[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply-all](../api/message-createreplyall.md)|[message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Forward message](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
+|[Move message](../api/message-move.md)|[message](message.md)|Move a message to a folder. This creates a new copy of the message in the destination folder.|
+|[Reply to message](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
+|[Reply-all to message](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
+|[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |**Attachments**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an eventMessage by posting to the attachments collection.|
@@ -174,10 +174,10 @@ Here is a JSON representation of the resource
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by name.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
-|[Get eventMessage with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
-|[Get eventMessage with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

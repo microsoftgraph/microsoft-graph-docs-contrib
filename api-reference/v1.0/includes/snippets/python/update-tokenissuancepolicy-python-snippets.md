@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.token_issuance_policy import TokenIssuancePolicy
 
-request_body = TokenIssuancePolicy()
-request_body.Definition(['definition-value', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'displayName-value'
+request_body = TokenIssuancePolicy(
+	definition = [
+		"definition-value",
+	],
+	display_name = "displayName-value",
+	is_organization_default = True,
+)
 
-request_body.is_organization_default = True
-
-
-
-
-result = await client.policies.token_issuance_policies.by_token_issuance_policie_id('tokenIssuancePolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.token_issuance_policies.by_token_issuance_policy_id('tokenIssuancePolicy-id').patch(request_body)
 
 
 ```

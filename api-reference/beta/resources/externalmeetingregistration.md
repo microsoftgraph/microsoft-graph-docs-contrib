@@ -1,9 +1,9 @@
 ---
 title: "externalMeetingRegistration resource type"
-description: "Contains information about external meeting registration."
+description: "Represents external registration details of an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 # externalMeetingRegistration resource type
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents external registration details of an online meeting.
+Represents external registration details of an [onlineMeeting](../resources/onlinemeeting.md).
 
 Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create externalMeetingRegistration](../api/externalmeetingregistration-post.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Create a new [externalMeetingRegistration](externalmeetingregistration.md) object.|
-|[Get externalMeetingRegistration](../api/externalmeetingregistration-get.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Read the properties and relationships of an [externalMeetingRegistration](externalmeetingregistration.md) object.|
-|[Delete externalMeetingRegistration](../api/externalmeetingregistration-delete.md)|None|Delete an [externalMeetingRegistration](externalmeetingregistration.md) object.|
+|[Create](../api/externalmeetingregistration-post.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Create a new [externalMeetingRegistration](externalmeetingregistration.md) object.|
+|[Get](../api/externalmeetingregistration-get.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Read the properties and relationships of an [externalMeetingRegistration](externalmeetingregistration.md) object.|
+|[Delete](../api/externalmeetingregistration-delete.md)|None|Delete an [externalMeetingRegistration](externalmeetingregistration.md) object.|
 
 ## Properties
 
@@ -58,8 +58,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.externalMeetingRegistration",
-  "allowedRegistrant": "String",
-
-  "registrants": [{ "@odata.type": "microsoft.graph.externalMeetingRegistrant" }]
+  "allowedRegistrant": "String"
 }
 ```

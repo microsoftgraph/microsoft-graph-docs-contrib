@@ -9,9 +9,9 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	isDefault = $true
 	supportedServices = @(
-		"Email"
-		"OfficeCommunicationsOnline"
-	)
+	"Email"
+"OfficeCommunicationsOnline"
+)
 }
 
 Update-MgDomain -DomainId $domainId -BodyParameter $params

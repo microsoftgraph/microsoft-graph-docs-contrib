@@ -3,7 +3,7 @@ title: "skypeForBusinessUserConversationMember resource type"
 description: "Represents a Skype for Business user in a chat"
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 |id|String|Membership ID that represents this resource. Inherited from [entity](../resources/entity.md).|
 |roles|String collection|Special roles for this user. Inherited from [conversationMember](../resources/conversationmember.md).|
 |tenantId|String|ID of the tenant that the user belongs to.|
-|userId|String|Azure Active Directory ID of the user.|
+|userId|String|Microsoft Entra ID of the user.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member. Inherited from [conversationMember](../resources/conversationmember.md).|
 
 ## Relationships
@@ -55,4 +55,3 @@ The following is a JSON representation of the resource.
   "tenantId": "String"
 }
 ```
-

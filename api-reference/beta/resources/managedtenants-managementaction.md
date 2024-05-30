@@ -3,7 +3,7 @@ title: "managementAction resource type"
 description: "Represents a baseline management action for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a baseline management action for a given managed tenant. Examples of management actions are device encryption, perform configurations to allow Azure Active Directory device enrollment, and require multi-factor authentication for admins.
+Represents a baseline management action for a given managed tenant. Examples of management actions are device encryption, perform configurations to allow Microsoft Entra device enrollment, and require multi-factor authentication for admins.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementActions](../api/managedtenants-managedtenant-list-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
-|[Get managementAction](../api/managedtenants-managementaction-get.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Read the properties and relationships of a [managementAction](../resources/managedtenants-managementaction.md) object.|
-|[apply](../api/managedtenants-managementaction-apply.md)|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|Applies the management actions against the managed tenant.|
+|[List management action](../api/managedtenants-managedtenant-list-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
+|[Get management action](../api/managedtenants-managementaction-get.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Read the properties and relationships of a [managementAction](../resources/managedtenants-managementaction.md) object.|
+|[Apply management action](../api/managedtenants-managementaction-apply.md)|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|Applies the management actions against the managed tenant.|
 
 ## Properties
 |Property|Type|Description|

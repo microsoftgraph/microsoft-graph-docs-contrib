@@ -1,9 +1,9 @@
 ---
 title: "teamsApp resource type"
-description: "An app in the Microsoft Teams app catalog."
+description: "Represents an app in the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps in catalog](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) collection | List all the apps in the Microsoft Teams apps catalog.|
-|[Upload app to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
+|[Publish apps to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
 |[Update app in catalog](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update an app in your organization's app catalog.|
 |[Delete app from catalog](../api/teamsapp-delete.md) | None | Remove an app from your organization's app catalog.|
 |[Get bot associated with app in catalog](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
@@ -31,10 +31,10 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package)). |
 | externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. Read-only.|
+| id                  | string   The app ID generated for the catalog is different from the developer-provided ID found within the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest. |
 
 ### teamsAppDistributionMethod values
 
@@ -52,6 +52,8 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -60,14 +62,14 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ```json
 {
-  "id": "string",
   "externalId": "string",
   "displayName": "string",
-  "distributionMethod": "string"
+  "distributionMethod": "string",
+  "id": "string"
 }
 ```
 
-## See also
+## Related content
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

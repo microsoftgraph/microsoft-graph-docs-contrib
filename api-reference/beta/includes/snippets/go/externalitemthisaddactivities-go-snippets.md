@@ -5,18 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconnections "github.com/microsoftgraph/msgraph-beta-sdk-go/connections"
+	  graphexternal "github.com/microsoftgraph/msgraph-beta-sdk-go/external"
 	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-beta-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
-requestBody := graphconnections.NewAddActivitiesPostRequestBody()
+requestBody := graphexternal.NewAddActivitiesPostRequestBody()
 
 
 externalActivity := graphmodelsexternalconnectors.NewExternalActivity()
@@ -36,7 +36,8 @@ activities := []graphmodelsexternalconnectors.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+microsoftGraphExternalConnectorsAddActivities, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Items().ByExternalItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().PostAsAddActivitiesPostResponse(context.Background(), requestBody, nil)
 
 
 ```

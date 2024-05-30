@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewBookingAppointment()
 customerTimeZone := "America/Chicago"
@@ -130,6 +130,10 @@ serviceName := "Catered bento"
 requestBody.SetServiceName(&serviceName) 
 serviceNotes := "Customer requires punctual service."
 requestBody.SetServiceNotes(&serviceNotes) 
+staffMemberIds := []string {
+	"8ee1c803-a1fa-406d-8259-7ab53233f148",
+}
+requestBody.SetStaffMemberIds(staffMemberIds)
 startDateTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2018-05-01T12:00:00.0000000+00:00"
 startDateTime.SetDateTime(&dateTime) 
@@ -231,7 +235,8 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+appointments, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 
 ```

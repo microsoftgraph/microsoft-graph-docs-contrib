@@ -10,7 +10,7 @@ $params = @{
 	name = "Development"
 }
 
-Update-MgPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+Update-MgPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
 
 
 ```

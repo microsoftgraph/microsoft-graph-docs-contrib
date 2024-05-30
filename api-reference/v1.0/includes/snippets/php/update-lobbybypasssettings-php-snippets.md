@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\OnlineMeeting;
+use Microsoft\Graph\Generated\Models\LobbyBypassSettings;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OnlineMeeting();
 $lobbyBypassSettings = new LobbyBypassSettings();
 $lobbyBypassSettings->setIsDialInBypassEnabled(true);
-
-
 $requestBody->setLobbyBypassSettings($lobbyBypassSettings);
 
-
-$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->patch($requestBody)->wait();
 
 ```

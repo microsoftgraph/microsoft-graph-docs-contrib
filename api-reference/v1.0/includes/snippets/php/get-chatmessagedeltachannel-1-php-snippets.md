@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teams\Item\Channels\Item\Messages\Delta\DeltaRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
 $queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->top = 2;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->delta()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->delta()->get($requestConfiguration)->wait();
 
 ```

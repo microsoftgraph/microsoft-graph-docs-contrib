@@ -5,23 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ManagedEBookAssignment;
+use Microsoft\Graph\Generated\Models\AllLicensedUsersAssignmentTarget;
+use Microsoft\Graph\Generated\Models\InstallIntent;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedEBookAssignment();
-$requestBody->set@odatatype('#microsoft.graph.managedEBookAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.managedEBookAssignment');
 $target = new AllLicensedUsersAssignmentTarget();
-$target->set@odatatype('microsoft.graph.allLicensedUsersAssignmentTarget');
-
-
+$target->setOdataType('microsoft.graph.allLicensedUsersAssignmentTarget');
 $requestBody->setTarget($target);
 $requestBody->setInstallIntent(new InstallIntent('required'));
 
-
-
-$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->assignments()->byAssignmentId('managedEBookAssignment-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->assignments()->byManagedEBookAssignmentId('managedEBookAssignment-id')->patch($requestBody)->wait();
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser -On $onId 
 
 ```

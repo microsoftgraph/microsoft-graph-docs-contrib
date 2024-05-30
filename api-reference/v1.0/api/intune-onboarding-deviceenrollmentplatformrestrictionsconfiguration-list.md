@@ -3,7 +3,7 @@ title: "List deviceEnrollmentPlatformRestrictionsConfigurations"
 description: "List properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,24 +62,28 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurat
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

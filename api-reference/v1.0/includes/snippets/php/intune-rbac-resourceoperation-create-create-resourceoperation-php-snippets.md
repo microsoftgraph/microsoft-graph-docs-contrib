@@ -5,22 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ResourceOperation;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ResourceOperation();
-$requestBody->set@odatatype('#microsoft.graph.resourceOperation');
-
+$requestBody->setOdataType('#microsoft.graph.resourceOperation');
 $requestBody->setResourceName('Resource Name value');
-
 $requestBody->setActionName('Action Name value');
-
 $requestBody->setDescription('Description value');
 
-
-
-$result = $graphServiceClient->deviceManagement()->resourceOperations()->post($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->resourceOperations()->post($requestBody)->wait();
 
 ```

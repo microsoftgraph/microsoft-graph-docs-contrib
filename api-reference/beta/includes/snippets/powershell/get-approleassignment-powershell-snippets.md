@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 # A UPN can also be used as -UserId.
-Get-MgUserAppRoleAssignment -UserId $userId -AppRoleAssignmentId $appRoleAssignmentId
+Get-MgBetaUserAppRoleAssignment -UserId $userId -AppRoleAssignmentId $appRoleAssignmentId
 
 ```

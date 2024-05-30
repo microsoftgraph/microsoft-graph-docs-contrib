@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Admin\ServiceAnnouncement\Messages\Favorite\FavoritePostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FavoritePostRequestBody();
-$requestBody->setMessageIds(['MC172851', 'MC167983', ]);
+$requestBody->setMessageIds(['MC172851', 'MC167983', 	]);
 
-
-
-$result = $graphServiceClient->admin()->serviceAnnouncement()->messages()->favorite()->post($requestBody);
-
+$result = $graphServiceClient->admin()->serviceAnnouncement()->messages()->favorite()->post($requestBody)->wait();
 
 ```

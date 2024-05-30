@@ -5,20 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\UrlThreatSubmission;
+use Microsoft\Graph\Beta\Generated\Models\Security\SubmissionCategory;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UrlThreatSubmission();
-$requestBody->set@odatatype('#microsoft.graph.urlThreatSubmission');
-
+$requestBody->setOdataType('#microsoft.graph.urlThreatSubmission');
 $requestBody->setCategory(new SubmissionCategory('phishing'));
-
 $requestBody->setWebUrl('http://phishing.contoso.com');
 
-
-
-$result = $graphServiceClient->security()->threatSubmission()->urlThreats()->post($requestBody);
-
+$result = $graphServiceClient->security()->threatSubmission()->urlThreats()->post($requestBody)->wait();
 
 ```

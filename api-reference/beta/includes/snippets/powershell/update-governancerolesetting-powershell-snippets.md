@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	adminEligibleSettings = @(
@@ -15,6 +15,6 @@ $params = @{
 	)
 }
 
-Update-MgPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
+Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
 
 ```

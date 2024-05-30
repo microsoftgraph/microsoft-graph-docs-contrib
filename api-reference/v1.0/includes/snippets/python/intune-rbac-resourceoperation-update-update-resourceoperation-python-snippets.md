@@ -4,22 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.resource_operation import ResourceOperation
 
-request_body = ResourceOperation()
-request_body.@odata_type = '#microsoft.graph.resourceOperation'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.resource_name = 'Resource Name value'
+request_body = ResourceOperation(
+	odata_type = "#microsoft.graph.resourceOperation",
+	resource_name = "Resource Name value",
+	action_name = "Action Name value",
+	description = "Description value",
+)
 
-request_body.action_name = 'Action Name value'
-
-request_body.description = 'Description value'
-
-
-
-
-result = await client.device_management.resource_operations.by_resource_operation_id('resourceOperation-id').patch(request_body = request_body)
+result = await graph_client.device_management.resource_operations.by_resource_operation_id('resourceOperation-id').patch(request_body)
 
 
 ```

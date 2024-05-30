@@ -4,26 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.admin.windows.updates.updatableassets.microsoft_graph_windows_updates_enroll_assets.enroll_assets_post_request_body import EnrollAssetsPostRequestBody
+from msgraph_beta.generated.models.update_category import UpdateCategory
+from msgraph_beta.generated.models.windows_updates.updatable_asset import UpdatableAsset
+from msgraph_beta.generated.models.windows_updates.azure_a_d_device import AzureADDevice
 
-request_body = EnrollAssetsPostRequestBody()
-request_body.updatecategory(UpdateCategory.String('updatecategory.string'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-assets_updatable_asset1 = AzureADDevice()
-assets_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
+request_body = EnrollAssetsPostRequestBody(
+	update_category = UpdateCategory.Feature,
+	assets = [
+		AzureADDevice(
+			odata_type = "#microsoft.graph.windowsUpdates.azureADDevice",
+			id = "String (identifier)",
+		),
+	],
+)
 
-assets_updatable_asset1.id = 'String (identifier)'
-
-
-assetsArray []= assetsUpdatableAsset1;
-request_body.assets(assetsArray)
-
-
-
-
-
-await client.admin.windows.updates.updatable_assets.microsoft_graph_window_update_enroll_assets.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.microsoft_graph_windows_updates_enroll_assets.post(request_body)
 
 
 ```

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TermsAndConditionsAcceptanceStatus termsAndConditionsAcceptanceStatus = graphClient.deviceManagement().termsAndConditions("{termsAndConditionsId}").acceptanceStatuses("{termsAndConditionsAcceptanceStatusId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TermsAndConditionsAcceptanceStatus result = graphClient.deviceManagement().termsAndConditions().byTermsAndConditionsId("{termsAndConditions-id}").acceptanceStatuses().byTermsAndConditionsAcceptanceStatusId("{termsAndConditionsAcceptanceStatus-id}").get();
+
 
 ```

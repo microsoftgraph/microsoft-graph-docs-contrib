@@ -3,7 +3,7 @@ title: "searchHitsContainer resource type"
 description: "Represent the list of search results."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

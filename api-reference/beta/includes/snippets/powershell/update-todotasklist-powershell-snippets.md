@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	displayName = "Vacation Plan"
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
+Update-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
 
 ```

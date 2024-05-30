@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TermsAndConditions termsAndConditions = new TermsAndConditions();
-termsAndConditions.displayName = "Display Name value";
-termsAndConditions.description = "Description value";
-termsAndConditions.title = "Title value";
-termsAndConditions.bodyText = "Body Text value";
-termsAndConditions.acceptanceStatement = "Acceptance Statement value";
-termsAndConditions.version = 7;
+termsAndConditions.setOdataType("#microsoft.graph.termsAndConditions");
+termsAndConditions.setDisplayName("Display Name value");
+termsAndConditions.setDescription("Description value");
+termsAndConditions.setTitle("Title value");
+termsAndConditions.setBodyText("Body Text value");
+termsAndConditions.setAcceptanceStatement("Acceptance Statement value");
+termsAndConditions.setVersion(7);
+TermsAndConditions result = graphClient.deviceManagement().termsAndConditions().byTermsAndConditionsId("{termsAndConditions-id}").patch(termsAndConditions);
 
-graphClient.deviceManagement().termsAndConditions("{termsAndConditionsId}")
-	.buildRequest()
-	.patch(termsAndConditions);
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	principalId = "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece"
@@ -13,6 +13,6 @@ $params = @{
 	appScopeId = $null
 }
 
-New-MgRoleManagementExchangeRoleAssignment -BodyParameter $params
+New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter $params
 
 ```

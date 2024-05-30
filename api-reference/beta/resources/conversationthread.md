@@ -3,7 +3,7 @@ title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -27,8 +27,8 @@ A new thread is created when a recipient is removed from the thread.
 |[Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
 |[Delete](../api/conversationthread-delete.md) | None |Delete conversationThread object. |
-|[reply](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
-|[List Posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
+|[Reply to conversation thread](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
+|[List posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
 
 ## Properties
 | Property              | Type                                 | Description                                                                                                                                                                                      |
@@ -50,7 +50,7 @@ A new thread is created when a recipient is removed from the thread.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

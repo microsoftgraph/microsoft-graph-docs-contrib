@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
 	contentInfo = @{
@@ -70,6 +70,6 @@ $params = @{
 	}
 }
 
-Test-MgUserSecurityInformationProtectionSensitivityLabelApplication -UserId $userId -BodyParameter $params
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId $userId -BodyParameter $params
 
 ```

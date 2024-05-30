@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.solutions.virtual_events.events.by_event_id('virtualEvent-id').sessions.by_session_id('virtualEventSession-id').get()
+result = await graph_client.solutions.virtual_events.webinars.by_virtual_event_webinar_id('virtualEventWebinar-id').sessions.by_virtual_event_session_id('virtualEventSession-id').get()
 
 
 ```

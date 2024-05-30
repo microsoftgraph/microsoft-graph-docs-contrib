@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -13,14 +16,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphcommunications.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -41,6 +41,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Communications().Calls().ByCallId("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
 	id = "id-value"
@@ -12,6 +12,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 
 ```

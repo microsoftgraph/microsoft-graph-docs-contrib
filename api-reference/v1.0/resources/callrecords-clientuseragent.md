@@ -2,8 +2,8 @@
 title: "clientUserAgent resource type"
 description: "The clientUserAgent type"
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ the [userAgent](callrecords-useragent.md) type.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifies the version of application software used by this endpoint.|
-|azureADAppId|String|The unique identifier of the Azure AD application used by this endpoint.|
+|azureADAppId|String|The unique identifier of the Microsoft Entra application used by this endpoint.|
 |communicationServiceId|String|Immutable resource identifier of the Azure Communication Service associated with this endpoint based on [Communication Services APIs](https://azure.microsoft.com/services/communication-services/).|
 |headerValue|String|User-agent header value reported by this endpoint.|
 |platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|

@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.todo_task import TodoTask
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
-request_body = TodoTask()
-due_date_time = DateTimeTimeZone()
-due_date_time.date_time = '2020-07-25T16:00:00'
+graph_client = GraphServiceClient(credentials, scopes)
 
-due_date_time.time_zone = 'Eastern Standard Time'
+request_body = TodoTask(
+	due_date_time = DateTimeTimeZone(
+		date_time = "2020-07-25T16:00:00",
+		time_zone = "Eastern Standard Time",
+	),
+)
 
-
-request_body.due_date_time = due_date_time
-
-
-
-result = await client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_todo_task_list_id('todoTaskList-id').tasks.by_todo_task_id('todoTask-id').patch(request_body)
 
 
 ```

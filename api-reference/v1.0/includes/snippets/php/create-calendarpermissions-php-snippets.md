@@ -5,27 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CalendarPermission;
+use Microsoft\Graph\Generated\Models\EmailAddress;
+use Microsoft\Graph\Generated\Models\CalendarRoleType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CalendarPermission();
 $emailAddress = new EmailAddress();
 $emailAddress->setName('Samantha Booth');
-
-$emailAddress->setAddress('samanthab@adatum.onmicrosoft.com');
-
-
+$emailAddress->setAddress('samanthab@contoso.com');
 $requestBody->setEmailAddress($emailAddress);
 $requestBody->setIsInsideOrganization(true);
-
 $requestBody->setIsRemovable(true);
-
 $requestBody->setRole(new CalendarRoleType('read'));
 
-
-
-$result = $graphServiceClient->me()->calendar()->calendarPermissions()->post($requestBody);
-
+$result = $graphServiceClient->me()->calendar()->calendarPermissions()->post($requestBody)->wait();
 
 ```

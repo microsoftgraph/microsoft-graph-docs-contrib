@@ -5,24 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\FeatureRolloutPolicy;
+use Microsoft\Graph\Generated\Models\StagedFeatureName;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FeatureRolloutPolicy();
 $requestBody->setDisplayName('PassthroughAuthentication rollout policy');
-
 $requestBody->setDescription('PassthroughAuthentication rollout policy');
-
-$requestBody->setFeature(new StagedFeatureName('passthroughauthentication'));
-
+$requestBody->setFeature(new StagedFeatureName('passthroughAuthentication'));
 $requestBody->setIsEnabled(true);
-
 $requestBody->setIsAppliedToOrganization(false);
 
-
-
-$result = $graphServiceClient->policies()->featureRolloutPolicies()->post($requestBody);
-
+$result = $graphServiceClient->policies()->featureRolloutPolicies()->post($requestBody)->wait();
 
 ```

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new SharedPCConfiguration
 {
@@ -34,6 +35,8 @@ var requestBody = new SharedPCConfiguration
 	KioskAppUserModelId = "Kiosk App User Model Id value",
 	MaintenanceStartTime = new Time(DateTime.Parse("11:59:24.7240000")),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.DeviceConfigurations.PostAsync(requestBody);
 
 

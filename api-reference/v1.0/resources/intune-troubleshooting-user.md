@@ -1,9 +1,9 @@
 ---
 title: "user resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -48,7 +48,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-
-

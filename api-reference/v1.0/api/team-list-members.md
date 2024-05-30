@@ -3,7 +3,7 @@ title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -12,21 +12,23 @@ Namespace: microsoft.graph
 
 Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
+The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make assumptions about these resource IDs.
+
+In the future, membership results can include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
+
 > [!NOTE]
-> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
->
-> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> This API returns a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "team_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-list-members-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamMember.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -39,21 +41,19 @@ GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.
-
-For new tenants, a JIT provisioning error will cause a `401` error for first-party apps using Microsoft Graph advanced Azure AD query capabilities (Mezzo). First-party apps require the provisioning of a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so provisioning cannot happen (advanced query endpoints are defined by the `ConsistencyLevel=eventual header` + `$count` or `$search` query arguments). As a workaround, call Azure AD Graph or another Microsoft Graph endpoint (for example, `/users?$top=1`). This takes care of the provisioning. This is an issue with Azure AD and will occur once per tenant for a given app. The following example shows the pattern to use.
 
 ## Examples
 
@@ -76,24 +76,28 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-members-in-team-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-members-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-members-in-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -125,7 +129,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -135,7 +139,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -143,15 +147,17 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
 ```
 
-### Example 2: Find members of a team by their Azure AD user object ID
+<a name='example-2-find-members-of-a-team-by-their-azure-ad-user-object-id'></a>
 
-The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+### Example 2: Find members of a team by their Microsoft Entra user object ID
+
+The following example shows a request to find the membership resources based on `id` of the [Microsoft Entra user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
 #### Request
 
@@ -171,24 +177,28 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-filter-by-userid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-userid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-userid-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-members-in-team-filter-by-userid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-members-in-team-filter-by-userid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-filter-by-userid-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-userid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-userid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-members-in-team-filter-by-userid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-filter-by-userid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -220,7 +230,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         }
     ]
 }
@@ -240,31 +250,35 @@ The following example shows a request to find the membership resources based on 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-filter-by-username-or-email-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-username-or-email-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-username-or-email-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-members-in-team-filter-by-username-or-email-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-members-in-team-filter-by-username-or-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-filter-by-username-or-email-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-username-or-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-username-or-email-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-members-in-team-filter-by-username-or-email-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-members-in-team-filter-by-username-or-email-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -298,7 +312,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -306,12 +320,12 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
 ```
 
-## See also
+## Related content
 
 - [List members in channel](channel-list-members.md)

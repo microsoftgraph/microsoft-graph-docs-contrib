@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\RoleManagement\CloudPC\RoleAssignments\RoleAssignmentsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
 $queryParameters = RoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->get($requestConfiguration);
-
+$result = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->get($requestConfiguration)->wait();
 
 ```

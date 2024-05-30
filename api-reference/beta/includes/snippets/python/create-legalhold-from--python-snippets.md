@@ -4,33 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.ediscovery.legal_hold import LegalHold
+from msgraph_beta.generated.models.identity_set import IdentitySet
+from msgraph_beta.generated.models.legal_hold_status import LegalHoldStatus
 
-request_body = LegalHold()
-request_body.@odata_type = '#microsoft.graph.ediscovery.legalHold'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'String'
+request_body = LegalHold(
+	odata_type = "#microsoft.graph.ediscovery.legalHold",
+	description = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+	is_enabled = Boolean,
+	status = LegalHoldStatus.Pending,
+	content_query = "String",
+	errors = [
+		"String",
+	],
+	display_name = "String",
+)
 
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-request_body.is_enabled = Boolean
-
-request_body.status(LegalHoldStatus.String('legalholdstatus.string'))
-
-request_body.content_query = 'String'
-
-request_body.Errors(['String', ])
-
-request_body.display_name = 'String'
-
-
-
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').legal_holds.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').legal_holds.post(request_body)
 
 
 ```

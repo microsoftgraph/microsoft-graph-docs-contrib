@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.directory_objects.delta.delta_request_builder import DeltaRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 		filter = "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'",
 )
 
-request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.directory_objects.delta.get(request_configuration = request_configuration)
+result = await graph_client.directory_objects.delta.get(request_configuration = request_configuration)
 
 
 ```

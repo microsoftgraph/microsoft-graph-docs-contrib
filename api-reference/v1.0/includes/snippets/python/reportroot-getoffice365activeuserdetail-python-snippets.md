@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.reports.get_office365_active_user_detail(period='{period}'.get()
+await graph_client.reports.get_office365_active_user_detail_with_period("{period}").get()
 
 
 ```

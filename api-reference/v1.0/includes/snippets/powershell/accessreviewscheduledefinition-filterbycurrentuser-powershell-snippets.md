@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -On $onId 
 
 ```

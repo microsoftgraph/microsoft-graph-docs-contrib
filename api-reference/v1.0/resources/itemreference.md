@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: itemReference
 ms.localizationpriority: medium
 description: "The itemReference resource provides information necessary to address a driveItem or listItem via the API."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

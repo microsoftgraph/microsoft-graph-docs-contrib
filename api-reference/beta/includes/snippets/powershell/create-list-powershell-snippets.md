@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	displayName = "Books"
@@ -25,6 +25,6 @@ $params = @{
 	}
 }
 
-New-MgSiteList -SiteId $siteId -BodyParameter $params
+New-MgBetaSiteList -SiteId $siteId -BodyParameter $params
 
 ```

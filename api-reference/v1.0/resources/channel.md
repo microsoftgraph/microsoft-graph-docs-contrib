@@ -3,7 +3,7 @@ title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -23,6 +23,7 @@ where files are shared, and where tabs are added.
 |[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in a [team](../resources/team.md) or shared with a [team](../resources/team.md) (incoming channels).|
 |[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
+|[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
@@ -63,8 +64,9 @@ where files are shared, and where tabs are added.
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
-|tenantId |string | The ID of the Azure Active Directory tenant. |
+|tenantId |string | The ID of the Microsoft Entra tenant. |
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+|summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of owners, members, guests, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 
 ### channelMembershipType values
 
@@ -138,7 +140,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See also
+## Related content
 
 - [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
 - [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

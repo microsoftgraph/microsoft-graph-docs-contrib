@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	recipients = @(
@@ -16,12 +16,12 @@ $params = @{
 	requireSignIn = $true
 	sendInvitation = $true
 	roles = @(
-		"write"
-	)
-	password = "password123"
-	expirationDateTime = "2018-07-15T14:00:00.000Z"
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
 }
 
-Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```

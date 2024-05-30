@@ -1,28 +1,34 @@
 ---
 title: "List userRegistrationDetails"
-description: "Get a list of the authentication methods registered for the user as defined in the userRegistrationDetails object."
-author: "besiler"
+description: "Get a list of the authentication methods registered for a user as defined in the userRegistrationDetails object."
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
 # List userRegistrationDetails
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the authentication methods registered for the user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.
+Get a list of the authentication methods registered for a user  as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object. This method doesn't work for disabled users.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
+|Delegated (work or school account)|AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
+|Application|AuditLog.Read.All|
+
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -35,15 +41,28 @@ GET /reports/authenticationMethods/userRegistrationDetails
 ```
 
 ## Optional query parameters
-This method supports only the `$filter` and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [userRegistrationDetails](../resources/userregistrationdetails.md) resource.
+
+| Property          | Description                                                                                                                     | Example                                                                   |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
+| isMfaCapable      | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). Supported filter operators: `eq`.| `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaCapable eq true`           |
+| isMfaRegistered   | Filter for users who are registered for MFA. Supported filter operators are: `eq`.                                              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaRegistered eq true`        |
+| isSsprEnabled     | Filter for users who have been enabled for SSPR. Supported filter operators are: `eq`.                                          | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprEnabled eq true`.         |
+| isSsprRegistered  | Filter for users who have registered for self-service password reset (SSPR). Supported filter operators are: `eq`.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprRegistered eq true`       |
+| methodsRegistered | Filter by the authentication methods used during registration. Supported filter operators are: `eq`.                            | `/reports/authenticationMethods/userRegistrationDetails?$filter=methodsRegistered/any(x:x eq 'email')`   |
+| userDisplayName   | Filter by user name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.                        | `/reports/authenticationMethods/userRegistrationDetails?$filter=userDisplayName eq 'Contoso'`   |
+| userPrincipalName | Filter by user principal name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=userPrincipalName eq 'Contoso'` |
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,24 +88,28 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-userregistrationdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-userregistrationdetails-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-userregistrationdetails-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-userregistrationdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-userregistrationdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-userregistrationdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -97,7 +120,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

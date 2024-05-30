@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Search\Acronym;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Acronym();
 $requestBody->setDescription('A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.');
 
-
-
-$result = $graphServiceClient->search()->acronyms()->byAcronymId('acronym-id')->patch($requestBody);
-
+$result = $graphServiceClient->search()->acronyms()->byAcronymId('acronym-id')->patch($requestBody)->wait();
 
 ```

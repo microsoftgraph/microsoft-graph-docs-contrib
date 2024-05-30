@@ -3,7 +3,7 @@ title: "workflowTemplate resource type"
 description: "Represents a pre-configured template for lifecycle workflows that you can use to create a workflow. Workflow templates are available for common scenarios such as new hires and users that are leaving the organization."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Represents the pre-configured templates of Lifecycle Workflows that are available in Azure AD. Workflow templates are available for common scenarios such as new hires and users that are leaving the organization.
+Represents the pre-configured templates of Lifecycle Workflows that are available in Microsoft Entra ID. Workflow templates are available for common scenarios such as new hires and users that are leaving the organization.
 
 Workflow templates allow you to set up workflows based on common lifecycle management scenarios. You can also create custom workflows from the workflow templates to achieve specific situations.
 
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List workflowTemplates](../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|Get a list of the [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects and their properties.|
-|[Get workflowTemplate](../api/identitygovernance-workflowtemplate-get.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Read the properties and relationships of a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
+|[List](../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|Get a list of the [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects and their properties.|
+|[Get](../api/identitygovernance-workflowtemplate-get.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Read the properties and relationships of a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
 
 ## Properties
 

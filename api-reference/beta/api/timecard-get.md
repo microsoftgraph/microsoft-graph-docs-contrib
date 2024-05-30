@@ -3,7 +3,7 @@ title: "Get timeCard"
 description: "Get the properties and relationships of a timeCard object by ID."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -15,17 +15,17 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [timeCard](../resources/timecard.md) object by ID.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+<!-- { "blockType": "permissions", "name": "timecard_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timecard-get-permissions.md)]
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -36,17 +36,17 @@ GET /teams/{teamId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Optional query parameters
-This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [timeCard](../
 ## Example
 
 ### Request
-The following is an example of the request. 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,24 +72,28 @@ GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/
 [!INCLUDE [sample-code](../includes/snippets/csharp/timecard-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timecard-get-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/timecard-get-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timecard-get-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-get-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timecard-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/timecard-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -100,7 +104,7 @@ GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Insights\Used\UsedRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new UsedRequestBuilderGetRequestConfiguration();
 $queryParameters = UsedRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->orderby = ["LastUsed/LastAccessedDateTime desc"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->insights()->used()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->insights()->used()->get($requestConfiguration)->wait();
 
 ```

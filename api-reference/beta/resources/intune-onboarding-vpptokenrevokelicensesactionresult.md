@@ -3,7 +3,7 @@ title: "vppTokenRevokeLicensesActionResult resource type"
 description: "The status of the revoke licenses action performed on the Apple Volume Purchase Program token."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

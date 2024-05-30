@@ -4,70 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.chat_message import ChatMessage
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.chat_message_attachment import ChatMessageAttachment
 
-request_body = ChatMessage()
-request_body.subject = 'Announcement Subheading'
+graph_client = GraphServiceClient(credentials, scopes)
 
-body = ItemBody()
-body.contenttype(BodyType.Text('bodytype.text'))
+request_body = ChatMessage(
+	subject = None,
+	body = ItemBody(
+		content_type = BodyType.Html,
+		content = "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>",
+	),
+	attachments = [
+		ChatMessageAttachment(
+			id = "74d20c7f34aa4a7fb74e2b30004247c5",
+			content_type = "application/vnd.microsoft.card.thumbnail",
+			content_url = None,
+			content = "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+			name = None,
+			thumbnail_url = None,
+			teams_app_id = "881b8843-fd91-49e5-9ac2-47ec497ffbe5",
+		),
+	],
+)
 
-body.content = '<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text'
-
-
-request_body.body = body
-attachments_chat_message_attachment1 = ChatMessageAttachment()
-attachments_chat_message_attachment1.id = 'd7ddbf876ae340c3a03bada395ec7da7'
-
-attachments_chat_message_attachment1.content_type = 'application/vnd.microsoft.teams.messaging-announcementBanner'
-
-attachments_chat_message_attachment1.contentUrl=null
-
-attachments_chat_message_attachment1.content = '{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}'
-
-attachments_chat_message_attachment1.name=null
-
-attachments_chat_message_attachment1.thumbnailUrl=null
-
-
-attachmentsArray []= attachmentsChatMessageAttachment1;
-request_body.attachments(attachmentsArray)
-
-
-hosted_contents_chat_message_hosted_content1 = ChatMessageHostedContent()
-hosted_contents_chat_message_hosted_content1.ContentBytes(base64_decode('iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA'))
-
-hosted_contents_chat_message_hosted_content1.content_type = 'image/png'
-
-additional_data = [
-'@microsoft_graph_temporary_id' => '1', 
-];
-hosted_contents_chat_message_hosted_content1.additional_data(additional_data)
-
-
-
-hostedContentsArray []= hostedContentsChatMessageHostedContent1;
-hosted_contents_chat_message_hosted_content2 = ChatMessageHostedContent()
-hosted_contents_chat_message_hosted_content2.ContentBytes(base64_decode('iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe'))
-
-hosted_contents_chat_message_hosted_content2.content_type = 'image/png'
-
-additional_data = [
-'@microsoft_graph_temporary_id' => '2', 
-];
-hosted_contents_chat_message_hosted_content2.additional_data(additional_data)
-
-
-
-hostedContentsArray []= hostedContentsChatMessageHostedContent2;
-request_body.hostedcontents(hostedContentsArray)
-
-
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body)
 
 
 ```

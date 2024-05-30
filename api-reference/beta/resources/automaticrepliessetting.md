@@ -3,8 +3,8 @@ title: "automaticRepliesSetting resource type"
 description: "Configuration settings to automatically notify the sender of an incoming email with a message from the "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
-author: "abheek-das"
+ms.subservice: mail
+author: "SuryaLashmiS"
 ---
 
 # automaticRepliesSetting resource type
@@ -30,7 +30,7 @@ respond to emails.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

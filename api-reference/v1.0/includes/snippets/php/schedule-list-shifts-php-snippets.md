@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teams\Item\Schedule\Shifts\ShiftsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ShiftsRequestBuilderGetRequestConfiguration();
 $queryParameters = ShiftsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "sharedShift/startDateTime ge 2019-03-11T00:00:00.000
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->shifts()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->shifts()->get($requestConfiguration)->wait();
 
 ```

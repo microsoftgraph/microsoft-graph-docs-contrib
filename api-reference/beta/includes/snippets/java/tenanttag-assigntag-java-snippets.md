@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> tenantIdsList = new LinkedList<String>();
-tenantIdsList.add("String");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.tenantRelationships().managedTenants().tenantTags("{tenantTagId}")
-	.assignTag(TenantTagAssignTagParameterSet
-		.newBuilder()
-		.withTenantIds(tenantIdsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.tenantrelationships.managedtenants.tenanttags.item.microsoftgraphmanagedtenantsassigntag.AssignTagPostRequestBody assignTagPostRequestBody = new com.microsoft.graph.beta.tenantrelationships.managedtenants.tenanttags.item.microsoftgraphmanagedtenantsassigntag.AssignTagPostRequestBody();
+LinkedList<String> tenantIds = new LinkedList<String>();
+tenantIds.add("String");
+assignTagPostRequestBody.setTenantIds(tenantIds);
+var result = graphClient.tenantRelationships().managedTenants().tenantTags().byTenantTagId("{tenantTag-id}").microsoftGraphManagedTenantsAssignTag().post(assignTagPostRequestBody);
+
 
 ```

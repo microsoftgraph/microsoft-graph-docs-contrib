@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ContinuousAccessEvaluationPolicy;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContinuousAccessEvaluationPolicy();
-$requestBody->set@odatatype('#microsoft.graph.continuousAccessEvaluationPolicy');
-
+$requestBody->setOdataType('#microsoft.graph.continuousAccessEvaluationPolicy');
 $requestBody->setMigrate(true);
 
-
-
-$result = $graphServiceClient->identity()->continuousAccessEvaluationPolicy()->patch($requestBody);
-
+$result = $graphServiceClient->identity()->continuousAccessEvaluationPolicy()->patch($requestBody)->wait();
 
 ```

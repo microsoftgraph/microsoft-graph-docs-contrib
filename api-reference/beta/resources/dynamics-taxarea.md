@@ -1,15 +1,15 @@
 ---
-title: taxAreas resource type 
+title: taxArea resource type
 description: A tax area.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# taxAreas resource type
+# taxArea resource type
 
 Namespace: microsoft.graph
 
@@ -20,10 +20,10 @@ Represents a tax area resource type in Dynamics 365 Business Central.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get taxAreas](../api/dynamics-taxarea-get.md)|taxAreas|Gets a tax area object.|
-|[Post taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|Creates a tax area object.|
-|[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|Updates a tax area object.|
-|[Delete taxAreas](../api/dynamics-taxarea-delete.md)|none|Deletes a tax area object.|
+|[Get tax area](../api/dynamics-taxarea-get.md)|taxArea|Gets a tax area object.|
+|[Create tax area](../api/dynamics-create-taxarea.md)|taxArea|Creates a tax area object.|
+|[Update tax area](../api/dynamics-taxarea-update.md)|taxArea|Updates a tax area object.|
+|[Delete tax area](../api/dynamics-taxarea-delete.md)|none|Deletes a tax area object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -38,7 +38,7 @@ Represents a tax area resource type in Dynamics 365 Business Central.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new DelegatedAdminRelationship
 {
@@ -31,7 +32,10 @@ var requestBody = new DelegatedAdminRelationship
 			},
 		},
 	},
+	AutoExtendDuration = TimeSpan.Parse("P180D"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.TenantRelationships.DelegatedAdminRelationships.PostAsync(requestBody);
 
 

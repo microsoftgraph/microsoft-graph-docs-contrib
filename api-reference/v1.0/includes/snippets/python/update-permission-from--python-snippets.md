@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.permission import Permission
 
-request_body = Permission()
-request_body.Roles(['read', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Permission(
+	roles = [
+		"read",
+	],
+)
 
-
-
-result = await client.sites.by_site_id('site-id').permissions.by_permission_id('permission-id').patch(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').permissions.by_permission_id('permission-id').patch(request_body)
 
 
 ```

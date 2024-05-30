@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,11 +15,8 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
-requestFilter := "principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'"
+requestFilter := "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'"
 
 requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
@@ -25,7 +25,8 @@ configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGrou
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+eligibilitySchedules, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().Get(context.Background(), configuration)
 
 
 ```

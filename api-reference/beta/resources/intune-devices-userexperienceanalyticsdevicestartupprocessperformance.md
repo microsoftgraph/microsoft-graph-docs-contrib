@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDeviceStartupProcessPerformance resource type"
 description: "The user experience analytics device startup process performance."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,8 +36,6 @@ The user experience analytics device startup process performance.
 |deviceCount|Int64|The count of devices which initiated this process on startup. Supports: $filter, $select, $OrderBy. Read-only.|
 |medianImpactInMs|Int64|The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
 |totalImpactInMs|Int64|The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
-|medianImpactInMs2|Int64|The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
-|totalImpactInMs2|Int64|The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
 
 ## Relationships
 None
@@ -59,8 +57,6 @@ Here is a JSON representation of the resource.
   "publisher": "String",
   "deviceCount": 1024,
   "medianImpactInMs": 1024,
-  "totalImpactInMs": 1024,
-  "medianImpactInMs2": 1024,
-  "totalImpactInMs2": 1024
+  "totalImpactInMs": 1024
 }
 ```

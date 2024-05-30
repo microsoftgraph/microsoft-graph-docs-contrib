@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Search\Bookmark;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Bookmark();
 $requestBody->setDescription('Book a fancy vacation in Tuscany or browse museums in Florence.');
 
-
-
-$result = $graphServiceClient->search()->bookmarks()->byBookmarkId('bookmark-id')->patch($requestBody);
-
+$result = $graphServiceClient->search()->bookmarks()->byBookmarkId('bookmark-id')->patch($requestBody)->wait();
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	displayName = "CONTOSO LITIGATION-005"
@@ -12,6 +12,6 @@ $params = @{
 	externalId = "324516"
 }
 
-New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
+New-MgBetaSecurityCaseEdiscoveryCase -BodyParameter $params
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "azureADDevice resource type"
-description: "Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service."
+description: "Represents a device in Microsoft Entra ID that is registered with the deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service.
+Represents a device in Microsoft Entra ID that is registered with the deployment service.
 
-An Azure AD device is automatically created through one of the following methods:
+A Microsoft Entra device is automatically created through one of the following methods:
 * [updatableAsset: enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md)
 * [updatableAsset: enrollAssetsById](../api/windowsupdates-updatableasset-enrollassetsbyid.md)
 * [deploymentAudience: updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md)
@@ -28,13 +28,13 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureADDevice resources](../api/adminwindowsupdates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
-|[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
-|[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
-|[Enroll azureADDevice resources in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
-|[Enroll azureADDevice resources in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
-|[Unenroll azureADDevice resources from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
-|[Unenroll azureADDevice resources from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
+|[List Microsoft Entra devices](../api/adminwindowsupdates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
+|[Get Microsoft Entra device](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
+|[Delete Microsoft Entra device](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
+|[Enroll in update management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
+|[Enroll by ID](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
+|[Unenroll from update management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
+|[Unenroll by ID](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
 
 ## Properties
 |Property|Type|Description|
@@ -72,4 +72,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

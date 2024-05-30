@@ -3,7 +3,7 @@ title: " controlScore resource type"
 description: "This resource contains a tenant score and description for an individual control."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 This resource contains a tenant score and description for an individual control.
 
-|Name |Type |Description |
-|:--|:--|:--|
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
 |	controlName	|	String	|	Control unique name	|
 |	score	|	Double	|  Tenant achieved score for the control (it varies day by day depending on tenant operations on the control). |
 |	controlCategory	|	String	|  Control action category (Identity, Data, Device, Apps, Infrastructure). |

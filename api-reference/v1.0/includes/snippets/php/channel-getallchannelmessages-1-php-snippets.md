@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teams\Item\Channels\GetAllMessages\GetAllMessagesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GetAllMessagesRequestBuilderGetRequestConfiguration();
 $queryParameters = GetAllMessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "lastModifiedDateTime gt 2019-11-01T00:00:00Z and las
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->getAllMessages()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->getAllMessages()->get($requestConfiguration)->wait();
 
 ```

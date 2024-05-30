@@ -3,7 +3,7 @@ title: "Members"
 description: "Describes the visibility of a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: enumPageType
 ---
 

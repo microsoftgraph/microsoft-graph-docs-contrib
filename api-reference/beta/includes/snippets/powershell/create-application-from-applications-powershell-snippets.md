@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
 	displayName = "Display name"
 }
 
-New-MgApplication -BodyParameter $params
+New-MgBetaApplication -BodyParameter $params
 
 ```

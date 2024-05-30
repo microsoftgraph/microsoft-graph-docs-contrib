@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Chats\Item\Tabs\Item\TeamsTabItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new TeamsTabRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsTabRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new TeamsTabItemRequestBuilderGetRequestConfiguration();
+$queryParameters = TeamsTabItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsApp"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->byTabId('teamsTab-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->byTeamsTabId('teamsTab-id')->get($requestConfiguration)->wait();
 
 ```

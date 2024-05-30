@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	senderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29"
@@ -12,6 +12,6 @@ $params = @{
 	recipientUserId = "fe278b61-21ac-4872-8b41-1962bbb98e3c"
 }
 
-New-MgTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
+New-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.TranslateExchangeIds;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.TranslateExchangeIds.TranslateExchangeIdsPostRequestBody
+var requestBody = new TranslateExchangeIdsPostRequestBody
 {
 	InputIds = new List<string>
 	{
@@ -18,7 +20,9 @@ var requestBody = new Microsoft.Graph.Me.TranslateExchangeIds.TranslateExchangeI
 	SourceIdType = ExchangeIdFormat.RestId,
 	TargetIdType = ExchangeIdFormat.RestImmutableEntryId,
 };
-var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.TranslateExchangeIds.PostAsTranslateExchangeIdsPostResponseAsync(requestBody);
 
 
 ```

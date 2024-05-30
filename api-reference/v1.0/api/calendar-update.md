@@ -3,7 +3,7 @@ title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -11,8 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md),
 or the default calendar of a Microsoft 365 [group](../resources/group.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -80,16 +83,20 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-calendar-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-calendar-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -103,7 +110,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,7 +140,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

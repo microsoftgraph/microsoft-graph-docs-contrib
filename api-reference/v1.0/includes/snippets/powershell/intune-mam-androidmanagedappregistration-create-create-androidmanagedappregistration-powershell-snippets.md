@@ -16,16 +16,16 @@ $params = @{
 	deviceTag = "Device Tag value"
 	deviceName = "Device Name value"
 	flaggedReasons = @(
-		"rootedDevice"
-	)
-	userId = "User Id value"
-	appIdentifier = @{
-		"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
-		packageId = "Package Id value"
-	}
-	version = "Version value"
+	"rootedDevice"
+)
+userId = "User Id value"
+appIdentifier = @{
+	"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+	packageId = "Package Id value"
+}
+version = "Version value"
 }
 
-New-MgDeviceAppMgtManagedAppRegistration -BodyParameter $params
+New-MgDeviceAppManagementManagedAppRegistration -BodyParameter $params
 
 ```

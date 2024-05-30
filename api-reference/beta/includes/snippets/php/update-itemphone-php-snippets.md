@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ItemPhone;
+use Microsoft\Graph\Beta\Generated\Models\PhoneType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ItemPhone();
 $requestBody->setType(new PhoneType('other'));
 
-
-
-$result = $graphServiceClient->users()->byUserId('user-id')->profile()->phones()->byPhoneId('itemPhone-id')->patch($requestBody);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->profile()->phones()->byItemPhoneId('itemPhone-id')->patch($requestBody)->wait();
 
 ```

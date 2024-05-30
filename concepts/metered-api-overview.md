@@ -1,7 +1,7 @@
 ---
 title: "Overview of metered APIs and services in Microsoft Graph"
 description: "Get an introduction to metered APIs and services in Microsoft Graph."
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
@@ -11,12 +11,12 @@ ms.custom: scenarios:getting-started
 Microsoft Graph includes APIs that are available at no additional cost with [user subscription licenses](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) and APIs and services that are metered. Metered APIs and services in Microsoft Graph incur costs based on usage. The costs might be incurred per API call made, per object returned in an API call, or through other measures.
 
 Whether metered or not, APIs in Microsoft Graph follow these two principles:
-- Customer data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/trust-center/privacy/customer-data-definitions). 
-- Reasonable access: The service provides access to customer content, within [defined limits](throttling-limits.md). 
+- Customer data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/trust-center/privacy/customer-data-definitions).
+- Reasonable access: The service provides access to customer content, within [defined limits](throttling-limits.md).
 
 Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. In the event that a Microsoft Graph API that is included with user subscription licenses becomes metered, that would be a non-backward compatible change and the [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md) would apply.
 
-For the list of metered APIs and services, see [Metered APIs and services](/graph/metered-api-list). 
+For the list of metered APIs and services, see [Metered APIs and services](/graph/metered-api-list).
 
 ## API categories and metering
 Microsoft Graph APIs fall into three categories, and metering may apply based on the category of the API.
@@ -42,7 +42,7 @@ Keep the following considerations in mind when you use metered APIs and services
 
 [!INCLUDE [Metered API Known Limitations](includes/metered-api-known-limitations.md)]
 
-## See also
+## Related content
 
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)

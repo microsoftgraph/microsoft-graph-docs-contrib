@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Communications\Calls\Item\Reject\RejectPostRequestBody;
+use Microsoft\Graph\Generated\Models\RejectReason;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RejectPostRequestBody();
 $requestBody->setReason(new RejectReason('busy'));
 
-
-
-$graphServiceClient->communications()->calls()->byCallId('call-id')->reject()->post($requestBody);
-
+$graphServiceClient->communications()->calls()->byCallId('call-id')->reject()->post($requestBody)->wait();
 
 ```

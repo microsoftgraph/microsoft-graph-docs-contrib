@@ -5,24 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\DirectorySetting;
+use Microsoft\Graph\Beta\Generated\Models\SettingValue;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DirectorySetting();
 $valuesSettingValue1 = new SettingValue();
 $valuesSettingValue1->setName('CustomBlockedWordsList');
-
 $valuesSettingValue1->setValue('Contoso');
-
-
 $valuesArray []= $valuesSettingValue1;
 $requestBody->setValues($valuesArray);
 
 
-
-
-$result = $graphServiceClient->settings()->bySettingId('directorySetting-id')->patch($requestBody);
-
+$result = $graphServiceClient->settings()->byDirectorySettingId('directorySetting-id')->patch($requestBody)->wait();
 
 ```

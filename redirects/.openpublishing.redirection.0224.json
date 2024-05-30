@@ -1,0 +1,24 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/callrecords-callrecord-list.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/callrecords-cloudcommunications-list-callrecords?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/callrecords-callrecord-list-participants.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-list-participants_v2?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/virtualeventsession-list.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/virtualevent-list-sessions?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/accessreviews-overview.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/accessreviewsv2-overview?view=graph-rest-1.0",
+      "redirect_document_id": false
+    }
+  ]
+}

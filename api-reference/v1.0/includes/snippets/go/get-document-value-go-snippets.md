@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
-graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Documents().ByDocumentId("printDocument-id").Value().Get(context.Background(), nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Documents().ByPrintDocumentId("printDocument-id").Value().Get(context.Background(), nil)
 
 
 ```

@@ -22,6 +22,6 @@ $params = @{
 	isAssigned = $true
 }
 
-Update-MgDeviceAppMgtTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
+Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
 
 ```

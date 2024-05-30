@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+use Microsoft\Graph\Beta\GraphServiceClient;
 
 
-$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleAssignmentRequests()->byRoleAssignmentRequestId('governanceRoleAssignmentRequest-id')->updateRequest()->post();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+
+$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccessId('privilegedAccess-id')->roleAssignmentRequests()->byGovernanceRoleAssignmentRequestId('governanceRoleAssignmentRequest-id')->updateRequest()->post()->wait();
 
 ```

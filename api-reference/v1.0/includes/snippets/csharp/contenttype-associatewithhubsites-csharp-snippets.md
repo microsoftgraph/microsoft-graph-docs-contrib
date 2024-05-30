@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Sites.Item.ContentTypes.Item.AssociateWithHubSites;
 
-var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.AssociateWithHubSites.AssociateWithHubSitesPostRequestBody
+var requestBody = new AssociateWithHubSitesPostRequestBody
 {
 	HubSiteUrls = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.AssociateWith
 	},
 	PropagateToExistingLists = false,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].AssociateWithHubSites.PostAsync(requestBody);
 
 

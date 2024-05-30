@@ -4,25 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_named_item import WorkbookNamedItem
+from msgraph.generated.models.json import Json
 
-request_body = WorkbookNamedItem()
-request_body.type = 'type-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.scope = 'scope-value'
+request_body = WorkbookNamedItem(
+	type = "type-value",
+	scope = "scope-value",
+	comment = "comment-value",
+	value = Json(
+	),
+	visible = True,
+)
 
-request_body.comment = 'comment-value'
-
-value = Json()
-
-request_body.value = value
-request_body.visible = True
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.by_name_id('workbookNamedItem-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.names.by_workbook_named_item_id('workbookNamedItem-id').patch(request_body)
 
 
 ```

@@ -1,15 +1,15 @@
 ---
-title: "customerPayments resource type"
+title: "customerPayment resource type"
 description: "Represents a customer payment in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# customerPayments resource type
+# customerPayment resource type
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get customerPayments](../api/dynamics-customerpayment-get.md)|[customerPayments](dynamics-customerpayment.md)|Get a customer payment.|
-|[Post customerPayments](../api/dynamics-create-customerpayment.md)|[customerPayments](dynamics-customerpayment.md)|Create a customer payment.|
-|[Patch customerPayments](../api/dynamics-customerpayment-update.md)|[customerPayments](dynamics-customerpayment.md)|Update a customer payment.|
-|[Delete customerPayments](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
+|[Get customer payment](../api/dynamics-customerpayment-get.md)|[customerPayment](dynamics-customerpayment.md)|Get a customer payment.|
+|[Create customer payment](../api/dynamics-create-customerpayment.md)|[customerPayment](dynamics-customerpayment.md)|Create a customer payment.|
+|[Update customer payment](../api/dynamics-customerpayment-update.md)|[customerPayment](dynamics-customerpayment.md)|Update a customer payment.|
+|[Delete customer payment](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
 
 ## Properties
 | Property	   | Type	 |Description|
@@ -33,7 +33,7 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 |appliesToInvoiceId|GUID|The unique ID of the invoice that the payment is related to.|
 |appliesToInvoiceNumber|String|The number of the invoice that the payment is related to. Maximum supported size is 20 characters.|
 |comment|String|A user specified comment on the customer payment. Maximum supported size is 250 characters.|
-|contactId|String|The exchange contact id for the given customer. If a customer id is not specified, we will use the contact id to find it. Maximum supported size is 250 characters.|
+|contactId|String|The exchange contact ID for the given customer. If a customer id isn't specified, we'll use the contact id to find it. Maximum supported size is 250 characters.|
 |customerId|GUID|The unique ID of the customer that the payment is related to.|
 |customerNumber|String|The number of the customer that the payment is related to. Maximum supported size is 20 characters.|
 |description|String|The description of the customer payment, provided by the user or autocreated. Maximum supported size is 50 characters.|
@@ -46,7 +46,7 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 |postingDate|Date|The date that the customer payment is posted.|
 
 ## Relationships
-A customer payment is a subpage of a customer payment journal. It cannot be accessed directly.
+A customer payment is a subpage of a customer payment journal. It can't be accessed directly.
 
 A customer payment can be a "Parent Entity" of the dimension lines.
 
@@ -57,7 +57,7 @@ An Invoice (appliesToInvoiceId) must exist in the Sales Invoices Table.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ```json
 {

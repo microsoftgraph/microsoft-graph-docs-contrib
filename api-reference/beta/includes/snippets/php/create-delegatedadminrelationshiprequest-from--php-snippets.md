@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminRelationshipRequest;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminRelationshipRequestAction;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DelegatedAdminRelationshipRequest();
-$requestBody->setAction(new DelegatedAdminRelationshipRequestAction('lockforapproval'));
+$requestBody->setAction(new DelegatedAdminRelationshipRequestAction('lockForApproval'));
 
-
-
-$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationships()->byDelegatedAdminRelationshipId('delegatedAdminRelationship-id')->requests()->post($requestBody);
-
+$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationships()->byDelegatedAdminRelationshipId('delegatedAdminRelationship-id')->requests()->post($requestBody)->wait();
 
 ```

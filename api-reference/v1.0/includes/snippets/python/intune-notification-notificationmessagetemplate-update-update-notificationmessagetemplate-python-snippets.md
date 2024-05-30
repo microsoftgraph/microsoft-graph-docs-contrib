@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.notification_message_template import NotificationMessageTemplate
+from msgraph.generated.models.notification_template_branding_options import NotificationTemplateBrandingOptions
 
-request_body = NotificationMessageTemplate()
-request_body.@odata_type = '#microsoft.graph.notificationMessageTemplate'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Display Name value'
+request_body = NotificationMessageTemplate(
+	odata_type = "#microsoft.graph.notificationMessageTemplate",
+	display_name = "Display Name value",
+	default_locale = "Default Locale value",
+	branding_options = NotificationTemplateBrandingOptions.IncludeCompanyLogo,
+	role_scope_tag_ids = [
+		"Role Scope Tag Ids value",
+	],
+)
 
-request_body.default_locale = 'Default Locale value'
-
-request_body.brandingoptions(NotificationTemplateBrandingOptions.IncludeCompanyLogo('notificationtemplatebrandingoptions.includecompanylogo'))
-
-request_body.RoleScopeTagIds(['Role Scope Tag Ids value', ])
-
-
-
-
-result = await client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').patch(request_body = request_body)
+result = await graph_client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').patch(request_body)
 
 
 ```

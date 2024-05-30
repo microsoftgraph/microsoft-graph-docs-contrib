@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SocialIdentityProvider
 {
@@ -16,6 +17,8 @@ var requestBody = new SocialIdentityProvider
 	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8",
 	ClientSecret = "000000000000",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.IdentityProviders.PostAsync(requestBody);
 
 

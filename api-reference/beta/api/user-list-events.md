@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -25,6 +25,8 @@ There are two scenarios where an app can get events in another user's calendar:
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Support various time zones
 
 For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.
@@ -43,7 +45,7 @@ find out the time zone used when the event was created.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
@@ -66,7 +68,11 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+> [!NOTE]
+> You can't use the `$filter` parameter to filter on the **recurrence** property.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -75,13 +81,13 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-## Example
-##### Request 1
+## Examples
+### Example 1: Get all user's events
 The first example gets all the user's events. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
@@ -89,6 +95,7 @@ The first example gets all the user's events. It specifies the following:
 
 The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,24 +111,28 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-events-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-events-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -130,8 +141,8 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response 1
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+#### Response
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -186,7 +197,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -197,14 +208,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }
@@ -212,10 +223,12 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 }
 ```
 
-##### Request 2
-The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
+### Example 2: Get the body propery of the message
+The following example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -231,24 +244,28 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-in-text-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-in-text-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-events-in-text-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-events-in-text-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-in-text-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-events-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-events-in-text-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-in-text-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -257,8 +274,8 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### Response 2
-Here is an example of the response. The **body** property is returned in text format.
+#### Response
+The following example shows the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",

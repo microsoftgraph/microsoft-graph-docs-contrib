@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	parentReference = @{
@@ -14,6 +14,6 @@ $params = @{
 	name = "contoso plan (copy).txt"
 }
 
-Copy-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```

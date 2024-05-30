@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackage accessPackage = new AccessPackage();
-accessPackage.displayName = "sales reps";
-accessPackage.description = "outside sales representatives";
-accessPackage.isHidden = false;
+accessPackage.setDisplayName("sales reps");
+accessPackage.setDescription("outside sales representatives");
+accessPackage.setIsHidden(false);
 AccessPackageCatalog catalog = new AccessPackageCatalog();
-catalog.id = "66584aae-98bb-48cc-9458-7bee5d2a6577";
-accessPackage.catalog = catalog;
+catalog.setId("66584aae-98bb-48cc-9458-7bee5d2a6577");
+accessPackage.setCatalog(catalog);
+AccessPackage result = graphClient.identityGovernance().entitlementManagement().accessPackages().post(accessPackage);
 
-graphClient.identityGovernance().entitlementManagement().accessPackages()
-	.buildRequest()
-	.post(accessPackage);
 
 ```

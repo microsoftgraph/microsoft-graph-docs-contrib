@@ -1,9 +1,9 @@
 ---
 title: "azureAdPopTokenAuthentication resource type"
-description: "Defines the Azure AD Proof Of Possession (PoP) used to authenticate with a workflow extension."
+description: "Defines the Microsoft Entra Proof Of Possession (PoP) used to authenticate with a workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,17 +11,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app.
+
+Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app with a [accessPackageAssignmentRequestWorkflowExtensions](../resources/accessPackageAssignmentRequestWorkflowExtension.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accessPackageAssignmentWorkflowExtension.md) object.
+
 
 Inherits from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
+
 None.
 
 ## Relationships
+
 None.
 
+
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

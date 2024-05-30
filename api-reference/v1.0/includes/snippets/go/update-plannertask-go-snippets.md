@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
@@ -27,7 +27,7 @@ configuration := &graphplanner.PlannerTaskItemRequestBuilderPatchRequestConfigur
 requestBody := graphmodels.NewPlannerTask()
 assignments := graphmodels.NewPlannerAssignments()
 additionalData := map[string]interface{}{
-"fbab97d0-4932-4511-b675-204639209557" := graphmodels.New()
+"fbab97d0-4932-4511-b675-204639209557" := graphmodels.NewPlannerAssignment()
 orderHint := "N9917 U2883!"
 "fbab97d0-4932-4511-b675-204639209557".SetOrderHint(&orderHint) 
 	assignments.Set"fbab97d0-4932-4511-b675-204639209557"("fbab97d0-4932-4511-b675-204639209557")
@@ -44,7 +44,8 @@ appliedCategories.SetCategory4(&category4)
 appliedCategories.SetAdditionalData(additionalData)
 requestBody.SetAppliedCategories(appliedCategories)
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tasks, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

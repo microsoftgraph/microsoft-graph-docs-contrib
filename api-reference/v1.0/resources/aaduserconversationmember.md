@@ -1,9 +1,9 @@
 ---
 title: "aadUserConversationMember resource type"
-description: "Represents Azure Active Directory user in a chat or channel."
+description: "Represents Microsoft Entra user in a chat or channel."
 ms.localizationpriority: high
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md).
+Represents a Microsoft Entra user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md).
 This type inherits from [conversationMember](conversationmember.md).
 
 ## Methods
@@ -29,9 +29,9 @@ This type inherits from [conversationMember](conversationmember.md).
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
-|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.|
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
-|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.| 
+|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.|
 
 ## Properties
 
@@ -40,8 +40,8 @@ This type inherits from [conversationMember](conversationmember.md).
 |displayName| string | The display name of the user. |
 |email| string  | The email address of the user. |
 |id|String| Read-only. Unique ID of the user.|
-|roles| string collection | The roles for that user. |
-|tenantId| string  | TenantId which the Azure AD user belongs to. |
+|roles| string collection | The roles of the user such as owner, member, or guest. |
+|tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
 |userId| string | The guid of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "displayName" : "string",
   "email" : "string",
-  "id": "string (identifier)", 
+  "id": "string (identifier)",
   "roles" : ["string"],
   "tenantId": "string",
   "userId" : "string",
@@ -82,4 +82,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

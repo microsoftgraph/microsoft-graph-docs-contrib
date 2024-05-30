@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceConfigurationDeviceStateSummary deviceConfigurationDeviceStateSummary = new DeviceConfigurationDeviceStateSummary();
-deviceConfigurationDeviceStateSummary.unknownDeviceCount = 2;
-deviceConfigurationDeviceStateSummary.notApplicableDeviceCount = 8;
-deviceConfigurationDeviceStateSummary.compliantDeviceCount = 4;
-deviceConfigurationDeviceStateSummary.remediatedDeviceCount = 5;
-deviceConfigurationDeviceStateSummary.nonCompliantDeviceCount = 7;
-deviceConfigurationDeviceStateSummary.errorDeviceCount = 0;
-deviceConfigurationDeviceStateSummary.conflictDeviceCount = 3;
+deviceConfigurationDeviceStateSummary.setOdataType("#microsoft.graph.deviceConfigurationDeviceStateSummary");
+deviceConfigurationDeviceStateSummary.setUnknownDeviceCount(2);
+deviceConfigurationDeviceStateSummary.setNotApplicableDeviceCount(8);
+deviceConfigurationDeviceStateSummary.setCompliantDeviceCount(4);
+deviceConfigurationDeviceStateSummary.setRemediatedDeviceCount(5);
+deviceConfigurationDeviceStateSummary.setNonCompliantDeviceCount(7);
+deviceConfigurationDeviceStateSummary.setErrorDeviceCount(0);
+deviceConfigurationDeviceStateSummary.setConflictDeviceCount(3);
+DeviceConfigurationDeviceStateSummary result = graphClient.deviceManagement().deviceConfigurationDeviceStateSummaries().patch(deviceConfigurationDeviceStateSummary);
 
-graphClient.deviceManagement().deviceConfigurationDeviceStateSummaries()
-	.buildRequest()
-	.patch(deviceConfigurationDeviceStateSummary);
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationSettingDefinition resource type"
-description: "Not yet documented"
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationsettingdefinition Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -38,9 +38,9 @@ Not yet documented
 |offsetUri|String|Offset CSP Path from Base|
 |rootDefinitionId|String|Root setting definition id if the setting is a child setting.|
 |categoryId|String|Specify category in which the setting is under. Support $filters.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicate setting type for the setting. Possible values are: configuration, compliance, reusableSetting. Each setting usage has separate API end-point to call. Possible values are: `none`, `configuration`, `compliance`, `unknownFutureValue`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicate setting type for the setting. Possible values are: configuration, compliance, reusableSetting. Each setting usage has separate API end-point to call. Possible values are: `none`, `configuration`, `compliance`, `unknownFutureValue`, `inventory`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: default, dropdown, smallTextBox, largeTextBox, toggle, multiheaderGrid, contextPane. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`, `unknownFutureValue`.|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: none, settingsCatalog, template. Possible values are: `none`, `settingsCatalog`, `template`, `unknownFutureValue`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: none, settingsCatalog, template. Possible values are: `none`, `settingsCatalog`, `template`, `unknownFutureValue`, `inventoryCatalog`.|
 |referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information.|
 |id|String|Identifier for item|
 |description|String|Description of the setting.|

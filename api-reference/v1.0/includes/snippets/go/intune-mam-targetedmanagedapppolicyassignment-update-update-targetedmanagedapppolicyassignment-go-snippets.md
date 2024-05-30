@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,16 +15,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewTargetedManagedAppPolicyAssignment()
 target := graphmodels.NewConfigurationManagerCollectionAssignmentTarget()
 collectionId := "Collection Id value"
 target.SetCollectionId(&collectionId) 
 requestBody.SetTarget(target)
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByAssignmentId("targetedManagedAppPolicyAssignment-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+assignments, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByTargetedManagedAppPolicyAssignmentId("targetedManagedAppPolicyAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

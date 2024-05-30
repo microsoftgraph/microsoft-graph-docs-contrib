@@ -2,8 +2,9 @@
 title: "List authenticationMethodModes"
 description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -13,15 +14,14 @@ Namespace: microsoft.graph
 
 Get a list of all supported authentication methods, or all supported authentication method combinations as a list of **authenticationMethodModes** objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+<!-- { "blockType": "permissions", "name": "authenticationstrengthroot_list_authenticationmethodmodes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationstrengthroot-list-authenticationmethodmodes-permissions.md)]
 
 [!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
@@ -52,10 +52,10 @@ This method does not support OData query parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Retrieve authenticationMethodModes objects and their descriptions
 
 #### Request
-The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+The following example shows a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,16 +82,20 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationSt
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationmethodmodedetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationmethodmodedetail-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-authenticationmethodmodedetail-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationmethodmodedetail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-authenticationmethodmodedetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationmethodmodedetail-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationmethodmodedetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -105,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationSt
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -202,7 +206,7 @@ Content-Type: application/json
 ### Example 2: Retrieve the allowed authentication combinations
 
 #### Request
-The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
+The following example shows a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -218,16 +222,20 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationSt
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationcombinations-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-authenticationcombinations-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationcombinations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -241,7 +249,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationSt
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

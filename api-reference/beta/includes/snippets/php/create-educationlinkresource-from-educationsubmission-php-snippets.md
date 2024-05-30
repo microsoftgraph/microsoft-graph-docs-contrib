@@ -5,23 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationSubmissionResource;
+use Microsoft\Graph\Beta\Generated\Models\EducationLinkResource;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationSubmissionResource();
 $resource = new EducationLinkResource();
 $resource->setDisplayName('Wikipedia');
-
 $resource->setLink('https://en.wikipedia.org/wiki/Main_Page');
-
-$resource->set@odatatype('#microsoft.graph.educationLinkResource');
-
-
+$resource->setOdataType('#microsoft.graph.educationLinkResource');
 $requestBody->setResource($resource);
 
-
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->submissions()->bySubmissionId('educationSubmission-id')->resources()->post($requestBody);
-
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->submissions()->byEducationSubmissionId('educationSubmission-id')->resources()->post($requestBody)->wait();
 
 ```

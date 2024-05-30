@@ -1,14 +1,14 @@
 ---
 title: "Education rubric overview"
-description: "Rubrics are an effective and widely-used way of grading assignments, and the education API in Microsoft Graph supports them."
+description: "Rubrics are an effective and widely used way of grading assignments, and the education API in Microsoft Graph supports them."
 author: "mmast-msft"
 ms.localizationpriority: high
-ms.prod: "education"
+ms.subservice: "education"
 ---
 
 # Education rubric overview
 
-Rubrics are an effective and widely-used way of grading assignments, and the education API in Microsoft Graph supports them.
+Rubrics are an effective and widely used way of grading assignments, and the education API in Microsoft Graph supports them.
 
 A grading rubric is a matrix of *qualities*, *levels*, and *criteria*, as follows:
 
@@ -21,7 +21,7 @@ An example of a grading rubric might be:
 
 | &nbsp;               | Good                                                              | Poor                                                      |
 |:---------------------|:------------------------------------------------------------------|:----------------------------------------------------------|
-| Argument             | The essay's argument is persuasive.                               | The essay's argument does not make sense.                 |
+| Argument             | The essay's argument is persuasive.                               | The essay's argument doesn't make sense.                 |
 | Spelling and grammar | The essay uses proper spelling and grammar with few or no errors. | The essay has numerous errors in spelling and/or grammar. |
 
 Grading using a rubric involves selecting one *level* for each *quality* in the rubric.
@@ -30,7 +30,7 @@ A rubric *may* have points associated with each level, and a weight associated w
 
 | &nbsp;                           | Good (2 points)                                                   | Poor (1 point)                                            |
 |:---------------------------------|:------------------------------------------------------------------|:----------------------------------------------------------|
-| Argument (weight 50)             | The essay's argument is persuasive.                               | The essay's argument does not make sense.                 |
+| Argument (weight 50)             | The essay's argument is persuasive.                               | The essay's argument doesn't make sense.                 |
 | Spelling and grammar (weight 50) | The essay uses proper spelling and grammar with few or no errors. | The essay has numerous errors in spelling and/or grammar. |
 
 ## API reference

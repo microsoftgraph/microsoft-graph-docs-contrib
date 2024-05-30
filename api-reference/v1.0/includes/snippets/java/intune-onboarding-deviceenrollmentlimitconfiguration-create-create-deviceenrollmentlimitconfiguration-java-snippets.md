@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceEnrollmentLimitConfiguration deviceEnrollmentConfiguration = new DeviceEnrollmentLimitConfiguration();
-deviceEnrollmentConfiguration.displayName = "Display Name value";
-deviceEnrollmentConfiguration.description = "Description value";
-deviceEnrollmentConfiguration.priority = 8;
-deviceEnrollmentConfiguration.version = 7;
-deviceEnrollmentConfiguration.limit = 5;
+deviceEnrollmentConfiguration.setOdataType("#microsoft.graph.deviceEnrollmentLimitConfiguration");
+deviceEnrollmentConfiguration.setDisplayName("Display Name value");
+deviceEnrollmentConfiguration.setDescription("Description value");
+deviceEnrollmentConfiguration.setPriority(8);
+deviceEnrollmentConfiguration.setVersion(7);
+deviceEnrollmentConfiguration.setLimit(5);
+DeviceEnrollmentConfiguration result = graphClient.deviceManagement().deviceEnrollmentConfigurations().post(deviceEnrollmentConfiguration);
 
-graphClient.deviceManagement().deviceEnrollmentConfigurations()
-	.buildRequest()
-	.post(deviceEnrollmentConfiguration);
 
 ```

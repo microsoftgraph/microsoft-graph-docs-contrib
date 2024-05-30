@@ -2,8 +2,8 @@
 title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: non-product-specific
+author: "SuryaLashmiS"
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ The following user resources are supported:
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
-As well as the following group resources:
+The following group resources are supported:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
@@ -30,6 +30,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
 instance, and include the properties of the new resource instance _and extended property_ in the request body.
-Note that some resources support creation in more than one way. For more information on creating these resource instances,
+Some resources support creation in more than one way. For more information on creating these resource instances,
 see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
@@ -93,7 +95,7 @@ POST /groups/{id}/conversations
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
-**Note** You cannot create an extended property in an existing group post.
+**Note** You can't create an extended property in an existing group post.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -122,7 +124,7 @@ PATCH /groups/{id}/events/{id}
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
@@ -157,7 +159,7 @@ the new or existing instance but not the new extended property. To see the newly
 created extended property, [get the instance expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
 
 When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor
-the extended property. You cannot create an extended property in an existing group post.
+the extended property. You can't create an extended property in an existing group post.
 
 
 ## Examples
@@ -165,16 +167,17 @@ the extended property. You cannot create an extended property in an existing gro
 #### Request
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally
-include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property.
+include for a new event, the request body includes the **multiValueExtendedProperties** collection that contains one extended property.
 The request body includes the following for that multi-value extended property:
 
 - **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`.
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
 
 
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1" 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1"
 } -->
 
 ```http
@@ -219,6 +222,40 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -318,7 +355,7 @@ Content-type: application/json
   "organizer": {
       "emailAddress": {
           "name": "MOD Administrator",
-          "address": "admin@M365x39866865.OnMicrosoft.com"
+          "address": "admin@contoso.com"
       }
   },
   "onlineMeeting": null
@@ -327,7 +364,7 @@ Content-type: application/json
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
-The response does not include any newly created extended properties.
+The response doesn't include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
 
@@ -342,9 +379,10 @@ extended property:
 - **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2" 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2"
 } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_as77AACHsLrBBBA=
@@ -360,10 +398,44 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body,
-similar to the response from [updating a message](../api/message-update.md). The response does not
+similar to the response from [updating a message](../api/message-update.md). The response doesn't
 include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).

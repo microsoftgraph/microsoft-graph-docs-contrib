@@ -3,7 +3,7 @@ title: "androidDeviceOwnerSystemUpdateFreezePeriod resource type"
 description: "Represents one item in the list of freeze periods for Android Device Owner system updates"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

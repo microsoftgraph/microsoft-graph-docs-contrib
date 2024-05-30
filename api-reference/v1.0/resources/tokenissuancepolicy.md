@@ -3,7 +3,7 @@ title: "tokenIssuancePolicy resource type"
 description: "Represents the policy to specify the characteristics of SAML tokens issued by Azure AD."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Represents the policy to specify the characteristics of SAML tokens issued by Azure AD. You can use token-issuance policies to:
+Represents the policy to specify the characteristics of SAML tokens issued by Microsoft Entra ID. You can use token-issuance policies to:
 
 - Set signing options
 - Set signing algorithm
@@ -25,12 +25,12 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
-| [Create tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Create a tokenIssuancePolicy object. |
-| [Get tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of a tokenIssuancePolicy object. |
-| [Update tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | None | Update a tokenIssuancePolicy object. |
-| [Delete tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | None | Delete a tokenIssuancePolicy object. |
-| [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [List](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
+| [Create](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Create a tokenIssuancePolicy object. |
+| [Get](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of a tokenIssuancePolicy object. |
+| [Update](../api/tokenissuancepolicy-update.md) | None | Update a tokenIssuancePolicy object. |
+| [Delete](../api/tokenissuancepolicy-delete.md) | None | Delete a tokenIssuancePolicy object. |
+| [List applied to applications](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
 
 ## Properties
 
@@ -58,11 +58,11 @@ The properties form the JSON object that represents a token issuance policy. Thi
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| EmitSamlNameFormat | Boolean | If selected, Azure Active Directory will add an additional attribute called "NameFormat" that describes the format of the name to restricted, core, and optional claims for this application. [Learn more](/azure/active-directory/develop/reference-claims-mapping-policy-type#claim-sets) |
+| EmitSamlNameFormat | Boolean | If selected, Microsoft Entra ID will add an additional attribute called "NameFormat" that describes the format of the name to restricted, core, and optional claims for this application. [Learn more](/azure/active-directory/develop/reference-claims-mapping-policy-type#claim-sets) |
 |SamlTokenVersion|String|Version of the SAML token. Supported values are: `1.1`, `2.0`. |
-|SigningAlgorithm|String|Signing algorithm use by Azure AD to sign the SAML token. Supported values are: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
+|SigningAlgorithm|String|Signing algorithm use by Microsoft Entra ID to sign the SAML token. Supported values are: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
 |Version|Integer|Set value of 1. Required.|
-|TokenResponseSigningPolicy|String|Represents the certificate signing options available in Azure AD. Supported values are: `ResponseOnly`, `TokenOnly`, `ResponseAndToken`.  |
+|TokenResponseSigningPolicy|String|Represents the certificate signing options available in Microsoft Entra ID. Supported values are: `ResponseOnly`, `TokenOnly`, `ResponseAndToken`.  |
 
 
 ## Relationships
@@ -103,4 +103,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

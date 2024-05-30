@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailFileAssessmentRequest"
-	recipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+	recipientEmail = "tifc@contoso.com"
 	expectedAssessment = "block"
 	category = "malware"
 	contentData = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 
-New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
+New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
 
 ```

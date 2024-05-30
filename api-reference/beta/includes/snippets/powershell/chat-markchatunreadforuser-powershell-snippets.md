@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	user = @{
@@ -14,6 +14,6 @@ $params = @{
 	lastMessageReadDateTime = [System.DateTime]::Parse("2021-05-27T22:13:01.577Z")
 }
 
-Invoke-MgMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
+Invoke-MgBetaMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
 
 ```

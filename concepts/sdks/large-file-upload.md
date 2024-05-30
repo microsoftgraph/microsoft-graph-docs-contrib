@@ -17,13 +17,17 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="LargeFileUploadSnippet":::
 
-## [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
-
 ## [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="LargeFileUploadSnippet":::
+
+## [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="LargeFileUploadSnippet":::
+
+## [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
 
 ---
 
@@ -35,14 +39,17 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="ResumeSnippet":::
 
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="ResumeSnippet":::
+
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="ResumeSnippet":::
-
-### [Java](#tab/java)
-
-> [!NOTE]
-> The Java SDK does not currently support resuming in-progress downloads.
 
 ---
 
@@ -52,13 +59,17 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="UploadAttachmentSnippet":::
 
-### [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="UploadAttachmentSnippet":::
-
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="UploadAttachmentSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="UploadAttachmentSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="UploadAttachmentSnippet":::
 
 ---
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgIdentityGovernanceRoleManagementAlertConfiguration -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition" 
+Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition" 
 
 ```

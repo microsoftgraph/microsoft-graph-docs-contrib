@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new DeviceManagementExportJob
 {
@@ -25,6 +26,8 @@ var requestBody = new DeviceManagementExportJob
 	RequestDateTime = DateTimeOffset.Parse("2017-01-01T00:03:07.1589002-08:00"),
 	ExpirationDateTime = DateTimeOffset.Parse("2016-12-31T23:57:57.2481234-08:00"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.Reports.ExportJobs.PostAsync(requestBody);
 
 

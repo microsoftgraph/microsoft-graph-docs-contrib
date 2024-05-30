@@ -17,16 +17,18 @@ const deviceRegistrationPolicy = {
     userDeviceQuota: 50,
     multiFactorAuthConfiguration: '0',
     azureADRegistration: {
-        appliesTo: '1',
-        isAdminConfigurable: false,
-        allowedUsers: [],
-        allowedGroups: []
+        isAdminConfigurable: true,
+        allowedToRegister: {
+            '@odata.type': '#microsoft.graph.enumeratedDeviceRegistrationMembership',
+            users: [],
+            groups: ['3c8ef067-8b96-44de-b2ae-557dfa0f97a0']
+      }
     },
     azureADJoin: {
-        appliesTo: '1',
         isAdminConfigurable: true,
-        allowedUsers: [],
-        allowedGroups: []
+        allowedToJoin: {
+            '@odata.type': '#microsoft.graph.allDeviceRegistrationMembership'
+        }
     },
     localAdminPassword: {
       isEnabled: true

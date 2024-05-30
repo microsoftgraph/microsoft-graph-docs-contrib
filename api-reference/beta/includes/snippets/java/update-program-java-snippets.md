@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Program program = new Program();
-program.displayName = "testprogram3 new name";
+program.setDisplayName("testprogram3 new name");
+Program result = graphClient.programs().byProgramId("{program-id}").patch(program);
 
-graphClient.programs("7e59d237-2fb0-4e5d-b7bb-d4f9f9129213")
-	.buildRequest()
-	.patch(program);
 
 ```

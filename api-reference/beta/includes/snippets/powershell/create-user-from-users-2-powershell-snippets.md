@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	accountEnabled = $true
 	displayName = "Adele Vance"
 	mailNickname = "AdeleV"
-	userPrincipalName = "AdeleV@contoso.onmicrosoft.com"
+	userPrincipalName = "AdeleV@contoso.com"
 	passwordProfile = @{
 		forceChangePasswordNextSignIn = $true
 		password = "xWwvJ]6NMw+bWH-d"
 	}
 }
 
-New-MgUser -BodyParameter $params
+New-MgBetaUser -BodyParameter $params
 
 ```

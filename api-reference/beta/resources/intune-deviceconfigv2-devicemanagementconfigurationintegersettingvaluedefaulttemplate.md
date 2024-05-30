@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationIntegerSettingValueDefaultTemplate resource
 description: "Integer Setting Value Default Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

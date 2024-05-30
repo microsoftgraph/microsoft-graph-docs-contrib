@@ -3,7 +3,7 @@ title: "sourceSystemDefinition resource type"
 description: "Represents an external data source in the real world."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -19,11 +19,11 @@ Represents an external data source in the real world. The data that is ingested 
 
 | Method                                                                                | Return type                                                                                              | Description                                                                                                         |
 | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| [Create sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-post.md)   | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Create a new [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                               |
-| [List sourceSystemDefinitions](../api/industrydata-sourcesystemdefinition-list.md)    | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) collection | Get a list of the [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) objects and their properties.    |
-| [Get sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-get.md)       | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Read the properties and relationships of a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object. |
-| [Update sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-update.md) | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Update the properties of a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                 |
-| [Delete sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-delete.md) | None                                                                                                     | Delete a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                                   |
+| [Create](../api/industrydata-sourcesystemdefinition-post.md)   | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Create a new [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                               |
+| [List](../api/industrydata-sourcesystemdefinition-list.md)    | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) collection | Get a list of the [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) objects and their properties.    |
+| [Get](../api/industrydata-sourcesystemdefinition-get.md)       | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Read the properties and relationships of a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object. |
+| [Update](../api/industrydata-sourcesystemdefinition-update.md) | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)            | Update the properties of a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                 |
+| [Delete](../api/industrydata-sourcesystemdefinition-delete.md) | None                                                                                                     | Delete a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) object.                                   |
 
 ## Properties
 

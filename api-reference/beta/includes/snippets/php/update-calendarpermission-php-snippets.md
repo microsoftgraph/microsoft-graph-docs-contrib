@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CalendarPermission;
+use Microsoft\Graph\Beta\Generated\Models\CalendarRoleType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CalendarPermission();
 $requestBody->setRole(new CalendarRoleType('write'));
 
-
-
-$result = $graphServiceClient->users()->byUserId('user-id')->calendar()->calendarPermissions()->byCalendarPermissionId('calendarPermission-id')->patch($requestBody);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->calendar()->calendarPermissions()->byCalendarPermissionId('calendarPermission-id')->patch($requestBody)->wait();
 
 ```

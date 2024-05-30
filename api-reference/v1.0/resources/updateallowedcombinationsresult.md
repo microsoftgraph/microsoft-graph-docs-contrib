@@ -2,8 +2,9 @@
 title: "updateAllowedCombinationsResult resource type"
 description: "The results of an attempt to update an authentication strength's allowed authentication method combinations."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph to create and manage connections.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -33,10 +33,10 @@ Your connection can exist in one of the following states.
 
 | State             | Description                |
 |-------------------|----------------------------|
-| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet. |
+| **Draft**         | An empty connection is provisioned. None of the data source, schema, or settings are configured. |
 | **Ready**         | The connection is provisioned with registered schema and is ready for ingestion. |
 | **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
-| **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
+| **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you can't add more items until you exit the state. |
 
 The following table specifies which operations are available in each state.
 
@@ -55,7 +55,7 @@ The following table specifies which operations are available in each state.
 | Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-post-schema) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index. 
+A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-patch-schema) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index.
 
 The first step for an application to add items to the search index is to create a connection.
 
@@ -64,70 +64,75 @@ The first step for an application to add items to the search index is to create 
 Before an application can add items to the search index, it must create and configure a connection:
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
-1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+1. [Register a schema](/graph/api/externalconnectors-externalconnection-patch-schema) to define the fields that will be included in the index.
    > **Note:** For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
-
-## Enable content experiences
-A Microsoft Graph connector can integrate with Microsoft 365 experiences beyond Microsoft Search.
-
-To enable one or more content experiences, set the value of the **enabledContentExperiences** property to the values that represent those content experiences when you create the connection. The supported values are listed in the following table.
-
-| enabledContentExperiences value | Description |
-|-|-|
-| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. |
-| compliance | Allows your content to be visible to the Microsoft Purview advanced eDiscovery solution. For details about advanced eDiscovery solution & licensing requirements, see [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery).|
-
-The following example shows how to update a connection to enable both the search and compliance content experiences.
-
-```http
-PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
-Content-Type: application/json
-
-{
-	"enabledContentExperiences": "search, compliance"
-}
-```
 
 ## Connection settings
 You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
 
 ### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
-
-### Compliance settings
-Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. The following example shows the results of an eDiscovery search review of an Azure DevOps item.
-
-![Screenshot of an eDiscovery search review result of an Azure DevOps item](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
-
-> [!IMPORTANT]
-> The Adaptive Card format is used to render results in eDiscovery. Unlike the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. 
-
-When you configure the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/), select 1.2 as the target version.
-
-![Screenshot of the Adaptive Card Designer with version 1.2 highlighted](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
-
-Note that the following limitations apply to Adaptive Cards in the eDiscovery result templates:
-- Markdown is not supported. 
-- Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
-- Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout is applied to the search result and displayed on the results page.
 
 ### Activity settings
-In activity settings, you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a given URL detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
+In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect share activity, which enables your content to be recommended to users who interact with that content the most. To do this, add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase). This allows a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem).
 
-The following image shows how your item might appear within recommendation experiences across the Microsoft 365 suite. 
+The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
+The following example shows the **activitySettings** payload with a complete **urlToItemResolvers** section. For example, when someone shares the link `https://contoso.com/items/39483948/`, it represents an **externalItem** that was ingested through a Microsoft Graph connection. In this example, the shared link represents an **externalItem** with an **itemId** of `id_39483948`. This connection specifies how to map from the URL to the **itemId** of that **externalItem**. In this example, this connection has an **id** of `contosohr`.
+
+Update the activity settings by sending a patch request on the connection.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
+```
+The following **activitySettings** payload is sent with the patch request.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.externalConnectors.activitySettings",
+  "urlToItemResolvers": [
+    {
+        "@odata.type": "#microsoft.graph.externalConnectors.itemIdResolver",
+          "itemId": "id_{myItemId}",  
+          "priority": 1,
+          "urlMatchInfo": {
+            "@odata.type": "microsoft.graph.externalConnectors.urlMatchInfo",
+            "baseUrls": [
+              "https://contoso.com"
+            ],
+            "urlPattern": "/items/(?<myItemId>[0-9]+)"
+          }
+    }
+  ]
+}
+```
+In this example, the **itemId** field specified how to form the ID of the external item that the URL represents. The **itemId** is referenced in **urlPattern** (which is within **urlMatchInfo**) to extract `39483948` as the ID of the **externalItem**.
+
+You can supply a list of up to eight **itemIdResolver** resources in the **urlToItemResolvers** resource for your activity settings payload. For each of these **urlMatchInfo** resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer from one to eight for the **priority** property, and a **urlMatchInfo** object that contains a list of base URLs and a regular expression.
+
+When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL isn't in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
+
+To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](https://learn.microsoft.com/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-1.0).
 ## Update a connection
 
 To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
 
 ## Delete a connection
 
-To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/resources/externalconnectors-externalconnection-delete).
+To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete).
 
 ## Next steps
 
 - [Register the connection schema](connecting-external-content-manage-schema.md)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/connectors-api-overview)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Chat;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Chat();
 $requestBody->setTopic('Group chat title update');
 
-
-
-$result = $graphServiceClient->chats()->byChatId('chat-id')->patch($requestBody);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->patch($requestBody)->wait();
 
 ```

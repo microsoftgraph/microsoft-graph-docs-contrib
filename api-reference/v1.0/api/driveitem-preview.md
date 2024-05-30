@@ -2,8 +2,8 @@
 title: "driveItem: preview"
 description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
-author: "JeremyKelley"
+ms.subservice: "sharepoint"
+author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
 
@@ -19,16 +19,14 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 
 [createLink]: driveitem-createlink.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API.
-To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)
-|:---------------------------------------|:-------------------------------------------
-| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-| Delegated (personal Microsoft account) | Not supported.
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+<!-- { "blockType": "permissions", "name": "driveitem_preview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-preview-permissions.md)]
 
 ## HTTP request
 
@@ -42,6 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/preview
 POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 

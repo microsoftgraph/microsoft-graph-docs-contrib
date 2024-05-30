@@ -3,7 +3,7 @@ title: "Join the Microsoft Partner Network"
 description: "Learn how to join the Microsoft Partner Network as a first step to setting up an EDU tenant to build and test solutions using the Microsoft Graph education API."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -33,14 +33,14 @@ Use the following steps to join Microsoft Partner Network:
 
 You can now access [Partner Center](https://partner.microsoft.com/) with your Microsoft Partner Network account.
 
-## Next steps
+## Set up your development environment
 
 Set up your development environment. You can create two types of EDU tenants:
 
 - [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
 - [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
 
-## See also
+## Related content
 
 - [Partner with Microsoft](/partner-center/mpn-overview)
 - [What is the Microsoft Partner Network?](/partner-center/mpn-create-a-partner-center-account)

@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teamwork\TeamTemplates\TeamTemplatesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TeamTemplatesRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -16,7 +18,6 @@ $queryParameters->filter = "definitions/any(a:a/languageTag eq 'en-US')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamwork()->teamTemplates()->get($requestConfiguration);
-
+$result = $graphServiceClient->teamwork()->teamTemplates()->get($requestConfiguration)->wait();
 
 ```

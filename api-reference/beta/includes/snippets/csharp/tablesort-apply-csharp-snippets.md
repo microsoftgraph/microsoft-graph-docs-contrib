@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Sort.Apply;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Sort.Apply.ApplyPostRequestBody
+var requestBody = new ApplyPostRequestBody
 {
 	Fields = new List<WorkbookSortField>
 	{
@@ -29,6 +31,8 @@ var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Table
 	MatchCase = true,
 	Method = "method-value",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort.Apply.PostAsync(requestBody);
 
 

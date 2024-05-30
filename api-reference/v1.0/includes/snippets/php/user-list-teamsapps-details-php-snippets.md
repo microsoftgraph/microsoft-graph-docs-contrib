@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Teamwork\InstalledApps\InstalledAppsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new InstalledAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = InstalledAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->expand = ["teamsAppDefinition"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->users()->byUserId('user-id')->teamwork()->installedApps()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->teamwork()->installedApps()->get($requestConfiguration)->wait();
 
 ```

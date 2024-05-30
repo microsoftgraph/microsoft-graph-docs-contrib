@@ -3,7 +3,7 @@ title: "Update pfxRecryptionRequest"
 description: "Update the properties of a pfxRecryptionRequest object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,18 +50,18 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|deviceId|Guid|Not yet documented|
-|profileId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|deviceKeyThumbprint|String|Not yet documented|
-|status|Int32|Not yet documented|
-|sourceType|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|eTag|String|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|deviceId|Guid||
+|profileId|Guid||
+|thumbprint|String||
+|deviceKeyThumbprint|String||
+|status|Int32||
+|sourceType|Int32||
+|createdTime|DateTimeOffset||
+|lastModifiedTime|DateTimeOffset||
+|isDeleted|Boolean||
+|eTag|String||
 
 
 

@@ -2,8 +2,9 @@
 title: "conditionalAccessUsers resource type"
 description: "Represents users, groups, and roles included in and excluded from the policy scope."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

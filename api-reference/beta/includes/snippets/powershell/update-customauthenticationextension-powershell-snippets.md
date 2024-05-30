@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -19,9 +19,15 @@ $params = @{
 		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
 	}
 	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
 	)
 }
 
-Update-MgIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
 
 ```

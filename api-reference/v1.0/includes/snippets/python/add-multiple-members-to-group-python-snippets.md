@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.group import Group
 
-request_body = Group()
-additional_data = [
-'members@odata_bind' => ['https://graph.microsoft.com/v1.0/directoryObjects/{id}', 'https://graph.microsoft.com/v1.0/directoryObjects/{id}', 'https://graph.microsoft.com/v1.0/directoryObjects/{id}', ],
-];
-request_body.additional_data(additional_data)
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Group(
+	additional_data = {
+			"members@odata_bind" : [
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+			],
+	}
+)
 
-
-
-
-result = await client.groups.by_group_id('group-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').patch(request_body)
 
 
 ```

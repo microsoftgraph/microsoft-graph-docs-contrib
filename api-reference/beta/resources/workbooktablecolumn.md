@@ -3,7 +3,7 @@ title: "workbookTableColumn resource type"
 description: "Represents a column in a table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a column in a table.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[workbookRange](workbookrange.md)|Gets the range object associated with the header row of the column.|
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|Gets the range object associated with the entire column.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|Gets the range object associated with the totals row of the column.|
-|[Delete](../api/tablecolumn-delete.md)|None|Deletes the column from the table.|
+|[Delete column](../api/tablecolumn-delete.md)|None|Deletes the column from the table.|
 |[List](../api/tablecolumn-list.md) | [workbookTableColumn](workbooktablecolumn.md) collection |Get tableColumn object collection. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[workbookTableColumn](workbooktablecolumn.md)|Gets a column based on its position in the collection.|
 |[Add](../api/tablecolumncollection-add.md)|[workbookTableColumn](workbooktablecolumn.md)|Adds a new column to the table.|
@@ -37,7 +37,7 @@ Represents a column in a table.
 |id|string|Returns a unique key that identifies the column within the table. Read-only.|
 |index|int|Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.|
 |name|string|Returns the name of the table column.|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -46,7 +46,7 @@ Represents a column in a table.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "externalMeetingRegistrant resource type"
 description: "Represents an external meeting registrant who has enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalMeetingRegistrants](../api/externalmeetingregistrant-list.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md) collection|Get a list of the [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects and their properties.|
-|[Create externalMeetingRegistrant](../api/externalmeetingregistrant-post.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md)|Read the properties and relationships of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
-|[Delete externalMeetingRegistrant](../api/externalmeetingregistrant-delete.md)|None|Delete an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
+|[List](../api/externalmeetingregistrant-list.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md) collection|Get a list of the [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects and their properties.|
+|[Create](../api/externalmeetingregistrant-post.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md)|Read the properties and relationships of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
+|[Delete](../api/externalmeetingregistrant-delete.md)|None|Delete an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
 
 ## Properties
 
@@ -31,8 +31,8 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 |:-----------|:-------|:-----------------------------------------------------------------------------|
 | id         | String | The unique identifier of the registrant in the external registration system. Inherited from [meetingRegistrantBase](../resources/meetingregistrantbase.md). |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Inherited from [meetingRegistrantBase](../resources/meetingregistrantbase.md). Read-only.          |
-| tenantId   | String | The tenant ID of this registrant if in Azure Active Directory.               |
-| userId     | String | The user ID of this registrant if in Azure Active Directory.                 |
+| tenantId   | String | The tenant ID of this registrant if in Microsoft Entra ID.               |
+| userId     | String | The user ID of this registrant if in Microsoft Entra ID.                 |
 
 ## JSON representation
 

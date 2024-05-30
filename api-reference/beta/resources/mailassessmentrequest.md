@@ -3,7 +3,7 @@ title: "mailAssessmentRequest resource type"
 description: "Used to create and retrieve a mail threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Used to create and retrieve a mail threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-When you create a mail threat assessment request, the mail should be received by the user specified in `recipientEmail`. Delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are requried to access the mail received by the user or shared by someone else.
+When you create a mail threat assessment request, the mail should be received by the user specified in `recipientEmail`. Delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are required to access the mail received by the user or shared by someone else.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Create a new mail assessment request by posting a **mailAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read the properties and relationships of a **mailAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Create a new mail assessment request by posting a **mailAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read the properties and relationships of a **mailAssessmentRequest** object. |
 
 
 ## Properties
@@ -45,11 +45,11 @@ When you create a mail threat assessment request, the mail should be received by
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` does not return this property unless you apply `$expand` on it.|
+|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` doesn't return this property unless you apply `$expand` on it.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

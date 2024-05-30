@@ -1,9 +1,10 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
-description: "Represents the namespace of the area to which the role permission belongs to."
+description: "Represents the namespace of the area to which the role permission belongs."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the namespace of the area or service such as Azure AD, Intune, and Exchange that defines role permissions.
+Represents the namespace of the area or service such as Microsoft Entra ID, Intune, and Exchange that defines role permissions.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRbacResourceNamespaces](../api/rbacapplicationmultiple-list-resourcenamespaces.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Get a list of the [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) objects and their properties.|
-|[Get unifiedRbacResourceNamespace](../api/unifiedrbacresourcenamespace-get.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Read the properties and relationships of an [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) object.|
+|[List](../api/rbacapplicationmultiple-list-resourcenamespaces.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Get a list of the [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) objects and their properties.|
+|[Get](../api/unifiedrbacresourcenamespace-get.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Read the properties and relationships of an [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -30,10 +31,10 @@ Represents the namespace of the area or service such as Azure AD, Intune, and Ex
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
+|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal is allowed to perform.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

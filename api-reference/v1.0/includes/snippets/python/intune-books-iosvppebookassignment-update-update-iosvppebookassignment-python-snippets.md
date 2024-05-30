@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_vpp_e_book_assignment import IosVppEBookAssignment
+from msgraph.generated.models.device_and_app_management_assignment_target import DeviceAndAppManagementAssignmentTarget
+from msgraph.generated.models.install_intent import InstallIntent
 
-request_body = IosVppEBookAssignment()
-request_body.@odata_type = '#microsoft.graph.iosVppEBookAssignment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target = DeviceAndAppManagementAssignmentTarget()
-target.@odata_type = 'microsoft.graph.deviceAndAppManagementAssignmentTarget'
+request_body = IosVppEBookAssignment(
+	odata_type = "#microsoft.graph.iosVppEBookAssignment",
+	target = DeviceAndAppManagementAssignmentTarget(
+		odata_type = "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+	),
+	install_intent = InstallIntent.Required,
+)
 
-
-request_body.target = target
-request_body.installintent(InstallIntent.Required('installintent.required'))
-
-
-
-
-result = await client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').assignments.by_assignment_id('managedEBookAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').assignments.by_managed_e_book_assignment_id('managedEBookAssignment-id').patch(request_body)
 
 
 ```

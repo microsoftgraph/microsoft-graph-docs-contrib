@@ -3,7 +3,7 @@ title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "bhartono"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -20,20 +20,17 @@ Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+<!-- { "blockType": "permissions", "name": "chat_get_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-get-members-permissions.md)]
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> The TeamsAppInstallation.Read.Chat and Chat.Manage.Chat pPermissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,17 +41,17 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/members/{membership-i
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 
@@ -82,24 +79,28 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conversation-member-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conversation-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-conversation-member-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-conversation-member-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-conversation-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -110,7 +111,7 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -134,7 +135,7 @@ Content-type: application/json
     "displayName": "John Doe",
     "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
-    "email": "johndoe@contoso.onmicrosoft.com",
+    "email": "johndoe@contoso.com",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```

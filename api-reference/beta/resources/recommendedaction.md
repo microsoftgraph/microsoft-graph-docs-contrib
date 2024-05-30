@@ -3,7 +3,7 @@ title: "recommendedAction resource type"
 description: "Represents recommended actions for a tenant based on the attack simulation and training campaign to improve its security posture."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ContentApproval;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContentApproval();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
-
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.contentApproval');
 $requestBody->setIsRevoked(true);
 
-
-
-$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicieId('updatePolicy-id')->complianceChanges()->byComplianceChangeId('complianceChange-id')->patch($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicyId('updatePolicy-id')->complianceChanges()->byComplianceChangeId('complianceChange-id')->patch($requestBody)->wait();
 
 ```

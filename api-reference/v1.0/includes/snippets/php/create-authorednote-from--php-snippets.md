@@ -5,21 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AuthoredNote;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthoredNote();
 $content = new ItemBody();
-$content->setContent('String');
-
+$content->setContent('Please take a look at the files tagged with follow up');
 $content->setContentType(new BodyType('text'));
-
-
 $requestBody->setContent($content);
 
-
-$result = $graphServiceClient->privacy()->subjectRightsRequests()->bySubjectRightsRequestId('subjectRightsRequest-id')->notes()->post($requestBody);
-
+$result = $graphServiceClient->privacy()->subjectRightsRequests()->bySubjectRightsRequestId('subjectRightsRequest-id')->notes()->post($requestBody)->wait();
 
 ```

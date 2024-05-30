@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	displayName = "John Smith"
 	identities = @(
 		@{
 			signInType = "userName"
-			issuer = "contoso.onmicrosoft.com"
+			issuer = "contoso.com"
 			issuerAssignedId = "johnsmith"
 		}
 		@{
 			signInType = "emailAddress"
-			issuer = "contoso.onmicrosoft.com"
+			issuer = "contoso.com"
 			issuerAssignedId = "jsmith@yahoo.com"
 		}
 		@{
@@ -32,6 +32,6 @@ $params = @{
 	passwordPolicies = "DisablePasswordExpiration"
 }
 
-New-MgUser -BodyParameter $params
+New-MgBetaUser -BodyParameter $params
 
 ```

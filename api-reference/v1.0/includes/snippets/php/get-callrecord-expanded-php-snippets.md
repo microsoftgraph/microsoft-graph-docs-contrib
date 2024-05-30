@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Communications\CallRecords\Item\CallRecordItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new CallRecordRequestBuilderGetRequestConfiguration();
-$queryParameters = CallRecordRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["sessions($expand=segments)"];
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new CallRecordItemRequestBuilderGetRequestConfiguration();
+$queryParameters = CallRecordItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["sessions(\$expand=segments)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->communications()->callRecords()->byCallRecordId('callRecord-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->communications()->callRecords()->byCallRecordId('callRecord-id')->get($requestConfiguration)->wait();
 
 ```

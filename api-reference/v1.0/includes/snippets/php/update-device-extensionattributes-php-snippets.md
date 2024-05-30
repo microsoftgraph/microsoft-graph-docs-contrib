@@ -5,25 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Device;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Device();
 $additionalData = [
-		'extensionAttributes' => $requestBody = new ExtensionAttributes();
-$		requestBody->setExtensionAttribute1('BYOD-Device');
-
-
-$requestBody->setExtensionAttributes($extensionAttributes);
-
+	'extensionAttributes' => [
+		'extensionAttribute1' => 'BYOD-Device',
+	],
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$result = $graphServiceClient->devices()->byDeviceId('device-id')->patch($requestBody);
-
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->patch($requestBody)->wait();
 
 ```

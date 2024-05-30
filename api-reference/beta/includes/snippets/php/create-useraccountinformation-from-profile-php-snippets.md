@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\UserAccountInformation;
+use Microsoft\Graph\Beta\Generated\Models\AllowedAudiences;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UserAccountInformation();
 $requestBody->setAllowedAudiences(new AllowedAudiences('organization'));
-
 $requestBody->setCountryCode('NO');
 
-
-
-$result = $graphServiceClient->me()->profile()->account()->post($requestBody);
-
+$result = $graphServiceClient->me()->profile()->account()->post($requestBody)->wait();
 
 ```

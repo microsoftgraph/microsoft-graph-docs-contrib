@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageCatalog;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageCatalog();
 $requestBody->setDisplayName('sales');
-
 $requestBody->setDescription('for employees working with sales and outside sales partners');
-
 $requestBody->setIsExternallyVisible(true);
 
-
-
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->post($requestBody);
-
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->post($requestBody)->wait();
 
 ```

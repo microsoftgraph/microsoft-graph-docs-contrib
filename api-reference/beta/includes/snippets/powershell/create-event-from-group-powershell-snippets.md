@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -26,7 +26,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "adelev@contoso.onmicrosoft.com"
+				address = "adelev@contoso.com"
 				name = "Adele Vance"
 			}
 			type = "required"
@@ -34,6 +34,6 @@ $params = @{
 	)
 }
 
-New-MgGroupEvent -GroupId $groupId -BodyParameter $params
+New-MgBetaGroupEvent -GroupId $groupId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
@@ -25,6 +25,6 @@ $params = @{
 	)
 }
 
-Update-MgBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
 ```

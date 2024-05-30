@@ -3,7 +3,7 @@ title: "servicePrincipalSignInActivity resource type"
 description: "Represents the service principal sign-in activity usage in a given tenant."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ Represents the service principal sign-in activity usage in a given tenant. This 
 
 | Method                                                                               | Return Type                                                                                 | Description                                                                   |
 | :----------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------- |
-| [List servicePrincipalSignInActivities](../api/reportroot-list-serviceprincipalsigninactivities.md) | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection | Get a list of [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) objects that contains sign-in activity information for service principals in an Azure Active Directory tenant.                    |
-| [Get servicePrincipalSignInActivity](../api/serviceprincipalsigninactivity-get.md)   | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md)            | Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object that contains sign-in activity information for a service principal in an Azure Active Directory tenant. |
+| [List](../api/reportroot-list-serviceprincipalsigninactivities.md) | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection | Get a list of [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) objects that contains sign-in activity information for service principals in a Microsoft Entra tenant.                    |
+| [Get](../api/serviceprincipalsigninactivity-get.md)   | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md)            | Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object that contains sign-in activity information for a service principal in a Microsoft Entra tenant. |
 
 ## Properties
 

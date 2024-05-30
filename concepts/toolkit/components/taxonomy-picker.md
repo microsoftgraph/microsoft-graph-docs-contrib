@@ -18,9 +18,19 @@ The component retrieves the first level terms that are present under a specified
 
 The following example shows the use of the `mgt-taxonomy-picker` component to select a term from a term set.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker--taxonomy-picker&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker--taxonomy-picker&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs).
+
+---
 
 ## Properties and attributes
 
@@ -33,10 +43,10 @@ You can use several attributes to change the behavior of the component. The requ
 | site-id                   | siteId                  | Optional. The id of the site where the term set is present. If not specified, the term set is assumed to be at the tenant level.                                                                                                                                            | String  |
 | version                   | version                 | Optional. API version to use when making the GET request. Default is `beta`.                                                                                                                                                                                                | String  |
 | placeholder               | placeholder             | Optional. The placeholder to use in the combobox. Default value is `Select a term`.                                                                                                                                                                                         | string  |
-| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This will be useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
+| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This is useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
 | default-selected-term-id  | defaultSelectedTermId   | Optional. The id of the term that should be selected by default.                                                                                                                                                                                                            | String  |
 | position                  | position                | Optional. The position of the dropdown. Can be 'above' or 'below'. Default is `below`                                                                                                                                                                                       | String  |
-| disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user is not able to search or select terms.                                                                                                                                                      | NA      |
+| disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user isn't able to search or select terms.                                                                                                                                                      | NA      |
 | cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource will be cached. Default is `false`.                                                                                                                                                                    | Boolean |
 | cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period.                                     | Number  |
 
@@ -100,6 +110,9 @@ The `mgt-taxonomy-picker` component defines the following CSS custom properties 
 .taxonomy-picker {
   --taxonomy-picker-background-color: grey;
   --taxonomy-picker-list-max-height: 200px;
+  --taxonomy-picker-background-color: black;
+  --taxonomy-picker-placeholder-color: white;
+  
 }
 ```
 
@@ -115,17 +128,17 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Event              | When is it emitted                                               | Custom data                                                                                                          | Cancelable | Bubbles | Works with custom template |
 | ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term which will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
+| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
-The `mgt-taxonomy-picker` component supports several [templates](../customize-components/templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `mgt-taxonomy-picker` component supports several [templates](../customize-components/templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values.
 
 | Data type | Data context                    | Description                                                         |
 | --------- | ------------------------------- | ------------------------------------------------------------------- |
-| error     | The error from Microsoft Graph. | This template will be used if there is an error making the request. |
+| error     | The error from Microsoft Graph. | This template is used if there's an error making the request. |
 | loading   | N/A                             | This template is used while the request is being made.              |
 | no-data   | N/A                             | This template is used when the request returned no data.            |
 
@@ -149,11 +162,14 @@ The `mgt-taxonomy-picker` component supports several [templates](../customize-co
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed.
 
-| Configuration | Permission         | API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| default       | TermStore.Read.All | [/termStore/sets/{setId}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/termStore/sets/{setId}/terms/{termId}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/sites/{site-id}/termStore/sets/{set-id}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](/graph/api/termstore-term-list-children?tabs=http#http-request) |
+| Configuration     | Permission         | API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| default           | TermStore.Read.All, TermStore.ReadWrite.All | [/termStore/sets/{setId}/children](/graph/api/termstore-term-list-children?view=graph-rest-beta&preserve-view=true) |
+| default           | TermStore.Read.All, TermStore.ReadWrite.All | [/termStore/sets/{setId}/terms/{termId}/children](/graph/api/termstore-term-list-children?view=graph-rest-beta&preserve-view=true)|
+| `site-id` is set  | TermStore.Read.All, TermStore.ReadWrite.All | [/sites/{site-id}/termStore/sets/{set-id}/children](/graph/api/termstore-term-list-children) |
+| `site-id` is set  | TermStore.Read.All, TermStore.ReadWrite.All | [/sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](/graph/api/termstore-term-list-children) |
 
 For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
@@ -163,7 +179,7 @@ The control uses the global authentication provider described in the [authentica
 
 ## Cache
 
-To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-taxonomy-picker` component does not cache any responses.
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-taxonomy-picker` component doesn't cache any responses.
 
 | Object store | Cached data                                                     | Remarks |
 | ------------ | --------------------------------------------------------------- | ------- |
@@ -178,3 +194,7 @@ The control exposes the following variables that can be localized. For details a
 | String name         | Default value   |
 | ------------------- | --------------- |
 | comboboxPlaceholder | `Select a term` |
+| loadingMessage | `Loading...` |
+| noTermsFound | `No terms found` |
+| termsetIdRequired   | `The termsetId property or termset-id attribute is required` |
+

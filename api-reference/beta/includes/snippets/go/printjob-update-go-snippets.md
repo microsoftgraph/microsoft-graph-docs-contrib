@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewPrintJob()
 configuration := graphmodels.NewPrintJobConfiguration()
@@ -75,7 +75,8 @@ fitPdfToPage := false
 configuration.SetFitPdfToPage(&fitPdfToPage) 
 requestBody.SetConfiguration(configuration)
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+jobs, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

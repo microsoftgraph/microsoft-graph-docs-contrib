@@ -3,7 +3,7 @@ title: "cloudPcOverview resource type"
 description: "Represents an overview of cloud PCs for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -18,12 +18,13 @@ Represents an overview of cloud PCs for a given managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcOverviews](../api/managedtenants-managedtenant-list-cloudpcsoverview.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) collection|Get a list of the [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) objects and their properties.|
-|[Get cloudPcOverview](../api/managedtenants-cloudpcoverview-get.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Read the properties and relationships of a [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) object.|
+|[List cloud PC overviews](../api/managedtenants-managedtenant-list-cloudpcsoverview.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) collection|Get a list of the [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) objects and their properties.|
+|[Get cloud PC overview](../api/managedtenants-cloudpcoverview-get.md)|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Read the properties and relationships of a [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|frontlineLicensesCount|Int32|The total number of cloud PC devices that have the `Frontline` SKU. Optional. Read-only.|
 |id|String|The unique identifier for the cloud PC overview. Required. Read-only.|
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|
 |numberOfCloudPcConnectionStatusFailed|Int32|The number of cloud PC connections that have a status of `failed`. Optional. Read-only.|
@@ -61,6 +62,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
+  "frontlineLicensesCount": "Integer",
   "id": "String (identifier)",
   "lastRefreshedDateTime": "String (timestamp)",
   "numberOfCloudPcConnectionStatusFailed": "Integer",

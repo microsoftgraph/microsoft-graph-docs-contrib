@@ -3,7 +3,7 @@ title: "List androidLobApps"
 description: "List properties and relationships of the androidLobApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidLobApp](../resources/intune-apps-androidlobapp.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +40,7 @@ GET /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1931
+Content-Length: 1889
 
 {
   "value": [
@@ -96,7 +98,6 @@ Content-Length: 1931
       "fileName": "File Name value",
       "size": 4,
       "packageId": "Package Id value",
-      "identityName": "Identity Name value",
       "minimumSupportedOperatingSystem": {
         "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
         "v4_0": true,
@@ -118,7 +119,7 @@ Content-Length: 1931
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value",
-      "identityVersion": "Identity Version value"
+      "targetedPlatforms": "androidOpenSourceProject"
     }
   ]
 }

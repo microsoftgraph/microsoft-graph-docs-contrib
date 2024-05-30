@@ -5,22 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingCustomQuestion;
+use Microsoft\Graph\Generated\Models\AnswerInputType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingCustomQuestion();
-$requestBody->set@odatatype('#microsoft.graph.bookingCustomQuestion');
-
+$requestBody->setOdataType('#microsoft.graph.bookingCustomQuestion');
 $requestBody->setDisplayName('What is your age?');
-
 $requestBody->setAnswerInputType(new AnswerInputType('text'));
+$requestBody->setAnswerOptions([	]);
 
-$requestBody->setAnswerOptions([]);
-
-
-
-$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->customQuestions()->post($requestBody);
-
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customQuestions()->post($requestBody)->wait();
 
 ```

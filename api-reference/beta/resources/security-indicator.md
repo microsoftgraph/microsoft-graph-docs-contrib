@@ -3,7 +3,7 @@ title: "indicator resource type"
 description: "An abstract type that represents an indicator of compromise or increased risk."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 
 An abstract type that represents an indicator of compromise or increased risk. Indicators communicate artifacts that indicate that an asset was affected by or related to an attack vector or malicious actor.
 
-This resource is not directly addressable. You can interact with this resource through one of the following subtypes:
+This resource isn't directly addressable. You can interact with this resource through one of the following subtypes:
 
 - [articleIndicator](../resources/security-articleindicator.md)
 - [intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md)
@@ -37,7 +37,7 @@ This resource is not directly addressable. You can interact with this resource t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

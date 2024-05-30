@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceCreate;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/beta/education/users/13015');
+$requestBody->setOdataId('https://graph.microsoft.com/beta/education/users/13015');
 
-
-
-$graphServiceClient->education()->classes()->byClasseId('educationClass-id')->members()->ref()->post($requestBody);
-
+$graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->members()->ref()->post($requestBody)->wait();
 
 ```

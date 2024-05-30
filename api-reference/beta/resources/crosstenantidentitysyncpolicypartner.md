@@ -3,7 +3,7 @@ title: "crossTenantIdentitySyncPolicyPartner resource type"
 description: "Defines the cross-tenant policy for synchronization of users from a partner tenant."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,17 +19,17 @@ Defines the cross-tenant policy for synchronization of users from a partner tena
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create crossTenantIdentitySyncPolicyPartner](../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md)|None|Create a cross-tenant user synchronization policy for a partner-specific configuration.|
-|[Get crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-get.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Get the user synchronization policy of a partner-specific configuration.|
-|[Update crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-update.md)|None|Update the user synchronization policy of a partner-specific configuration.|
-|[Delete crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-delete.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
+|[Create](../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md)|None|Create a cross-tenant user synchronization policy for a partner-specific configuration.|
+|[Get](../api/crosstenantidentitysyncpolicypartner-get.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Get the user synchronization policy of a partner-specific configuration.|
+|[Update](../api/crosstenantidentitysyncpolicypartner-update.md)|None|Update the user synchronization policy of a partner-specific configuration.|
+|[Delete](../api/crosstenantidentitysyncpolicypartner-delete.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD (Azure Active Directory) tenant to easily identify the policy. Optional.|
-|tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
+|tenantId|String|Tenant identifier for the partner Microsoft Entra organization. Read-only.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key. |
 
 ## Relationships

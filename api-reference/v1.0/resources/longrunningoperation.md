@@ -3,7 +3,8 @@ title: "longRunningOperation resource type"
 description: "The status of a long-running operation."
 ms.localizationpriority: medium
 author: "zhvolosh"
-ms.prod: teamwork
+ms.reviewer: intelligentaccesspm
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

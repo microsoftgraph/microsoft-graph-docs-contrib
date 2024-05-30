@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Policies\RoleManagementPolicies\Item\UnifiedRoleManagementPolicyItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UnifiedRoleManagementPolicyRequestBuilderGetRequestConfiguration();
-$queryParameters = UnifiedRoleManagementPolicyRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new UnifiedRoleManagementPolicyItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UnifiedRoleManagementPolicyItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["effectiveRules","rules"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->roleManagementPolicies()->byRoleManagementPolicieId('unifiedRoleManagementPolicy-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->policies()->roleManagementPolicies()->byUnifiedRoleManagementPolicyId('unifiedRoleManagementPolicy-id')->get($requestConfiguration)->wait();
 
 ```

@@ -3,7 +3,7 @@ title: "External connectors enum values"
 description: "Microsoft Graph external connectors enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 author: "emzho"
 ---
 
@@ -90,6 +90,7 @@ Namespace: microsoft.graph.externalConnectors
 | lastModifiedDateTime
 | fileName
 | fileExtension
+| iconUrl
 | unknownFutureValue
 
 ### propertyType values

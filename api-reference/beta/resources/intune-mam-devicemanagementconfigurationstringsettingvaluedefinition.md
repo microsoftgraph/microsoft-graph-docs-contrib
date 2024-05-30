@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationStringSettingValueDefinition resource type"
 description: "String constraints"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|format|[deviceManagementConfigurationStringFormat](../resources/intune-mam-devicemanagementconfigurationstringformat.md)|Pre-defined format of the string. Possible values are: `none`, `email`, `guid`, `ip`, `base64`, `url`, `version`, `xml`, `date`, `time`, `binary`, `regEx`, `json`, `dateTime`, `surfaceHub`.|
+|format|[deviceManagementConfigurationStringFormat](../resources/intune-shared-devicemanagementconfigurationstringformat.md)|Pre-defined format of the string. Possible values are: `none`, `email`, `guid`, `ip`, `base64`, `url`, `version`, `xml`, `date`, `time`, `binary`, `regEx`, `json`, `dateTime`, `surfaceHub`.|
 |inputValidationSchema|String|Regular expression or any xml or json schema that the input string should match|
 |maximumLength|Int64|Maximum length of string|
 |minimumLength|Int64|Minimum length of string|

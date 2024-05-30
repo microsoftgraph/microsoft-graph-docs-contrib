@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewProjectParticipation()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
@@ -25,7 +25,8 @@ webUrl := "https://www.contoso.com"
 client.SetWebUrl(&webUrl) 
 requestBody.SetClient(client)
 
-result, err := graphClient.Me().Profile().Projects().ByProjectId("projectParticipation-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+projects, err := graphClient.Me().Profile().Projects().ByProjectParticipationId("projectParticipation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

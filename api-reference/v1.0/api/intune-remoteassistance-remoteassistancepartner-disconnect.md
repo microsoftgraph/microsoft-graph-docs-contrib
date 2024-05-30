@@ -1,9 +1,9 @@
 ---
 title: "disconnect action"
 description: "A request to remove the active TeamViewer connector"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 A request to remove the active TeamViewer connector
 
-## Prerequisites
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -36,7 +38,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,24 +62,28 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-remoteassistance-remoteassistancepartner-disconnect-disconnect-action-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

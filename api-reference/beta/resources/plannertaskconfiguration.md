@@ -3,7 +3,7 @@ title: "plannerTaskConfiguration resource type"
 description: "Represents the configuration of plannerTasks created for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -21,14 +21,14 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get plannerTaskConfiguration](../api/plannertaskconfiguration-get.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Read the properties and relationships of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
-|[Update plannerTaskConfiguration](../api/plannertaskconfiguration-update.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Update the properties of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
+|[Get](../api/plannertaskconfiguration-get.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Read the properties and relationships of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
+|[Update](../api/plannertaskconfiguration-update.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Update the properties of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for the businessScenario when they are being changed outside of the scenario.|
+|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for the businessScenario when they're being changed outside of the scenario.|
 |id|String|The unique identifier for the task configuration. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

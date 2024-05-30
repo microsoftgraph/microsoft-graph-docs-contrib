@@ -5,14 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Tasks\Item\BucketTaskBoardFormat\BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerBucketTaskBoardTaskFormat;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerBucketTaskBoardTaskFormat();
 $requestBody->setOrderHint('A6673H Ejkl!');
-
-
 $requestConfiguration = new BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
@@ -21,7 +22,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration);
-
+$result = $graphServiceClient->planner()->tasks()->byPlannerTaskId('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration)->wait();
 
 ```

@@ -5,65 +5,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageImportance;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageReaction;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageHistoryItem;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $requestBody->setMessageType(new ChatMessageType('message'));
-
 $requestBody->setSubject(null);
-
 $requestBody->setSummary(null);
-
 $requestBody->setImportance(new ChatMessageImportance('normal'));
-
 $requestBody->setLocale('en-us');
-
 $from = new ChatMessageFromIdentitySet();
-$From->setApplication(null);
-
-$From->setDevice(null);
-
+$from->setApplication(null);
+$from->setDevice(null);
 $fromUser = new Identity();
 $fromUser->setId('3b102402-813e-4e17-a6b2-f841aef1fdfc');
-
 $fromUser->setDisplayName('Sumit Gupta');
-
 $additionalData = [
-		'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser',
 ];
 $fromUser->setAdditionalData($additionalData);
-
-
-
 $from->setUser($fromUser);
 $additionalData = [
-		'conversation' => 		null,
+	'conversation' => null,
 ];
 $from->setAdditionalData($additionalData);
-
-
-
 $requestBody->setFrom($from);
 $body = new ItemBody();
 $body->setContentType(new BodyType('text'));
-
 $body->setContent('Edit text only');
-
-
 $requestBody->setBody($body);
-$requestBody->setAttachments([]);
+$requestBody->setAttachments([	]);
+$requestBody->setMentions([	]);
+$requestBody->setReactions([	]);
+$requestBody->setMessageHistory([	]);
 
-$requestBody->setMentions([]);
-
-$requestBody->setReactions([]);
-
-$requestBody->setMessageHistory([]);
-
-
-
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byMessageId('chatMessage-id')->patch($requestBody);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->patch($requestBody)->wait();
 
 ```

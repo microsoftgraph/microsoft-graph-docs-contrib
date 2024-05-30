@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewReferenceUpdate()
+odataId := "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
+requestBody.SetOdataId(&odataId) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Applications().ByApplicationId("application-id").ConnectorGroup().Ref().Put(context.Background(), requestBody, nil)
+
+
+```

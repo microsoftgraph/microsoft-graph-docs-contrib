@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ScreenSharingRole role = ScreenSharingRole.VIEWER;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("{id}")
-	.changeScreenSharingRole(CallChangeScreenSharingRoleParameterSet
-		.newBuilder()
-		.withRole(role)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.communications.calls.item.changescreensharingrole.ChangeScreenSharingRolePostRequestBody changeScreenSharingRolePostRequestBody = new com.microsoft.graph.communications.calls.item.changescreensharingrole.ChangeScreenSharingRolePostRequestBody();
+changeScreenSharingRolePostRequestBody.setRole(ScreenSharingRole.Viewer);
+graphClient.communications().calls().byCallId("{call-id}").changeScreenSharingRole().post(changeScreenSharingRolePostRequestBody);
+
 
 ```

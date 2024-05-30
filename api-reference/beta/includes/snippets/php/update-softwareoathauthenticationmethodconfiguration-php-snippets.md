@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\SoftwareOathAuthenticationMethodConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodState;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SoftwareOathAuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.softwareOathAuthenticationMethodConfiguration');
-
+$requestBody->setOdataType('#microsoft.graph.softwareOathAuthenticationMethodConfiguration');
 $requestBody->setState(new AuthenticationMethodState('disabled'));
 
-
-
-$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody)->wait();
 
 ```

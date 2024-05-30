@@ -6,29 +6,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.ProvisioningPolicies.Item.Assign;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new CloudPcProvisioningPolicyAssignment
+var requestBody = new AssignPostRequestBody
 {
-	OdataType = "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
-	AdditionalData = new Dictionary<string, object>
+	Assignments = new List<CloudPcProvisioningPolicyAssignment>
 	{
+		new CloudPcProvisioningPolicyAssignment
 		{
-			"assignments" , new List<object>
+			Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+			Target = new CloudPcManagementGroupAssignmentTarget
 			{
-				new 
-				{
-					Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-					Target = new 
-					{
-						OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-						GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-					},
-				},
-			}
+				OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
+				GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"].Assign.PostAsync(requestBody);
 
 

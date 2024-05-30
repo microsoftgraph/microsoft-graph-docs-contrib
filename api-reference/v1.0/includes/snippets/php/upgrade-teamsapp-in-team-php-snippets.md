@@ -5,12 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Teams\Item\InstalledApps\Item\Upgrade\UpgradePostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$graphServiceClient->teams()->byTeamId('team-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->upgrade()->post();
+$requestBody = new UpgradePostRequestBody();
 
+$graphServiceClient->teams()->byTeamId('team-id')->installedApps()->byTeamsAppInstallationId('teamsAppInstallation-id')->upgrade()->post($requestBody)->wait();
 
 ```

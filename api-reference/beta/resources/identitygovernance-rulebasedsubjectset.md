@@ -3,7 +3,7 @@ title: "ruleBasedSubjectSet resource type"
 description: "Specifies the rules to define the subjects that are the scope of a lifecycle workflow triggerAndScopeBasedConditions configuration."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,7 @@ Lifecycle Workflows supports the following user properties for configuring the r
 | city                                                   | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | companyName                                            | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | country                                                | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
+| customSecurityAttributes                               | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | department                                             | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | displayName                                            | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | employeeId                                             | String                        | :heavy_check_mark:  | &nbsp;              |
@@ -70,7 +71,10 @@ Lifecycle Workflows supports the following user properties for configuring the r
 | userPrincipalName                                      | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | userType                                               | String                        | :heavy_check_mark:  | &nbsp;              |
 
-You can also configure rules using [Directory (Azure AD) extensions](/graph/extensibility-overview#directory-azure-ad-extensions). It is not supported to configure rules with schema extensions, open extensions or [custom security attributes](/graph/api/resources/custom-security-attributes-overview).
+You can also configure rules using [Directory (Microsoft Entra ID) extensions](/graph/extensibility-overview#directory-azure-ad-extensions) and [custom security attributes](/graph/api/resources/custom-security-attributes-overview). It is not supported to configure rules with schema extensions or open extensions.
+
+> [!NOTE]
+> Using custom security attributes requires the Attribute Assignment Administrator role. For more information, see: [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-administrator).
 
 #### Examples of rules
 
@@ -84,6 +88,7 @@ You can also configure rules using [Directory (Azure AD) extensions](/graph/exte
 | `"rule": "(otherMails/any(p:startsWith(p, 'Av')))"`                    | Run the workflow for users whose **otherMails** starts with `Av`.                       |
 | `"rule": "(department eq 'Marketing') and (accountEnabled in (true))"` | Run the workflow for users in the marketing department and whose account is enabled.    |
 | `"rule": "(department eq 'Marketing') or (not (city eq 'Redmond'))"`   | Run the workflow for users in the marketing department and whose city is not "Redmond". |
+| `"rule": "(customSecurityAttributes/OnsightLocation/CustomerOnsite eq true)"`    | Run the workflow for users who have the custom security attribute for **CustomerOnSite** set as *true*. |
 
 ## Relationships
 

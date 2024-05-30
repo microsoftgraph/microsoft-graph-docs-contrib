@@ -3,7 +3,7 @@ title: "appManagementPolicy resource type"
 description: "Represents an application auth method policy for enforcing app management restrictions on specific applications or service principals."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ Restrictions on app management operations for specific applications and service 
 | [Get](../api/appmanagementpolicy-get.md)       | [appManagementPolicy](../resources/appmanagementpolicy.md) | Get a single app management policy object.                                                                            |
 | [Update](../api/appmanagementpolicy-update.md) | None                                                                       | Update an app management policy.                                                                                      |
 | [Delete](../api/appmanagementpolicy-delete.md) | None                                                                       | Delete an app management policy from the collection of policies in appManagementPolicies.                             |
-| [List appliesTo](../api/appmanagementpolicy-list-appliesto.md)| [appManagementPolicy](../resources/appmanagementpolicy.md)|Return a list of applications and service principals to which the policy is applied. |
-| [Assign appliesTo](../api/appmanagementpolicy-post-appliesto.md)| None |Return a list of applications and service principals to which the policy is applied. |
+| [List applies to](../api/appmanagementpolicy-list-appliesto.md)| [appManagementPolicy](../resources/appmanagementpolicy.md)|Return a list of applications and service principals to which the policy is applied. |
+| [Create applies to](../api/appmanagementpolicy-post-appliesto.md)| None |Return a list of applications and service principals to which the policy is applied. |
 
 ## Properties
 

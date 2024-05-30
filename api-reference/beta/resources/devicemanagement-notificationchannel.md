@@ -3,7 +3,7 @@ title: "notificationChannel resource type"
 description: "Represents information about the notification channels of an alert rule selected by a user."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,6 @@ Represents information about the notification channels of an [alert rule](../res
 |:---|:---|:---|
 |notificationChannelType|[microsoft.graph.deviceManagement.notificationChannelType](#notificationchanneltype-values)|The type of the notification channel. The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
 |notificationReceivers|[microsoft.graph.deviceManagement.notificationReceiver](../resources/devicemanagement-notificationreceiver.md) collection|Information about the notification receivers, such as locale and contact information. For example, `en-us` for locale and `serena.davis@contoso.com` for contact information.|
-|receivers|String collection|The contact information about the notification receivers, such as email addresses. For portal notifications, **receivers** can be left blank. For email notifications, **receivers** consists of email addresses such as `serena.davis@contoso.com`.|
 
 ### notificationChannelType values
 
@@ -55,9 +54,6 @@ The following is a JSON representation of the resource.
     {
         "@odata.type": "#microsoft.graph.deviceManagement.notificationReceiver"
     }
-  ],
-  "receivers": [
-    "String"
   ]
 }
 ```

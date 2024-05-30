@@ -4,45 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.chat import Chat
+from msgraph_beta.generated.models.chat_type import ChatType
+from msgraph_beta.generated.models.conversation_member import ConversationMember
+from msgraph_beta.generated.models.aad_user_conversation_member import AadUserConversationMember
 
-request_body = Chat()
-request_body.chattype(ChatType.OneOnOne('chattype.oneonone'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-members_conversation_member1 = AadUserConversationMember()
-members_conversation_member1.@odata_type = '#microsoft.graph.aadUserConversationMember'
+request_body = Chat(
+	chat_type = ChatType.OneOnOne,
+	members = [
+		AadUserConversationMember(
+			odata_type = "#microsoft.graph.aadUserConversationMember",
+			roles = [
+				"owner",
+			],
+			additional_data = {
+					"user@odata_bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+			}
+		),
+		AadUserConversationMember(
+			odata_type = "#microsoft.graph.aadUserConversationMember",
+			roles = [
+				"owner",
+			],
+			additional_data = {
+					"user@odata_bind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')",
+			}
+		),
+	],
+)
 
-members_conversation_member1.Roles(['owner', ])
-
-additional_data = [
-'user@odata_bind' => 'https://graph.microsoft.com/beta/users(\'jacob@contoso.com\')', 
-];
-members_conversation_member1.additional_data(additional_data)
-
-
-
-membersArray []= membersConversationMember1;
-members_conversation_member2 = AadUserConversationMember()
-members_conversation_member2.@odata_type = '#microsoft.graph.aadUserConversationMember'
-
-members_conversation_member2.Roles(['owner', ])
-
-additional_data = [
-'user@odata_bind' => 'https://graph.microsoft.com/beta/users(\'alex@contoso.com\')', 
-];
-members_conversation_member2.additional_data(additional_data)
-
-
-
-membersArray []= membersConversationMember2;
-request_body.members(membersArray)
-
-
-
-
-
-result = await client.chats.post(request_body = request_body)
+result = await graph_client.chats.post(request_body)
 
 
 ```

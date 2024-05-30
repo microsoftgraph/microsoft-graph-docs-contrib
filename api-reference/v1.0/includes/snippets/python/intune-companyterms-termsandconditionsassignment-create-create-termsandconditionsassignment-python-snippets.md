@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.terms_and_conditions_assignment import TermsAndConditionsAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
-request_body = TermsAndConditionsAssignment()
-request_body.@odata_type = '#microsoft.graph.termsAndConditionsAssignment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target = ConfigurationManagerCollectionAssignmentTarget()
-target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+request_body = TermsAndConditionsAssignment(
+	odata_type = "#microsoft.graph.termsAndConditionsAssignment",
+	target = ConfigurationManagerCollectionAssignmentTarget(
+		odata_type = "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+		collection_id = "Collection Id value",
+	),
+)
 
-target.collection_id = 'Collection Id value'
-
-
-request_body.target = target
-
-
-
-result = await client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').assignments.post(request_body = request_body)
+result = await graph_client.device_management.terms_and_conditions.by_terms_and_conditions_id('termsAndConditions-id').assignments.post(request_body)
 
 
 ```

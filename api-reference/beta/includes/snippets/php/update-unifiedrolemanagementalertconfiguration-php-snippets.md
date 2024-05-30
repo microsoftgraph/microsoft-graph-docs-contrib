@@ -5,22 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TooManyGlobalAdminsAssignedToTenantAlertConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TooManyGlobalAdminsAssignedToTenantAlertConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration');
-
+$requestBody->setOdataType('#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration');
 $requestBody->setIsEnabled(true);
-
 $requestBody->setGlobalAdminCountThreshold(7);
-
 $requestBody->setPercentageOfGlobalAdminsOutOfRolesThreshold(70);
 
-
-
-$result = $graphServiceClient->identityGovernance()->roleManagementAlerts()->alertConfigurations()->byAlertConfigurationId('unifiedRoleManagementAlertConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->identityGovernance()->roleManagementAlerts()->alertConfigurations()->byUnifiedRoleManagementAlertConfigurationId('unifiedRoleManagementAlertConfiguration-id')->patch($requestBody)->wait();
 
 ```

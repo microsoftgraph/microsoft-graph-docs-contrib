@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
@@ -27,7 +27,7 @@ configuration := &graphusers.ItemPlannerRequestBuilderPatchRequestConfiguration{
 requestBody := graphmodels.NewPlannerUser()
 favoritePlanReferences := graphmodels.NewPlannerFavoritePlanReferenceCollection()
 additionalData := map[string]interface{}{
-jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
+jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.NewPlannerFavoritePlanReference()
 orderHint := " !"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetOrderHint(&orderHint) 
 planTitle := "Next Release Discussion"
@@ -40,8 +40,8 @@ favoritePlanReferences.SetAdditionalData(additionalData)
 requestBody.SetFavoritePlanReferences(favoritePlanReferences)
 recentPlanReferences := graphmodels.NewPlannerRecentPlanReferenceCollection()
 additionalData := map[string]interface{}{
-jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
-lastAccessedDateTime := "2018-01-02T22:49:46.155Z"
+jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.NewPlannerRecentPlanReference()
+lastAccessedDateTime , err := time.Parse(time.RFC3339, "2018-01-02T22:49:46.155Z")
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetLastAccessedDateTime(&lastAccessedDateTime) 
 planTitle := "Next Release Discussion"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetPlanTitle(&planTitle) 
@@ -50,7 +50,8 @@ jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetPlanTitle(&planTitle)
 recentPlanReferences.SetAdditionalData(additionalData)
 requestBody.SetRecentPlanReferences(recentPlanReferences)
 
-result, err := graphClient.Me().Planner().Patch(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+planner, err := graphClient.Me().Planner().Patch(context.Background(), requestBody, configuration)
 
 
 ```

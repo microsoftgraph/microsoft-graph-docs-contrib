@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
-Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues" 
+Get-MgBetaServiceAnnouncementHealthOverview -ExpandProperty "issues" 
 
 ```

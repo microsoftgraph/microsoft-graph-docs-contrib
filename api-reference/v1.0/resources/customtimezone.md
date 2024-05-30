@@ -2,8 +2,8 @@
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: outlook
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents a time zone where the transition from standard to daylight saving tim
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

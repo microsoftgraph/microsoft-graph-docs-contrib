@@ -3,7 +3,7 @@ title: "plannerFavoritePlanReferenceCollection resource type"
 description: " the value is the plannerFavoritePlanReference object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"
+  "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection",
+  "openType": true
 }-->
 
 ```json

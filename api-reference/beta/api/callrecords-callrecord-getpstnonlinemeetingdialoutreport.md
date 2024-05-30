@@ -1,9 +1,9 @@
 ---
 title: "callRecord: getPstnOnlineMeetingDialoutReport"
 description: "Get aggregated report of the usage and money spent for the audio conferencing dial-out service as a collection of pstnOnlineMeetingDialoutReport entries."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -22,15 +22,14 @@ The report includes:
 - Dial-out calls: Total number of dial-out calls over the selected period
 - Time of use: Total dial-out time (in seconds) over the selected period
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| Not supported. |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_getpstnonlinemeetingdialoutreport" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-getpstnonlinemeetingdialoutreport-permissions.md)]
 
 ## HTTP request
 
@@ -58,25 +57,25 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries in the response body.
   
-If the function returns more than 1000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If the function returns more than 1,000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get the aggregated report for the audio conferencing dial-out service over a specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and an `@odata.nextLink` to get records beyond the first 1000. For readability, the response object contains only a collection of one record.
+The following example shows how to get the aggregated report for the audio conferencing dial-out service over a specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and an `@odata.nextLink` to get records beyond the first 1,000. For readability, the response object contains only a collection of one record.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -91,24 +90,28 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecordthisgetpstnonlinemeetingdialoutreport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/callrecordthisgetpstnonlinemeetingdialoutreport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/callrecordthisgetpstnonlinemeetingdialoutreport-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/callrecordthisgetpstnonlinemeetingdialoutreport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecordthisgetpstnonlinemeetingdialoutreport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecordthisgetpstnonlinemeetingdialoutreport-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/callrecordthisgetpstnonlinemeetingdialoutreport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/callrecordthisgetpstnonlinemeetingdialoutreport-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/callrecordthisgetpstnonlinemeetingdialoutreport-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/callrecordthisgetpstnonlinemeetingdialoutreport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -119,7 +122,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -151,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)

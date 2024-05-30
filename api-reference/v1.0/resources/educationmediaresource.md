@@ -3,7 +3,7 @@ title: "educationMediaResource resource type"
 description: "Represents a media file resource for an educationAssignment. Inherits from educationResource"
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: "onenoteEntityBaseModel resource"
+title: "onenoteEntityBaseModel resource type"
 description: "This is the base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
-# onenoteEntityBaseModel resource
+# onenoteEntityBaseModel resource type
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ This is the base type for OneNote entities.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

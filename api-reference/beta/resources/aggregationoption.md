@@ -1,9 +1,9 @@
 ---
 title: "aggregationOption resource type"
-description: "Specifies which aggregations should be returned alongside the search results"
+description: "Specifies which aggregations should be returned alongside the search results."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -13,19 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies which aggregations should be returned alongside the search results.
+Specifies which aggregations should be returned alongside the search results. The maximum returned value is 100 buckets.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------| 
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
-|field|String|Computes aggregation on the field while the field exists in current entity type. Required.|
-|size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|
+|field|String|Computes aggregation on the field while the field exists in the current entity type. Required.|
+|size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This isn't required when the range is provided manually in the search request. The minimum accepted size is 1, and the maximum is 65535. Optional.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

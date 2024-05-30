@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.authentication_combination_configuration import AuthenticationCombinationConfiguration
+from msgraph.generated.models.authentication_method_modes import AuthenticationMethodModes
 
-request_body = AuthenticationCombinationConfiguration()
-request_body.AppliesToCombinations([request_body.authenticationmethodmodes(AuthenticationMethodModes.Fido2('authenticationmethodmodes.fido2'))
-])
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = AuthenticationCombinationConfiguration(
+	applies_to_combinations = [
+		AuthenticationMethodModes.Fido2,
+	],
+)
 
-
-
-result = await client.identity.conditional_access.authentication_strength.policies.by_policie_id('authenticationStrengthPolicy-id').combination_configurations.by_combination_configuration_id('authenticationCombinationConfiguration-id').patch(request_body = request_body)
+result = await graph_client.identity.conditional_access.authentication_strength.policies.by_authentication_strength_policy_id('authenticationStrengthPolicy-id').combination_configurations.by_authentication_combination_configuration_id('authenticationCombinationConfiguration-id').patch(request_body)
 
 
 ```

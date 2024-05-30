@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequestorSettings resource type"
 description: "Provides additional settings to select who can create a request for an access package on that policy, and what they can include in their request."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentRequestorSettings resource type
@@ -15,7 +15,7 @@ Provides additional settings to select who can create a request for an access pa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowCustomAssignmentSchedule|Boolean|`False` indicates that the requestor is not permitted to include a schedule in their request.|
+|allowCustomAssignmentSchedule|Boolean|`False` indicates that the requestor isn't permitted to include a schedule in their request.|
 |enableOnBehalfRequestorsToAddAccess|Boolean|`True` allows on-behalf-of requestors to create a request to add access for another principal.|
 |enableOnBehalfRequestorsToRemoveAccess|Boolean|`True` allows on-behalf-of requestors to create a request to remove access for another principal.|
 |enableOnBehalfRequestorsToUpdateAccess|Boolean|`True` allows on-behalf-of requestors to create a request to update access for another principal.|
@@ -27,7 +27,7 @@ Provides additional settings to select who can create a request for an access pa
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"

@@ -3,7 +3,7 @@ title: "Create an educationSynchronizationProfile"
 description: "Create a request for a new school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -15,14 +15,13 @@ Namespace: microsoft.graph
 
 Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus-get.md) to get the status of the profile. 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type | Permissions |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationsynchronizationprofile_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsynchronizationprofile-post-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +43,7 @@ If successful, this method returns a `202 Accepted` response code and an [educat
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "create_educationSynchronizationProfile"
@@ -97,7 +96,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

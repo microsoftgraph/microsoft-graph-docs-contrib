@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.contentApproval"
@@ -15,6 +15,8 @@ $params = @{
 			id = "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4"
 		}
 	}
+	deploymentSettings = @{
+	}
 	schedule = @{
 		startDateTime = "String (timestamp)"
 		gradualRollout = @{
@@ -24,6 +26,6 @@ $params = @{
 	}
 }
 
-New-MgWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -BodyParameter $params
+New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -BodyParameter $params
 
 ```

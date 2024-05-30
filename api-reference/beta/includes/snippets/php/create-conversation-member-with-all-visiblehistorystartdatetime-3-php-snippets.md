@@ -5,26 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AadUserConversationMember;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AadUserConversationMember();
-$requestBody->set@odatatype('#microsoft.graph.aadUserConversationMember');
-
-$requestBody->setVisibleHistoryStartDateTime(new DateTime('0001-01-01T00:00:00Z'));
-
-$requestBody->setRoles(['owner', ]);
-
+$requestBody->setOdataType('#microsoft.graph.aadUserConversationMember');
+$requestBody->setVisibleHistoryStartDateTime(new \DateTime('0001-01-01T00:00:00Z'));
+$requestBody->setRoles(['owner', 	]);
 $additionalData = [
-	'user@odata.bind' => 'https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5',
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$result = $graphServiceClient->chats()->byChatId('chat-id')->members()->post($requestBody);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->members()->post($requestBody)->wait();
 
 ```

@@ -5,33 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ItemAddress;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ItemAddress();
 $requestBody->setDisplayName('Home');
-
 $detail = new PhysicalAddress();
 $detail->setType(new PhysicalAddressType('home'));
-
-$Detail->setPostOfficeBox(null);
-
+$detail->setPostOfficeBox(null);
 $detail->setStreet('221B Baker Street');
-
 $detail->setCity('London');
-
-$Detail->setState(null);
-
+$detail->setState(null);
 $detail->setCountryOrRegion('United Kingdom');
-
 $detail->setPostalCode('E14 3TD');
-
-
 $requestBody->setDetail($detail);
 
-
-$result = $graphServiceClient->me()->profile()->addresses()->post($requestBody);
-
+$result = $graphServiceClient->me()->profile()->addresses()->post($requestBody)->wait();
 
 ```

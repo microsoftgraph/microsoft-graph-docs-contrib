@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestFilter := "domains/any(x: x/id eq 'contoso.com')"
@@ -25,7 +25,8 @@ configuration := &graphdirectory.DirectoryFederationConfigurationItemRequestBuil
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+federationConfigurations, err := graphClient.Directory().FederationConfigurations().ByIdentityProviderBaseId("identityProviderBase-id").Get(context.Background(), configuration)
 
 
 ```

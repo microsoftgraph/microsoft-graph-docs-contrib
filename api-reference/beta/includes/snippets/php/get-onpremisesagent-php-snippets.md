@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\OnPremisesPublishingProfiles\Item\Agents\Item\OnPremisesAgentItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new OnPremisesAgentRequestBuilderGetRequestConfiguration();
-$queryParameters = OnPremisesAgentRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new OnPremisesAgentItemRequestBuilderGetRequestConfiguration();
+$queryParameters = OnPremisesAgentItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["agentGroups"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->onPremisesPublishingProfiles()->byOnPremisesPublishingProfileId('onPremisesPublishingProfile-id')->agents()->byAgentId('onPremisesAgent-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->onPremisesPublishingProfiles()->byOnPremisesPublishingProfileId('onPremisesPublishingProfile-id')->agents()->byOnPremisesAgentId('onPremisesAgent-id')->get($requestConfiguration)->wait();
 
 ```

@@ -5,22 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionAppLearningSummary;
+use Microsoft\Graph\Generated\Models\ApplicationType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsInformationProtectionAppLearningSummary();
-$requestBody->set@odatatype('#microsoft.graph.windowsInformationProtectionAppLearningSummary');
-
+$requestBody->setOdataType('#microsoft.graph.windowsInformationProtectionAppLearningSummary');
 $requestBody->setApplicationName('Application Name value');
-
 $requestBody->setApplicationType(new ApplicationType('desktop'));
-
 $requestBody->setDeviceCount(11);
 
-
-
-$result = $graphServiceClient->deviceManagement()->windowsInformationProtectionAppLearningSummaries()->post($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->windowsInformationProtectionAppLearningSummaries()->post($requestBody)->wait();
 
 ```

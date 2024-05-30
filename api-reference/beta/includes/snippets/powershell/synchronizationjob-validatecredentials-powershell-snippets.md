@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
 	credentials = @(
@@ -19,6 +19,6 @@ $params = @{
 	)
 }
 
-Test-MgServicePrincipalSynchronizationJobCredentials -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
 ```

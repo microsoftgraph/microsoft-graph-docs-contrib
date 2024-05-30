@@ -3,7 +3,7 @@ title: "Create deviceManagementExchangeConnector"
 description: "Create a new deviceManagementExchangeConnector object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/exchangeConnectors
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +50,7 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. Possible values are: `none`, `connectionPending`, `connected`, `disconnected`, `unknownFutureValue`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|

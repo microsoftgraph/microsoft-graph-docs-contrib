@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationGradingCategory;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationGradingCategory();
 $requestBody->setDisplayName('Quiz-1');
 
-
-
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignmentSettings()->gradingCategories()->byGradingCategorieId('educationGradingCategory-id')->patch($requestBody);
-
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignmentSettings()->gradingCategories()->byEducationGradingCategoryId('educationGradingCategory-id')->patch($requestBody)->wait();
 
 ```

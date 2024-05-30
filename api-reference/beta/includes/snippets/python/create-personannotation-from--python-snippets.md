@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.person_annotation import PersonAnnotation
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
 
-request_body = PersonAnnotation()
-detail = ItemBody()
-detail.contenttype(BodyType.Text('bodytype.text'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-detail.content = 'I am originally from Australia, but grew up in Moscow, Russia.'
+request_body = PersonAnnotation(
+	detail = ItemBody(
+		content_type = BodyType.Text,
+		content = "I am originally from Australia, but grew up in Moscow, Russia.",
+	),
+	display_name = "About Me",
+)
 
-
-request_body.detail = detail
-request_body.display_name = 'About Me'
-
-
-
-
-result = await client.me.profile.notes.post(request_body = request_body)
+result = await graph_client.me.profile.notes.post(request_body)
 
 
 ```

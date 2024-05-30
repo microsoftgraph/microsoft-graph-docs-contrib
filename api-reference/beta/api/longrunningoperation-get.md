@@ -3,7 +3,7 @@ title: "Get longRunningOperation"
 description: "Read the properties and relationships of a longRunningOperation object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,15 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For role management alerts
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "longrunningoperation_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
@@ -44,10 +43,10 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +58,7 @@ For role management alerts, the **resourceLocation** contains the url of the rol
 ### Example 1: Retrieve the details of a long running operation for role management alert refresh when the operation status is `running`
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,24 +73,28 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-running-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-rolemanagementalerts-running-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-rolemanagementalerts-running-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-running-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-rolemanagementalerts-running-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-rolemanagementalerts-running-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-rolemanagementalerts-running-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-rolemanagementalerts-running-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-longrunningoperation-rolemanagementalerts-running-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-rolemanagementalerts-running-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -100,9 +103,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 
 ---
 
-
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -128,7 +130,7 @@ Content-Type: application/json
 ### Example 2: Retrieve the details of a long running operation for role management alert refresh when the operation status is `succeeded`
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -143,24 +145,28 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-succeeded-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-rolemanagementalerts-succeeded-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-rolemanagementalerts-succeeded-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-succeeded-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-rolemanagementalerts-succeeded-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-rolemanagementalerts-succeeded-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-rolemanagementalerts-succeeded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-rolemanagementalerts-succeeded-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-longrunningoperation-rolemanagementalerts-succeeded-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-rolemanagementalerts-succeeded-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -169,9 +175,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 
 ---
 
-
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

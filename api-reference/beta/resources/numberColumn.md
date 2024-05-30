@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The numberColumn on a columnDefinition resource indicates that the column's values are numbers.
 ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # NumberColumn resource type

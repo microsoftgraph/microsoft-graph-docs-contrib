@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PlannerPlanDeltaCollectionPage delta = graphClient.planner().rosters("-W4K7hIak0WlAwgJCn1sEWQABgjH").plans()
-	.delta()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PlannerPlan result = graphClient.planner().rosters().byPlannerRosterId("{plannerRoster-id}").plans().byPlannerPlanId("{plannerPlan-id}").get();
+
 
 ```

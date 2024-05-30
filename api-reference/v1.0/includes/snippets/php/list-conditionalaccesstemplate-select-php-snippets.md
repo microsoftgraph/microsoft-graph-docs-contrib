@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Identity\ConditionalAccess\Templates\TemplatesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TemplatesRequestBuilderGetRequestConfiguration();
 $queryParameters = TemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -16,7 +18,6 @@ $queryParameters->filter = "scenarios has 'secureFoundation'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->templates()->get($requestConfiguration);
-
+$result = $graphServiceClient->identity()->conditionalAccess()->templates()->get($requestConfiguration)->wait();
 
 ```

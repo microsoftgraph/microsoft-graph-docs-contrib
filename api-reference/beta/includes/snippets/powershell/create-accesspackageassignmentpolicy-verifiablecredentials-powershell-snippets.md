@@ -4,12 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "policy-with-verified-id"
 	description = "test"
 	accessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	expiration = @{
+		type = "afterDuration"
+		duration = "P365D"
+	}
 	canExtend = $false
 	requestApprovalSettings = $null
 	requestorSettings = @{
@@ -28,14 +32,14 @@ $params = @{
 		credentialTypes = @(
 			@{
 				issuers = @(
-					"did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."
-				)
-				credentialType = "VerifiedCredentialExpert"
-			}
-		)
-	}
+				"did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."
+			)
+			credentialType = "VerifiedCredentialExpert"
+		}
+	)
+}
 }
 
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
 ```

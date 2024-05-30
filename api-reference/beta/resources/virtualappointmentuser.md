@@ -3,7 +3,7 @@ title: "virtualAppointmentUser resource type"
 description: "Represents information about a client user in a virtual appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

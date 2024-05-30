@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\AppCatalogs\TeamsApps\TeamsAppsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "distributionMethod eq 'organization'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
-
+$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration)->wait();
 
 ```

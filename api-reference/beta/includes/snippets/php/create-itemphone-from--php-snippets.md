@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ItemPhone;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ItemPhone();
 $requestBody->setDisplayName('Car Phone');
-
 $requestBody->setNumber('+7 499 342 22 13');
 
-
-
-$result = $graphServiceClient->me()->profile()->phones()->post($requestBody);
-
+$result = $graphServiceClient->me()->profile()->phones()->post($requestBody)->wait();
 
 ```

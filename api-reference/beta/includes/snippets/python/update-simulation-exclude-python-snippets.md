@@ -4,24 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.simulation import Simulation
+from msgraph_beta.generated.models.simulation_status import SimulationStatus
 
-request_body = Simulation()
-request_body.id = '2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.status(SimulationStatus.Excluded('simulationstatus.excluded'))
+request_body = Simulation(
+	id = "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+	status = SimulationStatus.Excluded,
+	additional_data = {
+			"@odata_etag" : "\"0100aa9b-0000-0100-0000-6396fa270000\"",
+	}
+)
 
-additional_data = [
-'@odata_etag' => '\"0100aa9b-0000-0100-0000-6396fa270000\"', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.security.attack_simulation.simulations.by_simulation_id('simulation-id').patch(request_body = request_body)
+result = await graph_client.security.attack_simulation.simulations.by_simulation_id('simulation-id').patch(request_body)
 
 
 ```

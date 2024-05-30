@@ -1,9 +1,9 @@
 ---
 title: "orgContact resource type"
-description: "Here is a JSON representation of the resource"
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -24,33 +24,33 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Method | Return Type | Description |
 | ------ | ----------- | ----------- |
 | **Organizational contacts** |
-| [List organizational contacts](../api/orgcontact-list.md) | [orgContact](orgcontact.md) collection | List properties of organizational contacts. |
-| [Get organizational contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Read properties and relationships of orgContact object. |
+| [List org contacts](../api/orgcontact-list.md) | [orgContact](orgcontact.md) collection | List properties of organizational contacts. |
+| [Get org contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Read properties and relationships of orgContact object. |
 | **Organizational hierarchy** |
 | [Get manager](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Get the contact's manager. |
 | [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | Integer | Get the count of transitive reports for an organization contact from the transitiveReports navigation property. |
-| [List directReports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | List the contact's direct reports. |
+| [List direct reports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | List the contact's direct reports. |
 | [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get a memberOf object collection. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for group membership. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the specified contact is a member of. |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in groups, administrative units, and directory roles. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Get the list of groups, administrative units, and directory roles the contact is a member of. |
+| [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for group membership. |
+| [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the specified contact is a member of. |
+| [Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in groups, administrative units, and directory roles. |
+| [Get member objects](../api/directoryobject-getmemberobjects.md) | String collection | Get the list of groups, administrative units, and directory roles the contact is a member of. |
 
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#organizational-contacts-properties).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries#organizational-contacts-properties).
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | addresses | [physicalOfficeAddress](physicalofficeaddress.md) collection | Postal addresses for this organizational contact. For now a contact can only have one physical address. |
 | companyName | String | Name of the company that this organizational contact belong to. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
 | department | String | The name for the department in which the contact works. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
-| displayName | String | Display name for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values), `$search`, and `$orderBy`.  |
+| displayName | String | Display name for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values), `$search`, and `$orderby`.  |
 | givenName | String | First name for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values).  |
 | id | String | Unique identifier for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | jobTitle | String | Job title for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
-| mail | String | The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
+| mail | String | The SMTP address for the contact, for example, "jeff@contoso.com". Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
 | mailNickname | String | Email alias (portion of email address pre-pending the @ symbol) for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values). |
 | onPremisesLastSyncDateTime | DateTimeOffset | Date and time when this organizational contact was last synchronized from on-premises AD. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | List of any synchronization provisioning errors for this organizational contact. Supports `$filter` (`eq`, `not` for **category** and **propertyCausingError**), `/$count eq 0`, `/$count ne 0`. |
@@ -71,7 +71,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "authenticationFlowsPolicy resource type"
 description: "Represents the policy configuration of self-service sign-up experience at a tenant level that lets external users request to sign up for approval. "
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -17,8 +17,8 @@ Represents the [policy configuration of self-service sign-up experience](../reso
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get authentication flows policy](../api/authenticationflowspolicy-get.md)|authenticationFlowsPolicy|Get the authentication flows policy configuration.|
-|[Update authentication flows policy](../api/authenticationflowspolicy-update.md)|authenticationFlowsPolicy|Update the authentication flows policy configuration.|
+|[Get](../api/authenticationflowspolicy-get.md)|authenticationFlowsPolicy|Get the authentication flows policy configuration.|
+|[Update](../api/authenticationflowspolicy-update.md)|authenticationFlowsPolicy|Update the authentication flows policy configuration.|
 
 ## Properties
 

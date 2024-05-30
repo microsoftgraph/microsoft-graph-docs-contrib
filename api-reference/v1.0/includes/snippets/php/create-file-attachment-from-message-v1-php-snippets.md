@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\FileAttachment;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FileAttachment();
-$requestBody->set@odatatype('#microsoft.graph.fileAttachment');
-
+$requestBody->setOdataType('#microsoft.graph.fileAttachment');
 $requestBody->setName('smile');
+$requestBody->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('R0lGODdhEAYEAA7')));
 
-$requestBody->setContentBytes(base64_decode('R0lGODdhEAYEAA7'));
-
-
-
-$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->post($requestBody);
-
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->post($requestBody)->wait();
 
 ```

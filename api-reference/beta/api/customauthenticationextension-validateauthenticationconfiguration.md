@@ -3,7 +3,7 @@ title: "customAuthenticationExtension: validateAuthenticationConfiguration"
 description: "An API to check validity of the endpoint and authentication configuration for a customAuthenticationExtension."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "customauthenticationextension_validateauthenticationconfiguration" } -->
+[!INCLUDE [permissions-table](../includes/permissions/customauthenticationextension-validateauthenticationconfiguration-permissions.md)]
 
 ## HTTP request
 
@@ -46,13 +45,13 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
 In the request body, supply JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, do not supply a request body for this method.
+The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Don't supply a request body for this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -68,7 +67,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 ### Example 1: Supply and validate a potential custom authentication extension configuration
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "customauthenticationextensionthis.validateauthenticationconfiguration"
@@ -92,7 +91,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -133,7 +132,7 @@ Content-Type: application/json
 ### Example 2: Validate the configuration of a specific existing custom authentication extension
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -148,24 +147,28 @@ POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/9f
 [!INCLUDE [sample-code](../includes/snippets/csharp/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -175,7 +178,7 @@ POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/9f
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

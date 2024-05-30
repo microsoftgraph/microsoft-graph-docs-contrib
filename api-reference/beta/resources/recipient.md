@@ -3,8 +3,8 @@ title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
-author: "abheek-das"
+ms.subservice: mail
+author: "SuryaLashmiS"
 ---
 
 # recipient resource type
@@ -22,7 +22,7 @@ Represents information about a user in the sending or receiving end of an event,
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Presence\SetUserPreferredPresence\SetUserPreferredPresencePostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SetUserPreferredPresencePostRequestBody();
 $requestBody->setAvailability('DoNotDisturb');
-
 $requestBody->setActivity('DoNotDisturb');
-
 $requestBody->setExpirationDuration(new \DateInterval('PT8H'));
 
-
-
-$graphServiceClient->users()->byUserId('user-id')->presence()->setUserPreferredPresence()->post($requestBody);
-
+$graphServiceClient->users()->byUserId('user-id')->presence()->setUserPreferredPresence()->post($requestBody)->wait();
 
 ```

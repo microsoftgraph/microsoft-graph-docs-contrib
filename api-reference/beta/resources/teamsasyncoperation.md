@@ -3,7 +3,7 @@ title: "teamsAsyncOperation resource type"
 description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ When the request completes successfully, the status will be "succeeded" and the 
 
 |  Method                                                                   |  Return Type                                                                     | Description                                                       | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| [List operations on a chat](../api/chat-list-operations.md)               | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List async operations that ran or are running on a specific chat. |
+| [List operations](../api/chat-list-operations.md)               | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List async operations that ran or are running on a specific chat. |
 | [Get operation](../api/teamsasyncoperation-get.md)                   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | Get an async operation that ran or is running on a specific resource. |
 
 ## Properties

@@ -3,7 +3,7 @@ title: "yearReferenceValue resource type"
 description: "Represents a pointer to a year entry in a collection of referenceDefinition objects."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

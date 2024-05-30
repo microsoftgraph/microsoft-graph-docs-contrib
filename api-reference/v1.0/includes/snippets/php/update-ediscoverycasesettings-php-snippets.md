@@ -5,31 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Security\EdiscoveryCaseSettings;
+use Microsoft\Graph\Generated\Models\Security\RedundancyDetectionSettings;
+use Microsoft\Graph\Generated\Models\Security\TopicModelingSettings;
+use Microsoft\Graph\Generated\Models\Security\OcrSettings;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EdiscoveryCaseSettings();
-$requestBody->set@odatatype('#microsoft.graph.security.ediscoveryCaseSettings');
-
+$requestBody->setOdataType('#microsoft.graph.security.ediscoveryCaseSettings');
 $redundancyDetection = new RedundancyDetectionSettings();
-$redundancyDetection->set@odatatype('microsoft.graph.security.redundancyDetectionSettings');
-
-
+$redundancyDetection->setOdataType('microsoft.graph.security.redundancyDetectionSettings');
 $requestBody->setRedundancyDetection($redundancyDetection);
 $topicModeling = new TopicModelingSettings();
-$topicModeling->set@odatatype('microsoft.graph.security.topicModelingSettings');
-
-
+$topicModeling->setOdataType('microsoft.graph.security.topicModelingSettings');
 $requestBody->setTopicModeling($topicModeling);
 $ocr = new OcrSettings();
-$ocr->set@odatatype('microsoft.graph.security.ocrSettings');
-
-
+$ocr->setOdataType('microsoft.graph.security.ocrSettings');
 $requestBody->setOcr($ocr);
 
-
-$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->settings()->patch($requestBody);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->settings()->patch($requestBody)->wait();
 
 ```

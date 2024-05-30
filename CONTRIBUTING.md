@@ -13,8 +13,8 @@ Thank you for your interest in Microsoft Graph documentation!
 
 You can contribute to [Microsoft Graph documentation](https://developer.microsoft.com/graph/docs) in these ways:
 
-- Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs).
-- Report documentation bugs by scrolling to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback that will be tracked via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
+- Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs-contrib).
+- Report documentation bugs by scrolling to the **Feedback** section at the bottom of the related documentation page. You can select **This page** and create new feedback that will be tracked via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/issues).
       ![Report doc bugs from the related documentation page](includes/images/feedback-menu.png)
 - Add or vote for documentation requests at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
@@ -23,7 +23,7 @@ You can contribute to [Microsoft Graph documentation](https://developer.microsof
 
 ### Minor corrections
 
-Minor corrections or clarifications you submit for documentation and code examples in this repository don't require a Contribution License Agreement (CLA). Submissions are taken in the form of pull requests. We'll do our best to review pull requests within 10 business days.
+Minor corrections or clarifications you submit for documentation and code examples in this repository don't require a Contribution License Agreement (CLA). Submissions are taken in the form of pull requests. We do our best to review pull requests within 10 business days.
 
 ### Larger submissions
 
@@ -32,9 +32,9 @@ If you submit new or significant changes to documentation and code examples, you
 - Members of the Microsoft Open Technologies group
 - Contributors who don't work for Microsoft
 
-As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you need to complete and submit the documentation only once. Please carefully review the document; you may also need to have your employer sign the document.
+As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you need to complete and submit the documentation only once. Carefully review the document; you might also need to have your employer sign the document.
 
-Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Microsoft teams will be able to review and consider your contributions and you will get credit if we do.
+Signing the Contribution License Agreement (CLA) doesn't grant you rights to commit to the main repository. However, it does mean that the Microsoft teams will be able to review and consider your contributions and you'll get credit if we do.
 
 You can download or digitally sign the Contribution License Agreement (CLA) [here](https://cla.microsoft.com). Once we receive and process your CLA, we'll do our best to review your pull requests within 10 business days.
 
@@ -42,13 +42,13 @@ You can download or digitally sign the Contribution License Agreement (CLA) [her
 
 **Note:** 
 - Most of the information in this section can be found in [GitHub Help][] articles.  If you're familiar with Git and GitHub, skip to the **Contribute and edit content** section for the particulars of the code/content flow of this repository.
-- Before contributing for the first time to Microsoft Graph docs, employees of Microsoft should please complete configuring their GitHub accounts. See the **Document** section of the [internal Microsoft Graph Partners onboarding documentation](https://aka.ms/msgraphcdk) for details.
+- Before contributing for the first time to Microsoft Graph docs, employees of Microsoft should complete configuring their GitHub accounts. See the **Document** section of the [internal Microsoft Graph Partners onboarding documentation](https://aka.ms/msgraphcdk) for details.
 
 ### Setting up your fork of the repository
 
-1. Set up a GitHub account so you can contribute to this project. If you haven't done this already, please go to [GitHub Home][] and do it now.
+1. Set up a GitHub account so you can contribute to this project. If you haven't done so already, go to [GitHub Home][] and do it now.
 2. Set up your machine with Git. Follow the instructions in the [Setting up Git Tutorial][Set Up Git].
-3. Create your own fork of this repository. To do this, at the top of the page, click the **Fork** button.
+3. Create your own fork of this repository. To do this, at the top of the page, select the **Fork** button.
 4. Copy your fork to your local machine. To do this, open GitBash. At the command prompt enter:
 
 ```cmd
@@ -73,7 +73,7 @@ Limit each branch to a single concept/article to streamline the workflow and red
 
 - A new article (and associated images)
 - Spelling and grammar edits on an article
-- Applying a single formatting change across a large set of articles (e.g., applying a new copyright footer).
+- Applying a single formatting change across a large set of articles (for example, applying a new copyright footer).
 
 ### Contributions from community members
 
@@ -82,13 +82,13 @@ After you raise a PR, a content reviewer will review your pull request and guide
 #### Dos
 + Fix grammar and spelling errors and broken links
 + Fix omissions in existing sections
-+ Correct existing or add new HTTP examples
++ Correct existing or add new **HTTP** examples
 
 #### Don'ts
 + Move sections in reference and resource files
-+ Add code snippets (C#, JavaScript, Go, PowerShell, PHP samples) to examples. These code snippets are autogenerated weekly for new and updated HTTP examples
-+ Correct existing code snippets (C#, JavaScript, Go, PowerShell, PHP samples)
++ Add code snippets (C#, JavaScript, Go, PowerShell, PHP samples) to examples or correct existing code snippets. These code snippets are autogenerated weekly for new and updated HTTP examples
 + Add missing properties or documentation
++ Update the permissions tables in the API reference docs, or the [permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
 
 To recommend changes related to one of the types in this "Don'ts" list, [file a docs issue instead](#ways-to-contribute).
 
@@ -103,7 +103,7 @@ The following section shows the structure of a complete example. Line numbers ar
  2:  
  3:  #### Request
  4:  
- 5:  The following is an example of the request.
+ 5:  The following example shows a request.
  6:  
  7:  <!-- {
  8:    "blockType": "request",
@@ -115,7 +115,7 @@ The following section shows the structure of a complete example. Line numbers ar
 14:  
 15:  #### Response
 16:  
-17:  The following is an example of the response.
+17:  The following example shows the response.
 18:  
 19:  >**Note:** The response object shown here might be shortened for readability.
 20:  
@@ -147,15 +147,15 @@ The following section shows the structure of a complete example. Line numbers ar
 46:  ```
 ```
 
-- Line 1: Add a descriptive title. Start with a verb. Do not skip heading levels.
+- Line 1: Add a descriptive title. Start with a verb. Don't skip heading levels.
 - Line 3: Add the "Request" header.
 - Line 8: Set the **blockType** to `request` to ensure the example is validated and code samples are autogenerated a few days after the PR is published.
-- Line 9: Set a unique name for the example that does not conflict with names used by other examples. This name will be used for the code sample files.
-- Lines 10-13: Add your request URL inside a HTTP code block. Using `msgraph-interactive` instead of `http` will allow developers to use the "Try-It" button in docs.
+- Line 9: Set a unique name for the example that doesn't conflict with names used by other examples. This name will be used for the code sample files.
+- Lines 10-13: Add your request URL inside an HTTP code block. Using `msgraph-interactive` instead of `http` allows developers to use the "Try-It" button in docs.
 - Line 15: Add the "Response" header using the same header level as the "Request" header.
 - Line 17: Add any explanation for the example response.
 - Lines 21-26: Indicate details about the type of response object that's returned. See other examples in the same document for guidance.
-- Lines 27-46: Add the response object in a HTTP code block.
+- Lines 27-46: Add the response object in an HTTP code block.
 
 ## More resources
 

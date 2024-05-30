@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -UnifiedRoleEligibilityScheduleRequestId $unifiedRoleEligibilityScheduleRequestId
+Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -UnifiedRoleEligibilityScheduleRequestId $unifiedRoleEligibilityScheduleRequestId
 
 ```

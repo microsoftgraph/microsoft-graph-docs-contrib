@@ -3,7 +3,7 @@ title: "tasks resource type"
 description: "Represents the To Do tasks service available to a user"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -16,8 +16,8 @@ Represents the To Do tasks services available to a user.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
-|[Create taskList](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
+|[List base task lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
+|[Create base task list](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
 
 ## Properties
 None.
@@ -29,12 +29,13 @@ None.
 |lists|[baseTaskList](../resources/basetasklist.md) collection|The task lists in the users mailbox.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.tasks",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json

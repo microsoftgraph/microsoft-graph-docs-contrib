@@ -1,9 +1,9 @@
 ---
 title: "riskyUserHistoryItem resource type"
-description: "Represents the risk history of an Azure Active Directory (Azure AD) user as determined by Azure AD Identity Protection."
+description: "Represents the risk history of a Microsoft Entra user as determined by Microsoft Entra ID Protection."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk history of an Azure Active Directory (Azure AD) user as determined by Azure AD Identity Protection.
+Represents the risk history of a Microsoft Entra user as determined by Microsoft Entra ID Protection.
 
 Inherits from [riskyUser](../resources/riskyuser.md).
 
 >[!NOTE]
-> 1. Using this API requires an Azure AD Premium P2 license.
-> 2. The availability of risk history data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+> 1. Using this API requires a Microsoft Entra ID P2 license.
+> 2. The availability of risk history data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## Methods
 |Method|Return type|Description|
@@ -75,5 +75,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
-

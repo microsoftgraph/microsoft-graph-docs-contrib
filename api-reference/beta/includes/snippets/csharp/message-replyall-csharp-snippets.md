@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll.ReplyAllPostRequestBody
+var requestBody = new ReplyAllPostRequestBody
 {
 	Message = new Message
 	{
@@ -24,6 +26,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll.ReplyAllPos
 	},
 	Comment = "Please take a look at the attached guidelines before you decide on the name.",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
 
 

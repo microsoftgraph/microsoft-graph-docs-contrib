@@ -5,20 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\B2xIdentityUserFlow;
+use Microsoft\Graph\Beta\Generated\Models\UserFlowType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new B2xIdentityUserFlow();
 $requestBody->setId('Partner');
-
-$requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
-
+$requestBody->setUserFlowType(new UserFlowType('signUpOrSignIn'));
 $requestBody->setUserFlowTypeVersion(1);
 
-
-
-$result = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody);
-
+$result = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody)->wait();
 
 ```

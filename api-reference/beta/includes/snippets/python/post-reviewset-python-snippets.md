@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.ediscovery.review_set import ReviewSet
 
-request_body = ReviewSet()
-request_body.display_name = 'My Reviewset 3'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ReviewSet(
+	display_name = "My Reviewset 3",
+)
 
-
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.post(request_body)
 
 
 ```

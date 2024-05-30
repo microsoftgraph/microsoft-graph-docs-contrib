@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BusinessScenario businessScenario = new BusinessScenario();
-businessScenario.displayName = "Contoso Order Tracking";
-businessScenario.uniqueName = "com.contoso.apps.ordertracking";
+businessScenario.setOdataType("#microsoft.graph.businessScenario");
+businessScenario.setDisplayName("Contoso Order Tracking");
+businessScenario.setUniqueName("com.contoso.apps.ordertracking");
+BusinessScenario result = graphClient.solutions().businessScenarios().post(businessScenario);
 
-graphClient.solutions().businessScenarios()
-	.buildRequest()
-	.post(businessScenario);
 
 ```

@@ -3,7 +3,7 @@ title: "person resource type"
 description: "Represents an aggregation of information about a person from across mail and contacts."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Use the business scenarios API in Microsoft Graph (preview)"
 description: "The business scenarios API allows for the creation and management of business scenarios that configure and manage the integration of data into Microsoft Graph."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: conceptualPageType
 ---
 
@@ -61,15 +61,9 @@ For more information, see [Delete businessScenario](../api/businessscenario-dele
 |Configure business scenarios for Planner| [plannerPlanConfiguration](plannerplanconfiguration.md) [plannerTaskConfiguration](plannertaskconfiguration.md)|[Methods of plannerPlanConfiguration](plannerplanconfiguration.md#methods) [Methods of plannerTaskConfiguration](plannertaskconfiguration.md#methods)|
 |Create, read, update, and delete business scenario tasks in Planner| [businessScenarioTask](businessscenariotask.md)| [businessScenarioTask](businessscenariotask.md#methods)|
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 The business scenarios API allows apps to model and integrate real work business processes with a Microsoft 365 service over Microsoft Graph. To learn more:
 
 * Drill down on the methods and properties of the resources most helpful to your scenario.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).

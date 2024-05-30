@@ -3,7 +3,7 @@ title: "chatMessageHostedContent resource type"
 description: "A content hosted in a chat message"
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents Teams content hosted in a chat message, such as images or code snippets.
-[File attachments](chatmessageattachment.md) are not hosted content;
-they are stored in SharePoint or OneDrive.
+[File attachments](chatmessageattachment.md) aren't hosted content;
+they're stored in SharePoint or OneDrive.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) collection | Retrieve the list of **chatMessageHostedContent** for a message. |
-| [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
+| [List hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) collection | Retrieve the list of **chatMessageHostedContent** for a message. |
+| [Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
 
@@ -31,7 +31,7 @@ chatMessageHostedContent derives from [teamworkHostedContent](teamworkhostedcont
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id            |String       | Read-only. Represents the chat message hosted content identifier.|
-|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
+|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload as a base64 encoded string.|
 |contentType   |String       | Write-only. When posting new chat message hosted content, represents the type of content, such as image/png.|
 
 ### Instance attributes
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -23,14 +23,14 @@ $params = @{
 	appleId = "Apple Id value"
 	vppOrganizationName = "Vpp Organization Name value"
 	genres = @(
-		"Genres value"
-	)
-	language = "Language value"
-	seller = "Seller value"
-	totalLicenseCount = 
-	usedLicenseCount = 
+	"Genres value"
+)
+language = "Language value"
+seller = "Seller value"
+totalLicenseCount = 
+usedLicenseCount = 
 }
 
-New-MgDeviceAppMgtManagedEBook -BodyParameter $params
+New-MgDeviceAppManagementManagedEBook -BodyParameter $params
 
 ```

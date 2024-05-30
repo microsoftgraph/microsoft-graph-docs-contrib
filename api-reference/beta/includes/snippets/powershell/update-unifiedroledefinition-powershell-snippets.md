@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	description = "Update basic properties of application registrations"
@@ -12,12 +12,12 @@ $params = @{
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
-				"microsoft.directory/applications/basic/read"
-			)
-		}
-	)
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
 }
 
-Update-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+Update-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
 
 ```

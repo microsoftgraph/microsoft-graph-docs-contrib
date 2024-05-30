@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.MicrosoftGraphWindowsUpdatesAddMembersById;
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.MicrosoftGraphWindowsUpdatesAddMembersById.AddMembersByIdPostRequestBody
+var requestBody = new AddMembersByIdPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -18,6 +19,8 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 	},
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].MicrosoftGraphWindowsUpdatesAddMembersById.PostAsync(requestBody);
 
 

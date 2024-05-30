@@ -14,6 +14,6 @@ $params = @{
 	microsoftStoreForBusinessLastCompletedApplicationSyncTime = [System.DateTime]::Parse("2017-01-01T00:02:00.0421137-08:00")
 }
 
-Update-MgDeviceAppMgt -BodyParameter $params
+Update-MgDeviceAppManagement -BodyParameter $params
 
 ```

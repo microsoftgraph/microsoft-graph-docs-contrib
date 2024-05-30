@@ -5,18 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Tasks\Item\PlannerTaskItemRequestBuilderDeleteRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new PlannerTaskRequestBuilderDeleteRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new PlannerTaskItemRequestBuilderDeleteRequestConfiguration();
 $headers = [
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
 	];
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->delete($requestConfiguration);
-
+$graphServiceClient->planner()->tasks()->byPlannerTaskId('plannerTask-id')->delete($requestConfiguration)->wait();
 
 ```

@@ -4,13 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	LocalizedStrings = @(
+		@{
+			ElementType = "UxElement"
+			ElementId = $null
+			StringId = "alert_message"
+			Override = $true
+			Value = "Are you sure that you want to cancel your selection?"
+		}
 	)
 }
 
-Set-MgIdentityB2CUserFlowLanguageOverridePageContent -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -BodyParameter $params
+Set-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -BodyParameter $params
 
 ```

@@ -2,8 +2,8 @@
 title: "customAppScope resource type"
 description: "Represents a customized RBAC scope object from each provider."
 ms.localizationpriority: medium
-author: "bili1"
-ms.prod: "directory-management"
+author: "cubika"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -23,11 +23,11 @@ Inherits from [appScope](appscope.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List customAppScope](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
-| [Create customAppScope](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
-| [Get customAppScope](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
-| [Update customAppScope](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
-| [Delete customAppScope](../api/customappscope-delete.md) | None | Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider. |
+| [List](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
+| [Create](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
+| [Get](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
+| [Update](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
+| [Delete](../api/customappscope-delete.md) | None | Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider. |
 
 ## Properties
 

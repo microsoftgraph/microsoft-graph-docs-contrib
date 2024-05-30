@@ -2,8 +2,9 @@
 title: "Delete authenticationCombinationConfiguration"
 description: "Delete an authenticationCombinationConfiguration for a custom authenticationStrengthPolicy object."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,14 +15,13 @@ Namespace: microsoft.graph
 
 Delete an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)  for a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "authenticationstrengthpolicy_delete_combinationconfigurations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationstrengthpolicy-delete-combinationconfigurations-permissions.md)]
 
 [!INCLUDE [rbac-authenticationstrength-apis-write](../includes/rbac-for-apis/rbac-authenticationstrength-apis-write.md)]
 
@@ -32,16 +32,16 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}/$ref
+DELETE /identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,14 +66,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-authenticationcombinationconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-authenticationcombinationconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

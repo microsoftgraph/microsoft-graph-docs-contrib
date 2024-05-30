@@ -4,40 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.alerts.item.alert_item_request_builder import AlertItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.alert import Alert
+from msgraph_beta.generated.models.alert_feedback import AlertFeedback
+from msgraph_beta.generated.models.alert_status import AlertStatus
+from msgraph_beta.generated.models.security_vendor_information import SecurityVendorInformation
 
-request_body = Alert()
-request_body.assigned_to = 'String'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.closedDateTime = DateTime('String (timestamp)')
-
-request_body.Comments(['String', ])
-
-request_body.feedback(AlertFeedback.@odata.type: microsoft.graph.alertFeedback('alertfeedback.@odata.type: microsoft.graph.alertfeedback'))
-
-request_body.status(AlertStatus.@odata.type: microsoft.graph.alertStatus('alertstatus.@odata.type: microsoft.graph.alertstatus'))
-
-request_body.Tags(['String', ])
-
-vendor_information = SecurityVendorInformation()
-vendor_information.provider = 'String'
-
-vendor_information.vendor = 'String'
-
-
-request_body.vendor_information = vendor_information
-
-
-request_configuration = AlertRequestBuilder.AlertRequestBuilderPatchRequestConfiguration(
-headers = {
-'Prefer' : "return=representation",
-}
-
+request_body = Alert(
+	assigned_to = "String",
+	closed_date_time = "String (timestamp)",
+	comments = [
+		"String",
+	],
+	feedback = AlertFeedback.Unknown,
+	status = AlertStatus.Unknown,
+	tags = [
+		"String",
+	],
+	vendor_information = SecurityVendorInformation(
+		provider = "String",
+		vendor = "String",
+	),
 )
 
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
 
-result = await client.security.alerts.by_alert_id('alert-id').patch(request_body = request_body, request_configuration = request_configuration)
+
+result = await graph_client.security.alerts.by_alert_id('alert-id').patch(request_body, request_configuration = request_configuration)
 
 
 ```

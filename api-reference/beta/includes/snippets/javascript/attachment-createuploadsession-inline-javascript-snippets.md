@@ -13,7 +13,7 @@ const client = Client.init(options);
 const uploadSession = {
   AttachmentItem: {
     attachmentType: 'file',
-    name: 'scenary', 
+    name: 'scenary',
     size: 7208534,
     isInline: true,
     contentId: 'my_inline_picture'

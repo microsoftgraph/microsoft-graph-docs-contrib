@@ -2,8 +2,9 @@
 title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +20,7 @@ Represents the type of conditions that govern when the policy applies.
 |:-------------|:------------|:------------|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
 |clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|Client applications (service principals and workload identities) included in and excluded from the policy. Either **users** or **clientApplications** is required. |
-|clientAppTypes|conditionalAccessClientApp collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Required.|
+|clientAppTypes|conditionalAccessClientApp collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Required. <br/><br/> The `easUnsupported` enumeration member will be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms.|
 |devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
@@ -27,11 +28,6 @@ Represents the type of conditions that govern when the policy applies.
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
-
->**Note:**
->* **clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. <br>
->* **clientAppType** `easUnsupported` is going to be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. <br>
->* We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 ## Relationships
 
@@ -45,7 +41,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "clientAppTypes",
-    "deviceStates",
     "devices",
     "locations",
     "platforms",

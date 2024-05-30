@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,20 +15,19 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 
 requestFilter := "feature eq 'registration'"
 
-requestParameters := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetCredentialUsageSummaryWithPeriodRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetCredentialUsageSummaryWithPeriodRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Reports().GetCredentialUsageSummary(period='{period}')().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+period := "{period}"
+getCredentialUsageSummary, err := graphClient.Reports().GetCredentialUsageSummaryWithPeriod(&period).GetAsGetCredentialUsageSummaryWithPeriodGetResponse(context.Background(), configuration)
 
 
 ```

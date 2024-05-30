@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times.
 ms.date: 09/11/2017
 title: DateTimeColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # DateTimeColumn resource type
@@ -18,7 +18,7 @@ The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource ind
 
 ## JSON representation
 
-Here is a JSON representation of a **dateTimeColumn** resource.
+Here's a JSON representation of a **dateTimeColumn** resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
 
@@ -41,8 +41,8 @@ Here is a JSON representation of a **dateTimeColumn** resource.
 | Value        | Description                                                         |
 | :----------- | :------------------------------------------------------------------ |
 | **default**  | Uses the default rendering in the UX.                               |
-| **friendly** | Uses a friendly relative representation (eg. "today at 3:00 PM")    |
-| **standard** | Uses the standard absolute representation (eg. "5/10/2017 3:20 PM") |
+| **friendly** | Uses a friendly relative representation (for example "today at 3:00 PM")    |
+| **standard** | Uses the standard absolute representation (for example "5/10/2017 3:20 PM") |
 
 <!--
 {

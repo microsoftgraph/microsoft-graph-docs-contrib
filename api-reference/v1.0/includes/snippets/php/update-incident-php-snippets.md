@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Security\Incident;
+use Microsoft\Graph\Generated\Models\Security\AlertClassification;
+use Microsoft\Graph\Generated\Models\Security\AlertDetermination;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Incident();
-$requestBody->setClassification(new AlertClassification('truepositive'));
+$requestBody->setClassification(new AlertClassification('truePositive'));
+$requestBody->setDetermination(new AlertDetermination('multiStagedAttack'));
+$requestBody->setCustomTags(['Demo', 	]);
 
-$requestBody->setDetermination(new AlertDetermination('multistagedattack'));
-
-$requestBody->setCustomTags(['Demo', ]);
-
-
-
-$result = $graphServiceClient->security()->incidents()->byIncidentId('incident-id')->patch($requestBody);
-
+$result = $graphServiceClient->security()->incidents()->byIncidentId('incident-id')->patch($requestBody)->wait();
 
 ```

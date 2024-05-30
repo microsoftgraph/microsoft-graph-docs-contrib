@@ -1,6 +1,6 @@
 ---
 title: "To Do component in Microsoft Graph Toolkit"
-description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
+description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To Do."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -13,9 +13,19 @@ The To Do component is used to enable the signed-in user to view, add, remove, c
 
 The following example displays the signed-in user's Microsoft To Do tasks using the `mgt-todo` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-html--todos&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-html--todos&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-react--todos&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-react--todos&source=docs).
+
+---
 
 ## Properties
 
@@ -76,12 +86,12 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `todo` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `todo` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values.
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: a to-do task object | Replaces the whole default task. |
-| task-details | task: a to-do task object | Template replaces the details section of the task. |
+| task     | task: a To Do task object | Replaces the whole default task. |
+| task-details | task: a To Do task object | Template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
 
@@ -97,12 +107,12 @@ The following example defines a template for the tasks component.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the listed permissions.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` or `initialId` set  | Tasks.Read, Tasks.ReadWrite | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` not set | Tasks.Read, Tasks.ReadWrite | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | create, update or delete task | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## Authentication

@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.column_definition import ColumnDefinition
 
-request_body = ColumnDefinition()
-request_body.required = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.hidden = False
+request_body = ColumnDefinition(
+	required = True,
+	hidden = False,
+	propagate_changes = False,
+)
 
-request_body.propagate_changes = False
-
-
-
-
-result = await client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').columns.by_column_id('columnDefinition-id').patch(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').columns.by_column_definition_id('columnDefinition-id').patch(request_body)
 
 
 ```

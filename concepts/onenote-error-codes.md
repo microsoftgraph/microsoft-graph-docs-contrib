@@ -1,14 +1,14 @@
 ---
 title: "Error codes for the OneNote API in Microsoft Graph"
-description: "Find information about error codes that are returned by the OneNote API in Microsoft Graph whenever a request that is sent through the API fails."
+description: "Find information about error codes that the OneNote API in Microsoft Graph returns when a request that is sent through the API fails."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Error codes for the OneNote API in Microsoft Graph
 
-This article describes error codes that are returned by the OneNote API in Microsoft Graph whenever a request that is sent through the API fails.
+This article describes error codes that the OneNote API in Microsoft Graph returns when a request that is sent through the API fails.
 
 ## Error response example
 
@@ -40,7 +40,7 @@ An unexpected error occurred and the request failed.
 The service is not currently available.
 
 ### 10003
-The current user's account has exceeded the maximum number of active requests. Your app will have to repeat the request.
+The current user's account exceeded the maximum number of active requests. Your app needs to repeat the request.
 
 ### 10004
 The service can't create a page in the requested section because that section is protected by a password.
@@ -52,10 +52,10 @@ The request contains more than the maximum number of image tags in which the **d
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
 
 ### 10007
-The server is too busy to handle the incoming request at this moment. Please try again later.
+The server is too busy to handle the incoming request at this moment. Try again later.
 
 ### 10008
-One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Please make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
+One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
 
 ### 10012
 Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see [Set up a library to require check-out of files](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
@@ -63,16 +63,16 @@ Unable to create or update the entity because the library that contains the note
 Either remove the check-out requirement from the library, or move the notebook.
 
 ### 10013
-One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
+One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) for mitigation steps.
 
 ### 10014
-Azure Key Vault is too busy to handle the incoming request at this moment. Please try again later.
+Azure Key Vault is too busy to handle the incoming request at this moment. Try again later.
 
 ### 10015
-SharePoint is currently unavailable. Please try again later.
+SharePoint is currently unavailable. Try again later.
 
 ### 10016
-Document library on the user or group’s OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
+Document library on the user or group's OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
 
 ### 10017
 Bad Request.
@@ -82,7 +82,7 @@ The request failed because an undetermined error occurred.
 
 ## Codes from 20001 to 29999
 
-The application code has done something wrong.
+The application code did something wrong.
 
 ### 20001
 
@@ -95,13 +95,13 @@ The request contains two or more "Presentation" parts. Exactly one is required.
 The content type of the "Presentation" part can be only text/HTML or application/XHTML+XML. 
 
 ### 20004
-The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
+The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API ignores the **src** property and uses the **data-render-src** property. 
 
 ### 20005
 The request URI is too long. The maximum size of the URI (including all parameters and data) is 16 KB or 16,384 characters.
 
 ### 20006
-The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API will ignore the **image** tag. 
+The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API ignores the **image** tag. 
 
 ### 20007
 The "Presentation" part HTML contains a created date/time string that does not match any of the allowed formats. 
@@ -184,7 +184,7 @@ Your request uses an OData feature that isn't supported.
 Your request contains an invalid ID for the target notebook, section group, section, or page entity.
 
 ### 20113
-The resource specified in the request has been deleted.
+The resource specified in the request was deleted.
 
 ### 20115
 The name contains invalid characters. A notebook name cannot contain any of the following characters: `? * \ / : < > | ' "`
@@ -235,13 +235,13 @@ Your request contains an invalid value for Content-Type. Use the value indicated
 Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. 
 
 ### 20133
-Your request specifies a PATCH target that is not supported. See [Update page content](onenote-update-page.md).
+Your request specifies a PATCH target that isn't supported. See [Update page content](onenote-update-page.md).
 
 ### 20134
-Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote-update-page.md).
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure you prefix it with a # symbol. See [Update page content](onenote-update-page.md).
 
 ### 20135
-Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](onenote-update-page.md).
+Your request specifies an entity type that isn't supported for the PATCH operation. See [Update page content](onenote-update-page.md).
 
 ### 20136
 Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](onenote-extract-data.md).
@@ -269,7 +269,7 @@ See [Use note tags](onenote-note-tags.md).
 The target in your PATCH request doesn't support the specified action. See [Update page content](onenote-update-page.md).
 
 ### 20142
-Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
+Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which isn't supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20143
 The OData query is invalid.
@@ -284,7 +284,7 @@ The **select** or **expand** expression in your request contains an invalid term
 The `style="position:absolute"` attribute is specified on an element, but the **body** element does not specify `data-absolute-enabled="true"`, which is required to support positioning. All position settings will be ignored. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20147
-The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings will be ignored and its content will render inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
+The `style="position:absolute"` attribute is specified on an element that isn't a direct child of the **body** element, which isn't supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings is ignored and its content renders inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20148
 The `style="position:absolute"` attribute is specified on an element type that does not support it. Only **div**, **img**, and **object** elements that are direct children of the page body support positioning. See [Create absolute positioned elements](onenote-abs-pos.md).
@@ -293,10 +293,10 @@ The `style="position:absolute"` attribute is specified on an element type that d
 Your request specifies a target element that cannot be found.
 
 ### 20150
-The request is not valid for this authentication type. Use the `../me/onenote/` path instead.
+The request isn't valid for this authentication type. Use the `../me/onenote/` path instead.
 
 ### 20151
-The request is not valid for this authentication type. Use the `../me/onenote/section/{id}/pages` endpoint to create a page in a specific section.
+The request isn't valid for this authentication type. Use the `../me/onenote/section/{id}/pages` endpoint to create a page in a specific section.
 
 ### 20152
 There is no name value specified for the entity. The name must be defined, and it cannot contain whitespaces only.
@@ -331,14 +331,16 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [Microsoft Graph service-specific throttling guidance](./throttling-limits.md).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
+The video source specified in the request isn't supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
+### 20266
+The number of maximum sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time (use the [List pages](/graph/api/section-list-pages) API).
 
 ## Codes from 30001 to 39999
 Something is wrong with the user's account.
 
 ### 30101
-The user account has exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/).
+The user account exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/).
 
 ### 30102
 Nothing more can be added to the requested section because it has reached its maximum size.
@@ -347,10 +349,10 @@ Nothing more can be added to the requested section because it has reached its ma
 Resource consumption is too high for the request. Either the target user account has a large dataset, or the service is receiving a high number of concurrent requests to the same site (for example, the user's personal site or a team site).
 
 ### 30104
-The user account has been suspended.
+The user account was suspended.
 
 ### 30105
-The user's personal OneDrive for Business site is not provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
+The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
 
 ### 30106
 OneDrive for Business is being provisioned for the user.
@@ -378,7 +380,7 @@ There is a generic error with Student Information Services.
 Multiple users affected by the request had the same username.
 
 ### 30113
-The notebook is not configured to allow invites.
+The notebook isn't configured to allow invites.
 
 ### 30114
 There is a required parameter missing.
@@ -387,7 +389,7 @@ There is a required parameter missing.
 The user or application does not have the correct permissions.
 
 ### 40001
-The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md#notes-permissions).
+The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md).
 
 ### 40002
 The user doesn't have permission to write to the requested location.
@@ -396,10 +398,10 @@ The user doesn't have permission to write to the requested location.
 The user doesn't have permission to access the requested resource.
 
 ### 40004
-The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions-reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions-reference.md).
 
 ### 40006 
-The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions-reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions-reference.md).
 
 ### 40007
 The user does not have permissions to access this resource.
@@ -410,7 +412,7 @@ Access is Forbidden for this resource.
 ### 40009
 The container is already in use by another resource.
 
-## See also
+## Related content
 
 - [Microsoft Graph error responses and resource types](errors.md)
 - [OneNote API reference](/graph/api/resources/onenote)

@@ -2,8 +2,8 @@
 title: "endpoint resource type"
 description: "The endpoint type"
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

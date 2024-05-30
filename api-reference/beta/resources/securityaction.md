@@ -3,7 +3,7 @@ title: "securityAction resource type"
 description: "Take immediate action to defend against threats using the Microsoft Graph Security securityAction entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with Windows Defender for Endpoint (coming soon) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -33,6 +33,7 @@ Take immediate action to defend against threats using the Microsoft Graph Securi
 |actionReason|String|Reason for invoking this action.|
 |appId|String|The Application ID of the calling application that submitted (POST) the action. The appId should be extracted from the auth token and not entered manually by the calling application.|
 |azureTenantId|String|Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support). The azureTenantId should be extracted from the auth token and not entered manually by the calling application.|
+|clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
 |completedDateTime|DateTimeOffset|Timestamp when the action was completed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |createdDateTime|DateTimeOffset|Timestamp when the action is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |errorInfo|[resultInfo](resultinfo.md)| Error info when the action fails.|

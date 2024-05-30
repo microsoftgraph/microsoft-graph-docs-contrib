@@ -3,25 +3,25 @@ title: "accessPackageAssignmentPolicy resource type"
 description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentPolicy resource type
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment. An access package can have zero or more policies. When a request from a subject is received, the subject is matched against each policy to find the policy (if any) with **requestorSettings** that include that subject. The policy then determines whether the request requires approval, the duration of the access package assignment, and whether the assignment needs regular reviews.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment. An access package can have zero or more policies. When a request from a subject is received, the subject is matched against each policy to find the policy (if any) with **requestorSettings** that include that subject. The policy then determines whether the request requires approval, the duration of the access package assignment, and whether the assignment needs regular reviews.
 
 To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) which references the access package and access package assignment policy.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageAssignmentPolicies](../api/entitlementmanagement-list-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Get a list of the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects and their properties.|
-|[Create accessPackageAssignmentPolicy](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
-|[Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Read the properties and relationships of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
-|[Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Update the properties of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
-|[Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)|None|Deletes an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
+|[List](../api/entitlementmanagement-list-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Get a list of the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects and their properties.|
+|[Create](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
+|[Get](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Read the properties and relationships of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
+|[Update](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Update the properties of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
+|[Delete](../api/accesspackageassignmentpolicy-delete.md)|None|Deletes an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,9 +42,10 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. |
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only.  Supports `$expand`.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
 |questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
+|customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -92,5 +93,3 @@ The following is a JSON representation of the resource.
  
 }
 ```
-
-

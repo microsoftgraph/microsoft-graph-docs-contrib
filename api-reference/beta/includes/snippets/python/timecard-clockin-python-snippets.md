@@ -4,27 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.teams.item.schedule.timecards.clock_in.clock_in_post_request_body import ClockInPostRequestBody
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
 
-request_body = ClockInPostRequestBody()
-notes = ItemBody()
-notes.contenttype(BodyType.Text('bodytype.text'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-notes.content = 'clock in notes'
+request_body = ClockInPostRequestBody(
+	notes = ItemBody(
+		content_type = BodyType.Text,
+		content = "clock in notes",
+	),
+	additional_data = {
+			"at_aproved_location" : True,
+	}
+)
 
-
-request_body.notes = notes
-additional_data = [
-'at_aproved_location' => true,
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.teams.by_team_id('team-id').schedule.time_cards.clock_in.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.clock_in.post(request_body)
 
 
 ```

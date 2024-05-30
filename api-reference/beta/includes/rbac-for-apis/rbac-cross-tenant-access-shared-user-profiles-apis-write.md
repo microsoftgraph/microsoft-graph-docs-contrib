@@ -1,6 +1,6 @@
 ---
-author: jkdouglas
+author: yyuank
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must also be assigned the *Global Administrator* Azure AD role.
+For delegated scenarios, the calling user must also be assigned the *Global Administrator* Microsoft Entra role.

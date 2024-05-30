@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementAlert: refresh"
-description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles."
+description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -12,20 +12,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles.
+Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Microsoft Entra roles. This task is a long-running operation and the unifiedRoleManagementAlert object will be updated only when the operation completes.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementAlert.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagementAlert.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementalert_refresh" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementalert-refresh-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
-## HTTP requests
+## HTTP request
 
 To refresh incidents on all alerts, use the following request.
 <!-- {
@@ -48,7 +47,7 @@ POST /identityGovernance/roleManagementAlerts/alerts/{alertId}/refresh
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -58,14 +57,14 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Azure AD roles. |
+|scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Microsoft Entra roles. |
 |scopeId|String|The identifier of the scope where the alert applies. `/` is the only supported one for the tenant.|
 
 For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a 'Location' header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
 
 ## Examples
 
@@ -73,7 +72,7 @@ If successful, this action returns a `202 Accepted` response code with a 'Locati
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,20 +93,28 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedrolemanagementalert-refresh-all-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedrolemanagementalert-refresh-all-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedrolemanagementalert-refresh-all-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unifiedrolemanagementalert-refresh-all-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedrolemanagementalert-refresh-all-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unifiedrolemanagementalert-refresh-all-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedrolemanagementalert-refresh-all-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/unifiedrolemanagementalert-refresh-all-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -117,7 +124,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -133,7 +140,7 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -149,20 +156,28 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedrolemanagementalert-refresh-single-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedrolemanagementalert-refresh-single-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedrolemanagementalert-refresh-single-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unifiedrolemanagementalert-refresh-single-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedrolemanagementalert-refresh-single-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unifiedrolemanagementalert-refresh-single-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedrolemanagementalert-refresh-single-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/unifiedrolemanagementalert-refresh-single-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedrolemanagementalert-refresh-single-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -172,7 +187,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

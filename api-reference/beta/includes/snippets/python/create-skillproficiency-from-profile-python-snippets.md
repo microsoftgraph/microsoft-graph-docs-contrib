@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.skill_proficiency import SkillProficiency
+from msgraph_beta.generated.models.allowed_audiences import AllowedAudiences
+from msgraph_beta.generated.models.skill_proficiency_level import SkillProficiencyLevel
 
-request_body = SkillProficiency()
-request_body.Categories(['Professional', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.allowedaudiences(AllowedAudiences.Organization('allowedaudiences.organization'))
+request_body = SkillProficiency(
+	categories = [
+		"Professional",
+	],
+	allowed_audiences = AllowedAudiences.Organization,
+	display_name = "API Design",
+	proficiency = SkillProficiencyLevel.GeneralProfessional,
+	collaboration_tags = [
+		"ableToMentor",
+	],
+)
 
-request_body.display_name = 'API Design'
-
-request_body.proficiency(SkillProficiencyLevel.GeneralProfessional('skillproficiencylevel.generalprofessional'))
-
-request_body.CollaborationTags(['ableToMentor', ])
-
-
-
-
-result = await client.me.profile.skills.post(request_body = request_body)
+result = await graph_client.me.profile.skills.post(request_body)
 
 
 ```

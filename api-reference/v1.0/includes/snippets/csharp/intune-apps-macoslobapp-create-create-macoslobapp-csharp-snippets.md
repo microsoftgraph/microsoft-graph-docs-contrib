@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new MacOSLobApp
 {
@@ -34,18 +35,18 @@ var requestBody = new MacOSLobApp
 	MinimumSupportedOperatingSystem = new MacOSMinimumOperatingSystem
 	{
 		OdataType = "microsoft.graph.macOSMinimumOperatingSystem",
-		V10_7 = true,
-		V10_8 = true,
-		V10_9 = true,
-		V10_10 = true,
-		V10_11 = true,
-		V10_12 = true,
-		V10_13 = true,
-		V10_14 = true,
-		V10_15 = true,
-		V11_0 = true,
-		V12_0 = true,
-		V13_0 = true,
+		V107 = true,
+		V108 = true,
+		V109 = true,
+		V1010 = true,
+		V1011 = true,
+		V1012 = true,
+		V1013 = true,
+		V1014 = true,
+		V1015 = true,
+		V110 = true,
+		V120 = true,
+		V130 = true,
 	},
 	BuildNumber = "Build Number value",
 	VersionNumber = "Version Number value",
@@ -67,6 +68,8 @@ var requestBody = new MacOSLobApp
 	IgnoreVersionDetection = true,
 	InstallAsManaged = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceAppManagement.MobileApps.PostAsync(requestBody);
 
 

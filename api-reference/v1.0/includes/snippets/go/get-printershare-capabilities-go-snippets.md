@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestParameters := &graphprint.PrintShareItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","capabilities"},
@@ -22,7 +22,8 @@ configuration := &graphprint.PrintShareItemRequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+shares, err := graphClient.Print().Shares().ByPrinterShareId("printerShare-id").Get(context.Background(), configuration)
 
 
 ```

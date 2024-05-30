@@ -18,6 +18,6 @@ $params = @{
 	}
 }
 
-New-MgDeviceAppMgtMobileAppAssignment -MobileAppId $mobileAppId -BodyParameter $params
+New-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId -BodyParameter $params
 
 ```

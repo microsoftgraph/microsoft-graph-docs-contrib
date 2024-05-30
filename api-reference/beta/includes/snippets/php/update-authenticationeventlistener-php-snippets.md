@@ -5,26 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OnTokenIssuanceStartListener;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationConditions;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationConditionsApplications;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OnTokenIssuanceStartListener();
-$requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartListener');
-
+$requestBody->setOdataType('#microsoft.graph.onTokenIssuanceStartListener');
 $conditions = new AuthenticationConditions();
 $conditionsApplications = new AuthenticationConditionsApplications();
 $conditionsApplications->setIncludeAllApplications(false);
-
-
 $conditions->setApplications($conditionsApplications);
-
 $requestBody->setConditions($conditions);
 $requestBody->setPriority(500);
 
-
-
-$result = $graphServiceClient->identity()->authenticationEventListeners()->byAuthenticationEventListenerId('authenticationEventListener-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->authenticationEventListeners()->byAuthenticationEventListenerId('authenticationEventListener-id')->patch($requestBody)->wait();
 
 ```

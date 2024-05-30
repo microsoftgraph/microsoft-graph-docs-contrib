@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AdministrativeUnit administrativeUnit = graphClient.administrativeUnits("2sd35b05-ae71-48ab-9e7d-4r41a28te37d")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AdministrativeUnit result = graphClient.administrativeUnits().byAdministrativeUnitId("{administrativeUnit-id}").get();
+
 
 ```

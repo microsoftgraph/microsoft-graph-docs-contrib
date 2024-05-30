@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement
 
-Get-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId
+Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId
 
 ```

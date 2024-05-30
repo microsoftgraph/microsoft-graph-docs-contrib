@@ -2,8 +2,8 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 ms.localizationpriority: high
-ms.prod: "outlook"
-author: "abheek-das"
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md).  
+[message](../resources/message.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
 
@@ -20,8 +20,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
-|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
+|[Get attachment](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
+|[Delete attachment](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -40,7 +40,7 @@ Derived from [attachment](attachment.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

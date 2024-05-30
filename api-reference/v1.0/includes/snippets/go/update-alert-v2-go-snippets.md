@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,11 +15,8 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodelssecurity.NewAlert()
-assignedTo := "secAdmin@contoso.onmicrosoft.com"
+assignedTo := "secAdmin@contoso.com"
 requestBody.SetAssignedTo(&assignedTo) 
 classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
 requestBody.SetClassification(&classification) 
@@ -25,7 +25,8 @@ requestBody.SetDetermination(&determination)
 status := graphmodels.INPROGRESS_ALERTSTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.Security().Alerts_v2().ByAlerts_v2().Id("alert-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+alerts_v2, err := graphClient.Security().Alerts_v2().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

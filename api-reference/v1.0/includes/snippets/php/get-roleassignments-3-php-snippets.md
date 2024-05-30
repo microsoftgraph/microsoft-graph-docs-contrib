@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\RoleManagement\EntitlementManagement\RoleAssignments\RoleAssignmentsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
 $queryParameters = RoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -16,7 +18,6 @@ $queryParameters->expand = ["principal"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->entitlementManagement()->roleAssignments()->get($requestConfiguration);
-
+$result = $graphServiceClient->roleManagement()->entitlementManagement()->roleAssignments()->get($requestConfiguration)->wait();
 
 ```

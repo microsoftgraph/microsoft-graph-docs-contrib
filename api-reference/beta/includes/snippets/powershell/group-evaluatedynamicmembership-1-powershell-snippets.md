@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 
-Test-MgGroupDynamicMembership -GroupId $groupId -BodyParameter $params
+Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
 
 ```

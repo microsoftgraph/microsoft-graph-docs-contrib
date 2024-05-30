@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,16 +15,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 source := graphmodels.NewParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-applicationInstance := graphmodels.New()
+applicationInstance := graphmodels.NewIdentity()
 displayName := "Calling Bot"
 applicationInstance.SetDisplayName(&displayName) 
 id := "3d913abb-aec0-4964-8fa6-3c6850c4f278"
@@ -44,7 +44,7 @@ requestBody.SetSource(source)
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -66,7 +66,8 @@ requestBody.SetMediaConfig(mediaConfig)
 tenantId := "aa67bd4c-8475-432d-bd41-39f255720e0a"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

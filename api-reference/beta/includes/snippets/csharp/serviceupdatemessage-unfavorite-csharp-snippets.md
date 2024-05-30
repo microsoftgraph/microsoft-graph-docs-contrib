@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.Unfavorite;
 
-var requestBody = new Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.Unfavorite.UnfavoritePostRequestBody
+var requestBody = new UnfavoritePostRequestBody
 {
 	MessageIds = new List<string>
 	{
@@ -16,7 +17,9 @@ var requestBody = new Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.Un
 		"MC167983",
 	},
 };
-var result = await graphClient.Admin.ServiceAnnouncement.Messages.Unfavorite.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.Unfavorite.PostAsUnfavoritePostResponseAsync(requestBody);
 
 
 ```

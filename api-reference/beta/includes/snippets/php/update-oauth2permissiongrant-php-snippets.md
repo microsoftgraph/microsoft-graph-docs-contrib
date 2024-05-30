@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OAuth2PermissionGrant;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OAuth2PermissionGrant();
 $requestBody->setScope('User.ReadBasic.All Group.ReadWrite.All');
 
-
-
-$result = $graphServiceClient->oauth2PermissionGrants()->byOauth2PermissionGrantId('oAuth2PermissionGrant-id')->patch($requestBody);
-
+$result = $graphServiceClient->oauth2PermissionGrants()->byOAuth2PermissionGrantId('oAuth2PermissionGrant-id')->patch($requestBody)->wait();
 
 ```

@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Message;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Message();
 $requestBody->setIsRead(true);
 
-
-
-$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->patch($requestBody)->wait();
 
 ```

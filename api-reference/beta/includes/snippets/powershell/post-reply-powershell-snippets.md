@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	post = @{
@@ -40,25 +40,25 @@ $params = @{
 		lastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
 		changeKey = "changeKey-value"
 		categories = @(
-			"categories-value"
-		)
-		id = "id-value"
-		inReplyTo = @{
-		}
-		attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				lastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-				name = "name-value"
-				contentType = "contentType-value"
-				size = 99
-				isInline = $true
-				id = "id-value"
-			}
-		)
+		"categories-value"
+	)
+	id = "id-value"
+	inReplyTo = @{
 	}
+	attachments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.fileAttachment"
+			lastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+			name = "name-value"
+			contentType = "contentType-value"
+			size = 99
+			isInline = $true
+			id = "id-value"
+		}
+	)
+}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ```

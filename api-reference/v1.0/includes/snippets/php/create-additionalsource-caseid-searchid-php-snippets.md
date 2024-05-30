@@ -5,21 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Security\SiteSource;
+use Microsoft\Graph\Generated\Models\Site;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SiteSource();
-$requestBody->set@odatatype('microsoft.graph.security.siteSource');
-
+$requestBody->setOdataType('microsoft.graph.security.siteSource');
 $site = new Site();
 $site->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
-
-
 $requestBody->setSite($site);
 
-
-$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->bySearcheId('ediscoverySearch-id')->additionalSources()->post($requestBody);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->byEdiscoverySearchId('ediscoverySearch-id')->additionalSources()->post($requestBody)->wait();
 
 ```

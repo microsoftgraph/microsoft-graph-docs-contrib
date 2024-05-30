@@ -5,22 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\FeatureRolloutPolicy;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FeatureRolloutPolicy();
 $requestBody->setDisplayName('PasswordHashSync Rollout Policy');
-
 $requestBody->setDescription('PasswordHashSync Rollout Policy');
-
 $requestBody->setIsEnabled(true);
-
 $requestBody->setIsAppliedToOrganization(false);
 
-
-
-$result = $graphServiceClient->policies()->featureRolloutPolicies()->byFeatureRolloutPolicieId('featureRolloutPolicy-id')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->featureRolloutPolicies()->byFeatureRolloutPolicyId('featureRolloutPolicy-id')->patch($requestBody)->wait();
 
 ```

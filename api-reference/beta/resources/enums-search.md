@@ -3,7 +3,7 @@ title: "Search enum values"
 description: "Microsoft Graph search enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 author: "jakeost-msft"
 ---
 
@@ -17,9 +17,9 @@ Namespace: microsoft.graph.search
 
 |Member|
 |:---|
-|Published|
-|Draft|
-|Excluded|
+|published|
+|draft|
+|excluded|
 |unknownFutureValue|
 
 <!--

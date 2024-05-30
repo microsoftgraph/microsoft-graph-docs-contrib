@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.project_participation import ProjectParticipation
+from msgraph_beta.generated.models.allowed_audiences import AllowedAudiences
+from msgraph_beta.generated.models.company_detail import CompanyDetail
 
-request_body = ProjectParticipation()
-request_body.allowedaudiences(AllowedAudiences.Organization('allowedaudiences.organization'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-client = CompanyDetail()
-client.department = 'Corporate Marketing'
+request_body = ProjectParticipation(
+	allowed_audiences = AllowedAudiences.Organization,
+	client = CompanyDetail(
+		department = "Corporate Marketing",
+		web_url = "https://www.contoso.com",
+	),
+)
 
-client.web_url = 'https://www.contoso.com'
-
-
-request_body.client = client
-
-
-
-result = await client.me.profile.projects.by_project_id('projectParticipation-id').patch(request_body = request_body)
+result = await graph_client.me.profile.projects.by_project_participation_id('projectParticipation-id').patch(request_body)
 
 
 ```

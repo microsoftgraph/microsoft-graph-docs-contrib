@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\UpdateRecordingStatus\UpdateRecordingStatusPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\RecordingStatus;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateRecordingStatusPostRequestBody();
 $requestBody->setClientContext('clientContext-value');
+$requestBody->setStatus(new RecordingStatus('notRecording | recording | failed'));
 
-$requestBody->setStatus(new RecordingStatus('notrecording | recording | failed'));
-
-
-
-$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->updateRecordingStatus()->post($requestBody);
-
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->updateRecordingStatus()->post($requestBody)->wait();
 
 ```

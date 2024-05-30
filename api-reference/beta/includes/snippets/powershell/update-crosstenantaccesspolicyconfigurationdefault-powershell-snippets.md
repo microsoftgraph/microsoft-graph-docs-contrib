@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	b2bCollaborationOutbound = @{
@@ -29,6 +29,6 @@ $params = @{
 	}
 }
 
-Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
+Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
 ```

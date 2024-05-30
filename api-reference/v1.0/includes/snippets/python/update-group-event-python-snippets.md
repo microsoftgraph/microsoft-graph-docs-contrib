@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.event import Event
+from msgraph.generated.models.location import Location
 
-request_body = Event()
-location = Location()
-location.display_name = 'Conf Room 2'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Event(
+	location = Location(
+		display_name = "Conf Room 2",
+	),
+)
 
-request_body.location = location
-
-
-
-result = await client.groups.by_group_id('group-id').calendar.events.by_event_id('event-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').calendar.events.by_event_id('event-id').patch(request_body)
 
 
 ```

@@ -3,7 +3,7 @@ title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -15,15 +15,14 @@ Get a set of [event](../resources/event.md) resources that have been added, dele
 
 Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls. The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates). This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+<!-- { "blockType": "permissions", "name": "event_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -98,16 +97,16 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-delta-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -159,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to events in a calendar](/graph/delta-query-events)

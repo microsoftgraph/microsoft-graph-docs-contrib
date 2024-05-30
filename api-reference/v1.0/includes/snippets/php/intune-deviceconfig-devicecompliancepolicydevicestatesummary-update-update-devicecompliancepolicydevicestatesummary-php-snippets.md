@@ -5,34 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceCompliancePolicyDeviceStateSummary;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceCompliancePolicyDeviceStateSummary();
-$requestBody->set@odatatype('#microsoft.graph.deviceCompliancePolicyDeviceStateSummary');
-
+$requestBody->setOdataType('#microsoft.graph.deviceCompliancePolicyDeviceStateSummary');
 $requestBody->setInGracePeriodCount(2);
-
 $requestBody->setConfigManagerCount(2);
-
 $requestBody->setUnknownDeviceCount(2);
-
 $requestBody->setNotApplicableDeviceCount(8);
-
 $requestBody->setCompliantDeviceCount(4);
-
 $requestBody->setRemediatedDeviceCount(5);
-
 $requestBody->setNonCompliantDeviceCount(7);
-
 $requestBody->setErrorDeviceCount(0);
-
 $requestBody->setConflictDeviceCount(3);
 
-
-
-$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicyDeviceStateSummary()->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicyDeviceStateSummary()->patch($requestBody)->wait();
 
 ```

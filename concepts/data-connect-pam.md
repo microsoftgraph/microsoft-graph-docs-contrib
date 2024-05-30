@@ -3,10 +3,13 @@ title: "Microsoft Graph Data Connect integration with PAM"
 description: "Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Microsoft Graph Data Connect integration with PAM
+
+> [!IMPORTANT]
+> Microsoft Graph Data Connect integration with Privileged Access Management (PAM) is deprecated. For details, see [Microsoft Graph Data Connect onboarding experience](./onboarding-experience-overview.md).
 
 Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data Connect pipelines must be approved by a member of the data access request approver group specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Set up your Microsoft 365 tenant and enable Microsoft Graph Data Connect](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
@@ -116,14 +119,14 @@ You can also revoke requests that were previously approved. Similar to approving
    You get a response similar to the following:
 
    ```powershell
-   AuthorizedBy          : user@tenant.onmicrosoft.com
+   AuthorizedBy          : user@contoso.com
    Type                  : Task
    AuthorizedAccess      : Data Access Request
    StartTimeUtc          : 7/24/2018 6:02:42 PM
    EndTimeUtc            : 10/22/2018 6:02:42 PM
    Revoked               : True
    RevocationDateTimeUtc : 7/24/2018 9:12:55 PM
-   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/tenant.onmicrosoft.com/user
+   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/contoso.com/user
    RevocationComment     : Revoking this request!
    Identity              : bda75607-0d87-43cb-bdf1-284b18446b34
    DateCreatedUtc        : 1/1/0001 12:00:00 AM
@@ -150,7 +153,7 @@ Microsoft Graph Data Connect approval requests have particular characteristics t
 *  A new approval request is triggered if the Azure Synapse or Azure Data Factory pipeline or copy activity's name change. For example, a new approval is required if the data table or set of columns that the copy activity is accessing changes.
 * Copy activities must be approved once every six months. If the original approval was approved six months ago, a new approval request is automatically triggered.
 * If a Microsoft 365 data access approver has denied an approval request or revoked a previously approved request, the copy activity fails continually. Work with the approver to understand the reason for the denial or revocation, and fix the parameters of the copy activity accordingly. To trigger a new request for approval, a new copy activity must be deployed or the name of the existing copy activity must be changed.
-* An approval request expires in 24 hours unless a Microsoft 365 data access approver acts on the request. A new request is submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), then work with a Microsoft 365 data access approver to get your request approved.
+* An approval request expires in 24 hours unless a Microsoft 365 data access approver acts on the request. A new request is submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), work with a Microsoft 365 data access approver to get your request approved.
 
 ## Privacy scrubbing
 
@@ -166,6 +169,6 @@ The following table shows the names of the datasets and the columns for which th
 | **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**   | EmailAddresses                                          |
 | **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                    |
 
-## See also
+## Related content
 
 - [Data Connect frequently asked questions](data-connect-faq.md)

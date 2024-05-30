@@ -5,29 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IdentityUserFlowAttributeAssignment;
+use Microsoft\Graph\Generated\Models\IdentityUserFlowAttributeInputType;
+use Microsoft\Graph\Generated\Models\UserAttributeValuesItem;
+use Microsoft\Graph\Generated\Models\IdentityUserFlowAttribute;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IdentityUserFlowAttributeAssignment();
 $requestBody->setIsOptional(false);
-
 $requestBody->setRequiresVerification(false);
-
-$requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textbox'));
-
+$requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textBox'));
 $requestBody->setDisplayName('Shoe size');
-
-$requestBody->setUserAttributeValues([]);
-
+$requestBody->setUserAttributeValues([	]);
 $userAttribute = new IdentityUserFlowAttribute();
 $userAttribute->setId('extension_guid_shoeSize');
-
-
 $requestBody->setUserAttribute($userAttribute);
 
-
-$result = $graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
-
+$result = $graphServiceClient->identity()->b2xUserFlows()->byB2xIdentityUserFlowId('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody)->wait();
 
 ```

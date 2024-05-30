@@ -30,6 +30,6 @@ $params = @{
 	packageIdentityName = "Package Identity Name value"
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```

@@ -7,7 +7,7 @@ metadata:
   title: Microsoft Graph documentation
   description: Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Use Microsoft Graph to build intelligent apps, derive insights and analytics, and extend Microsoft 365 experiences.
   ms.topic: hub-page
-  ms.prod: ms-graph
+  ms.subservice: non-product-specific
   author: CelesteDG
   ms.date: 05/11/2022
   featureFlags:
@@ -22,12 +22,12 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
-    - title: Microsoft Graph Data Connect
-      itemType: overview
-      url: ./data-connect-concept-overview.md
-    - title: Microsoft Graph connectors
-      itemType: overview
-      url: ./connecting-external-content-connectors-overview.md
+    - title: Build connectors for Copilot for Microsoft 365
+      itemType: concept
+      url: /graph/connecting-external-content-experiences#copilot-for-microsoft-365
+    - title: NEW! Deploy with Bicep
+      itemType: deploy
+      url: /graph/templates/
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -46,9 +46,9 @@ conceptualContent:
           text: Enable user collaboration and integration across services.
     - title: Identity and access management
       links:
-        - url: ./azuread-identity-access-management-concept-overview.md
+        - url: ./identity-network-access-overview.md
           itemType: overview
-          text: Use Azure AD methods to manage access and authenticate users.
+          text: Use Microsoft Entra methods to manage access and authenticate users.
     - title: Security
       links:
         - url: ./security-concept-overview.md
@@ -67,16 +67,30 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: What's new?
+    - title: Microsoft Graph connectors
       links:
-        - url: ./whats-new-overview.md
-          itemType: whats-new
-          text: Discover new and updated Microsoft Graph APIs. 
+        - url: /graph/connecting-external-content-connectors-overview
+          itemType: overview
+          text: Explore Microsoft Graph connectors.
+        - url: /graph/connecting-external-content-build-quickstart
+          itemType: get-started
+          text: Build your first connector.
+    - title: Microsoft Graph Data Connect
+      links:
+        - url: /graph/data-connect-concept-overview
+          itemType: overview
+          text: Explore Microsoft Graph Data Connect.
+        - url: /graph/data-connect-quickstart
+          itemType: get-started
+          text: Build a Data Connect application. 
     - title: All services and features
       links:
         - url: ./overview-major-services.md
           itemType: concept
-          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.  
+          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.
+        - url: /graph/whats-new-overview
+          itemType: whats-new
+          text: Find out what's new in the beta and v1.0 APIs.
 tools:
   title: SDKs and tools
   items:
@@ -86,10 +100,6 @@ tools:
       imageSrc: ./images/hub/icon01-sdk.svg
       url: /graph/sdks/sdks-overview
     # Card
-    - title: Quick start
-      imageSrc: ./images/hub/icon02-quickstart.svg
-      url: https://developer.microsoft.com/graph/quick-start
-    # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: https://developer.microsoft.com/en-us/graph/graph-explorer
@@ -97,17 +107,23 @@ tools:
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
+     # Card
+    - title: Bicep templates
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: /graph/templates/
 
 additionalContent:
   sections:
     - title: Resources
       items:
         # Card
-        - title: Learning paths and tutorials
+        - title: Training and tutorials
           links:
+            - text: Quick Start
+              url: https://developer.microsoft.com/graph/quick-start
             - text: Microsoft Graph fundamentals
               url: /training/paths/m365-msgraph-fundamentals/
-            - text: Microsoft learning paths
+            - text: Microsoft Graph learning paths
               url: /training/browse/?products=ms-graph&resource_type=learning%20path
             - text: Tutorials
               url: /graph/tutorials
@@ -131,4 +147,4 @@ additionalContent:
             - text: Microsoft Graph feedback portal
               url: https://feedbackportal.microsoft.com/feedback/forum/ebe2edae-97d1-ec11-a7b5-0022481f3c80
             - text: Known issues
-              url: ./known-issues.md          
+              url: https://developer.microsoft.com/en-us/graph/known-issues       

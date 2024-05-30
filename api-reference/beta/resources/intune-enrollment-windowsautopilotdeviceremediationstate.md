@@ -3,7 +3,7 @@ title: "windowsAutopilotDeviceRemediationState enum type"
 description: "Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

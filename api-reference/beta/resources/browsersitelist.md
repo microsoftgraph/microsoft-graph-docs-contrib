@@ -3,7 +3,7 @@ title: "browserSiteList resource type"
 description: "Represents an enterprise site list in a compliant cloud location that specifies sites to be opened in Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
 ---
 
@@ -18,12 +18,12 @@ Represents an enterprise site list in a compliant cloud location that specifies 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.|
-|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](/deployedge/edge-ie-mode).|
-|[Get browserSiteList](../api/browsersitelist-get.md)|[browserSiteList](../resources/browsersitelist.md)|Get a [browserSiteList](../resources/browsersitelist.md) that contains [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.|
-|[Update browserSiteList](../api/browsersitelist-update.md)|None|Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.|
-|[Delete browserSiteList](../api/internetexplorermode-delete-sitelists.md)|None|Delete a [browserSiteList](../resources/browsersitelist.md) object.|
-|[Publish a browserSiteList](../api/browsersitelist-publish.md)|[browserSiteList](../resources/browsersitelist.md)|Publish the specified [browserSiteList](../resources/browsersitelist.md) for devices to download.|
+|[List](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.|
+|[Create](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](/deployedge/edge-ie-mode).|
+|[Get](../api/browsersitelist-get.md)|[browserSiteList](../resources/browsersitelist.md)|Get a [browserSiteList](../resources/browsersitelist.md) that contains [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.|
+|[Update](../api/browsersitelist-update.md)|None|Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.|
+|[Delete](../api/internetexplorermode-delete-sitelists.md)|None|Delete a [browserSiteList](../resources/browsersitelist.md) object.|
+|[Publish](../api/browsersitelist-publish.md)|[browserSiteList](../resources/browsersitelist.md)|Publish the specified [browserSiteList](../resources/browsersitelist.md) for devices to download.|
 
 ## Properties
 |Property|Type|Description|
@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Internet Explorer mode (IE mode)](https://www.microsoft.com/edge/business/ie-mode)
 - [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)

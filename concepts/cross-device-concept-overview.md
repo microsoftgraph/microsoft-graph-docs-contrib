@@ -2,7 +2,7 @@
 title: "Cross-device experiences in Microsoft Graph"
 description: "Use Microsoft Graph to access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms."
 ms.localizationpriority: high
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
 ---
 
@@ -12,7 +12,7 @@ In today's multi-device world, the way consumers use devices spans different pla
 
 In the past, form factor drove distinct types of behavior differences among consumers. However, today multi-device consumers conduct all their activities across all their devices. The tasks performed on a daily basis (whether at home with family or at work with colleagues) are not inherently device-centric, but rather **human-centric**. Consumers want to be able to use whatever screen is available, independent of where the input comes from. In reality, they often find that each device has a clear boundary and getting things done across devices requires unnatural actions such as sending oneself an email or using USB sticks. Customers see friction when moving between their devices, and sometimes important tasks get lost because of this context switching. This is also a challenge for developers because when customers feel friction using an app, customer engagement with the app goes down.
 
-Microsoft is building a platform for creating experiences that transcend a single device so they can harmonize across devices&mdash;empowering you to create **human-centric** scenarios that move with the user and blur the lines between their devices, regardless of form factor or platform. Microsoft Graph provides a single unified endpoint to give you access to data from Azure Active Directory and Microsoft 365. Now through Microsoft Graph, you can also access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms.
+Microsoft is building a platform for creating experiences that transcend a single device so they can harmonize across devices&mdash;empowering you to create **human-centric** scenarios that move with the user and blur the lines between their devices, regardless of form factor or platform. Microsoft Graph provides a single unified endpoint to give you access to data from Microsoft Entra ID and Microsoft 365. Now through Microsoft Graph, you can also access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms.
 
 ## Why invest in cross-device experiences?
 
@@ -31,7 +31,7 @@ Looking for the API reference for these services?
 - [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project-rome-overview?view=graph-rest-1.0&preserve-view=true)
 - [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project-rome-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
 - [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)

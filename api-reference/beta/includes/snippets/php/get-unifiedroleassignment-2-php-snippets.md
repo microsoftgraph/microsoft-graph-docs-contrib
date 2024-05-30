@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\RoleManagement\Directory\RoleAssignments\Item\UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["roleDefinition"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->byRoleAssignmentId('unifiedRoleAssignment-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->byUnifiedRoleAssignmentId('unifiedRoleAssignment-id')->get($requestConfiguration)->wait();
 
 ```

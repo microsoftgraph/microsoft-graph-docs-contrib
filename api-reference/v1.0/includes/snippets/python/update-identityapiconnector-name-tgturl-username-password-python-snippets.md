@@ -4,27 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_api_connector import IdentityApiConnector
+from msgraph.generated.models.basic_authentication import BasicAuthentication
 
-request_body = IdentityApiConnector()
-request_body.display_name = 'New Test API'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.target_url = 'https://otherapi.com/api/endpoint'
+request_body = IdentityApiConnector(
+	display_name = "New Test API",
+	target_url = "https://otherapi.com/api/endpoint",
+	authentication_configuration = BasicAuthentication(
+		odata_type = "microsoft.graph.basicAuthentication",
+		username = "<NEW_USERNAME>",
+		password = "<NEW_PASSWORD>",
+	),
+)
 
-authentication_configuration = BasicAuthentication()
-authentication_configuration.@odata_type = 'microsoft.graph.basicAuthentication'
-
-authentication_configuration.username = '<NEW_USERNAME>'
-
-authentication_configuration.password = '<NEW_PASSWORD>'
-
-
-request_body.authentication_configuration = authentication_configuration
-
-
-
-result = await client.identity.api_connectors.by_api_connector_id('identityApiConnector-id').patch(request_body = request_body)
+result = await graph_client.identity.api_connectors.by_identity_api_connector_id('identityApiConnector-id').patch(request_body)
 
 
 ```

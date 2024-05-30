@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingCustomer;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingCustomer();
-$requestBody->set@odatatype('#microsoft.graph.bookingCustomer');
-
+$requestBody->setOdataType('#microsoft.graph.bookingCustomer');
 $requestBody->setDisplayName('Adele');
-
 $requestBody->setEmailAddress('adele@relecloud.com');
 
-
-
-$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->customers()->byCustomerId('bookingCustomerBase-id')->patch($requestBody);
-
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->byBookingCustomerBaseId('bookingCustomerBase-id')->patch($requestBody)->wait();
 
 ```

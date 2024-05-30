@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\UsersRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -22,7 +24,6 @@ $queryParameters->count = true;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->users()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->get($requestConfiguration)->wait();
 
 ```

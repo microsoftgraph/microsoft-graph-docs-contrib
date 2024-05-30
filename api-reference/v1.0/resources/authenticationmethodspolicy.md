@@ -1,9 +1,10 @@
 ---
 title: "authenticationMethodsPolicy resource type"
-description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA)."
-author: "mmcla"
+description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA)."
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +12,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get authenticationMethodsPolicy](../api/authenticationmethodspolicy-get.md)|[authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md)|Read the properties and relationships of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.|
-|[Update authenticationMethodsPolicy](../api/authenticationmethodspolicy-update.md)|[authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md)|Update the properties of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.|
+|[Get](../api/authenticationmethodspolicy-get.md)|[authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md)|Read the properties and relationships of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.|
+|[Update](../api/authenticationmethodspolicy-update.md)|[authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md)|Update the properties of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

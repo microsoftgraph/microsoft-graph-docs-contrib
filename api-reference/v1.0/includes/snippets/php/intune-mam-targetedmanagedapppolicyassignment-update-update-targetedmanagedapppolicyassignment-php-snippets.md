@@ -5,23 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\TargetedManagedAppPolicyAssignment;
+use Microsoft\Graph\Generated\Models\ConfigurationManagerCollectionAssignmentTarget;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TargetedManagedAppPolicyAssignment();
-$requestBody->set@odatatype('#microsoft.graph.targetedManagedAppPolicyAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.targetedManagedAppPolicyAssignment');
 $target = new ConfigurationManagerCollectionAssignmentTarget();
-$target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
-
+$target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 $target->setCollectionId('Collection Id value');
-
-
 $requestBody->setTarget($target);
 
-
-$result = $graphServiceClient->deviceAppManagement()->iosManagedAppProtections()->byIosManagedAppProtectionId('iosManagedAppProtection-id')->assignments()->byAssignmentId('targetedManagedAppPolicyAssignment-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceAppManagement()->iosManagedAppProtections()->byIosManagedAppProtectionId('iosManagedAppProtection-id')->assignments()->byTargetedManagedAppPolicyAssignmentId('targetedManagedAppPolicyAssignment-id')->patch($requestBody)->wait();
 
 ```

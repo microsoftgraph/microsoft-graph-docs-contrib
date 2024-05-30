@@ -5,22 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PersonInterest;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PersonInterest();
-$requestBody->setCategories(['Sports', ]);
-
+$requestBody->setCategories(['Sports', 	]);
 $requestBody->setDescription('World\'s greatest football club');
-
 $requestBody->setDisplayName('Chelsea FC');
-
 $requestBody->setWebUrl('https://www.chelseafc.com');
 
-
-
-$result = $graphServiceClient->me()->profile()->interests()->post($requestBody);
-
+$result = $graphServiceClient->me()->profile()->interests()->post($requestBody)->wait();
 
 ```

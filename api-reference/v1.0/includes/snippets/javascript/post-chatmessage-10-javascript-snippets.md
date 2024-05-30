@@ -41,7 +41,6 @@ const chatMessage = {
 };
 
 await client.api('/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2/messages')
-	.version('beta')
 	.post(chatMessage);
 
 ```

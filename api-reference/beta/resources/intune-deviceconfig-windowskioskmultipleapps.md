@@ -3,7 +3,7 @@ title: "windowsKioskMultipleApps resource type"
 description: "The class used to identify the MultiMode app configuration for the kiosk configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

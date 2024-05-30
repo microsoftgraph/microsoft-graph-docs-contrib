@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
 conditions := graphmodels.NewConditionalAccessConditionSet()
@@ -28,7 +28,8 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 conditions.SetSignInRiskLevels(signInRiskLevels)
 requestBody.SetConditions(conditions)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().ByPolicieId("conditionalAccessPolicy-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+policies, err := graphClient.Identity().ConditionalAccess().Policies().ByConditionalAccessPolicyId("conditionalAccessPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

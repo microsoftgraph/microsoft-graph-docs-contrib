@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\InstalledApps\Item\TeamsAppInstallationItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new TeamsAppInstallationRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsAppInstallationRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new TeamsAppInstallationItemRequestBuilderGetRequestConfiguration();
+$queryParameters = TeamsAppInstallationItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsAppDefinition"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->installedApps()->byTeamsAppInstallationId('teamsAppInstallation-id')->get($requestConfiguration)->wait();
 
 ```

@@ -3,7 +3,7 @@ title: "verifiableCredentialType resource type"
 description: "Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

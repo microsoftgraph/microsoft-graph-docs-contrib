@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	displayName = "Rostering source"
@@ -32,6 +32,6 @@ $params = @{
 	)
 }
 
-New-MgExternalIndustryDataSourceSystem -BodyParameter $params
+New-MgBetaExternalIndustryDataSourceSystem -BodyParameter $params
 
 ```

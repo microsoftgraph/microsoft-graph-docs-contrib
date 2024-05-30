@@ -3,7 +3,7 @@ title: "deviceScopeAction enum type"
 description: "Trigger on the service to either START or STOP computing metrics data based on a device scope configuration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

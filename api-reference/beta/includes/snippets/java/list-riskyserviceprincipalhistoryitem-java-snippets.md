@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RiskyServicePrincipalHistoryItemCollectionPage history = graphClient.identityProtection().riskyServicePrincipals("{riskyServicePrincipalId}").history()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RiskyServicePrincipalHistoryItemCollectionResponse result = graphClient.identityProtection().riskyServicePrincipals().byRiskyServicePrincipalId("{riskyServicePrincipal-id}").history().get();
+
 
 ```

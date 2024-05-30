@@ -4,31 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.presence.set_status_message.set_status_message_post_request_body import SetStatusMessagePostRequestBody
+from msgraph_beta.generated.models.presence_status_message import PresenceStatusMessage
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
-request_body = SetStatusMessagePostRequestBody()
-status_message = PresenceStatusMessage()
-status_messagemessage = ItemBody()
-status_messagemessage.content = 'Hey I\'m currently in a meeting.'
+graph_client = GraphServiceClient(credentials, scopes)
 
-status_messagemessage.contenttype(BodyType.Text('bodytype.text'))
+request_body = SetStatusMessagePostRequestBody(
+	status_message = PresenceStatusMessage(
+		message = ItemBody(
+			content = "Hey I'm currently in a meeting.",
+			content_type = BodyType.Text,
+		),
+		expiry_date_time = DateTimeTimeZone(
+			date_time = "2022-10-18T17:05:33.2079781",
+			time_zone = "Pacific Standard Time",
+		),
+	),
+)
 
-
-status_message.message = status_messagemessage
-status_messageexpiry_date_time = DateTimeTimeZone()
-status_messageexpiry_date_time.date_time = '2022-10-18T17:05:33.2079781'
-
-status_messageexpiry_date_time.time_zone = 'Pacific Standard Time'
-
-
-status_message.expiry_date_time = status_messageexpiry_date_time
-
-request_body.status_message = status_message
-
-
-
-await client.users.by_user_id('user-id').presence.set_statu_message.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').presence.set_status_message.post(request_body)
 
 
 ```

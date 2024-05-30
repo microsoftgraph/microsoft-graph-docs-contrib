@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -15,16 +15,16 @@ $params = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
 		caller = "EndUser"
 		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Assignment"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
-Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
+Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
 
 ```

@@ -1,9 +1,10 @@
 ---
 title: "voiceAuthenticationMethodConfiguration resource type"
-description: "Represents a voice call authenticaiton methods policy"
-author: "jpettere"
+description: "Represents a voice call authentication methods policy."
+author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,9 +19,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-get.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Read the properties and relationships of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
-|[Update voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-update.md)|None|Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
-|[Delete voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-delete.md)|None|Revert the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object to its default configuration.|
+|[Get](../api/voiceauthenticationmethodconfiguration-get.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Read the properties and relationships of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
+|[Update](../api/voiceauthenticationmethodconfiguration-update.md)|None|Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
+|[Delete](../api/voiceauthenticationmethodconfiguration-delete.md)|None|Revert the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object to its default configuration.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,10 +34,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method. Expanded by default.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method. Expanded by default.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

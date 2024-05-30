@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgChatInstalledApp -ChatId $chatId -Property "consentedPermissionSet,id" 
+Get-MgBetaChatInstalledApp -ChatId $chatId -Property "consentedPermissionSet,id" 
 
 ```

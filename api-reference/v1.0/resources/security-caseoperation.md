@@ -24,8 +24,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List caseOperations](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get a list of the [caseOperation](../resources/security-caseoperation.md) objects and their properties.|
-|[Get caseOperation](../api/security-caseoperation-get.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.|
+|[List case operations](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get a list of the [caseOperation](../resources/security-caseoperation.md) objects and their properties.|
+|[Get case operation by ID](../api/security-caseoperation-get.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -48,15 +48,15 @@ Inherits from [entity](../resources/entity.md).
 | contentExport | The operation represents a content export from a review set. |
 | convertToPdf | The operation represents converting documents to PDFs with redactions. |
 | estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for Business. |
-| holdUpdate | The operation represent updating legal hold (apply/remove) for custodians and non-custodial data sources.
-| index | The operation represents indexing data sources of custodians and non-custodial data sources to make them searchable. |
+| holdUpdate | The operation represents updating legal hold (apply/remove) for custodians and noncustodial data sources.
+| index | The operation represents indexing data sources of custodians and noncustodial data sources to make them searchable. |
 | purgeData | The operation represents purging content from the source workloads. |
 
 ### caseOperationStatus values
 
 |Member|Description|
 |:----|-----------|
-| notStarted | The operation has not yet started. |
+| notStarted | The operation hasn't yet started. |
 | submissionFailed | Submission of the operation failed. |
 | running | The operation is currently running. |
 | succeeded | The operation was successfully completed without any errors. |
@@ -67,7 +67,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

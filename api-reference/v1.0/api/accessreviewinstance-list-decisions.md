@@ -3,7 +3,7 @@ title: "List decisions"
 description: "Get the accessReviewInstanceDecisionItem resources from the decisions navigation property."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,15 @@ Namespace: microsoft.graph
 
 Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md). A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "accessreviewinstance_list_decisions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
+
+[!INCLUDE [rbac-access-reviews-apis-read](../includes/rbac-for-apis/rbac-access-reviews-apis-read.md)]
 
 ## HTTP request
 
@@ -32,17 +33,17 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## Optional query parameters
-This method supports `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter`, `$orderby`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,14 +55,49 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem"
+  "name": "list_accessreviewinstancedecisionitem_v1_e1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances/8d035c9d-798d-47fa-beb4-f986a4b8126f/decisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewinstancedecisionitem-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -162,10 +198,10 @@ The following example shows a request to retrieve all the decisions on every ins
 
 <!-- {
   "blockType": "request",
-  "name": "list_accessReviewInstanceDecisionItem_expand"
+  "name": "list_accessReviewInstanceDecisionItem_expand_v1_e2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
 ```
 
 #### Response
@@ -182,7 +218,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewInstanceDecisionItems",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessReviewInstanceDecisionItems",
     "@odata.count": 10,
     "value": [
         {
@@ -221,14 +257,49 @@ Content-type: application/json
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem_expandinsights"
+  "name": "list_accessreviewinstancedecisionitem_expandinsights_v1_e3"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$expand=insights
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$expand=insights
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -243,7 +314,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions(insights())",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions(insights())",
     "@odata.count": 2,
     "value": [
         {
@@ -268,7 +339,7 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf"
             },
-            "insights@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions('e6cafba0-cbf0-4748-8868-0810c7f4cc06')/insights",
+            "insights@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions('e6cafba0-cbf0-4748-8868-0810c7f4cc06')/insights",
             "insights": [
                 {
                     "@odata.type": "#microsoft.graph.userSignInInsight",

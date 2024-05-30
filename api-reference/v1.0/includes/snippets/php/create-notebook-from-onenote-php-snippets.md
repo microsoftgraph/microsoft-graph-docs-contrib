@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Notebook;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Notebook();
 $requestBody->setDisplayName('My Private notebook');
 
-
-
-$result = $graphServiceClient->me()->onenote()->notebooks()->post($requestBody);
-
+$result = $graphServiceClient->me()->onenote()->notebooks()->post($requestBody)->wait();
 
 ```

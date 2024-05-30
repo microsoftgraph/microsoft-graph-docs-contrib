@@ -6,11 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryNoncustodialDataSource
+var requestBody = new EdiscoveryNoncustodialDataSource
 {
-	DataSource = new Microsoft.Graph.Beta.Models.Security.SiteSource
+	DataSource = new SiteSource
 	{
 		OdataType = "microsoft.graph.security.siteSource",
 		Site = new Site
@@ -19,6 +21,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryNoncustodia
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
 

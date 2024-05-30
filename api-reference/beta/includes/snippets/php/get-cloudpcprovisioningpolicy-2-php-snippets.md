@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\ProvisioningPolicies\Item\CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new CloudPcProvisioningPolicyRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPcProvisioningPolicyRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration();
+$queryParameters = CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["assignments"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byProvisioningPolicieId('cloudPcProvisioningPolicy-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->get($requestConfiguration)->wait();
 
 ```

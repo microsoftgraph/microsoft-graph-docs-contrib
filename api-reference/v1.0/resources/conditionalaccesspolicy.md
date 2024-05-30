@@ -1,9 +1,10 @@
 ---
 title: "conditionalAccessPolicy resource type"
-description: "Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario."
+description: "Represents a Microsoft Entra Conditional Access policy. Conditional access policies are custom rules that define an access scenario."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -11,17 +12,17 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](/azure/active-directory/conditional-access/).
+Represents a Microsoft Entra Conditional Access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](/azure/active-directory/conditional-access/).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List conditionalAccessPolicies](../api/conditionalaccessroot-list-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) collection | Get all of the conditionalAccessPolicies objects in the organization. |
-| [Create conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Create a new conditionalAccessPolicy object. |
-| [Get conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Read properties and relationships of a conditionalAccessPolicy object. |
-| [Update conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Update a conditionalAccessPolicy object. |
-| [Delete conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | None | Delete a conditionalAccessPolicy object. |
+| [List](../api/conditionalaccessroot-list-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) collection | Get all of the conditionalAccessPolicies objects in the organization. |
+| [Create](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Create a new conditionalAccessPolicy object. |
+| [Get](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Read properties and relationships of a conditionalAccessPolicy object. |
+| [Update](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Update a conditionalAccessPolicy object. |
+| [Delete](../api/conditionalaccesspolicy-delete.md) | None | Delete a conditionalAccessPolicy object. |
 
 ## Properties
 

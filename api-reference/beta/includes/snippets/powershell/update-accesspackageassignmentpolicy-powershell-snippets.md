@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
@@ -60,6 +60,28 @@ $params = @{
 			}
 			"@odata.type" = "#microsoft.graph.accessPackageMultipleChoiceQuestion"
 			choices = @(
+				@{
+					actualValue = "AZ"
+					displayValue = @{
+						localizedTexts = @(
+							@{
+								text = "Arizona"
+								languageCode = "es"
+							}
+						)
+					}
+				}
+				@{
+					actualValue = "CA"
+					displayValue = @{
+						localizedTexts = @(
+							@{
+								text = "California"
+								languageCode = "es"
+							}
+						)
+					}
+				}
 			)
 			allowsMultipleSelection = $false
 		}
@@ -80,6 +102,6 @@ $params = @{
 	)
 }
 
-Set-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
 ```

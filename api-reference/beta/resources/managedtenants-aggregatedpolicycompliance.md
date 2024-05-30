@@ -3,7 +3,7 @@ title: "aggregatedPolicyCompliance resource type"
 description: "Represents an aggregate view of device compliance for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Represents an aggregate view of device compliance for a managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List aggregatedPolicyCompliances](../api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md)|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) objects and their properties.|
+|[List aggregated policy compliances](../api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md)|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,13 +34,13 @@ Represents an aggregate view of device compliance for a managed tenant.
 |numberOfNonCompliantDevices|Int64|The number of device that are in a non-compliant status. Optional. Read-only.|
 |policyModifiedDateTime|DateTimeOffset|The date and time the device policy was last modified. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

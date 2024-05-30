@@ -3,7 +3,7 @@ title: "monitoringSettings resource type"
 description: "Settings controlling automated monitoring and response in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Settings controlling automated monitoring and response in a deployment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|monitoringRules|[microsoft.graph.windowsUpdates.monitoringRule](../resources/windowsupdates-monitoringrule.md) collection|Specifies the rules through which monitoring signals can trigger actions on the deployment. Rules are combined using "or".|
+|monitoringRules|[microsoft.graph.windowsUpdates.monitoringRule](../resources/windowsupdates-monitoringrule.md) collection|Specifies the rules through which monitoring signals can trigger actions on the deployment. Rules are combined using "or."|
 
 ## Relationships
 None.

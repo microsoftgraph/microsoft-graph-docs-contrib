@@ -3,7 +3,7 @@ title: "Get chatMessage in a channel or chat"
 description: "Retrieve a single message (without its replies) in a channel or a chat."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -15,32 +15,32 @@ Namespace: microsoft.graph
 
 Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:** The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note**: The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
-
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> The ChannelMessage.Read.Group and ChatMessage.Read.Chat permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -60,15 +60,15 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 
 ### Example 1: Get a message in a chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -95,24 +95,28 @@ GET https://graph.microsoft.com/beta/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessagechannel-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagechannel-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -178,7 +182,7 @@ Content-type: application/json
 
 ### Example 2: Get a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -195,24 +199,28 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-2-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessagechannel-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-2-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagechannel-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -281,7 +289,7 @@ Content-type: application/json
 
 ### Example 3: Get reply to a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -298,24 +306,28 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-3-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessagechannel-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-3-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagechannel-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -382,12 +394,150 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
+### Example 4: Get a chat message with custom emojis and reactions
 
-## See also
+The following example shows a request to get a chat message that contains custom emojis in the message body and includes custom reactions.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_4",
+  "sampleKeys": ["19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2", "1706763669648"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-4-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-4-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains a `<customemoji></customemoji>` tag, and the message includes a custom reaction indicated by `"reactionType": "custom"`. You can access both custom emojis and reactions as content hosted within a chat message.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
+    "id": "1706763669648",
+    "replyToId": null,
+    "etag": "1707948456260",
+    "messageType": "message",
+    "createdDateTime": "2024-02-01T05:01:09.648Z",
+    "lastModifiedDateTime": "2024-02-14T22:07:36.26Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<p>I am looking&nbsp;<emoji id=\"1f440_eyes\" alt=\"👀\" title=\"Eyes\"></emoji><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": [
+        {
+            "reactionType": "💯",
+            "reactionContentUrl": null,
+            "createdDateTime": "2024-02-14T22:07:36.3Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        },
+        {
+            "reactionType": "custom",
+            "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
+            "createdDateTime": "2024-02-14T22:07:02.288Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ]
+}
+```
+
+## Related content
 
 - [List messages in a channel](channel-list-messages.md)
 - [List messages in a chat](chat-list-messages.md)
 - [Send message in a channel or a chat](chatmessage-post.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

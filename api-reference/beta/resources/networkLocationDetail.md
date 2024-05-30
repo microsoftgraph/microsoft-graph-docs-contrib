@@ -2,8 +2,8 @@
 title: "networkLocationDetail resource type"
 description: "Provides the name and type of network from which the user signed in."
 ms.localizationpriority: medium
-author: "besiler"
-ms.prod: "identity-and-access-reports"
+author: "egreenberg14"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

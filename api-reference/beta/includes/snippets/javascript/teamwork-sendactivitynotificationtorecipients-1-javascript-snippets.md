@@ -38,7 +38,7 @@ const sendActivityNotificationToRecipients = {
             name: 'pendingRequestCount',
             value: '5'
         }
-    ] 
+    ]
 };
 
 await client.api('/teamwork/sendActivityNotificationToRecipients')

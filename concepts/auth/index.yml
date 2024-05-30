@@ -1,15 +1,12 @@
 ### YamlMime:Landing
 
 title: Microsoft Graph authentication and authorization overview
-summary: Learn how to authenticate and work with permissions to securely access data through Microsoft Graph. Explore the following documentation to learn about app registration, authentication libraries, authorization, and other parts of the Microsoft identity platform that support Microsoft Graph development.
+summary: Learn how to authenticate and get your app authorized to securely access data through Microsoft Graph. Explore concepts for building and authorizing apps that call Microsoft Graph, and efficiently managing app access.
 
 metadata: 
   ms.topic: landing-page
-  ms.date: 12/08/2022
+  ms.date: 02/14/2024
   author: FaithOmbongi
-  services: active-directory
-  ms.service: active-directory
-  ms.workload: identity
   ms.author: ombongifaith
   ms.reviewer: jawoods  
   ms.custom: graphiamtop20   
@@ -53,10 +50,18 @@ landingContent:
             url: ../auth-cloudsolutionprovider.md
           - text: Limit mailbox access
             url: ../auth-limit-mailbox-access.md
+          - text: Manage throttling
+            url: ../throttling.md
+          - text: Use query parameters
+            url: ../query-parameters.md
       - linkListType: reference
         links:
+          - text: Error responses
+            url: ../errors.md
           - text: Authorization errors
             url: ../resolve-auth-errors.md
+          - text: Service-specific throttling limits
+            url: ../throttling-limits.md
   - title: Auth SDKs - MSAL
     linkLists:
       - linkListType: download

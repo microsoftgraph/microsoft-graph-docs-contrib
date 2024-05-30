@@ -1,9 +1,9 @@
 ---
 title: "servicePrincipalRiskDetection resource type"
-description: "Represents information about a detected at-risk service principal in an Azure AD tenant."
+description: "Represents information about a detected at-risk service principal in a Microsoft Entra tenant."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,19 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents information about detected at-risk service principals in an Azure AD tenant. Azure AD continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all service principal risk detections in your Azure AD environment.
+Represents information about detected at-risk service principals in a Microsoft Entra tenant. Microsoft Entra ID continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all service principal risk detections in your Microsoft Entra environment.
 
 Inherits from [entity](../resources/entity.md).
 
-For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). 
+For more information about risk events, see [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection). 
 
->**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
+>**Note:** You must have a Microsoft Entra Workload ID Premium license to use the servicePrincipalRiskDetection API.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List servicePrincipalRiskDetections](../api/identityprotectionroot-list-serviceprincipalriskdetections.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) collection|List service principal risk detections and their properties.|
-|[Get servicePrincipalRiskDetection](../api/serviceprincipalriskdetection-get.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)|Get a specific service principal risk detection and its properties.|
+|[List](../api/identityprotectionroot-list-serviceprincipalriskdetections.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) collection|List service principal risk detections and their properties.|
+|[Get](../api/serviceprincipalriskdetection-get.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)|Get a specific service principal risk detection and its properties.|
 
 
 ## Properties
@@ -94,4 +94,3 @@ The following is a JSON representation of the resource.
   "additionalInfo": "String"
 }
 ```
-

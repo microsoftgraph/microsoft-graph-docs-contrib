@@ -2,8 +2,8 @@
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: non-product-specific
+author: "SuryaLashmiS"
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -117,10 +119,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -147,24 +149,28 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iM
 [!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertyget-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertyget-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertyget-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertyget-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertyget-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertyget-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertyget-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertyget-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertyget-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertyget-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -275,7 +281,7 @@ Content-type: application/json
     "organizer": {
         "emailAddress": {
             "name": "MOD Administrator",
-            "address": "admin@M365x39866865.OnMicrosoft.com"
+            "address": "admin@contoso.com"
         }
     },
     "onlineMeeting": null,

@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  grapheducation "github.com/microsoftgraph/msgraph-sdk-go/education"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestParameters := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"*"},
@@ -22,7 +22,8 @@ configuration := &grapheducation.EducationClasseItemAssignmentItemSubmissionItem
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+submissions, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").Get(context.Background(), configuration)
 
 
 ```

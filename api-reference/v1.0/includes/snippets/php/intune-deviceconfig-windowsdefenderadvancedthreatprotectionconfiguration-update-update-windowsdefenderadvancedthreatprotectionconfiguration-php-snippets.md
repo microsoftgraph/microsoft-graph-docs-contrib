@@ -5,26 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsDefenderAdvancedThreatProtectionConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsDefenderAdvancedThreatProtectionConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration');
-
+$requestBody->setOdataType('#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration');
 $requestBody->setDescription('Description value');
-
 $requestBody->setDisplayName('Display Name value');
-
 $requestBody->setVersion(7);
-
 $requestBody->setAllowSampleSharing(true);
-
 $requestBody->setEnableExpeditedTelemetryReporting(true);
 
-
-
-$result = $graphServiceClient->deviceManagement()->deviceConfigurations()->byDeviceConfigurationId('deviceConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->deviceConfigurations()->byDeviceConfigurationId('deviceConfiguration-id')->patch($requestBody)->wait();
 
 ```

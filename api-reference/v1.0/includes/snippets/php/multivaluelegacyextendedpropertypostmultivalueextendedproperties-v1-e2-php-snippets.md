@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Message;
+use Microsoft\Graph\Generated\Models\MultiValueLegacyExtendedProperty;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new Message();
+$multiValueExtendedPropertiesMultiValueLegacyExtendedProperty1 = new MultiValueLegacyExtendedProperty();
+$multiValueExtendedPropertiesMultiValueLegacyExtendedProperty1->setId('StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette');
+$multiValueExtendedPropertiesMultiValueLegacyExtendedProperty1->setValue(['Green', 'Aqua', 'Blue', 	]);
+$multiValueExtendedPropertiesArray []= $multiValueExtendedPropertiesMultiValueLegacyExtendedProperty1;
+$requestBody->setMultiValueExtendedProperties($multiValueExtendedPropertiesArray);
+
+
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->patch($requestBody)->wait();
+
+```

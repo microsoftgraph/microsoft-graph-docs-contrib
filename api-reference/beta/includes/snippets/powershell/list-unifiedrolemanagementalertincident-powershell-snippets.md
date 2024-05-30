@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgIdentityGovernanceRoleManagementAlertIncident -UnifiedRoleManagementAlertId $unifiedRoleManagementAlertId -Top 5 
+Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -UnifiedRoleManagementAlertId $unifiedRoleManagementAlertId -Top 5 
 
 ```

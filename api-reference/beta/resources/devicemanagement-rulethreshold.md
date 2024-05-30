@@ -3,7 +3,7 @@ title: "ruleThreshold resource type"
 description: "Represents details about the threshold settings of an alert rule."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

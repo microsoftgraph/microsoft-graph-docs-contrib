@@ -4,7 +4,7 @@ description: "A registry value that is reported in the alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -19,6 +19,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
 |registryHive|String|Registry hive of the key that the recorded action was applied to.|
 |registryKey|String|Registry key that the recorded action was applied to.|
 |registryValue|String|Data of the registry value that the recorded action was applied to.|
@@ -32,7 +33,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.registryValueEvidence"
+  "@odata.type": "microsoft.graph.security.registryValueEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json
@@ -45,9 +47,13 @@ The following is a JSON representation of the resource.
   "roles": [
     "String"
   ],
+  "detailedRoles": [
+    "String"
+  ],
   "tags": [
     "String"
   ],
+  "mdeDeviceId": "String",
   "registryKey": "String",
   "registryHive": "String",
   "registryValue": "String",

@@ -5,24 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\GroupSetting;
+use Microsoft\Graph\Generated\Models\SettingValue;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GroupSetting();
 $valuesSettingValue1 = new SettingValue();
 $valuesSettingValue1->setName('AllowToAddGuests');
-
 $valuesSettingValue1->setValue('true');
-
-
 $valuesArray []= $valuesSettingValue1;
 $requestBody->setValues($valuesArray);
 
 
-
-
-$result = $graphServiceClient->groups()->byGroupId('group-id')->settings()->bySettingId('groupSetting-id')->patch($requestBody);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->settings()->byGroupSettingId('groupSetting-id')->patch($requestBody)->wait();
 
 ```

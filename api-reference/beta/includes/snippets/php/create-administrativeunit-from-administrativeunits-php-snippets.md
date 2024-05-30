@@ -5,26 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AdministrativeUnit;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdministrativeUnit();
 $requestBody->setDisplayName('Seattle District Technical Schools');
-
 $requestBody->setDescription('Seattle district technical schools administration');
+$requestBody->setMembershipType('Dynamic');
+$requestBody->setMembershipRule('(user.country -eq \"United States\")');
+$requestBody->setMembershipRuleProcessingState('On');
 
-$additionalData = [
-		'membershipType' => 'Dynamic', 
-		'membershipRule' => '(user.country -eq \"United States\")', 
-		'membershipRuleProcessingState' => 'On', 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->administrativeUnits()->post($requestBody);
-
+$result = $graphServiceClient->administrativeUnits()->post($requestBody)->wait();
 
 ```

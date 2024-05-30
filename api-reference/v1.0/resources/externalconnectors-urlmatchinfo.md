@@ -3,7 +3,7 @@ title: "urlMatchInfo resource type"
 description: Collects the settings for the pattern that a URL must follow to be processed by an instance of urlToItemResolverBase.
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

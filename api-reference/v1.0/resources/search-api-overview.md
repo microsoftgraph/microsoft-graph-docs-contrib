@@ -3,8 +3,8 @@ title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
 author: "njerigrevious"
-ms.prod: "search"
-doc_type: resourcePageType
+doc_type: conceptualPageType
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to query data
@@ -41,6 +41,8 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[acronym](search-acronym.md)|Acronym.Read.All|Microsoft Search|Acronyms in Microsoft Search in your organization.|
+|[bookmark](search-bookmark.md)|Bookmark.Read.All|Microsoft Search|Bookmarks in Microsoft Search in your organization.|
 |[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
@@ -48,9 +50,8 @@ The following table describes the types available to query and the supported per
 |[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Files, folders, pages, and news. |
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
+|[qna](search-qna.md)|QnA.Read.All|Microsoft Search|Questions and answers in Microsoft Search in your organization.|
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[Bookmarks](/graph/api/resources/search-bookmark)|Bookmark.Read.All|Microsoft Search|Microsoft Search bookmarks in your organization.|
-|[Acronyms](/graph/api/resources/search-acronym)|Acronym.Read.All|Microsoft Search|Microsoft Search acronyms in your organization.|
 
 ## Page search results
 
@@ -63,7 +64,7 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum number of results per page (**size**) is 25 for **message** and **event**. 
+- The maximum number of results per page (**size**) is 25 for **message** and **event**.
 
 The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
@@ -119,7 +120,7 @@ Note that collapsing results is currently supported for the following entity typ
 To use the collapse clause effectively, the properties you apply it to must be queryable, and either sortable or refinable.
 When using multi-level collapse,  it's important to note that each subsequent property's limit size specified in a multi-level request should be equal to or smaller than the previous one. If a subsequent property's limit size exceeds the previous one, the server will respond with an `HTTP 400 Bad Request` error.
 
-See [collapse search results](/graph/search-concept-collapse) for more collapse results examples. 
+See [collapse search results](/graph/search-concept-collapse) for more collapse results examples.
 
 ## Sort search results
 
@@ -182,30 +183,38 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
-| Entity Type |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|
-|  message    |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
-| chatMessage |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
-|    drive    |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|  driveItem  |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   event     |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |
-|externalItem |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   list      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|  listItem   |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
-|    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+    | Entity Type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
+    |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
+    | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
+    | externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
+    | qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **chatMessage**, **event**, **person**, or **externalItem**.
+- The search API doesn't support custom sort for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- The search API does not support aggregations for **message**, **event**, **site** or **drive**.
+- The search API doesn't support aggregations for **acronym**, **bookmark**, **message**, **event**, **site**, **person**, **qna**, or **drive**.
 
-- The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+- The search API doesn't support xrank for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+
+- Guest search doesn't support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
-## See also
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)

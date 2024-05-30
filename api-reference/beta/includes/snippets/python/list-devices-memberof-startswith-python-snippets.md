@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devices.item.member_of.graph.group.group_request_builder import GroupRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
-		count = true,
+		count = True,
 		orderby = ["displayName"],
 		filter = "startswith(displayName, 'A')",
 )
 
-request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
 
 
-result = await client.devices.by_device_id('device-id').member_of.graph_group.get(request_configuration = request_configuration)
+result = await graph_client.devices.by_device_id('device-id').member_of.graph_group.get(request_configuration = request_configuration)
 
 
 ```

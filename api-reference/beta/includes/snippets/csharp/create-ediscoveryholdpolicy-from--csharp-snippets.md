@@ -6,11 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
+var requestBody = new EdiscoveryHoldPolicy
 {
-	Displayname = "My legalHold with sources",
+	DisplayName = "My legalHold with sources",
 	Description = "Created from Graph API",
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -20,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 				new 
 				{
 					OdataType = "microsoft.graph.security.userSource",
-					Email = "SalesTeam@M365x809305.OnMicrosoft.com",
+					Email = "SalesTeam@contoso.com",
 				},
 			}
 		},
@@ -39,6 +40,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].LegalHolds.PostAsync(requestBody);
 
 

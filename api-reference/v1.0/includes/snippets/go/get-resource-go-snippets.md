@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
-graphClient.Me().Onenote().Resources().ByResourceId("onenoteResource-id").Content().Get(context.Background(), nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Me().Onenote().Resources().ByOnenoteResourceId("onenoteResource-id").Content().Get(context.Background(), nil)
 
 
 ```

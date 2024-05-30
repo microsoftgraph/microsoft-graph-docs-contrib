@@ -5,41 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EducationAssignment;
+use Microsoft\Graph\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
+use Microsoft\Graph\Generated\Models\EducationAssignmentPointsGradeType;
+use Microsoft\Graph\Generated\Models\EducationAssignmentClassRecipient;
+use Microsoft\Graph\Generated\Models\EducationAssignmentStatus;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationAssignment();
-$requestBody->setDueDateTime(new DateTime('2022-09-16T00:00:00Z'));
-
+$requestBody->setDueDateTime(new \DateTime('2022-09-16T00:00:00Z'));
 $requestBody->setDisplayName('Reading test 09.14');
-
 $instructions = new EducationItemBody();
 $instructions->setContentType(new BodyType('text'));
-
 $instructions->setContent('Read chapter 4');
-
-
 $requestBody->setInstructions($instructions);
 $grading = new EducationAssignmentPointsGradeType();
-$grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
-
+$grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 $grading->setMaxPoints(50);
-
-
 $requestBody->setGrading($grading);
 $assignTo = new EducationAssignmentClassRecipient();
-$assignTo->set@odatatype('#microsoft.graph.educationAssignmentClassRecipient');
-
-
+$assignTo->setOdataType('#microsoft.graph.educationAssignmentClassRecipient');
 $requestBody->setAssignTo($assignTo);
 $requestBody->setStatus(new EducationAssignmentStatus('draft'));
-
 $requestBody->setAllowStudentsToAddResourcesToSubmission(true);
 
-
-
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->post($requestBody);
-
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->post($requestBody)->wait();
 
 ```

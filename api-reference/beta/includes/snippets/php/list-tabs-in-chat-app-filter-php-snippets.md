@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Chats\Item\Tabs\TabsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TabsRequestBuilderGetRequestConfiguration();
 $queryParameters = TabsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -16,7 +18,6 @@ $queryParameters->filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.web'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->get($requestConfiguration);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->get($requestConfiguration)->wait();
 
 ```

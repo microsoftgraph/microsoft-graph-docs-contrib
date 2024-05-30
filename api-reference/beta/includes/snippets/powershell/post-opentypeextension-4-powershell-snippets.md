@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	post = @{
@@ -19,15 +19,15 @@ $params = @{
 				companyName = "Contoso"
 				expirationDate = "2015-07-03T13:04:00.000Z"
 				topPicks = @(
-					"Employees only"
-					"Add spouse or guest"
-					"Add family"
-				)
-			}
-		)
-	}
+				"Employees only"
+			"Add spouse or guest"
+		"Add family"
+	)
+}
+)
+}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ```

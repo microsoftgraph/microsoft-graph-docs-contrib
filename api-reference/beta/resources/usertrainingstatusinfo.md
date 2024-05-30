@@ -3,7 +3,7 @@ title: "userTrainingStatusInfo resource type"
 description: "Represents an assigned training and its status for a user in attack simulation and training."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

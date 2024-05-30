@@ -6,17 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Workflows.Item.Tasks.Item.TaskProcessingResults.Item.MicrosoftGraphIdentityGovernanceResume;
+using Microsoft.Graph.Models.IdentityGovernance;
 
-var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Workflows.Item.Tasks.Item.TaskProcessingResults.Item.MicrosoftGraphIdentityGovernanceResume.ResumePostRequestBody
+var requestBody = new ResumePostRequestBody
 {
-	Data = new Microsoft.Graph.Models.IdentityGovernance.CustomTaskExtensionCallbackData
+	Data = new CustomTaskExtensionCallbackData
 	{
-		OperationStatus = Microsoft.Graph.Models.IdentityGovernance.CustomTaskExtensionOperationStatus.Completed,
+		OperationStatus = CustomTaskExtensionOperationStatus.Completed,
 	},
 	Source = "sample",
 	Type = "lifecycleEvent",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Tasks["{task-id}"].TaskProcessingResults["{taskProcessingResult-id}"].MicrosoftGraphIdentityGovernanceResume.PostAsync(requestBody);
 
 

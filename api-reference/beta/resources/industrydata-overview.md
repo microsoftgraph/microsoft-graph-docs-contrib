@@ -3,7 +3,7 @@ title: "Use the industry data API as an extract, transform, and load (ETL) engin
 description: "The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: conceptual
 ---
 
@@ -17,7 +17,7 @@ The industry data API is defined in the OData subnamespace `microsoft.graph.indu
 
 ## Industry data API and education
 
-The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake <!-- the API utilizes the data in multiple outbound flows, --> SDS can synchronize the data with [Insights for Education Leaders](/schooldatasync/enable-sync-with-insights), for use with the Insights app in Teams for Education, and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export), for custom analytics scenarios.
+The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups with Microsoft Entra ID and Microsoft 365 from student information systems (SIS) and student management systems (SMS). After normalizing the data the API utilizes the data through multiple outbound provisioning flows to manage users, class groups, administrative units, and security groups.
 
 ![Illustration of the industry data ETL process](/graph/images/industrydata-overview.png)
 
@@ -27,7 +27,7 @@ When the run starts, it connects to the **sourceSystemDefinition** and **dataCon
 
 Next, the system transforms the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
 
-The system stores the latest copy of the Azure Active Directory (Azure AD) of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
+The system stores the latest copy of the Microsoft Entra ID of the tenant into the Azure Data Lake. The copy of the Microsoft Entra assists with user matching between the **sourceSystemDefinition** and the Microsoft Entra user object. At this stage, the match link is written only to the Azure Data Lake.
 
 Next, the inbound flow performs advanced validation to determine data health. The validation focuses on identifying errors and warnings to ensure that good data comes in and bad data stays out. Errors indicate that a record didn't pass validation and was removed from further processing. Warnings indicate that the value on an optional field of a record didn't pass. The value is removed from the record, but the record is included for further processing.
 
@@ -44,11 +44,9 @@ At the end of each run, [industryDataRunStatistics](industrydata-industrydatarun
 
 Errors and warnings related to **industryDataRunStatistics** are produced to help provide an initial understanding of data health. When you investigate data health, industry data provides the ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
 
-After investigating and addressing any data errors or warnings, when you're comfortable with the current state of the data health, you can enable the scenarios with the data that is now in the education data lake. When you enable a scenario to use this data, the scenario creates an outbound flow. <!-- Outbound flows are defined by Microsoft 365 provisioning, Insights & Analytics. -->
+After investigating and addressing any data errors or warnings, when you're comfortable with the current state of the data health, you can enable the scenarios with the data. When you enable a scenario to use this data, the scenario creates an outbound provisioning flow. 
 
-<!-- Microsoft 365 Provisioning outbound flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms. -->
-
-Insights and analytics help provide analysis for student progress and activity within their classes. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are met.
+Managing data through outbound provisioning flows simplifies the management of users and classes. Only active and matched users are included in the data that is used to write the link to the Microsoft Entra user object. This link facilitates the integration between the SIS/SMS and their sections for groups and Microsoft Teams classrooms.
 
 For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync overview](/schooldatasync/school-data-sync-overview).
 
@@ -131,7 +129,7 @@ Transformation of the data is often shaped by each individual user's role within
 
 ### Industry data connectors
 
-An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and an [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
+An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and an [inboundFlow](industrydata-inboundflow.md). It's responsible for acquiring data from an external source and providing the data to inbound data flows.
 
 #### Upload and validate CSV data
 
@@ -165,10 +163,6 @@ Uploaded data files must be validated before an inbound flow can process the dat
 
 The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. You can use this URI to track the status of the long-running operation, and any errors or warnings created during validation.
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 Use the Microsoft Graph industry data APIs as an extract, transform, and load (ETL) engine. To learn more:
@@ -176,6 +170,6 @@ Use the Microsoft Graph industry data APIs as an extract, transform, and load (E
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## See also
+## Related content
 
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

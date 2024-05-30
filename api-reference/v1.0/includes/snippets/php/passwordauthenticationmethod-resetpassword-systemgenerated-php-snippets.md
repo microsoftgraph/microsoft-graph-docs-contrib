@@ -5,12 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Authentication\Methods\Item\ResetPassword\ResetPasswordPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->methods()->byMethodId('authenticationMethod-id')->resetPassword()->post();
+$requestBody = new ResetPasswordPostRequestBody();
 
+$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->methods()->byAuthenticationMethodId('authenticationMethod-id')->resetPassword()->post($requestBody)->wait();
 
 ```

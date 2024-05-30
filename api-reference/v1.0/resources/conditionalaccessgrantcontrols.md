@@ -2,8 +2,9 @@
 title: "conditionalAccessGrantControls resource type"
 description: "Represents grant controls that must be fulfilled to pass the policy."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

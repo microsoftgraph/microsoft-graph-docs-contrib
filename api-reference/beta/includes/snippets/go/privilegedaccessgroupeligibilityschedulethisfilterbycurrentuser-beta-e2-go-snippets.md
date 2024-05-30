@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,20 +15,19 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 
 requestFilter := "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+on := "principal"
+filterByCurrentUser, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUserWithOn(&on).GetAsFilterByCurrentUserWithOnGetResponse(context.Background(), configuration)
 
 
 ```

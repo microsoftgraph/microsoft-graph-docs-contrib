@@ -5,22 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\OperationalInsightsConnection;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OperationalInsightsConnection();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.operationalInsightsConnection');
-
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.operationalInsightsConnection');
 $requestBody->setAzureSubscriptionId('322ec614-e9c2-4cd5-a55c-5711fdecf02e');
-
 $requestBody->setAzureResourceGroupName('target-resource-group');
-
 $requestBody->setWorkspaceName('my-workspace');
 
-
-
-$result = $graphServiceClient->admin()->windows()->updates()->resourceConnections()->post($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->resourceConnections()->post($requestBody)->wait();
 
 ```

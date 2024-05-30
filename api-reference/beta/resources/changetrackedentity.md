@@ -1,9 +1,9 @@
 ---
 title: "changeTrackedEntity resource type"
-description: "Represents an entity to track changes made to any supported Shifts resource"
+description: "Represents an entity to track changes made to any supported schedule and associated resource."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -15,14 +15,25 @@ Namespace: microsoft.graph
 
 Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.
 
+Base type of [openShift](../resources/openshift.md), [shift](../resources/shift.md), and [timeOff](../resources/timeoff.md).
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|id|String| Read-only.|
-|lastModifiedBy|[identitySet](identityset.md)|Identity of the person who last modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|createdBy|[identitySet](identityset.md)|Identity of the user who created the entity.|
+|createdDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String| The unique identifier for the **changeTrackedEntity** object. Read-only.|
+|lastModifiedBy|[identitySet](identityset.md)|Identity of the user who last modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 
@@ -30,7 +41,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -44,6 +55,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},

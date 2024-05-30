@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,18 +15,15 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
-requestParameters := &graphsites.SiteItemPageItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","title"},
-	Expand: [] string {"webparts"},
+requestParameters := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetQueryParameters{
+	Select: [] string {"id","name"},
 }
-configuration := &graphsites.SiteItemPageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().BySiteId("site-id").Pages().ByPageId("sitePage-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").GraphSitePage().Get(context.Background(), configuration)
 
 
 ```

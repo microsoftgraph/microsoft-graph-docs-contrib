@@ -5,23 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CrossTenantAccessPolicyConfigurationPartner;
+use Microsoft\Graph\Beta\Generated\Models\CrossTenantAccessPolicyInboundTrust;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CrossTenantAccessPolicyConfigurationPartner();
 $inboundTrust = new CrossTenantAccessPolicyInboundTrust();
 $inboundTrust->setIsMfaAccepted(true);
-
 $inboundTrust->setIsCompliantDeviceAccepted(true);
-
 $inboundTrust->setIsHybridAzureADJoinedDeviceAccepted(true);
-
-
 $requestBody->setInboundTrust($inboundTrust);
 
-
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerTenantId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody)->wait();
 
 ```

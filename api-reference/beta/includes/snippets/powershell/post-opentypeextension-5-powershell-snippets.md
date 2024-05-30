@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -23,18 +23,18 @@ $params = @{
 							companyName = "Contoso"
 							expirationDate = "2016-08-03T11:00:00.000Z"
 							topPicks = @(
-								"Employees only"
-								"Add spouse or guest"
-								"Add family"
-							)
-						}
-					)
-				}
-			)
-		}
-	)
+							"Employees only"
+						"Add spouse or guest"
+					"Add family"
+				)
+			}
+		)
+	}
+)
+}
+)
 }
 
-New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
 
 ```

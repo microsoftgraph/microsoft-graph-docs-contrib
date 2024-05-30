@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\OnPremisesConnections\Item\CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"];
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration();
+$queryParameters = CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byCloudPcOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->get($requestConfiguration)->wait();
 
 ```

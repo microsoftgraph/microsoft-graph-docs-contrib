@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityProtection\ServicePrincipalRiskDetections\ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration();
 $queryParameters = ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "riskEventType eq 'investigationsThreatIntelligence' 
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityProtection()->servicePrincipalRiskDetections()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityProtection()->servicePrincipalRiskDetections()->get($requestConfiguration)->wait();
 
 ```

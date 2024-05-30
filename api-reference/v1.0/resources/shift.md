@@ -3,7 +3,7 @@ title: "shift resource type"
 description: "Represents a unit of scheduled work in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -13,33 +13,33 @@ Namespace: microsoft.graph
 
 Represents a unit of scheduled work in a [schedule](schedule.md).
 
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shifts](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of **shifts** in this schedule.|
-|[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new **shift**.|
-|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
-|[Replace shift](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
-|[Delete shift](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
+|[List](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of **shifts** in this schedule.|
+|[Create](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new **shift**.|
+|[Get](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
+|[Replace](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
+|[Delete](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime		|DateTimeOffset        |The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| draftShift		|[shiftItem](shiftitem.md)        |The draft version of this **shift** that is viewable by managers. Required. |
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they are [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property.|
 | id			|String      |ID of the **shift**.|
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **shift**.|
 | lastModifiedDateTime		|DateTimeOffset        |The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | schedulingGroupId 		|String      |ID of the scheduling group the **shift** is part of. Required. |
-| sharedShift 	|[shiftItem](shiftitem.md)  |The shared version of this **shift** that is viewable by both employees and managers. Required. |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client.|
 | userId 			|String      |ID of the user assigned to the **shift**. Required. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 
 <!-- {
   "blockType": "resource",

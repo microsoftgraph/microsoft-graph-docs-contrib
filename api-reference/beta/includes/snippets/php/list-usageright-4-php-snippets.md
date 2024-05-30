@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\UsageRights\UsageRightsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new UsageRightsRequestBuilderGetRequestConfiguration();
 $queryParameters = UsageRightsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "state in ('active', 'suspended') and serviceIdentifi
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->users()->byUserId('user-id')->usageRights()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->usageRights()->get($requestConfiguration)->wait();
 
 ```

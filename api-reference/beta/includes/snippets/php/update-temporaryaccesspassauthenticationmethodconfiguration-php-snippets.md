@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\TemporaryAccessPassAuthenticationMethodConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TemporaryAccessPassAuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration');
-
+$requestBody->setOdataType('#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration');
 $requestBody->setIsUsableOnce(true);
 
-
-
-$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody)->wait();
 
 ```

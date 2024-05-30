@@ -1,9 +1,10 @@
 ---
 title: "conditionalAccessTemplate resource type"
-description: "Represents a Microsoft recommended template of best practice configurations for Azure Active Directory conditional access policies."
+description: "Represents a Microsoft recommended template of best practice configurations for Microsoft Entra Conditional Access policies."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,15 +12,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a Microsoft recommended template of best practice configurations for Azure Active Directory [conditional access policies](../resources/conditionalaccesspolicy.md).
+Represents a Microsoft recommended template of best practice configurations for Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List conditionalAccessTemplates](../api/conditionalaccessroot-list-templates.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection|Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) objects and their properties.|
-|[Get conditionalAccessTemplate](../api/conditionalaccesstemplate-get.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md)|Read the properties and relationships of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
+|[List](../api/conditionalaccessroot-list-templates.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection|Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) objects and their properties.|
+|[Get](../api/conditionalaccesstemplate-get.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md)|Read the properties and relationships of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

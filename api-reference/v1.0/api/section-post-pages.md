@@ -3,7 +3,7 @@ title: "Create page"
 description: "Create a new page in the specified section."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 Create a new [page](../resources/page.md) in the specified section.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
-|Application | Notes.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "section_post_pages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/section-post-pages-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +46,7 @@ If successful, this method returns `201 Created` response code and the new [page
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,6 +93,10 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/section-post-pages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-post-pages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,7 +104,7 @@ Content-Type:application/pdf
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

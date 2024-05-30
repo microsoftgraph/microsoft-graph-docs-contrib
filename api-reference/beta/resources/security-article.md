@@ -3,7 +3,7 @@ title: "article resource type"
 description: "Articles are narratives by Microsoft that provide insight into threat actors, tooling, attacks, and vulnerabilities."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Represents an article, which is a narrative that provides insight into threat ac
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articles](../api/security-article-list.md)|[article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
+|[List articles](../api/security-threatintelligence-list-articles.md)|[article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
 |[Get article](../api/security-article-get.md)|[article](../resources/security-article.md)|Read the properties and relationships of a [microsoft.graph.security.article](../resources/security-article.md) object.|
-|[List indicators](../api/security-article-list-indicators.md)|[articleIndicator](../resources/security-articleindicator.md) collection|Get the articleIndicator resources from the indicators navigation property.|
+|[List article indicators](../api/security-article-list-indicators.md)|[articleIndicator](../resources/security-articleindicator.md) collection|Get the articleIndicator resources from the indicators navigation property.|
 
 ## Properties
 

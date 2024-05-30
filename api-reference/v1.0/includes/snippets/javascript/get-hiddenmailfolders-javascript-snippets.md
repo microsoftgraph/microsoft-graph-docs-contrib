@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let mailFolders = await client.api('/me/mailFolders/?includeHiddenFolders=true')
-	.version('beta')
 	.get();
 
 ```

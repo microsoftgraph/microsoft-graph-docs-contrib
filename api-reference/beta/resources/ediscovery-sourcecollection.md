@@ -19,17 +19,17 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Add additionalSource](../api/ediscovery-sourcecollection-post-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add an additional **dataSource** object to the source collection.|
-|[Add custodianSource](../api/ediscovery-sourcecollection-post-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add a custodian **dataSource** object to the source collection.|
+|[Add additional sources](../api/ediscovery-sourcecollection-post-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add an additional **dataSource** object to the source collection.|
+|[Add custodian sources](../api/ediscovery-sourcecollection-post-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add a custodian **dataSource** object to the source collection.|
 |[Add noncustodialSource](../api/ediscovery-sourcecollection-post-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Add a non-custodial source **noncustodialSource** object to the source collection.|
-|[List sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get a list of the **sourceCollection** objects and their properties.|
-|[Create sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
-|[Get sourceCollection](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Read the properties and relationships of a **sourceCollection** object.|
-|[Update sourceCollection](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Update the properties of a **sourceCollection** object.|
-|[Delete sourceCollection](../api/ediscovery-sourcecollection-delete.md)|None|Delete a **sourceCollection** object.|
-|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|Run an estimate of the number of emails and documents in the source collection.|
-|[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of additional **dataSource** objects associated with a source collection.|
-|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of custodian **dataSource** objects associated with a source collection.|
+|[List](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get a list of the **sourceCollection** objects and their properties.|
+|[Create](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
+|[Get](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Read the properties and relationships of a **sourceCollection** object.|
+|[Update](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Update the properties of a **sourceCollection** object.|
+|[Delete](../api/ediscovery-sourcecollection-delete.md)|None|Delete a **sourceCollection** object.|
+|[Estimate statistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|Run an estimate of the number of emails and documents in the source collection.|
+|[List additional sources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of additional **dataSource** objects associated with a source collection.|
+|[List custodian sources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of custodian **dataSource** objects associated with a source collection.|
 |[List noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of non-custodial sources **noncustodialSource** objects associated with a source collection.|
 |[Purge data](../api/ediscovery-sourcecollection-purgedata.md)|None|Run a purge data operation on the Teams data contained in the source collection.|
 
@@ -40,7 +40,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **sourceCollection**.|
 |createdDateTime|DateTimeOffset|The date and time the **sourceCollection** was created.|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection spans across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
 |description|String|The description of the **sourceCollection**.|
 |displayName|String|The display name of the **sourceCollection**.|
 |id|String| The ID for the **sourceCollection**. Read-only. |
@@ -51,7 +51,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 
 |Member|Description|
 |:----|-----------|
-|none|Do not specify any scopes - locations would be referenced separately.|
+|none|Don't specify any scopes - locations would be referenced separately.|
 |allTenantMailboxes|Include all tenant mailboxes in the **sourceCollection**.|
 |allTenantSites|Include all tenant sites in the **sourceCollection**.|
 |allCaseCustodians|Include all custodian locations in the **sourceCollection**.|
@@ -69,7 +69,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

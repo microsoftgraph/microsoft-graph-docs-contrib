@@ -2,8 +2,8 @@
 title: "unifiedRbacApplication resource type"
 description: "Represents a role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers."
 ms.localizationpriority: medium
-author: "bili1"
-ms.prod: "directory-management"
+author: "cubika"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -19,12 +19,12 @@ Represents a role management container for unified role definitions and role ass
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. |
-| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for an RBAC provider. You can only query specific instances by filtering on **roleDefinitionId**, **principalId** or **appScopeId**. |
-| [List transitiveRoleAssignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. This API requires the **principalId** in a request. |
-| [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. |
-| [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider. |
-| [List customAppScopes](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
+| [Create role assignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. |
+| [List role assignment](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for an RBAC provider. You can only query specific instances by filtering on **roleDefinitionId**, **principalId** or **appScopeId**. |
+| [List transitive role assignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. This API requires the **principalId** in a request. |
+| [Create role definition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. |
+| [List role definitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider. |
+| [List](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
 
 ## Properties
 

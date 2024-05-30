@@ -5,17 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationCombinationConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodModes;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthenticationCombinationConfiguration();
-$requestBody->setAppliesToCombinations([$requestBody->setAuthenticationMethodModes(new AuthenticationMethodModes('fido2'));
-]);
+$requestBody->setAppliesToCombinations([new AuthenticationMethodModes('fido2'),	]);
 
-
-
-$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policies()->byPolicieId('authenticationStrengthPolicy-id')->combinationConfigurations()->byCombinationConfigurationId('authenticationCombinationConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policies()->byAuthenticationStrengthPolicyId('authenticationStrengthPolicy-id')->combinationConfigurations()->byAuthenticationCombinationConfigurationId('authenticationCombinationConfiguration-id')->patch($requestBody)->wait();
 
 ```

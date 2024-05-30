@@ -2,8 +2,9 @@
 title: "authenticationMethodModeDetail resource type"
 description: "A representation of a specific mode of an authentication method that can be used as part of an authentication method combination in an authentication strength."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +20,8 @@ For more information on authentication methods, see the [authentication methods 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authenticationMethodModeDetails](../api/authenticationstrengthroot-list-authenticationmethodmodes.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) collection|Get a list of the [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) objects and their properties.|
-|[Get authenticationMethodModeDetail](../api/authenticationmethodmodedetail-get.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md)|Read the properties and relationships of an [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
+|[List authentication combinations and method modes](../api/authenticationstrengthroot-list-authenticationmethodmodes.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) collection|Get a list of the [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) objects and their properties.|
+|[Get authentication method modes](../api/authenticationmethodmodedetail-get.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md)|Read the properties and relationships of an [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Events\EventsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new EventsRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -20,7 +22,6 @@ $queryParameters->select = ["subject","body","bodyPreview","organizer","attendee
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->events()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->events()->get($requestConfiguration)->wait();
 
 ```

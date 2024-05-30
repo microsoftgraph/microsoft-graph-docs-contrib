@@ -1,9 +1,9 @@
 ---
 title: "directoryObject resource type"
-description: "Represents an Azure Active Directory object."
+description: "Represents a Microsoft Entra object."
 ms.localizationpriority: high
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
+Represents a Microsoft Entra object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
@@ -30,16 +30,16 @@ Inherits from [entity](entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties of a directory object.|
-|[Get delta](../api/directoryobject-delta.md)|[directoryObject](directoryObject.md) collection| Get incremental changes for directory objects such as [users](../api/user-delta.md), [groups](../api/group-delta.md), [applications](../api/application-delta.md), and [service principals](../api/serviceprincipal-delta.md). Filtering is required on either the **id** of the derived type or the derived type itself. For more information on delta queries, see the [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).|
-|[Delete directoryObject](../api/directoryobject-delete.md) | None |Delete a directory object. |
+|[Get directory object](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties of a directory object.|
+|[Get delta for directory object](../api/directoryobject-delta.md)|[directoryObject](directoryObject.md) collection| Get incremental changes for directory objects such as [users](../api/user-delta.md), [groups](../api/group-delta.md), [applications](../api/application-delta.md), and [service principals](../api/serviceprincipal-delta.md). Filtering is required on either the **id** of the derived type or the derived type itself. For more information on delta queries, see the [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).|
+|[Delete directory object](../api/directoryobject-delete.md) | None |Delete a directory object. |
 |[Get available extension properties](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) collection|Get all or a filtered list of the directory extension properties that have been registered in a directory.|
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, device, or directory object is a member. The check is transitive.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all groups that the user, group, service principal, organizational contact, device, or directory object is a member of. The check is transitive.|
-|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive. |
-|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
+|[Check member groups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, device, or directory object is a member. The check is transitive.|
+|[Get member groups](../api/directoryobject-getmembergroups.md)|String collection|Return all groups that the user, group, service principal, organizational contact, device, or directory object is a member of. The check is transitive.|
+|[Check member objects](../api/directoryobject-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
+|[Get member objects](../api/directoryobject-getmemberobjects.md)|String collection| Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive. |
+|[Get objects by IDs](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
+|[Validate properties](../api/directoryobject-validateproperties.md)|JSON| Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 
 ## Properties
 
@@ -95,4 +95,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

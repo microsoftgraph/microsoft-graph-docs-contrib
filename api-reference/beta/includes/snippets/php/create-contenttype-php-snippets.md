@@ -5,27 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ContentType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContentType();
 $requestBody->setName('docSet');
-
 $requestBody->setDescription('custom docset');
-
 $base = new ContentType();
 $base->setName('Document Set');
-
 $base->setId('0x0120D520');
-
-
 $requestBody->setBase($base);
 $requestBody->setGroup('Document Set Content Types');
 
-
-
-$result = $graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->post($requestBody);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->post($requestBody)->wait();
 
 ```

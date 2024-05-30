@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Groups\Item\Members\Graph\User\Count\CountRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new CountRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -16,7 +18,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->groups()->byGroupId('group-id')->members()->graphUser()->count()->get($requestConfiguration);
-
+$graphServiceClient->groups()->byGroupId('group-id')->members()->graphUser()->count()->get($requestConfiguration)->wait();
 
 ```

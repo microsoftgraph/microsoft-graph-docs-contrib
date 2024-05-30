@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId
+Remove-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId
 
 ```

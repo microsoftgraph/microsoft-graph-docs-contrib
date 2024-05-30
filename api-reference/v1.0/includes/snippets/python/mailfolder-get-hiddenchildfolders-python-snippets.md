@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.mail_folders.item.child_folders.child_folders_request_builder import ChildFoldersRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ChildFoldersRequestBuilder.ChildFoldersRequestBuilderGetQueryParameters(
-		includeHiddenFolders = "true",
+		include_hidden_folders = "true",
 )
 
-request_configuration = ChildFoldersRequestBuilder.ChildFoldersRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.get(request_configuration = request_configuration)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.get(request_configuration = request_configuration)
 
 
 ```

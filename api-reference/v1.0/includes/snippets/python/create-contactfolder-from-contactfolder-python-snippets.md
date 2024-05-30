@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact_folder import ContactFolder
 
-request_body = ContactFolder()
-request_body.display_name = 'Family'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ContactFolder(
+	display_name = "Family",
+)
 
-
-
-result = await client.me.contact_folders.by_contact_folder_id('contactFolder-id').child_folders.post(request_body = request_body)
+result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').child_folders.post(request_body)
 
 
 ```

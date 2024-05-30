@@ -1,13 +1,13 @@
 ---
-title: "pivotTable resource type"
+title: "workbookPivotTable resource type"
 description: "Represents an Excel PivotTable."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# pivotTable resource type
+# workbookPivotTable resource type
 
 Namespace: microsoft.graph
 
@@ -19,21 +19,21 @@ Represents an Excel PivotTable.
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
 |[Refresh](../api/workbookpivottable-refresh.md)|None|Refreshes the PivotTable.	|
-|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
+|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. This action is available only on the pivot table collection.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Id of the PivotTable.	Read-only.|
+|id|String| ID of the PivotTable.	Read-only.|
 |name|String|Name of the PivotTable.	|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

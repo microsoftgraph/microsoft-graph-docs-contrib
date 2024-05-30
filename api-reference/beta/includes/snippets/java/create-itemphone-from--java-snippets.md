@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemPhone itemPhone = new ItemPhone();
-itemPhone.displayName = "Car Phone";
-itemPhone.number = "+7 499 342 22 13";
+itemPhone.setDisplayName("Car Phone");
+itemPhone.setNumber("+7 499 342 22 13");
+ItemPhone result = graphClient.me().profile().phones().post(itemPhone);
 
-graphClient.me().profile().phones()
-	.buildRequest()
-	.post(itemPhone);
 
 ```

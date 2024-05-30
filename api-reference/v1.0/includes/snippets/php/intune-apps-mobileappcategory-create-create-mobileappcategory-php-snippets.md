@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\MobileAppCategory;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MobileAppCategory();
-$requestBody->set@odatatype('#microsoft.graph.mobileAppCategory');
-
+$requestBody->setOdataType('#microsoft.graph.mobileAppCategory');
 $requestBody->setDisplayName('Display Name value');
 
-
-
-$result = $graphServiceClient->deviceAppManagement()->mobileAppCategories()->post($requestBody);
-
+$result = $graphServiceClient->deviceAppManagement()->mobileAppCategories()->post($requestBody)->wait();
 
 ```

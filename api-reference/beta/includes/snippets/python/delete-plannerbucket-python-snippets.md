@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.planner.buckets.item.planner_bucket_item_request_builder import PlannerBucketItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = PlannerBucketRequestBuilder.PlannerBucketRequestBuilderDeleteRequestConfiguration(
-headers = {
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
-
-)
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
 
-await client.planner.buckets.by_bucket_id('plannerBucket-id').delete(request_configuration = request_configuration)
+await graph_client.planner.buckets.by_planner_bucket_id('plannerBucket-id').delete(request_configuration = request_configuration)
 
 
 ```

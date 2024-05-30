@@ -3,7 +3,7 @@ title: "channelModerationSettings resource type"
 description: "Used to control who can start new posts and reply to posts in a channel."
 author: "anandjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -51,6 +51,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - To modify moderation settings of a channel, see example 2 in [Update channel](../api/channel-patch.md).

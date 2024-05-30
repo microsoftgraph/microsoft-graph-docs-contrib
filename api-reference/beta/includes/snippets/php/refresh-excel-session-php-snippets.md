@@ -5,12 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\RefreshSession\RefreshSessionRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\RefreshSession\RefreshSessionPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RefreshSessionPostRequestBody();
-
 $requestConfiguration = new RefreshSessionRequestBuilderPostRequestConfiguration();
 $headers = [
 		'workbook-session-id' => '{session-id}',
@@ -18,7 +20,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->refreshSession()->post($requestBody, $requestConfiguration);
-
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->refreshSession()->post($requestBody, $requestConfiguration)->wait();
 
 ```

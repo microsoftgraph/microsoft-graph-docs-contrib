@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Reports
+Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgReportCredentialUsageSummary -Filter "feature eq 'registration'" 
+Get-MgBetaReportCredentialUsageSummary -Filter "feature eq 'registration'"  -Period $periodId 
 
 ```

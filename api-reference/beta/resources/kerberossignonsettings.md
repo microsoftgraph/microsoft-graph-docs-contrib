@@ -2,8 +2,8 @@
 title: "kerberosSignOnSettings resource type"
 description: "Represents the kerberos settings for an on-premises application published via Application Proxy."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Keberos Constrained Delegation (KCD) settings for the [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) resource when publishing an on-premises application via Azure AD Application Proxy. Application Proxy uses Kerberos Constrained Delegation (KCD) to support single-sign on to Integrated Windows Authentication applications. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Represents the Keberos Constrained Delegation (KCD) settings for the [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) resource when publishing an on-premises application via Microsoft Entra application proxy. Application Proxy uses Kerberos Constrained Delegation (KCD) to support single-sign on to Integrated Windows Authentication applications. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
 >[!NOTE]
 >Do not use this property for configuring SAML or password-based single-sign on. If you are configuring SAML single-sign-on this must be set on the [servicePrincipal](serviceprincipal.md).

@@ -5,23 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\Deployment;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentState;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RequestedDeploymentStateValue;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Deployment();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.deployment');
-
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.deployment');
 $state = new DeploymentState();
-$state->set@odatatype('microsoft.graph.windowsUpdates.deploymentState');
-
+$state->setOdataType('microsoft.graph.windowsUpdates.deploymentState');
 $state->setRequestedValue(new RequestedDeploymentStateValue('paused'));
-
-
 $requestBody->setState($state);
 
-
-$result = $graphServiceClient->admin()->windows()->updates()->deployments()->byDeploymentId('deployment-id')->patch($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->deployments()->byDeploymentId('deployment-id')->patch($requestBody)->wait();
 
 ```

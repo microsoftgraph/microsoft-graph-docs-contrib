@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphadmin "github.com/microsoftgraph/msgraph-sdk-go/admin"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestParameters := &graphadmin.AdminServiceAnnouncementHealthOverviewsRequestBuilderGetQueryParameters{
 	Expand: [] string {"issues"},
@@ -22,7 +22,8 @@ configuration := &graphadmin.AdminServiceAnnouncementHealthOverviewsRequestBuild
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+healthOverviews, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().Get(context.Background(), configuration)
 
 
 ```

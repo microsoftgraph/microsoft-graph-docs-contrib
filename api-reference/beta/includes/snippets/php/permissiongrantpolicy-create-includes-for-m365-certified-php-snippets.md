@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PermissionGrantConditionSet;
+use Microsoft\Graph\Beta\Generated\Models\PermissionType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PermissionGrantConditionSet();
 $requestBody->setPermissionType(new PermissionType('delegated'));
-
 $requestBody->setCertifiedClientApplicationsOnly(true);
 
-
-
-$result = $graphServiceClient->policies()->permissionGrantPolicies()->byPermissionGrantPolicieId('permissionGrantPolicy-id')->includes()->post($requestBody);
-
+$result = $graphServiceClient->policies()->permissionGrantPolicies()->byPermissionGrantPolicyId('permissionGrantPolicy-id')->includes()->post($requestBody)->wait();
 
 ```

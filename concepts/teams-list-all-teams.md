@@ -3,7 +3,7 @@ title: "List all teams in Microsoft Teams for an organization"
 description: "Use the Microsoft Teams API in Microsoft Graph to list all teams in an organization by finding all groups that have teams and getting information for each team."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List all teams in Microsoft Teams for an organization
@@ -25,11 +25,11 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
 > [!NOTE]
-> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633).
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown might be shortened for readability. 
 >
@@ -87,11 +87,11 @@ GET /groups?$select=id,resourceProvisioningOptions
 ```
 
 > [!NOTE]
-> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633).
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
@@ -169,7 +169,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List joinedTeams](/graph/api/user-list-joinedteams)
 - [List groups](/graph/api/group-list)

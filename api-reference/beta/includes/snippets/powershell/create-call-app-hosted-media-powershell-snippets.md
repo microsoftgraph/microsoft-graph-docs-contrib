@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -36,14 +36,14 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
-	}
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+	blob = "<Media Session Configuration>"
+}
 }
 
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 
 ```

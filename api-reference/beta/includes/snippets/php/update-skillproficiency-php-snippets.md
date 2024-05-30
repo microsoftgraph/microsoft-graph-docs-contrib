@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\SkillProficiency;
+use Microsoft\Graph\Beta\Generated\Models\SkillProficiencyLevel;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SkillProficiency();
-$requestBody->setCategories(['Professional', ]);
+$requestBody->setCategories(['Professional', 	]);
+$requestBody->setProficiency(new SkillProficiencyLevel('advancedProfessional'));
 
-$requestBody->setProficiency(new SkillProficiencyLevel('advancedprofessional'));
-
-
-
-$result = $graphServiceClient->me()->profile()->skills()->bySkillId('skillProficiency-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->profile()->skills()->bySkillProficiencyId('skillProficiency-id')->patch($requestBody)->wait();
 
 ```

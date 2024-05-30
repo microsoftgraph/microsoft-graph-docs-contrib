@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Drives\Item\Items\Item\Checkin\CheckinPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CheckinPostRequestBody();
 $requestBody->setComment('Updating the latest guidelines');
 
-
-
-$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->checkin()->post($requestBody);
-
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->checkin()->post($requestBody)->wait();
 
 ```

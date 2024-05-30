@@ -3,7 +3,7 @@ title: "simulationReport resource type"
 description: "Represents a report of an attack simulation and training campaign, including an overview and users who participated in the campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "dataPolicyOperation resource type"
 description: "Represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. For example, a company administrator can submit a data policy operation request to export an employee's company data, and then later track that request."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents a submitted data policy operation. It contains necessary information 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Retrieve properties of the **dataPolicyOperation** object.|
+|[Get](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Retrieve properties of the **dataPolicyOperation** object.|
 |[Export personal data](../api/user-exportpersonaldata.md) | None |Submit a data policy operation request to export organizational user's data which can later be read using [Get dataPolicyOperation](../api/datapolicyoperation-get.md)|
 
 ## Properties

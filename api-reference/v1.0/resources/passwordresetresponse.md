@@ -2,8 +2,9 @@
 title: "passwordResetResponse resource type"
 description: "Represents the new system-generated password after a password reset operation."
 author: "zhvolosh"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +17,7 @@ Represents the new system-generated password after a [password reset operation](
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|newPassword|String|The Azure AD-generated password.|
+|newPassword|String|The Microsoft Entra ID-generated password.|
 
 ## Relationships
 None.

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	post = @{
@@ -19,12 +19,24 @@ $params = @{
 				item = @{
 					"@odata.type" = "microsoft.graph.event"
 					subject = "Discuss gifts for children"
+					body = @{
+						contentType = "HTML"
+						content = "Let's look for funding!"
+					}
+					start = @{
+						dateTime = "2019-12-02T18:00:00"
+						timeZone = "Pacific Standard Time"
+					}
+					end = @{
+						dateTime = "2019-12-02T19:00:00"
+						timeZone = "Pacific Standard Time"
+					}
 				}
 			}
 		)
 	}
 }
 
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```

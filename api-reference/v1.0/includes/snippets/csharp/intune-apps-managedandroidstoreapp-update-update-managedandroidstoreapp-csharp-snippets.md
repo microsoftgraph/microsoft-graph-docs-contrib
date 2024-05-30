@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new ManagedAndroidStoreApp
 {
@@ -34,24 +35,26 @@ var requestBody = new ManagedAndroidStoreApp
 	MinimumSupportedOperatingSystem = new AndroidMinimumOperatingSystem
 	{
 		OdataType = "microsoft.graph.androidMinimumOperatingSystem",
-		V4_0 = true,
-		V4_0_3 = true,
-		V4_1 = true,
-		V4_2 = true,
-		V4_3 = true,
-		V4_4 = true,
-		V5_0 = true,
-		V5_1 = true,
-		V6_0 = true,
-		V7_0 = true,
-		V7_1 = true,
-		V8_0 = true,
-		V8_1 = true,
-		V9_0 = true,
-		V10_0 = true,
-		V11_0 = true,
+		V40 = true,
+		V403 = true,
+		V41 = true,
+		V42 = true,
+		V43 = true,
+		V44 = true,
+		V50 = true,
+		V51 = true,
+		V60 = true,
+		V70 = true,
+		V71 = true,
+		V80 = true,
+		V81 = true,
+		V90 = true,
+		V100 = true,
+		V110 = true,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceAppManagement.MobileApps["{mobileApp-id}"].PatchAsync(requestBody);
 
 

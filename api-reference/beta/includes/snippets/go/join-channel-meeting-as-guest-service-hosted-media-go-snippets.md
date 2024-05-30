@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,16 +15,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 source := graphmodels.NewParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-guest := graphmodels.New()
+guest := graphmodels.NewIdentity()
 displayName := "Guest User"
 guest.SetDisplayName(&displayName) 
 id := "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
@@ -79,7 +79,8 @@ allowConversationWithoutHost := true
 meetingInfo.SetAllowConversationWithoutHost(&allowConversationWithoutHost) 
 requestBody.SetMeetingInfo(meetingInfo)
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

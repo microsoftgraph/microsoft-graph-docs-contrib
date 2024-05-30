@@ -5,35 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRoleScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRole;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceScope;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageResourceRoleScope();
 $accessPackageResourceRole = new AccessPackageResourceRole();
 $accessPackageResourceRole->setOriginId('4');
-
 $accessPackageResourceRole->setOriginSystem('SharePointOnline');
-
 $accessPackageResourceRoleAccessPackageResource = new AccessPackageResource();
 $accessPackageResourceRoleAccessPackageResource->setId('53c71803-a0a8-4777-aecc-075de8ee3991');
-
-
 $accessPackageResourceRole->setAccessPackageResource($accessPackageResourceRoleAccessPackageResource);
-
 $requestBody->setAccessPackageResourceRole($accessPackageResourceRole);
 $accessPackageResourceScope = new AccessPackageResourceScope();
 $accessPackageResourceScope->setId('5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33');
-
 $accessPackageResourceScope->setOriginId('https://microsoft.sharepoint.com/portals/Community');
-
 $accessPackageResourceScope->setOriginSystem('SharePointOnline');
-
-
 $requestBody->setAccessPackageResourceScope($accessPackageResourceScope);
 
-
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody);
-
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody)->wait();
 
 ```

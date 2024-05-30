@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CalendarGroup;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CalendarGroup();
 $requestBody->setName('name-value');
 
-
-
-$result = $graphServiceClient->me()->calendarGroups()->byCalendarGroupId('calendarGroup-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->calendarGroups()->byCalendarGroupId('calendarGroup-id')->patch($requestBody)->wait();
 
 ```

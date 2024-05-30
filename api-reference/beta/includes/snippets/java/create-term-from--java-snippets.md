@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Term term = new Term();
-LinkedList<LocalizedLabel> labelsList = new LinkedList<LocalizedLabel>();
-LocalizedLabel labels = new LocalizedLabel();
-labels.languageTag = "en-US";
-labels.name = "Car";
-labels.isDefault = true;
-labelsList.add(labels);
-term.labels = labelsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.termStore().sets("{setId}").children()
-	.buildRequest()
-	.post(term);
+com.microsoft.graph.beta.models.termstore.Term term = new com.microsoft.graph.beta.models.termstore.Term();
+LinkedList<com.microsoft.graph.beta.models.termstore.LocalizedLabel> labels = new LinkedList<com.microsoft.graph.beta.models.termstore.LocalizedLabel>();
+com.microsoft.graph.beta.models.termstore.LocalizedLabel localizedLabel = new com.microsoft.graph.beta.models.termstore.LocalizedLabel();
+localizedLabel.setLanguageTag("en-US");
+localizedLabel.setName("Car");
+localizedLabel.setIsDefault(true);
+labels.add(localizedLabel);
+term.setLabels(labels);
+com.microsoft.graph.models.termstore.Term result = graphClient.termStore().sets().bySetId("{set-id}").children().post(term);
+
 
 ```

@@ -2,8 +2,8 @@
 title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
 ms.localizationpriority: medium
-author: "markwahl-msft"
-ms.prod: "governance"
+author: "shubhamguptacal"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ The **accessReviewRecurrenceSettings** resource type is used in the [accessRevie
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| recurrenceType | String | The recurrence interval. Possible vaules: `onetime`, `weekly`, `monthly`, `quarterly`, `halfyearly` or `annual`.                                                                   |
-| recurrenceEndType | String | How the recurrence ends. Possible values: `never`, `endBy`, `occurrences`, or `recurrenceCount`. If it is `never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
+| recurrenceType | String | The recurrence interval. Possible values: `onetime`, `weekly`, `monthly`, `quarterly`, `halfyearly` or `annual`.                                                                   |
+| recurrenceEndType | String | How the recurrence ends. Possible values: `never`, `endBy`, `occurrences`, or `recurrenceCount`. If it's `never`, then there's no explicit end of the recurrence series. If it's `endBy`, then the recurrence ends at a certain date. If it's `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | durationInDays | Int32 | The duration in days for recurrence. |
 | recurrenceCount | Int32 | The count of recurrences, if the value of **recurrenceEndType** is `occurrences`, or `0` otherwise. |
 

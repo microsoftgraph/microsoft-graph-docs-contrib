@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewAndroidManagedAppProtection()
 displayName := "Display Name value"
@@ -99,7 +99,8 @@ requestBody.SetCustomBrowserPackageId(&customBrowserPackageId)
 customBrowserDisplayName := "Custom Browser Display Name value"
 requestBody.SetCustomBrowserDisplayName(&customBrowserDisplayName) 
 
-result, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+androidManagedAppProtections, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().Post(context.Background(), requestBody, nil)
 
 
 ```

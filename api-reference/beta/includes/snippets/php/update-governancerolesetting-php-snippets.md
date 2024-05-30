@@ -5,24 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\GovernanceRoleSetting;
+use Microsoft\Graph\Beta\Generated\Models\GovernanceRuleSetting;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GovernanceRoleSetting();
 $adminEligibleSettingsGovernanceRuleSetting1 = new GovernanceRuleSetting();
 $adminEligibleSettingsGovernanceRuleSetting1->setRuleIdentifier('ExpirationRule');
-
 $adminEligibleSettingsGovernanceRuleSetting1->setSetting('{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}');
-
-
 $adminEligibleSettingsArray []= $adminEligibleSettingsGovernanceRuleSetting1;
 $requestBody->setAdminEligibleSettings($adminEligibleSettingsArray);
 
 
-
-
-$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleSettings()->byRoleSettingId('governanceRoleSetting-id')->patch($requestBody);
-
+$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccessId('privilegedAccess-id')->roleSettings()->byGovernanceRoleSettingId('governanceRoleSetting-id')->patch($requestBody)->wait();
 
 ```

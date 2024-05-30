@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityStorage
+Get-MgReportOffice365GroupActivityStorage -Period $periodId 
 
 ```

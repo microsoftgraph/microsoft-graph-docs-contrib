@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BrowserSiteList;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BrowserSiteList();
 $requestBody->setDisplayName('Production Site List A');
-
 $requestBody->setDescription('Production site list for team A');
 
-
-
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteLists()->post($requestBody);
-
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteLists()->post($requestBody)->wait();
 
 ```

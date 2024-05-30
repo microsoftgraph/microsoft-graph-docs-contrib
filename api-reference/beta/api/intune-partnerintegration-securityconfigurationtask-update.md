@@ -3,7 +3,7 @@ title: "Update securityConfigurationTask"
 description: "Update the properties of a securityConfigurationTask object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -64,7 +66,7 @@ The following table shows the properties that are required when you create the [
 |endpointSecurityPolicyProfile|[endpointSecurityConfigurationProfileType](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|The endpoint security policy profile. Possible values are: `unknown`, `antivirus`, `windowsSecurity`, `bitLocker`, `fileVault`, `firewall`, `firewallRules`, `endpointDetectionAndResponse`, `deviceControl`, `appAndBrowserIsolation`, `exploitProtection`, `webProtection`, `applicationControl`, `attackSurfaceReductionRules`, `accountProtection`.|
 |insights|String|Information about the mitigation.|
 |managedDeviceCount|Int32|The number of vulnerable devices. Valid values 0 to 65536|
-|intendedSettings|[keyValuePair](../resources/intune-partnerintegration-keyvaluepair.md) collection|The intended settings and their values.|
+|intendedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|The intended settings and their values.|
 
 
 

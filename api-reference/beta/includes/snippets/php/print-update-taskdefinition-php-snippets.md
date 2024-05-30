@@ -5,21 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PrintTaskDefinition;
+use Microsoft\Graph\Beta\Generated\Models\AppIdentity;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PrintTaskDefinition();
 $requestBody->setDisplayName('Test TaskDefinitionName');
-
 $createdBy = new AppIdentity();
 $createdBy->setDisplayName('Requesting App Display Name');
-
-
 $requestBody->setCreatedBy($createdBy);
 
-
-$result = $graphServiceClient->print()->taskDefinitions()->byTaskDefinitionId('printTaskDefinition-id')->patch($requestBody);
-
+$result = $graphServiceClient->escapedPrint()->taskDefinitions()->byPrintTaskDefinitionId('printTaskDefinition-id')->patch($requestBody)->wait();
 
 ```

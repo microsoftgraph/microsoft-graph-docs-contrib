@@ -5,24 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceAndAppManagementRoleAssignment;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceAndAppManagementRoleAssignment();
-$requestBody->set@odatatype('#microsoft.graph.deviceAndAppManagementRoleAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.deviceAndAppManagementRoleAssignment');
 $requestBody->setDisplayName('Display Name value');
-
 $requestBody->setDescription('Description value');
+$requestBody->setResourceScopes(['Resource Scopes value', 	]);
+$requestBody->setMembers(['Members value', 	]);
 
-$requestBody->setResourceScopes(['Resource Scopes value', ]);
-
-$requestBody->setMembers(['Members value', ]);
-
-
-
-$result = $graphServiceClient->deviceManagement()->roleAssignments()->post($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->roleAssignments()->post($requestBody)->wait();
 
 ```

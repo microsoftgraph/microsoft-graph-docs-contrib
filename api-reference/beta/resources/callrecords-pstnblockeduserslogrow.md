@@ -1,9 +1,9 @@
 ---
 title: "pstnBlockedUsersLogRow resource type"
 description: "Represents a row of data in the public switched telephone network (PSTN) blocked users log."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents a row of data in the public switched telephone network (PSTN) blocked
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection | Get log of users who are blocked/unblocked from making PSTN calls in Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. |
+| [Get PSTN blocked users log](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection | Get log of users who are blocked/unblocked from making PSTN calls in Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. |
 
 ## Properties
 
@@ -30,8 +30,8 @@ Represents a row of data in the public switched telephone network (PSTN) blocked
 |remediationId|String|Unique identifier (GUID) for the blocking/unblocking action.|
 |userBlockMode|microsoft.graph.callRecords.pstnUserBlockMode|Indicates whether the user is blocked or unblocked from making PSTN calls in Microsoft Teams. The possible values are: `blocked`, `unblocked`, `unknownFutureValue`.|
 |userDisplayName|String|Display name of the user.|
-|userId|String|The unique identifier (GUID) of the user in Azure Active Directory.|
-|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID.|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 |userTelephoneNumber|String|User's blocked number. For details, see [E.164](https://en.wikipedia.org/wiki/E.164).|
 
 ## Relationships

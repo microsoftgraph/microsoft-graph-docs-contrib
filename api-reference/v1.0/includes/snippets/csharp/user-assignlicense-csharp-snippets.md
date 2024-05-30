@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.AssignLicense;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.AssignLicense.AssignLicensePostRequestBody
+var requestBody = new AssignLicensePostRequestBody
 {
 	AddLicenses = new List<AssignedLicense>
 	{
@@ -26,6 +28,8 @@ var requestBody = new Microsoft.Graph.Me.AssignLicense.AssignLicensePostRequestB
 		Guid.Parse("bea13e0c-3828-4daa-a392-28af7ff61a0f"),
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.AssignLicense.PostAsync(requestBody);
 
 

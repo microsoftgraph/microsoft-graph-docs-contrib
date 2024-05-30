@@ -3,7 +3,7 @@ title: "Connect to assignments and grades"
 description: "Get started using Microsoft Graph to extend the assignment and grade experience for Teams for education."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

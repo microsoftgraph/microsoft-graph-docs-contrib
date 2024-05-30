@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_tab import TeamsTab
 
-request_body = TeamsTab()
-request_body.display_name = 'My Contoso Tab - updated again'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TeamsTab(
+	display_name = "My Contoso Tab - updated again",
+)
 
-
-
-result = await client.chats.by_chat_id('chat-id').tabs.by_tab_id('teamsTab-id').patch(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').tabs.by_teams_tab_id('teamsTab-id').patch(request_body)
 
 
 ```

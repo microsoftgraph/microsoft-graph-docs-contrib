@@ -5,30 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardProperty;
+use Microsoft\Graph\Beta\Generated\Models\ProfileCardAnnotation;
+use Microsoft\Graph\Beta\Generated\Models\DisplayNameLocalization;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProfileCardProperty();
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
+$annotationsProfileCardAnnotation1->setDisplayName('Cost Center');
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();
-$localizationsDisplayNameLocalization1->setLanguageTag('no-NB');
-
-$localizationsDisplayNameLocalization1->setDisplayName('Kostnads Senter');
-
-
+$localizationsDisplayNameLocalization1->setLanguageTag('no');
+$localizationsDisplayNameLocalization1->setDisplayName('Kostnadssenter');
 $localizationsArray []= $localizationsDisplayNameLocalization1;
 $annotationsProfileCardAnnotation1->setLocalizations($localizationsArray);
-
-
 
 $annotationsArray []= $annotationsProfileCardAnnotation1;
 $requestBody->setAnnotations($annotationsArray);
 
 
-
-
-$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->settings()->profileCardProperties()->byProfileCardPropertieId('profileCardProperty-id')->patch($requestBody);
-
+$result = $graphServiceClient->admin()->people()->profileCardProperties()->byProfileCardPropertyId('profileCardProperty-id')->patch($requestBody)->wait();
 
 ```

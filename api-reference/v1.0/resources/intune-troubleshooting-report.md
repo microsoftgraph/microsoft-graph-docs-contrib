@@ -1,9 +1,9 @@
 ---
 title: "report resource type"
 description: "Enrollment failure reports."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,3 @@ Here is a JSON representation of the resource.
   "content": "Stream"
 }
 ```
-
-
-
-

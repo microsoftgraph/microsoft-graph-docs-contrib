@@ -3,7 +3,7 @@ title: "Manage multiple customer tenants using the Microsoft 365 Lighthouse API"
 description: "Microsoft 365 Lighthouse in Microsoft Graph helps MSPs remotely manage devices, data, and users for customers using Microsoft 365 Business Premium."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 ---
 
 # Manage multiple customer tenants using the Microsoft 365 Lighthouse API
@@ -50,7 +50,7 @@ See [Microsoft 365 Lighthouse API in Microsoft Graph (preview)](/graph/api/resou
 > The Microsoft 365 Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 
 
-## Next steps
+## Related content
 
 - Learn more about the [Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true) portal.
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for the Lighthouse API.

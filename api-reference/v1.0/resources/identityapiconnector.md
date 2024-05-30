@@ -1,9 +1,9 @@
 ---
 title: "identityApiConnector resource type"
-description: "Represents API connectors in an Azure Active Directory tenant."
+description: "Represents API connectors in a Microsoft Entra tenant."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents API connectors in an Azure Active Directory (Azure AD) tenants.
+Represents API connectors in a Microsoft Entra tenants.
 
-An API connector used in your Azure AD External Identities self-service sign-up user flows allows you to call an API during the execution of the user flow. An API connector provides the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
+An API connector used in your Microsoft Entra External ID self-service sign-up user flows allows you to call an API during the execution of the user flow. An API connector provides the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
 
 Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connector from an External Identities self-service sign-up user flow.
 
@@ -25,7 +25,7 @@ Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connecto
 |[Create](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Create a new API connector. |
 |[Get](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Read the properties of an [identityApiConnector](../resources/identityapiconnector.md) object.|
 |[Update](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Update the properties of an API connector.|
-|[Upload client certificate](../api/identityapiconnector-uploadclientcertificate.md)|[identityApiConnector](identityapiconnector.md)|Upload a client certificate to use for authentication.|
+|[Upload a client certificate](../api/identityapiconnector-uploadclientcertificate.md)|[identityApiConnector](identityapiconnector.md)|Upload a client certificate to use for authentication.|
 |[Delete](../api/identityapiconnector-delete.md)|None|Delete an API connector.|
 
 ## Properties

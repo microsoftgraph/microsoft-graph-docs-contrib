@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IdentityUserFlowAttribute;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IdentityUserFlowAttribute();
 $requestBody->setDescription('Your new hobby');
 
-
-
-$result = $graphServiceClient->identity()->userFlowAttributes()->byUserFlowAttributeId('identityUserFlowAttribute-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->userFlowAttributes()->byIdentityUserFlowAttributeId('identityUserFlowAttribute-id')->patch($requestBody)->wait();
 
 ```

@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationAssignmentDefaults;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddedStudentAction;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddToCalendarOptions;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationAssignmentDefaults();
-$requestBody->setAddedStudentAction(new EducationAddedStudentAction('assignifopen'));
-
-$requestBody->setAddToCalendarAction(new EducationAddToCalendarOptions('studentsandteamowners'));
-
+$requestBody->setAddedStudentAction(new EducationAddedStudentAction('assignIfOpen'));
+$requestBody->setAddToCalendarAction(new EducationAddToCalendarOptions('studentsAndTeamOwners'));
 $requestBody->setNotificationChannelUrl('https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')');
 
-
-
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignmentDefaults()->patch($requestBody);
-
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignmentDefaults()->patch($requestBody)->wait();
 
 ```

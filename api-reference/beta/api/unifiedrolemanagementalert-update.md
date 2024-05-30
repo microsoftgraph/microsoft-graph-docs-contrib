@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementAlert"
 description: "Dismiss a unifiedRoleManagementAlert object by setting the isActive property to false."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Dismiss a [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object by setting the **isActive** property to `false`.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementAlert.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagementAlert.ReadWrite.Directory|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementalert_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementalert-update-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
@@ -38,7 +37,7 @@ PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAler
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to dismiss an alert by specifying the alert id and setting the isActive to false.
+The following example shows a request to dismiss an alert by specifying the alert id and setting the isActive to false.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -75,20 +74,20 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementalert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementalert-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementalert-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementalert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementalert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementalert-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementalert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementalert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -102,7 +101,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

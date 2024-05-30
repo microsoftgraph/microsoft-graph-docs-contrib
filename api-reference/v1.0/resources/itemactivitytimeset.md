@@ -3,7 +3,7 @@ author: daspek
 title: itemActivityTimeSet resource type
 description: The itemActionSet object provides information about an activity that took place on an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # itemActivityTimeSet resource type
@@ -25,7 +25,7 @@ The **itemActivityTimeSet** resource provides information about when an [activit
 
 The difference between **observed** and **recorded** times is especially important for offline collaboration scenarios.
 If a user comments on a file while offline, the time that they make the comment is set as the **observedDateTime**.
-At a later time when the user re-connects to the cloud and the changes get uploaded, that later time is set as the **recordedDateTime**.
+At a later time when the user reconnects to the cloud and the changes get uploaded, that later time is set as the **recordedDateTime**.
 
 ## JSON representation
 

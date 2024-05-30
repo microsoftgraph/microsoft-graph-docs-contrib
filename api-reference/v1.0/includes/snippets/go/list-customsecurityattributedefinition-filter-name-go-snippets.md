@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphdirectory "github.com/microsoftgraph/msgraph-sdk-go/directory"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestFilter := "name eq 'Project' and status eq 'Available'"
@@ -25,7 +25,8 @@ configuration := &graphdirectory.DirectoryCustomSecurityAttributeDefinitionsRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
 
 
 ```

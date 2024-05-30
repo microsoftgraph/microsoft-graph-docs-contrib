@@ -3,7 +3,8 @@ title: "fido2CombinationConfiguration resource type"
 description: "Configuration to require specific FIDO2 key types in an authentication strength"
 ms.localizationpriority: medium
 author: "InbarckMS"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Configuration to require specific FIDO2 key types in an authentication strength. An administrator may use this entity to specify which Authenticator Attesttation GUIDs (AAGUIDs) are allowed to be used, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
+Configuration to require specific FIDO2 key types in an authentication strength. An administrator may use this entity to specify which Authenticator Attestation GUIDs (AAGUIDs) are allowed, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
 
 
 Inherits and derived from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).
@@ -31,7 +32,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

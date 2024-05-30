@@ -5,23 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosVppEBookAssignment;
+use Microsoft\Graph\Generated\Models\DeviceAndAppManagementAssignmentTarget;
+use Microsoft\Graph\Generated\Models\InstallIntent;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IosVppEBookAssignment();
-$requestBody->set@odatatype('#microsoft.graph.iosVppEBookAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.iosVppEBookAssignment');
 $target = new DeviceAndAppManagementAssignmentTarget();
-$target->set@odatatype('microsoft.graph.deviceAndAppManagementAssignmentTarget');
-
-
+$target->setOdataType('microsoft.graph.deviceAndAppManagementAssignmentTarget');
 $requestBody->setTarget($target);
 $requestBody->setInstallIntent(new InstallIntent('required'));
 
-
-
-$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->assignments()->post($requestBody);
-
+$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->assignments()->post($requestBody)->wait();
 
 ```

@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionNetworkLearningSummary;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsInformationProtectionNetworkLearningSummary();
-$requestBody->set@odatatype('#microsoft.graph.windowsInformationProtectionNetworkLearningSummary');
-
+$requestBody->setOdataType('#microsoft.graph.windowsInformationProtectionNetworkLearningSummary');
 $requestBody->setUrl('Url value');
-
 $requestBody->setDeviceCount(11);
 
-
-
-$result = $graphServiceClient->deviceManagement()->windowsInformationProtectionNetworkLearningSummaries()->post($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->windowsInformationProtectionNetworkLearningSummaries()->post($requestBody)->wait();
 
 ```

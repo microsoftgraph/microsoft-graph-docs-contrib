@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
-
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelswindowsupdates.NewComplianceChange()
 content := graphmodelswindowsupdates.NewCatalogContent()
@@ -25,10 +25,10 @@ requestBody.SetContent(content)
 deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
 requestBody.SetDeploymentSettings(deploymentSettings)
 additionalData := map[string]interface{}{
-schedule := graphmodels.New()
+schedule := graph.New()
 startDateTime := "String (timestamp)"
 schedule.SetStartDateTime(&startDateTime) 
-gradualRollout := graphmodels.New()
+gradualRollout := graph.New()
 endDateTime := "String (timestamp)"
 gradualRollout.SetEndDateTime(&endDateTime) 
 	schedule.SetGradualRollout(gradualRollout)
@@ -36,7 +36,8 @@ gradualRollout.SetEndDateTime(&endDateTime)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicieId("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+complianceChanges, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicyId("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
 
 
 ```

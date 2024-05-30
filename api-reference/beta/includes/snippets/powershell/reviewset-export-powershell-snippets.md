@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
 	outputName = "2020-12-06 Contoso investigation export"
@@ -13,6 +13,6 @@ $params = @{
 	exportStructure = "directory"
 }
 
-Export-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 
 ```

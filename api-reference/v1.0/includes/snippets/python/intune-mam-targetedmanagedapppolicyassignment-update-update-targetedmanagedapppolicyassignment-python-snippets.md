@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.targeted_managed_app_policy_assignment import TargetedManagedAppPolicyAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
-request_body = TargetedManagedAppPolicyAssignment()
-request_body.@odata_type = '#microsoft.graph.targetedManagedAppPolicyAssignment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target = ConfigurationManagerCollectionAssignmentTarget()
-target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+request_body = TargetedManagedAppPolicyAssignment(
+	odata_type = "#microsoft.graph.targetedManagedAppPolicyAssignment",
+	target = ConfigurationManagerCollectionAssignmentTarget(
+		odata_type = "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+		collection_id = "Collection Id value",
+	),
+)
 
-target.collection_id = 'Collection Id value'
-
-
-request_body.target = target
-
-
-
-result = await client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').assignments.by_assignment_id('targetedManagedAppPolicyAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.ios_managed_app_protections.by_ios_managed_app_protection_id('iosManagedAppProtection-id').assignments.by_targeted_managed_app_policy_assignment_id('targetedManagedAppPolicyAssignment-id').patch(request_body)
 
 
 ```

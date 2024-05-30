@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.schedule import Schedule
 
-request_body = Schedule()
-request_body.enabled = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.time_zone = 'America/Chicago'
+request_body = Schedule(
+	enabled = True,
+	time_zone = "America/Chicago",
+)
 
-
-
-
-result = await client.teams.by_team_id('team-id').schedule.put(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.put(request_body)
 
 
 ```

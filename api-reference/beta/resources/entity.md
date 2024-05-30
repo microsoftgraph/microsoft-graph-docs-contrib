@@ -3,8 +3,8 @@ title: "entity resource type"
 description: "Represents an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
-author: "keylimesoda"
+ms.subservice: "entra-applications"
+author: "dkershaw10"
 ---
 
 # entity resource type
@@ -25,7 +25,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

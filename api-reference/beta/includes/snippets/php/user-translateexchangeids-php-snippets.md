@@ -5,20 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\TranslateExchangeIds\TranslateExchangeIdsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ExchangeIdFormat;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TranslateExchangeIdsPostRequestBody();
-$requestBody->setInputIds(['{rest-formatted-id-1}', '{rest-formatted-id-2}', ]);
+$requestBody->setInputIds(['{rest-formatted-id-1}', '{rest-formatted-id-2}', 	]);
+$requestBody->setSourceIdType(new ExchangeIdFormat('restId'));
+$requestBody->setTargetIdType(new ExchangeIdFormat('restImmutableEntryId'));
 
-$requestBody->setSourceIdType(new ExchangeIdFormat('restid'));
-
-$requestBody->setTargetIdType(new ExchangeIdFormat('restimmutableentryid'));
-
-
-
-$result = $graphServiceClient->me()->translateExchangeIds()->post($requestBody);
-
+$result = $graphServiceClient->me()->translateExchangeIds()->post($requestBody)->wait();
 
 ```

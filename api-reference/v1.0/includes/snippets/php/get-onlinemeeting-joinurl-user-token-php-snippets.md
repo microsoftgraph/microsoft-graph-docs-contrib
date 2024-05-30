@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\OnlineMeetings\OnlineMeetingsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new OnlineMeetingsRequestBuilderGetRequestConfiguration();
 $queryParameters = OnlineMeetingsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +17,6 @@ $queryParameters->filter = "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->onlineMeetings()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->onlineMeetings()->get($requestConfiguration)->wait();
 
 ```

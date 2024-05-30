@@ -5,17 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+requestBody := graphdirectoryobjects.NewGetAvailableExtensionPropertiesPostRequestBody()
 
-
-
-result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(context.Background(), nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+getAvailableExtensionProperties, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().PostAsGetAvailableExtensionPropertiesPostResponse(context.Background(), requestBody, nil)
 
 
 ```

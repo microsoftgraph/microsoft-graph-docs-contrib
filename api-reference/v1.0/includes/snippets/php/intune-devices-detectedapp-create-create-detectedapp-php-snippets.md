@@ -5,28 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DetectedApp;
+use Microsoft\Graph\Generated\Models\DetectedAppPlatformType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DetectedApp();
-$requestBody->set@odatatype('#microsoft.graph.detectedApp');
-
+$requestBody->setOdataType('#microsoft.graph.detectedApp');
 $requestBody->setDisplayName('Display Name value');
-
 $requestBody->setVersion('Version value');
-
 $requestBody->setSizeInByte(10);
-
 $requestBody->setDeviceCount(11);
-
 $requestBody->setPublisher('Publisher value');
-
 $requestBody->setPlatform(new DetectedAppPlatformType('windows'));
 
-
-
-$result = $graphServiceClient->deviceManagement()->detectedApps()->post($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->detectedApps()->post($requestBody)->wait();
 
 ```

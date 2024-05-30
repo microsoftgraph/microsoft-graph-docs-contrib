@@ -3,7 +3,7 @@ title: "officeProductId enum type"
 description: "The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,7 +20,7 @@ The Enum to specify the Office365 ProductIds that represent the Office365 Suite 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|o365ProPlusRetail|0|Not yet documented|
-|o365BusinessRetail|1|Not yet documented|
-|visioProRetail|2|Not yet documented|
-|projectProRetail|3|Not yet documented|
+|o365ProPlusRetail|0||
+|o365BusinessRetail|1||
+|visioProRetail|2||
+|projectProRetail|3||

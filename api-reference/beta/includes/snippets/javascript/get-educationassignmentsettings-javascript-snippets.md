@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let educationAssignmentSettings = await client.api('/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignmentSettings')
+let educationAssignmentSettings = await client.api('/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings')
 	.version('beta')
 	.get();
 

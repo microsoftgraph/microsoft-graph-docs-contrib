@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -13,9 +16,6 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphpolicies.NewUpdateAllowedCombinationsPostRequestBody()
 allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 	authenticationMethodModes := graphmodels.PASSWORD, VOICE_AUTHENTICATIONMETHODMODES 
@@ -23,7 +23,8 @@ allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 
-result, err := graphClient.Policies().AuthenticationStrengthPolicies().ByAuthenticationStrengthPolicieId("authenticationStrengthPolicy-id").UpdateAllowedCombinations().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+updateAllowedCombinations, err := graphClient.Policies().AuthenticationStrengthPolicies().ByAuthenticationStrengthPolicyId("authenticationStrengthPolicy-id").UpdateAllowedCombinations().Post(context.Background(), requestBody, nil)
 
 
 ```
