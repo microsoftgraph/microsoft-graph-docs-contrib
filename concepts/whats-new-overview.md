@@ -37,6 +37,10 @@ The following properties are deprecated:
 
 ## May 2024: New in preview only
 
+### Backup storage
+
+The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
+
 ### Change notifications
 
 - Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [user-scoped chat notifications](/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).
@@ -61,10 +65,6 @@ Use the new [Bicep templates for Microsoft Graph resources](https://aka.ms/graph
 - servicePrincipal
 
 Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
-
-### Microsoft 365 Backup Storage
-
-- Enables partners to build customized versions of their applications integrated with the Microsoft 365 Backup Storage platform, ensuring exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. Business continuity assurance is a critical concern for many companies. Microsoft 365 Backup Storage APIs provide peace of mind by delivering reliable, performant and at-scale backup/restore confidence.
 
 ### Search
 
