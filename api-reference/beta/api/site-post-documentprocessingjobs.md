@@ -54,7 +54,7 @@ You can specify the following properties when creating a **documentProcessingJob
 |jobType|documentProcessingJobType|Document processing job type. The possible values are: `file`, `folder`. Optional.|
 |status|documentProcessingJobStatus|Document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only. Optional.|
-|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It's one of the sharepointIds. Check the [driveItem](../resources/driveitem.md) resource to get listItemUniqueId. For more information, see [sharepointids](../resources/sharepointids.md).|
+|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. Use GET [driveItem](../resources/driveitem.md) resource operation and read  [sharepointIds](../resources/sharepointids.md) property to get listItemUniqueId.|
 
 
 
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/documentProcessingJobs
+POST https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/documentProcessingJobs
 Content-Type: application/json
 
 {

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [contentModelUsage](../resources/contentmodel.md) information of an applied [contentModel](../resources/contentmodel.md).
+List all the [contentModelUsage](../resources/contentmodel.md) information related to a [contentModel](../resources/contentmodel.md) applied to a SharePoint document library.
 
 ## Permissions
 
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/contentModels/{contentModelId}/getAppliedDrives
+GET https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/contentModels/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/getAppliedDrives
 ```
 
 
@@ -84,29 +84,29 @@ Content-Type: application/json
     {
       "createdBy": {
             "user": {
-                "displayName": "Graph API",
-                "email": "graph@MICROSOFT.COM",
-                "resourceVisualization": {
+              "displayName": "Travis Li",
+              "email": "travisli@microsoft.com",
+              "resourceVisualization": {
                     "acronym": "TL",
                     "color": "#881798"
-                  }
+                }
               }
-        },
-      "createdDateTime": "2023-05-31T20:31:51Z",
+      },
+      "createdDateTime": "2023-04-30T08:32:00Z",
       "lastModifiedBy": {
             "user": {
-                "displayName": "Graph API",
-                "email": "graph@MICROSOFT.COM",
-                "resourceVisualization": {
+              "displayName": "Travis Li",
+              "email": "travisli@microsoft.com",
+              "resourceVisualization": {
                     "acronym": "TL",
                     "color": "#881798"
-                  }
+                }
               }
-        },
+      },
       "lastModifiedDateTime": "2023-05-31T20:31:51Z",
       "modelVersion": "1.0",
-      "driveId": "00000000-0000-0000-0000-000000000000",
-      "siteId": "84560312-34d4-405c-a7bd-9c5bc1abf9e0"
+      "driveId": "b!HEq8Q8ZfAkuMECqSaQFnJVwNMbAGLHhHnXMz1C32pozpolsoEg-MT47fBTiYcbnd",
+      "modelId": "17139234-22d4-205c-e7bd-1c5bc1ab19e0"
     }
   ]
 }

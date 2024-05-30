@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/contentModels/{contentModelId}/removeFromDrive
+POST https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/contentModels/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/removeFromDrive
 Content-Type: application/json
 
 {

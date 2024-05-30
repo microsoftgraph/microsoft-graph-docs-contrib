@@ -38,7 +38,7 @@ GET /sites/{sitesId}/contentModels/{contentModelId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/contentModels/{contentModelId}
+GET https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/contentModels/ede4bb84-6c94-4c39-8acf-3d9dbb667fba
 ```
 
 
@@ -89,21 +89,21 @@ Content-Type: application/json
     "name":"BenefitChangeNotice",
     "createdBy": {
          "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
+            "displayName": "Travis Li",
+            "email": "travisli@microsoft.com",
             "resourceVisualization": {
-                 "acronym": "GR",
+                 "acronym": "TL",
                  "color": "#881798"
               }
            }
     },
-    "created": "2023-04-30T08:32:00Z",
+    "createdDateTime": "2023-04-30T08:32:00Z",
     "lastModifiedBy": {
          "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
+            "displayName": "Travis Li",
+            "email": "travisli@microsoft.com",
             "resourceVisualization": {
-                 "acronym": "GR",
+                 "acronym": "TL",
                  "color": "#881798"
               }
            }

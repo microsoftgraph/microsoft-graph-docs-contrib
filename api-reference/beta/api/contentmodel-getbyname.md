@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/contentModels/getByName(modelName='exampleModel.classifier')
+GET https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/contentModels/getByName(modelName='BenefitChangeNotice.classifier')
 ```
 
 
@@ -94,21 +94,21 @@ Content-Type: application/json
     "name":"BenefitChangeNotice",
     "createdBy": {
          "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
+            "displayName": "Travis Li",
+            "email": "travisli@microsoft.com",
             "resourceVisualization": {
-                 "acronym": "GR",
+                 "acronym": "TL",
                  "color": "#881798"
               }
            }
     },
-    "created": "2023-04-30T08:32:00Z",
+    "createdDateTime": "2023-04-30T08:32:00Z",
     "lastModifiedBy": {
          "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
+            "displayName": "Travis Li",
+            "email": "travisli@microsoft.com",
             "resourceVisualization": {
-                 "acronym": "GR",
+                 "acronym": "TL",
                  "color": "#881798"
               }
            }

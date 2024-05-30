@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Automatically processes new documents in the libraries. If a [contentModel](../resources/contentmodel.md) is properly trained or configured, users use this API to apply the model to document libraries.
+Apply a [contentModel](../resources/contentmodel.md) to SharePoint document libraries. For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
 
 ## Permissions
 
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/contentModels/{contentModelId}/addToDrive
+POST https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/contentModels/17139234-22d4-205c-e7bd-1c5bc1ab19e0/addToDrive
 Content-Type: application/json
 
 {
@@ -95,26 +95,26 @@ Content-Type: application/json
 
 {
   "createdBy": {
-         "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
-            "resourceVisualization": {
-                 "acronym": "GR",
-                 "color": "#881798"
-              }
-           }
-    },
-  "createdDateTime": "2023-05-31T20:31:51Z",
+        "user": {
+          "displayName": "Travis Li",
+          "email": "travisli@microsoft.com",
+          "resourceVisualization": {
+                "acronym": "TL",
+                "color": "#881798"
+            }
+          }
+  },
+  "createdDateTime": "2023-04-30T08:32:00Z",
   "lastModifiedBy": {
-         "user": {
-            "displayName": "Graph API",
-            "email": "graph@MICROSOFT.COM",
-            "resourceVisualization": {
-                 "acronym": "GR",
-                 "color": "#881798"
-              }
-           }
-    },
+        "user": {
+          "displayName": "Travis Li",
+          "email": "travisli@microsoft.com",
+          "resourceVisualization": {
+                "acronym": "TL",
+                "color": "#881798"
+            }
+          }
+  },
   "lastModifiedDateTime": "2023-05-31T20:31:51Z",
   "modelVersion": "1.0",
   "driveId": "b!HEq8Q8ZfAkuMECqSaQFnJVwNMbAGLHhHnXMz1C32pozpolsoEg-MT47fBTiYcbnd",
