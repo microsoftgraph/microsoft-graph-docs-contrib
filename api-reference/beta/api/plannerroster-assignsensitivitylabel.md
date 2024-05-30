@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Assign a sensitivity label to a [plannerRoster](../resources/plannerroster.md) object.
 
 ## Permissions
