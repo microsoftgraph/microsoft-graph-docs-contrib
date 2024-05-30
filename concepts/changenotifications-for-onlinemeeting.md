@@ -16,8 +16,7 @@ A subscription has a maximum expiry period of three days. To persist the subscri
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
 > [!NOTE]
-> As of June 30th 2024, to get
-changes that occurred to an active meeting call, it is recommended that subscriptions for [rich notifications](#rich-notifications) be made to consume active call events.
+> As of June 30th 2024, to get changes that occurred to an active meeting call, it is recommended to subscribe to [rich notifications](#rich-notifications).
 
 ## Permissions
 
