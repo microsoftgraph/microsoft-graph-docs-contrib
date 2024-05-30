@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [protection rule](../resources/protectionrulebase.md) from a [protection policy](../resources/protectionpolicybase.md).
 
-You can delete a rule when the state is `completed` or `completedWithErrors`. Deleting a [protection rule](../resources/protectionRuleBase.md) doesn't remove the corresponding [protection units](../resources/protectionunitbase) from the [protection policy](../resources/protectionpolicybase.md).
+You can delete a rule when the state is `completed` or `completedWithErrors`. Deleting a [protection rule](../resources/protectionRuleBase.md) doesn't remove the corresponding [protection units](../resources/protectionunitbase.md) from the [protection policy](../resources/protectionpolicybase.md).
 
 ## Permissions
 

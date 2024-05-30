@@ -51,7 +51,7 @@ You can specify the following properties when you create an **exchangeRestoreSes
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
+|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
 
 
 ## Response
