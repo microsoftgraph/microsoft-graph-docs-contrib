@@ -3,6 +3,38 @@
     {
       "ChangeList": [
         {
+          "Id": "7460c7d2-629f-49a0-bee4-5afbafc3fb95",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [serviceStatus](https://learn.microsoft.com/en-us/graph/api/resources/serviceStatus?view=graph-rest-beta) resource.",
+          "Target": "serviceStatus"
+        },
+        {
+          "Id": "7460c7d2-629f-49a0-bee4-5afbafc3fb95",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [serviceStatus](https://learn.microsoft.com/en-us/graph/api/resources/serviceStatus?view=graph-rest-beta) resource.",
+          "Target": "serviceStatus"
+        },
+        {
+          "Id": "7460c7d2-629f-49a0-bee4-5afbafc3fb95",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **activate** method from the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource.",
+          "Target": "serviceApp"
+        },
+        {
+          "Id": "7460c7d2-629f-49a0-bee4-5afbafc3fb95",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/serviceApp-activate?view=graph-rest-beta) method to the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource.",
+          "Target": "serviceApp"
+        },
+        {
           "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
           "ApiChange": "Enumeration",
           "ChangedApiName": "artifactRestoreStatus",
