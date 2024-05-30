@@ -40,9 +40,11 @@ If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has
 | Property       | Type                          | Description
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | The identity of the owner of the shared item. Read-only.
-| scope          | String                        | Indicates the scope of how the item is shared: `anonymous`, `organization`, or `users`. Read-only.
+| scope          | String                        | *Deprecated* Indicates the scope of how the item is shared: `anonymous`, `organization`, or `users`. Read-only.
 | sharedBy       | [identitySet](identityset.md) | The identity of the user who shared the item. Read-only.
 | sharedDateTime | DateTimeOffset                | The UTC date and time when the item was shared. Read-only.
+
+[!INCLUDE [scope-property-deprecated](../../includes/shared-scope-property-deprecate.md)]
 
 ## Scope values
 
