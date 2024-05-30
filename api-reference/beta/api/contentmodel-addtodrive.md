@@ -1,6 +1,6 @@
 ---
 title: "contentModel: addToDrive"
-description: "Automatically processes new documents in the libraries."
+description: "Automatically process new documents in the SharePoint libraries."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Automatically processes new documents in the libraries. If a [contentModel](../resources/contentmodel.md) is properly trained or configured, users use this API to apply the model to document libraries.
+Automatically process new documents in the SharePoint libraries. If a [contentModel](../resources/contentmodel.md) is properly trained or configured, users use this API to apply the model to document libraries.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [contentModelUsage](../resources/contentmodelusage.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [contentModelUsage](../resources/contentmodelusage.md) object in the response body.
 
 ## Examples
 
