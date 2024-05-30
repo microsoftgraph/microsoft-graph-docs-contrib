@@ -22,9 +22,9 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 ## Methods
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List compliantNetworkNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) collection | Get all the **compliantNetworkNamedLocation** objects in the organization. |
-| [Get compliantNetworkNamedLocation](../api/compliantnetworknamedlocation-get.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) | Read the properties and relationships of a **compliantNetworkNamedLocation** object. |
-| [Update compliantNetworkNamedLocation](../api/compliantnetworknamedlocation-update.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) | Update a **compliantNetworkNamedLocation** object. |
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) collection | Get all the **compliantNetworkNamedLocation** objects in the organization. |
+| [Get](../api/compliantnetworknamedlocation-get.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) | Read the properties and relationships of a **compliantNetworkNamedLocation** object. |
+| [Update](../api/compliantnetworknamedlocation-update.md) | [compliantNetworkNamedLocation](compliantnetworknamedlocation.md) | Update a **compliantNetworkNamedLocation** object. |
 
 ## Properties
 | Property     | Type        | Description |
