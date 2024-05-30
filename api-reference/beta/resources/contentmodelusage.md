@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides information on where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied, including information about the model itself, like the model version.
+Contains information about where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied, including information about the model itself, such as the model version.
 
 ## Properties
 |Property|Type|Description|

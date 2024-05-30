@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [contentModelUsage](../resources/contentmodel.md) information of an applied [contentModel](../resources/contentmodel.md).
+List all the [contentModelUsage](../resources/contentmodel.md) information realted to an applied [contentModel](../resources/contentmodel.md).
 
 ## Permissions
 
