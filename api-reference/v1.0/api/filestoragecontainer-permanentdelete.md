@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
 
 ## Permissions
@@ -25,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-permanentdelete-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 
 ## HTTP request
 
@@ -63,7 +64,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
+POST https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
 ```
 
 
