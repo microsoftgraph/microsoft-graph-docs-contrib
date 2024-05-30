@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("expand", "submissions"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-EducationAssignmentCollectionPage assignments = graphClient.education().users("80cefd93-8d88-40e2-b5d3-67898383e226").assignments()
-	.buildRequest( requestOptions )
-	.get();
+EducationAssignmentCollectionResponse result = graphClient.education().users().byEducationUserId("{educationUser-id}").assignments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"submissions"};
+});
+
 
 ```

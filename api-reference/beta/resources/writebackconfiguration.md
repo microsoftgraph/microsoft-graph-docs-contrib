@@ -1,9 +1,10 @@
 ---
 title: "writebackConfiguration resource type"
-description: "Represents a writeback state on Azure AD cloud groups (Microsoft 365 and security groups)."
-author: "psaffaie"
+description: "Represents a writeback state on Microsoft Entra cloud groups (Microsoft 365 and security groups)."
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a writeback state on Azure AD cloud groups (Microsoft 365 and security groups).
+Represents a writeback state on Microsoft Entra cloud groups (Microsoft 365 and security groups).
 
 ## Properties
 |Property|Type|Description|
@@ -36,4 +37,3 @@ The following is a JSON representation of the resource.
   "isEnabled": "Boolean"
 }
 ```
-

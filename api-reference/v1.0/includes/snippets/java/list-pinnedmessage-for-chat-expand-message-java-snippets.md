@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PinnedChatMessageInfoCollectionPage pinnedMessages = graphClient.chats("19:d65713bc498c4a428c71ef9353e6ce20@thread.v2").pinnedMessages()
-	.buildRequest()
-	.expand("message")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PinnedChatMessageInfoCollectionResponse result = graphClient.chats().byChatId("{chat-id}").pinnedMessages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"message"};
+});
+
 
 ```

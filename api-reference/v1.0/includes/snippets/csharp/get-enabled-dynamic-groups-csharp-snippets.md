@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Filter = "mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.Select = new string []{ "id","membershipRule","membershipRuleProcessingState" };
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var groups = await graphClient.Groups
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
-	.Select("id,membershipRule,membershipRuleProcessingState")
-	.GetAsync();
 
 ```

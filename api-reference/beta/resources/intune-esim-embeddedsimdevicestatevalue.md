@@ -3,7 +3,7 @@ title: "embeddedSIMDeviceStateValue enum type"
 description: "Describes the various states for an embedded SIM activation code."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

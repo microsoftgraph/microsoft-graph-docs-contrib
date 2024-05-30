@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new GovernanceRoleAssignmentRequest
 {
 	RoleDefinitionId = "8b4d1d51-08e9-4254-b0a6-b16177aae376",
 	ResourceId = "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
@@ -18,13 +21,13 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 	{
 		Type = "Once",
 		StartDateTime = DateTimeOffset.Parse("2018-05-12T23:28:43.537Z"),
-		Duration = new Duration("PT9H")
+		Duration = TimeSpan.Parse("PT9H"),
 	},
-	LinkedEligibleRoleAssignmentId = "e327f4be-42a0-47a2-8579-0a39b025b394"
+	LinkedEligibleRoleAssignmentId = "e327f4be-42a0-47a2-8579-0a39b025b394",
 };
 
-await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests
-	.Request()
-	.AddAsync(governanceRoleAssignmentRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
+
 
 ```

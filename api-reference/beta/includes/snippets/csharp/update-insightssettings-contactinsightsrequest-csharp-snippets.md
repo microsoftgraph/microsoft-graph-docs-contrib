@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var insightsSettings = new InsightsSettings
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new InsightsSettings
 {
 	IsEnabledInOrganization = true,
-	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981",
 };
 
-await graphClient.Organization["{organization-id}"].Settings.ContactInsights
-	.Request()
-	.UpdateAsync(insightsSettings);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Organization["{organization-id}"].Settings.ContactInsights.PatchAsync(requestBody);
+
 
 ```

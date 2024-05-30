@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new Deployment
 {
+	OdataType = "#microsoft.graph.windowsUpdates.deployment",
 	State = new DeploymentState
 	{
-		RequestedValue = Microsoft.Graph.WindowsUpdates.RequestedDeploymentStateValue.Paused
-	}
+		OdataType = "microsoft.graph.windowsUpdates.deploymentState",
+		RequestedValue = RequestedDeploymentStateValue.Paused,
+	},
 };
 
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"]
-	.Request()
-	.UpdateAsync(deployment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].PatchAsync(requestBody);
+
 
 ```

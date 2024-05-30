@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequestObject
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
 	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
 	Justification = "Assign Groups Admin to IT Helpdesk group",
@@ -18,13 +21,13 @@ var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequ
 		StartDateTime = DateTimeOffset.Parse("2022-04-10T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.NoExpiration
-		}
-	}
+			Type = ExpirationPatternType.NoExpiration,
+		},
+	},
 };
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleAssignmentScheduleRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
+
 
 ```

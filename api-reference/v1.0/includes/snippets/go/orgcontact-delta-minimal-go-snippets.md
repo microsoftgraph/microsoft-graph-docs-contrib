@@ -4,21 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphcontacts "github.com/microsoftgraph/msgraph-sdk-go/contacts"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphconfig.ContactsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphcontacts.ContactsDeltaWithRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphconfig.ContactsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDeltaWithRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Contacts().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

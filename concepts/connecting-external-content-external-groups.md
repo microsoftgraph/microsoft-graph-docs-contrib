@@ -1,17 +1,17 @@
 ---
 title: Use external groups to manage permissions to Microsoft Graph connectors data sources
-description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Azure AD groups.
+description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ms.localizationpriority: medium
 ---
 
 # Use external groups to manage permissions to Microsoft Graph connectors data sources
 
-[External groups](/graph/api/resources/externalconnectors-externalgroup) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem) in a Microsoft Graph connection and connect to data sources outside Azure Active Directory (Azure AD) groups.
+[External groups](/graph/api/resources/externalconnectors-externalgroup) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem) in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 
-For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items) or updating the external items.
+For data sources that rely on Microsoft Entra users and groups, you set permissions on external items by associating an access control list (ACL) with a Microsoft Entra user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items) or updating the external items.
 
 However, for data sources that use non-Azure AD groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
 
@@ -19,14 +19,14 @@ However, for data sources that use non-Azure AD groups or group-like constructs 
 
 The following are common non-Azure AD application-specific group examples.
 
-Microsoft Dynamics 365 allows customers to structure their CRMs with business units and teams. The membership information for these business units and teams is not stored in Azure AD.
+Microsoft Dynamics 365 allows customers to structure their CRMs with business units and teams. The membership information for these business units and teams is not stored in Microsoft Entra ID.
 
 The following image shows the structure of the business units and teams.
 
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of a structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." width="400px;"/></p>
 
-Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Azure AD.
+Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Microsoft Entra ID.
 
 The following image shows the structure of the membership information in Salesforce.
 
@@ -66,8 +66,8 @@ External groups belong to a connection. To create external groups in your connec
     > The ID field allows you to use URL and filename-safe Base64 character sets. It has a limit of 128 characters.
 
     An external group can contain one or more of the following:
-    * An Azure AD user.
-    * An Azure AD group.
+    * A Microsoft Entra user.
+    * A Microsoft Entra group.
     * Another external group, including nested external groups.
 
 3. After you create the group, you can add members to the group, as shown in the following examples.
@@ -102,7 +102,7 @@ External groups belong to a connection. To create external groups in your connec
 
 ### Use external groups in the ACL
 
-You can use external groups when defining [ACLs](connecting-external-content-manage-items.md#access-control-list) for external items, as shown in the following example. In addition to Azure AD users and groups, an external item can have external groups in its access control entries.
+You can use external groups when defining [ACLs](connecting-external-content-manage-items.md#access-control-list) for external items, as shown in the following example. In addition to Microsoft Entra users and groups, an external item can have external groups in its access control entries.
 
 ```http
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 
@@ -153,7 +153,12 @@ Keep the membership of your external group up to date in Microsoft Graph. When m
 
 You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
-## Next steps
+
+> [!NOTE]
+> A user should have less than 2,049 external security group memberships, including direct and indirect memberships. When this limit is exceeded, search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with a `400` response.
+
+
+## Related content
 
 - [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
 - [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview.md)

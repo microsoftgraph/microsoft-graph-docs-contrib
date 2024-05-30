@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackResourceOutcome"
-	FeedbackResource = @{
+	feedbackResource = @{
 		"@odata.type" = "#microsoft.graph.educationWordResource"
-		DisplayName = "Document1.docx"
+		displayName = "Document1.docx"
 	}
 }
 
-New-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+New-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```

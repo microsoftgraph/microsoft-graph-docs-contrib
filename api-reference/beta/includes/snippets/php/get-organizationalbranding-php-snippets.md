@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Organization\Item\Branding\BrandingRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new BrandingRequestBuilderGetRequestConfiguration();
-
 $headers = [
-	'Accept-Language' => '0',
-];
-
+		'Accept-Language' => '0',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->get($requestConfiguration);
-
+$result = $graphServiceClient->organization()->byOrganizationId('organization-id')->branding()->get($requestConfiguration)->wait();
 
 ```

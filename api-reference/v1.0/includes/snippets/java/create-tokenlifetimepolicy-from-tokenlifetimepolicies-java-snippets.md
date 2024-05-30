@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TokenLifetimePolicy tokenLifetimePolicy = new TokenLifetimePolicy();
-LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
-tokenLifetimePolicy.definition = definitionList;
-tokenLifetimePolicy.displayName = "displayName-value";
-tokenLifetimePolicy.isOrganizationDefault = true;
+LinkedList<String> definition = new LinkedList<String>();
+definition.add("{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}");
+tokenLifetimePolicy.setDefinition(definition);
+tokenLifetimePolicy.setDisplayName("Contoso token lifetime policy");
+tokenLifetimePolicy.setIsOrganizationDefault(true);
+TokenLifetimePolicy result = graphClient.policies().tokenLifetimePolicies().post(tokenLifetimePolicy);
 
-graphClient.policies().tokenLifetimePolicies()
-	.buildRequest()
-	.post(tokenLifetimePolicy);
 
 ```

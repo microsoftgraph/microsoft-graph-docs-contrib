@@ -4,33 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var driveItem = new DriveItem
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new DriveItem
 {
 	Name = "Just some files",
 	Bundle = new Bundle
 	{
 	},
-	Children = new DriveItemChildrenCollectionPage()
+	Children = new List<DriveItem>
 	{
 		new DriveItem
 		{
-			Id = "1234asdf"
+			Id = "1234asdf",
 		},
 		new DriveItem
 		{
-			Id = "1234qwerty"
-		}
+			Id = "1234qwerty",
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@microsoft.graph.conflictBehavior", "rename"}
-	}
+		{
+			"@microsoft.graph.conflictBehavior" , "rename"
+		},
+	},
 };
 
-await graphClient.Drive.Bundles
-	.Request()
-	.AddAsync(driveItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Bundles.PostAsync(requestBody);
+
 
 ```

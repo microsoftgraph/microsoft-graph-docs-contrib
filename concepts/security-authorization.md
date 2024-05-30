@@ -2,12 +2,12 @@
 title: "Authorization and the Microsoft Graph Security API"
 description: "The Microsoft Graph Security API supports both application-level and user-delegated authorization. Learn how to manage authorization, register an application, and more."
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ---
 
 # Authorization and the Microsoft Graph Security API
 
-Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles.
+Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Microsoft Entra roles.
 
 The Microsoft Graph Security API supports two types of authorization:
 
@@ -16,20 +16,20 @@ The Microsoft Graph Security API supports two types of authorization:
    > [!NOTE]
    > This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
 
-- **User-delegated authorization:** A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role&mdash;either Security Reader or Security Administrator&mdash;in addition to the application having been granted the required permissions.
+- **User-delegated authorization:** A user who is a member of the Microsoft Entra tenant is signed in. The user must be a member of a Microsoft Entra ID Limited Admin role&mdash;either Security Reader or Security Administrator&mdash;in addition to the application having been granted the required permissions.
 
 If you're calling the Microsoft Graph Security API from Graph Explorer:
 
-- The Azure AD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
-- The user must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator).
+- The Microsoft Entra tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
+- The user must be a member of the Security Reader Limited Admin role in Microsoft Entra ID (either Security Reader or Security Administrator).
 
    > [!NOTE]
    > Graph Explorer does not support application-level authorization.
 
 If you're calling the Microsoft Graph Security API from a custom or your own application:
 
-- The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
-- If you're using user delegated authorization, the user must be a member of the Security Reader or Security Administrator Limited Admin role in Azure AD.
+- The Microsoft Entra tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
+- If you're using user delegated authorization, the user must be a member of the Security Reader or Security Administrator Limited Admin role in Microsoft Entra ID.
 
 ## Manage authorization in security API client applications
 
@@ -44,20 +44,20 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 
 Application registration only defines which permissions the application needs in order to run. It does NOT grant these permissions to the application.
 
-The Azure AD tenant administrator MUST explicitly grant the permissions to the application. This must be done per tenant and must be *performed every time* the application permissions are changed in the application registration portal.
+The Microsoft Entra tenant administrator MUST explicitly grant the permissions to the application. This must be done per tenant and must be *performed every time* the application permissions are changed in the application registration portal.
 
-For example, assume that you have an application, two Azure AD tenants, **T1** and **T2**, and two permissions, **P1** and **P2**. The following is the authorization process:
+For example, assume that you have an application, two Microsoft Entra tenants, **T1** and **T2**, and two permissions, **P1** and **P2**. The following is the authorization process:
 
 - The application registers to require permission **P1**.
-- When users in tenant **T1** get an Azure AD token for this application, the token does not contain any permissions.
-- The Azure AD admin of tenant **T1** explicitly grants permissions to the application. When users in tenant **T1** get an Azure AD token for the application, it will contain permission **P1**.
-- When users in tenant **T2** get an Azure AD token for the application, the token does not contain any permissions because the admin of tenant **T2** did not yet grant permissions to the application. Permission must be granted *per tenant* and *per application*.
+- When users in tenant **T1** get a Microsoft Entra token for this application, the token does not contain any permissions.
+- The Microsoft Entra admin of tenant **T1** explicitly grants permissions to the application. When users in tenant **T1** get a Microsoft Entra token for the application, it will contain permission **P1**.
+- When users in tenant **T2** get a Microsoft Entra token for the application, the token does not contain any permissions because the admin of tenant **T2** did not yet grant permissions to the application. Permission must be granted *per tenant* and *per application*.
 - The application has its registration changed to now require permissions **P1** and **P2**.
-- When users in tenant **T1** get an Azure AD token for the application, it only contains permission **P1**. Permissions granted to an application are recorded as snapshots of what was granted; they *do not change automatically* after the application registration (permission) changes.
-- The admin of tenant **T2** grants permissions **P1** and **P2** to the application. Now, when users in tenant **T2** get an Azure AD token for the application, the token will contain permissions **P1** and **P2**.
+- When users in tenant **T1** get a Microsoft Entra token for the application, it only contains permission **P1**. Permissions granted to an application are recorded as snapshots of what was granted; they *do not change automatically* after the application registration (permission) changes.
+- The admin of tenant **T2** grants permissions **P1** and **P2** to the application. Now, when users in tenant **T2** get a Microsoft Entra token for the application, the token will contain permissions **P1** and **P2**.
 
    > [!NOTE]
-   > The Azure AD tokens for the application in tenant **T1** and the application in tenant **T2** contain different permissions, because each tenant admin has granted different permissions to the application.
+   > The Microsoft Entra tokens for the application in tenant **T1** and the application in tenant **T2** contain different permissions, because each tenant admin has granted different permissions to the application.
 
 - To make the application work again in tenant **T1**, the admin of tenant **T1** must explicitly grant permissions **P1** and **P2** to the application.
 
@@ -66,7 +66,7 @@ For example, assume that you have an application, two Azure AD tenants, **T1** a
 To register an application to the Microsoft identity platform endpoint, you'll need:
 
 - **Application name:** A string used for the application name.
-- **Redirect URL:** The URL where the authentication response from Azure AD is sent. To start, you can use the test client web app homepage.
+- **Redirect URL:** The URL where the authentication response from Microsoft Entra ID is sent. To start, you can use the test client web app homepage.
 - **Required Permissions:** The permissions that your application requires to be able to call Microsoft Graph.
 
 To register your application:
@@ -78,7 +78,7 @@ To register your application:
 3. On the registration page for the new application, enter a value for **Name** and select the account types you wish to support. In the **Redirect URI** field, enter the redirect URL.
 4. Select **Register** to create the app and view its overview page. *
 5. Go to the app's **API permissions** page.
-6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
+6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md).
 
    > [!NOTE]
    > The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
@@ -105,7 +105,7 @@ For more information, see [Register your app with the Microsoft identity platfor
 
 ## Grant permissions to an application
 
-Application registration only defines which permission the application requires; it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+Application registration only defines which permission the application requires; it does not grant these permissions to the application. A Microsoft Entra tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 To grant permissions to an application, you'll need:
 
@@ -121,20 +121,22 @@ To grant the permissions:
 - In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. Choose **OK** to grant the application these permissions.
 
    > [!NOTE]
-   > This step grants permissions to the application, not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions&mdash;even non-admin users.
+   > This step grants permissions to the application, not to users. This means that all users belonging to the Microsoft Entra tenant that use this application will be granted these permissions&mdash;even non-admin users.
 
-## Assign Azure AD roles to users
+<a name='assign-azure-ad-roles-to-users'></a>
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
+## Assign Microsoft Entra roles to users
+
+After an application is granted permissions, everyone with access to the application (that is, members of the Microsoft Entra tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Microsoft Entra ID **Security Reader** role. For details, see [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Microsoft Entra ID](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 > [!NOTE]
 > You must be a tenant admin to perform this step.
 
 To assign a role to a user:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
-2. Click the icon in the top left to expand the Azure portal menu. Select **Azure Active Directory** > **Users**.
-3. Click the name of the user.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+2. Expand the **Identity** menu > expand **Users** > select **All users**.
+3. Select the user.
 4. Choose **Assigned roles**, and then **Add assignment**.
 5. Select **Security reader**, and click **Add**.
 
@@ -143,7 +145,7 @@ To assign a role to a user:
 To create an authentication code, you'll need:
 
 - **Application ID:** The application ID from application registration portal.
-- **Redirect URL:** The URL where the authentication response from Azure AD is sent. To start, you can use https://localhost or the test client web app homepage.
+- **Redirect URL:** The URL where the authentication response from Microsoft Entra ID is sent. To start, you can use https://localhost or the test client web app homepage.
 - **Application Key (optional):** The key of the application. This applies when you're developing an application that will use application-only authentication code (that is, will not support user delegated authentication).
 
 The following table lists resources that you can use to create an authentication code.
@@ -159,10 +161,10 @@ The following table lists resources that you can use to create an authentication
 
 For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth-v2-user.md).
 
-1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
+1. Get a code from Microsoft Entra ID. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
 
-If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
+If you use OpenId Connect library, see [Authenticate using Microsoft Entra ID and OpenID Connect](/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
 
 > [!NOTE]
 > If you're requesting user delegated authentication tokens, the parameter for the library is **Requested Scopes**. Use User.Read for this parameter instead of what the registered application requires. The **Requested Scopes** parameter does NOT affect the permissions contained in the returned authentication tokens. These are determined by the permissions that the tenant admin granted the application.
@@ -174,7 +176,7 @@ For example, if you're using the .NET MSAL library, call the following:
 > [!NOTE]
 > This example should use the least privileged permission, such as User.Read. However, the returned access token can contain permissions that were granted by the tenant admin for the current user tenant, such as User.Read.All or User.ReadWrite.All.
 
-A token (string) is returned by Azure AD that contains your authentication information and the permissions required by the application. Assign this token to the HTTP header as a bearer token, as shown in the following example.
+A token (string) is returned by Microsoft Entra ID that contains your authentication information and the permissions required by the application. Assign this token to the HTTP header as a bearer token, as shown in the following example.
 
 `request.Headers.Authorization = new AuthenticationHeaderValue("bearer", accessToken);`
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalPartnerSettings = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings
-	.Request()
-	.Select("id,partnerId,enableConnection")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","partnerId","enableConnection" };
+});
+
 
 ```

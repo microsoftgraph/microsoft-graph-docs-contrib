@@ -3,7 +3,7 @@ title: "Get includedAccountTarget"
 description: "Get included account targets (users) for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get included account targets (users) for an attack simulation campaign for a ten
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All                   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.Read.All                   |
+<!-- { "blockType": "permissions", "name": "attacksimulationroot_get_includedaccounttarget" } -->
+[!INCLUDE [permissions-table](../includes/permissions/attacksimulationroot-get-includedaccounttarget-permissions.md)]
 
 ## HTTP request
 
@@ -32,18 +29,18 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{simulationId}/includedaccounttarget
+GET /security/attackSimulation/simulations/{simulationId}/includedAccountTarget
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an [accountTarge
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -67,24 +64,15 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-includedaccounttarget-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-includedaccounttarget-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-includedaccounttarget-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -98,10 +86,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        "john@contoso.com"
-    ]
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
 }
 ```

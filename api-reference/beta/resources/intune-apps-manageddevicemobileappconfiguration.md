@@ -3,7 +3,7 @@ title: "managedDeviceMobileAppConfiguration resource type"
 description: "An abstract class for Mobile app configuration for enrolled devices."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ An abstract class for Mobile app configuration for enrolled devices.
 |:---|:---|:---|
 |[List managedDeviceMobileAppConfigurations](../api/intune-apps-manageddevicemobileappconfiguration-list.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) collection|List properties and relationships of the [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) objects.|
 |[Get managedDeviceMobileAppConfiguration](../api/intune-apps-manageddevicemobileappconfiguration-get.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|Read properties and relationships of the [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) object.|
-|[assign action](../api/intune-apps-manageddevicemobileappconfiguration-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-apps-manageddevicemobileappconfiguration-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

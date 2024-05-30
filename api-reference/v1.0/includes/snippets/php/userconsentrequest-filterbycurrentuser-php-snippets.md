@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\IdentityGovernance\AppConsent\AppConsentRequests\Item\UserConsentRequests\FilterByCurrentUser(on='{on}')\FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserConsentRequestRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new UserConsentRequestRequestBuilderGetQueryParameters();
-$queryParameters->filter = " ";
-
+$requestConfiguration = new FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration();
+$queryParameters = FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = " (status eq 'Completed')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->userConsentRequestsById('userConsentRequest-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->byAppConsentRequestId('appConsentRequest-id')->userConsentRequests()->filterByCurrentUserWithOn('reviewer', )->get($requestConfiguration)->wait();
 
 ```

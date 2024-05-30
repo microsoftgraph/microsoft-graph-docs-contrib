@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\TermsOfUse\Agreements\Item\AgreementItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new AgreementRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new AgreementRequestBuilderGetQueryParameters();
+$requestConfiguration = new AgreementItemRequestBuilderGetRequestConfiguration();
+$queryParameters = AgreementItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["files"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->byAgreementId('agreement-id')->get($requestConfiguration)->wait();
 
 ```

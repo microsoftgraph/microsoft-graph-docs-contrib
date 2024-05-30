@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignment"
-	RoleDefinitionId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
-	PrincipalId = "f8ca5a85-489a-49a0-b555-0a6d81e56f0d"
-	DirectoryScopeId = "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
+	roleDefinitionId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
+	principalId = "f8ca5a85-489a-49a0-b555-0a6d81e56f0d"
+	directoryScopeId = "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params

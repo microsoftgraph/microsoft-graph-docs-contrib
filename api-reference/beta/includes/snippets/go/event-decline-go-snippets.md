@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewDeclinePostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphusers.NewItemDeclinePostRequestBody()
 comment := "I won't be able to make this week. How about next week?"
 requestBody.SetComment(&comment) 
 sendResponse := true
@@ -27,7 +36,8 @@ end.SetTimeZone(&timeZone)
 proposedNewTime.SetEnd(end)
 requestBody.SetProposedNewTime(proposedNewTime)
 
-graphClient.Me().EventsById("event-id").Decline().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Me().Events().ByEventId("event-id").Decline().Post(context.Background(), requestBody, nil)
 
 
 ```

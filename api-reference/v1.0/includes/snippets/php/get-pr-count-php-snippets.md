@@ -5,27 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Groups\Item\Members\Graph\User\UserRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new UserRequestBuilderGetQueryParameters();
+$requestConfiguration = new GraphUserRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
+
+$queryParameters = GraphUserRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:Pr\"";
 $queryParameters->select = ["displayName","id"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->members()->user()->get($requestConfiguration);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->members()->graphUser()->get($requestConfiguration)->wait();
 
 ```

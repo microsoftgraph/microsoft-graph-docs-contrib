@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var meetingRegistrantBase = new ExternalMeetingRegistrant
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ExternalMeetingRegistrant
 {
-	Id = "9d96988d-a66a-46ce-aad7-0b245615b297"
+	OdataType = "#microsoft.graph.externalMeetingRegistrant",
+	Id = "9d96988d-a66a-46ce-aad7-0b245615b297",
 };
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants
-	.Request()
-	.AddAsync(meetingRegistrantBase);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants.PostAsync(requestBody);
+
 
 ```

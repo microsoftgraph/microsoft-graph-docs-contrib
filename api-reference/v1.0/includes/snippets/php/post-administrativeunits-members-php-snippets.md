@@ -5,26 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestBody = new MembersPostRequestBody();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.group', 
-'description' => 'Self help community for golf', 
-'displayName' => 'Golf Assist', 
-'groupTypes' => ['Unified', ],
-'mailEnabled' => true,
-'mailNickname' => 'golfassist', 
-'securityEnabled' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Group;
 
 
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new Group();
+$requestBody->setOdataType('#microsoft.graph.group');
+$requestBody->setDescription('Self help community for golf');
+$requestBody->setDisplayName('Golf Assist');
+$requestBody->setGroupTypes(['Unified', 	]);
+$requestBody->setMailEnabled(true);
+$requestBody->setMailNickname('golfassist');
+$requestBody->setSecurityEnabled(false);
 
-$graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->members()->post($requestBody);
-
+$result = $graphServiceClient->directory()->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->members()->post($requestBody)->wait();
 
 ```

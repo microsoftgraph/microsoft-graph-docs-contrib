@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	DisplayName = "displayName-value"
+	displayName = "displayName-value"
 }
 
 # A UPN can also be used as -UserId.

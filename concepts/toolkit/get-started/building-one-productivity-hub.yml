@@ -16,7 +16,7 @@ items:
     durationInMinutes: 5
     content: |
       [!INCLUDE [](includes/building-one-productivity-hub-01-intro.md)]
-  - title: Register the application in Azure Active Directory
+  - title: Register the application in Microsoft Entra ID
     durationInMinutes: 10
     content: |
       [!INCLUDE [](includes/building-one-productivity-hub-02-register-app.md)]

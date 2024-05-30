@@ -1,13 +1,13 @@
 ---
-title: "educationOneRosterApiDataProvider resource"
+title: educationOneRosterApiDataProvider resource type
 description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationOneRosterApiDataProvider resource
+# educationOneRosterApiDataProvider resource type
 
 Namespace: microsoft.graph
 

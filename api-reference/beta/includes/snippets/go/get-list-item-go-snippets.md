@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.SiteItemListItemItemItemRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  //other-imports
+)
+
+requestParameters := &graphsites.SiteItemListItemItemItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"fields"},
 }
-configuration := &graphconfig.SiteItemListItemItemItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemItemItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+items, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").Get(context.Background(), configuration)
 
 
 ```

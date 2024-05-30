@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-sdk-go/applications"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
@@ -14,17 +23,18 @@ headers.Add("ConsistencyLevel", "eventual")
 requestSearch := "\"displayName:Web\""
 requestCount := true
 
-requestParameters := &graphconfig.ApplicationsRequestBuilderGetQueryParameters{
+requestParameters := &graphapplications.ApplicationsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 	Count: &requestCount,
 	Select: [] string {"appId","identifierUris","displayName","publisherDomain","signInAudience"},
 }
-configuration := &graphconfig.ApplicationsRequestBuilderGetRequestConfiguration{
+configuration := &graphapplications.ApplicationsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Applications().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+applications, err := graphClient.Applications().Get(context.Background(), configuration)
 
 
 ```

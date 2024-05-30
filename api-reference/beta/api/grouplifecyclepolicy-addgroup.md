@@ -1,9 +1,10 @@
 ---
 title: "groupLifecyclePolicy: addGroup"
 description: "Adds a group to a lifecycle policy."
-author: "psaffaie"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Adds specific groups to a lifecycle policy. This action limits the group lifecycle policy to a set of groups only if the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) is set to `Selected`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Directory.ReadWrite.All                     |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Directory.ReadWrite.All                     |
+<!-- { "blockType": "permissions", "name": "grouplifecyclepolicy_addgroup" } -->
+[!INCLUDE [permissions-table](../includes/permissions/grouplifecyclepolicy-addgroup-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
@@ -60,7 +60,7 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -78,7 +78,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } -->
 

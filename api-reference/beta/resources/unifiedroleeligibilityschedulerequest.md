@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest resource type"
-description: "Represents the request for eligible role assignment operations through Azure AD Privileged Identity Management."
+description: "Represents the request for eligible role assignment operations through Microsoft Entra Privileged Identity Management."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ For more information about PIM scenarios you can define through the **unifiedRol
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRoleEligibilityScheduleRequests](../api/rbacapplication-list-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) collection|Retrieve the requests for role eligibilities for principals made through the unifiedRoleEligibilityScheduleRequest object.|
-|[Create unifiedRoleEligibilityScheduleRequest](../api/rbacapplication-post-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.|
-|[Get unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Read the details of a request for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.|
-|[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) collection|In PIM, retrieve the requests for role eligibilities for a particular principal. The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.|
-|[cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|None|Immediately cancel a **unifiedRoleEligibilityScheduleRequest** object whose status is `Granted` and have the system automatically delete the canceled request after 30 days.|
+|[List](../api/rbacapplication-list-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) collection|Retrieve the requests for role eligibilities for principals made through the unifiedRoleEligibilityScheduleRequest object.|
+|[Create](../api/rbacapplication-post-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.|
+|[Get](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Read the details of a request for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.|
+|[Filter by current user](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) collection|In PIM, retrieve the requests for role eligibilities for a particular principal. The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.|
+|[Cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|None|Immediately cancel a **unifiedRoleEligibilityScheduleRequest** object whose status is `Granted` and have the system automatically delete the canceled request after 30 days.|
 
 ## Properties
 |Property|Type|Description|
@@ -85,4 +85,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

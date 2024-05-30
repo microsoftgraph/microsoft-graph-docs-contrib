@@ -3,7 +3,7 @@ title: "translationPreferences resource type"
 description: "A resource representing the user's translation settings preferences."
 ms.localizationpriority: medium
 author: "jasonbro"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 # translationPreferences resource type

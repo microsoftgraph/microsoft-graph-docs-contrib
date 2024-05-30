@@ -1,9 +1,9 @@
 ---
 title: "educationOnPremisesInfo resource type"
-description: "Additional information used to associate an on-premises Active Directory user account to their Azure AD user object."
+description: "Additional information used to associate an on-premises Active Directory user account to their Microsoft Entra user object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Additional information used to associate an on-premises Active Directory user account to their Azure AD user object.
+Additional information used to associate an on-premises Active Directory user account to their Microsoft Entra user object.
 
 ## Properties
 

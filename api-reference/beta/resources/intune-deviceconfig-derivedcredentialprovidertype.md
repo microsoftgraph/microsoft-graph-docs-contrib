@@ -3,7 +3,7 @@ title: "derivedCredentialProviderType enum type"
 description: "Provider type for Derived Credentials."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

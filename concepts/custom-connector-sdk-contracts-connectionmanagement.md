@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK (preview) connection management API and models"
+title: "Microsoft Graph connectors SDK connection management API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
-description: "Learn about the connection management API and models in the Microsoft Graph connectors SDK (preview)."
+ms.subservice: search
+description: "Learn about the connection management API and models in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK (preview) connection management API and models
+# Microsoft Graph connectors SDK connection management API and models
 
-The Microsoft Graph connectors SDK (preview) contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
+The Microsoft Graph connectors SDK contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
 ## Connection management APIs
 
@@ -76,6 +76,6 @@ Request model to get the schema response of the data source.
 |status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details such as error messages. |
 |dataSourceSchema |[DataSourceSchema](/graph/custom-connector-sdk-contracts-common#datasourceschema) |Shows the data source schema.|
 
-## See also
+## Related content
 
 * [Microsoft Graph connectors API schema resource type](/graph/api/resources/externalconnectors-schema)

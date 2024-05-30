@@ -2,8 +2,8 @@
 title: "Address resources in a drive on OneDrive"
 description: "Learn how to access items within a drive on OneDrive with ID-based and path-based addressing, and how to properly encode paths for Microsoft Graph."
 ms.localizationpriority: high
-ms.prod: "sharepoint"
-author: "JeremyKelley"
+ms.subservice: "sharepoint"
+author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ---
 
@@ -30,7 +30,7 @@ hierarchy.
 However, since path-based addressing is based on the name of the item, renaming
 or moving the item to a new location will cause the path of the item to change.
 
-You can use path-based addressing relative to any item in OneDrive. 
+You can use path-based addressing relative to any item in OneDrive.
 For example, when working with shared folders, you
 can use a path-based URL relative to the shared folder's item ID to address
 something in the shared folder by path.
@@ -87,7 +87,7 @@ When constructing the path segment of a URL for the Microsoft Graph API, the fol
 Item name characters, which are not included in the `pchar` group, such as `#` and ` ` (space), must be percent encoded.
 
 ### Encoding characters
-Microsoft Graph uses standard percent encoding, where URL-invalid characters are encoded with a % and then the UTF-8 character code for the character. 
+Microsoft Graph uses standard percent encoding, where URL-invalid characters are encoded with a % and then the UTF-8 character code for the character.
 For example:
 
 * `" "` -> `%20`
@@ -192,6 +192,6 @@ To address each of Adele's files, you use percent encoding, as follows:
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
 
-## See also
+## Related content
 
 - [OneDrive file storage API overview](onedrive-concept-overview.md)

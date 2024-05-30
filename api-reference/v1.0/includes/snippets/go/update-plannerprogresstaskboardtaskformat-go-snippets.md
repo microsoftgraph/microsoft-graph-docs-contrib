@@ -4,21 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerTaskItemProgressTaskBoardFormatRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.PlannerTaskItemProgressTaskBoardFormatRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerProgressTaskBoardTaskFormat()
 orderHint := "A6673H Ejkl!"
 requestBody.SetOrderHint(&orderHint) 
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").ProgressTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+progressTaskBoardFormat, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").ProgressTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

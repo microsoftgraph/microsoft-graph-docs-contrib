@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attackSimulationInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [attackSimulationInfo](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [attackSimulationInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-attackSimulationInfo?view=graph-rest-beta) resource.",
           "Target": "attackSimulationInfo"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "submissionAdminReview",
           "ChangeType": "Addition",
-          "Description": "Added the [submissionAdminReview](https://learn.microsoft.com/en-us/graph/api/resources/submissionAdminReview?view=graph-rest-beta) resource.",
+          "Description": "Added the [submissionAdminReview](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionAdminReview?view=graph-rest-beta) resource.",
           "Target": "submissionAdminReview"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "submissionDetectedFile",
           "ChangeType": "Addition",
-          "Description": "Added the [submissionDetectedFile](https://learn.microsoft.com/en-us/graph/api/resources/submissionDetectedFile?view=graph-rest-beta) resource.",
+          "Description": "Added the [submissionDetectedFile](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionDetectedFile?view=graph-rest-beta) resource.",
           "Target": "submissionDetectedFile"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "submissionResult",
           "ChangeType": "Addition",
-          "Description": "Added the [submissionResult](https://learn.microsoft.com/en-us/graph/api/resources/submissionResult?view=graph-rest-beta) resource.",
+          "Description": "Added the [submissionResult](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionResult?view=graph-rest-beta) resource.",
           "Target": "submissionResult"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "submissionUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [submissionUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/submissionUserIdentity?view=graph-rest-beta) resource.",
+          "Description": "Added the [submissionUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionUserIdentity?view=graph-rest-beta) resource.",
           "Target": "submissionUserIdentity"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAllowBlockListEntryResult",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantAllowBlockListEntryResult](https://learn.microsoft.com/en-us/graph/api/resources/tenantAllowBlockListEntryResult?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantAllowBlockListEntryResult](https://learn.microsoft.com/en-us/graph/api/resources/security-tenantAllowBlockListEntryResult?view=graph-rest-beta) resource.",
           "Target": "tenantAllowBlockListEntryResult"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAllowOrBlockListAction",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantAllowOrBlockListAction](https://learn.microsoft.com/en-us/graph/api/resources/tenantAllowOrBlockListAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantAllowOrBlockListAction](https://learn.microsoft.com/en-us/graph/api/resources/security-tenantAllowOrBlockListAction?view=graph-rest-beta) resource.",
           "Target": "tenantAllowOrBlockListAction"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailContentThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [emailContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailContentThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [emailContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-emailContentThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "emailContentThreatSubmission"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [emailThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [emailThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-emailThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "emailThreatSubmission"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailThreatSubmissionPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [emailThreatSubmissionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/emailThreatSubmissionPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [emailThreatSubmissionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-emailThreatSubmissionPolicy?view=graph-rest-beta) resource.",
           "Target": "emailThreatSubmissionPolicy"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailUrlThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [emailUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailUrlThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [emailUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-emailUrlThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "emailUrlThreatSubmission"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileContentThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [fileContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileContentThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-fileContentThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "fileContentThreatSubmission"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [fileThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-fileThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "fileThreatSubmission"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileUrlThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [fileUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileUrlThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-fileUrlThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "fileUrlThreatSubmission"
         },
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/threatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-threatSubmission?view=graph-rest-beta) resource.",
           "Target": "threatSubmission"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatSubmissionRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [threatSubmissionRoot](https://learn.microsoft.com/en-us/graph/api/resources/threatSubmissionRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **threatSubmissionRoot** resource.",
           "Target": "threatSubmissionRoot"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "urlThreatSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [urlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/urlThreatSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [urlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security-urlThreatSubmission?view=graph-rest-beta) resource.",
           "Target": "urlThreatSubmission"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "review",
           "ChangeType": "Addition",
-          "Description": "Added the [review](https://learn.microsoft.com/en-us/graph/api/review?view=graph-rest-beta) resource.",
+          "Description": "Added the **review** resource.",
           "Target": "review"
         }
       ],

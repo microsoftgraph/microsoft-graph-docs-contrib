@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Check in a checked out DriveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: checkin
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_checkin" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-checkin-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +54,7 @@ This example checks in a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkin
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/checkin
 Content-Type: application/json
 
 {
@@ -67,28 +66,35 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/checkin-item-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/checkin-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/checkin-item-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/checkin-item-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/checkin-item-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/checkin-item-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Response
 

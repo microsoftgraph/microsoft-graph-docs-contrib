@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Chats\ChatsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ChatsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ChatsRequestBuilderGetQueryParameters();
+$queryParameters = ChatsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["members"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->chats()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->chats()->get($requestConfiguration)->wait();
 
 ```

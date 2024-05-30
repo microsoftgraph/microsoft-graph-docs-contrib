@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.MeContactsRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+requestParameters := &graphusers.ItemContactsRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","emailAddresses"},
 }
-configuration := &graphconfig.MeContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+contacts, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

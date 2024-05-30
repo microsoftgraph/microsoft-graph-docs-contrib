@@ -4,25 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "comment-value";
+// Dependencies
+using Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Forward;
+using Microsoft.Graph.Models;
 
-var toRecipients = new List<Recipient>()
+var requestBody = new ForwardPostRequestBody
 {
-	new Recipient
+	Comment = "comment-value",
+	ToRecipients = new List<Recipient>
 	{
-		EmailAddress = new EmailAddress
+		new Recipient
 		{
-			Name = "name-value",
-			Address = "address-value"
-		}
-	}
+			EmailAddress = new EmailAddress
+			{
+				Name = "name-value",
+				Address = "address-value",
+			},
+		},
+	},
 };
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
-	.Forward(toRecipients,comment)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Forward.PostAsync(requestBody);
+
 
 ```

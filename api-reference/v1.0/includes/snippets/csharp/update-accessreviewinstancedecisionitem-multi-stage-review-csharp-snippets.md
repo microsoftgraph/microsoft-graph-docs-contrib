@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AccessReviewInstanceDecisionItem
 {
 	Decision = "Approve",
-	Justification = "This person is still on my team"
+	Justification = "This person is still on my team",
 };
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
-	.Request()
-	.UpdateAsync(accessReviewInstanceDecisionItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"].PatchAsync(requestBody);
+
 
 ```

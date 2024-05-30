@@ -4,20 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
 
 
-requestFilter := "userConsentRequests/any"
+requestFilter := "userConsentRequests/any(u:u/status eq 'InProgress')"
 
-requestParameters := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+on := "reviewer"
+filterByCurrentUser, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().FilterByCurrentUserWithOn(&on).GetAsFilterByCurrentUserWithOnGetResponse(context.Background(), configuration)
 
 
 ```

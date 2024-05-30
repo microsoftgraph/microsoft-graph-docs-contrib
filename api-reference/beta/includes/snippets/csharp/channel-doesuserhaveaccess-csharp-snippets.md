@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var boolean = await graphClient.Teams["{team-id}"].Channels["{channel-id}"]
-	.DoesUserHaveAccess("6285581f-484b-4845-9e01-60667f8b12ae")
-	.Request()
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].DoesUserHaveAccess().GetAsDoesUserHaveAccessGetResponseAsync();
+
 
 ```

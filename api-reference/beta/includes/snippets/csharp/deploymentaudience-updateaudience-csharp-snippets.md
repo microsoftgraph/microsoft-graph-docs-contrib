@@ -4,43 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.MicrosoftGraphWindowsUpdatesUpdateAudience;
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new UpdateAudiencePostRequestBody
 {
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+	AddMembers = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
+		new AzureADDevice
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
 };
 
-var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].MicrosoftGraphWindowsUpdatesUpdateAudience.PostAsync(requestBody);
 
-var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudience(addMembers,removeMembers,addExclusions,removeExclusions)
-	.Request()
-	.PostAsync();
 
 ```

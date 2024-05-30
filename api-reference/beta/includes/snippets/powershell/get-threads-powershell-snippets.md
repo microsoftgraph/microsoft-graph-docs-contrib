@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId
+Get-MgBetaGroupConversationThread -GroupId $groupId -ConversationId $conversationId
 
 ```

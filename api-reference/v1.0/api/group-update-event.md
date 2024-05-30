@@ -1,9 +1,9 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "psaffaie"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,10 +13,12 @@ Namespace: microsoft.graph
 
 Update an [event](../resources/event.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.ReadWrite.All                         |
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -75,27 +77,39 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-group-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-group-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-group-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +187,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "JohannaL@contoso.OnMicrosoft.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -184,7 +198,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Retail",
-                "address": "Retail@contoso.onmicrosoft.com"
+                "address": "Retail@contoso.com"
             }
         },
         {
@@ -195,7 +209,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         },
         {
@@ -206,7 +220,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -217,14 +231,14 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Nestor Wilke",
-                "address": "NestorW@contoso.OnMicrosoft.com"
+                "address": "NestorW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

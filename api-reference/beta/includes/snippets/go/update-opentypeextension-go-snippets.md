@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewExtension()
 additionalData := map[string]interface{}{
@@ -17,12 +25,12 @@ additionalData := map[string]interface{}{
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").ExtensionsById("extension-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+extensions, err := graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Posts().ByPostId("post-id").Extensions().ByExtensionId("extension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

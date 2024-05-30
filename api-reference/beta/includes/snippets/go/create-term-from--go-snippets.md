@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewTerm()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelstermstore "github.com/microsoftgraph/msgraph-beta-sdk-go/models/termstore"
+	  //other-imports
+)
+
+requestBody := graphmodelstermstore.NewTerm()
 
 
-localizedLabel := graphmodels.NewLocalizedLabel()
+localizedLabel := graphmodelstermstore.NewLocalizedLabel()
 languageTag := "en-US"
 localizedLabel.SetLanguageTag(&languageTag) 
 name := "Car"
@@ -18,13 +26,13 @@ localizedLabel.SetName(&name)
 isDefault := true
 localizedLabel.SetIsDefault(&isDefault) 
 
-labels := []graphmodels.LocalizedLabelable {
+labels := []graphmodelstermstore.LocalizedLabelable {
 	localizedLabel,
-
 }
 requestBody.SetLabels(labels)
 
-result, err := graphClient.TermStore().SetsById("set-id").Children().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+children, err := graphClient.TermStore().Sets().BySetId("set-id").Children().Post(context.Background(), requestBody, nil)
 
 
 ```

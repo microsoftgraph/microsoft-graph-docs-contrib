@@ -4,53 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<UpdatableAsset> addMembersList = new LinkedList<UpdatableAsset>();
-AzureADDevice addMembers = new AzureADDevice();
-addMembers.id = "String (identifier)";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-addMembersList.add(addMembers);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = addMembersList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
+com.microsoft.graph.beta.admin.windows.updates.deploymentaudiences.item.microsoftgraphwindowsupdatesupdateaudience.UpdateAudiencePostRequestBody updateAudiencePostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.deploymentaudiences.item.microsoftgraphwindowsupdatesupdateaudience.UpdateAudiencePostRequestBody();
+LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset> addMembers = new LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset>();
+com.microsoft.graph.beta.models.windowsupdates.AzureADDevice updatableAsset = new com.microsoft.graph.beta.models.windowsupdates.AzureADDevice();
+updatableAsset.setOdataType("#microsoft.graph.windowsUpdates.azureADDevice");
+updatableAsset.setId("String (identifier)");
+addMembers.add(updatableAsset);
+updateAudiencePostRequestBody.setAddMembers(addMembers);
+graphClient.admin().windows().updates().deploymentAudiences().byDeploymentAudienceId("{deploymentAudience-id}").microsoftGraphWindowsUpdatesUpdateAudience().post(updateAudiencePostRequestBody);
 
-LinkedList<UpdatableAsset> removeMembersList = new LinkedList<UpdatableAsset>();
-AzureADDevice removeMembers = new AzureADDevice();
-removeMembers.id = "String (identifier)";
-
-removeMembersList.add(removeMembers);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = removeMembersList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
-
-LinkedList<UpdatableAsset> addExclusionsList = new LinkedList<UpdatableAsset>();
-AzureADDevice addExclusions = new AzureADDevice();
-addExclusions.id = "String (identifier)";
-
-addExclusionsList.add(addExclusions);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = addExclusionsList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
-
-LinkedList<UpdatableAsset> removeExclusionsList = new LinkedList<UpdatableAsset>();
-AzureADDevice removeExclusions = new AzureADDevice();
-removeExclusions.id = "String (identifier)";
-
-removeExclusionsList.add(removeExclusions);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = removeExclusionsList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
-
-graphClient.admin().windows().updates().deployments("{deploymentId}").audience()
-	.updateAudience(DeploymentAudienceUpdateAudienceParameterSet
-		.newBuilder()
-		.withAddMembers(addMembersList)
-		.withRemoveMembers(removeMembersList)
-		.withAddExclusions(addExclusionsList)
-		.withRemoveExclusions(removeExclusionsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

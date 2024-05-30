@@ -3,7 +3,7 @@ title: "Outlook personal contacts API overview"
 description: "Use the Outlook personal contacts API in Microsoft Graph to manage emails, schedule meetings, find user information, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
@@ -35,7 +35,7 @@ You can use the typical CRUD operations for an Outlook [contact](/graph/api/reso
 
 ### Take advantage of other shared features and conveniences in Microsoft Graph
 
-- The **contact** entity supports a contact photo which is implemented as the same [profilePhoto](/graph/api/resources/profilephoto) entity as a user photo stored in Exchange Online or Azure Active Directory. This eliminates the overhead in converting between contact and user profile photos.
+- The **contact** entity supports a contact photo which is implemented as the same [profilePhoto](/graph/api/resources/profilephoto) entity as a user photo stored in Exchange Online or Microsoft Entra ID. This eliminates the overhead in converting between contact and user profile photos.
 - You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks) and [tracking changes](delta-query-overview.md) to contacts and contact folders.
 - You can extend app storage in a contact instance as an [open extension](extensibility-overview.md#4-open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility-overview.md#3-schema-extensions).
 

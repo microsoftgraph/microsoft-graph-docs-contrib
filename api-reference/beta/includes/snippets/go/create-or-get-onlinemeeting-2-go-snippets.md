@@ -4,10 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewCreateOrGetPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphusers.NewItemCreateOrGetPostRequestBody()
 chatInfo := graphmodels.NewChatInfo()
 threadId := "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
 chatInfo.SetThreadId(&threadId) 
@@ -33,14 +43,14 @@ meetingParticipantInfo.SetUpn(&upn)
 
 attendees := []graphmodels.MeetingParticipantInfoable {
 	meetingParticipantInfo,
-
 }
 participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+createOrGet, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

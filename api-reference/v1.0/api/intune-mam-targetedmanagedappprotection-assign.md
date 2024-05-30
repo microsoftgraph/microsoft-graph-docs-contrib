@@ -3,7 +3,7 @@ title: "assign action"
 description: "Not yet documented"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -59,9 +59,10 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappprotection_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
 Content-type: application/json
 Content-length: 338
 
@@ -81,6 +82,8 @@ Content-length: 338
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 204 No Content
 ```

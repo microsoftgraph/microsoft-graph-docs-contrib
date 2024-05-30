@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var calendar = new Calendar
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Calendar
 {
-	Name = "Volunteer"
+	Name = "Volunteer",
 };
 
-await graphClient.Me.Calendars
-	.Request()
-	.AddAsync(calendar);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Calendars.PostAsync(requestBody);
+
 
 ```

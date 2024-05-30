@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Tags["{tag-id}"].DeleteAsync((requestConfiguration) =>
 {
-	new QueryOption("forcedelete", "true")
-};
+	requestConfiguration.QueryParameters.Forcedelete = "true";
+});
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Tags["{ediscovery.tag-id}"]
-	.Request( queryOptions )
-	.DeleteAsync();
 
 ```

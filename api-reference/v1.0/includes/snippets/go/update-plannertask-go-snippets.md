@@ -4,20 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerTaskItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.PlannerTaskItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerTask()
 assignments := graphmodels.NewPlannerAssignments()
 additionalData := map[string]interface{}{
-"fbab97d0-4932-4511-b675-204639209557" := graphmodels.New()
+"fbab97d0-4932-4511-b675-204639209557" := graphmodels.NewPlannerAssignment()
 orderHint := "N9917 U2883!"
 "fbab97d0-4932-4511-b675-204639209557".SetOrderHint(&orderHint) 
 	assignments.Set"fbab97d0-4932-4511-b675-204639209557"("fbab97d0-4932-4511-b675-204639209557")
@@ -34,7 +44,8 @@ appliedCategories.SetCategory4(&category4)
 appliedCategories.SetAdditionalData(additionalData)
 requestBody.SetAppliedCategories(appliedCategories)
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").Patch(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tasks, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

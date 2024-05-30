@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var acronym = new Microsoft.Graph.Search.Acronym
+// Dependencies
+using Microsoft.Graph.Beta.Models.Search;
+
+var requestBody = new Acronym
 {
-	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
 };
 
-await graphClient.Search.Acronyms["{search.acronym-id}"]
-	.Request()
-	.UpdateAsync(acronym);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Search.Acronyms["{acronym-id}"].PatchAsync(requestBody);
+
 
 ```

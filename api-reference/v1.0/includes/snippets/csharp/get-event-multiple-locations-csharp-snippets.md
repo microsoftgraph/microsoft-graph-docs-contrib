@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = await graphClient.Me.Events["{event-id}"]
-	.Request()
-	.Select("subject,body,bodyPreview,organizer,attendees,start,end,location,locations")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Events["{event-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "subject","body","bodyPreview","organizer","attendees","start","end","location","locations" };
+});
+
 
 ```

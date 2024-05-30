@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewInferenceClassificationOverride()
 classifyAs := graphmodels.FOCUSED_INFERENCECLASSIFICATIONTYPE 
 requestBody.SetClassifyAs(&classifyAs) 
 
-result, err := graphClient.Me().InferenceClassification().OverridesById("inferenceClassificationOverride-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+overrides, err := graphClient.Me().InferenceClassification().Overrides().ByInferenceClassificationOverrideId("inferenceClassificationOverride-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

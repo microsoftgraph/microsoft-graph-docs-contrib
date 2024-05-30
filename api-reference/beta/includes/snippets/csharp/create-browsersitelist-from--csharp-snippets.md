@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var browserSiteList = new BrowserSiteList
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BrowserSiteList
 {
 	DisplayName = "Production Site List A",
-	Description = "Production site list for team A"
+	Description = "Production site list for team A",
 };
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists
-	.Request()
-	.AddAsync(browserSiteList);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists.PostAsync(requestBody);
+
 
 ```

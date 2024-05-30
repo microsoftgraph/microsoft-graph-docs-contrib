@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The textColumn on a columnDefinition resource indicates that the column's values are text.
 ms.date: 09/11/2017
 title: TextColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # TextColumn resource type

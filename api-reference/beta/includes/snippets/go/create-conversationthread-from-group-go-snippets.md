@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewConversationThread()
 topic := "New Conversation Thread Topic"
@@ -31,17 +39,16 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 requestBody.SetPosts(posts)
 
-result, err := graphClient.GroupsById("group-id").Threads().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+threads, err := graphClient.Groups().ByGroupId("group-id").Threads().Post(context.Background(), requestBody, nil)
 
 
 ```

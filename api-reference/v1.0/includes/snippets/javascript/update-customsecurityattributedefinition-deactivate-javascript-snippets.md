@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const customSecurityAttributeDefinition = {
+  status: 'Deprecated'
+};
+
+await client.api('/directory/customSecurityAttributeDefinitions/Engineering_Project')
+	.update(customSecurityAttributeDefinition);
+
+```

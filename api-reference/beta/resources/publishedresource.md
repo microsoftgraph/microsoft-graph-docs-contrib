@@ -2,8 +2,8 @@
 title: "publishedResource resource type"
 description: "publishedResource resource type."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,13 +19,13 @@ Represents on-premises published resource. A tenant administrator can publish va
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List publishedResources](../api/publishedresource-list.md) | [publishedResource](publishedresource.md) objects collection | Get a **publishedResources** object collection. |
-| [Get publishedResource](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Read the properties and relationships of a **publishedResource** object. |
-| [Create publishedResource](../api/publishedresource-post.md) |  [publishedResource](publishedresource.md)  | Create a new **publishedResource**. |
-| [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update a **publishedResource** object. |
-| [Delete  publishedResource](../api/publishedresource-delete.md) | None | Delete a **publishedResource** object. |
-| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None | Assign a **publishedResource** object to an **onPremisesAgentGroup**. |
-| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None |  Remove a **publishedResource** object from an **onPremisesAgentGroup**.|
+| [List](../api/publishedresource-list.md) | [publishedResource](publishedresource.md) objects collection | Get a **publishedResources** object collection. |
+| [Get](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Read the properties and relationships of a **publishedResource** object. |
+| [Create](../api/publishedresource-post.md) |  [publishedResource](publishedresource.md)  | Create a new **publishedResource**. |
+| [Update](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update a **publishedResource** object. |
+| [Delete](../api/publishedresource-delete.md) | None | Delete a **publishedResource** object. |
+| [Assign to agent group](../api/publishedresource-post-agentgroups.md) | None | Assign a **publishedResource** object to an **onPremisesAgentGroup**. |
+| [Remove from agent group](../api/publishedresource-delete-agentgroups.md) | None |  Remove a **publishedResource** object from an **onPremisesAgentGroup**.|
 
 ## Properties
 

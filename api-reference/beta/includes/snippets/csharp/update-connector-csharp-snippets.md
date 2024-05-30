@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var printConnector = new PrintConnector
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PrintConnector
 {
 	DisplayName = "ConnectorName",
 	FullyQualifiedDomainName = "CONNECTOR-MACHINE",
@@ -14,14 +17,14 @@ var printConnector = new PrintConnector
 	AppVersion = "0.19.7338.23496",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1,
-		Longitude = 2.2,
-		AltitudeInMeters = 3
-	}
+		Latitude = 1.1d,
+		Longitude = 2.2d,
+		AltitudeInMeters = 3,
+	},
 };
 
-await graphClient.Print.Connectors["{printConnector-id}"]
-	.Request()
-	.UpdateAsync(printConnector);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Print.Connectors["{printConnector-id}"].PatchAsync(requestBody);
+
 
 ```

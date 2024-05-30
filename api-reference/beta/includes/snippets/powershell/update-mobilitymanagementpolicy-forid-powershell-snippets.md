@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobilityManagementPolicy"
-	ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance"
-	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"
-	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
+	complianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance"
+	discoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"
+	termsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
 }
 
-Update-MgPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
+Update-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 
 ```

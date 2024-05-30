@@ -3,7 +3,7 @@ title: "Authentication differences between Exchange Web Services (EWS) and Micro
 description: "Describes authentication details to help you to migrate Exchange Web Services (EWS) apps to Microsoft Graph."
 author: "sumithra-maran"
 ms.localizationpriority: medium
-ms.prod: "exchange"
+ms.subservice: "exchange"
 doc_type: conceptualPageType
 ---
 
@@ -16,18 +16,18 @@ Exchange Web Services (EWS) and Microsoft Graph both use [Microsoft identity pla
 
 ## Permissions
 
-EWS and Microsoft Graph offer two types of permissions: delegated and application. Delegated permissions are in the context of an authenticated user. Application permissions are granted to an application that does not act on a user's behalf.
+EWS and Microsoft Graph offer two types of permissions: delegated and application. Delegated permissions are in the context of an authenticated user. Application permissions are granted to an application that doesn't act on a user's behalf.
 
-With EWS, an application has access to everything that the user has access to (in the case of delegated permissions) or everything that EWS can access (with application permissions). 
+With EWS, an application has access to everything that the user has access to (with delegated permissions) or everything that EWS can access (with application permissions). 
 
 EWS has all or nothing access model and there is no granular scoping for limiting data access in a mailbox. Whereas, Microsoft Graph offers granular permissions to specific features within an Exchange Online mailbox. For example, it is possible to allow an application to only read mail messages, and have no access to calendars or contacts. The effective permissions for delegated authentication is the intersection of the user's privileges and the permissions that have been consented for the application. For application authentication, the effective permissions are the set of permissions consented to by an administrator.
 
 For a full list of Exchange-related Microsoft Graph permissions, see:
 
-- [Mail permissions](permissions-reference.md#mail-permissions)
-- [Calendar permissions](permissions-reference.md#calendars-permissions)
-- [Personal contacts permissions](permissions-reference.md#contacts-permissions)
-- [Tasks permissions](permissions-reference.md#tasks-permissions)
+- Mail permissions
+- Calendar permissions
+- Personal contacts permissions
+- Tasks permissions
 
 ## Impersonation
 

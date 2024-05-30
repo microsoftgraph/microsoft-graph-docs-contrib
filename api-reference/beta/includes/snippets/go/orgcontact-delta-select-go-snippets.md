@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ContactsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcontacts "github.com/microsoftgraph/msgraph-beta-sdk-go/contacts"
+	  //other-imports
+)
+
+requestParameters := &graphcontacts.ContactsDeltaWithRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphconfig.ContactsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Contacts().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

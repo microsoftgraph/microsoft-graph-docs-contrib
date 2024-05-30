@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var b2xIdentityUserFlow = new B2xIdentityUserFlow
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new B2xIdentityUserFlow
 {
 	Id = "UserFlowWithAPIConnector",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
@@ -15,23 +18,27 @@ var b2xIdentityUserFlow = new B2xIdentityUserFlow
 	{
 		PostFederationSignup = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"}
-			}
+				{
+					"@odata.id" , "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"
+				},
+			},
 		},
 		PostAttributeCollection = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"}
-			}
-		}
-	}
+				{
+					"@odata.id" , "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Identity.B2xUserFlows
-	.Request()
-	.AddAsync(b2xIdentityUserFlow);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.B2xUserFlows.PostAsync(requestBody);
+
 
 ```

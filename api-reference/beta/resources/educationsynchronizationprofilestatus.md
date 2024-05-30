@@ -3,7 +3,7 @@ title: "educationSynchronizationProfileStatus resource type (deprecated)"
 description: "Represents the synchronization status of a school data synchronization profile."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Method                                                                      | Return Type                               | Description                                              |
 | :-------------------------------------------------------------------------- | :---------------------------------------- | :------------------------------------------------------- |
-| [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
+| [Get](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
 
 ## Properties
 

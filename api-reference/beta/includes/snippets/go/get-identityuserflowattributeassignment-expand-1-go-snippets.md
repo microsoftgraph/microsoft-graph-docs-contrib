@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+requestParameters := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"userAttribute"},
 }
-configuration := &graphconfig.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+userAttributeAssignments, err := graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
 
 
 ```

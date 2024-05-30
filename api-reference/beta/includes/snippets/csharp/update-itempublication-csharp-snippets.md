@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var itemPublication = new ItemPublication
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ItemPublication
 {
 	Publisher = "International Association of Branding Management Publishing",
-	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
+	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg",
 };
 
-await graphClient.Users["{user-id}"].Profile.Publications["{itemPublication-id}"]
-	.Request()
-	.UpdateAsync(itemPublication);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Profile.Publications["{itemPublication-id}"].PatchAsync(requestBody);
+
 
 ```

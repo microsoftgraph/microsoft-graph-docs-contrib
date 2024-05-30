@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewExternalItem()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-sdk-go/models/externalconnectors"
+	  //other-imports
+)
+
+requestBody := graphmodelsexternalconnectors.NewExternalItem()
 
 
-acl := graphmodels.NewAcl()
+acl := graphmodelsexternalconnectors.NewAcl()
 type := graphmodels.EVERYONE_ACLTYPE 
 acl.SetType(&type) 
 value := "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
@@ -18,13 +26,13 @@ acl.SetValue(&value)
 accessType := graphmodels.GRANT_ACCESSTYPE 
 acl.SetAccessType(&accessType) 
 
-acl := []graphmodels.Aclable {
+acl := []graphmodelsexternalconnectors.Aclable {
 	acl,
-
 }
 requestBody.SetAcl(acl)
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+items, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Items().ByExternalItemId("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

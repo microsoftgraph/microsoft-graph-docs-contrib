@@ -3,7 +3,7 @@ title: "payloadCoachmark resource type"
 description: "Represents the payload coachmark detail of a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the payload coachmark detail of a payload.
+Represents the payload coachmark detail of a payload. A coachmark is an indicator to educate users in learning how to verify the authenticity of the payload in an attack simulation training campaign.
 
 ## Properties
 
@@ -32,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.payloadCoachmark"

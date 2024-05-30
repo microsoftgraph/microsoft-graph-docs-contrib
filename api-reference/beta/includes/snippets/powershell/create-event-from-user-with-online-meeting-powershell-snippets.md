@@ -4,40 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does noon work for you?"
+	subject = "Let's go for lunch"
+	body = @{
+		contentType = "HTML"
+		content = "Does noon work for you?"
 	}
-	Start = @{
-		DateTime = "2017-04-15T12:00:00"
-		TimeZone = "Pacific Standard Time"
+	start = @{
+		dateTime = "2017-04-15T12:00:00"
+		timeZone = "Pacific Standard Time"
 	}
-	End = @{
-		DateTime = "2017-04-15T14:00:00"
-		TimeZone = "Pacific Standard Time"
+	end = @{
+		dateTime = "2017-04-15T14:00:00"
+		timeZone = "Pacific Standard Time"
 	}
-	Location = @{
-		DisplayName = "Harry's Bar"
+	location = @{
+		displayName = "Harry's Bar"
 	}
-	Attendees = @(
+	attendees = @(
 		@{
-			EmailAddress = @{
-				Address = "samanthab@contoso.onmicrosoft.com"
-				Name = "Samantha Booth"
+			emailAddress = @{
+				address = "samanthab@contoso.com"
+				name = "Samantha Booth"
 			}
-			Type = "required"
+			type = "required"
 		}
 	)
-	AllowNewTimeProposals = $true
-	IsOnlineMeeting = $true
-	OnlineMeetingProvider = "teamsForBusiness"
+	allowNewTimeProposals = $true
+	isOnlineMeeting = $true
+	onlineMeetingProvider = "teamsForBusiness"
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserEvent -UserId $userId -BodyParameter $params
+New-MgBetaUserEvent -UserId $userId -BodyParameter $params
 
 ```

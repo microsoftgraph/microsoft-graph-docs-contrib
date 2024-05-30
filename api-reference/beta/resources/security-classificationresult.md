@@ -3,7 +3,7 @@ title: "classificationResult resource type"
 description: "Represents the result of a classification request."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

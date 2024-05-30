@@ -4,33 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var memberEntityType = "String";
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.MicrosoftGraphWindowsUpdatesUpdateAudienceById;
 
-var addMembers = new List<String>()
+var requestBody = new UpdateAudienceByIdPostRequestBody
 {
-	"String"
+	MemberEntityType = "String",
+	AddMembers = new List<string>
+	{
+		"String",
+	},
+	RemoveMembers = new List<string>
+	{
+		"String",
+	},
+	AddExclusions = new List<string>
+	{
+		"String",
+	},
+	RemoveExclusions = new List<string>
+	{
+		"String",
+	},
 };
 
-var removeMembers = new List<String>()
-{
-	"String"
-};
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].Audience.MicrosoftGraphWindowsUpdatesUpdateAudienceById.PostAsync(requestBody);
 
-var addExclusions = new List<String>()
-{
-	"String"
-};
-
-var removeExclusions = new List<String>()
-{
-	"String"
-};
-
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudienceById(memberEntityType,addMembers,removeMembers,addExclusions,removeExclusions)
-	.Request()
-	.PostAsync();
 
 ```

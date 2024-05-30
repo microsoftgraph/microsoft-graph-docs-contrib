@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewSecurityAction()
 name := "BlockIp"
@@ -22,7 +30,6 @@ keyValuePair.SetValue(&value)
 
 parameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetParameters(parameters)
 vendorInformation := graphmodels.NewSecurityVendorInformation()
@@ -32,7 +39,8 @@ vendor := "Microsoft"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
 
-result, err := graphClient.Security().SecurityActions().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+securityActions, err := graphClient.Security().SecurityActions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewTodoTask()
 dueDateTime := graphmodels.NewDateTimeTimeZone()
@@ -15,7 +23,8 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tasks, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().ByTodoTaskId("todoTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

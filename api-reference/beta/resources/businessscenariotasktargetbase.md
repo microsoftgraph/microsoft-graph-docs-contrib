@@ -3,7 +3,7 @@ title: "businessScenarioTaskTargetBase resource type"
 description: "An abstract type that represents a base object for all targets that can be specified for creating tasks for a scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Represents a tenant's secure score per control data. By default, i
 ms.localizationpriority: medium
 doc_type: resourcePageType
 
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -21,32 +21,34 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
+|[List secure score control profiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
 
 
 ## Properties
 
-|Name |Type |Description |
+|Property|Type|Description|
 |:--|:--|:--|
-|	azureTenantId	|	String	|	GUID string for tenant ID.	|
-|	controlName	|	String	|	Name of the control. |
-|	title	|	String	|	Title of the control.	|
-| complianceInformation | [complianceInformation](complianceinformation.md) collection | The collection of compliance information associated with secure score control |
-|	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
-|	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
-|	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|
-|	maxScore |	String	|	Current obtained max score on specified date.	|
-|	tier |	String	|	Control tier (Core, Defense in Depth, Advanced.)	|
-|	userImpact |	String	| User impact of implementing control (low, moderate, high).	|
-|	implementationCost |	String	|	Resource cost of implemmentating control (low, moderate, high).	|
-|	rank |	Int32	|	Microsoft's stack ranking of control.	|
-|	threats |	String Collection	|	List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).	|
-|	deprecated |	Boolean	|	Flag to indicate if a control is depreciated.	|
-|	remediation |	String	|	Description of what the control will help remediate. |
-|	remediationImpact |	String	|	Description of the impact on users of the remediation. |
-|	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
-|	vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
+|actionType|String|Control action type (Config, Review, Behavior).|
+|actionUrl|String|URL to where the control can be actioned.|
+|azureTenantId|String|GUID string for tenant ID.|
+|complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control|
+|controlCategory|String|Control action category (Account, Data, Device, Apps, Infrastructure).|
+|controlName|String|Name of the control.|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)).|
+|deprecated|Boolean|Flag to indicate if a control is depreciated.|
+|id|String|Provider-generated GUID/unique identifier. Read-only. Required.|
+|implementationCost|String|Resource cost of implemmentating control (low, moderate, high).|
+|lastModifiedDateTime|DateTimeOffset|Time at which the control profile entity was last modified. The Timestamp type represents date and time| 
+|maxScore|String|Current obtained max score on specified date.|
+|rank|Int32|Microsoft's stack ranking of control.|
+|remediation|String|Description of what the control will help remediate.|
+|remediationImpact|String|Description of the impact on users of the remediation.|
+|service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
+|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
+|tier|String|Control tier (Core, Defense in Depth, Advanced.)|
+|title|String|Title of the control.|
+|userImpact|String|User impact of implementing control (low, moderate, high).|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore). Required.|
 
 ## Relationships
 
@@ -66,28 +68,27 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "title": "String",
-  "azureTenantId": "String (identifier)",
-  "maxScore": 1024.13,
   "actionType": "String",
-  "service": "String",
-  "tier": "String",
-  "userImpact": "string",
-  "implementationCost ": "String",
-  "rank ": 100,
-  "threats": ["string"],
-  "deprecated ": false,
-  "remediation": "String",
-  "remediationImpact ": "String",
   "actionUrl": "String",
-  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
-  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "azureTenantId": "String",
   "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
-  "controlCategory": "string",
-  "lastModifiedDateTime": "String (timestamp)"
+  "controlCategory": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "deprecated": false,
+  "id": "String (identifier)",
+  "implementationCost": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "maxScore": 1024.13,
+  "rank": 100,
+  "remediation": "String",
+  "remediationImpact": "String",
+  "service": "String",
+  "threats": ["String"],
+  "tier": "String",
+  "title": "String",
+  "userImpact": "String",
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"}
 }
-
-
 ```
 
 
@@ -101,5 +102,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

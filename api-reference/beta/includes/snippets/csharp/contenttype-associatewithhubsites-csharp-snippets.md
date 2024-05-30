@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var hubSiteUrls = new List<String>()
+// Dependencies
+using Microsoft.Graph.Beta.Sites.Item.ContentTypes.Item.AssociateWithHubSites;
+
+var requestBody = new AssociateWithHubSitesPostRequestBody
 {
-	"https://graph.microsoft.com/beta/sites/id"
+	HubSiteUrls = new List<string>
+	{
+		"https://graph.microsoft.com/beta/sites/id",
+	},
+	PropagateToExistingLists = false,
 };
 
-var propagateToExistingLists = false;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].AssociateWithHubSites.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"]
-	.AssociateWithHubSites(hubSiteUrls,propagateToExistingLists)
-	.Request()
-	.PostAsync();
 
 ```

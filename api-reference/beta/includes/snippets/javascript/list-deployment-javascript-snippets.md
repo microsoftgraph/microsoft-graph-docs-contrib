@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let deployments = await client.api('/admin/windows/updates/deployments')
+let deploymentAudiences = await client.api('/admin/windows/updates/deploymentAudiences')
 	.version('beta')
 	.get();
 

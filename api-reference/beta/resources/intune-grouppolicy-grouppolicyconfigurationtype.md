@@ -3,7 +3,7 @@ title: "groupPolicyConfigurationType enum type"
 description: "Group Policy Configuration Type"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

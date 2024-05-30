@@ -1,7 +1,7 @@
 ---
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: intune
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
@@ -18,4 +18,4 @@ The preceding limits apply to the following resources:
  
 | <!-- fake header--> |
 |---|
-| <ul> <li> [appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent) <li> [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent) <li> [deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail) <li> [deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent) <li> [enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent) <li> [mobileAppIntentAndState](/graph/api/resources/intune-troubleshooting-mobileappintentandstate) <li> [mobileAppTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingevent) </ul> |
+| <ul> <li> [appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent) <li> [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent) <li> [deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail) <li> [deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent) <li> [enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent) <li> [mobileAppIntentAndState](/graph/api/resources/intune-troubleshooting-mobileappintentandstate) <li> [mobileAppTroubleshootingEvent](/graph/api/resources/intune-shared-mobileapptroubleshootingevent) </ul> |

@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\TenantRelationships\ManagedTenants\TenantTags\Item\MicrosoftGraphManagedTenantsAssignTag\AssignTagPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AssignTagPostRequestBody();
-$requestBody->setTenantIds(['String', ]);
+$requestBody->setTenantIds(['String', 	]);
 
-
-
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTagsById('tenantTag-id')->assignTag()->post($requestBody);
-
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTags()->byTenantTagId('tenantTag-id')->microsoftGraphManagedTenantsAssignTag()->post($requestBody)->wait();
 
 ```

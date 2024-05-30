@@ -3,7 +3,7 @@ title: "driverApprovalStatus enum type"
 description: "An enum type to represent approval status of a driver."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

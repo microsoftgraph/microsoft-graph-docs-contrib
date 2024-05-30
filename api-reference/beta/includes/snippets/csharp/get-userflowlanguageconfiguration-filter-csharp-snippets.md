@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var languages = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages
-	.Request()
-	.Filter("isEnabled eq true")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "isEnabled eq true";
+});
+
 
 ```

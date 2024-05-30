@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Contacts\Delta\DeltaRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["displayName","jobTitle","mail"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->contacts()->delta()->get($requestConfiguration);
-
+$result = $graphServiceClient->contacts()->delta()->get($requestConfiguration)->wait();
 
 ```

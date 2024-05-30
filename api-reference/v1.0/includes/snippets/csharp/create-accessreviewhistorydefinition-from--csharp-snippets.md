@@ -4,40 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessReviewHistoryDefinition = new AccessReviewHistoryDefinition
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AccessReviewHistoryDefinition
 {
 	DisplayName = "Last quarter's group reviews April 2021",
-	Decisions = new List<AccessReviewHistoryDecisionFilter>()
+	Decisions = new List<AccessReviewHistoryDecisionFilter?>
 	{
 		AccessReviewHistoryDecisionFilter.Approve,
 		AccessReviewHistoryDecisionFilter.Deny,
 		AccessReviewHistoryDecisionFilter.DontKnow,
 		AccessReviewHistoryDecisionFilter.NotReviewed,
-		AccessReviewHistoryDecisionFilter.NotNotified
+		AccessReviewHistoryDecisionFilter.NotNotified,
 	},
 	ReviewHistoryPeriodStartDateTime = DateTimeOffset.Parse("2021-01-01T00:00:00Z"),
 	ReviewHistoryPeriodEndDateTime = DateTimeOffset.Parse("2021-04-30T23:59:59Z"),
-	Scopes = new List<AccessReviewScope>()
+	Scopes = new List<AccessReviewScope>
 	{
 		new AccessReviewQueryScope
 		{
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
 			QueryType = "MicrosoftGraph",
 			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-			QueryRoot = null
+			QueryRoot = null,
 		},
 		new AccessReviewQueryScope
 		{
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
 			QueryType = "MicrosoftGraph",
 			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-			QueryRoot = null
-		}
-	}
+			QueryRoot = null,
+		},
+	},
 };
 
-await graphClient.IdentityGovernance.AccessReviews.HistoryDefinitions
-	.Request()
-	.AddAsync(accessReviewHistoryDefinition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.AccessReviews.HistoryDefinitions.PostAsync(requestBody);
+
 
 ```

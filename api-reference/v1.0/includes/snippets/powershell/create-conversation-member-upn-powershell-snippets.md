@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"User@odata.bind" = "https://graph.microsoft.com/v1.0/users/jacob@contoso.com"
-	VisibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
-	Roles = @(
-		"owner"
-	)
+	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/jacob@contoso.com"
+	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
+	roles = @(
+	"owner"
+)
 }
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params

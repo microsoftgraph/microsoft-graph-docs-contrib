@@ -3,7 +3,7 @@ title: "macOsVppAppAssignedLicense resource type"
 description: "MacOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ MacOS Volume Purchase Program license assignment. This class does not support Cr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |userEmailAddress|String|The user email address.|
 |userId|String|The user ID.|
 |userName|String|The user name.|

@@ -5,29 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestBody = new CertificateBasedAuthConfigurationPostRequestBody();
-$additionalData = [
-'certificateAuthorities' => $certificateAuthorities1 = new ();
-		$certificateAuthorities1->setIsRootAuthority(true);
-
-$		certificateAuthorities1->setCertificate('Binary');
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CertificateBasedAuthConfiguration;
+use Microsoft\Graph\Generated\Models\CertificateAuthority;
 
 
-$certificateAuthoritiesArray []= $certificateAuthorities1;
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new CertificateBasedAuthConfiguration();
+$certificateAuthoritiesCertificateAuthority1 = new CertificateAuthority();
+$certificateAuthoritiesCertificateAuthority1->setIsRootAuthority(true);
+$certificateAuthoritiesCertificateAuthority1->setCertificate(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('Binary')));
+$certificateAuthoritiesArray []= $certificateAuthoritiesCertificateAuthority1;
 $requestBody->setCertificateAuthorities($certificateAuthoritiesArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->organizationById('organization-id')->certificateBasedAuthConfiguration()->post($requestBody);
-
+$result = $graphServiceClient->organization()->byOrganizationId('organization-id')->certificateBasedAuthConfiguration()->post($requestBody)->wait();
 
 ```

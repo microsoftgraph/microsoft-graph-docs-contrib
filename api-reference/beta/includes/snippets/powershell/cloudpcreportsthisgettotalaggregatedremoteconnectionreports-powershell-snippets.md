@@ -4,21 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 
 $params = @{
-	Top = 25
-	Skip = 0
-	Filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
-	Select = @(
-		"CloudPcId"
-		"ManagedDeviceName"
-		"UserPrincipalName"
-		"TotalUsageInHour"
-		"DaysSinceLastSignIn"
-	)
+	top = 25
+	skip = 0
+	filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"TotalUsageInHour"
+"LastActiveTime"
+"PcType"
+"CreatedDate"
+)
 }
 
-Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -BodyParameter $params
+Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -BodyParameter $params
 
 ```

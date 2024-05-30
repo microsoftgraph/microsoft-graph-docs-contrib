@@ -4,11 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
 
-graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Upgrade().Post(context.Background(), nil)
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
+
+requestBody := graphteams.NewUpgradePostRequestBody()
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Teams().ByTeamId("team-id").InstalledApps().ByTeamsAppInstallationId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
 
 
 ```

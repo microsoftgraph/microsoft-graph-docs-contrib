@@ -5,26 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\UsersRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$queryParameters = new UsersRequestBuilderGetQueryParameters();
+$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "endswith(mail,'a@contoso.com')";
 $queryParameters->orderby = ["userPrincipalName"];
 $queryParameters->count = true;
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->users()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->get($requestConfiguration)->wait();
 
 ```

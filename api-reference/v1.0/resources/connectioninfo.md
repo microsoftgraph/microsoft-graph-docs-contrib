@@ -1,9 +1,9 @@
 ---
 title: "connectionInfo resource type"
 description: "The connectionInfo object defines the connection information that is used to communicate with a resource."
-author: "hanki-microsoft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # connectionInfo resource type
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-The connectionInfo object defines the resource locator that is used to communicate with a resource in Azure AD Entitlement Management.
+The connectionInfo object defines the resource locator that is used to communicate with a resource in Microsoft Entra Entitlement Management.
 
 ## Properties
 |Property|Type|Description|
@@ -33,5 +33,3 @@ The following is a JSON representation of the resource.
   "url": "String"
 }
 ```
-
-

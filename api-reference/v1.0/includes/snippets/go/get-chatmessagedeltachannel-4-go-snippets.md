@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
 
 requestDeltatoken := "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4"
 
-requestParameters := &graphconfig.TeamItemChannelItemMessagesMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetQueryParameters{
 	Deltatoken: &requestDeltatoken,
 }
-configuration := &graphconfig.TeamItemChannelItemMessagesMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

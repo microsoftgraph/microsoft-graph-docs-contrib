@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var newPassword = "Cuyo5459";
+// Dependencies
+using Microsoft.Graph.Users.Item.Authentication.Methods.Item.ResetPassword;
 
-await graphClient.Users["{user-id}"].Authentication.PasswordMethods["{passwordAuthenticationMethod-id}"]
-	.ResetPassword(newPassword)
-	.Request()
-	.PostAsync();
+var requestBody = new ResetPasswordPostRequestBody
+{
+	NewPassword = "Cuyo5459",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Authentication.Methods["{authenticationMethod-id}"].ResetPassword.PostAsync(requestBody);
+
 
 ```

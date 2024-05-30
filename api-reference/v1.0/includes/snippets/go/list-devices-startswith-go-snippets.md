@@ -4,29 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdevices "github.com/microsoftgraph/msgraph-sdk-go/devices"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
 
-requestFilter := "startswith(displayName,%20'a')"
+requestFilter := "startswith(displayName, 'a')"
 requestCount := true
 requestTop := int32(1)
 
-requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.DevicesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 	Top: &requestTop,
 	Orderby: [] string {"displayName"},
 }
-configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DevicesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+devices, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```

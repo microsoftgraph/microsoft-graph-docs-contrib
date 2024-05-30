@@ -14,6 +14,7 @@ const authenticationMethodsPolicy = {
   registrationEnforcement: {
     authenticationMethodsRegistrationCampaign: {
         snoozeDurationInDays: 1,
+        enforceRegistrationAfterAllowedSnoozes: true,
         state: 'enabled',
         excludeTargets: [],
         includeTargets: [
@@ -24,6 +25,14 @@ const authenticationMethodsPolicy = {
             }
         ]
     }
+  },
+  reportSuspiciousActivitySettings: {
+      state: 'enabled',
+      includeTarget: {
+          targetType: 'group',
+          id: 'all_users'
+      },
+      voiceReportingCode: 0
   }
 };
 

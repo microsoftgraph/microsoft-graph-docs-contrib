@@ -3,7 +3,7 @@ title: "managedTenant resource type"
 description: "Represent the available operations that interact with the multi-tenant management platform."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

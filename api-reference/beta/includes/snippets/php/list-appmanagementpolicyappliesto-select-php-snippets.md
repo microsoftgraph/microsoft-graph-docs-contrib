@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Policies\AppManagementPolicies\Item\AppliesTo\AppliesToRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AppliesToRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AppliesToRequestBuilderGetQueryParameters();
+$queryParameters = AppliesToRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","appId","displayName","createdDateTime"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get($requestConfiguration);
-
+$result = $graphServiceClient->policies()->appManagementPolicies()->byAppManagementPolicyId('appManagementPolicy-id')->appliesTo()->get($requestConfiguration)->wait();
 
 ```

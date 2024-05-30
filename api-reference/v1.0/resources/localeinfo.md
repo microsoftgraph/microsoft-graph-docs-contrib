@@ -2,8 +2,8 @@
 title: "localeInfo resource type"
 description: "Information about the locale, including the preferred language and country/region, of the signed-in user."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Information about the locale, including the preferred language and country/regio
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

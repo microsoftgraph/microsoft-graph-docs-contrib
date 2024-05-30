@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationOutcome = new EducationPointsOutcome
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new EducationPointsOutcome
 {
+	OdataType = "#microsoft.graph.educationPointsOutcome",
 	Points = new EducationAssignmentPointsGrade
 	{
-		Points = 85f
-	}
+		OdataType = "#microsoft.graph.educationAssignmentPointsGrade",
+		Points = 85.0f,
+	},
 };
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"]
-	.Request()
-	.UpdateAsync(educationOutcome);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"].PatchAsync(requestBody);
+
 
 ```

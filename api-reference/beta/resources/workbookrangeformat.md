@@ -3,7 +3,7 @@ title: "workbookRangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -20,19 +20,19 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookRangeFormat](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |Read properties and relationships of rangeFormat object.|
+|[Get range format](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |Read properties and relationships of rangeFormat object.|
 |[Create workbookRangeBorder](../api/rangeformat-post-borders.md) |[workbookRangeBorder](workbookrangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
 |[List borders](../api/rangeformat-list-borders.md) |[workbookRangeBorder](workbookrangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md)	|Update RangeFormat object. |
+|[Update range format](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md)	|Update RangeFormat object. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
+|columnWidth|double|Gets or sets the width of all columns within the range. If the column widths aren't uniform, null will be returned.|
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
+|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights aren't uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
@@ -46,7 +46,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

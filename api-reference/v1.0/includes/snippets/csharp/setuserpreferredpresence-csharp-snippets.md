@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var availability = "DoNotDisturb";
+// Dependencies
+using Microsoft.Graph.Users.Item.Presence.SetUserPreferredPresence;
 
-var activity = "DoNotDisturb";
+var requestBody = new SetUserPreferredPresencePostRequestBody
+{
+	Availability = "DoNotDisturb",
+	Activity = "DoNotDisturb",
+	ExpirationDuration = TimeSpan.Parse("PT8H"),
+};
 
-var expirationDuration = new Duration("PT8H");
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Users["{user-id}"].Presence.SetUserPreferredPresence.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Presence
-	.SetUserPreferredPresence(availability,activity,expirationDuration)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,11 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"]
-	.Upgrade()
-	.Request()
-	.PostAsync();
+// Dependencies
+using Microsoft.Graph.Beta.Teams.Item.InstalledApps.Item.Upgrade;
+
+var requestBody = new UpgradePostRequestBody
+{
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"].Upgrade.PostAsync(requestBody);
+
 
 ```

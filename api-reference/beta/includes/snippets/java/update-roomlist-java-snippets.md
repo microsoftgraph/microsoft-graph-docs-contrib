@@ -4,28 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 RoomList place = new RoomList();
-place.displayName = "Building 1";
-place.phone = "555-555-0100";
+place.setOdataType("microsoft.graph.roomList");
+place.setDisplayName("Building 1");
+place.setPhone("555-555-0100");
 PhysicalAddress address = new PhysicalAddress();
-address.street = "4567 Main Street";
-address.city = "Buffalo";
-address.state = "NY";
-address.postalCode = "98052";
-address.countryOrRegion = "USA";
-place.address = address;
+address.setStreet("4567 Main Street");
+address.setCity("Buffalo");
+address.setState("NY");
+address.setPostalCode("98052");
+address.setCountryOrRegion("USA");
+place.setAddress(address);
 OutlookGeoCoordinates geoCoordinates = new OutlookGeoCoordinates();
-geoCoordinates.altitude = 0d;
-geoCoordinates.latitude = 47.0d;
-geoCoordinates.longitude = -122.0d;
-geoCoordinates.accuracy = 0d;
-geoCoordinates.altitudeAccuracy = 0d;
-place.geoCoordinates = geoCoordinates;
+geoCoordinates.setAltitude(null);
+geoCoordinates.setLatitude(47d);
+geoCoordinates.setLongitude(-122d);
+geoCoordinates.setAccuracy(null);
+geoCoordinates.setAltitudeAccuracy(null);
+place.setGeoCoordinates(geoCoordinates);
+Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
-graphClient.places("Building1RroomList@contoso.onmicrosoft.com")
-	.buildRequest()
-	.patch(place);
 
 ```

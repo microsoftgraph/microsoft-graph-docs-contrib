@@ -3,7 +3,7 @@ title: "plannerBucketTaskBoardTaskFormat resource type"
 description: "Represents the information used to render a task correctly in the buckets view of a task board."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the information used to render a task correctly in the buckets view of a task board (a view organized by tasks within the buckets they are assigned to). Each [task](plannertask.md) will have one **plannerBucketTaskBoardTaskFormat** object associated with it.
+Represents the information used to render a task correctly in the buckets view of a task board (a view organized by tasks within the buckets they're assigned to). Each [task](plannertask.md) has one **plannerBucketTaskBoardTaskFormat** object associated with it.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Read properties and relationships of **plannerBucketTaskBoardTaskFormat** object.|
-|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)	|Update **plannerBucketTaskBoardTaskFormat** object. |
+|[Get bucket task board format](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Read properties and relationships of **plannerBucketTaskBoardTaskFormat** object.|
+|[Update bucket task board format](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)	|Update **plannerBucketTaskBoardTaskFormat** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. The [format validation](planner-identifiers-disclaimer.md) is done on the service.|
+|id|String| Read-only. ID of the resource. It's 28 characters long and case-sensitive. The [format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |orderHint|String|Hint used to order tasks in the bucket view of the task board. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md).|
 
 ## Relationships
@@ -32,7 +32,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "companyPortalBlockedAction resource type"
 description: "Blocked actions on the company portal as per platform and device ownership types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

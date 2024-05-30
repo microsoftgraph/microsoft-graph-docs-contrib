@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\AllChannels\AllChannelsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AllChannelsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AllChannelsRequestBuilderGetQueryParameters();
+$queryParameters = AllChannelsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "membershipType eq 'shared'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->allChannels()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->allChannels()->get($requestConfiguration)->wait();
 
 ```

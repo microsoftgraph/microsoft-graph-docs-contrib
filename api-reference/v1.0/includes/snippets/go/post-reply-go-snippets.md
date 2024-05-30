@@ -4,12 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "content-value"
 body.SetContent(&content) 
 post.SetBody(body)
@@ -47,7 +58,6 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 conversationId := "conversationId-value"
@@ -60,7 +70,6 @@ changeKey := "changeKey-value"
 post.SetChangeKey(&changeKey) 
 categories := []string {
 	"categories-value",
-
 }
 post.SetCategories(categories)
 id := "id-value"
@@ -69,7 +78,7 @@ inReplyTo := graphmodels.NewPost()
 post.SetInReplyTo(inReplyTo)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"
@@ -85,12 +94,12 @@ attachment.SetId(&id)
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Posts().ByPostId("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

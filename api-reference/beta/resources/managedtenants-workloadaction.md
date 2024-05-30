@@ -3,7 +3,7 @@ title: "workloadAction resource type"
 description: "Represents an action that will be performed for a specific workload."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

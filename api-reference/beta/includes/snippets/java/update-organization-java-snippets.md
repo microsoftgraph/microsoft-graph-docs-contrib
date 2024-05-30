@@ -4,28 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Organization organization = new Organization();
-LinkedList<String> marketingNotificationEmailsList = new LinkedList<String>();
-marketingNotificationEmailsList.add("marketing@contoso.com");
-organization.marketingNotificationEmails = marketingNotificationEmailsList;
+LinkedList<String> marketingNotificationEmails = new LinkedList<String>();
+marketingNotificationEmails.add("marketing@contoso.com");
+organization.setMarketingNotificationEmails(marketingNotificationEmails);
+organization.setOnPremisesSyncEnabled(true);
 PrivacyProfile privacyProfile = new PrivacyProfile();
-privacyProfile.contactEmail = "alice@contoso.com";
-privacyProfile.statementUrl = "https://contoso.com/privacyStatement";
-organization.privacyProfile = privacyProfile;
-LinkedList<String> securityComplianceNotificationMailsList = new LinkedList<String>();
-securityComplianceNotificationMailsList.add("security@contoso.com");
-organization.securityComplianceNotificationMails = securityComplianceNotificationMailsList;
-LinkedList<String> securityComplianceNotificationPhonesList = new LinkedList<String>();
-securityComplianceNotificationPhonesList.add("(123) 456-7890");
-organization.securityComplianceNotificationPhones = securityComplianceNotificationPhonesList;
-LinkedList<String> technicalNotificationMailsList = new LinkedList<String>();
-technicalNotificationMailsList.add("tech@contoso.com");
-organization.technicalNotificationMails = technicalNotificationMailsList;
+privacyProfile.setContactEmail("alice@contoso.com");
+privacyProfile.setStatementUrl("https://contoso.com/privacyStatement");
+organization.setPrivacyProfile(privacyProfile);
+LinkedList<String> securityComplianceNotificationMails = new LinkedList<String>();
+securityComplianceNotificationMails.add("security@contoso.com");
+organization.setSecurityComplianceNotificationMails(securityComplianceNotificationMails);
+LinkedList<String> securityComplianceNotificationPhones = new LinkedList<String>();
+securityComplianceNotificationPhones.add("(123) 456-7890");
+organization.setSecurityComplianceNotificationPhones(securityComplianceNotificationPhones);
+LinkedList<String> technicalNotificationMails = new LinkedList<String>();
+technicalNotificationMails.add("tech@contoso.com");
+organization.setTechnicalNotificationMails(technicalNotificationMails);
+Organization result = graphClient.organization().byOrganizationId("{organization-id}").patch(organization);
 
-graphClient.organization("84841066-274d-4ec0-a5c1-276be684bdd3")
-	.buildRequest()
-	.patch(organization);
 
 ```

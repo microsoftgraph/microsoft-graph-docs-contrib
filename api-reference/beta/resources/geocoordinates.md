@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The geoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 # geoCoordinates resource type
 
@@ -29,7 +29,7 @@ If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item r
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

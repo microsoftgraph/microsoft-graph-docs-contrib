@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeOutlookTasksRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemOutlookTasksRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOutlookTask()
@@ -29,7 +39,8 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Outlook().Tasks().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tasks, err := graphClient.Me().Outlook().Tasks().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Test create"
@@ -14,12 +22,11 @@ descriptionForAdmins := "New scheduled access review"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-scope.SetAdditionalData(additionalData)
+scope := graphmodels.NewAccessReviewQueryScope()
+query := "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+scope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+scope.SetQueryType(&queryType) 
 requestBody.SetScope(scope)
 
 
@@ -31,7 +38,6 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()
@@ -65,7 +71,8 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+definitions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

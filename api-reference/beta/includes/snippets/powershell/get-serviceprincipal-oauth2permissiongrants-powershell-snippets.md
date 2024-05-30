@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
+Get-MgBetaServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
 
 ```

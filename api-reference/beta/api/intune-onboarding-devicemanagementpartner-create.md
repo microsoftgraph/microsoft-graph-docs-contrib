@@ -3,7 +3,7 @@ title: "Create deviceManagementPartner"
 description: "Create a new deviceManagementPartner object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/deviceManagementPartners
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -55,8 +57,6 @@ The following table shows the properties that are required when you create the d
 |singleTenantAppId|String|Partner Single tenant App id|
 |displayName|String|Partner display name|
 |isConfigured|Boolean|Whether device management partner is configured or not|
-|whenPartnerDevicesWillBeRemoved|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed. This will become obselete soon.|
-|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant. This will become obselete soon.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
 |groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) collection|User groups that specifies whether enrollment is through partner.|
@@ -73,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners
 Content-type: application/json
-Content-length: 1140
+Content-length: 995
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -83,18 +83,17 @@ Content-length: 1140
   "singleTenantAppId": "Single Tenant App Id value",
   "displayName": "Display Name value",
   "isConfigured": true,
-  "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
   "groupsRequiringPartnerEnrollment": [
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
@@ -106,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1189
+Content-Length: 1044
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -117,18 +116,17 @@ Content-Length: 1189
   "singleTenantAppId": "Single Tenant App Id value",
   "displayName": "Display Name value",
   "isConfigured": true,
-  "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
   "groupsRequiringPartnerEnrollment": [
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	DisplayName = "PasswordHashSync Rollout Policy"
-	Description = "PasswordHashSync Rollout Policy"
-	IsEnabled = $true
-	IsAppliedToOrganization = $false
+	displayName = "PasswordHashSync Rollout Policy"
+	description = "PasswordHashSync Rollout Policy"
+	isEnabled = $true
+	isAppliedToOrganization = $false
 }
 
 Update-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params

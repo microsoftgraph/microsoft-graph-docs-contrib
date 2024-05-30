@@ -1,10 +1,10 @@
 ---
 title: "inferenceClassification resource type"
-description: "Classification of a user's messages to enable focus on those that are more relevant or important to the user. "
+description: "Classification of a user's messages to enable focus on the messages that are more relevant or important to the user. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
-author: "abheek-das"
+ms.subservice: mail
+author: "SuryaLashmiS"
 ---
 
 # inferenceClassification resource type
@@ -22,8 +22,8 @@ For more information, see [Manage Focused Inbox](manage-focused-inbox.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.|
-|[List overrides](../api/inferenceclassification-list-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) collection| Get the overrides that a user has set up to always classify messages from certain senders in specific ways.|
+|[Create Override](../api/inferenceclassification-post-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.|
+|[List Overrides](../api/inferenceclassification-list-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) collection| Get the overrides that a user has set up to always classify messages from certain senders in specific ways.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,7 +37,7 @@ For more information, see [Manage Focused Inbox](manage-focused-inbox.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

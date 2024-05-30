@@ -3,7 +3,7 @@ title: "Create windowsUniversalAppXContainedApp"
 description: "Create a new windowsUniversalAppXContainedApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -59,6 +59,8 @@ If successful, this method returns a `201 Created` response code and a [windowsU
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "ignored" , "name" : "intune_apps_windowsuniversalappxcontainedapp_create_create_windowsuniversalappxcontainedapp" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps
 Content-type: application/json
@@ -72,6 +74,8 @@ Content-length: 122
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsUniversalAppXContainedApp" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

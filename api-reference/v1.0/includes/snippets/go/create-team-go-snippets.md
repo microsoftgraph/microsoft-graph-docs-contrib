@@ -4,33 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewTeamPutRequestBody()
-additionalData := map[string]interface{}{
-memberSettings := graphmodels.New()
-	allowCreatePrivateChannels := true
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewTeam()
+memberSettings := graphmodels.NewTeamMemberSettings()
+allowCreatePrivateChannels := true
 memberSettings.SetAllowCreatePrivateChannels(&allowCreatePrivateChannels) 
-	allowCreateUpdateChannels := true
+allowCreateUpdateChannels := true
 memberSettings.SetAllowCreateUpdateChannels(&allowCreateUpdateChannels) 
-	requestBody.SetMemberSettings(memberSettings)
-messagingSettings := graphmodels.New()
-	allowUserEditMessages := true
+requestBody.SetMemberSettings(memberSettings)
+messagingSettings := graphmodels.NewTeamMessagingSettings()
+allowUserEditMessages := true
 messagingSettings.SetAllowUserEditMessages(&allowUserEditMessages) 
-	allowUserDeleteMessages := true
+allowUserDeleteMessages := true
 messagingSettings.SetAllowUserDeleteMessages(&allowUserDeleteMessages) 
-	requestBody.SetMessagingSettings(messagingSettings)
-funSettings := graphmodels.New()
-	allowGiphy := true
+requestBody.SetMessagingSettings(messagingSettings)
+funSettings := graphmodels.NewTeamFunSettings()
+allowGiphy := true
 funSettings.SetAllowGiphy(&allowGiphy) 
-giphyContentRating := "strict"
+giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE 
 funSettings.SetGiphyContentRating(&giphyContentRating) 
-	requestBody.SetFunSettings(funSettings)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetFunSettings(funSettings)
 
-graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+team, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgExternalConnectionQuota -ExternalConnectionId $externalConnectionId
+Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 
 ```

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EmailAuthenticationMethod emailAuthenticationMethod = new EmailAuthenticationMethod();
-emailAuthenticationMethod.emailAddress = "kim@contoso.com";
+emailAuthenticationMethod.setEmailAddress("kim@contoso.com");
+EmailAuthenticationMethod result = graphClient.users().byUserId("{user-id}").authentication().emailMethods().byEmailAuthenticationMethodId("{emailAuthenticationMethod-id}").patch(emailAuthenticationMethod);
 
-graphClient.users("kim@contoso.com").authentication().emailMethods("3ddfcfc8-9383-446f-83cc-3ab9be4be18f")
-	.buildRequest()
-	.patch(emailAuthenticationMethod);
 
 ```

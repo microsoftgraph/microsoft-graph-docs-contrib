@@ -13,7 +13,7 @@ const client = Client.init(options);
 const deployment = {
   '@odata.type': '#microsoft.graph.windowsUpdates.deployment',
   settings: {
-    '@odata.type': 'microsoft.graph.windowsUpdates.windowsDeploymentSettings',
+    '@odata.type': 'microsoft.graph.windowsUpdates.deploymentSettings',
     monitoring: {
       monitoringRules: [
         {

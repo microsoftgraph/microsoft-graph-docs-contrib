@@ -3,7 +3,7 @@ title: printTaskDefinition resource type
 description: Represents a task that can be triggered when various events occur within Universal Print.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

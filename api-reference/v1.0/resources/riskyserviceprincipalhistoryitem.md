@@ -1,9 +1,9 @@
 ---
 title: "riskyServicePrincipalHistoryItem resource type"
-description: "Represents the risk history of Azure AD service principals"
+description: "Represents the risk history of Microsoft Entra service principals"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk history of an Azure AD service principal as determined by Azure AD Identity Protection. Inherits from [riskyServicePrincipal](riskyserviceprincipal.md).
+Represents the risk history of a Microsoft Entra service principal as determined by Microsoft Entra ID Protection. Inherits from [riskyServicePrincipal](riskyserviceprincipal.md).
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List history](../api/riskyserviceprincipal-list-history.md) | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Get the risk history of an Azure AD service principal.|
+|[List history](../api/riskyserviceprincipal-list-history.md) | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Get the risk history of a Microsoft Entra service principal.|
 
 
 ## Properties

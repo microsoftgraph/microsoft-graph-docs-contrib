@@ -4,16 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewMailFolder()
-additionalData := map[string]interface{}{
-	"filterQuery" : "contains(subject, 'Analytics')", 
-}
-requestBody.SetAdditionalData(additionalData)
+filterQuery := "contains(subject, 'Analytics')"
+requestBody.SetFilterQuery(&filterQuery) 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+mailFolders, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

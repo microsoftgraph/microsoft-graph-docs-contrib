@@ -4,15 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewTenantCustomizedInformation()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsmanagedtenants "github.com/microsoftgraph/msgraph-beta-sdk-go/models/managedtenants"
+	  //other-imports
+)
+
+requestBody := graphmodelsmanagedtenants.NewTenantCustomizedInformation()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
 
-tenantContactInformation := graphmodels.NewTenantContactInformation()
+tenantContactInformation := graphmodelsmanagedtenants.NewTenantContactInformation()
 name := "String"
 tenantContactInformation.SetName(&name) 
 title := "String"
@@ -24,15 +32,15 @@ tenantContactInformation.SetPhone(&phone)
 notes := "String"
 tenantContactInformation.SetNotes(&notes) 
 
-contacts := []graphmodels.TenantContactInformationable {
+contacts := []graphmodelsmanagedtenants.TenantContactInformationable {
 	tenantContactInformation,
-
 }
 requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+tenantsCustomizedInformation, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformation().ByTenantCustomizedInformationId("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

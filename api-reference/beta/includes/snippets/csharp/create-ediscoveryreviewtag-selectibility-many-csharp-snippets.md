@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ediscoveryReviewTag = new Microsoft.Graph.Security.EdiscoveryReviewTag
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new EdiscoveryReviewTag
 {
 	DisplayName = "My tag API",
 	Description = "Use Graph API to create tags",
-	ChildSelectability = Microsoft.Graph.Security.ChildSelectability.Many
+	ChildSelectability = ChildSelectability.Many,
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Tags
-	.Request()
-	.AddAsync(ediscoveryReviewTag);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Tags.PostAsync(requestBody);
+
 
 ```

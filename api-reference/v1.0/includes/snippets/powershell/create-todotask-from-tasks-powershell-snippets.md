@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	Title = "A new task"
-	Categories = @(
-		"Important"
-	)
-	LinkedResources = @(
-		@{
-			WebUrl = "http://microsoft.com"
-			ApplicationName = "Microsoft"
-			DisplayName = "Microsoft"
-		}
-	)
+	title = "A new task"
+	categories = @(
+	"Important"
+)
+linkedResources = @(
+	@{
+		webUrl = "http://microsoft.com"
+		applicationName = "Microsoft"
+		displayName = "Microsoft"
+	}
+)
 }
 
 # A UPN can also be used as -UserId.

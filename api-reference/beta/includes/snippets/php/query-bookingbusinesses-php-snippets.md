@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Solutions\BookingBusinesses\BookingBusinessesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new BookingBusinessesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new BookingBusinessesRequestBuilderGetQueryParameters();
+$queryParameters = BookingBusinessesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->query = "Adventure";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->bookingBusinesses()->get($requestConfiguration);
-
+$result = $graphServiceClient->solutions()->bookingBusinesses()->get($requestConfiguration)->wait();
 
 ```

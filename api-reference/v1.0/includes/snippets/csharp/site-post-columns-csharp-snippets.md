@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var columnDefinition = new ColumnDefinition
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ColumnDefinition
 {
 	Description = "test",
 	EnforceUniqueValues = false,
@@ -18,12 +21,12 @@ var columnDefinition = new ColumnDefinition
 		AllowMultipleLines = false,
 		AppendChangesToExistingText = false,
 		LinesForEditing = 0,
-		MaxLength = 255
-	}
+		MaxLength = 255,
+	},
 };
 
-await graphClient.Sites["{site-id}"].Columns
-	.Request()
-	.AddAsync(columnDefinition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].Columns.PostAsync(requestBody);
+
 
 ```

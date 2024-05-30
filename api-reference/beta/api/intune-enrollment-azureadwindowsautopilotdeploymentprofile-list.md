@@ -3,7 +3,7 @@ title: "List azureADWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the azureADWindowsAutopilotDeploymentProfile objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [azureADWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +40,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1564
+Content-Length: 2020
 
 {
   "value": [
@@ -70,6 +72,7 @@ Content-Length: 1564
       "displayName": "Display Name value",
       "description": "Description value",
       "language": "Language value",
+      "locale": "Locale value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "outOfBoxExperienceSettings": {
@@ -80,6 +83,15 @@ Content-Length: 1564
         "deviceUsageType": "shared",
         "skipKeyboardSelectionPage": true,
         "hideEscapeLink": true
+      },
+      "outOfBoxExperienceSetting": {
+        "@odata.type": "microsoft.graph.outOfBoxExperienceSetting",
+        "privacySettingsHidden": true,
+        "eulaHidden": true,
+        "userType": "standard",
+        "deviceUsageType": "shared",
+        "keyboardSelectionPageSkipped": true,
+        "escapeLinkHidden": true
       },
       "enrollmentStatusScreenSettings": {
         "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -92,9 +104,11 @@ Content-Length: 1564
         "allowDeviceUseOnInstallFailure": true
       },
       "extractHardwareHash": true,
+      "hardwareHashExtractionEnabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
       "enableWhiteGlove": true,
+      "preprovisioningAllowed": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],

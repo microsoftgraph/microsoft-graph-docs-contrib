@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Credit Rubric"
@@ -40,7 +48,6 @@ rubricLevel1.SetDescription(description)
 levels := []graphmodels.RubricLevelable {
 	rubricLevel,
 	rubricLevel1,
-
 }
 requestBody.SetLevels(levels)
 
@@ -72,7 +79,6 @@ rubricCriterion1.SetDescription(description)
 criteria := []graphmodels.RubricCriterionable {
 	rubricCriterion,
 	rubricCriterion1,
-
 }
 rubricQuality.SetCriteria(criteria)
 rubricQuality1 := graphmodels.NewRubricQuality()
@@ -102,18 +108,17 @@ rubricCriterion1.SetDescription(description)
 criteria := []graphmodels.RubricCriterionable {
 	rubricCriterion,
 	rubricCriterion1,
-
 }
 rubricQuality1.SetCriteria(criteria)
 
 qualities := []graphmodels.RubricQualityable {
 	rubricQuality,
 	rubricQuality1,
-
 }
 requestBody.SetQualities(qualities)
 
-result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+rubrics, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
 
 
 ```

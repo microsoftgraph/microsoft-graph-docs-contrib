@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityProtection\RiskyServicePrincipals\ConfirmCompromised\ConfirmCompromisedPostRequestBody;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConfirmCompromisedPostRequestBody();
-$requestBody->setServicePrincipalIds(['9089a539-a539-9089-39a5-899039a58990', ]);
+$requestBody->setServicePrincipalIds(['9089a539-a539-9089-39a5-899039a58990', 	]);
 
-
-
-$graphServiceClient->identityProtection()->riskyServicePrincipals()->confirmCompromised()->post($requestBody);
-
+$graphServiceClient->identityProtection()->riskyServicePrincipals()->confirmCompromised()->post($requestBody)->wait();
 
 ```

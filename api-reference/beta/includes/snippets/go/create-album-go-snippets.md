@@ -4,31 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewBundlesPostRequestBody()
-additionalData := map[string]interface{}{
-	"name" : "My Day at the Beach", 
-	"@microsoft.graph.conflictBehavior" : "rename", 
-bundle := graphmodels.New()
-album := graphmodels.New()
-	bundle.SetAlbum(album)
-	requestBody.SetBundle(bundle)
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewDriveItem()
+name := "My Day at the Beach"
+requestBody.SetName(&name) 
+bundle := graphmodels.NewBundle()
+album := graphmodels.NewAlbum()
+bundle.SetAlbum(album)
+requestBody.SetBundle(bundle)
 
 
- := graphmodels.New()
+driveItem := graphmodels.NewDriveItem()
 id := "1234asdf"
-.SetId(&id) 
+driveItem.SetId(&id) 
 
-	children := []graphmodels.Objectable {
-		,
-
-	}
+children := []graphmodels.DriveItemable {
+	driveItem,
+}
+requestBody.SetChildren(children)
+additionalData := map[string]interface{}{
+	"microsoftGraphConflictBehavior" : "rename", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Drive().Bundles().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+bundles, err := graphClient.Drives().ByDriveId("drive-id").Bundles().Post(context.Background(), requestBody, nil)
 
 
 ```

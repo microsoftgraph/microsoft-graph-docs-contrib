@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	DisplayName = "Important from partner"
-	Actions = @{
-		MarkImportance = "high"
+	displayName = "Important from partner"
+	actions = @{
+		markImportance = "high"
 	}
 }
 

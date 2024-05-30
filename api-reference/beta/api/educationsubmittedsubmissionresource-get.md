@@ -1,10 +1,9 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
-
-description: "Retrieve a submitted resource. This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
+description: "Retrieve a submitted resource."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -16,16 +15,15 @@ Namespace: microsoft.graph
 
 Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
-Resources will be available to a teacher or an application with application permissions after a student submits it, and will be available to the student after the teacher releases the submission. Note that teachers can leave notes in some resources.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission. Note that teachers can leave notes in some resources.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+<!-- { "blockType": "permissions", "name": "educationsubmittedsubmissionresource_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmittedsubmissionresource-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,26 +38,26 @@ This method supports the `$select` OData query parameters to help customize the 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "get_educationsubmittedsubmissionresource",
   "sampleKeys": ["11021", "19002", "850f51b7", "f2387c3b-ec39-4bf2-a399-d7242677f024"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

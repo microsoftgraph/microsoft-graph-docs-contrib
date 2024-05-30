@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewUpdateAlertsPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphsecurity.NewUpdateAlertsPostRequestBody()
 
 
 alert := graphmodels.NewAlert()
@@ -17,7 +26,6 @@ closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 alert.SetClosedDateTime(&closedDateTime) 
 comments := []string {
 	"String",
-
 }
 alert.SetComments(comments)
 feedback := graphmodels.NewAlertFeedback()
@@ -34,7 +42,6 @@ status.SetAdditionalData(additionalData)
 alert.SetStatus(status)
 tags := []string {
 	"String",
-
 }
 alert.SetTags(tags)
 vendorInformation := graphmodels.NewSecurityVendorInformation()
@@ -44,13 +51,13 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 alert.SetVendorInformation(vendorInformation)
 
-value := []graphmodels.Objectable {
+value := []graphmodels.Alertable {
 	alert,
-
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+updateAlerts, err := graphClient.Security().Alerts().UpdateAlerts().PostAsUpdateAlertsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

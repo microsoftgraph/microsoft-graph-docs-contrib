@@ -3,7 +3,7 @@ title: "managedDeviceComplianceTrend resource type"
 description: "Represents a trend of compliant and non-compliant devices for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managedDeviceComplianceTrends](../api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md)|[microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) collection|Get a list of the [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) objects and their properties.|
-|[Get managedDeviceComplianceTrend](../api/managedtenants-manageddevicecompliancetrend-get.md)|[microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md)|Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) object.|
+|[List managed device compliance trend](../api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md)|[microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) collection|Get a list of the [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) objects and their properties.|
+|[Get managed device compliance trend](../api/managedtenants-manageddevicecompliancetrend-get.md)|[microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md)|Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,14 +32,14 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 |inGracePeriodDeviceCount|Int32|The number of devices that are in a grace period status. Required. Read-only.|
 |noncompliantDeviceCount|Int32|The number of devices that are in a non-compliant status. Required. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 |unknownDeviceCount|Int32|The number of devices in an unknown status. Required. Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

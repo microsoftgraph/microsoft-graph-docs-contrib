@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.users.delta.DeltaRequestBuilder deltaRequestBuilder = new com.microsoft.graph.users.delta.DeltaRequestBuilder("https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7", graphClient.getRequestAdapter());
+com.microsoft.graph.users.delta.DeltaGetResponse result = deltaRequestBuilder.get();
+
+
+```

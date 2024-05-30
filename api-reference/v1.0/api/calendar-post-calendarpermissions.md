@@ -3,7 +3,7 @@ title: "Create calendarPermission"
 description: "Create the calendarpermission object."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Create a [calendarPermission](../resources/calendarpermission.md) resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -25,7 +27,7 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 Create the specified permissions of a user's primary calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 
@@ -34,7 +36,7 @@ POST /users/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of a group calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -42,7 +44,7 @@ POST /groups/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of the user calendar that contains the identified event:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -53,7 +55,7 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -68,11 +70,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
-<!-- { 
+<!-- {
   "blockType": "request",
   "name": "create_calendarpermissions"
 }-->
@@ -83,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 {
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     },
     "isInsideOrganization": true,
     "isRemovable": true,
@@ -96,27 +98,39 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-calendarpermissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendarpermissions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-calendarpermissions-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-calendarpermissions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-calendarpermissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-calendarpermissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendarpermissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-calendarpermissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-calendarpermissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-calendarpermissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -143,7 +157,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     }
 }
 ```

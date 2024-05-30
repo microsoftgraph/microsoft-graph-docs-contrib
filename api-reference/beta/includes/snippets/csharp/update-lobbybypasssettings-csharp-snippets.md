@@ -4,18 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var onlineMeeting = new OnlineMeeting
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new OnlineMeeting
 {
 	LobbyBypassSettings = new LobbyBypassSettings
 	{
-		IsDialInBypassEnabled = true
-	}
+		IsDialInBypassEnabled = true,
+	},
 };
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"]
-	.Request()
-	.UpdateAsync(onlineMeeting);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
+
 
 ```

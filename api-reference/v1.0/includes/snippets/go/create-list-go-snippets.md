@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewList()
 displayName := "Books"
@@ -26,7 +34,6 @@ columnDefinition1.SetNumber(number)
 columns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
 	columnDefinition1,
-
 }
 requestBody.SetColumns(columns)
 list := graphmodels.NewListInfo()
@@ -34,7 +41,8 @@ template := "genericList"
 list.SetTemplate(&template) 
 requestBody.SetList(list)
 
-result, err := graphClient.SitesById("site-id").Lists().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+lists, err := graphClient.Sites().BySiteId("site-id").Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

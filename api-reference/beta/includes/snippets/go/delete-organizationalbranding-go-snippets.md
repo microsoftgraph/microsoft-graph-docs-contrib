@@ -4,16 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewBrandingDeleteRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphorganization "github.com/microsoftgraph/msgraph-beta-sdk-go/organization"
+	  //other-imports
+)
+
+requestBody := graphorganization.NewBrandingDeleteRequestBody()
 additionalData := map[string]interface{}{
 	"id" : "0", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.OrganizationById("organization-id").Branding().Delete(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Organization().ByOrganizationId("organization-id").Branding().Delete(context.Background(), requestBody, nil)
 
 
 ```

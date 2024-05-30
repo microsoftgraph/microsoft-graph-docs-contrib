@@ -20,9 +20,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get ediscoveryCaseSettings](../api/security-ediscoverycasesettings-get.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Read the properties and relationships of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
-|[Update ediscoveryCaseSettings](../api/security-ediscoverycasesettings-update.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Update the properties of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
-|[resetToDefault](../api/security-ediscoverycasesettings-resettodefault.md)|None|Reset all settings to the default values.|
+|[Get settings](../api/security-ediscoverycasesettings-get.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Read the properties and relationships of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
+|[Update settings](../api/security-ediscoverycasesettings-update.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Update the properties of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
+|[Reset settings to default](../api/security-ediscoverycasesettings-resettodefault.md)|None|Reset all settings to the default values.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

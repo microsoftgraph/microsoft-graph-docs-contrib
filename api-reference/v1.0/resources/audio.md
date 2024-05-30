@@ -3,7 +3,7 @@ author: "ananmishr"
 ms.date: 09/10/2017
 title: Audio
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 description: "The Audio resource groups audio-related properties on an item into a single structure."
 doc_type: resourcePageType
 ---

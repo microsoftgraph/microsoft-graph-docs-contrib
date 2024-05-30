@@ -3,7 +3,7 @@ title: "metricTimeSeriesDataPoint resource type"
 description: "Metric Time series data point"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

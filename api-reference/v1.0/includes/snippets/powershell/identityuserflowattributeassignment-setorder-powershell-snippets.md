@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	NewAssignmentOrder = @{
-		Order = @(
-			"City"
-			"extension_GUID_ShoeSize"
-		)
-	}
+	newAssignmentOrder = @{
+		order = @(
+		"City"
+	"extension_GUID_ShoeSize"
+)
+}
 }
 
 Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params

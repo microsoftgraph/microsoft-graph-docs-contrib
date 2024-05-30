@@ -4,7 +4,7 @@ title: termColumn resource type
 description: The termColumn resource indicates that the column's values contains taxonomy data.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # termColumn resource type
@@ -18,7 +18,7 @@ Indicates that the column's values contains taxonomy data.
 
 | Property               | Type                           | Description                                                               |
 | :--------------------- | :----------------------------- | :------------------------------------------------------------------------ |
-| allowMultipleValues    | Boolean                        | Specifies whether the column will allow more than one value               |
+| allowMultipleValues    | Boolean                        | Specifies whether the column allows more than one value               |
 | showFullyQualifiedName | Boolean                        | Specifies whether to display the entire term path or only the term label. |
 
 ## Relationships
@@ -30,7 +30,7 @@ Indicates that the column's values contains taxonomy data.
 
 ## JSON representation
 
-Here is a JSON representation of a **termColumn** resource.
+Here's a JSON representation of a **termColumn** resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.termColumn" } -->
 

@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationSchool = new EducationSchool
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new EducationSchool
 {
+	OdataType = "#microsoft.graph.educationSchool",
 	DisplayName = "String",
 	Description = "String",
 	ExternalSource = EducationExternalSource.Sis,
@@ -23,14 +27,16 @@ var educationSchool = new EducationSchool
 	Fax = "String",
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
 	Address = new PhysicalAddress
 	{
-	}
+		OdataType = "microsoft.graph.physicalAddress",
+	},
 };
 
-await graphClient.Education.Schools
-	.Request()
-	.AddAsync(educationSchool);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Schools.PostAsync(requestBody);
+
 
 ```

@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.EducationUserItemAssignmentsRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  grapheducation "github.com/microsoftgraph/msgraph-sdk-go/education"
+	  //other-imports
+)
+
+requestParameters := &grapheducation.EducationUserItemAssignmentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"submissions"},
 }
-configuration := &graphconfig.EducationUserItemAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.EducationUserItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().UsersById("educationUser-id").Assignments().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+assignments, err := graphClient.Education().Users().ByEducationUserId("educationUser-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

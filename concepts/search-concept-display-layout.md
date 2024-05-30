@@ -4,7 +4,8 @@ description: "Use the Microsoft Search API in Microsoft Graph to display search 
 author: "yiwenwang"
 ms.author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
+#Customer intent: As a developer, I want to use the Microsoft Search API to manage layout templates for search results, so that I can customize the display and behavior of different types of search results on search result pages.
 ---
 
 # Use the Microsoft Search API to manage layout templates for search results
@@ -73,7 +74,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXG",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17397",
                                 "Title": "[SM00186] Number of tests - Liquid",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -85,7 +86,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXP",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17398",
                                 "Title": "[SM00186] Number of tests - Liquid 2",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -97,7 +98,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXG",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17399",
                                 "Title": "[SM00186] Number of tests - Liquid 3",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -305,7 +306,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXG",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17397",
                                             "Title": "[SM00186] Number of tests - Liquid",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -317,7 +318,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXP",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17398",
                                             "Title": "[SM00186] Number of tests - Liquid 2",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -329,7 +330,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXG",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17399",
                                             "Title": "[SM00186] Number of tests - Liquid 3",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -456,7 +457,7 @@ The following example shows how to use Adaptive Card templating to render search
 </html>
 ```
 
-## See also
+## Related content
 
 - [Create a layout to customize search results](/microsoftsearch/customize-results-layout)
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

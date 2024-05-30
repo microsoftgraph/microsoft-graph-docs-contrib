@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	Name = "Contoso HR Service Tickets"
-	Description = "Connection to index HR service tickets"
+	name = "Contoso HR Service Tickets"
+	description = "Connection to index HR service tickets"
 }
 
-Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
+Update-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
 
 ```

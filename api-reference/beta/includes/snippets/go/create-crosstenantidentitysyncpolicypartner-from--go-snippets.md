@@ -4,20 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewIdentitySynchronizationPutRequestBody()
-additionalData := map[string]interface{}{
-	"displayName" : "Fabrikam", 
-userSyncInbound := graphmodels.New()
-	isSyncAllowed := true
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewCrossTenantIdentitySyncPolicyPartner()
+displayName := "Fabrikam"
+requestBody.SetDisplayName(&displayName) 
+userSyncInbound := graphmodels.NewCrossTenantUserSyncInbound()
+isSyncAllowed := true
 userSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 
-	requestBody.SetUserSyncInbound(userSyncInbound)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetUserSyncInbound(userSyncInbound)
 
-graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+identitySynchronization, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
 
 
 ```

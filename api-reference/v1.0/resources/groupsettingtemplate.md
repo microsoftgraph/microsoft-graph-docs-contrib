@@ -2,8 +2,9 @@
 title: "groupSettingTemplate resource type"
 description: "Group setting templates represent system-defined settings available to the tenant."
 ms.localizationpriority: medium
-author: "psaffaie"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available **groupSettingTemplates**, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific group settings. Currently, the only templates available for groups apply to Microsoft 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
-For more information about each setting, see [group (directory) settings](/graph/group-directory-settings).
+For more information about the Microsoft 365 groups-specific settings, see [group (directory) settings](/graph/group-directory-settings).
 
 > [!TIP]
 > The `/beta` version of this resource is named [directorySettingTemplate](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta&preserve-view=true).
@@ -22,8 +23,8 @@ For more information about each setting, see [group (directory) settings](/graph
 
 | Method                                                           | Return Type                                                   | Description                                                                             |
 | :--------------------------------------------------------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
-| [Get groupSettingTemplate](../api/groupsettingtemplate-get.md)   | [groupSettingTemplate](groupsettingtemplate.md)               | Read the specific properties of one of the system defined groupSettingTemplate objects. |
-| [List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) | List all of the system defined groupSettingTemplate objects.                            |
+| [Get group setting template](../api/groupsettingtemplate-get.md)   | [groupSettingTemplate](groupsettingtemplate.md)               | Read the specific properties of one of the system defined groupSettingTemplate objects. |
+| [List group setting templates](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) | List all of the system defined groupSettingTemplate objects.                            |
 
 ## Properties
 
@@ -40,7 +41,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

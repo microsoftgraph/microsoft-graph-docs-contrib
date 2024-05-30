@@ -3,7 +3,7 @@ title: "macOSIncludedApp resource type"
 description: "Contains properties of an included .app in a MacOS app."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Contains properties of an included .app in a MacOS app.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bundleId|String|The CFBundleIdentifier.|
-|bundleVersion|String|The CFBundleVersion.|
+|bundleId|String|The bundleId of the app. This maps to the CFBundleIdentifier in the app's bundle configuration.|
+|bundleVersion|String|The version of the app. This maps to the CFBundleShortVersion in the app's bundle configuration.|
 
 ## Relationships
 None

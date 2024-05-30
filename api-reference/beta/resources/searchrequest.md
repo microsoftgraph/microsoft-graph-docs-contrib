@@ -3,7 +3,7 @@ title: "searchRequest resource type"
 description: "The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 A search request formatted in a JSON blob. 
 
-The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#see-also) of search requests on various resources.
+The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#related-content) of search requests on various resources.
 
 > [!NOTE]
 > Be aware of [known limitations](search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.
@@ -39,7 +39,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |region|string|Required for searches that use application permissions. Represents the geographic location for the search. For details, see [Get the region value](/graph/search-concept-searchAll). |
 |resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 |sharePointOneDriveOptions|[sharePointOneDriveOptions](sharePointOneDriveOptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
-|size|Int32|The size of the page to be retrieved. Optional.|
+|size|Int32|The size of the page to be retrieved. The maximum value is 500. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |trimDuplicates|Boolean|Indicates whether to trim away the duplicate SharePoint files from search results. Default value is `false`. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
@@ -78,7 +78,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Use query templates](/graph/search-concept-query-template)
 - [Search mail messages](/graph/search-concept-messages)
 - [Search calendar events](/graph/search-concept-events)

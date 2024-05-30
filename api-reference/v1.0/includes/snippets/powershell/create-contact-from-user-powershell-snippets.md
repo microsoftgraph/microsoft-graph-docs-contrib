@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
-	GivenName = "Pavel"
-	Surname = "Bansky"
-	EmailAddresses = @(
+	givenName = "Pavel"
+	surname = "Bansky"
+	emailAddresses = @(
 		@{
-			Address = "pavelb@fabrikam.onmicrosoft.com"
-			Name = "Pavel Bansky"
+			address = "pavelb@contoso.com"
+			name = "Pavel Bansky"
 		}
 	)
-	BusinessPhones = @(
-		"+1 732 555 0102"
-	)
+	businessPhones = @(
+	"+1 732 555 0102"
+)
 }
 
 # A UPN can also be used as -UserId.

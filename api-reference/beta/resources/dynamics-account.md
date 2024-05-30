@@ -1,15 +1,14 @@
 ---
-title: "accounts resource type"
-description: "Represents an account object in Dynamics 365 Business Central."
-services: "project-madeira"
-documentationcenter: ''
-author: "SusanneWindfeldPedersen"
+title: account resource type
+description: Represents an account object in Dynamics 365 Business Central.
+services: project-madeira
+author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: d365-business-central
 doc_type: resourcePageType
 ---
 
-# accounts resource type
+# account resource type
 
 Namespace: microsoft.graph
 
@@ -21,12 +20,12 @@ Represents an account object in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get accounts](../api/dynamics-account-get.md)|accounts|Get accounts object.|
+|[Get account](../api/dynamics-account-get.md)|account|Get accounts object.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|blocked|Boolean|Specifies that entries cannot be posted to the G/L account. `True` indicates that the account is blocked and posting is not allowed.|
+|blocked|Boolean|Specifies that entries can't be posted to the G/L account. `True` indicates that the account is blocked and posting isn't allowed.|
 |category|String|Specifies the category of the G/L account. Maximum size is 20.|
 |displayName|String|Specifies the name of the G/L account. Maximum size is 50.|
 |id|GUID|The unique identifier for the account.|
@@ -39,12 +38,11 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 
 ```json
 {
-  "blocked": "Boolean",  
+  "blocked": "Boolean",
   "category": "String",
   "displayName": "String",
   "id": "GUID",
@@ -53,5 +51,3 @@ The following is a JSON representation of the resource.
   "subCategory": "String"
 }
 ```
-
-

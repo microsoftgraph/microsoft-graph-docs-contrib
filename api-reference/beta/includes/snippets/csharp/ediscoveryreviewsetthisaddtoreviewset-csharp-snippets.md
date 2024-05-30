@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var search = new Microsoft.Graph.Security.EdiscoverySearch
+// Dependencies
+using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityAddToReviewSet;
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new AddToReviewSetPostRequestBody
 {
-	Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+	Search = new EdiscoverySearch
+	{
+		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
+	},
+	AdditionalDataOptions = AdditionalDataOptions.LinkedFiles,
 };
 
-var additionalDataOptions = Microsoft.Graph.Security.AdditionalDataOptions.LinkedFiles;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].MicrosoftGraphSecurityAddToReviewSet.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"]
-	.AddToReviewSet(search,additionalDataOptions)
-	.Request()
-	.PostAsync();
 
 ```

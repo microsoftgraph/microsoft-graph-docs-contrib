@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\ServicePrincipals\Item\ServicePrincipalItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new ServicePrincipalRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new ServicePrincipalRequestBuilderGetQueryParameters();
-$queryParameters->select = ["id","appId","displayName","appRoles","oauth2PermissionScopes"];
-
+$requestConfiguration = new ServicePrincipalItemRequestBuilderGetRequestConfiguration();
+$queryParameters = ServicePrincipalItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["id","appId","displayName","appRoles","oauth2PermissionScopes","resourceSpecificApplicationPermissions"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->get($requestConfiguration)->wait();
 
 ```

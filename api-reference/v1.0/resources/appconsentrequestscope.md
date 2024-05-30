@@ -1,9 +1,9 @@
 ---
 title: "appConsentRequestScope resource type"
 description: "Details of the dynamic permission scopes for which access is requested."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

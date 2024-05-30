@@ -5,22 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestBody = new AuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.emailAuthenticationMethodConfiguration');
-
-$additionalData = [
-'allowExternalIdToUseEmailOtp' => 'disabled', 
-];
-$requestBody->setAdditionalData($additionalData);
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EmailAuthenticationMethodConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\ExternalEmailOtpState;
 
 
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new EmailAuthenticationMethodConfiguration();
+$requestBody->setOdataType('#microsoft.graph.emailAuthenticationMethodConfiguration');
+$requestBody->setAllowExternalIdToUseEmailOtp(new ExternalEmailOtpState('disabled'));
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody)->wait();
 
 ```

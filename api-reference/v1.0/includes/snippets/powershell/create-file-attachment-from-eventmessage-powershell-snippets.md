@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	"@odata.type" = "microsoft.graph.fileAttachment"
-	Name = "name-value"
-	ContentType = "contentType-value"
-	IsInline = $false
-	ContentLocation = "contentLocation-value"
-	ContentBytes = "base64-contentBytes-value"
+	name = "name-value"
+	contentType = "contentType-value"
+	isInline = $false
+	contentLocation = "contentLocation-value"
+	contentBytes = "base64-contentBytes-value"
 }
 
 # A UPN can also be used as -UserId.

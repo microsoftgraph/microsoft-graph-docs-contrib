@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var application = new Application
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Application
 {
-	DisplayName = "New display name"
+	DisplayName = "New display name",
 };
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  grapheducation "github.com/microsoftgraph/msgraph-beta-sdk-go/education"
+	  //other-imports
+)
 
 
 requestDeltatoken := "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"
 
-requestParameters := &graphconfig.DeltaRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.EducationClasseItemAssignmentCategoriesDeltaWithRequestBuilderGetQueryParameters{
 	Deltatoken: &requestDeltatoken,
 }
-configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.EducationClasseItemAssignmentCategoriesDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategories().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").AssignmentCategories().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
+New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
 
 ```

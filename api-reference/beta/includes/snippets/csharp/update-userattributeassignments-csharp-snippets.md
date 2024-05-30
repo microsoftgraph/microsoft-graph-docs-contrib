@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new IdentityUserFlowAttributeAssignment
 {
-	UserInputType = IdentityUserFlowAttributeInputType.TextBox
+	UserInputType = IdentityUserFlowAttributeInputType.TextBox,
 };
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments["{identityUserFlowAttributeAssignment-id}"]
-	.Request()
-	.UpdateAsync(identityUserFlowAttributeAssignment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments["{identityUserFlowAttributeAssignment-id}"].PatchAsync(requestBody);
+
 
 ```

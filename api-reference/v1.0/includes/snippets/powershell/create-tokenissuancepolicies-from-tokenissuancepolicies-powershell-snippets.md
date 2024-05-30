@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	Definition = @(
-		"definition-value"
-	)
-	DisplayName = "displayName-value"
-	IsOrganizationDefault = $true
+	definition = @(
+	"definition-value"
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
 }
 
 New-MgPolicyTokenIssuancePolicy -BodyParameter $params

@@ -31,7 +31,7 @@ The container for a [custodian's](ediscovery-custodian.md) group.
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **unifiedGroupSource**.|
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
 |displayName|String|The display name of the unified group - This is the name of the group.|
-|id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
+|id|String|The ID of the **unifiedGroupSource**. This isn't the ID of the actual group.|
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ### sourceType values
@@ -51,7 +51,7 @@ Types of source related to the user. Includes mailbox and site both by default.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -63,20 +63,11 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('2192ca408ea2410eba3bec8ae873be6b')/unifiedGroupSources",
-    "value": [
-        {
-            "displayName": "Developers group",
-            "createdDateTime": "2020-10-27T15:14:11.0048392Z",
-            "id": "33434233-3030-3739-3043-393039324633",
-            "includedSources": "mailbox,site",
-            "createdBy": {
-                "user": {
-                    "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-                    "displayName": null
-                }
-            }
-        }
-    ]
+    "@odata.type": "#microsoft.graph.ediscovery.unifiedGroupSource",
+    "displayName": "Developers group",
+    "createdDateTime": "2020-10-27T15:14:11.0048392Z",
+    "id": "33434233-3030-3739-3043-393039324633",
+    "includedSources": "mailbox,site",
+    "createdBy": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```

@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tiIndicator = new TiIndicator
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new TiIndicator
 {
 	AdditionalInformation = "additionalInformation-after-update",
 	Confidence = 42,
-	Description = "description-after-update"
+	Description = "description-after-update",
 };
 
-await graphClient.Security.TiIndicators["{tiIndicator-id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.UpdateAsync(tiIndicator);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.TiIndicators["{tiIndicator-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+});
+
 
 ```

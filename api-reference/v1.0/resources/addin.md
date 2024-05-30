@@ -1,9 +1,9 @@
 ---
 title: "addIn resource type"
-description: "Here is a JSON representation of the resource."
+description: "Defines custom behavior that a consuming service can use to call an app in specific contexts."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -11,18 +11,18 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/) for its "FileHandler" functionality. The addIn resource type lets services like Microsoft 365 call the application in the context of a document the user is working on.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|guid||
-|properties|[keyValue](keyvalue.md) collection||
-|type|string||
+|id|GUID|The unique identifier for the **addIn** object.|
+|properties|[keyValue](keyvalue.md) collection|The collection of key-value pairs that define parameters that the consuming service can use or call. You must specify this property when performing a POST or a PATCH operation on the **addIns** collection. Required.|
+|type|string|The unique name for the functionality exposed by the app. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

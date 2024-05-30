@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewConnectedOrganization()
 displayName := "Connected organization name"
@@ -14,22 +22,21 @@ description := "Connected organization description"
 requestBody.SetDescription(&description) 
 
 
-identitySource := graphmodels.NewIdentitySource()
-additionalData := map[string]interface{}{
-	"domainName" : "example.com", 
-	"displayName" : "example.com", 
-}
-identitySource.SetAdditionalData(additionalData)
+identitySource := graphmodels.NewDomainIdentitySource()
+domainName := "example.com"
+identitySource.SetDomainName(&domainName) 
+displayName := "example.com"
+identitySource.SetDisplayName(&displayName) 
 
 identitySources := []graphmodels.IdentitySourceable {
 	identitySource,
-
 }
 requestBody.SetIdentitySources(identitySources)
 state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+connectedOrganizations, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(context.Background(), requestBody, nil)
 
 
 ```

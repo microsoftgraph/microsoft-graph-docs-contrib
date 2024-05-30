@@ -4,12 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSetUpResourcesFolderPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").SetUpResourcesFolder().Post(context.Background(), requestBody, nil)
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  grapheducation "github.com/microsoftgraph/msgraph-sdk-go/education"
+	  //other-imports
+)
+
+requestBody := grapheducation.NewSetUpResourcesFolderPostRequestBody()
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+setUpResourcesFolder, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").SetUpResourcesFolder().Post(context.Background(), requestBody, nil)
 
 
 ```

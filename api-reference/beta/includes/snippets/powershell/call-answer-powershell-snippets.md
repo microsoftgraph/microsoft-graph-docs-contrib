@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
-	CallbackUri = "callbackUri-value"
-	MediaConfig = @{
+	callbackUri = "callbackUri-value"
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration Blob>"
+		blob = "<Media Session Configuration Blob>"
 	}
-	AcceptedModalities = @(
-		"audio"
-	)
-	CallOptions = @{
-		"@odata.type" = "#microsoft.graph.incomingCallOptions"
-		IsContentSharingNotificationEnabled = $true
-	}
-	ParticipantCapacity = 200
+	acceptedModalities = @(
+	"audio"
+)
+callOptions = @{
+	"@odata.type" = "#microsoft.graph.incomingCallOptions"
+	isContentSharingNotificationEnabled = $true
+}
+participantCapacity = 200
 }
 
-Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
 ```

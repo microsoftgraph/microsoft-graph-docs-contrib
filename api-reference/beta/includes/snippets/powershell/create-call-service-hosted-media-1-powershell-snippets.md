@@ -4,36 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Targets = @(
+	callbackUri = "https://bot.contoso.com/callback"
+	targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
+			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				User = @{
+				user = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					DisplayName = "John"
-					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+					displayName = "John"
+					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
 				}
 			}
 		}
 	)
-	RequestedModalities = @(
-		"audio"
-	)
-	CallOptions = @{
-		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
-		IsContentSharingNotificationEnabled = $true
-	}
-	MediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-	}
+	requestedModalities = @(
+	"audio"
+)
+callOptions = @{
+	"@odata.type" = "#microsoft.graph.outgoingCallOptions"
+	isContentSharingNotificationEnabled = $true
+}
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+}
 }
 
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 
 ```

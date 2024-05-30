@@ -2,8 +2,9 @@
 title: "passwordAuthenticationMethod resource type"
 description: "A representation of a password registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
-ms.prod: "identity-and-sign-in"
+author: "zhvolosh"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -21,9 +22,9 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of all of this user's **passwordAuthenticationMethod** objects. |
-|[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a **passwordAuthenticationMethod** object. |
-|[Reset password](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
+|[List](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of all of this user's **passwordAuthenticationMethod** objects. |
+|[Get](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a **passwordAuthenticationMethod** object. |
+|[Reset](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
 
 ## Properties
 

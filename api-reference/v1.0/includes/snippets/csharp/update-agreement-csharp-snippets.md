@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var agreement = new Agreement
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Agreement
 {
 	DisplayName = "All Contoso volunteers - Terms of use",
-	IsViewingBeforeAcceptanceRequired = true
+	IsViewingBeforeAcceptanceRequired = true,
 };
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"]
-	.Request()
-	.UpdateAsync(agreement);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"].PatchAsync(requestBody);
+
 
 ```

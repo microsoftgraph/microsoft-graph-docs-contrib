@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
+	sourceFile = @{
+		sharepointIds = @{
+			listId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			listItemId = "2"
 		}
 	}
-	DestinationFileName = "newname.txt"
+	destinationFileName = "newname.txt"
 }
 
-Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ```

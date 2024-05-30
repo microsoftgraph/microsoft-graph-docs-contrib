@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityProtection\RiskyUsers\RiskyUsersRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RiskyUsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RiskyUsersRequestBuilderGetQueryParameters();
+$queryParameters = RiskyUsersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "riskLevel eq microsoft.graph.riskLevel'medium'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityProtection()->riskyUsers()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityProtection()->riskyUsers()->get($requestConfiguration)->wait();
 
 ```

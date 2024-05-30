@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	MarketingNotificationEmails = @(
-		"marketing@contoso.com"
-	)
-	PrivacyProfile = @{
-		ContactEmail = "alice@contoso.com"
-		StatementUrl = "https://contoso.com/privacyStatement"
-	}
-	SecurityComplianceNotificationMails = @(
-		"security@contoso.com"
-	)
-	SecurityComplianceNotificationPhones = @(
-		"(123) 456-7890"
-	)
-	TechnicalNotificationMails = @(
-		"tech@contoso.com"
-	)
+	marketingNotificationEmails = @(
+	"marketing@contoso.com"
+)
+privacyProfile = @{
+	contactEmail = "alice@contoso.com"
+	statementUrl = "https://contoso.com/privacyStatement"
+}
+securityComplianceNotificationMails = @(
+"security@contoso.com"
+)
+securityComplianceNotificationPhones = @(
+"(123) 456-7890"
+)
+technicalNotificationMails = @(
+"tech@contoso.com"
+)
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params

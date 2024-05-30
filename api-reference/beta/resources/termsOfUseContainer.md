@@ -3,8 +3,8 @@ title: "termsOfUseContainer resource type"
 description: "Container for the relationships that expose the terms of use API and its features. Currently exposes the agreements and agreementAcceptances relationships."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
-author: "raprakasMSFT"
+ms.subservice: "entra-id-governance"
+author: "AlexFilipin"
 ---
 
 # termsOfUseContainer resource type
@@ -30,7 +30,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| Represents the current status of a user's response to a company's customizable terms of use agreement.|
-|agreements|[agreement](agreement.md) collection|Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).|
+|agreements|[agreement](agreement.md) collection|Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID.|
 
 ## JSON representation
 
@@ -47,4 +47,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.termsOfUseContainer"
 }
 ```
-

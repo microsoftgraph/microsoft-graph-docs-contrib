@@ -4,25 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var skillProficiency = new SkillProficiency
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SkillProficiency
 {
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Professional"
+		"Professional",
 	},
 	AllowedAudiences = AllowedAudiences.Organization,
 	DisplayName = "API Design",
 	Proficiency = SkillProficiencyLevel.GeneralProfessional,
-	CollaborationTags = new List<String>()
+	CollaborationTags = new List<string>
 	{
-		"ableToMentor"
-	}
+		"ableToMentor",
+	},
 };
 
-await graphClient.Me.Profile.Skills
-	.Request()
-	.AddAsync(skillProficiency);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Skills.PostAsync(requestBody);
+
 
 ```

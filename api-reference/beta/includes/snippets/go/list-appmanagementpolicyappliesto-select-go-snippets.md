@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphpolicies "github.com/microsoftgraph/msgraph-beta-sdk-go/policies"
+	  //other-imports
+)
+
+requestParameters := &graphpolicies.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","createdDateTime"},
 }
-configuration := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+appliesTo, err := graphClient.Policies().AppManagementPolicies().ByAppManagementPolicyId("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
 
 
 ```

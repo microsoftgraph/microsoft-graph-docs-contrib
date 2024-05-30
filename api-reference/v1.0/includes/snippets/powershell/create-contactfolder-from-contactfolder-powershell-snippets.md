@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
-	DisplayName = "Family"
+	displayName = "Family"
 }
 
 # A UPN can also be used as -UserId.

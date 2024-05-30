@@ -4,16 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewDataSource()
-additionalData := map[string]interface{}{
-	"email" : "badguy@contoso.com", 
-}
-requestBody.SetAdditionalData(additionalData)
+// Code snippets are only available for the latest major version. Current major version is $v0.*
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").AdditionalSources().Post(context.Background(), requestBody, nil)
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  //other-imports
+)
+
+requestBody := graphmodelsediscovery.NewDataSource()
+email := "badguy@contoso.com"
+requestBody.SetEmail(&email) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+additionalSources, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var incident = new Microsoft.Graph.Security.Incident
+// Dependencies
+using Microsoft.Graph.Models.Security;
+
+var requestBody = new Incident
 {
-	Classification = Microsoft.Graph.Security.AlertClassification.TruePositive,
-	Determination = Microsoft.Graph.Security.AlertDetermination.MultiStagedAttack,
-	CustomTags = new List<String>()
+	Classification = AlertClassification.TruePositive,
+	Determination = AlertDetermination.MultiStagedAttack,
+	CustomTags = new List<string>
 	{
-		"Demo"
-	}
+		"Demo",
+	},
 };
 
-await graphClient.Security.Incidents["{security.incident-id}"]
-	.Request()
-	.UpdateAsync(incident);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Incidents["{incident-id}"].PatchAsync(requestBody);
+
 
 ```

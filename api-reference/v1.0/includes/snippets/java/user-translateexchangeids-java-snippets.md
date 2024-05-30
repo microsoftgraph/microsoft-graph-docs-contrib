@@ -4,24 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> inputIdsList = new LinkedList<String>();
-inputIdsList.add("{rest-formatted-id-1}");
-inputIdsList.add("{rest-formatted-id-2}");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ExchangeIdFormat sourceIdType = ExchangeIdFormat.REST_ID;
+com.microsoft.graph.users.item.translateexchangeids.TranslateExchangeIdsPostRequestBody translateExchangeIdsPostRequestBody = new com.microsoft.graph.users.item.translateexchangeids.TranslateExchangeIdsPostRequestBody();
+LinkedList<String> inputIds = new LinkedList<String>();
+inputIds.add("{rest-formatted-id-1}");
+inputIds.add("{rest-formatted-id-2}");
+translateExchangeIdsPostRequestBody.setInputIds(inputIds);
+translateExchangeIdsPostRequestBody.setSourceIdType(ExchangeIdFormat.RestId);
+translateExchangeIdsPostRequestBody.setTargetIdType(ExchangeIdFormat.RestImmutableEntryId);
+var result = graphClient.me().translateExchangeIds().post(translateExchangeIdsPostRequestBody);
 
-ExchangeIdFormat targetIdType = ExchangeIdFormat.REST_IMMUTABLE_ENTRY_ID;
-
-graphClient.me()
-	.translateExchangeIds(UserTranslateExchangeIdsParameterSet
-		.newBuilder()
-		.withInputIds(inputIdsList)
-		.withTargetIdType(targetIdType)
-		.withSourceIdType(sourceIdType)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

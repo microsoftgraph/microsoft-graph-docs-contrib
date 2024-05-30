@@ -1,9 +1,9 @@
 ---
 title: "aadUserNotificationRecipient resource type"
-description:  Represents an Azure Active Directory (Azure AD) user recipient of a notification sent in a Microsoft Teams activity feed.
+description:  Represents a Microsoft Entra user recipient of a notification sent in a Microsoft Teams activity feed.
 author: RamjotSingh
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory (Azure AD) user recipient of a notification sent in a Microsoft Teams activity feed.
+Represents a Microsoft Entra user recipient of a notification sent in a Microsoft Teams activity feed.
 
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|Azure AD user identifier. Use the [List users](../api/user-list.md) method to get this ID.|
+|userId|String|Microsoft Entra user identifier. Use the [List users](../api/user-list.md) method to get this ID.|
 
 ## Relationships
 None.
@@ -38,4 +38,3 @@ The following is a JSON representation of the resource.
   "userId": "String"
 }
 ```
-

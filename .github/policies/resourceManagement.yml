@@ -1,0 +1,1024 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    scheduledSearches:
+    - description: Close issues with needs more info label with no activity for 14 days
+      frequencies:
+      - hourly:
+          hour: 6
+      filters:
+      - isIssue
+      - isOpen
+      - hasLabel:
+          label: needs more info
+      - hasLabel:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+      - addReply:
+          reply: This issue has been closed due to inactivity. If the issue is still present, please provide the requested information to reopen the issue.
+      - closeIssue
+    - description: Close pull requests with pr-expired label with no activity for 1 day
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isOpen
+      - isPullRequest
+      - hasLabel:
+          label: pr-expired
+      - noActivitySince:
+          days: 1
+      actions:
+      - closeIssue
+    - description: Add MSTeams-Developer-Support to issues and pull requests assigned to nkramer
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isOpen
+      - isAssignedTo:
+          user: nkramer
+      actions:
+      - addLabel:
+          label: MSTeams-Developer-Support
+    eventResponderTasks:
+    - description: 'Close issues when they are labeled question, serviceissue, or request: feature'
+      if:
+      - payloadType: Issues
+      - or:
+        - labelAdded:
+            label: question
+        - labelAdded:
+            label: serviceissue
+        - labelAdded:
+            label: 'request: feature'
+      then:
+      - addReply:
+          reply: "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsoft Entra service - raise a new technical support ticket through the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+      - closeIssue
+    - description: Close issues that are not opened through the Learn page's feedback button
+      if:
+      - payloadType: Issues
+      - not:
+          bodyContains:
+            pattern: 'Content Source:'
+            isRegex: False
+      - not:
+          activitySenderHasAssociation:
+            association: MEMBER
+      - not:
+          isActivitySender:
+            user: graph-github-task-automation[bot]
+      - isAction:
+          action: Opened
+      - isOpen
+      then:
+      - addReply:
+          reply: "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsft Entra service - raise a new technical support ticket at the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+      - closeIssue
+    - description: Remove no recent activity label if issue receives a comment
+      if:
+      - payloadType: Issue_Comment
+      - isOpen
+      - hasLabel:
+          label: no recent activity
+      then:
+      - removeLabel:
+          label: no recent activity
+    - description: Add acknowledgement of labeling pull request with ready for content review
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: ready for content review
+      - isOpen
+      then:
+      - addReply:
+          reply: >-
+            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
+    - description: Remove status labels and add reply when pull request is labeled with content review complete
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: content review complete
+      - isOpen
+      then:
+      - removeLabel:
+          label: ready for content review
+      - removeLabel:
+          label: review feedback addressed
+      - removeLabel:
+          label: changes requested
+      - addReply:
+          reply: >-
+            Thank you for your work in this PR, @${issueAuthor}.
+
+
+            When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
+      - removeLabel:
+          label: content review in progress
+    - description: Add prompt for internal users to make requested changes
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: changes requested
+      - isOpen
+      then:
+      - addReply:
+          reply: >-
+            @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward.
+
+
+            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon next to the content reviewer's alias.
+
+
+            If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
+      - assignTo:
+          author: True
+    - description: 'Add review feedback addressed label if author comments #feedback-addressed'
+      if:
+      - payloadType: Issue_Comment
+      - isActivitySender:
+          issueAuthor: True
+      - commentContains:
+          pattern: '#feedback-addressed'
+          isRegex: False
+      then:
+      - addLabel:
+          label: review feedback addressed
+    - description: Remove ready for content review label when pull request is labeled content review in progress
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: content review in progress
+      - isOpen
+      then:
+      - removeLabel:
+          label: ready for content review
+    - description: When Identity-related label is added to a pull request request review from FaithOmbongi
+      if:
+      - payloadType: Pull_Request
+      - or:
+        - labelAdded:
+            label: 'area: Azure AD'
+        - labelAdded:
+            label: 'area: Entra'
+        - labelAdded:
+            label: 'area: identity'
+      - isOpen
+      then:
+      - requestReview:
+          reviewer: 'FaithOmbongi '
+    - description: When changes requested label is added remove review feedback addressed label
+      if:
+      - payloadType: Pull_Request
+      - isOpen
+      - labelAdded:
+          label: changes requested
+      - hasLabel:
+          label: review feedback addressed
+      then:
+      - removeLabel:
+          label: review feedback addressed
+    - description: When review feedback addressed label is added remove changes requested label
+      if:
+      - payloadType: Pull_Request
+      - isOpen
+      - labelAdded:
+          label: review feedback addressed
+      - hasLabel:
+          label: changes requested
+      then:
+      - removeLabel:
+          label: changes requested
+    - description: Close and redirect Teams questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'area: teams'
+        - and:
+          - labelAdded:
+              label: 'area: teams'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-teamwork.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect files questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: files'
+        - and:
+          - labelAdded:
+              label: 'subarea: files'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-files.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect mail questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: mail'
+        - and:
+          - labelAdded:
+              label: 'subarea: mail'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-mail.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect calendar questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: calendar'
+        - and:
+          - labelAdded:
+              label: 'subarea: calendar'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-calendar.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect toolkit questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'area: toolkit'
+        - and:
+          - labelAdded:
+              label: 'area: toolkit'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-toolkit.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect cloud communications questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: cloud communications'
+        - and:
+          - hasLabel:
+              label: 'area: cloud communications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-cloud-communications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect tasks and plans questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: tasks and plans'
+        - and:
+          - hasLabel:
+              label: 'area: tasks and plans'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-tasks-plans.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect security questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: security'
+        - and:
+          - hasLabel:
+              label: 'area: security'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-security.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect sites and lists questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'subarea: sites and lists'
+        - and:
+          - hasLabel:
+              label: 'subarea: sites and lists'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-sites-lists.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect OneNote questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: onenote'
+        - and:
+          - hasLabel:
+              label: 'area: onenote'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-notes.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect corporate management questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: corporate management'
+        - and:
+          - hasLabel:
+              label: 'area: corporate management'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-corporate-mgmt.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect users questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: users'
+        - and:
+          - hasLabel:
+              label: 'area: users'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-users.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect reports questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: reports'
+        - and:
+          - hasLabel:
+              label: 'area: reports'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-reports.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect insights questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: insights'
+        - and:
+          - hasLabel:
+              label: 'area: insights'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-insights.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect extensions questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: extensions'
+        - and:
+          - hasLabel:
+              label: 'area: extensions'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-extensions.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect change notifications questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: change notifications'
+        - and:
+          - hasLabel:
+              label: 'area: change notifications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-change-notifications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect bookings questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: bookings'
+        - and:
+          - hasLabel:
+              label: 'area: bookings'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-customer-booking.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect people questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: people'
+        - and:
+          - hasLabel:
+              label: 'area: people'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-people.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect query parameters questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: query parameters'
+        - and:
+          - hasLabel:
+              label: 'area: query parameters'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-query-parameters.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect workbooks and charts questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'subarea: workbooks and charts'
+        - and:
+          - hasLabel:
+              label: 'subarea: workbooks and charts'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-workbooks.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect search questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: search'
+        - and:
+          - hasLabel:
+              label: 'area: search'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-search.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect todo questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: todo'
+        - and:
+          - hasLabel:
+              label: 'area: todo'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-todo.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect compliance questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: compliance'
+        - and:
+          - hasLabel:
+              label: 'area: compliance'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-compliance.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect intune questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: intune'
+        - and:
+          - hasLabel:
+              label: 'area: intune'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-corporate-mgmt.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect authentication questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: authentication'
+        - and:
+          - hasLabel:
+              label: 'area: authentication'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-authentication.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect groups questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: groups'
+        - and:
+          - hasLabel:
+              label: 'area: groups'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-groups.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect identity questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: identity'
+        - and:
+          - hasLabel:
+              label: 'area: identity'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-identity.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect governance questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: governance'
+        - and:
+          - hasLabel:
+              label: 'area: governance'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-governance.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect notag questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: notag
+        - and:
+          - hasLabel:
+              label: notag
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/products/graph)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect batch requests questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: batch requests'
+        - and:
+          - hasLabel:
+              label: 'area: batch requests'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-batching.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect notifications questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: notifications'
+        - and:
+          - hasLabel:
+              label: 'area: notifications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-notifications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect education questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: education'
+        - and:
+          - hasLabel:
+              label: 'area: education'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-education.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect SDK questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: SDKs'
+        - and:
+          - hasLabel:
+              label: 'area: SDKs'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-sdk.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+    - description: Close and redirect applications questions to Q&A
+      if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: applications'
+        - and:
+          - hasLabel:
+              label: 'area: applications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-applications.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+    - description: 'Add ready for content review label if author comments #sign-off'
+      if:
+      - payloadType: Issue_Comment
+      - isActivitySender:
+          issueAuthor: True
+      - isOpen
+      - commentContains:
+          pattern: '#sign-off'
+          isRegex: False
+      then:
+      - addLabel:
+          label: ready for content review
+    - description: Add do not merge label to new pull requests opened by contributors
+      if:
+      - payloadType: Pull_Request
+      - isOpen
+      - isAction:
+          action: Opened
+      - activitySenderHasPermission:
+          permission: write
+      - not:
+          or:
+            - hasLabel:
+                label: do not merge
+            - hasLabel:
+                label: ready to merge
+            - hasLabel:
+                label: ready for content review
+            - hasLabel:
+                label: blocked
+            - hasLabel:
+                label: changelog required
+            - hasLabel:
+                label: changes requested
+            - hasLabel:
+                label: awaiting internal response
+            - hasLabel:
+                label: content review in progress
+            - hasLabel:
+                label: content review complete
+      then:
+      - addLabel:
+          label: do not merge
+      - addReply:
+          reply: >-
+            > [!NOTE]
+
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
+
+
+            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
+
+
+            Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
+
+
+            After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+
+            > [!NOTE]
+
+            > Pull requests will not be merged until the **ready to merge** label is set.
+
+
+            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow).
+
+onFailure:
+onSuccess:

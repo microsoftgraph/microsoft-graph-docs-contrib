@@ -11,14 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableRow = {
-  values: "[
+  values: [
     [1, 2, 3],
     [4, 5, 6]
-  ]"
+  ]
 };
 
 await client.api('/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows')
-	.version('beta')
 	.post(workbookTableRow);
 
 ```

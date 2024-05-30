@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var store = new Microsoft.Graph.TermStore.Store
+// Dependencies
+using Microsoft.Graph.Models.TermStore;
+
+var requestBody = new Store
 {
-	DefaultLanguageTag = "en-US"
+	DefaultLanguageTag = "en-US",
 };
 
-await graphClient.Sites["{site-id}"].TermStore
-	.Request()
-	.UpdateAsync(store);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].TermStore.PatchAsync(requestBody);
+
 
 ```

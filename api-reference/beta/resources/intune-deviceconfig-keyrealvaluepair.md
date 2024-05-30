@@ -3,7 +3,7 @@ title: "keyRealValuePair resource type"
 description: "A key-value pair with a string key and a real (floating-point) value."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

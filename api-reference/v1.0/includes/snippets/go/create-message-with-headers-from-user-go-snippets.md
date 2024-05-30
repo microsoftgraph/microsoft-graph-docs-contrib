@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewMessage()
 subject := "9/8/2018: concert"
@@ -20,13 +28,12 @@ requestBody.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AlexW@contoso.OnMicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
@@ -45,11 +52,11 @@ internetMessageHeader1.SetValue(&value)
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,
 	internetMessageHeader1,
-
 }
 requestBody.SetInternetMessageHeaders(internetMessageHeaders)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

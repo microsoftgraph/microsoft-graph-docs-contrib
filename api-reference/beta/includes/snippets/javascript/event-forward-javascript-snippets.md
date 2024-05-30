@@ -13,13 +13,13 @@ const client = Client.init(options);
 const forward = {
   ToRecipients: [
       {
-        emailAddress: {
-          address: 'danas@contoso.onmicrosoft.com',
-          name: 'Dana Swope'
+        EmailAddress: {
+          Address: 'danas@contoso.com',
+          Name: 'Dana Swope'
         }
       }
      ],
-  Comment: 'Dana, hope you can make this meeting.' 
+  Comment: 'Dana, hope you can make this meeting.'
 };
 
 await client.api('/me/events/{id}/forward')

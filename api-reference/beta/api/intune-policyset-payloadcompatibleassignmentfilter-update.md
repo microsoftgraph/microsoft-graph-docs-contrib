@@ -3,7 +3,7 @@ title: "Update payloadCompatibleAssignmentFilter"
 description: "Update the properties of a payloadCompatibleAssignmentFilter object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -49,14 +51,15 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|createdDateTime|DateTimeOffset|Creation time of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|displayName|String|DisplayName of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|description|String|Description of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|rule|String|Rule definition of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|roleScopeTags|String collection|RoleScopeTags of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|createdDateTime|DateTimeOffset|The creation time of the assignment filter. The value cannot be modified and is automatically populated during new assignment filter process. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|displayName|String|The name of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|description|String|Optional description of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Indicates filter is applied to which flatform. Possible values are android,androidForWork,iOS,macOS,windowsPhone81,windows81AndLater,windows10AndLater,androidWorkProfile, unknown, androidAOSP, androidMobileApplicationManagement, iOSMobileApplicationManagement, windowsMobileApplicationManagement. Default filter will be applied to 'unknown'. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`, `windowsMobileApplicationManagement`.|
+|rule|String|Rule definition of the assignment filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|roleScopeTags|String collection|Indicates role scope tags assigned for the assignment filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Indicates associated assignments for a specific filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|assignmentFilterManagementType|[assignmentFilterManagementType](../resources/intune-policyset-assignmentfiltermanagementtype.md)|Indicates filter is applied to either 'devices' or 'apps' management type. Possible values are devices, apps. Default filter will be applied to 'devices' Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `devices`, `apps`, `unknownFutureValue`.|
 |payloadType|[assignmentFilterPayloadType](../resources/intune-policyset-assignmentfilterpayloadtype.md)|PayloadType of the Assignment Filter. Possible values are: `notSet`, `enrollmentRestrictions`.|
 
 
@@ -71,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 Content-type: application/json
-Content-length: 582
+Content-length: 627
 
 {
   "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
@@ -91,6 +94,7 @@ Content-length: 582
       "assignmentFilterType": "include"
     }
   ],
+  "assignmentFilterManagementType": "apps",
   "payloadType": "enrollmentRestrictions"
 }
 ```
@@ -100,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 754
+Content-Length: 799
 
 {
   "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
@@ -123,6 +127,7 @@ Content-Length: 754
       "assignmentFilterType": "include"
     }
   ],
+  "assignmentFilterManagementType": "apps",
   "payloadType": "enrollmentRestrictions"
 }
 ```

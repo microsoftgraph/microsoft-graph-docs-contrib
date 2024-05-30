@@ -3,7 +3,7 @@ title: "accessReviewReviewer resource type"
 description: "Represents a reviewer who was contacted for an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

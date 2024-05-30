@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var definitions = await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.Skip(0)
-	.Top(100)
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Top = 100;
+	requestConfiguration.QueryParameters.Skip = 0;
+});
+
 
 ```

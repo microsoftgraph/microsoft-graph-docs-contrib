@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var emailThreatSubmissionPolicy = new Microsoft.Graph.Security.EmailThreatSubmissionPolicy
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new EmailThreatSubmissionPolicy
 {
-	IsReportToMicrosoftEnabled = false
+	IsReportToMicrosoftEnabled = false,
 };
 
-await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies["{security.emailThreatSubmissionPolicy-id}"]
-	.Request()
-	.UpdateAsync(emailThreatSubmissionPolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies["{emailThreatSubmissionPolicy-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -7,15 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	CallbackUri = "https://bot.contoso.com/api/calls"
-	AcceptedModalities = @(
-		"audio"
+	callbackUri = "https://bot.contoso.com/api/calls"
+	acceptedModalities = @(
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+	preFetchMedia = @(
+		@{
+			uri = "https://cdn.contoso.com/beep.wav"
+			resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+		}
+		@{
+			uri = "https://cdn.contoso.com/cool.wav"
+			resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F"
+		}
 	)
-	MediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		PreFetchMedia = @(
-		)
-	}
+}
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params

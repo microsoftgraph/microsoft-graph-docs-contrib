@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Notes
 
 $params = @{
-	DisplayName = "Section group name"
+	displayName = "Section group name"
 }
 
 # A UPN can also be used as -UserId.

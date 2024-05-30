@@ -4,19 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tagsToAdd = new List<Microsoft.Graph.Security.EdiscoveryReviewTag>()
+// Dependencies
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.Queries.Item.MicrosoftGraphSecurityApplyTags;
+using Microsoft.Graph.Models.Security;
+
+var requestBody = new ApplyTagsPostRequestBody
 {
-	new Microsoft.Graph.Security.EdiscoveryReviewTag
+	TagsToAdd = new List<EdiscoveryReviewTag>
 	{
-		Id = "d3d99dc704a74801b792b3e1e722aa0d"
-	}
+		new EdiscoveryReviewTag
+		{
+			Id = "d3d99dc704a74801b792b3e1e722aa0d",
+		},
+	},
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"].Queries["{security.ediscoveryReviewSetQuery-id}"]
-	.ApplyTags(tagsToAdd,null)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries["{ediscoveryReviewSetQuery-id}"].MicrosoftGraphSecurityApplyTags.PostAsync(requestBody);
+
 
 ```

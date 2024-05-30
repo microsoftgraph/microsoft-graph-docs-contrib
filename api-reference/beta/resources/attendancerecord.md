@@ -1,9 +1,9 @@
 ---
 title: "attendanceRecord resource type"
 description: "Contains information associated with an attendance record in a meetingAttendanceReport."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,15 +19,15 @@ Contains information associated with an attendance record in a [meetingAttendanc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
+|[List](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
 
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
 | attendanceIntervals | [attendanceInterval](attendanceinterval.md) collection | List of time periods between joining and leaving a meeting. |
-| emailAddress | String | Email address of the user associated with this atttendance record. |
-| identity | [identity](identity.md) | Identity of the user associated with this atttendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
+| emailAddress | String | Email address of the user associated with this attendance record. |
+| identity | [identity](identity.md) | Identity of the user associated with this attendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |

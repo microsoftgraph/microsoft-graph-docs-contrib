@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\EntitlementManagement\AccessPackages\Item\AccessPackageItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new AccessPackageRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new AccessPackageRequestBuilderGetQueryParameters();
-$queryParameters->expand = ["accessPackageResourceRoleScopes($expand=accessPackageResourceRole,accessPackageResourceScope)"];
-
+$requestConfiguration = new AccessPackageItemRequestBuilderGetRequestConfiguration();
+$queryParameters = AccessPackageItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["accessPackageResourceRoleScopes(\$expand=accessPackageResourceRole,accessPackageResourceScope)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->get($requestConfiguration)->wait();
 
 ```

@@ -2,8 +2,8 @@
 title: "media resource type"
 description: "The media type"
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

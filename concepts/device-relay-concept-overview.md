@@ -2,7 +2,7 @@
 title: "Device relay API in Microsoft Graph (preview)"
 description: "Use the Microsoft Graph device relay APIs to enable users to transfer an experience from one device to another or enhance it by using multiple devices at once."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
 ---
 
@@ -32,7 +32,7 @@ Create a companion experience for your app on another of the user’s devices. F
 
 Add additional controlling abilities to your app. For example, provide remote control abilities for the main app from a companion device. When the user launches an app from one device to another, the target device could show the full experience (for example, a 3D model in a design app), while the source device could show a list of the most common actions given the state of the app on the target device (for example, rotate, resize, color palette).
 
-## See also
+## Related content
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Learn more about the device relay API](/graph/api/resources/project-rome-overview)

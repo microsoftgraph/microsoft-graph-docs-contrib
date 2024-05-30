@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const connectorGroup = {
-  '@odata.id': 'https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}'
+  '@odata.id': 'https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}'
 };
 
 await client.api('/applications/{id}/connectorGroup/$ref')

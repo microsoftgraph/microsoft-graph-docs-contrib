@@ -4,7 +4,7 @@ description: "Represents the progress of a synchronizationJob toward completion.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationProgress resource type
@@ -27,25 +27,20 @@ Represents the progress of a [synchronizationJob](synchronization-synchronizatio
 <!-- The troubleshootingUrl property is missing a description -->
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.synchronizationProgress"
-}-->
-
-```json
-{
-  "completedUnits": 1025,
-  "progressObservationDateTime": "2017-10-10T17:00:00Z",
-  "totalUnits": 3024,
-  "units": "pages"
 }
-
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.synchronizationProgress",
+  "completedUnits": "Integer",
+  "progressObservationDateTime": "String (timestamp)",
+  "totalUnits": "Integer",
+  "units": "String"
+}
 ```
 
 <!-- uuid: 15571993-7e2f-4842-84d5-01ceb67cdc05

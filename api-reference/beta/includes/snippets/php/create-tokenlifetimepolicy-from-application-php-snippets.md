@@ -5,20 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestBody = new TokenLifetimePoliciesPostRequestBody();
-$additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9', 
-];
-$requestBody->setAdditionalData($additionalData);
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceCreate;
 
 
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new ReferenceCreate();
+$requestBody->setOdataId('https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4');
 
-$graphServiceClient->applicationsById('application-id')->tokenLifetimePolicies()->post($requestBody);
-
+$graphServiceClient->applications()->byApplicationId('application-id')->tokenLifetimePolicies()->ref()->post($requestBody)->wait();
 
 ```

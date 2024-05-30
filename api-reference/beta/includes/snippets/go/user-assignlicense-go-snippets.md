@@ -4,17 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphusers.NewItemAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
-disabledPlans := []string {
- := uuid.MustParse("8a256a2b-b617-496d-b51b-e76466e88db0")
-assignedLicense.Set(&) 
-
+disabledPlans := []uuid.UUID {
+	uuid.MustParse("8a256a2b-b617-496d-b51b-e76466e88db0"),
 }
 assignedLicense.SetDisabledPlans(disabledPlans)
 skuId := uuid.MustParse("84a661c4-e949-4bd2-a560-ed7766fcaf2b")
@@ -30,7 +37,6 @@ assignedLicense1.SetSkuId(&skuId)
 addLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,
 	assignedLicense1,
-
 }
 requestBody.SetAddLicenses(addLicenses)
 removeLicenses := []string {
@@ -38,7 +44,8 @@ removeLicenses := []string {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+assignLicense, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

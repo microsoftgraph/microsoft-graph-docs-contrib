@@ -1,9 +1,9 @@
 ---
 title: "deletedItemContainer resource type"
-description: "A container for deleted lifecycle workflow objects during the period before they are permanently deleted."
+description: "A container for deleted lifecycle workflow objects during the period before they're permanently deleted."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for deleted lifecycle workflow objects during the period before they are permanently deleted. Azure AD may permanently delete the workflows after 30 days, or you may [permanently delete the workflows](../api/identitygovernance-deletedItemcontainer-delete.md), or you may [restore the deleted workflow and its associated objects](../api/identitygovernance-workflow-restore.md).
+A container for deleted lifecycle workflow objects during the period before they're permanently deleted. Microsoft Entra ID may permanently delete the workflows after 30 days, or you may [permanently delete the workflows](../api/identitygovernance-deletedItemcontainer-delete.md), or you may [restore the deleted workflow and its associated objects](../api/identitygovernance-workflow-restore.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,10 +21,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deletedItems](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.|
-|[Get deletedItemContainer](../api/identitygovernance-deleteditemcontainer-get.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Read the properties and relationships of a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
+|[List deleted workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.|
+|[Get a deleted workflow](../api/identitygovernance-deleteditemcontainer-get.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Read the properties and relationships of a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
 |[Restore](../api/identitygovernance-workflow-restore.md)|[workflow](../resources/identitygovernance-workflow.md)|Restore a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
-|[Permanently delete workflow from deletedItemsContainer](../api/identitygovernance-deletedItemcontainer-delete.md)|None|Permanently delete a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
+|[Permanently delete a workflow](../api/identitygovernance-deletedItemcontainer-delete.md)|None|Permanently delete a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
 
 ## Properties
 
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

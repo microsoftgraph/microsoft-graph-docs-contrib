@@ -4,7 +4,7 @@ title: "Group resource type"
 doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.subservice: sharepoint
 ---
 
 # Group resource type
@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                   | Return type       |    Description|
 |:---------------------------------------------------------|:------------------|:---------------------|
-| [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].|
-| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].|
-| [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].|
+| [Create](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].|
+| [Get](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].|
+| [Delete](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].|
 
 ## Properties
 

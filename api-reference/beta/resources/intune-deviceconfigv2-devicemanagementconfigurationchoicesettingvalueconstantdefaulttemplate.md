@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate r
 description: "Choice Setting Value Constant Default Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

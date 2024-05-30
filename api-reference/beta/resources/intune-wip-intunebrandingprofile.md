@@ -3,7 +3,7 @@ title: "intuneBrandingProfile resource type"
 description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |[Create intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Create a new [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
 |[Delete intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|None|Deletes a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Update intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
-|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -56,6 +56,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|disableDeviceCategorySelection|Boolean|Boolean that indicates if Device Category Selection will be shown in Company Portal|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |showConfigurationManagerApps|Boolean|Boolean that indicates if Configuration Manager Apps will be shown in Company Portal|
@@ -130,6 +131,7 @@ Here is a JSON representation of the resource.
       "action": "String"
     }
   ],
+  "disableDeviceCategorySelection": true,
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,

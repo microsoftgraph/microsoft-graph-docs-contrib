@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var mailFolder = new MailSearchFolder
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new MailSearchFolder
 {
-	FilterQuery = "contains(subject, 'Analytics')"
+	OdataType = "microsoft.graph.mailSearchFolder",
+	FilterQuery = "contains(subject, 'Analytics')",
 };
 
-await graphClient.Me.MailFolders["{mailFolder-id}"]
-	.Request()
-	.UpdateAsync(mailFolder);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The Video resource groups video-related data items into a single structure.
 ms.date: 09/10/2017
 title: Video
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # Video resource type
@@ -21,7 +21,7 @@ The properties of the **Video** resource are populated by extracting metadata fr
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

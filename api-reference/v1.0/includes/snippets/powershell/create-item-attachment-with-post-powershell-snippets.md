@@ -7,18 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached an event."
+	post = @{
+		body = @{
+			contentType = "text"
+			content = "I attached an event."
 		}
-		Attachments = @(
+		attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.itemAttachment"
-				Name = "Holiday event"
-				Item = @{
+				name = "Holiday event"
+				item = @{
 					"@odata.type" = "microsoft.graph.event"
-					Subject = "Discuss gifts for children"
+					subject = "Discuss gifts for children"
+					body = @{
+						contentType = "HTML"
+						content = "Let's look for funding!"
+					}
+					start = @{
+						dateTime = "2019-12-02T18:00:00"
+						timeZone = "Pacific Standard Time"
+					}
+					end = @{
+						dateTime = "2019-12-02T19:00:00"
+						timeZone = "Pacific Standard Time"
+					}
 				}
 			}
 		)

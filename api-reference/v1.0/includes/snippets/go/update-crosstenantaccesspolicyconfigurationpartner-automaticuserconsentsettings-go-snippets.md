@@ -1,0 +1,30 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationPartner()
+automaticUserConsentSettings := graphmodels.NewInboundOutboundPolicyConfiguration()
+inboundAllowed := true
+automaticUserConsentSettings.SetInboundAllowed(&inboundAllowed) 
+outboundAllowed := true
+automaticUserConsentSettings.SetOutboundAllowed(&outboundAllowed) 
+requestBody.SetAutomaticUserConsentSettings(automaticUserConsentSettings)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
+
+
+```

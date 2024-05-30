@@ -4,30 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "I won't be able to make this week. How about next week?";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Boolean sendResponse = true;
-
+com.microsoft.graph.users.item.events.item.decline.DeclinePostRequestBody declinePostRequestBody = new com.microsoft.graph.users.item.events.item.decline.DeclinePostRequestBody();
+declinePostRequestBody.setComment("I won't be able to make this week. How about next week?");
+declinePostRequestBody.setSendResponse(true);
 TimeSlot proposedNewTime = new TimeSlot();
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2019-12-02T18:00:00";
-start.timeZone = "Pacific Standard Time";
-proposedNewTime.start = start;
+start.setDateTime("2019-12-02T18:00:00");
+start.setTimeZone("Pacific Standard Time");
+proposedNewTime.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2019-12-02T19:00:00";
-end.timeZone = "Pacific Standard Time";
-proposedNewTime.end = end;
+end.setDateTime("2019-12-02T19:00:00");
+end.setTimeZone("Pacific Standard Time");
+proposedNewTime.setEnd(end);
+declinePostRequestBody.setProposedNewTime(proposedNewTime);
+graphClient.me().events().byEventId("{event-id}").decline().post(declinePostRequestBody);
 
-graphClient.me().events("{id}")
-	.decline(EventDeclineParameterSet
-		.newBuilder()
-		.withComment(comment)
-		.withSendResponse(sendResponse)
-		.withProposedNewTime(proposedNewTime)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

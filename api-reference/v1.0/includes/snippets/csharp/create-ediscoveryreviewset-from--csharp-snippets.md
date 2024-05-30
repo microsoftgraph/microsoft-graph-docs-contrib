@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ediscoveryReviewSet = new Microsoft.Graph.Security.EdiscoveryReviewSet
+// Dependencies
+using Microsoft.Graph.Models.Security;
+
+var requestBody = new EdiscoveryReviewSet
 {
-	DisplayName = "My review set 2"
+	DisplayName = "My review set 2",
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets
-	.Request()
-	.AddAsync(ediscoveryReviewSet);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets.PostAsync(requestBody);
+
 
 ```

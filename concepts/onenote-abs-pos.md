@@ -3,7 +3,7 @@ title: "Create absolute positioned elements on OneNote pages using the OneNote A
 description: "Use the data-absolute-enabled and style attributes to create absolute positioned elements on a page, including multiple direct div, img, and object child elements."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 
@@ -27,14 +27,14 @@ Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) a
 
 - Absolute positioned elements are positioned at their specified top and left coordinates, relative to the 0:0 starting position at the top, left corner of the page above the title area.
 
-- If an absolute positioned element omits the top or left coordinate, the missing coordinate is set to its default value: `top:120px` or `left:48px`. These default coordinates specify a position just below the title area. Be aware that omitting coordinates can result in elements that are stacked on top of each other.
+- If an absolute positioned element omits the top or left coordinate, the missing coordinate is set to its default value: `top:120px` or `left:48px`. These default coordinates specify a position just below the title area. Omitting coordinates can result in elements that are stacked on top of each other.
 
 - Absolute positioned elements cannot be nested or contain positioned elements. The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.
 
 
 ### Example
 
-The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
+The following example contains a direct `p` child, an absolute positioned div, and a nonabsolute positioned div.
 
 #### Input HTML  
 
@@ -50,7 +50,7 @@ The following example contains a direct `p` child, an absolute positioned div, a
    </body>
    ```
 
-The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
+The API renders the nonabsolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
 
 #### Output HTML 
 
@@ -95,7 +95,7 @@ The OneNote API evaluates the input HTML and preserves all semantic content and 
 
 ![Resulting page with absolute positioned div and image](images/abs-pos.png)
 
-Notice the changes to the non-contributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
+Notice the changes to the noncontributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
 
 For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote-input-output-html.md).
 
@@ -136,7 +136,7 @@ The OneNote API returns the following information in the response.
 
 ## Permissions
 
-To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
+To create or update OneNote pages, you need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
 #### Permissions for POST pages 
 
@@ -150,12 +150,12 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote-update-page.md)

@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ListItemVersionRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  //other-imports
+)
+
+requestParameters := &graphsites.SiteItemListItemItemItemVersionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"fields"},
 }
-configuration := &graphconfig.ListItemVersionRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemItemItemVersionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").VersionsById("listItemVersion-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+versions, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").Versions().ByListItemVersionId("listItemVersion-id").Get(context.Background(), configuration)
 
 
 ```

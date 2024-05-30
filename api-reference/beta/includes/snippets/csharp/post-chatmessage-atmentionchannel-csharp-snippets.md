@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+		Content = "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>",
 	},
-	Mentions = new List<ChatMessageMention>()
+	Mentions = new List<ChatMessageMention>
 	{
 		new ChatMessageMention
 		{
@@ -25,15 +28,15 @@ var chatMessage = new ChatMessage
 				{
 					Id = "19:0b50940236084d258c97b21bd01917b0@thread.skype",
 					DisplayName = "General",
-					ConversationIdentityType = TeamworkConversationIdentityType.Channel
-				}
-			}
-		}
-	}
+					ConversationIdentityType = TeamworkConversationIdentityType.Channel,
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-	.Request()
-	.AddAsync(chatMessage);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages.PostAsync(requestBody);
+
 
 ```

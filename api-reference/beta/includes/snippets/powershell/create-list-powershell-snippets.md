@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
-	DisplayName = "Books"
-	Columns = @(
+	displayName = "Books"
+	columns = @(
 		@{
-			Name = "Author"
-			Text = @{
+			name = "Author"
+			text = @{
 			}
 		}
 		@{
-			Name = "PageCount"
-			Number = @{
+			name = "PageCount"
+			number = @{
 			}
 		}
 	)
-	List = @{
-		Template = "genericList"
+	list = @{
+		template = "genericList"
 	}
 }
 
-New-MgSiteList -SiteId $siteId -BodyParameter $params
+New-MgBetaSiteList -SiteId $siteId -BodyParameter $params
 
 ```

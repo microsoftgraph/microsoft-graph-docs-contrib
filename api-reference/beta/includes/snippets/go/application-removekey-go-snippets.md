@@ -4,16 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewRemoveKeyPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  //other-imports
+)
+
+requestBody := graphapplications.NewRemoveKeyPostRequestBody()
 keyId := uuid.MustParse("f0b0b335-1d71-4883-8f98-567911bfdca6")
 requestBody.SetKeyId(&keyId) 
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ApplicationsById("application-id").RemoveKey().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Applications().ByApplicationId("application-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```

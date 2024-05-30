@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewUnifiedRoleAssignment()
 roleDefinitionId := "c2cf284d-6c41-4e6b-afac-4b80928c9034"
@@ -15,7 +23,8 @@ requestBody.SetPrincipalId(&principalId)
 directoryScopeId := "/"
 requestBody.SetDirectoryScopeId(&directoryScopeId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+roleAssignments, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

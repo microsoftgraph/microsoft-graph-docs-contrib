@@ -7,56 +7,56 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
+	post = @{
+		body = @{
+			contentType = ""
+			content = "content-value"
 		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+		receivedDateTime = [System.DateTime]::Parse("datetime-value")
+		hasAttachments = $true
+		from = @{
+			emailAddress = @{
+				name = "name-value"
+				address = "address-value"
 			}
 		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+		sender = @{
+			emailAddress = @{
+				name = "name-value"
+				address = "address-value"
 			}
 		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
+		conversationThreadId = "conversationThreadId-value"
+		newParticipants = @(
 			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
+				emailAddress = @{
+					name = "name-value"
+					address = "address-value"
 				}
 			}
 		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-		ChangeKey = "changeKey-value"
-		Categories = @(
-			"categories-value"
-		)
-		Id = "id-value"
-		InReplyTo = @{
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
-			}
-		)
+		conversationId = "conversationId-value"
+		createdDateTime = [System.DateTime]::Parse("datetime-value")
+		lastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+		changeKey = "changeKey-value"
+		categories = @(
+		"categories-value"
+	)
+	id = "id-value"
+	inReplyTo = @{
 	}
+	attachments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.fileAttachment"
+			lastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
+			name = "name-value"
+			contentType = "contentType-value"
+			size = 99
+			isInline = $true
+			id = "id-value"
+		}
+	)
+}
 }
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params

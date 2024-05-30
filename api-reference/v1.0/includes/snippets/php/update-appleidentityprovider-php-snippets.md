@@ -5,18 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SocialIdentityProvider;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new IdentityProviderBase();
-$requestBody->set@odatatype('#microsoft.graph.socialIdentityProvider');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new SocialIdentityProvider();
+$requestBody->setOdataType('#microsoft.graph.socialIdentityProvider');
 $requestBody->setDisplayName('Apple');
 
-
-
-$requestResult = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->identityProviders()->byIdentityProviderBaseId('identityProviderBase-id')->patch($requestBody)->wait();
 
 ```

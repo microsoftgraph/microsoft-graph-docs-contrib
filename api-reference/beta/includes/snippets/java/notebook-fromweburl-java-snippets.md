@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String webUrl = "webUrl value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().onenote().notebooks()
-	.getNotebookFromWebUrl(NotebookGetNotebookFromWebUrlParameterSet
-		.newBuilder()
-		.withWebUrl(webUrl)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.users.item.onenote.notebooks.getnotebookfromweburl.GetNotebookFromWebUrlPostRequestBody getNotebookFromWebUrlPostRequestBody = new com.microsoft.graph.beta.users.item.onenote.notebooks.getnotebookfromweburl.GetNotebookFromWebUrlPostRequestBody();
+getNotebookFromWebUrlPostRequestBody.setWebUrl("webUrl value");
+var result = graphClient.me().onenote().notebooks().getNotebookFromWebUrl().post(getNotebookFromWebUrlPostRequestBody);
+
 
 ```

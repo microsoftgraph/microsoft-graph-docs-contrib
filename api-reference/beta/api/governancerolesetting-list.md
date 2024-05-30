@@ -3,8 +3,9 @@ title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # List governanceRoleSettings
@@ -17,38 +18,24 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
-### Azure resources
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
 
-### Azure AD
+The requestor must also have at least one role assignment on the resource.
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureAD |
-
-### Groups
-
-|Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
-
-Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
@@ -60,13 +47,13 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
-This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
+This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
@@ -200,5 +187,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

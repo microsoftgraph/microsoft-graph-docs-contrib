@@ -4,56 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
+requestBody := graphadmin.NewUpdateAudiencePostRequestBody()
 
 
-updatableAsset := graphmodels.NewUpdatableAsset()
+updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-addMembers := []graphmodels.Objectable {
+addMembers := []graphmodelswindowsupdates.UpdatableAssetable {
 	updatableAsset,
-
 }
 requestBody.SetAddMembers(addMembers)
 
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-removeMembers := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetRemoveMembers(removeMembers)
-
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-addExclusions := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetAddExclusions(addExclusions)
-
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-removeExclusions := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetRemoveExclusions(removeExclusions)
-
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").MicrosoftGraphWindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

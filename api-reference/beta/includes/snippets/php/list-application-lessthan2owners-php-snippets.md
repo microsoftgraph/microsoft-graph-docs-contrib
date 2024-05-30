@@ -5,26 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Applications\ApplicationsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ApplicationsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "owners/$count eq 0 or owners/$count eq 1";
-$queryParameters->count = true;
-$queryParameters->select = ["id","displayName"];
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = ApplicationsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "owners/\$count eq 0 or owners/\$count eq 1";
+$queryParameters->count = true;
+$queryParameters->select = ["id","displayName"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->applications()->get($requestConfiguration);
 
+$result = $graphServiceClient->applications()->get($requestConfiguration)->wait();
 
 ```

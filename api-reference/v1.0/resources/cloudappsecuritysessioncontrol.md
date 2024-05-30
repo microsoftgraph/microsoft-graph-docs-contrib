@@ -2,8 +2,9 @@
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
 ms.localizationpriority: medium
-author: "davidspooner"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

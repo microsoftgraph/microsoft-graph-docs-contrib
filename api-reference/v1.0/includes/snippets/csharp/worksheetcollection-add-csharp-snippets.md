@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var name = "name-value";
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Add;
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets
-	.Add(name)
-	.Request()
-	.PostAsync();
+var requestBody = new AddPostRequestBody
+{
+	Name = "name-value",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets.Add.PostAsync(requestBody);
+
 
 ```

@@ -4,7 +4,7 @@ description: The personOrGroupColumn on a columnDefinition resource indicates th
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 

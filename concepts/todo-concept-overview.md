@@ -3,7 +3,7 @@ title: "To Do API overview"
 description: "Use the Microsoft To Do API in Microsoft Graph to manage tasks and plan your day. Tasks are organized in task lists accessed across To Do clients, Outlook, and Teams."
 author: "avijityadav"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # To Do API overview
@@ -29,11 +29,11 @@ Microsoft To Do provides a new entity called _linked resource_, which you can us
 
 |Operation|Request|
 |:--------|:--|
-| List all the task lists | GET https://graph.microsoft.com/v1.0/me/todo/lists |
-| List all tasks in a task list | GET https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
-| Create a new task | POST https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
-| Update a task | PATCH https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
-| Delete a task | DELETE https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| List all the task lists | GET `https://graph.microsoft.com/v1.0/me/todo/lists` |
+| List all tasks in a task list | GET `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks` |
+| Create a new task | POST `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks` |
+| Update a task | PATCH `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}` |
+| Delete a task | DELETE `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}` |
 
 ## API reference
 

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PlannerBucket plannerBucket = graphClient.planner().buckets("{bucket-id}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PlannerBucket result = graphClient.planner().buckets().byPlannerBucketId("{plannerBucket-id}").get();
+
 
 ```

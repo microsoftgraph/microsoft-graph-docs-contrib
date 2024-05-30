@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directoryObject = new DirectoryObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ReferenceCreate
 {
-	Id = "{id}"
+	OdataId = "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners.References
-	.Request()
-	.AddAsync(directoryObject);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners.Ref.PostAsync(requestBody);
+
 
 ```

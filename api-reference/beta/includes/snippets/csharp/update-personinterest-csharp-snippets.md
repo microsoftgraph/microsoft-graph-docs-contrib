@@ -4,18 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personInterest = new PersonInterest
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PersonInterest
 {
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Sports"
-	}
+		"Sports",
+	},
 };
 
-await graphClient.Me.Profile.Interests["{personInterest-id}"]
-	.Request()
-	.UpdateAsync(personInterest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Interests["{personInterest-id}"].PatchAsync(requestBody);
+
 
 ```

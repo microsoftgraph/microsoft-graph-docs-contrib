@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\LifecycleWorkflows\Workflows\Item\Versions\{workflowVersion-versionNumber}\WorkflowVersionItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new WorkflowVersionRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new WorkflowVersionRequestBuilderGetQueryParameters();
+$requestConfiguration = new WorkflowVersionItemRequestBuilderGetRequestConfiguration();
+$queryParameters = WorkflowVersionItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["category","displayName","versionNumber","executionConditions"];
 $queryParameters->expand = ["tasks"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->versionsById('workflowVersion-versionNumber')->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->versions()->byWorkflowVersionVersionNumber('workflowVersion-versionNumber')->get($requestConfiguration)->wait();
 
 ```

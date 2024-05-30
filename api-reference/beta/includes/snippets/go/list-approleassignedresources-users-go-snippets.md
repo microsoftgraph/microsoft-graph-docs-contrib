@@ -4,25 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-
-requestCount := true
-
-requestParameters := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetQueryParameters{
-	Count: &requestCount,
+requestParameters := &graphusers.ItemAppRoleAssignedResourcesRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","accountEnabled","servicePrincipalType","signInAudience"},
 }
-configuration := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemAppRoleAssignedResourcesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().AppRoleAssignedResources().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+appRoleAssignedResources, err := graphClient.Me().AppRoleAssignedResources().Get(context.Background(), configuration)
 
 
 ```

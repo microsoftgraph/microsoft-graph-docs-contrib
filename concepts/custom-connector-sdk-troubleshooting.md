@@ -1,16 +1,16 @@
 ---
-title: "Troubleshoot issues with the Microsoft Graph connectors SDK (preview)"
+title: "Troubleshoot issues with the Microsoft Graph connectors SDK"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
-description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK (preview)."
+ms.subservice: search
+description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK."
 ---
 
-# Troubleshoot issues with the Microsoft Graph connectors SDK (preview)
+# Troubleshoot issues with the Microsoft Graph connectors SDK
 
-This article describes some of the most common issues with the Microsoft Graph connectors SDK (preview), and how to troubleshoot them.
+This article describes some of the most common issues with the Microsoft Graph connectors SDK, and how to troubleshoot them.
 
 ## Items missing from the index
 
@@ -110,6 +110,6 @@ If you need more help troubleshooting an issue, you can raise an [issue](https:/
 
 You can also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
 
-## See also
+## Related content
 
 - [Best practices](/graph/custom-connector-sdk-best-practices)

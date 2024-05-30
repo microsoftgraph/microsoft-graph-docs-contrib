@@ -1,9 +1,9 @@
 ---
 title: "updatableAssetEnrollment resource type"
 description: "Represents an enrollment into an area of the service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

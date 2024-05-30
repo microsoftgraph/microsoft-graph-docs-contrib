@@ -2,8 +2,8 @@
 title: "Working with Excel in Microsoft Graph"
 description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive."
 ms.localizationpriority: high
-author: "grangery"
-ms.prod: "excel"
+author: "AmandaHan123"
+ms.subservice: "excel"
 doc_type: conceptualPageType
 ---
 
@@ -19,13 +19,13 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 returns a collection of worksheet objects that are part of the workbook.    
 
 
-The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
+The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks aren't supported. 
 
-**Note**: Support for workbooks stored in OneDrive Consumer platform is still not available. At this time, only the files stored in business platform is supported by Excel REST APIs. 
+**Note**: Support for workbooks stored in OneDrive Consumer platform is still not available. At this time, only the files stored in business platform are supported by Excel REST APIs. 
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.2 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Microsoft identity platform](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](/graph/permissions-reference) is required to use the Excel resource:
 
@@ -38,8 +38,8 @@ One of the following [permission scopes](/graph/permissions-reference) is requir
 Excel APIs can be called in one of three modes: 
 
 1. Persistent session - All changes made to the workbook are persisted (saved). This is the most efficient and performant mode of operation. 
-2. Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state. 
-3. Sessionless - The API call is made without session information. Excel servers have to locate the server's copy of the workbook each time to perform the operation and hence this is not an efficient way for call Excel APIs. It is suitable for making one off requests. 
+2. Non-persistent session - Changes made by the API aren't saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state. 
+3. Sessionless - The API call is made without session information. Excel servers have to locate the server's copy of the workbook each time to perform the operation and hence this isn't an efficient way for call Excel APIs. It's suitable for making one off requests. 
 
 To represent the session in the API, use the `workbook-session-id: {session-id}` header. 
 
@@ -60,7 +60,7 @@ authorization: Bearer {access-token}
 { "persistChanges": true }
 ```
 
-When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
+When the value of `persistChanges` is set to `false`, a nonpersistent session id is returned.  
 
 
 #### Response
@@ -191,7 +191,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which need to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### Delete a worksheet
 
@@ -1133,7 +1133,7 @@ content-type: application/json
 
 #### null input in 2-D array
 
-`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
+`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update takes place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
 
 For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.
 
@@ -1148,7 +1148,7 @@ In the following set request, only some parts of the Range Number Format are set
 
 #### null input for a property
 
-`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.
+`null` isn't a valid single input for the entire property. For example, the following isn't valid because the entire values can't be set to null or ignored.
 
 ```json
 {
@@ -1157,7 +1157,7 @@ In the following set request, only some parts of the Range Number Format are set
 
 ```
 
-The following is not valid either as null is not a valid color value.
+Here'sn't valid either as null isn't a valid color value.
 
 ```json
 {
@@ -1169,7 +1169,7 @@ The following is not valid either as null is not a valid color value.
 
 Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.
 
-For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.
+For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation is undefined.
 
 ```json
 {
@@ -1180,7 +1180,7 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 
 A null value is also returned in the response in the following cases:
 - If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.
-- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.
+- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties return null as the value.
 
 ### Blank input and output
 
@@ -1225,7 +1225,7 @@ When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`),
 
 Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.
 
-For example, the following is not a valid update request because the requested range is unbounded.
+For example, the following isn't a valid update request because the requested range is unbounded.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1236,7 +1236,7 @@ PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A:B")
 }
 ```
 
-When an update operation is attempted on such a Range, the API will return an error.
+When an update operation is attempted on such a Range, the API returns an error.
 
 
 ### Large Range
@@ -1250,11 +1250,11 @@ To avoid this, we recommend that you read or write for large Range in multiple s
 
 To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
 
-The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.
+The API looks for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it applies the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.
 
 #### Examples
 
-The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
+The following request updates the selected range with the text of "Sample text". The range has 200 cells, whereas the provided input only has one cell value.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1325,5 +1325,3 @@ Content-Type: application/json
 }
 ```
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

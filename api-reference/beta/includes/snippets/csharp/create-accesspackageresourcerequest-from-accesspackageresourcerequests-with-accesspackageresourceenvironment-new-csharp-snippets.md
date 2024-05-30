@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageResourceRequest = new AccessPackageResourceRequestObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AccessPackageResourceRequest
 {
 	CatalogId = "de9315c1-272b-4905-924b-cc112ca180c7",
 	AccessPackageResource = new AccessPackageResource
@@ -18,14 +21,14 @@ var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 		OriginSystem = "SharePointOnline",
 		AccessPackageResourceEnvironment = new AccessPackageResourceEnvironment
 		{
-			OriginId = "https://contoso-admin.sharepoint.com/"
-		}
+			OriginId = "https://contoso-admin.sharepoint.com/",
+		},
 	},
-	RequestType = "AdminAdd"
+	RequestType = "AdminAdd",
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests
-	.Request()
-	.AddAsync(accessPackageResourceRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests.PostAsync(requestBody);
+
 
 ```

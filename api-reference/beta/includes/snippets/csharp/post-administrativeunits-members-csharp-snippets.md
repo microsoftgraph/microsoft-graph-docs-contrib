@@ -4,23 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directoryObject = new Group
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Group
 {
+	OdataType = "#microsoft.graph.group",
 	Description = "Self help community for golf",
 	DisplayName = "Golf Assist",
-	GroupTypes = new List<String>()
+	GroupTypes = new List<string>
 	{
-		"Unified"
+		"Unified",
 	},
 	MailEnabled = true,
 	MailNickname = "golfassist",
-	SecurityEnabled = false
+	SecurityEnabled = false,
 };
 
-await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members
-	.Request()
-	.AddAsync(directoryObject);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
+
 
 ```

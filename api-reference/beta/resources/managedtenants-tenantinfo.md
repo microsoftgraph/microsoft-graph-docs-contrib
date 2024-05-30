@@ -3,7 +3,7 @@ title: "tenantInfo resource type"
 description: "Represents information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Represents information for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional.|
 
 ## Relationships
 None.

@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var languageProficiency = new LanguageProficiency
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new LanguageProficiency
 {
-	AllowedAudiences = AllowedAudiences.Organization
+	AllowedAudiences = AllowedAudiences.Organization,
 };
 
-await graphClient.Me.Profile.Languages["{languageProficiency-id}"]
-	.Request()
-	.UpdateAsync(languageProficiency);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Languages["{languageProficiency-id}"].PatchAsync(requestBody);
+
 
 ```

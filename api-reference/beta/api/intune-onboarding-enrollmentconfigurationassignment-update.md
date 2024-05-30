@@ -3,7 +3,7 @@ title: "Update enrollmentConfigurationAssignment"
 description: "Update the properties of a enrollmentConfigurationAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,15 +67,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 453
+Content-length: 466
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -85,16 +88,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 502
+Content-Length: 515
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

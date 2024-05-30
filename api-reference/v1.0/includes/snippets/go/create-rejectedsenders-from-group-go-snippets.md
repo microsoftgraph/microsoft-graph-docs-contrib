@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+requestBody.SetOdataId(&odataId) 
 
-graphClient.GroupsById("group-id").RejectedSenders().$ref().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

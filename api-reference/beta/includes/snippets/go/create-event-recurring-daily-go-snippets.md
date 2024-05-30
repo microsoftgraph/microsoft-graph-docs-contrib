@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeEventsRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvent()
@@ -42,7 +52,7 @@ requestBody.SetLocation(location)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AlexW@contoso.OnMicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
@@ -50,9 +60,8 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 recurrence := graphmodels.NewPatternedRecurrence()
@@ -72,7 +81,8 @@ range.SetNumberOfOccurrences(&numberOfOccurrences)
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

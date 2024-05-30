@@ -3,7 +3,7 @@ title: "localizedLabel resource type"
 description: "Represents the label for a term in the term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

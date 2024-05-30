@@ -4,22 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var driveItem = new DriveItem
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new DriveItem
 {
 	Name = "New Folder",
 	Folder = new Folder
 	{
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@microsoft.graph.conflictBehavior", "rename"}
-	}
+		{
+			"@microsoft.graph.conflictBehavior" , "rename"
+		},
+	},
 };
 
-await graphClient.Me.Drive.Root.Children
-	.Request()
-	.AddAsync(driveItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Children.PostAsync(requestBody);
+
 
 ```

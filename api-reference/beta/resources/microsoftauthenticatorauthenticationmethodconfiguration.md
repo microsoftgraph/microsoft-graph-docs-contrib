@@ -1,9 +1,10 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator authentication methods policy."
-author: "jpettere"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Microsoft Authenticator authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 ## Methods
 |Method|Return type|Description|

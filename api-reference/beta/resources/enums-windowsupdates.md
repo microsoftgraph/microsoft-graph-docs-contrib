@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-update-business"
 doc_type: enumTypes
 ---
 
@@ -43,19 +43,12 @@ Namespace: microsoft.graph.windowsUpdates
 |archived|
 |unknownFutureValue|
 
-### equivalentContentOption values 
-
-|Member|
-|:---|
-|none|
-|latestSecurity|
-|unknownFutureValue|
-
 ### monitoringAction values 
 
 |Member|
 |:---|
 |alertError|
+|offerFallback|
 |pauseDeployment|
 |unknownFutureValue|
 
@@ -63,6 +56,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 |Member|
 |:---|
+|ineligible|
 |rollback|
 |unknownFutureValue|
 
@@ -73,6 +67,14 @@ Namespace: microsoft.graph.windowsUpdates
 |all|
 |security|
 |nonSecurity|
+|unknownFutureValue|
+
+### qualityUpdateCadence values 
+
+|Member|
+|:---|
+|monthly|
+|outOfBand|
 |unknownFutureValue|
 
 ### requestedDeploymentStateValue values 
@@ -107,6 +109,24 @@ Namespace: microsoft.graph.windowsUpdates
 |feature|
 |quality|
 |unknownFutureValue|
+|driver|
+
+### cveSeverityLevel values 
+
+|Member|
+|:---|
+|critical|
+|moderate|
+|important|
+|unknownFutureValue|
+
+### bodyType values
+
+| Member |
+|:-------|
+| text   |
+| html   |
+| unknownFutureValue |
 
 <!--
 {

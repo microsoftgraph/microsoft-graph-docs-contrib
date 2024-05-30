@@ -4,23 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
 
 requestStartDateTime := "2019-04-08T09:00:00.0000000"
 requestEndDateTime := "2019-04-30T09:00:00.0000000"
 
-requestParameters := &graphconfig.MeEventItemInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemEventItemInstancesRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 	Select: [] string {"subject","bodyPreview","seriesMasterId","type","recurrence","start","end"},
 }
-configuration := &graphconfig.MeEventItemInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemEventItemInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().EventsById("event-id").Instances().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+instances, err := graphClient.Me().Events().ByEventId("event-id").Instances().Get(context.Background(), configuration)
 
 
 ```

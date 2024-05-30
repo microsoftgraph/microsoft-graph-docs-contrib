@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userSource = new Microsoft.Graph.Ediscovery.UserSource
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+
+var requestBody = new UserSource
 {
 	Email = "megan@contoso.com",
-	IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site
+	IncludedSources = SourceType.Mailbox | SourceType.Site,
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"].UserSources
-	.Request()
-	.AddAsync(userSource);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].UserSources.PostAsync(requestBody);
+
 
 ```

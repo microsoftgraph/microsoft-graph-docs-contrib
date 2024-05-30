@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "List the effective sharing permissions of on a driveItem."
 ms.date: 09/10/2017
-title: List who has access to a file
+title: List sharing permissions on a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List sharing permissions on a driveItem
@@ -15,23 +15,22 @@ Namespace: microsoft.graph
 
 List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Access to sharing permissions
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
 
-* For the owner of the item, all sharing permissions will be returned. This includes co-owners.
+* For the owner of the item, all sharing permissions are returned. It includes co-owners.
 * For a non-owner caller, only the sharing permissions that apply to the caller are returned.
-* Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
+* Sharing permission properties that contain secrets (for example, `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_list_permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-list-permissions-permissions.md)]
 
 ## HTTP request
 
@@ -60,10 +59,10 @@ This method supports the `$select` [OData Query Parameters](/graph/query-paramet
 
 If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.
 
-Effective sharing permissions of a DriveItem can come from two sources:
+Effective sharing permissions of a driveItem can come from two sources:
 
-* Sharing permissions applied directly on the DriveItem itself
-* Sharing permissions inherited from the DriveItem's ancestors
+* Sharing permissions applied directly on the driveItem itself
+* Sharing permissions inherited from the driveItem's ancestors
 
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
@@ -84,16 +83,35 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-permissions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-item-permissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-item-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-permissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-permissions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -160,12 +178,12 @@ Content-Type: application/json
 
 ## Remarks
 
-The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems.
+The **permissions** relationship of driveItem can't be expanded as part of a call to [get driveItem](driveitem-get.md) or a collection of driveItems.
 You must access the permissions property directly.
 
 ## Error responses
 
-Read the [Error Responses][error-response] topic for more information about
+Read the [Error responses][error-response] topic for more information about
 how errors are returned.
 
 [error-response]: /graph/errors

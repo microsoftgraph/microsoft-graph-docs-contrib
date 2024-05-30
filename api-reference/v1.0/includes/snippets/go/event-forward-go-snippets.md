@@ -4,15 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewForwardPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphusers.NewItemForwardPostRequestBody()
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "danas@contoso.onmicrosoft.com"
+address := "danas@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Dana Swope"
 emailAddress.SetName(&name) 
@@ -20,13 +29,13 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Forward().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Me().Events().ByEventId("event-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

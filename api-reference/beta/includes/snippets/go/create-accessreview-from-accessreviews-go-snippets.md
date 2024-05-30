@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAccessReview()
 displayName := "TestReview"
@@ -36,7 +45,6 @@ accessReviewReviewer1.SetId(&id)
 reviewers := []graphmodels.AccessReviewReviewerable {
 	accessReviewReviewer,
 	accessReviewReviewer1,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewSettings()
@@ -70,7 +78,8 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 settings.SetAutoReviewSettings(autoReviewSettings)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+accessReviews, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
 
 
 ```

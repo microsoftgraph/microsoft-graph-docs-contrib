@@ -1,9 +1,9 @@
 ---
-author: rahmit
+author: sangle7
 description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users."
 title: "sitePage: publish"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # sitePage: publish
@@ -20,29 +20,31 @@ Publish the latest version of a [sitePage][] resource, which makes the version o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "sitepage_publish" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-publish-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /sites/{siteId}/pages/{pageId}/publish
+POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/publish
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-This message does not have a request body. Any request body sent will be ignored.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, the API call returns a `204 No Content`.
+If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
 
 <!-- { "blockType": "response" } -->
 

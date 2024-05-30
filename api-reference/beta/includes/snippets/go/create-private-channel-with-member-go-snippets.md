@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewChannel()
 membershipType := graphmodels.PRIVATE_CHANNELMEMBERSHIPTYPE 
@@ -16,24 +24,23 @@ description := "This is my first private channels"
 requestBody.SetDescription(&description) 
 
 
-conversationMember := graphmodels.NewConversationMember()
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')", 
+	"odataBind" : "https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
 members := []graphmodels.ConversationMemberable {
 	conversationMember,
-
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

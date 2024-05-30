@@ -5,39 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Communications\Calls\Item\Answer\AnswerPostRequestBody;
+use Microsoft\Graph\Generated\Models\AppHostedMediaConfig;
+use Microsoft\Graph\Generated\Models\Modality;
+use Microsoft\Graph\Generated\Models\IncomingCallOptions;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AnswerPostRequestBody();
 $requestBody->setCallbackUri('callbackUri-value');
-
-$mediaConfig = new MediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
-
-$additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
-];
-$mediaConfig->setAdditionalData($additionalData);
-
-
-
+$mediaConfig = new AppHostedMediaConfig();
+$mediaConfig->setOdataType('#microsoft.graph.appHostedMediaConfig');
+$mediaConfig->setBlob('<Media Session Configuration Blob>');
 $requestBody->setMediaConfig($mediaConfig);
-$requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
-]);
-
+$requestBody->setAcceptedModalities([new Modality('audio'),	]);
 $callOptions = new IncomingCallOptions();
-$callOptions->set@odatatype('#microsoft.graph.incomingCallOptions');
-
+$callOptions->setOdataType('#microsoft.graph.incomingCallOptions');
 $callOptions->setIsContentSharingNotificationEnabled(true);
-
-
 $requestBody->setCallOptions($callOptions);
 $requestBody->setParticipantCapacity(200);
 
-
-
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
-
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody)->wait();
 
 ```

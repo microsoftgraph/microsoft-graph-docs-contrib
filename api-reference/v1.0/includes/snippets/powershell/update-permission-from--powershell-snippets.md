@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Roles = @(
-		"read"
-	)
+	roles = @(
+	"read"
+)
 }
 
 Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params

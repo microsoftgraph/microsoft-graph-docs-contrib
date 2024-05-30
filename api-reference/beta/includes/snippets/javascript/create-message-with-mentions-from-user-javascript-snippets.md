@@ -16,15 +16,15 @@ const message = {
       {
           emailAddress: {
               name: 'Samantha Booth',
-              address: 'samanthab@contoso.onmicrosoft.com'
+              address: 'samanthab@contoso.com'
           }
       }
     ],
     mentions: [
-      {    
+      {
         mentioned: {
           name: 'Dana Swope',
-          address: 'danas@contoso.onmicrosoft.com'
+          address: 'danas@contoso.com'
          }
       }
     ]

@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String password = "1234567890";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.users()
-	.validatePassword(UserValidatePasswordParameterSet
-		.newBuilder()
-		.withPassword(password)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.users.validatepassword.ValidatePasswordPostRequestBody validatePasswordPostRequestBody = new com.microsoft.graph.beta.users.validatepassword.ValidatePasswordPostRequestBody();
+validatePasswordPostRequestBody.setPassword("1234567890");
+var result = graphClient.users().validatePassword().post(validatePasswordPostRequestBody);
+
 
 ```

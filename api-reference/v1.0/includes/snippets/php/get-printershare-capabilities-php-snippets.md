@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Print\Shares\Item\PrinterShareItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new PrinterShareRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new PrinterShareRequestBuilderGetQueryParameters();
+$requestConfiguration = new PrinterShareItemRequestBuilderGetRequestConfiguration();
+$queryParameters = PrinterShareItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","capabilities"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->print()->sharesById('printerShare-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->get($requestConfiguration)->wait();
 
 ```

@@ -4,14 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
 registrationEnforcement := graphmodels.NewRegistrationEnforcement()
 authenticationMethodsRegistrationCampaign := graphmodels.NewAuthenticationMethodsRegistrationCampaign()
 snoozeDurationInDays := int32(1)
 authenticationMethodsRegistrationCampaign.SetSnoozeDurationInDays(&snoozeDurationInDays) 
+enforceRegistrationAfterAllowedSnoozes := true
+authenticationMethodsRegistrationCampaign.SetEnforceRegistrationAfterAllowedSnoozes(&enforceRegistrationAfterAllowedSnoozes) 
 state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
 authenticationMethodsRegistrationCampaign.SetState(&state) 
 excludeTargets := []graphmodels.ExcludeTargetable {
@@ -30,13 +40,25 @@ authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthentication
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
-
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
+reportSuspiciousActivitySettings := graphmodels.NewReportSuspiciousActivitySettings()
+state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
+reportSuspiciousActivitySettings.SetState(&state) 
+includeTarget := graphmodels.NewIncludeTarget()
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+includeTarget.SetTargetType(&targetType) 
+id := "all_users"
+includeTarget.SetId(&id) 
+reportSuspiciousActivitySettings.SetIncludeTarget(includeTarget)
+voiceReportingCode := int32(0)
+reportSuspiciousActivitySettings.SetVoiceReportingCode(&voiceReportingCode) 
+requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+authenticationMethodsPolicy, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

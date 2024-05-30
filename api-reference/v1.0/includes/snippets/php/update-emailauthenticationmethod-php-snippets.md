@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EmailAuthenticationMethod;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EmailAuthenticationMethod();
 $requestBody->setEmailAddress('kim@contoso.com');
 
-
-
-$requestResult = $graphServiceClient->usersById('user-id')->authentication()->emailMethodsById('emailAuthenticationMethod-id')->patch($requestBody);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->emailMethods()->byEmailAuthenticationMethodId('emailAuthenticationMethod-id')->patch($requestBody)->wait();
 
 ```

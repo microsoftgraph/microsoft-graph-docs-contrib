@@ -4,22 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversationMember = new AadUserConversationMember
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AadUserConversationMember
 {
-	Roles = new List<String>()
+	OdataType = "#microsoft.graph.aadUserConversationMember",
+	Roles = new List<string>
 	{
-		"owner"
+		"owner",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')"}
-	}
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+		},
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members
-	.Request()
-	.AddAsync(conversationMember);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members.PostAsync(requestBody);
+
 
 ```

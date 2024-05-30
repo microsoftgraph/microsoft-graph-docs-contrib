@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Sites\Item\Lists\Item\Items\Item\Versions\Item\ListItemVersionItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new ListItemVersionRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new ListItemVersionRequestBuilderGetQueryParameters();
+$requestConfiguration = new ListItemVersionItemRequestBuilderGetRequestConfiguration();
+$queryParameters = ListItemVersionItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["fields"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->versionsById('listItemVersion-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->byListItemId('listItem-id')->versions()->byListItemVersionId('listItemVersion-id')->get($requestConfiguration)->wait();
 
 ```

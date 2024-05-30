@@ -4,29 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new Deployment
 {
-	Settings = new WindowsDeploymentSettings
+	OdataType = "#microsoft.graph.windowsUpdates.deployment",
+	Settings = new DeploymentSettings
 	{
-		Monitoring = new Microsoft.Graph.WindowsUpdates.MonitoringSettings
+		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
+		Monitoring = new MonitoringSettings
 		{
-			MonitoringRules = new List<Microsoft.Graph.WindowsUpdates.MonitoringRule>()
+			MonitoringRules = new List<MonitoringRule>
 			{
-				new Microsoft.Graph.WindowsUpdates.MonitoringRule
+				new MonitoringRule
 				{
-					Signal = Microsoft.Graph.WindowsUpdates.MonitoringSignal.Rollback,
+					Signal = MonitoringSignal.Rollback,
 					Threshold = 5,
-					Action = Microsoft.Graph.WindowsUpdates.MonitoringAction.PauseDeployment
-				}
-			}
-		}
-	}
+					Action = MonitoringAction.PauseDeployment,
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"]
-	.Request()
-	.UpdateAsync(deployment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,31 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewReplyAllPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphusers.NewItemReplyAllPostRequestBody()
 message := graphmodels.NewMessage()
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "guidelines.txt"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 message.SetAttachments(attachments)
 requestBody.SetMessage(message)
 comment := "Please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().MessagesById("message-id").ReplyAll().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Me().Messages().ByMessageId("message-id").ReplyAll().Post(context.Background(), requestBody, nil)
 
 
 ```

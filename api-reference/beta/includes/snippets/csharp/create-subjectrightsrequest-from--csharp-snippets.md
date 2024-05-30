@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SubjectRightsRequest
 {
 	Type = SubjectRightsRequestType.Export,
 	ContentQuery = "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
@@ -22,21 +25,29 @@ var subjectRightsRequest = new SubjectRightsRequestObject
 		FirstName = "Diego",
 		LastName = "Siciliani",
 		Email = "Diego.Siciliani@contoso.com",
-		Residency = "USA"
+		Residency = "USA",
 	},
 	MailboxLocations = null,
 	PauseAfterEstimate = true,
-	Regulations = new List<String>()
+	Regulations = new List<string>
 	{
-		"CCPA"
+		"CCPA",
 	},
 	SiteLocations = new SubjectRightsRequestAllSiteLocation
 	{
-	}
+		OdataType = "microsoft.graph.subjectRightsRequestAllSiteLocation",
+	},
+	Approvers = new List<User>
+	{
+		new User
+		{
+			Id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+		},
+	},
 };
 
-await graphClient.Privacy.SubjectRightsRequests
-	.Request()
-	.AddAsync(subjectRightsRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);
+
 
 ```

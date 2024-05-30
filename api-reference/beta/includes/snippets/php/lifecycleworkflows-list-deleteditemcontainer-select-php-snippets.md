@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\IdentityGovernance\LifecycleWorkflows\DeletedItems\Workflows\WorkflowsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new WorkflowsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new WorkflowsRequestBuilderGetQueryParameters();
+$queryParameters = WorkflowsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","category","displayName","description","version"];
 $queryParameters->filter = "category eq 'leaver'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->get($requestConfiguration)->wait();
 
 ```

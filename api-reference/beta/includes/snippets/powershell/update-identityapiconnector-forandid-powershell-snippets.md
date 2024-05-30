@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	DisplayName = "New Test API"
-	TargetUrl = "https://otherapi.com/api/endpoint"
-	AuthenticationConfiguration = @{
+	displayName = "New Test API"
+	targetUrl = "https://otherapi.com/api/endpoint"
+	authenticationConfiguration = @{
 		"@odata.type" = "microsoft.graph.basicAuthentication"
-		Username = "<NEW_USERNAME>"
-		Password = "<NEW_PASSWORD>"
+		username = "<NEW_USERNAME>"
+		password = "<NEW_PASSWORD>"
 	}
 }
 
-Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
 ```

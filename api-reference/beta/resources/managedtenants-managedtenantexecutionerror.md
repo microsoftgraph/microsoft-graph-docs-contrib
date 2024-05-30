@@ -3,7 +3,7 @@ title: "managedTenantExecutionError resource type"
 description: "Represents an exception for a managed tenant operation."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [managedTenantOperationError](../resources/managedtenants-managedt
 |nodeId|Int32|The node identifier where the exception occurred. Required. Read-only.|
 |rawToken|String|The token for the exception. Optional. Read-only.|
 |statementIndex|Int32|The statement index for the exception. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Required. Read-only.|
 
 ## Relationships
 None.

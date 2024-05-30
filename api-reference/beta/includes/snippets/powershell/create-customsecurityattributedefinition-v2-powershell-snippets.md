@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	AttributeSet = "Engineering"
-	Description = "Active projects for user"
-	IsCollection = $true
-	IsSearchable = $true
-	Name = "Project"
-	Status = "Available"
-	Type = "String"
-	UsePreDefinedValuesOnly = $true
+	attributeSet = "Engineering"
+	description = "Active projects for user"
+	isCollection = $true
+	isSearchable = $true
+	name = "Project"
+	status = "Available"
+	type = "String"
+	usePreDefinedValuesOnly = $true
 }
 
-New-MgDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 
 ```

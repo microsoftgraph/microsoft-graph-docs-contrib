@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAppRoleAssignment()
 principalId := uuid.MustParse("33ad69f9-da99-4bed-acd0-3f24235cb296")
@@ -15,7 +24,8 @@ requestBody.SetResourceId(&resourceId)
 appRoleId := uuid.MustParse("ef7437e6-4f94-4a0a-a110-a439eb2aa8f7")
 requestBody.SetAppRoleId(&appRoleId) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AppRoleAssignedTo().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+appRoleAssignedTo, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AppRoleAssignedTo().Post(context.Background(), requestBody, nil)
 
 
 ```

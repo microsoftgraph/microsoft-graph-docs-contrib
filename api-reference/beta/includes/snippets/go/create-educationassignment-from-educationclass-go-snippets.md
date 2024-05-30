@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewEducationAssignment()
 dueDateTime , err := time.Parse(time.RFC3339, "2022-09-16T00:00:00Z")
@@ -18,20 +27,19 @@ instructions.SetContentType(&contentType)
 content := "Read chapter 4"
 instructions.SetContent(&content) 
 requestBody.SetInstructions(instructions)
-grading := graphmodels.NewEducationAssignmentGradeType()
-additionalData := map[string]interface{}{
-	"maxPoints" : int32(50) , 
-}
-grading.SetAdditionalData(additionalData)
+grading := graphmodels.NewEducationAssignmentPointsGradeType()
+maxPoints := float32(50)
+grading.SetMaxPoints(&maxPoints) 
 requestBody.SetGrading(grading)
-assignTo := graphmodels.NewEducationAssignmentRecipient()
+assignTo := graphmodels.NewEducationAssignmentClassRecipient()
 requestBody.SetAssignTo(assignTo)
 status := graphmodels.DRAFT_EDUCATIONASSIGNMENTSTATUS 
 requestBody.SetStatus(&status) 
 allowStudentsToAddResourcesToSubmission := true
 requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

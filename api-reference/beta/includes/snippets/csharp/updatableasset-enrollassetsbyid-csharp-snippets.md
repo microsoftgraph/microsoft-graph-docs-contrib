@@ -4,22 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var updateCategory = Microsoft.Graph.WindowsUpdates.UpdateCategory.Feature;
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesEnrollAssetsById;
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
 
-var memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
-
-var ids = new List<String>()
+var requestBody = new EnrollAssetsByIdPostRequestBody
 {
-	"String",
-	"String",
-	"String"
+	UpdateCategory = UpdateCategory.Feature,
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
+	Ids = new List<string>
+	{
+		"String",
+		"String",
+		"String",
+	},
 };
 
-await graphClient.Admin.Windows.Updates.UpdatableAssets
-	.EnrollAssetsById(updateCategory,memberEntityType,ids)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesEnrollAssetsById.PostAsync(requestBody);
+
 
 ```

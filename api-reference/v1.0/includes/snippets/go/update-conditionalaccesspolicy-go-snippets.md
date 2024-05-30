@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
 conditions := graphmodels.NewConditionalAccessConditionSet()
@@ -15,13 +23,13 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
 	conditions.SetRiskLevel(&riskLevel) 
 	riskLevel := graphmodels.LOW_RISKLEVEL 
-	conditions.SetRiskLevel(&riskLevel) 
-
+	conditions.SetRiskLevel(&riskLevel)
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)
 requestBody.SetConditions(conditions)
 
-result, err := graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+policies, err := graphClient.Identity().ConditionalAccess().Policies().ByConditionalAccessPolicyId("conditionalAccessPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

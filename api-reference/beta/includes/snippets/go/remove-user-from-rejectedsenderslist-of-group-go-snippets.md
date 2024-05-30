@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  //other-imports
+)
 
 
 requestId := "https://graph.microsoft.com/beta/users/{id}"
 
-requestParameters := &graphconfig.GroupItemRejectedSenders$refRequestBuilderDeleteQueryParameters{
+requestParameters := &graphgroups.GroupItemRejectedSenders$refRequestBuilderDeleteQueryParameters{
 	Id: &requestId,
 }
-configuration := &graphconfig.GroupItemRejectedSenders$refRequestBuilderDeleteRequestConfiguration{
+configuration := &graphgroups.GroupItemRejectedSenders$refRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").RejectedSenders().$ref().Delete(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
 
 
 ```

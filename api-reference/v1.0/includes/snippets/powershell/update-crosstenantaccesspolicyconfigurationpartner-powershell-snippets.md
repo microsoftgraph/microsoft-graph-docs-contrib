@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	InboundTrust = @{
-		IsMfaAccepted = $true
-		IsCompliantDeviceAccepted = $true
-		IsHybridAzureADJoinedDeviceAccepted = $true
+	inboundTrust = @{
+		isMfaAccepted = $true
+		isCompliantDeviceAccepted = $true
+		isHybridAzureADJoinedDeviceAccepted = $true
 	}
 }
 

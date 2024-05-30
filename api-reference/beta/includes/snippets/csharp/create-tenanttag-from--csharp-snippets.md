@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tenantTag = new Microsoft.Graph.ManagedTenants.TenantTag
+// Dependencies
+using Microsoft.Graph.Beta.Models.ManagedTenants;
+
+var requestBody = new TenantTag
 {
 	DisplayName = "Support",
-	Description = "Tenants that have purchased extended support"
+	Description = "Tenants that have purchased extended support",
 };
 
-await graphClient.TenantRelationships.ManagedTenants.TenantTags
-	.Request()
-	.AddAsync(tenantTag);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags.PostAsync(requestBody);
+
 
 ```

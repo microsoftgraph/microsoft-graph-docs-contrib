@@ -1,9 +1,9 @@
 ---
 title: "lobbyBypassSettings resource type"
 description: "Specifies which participants can bypass the meeting lobby."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

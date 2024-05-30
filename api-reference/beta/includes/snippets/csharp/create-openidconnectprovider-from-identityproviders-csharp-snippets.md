@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityProvider = new OpenIdConnectProvider
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new OpenIdConnectProvider
 {
+	OdataType = "microsoft.graph.openIdConnectProvider",
 	Name = "Login with the Contoso identity provider",
 	Type = "OpenIDConnect",
 	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8",
@@ -18,17 +22,17 @@ var identityProvider = new OpenIdConnectProvider
 		GivenName = "myGivenName",
 		Surname = "mySurname",
 		Email = "myEmail",
-		DisplayName = "myDisplayName"
+		DisplayName = "myDisplayName",
 	},
 	DomainHint = "mycustomoidc",
 	MetadataUrl = "https://mycustomoidc.com/.well-known/openid-configuration",
 	ResponseMode = OpenIdConnectResponseMode.Form_post,
 	ResponseType = OpenIdConnectResponseTypes.Code,
-	Scope = "openid"
+	Scope = "openid",
 };
 
-await graphClient.IdentityProviders
-	.Request()
-	.AddAsync(identityProvider);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityProviders.PostAsync(requestBody);
+
 
 ```

@@ -2,8 +2,8 @@
 title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the custom domain certificate metadata for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. Using a custom domain allows you to use your own domain name instead of the default domain, msappproxy.net, for your application. To learn more see, [Custom domains in Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+Represents the custom domain certificate metadata for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. Using a custom domain allows you to use your own domain name instead of the default domain, msappproxy.net, for your application. To learn more see, [Custom domains in Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 ## Properties
 

@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AccessReviewScheduleDefinition
 {
 	Id = "60860cdd-fb4d-4054-91ba-f75e04444aa6",
 	DisplayName = "Test world UPDATED NAME!",
@@ -14,15 +17,17 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 	DescriptionForReviewers = "Test world",
 	Scope = new AccessReviewQueryScope
 	{
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
 		Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-		QueryType = "MicrosoftGraph"
+		QueryType = "MicrosoftGraph",
 	},
 	InstanceEnumerationScope = new AccessReviewQueryScope
 	{
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
 		Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
-		QueryType = "MicrosoftGraph"
+		QueryType = "MicrosoftGraph",
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 	},
 	Settings = new AccessReviewScheduleSettings
@@ -40,19 +45,19 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			Pattern = new RecurrencePattern
 			{
 				Type = RecurrencePatternType.Weekly,
-				Interval = 1
+				Interval = 1,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2020,9,15)
-			}
-		}
-	}
+				StartDate = new Date(DateTime.Parse("2020-09-15")),
+			},
+		},
+	},
 };
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"]
-	.Request()
-	.PutAsync(accessReviewScheduleDefinition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].PutAsync(requestBody);
+
 
 ```

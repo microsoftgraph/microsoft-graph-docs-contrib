@@ -1,9 +1,9 @@
 ---
 title: "teamsTab resource type"
-description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+description: "Represents a tab pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -11,19 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
 
-
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+For more information about tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
-|[Get tab](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Read a tab pinned to a channel.|
-|[Add tab](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
-|[Update tab](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Update the tab properties.|
-|[Remove tab](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
+|[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
+|[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Read a tab pinned to a channel.|
+|[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
+|[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Update the tab properties.|
+|[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 
 
 ## Properties
@@ -39,11 +39,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md) | The application that is linked to the tab. This cannot be changed after tab creation. |
+|teamsApp|[teamsApp](teamsapp.md) | The application that is linked to the tab. This can't be changed after tab creation. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {
@@ -71,7 +71,7 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 

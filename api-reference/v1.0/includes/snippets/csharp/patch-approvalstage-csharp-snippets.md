@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var approvalStage = new ApprovalStage
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ApprovalStage
 {
 	ReviewResult = "Approve",
-	Justification = "OK"
+	Justification = "OK",
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentApprovals["{approval-id}"].Stages["{approvalStage-id}"]
-	.Request()
-	.UpdateAsync(approvalStage);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentApprovals["{approval-id}"].Stages["{approvalStage-id}"].PatchAsync(requestBody);
+
 
 ```

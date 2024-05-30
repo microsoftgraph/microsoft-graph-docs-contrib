@@ -3,15 +3,18 @@ title: "virtualAppointment resource type"
 description: "Represents information about a virtual appointment, including the client join URL, settings, and the client information."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# virtualAppointment resource type
+# virtualAppointment resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION] 
+  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on June 30, 2023. We recommend that you update existing apps that use this API to the new [Get Virtual appointment join link](../api/virtualappointment-getvirtualappointmentjoinweburl.md) function.
 
 Represents information about a virtual appointment, including the client join URL, settings, and the client information. Virtual appointments are designed for business to consume online workflows and include enhanced features such as mobile browser join and client waiting room.
 
@@ -21,10 +24,10 @@ Represents information about a virtual appointment, including the client join UR
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create virtualAppointment](../api/virtualappointment-put.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Get virtualAppointment](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Update virtualAppointment](../api/virtualappointment-update.md)|None|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Delete virtualAppointment](../api/virtualappointment-delete.md)|None|Delete a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Create virtual appointment (deprecated)](../api/virtualappointment-put.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Get virtual appointment (deprecated)](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Update virtual appointment (deprecated)](../api/virtualappointment-update.md)|None|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Delete virtual appointment (deprecated)](../api/virtualappointment-delete.md)|None|Delete a [virtualAppointment](../resources/virtualappointment.md) object.|
 
 > [!TIP]
 >
@@ -48,7 +51,8 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualAppointment",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json

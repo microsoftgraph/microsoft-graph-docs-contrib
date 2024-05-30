@@ -3,8 +3,8 @@ title: "securityReportsRoot resource type"
 description: "Represents an abstract type that contains resources for attack simulation and training reports."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
-doc_type: apiPageType
+ms.subservice: "reports"
+doc_type: resourcePageType
 ---
 
 # securityReportsRoot resource type

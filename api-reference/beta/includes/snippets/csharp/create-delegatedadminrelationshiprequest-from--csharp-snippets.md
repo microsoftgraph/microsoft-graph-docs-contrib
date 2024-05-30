@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var delegatedAdminRelationshipRequest = new DelegatedAdminRelationshipRequestObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new DelegatedAdminRelationshipRequest
 {
-	Action = DelegatedAdminRelationshipRequestAction.LockForApproval
+	Action = DelegatedAdminRelationshipRequestAction.LockForApproval,
 };
 
-await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].Requests
-	.Request()
-	.AddAsync(delegatedAdminRelationshipRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].Requests.PostAsync(requestBody);
+
 
 ```

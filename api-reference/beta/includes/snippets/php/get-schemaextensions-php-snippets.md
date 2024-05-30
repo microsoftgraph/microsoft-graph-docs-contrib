@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\SchemaExtensions\SchemaExtensionsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new SchemaExtensionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SchemaExtensionsRequestBuilderGetQueryParameters();
+$queryParameters = SchemaExtensionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "id eq 'graphlearn_test'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->schemaExtensions()->get($requestConfiguration);
-
+$result = $graphServiceClient->schemaExtensions()->get($requestConfiguration)->wait();
 
 ```

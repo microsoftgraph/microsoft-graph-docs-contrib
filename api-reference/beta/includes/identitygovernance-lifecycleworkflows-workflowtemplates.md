@@ -1,7 +1,7 @@
 ---
 author: "AlexFilipin"
 ms.localizationpriority: high
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.topic: include
 ---
 
@@ -16,6 +16,10 @@ ms.topic: include
 |---------------------------------|--------------------|
 | Onboard pre-hire employee       | Joiner             |
 | Onboard new hire employee       | Joiner             |
+| Post-Onboarding new hire employee       | Joiner             |
+| Real-time employee change       | Mover             |
+| Employee group membership changes      | Mover             |
+| Employee job profile change       | Mover             |
 | Real-time employee termination  | Leaver             |
 | Pre-Offboarding of an employee  | Leaver             |
 | Offboard an employee            | Leaver             |

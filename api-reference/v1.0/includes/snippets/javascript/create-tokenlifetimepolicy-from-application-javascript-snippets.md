@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const tokenLifetimePolicy = {
-  '@odata.id':'https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9'
+  '@odata.id':'https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4'
 };
 
-await client.api('/applications/{id}/tokenLifetimePolicies/$ref')
+await client.api('/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies/$ref')
 	.post(tokenLifetimePolicy);
 
 ```

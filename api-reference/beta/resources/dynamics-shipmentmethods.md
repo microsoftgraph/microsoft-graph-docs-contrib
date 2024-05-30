@@ -1,15 +1,15 @@
 ---
-title: shipmentMethods resource type 
-description: A shipment method in Dynamics 365 Business Central. 
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "shipmentMethod resource type"
+description: "Represents a method of shipment in Dynamics 365 Business Central, such as UPS, Fedex, and DHL."
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# shipmentMethods resource type
+# shipmentMethod resource type
 
 Namespace: microsoft.graph
 
@@ -21,37 +21,32 @@ Represents a method of shipment in Dynamics 365 Business Central, such as UPS, F
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get shipmentMethods](../api/dynamics-shipmentmethods-get.md)|shipmentMethods|Gets a shipment method.|
-|[Post shipmentMethods](../api/dynamics-create-shipmentmethods.md)|shipmentMethods|Creates a shipment method.|
-|[Patch shipmentMethods](../api/dynamics-shipmentmethods-update.md)|shipmentMethods|Updates a shipment method.|
-|[Delete shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|none|Deletes a shipment method.|
+|[Get shipment methods](../api/dynamics-shipmentmethods-get.md)|shipmentMethod|Get a shipment method.|
+|[Create shipment methods](../api/dynamics-create-shipmentmethods.md)|shipmentMethod|Create a shipment method.|
+|[Update shipment methods](../api/dynamics-shipmentmethods-update.md)|shipmentMethod|Update a shipment method.|
+|[Delete shipment methods](../api/dynamics-shipmentmethods-delete.md)|None|Delete a shipment method.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|GUID|The unique ID of the shipmentMethod. Non-editable.|
-|code|string|Specifies the shipment method code.|
-|displayName|string|Specifies the shipment method display name.|
-|lastModifiedDateTime|datetime|The last datetime the shipment method was modified. Read-Only.|  
+|code|String|The shipment method code.|
+|displayName|String|The display name for the shipment method.|
+|id|String|The unique identifier of the **shipmentMethod**. Noneditable.|
+|lastModifiedDateTime|Datetime|The date and time when the shipment method was last modified. Read-Only.|
 
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the shipmentMethod.
+The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "GUID",
-  "code": "string",
-  "displayName": "string",
-  "lastModifiedDateTime": "datetime"
+  "code": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "Datetime"
 }
-
 ```
-
-
-
-

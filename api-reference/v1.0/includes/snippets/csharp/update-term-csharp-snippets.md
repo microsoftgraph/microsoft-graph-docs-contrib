@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var term = new Microsoft.Graph.TermStore.Term
+// Dependencies
+using Microsoft.Graph.Models.TermStore;
+
+var requestBody = new Term
 {
-	Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
+	Labels = new List<LocalizedLabel>
 	{
-		new Microsoft.Graph.TermStore.LocalizedLabel
+		new LocalizedLabel
 		{
 			Name = "changedLabel",
 			LanguageTag = "en-US",
-			IsDefault = true
-		}
-	}
+			IsDefault = true,
+		},
+	},
 };
 
-await graphClient.Sites["{site-id}"].TermStore.Sets["{termStore.set-id}"].Terms["{termStore.term-id}"]
-	.Request()
-	.UpdateAsync(term);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].TermStore.Sets["{set-id}"].Terms["{term-id}"].PatchAsync(requestBody);
+
 
 ```

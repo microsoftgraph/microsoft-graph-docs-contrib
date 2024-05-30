@@ -1,9 +1,9 @@
 ---
 title: "Get authenticationListener"
 description: "Read the properties and relationships of an authenticationListener object."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get the specified [authenticationListener](../resources/authenticationlistener.m
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
+<!-- { "blockType": "permissions", "name": "authenticationlistener_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationlistener-get-permissions.md)]
 
 ## HTTP request
 
@@ -44,11 +41,11 @@ This method supports the `$expand` OData query parameter to expand the details o
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,11 +53,11 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 
 ## Examples
 
-### Example 1: Get an authenticationListener by id
+### Example 1: Get an authenticationListener by ID
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -74,7 +71,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -103,11 +100,11 @@ Content-Type: application/json
 
 ### Example 2: Expand invokeUserFlowListener for a specific authenticationListener
 
-The following example gets the listener by id for the onSignupStart event and expands the user flow that is invoked.
+The following example gets the listener by ID for the onSignupStart event and expands the user flow that is invoked.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -121,7 +118,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -160,7 +157,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_authenticationlistener_invokeuserflowlistener/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: get_authenticationlistener_invokeuserflowlistener/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: getauthenticationlistenerinvokeuserflowlistener/userFlow/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authoredNote = new AuthoredNote
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AuthoredNote
 {
 	Content = new ItemBody
 	{
 		Content = "Please take a look at the files tagged with follow up",
-		ContentType = BodyType.Text
-	}
+		ContentType = BodyType.Text,
+	},
 };
 
-await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"].Notes
-	.Request()
-	.AddAsync(authoredNote);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"].Notes.PostAsync(requestBody);
+
 
 ```

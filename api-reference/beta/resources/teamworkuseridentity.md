@@ -3,7 +3,7 @@ title: "teamworkUserIdentity resource type"
 description: "Represents a user in Microsoft Teams."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -24,6 +24,7 @@ Inherits from [identity](../resources/identity.md).
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
 |userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `emailUser` and `azureCommunicationServicesUser`.|
+|tenantId|String|Identifier of tenant, which user is part of. Optional. |
 
 ## Relationships
 None.

@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeEventsRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvent()
@@ -38,7 +48,7 @@ requestBody.SetEnd(end)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "DanaS@contoso.onmicrosoft.com"
+address := "DanaS@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Dana Swope"
 emailAddress.SetName(&name) 
@@ -47,7 +57,7 @@ type := graphmodels.REQUIRED_ATTENDEETYPE
 attendee.SetType(&type) 
 attendee1 := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AlexW@contoso.onmicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Alex Wilber"
 emailAddress.SetName(&name) 
@@ -55,10 +65,9 @@ attendee1.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee1.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 	attendee1,
-
 }
 requestBody.SetAttendees(attendees)
 location := graphmodels.NewLocation()
@@ -101,13 +110,13 @@ locations := []graphmodels.Locationable {
 	location,
 	location1,
 	location2,
-
 }
 requestBody.SetLocations(locations)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -4,25 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var settings = new Microsoft.Graph.TenantAdmin.Settings
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SharepointSettings
 {
 	DeletedUserPersonalSiteRetentionPeriodInDays = 365,
-	ExcludedFileExtensionsForSyncApp = new List<String>()
+	ExcludedFileExtensionsForSyncApp = new List<string>
 	{
-		".mp3"
+		".mp3",
 	},
-	ImageTaggingOption = Microsoft.Graph.TenantAdmin.ImageTaggingChoice.Enhanced,
+	ImageTaggingOption = ImageTaggingChoice.Enhanced,
 	IsLegacyAuthProtocolsEnabled = true,
 	IsSitesStorageLimitAutomatic = false,
 	IsSyncButtonHiddenOnPersonalSite = false,
 	IsUnmanagedSyncAppForTenantRestricted = false,
-	PersonalSiteDefaultStorageLimitInMB = 120000
+	PersonalSiteDefaultStorageLimitInMB = 120000L,
 };
 
-await graphClient.Admin.Sharepoint.Settings
-	.Request()
-	.UpdateAsync(settings);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.Sharepoint.Settings.PatchAsync(requestBody);
+
 
 ```

@@ -5,24 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Events\Item\EventItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new EventRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new EventRequestBuilderGetQueryParameters();
-$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees"];
-
+$requestConfiguration = new EventItemRequestBuilderGetRequestConfiguration();
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = EventItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
 
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->get($requestConfiguration)->wait();
 
 ```

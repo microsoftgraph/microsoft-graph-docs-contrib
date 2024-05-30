@@ -5,25 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\AppRoleAssignedResources\AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AppRoleAssignedResourcesRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-$queryParameters->select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"];
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->appRoleAssignedResources()->get($requestConfiguration);
 
+$result = $graphServiceClient->me()->appRoleAssignedResources()->get($requestConfiguration)->wait();
 
 ```

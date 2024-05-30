@@ -5,38 +5,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\DriveItem;
+use Microsoft\Graph\Beta\Generated\Models\Bundle;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new BundlesPostRequestBody();
-$additionalData = [
-'name' => 'Just some files', 
-'@microsoft.graph.conflictBehavior' => 'rename', 
-'bundle' => $requestBody = new Bundle();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new DriveItem();
+$requestBody->setName('Just some files');
+$bundle = new Bundle();
 $requestBody->setBundle($bundle);
-
-'children' => $children1 = new ();
-$		children1->setId('1234asdf');
-
-
-$childrenArray []= $children1;
-$children2 = new ();
-$		children2->setId('1234qwerty');
-
-
-$childrenArray []= $children2;
+$childrenDriveItem1 = new DriveItem();
+$childrenDriveItem1->setId('1234asdf');
+$childrenArray []= $childrenDriveItem1;
+$childrenDriveItem2 = new DriveItem();
+$childrenDriveItem2->setId('1234qwerty');
+$childrenArray []= $childrenDriveItem2;
 $requestBody->setChildren($childrenArray);
 
-
+$additionalData = [
+'@microsoft.graph.conflictBehavior' => 'rename',
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$graphServiceClient->drive()->bundles()->post($requestBody);
-
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->bundles()->post($requestBody)->wait();
 
 ```

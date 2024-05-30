@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewCloudPcUserSetting()
 displayName := "Example"
@@ -17,11 +25,14 @@ requestBody.SetLocalAdminEnabled(&localAdminEnabled)
 restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours) 
+frequencyType := graphmodels.SIXTEENHOURS_CLOUDPCRESTOREPOINTFREQUENCYTYPE 
+restorePointSetting.SetFrequencyType(&frequencyType) 
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+userSettings, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

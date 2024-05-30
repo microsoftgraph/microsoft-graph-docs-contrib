@@ -1,9 +1,9 @@
 --- 
 title: "communicationsApplicationInstanceIdentity resource type"
 description: "Represents the identity of an instance of an application."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an instance of an application. An application instance is a resource account created by [**New-CsOnlineApplicationInstance**](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple Call Queue application instances that are all backed by the same Azure Active Directory application. These application instances are represented in Azure Active Directory by disabled user accounts.
+Represents the identity of an instance of an application. An application instance is a resource account created by [**New-CsOnlineApplicationInstance**](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple Call Queue application instances that are all backed by the same Microsoft Entra application. These application instances are represented in Microsoft Entra ID by disabled user accounts.
 
 Inherits from [identity](identity.md).
 
@@ -21,14 +21,14 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The object ID of the resource account user in Azure Active Directory. |
-| displayName | String | Inherited from **identity**. The display name associated with the resource account. |
-| tenantId | String | The application's tenant ID. |
-| hidden | Boolean | True if the participant would not like to be shown in other participants' rosters. |
+| displayName | String | The display name associated with the resource account. Inherited from **identity**. |
+| hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
+| id | String | The object ID of the resource account user in Microsoft Entra ID. Inherited from **identity**. |
+| tenantId | String | The tenant ID of the application. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,9 +41,9 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
   "displayName": "String",
-  "tenantId": "String",
-  "hidden": false
+  "hidden": "Boolean",
+  "id": "String",
+  "tenantId": "String"
 }
 ```

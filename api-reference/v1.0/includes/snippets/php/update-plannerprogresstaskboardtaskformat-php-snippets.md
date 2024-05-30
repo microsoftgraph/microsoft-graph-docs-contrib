@@ -5,25 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Planner\Tasks\Item\ProgressTaskBoardFormat\ProgressTaskBoardFormatRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Generated\Models\PlannerProgressTaskBoardTaskFormat;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerProgressTaskBoardTaskFormat();
 $requestBody->setOrderHint('A6673H Ejkl!');
-
-
 $requestConfiguration = new ProgressTaskBoardFormatRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'return=representation',
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'Prefer' => 'return=representation',
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration);
-
+$result = $graphServiceClient->planner()->tasks()->byPlannerTaskId('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration)->wait();
 
 ```

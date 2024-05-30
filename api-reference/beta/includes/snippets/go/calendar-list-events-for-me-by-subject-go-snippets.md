@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
 
 requestFilter := "startsWith(subject,'All')"
 
-requestParameters := &graphconfig.MeCalendarEventsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemCalendarEventsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.MeCalendarEventsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemCalendarEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+events, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
 
 
 ```

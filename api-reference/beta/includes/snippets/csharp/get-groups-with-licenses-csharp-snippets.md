@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var groups = await graphClient.Groups
-	.Request()
-	.Filter("assignedLicenses/any()")
-	.Select("id,assignedLicenses")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","assignedLicenses" };
+	requestConfiguration.QueryParameters.Filter = "assignedLicenses/any()";
+	requestConfiguration.QueryParameters.Expand = new string []{ "members($select=id,displayName)" };
+});
+
 
 ```

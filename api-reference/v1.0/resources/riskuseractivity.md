@@ -3,7 +3,7 @@ title: "riskUserActivity resource type"
 description: "riskUserActivity detections"
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,19 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk activites of an Azure AD user as determined by Azure AD Identity Protection.
+Represents the risk activities of a Microsoft Entra user as determined by Microsoft Entra ID Protection.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|detail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|detail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`. <br/>For more information about each value, see [Risk types and detection](/entra/id-protection/concept-identity-protection-risks#risk-types-and-detection).|
 |riskEventTypes|String collection|The type of risk event detected.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.riskUserActivity"
@@ -38,5 +38,3 @@ The following is a JSON representation of the resource.
   "detail": "String"
 }
 ```
-
-

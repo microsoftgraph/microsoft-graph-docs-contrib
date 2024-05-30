@@ -4,42 +4,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bargeInAllowed = true;
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.RecordResponse;
+using Microsoft.Graph.Beta.Models;
 
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-var prompts = new List<Prompt>()
+var requestBody = new RecordResponsePostRequestBody
 {
-	new MediaPrompt
+	BargeInAllowed = true,
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
+	Prompts = new List<Prompt>
 	{
-		MediaInfo = new MediaInfo
+		new MediaPrompt
 		{
-			Uri = "https://cdn.contoso.com/beep.wav",
-			ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-		}
-	}
+			OdataType = "#microsoft.graph.mediaPrompt",
+			MediaInfo = new MediaInfo
+			{
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+			},
+		},
+	},
+	MaxRecordDurationInSeconds = 10,
+	InitialSilenceTimeoutInSeconds = 5,
+	MaxSilenceTimeoutInSeconds = 2,
+	PlayBeep = true,
+	StopTones = new List<string>
+	{
+		"#",
+		"1",
+		"*",
+	},
 };
 
-var maxRecordDurationInSeconds = 10;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Communications.Calls["{call-id}"].RecordResponse.PostAsync(requestBody);
 
-var initialSilenceTimeoutInSeconds = 5;
-
-var maxSilenceTimeoutInSeconds = 2;
-
-var playBeep = true;
-
-var stopTones = new List<String>()
-{
-	"#",
-	"1",
-	"*"
-};
-
-await graphClient.Communications.Calls["{call-id}"]
-	.RecordResponse(prompts,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,null,stopTones,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

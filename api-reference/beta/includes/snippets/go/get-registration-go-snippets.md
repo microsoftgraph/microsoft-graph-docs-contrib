@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.MeOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+requestParameters := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.meetingRegistration/customQuestions"},
 }
-configuration := &graphconfig.MeOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+registration, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Get(context.Background(), configuration)
 
 
 ```

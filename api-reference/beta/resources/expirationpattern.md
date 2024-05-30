@@ -3,7 +3,7 @@ title: "expirationPattern resource type"
 description: "The expiration pattern in a request schedule can be included in an access package assignment request and is present in an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.  The expiration field of a [requestSchedule](requestschedule.md) indicates when the access package assignment should expire.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.  The expiration field of a [requestSchedule](requestschedule.md) indicates when the access package assignment should expire.
 
 ## Properties
 
@@ -60,5 +60,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

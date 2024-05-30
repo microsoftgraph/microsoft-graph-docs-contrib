@@ -2,8 +2,9 @@
 title: "groupLifecyclePolicy resource type"
 description: "Represents a lifecycle policy for a Microsoft 365 group."
 ms.localizationpriority: medium
-author: "psaffaie"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -11,18 +12,21 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a lifecycle policy for a Microsoft 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches its expiration, owners of the group are required to renew their group within a time interval defined by the administrator. Once renewed, the group expiration is extended by the number of days defined in the policy. For example, the group's new expiration is 180 days after renewal. If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
+Represents a lifecycle policy for a Microsoft 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches its expiration, owners of the group are required to renew their group within a time interval defined by the administrator.
+
+- Once renewed, the group expiration is extended by the number of days defined in the policy and the group's **expirationDateTime** property defines the new expiration date.
+- If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
 
 ## Methods
 
 | Method                                                                                   | Return Type                                                | Description                                                         |
 | :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
-| [Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Read properties and relationships of a groupLifecyclePolicy object. |
-| [List groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies.                                |
-| [Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Update a groupLifecyclePolicy object.                               |
-| [Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Delete a groupLifecyclePolicy object.                               |
-| [Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)         | None                                                       | Add a group to a lifecycle policy                                   |
-| [Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md) | None                                                       | Remove a group to a lifecycle policy.                               |
+| [Get policy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Read properties and relationships of a groupLifecyclePolicy object. |
+| [List policies](../api/grouplifecyclepolicy-list.md)                       | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies.                                |
+| [Update policy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Update a groupLifecyclePolicy object.                               |
+| [Delete policy](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Delete a groupLifecyclePolicy object.                               |
+| [Add group](../api/grouplifecyclepolicy-addgroup.md)         | None                                                       | Add a group to a lifecycle policy                                   |
+| [Remove group](../api/grouplifecyclepolicy-removegroup.md) | None                                                       | Remove a group to a lifecycle policy.                               |
 
 ## Properties
 
@@ -39,7 +43,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

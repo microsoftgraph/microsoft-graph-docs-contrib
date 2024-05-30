@@ -3,7 +3,7 @@ title: "managedTenantOperationError resource type"
 description: "An abstract type that represents an error for a managed tenant operation."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ An abstract type that represents an error for a managed tenant operation.
 |Property|Type|Description|
 |:---|:---|:---|
 |error|String|The error message for the exception.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 
 ## Relationships
 None.

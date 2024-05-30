@@ -1,9 +1,9 @@
 ---
 title: "auditUserIdentity resource type"
 description: "An open type that represents details of the identity of a user along with information about their home tenant."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -22,9 +22,9 @@ Inherits from [userIdentity](../resources/useridentity.md).
 |:---|:---|:---|
 |displayName|String|The user's display name. Inherited from [identity](../resources/identity.md).|
 |homeTenantId|String|For user sign ins, the identifier of the tenant that the user is a member of.|
-|homeTenantName|String|For user sign ins, the name of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Azure AD to show the tenant content.|
+|homeTenantName|String|For user sign ins, the name of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Microsoft Entra ID to show the tenant content.|
 |id|String|The user's unique identifier. Inherited from [identity](../resources/identity.md).|
-|ipAddress|String|The IP address Azure AD detected for the user's client. Inherited from [userIdentity](../resources/useridentity.md).|
+|ipAddress|String|The IP address Microsoft Entra ID detected for the user's client. Inherited from [userIdentity](../resources/useridentity.md).|
 |userPrincipalName|String|The user's User Principal Name (UPN). Inherited from [userIdentity](../resources/useridentity.md).|
 
 ## Relationships
@@ -49,4 +49,3 @@ The following is a JSON representation of the resource.
   "homeTenantName": "String"
 }
 ```
-

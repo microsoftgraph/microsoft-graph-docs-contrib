@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Messages\Item\MessageItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new MessageRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new MessageRequestBuilderGetQueryParameters();
-$queryParameters->expand = ["extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"];
-
+$requestConfiguration = new MessageItemRequestBuilderGetRequestConfiguration();
+$queryParameters = MessageItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["extensions(\$filter=id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->get($requestConfiguration)->wait();
 
 ```

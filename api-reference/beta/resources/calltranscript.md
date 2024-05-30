@@ -3,7 +3,7 @@ title: "callTranscript resource type"
 description: "Represents a transcript associated with an online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -18,20 +18,31 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 ## Methods
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-|[List callTranscripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of transcripts associated to an online meeting.| 
-|[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Read properties of a transcript.| 
+|[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that have been added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
+|[List transcripts by organizer](../api/onlinemeeting-getAllTranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
+ 
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| id| String| The transcript's unique identifier. Read-only.|
-| createdDateTime| dateTimeOffset|  Date and time at which the transcript was created. Read-only.|
-| content| Stream| A field representing the content of the transcript. Read-only.|
+| callId | String | The unique identifier for the [call](call.md) that is related to this transcript. Read-only.|
+| content| Stream| The content of the transcript. Read-only.|
+| contentCorrelationId | String | The unique identifier that links the transcript with its corresponding recording. Read-only.|
+| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| endDateTime | DateTimeOffset |  Date and time at which the transcription ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
+| id| String| The unique identifier for the transcript. Read-only.|
+| meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
+| meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
+| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
+| metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
+| transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,8 +52,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "createdDateTime": "dateTimeOffset",
-  "content": "stream"
+  "callId": "String",
+  "content": "Stream",
+  "contentCorrelationId": "String",
+  "createdDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "meetingId": "String",
+  "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
+  "meetingOrganizerId": "String",
+  "metadataContent": "Stream",
+  "transcriptContentUrl": "String"
 }
 ```

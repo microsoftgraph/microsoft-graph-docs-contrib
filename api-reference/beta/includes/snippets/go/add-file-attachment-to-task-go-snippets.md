@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAttachment()
 name := "menu.txt"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-requestBody.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+attachments, err := graphClient.Me().Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

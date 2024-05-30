@@ -3,7 +3,7 @@ title: "Manage phone numbers for bots by using the cloud communications API"
 description: "Learn how to create a bot that is reachable through a phone number, and assign, unassign, or update a bot phone number by using the Microsoft Graph cloud communications API."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Manage phone numbers for bots
@@ -29,7 +29,7 @@ Add the following permissions to your bot. A tenant admin needs to consent to th
 - Calls.JoinGroupCall.All
 - Calls.JoinGroupCallAsGuest.All
 
-For more information about call-related permissions, see the [Permissions reference](permissions-reference.md#calls-permissions).
+For more information about call-related permissions, see the [Permissions reference](permissions-reference.md).
 
 ## Assign a phone number to your bot
 
@@ -77,7 +77,7 @@ After unassigning the number, you can assign a different number to the bot by us
 
    `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
 - [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot)

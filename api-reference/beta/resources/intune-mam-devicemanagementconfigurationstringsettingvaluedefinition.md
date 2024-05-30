@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationStringSettingValueDefinition resource type"
 description: "String constraints"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources
 |maximumLength|Int64|Maximum length of string|
 |minimumLength|Int64|Minimum length of string|
 |isSecret|Boolean|Specifies whether the setting needs to be treated as a secret. Settings marked as yes will be encrypted in transit and at rest and will be displayed as asterisks when represented in the UX.|
+|fileTypes|String collection|Supported file types for this setting.|
 
 ## Relationships
 None
@@ -46,6 +47,9 @@ Here is a JSON representation of the resource.
   "inputValidationSchema": "String",
   "maximumLength": 1024,
   "minimumLength": 1024,
-  "isSecret": true
+  "isSecret": true,
+  "fileTypes": [
+    "String"
+  ]
 }
 ```

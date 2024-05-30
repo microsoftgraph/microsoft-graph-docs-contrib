@@ -1,10 +1,11 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
 description: "Represents a FIDO2 authentication methods policy"
-author: "mmcla"
+author: "calvinlui"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # fido2AuthenticationMethodConfiguration resource type
@@ -14,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a FIDO2 authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
+
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 
 ## Methods
@@ -54,7 +57,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
-    "excludeTargets": [
+  "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }

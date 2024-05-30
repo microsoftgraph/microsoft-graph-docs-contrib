@@ -3,7 +3,7 @@ title: "androidPermissionActionType enum type"
 description: "Android action taken when an app requests a dangerous permission."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,6 +20,6 @@ Android action taken when an app requests a dangerous permission.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|prompt|0|Not yet documented|
-|autoGrant|1|Not yet documented|
-|autoDeny|2|Not yet documented|
+|prompt|0||
+|autoGrant|1||
+|autoDeny|2||

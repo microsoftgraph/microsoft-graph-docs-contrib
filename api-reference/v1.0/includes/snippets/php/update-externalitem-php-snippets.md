@@ -5,26 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\ExternalItem;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\Acl;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\AclType;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\AccessType;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExternalItem();
 $aclAcl1 = new Acl();
 $aclAcl1->setType(new AclType('everyone'));
-
 $aclAcl1->setValue('67a141d8-cf4e-4528-ba07-bed21bfacd2d');
-
 $aclAcl1->setAccessType(new AccessType('grant'));
-
-
 $aclArray []= $aclAcl1;
 $requestBody->setAcl($aclArray);
 
 
-
-
-$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
-
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->items()->byExternalItemId('externalItem-id')->put($requestBody)->wait();
 
 ```

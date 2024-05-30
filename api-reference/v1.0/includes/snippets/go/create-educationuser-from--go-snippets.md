@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewEducationUser()
 primaryRole := graphmodels.STRING_EDUCATIONUSERROLE 
@@ -34,7 +43,6 @@ assignedLicense := graphmodels.NewAssignedLicense()
 
 assignedLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,
-
 }
 requestBody.SetAssignedLicenses(assignedLicenses)
 
@@ -43,12 +51,10 @@ assignedPlan := graphmodels.NewAssignedPlan()
 
 assignedPlans := []graphmodels.AssignedPlanable {
 	assignedPlan,
-
 }
 requestBody.SetAssignedPlans(assignedPlans)
 businessPhones := []string {
 	"String",
-
 }
 requestBody.SetBusinessPhones(businessPhones)
 department := "String"
@@ -77,7 +83,6 @@ provisionedPlan := graphmodels.NewProvisionedPlan()
 
 provisionedPlans := []graphmodels.ProvisionedPlanable {
 	provisionedPlan,
-
 }
 requestBody.SetProvisionedPlans(provisionedPlans)
 refreshTokensValidFromDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -95,7 +100,8 @@ requestBody.SetUserType(&userType)
 onPremisesInfo := graphmodels.NewEducationOnPremisesInfo()
 requestBody.SetOnPremisesInfo(onPremisesInfo)
 
-result, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+users, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
 
 
 ```

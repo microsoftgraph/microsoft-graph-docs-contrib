@@ -3,7 +3,7 @@ title: "List chats"
 description: "Retrieve the list of chats for a user."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,10 @@ Namespace: microsoft.graph
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
+
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -59,19 +63,22 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$expand](/graph/query-parameters#expand-parameter)| Currently supports **members** and **lastMessagePreview** properties. |
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
 | [$filter](/graph/query-parameters#filter-parameter)| Filters results. |
-| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in descending order. Ascending order is currently not supported.|
+| [$orderby](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in descending order. Ascending order is currently not supported.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
+
+> [!NOTE]
+> The `$top` query parameter might not return all chats within a single response object. If the result set for all chats spans multiple pages, the response object includes an **@odata.nextLink** property that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,7 +90,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,34 +105,39 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-chats-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-chats-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-chats-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -148,11 +160,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         },
         {
             "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
@@ -160,11 +185,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         },
         {
             "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
@@ -172,11 +210,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
-            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         }
     ]
 }
@@ -185,7 +236,7 @@ Content-type: application/json
 ### Example 2: List all chats along with the members of each chat
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -200,34 +251,39 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-expand-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-members-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-members-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-expand-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-chats-expand-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-members-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-expand-members-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-chats-expand-members-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
@@ -254,11 +310,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -266,7 +335,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -274,7 +343,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -282,7 +351,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -292,11 +361,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -304,7 +386,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -312,7 +394,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Bruce Banner",
                     "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
-                    "email": "bannerb@teamsgraph.onmicrosoft.com"
+                    "email": "bannerb@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -320,7 +402,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "TChalla",
                     "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
-                    "email": "tchalla@teamsgraph.onmicrosoft.com"
+                    "email": "tchalla@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -328,7 +410,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Thor Odinson",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "odinsont@teamsgraph.onmicrosoft.com"
+                    "email": "odinsont@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -336,7 +418,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Steve Rogers",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "rogerss@teamsgraph.onmicrosoft.com"
+                    "email": "rogerss@contoso.com"
                 }
             ]
         },
@@ -346,11 +428,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -358,7 +453,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -366,7 +461,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }
@@ -394,32 +489,39 @@ GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-expand-lastmessagepreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-lastmessagepreview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-lastmessagepreview-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-expand-lastmessagepreview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-chats-expand-lastmessagepreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-lastmessagepreview-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-lastmessagepreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-lastmessagepreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-expand-lastmessagepreview-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-lastmessagepreview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-chats-expand-lastmessagepreview-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -442,9 +544,22 @@ Content-type: application/json
             "createdDateTime": "2021-06-05T00:31:30.767Z",
             "lastUpdatedDateTime": "2021-06-05T00:31:32.806Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
+            },
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
             },
             "lastMessagePreview": {
                 "id": "1622853091207",
@@ -473,9 +588,22 @@ Content-type: application/json
             "createdDateTime": "2020-07-17T22:46:28.077Z",
             "lastUpdatedDateTime": "2021-06-03T08:05:49.788Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
+            },
+            "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
             },
             "lastMessagePreview": {
                 "id": "1622707540293",
@@ -508,6 +636,19 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-04T05:34:23.712Z"
+            },
+            "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
             },
             "lastMessagePreview": {
                 "id": "1622784857324",
@@ -547,9 +688,22 @@ Content-type: application/json
             "createdDateTime": "2021-05-19T16:46:20.564Z",
             "lastUpdatedDateTime": "2021-05-27T22:13:03.169Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
+            },
+            "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
             },
             "lastMessagePreview": {
                 "id": "1621533401696",
@@ -580,7 +734,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request that will filter all the chats based on a specific member's display name.
+The following example shows a request that filters all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -595,34 +749,39 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-expand-members-and-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-members-and-filter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-members-and-filter-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-expand-members-and-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-chats-expand-members-and-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-members-and-filter-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-members-and-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-expand-members-and-filter-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-expand-members-and-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-members-and-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-chats-expand-members-and-filter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > [!NOTE]
 > The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
@@ -650,11 +809,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:01:30.233Z"
             },
+            "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -662,7 +834,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -670,7 +842,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -678,7 +850,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -688,11 +860,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -700,7 +885,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -708,7 +893,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }
@@ -720,7 +905,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
+The following example shows a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
 
 
 # [HTTP](#tab/http)
@@ -729,41 +914,46 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
   "name": "list_chats_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDateTime desc
+GET https://graph.microsoft.com/beta/chats?$orderby=lastMessagePreview/createdDateTime desc
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-orderby-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-orderby-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-chats-orderby-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-orderby-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-chats-orderby-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-orderby-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-orderby-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-orderby-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-orderby-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-orderby-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-chats-orderby-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -779,7 +969,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats",
     "@odata.count": 2,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview%2fcreatedDateTime+desc&$skiptoken=1.kscDYs0BbsYAAAFa8ZyBqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdoBRGV5SmtaV3hwZG1WeVpXUlRaV2R0Wlc1MGN5STZXM3NpYzNSaGNuUWlPaUl5TURJeExUQTRMVEUzVkRFeE9qVXpPakUxTGprd09Tc3dNRG93TUNJc0ltVnVaQ0k2SWpJd01qSXRNRFV0TUROVU1UZzZNVFU2TkRJdU16QTNLekF3T2pBd0luMHNleUp6ZEdGeWQ4APMDRTVOekF0TURFdE1ERlVNREE2BAATcggAcWlMQ0psYm2YAJB4T1Rjd0xUQXgEACJWRFQAAAQABmAA8F8xZExDSjZaWEp2VEUxVFZFUmxiR2wyWlhKbFpGTmxaMjFsYm5SeklqcGJYU3dpYzI5eWRFOXlaR1Z5SWpveExDSnBibU5zZFdSbFdtVnliMHhOVTFRaU9uUnlkV1Y5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/chats?$orderby=lastMessagePreview%2fcreatedDateTime+desc&$skiptoken=1.kscDYs0BbsYAAAFa8ZyBqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdoBRGV5SmtaV3hwZG1WeVpXUlRaV2R0Wlc1MGN5STZXM3NpYzNSaGNuUWlPaUl5TURJeExUQTRMVEUzVkRFeE9qVXpPakUxTGprd09Tc3dNRG93TUNJc0ltVnVaQ0k2SWpJd01qSXRNRFV0TUROVU1UZzZNVFU2TkRJdU16QTNLekF3T2pBd0luMHNleUp6ZEdGeWQ4APMDRTVOekF0TURFdE1ERlVNREE2BAATcggAcWlMQ0psYm2YAJB4T1Rjd0xUQXgEACJWRFQAAAQABmAA8F8xZExDSjZaWEp2VEUxVFZFUmxiR2wyWlhKbFpGTmxaMjFsYm5SeklqcGJYU3dpYzI5eWRFOXlaR1Z5SWpveExDSnBibU5zZFdSbFdtVnliMHhOVTFRaU9uUnlkV1Y5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
     "value": [
         {
             "id": "19:670374fa-3b0e-4a3b-9d33-0e1bc5ff1956_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
@@ -793,6 +983,18 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2022-05-03T18:15:42.307Z"
+            },
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+                }
             }
         },
         {
@@ -807,6 +1009,18 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": true,
                 "lastMessageReadDateTime": "2022-03-08T19:55:30.491Z"
+            },
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+                }
             }
         }
     ]
@@ -826,3 +1040,60 @@ Content-type: application/json
   ]
 }
 -->
+
+### Example 6: List all chats where the app is installed
+
+#### Request
+
+The following example shows a request.
+
+
+```http
+GET https://graph.microsoft.com/beta/users/e652dd92-dd63-4fcc-b5b2-2005681e8e9f/chats?$filter=installedApps/any(a:a/teamsApp/id eq '608d8644-acb1-4ab0-bca5-66fbb6ed62aa')
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "19:e652dd92-dd63-4fcc-b5b2-2005681e8e9f_734601fc-bbcd-4a30-9092-3c89f8d788cb@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2023-03-03T11:32:33.631Z",
+            "lastUpdatedDateTime": "2023-06-08T06:02:19.072Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ae652dd92-dd63-4fcc-b5b2-2005681e8e9f_734601fc-bbcd-4a30-9092-3c89f8d788cb%40unq.gbl.spaces/0?tenantId=aa923623-ae61-49ee-b401-81f414b6ad5a",
+            "tenantId": "aa923623-ae61-49ee-b401-81f414b6ad5a",
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "2023-06-29T10:22:15.024Z"
+            },
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "aa923623-ae61-49ee-b401-81f414b6ad5a"
+                }
+            }
+        }
+    ]
+}
+```

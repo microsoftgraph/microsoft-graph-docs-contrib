@@ -1,9 +1,9 @@
 ---
 title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -27,8 +27,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |[List posts](../api/conversationthread-list-posts.md) | [post](post.md) |Get the posts of the specified thread. |
 |[Get post](../api/post-get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
-|[Reply](../api/post-reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
-|[Forward](../api/post-forward.md)|None|Forward a post to a recipient.|
+|[Reply post](../api/post-reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
+|[Forward post](../api/post-forward.md)|None|Forward a post to a recipient.|
 |**Attachments**| | |
 |[List attachments](../api/post-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on a post.|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
@@ -38,13 +38,13 @@ This resource lets you add your own data to custom properties using [extensions]
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
-|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
-|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
 |categories|String collection|The categories associated with the post.|
@@ -61,7 +61,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable. Supports `$expand`.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the post. Read-only. Nullable. Supports `$expand`.|
@@ -71,7 +71,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -133,7 +133,7 @@ Here is a JSON representation of the resource
 
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

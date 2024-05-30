@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	DisplayName = "CONTOSO LITIGATION-005"
-	Description = "Project Bazooka"
-	ExternalId = "324516"
+	displayName = "CONTOSO LITIGATION-005"
+	description = "Project Bazooka"
+	externalId = "324516"
 }
 
-New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
+New-MgBetaSecurityCaseEdiscoveryCase -BodyParameter $params
 
 ```

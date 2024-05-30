@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewCreatePostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphprint.NewCreatePostRequestBody()
 displayName := "Test Printer"
 requestBody.SetDisplayName(&displayName) 
 manufacturer := "Test Printer Manufacturer"
@@ -27,6 +36,7 @@ requestBody.SetCertificateSigningRequest(certificateSigningRequest)
 connectorId := null
 requestBody.SetConnectorId(&connectorId) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Print().Printers().Create().Post(context.Background(), requestBody, nil)
 
 

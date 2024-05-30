@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationGroupSettingCollectionInstanceTemplate reso
 description: "Group Setting Collection Instance Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

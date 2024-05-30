@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var connectedOrganization = new ConnectedOrganization
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ConnectedOrganization
 {
 	DisplayName = "Connected organization new name",
 	Description = "Connected organization new description",
-	State = ConnectedOrganizationState.Configured
+	State = ConnectedOrganizationState.Configured,
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"]
-	.Request()
-	.UpdateAsync(connectedOrganization);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"].PatchAsync(requestBody);
+
 
 ```

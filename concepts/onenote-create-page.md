@@ -3,7 +3,7 @@ title: "Create OneNote pages by using the OneNote API"
 description: "Create a OneNote page by sending a POST request to a pages endpoint. Then send the HTML that defines the page in the message body."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Create OneNote pages
@@ -230,7 +230,7 @@ The Microsoft Graph service root URL uses the following format for all calls to 
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
 
-Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use Microsoft Graph to get user IDs. 
 
 <a name="limitations"></a>
 
@@ -257,7 +257,7 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Add images and files](onenote-images-files.md)
 - [Create absolute positioned elements](onenote-abs-pos.md)  

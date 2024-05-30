@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
 
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","category","displayName","isEnabled","isSchedulingEnabled"},
 }
-configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+workflows, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Get(context.Background(), configuration)
 
 
 ```

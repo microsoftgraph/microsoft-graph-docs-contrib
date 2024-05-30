@@ -4,21 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
-requestParameters := &graphconfig.MeContactFolderItemContactsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemContactFolderItemContactsDeltaWithRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName"},
 }
-configuration := &graphconfig.MeContactFolderItemContactsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemContactFolderItemContactsDeltaWithRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().ContactFoldersById("contactFolder-id").Contacts().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

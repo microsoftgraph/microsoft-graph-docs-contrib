@@ -4,124 +4,124 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerTaskConfiguration"
-	EditPolicy = @{
-		Rules = @(
+	editPolicy = @{
+		rules = @(
 			@{
-				DefaultRule = "block"
-				Role = @{
+				defaultRule = "block"
+				role = @{
 					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					RoleKind = "relationship"
-					Role = "defaultRules"
+					roleKind = "relationship"
+					role = "defaultRules"
 				}
-				PropertyRule = @{
-					PercentComplete = @(
-						"allow"
-					)
-					RuleKind = "taskRule"
-					Assignments = @{
-						DefaultRules = @(
-							"addSelf"
-						)
-						Overrides = @(
-						)
-					}
-				}
+				propertyRule = @{
+					percentComplete = @(
+					"allow"
+				)
+				ruleKind = "taskRule"
+				assignments = @{
+					defaultRules = @(
+					"addSelf"
+				)
+				overrides = @(
+				)
 			}
-			@{
-				DefaultRule = "block"
-				Role = @{
-					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					RoleKind = "relationship"
-					Role = "taskAssignees"
-				}
-				PropertyRule = @{
-					StartDate = @(
-						"allow"
-					)
-					DueDate = @(
-						"allow"
-					)
-					PercentComplete = @(
-						"allow"
-					)
-					Order = @(
-						"allow"
-					)
-					RuleKind = "taskRule"
-					References = @{
-						DefaultRules = @(
-							"allow"
-						)
-						Overrides = @(
-							@{
-								Name = "userCreated"
-								Rules = @(
-									"allow"
-								)
-							}
-							@{
-								Name = "applicationCreated"
-								Rules = @(
-									"block"
-								)
-							}
-						)
-					}
-					CheckLists = @{
-						DefaultRules = @(
-							"allow"
-						)
-						Overrides = @(
-							@{
-								Name = "userCreated"
-								Rules = @(
-									"allow"
-								)
-							}
-							@{
-								Name = "applicationCreated"
-								Rules = @(
-									"check"
-								)
-							}
-						)
-					}
-					Assignments = @{
-						DefaultRules = @(
-							"block"
-						)
-						Overrides = @(
-							@{
-								Name = "userCreated"
-								Rules = @(
-									"removeSelf"
-								)
-							}
-							@{
-								Name = "applicationCreated"
-								Rules = @(
-									"check"
-								)
-							}
-						)
-					}
-					AppliedCategories = @{
-						DefaultRules = @(
-							"allow"
-						)
-						Overrides = @(
-						)
-					}
-				}
-			}
-		)
+		}
 	}
+	@{
+		defaultRule = "block"
+		role = @{
+			"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
+			roleKind = "relationship"
+			role = "taskAssignees"
+		}
+		propertyRule = @{
+			startDate = @(
+			"allow"
+		)
+		dueDate = @(
+		"allow"
+	)
+	percentComplete = @(
+	"allow"
+)
+order = @(
+"allow"
+)
+ruleKind = "taskRule"
+references = @{
+defaultRules = @(
+"allow"
+)
+overrides = @(
+@{
+	name = "userCreated"
+	rules = @(
+	"allow"
+)
+}
+@{
+name = "applicationCreated"
+rules = @(
+"block"
+)
+}
+)
+}
+checkLists = @{
+defaultRules = @(
+"allow"
+)
+overrides = @(
+@{
+name = "userCreated"
+rules = @(
+"allow"
+)
+}
+@{
+name = "applicationCreated"
+rules = @(
+"check"
+)
+}
+)
+}
+assignments = @{
+defaultRules = @(
+"block"
+)
+overrides = @(
+@{
+name = "userCreated"
+rules = @(
+"removeSelf"
+)
+}
+@{
+name = "applicationCreated"
+rules = @(
+"check"
+)
+}
+)
+}
+appliedCategories = @{
+defaultRules = @(
+"allow"
+)
+overrides = @(
+)
+}
+}
+}
+)
+}
 }
 
-Update-MgBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
 ```

@@ -3,7 +3,7 @@ title: "Send Outlook messages from another user using the Outlook mail API"
 description: "Use Send As and Send On Behalf Of permissions to send Outlook messages as another user or shared mailbox in Microsoft Graph."
 author: "jasonjoh"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Send Outlook messages from another user
@@ -32,11 +32,11 @@ Two permissions affect the end result of sending a message from another user: **
 
 #### Send on Behalf
 
-With this permission, the recipient of the email has an indication in their email client that the message was sent by the user of your application on behalf of another user.
+With this permission, the recipient of the email has an indication in their email client that the user of your application sent the message on behalf of another user.
 
 ![A screenshot of Outlook on the web indicating that a message was sent by one user on behalf of another](images/outlook-sent-on-behalf.png)
 
-This is exposed in Microsoft Graph as the `sender` (user that actually sent the message) and `from` (user/group/etc. that the message appears to be from) properties.
+This is exposed in Microsoft Graph as the `sender` (the user that actually sent the message) and `from` (the user, group, or so on, that the message appears to be from) properties.
 
 ```json
 {
@@ -69,7 +69,7 @@ Users cannot grant this permission to their mailboxes. Admins can grant this per
 
 You can send messages from another user by either [sending directly](/graph/api/user-sendmail) or by [creating a draft](/graph/api/user-post-messages) and then [sending it](/graph/api/message-send).
 
-In order to send from another user, set the `from` property on the [message](/graph/api/resources/message) sent to the email address of the user to send from. You don't need to set the `sender` property - Microsoft Graph will set it appropriately, based on the mailbox permissions granted to the user who has signed in.
+In order to send from another user, set the `from` property on the [message](/graph/api/resources/message) sent to the email address of the user to send from. You don't need to set the `sender` property - Microsoft Graph sets it appropriately, based on the mailbox permissions granted to the user who has signed in.
 
 For example, to send mail from the `sales@contoso.com` group, configure the message as follows.
 

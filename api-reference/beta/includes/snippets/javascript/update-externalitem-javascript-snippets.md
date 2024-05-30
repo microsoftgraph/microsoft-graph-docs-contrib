@@ -22,6 +22,6 @@ const externalItem = {
 
 await client.api('/external/connections/contosohr/items/TSP228082938')
 	.version('beta')
-	.update(externalItem);
+	.put(externalItem);
 
 ```

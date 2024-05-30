@@ -18,7 +18,7 @@ None of the strings in the toolkit are localized, but you can provide your own l
 The following example shows how to localize several components.
 
 ```ts
-import { LocalizationHelper } from "@microsoft/mgt";
+import { LocalizationHelper } from "@microsoft/mgt-element";
 
 LocalizationHelper.strings = {
   noResultsFound: "لم نجد أي قنوات",

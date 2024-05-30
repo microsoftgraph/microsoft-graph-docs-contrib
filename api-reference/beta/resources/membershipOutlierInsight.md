@@ -1,9 +1,9 @@
 ---
 title: "membershipOutlierInsight resource type"
-description: "In the Azure AD access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
+description: "In the Microsoft Entra access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -33,6 +33,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 |:---|:---|:---|
 |container|[directoryObject](../resources/directoryobject.md)| Navigation link to the container directory object. For example, to a group.|
 |member|[directoryObject](../resources/directoryobject.md)| Navigation link to a member object. For example, to a user.|
+|lastModifiedBy|[user](../resources/user.md)| Navigation link to a member object who modified the record. For example, to a user.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

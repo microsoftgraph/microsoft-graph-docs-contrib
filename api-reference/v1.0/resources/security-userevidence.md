@@ -4,7 +4,7 @@ description: "A user that is reported in the alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.userEvidence"
+  "@odata.type": "microsoft.graph.security.userEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

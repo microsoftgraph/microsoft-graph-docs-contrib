@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Topic = "New head count"
-	Threads = @(
+	topic = "New head count"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "html"
-						Content = "The confirmation will come by the end of the week."
+					body = @{
+						contentType = "html"
+						content = "The confirmation will come by the end of the week."
 					}
-					NewParticipants = @(
+					newParticipants = @(
 						@{
-							EmailAddress = @{
-								Name = "Adele Vance"
-								Address = "AdeleV@contoso.onmicrosoft.com"
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
 							}
 						}
 					)
@@ -30,6 +30,6 @@ $params = @{
 	)
 }
 
-New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
 
 ```

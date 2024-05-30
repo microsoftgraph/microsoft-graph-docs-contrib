@@ -15,7 +15,7 @@ const workflow = {
     description: 'Configure new hire tasks for onboarding employees on their first day',
     displayName: 'Australia Onboard new hire employee',
     isEnabled: true,
-    isSchedulingEnabled: false,
+    isSchedulingEnabled: true,
     executionConditions: {
         '@odata.type': '#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions',
         scope: {

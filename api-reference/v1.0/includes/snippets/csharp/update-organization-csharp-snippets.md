@@ -4,35 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var organization = new Organization
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Organization
 {
-	MarketingNotificationEmails = new List<String>()
+	MarketingNotificationEmails = new List<string>
 	{
-		"marketing@contoso.com"
+		"marketing@contoso.com",
 	},
 	PrivacyProfile = new PrivacyProfile
 	{
 		ContactEmail = "alice@contoso.com",
-		StatementUrl = "https://contoso.com/privacyStatement"
+		StatementUrl = "https://contoso.com/privacyStatement",
 	},
-	SecurityComplianceNotificationMails = new List<String>()
+	SecurityComplianceNotificationMails = new List<string>
 	{
-		"security@contoso.com"
+		"security@contoso.com",
 	},
-	SecurityComplianceNotificationPhones = new List<String>()
+	SecurityComplianceNotificationPhones = new List<string>
 	{
-		"(123) 456-7890"
+		"(123) 456-7890",
 	},
-	TechnicalNotificationMails = new List<String>()
+	TechnicalNotificationMails = new List<string>
 	{
-		"tech@contoso.com"
-	}
+		"tech@contoso.com",
+	},
 };
 
-await graphClient.Organization["{organization-id}"]
-	.Request()
-	.UpdateAsync(organization);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Organization["{organization-id}"].PatchAsync(requestBody);
+
 
 ```

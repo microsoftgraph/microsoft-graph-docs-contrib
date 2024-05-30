@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
+
+var requestBody = new ExternalItem
 {
-	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
+	Acl = new List<Acl>
 	{
-		new Microsoft.Graph.ExternalConnectors.Acl
+		new Acl
 		{
-			Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
+			Type = AclType.Everyone,
 			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant
-		}
-	}
+			AccessType = AccessType.Grant,
+		},
+	},
 };
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.Request()
-	.UpdateAsync(externalItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PutAsync(requestBody);
+
 
 ```

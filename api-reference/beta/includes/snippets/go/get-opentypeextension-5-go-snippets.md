@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
 
-requestFilter := "Extensions/any"
+requestFilter := "Extensions/any(f:f/id eq 'Com.Contoso.Referral')"
 
-requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
-	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
+	Expand: [] string {"Extensions($filter=id eq 'Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Messages().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+messages, err := graphClient.Me().Messages().Get(context.Background(), configuration)
 
 
 ```

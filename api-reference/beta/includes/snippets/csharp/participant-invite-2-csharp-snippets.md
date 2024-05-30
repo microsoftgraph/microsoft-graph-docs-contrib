@@ -4,27 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var participants = new List<InvitationParticipantInfo>()
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.Participants.Invite;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new InvitePostRequestBody
 {
-	new InvitationParticipantInfo
+	Participants = new List<InvitationParticipantInfo>
 	{
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			Phone = new Identity
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			Identity = new IdentitySet
 			{
-				Id = "+12345678901"
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.identitySet",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"phone" , new Identity
+						{
+							OdataType = "#microsoft.graph.identity",
+							Id = "+12345678901",
+						}
+					},
+				},
+			},
+		},
+	},
+	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
 
-var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.Invite.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"].Participants
-	.Invite(participants,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

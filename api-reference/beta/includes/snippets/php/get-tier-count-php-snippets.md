@@ -5,27 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Groups\Item\TransitiveMembers\Graph\User\UserRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new UserRequestBuilderGetQueryParameters();
+$requestConfiguration = new GraphUserRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
+
+$queryParameters = GraphUserRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:tier\"";
 $queryParameters->select = ["displayName","id"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->user()->get($requestConfiguration);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->transitiveMembers()->graphUser()->get($requestConfiguration)->wait();
 
 ```

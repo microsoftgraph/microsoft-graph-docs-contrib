@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
 
 requestFilter := "lastModifiedDateTime gt 2019-11-01T00:00:00Z and lastModifiedDateTime lt 2021-11-01T00:00:00Z"
 
-requestParameters := &graphconfig.TeamItemChannelsMicrosoft.graph.getAllMessages()RequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelsGetAllMessagesWithRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemChannelsMicrosoft.graph.getAllMessages()RequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelsGetAllMessagesWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Channels().GetAllMessages().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+getAllMessages, err := graphClient.Teams().ByTeamId("team-id").Channels().GetAllMessages().GetAsGetAllMessagesGetResponse(context.Background(), configuration)
 
 
 ```

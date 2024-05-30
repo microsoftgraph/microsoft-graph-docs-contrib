@@ -1,10 +1,11 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user."
-author: "mmcla"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type (deprecated)

@@ -3,7 +3,7 @@ title: "windowsKioskAppConfiguration resource type"
 description: "The app base class used to identify the application info for the kiosk configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

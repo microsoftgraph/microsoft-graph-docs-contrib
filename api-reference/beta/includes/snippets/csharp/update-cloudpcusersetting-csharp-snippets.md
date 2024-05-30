@@ -4,22 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcUserSetting = new CloudPcUserSetting
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CloudPcUserSetting
 {
+	OdataType = "#microsoft.graph.cloudPcUserSetting",
 	DisplayName = "Example",
 	SelfServiceEnabled = true,
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
 		FrequencyInHours = 16,
-		UserRestoreEnabled = true
+		FrequencyType = CloudPcRestorePointFrequencyType.SixteenHours,
+		UserRestoreEnabled = true,
 	},
-	LocalAdminEnabled = false
+	LocalAdminEnabled = false,
+	ResetEnabled = true,
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"]
-	.Request()
-	.UpdateAsync(cloudPcUserSetting);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].PatchAsync(requestBody);
+
 
 ```

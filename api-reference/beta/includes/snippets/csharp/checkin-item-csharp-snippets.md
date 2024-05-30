@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "Updating the latest guidelines";
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Checkin;
 
-await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"]
-	.Checkin(null,comment)
-	.Request()
-	.PostAsync();
+var requestBody = new CheckinPostRequestBody
+{
+	Comment = "Updating the latest guidelines",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Checkin.PostAsync(requestBody);
+
 
 ```

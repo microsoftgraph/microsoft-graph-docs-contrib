@@ -4,19 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewIdentityApiConnector()
-authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
-additionalData := map[string]interface{}{
-	"pkcs12Value" : "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA", 
-	"password" : "secret", 
-}
-authenticationConfiguration.SetAdditionalData(additionalData)
+authenticationConfiguration := graphmodels.NewPkcs12Certificate()
+pkcs12Value := "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+authenticationConfiguration.SetPkcs12Value(&pkcs12Value) 
+password := "secret"
+authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.Identity().ApiConnectorsById("identityApiConnector-id").Patch(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+apiConnectors, err := graphClient.Identity().ApiConnectors().ByIdentityApiConnectorId("identityApiConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

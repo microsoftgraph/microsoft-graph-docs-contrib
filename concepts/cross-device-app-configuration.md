@@ -2,7 +2,7 @@
 title: "Build cross-device apps powered by Project Rome "
 description: "Build experiences that cross devices and platforms seamlessly by using the activity feed and device relay APIs to reduce friction for users and drive app usage."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ---
 
 # Build cross-device apps powered by Project Rome
@@ -71,17 +71,18 @@ To find the IDs:
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
-### Step 3: Configure support for Microsoft account or Azure AD
-To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
+<a name='step-3-configure-support-for-microsoft-account-or-azure-ad'></a>
+
+### Step 3: Configure support for Microsoft account or Microsoft Entra ID
+To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Microsoft Entra ID](/azure/active-directory/develop/active-directory-developers-guide) (Microsoft Entra ID) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
 You can find your existing app ID/client IDs or provision new ones by signing in to the [Application registration portal](https://apps.dev.microsoft.com) with your developer account. When you sign in to the portal, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported.   
 
-If you're building an application that will support Azure AD users, and you do not use a converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
+If you're building an application that will support Microsoft Entra users, and you do not use a converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
 
-1. Sign in to the [Azure portal](https://portal.azure.com). 
-2. Select **Azure Active Directory**.
-3. Under **Manage**, select **App registrations**. 
-4. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
+1. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
 
 ### Step 4: Configure support for cross-platform push notifications (optional) 
 If you've opted to configure your cross-device app in the Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you're using Project Rome APIs for Microsoft Graph only, you don't need to perform this step. You can associate up to 10 sets of credentials per platform. 
@@ -107,7 +108,7 @@ A cross-device app ID is represented as a domain that you own. This must either 
 For example, an app developer with a suite of game apps might use a separate subdomain for each to ensure that each app is only subscribed to the user activities it can resume when reading data across devices and platforms. An app developer with a suite of productivity apps designed to work together might use a single domain for all of these so that any app is able to launch a member of the suite across devices.  
 
 #### Assert domain ownership with an externally hosted JSON file 
-If you're using an externally hosted JSON file to manage your cross-device app, you assert domain ownership by including your Microsoft account or Azure AD app IDs in the cross-platform-app-identifiers file. Your domain ownership will be verified as part of the publish process when you use the activity feed API to create user activities.
+If you're using an externally hosted JSON file to manage your cross-device app, you assert domain ownership by including your Microsoft account or Microsoft Entra app IDs in the cross-platform-app-identifiers file. Your domain ownership will be verified as part of the publish process when you use the activity feed API to create user activities.
 
 The system will cache the contents of the JSON file to avoid generating frequent requests on your domain. If configured, the service will respect HTTP cache headers when evaluating when to refresh the cache. If not configured, the service will refresh every 24 hours. 
 
@@ -121,7 +122,7 @@ The JSON file itself must be named **cross-platform-app-identifiers** and hosted
  
 The file will allow for multiple JSON objects with the same platform identifier. For example, an iPhone app and an iPad app should be listed as separate JSON objects, each with a platform value of iOS. The web platform identifier is shown in the following example.
  
-You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don’t need an entry in the file for Android.
+You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don't need an entry in the file for Android.
  
 The following example includes all the valid platform identifiers currently accepted. JSON objects that include an invalid platform value will be stripped out.  
 
@@ -145,8 +146,10 @@ To find the IDs:
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
-### Step 3: Configure support for Microsoft account or Azure AD
-To enable cross-device experiences, your app users must sign in with either a Microsoft account or an Azure AD account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
+<a name='step-3-configure-support-for-microsoft-account-or-azure-ad'></a>
+
+### Step 3: Configure support for Microsoft account or Microsoft Entra ID
+To enable cross-device experiences, your app users must sign in with either a Microsoft account or an Microsoft Entra ID account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
 ```[
 {"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
@@ -160,17 +163,16 @@ To enable cross-device experiences, your app users must sign in with either a M
 ]
 ```
 
-You can find your existing app ID/client IDs or provision new ones by signing in to the [Application Registration Portal](https://apps.dev.microsoft.com) with your developer account. When you sign in, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported. Use the platform type "msa" when you add the IDs used to enable support for a Microsoft account or Azure AD, as shown in the previous example.  
+You can find your existing app ID/client IDs or provision new ones by signing in to the [Application Registration Portal](https://apps.dev.microsoft.com) with your developer account. When you sign in, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported. Use the platform type "msa" when you add the IDs used to enable support for a Microsoft account or Microsoft Entra ID, as shown in the previous example.  
 
 > [!NOTE]
-> If you're building an application that supports Azure AD users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
+> If you're building an application that supports Microsoft Entra users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
 
-To find the GUID in the Azure Portal for your tenant: 
+To find the GUID in the Microsoft Entra admin center  for your tenant: 
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Azure Active Directory**. 
-3. Under **Manage**, select **App registrations**.
-4. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
+1. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
 
 #### Encoding the cross-platform-app-identifiers file 
 If you're not seeing activities resume in the correct native applications across platforms, or you're unable to read activities published by all members in the group, your JSON file might not be getting parsed appropriately. When outputting this file, make sure you're saving the cross-platform-app-identifiers file with "Unicode (UTF-8 without signature) - Codepage 65001" encoding.

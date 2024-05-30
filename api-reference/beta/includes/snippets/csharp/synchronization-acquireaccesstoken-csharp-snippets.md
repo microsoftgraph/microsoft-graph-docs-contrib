@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var credentials = new List<SynchronizationSecretKeyStringValuePair>()
+// Dependencies
+using Microsoft.Graph.Beta.Applications.Item.Synchronization.AcquireAccessToken;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AcquireAccessTokenPostRequestBody
 {
-	new SynchronizationSecretKeyStringValuePair
+	Credentials = new List<SynchronizationSecretKeyStringValuePair>
 	{
-	}
+		new SynchronizationSecretKeyStringValuePair
+		{
+			OdataType = "microsoft.graph.synchronizationSecretKeyStringValuePair",
+		},
+	},
 };
 
-await graphClient.Applications["{application-id}"].Synchronization
-	.AcquireAccessToken(credentials)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Applications["{application-id}"].Synchronization.AcquireAccessToken.PostAsync(requestBody);
+
 
 ```

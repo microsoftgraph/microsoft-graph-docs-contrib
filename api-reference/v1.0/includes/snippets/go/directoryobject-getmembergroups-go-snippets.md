@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewGetMemberGroupsPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
+	  //other-imports
+)
+
+requestBody := graphdirectoryobjects.NewGetMemberGroupsPostRequestBody()
 securityEnabledOnly := false
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.DirectoryObjectsById("directoryObject-id").GetMemberGroups().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+getMemberGroups, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").GetMemberGroups().PostAsGetMemberGroupsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,19 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\MailFolders\MailFoldersRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new MailFoldersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MailFoldersRequestBuilderGetQueryParameters();
-$queryParameters->includehiddenfolders = true;
-
+$queryParameters = MailFoldersRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->includeHiddenFolders = "true";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->mailFolders()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->mailFolders()->get($requestConfiguration)->wait();
 
 ```

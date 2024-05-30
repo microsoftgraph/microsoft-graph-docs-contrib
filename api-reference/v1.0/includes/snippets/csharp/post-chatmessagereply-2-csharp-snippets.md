@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ChatMessage
 {
 	CreatedDateTime = DateTimeOffset.Parse("2019-02-04T19:58:15.511Z"),
 	From = new ChatMessageFromIdentitySet
@@ -14,18 +17,18 @@ var chatMessage = new ChatMessage
 		User = new Identity
 		{
 			Id = "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-			DisplayName = "John Doe"
-		}
+			DisplayName = "John Doe",
+		},
 	},
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Hello World"
-	}
+		Content = "Hello World",
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies
-	.Request()
-	.AddAsync(chatMessage);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies.PostAsync(requestBody);
+
 
 ```

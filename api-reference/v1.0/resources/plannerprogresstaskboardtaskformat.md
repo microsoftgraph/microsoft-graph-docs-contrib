@@ -3,7 +3,7 @@ title: "plannerProgressTaskBoardTaskFormat resource type"
 description: "Represents the information used to render a task correctly in the progress view of the task board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress, and Complete)."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the information used to render a task correctly in the progress view of the task board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress, and Complete). Each [task](plannertask.md) will have one **plannerProgressTaskBoardTaskFormat** object associated with it.
+Represents the information used to render a task correctly in the progress view of the task board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress, and Complete). Each [task](plannertask.md) has one **plannerProgressTaskBoardTaskFormat** object associated with it.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Read properties and relationships of **plannerProgressTaskBoardTaskFormat** object.|
-|[Update](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)	|Update **plannerProgressTaskBoardTaskFormat** object. |
+|[Get progress task board format](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Read properties and relationships of **plannerProgressTaskBoardTaskFormat** object.|
+|[Update progress task board format](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)	|Update **plannerProgressTaskBoardTaskFormat** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. The [format validation](planner-identifiers-disclaimer.md) is done on the service.|
+|id|String| Read-only. ID of the resource. It's 28 characters long and case-sensitive. The [format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |orderHint|String|Hint value used to order the task on the progress view of the task board. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md).|
 
 ## Relationships
@@ -32,7 +32,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

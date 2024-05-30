@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewAttachment()
 name := "smile"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "R0lGODdhEAYEAA7", 
-}
-requestBody.SetAdditionalData(additionalData)
+contentBytes := []byte("r0lGODdhEAYEAA7")
+requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+attachments, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,22 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	BargeInAllowed = $true
-	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
-	Prompts = @(
+	bargeInAllowed = $true
+	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
+			mediaInfo = @{
+				uri = "https://cdn.contoso.com/beep.wav"
+				resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+			}
 		}
 	)
-	MaxRecordDurationInSeconds = 10
-	InitialSilenceTimeoutInSeconds = 5
-	MaxSilenceTimeoutInSeconds = 2
-	PlayBeep = $true
-	StopTones = @(
-		"#"
-		"1"
-		"*"
-	)
+	maxRecordDurationInSeconds = 10
+	initialSilenceTimeoutInSeconds = 5
+	maxSilenceTimeoutInSeconds = 2
+	playBeep = $true
+	stopTones = @(
+	"#"
+"1"
+"*"
+)
 }
 
 Invoke-MgRecordCommunicationCallResponse -CallId $callId -BodyParameter $params

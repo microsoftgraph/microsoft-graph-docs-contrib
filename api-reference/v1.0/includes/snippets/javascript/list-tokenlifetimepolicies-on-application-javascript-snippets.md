@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let tokenLifetimePolicies = await client.api('/applications/acc848e9-e8ec-4feb-a521-8d58b5482e09/tokenLifetimePolicies')
+let tokenLifetimePolicies = await client.api('/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies')
 	.get();
 
 ```

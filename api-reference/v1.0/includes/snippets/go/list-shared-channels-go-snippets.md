@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
 
 requestFilter := "membershipType eq 'shared'"
 
-requestParameters := &graphconfig.TeamItemChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Channels().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Get(context.Background(), configuration)
 
 
 ```

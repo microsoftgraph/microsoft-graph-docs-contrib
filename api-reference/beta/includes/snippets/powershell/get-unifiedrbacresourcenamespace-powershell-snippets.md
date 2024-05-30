@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgRoleManagementDirectoryResourceNamespace -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+Get-MgBetaRoleManagementDirectoryResourceNamespace -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
 
 ```

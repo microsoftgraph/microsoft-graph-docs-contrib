@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewLogTeleconferenceDeviceQualityPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphcommunications.NewLogTeleconferenceDeviceQualityPostRequestBody()
 quality := graphmodels.NewTeleconferenceDeviceQuality()
 callChainId := uuid.MustParse("0622673d-9f69-49b3-9d4f-5ec64f42ecce")
 quality.SetCallChainId(&callChainId) 
@@ -21,7 +30,7 @@ deviceDescription := "TestDescription"
 quality.SetDeviceDescription(&deviceDescription) 
 
 
-teleconferenceDeviceMediaQuality := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality := graphmodels.NewTeleconferenceDeviceAudioQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -64,7 +73,7 @@ maximumInboundJitter , err := abstractions.ParseISODuration("PT0.023S")
 teleconferenceDeviceMediaQuality.SetMaximumInboundJitter(&maximumInboundJitter) 
 maximumOutboundJitter , err := abstractions.ParseISODuration("PT0.024S")
 teleconferenceDeviceMediaQuality.SetMaximumOutboundJitter(&maximumOutboundJitter) 
-teleconferenceDeviceMediaQuality1 := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality1 := graphmodels.NewTeleconferenceDeviceVideoQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality1.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -107,7 +116,7 @@ maximumInboundJitter , err := abstractions.ParseISODuration("PT0.023S")
 teleconferenceDeviceMediaQuality1.SetMaximumInboundJitter(&maximumInboundJitter) 
 maximumOutboundJitter , err := abstractions.ParseISODuration("PT0.024S")
 teleconferenceDeviceMediaQuality1.SetMaximumOutboundJitter(&maximumOutboundJitter) 
-teleconferenceDeviceMediaQuality2 := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality2 := graphmodels.NewTeleconferenceDeviceScreenSharingQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality2.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -155,11 +164,11 @@ mediaQualityList := []graphmodels.TeleconferenceDeviceMediaQualityable {
 	teleconferenceDeviceMediaQuality,
 	teleconferenceDeviceMediaQuality1,
 	teleconferenceDeviceMediaQuality2,
-
 }
 quality.SetMediaQualityList(mediaQualityList)
 requestBody.SetQuality(quality)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(context.Background(), requestBody, nil)
 
 

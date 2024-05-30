@@ -3,7 +3,7 @@ title: "deviceLogCollectionRequest resource type"
 description: "Windows Log Collection request entity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Windows Log Collection request entity.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier|
-|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|The template type that is sent with the collection request. Possible values are: `predefined`.|
+|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|Indicates The template type that is sent with the collection request. defaule is Predefined. Possible values are: `predefined`, `unknownFutureValue`.|
 
 ## Relationships
 None

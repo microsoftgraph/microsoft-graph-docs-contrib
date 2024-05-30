@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let workbookChartFont = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
+let workbookChartFont = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font')
 	.version('beta')
 	.get();
 

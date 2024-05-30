@@ -1,13 +1,13 @@
 ---
-title: "onenoteEntitySchemaObjectModel resource"
+title: "onenoteEntitySchemaObjectModel resource type"
 description: "This is a base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
-# onenoteEntitySchemaObjectModel resource
+# onenoteEntitySchemaObjectModel resource type
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ This is a base type for OneNote entities.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

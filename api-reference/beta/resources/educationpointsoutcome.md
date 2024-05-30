@@ -3,7 +3,7 @@ title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 

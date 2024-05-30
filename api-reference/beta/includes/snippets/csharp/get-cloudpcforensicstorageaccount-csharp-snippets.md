@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var getStorageAccounts = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots
-	.GetStorageAccounts("cb6ad4c4-8a17-4245-a644-e4436b1ee204")
-	.Request()
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots.GetStorageAccountsWithSubscriptionId("{subscriptionId}").GetAsGetStorageAccountsWithSubscriptionIdGetResponseAsync();
+
 
 ```

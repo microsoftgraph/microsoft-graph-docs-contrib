@@ -3,7 +3,7 @@ title: "List managedDevices"
 description: "List properties and relationships of the managedDevice objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [managedDevice](../resources/intune-devices-manageddevice.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5444
+Content-Length: 5568
 
 {
   "value": [
@@ -169,7 +171,8 @@ Content-Length: 5444
       "udid": "Udid value",
       "notes": "Notes value",
       "ethernetMacAddress": "Ethernet Mac Address value",
-      "physicalMemoryInBytes": 5
+      "physicalMemoryInBytes": 5,
+      "enrollmentProfileName": "Enrollment Profile Name value"
     }
   ]
 }

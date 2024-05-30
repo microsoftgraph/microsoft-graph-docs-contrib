@@ -3,7 +3,7 @@ title: "workbook resource type"
 description: "The top-level object that contains related workbook objects such as worksheets, tables, and ranges."
 ms.localizationpriority: high
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -27,10 +27,11 @@ None.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](nameditem.md) collection|Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.|
+|comments|[workbookComment](workbookcomment.md) collection|Represents a collection of comments in a workbook.|
+|names|[workbookNamedItem](workbooknameditem.md) collection|Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.|
 |operations|[workbookOperation](workbookoperation.md) collection|The status of workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only.|
-|tables|[workbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
-|worksheets|[workbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|tables|[workbookTable](workbooktable.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
+|worksheets|[workbookWorksheet](workbookworksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
 
 ## Functions
 

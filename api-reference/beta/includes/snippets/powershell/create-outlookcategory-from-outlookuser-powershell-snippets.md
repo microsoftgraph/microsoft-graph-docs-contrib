@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
-	DisplayName = "Project expenses"
-	Color = "preset9"
+	displayName = "Project expenses"
+	color = "preset9"
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
+New-MgBetaUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 
 ```

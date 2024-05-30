@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var b2cIdentityUserFlow = new B2cIdentityUserFlow
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new B2cIdentityUserFlow
 {
 	Id = "UserFlowWithAPIConnector",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
@@ -15,23 +18,27 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 	{
 		PostFederationSignup = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
 		},
 		PostAttributeCollection = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
-		}
-	}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Identity.B2cUserFlows
-	.Request()
-	.AddAsync(b2cIdentityUserFlow);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.B2cUserFlows.PostAsync(requestBody);
+
 
 ```

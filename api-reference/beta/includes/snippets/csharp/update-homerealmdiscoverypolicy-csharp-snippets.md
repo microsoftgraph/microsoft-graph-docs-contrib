@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new HomeRealmDiscoveryPolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+		"{\"HomeRealmDiscoveryPolicy\":{\"AccelerateToFederatedDomain\":true,\"PreferredDomain\":\"federated.example.edu\",\"AlternateIdLogin\":{\"Enabled\":true}}}",
 	},
-	DisplayName = "Contoso default HRD Policy"
+	DisplayName = "Contoso default HRD Policy",
 };
 
-await graphClient.Policies.HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"]
-	.Request()
-	.UpdateAsync(homeRealmDiscoveryPolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"].PatchAsync(requestBody);
+
 
 ```

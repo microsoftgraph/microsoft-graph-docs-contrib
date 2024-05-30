@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	State = @{
+	state = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentState"
-		RequestedValue = "paused"
+		requestedValue = "paused"
 	}
 }
 
-Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
+Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 
 ```

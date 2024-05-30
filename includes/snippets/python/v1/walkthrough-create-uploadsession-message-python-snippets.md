@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.messages.item.attachments.create_upload_session.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph.generated.models.attachment_item import AttachmentItem
+from msgraph.generated.models.attachment_type import AttachmentType
+
+graph_client = GraphServiceClient(credentials, scopes)
+
+request_body = CreateUploadSessionPostRequestBody(
+	attachment_item = AttachmentItem(
+		attachment_type = AttachmentType.File,
+		name = "flower",
+		size = 3483322,
+	),
+)
+
+result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(request_body)
+
+
+```

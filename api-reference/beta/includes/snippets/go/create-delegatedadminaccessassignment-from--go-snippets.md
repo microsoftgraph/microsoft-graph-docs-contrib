@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewDelegatedAdminAccessAssignment()
 accessContainer := graphmodels.NewDelegatedAdminAccessContainer()
@@ -35,12 +43,12 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole1,
 	unifiedRole2,
 	unifiedRole3,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").AccessAssignments().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+accessAssignments, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").AccessAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\TeamsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TeamsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TeamsRequestBuilderGetQueryParameters();
+$queryParameters = TeamsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "displayName eq 'A Contoso Team'";
 $queryParameters->select = ["id","description"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teams()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->get($requestConfiguration)->wait();
 
 ```

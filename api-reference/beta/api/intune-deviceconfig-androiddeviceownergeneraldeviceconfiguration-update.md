@@ -3,7 +3,7 @@ title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -195,6 +197,11 @@ The following table shows the properties that are required when you create the [
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
+|locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
+|locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
+|androidDeviceOwnerDelegatedScopeAppSettings|[androidDeviceOwnerDelegatedScopeAppSetting](../resources/intune-deviceconfig-androiddeviceownerdelegatedscopeappsetting.md) collection|Specifies the list of managed apps with app details and its associated delegated scope(s). This collection can contain a maximum of 500 elements.|
+|shareDeviceLocationDisabled|Boolean|Indicates whether or not location sharing is disabled for fully managed devices (COBO), and corporate owned devices with a work profile (COPE)|
+|deviceLocationMode|[androidDeviceOwnerLocationMode](../resources/intune-deviceconfig-androiddeviceownerlocationmode.md)|Indicates the location setting configuration for fully managed devices (COBO) and corporate owned devices with a work profile (COPE). Possible values are: `notConfigured`, `disabled`, `unknownFutureValue`.|
 
 
 
@@ -208,7 +215,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10090
+Content-length: 10717
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -469,7 +476,26 @@ Content-length: 10090
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "required",
-  "workProfilePasswordRequireUnlock": "daily"
+  "workProfilePasswordRequireUnlock": "daily",
+  "locateDeviceUserlessDisabled": true,
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ],
+  "shareDeviceLocationDisabled": true,
+  "deviceLocationMode": "disabled"
 }
 ```
 
@@ -478,7 +504,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10262
+Content-Length: 10889
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -742,6 +768,25 @@ Content-Length: 10262
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "required",
-  "workProfilePasswordRequireUnlock": "daily"
+  "workProfilePasswordRequireUnlock": "daily",
+  "locateDeviceUserlessDisabled": true,
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ],
+  "shareDeviceLocationDisabled": true,
+  "deviceLocationMode": "disabled"
 }
 ```

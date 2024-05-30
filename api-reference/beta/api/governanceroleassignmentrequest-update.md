@@ -3,8 +3,9 @@ title: "Update governanceRoleAssignmentRequests"
 description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Update governanceRoleAssignmentRequests
@@ -17,39 +18,24 @@ Namespace: microsoft.graph
 
 Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
->**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to. 
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Azure resources
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | Not supported. |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | Not supported. |
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
-
-### Azure AD
-
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
-
-### Groups
-
-|Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+The requester must also have at least one active administrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
+POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```
 
 ## Request headers
@@ -60,7 +46,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## Request body
 
-|Parameters	     |Type	                 |Required |Description|
+|Parameters         |Type                     |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
 |decision        |String                 |✓        |The administrator decision of the role assignment request. The value should be updated as `AdminApproved` or `AdminDenied`.|
@@ -69,7 +55,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### Response
 This method can only be applied to requests that are in status of `PendingAdminDecision`.
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
@@ -87,20 +73,28 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 [!INCLUDE [sample-code](../includes/snippets/csharp/updaterequest-governanceroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/updaterequest-governanceroleassignmentrequest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/updaterequest-governanceroleassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updaterequest-governanceroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/updaterequest-governanceroleassignmentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/updaterequest-governanceroleassignmentrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/updaterequest-governanceroleassignmentrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -141,5 +135,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -5,25 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Devices\DevicesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DevicesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DevicesRequestBuilderGetQueryParameters();
-$queryParameters->search = "\"displayName:Android\"";
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DevicesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->search = "\"displayName:Android\"";
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->devices()->get($requestConfiguration);
 
+$result = $graphServiceClient->devices()->get($requestConfiguration)->wait();
 
 ```

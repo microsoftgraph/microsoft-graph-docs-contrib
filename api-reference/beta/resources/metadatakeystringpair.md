@@ -3,7 +3,7 @@ title: 'metaDataKeyStringPair resource type'
 description: Represents a key-value (string) pair of the metadata.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

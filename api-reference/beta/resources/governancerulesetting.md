@@ -3,8 +3,9 @@ title: "governanceRuleSetting resource type"
 description: "Represents the rules that the role settings are composed of."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRuleSetting resource type
@@ -19,14 +20,14 @@ Represents the rules that the role settings are composed of.
 
 
 ## Properties
-|Property 	   | Type         |Description|
+|Property        | Type         |Description|
 |:-------------|:-------------|:----------|
 |ruleIdentifier|String        |The id of the rule. For example, ``ExpirationRule`` and ``MfaRule``.|
 |setting       |String        |The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var calendarPermission = new CalendarPermission
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CalendarPermission
 {
-	Role = CalendarRoleType.Write
+	Role = CalendarRoleType.Write,
 };
 
-await graphClient.Users["{user-id}"].Calendar.CalendarPermissions["{calendarPermission-id}"]
-	.Request()
-	.UpdateAsync(calendarPermission);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Calendar.CalendarPermissions["{calendarPermission-id}"].PatchAsync(requestBody);
+
 
 ```

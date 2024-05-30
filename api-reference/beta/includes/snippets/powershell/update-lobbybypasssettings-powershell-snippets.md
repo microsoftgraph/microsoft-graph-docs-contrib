@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
-	LobbyBypassSettings = @{
-		IsDialInBypassEnabled = $true
+	lobbyBypassSettings = @{
+		isDialInBypassEnabled = $true
 	}
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 
 ```

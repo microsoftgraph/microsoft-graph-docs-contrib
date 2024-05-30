@@ -4,39 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.users.item.sendmail.SendMailPostRequestBody sendMailPostRequestBody = new com.microsoft.graph.users.item.sendmail.SendMailPostRequestBody();
 Message message = new Message();
-message.subject = "Meet for lunch?";
+message.setSubject("Meet for lunch?");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "The new cafeteria is open.";
-message.body = body;
-LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
-Recipient toRecipients = new Recipient();
+body.setContentType(BodyType.Text);
+body.setContent("The new cafeteria is open.");
+message.setBody(body);
+LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "meganb@contoso.onmicrosoft.com";
-toRecipients.emailAddress = emailAddress;
-toRecipientsList.add(toRecipients);
-message.toRecipients = toRecipientsList;
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-FileAttachment attachments = new FileAttachment();
-attachments.name = "attachment.txt";
-attachments.contentType = "text/plain";
-attachments.contentBytes = Base64.getDecoder().decode("SGVsbG8gV29ybGQh");
-attachmentsList.add(attachments);
-AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
-attachmentCollectionResponse.value = attachmentsList;
-AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
-message.attachments = attachmentCollectionPage;
+emailAddress.setAddress("meganb@contoso.com");
+recipient.setEmailAddress(emailAddress);
+toRecipients.add(recipient);
+message.setToRecipients(toRecipients);
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+FileAttachment attachment = new FileAttachment();
+attachment.setOdataType("#microsoft.graph.fileAttachment");
+attachment.setName("attachment.txt");
+attachment.setContentType("text/plain");
+byte[] contentBytes = Base64.getDecoder().decode("SGVsbG8gV29ybGQh");
+attachment.setContentBytes(contentBytes);
+attachments.add(attachment);
+message.setAttachments(attachments);
+sendMailPostRequestBody.setMessage(message);
+graphClient.me().sendMail().post(sendMailPostRequestBody);
 
-graphClient.me()
-	.sendMail(UserSendMailParameterSet
-		.newBuilder()
-		.withMessage(message)
-		.withSaveToSentItems(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

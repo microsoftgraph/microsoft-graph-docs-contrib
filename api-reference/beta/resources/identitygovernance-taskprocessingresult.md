@@ -3,7 +3,7 @@ title: "taskProcessingResult resource type"
 description: "Reports on the results of processing tasks in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[resume](../api/identitygovernance-taskprocessingresult-resume.md)|None|Resumes the **taskProcessingResult** as part of the Azure Logic App integration.|
+|[Resume](../api/identitygovernance-taskprocessingresult-resume.md)|None|Resumes the **taskProcessingResult** as part of the Azure Logic App integration.|
 
 ## Properties
 
@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|The unique identifier of the Azure AD user targeted for the task execution.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|subject|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user targeted for the task execution.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |task|[task](../resources/identitygovernance-task.md)|The related workflow task|
 
 ## JSON representation

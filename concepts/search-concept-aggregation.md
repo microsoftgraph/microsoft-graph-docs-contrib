@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to refine queries with aggregations"
 description: "You can use the Microsoft Search API aggregationOption in Microsoft Graph to refine search results and show their distribution in the index."
 author: "njerigrevious"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to refine queries with aggregations
@@ -18,7 +18,7 @@ The following example searches **listItem** resources and aggregates results by 
 
 The response includes two [searchBucket](/graph/api/resources/searchbucket) objects for the two aggregations:
 - The **key** property specifies the actual value (by `fileType`, `contentclass`, or `lastModifiedTime`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
-- The **count** property specifies the number of such objects aggregated in the same bucket. Note that this number is an approximation of the number of matches and will not provide an exact number of matches.
+- The **count** property specifies the number of such objects aggregated in the same bucket. This number is an approximation of the number of matches and won't provide an exact number of matches.
 - Buckets of results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
 - Buckets of results aggregated by content class are sorted by the string value of the content class in descending order. In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.
 - Buckets of results aggregated by lastModifiedTime are sorted by the string value of lastModifiedTime in descending order. This example includes three buckets: `Before 2021-09-01T09:08:19.6224752Z`, `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z`, and `2021-11-09T09:08:19.6224752Z or later`.
@@ -270,7 +270,7 @@ Content-type: application/json
 
 ## Example 3: Request aggregation by a numeric field
 
-The following example searches **driveItem** resources and aggregates results by their size which is a numeric value. The request specifies aggregation by 3 size ranges:
+The following example searches **driveItem** resources and aggregates results by their size that is a numeric value. The request specifies aggregation by 3 size ranges:
 - Size less than 100
 - Size between 100 and 1000
 - Size 1000 and higher
@@ -373,7 +373,7 @@ Content-type: application/json
 
 ## Known limitations
 
-Aggregations are supported only for SharePoint, OneDrive, or external items. They are not supported for **message** or **event** types.
+Aggregations are supported only for SharePoint, OneDrive, or external items. They aren't supported for **message** or **event** types.
 
 ## Next steps
 

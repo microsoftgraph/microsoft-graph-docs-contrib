@@ -1,6 +1,6 @@
 ---
 title: "caseSettings resource type"
-description: "Contains ettings for an eDiscovery case."
+description: "Contains settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
-|[Update caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
-|[resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values.|
+|[Get settings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[Update settings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[Reset to default](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values.|
 
 ## Properties
 
@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Id|String|The ID of the eDiscovery case. Inherited from [entity](../resources/entity.md).|
 |ocr|[microsoft.graph.ediscovery.ocrSettings](../resources/ediscovery-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
 |redundancyDetection|[microsoft.graph.ediscovery.redundancyDetectionSettings](../resources/ediscovery-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
-|topicModeling|[microsoft.graph.ediscovery.topicModelingSettings](../resources/ediscovery-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
+|topicModeling|[microsoft.graph.ediscovery.topicModelingSettings](../resources/ediscovery-topicmodelingsettings.md)|The article Modeling (Themes) settings for the case.|
 
 ## Relationships
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

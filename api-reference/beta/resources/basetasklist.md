@@ -3,7 +3,7 @@ title: "baseTaskList resource type"
 description: "Contains one or more task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -24,14 +24,14 @@ This is the base resource for the following derived types of task lists.
 This is an abstract type.
 
 ## Methods
-The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
+The following methods apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List baseTaskLists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.|
-|[Get baseTaskList](../api/basetasklist-get.md)|[baseTaskList](../resources/basetasklist.md)|Read the properties and relationships of a [baseTaskList](../resources/basetasklist.md) object.|
-|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
-|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
+|[List base task lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.|
+|[Get base task list](../api/basetasklist-get.md)|[baseTaskList](../resources/basetasklist.md)|Read the properties and relationships of a [baseTaskList](../resources/basetasklist.md) object.|
+|[List base tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
+|[Create base task](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +46,7 @@ The following method apply to any of the derived types of **baseTaskList** (**we
 |tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

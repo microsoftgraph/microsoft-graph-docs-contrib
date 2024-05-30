@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new HomeRealmDiscoveryPolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+		"{\"HomeRealmDiscoveryPolicy\":{\"AccelerateToFederatedDomain\":true,\"PreferredDomain\":\"federated.example.edu\",\"AlternateIdLogin\":{\"Enabled\":true}}}",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
 
-await graphClient.Policies.HomeRealmDiscoveryPolicies
-	.Request()
-	.AddAsync(homeRealmDiscoveryPolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.HomeRealmDiscoveryPolicies.PostAsync(requestBody);
+
 
 ```

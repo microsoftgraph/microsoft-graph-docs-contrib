@@ -5,20 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Sites\SitesRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new SitesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SitesRequestBuilderGetQueryParameters();
+$queryParameters = SitesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["siteCollection","webUrl"];
 $queryParameters->filter = "siteCollection/root ne null";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sites()->get($requestConfiguration);
-
+$result = $graphServiceClient->sites()->get($requestConfiguration)->wait();
 
 ```

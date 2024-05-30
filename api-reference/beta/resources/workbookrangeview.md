@@ -3,7 +3,7 @@ title: "workbookRangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -26,6 +26,7 @@ RangeView represents a set of visible cells of the parent range.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Represents the cell addresses|
 |columnCount|Int32|Returns the number of visible columns. Read-only.|
 |formulas|Json|Represents the formula in A1-style notation.	|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.	|
@@ -33,9 +34,9 @@ RangeView represents a set of visible cells of the parent range.
 |index|Int32|Index of the range.|
 |numberFormat|Json|Represents Excel's number format code for the given cell. Read-only.	|
 |rowCount|Int32|Returns the number of visible rows. Read-only.	|
-|text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.	|
+|text|Json|Text values of the specified range. The Text value won't depend on the cell width. The # sign substitution that happens in Excel UI won't affect the text value returned by the API. Read-only.	|
 |valueTypes|Json|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
-|values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.	|
+|values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.	|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -43,7 +44,7 @@ RangeView represents a set of visible cells of the parent range.
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],

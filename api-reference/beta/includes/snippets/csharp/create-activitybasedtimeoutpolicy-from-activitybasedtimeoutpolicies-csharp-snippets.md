@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ActivityBasedTimeoutPolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"definition-value"
+		"definition-value",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
 
-await graphClient.Policies.ActivityBasedTimeoutPolicies
-	.Request()
-	.AddAsync(activityBasedTimeoutPolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.ActivityBasedTimeoutPolicies.PostAsync(requestBody);
+
 
 ```

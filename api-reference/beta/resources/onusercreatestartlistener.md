@@ -1,0 +1,62 @@
+---
+title: "onUserCreateStartListener resource type"
+description: "Listener for the onUserCreateStart event"
+author: "nanguil"
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+---
+
+# onUserCreateStartListener resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Used for configuring actions done during user creation as defined in the **onUserCreateStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+
+Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Required. Inherited from [entity](../resources/entity.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.onUserCreateStartListener",
+  "baseType": "microsoft.graph.authenticationEventListener",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.onUserCreateStartListener",
+  "id": "String (identifier)",
+  "priority": "Integer",
+  "conditions": {
+    "@odata.type": "microsoft.graph.authenticationConditions"
+  },
+  "authenticationEventsFlowId": "String",
+  "handler": {
+    "@odata.type": "microsoft.graph.onUserCreateStartHandler"
+  }
+}
+```
+

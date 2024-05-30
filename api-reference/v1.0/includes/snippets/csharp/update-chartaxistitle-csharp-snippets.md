@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookChartAxisTitle = new WorkbookChartAxisTitle
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new WorkbookChartAxisTitle
 {
 	Text = "text-value",
-	Visible = true
+	Visible = true,
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.Title
-	.Request()
-	.UpdateAsync(workbookChartAxisTitle);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.Title.PatchAsync(requestBody);
+
 
 ```

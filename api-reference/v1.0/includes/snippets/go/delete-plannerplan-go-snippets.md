@@ -4,17 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  //other-imports
+)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerPlanItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphplanner.PlannerPlanItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 
-graphClient.Planner().PlansById("plannerPlan-id").Delete(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Planner().Plans().ByPlannerPlanId("plannerPlan-id").Delete(context.Background(), configuration)
 
 
 ```

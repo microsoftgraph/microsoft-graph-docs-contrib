@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-User user = new User();
-user.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/users/{id}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.print().shares("{id}").allowedUsers().references()
-	.buildRequest()
-	.post(user);
+com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/beta/users/{id}");
+graphClient.print().shares().byPrinterShareId("{printerShare-id}").allowedUsers().ref().post(referenceCreate);
+
 
 ```

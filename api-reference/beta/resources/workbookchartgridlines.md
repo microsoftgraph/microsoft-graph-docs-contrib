@@ -3,7 +3,7 @@ title: "workbookChartGridlines resource type"
 description: "Represents major or minor gridlines on a chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Represents major or minor gridlines on a chart axis.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

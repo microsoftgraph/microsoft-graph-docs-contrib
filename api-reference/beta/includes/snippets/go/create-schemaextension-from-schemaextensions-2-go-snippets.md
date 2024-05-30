@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewSchemaExtension()
 id := "courses"
@@ -14,7 +22,6 @@ description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"Group",
-
 }
 requestBody.SetTargetTypes(targetTypes)
 
@@ -39,11 +46,11 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
-
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.SchemaExtensions().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+schemaExtensions, err := graphClient.SchemaExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

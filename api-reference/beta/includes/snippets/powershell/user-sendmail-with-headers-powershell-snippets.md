@@ -4,36 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Message = @{
-		Subject = "9/9/2018: concert"
-		Body = @{
-			ContentType = "HTML"
-			Content = "The group represents Nevada."
+	message = @{
+		subject = "9/9/2018: concert"
+		body = @{
+			contentType = "HTML"
+			content = "The group represents Nevada."
 		}
-		ToRecipients = @(
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "AlexW@contoso.OnMicrosoft.com"
+				emailAddress = @{
+					address = "AlexW@contoso.com"
 				}
 			}
 		)
-		InternetMessageHeaders = @(
+		internetMessageHeaders = @(
 			@{
-				Name = "x-custom-header-group-name"
-				Value = "Nevada"
+				name = "x-custom-header-group-name"
+				value = "Nevada"
 			}
 			@{
-				Name = "x-custom-header-group-id"
-				Value = "NV001"
+				name = "x-custom-header-group-id"
+				value = "NV001"
 			}
 		)
 	}
 }
 
 # A UPN can also be used as -UserId.
-Send-MgUserMail -UserId $userId -BodyParameter $params
+Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
 ```

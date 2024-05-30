@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
-	Detail = @{
-		ContentType = "text"
-		Content = "I am originally from Australia, but grew up in Moscow, Russia."
+	detail = @{
+		contentType = "text"
+		content = "I am originally from Australia, but grew up in Moscow, Russia."
 	}
-	DisplayName = "About Me"
+	displayName = "About Me"
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserProfileNote -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileNote -UserId $userId -BodyParameter $params
 
 ```

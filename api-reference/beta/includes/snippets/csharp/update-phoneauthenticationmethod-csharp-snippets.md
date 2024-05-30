@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var phoneAuthenticationMethod = new PhoneAuthenticationMethod
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PhoneAuthenticationMethod
 {
 	PhoneNumber = "+1 2065555554",
-	PhoneType = AuthenticationPhoneType.Mobile
+	PhoneType = AuthenticationPhoneType.Mobile,
 };
 
-await graphClient.Me.Authentication.PhoneMethods["{phoneAuthenticationMethod-id}"]
-	.Request()
-	.UpdateAsync(phoneAuthenticationMethod);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Authentication.PhoneMethods["{phoneAuthenticationMethod-id}"].PatchAsync(requestBody);
+
 
 ```

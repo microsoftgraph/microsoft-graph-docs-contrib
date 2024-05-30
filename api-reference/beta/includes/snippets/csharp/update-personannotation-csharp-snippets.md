@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personAnnotation = new PersonAnnotation
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PersonAnnotation
 {
-	AllowedAudiences = AllowedAudiences.Organization
+	AllowedAudiences = AllowedAudiences.Organization,
 };
 
-await graphClient.Users["{user-id}"].Profile.Notes["{personAnnotation-id}"]
-	.Request()
-	.UpdateAsync(personAnnotation);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Profile.Notes["{personAnnotation-id}"].PatchAsync(requestBody);
+
 
 ```

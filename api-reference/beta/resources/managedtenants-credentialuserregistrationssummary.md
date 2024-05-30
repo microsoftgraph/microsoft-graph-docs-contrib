@@ -1,9 +1,9 @@
 ---
 title: "credentialUserRegistrationsSummary resource type"
-description: "Represents a summary of Azure Active Directory credential user registrations for a given managed tenant."
+description: "Represents a summary of Microsoft Entra credential user registrations for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of Azure Active Directory credential user registrations for a given managed tenant.
+Represents a summary of Microsoft Entra credential user registrations for a given managed tenant.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List credentialUserRegistrationsSummaries](../api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) objects and their properties.|
-|[Get credentialUserRegistrationsSummary](../api/managedtenants-credentialuserregistrationssummary-get.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) object.|
+|[List credential user registration summaries](../api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) objects and their properties.|
+|[Get credential user registrations summary](../api/managedtenants-credentialuserregistrationssummary-get.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,8 +34,10 @@ Represents a summary of Azure Active Directory credential user registrations for
 |ssprEnabledUserCount|Int32|The number of users enabled for self service password reset. Optional. Read-only.|
 |ssprRegisteredUserCount|Int32|The number of users registered for self service password reset. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantLicenseType|String|The license type associated with the tenant; for example, `AADFree`, `AADPremium1`, `AADPremium2`.|
 |totalUserCount|Int32|The total number of users in the given managed tenant. Optional. Read-only.|
+
 
 ## Relationships
 None.

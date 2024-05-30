@@ -3,7 +3,7 @@ title: "deviceManagementSettingDependency resource type"
 description: "Dependency information for a setting"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

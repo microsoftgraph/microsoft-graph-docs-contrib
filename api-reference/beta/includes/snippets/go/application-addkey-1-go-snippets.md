@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddKeyPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphapplications.NewAddKeyPostRequestBody()
 keyCredential := graphmodels.NewKeyCredential()
 type := "AsymmetricX509Cert"
 keyCredential.SetType(&type) 
@@ -21,7 +30,8 @@ requestBody.SetPasswordCredential(&passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.ApplicationsById("application-id").AddKey().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+addKey, err := graphClient.Applications().ByApplicationId("application-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

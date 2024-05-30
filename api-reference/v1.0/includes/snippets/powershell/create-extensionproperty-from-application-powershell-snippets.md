@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Name = "jobGroup"
-	DataType = "String"
-	TargetObjects = @(
-		"User"
-	)
+	name = "jobGroup"
+	dataType = "String"
+	isMultiValued = $true
+	targetObjects = @(
+	"User"
+)
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params

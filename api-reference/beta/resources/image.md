@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # Image resource type
 

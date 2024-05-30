@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MessageRule messageRule = new MessageRule();
-messageRule.displayName = "Important from partner";
+messageRule.setDisplayName("Important from partner");
 MessageRuleActions actions = new MessageRuleActions();
-actions.markImportance = Importance.HIGH;
-messageRule.actions = actions;
+actions.setMarkImportance(Importance.High);
+messageRule.setActions(actions);
+MessageRule result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").messageRules().byMessageRuleId("{messageRule-id}").patch(messageRule);
 
-graphClient.me().mailFolders("inbox").messageRules("AQAAAJ5dZqA=")
-	.buildRequest()
-	.patch(messageRule);
 
 ```

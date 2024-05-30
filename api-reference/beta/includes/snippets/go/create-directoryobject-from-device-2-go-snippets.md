@@ -4,16 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewRegisteredUser()
-additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/directoryObjects/{id}", 
-}
-requestBody.SetAdditionalData(additionalData)
+// Code snippets are only available for the latest major version. Current major version is $v0.*
 
-graphClient.DevicesById("device-id").RegisteredUsersById("directoryObject-id").Post(context.Background(), requestBody, nil)
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/beta/directoryObjects/{id}"
+requestBody.SetOdataId(&odataId) 
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphClient.Devices().ByDeviceId("device-id").RegisteredUsers().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

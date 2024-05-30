@@ -1,9 +1,9 @@
 ---
 title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -16,14 +16,14 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.|
-|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Note: The **key** property is not returned by default.|
+|[List](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.|
+|[Get](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Note: The **key** property is not returned by default.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory. Not nullable.|
+|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Microsoft Entra ID. Not nullable.|
 |deviceId|String|Identifier of the device the BitLocker key is originally backed up from. Supports `$filter` (`eq`).|
 |id|String|The unique identifier for the BitLocker key.|
 |key|String|The BitLocker recovery key. Returned only on `$select`. Not nullable.|
@@ -33,7 +33,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,4 +52,3 @@ The following is a JSON representation of the resource.
   "volumeType": "String"
 }
 ```
-

@@ -4,31 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var channel = new Channel
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Channel
 {
 	DisplayName = "My First Shared Channel",
 	Description = "This is my first shared channel",
 	MembershipType = ChannelMembershipType.Shared,
-	Members = new ChannelMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"}
-			}
-		}
-	}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
+
 
 ```

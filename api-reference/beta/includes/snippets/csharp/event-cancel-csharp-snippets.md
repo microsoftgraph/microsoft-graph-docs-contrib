@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "Cancelling for this week due to all hands";
+// Dependencies
+using Microsoft.Graph.Beta.Me.Events.Item.Cancel;
 
-await graphClient.Me.Events["{event-id}"]
-	.Cancel(comment)
-	.Request()
-	.PostAsync();
+var requestBody = new CancelPostRequestBody
+{
+	Comment = "Cancelling for this week due to all hands",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.Events["{event-id}"].Cancel.PostAsync(requestBody);
+
 
 ```

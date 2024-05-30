@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var administrativeUnit = new AdministrativeUnit
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AdministrativeUnit
 {
-	DisplayName = "Greater Seattle District Technical Schools"
+	DisplayName = "Greater Seattle District Technical Schools",
 };
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"]
-	.Request()
-	.UpdateAsync(administrativeUnit);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].PatchAsync(requestBody);
+
 
 ```

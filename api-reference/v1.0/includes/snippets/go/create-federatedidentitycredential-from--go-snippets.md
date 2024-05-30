@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
 requestBody := graphmodels.NewFederatedIdentityCredential()
 name := "testing02"
@@ -16,11 +24,11 @@ subject := "a7d388c3-5e3f-4959-ac7d-786b3383006a"
 requestBody.SetSubject(&subject) 
 audiences := []string {
 	"api://AzureADTokenExchange",
-
 }
 requestBody.SetAudiences(audiences)
 
-result, err := graphClient.ApplicationsById("application-id").FederatedIdentityCredentials().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+federatedIdentityCredentials, err := graphClient.Applications().ByApplicationId("application-id").FederatedIdentityCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

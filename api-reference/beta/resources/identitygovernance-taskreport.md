@@ -3,7 +3,7 @@ title: "taskReport resource type"
 description: "Reports on the results of processing tasks in a lifecycle workflow which are aggregated on task and run level"
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskReports](../api/identitygovernance-workflow-list-taskreports.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.|
-|[Summary](../api/identitygovernance-taskreport-summary.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskreportsummary.md)|Read the properties and relationships of a [taskReport](../resources/identitygovernance-taskreport.md) object.|
-|[List taskProcessingResults](../api/identitygovernance-taskreport-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources for a task report.|
+|[List task reports](../api/identitygovernance-workflow-list-taskreports.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.|
+|[Get summary](../api/identitygovernance-taskreport-summary.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskreportsummary.md)|Read the properties and relationships of a [taskReport](../resources/identitygovernance-taskreport.md) object.|
+|[List task processing results](../api/identitygovernance-taskreport-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources for a task report.|
 
 ## Properties
 

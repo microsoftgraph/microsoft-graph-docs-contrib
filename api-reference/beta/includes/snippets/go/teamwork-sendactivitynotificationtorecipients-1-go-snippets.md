@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBody()
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteamwork "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphteamwork.NewSendActivityNotificationToRecipientsPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -22,27 +31,20 @@ previewText.SetContent(&content)
 requestBody.SetPreviewText(previewText)
 
 
-teamworkNotificationRecipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
-}
-teamworkNotificationRecipient.SetAdditionalData(additionalData)
-teamworkNotificationRecipient1 := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "ab88234e-0874-477c-9638-d144296ed04f", 
-}
-teamworkNotificationRecipient1.SetAdditionalData(additionalData)
-teamworkNotificationRecipient2 := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "01c64f53-69aa-42c7-9b7f-9f75195d6bfc", 
-}
-teamworkNotificationRecipient2.SetAdditionalData(additionalData)
+teamworkNotificationRecipient := graphmodels.NewAadUserNotificationRecipient()
+userId := "569363e2-4e49-4661-87f2-16f245c5d66a"
+teamworkNotificationRecipient.SetUserId(&userId) 
+teamworkNotificationRecipient1 := graphmodels.NewAadUserNotificationRecipient()
+userId := "ab88234e-0874-477c-9638-d144296ed04f"
+teamworkNotificationRecipient1.SetUserId(&userId) 
+teamworkNotificationRecipient2 := graphmodels.NewAadUserNotificationRecipient()
+userId := "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+teamworkNotificationRecipient2.SetUserId(&userId) 
 
 recipients := []graphmodels.TeamworkNotificationRecipientable {
 	teamworkNotificationRecipient,
 	teamworkNotificationRecipient1,
 	teamworkNotificationRecipient2,
-
 }
 requestBody.SetRecipients(recipients)
 
@@ -55,10 +57,10 @@ keyValuePair.SetValue(&value)
 
 templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Teamwork().SendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
 
 

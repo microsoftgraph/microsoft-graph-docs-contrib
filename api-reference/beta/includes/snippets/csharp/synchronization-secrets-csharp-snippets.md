@@ -4,21 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var secrets = new SynchronizationSecretKeyStringValuePair
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Secrets;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SecretsPutRequestBody
 {
-	Value = new List<String>()
+	Value = new List<SynchronizationSecretKeyStringValuePair>
 	{
-		"",
-		"",
-		"",
-		""
-	}
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.BaseAddress,
+			Value = "user@domain.com",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SecretToken,
+			Value = "password-value",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncNotificationSettings,
+			Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncAll,
+			Value = "false",
+		},
+	},
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization
-	.Request()
-	.PutAsync(secrets);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsSecretsPutResponseAsync(requestBody);
+
 
 ```

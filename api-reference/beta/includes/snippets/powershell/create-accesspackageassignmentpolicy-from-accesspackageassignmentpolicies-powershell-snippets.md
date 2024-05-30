@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
-	AccessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d"
-	DisplayName = "direct"
-	Description = "direct assignments by administrator"
-	AccessReviewSettings = $null
-	RequestorSettings = @{
-		ScopeType = "NoSubjects"
-		AcceptRequests = $true
-		AllowedRequestors = @(
+	accessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d"
+	displayName = "direct"
+	description = "direct assignments by administrator"
+	accessReviewSettings = $null
+	requestorSettings = @{
+		scopeType = "NoSubjects"
+		acceptRequests = $true
+		allowedRequestors = @(
 		)
 	}
-	RequestApprovalSettings = @{
-		IsApprovalRequired = $false
-		IsApprovalRequiredForExtension = $false
-		IsRequestorJustificationRequired = $false
-		ApprovalMode = "NoApproval"
-		ApprovalStages = @(
+	requestApprovalSettings = @{
+		isApprovalRequired = $false
+		isApprovalRequiredForExtension = $false
+		isRequestorJustificationRequired = $false
+		approvalMode = "NoApproval"
+		approvalStages = @(
 		)
 	}
 }
 
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
 ```

@@ -4,18 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.SiteItemPageItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","title"},
-	Expand: [] string {"webparts"},
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  //other-imports
+)
+
+requestParameters := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetQueryParameters{
+	Select: [] string {"id","name"},
 }
-configuration := &graphconfig.SiteItemPageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").GraphSitePage().Get(context.Background(), configuration)
 
 
 ```
