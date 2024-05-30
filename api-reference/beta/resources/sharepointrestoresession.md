@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents restore-related tasks on artifacts that are protected by a [SharePoint protection policy](sharepointrotectionpolicy.md). Restore session APIs are used by SharePoint Online Admins to perform restore-related tasks on artifacts that are protected as part of a SharePoint protection policy.
+Represents restore-related tasks on artifacts that are protected by a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). Restore session APIs are used by SharePoint Online Admins to perform restore-related tasks on artifacts that are protected as part of a SharePoint protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 

@@ -50,6 +50,8 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |failed|The restoration of the artifact failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
+### destinationType values
+
 |Member | Description |
 |:------|:------------|
 |new|Restoration will occur at a new location. For SharePoint and OneDrive, a new site will be created and content will be restored in the new site. For Exchange, a restored folder is created and content will be restored there.|
