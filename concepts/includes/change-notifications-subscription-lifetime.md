@@ -23,11 +23,11 @@ ms.localizationpriority: high
 | Teams [conversationMember][]                   | 4,320 minutes (three days)        |
 | Teams [onlineMeeting][]                        | 4,320 minutes (three days)        |
 | Teams [team][]                                 | 4,320 minutes (three days)        |
-| Teams shifts [offerShiftRequest][]             | 360 minutes (6 hours)             |
-| Teams shifts [openShiftChangeRequest][]        | 360 minutes (6 hours)             |
-| Teams shifts [shift][]                         | 360 minutes (6 hours)             |
-| Teams shifts [swapShiftsChangeRequest][]       | 360 minutes (6 hours)             |
-| Teams shifts [timeOffRequest][]                | 360 minutes (6 hours)             |
+| Teams Shifts [offerShiftRequest][]             | 360 minutes (6 hours)             |
+| Teams Shifts [openShiftChangeRequest][]        | 360 minutes (6 hours)             |
+| Teams Shifts [shift][]                         | 360 minutes (6 hours)             |
+| Teams Shifts [swapShiftsChangeRequest][]       | 360 minutes (6 hours)             |
+| Teams Shifts [timeOffRequest][]                | 360 minutes (6 hours)             |
 | Group [conversation][]                         | 4,230 minutes (under three days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
