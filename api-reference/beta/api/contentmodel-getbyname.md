@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [contentModel](../resources/contentmodel.md) object by its model name. The name should be the full model filename, including its file extension. For example, exampleModel.classifier.
+Read the properties and relationships of a [contentModel](../resources/contentmodel.md) object by its model name. The name should be the full model filename, including its file extension; for example, `exampleModel.classifier`.
 
 ## Permissions
 
@@ -38,11 +38,10 @@ GET /sites/{sitesId}/contentModels/getByName
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|modelName|String|full model file name, including file extention|
+|modelName|String|The full model file name, including the file extention.|
 
 
 ## Request headers
@@ -57,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [contentModel](../resources/contentmodel.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [contentModel](../resources/contentmodel.md) object in the response body.
 
 ## Examples
 
