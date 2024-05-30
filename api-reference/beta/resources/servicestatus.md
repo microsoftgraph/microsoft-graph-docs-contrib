@@ -23,6 +23,8 @@ Represents the tenant-level service status of the backup service.
 |backupServiceConsumer|[backupServiceConsumer](../resources/servicestatus.md#backupserviceconsumer-values)|The type of consumer. The possible values are: `unknown`, `firstparty`, `thirdparty`, `unknownFutureValue`.|
 |disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
 |gracePeriodDateTime|DateTimeOffset|The expiration time of the grace period.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the entity.|
 |restoreAllowedTillDateTime|DateTimeOffset|The expiration time of the restoration allowed period.|
 |status|[backupServiceStatus](../resources/servicestatus.md#backupservicestatus-values)|Status of the service. This value indicates what capabilities can be used. The possible values are: `disabled`, `enabled`, `protectionChangeLocked`, `restoreLocked`, `unknownFutureValue`.|
 
@@ -73,6 +75,10 @@ The following JSON representation shows the resource type.
   "gracePeriodDateTime": "String (timestamp)",
   "restoreAllowedTillDateTime": "String (timestamp)",
   "disableReason": "String",
-  "backupServiceConsumer": "String"
+  "backupServiceConsumer": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  }
 }
 ```
