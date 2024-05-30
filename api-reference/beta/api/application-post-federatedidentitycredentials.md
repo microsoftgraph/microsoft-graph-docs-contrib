@@ -3,7 +3,7 @@ title: "Create federatedIdentityCredential"
 description: "Create a new federatedIdentityCredential object for an application."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /applications(appId='{appId}')/federatedIdentityCredentials
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

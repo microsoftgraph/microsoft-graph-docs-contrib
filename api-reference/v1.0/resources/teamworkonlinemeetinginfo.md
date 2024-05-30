@@ -3,7 +3,7 @@ title: "teamworkOnlineMeetingInfo resource type"
 description: "Represents details about an online meeting in Microsoft Teams."
 author: "jecha"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -38,5 +38,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Chat](chat.md)

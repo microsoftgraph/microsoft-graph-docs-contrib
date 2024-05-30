@@ -1,9 +1,10 @@
 ---
 title: "inboundSharedUserProfile: removePersonalData"
 description: "Create a request to remove the personal data for an inboundSharedUserProfile."
-author: "jkdouglas"
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -41,7 +42,7 @@ POST /directory/inboundSharedUserProfiles/{userId}/removePersonalData
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

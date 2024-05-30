@@ -4,7 +4,7 @@ description: "Retrieve the list of messages (without the replies) in a channel o
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessage: delta
@@ -24,7 +24,7 @@ A GET request with the delta function returns either:
 - A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `@odata.deltaLink`).
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you begin to retrieve more changes (messages changed or posted after acquiring `@odata.deltaLink`).
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -32,15 +32,13 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type                        |Permissions (from least to most privileged)  |
-|---------------------------------------|---------------------------------------------|
-|Delegated (work or school account)     | ChannelMessage.Read.All |
-|Delegated (personal Microsoft account) | Not Supported                                |
-|Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+<!-- { "blockType": "permissions", "name": "chatmessage_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-delta-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,10 +62,10 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 ### Optional OData query parameters
 
 The following [OData query parameters](/graph/query-parameters) are supported by this API:
-- `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
-- `$skip`, represents how many messages to skip at the beginning of the list.
+- `$top` represents the maximum number of messages to fetch in a call. The upper limit is **50**.
+- `$skip` represents how many messages to skip at the beginning of the list.
 - `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any **reply chain (each channel post message and associated reply messages)** created or changed after the specified date time.
-- `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel messsage contains more than 1000 replies, `replies@odata.nextLink` will be provided for pagination. 
+- `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel message contains more than 1000 replies, `replies@odata.nextLink` is provided for pagination. 
 
 
 > **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
@@ -75,7 +73,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 ## Request headers
 | Header        | Value                     |
 |---------------|---------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request Body
 
@@ -97,11 +95,11 @@ The following example shows a series of three requests to synchronize the messag
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you'll do [to retrieve additional changes](#example-2-retrieving-additional-changes).
+See also what you do [to retrieve additional changes](#example-2-retrieving-additional-changes).
 
 #### Initial request
 
-In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.
+In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round returns all the events in that calendar view.
 
 The request specifies the optional request header, odata.top, returning 2 events at a time.
 
@@ -570,7 +568,7 @@ Content-type: application/json
 
 ### Example 2: Retrieving additional changes
 
-Using the `@odata.deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:
+Using the `@odata.deltaLink` from the last request in the last round, you can get only those messages that changed (by being added, or updated) in that channel since then. Your request should look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
 

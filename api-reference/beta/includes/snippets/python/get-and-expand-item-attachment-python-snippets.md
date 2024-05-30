@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.messages.item.attachments.item.attachment_item_request_builder import AttachmentItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetQuery
 		expand = ["microsoft.graph.itemattachment/item"],
 )
 
-request_configuration = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

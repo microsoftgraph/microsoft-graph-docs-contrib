@@ -1,7 +1,7 @@
 ---
 author: "TarkanSevilmis"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: planner
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

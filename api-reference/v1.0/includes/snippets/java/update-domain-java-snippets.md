@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Domain domain = new Domain();
-domain.isDefault = true;
-LinkedList<String> supportedServicesList = new LinkedList<String>();
-supportedServicesList.add("Email");
-supportedServicesList.add("OfficeCommunicationsOnline");
-domain.supportedServices = supportedServicesList;
+domain.setIsDefault(true);
+LinkedList<String> supportedServices = new LinkedList<String>();
+supportedServices.add("Email");
+supportedServices.add("OfficeCommunicationsOnline");
+domain.setSupportedServices(supportedServices);
+Domain result = graphClient.domains().byDomainId("{domain-id}").patch(domain);
 
-graphClient.domains("contoso.com")
-	.buildRequest()
-	.patch(domain);
 
 ```

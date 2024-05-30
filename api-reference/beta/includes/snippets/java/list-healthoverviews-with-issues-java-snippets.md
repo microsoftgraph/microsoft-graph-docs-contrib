@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ServiceHealthCollectionPage healthOverviews = graphClient.admin().serviceAnnouncement().healthOverviews()
-	.buildRequest()
-	.expand("issues")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ServiceHealthCollectionResponse result = graphClient.admin().serviceAnnouncement().healthOverviews().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"issues"};
+});
+
 
 ```

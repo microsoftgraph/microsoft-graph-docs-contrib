@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Folder
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # Folder resource type
 
@@ -18,7 +18,7 @@ The **Folder** resource groups folder-related data on an item into a single stru
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

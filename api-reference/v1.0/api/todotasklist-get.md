@@ -3,7 +3,7 @@ title: "Get todoTaskList"
 description: "Read the properties and relationships of a todoTaskList object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

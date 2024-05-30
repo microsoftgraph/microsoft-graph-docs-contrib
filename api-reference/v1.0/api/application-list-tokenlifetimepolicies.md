@@ -3,11 +3,11 @@ title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
-# List assigned tokenLifetimePolicy
+# List assigned tokenLifetimePolicies
 
 Namespace: microsoft.graph
 
@@ -36,11 +36,15 @@ GET /applications/{id}/tokenLifetimePolicies
 GET /applications(appId='{appId}')/tokenLifetimePolicies
 ```
 
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

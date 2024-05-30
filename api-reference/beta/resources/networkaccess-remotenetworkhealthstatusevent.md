@@ -3,7 +3,7 @@ title: "remoteNetworkHealthStatusEvent resource type"
 description: "Contains information about the health of a remote network."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteNetworkHealthStatusEvents](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) objects and their properties.|
+|[List](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) objects and their properties.|
 
 
 

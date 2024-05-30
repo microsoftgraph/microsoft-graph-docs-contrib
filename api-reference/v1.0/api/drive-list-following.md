@@ -3,7 +3,7 @@ author: learafa
 description: "List the items that have been followed by the signed in user."
 title: List followed items
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List followed items
@@ -29,6 +29,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /me/drive/following
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

@@ -4,7 +4,7 @@ description: "Enforce registration at sign-in time."
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Enforce registration at sign-in time. This can currently only be used to remind 
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.registrationEnforcement"

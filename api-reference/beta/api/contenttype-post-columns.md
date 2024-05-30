@@ -5,7 +5,7 @@ title: "Create columnDefinition in a content type"
 description: "Add column to a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Create columnDefinition for a content type

@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IpNamedLocation;
+use Microsoft\Graph\Beta\Generated\Models\IpRange;
+use Microsoft\Graph\Beta\Generated\Models\IPv4CidrRange;
+use Microsoft\Graph\Beta\Generated\Models\IPv6CidrRange;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IpNamedLocation();

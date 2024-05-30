@@ -3,7 +3,7 @@ title: "industryDataRun resource type"
 description: "Represents an ephemeral run that contains data for all subordinate activities performed by the system."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -29,9 +29,9 @@ For details about how statistics can assist with health and monitoring a run gro
 
 | Method                                                                | Return type                                                                                         | Description                                                                                            |
 | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| [List industryDataRuns](../api/industrydata-industrydatarun-list.md)  | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md) collection          | Get a list of the [industryDataRun](industrydata-industrydatarun.md) objects and their properties.     |
-| [Get industryDataRun](../api/industrydata-industrydatarun-get.md)     | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md)                     | Read the properties and relationships of an [industryDataRun](industrydata-industrydatarun.md) object. |
-| [getStatistics](../api/industrydata-industrydatarun-getstatistics.md) | [microsoft.graph.industryData.industryDataRunStatistics](industrydata-industrydatarunstatistics.md) | Calculate statistics for a run group.                                                                  |
+| [List](../api/industrydata-industrydatarun-list.md)  | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md) collection          | Get a list of the [industryDataRun](industrydata-industrydatarun.md) objects and their properties.     |
+| [Get](../api/industrydata-industrydatarun-get.md)     | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md)                     | Read the properties and relationships of an [industryDataRun](industrydata-industrydatarun.md) object. |
+| [Get statistics](../api/industrydata-industrydatarun-getstatistics.md) | [microsoft.graph.industryData.industryDataRunStatistics](industrydata-industrydatarunstatistics.md) | Calculate statistics for a run group.                                                                  |
 
 ## Properties
 

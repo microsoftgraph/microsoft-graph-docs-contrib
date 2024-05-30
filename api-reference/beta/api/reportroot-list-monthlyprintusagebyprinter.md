@@ -3,7 +3,7 @@ title: List monthlyPrintUsageByPrinter
 description: Retrieve a list of monthly print usage summaries, grouped by printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /print/reports/monthlyPrintUsageByPrinter
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

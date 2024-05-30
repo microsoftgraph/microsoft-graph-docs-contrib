@@ -2,8 +2,9 @@
 title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of user object.
 
 This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
+
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +42,7 @@ GET /users/{id | userPrincipalName}
 ```
 
 > [!TIP]
-> 
+>
 > + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
 > + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
@@ -64,8 +67,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -143,12 +145,12 @@ Content-type: application/json
    "displayName": "Adele Vance",
    "givenName": "Adele",
    "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mail": "AdeleV@contoso.com",
    "mobilePhone": "+1 425 555 0109",
    "officeLocation": "18/2111",
    "preferredLanguage": "en-US",
    "surname": "Vance",
-   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "userPrincipalName": "AdeleV@contoso.com",
    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
@@ -219,12 +221,12 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mail": "AdeleV@contoso.com",
       "mobilePhone": "+1 425 555 0109",
       "officeLocation": "18/2111",
       "preferredLanguage": "en-US",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
@@ -505,7 +507,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

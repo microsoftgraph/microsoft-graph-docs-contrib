@@ -1,9 +1,9 @@
 ---
 title: "domain: verify"
-description: "Validates the ownership of the domain."
-author: "adimitui"
+description: "Validate the ownership of a domain."
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validates the ownership of the domain.
+Validate the ownership of a domain.
 
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
@@ -28,11 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_verify" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-verify-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* Domain Name Administrator
-* Partner Tier2 Support
+The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -47,7 +43,7 @@ POST /domains/{id}/verify
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

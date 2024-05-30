@@ -4,7 +4,7 @@ description: "Add members in bulk to a team."
 author: "nkramer"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # conversationMember: add
@@ -38,7 +38,7 @@ POST /teams/{team-id}/members/add
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team. A maximum of 200 `conversationMember` derivatives can be added in one single request.
@@ -258,7 +258,7 @@ Content-Type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [Add member to a team](team-post-members.md)
 

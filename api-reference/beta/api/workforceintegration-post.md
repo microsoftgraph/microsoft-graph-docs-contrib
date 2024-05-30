@@ -36,7 +36,7 @@ POST /teamwork/workforceIntegrations
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 #### Request
 
-The following is an example of a request to create a new **workforceIntegration** object.
+The following example shows a request to create a new **workforceIntegration** object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,7 +144,7 @@ Content-type: application/json
 
 ### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
 
-The following is an example of a request with SwapRequest enabled for eligibility filtering. 
+The following example shows a request with SwapRequest enabled for eligibility filtering. 
 
 #### Request
 
@@ -195,7 +195,7 @@ The interaction between Shifts app and workforce integration endpoints will foll
 
 ### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read

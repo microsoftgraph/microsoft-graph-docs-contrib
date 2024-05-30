@@ -3,7 +3,7 @@ title: "mobileAppProvisioningConfigGroupAssignment resource type"
 description: "Contains the properties used to assign an App provisioning configuration to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

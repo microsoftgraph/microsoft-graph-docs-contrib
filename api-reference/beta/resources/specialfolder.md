@@ -4,7 +4,7 @@ description: "Groups special folder-related data items into a single structure."
 title: specialFolder resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # specialFolder resource type
 
@@ -49,7 +49,7 @@ If a user deletes one, it is recreated when written to again.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 

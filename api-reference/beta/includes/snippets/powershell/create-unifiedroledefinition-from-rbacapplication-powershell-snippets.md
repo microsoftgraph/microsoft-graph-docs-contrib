@@ -12,11 +12,11 @@ $params = @{
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
-				"microsoft.directory/applications/basic/read"
-			)
-		}
-	)
-	isEnabled = "true"
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
+isEnabled = "true"
 }
 
 New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter $params

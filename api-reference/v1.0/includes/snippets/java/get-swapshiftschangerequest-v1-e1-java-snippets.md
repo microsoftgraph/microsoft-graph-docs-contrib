@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SwapShiftsChangeRequestCollectionPage swapShiftsChangeRequests = graphClient.teams("00d4ce58-658a-4d53-a0ad-99aa318bed28").schedule().swapShiftsChangeRequests()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SwapShiftsChangeRequestCollectionResponse result = graphClient.teams().byTeamId("{team-id}").schedule().swapShiftsChangeRequests().get();
+
 
 ```

@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

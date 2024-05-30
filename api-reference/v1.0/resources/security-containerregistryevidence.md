@@ -3,7 +3,7 @@ title: "containerRegistryEvidence resource type"
 description: "Represents a container registry entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

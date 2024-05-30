@@ -3,7 +3,7 @@ title: "Get simulationAutomation"
 description: "Get an attack simulation automation for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [simulationAut
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

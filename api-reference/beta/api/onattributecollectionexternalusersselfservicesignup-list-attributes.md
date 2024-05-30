@@ -3,7 +3,7 @@ title: "List attributes (of a user flow)"
 description: "List attributes for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData qu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -56,7 +56,7 @@ If no user flow attributes are assigned to the user flow, this method returns a 
 ## Examples
 
 #### Request
-Here's an example of a request to retrieve the attributes associated with a user flow.
+The following example shows a request to retrieve the attributes associated with a user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 [!INCLUDE [sample-code](../includes/snippets/php/get-onattributecollectionexternalusersselfservicesignup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onattributecollectionexternalusersselfservicesignup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-onattributecollectionexternalusersselfservicesignup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,7 +102,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

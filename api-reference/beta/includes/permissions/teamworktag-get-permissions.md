@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|TeamworkTag.ReadWrite|TeamworkTag.Read|
+|Delegated (work or school account)|TeamworkTag.Read|TeamworkTag.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|TeamworkTag.ReadWrite.All|TeamworkTag.Read.All|
+|Application|TeamworkTag.Read.All|TeamworkTag.ReadWrite.All|
 

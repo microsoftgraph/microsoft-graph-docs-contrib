@@ -3,7 +3,7 @@ title: "Get informationProtectionLabel (deprecated)"
 description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body

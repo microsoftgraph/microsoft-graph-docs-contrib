@@ -3,7 +3,7 @@ title: "teamMemberSettings resource type"
 description: "Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

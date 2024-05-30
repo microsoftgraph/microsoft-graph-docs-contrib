@@ -3,7 +3,7 @@ title: "List members of a channel"
 description: "List members of a channel."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,13 +38,13 @@ GET /teams/{team-id}/channels/{channel-id}/members
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,9 +106,9 @@ GET https://graph.microsoft.com/v1.0/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +129,7 @@ Content-type: application/json
         "roles": [],
         "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-        "email": "jdoe@teamsip.onmicrosoft.com"
+        "email": "jdoe@contoso.com"
     },
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -139,14 +139,14 @@ Content-type: application/json
         ],
         "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-        "email": "ajohn@teamsip.onmicrosoft.com"
+        "email": "ajohn@contoso.com"
     }
 ]
 }
 
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)
 

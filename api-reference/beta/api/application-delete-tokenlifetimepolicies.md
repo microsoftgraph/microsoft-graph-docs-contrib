@@ -3,7 +3,7 @@ title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -49,7 +49,7 @@ DELETE /servicePrincipals(appId='{appId}')/tokenLifetimePolicies/{tokenLifetimeP
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

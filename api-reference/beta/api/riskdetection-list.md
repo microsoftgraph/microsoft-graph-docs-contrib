@@ -3,7 +3,7 @@ title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List riskDetection
@@ -37,13 +37,13 @@ GET /identityProtection/riskDetections
 
 ## Optional query parameters
 
-This method supports `$filter` and `$select` to customize the query response. See the example later in this topic. 
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The default page size is 20 objects while the maximum with `$top` is 500.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -158,7 +158,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -206,7 +206,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -304,7 +304,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=r
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

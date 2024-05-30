@@ -1,9 +1,10 @@
 ---
 title: "List rejectedSenders"
 description: "Get a list of users or groups that are in the rejected-senders list for this group. "
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -44,7 +45,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -107,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/rejectedSenders
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

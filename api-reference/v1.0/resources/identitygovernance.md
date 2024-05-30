@@ -3,7 +3,7 @@ title: "identityGovernance resource type"
 description: "The singleton for containing identity governance resources."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

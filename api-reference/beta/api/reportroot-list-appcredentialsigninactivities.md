@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a list of appCredentialSignInActivity object that contains recent activity of application credentials."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List appCredentialSignInActivities
@@ -39,7 +39,7 @@ This method supports the `$top`, `$filter`, and `$orderby` OData query parameter
 
 | Name          | Description    |
 | :------------ | :------------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

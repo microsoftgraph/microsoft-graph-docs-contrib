@@ -3,7 +3,7 @@ title: "roleGroup resource type"
 description: "Represents a named collection of individual roles."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Transformation of the data is often shaped by each individual user's role within
 
 | Method                                                   | Return type                                                                    | Description                                                                               |
 | :------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| [List roleGroups](../api/industrydata-rolegroup-list.md) | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) collection | Get a list of the [roleGroup](industrydata-rolegroup.md) objects and their properties.    |
-| [Get roleGroup](../api/industrydata-rolegroup-get.md)    | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](industrydata-rolegroup.md) object. |
+| [List](../api/industrydata-rolegroup-list.md) | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) collection | Get a list of the [roleGroup](industrydata-rolegroup.md) objects and their properties.    |
+| [Get](../api/industrydata-rolegroup-get.md)    | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](industrydata-rolegroup.md) object. |
 
 ## Properties
 

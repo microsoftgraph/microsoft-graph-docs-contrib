@@ -3,7 +3,7 @@ title: "Delete internalDomainFederation"
 description: "Deletes an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-delete-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+> [!IMPORTANT]
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
+
+<!-- Domain Name Administrator and Hybrid Identity Administrator can't delete federated domains -->
+The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator
@@ -40,7 +44,7 @@ DELETE /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

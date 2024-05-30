@@ -3,7 +3,7 @@ title: "Create audioRoutingGroup"
 description: "Create a new **audioRoutingGroup**."
 author: "hanknguyen"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /communications/calls/{id}/audioRoutingGroups
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.

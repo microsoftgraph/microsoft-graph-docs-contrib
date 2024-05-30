@@ -3,7 +3,7 @@ title: "kubernetesServiceAccountEvidence resource type"
 description: "Represents a Kubernetes service account entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

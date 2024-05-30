@@ -3,7 +3,7 @@ title: "windows10AppsUpdateRecurrence enum type"
 description: "Possible values for App update on Windows10 recurrence."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

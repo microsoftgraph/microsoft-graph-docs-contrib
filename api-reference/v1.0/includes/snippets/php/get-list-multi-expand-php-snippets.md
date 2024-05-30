@@ -5,14 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Sites\Item\Lists\Item\ListItemRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ListItemRequestBuilderGetRequestConfiguration();
 $queryParameters = ListItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","name","lastModifiedDateTime"];
-$queryParameters->expand = ["columns(select=name,description)","items",")"];
+$queryParameters->expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

@@ -3,7 +3,7 @@ title: "workbookPivotTable resource type"
 description: "Represents an Excel PivotTable."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Represents an Excel PivotTable.
 |worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

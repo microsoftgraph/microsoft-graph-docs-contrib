@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Channel channel = new Channel();
-channel.displayName = "Architecture Discussion";
-channel.description = "This channel is where we debate all future architecture plans";
-channel.membershipType = ChannelMembershipType.STANDARD;
+channel.setDisplayName("Architecture Discussion");
+channel.setDescription("This channel is where we debate all future architecture plans");
+channel.setMembershipType(ChannelMembershipType.Standard);
+Channel result = graphClient.teams().byTeamId("{team-id}").channels().post(channel);
 
-graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels()
-	.buildRequest()
-	.post(channel);
 
 ```

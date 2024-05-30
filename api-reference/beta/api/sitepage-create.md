@@ -4,7 +4,7 @@ description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -40,7 +40,7 @@ POST /sites/{site-id}/pages
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -64,7 +64,7 @@ The following example shows how to create a new page.
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/pages
+POST https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages
 Content-Type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-Type: application/json
   "showRecommendedPages": false,
   "titleArea": {
     "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,
@@ -168,6 +168,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/cli/create-page-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -200,7 +204,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
     "name": "test.aspx",
-    "webUrl": "SitePages/test.aspx",
+    "webUrl": "https://contoso.sharepoint.com/SitePages/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,
@@ -229,7 +233,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,
@@ -247,7 +251,7 @@ Content-type: application/json
 [list]: ../resources/list.md
 [listitem]: ../resources/listitem.md
 [site]: ../resources/site.md
-[sitepage]: ../resources/sitepage.md
+[sitePage]: ../resources/sitepage.md
 
 <!--
 {

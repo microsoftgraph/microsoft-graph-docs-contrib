@@ -5,8 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Groups\GroupsRequestBuilderGetRequestConfiguration;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
@@ -16,7 +18,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'";
+$queryParameters->filter = "mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'";
 $queryParameters->count = true;
 $queryParameters->select = ["id","membershipRule","membershipRuleProcessingState"];
 $requestConfiguration->queryParameters = $queryParameters;

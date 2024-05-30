@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-GroupCollectionWithReferencesPage includedGroups = graphClient.policies().mobileDeviceManagementPolicies("ab90bacf-55a3-4a3e-839a-aa4b74e4f020").includedGroups()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+GroupCollectionResponse result = graphClient.policies().mobileDeviceManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").includedGroups().get();
+
 
 ```

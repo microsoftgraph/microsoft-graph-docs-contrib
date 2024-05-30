@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ContentType;
+use Microsoft\Graph\Generated\Models\DocumentSet;
+use Microsoft\Graph\Generated\Models\ContentTypeInfo;
+use Microsoft\Graph\Generated\Models\DocumentSetContent;
+use Microsoft\Graph\Generated\Models\ColumnDefinition;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContentType();

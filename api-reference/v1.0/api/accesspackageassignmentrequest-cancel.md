@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: cancel"
 description: "Cancel accessPackageAssignmentRequest objects that are in a cancellable state."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # accessPackageAssignmentRequest: cancel
@@ -33,7 +33,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackage
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

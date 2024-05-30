@@ -3,7 +3,7 @@ title: "followupFlag resource type"
 description: "Allows setting a flag in an item for the user to follow up on later. "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: outlook
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Allows setting a flag in an item for the user to follow up on later.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

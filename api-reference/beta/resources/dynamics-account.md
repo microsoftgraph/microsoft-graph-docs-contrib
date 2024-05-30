@@ -1,15 +1,14 @@
 ---
-title: "accounts resource type"
-description: "Represents an account object in Dynamics 365 Business Central."
-services: "project-madeira"
-documentationcenter: ''
-author: "SusanneWindfeldPedersen"
+title: account resource type
+description: Represents an account object in Dynamics 365 Business Central.
+services: project-madeira
+author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: d365-business-central
 doc_type: resourcePageType
 ---
 
-# accounts resource type
+# account resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +20,7 @@ Represents an account object in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get accounts](../api/dynamics-account-get.md)|accounts|Get accounts object.|
+|[Get account](../api/dynamics-account-get.md)|account|Get accounts object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -39,12 +38,11 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 
 ```json
 {
-  "blocked": "Boolean",  
+  "blocked": "Boolean",
   "category": "String",
   "displayName": "String",
   "id": "GUID",
@@ -53,5 +51,3 @@ Here's a JSON representation of the resource.
   "subCategory": "String"
 }
 ```
-
-

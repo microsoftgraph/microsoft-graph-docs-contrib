@@ -3,7 +3,7 @@ title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -24,8 +24,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
-|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
+|[List](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
+|[Create](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
 
 
 ## Properties
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -4,7 +4,7 @@ description: "Retrieve a list of identityUserFlowAttribute objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List identityUserFlowAttributes
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ GET /identity/userFlowAttributes
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

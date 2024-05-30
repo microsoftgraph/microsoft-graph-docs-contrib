@@ -17,13 +17,13 @@ var requestBody = new User
 		new ObjectIdentity
 		{
 			SignInType = "userName",
-			Issuer = "contoso.onmicrosoft.com",
+			Issuer = "contoso.com",
 			IssuerAssignedId = "johnsmith",
 		},
 		new ObjectIdentity
 		{
 			SignInType = "emailAddress",
-			Issuer = "contoso.onmicrosoft.com",
+			Issuer = "contoso.com",
 			IssuerAssignedId = "jsmith@yahoo.com",
 		},
 		new ObjectIdentity

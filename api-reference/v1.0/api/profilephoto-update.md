@@ -107,7 +107,7 @@ PUT /users/{id | userPrincipalName}/photo/$value
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | image/jpeg. Required.  |
 
 ## Request body
@@ -124,7 +124,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -141,10 +141,6 @@ Binary data for the image
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/update-profilephoto-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -172,7 +168,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of a request to update a team photo.
+The following example shows a request to update a team photo.
 
 
 # [HTTP](#tab/http)
@@ -189,10 +185,6 @@ Binary data for the image
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/update-team-photo-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-team-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

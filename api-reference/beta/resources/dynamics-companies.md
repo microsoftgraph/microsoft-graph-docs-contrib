@@ -1,27 +1,27 @@
 ---
-title: companies resource type 
+title: company resource type
 description: A company in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# companies resource type
+# company resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a companies resource type in Dynamics 365 Business Central. 
+Represents a company resource type in Dynamics 365 Business Central.
 
 ## Methods
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get companies](../api/dynamics-companies-get.md)|companies|Get a company.|
+|[Get companies](../api/dynamics-companies-get.md)|company|Get a company.|
 
 ## Properties
 | Property	      | Type |Description                             |
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the company.
+Here's a JSON representation of the company.
 
 ```json
 {

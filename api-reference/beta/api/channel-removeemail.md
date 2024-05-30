@@ -3,7 +3,7 @@ title: "channel: removeEmail"
 description: "Remove a channel's provisioned email."
 author: "anandab-msft"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /teams/{team-id}/channels/{channel-id}/removeEmail
 ## Request headers
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

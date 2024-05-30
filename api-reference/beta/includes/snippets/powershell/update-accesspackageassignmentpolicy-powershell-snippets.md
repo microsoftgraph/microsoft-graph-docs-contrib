@@ -60,6 +60,28 @@ $params = @{
 			}
 			"@odata.type" = "#microsoft.graph.accessPackageMultipleChoiceQuestion"
 			choices = @(
+				@{
+					actualValue = "AZ"
+					displayValue = @{
+						localizedTexts = @(
+							@{
+								text = "Arizona"
+								languageCode = "es"
+							}
+						)
+					}
+				}
+				@{
+					actualValue = "CA"
+					displayValue = @{
+						localizedTexts = @(
+							@{
+								text = "California"
+								languageCode = "es"
+							}
+						)
+					}
+				}
 			)
 			allowsMultipleSelection = $false
 		}

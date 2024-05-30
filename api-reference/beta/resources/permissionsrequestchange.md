@@ -4,7 +4,7 @@ description: "Represents a change event relating to requests for permissions by 
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md) collection|Get a list of the [permissionsRequestChange](../resources/permissionsrequestchange.md) objects and their properties.|
-|[Get permissionsRequestChange](../api/permissionsrequestchange-get.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Read the properties and relationships of a [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
+|[List](../api/permissionsmanagement-list-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md) collection|Get a list of the [permissionsRequestChange](../resources/permissionsrequestchange.md) objects and their properties.|
+|[Get](../api/permissionsrequestchange-get.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Read the properties and relationships of a [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique ID of the permissions request change event within Permissions Management. Inherited from [entity](../resources/entity.md).|
 |modificationDateTime|DateTimeOffset|Time when the change occurred.|
 |permissionsRequestId|String|The ID of the **scheduledPermissionsRequest** object.|
-|statusDetail|statusDetail|The status that the request changed to. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
+|statusDetail|statusDetail|The current status of the request. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
 |ticketId|String|Represents the ticketing system identifier.|
 
 ## Relationships

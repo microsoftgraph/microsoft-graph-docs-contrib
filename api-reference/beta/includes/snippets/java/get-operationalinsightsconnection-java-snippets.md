@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ResourceConnection resourceConnection = graphClient.admin().windows().updates().resourceConnections("fbb71b85-4173-0bf6-d2bc-ee7921b80cb0")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.windowsupdates.ResourceConnection result = graphClient.admin().windows().updates().resourceConnections().byResourceConnectionId("{resourceConnection-id}").get();
+
 
 ```

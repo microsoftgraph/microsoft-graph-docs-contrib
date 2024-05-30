@@ -3,7 +3,7 @@ title: "mobileAppContentFile resource type"
 description: "Contains properties for a single installer file that is associated with a given mobileAppContent version."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -31,18 +31,20 @@ Contains properties for a single installer file that is associated with a given 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|azureStorageUri|String|The Azure Storage URI.|
-|isCommitted|Boolean|A value indicating whether the file is committed.|
-|id|String|The File Id.|
-|createdDateTime|DateTimeOffset|The time the file was created.|
-|name|String|the file name.|
-|size|Int64|The size of the file prior to encryption.|
-|sizeEncrypted|Int64|The size of the file after encryption.|
-|azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
-|manifest|Binary|The manifest information.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
-|isDependency|Boolean|Whether the content file is a dependency for the main content file.|
+|azureStorageUri|String|Indicates the Azure Storage URI that the file is uploaded to. Created by the service upon receiving a valid mobileAppContentFile. Read-only. This property is read-only.|
+|isCommitted|Boolean|A value indicating whether the file is committed. A committed app content file has been fully uploaded and validated by the Intune service. TRUE means that app content file is committed, FALSE means that app content file is not committed. Defaults to FALSE. Read-only. This property is read-only.|
+|id|String|The unique identifier for this mobileAppContentFile. This id is assigned during creation of the mobileAppContentFile. Read-only. This property is read-only.|
+|createdDateTime|DateTimeOffset|Indicates created date and time associated with app content file, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. This property is read-only.|
+|name|String|Indicates the name of the file.|
+|size|Int64|The size of the file prior to encryption. To be deprecated, please use sizeInBytes property instead.|
+|sizeEncrypted|Int64|The size of the file after encryption. To be deprecated, please use sizeEncryptedInBytes property instead.|
+|sizeInBytes|Int64|Indicates the original size of the file, in bytes. Valid values 0 to 9.22337203685478E+18|
+|sizeEncryptedInBytes|Int64|Indicates the size of the file after encryption, in bytes. Valid values 0 to 9.22337203685478E+18|
+|azureStorageUriExpirationDateTime|DateTimeOffset|Indicates the date and time when the Azure storage URI expires, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. This property is read-only.|
+|manifest|Binary|Indicates the manifest information, containing file metadata.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Indicates the state of the current upload request. Possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut. Default value is success. This property is read-only. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file. To be deprecated.|
+|isDependency|Boolean|Indicates whether this content file is a dependency for the main content file. TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file. Defaults to FALSE.|
 
 ## Relationships
 None
@@ -65,6 +67,8 @@ Here is a JSON representation of the resource.
   "name": "String",
   "size": 1024,
   "sizeEncrypted": 1024,
+  "sizeInBytes": 1024,
+  "sizeEncryptedInBytes": 1024,
   "azureStorageUriExpirationDateTime": "String (timestamp)",
   "manifest": "binary",
   "uploadState": "String",

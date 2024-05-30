@@ -3,7 +3,7 @@ title: "Delete extensionProperty (directory extension)"
 description: "Delete a directory extension definition."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: "apiPageType"
 ---
 
@@ -37,7 +37,7 @@ DELETE /applications(appId='{appId}')/extensionProperties/{extensionPropertyId}
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

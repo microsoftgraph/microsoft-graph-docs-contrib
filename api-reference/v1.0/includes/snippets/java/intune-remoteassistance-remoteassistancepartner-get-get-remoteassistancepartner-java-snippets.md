@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RemoteAssistancePartner remoteAssistancePartner = graphClient.deviceManagement().remoteAssistancePartners("{remoteAssistancePartnerId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RemoteAssistancePartner result = graphClient.deviceManagement().remoteAssistancePartners().byRemoteAssistancePartnerId("{remoteAssistancePartner-id}").get();
+
 
 ```

@@ -3,7 +3,7 @@ title: "windowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Windows Autopilot Deployment Profile
 |Method|Return Type|Description|
 |:---|:---|:---|
 |[Get windowsAutopilotDeploymentProfile](../api/intune-shared-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Read properties and relationships of the [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) object.|
-|[assign action](../api/intune-shared-windowsautopilotdeploymentprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-shared-windowsautopilotdeploymentprofile-assign.md)|None||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

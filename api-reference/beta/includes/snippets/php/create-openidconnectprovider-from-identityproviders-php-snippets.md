@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectProvider;
+use Microsoft\Graph\Beta\Generated\Models\ClaimsMapping;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseMode;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseTypes;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenIdConnectProvider();

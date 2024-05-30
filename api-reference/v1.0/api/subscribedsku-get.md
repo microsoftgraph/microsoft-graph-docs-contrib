@@ -3,7 +3,7 @@ title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ This method does **not** support the [OData Query Parameters](/graph/query-param
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [subscribedSku](../resources/subscribedsku.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/dcd219dd-bc68-4b9b-bf0b-4a33
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

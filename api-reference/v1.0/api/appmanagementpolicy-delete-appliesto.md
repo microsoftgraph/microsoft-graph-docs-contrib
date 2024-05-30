@@ -3,7 +3,7 @@ title: "Remove appliesTo"
 description: "Remove an appManagementPolicy from an application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Remove an [appManagementPolicy](../resources/appManagementPolicy.md) policy object from an application or service principal object. When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) setting. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{servicePrincipalObjectId}/appManagementPolicies/{appM
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from an application.
+The following example shows a request to remove an appManagementPolicy from an application.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from a service principal.
+The following example shows a request to remove an appManagementPolicy from a service principal.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -146,7 +146,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/f284860e-368c-4a1f-889
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

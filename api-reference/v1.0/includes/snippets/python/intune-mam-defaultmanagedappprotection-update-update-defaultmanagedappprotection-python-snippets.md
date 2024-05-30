@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.default_managed_app_protection import DefaultManagedAppProtection
+from msgraph.generated.models.managed_app_data_transfer_level import ManagedAppDataTransferLevel
+from msgraph.generated.models.managed_app_clipboard_sharing_level import ManagedAppClipboardSharingLevel
+from msgraph.generated.models.managed_app_pin_character_set import ManagedAppPinCharacterSet
+from msgraph.generated.models.managed_app_data_storage_location import ManagedAppDataStorageLocation
+from msgraph.generated.models.managed_browser_type import ManagedBrowserType
+from msgraph.generated.models.managed_app_data_encryption_type import ManagedAppDataEncryptionType
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

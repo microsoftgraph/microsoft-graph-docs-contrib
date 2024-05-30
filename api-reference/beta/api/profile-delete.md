@@ -37,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/profile
 
 | Name           |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required. |
 
 ## Request body
@@ -52,7 +52,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/me/profile
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

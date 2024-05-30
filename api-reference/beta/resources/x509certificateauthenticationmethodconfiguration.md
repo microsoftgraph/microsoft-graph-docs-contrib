@@ -3,8 +3,9 @@ title: "x509CertificateAuthenticationMethodConfiguration resource type"
 description: "Represents the details of the Microsoft Entra native Certificate-Based Authentication (CBA) in the tenant, including whether the authentication method is enabled or disabled and the users and groups who can register and use it."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.keywords: [ certificate-based authentication, CBA ]
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type

@@ -4,51 +4,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.subject = "Let's go for lunch";
+event.setSubject("Let's go for lunch");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "Does noon work for you?";
-event.body = body;
+body.setContentType(BodyType.Html);
+body.setContent("Does noon work for you?");
+event.setBody(body);
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2020-02-25T12:00:00";
-start.timeZone = "Pacific Standard Time";
-event.start = start;
+start.setDateTime("2020-02-25T12:00:00");
+start.setTimeZone("Pacific Standard Time");
+event.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2020-02-25T14:00:00";
-end.timeZone = "Pacific Standard Time";
-event.end = end;
+end.setDateTime("2020-02-25T14:00:00");
+end.setTimeZone("Pacific Standard Time");
+event.setEnd(end);
 Location location = new Location();
-location.displayName = "Harry's Bar";
-event.location = location;
-LinkedList<Attendee> attendeesList = new LinkedList<Attendee>();
-Attendee attendees = new Attendee();
+location.setDisplayName("Harry's Bar");
+event.setLocation(location);
+LinkedList<Attendee> attendees = new LinkedList<Attendee>();
+Attendee attendee = new Attendee();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "AlexW@contoso.OnMicrosoft.com";
-emailAddress.name = "Alex Wilbur";
-attendees.emailAddress = emailAddress;
-attendees.type = AttendeeType.REQUIRED;
-attendeesList.add(attendees);
-event.attendees = attendeesList;
+emailAddress.setAddress("AlexW@contoso.com");
+emailAddress.setName("Alex Wilbur");
+attendee.setEmailAddress(emailAddress);
+attendee.setType(AttendeeType.Required);
+attendees.add(attendee);
+event.setAttendees(attendees);
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.DAILY;
-pattern.interval = 1;
-recurrence.pattern = pattern;
+pattern.setType(RecurrencePatternType.Daily);
+pattern.setInterval(1);
+recurrence.setPattern(pattern);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NUMBERED;
-range.startDate = new DateOnly(1900,1,1);
-range.numberOfOccurrences = 2;
-recurrence.range = range;
-event.recurrence = recurrence;
+range.setType(RecurrenceRangeType.Numbered);
+LocalDate startDate = LocalDate.parse("2020-02-25");
+range.setStartDate(startDate);
+range.setNumberOfOccurrences(2);
+recurrence.setRange(range);
+event.setRecurrence(recurrence);
+Event result = graphClient.me().events().post(event, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-graphClient.me().events()
-	.buildRequest( requestOptions )
-	.post(event);
 
 ```

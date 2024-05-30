@@ -5,7 +5,7 @@ ms.date: 09/12/2017
 title: SystemFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 # System facet
 

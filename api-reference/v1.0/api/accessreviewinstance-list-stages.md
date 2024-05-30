@@ -3,7 +3,7 @@ title: "List stages (of an access review)"
 description: "Retrieve the stages in a multi-stage access review instance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method supports the `$select`, `$orderby`, and `$filter` (`eq` only) OData 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

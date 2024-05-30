@@ -3,7 +3,7 @@ title: "Attach files to a To Do task"
 description: "Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task."
 author: "avijityadav"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Attach files to a To Do task
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 #### Request
 
-The following is an example of a request to create an upload session.
+The following example shows a request to create an upload session.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,7 +150,7 @@ A successful upload returns a `HTTP 200 OK` response code and an **uploadSession
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"
@@ -194,7 +194,7 @@ The following examples show how to upload the last byte range of the file to the
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"
@@ -230,7 +230,7 @@ At any point of time before the upload session expires, if you have to cancel th
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"

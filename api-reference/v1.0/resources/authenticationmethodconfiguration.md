@@ -4,7 +4,7 @@ description: "authenticationMethodConfigurations object."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ The following authentication methods are derived from the **authenticationMethod
 + [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
-+ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
@@ -34,7 +34,7 @@ The following authentication methods are derived from the **authenticationMethod
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

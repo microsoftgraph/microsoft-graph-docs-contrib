@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceConfigurationUserOverview deviceConfigurationUserOverview = new DeviceConfigurationUserOverview();
-deviceConfigurationUserOverview.pendingCount = 12;
-deviceConfigurationUserOverview.notApplicableCount = 2;
-deviceConfigurationUserOverview.successCount = 12;
-deviceConfigurationUserOverview.errorCount = 10;
-deviceConfigurationUserOverview.failedCount = 11;
-deviceConfigurationUserOverview.lastUpdateDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:58:21.6459442+00:00");
-deviceConfigurationUserOverview.configurationVersion = 4;
+deviceConfigurationUserOverview.setOdataType("#microsoft.graph.deviceConfigurationUserOverview");
+deviceConfigurationUserOverview.setPendingCount(12);
+deviceConfigurationUserOverview.setNotApplicableCount(2);
+deviceConfigurationUserOverview.setSuccessCount(12);
+deviceConfigurationUserOverview.setErrorCount(10);
+deviceConfigurationUserOverview.setFailedCount(11);
+OffsetDateTime lastUpdateDateTime = OffsetDateTime.parse("2016-12-31T23:58:21.6459442-08:00");
+deviceConfigurationUserOverview.setLastUpdateDateTime(lastUpdateDateTime);
+deviceConfigurationUserOverview.setConfigurationVersion(4);
+DeviceConfigurationUserOverview result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").userStatusOverview().patch(deviceConfigurationUserOverview);
 
-graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}").userStatusOverview()
-	.buildRequest()
-	.patch(deviceConfigurationUserOverview);
 
 ```

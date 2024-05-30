@@ -35,7 +35,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/asHierarchy
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,7 +47,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -137,7 +137,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -152,7 +152,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -168,7 +168,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -184,7 +184,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 },
                 "application": {
                     "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

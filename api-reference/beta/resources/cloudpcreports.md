@@ -3,7 +3,7 @@ title: "cloudPcReports resource type"
 description: "Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -20,6 +20,8 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[getActionStatusReports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.|
+|[getCloudPcRecommendationReports](../api/cloudpcreports-getcloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report.|
 |[getConnectionQualityReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.|
 |[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time and available bandwidth in a given period.|
 |[getInaccessibleCloudPcReports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.|
@@ -31,6 +33,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
 |[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
 |[getCloudPCPerformanceReport](../api/cloudpcreports-getcloudpcperformancereport.md)|Stream|Get Tenant level metrics for related reports for Cloud PCs including slow round-trip time Cloud PCs, Low UDP utilization Cloud PCs, No active time connected Cloud PCs and Low Active time connected Cloud PCs.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -42,7 +45,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |exportJobs|[cloudPcExportJob](../resources/cloudpcexportjob.md) collection|The export jobs created for downloading reports.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

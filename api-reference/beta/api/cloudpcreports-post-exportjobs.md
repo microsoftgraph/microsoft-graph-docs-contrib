@@ -3,7 +3,7 @@ title: "Create cloudPcExportJob"
 description: "Create a new cloudPcExportJob object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) resource to initiate downloading the entire or specified portion of a report.
 
-Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property.
+Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report finishes downloading to the location specified by the **exportUrl** property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -37,13 +37,13 @@ POST /deviceManagement/virtualEndpoint/reports/exportJobs
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the [cloudPcExportJob](../resources/cloudpcexportjob.md) object.
 
-You can specify the following properties when creating a **cloudPcExportJob**.
+You can specify the following properties when you create a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -64,7 +64,7 @@ The following example shows how to create an export job to download the `TotalAg
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -163,7 +163,7 @@ The following example shows how to create an export job to download the `RemoteC
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

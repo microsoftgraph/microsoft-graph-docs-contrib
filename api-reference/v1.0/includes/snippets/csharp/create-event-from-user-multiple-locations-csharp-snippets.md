@@ -33,7 +33,7 @@ var requestBody = new Event
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "DanaS@contoso.onmicrosoft.com",
+				Address = "DanaS@contoso.com",
 				Name = "Dana Swope",
 			},
 			Type = AttendeeType.Required,
@@ -42,7 +42,7 @@ var requestBody = new Event
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AlexW@contoso.onmicrosoft.com",
+				Address = "AlexW@contoso.com",
 				Name = "Alex Wilber",
 			},
 			Type = AttendeeType.Required,

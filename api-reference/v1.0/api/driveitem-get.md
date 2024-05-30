@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get a driveItem resource
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
 ---
@@ -50,11 +50,12 @@ You can also use the `includeDeletedItems=true` query parameter to return delete
 This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
 This is currently only supported on OneDrive Personal.
 
-## Optional request headers
+## Request headers
 
-| Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| if-none-match | String. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
 
@@ -64,7 +65,7 @@ If successful, this method returns a `200 OK` response code and the [driveItem](
 
 ### Request
 
-Here is an example of the request to the root folder of the user's OneDrive.
+The following example shows a request to the root folder of the user's OneDrive.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +111,7 @@ GET /me/drive/root
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -144,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 For details about how errors are returned, see [Error responses][error-response].
 

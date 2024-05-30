@@ -3,7 +3,7 @@ title: printerCreateOperation resource type
 description: Represents a long-running printer registration operation. Derived from printOperation.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Inherits from [printOperation](printoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get operation](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
+| [Get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
 
 ## Properties
 |Property|Type|Description|

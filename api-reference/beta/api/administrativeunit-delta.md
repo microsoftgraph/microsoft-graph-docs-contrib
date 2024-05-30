@@ -3,7 +3,7 @@ title: "administrativeUnit: delta"
 description: "Get newly created, updated, or deleted administrative units without having to perform a full read of the entire resource collection."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ This method supports the following OData query parameters to help customize the 
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

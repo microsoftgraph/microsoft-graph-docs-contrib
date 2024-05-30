@@ -12,6 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new CloudPcOnPremisesConnection
 {
 	DisplayName = "test-canary-02",
+	ConnectionType = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	Type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	SubscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
 	AdDomainName = "contoso001.com",

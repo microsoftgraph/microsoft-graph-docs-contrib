@@ -2,7 +2,7 @@
 title: "Get user activities"
 description: "Get activities for a given user. Unlike the **recent** OData function, activities without histories will be returned. The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---
@@ -36,7 +36,7 @@ This method supports some [OData Query Parameters](/graph/query-parameters) to h
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.
-- $filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.
+- $filter on the **lastModifiedDateTime** property for either activities or **activityHistoryItems**, if expanded.
 
 The following are some examples of supported queries with URL encoding:
 

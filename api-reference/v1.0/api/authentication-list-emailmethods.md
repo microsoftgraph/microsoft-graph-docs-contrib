@@ -4,7 +4,7 @@ description: "Get a list of the emailAuthenticationMethod objects for a user."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -50,7 +50,7 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

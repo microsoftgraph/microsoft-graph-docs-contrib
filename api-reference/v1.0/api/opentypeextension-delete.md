@@ -3,7 +3,7 @@ title: "Delete open extension"
 description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
 ---
 
@@ -70,7 +70,7 @@ All other syntax that allows you to identify these resource instances supports d
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

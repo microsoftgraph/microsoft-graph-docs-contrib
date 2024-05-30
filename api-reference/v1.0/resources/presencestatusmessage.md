@@ -3,7 +3,7 @@ title: "presenceStatusMessage resource type"
 description: "Represents a presence status message related to the presence of a user in Microsoft Teams."
 author: "afedorov"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

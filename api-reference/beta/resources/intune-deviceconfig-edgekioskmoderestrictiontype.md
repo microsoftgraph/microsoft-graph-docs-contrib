@@ -3,7 +3,7 @@ title: "edgeKioskModeRestrictionType enum type"
 description: "Specify how the Microsoft Edge settings are restricted based on kiosk mode."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

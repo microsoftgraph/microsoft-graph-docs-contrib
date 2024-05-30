@@ -3,7 +3,7 @@ title: "educationSynchronizationError resource type"
 description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Microsoft Entra ID."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents an error during school data profile validation and/or sync. A unique 
 
 | Method                                                                     | Return Type                                  | Description                                                           |
 | :------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------- |
-| [Get synchronization errors](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection | Returns the list of synchronization errors associated with a profile. |
+| [Get](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection | Returns the list of synchronization errors associated with a profile. |
 
 ## Properties
 

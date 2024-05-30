@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.users_request_builder import UsersRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = UsersRequestBuilder.UsersRequestBuilderGetQueryParameters(
-		filter = "NOT)",
+		filter = "NOT(imAddresses/any(i:i eq 'admin@contoso.com'))",
 		count = True,
 )
 
-request_configuration = UsersRequestBuilder.UsersRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.users.get(request_configuration = request_configuration)
 

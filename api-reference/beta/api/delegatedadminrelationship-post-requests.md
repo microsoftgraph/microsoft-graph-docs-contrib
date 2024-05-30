@@ -3,7 +3,7 @@ title: "Create requests"
 description: "Create a new delegatedAdminRelationshipRequest object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

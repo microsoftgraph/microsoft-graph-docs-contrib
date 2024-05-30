@@ -1,9 +1,9 @@
 ---
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
-author: "nkramer"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ PUT /teams/{teamId}/schedule
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -138,7 +138,11 @@ Content-type: application/json
   "openShiftsEnabled": true,
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
-  "timeOffRequestsEnabled": true
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Sunday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -147,7 +151,6 @@ Content-type: application/json
 #### Request
 
 The following example shows a request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -158,23 +161,27 @@ The following example shows a request.
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
-} 
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
+}
 ```
 
 # [C#](#tab/csharp)
@@ -227,22 +234,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
 }
 ```
 
@@ -260,6 +271,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

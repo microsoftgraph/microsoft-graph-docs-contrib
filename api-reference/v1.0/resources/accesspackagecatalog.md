@@ -3,7 +3,7 @@ title: "accessPackageCatalog resource type"
 description: "An access package catalog is a container for access packages."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageCatalog resource type

@@ -37,7 +37,7 @@ const accessReviewScheduleDefinition = {
     },
     reviewers: [
         {
-            query: '/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85',
+            query: '/users/2560f739-2e0e-4550-9fa0-1a1e67ae0ab8',
             queryType: 'MicrosoftGraph'
         }
     ],
@@ -47,7 +47,7 @@ const accessReviewScheduleDefinition = {
         justificationRequiredOnApproval: true,
         defaultDecisionEnabled: false,
         defaultDecision: 'None',
-        instanceDurationInDays: 3,
+        instanceDurationInDays: 1,
         recommendationsEnabled: false,
         recurrence: {
             pattern: {
@@ -56,7 +56,7 @@ const accessReviewScheduleDefinition = {
             },
             range: {
                 type: 'noEnd',
-                startDate: '2022-03-02'
+                startDate: '2024-03-25'
             }
         }
     }

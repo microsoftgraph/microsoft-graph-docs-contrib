@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Authorization", "Bearer <token>"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
+com.microsoft.graph.beta.serviceprincipals.item.synchronization.jobs.item.restart.RestartPostRequestBody restartPostRequestBody = new com.microsoft.graph.beta.serviceprincipals.item.synchronization.jobs.item.restart.RestartPostRequestBody();
 SynchronizationJobRestartCriteria criteria = new SynchronizationJobRestartCriteria();
-criteria.resetScope = EnumSet.of(SynchronizationJobRestartScope.WATERMARK,SynchronizationJobRestartScope.ESCROWS,SynchronizationJobRestartScope.QUARANTINE_STATE);
+criteria.setResetScope(EnumSet.of(SynchronizationJobRestartScope.Watermark, SynchronizationJobRestartScope.Escrows, SynchronizationJobRestartScope.QuarantineState));
+restartPostRequestBody.setCriteria(criteria);
+graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").synchronization().jobs().bySynchronizationJobId("{synchronizationJob-id}").restart().post(restartPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("Authorization", "Bearer <token>");
+});
 
-graphClient.servicePrincipals("{id}").synchronization().jobs("{jobId}")
-	.restart(SynchronizationJobRestartParameterSet
-		.newBuilder()
-		.withCriteria(criteria)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MessageCollectionPage messages = graphClient.me().mailFolders("AAMkAGVmMDEzM").messages()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MessageCollectionResponse result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").messages().get();
+
 
 ```

@@ -3,7 +3,7 @@ title: "Create educationCategories"
 description: "Add an existing educationCategory to an educationAssignment"
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -29,7 +29,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

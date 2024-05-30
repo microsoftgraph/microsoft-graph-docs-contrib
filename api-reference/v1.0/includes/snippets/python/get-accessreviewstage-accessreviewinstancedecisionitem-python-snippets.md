@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity_governance.access_reviews.definitions.item.instances.item.stages.item.decisions.item.access_review_instance_decision_item_item_request_builder import AccessReviewInstanceDecisionItemItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = AccessReviewInstanceDecisionItemItemRequestBuilder.AccessReviewIn
 		select = ["accessReviewId","reviewedDateTime","decision","justification","recommendation","reviewedBy","target"],
 )
 
-request_configuration = AccessReviewInstanceDecisionItemItemRequestBuilder.AccessReviewInstanceDecisionItemItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

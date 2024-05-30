@@ -3,7 +3,7 @@ title: "workbookDocumentTaskSchedule resource type"
 description: "Represents the start and due time of a workbookDocumentTask."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

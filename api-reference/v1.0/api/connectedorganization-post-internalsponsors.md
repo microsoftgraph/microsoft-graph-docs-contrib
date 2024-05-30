@@ -3,7 +3,7 @@ title: "Add internalSponsors"
 description: "Add a user or group to the connected organization's internal sponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Add internalSponsors
@@ -29,7 +29,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/inter
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

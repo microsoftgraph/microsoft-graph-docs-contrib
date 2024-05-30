@@ -1,12 +1,12 @@
 ---
-title: "Windows 365 Cloud PC on Microsoft Graph (preview)"
+title: "Windows 365 Cloud PC on Microsoft Graph"
 description: "Integrate with Windows 365 Cloud PC to create Azure network connections, provision Cloud PCs, manage device images, and create and assign provisioning policies."
 author: "cohanley"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 ---
 
-# Overview for Windows 365 Cloud PC on Microsoft Graph (preview)
+# Overview for Windows 365 Cloud PC on Microsoft Graph
 
 Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users. Administrators can easily set up, manage, and scale Windows 365 Cloud PCs to fit the organization's needs. Individual end users can securely stream their rich, personalized Windows experience&mdash;including their apps, data, content, and settings&mdash;from the Microsoft cloud to any device, any time, with their Windows 365 Cloud PC.
 
@@ -20,22 +20,24 @@ Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnect
 
 ### Provision Cloud PCs
 
-Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies. 
+Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies. 
 
 ### Upload device images
 
-Upload and manage operating system [images](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) for Cloud PCs to determine which version of Windows with what apps and other image details should be used for Cloud PCs when provisioned.  
+Upload and manage operating system [images](/graph/api/resources/cloudpcdeviceimage) for Cloud PCs to determine which version of Windows with what apps and other image details should be used for Cloud PCs when provisioned.  
 
-### View end users’ Cloud PCs and their properties
+### View end users' Cloud PCs and their properties
 
-Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
+Once provisioned, list and view end users' [Cloud PCs](/graph/api/resources/cloudpc) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
 
 ## API reference
 
 Looking for the API reference for the service?
 
-- [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Working with Windows 365 Cloud PCs using the Microsoft Graph API (v1.0)](/graph/api/resources/cloudpc-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Working with Windows 365 Cloud PCs using the Microsoft Graph API (beta)](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 
-- Try out the Windows 365 Cloud PC APIs by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+> [!div class="nextstepaction"]
+> [Try the Windows 365 Cloud PC APIs by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)

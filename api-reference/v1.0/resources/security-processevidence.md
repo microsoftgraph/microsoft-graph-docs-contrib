@@ -3,7 +3,7 @@ title: "processEvidence resource type"
 description: "Represents a process that is reported in the alert as evidence."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,8 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.processEvidence"
+  "@odata.type": "microsoft.graph.security.processEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

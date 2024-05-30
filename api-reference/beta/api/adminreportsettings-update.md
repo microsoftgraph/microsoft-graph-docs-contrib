@@ -3,7 +3,7 @@ title: "Update adminReportSettings"
 description: "Update tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /admin/reportSettings
 
 | Name          | Description                |
 | :------------ | :--------------------------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body
@@ -53,10 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
+The following example shows a request that updates a tenant-level setting for Microsoft 365 reports.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "resourceSpecificPermissionGrant resource type"
 description: "Specifies the permission that a specific Microsoft Entra app has."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

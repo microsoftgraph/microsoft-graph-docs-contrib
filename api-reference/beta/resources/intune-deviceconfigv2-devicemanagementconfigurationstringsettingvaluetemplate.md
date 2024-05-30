@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationStringSettingValueTemplate resource type"
 description: "String Setting Value Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -2,7 +2,7 @@
 title: "List device transitive memberships"
 description: "Get groups and administrative units that the device is a member of."
 author: "myra-ramdenbourg"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
@@ -42,7 +42,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

@@ -4,7 +4,7 @@ description: "Get the Focused Inbox overrides that a user has set up to always c
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # List overrides
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +108,7 @@ Content-type: application/json
       "classifyAs": "focused",
       "senderEmailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },
@@ -116,7 +116,7 @@ Content-type: application/json
       "classifyAs": "other",
       "senderEmailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@adatum.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
     }

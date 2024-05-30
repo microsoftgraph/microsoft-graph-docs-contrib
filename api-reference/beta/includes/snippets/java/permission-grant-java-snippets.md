@@ -4,28 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
-DriveRecipient recipients = new DriveRecipient();
-recipients.email = "john@contoso.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-recipientsList.add(recipients);
-DriveRecipient recipients1 = new DriveRecipient();
-recipients1.email = "ryan@external.com";
+com.microsoft.graph.beta.shares.item.permission.grant.GrantPostRequestBody grantPostRequestBody = new com.microsoft.graph.beta.shares.item.permission.grant.GrantPostRequestBody();
+LinkedList<DriveRecipient> recipients = new LinkedList<DriveRecipient>();
+DriveRecipient driveRecipient = new DriveRecipient();
+driveRecipient.setEmail("john@contoso.com");
+recipients.add(driveRecipient);
+DriveRecipient driveRecipient1 = new DriveRecipient();
+driveRecipient1.setEmail("ryan@external.com");
+recipients.add(driveRecipient1);
+grantPostRequestBody.setRecipients(recipients);
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("read");
+grantPostRequestBody.setRoles(roles);
+var result = graphClient.shares().bySharedDriveItemId("{sharedDriveItem-id}").permission().grant().post(grantPostRequestBody);
 
-recipientsList.add(recipients1);
-
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("read");
-
-graphClient.shares("{encoded-sharing-url}").permission()
-	.grant(PermissionGrantParameterSet
-		.newBuilder()
-		.withRoles(rolesList)
-		.withRecipients(recipientsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

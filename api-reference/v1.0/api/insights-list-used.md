@@ -3,7 +3,7 @@ title: "List used"
 description: "Calculate and list the documents that a user has viewed or modified. "
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body

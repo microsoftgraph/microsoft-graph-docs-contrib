@@ -3,7 +3,7 @@ title: "List conversationMembers"
 description: "Retrieve list of chat or channel members."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ List all [conversation members](../resources/conversationmember.md) in a [chat](
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future.The client should not assume that all members are from the current tenant only.
- 
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -43,7 +43,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -131,7 +131,7 @@ Content-type: application/json
             "displayName": "SA-TeamsAdconnect",
             "visibleHistoryStartDateTime": "2022-04-25T11:52:22.765Z",
             "userId": "17e9526c-2286-41a1-aeeb-4badee766063",
-            "email": "SA-TeamsAdconnect@rtlgroup.onmicrosoft.com",
+            "email": "SA-TeamsAdconnect@contoso.com",
             "tenantId": "8d237650-cdc1-40e1-899c-5601e055f3fe"
         },
         {
@@ -155,7 +155,7 @@ Content-type: application/json
             "displayName": "Megan Bowen",
             "visibleHistoryStartDateTime": "2022-04-25T11:52:22.765Z",
             "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
-            "email": "MeganB@M365x214355.onmicrosoft.com",
+            "email": "MeganB@contoso.com",
             "tenantId": "dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
         },
         {

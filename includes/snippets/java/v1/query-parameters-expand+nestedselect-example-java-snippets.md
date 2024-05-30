@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DriveItem driveItem = graphClient.me().drive().root()
-	.buildRequest()
-	.expand("children($select=id,name)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DriveItem result = graphClient.drives().byDriveId("{drive-id}").root().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"children($select=id,name)"};
+});
+
 
 ```

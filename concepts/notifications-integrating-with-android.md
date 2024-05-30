@@ -2,7 +2,7 @@
 title: "Integrate your Android app with the client-side SDK (deprecated)"
 description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Android apps (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ---
 
 # Integrate your Android app with the client-side SDK for user notifications (deprecated)
@@ -371,7 +371,7 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 });
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-android) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample) for Android apps.

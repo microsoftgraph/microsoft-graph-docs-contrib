@@ -3,7 +3,7 @@ title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$filter` (`eq`, `contains`, `gt`, `lt`), `$orderby`, `
 
 | Header        | Value                      |
 |:--------------|:---------------------------|
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

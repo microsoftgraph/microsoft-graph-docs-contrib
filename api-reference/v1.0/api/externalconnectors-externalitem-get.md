@@ -3,7 +3,7 @@ title: "Get externalItem"
 description: "Read the properties and relationships of an externalItem object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

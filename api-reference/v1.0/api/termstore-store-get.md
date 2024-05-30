@@ -3,7 +3,7 @@ title: "Get store"
 description: "Read the properties and relationships of a store object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ GET /sites/{site-id}/termStore
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

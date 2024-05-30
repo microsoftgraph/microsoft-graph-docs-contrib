@@ -3,7 +3,7 @@ title: "Update accessReviewStage"
 description: "Update the properties of an accessReviewStage object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initia
 > 
 > Updating an **accessReviewStage** will update only that stage. The parent **accessReviewInstance** and any future **accessReviewStage** objects won't change. To make updates that apply to all future instances and stages, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -43,7 +43,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

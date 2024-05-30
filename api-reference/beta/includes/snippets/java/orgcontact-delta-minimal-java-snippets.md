@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OrgContactDeltaCollectionPage delta = graphClient.contacts()
-	.delta()
-	.buildRequest( requestOptions )
-	.select("displayName,jobTitle,mail")
-	.get();
+var result = graphClient.contacts().delta().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"displayName", "jobTitle", "mail"};
+	requestConfiguration.headers.add("Prefer", "return=minimal");
+});
+
 
 ```

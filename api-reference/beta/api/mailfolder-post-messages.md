@@ -3,7 +3,7 @@ title: "Create Message"
 description: "Use this API to create a new Message in a mailfolder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and [Message](../
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

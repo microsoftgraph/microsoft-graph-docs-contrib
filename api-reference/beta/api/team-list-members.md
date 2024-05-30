@@ -3,7 +3,7 @@ title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,25 +14,23 @@ Namespace: microsoft.graph
 
 Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
-The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make assumptions about these resource IDs.
+The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make assumptions about these resource IDs.
 
-In the future, membership results may include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
+In the future, membership results can include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
 
-> [!NOTE] 
+> [!NOTE]
 > This API results in a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "team_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-list-members-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamMember.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -45,12 +43,12 @@ GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -133,7 +131,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -143,7 +141,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -151,7 +149,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
@@ -234,7 +232,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         }
     ]
 }
@@ -254,7 +252,7 @@ The following example shows a request to find the membership resources based on 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')
 ```
 
 # [C#](#tab/csharp)
@@ -316,7 +314,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -324,7 +322,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
@@ -409,12 +407,12 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         }
     ]
 }
 ```
 
-## See also
+## Related content
 
 - [List members in channel](channel-list-members.md)

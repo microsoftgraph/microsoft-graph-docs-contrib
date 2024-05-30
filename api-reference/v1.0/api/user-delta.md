@@ -3,7 +3,8 @@ title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 ms.localizationpriority: high
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -59,7 +60,7 @@ This method supports optional OData Query Parameters to help customize the respo
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
@@ -104,7 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -178,12 +179,12 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mail": "AdeleV@contoso.com",
       "mobilePhone": "+1 425 555 0109",
       "officeLocation": "18/2111",
       "preferredLanguage": "en-US",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
@@ -344,7 +345,7 @@ Content-type: application/json
   ]
 }
 ```
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).

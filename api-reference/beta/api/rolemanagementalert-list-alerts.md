@@ -3,7 +3,7 @@ title: "List alerts"
 description: "Get a list of the unifiedRoleManagementAlert objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of the [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -40,7 +40,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get all alerts and expand the relationships
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -154,14 +154,14 @@ Content-Type: application/json
                     "id": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeDisplayName": "testUser1",
-                    "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser1@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
                     "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeDisplayName": "testUser2",
-                    "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser2@contoso.com"
                 }
             ]
         }

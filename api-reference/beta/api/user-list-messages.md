@@ -4,7 +4,7 @@ description: "Get the messages in the signed-in user's mailbox (including the De
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # List messages

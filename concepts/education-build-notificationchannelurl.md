@@ -3,7 +3,7 @@ title: "Specify the default channel for education assignment notifications"
 description: "Use the education API in Microsoft Graph to specify the default Microsoft Teams channel to send notifications to about an assignment."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 ms.collection: "education"
 doc_type: conceptualPageType
 ---
@@ -245,7 +245,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Update educationAssignmentDefaults](/graph/api/educationassignmentdefaults-update)
 * [Update educationAssignment](/graph/api/educationassignment-update)

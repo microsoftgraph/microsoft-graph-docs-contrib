@@ -3,7 +3,7 @@ title: "alertEvidence resource type"
 description: "Represents evidence related to an alert."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -132,7 +132,7 @@ This resource is the base type for the following evidence types:
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.alertEvidence"

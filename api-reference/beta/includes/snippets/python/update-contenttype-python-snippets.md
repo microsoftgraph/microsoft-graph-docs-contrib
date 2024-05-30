@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.content_type import ContentType
+from msgraph_beta.generated.models.document_set import DocumentSet
+from msgraph_beta.generated.models.content_type_info import ContentTypeInfo
+from msgraph_beta.generated.models.document_set_content import DocumentSetContent
+from msgraph_beta.generated.models.column_definition import ColumnDefinition
 
 graph_client = GraphServiceClient(credentials, scopes)
 

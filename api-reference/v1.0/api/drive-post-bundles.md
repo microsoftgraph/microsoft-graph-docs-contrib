@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: Create bundle
 description: Create a bundle of driveItems
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /drive/bundles
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "List contacts"
 description: "Get contacts in the user's mailbox."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ For general information on the `$filter` query parameter, see [OData query param
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -144,13 +144,13 @@ Content-type: application/json
                 {
                     "type":"personal",
                     "name":"Elvis Blank",
-                    "address":"elvisb@relecloud.onmicrosoft.com"
+                    "address":"elvisb@contoso.com"
                 },
                 {
                     "type":"other",
                     "otherLabel":"Volunteer work",
                     "name":"Elvis Blank",
-                    "address":"elvisb@fabrikam.onmicrosoft.com"
+                    "address":"elvisb@contoso.com"
                 }
             ]
         },
@@ -162,13 +162,13 @@ Content-type: application/json
                 {
                     "type":"personal",
                     "name":"Pavel Bansky",
-                    "address":"pavelb@contoso.onmicrosoft.com"
+                    "address":"pavelb@contoso.com"
                 },
                 {
                     "type":"other",
                     "otherLabel":"Volunteer work",
                     "name":"Pavel Bansky",
-                    "address":"pavelb@fabrikam.onmicrosoft.com"
+                    "address":"pavelb@contoso.com"
                 }
             ]
         }

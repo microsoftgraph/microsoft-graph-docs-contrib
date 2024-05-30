@@ -3,7 +3,7 @@ title: "riskyServicePrincipal: confirmCompromised"
 description: "Confirm one or more riskyServicePrincipal objects as compromised."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /identityProtection/riskyServicePrincipals/confirmCompromised
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, specify the collection of ids of the risky service principals in a **servicePrincipalIds** property. 

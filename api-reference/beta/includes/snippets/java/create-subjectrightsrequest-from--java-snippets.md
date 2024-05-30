@@ -4,42 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SubjectRightsRequest subjectRightsRequest = new SubjectRightsRequest();
-subjectRightsRequest.type = SubjectRightsRequestType.EXPORT;
-subjectRightsRequest.contentQuery = "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))";
-subjectRightsRequest.dataSubjectType = DataSubjectType.CUSTOMER;
-subjectRightsRequest.externalId = "F53BF2DA-607D-412A-B568-FAA0F023AC0B";
-subjectRightsRequest.displayName = "Export report for customer Id: 12345";
-subjectRightsRequest.description = "This is a export request";
-subjectRightsRequest.includeAllVersions = false;
-subjectRightsRequest.includeAuthoredContent = true;
-subjectRightsRequest.internalDueDateTime = OffsetDateTimeSerializer.deserialize("2022-07-20T22:42:28Z");
+subjectRightsRequest.setType(SubjectRightsRequestType.Export);
+subjectRightsRequest.setContentQuery("((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))");
+subjectRightsRequest.setDataSubjectType(DataSubjectType.Customer);
+subjectRightsRequest.setExternalId("F53BF2DA-607D-412A-B568-FAA0F023AC0B");
+subjectRightsRequest.setDisplayName("Export report for customer Id: 12345");
+subjectRightsRequest.setDescription("This is a export request");
+subjectRightsRequest.setIncludeAllVersions(false);
+subjectRightsRequest.setIncludeAuthoredContent(true);
+OffsetDateTime internalDueDateTime = OffsetDateTime.parse("2022-07-20T22:42:28Z");
+subjectRightsRequest.setInternalDueDateTime(internalDueDateTime);
 DataSubject dataSubject = new DataSubject();
-dataSubject.firstName = "Diego";
-dataSubject.lastName = "Siciliani";
-dataSubject.email = "Diego.Siciliani@contoso.com";
-dataSubject.residency = "USA";
-subjectRightsRequest.dataSubject = dataSubject;
-subjectRightsRequest.mailboxLocations = null;
-subjectRightsRequest.pauseAfterEstimate = true;
-LinkedList<String> regulationsList = new LinkedList<String>();
-regulationsList.add("CCPA");
-subjectRightsRequest.regulations = regulationsList;
+dataSubject.setFirstName("Diego");
+dataSubject.setLastName("Siciliani");
+dataSubject.setEmail("Diego.Siciliani@contoso.com");
+dataSubject.setResidency("USA");
+subjectRightsRequest.setDataSubject(dataSubject);
+subjectRightsRequest.setMailboxLocations(null);
+subjectRightsRequest.setPauseAfterEstimate(true);
+LinkedList<String> regulations = new LinkedList<String>();
+regulations.add("CCPA");
+subjectRightsRequest.setRegulations(regulations);
 SubjectRightsRequestAllSiteLocation siteLocations = new SubjectRightsRequestAllSiteLocation();
-subjectRightsRequest.siteLocations = siteLocations;
-LinkedList<User> approversList = new LinkedList<User>();
-User approvers = new User();
-approvers.id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167";
-approversList.add(approvers);
-UserCollectionResponse userCollectionResponse = new UserCollectionResponse();
-userCollectionResponse.value = approversList;
-UserCollectionPage userCollectionPage = new UserCollectionPage(userCollectionResponse, null);
-subjectRightsRequest.approvers = userCollectionPage;
+siteLocations.setOdataType("microsoft.graph.subjectRightsRequestAllSiteLocation");
+subjectRightsRequest.setSiteLocations(siteLocations);
+LinkedList<User> approvers = new LinkedList<User>();
+User user = new User();
+user.setId("1B761ED2-AA7E-4D82-9CF5-C09D737B6167");
+approvers.add(user);
+subjectRightsRequest.setApprovers(approvers);
+SubjectRightsRequest result = graphClient.privacy().subjectRightsRequests().post(subjectRightsRequest);
 
-graphClient.privacy().subjectRightsRequests()
-	.buildRequest()
-	.post(subjectRightsRequest);
 
 ```

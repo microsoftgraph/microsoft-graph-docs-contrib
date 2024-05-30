@@ -4,7 +4,7 @@ description: "Retrieve a synchronization template by its identifier."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Get synchronizationTemplate
@@ -47,14 +47,14 @@ If successful, this method returns a `200 OK` response code and a [synchronizati
 ### Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/templates/Slack
 ```
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
 ```http

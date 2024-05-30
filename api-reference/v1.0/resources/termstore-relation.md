@@ -3,7 +3,7 @@ title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
-|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
+|[List](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
+|[Create](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
 
 
 ## Properties

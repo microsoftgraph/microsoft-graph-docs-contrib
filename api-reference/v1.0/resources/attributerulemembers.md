@@ -3,7 +3,7 @@ title: "attributeRuleMembers resource type"
 description: "Identifies a collection of users in the tenant who will be assigned the access package automatically based on the specified membership rules."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

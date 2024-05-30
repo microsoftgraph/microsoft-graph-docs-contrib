@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.planner_task_configuration import PlannerTaskConfiguration
+from msgraph_beta.generated.models.planner_task_policy import PlannerTaskPolicy
+from msgraph_beta.generated.models.planner_task_role_based_rule import PlannerTaskRoleBasedRule
+from msgraph_beta.generated.models.planner_relationship_based_user_type import PlannerRelationshipBasedUserType
+from msgraph_beta.generated.models.planner_user_role_kind import PlannerUserRoleKind
+from msgraph_beta.generated.models.planner_relationship_user_roles import PlannerRelationshipUserRoles
+from msgraph_beta.generated.models.planner_task_property_rule import PlannerTaskPropertyRule
+from msgraph_beta.generated.models.planner_rule_kind import PlannerRuleKind
+from msgraph_beta.generated.models.planner_field_rules import PlannerFieldRules
+from msgraph_beta.generated.models.planner_rule_override import PlannerRuleOverride
 
 graph_client = GraphServiceClient(credentials, scopes)
 

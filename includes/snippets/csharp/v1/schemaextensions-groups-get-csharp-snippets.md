@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.SchemaExtensions.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "id eq 'graphlearn_test'";
+	requestConfiguration.QueryParameters.Filter = "id eq 'bellowscollege_courses'";
 });
 
 

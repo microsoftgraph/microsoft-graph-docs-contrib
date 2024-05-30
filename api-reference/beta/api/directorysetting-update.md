@@ -1,9 +1,10 @@
 ---
 title: "Update directorySetting"
 description: "Update the properties of a specific directory setting object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -33,6 +34,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 <!-- { "blockType": "permissions", "name": "directorysetting_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-2-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +53,7 @@ PATCH /groups/{groupId}/settings/{directorySettingId}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. 
@@ -65,7 +68,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

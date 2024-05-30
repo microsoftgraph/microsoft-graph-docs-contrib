@@ -1,9 +1,9 @@
 ---
 title: "complianceStatus enum type"
-description: "Not yet documented"
+description: "Intune Shared Compliancestatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Not yet documented|
-|notApplicable|1|Not yet documented|
-|compliant|2|Not yet documented|
-|remediated|3|Not yet documented|
-|nonCompliant|4|Not yet documented|
-|error|5|Not yet documented|
-|conflict|6|Not yet documented|
-|notAssigned|7|Not yet documented|
+|unknown|0||
+|notApplicable|1||
+|compliant|2||
+|remediated|3||
+|nonCompliant|4||
+|error|5||
+|conflict|6||
+|notAssigned|7||

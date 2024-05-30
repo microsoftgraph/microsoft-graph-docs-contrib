@@ -3,7 +3,7 @@ title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "accessReviewScheduleSettings resource type"
 description: "Represents the settings associated with an access review series."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an onlineMeeting object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -104,7 +104,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
@@ -130,7 +130,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -272,7 +272,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 > **Note:** The meeting ID has been truncated for readability.
 
@@ -342,7 +342,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
@@ -415,7 +415,7 @@ You can retrieve meeting information via the **joinMeetingId** by using either a
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {

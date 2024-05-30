@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TeamsTab teamsTab = new TeamsTab();
-teamsTab.displayName = "My Contoso Tab - updated again";
+teamsTab.setDisplayName("My Contoso Tab - updated again");
+TeamsTab result = graphClient.chats().byChatId("{chat-id}").tabs().byTeamsTabId("{teamsTab-id}").patch(teamsTab);
 
-graphClient.chats("19:d65713bc498c4a428c71ef9353e6ce20@thread.v2").tabs("794f0e4e-4d10-4bb5-9079-3a465a629eff")
-	.buildRequest()
-	.patch(teamsTab);
 
 ```

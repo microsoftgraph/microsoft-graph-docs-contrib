@@ -3,7 +3,7 @@ title: "amazonResourceEvidence resource type"
 description: "Represents an Amazon resource that is reported as part of the security detection alert."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

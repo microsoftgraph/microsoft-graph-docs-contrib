@@ -4,66 +4,66 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.groups.item.threads.item.posts.item.reply.ReplyPostRequestBody replyPostRequestBody = new com.microsoft.graph.groups.item.threads.item.posts.item.reply.ReplyPostRequestBody();
 Post post = new Post();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "content-value";
-post.body = body;
-post.receivedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-post.hasAttachments = true;
+body.setContentType(BodyType.Text);
+body.setContent("content-value");
+post.setBody(body);
+OffsetDateTime receivedDateTime = OffsetDateTime.parse("datetime-value");
+post.setReceivedDateTime(receivedDateTime);
+post.setHasAttachments(true);
 Recipient from = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.name = "name-value";
-emailAddress.address = "address-value";
-from.emailAddress = emailAddress;
-post.from = from;
+emailAddress.setName("name-value");
+emailAddress.setAddress("address-value");
+from.setEmailAddress(emailAddress);
+post.setFrom(from);
 Recipient sender = new Recipient();
 EmailAddress emailAddress1 = new EmailAddress();
-emailAddress1.name = "name-value";
-emailAddress1.address = "address-value";
-sender.emailAddress = emailAddress1;
-post.sender = sender;
-post.conversationThreadId = "conversationThreadId-value";
-LinkedList<Recipient> newParticipantsList = new LinkedList<Recipient>();
-Recipient newParticipants = new Recipient();
+emailAddress1.setName("name-value");
+emailAddress1.setAddress("address-value");
+sender.setEmailAddress(emailAddress1);
+post.setSender(sender);
+post.setConversationThreadId("conversationThreadId-value");
+LinkedList<Recipient> newParticipants = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress2 = new EmailAddress();
-emailAddress2.name = "name-value";
-emailAddress2.address = "address-value";
-newParticipants.emailAddress = emailAddress2;
-newParticipantsList.add(newParticipants);
-post.newParticipants = newParticipantsList;
-post.conversationId = "conversationId-value";
-post.createdDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-post.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-post.changeKey = "changeKey-value";
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("categories-value");
-post.categories = categoriesList;
-post.id = "id-value";
+emailAddress2.setName("name-value");
+emailAddress2.setAddress("address-value");
+recipient.setEmailAddress(emailAddress2);
+newParticipants.add(recipient);
+post.setNewParticipants(newParticipants);
+post.setConversationId("conversationId-value");
+OffsetDateTime createdDateTime = OffsetDateTime.parse("datetime-value");
+post.setCreatedDateTime(createdDateTime);
+OffsetDateTime lastModifiedDateTime = OffsetDateTime.parse("datetime-value");
+post.setLastModifiedDateTime(lastModifiedDateTime);
+post.setChangeKey("changeKey-value");
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("categories-value");
+post.setCategories(categories);
+post.setId("id-value");
 Post inReplyTo = new Post();
-post.inReplyTo = inReplyTo;
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-FileAttachment attachments = new FileAttachment();
-attachments.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-attachments.name = "name-value";
-attachments.contentType = "contentType-value";
-attachments.size = 99;
-attachments.isInline = true;
-attachments.id = "id-value";
-attachmentsList.add(attachments);
-AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
-attachmentCollectionResponse.value = attachmentsList;
-AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
-post.attachments = attachmentCollectionPage;
+post.setInReplyTo(inReplyTo);
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+FileAttachment attachment = new FileAttachment();
+attachment.setOdataType("#microsoft.graph.fileAttachment");
+OffsetDateTime lastModifiedDateTime1 = OffsetDateTime.parse("datetime-value");
+attachment.setLastModifiedDateTime(lastModifiedDateTime1);
+attachment.setName("name-value");
+attachment.setContentType("contentType-value");
+attachment.setSize(99);
+attachment.setIsInline(true);
+attachment.setId("id-value");
+attachments.add(attachment);
+post.setAttachments(attachments);
+replyPostRequestBody.setPost(post);
+graphClient.groups().byGroupId("{group-id}").threads().byConversationThreadId("{conversationThread-id}").posts().byPostId("{post-id}").reply().post(replyPostRequestBody);
 
-graphClient.groups("{id}").threads("{id}").posts("{id}")
-	.reply(PostReplyParameterSet
-		.newBuilder()
-		.withPost(post)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

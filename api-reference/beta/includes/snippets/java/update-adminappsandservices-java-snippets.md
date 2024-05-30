@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdminAppsAndServices adminAppsAndServices = new AdminAppsAndServices();
+adminAppsAndServices.setOdataType("#microsoft.graph.adminAppsAndServices");
 AppsAndServicesSettings settings = new AppsAndServicesSettings();
-settings.isOfficeStoreEnabled = false;
-settings.isAppAndServicesTrialEnabled = false;
-adminAppsAndServices.settings = settings;
+settings.setOdataType("microsoft.graph.appsAndServicesSettings");
+settings.setIsOfficeStoreEnabled(false);
+settings.setIsAppAndServicesTrialEnabled(false);
+adminAppsAndServices.setSettings(settings);
+AdminAppsAndServices result = graphClient.admin().appsAndServices().patch(adminAppsAndServices);
 
-graphClient.admin().appsAndServices()
-	.buildRequest()
-	.patch(adminAppsAndServices);
 
 ```

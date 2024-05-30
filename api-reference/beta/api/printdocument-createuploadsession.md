@@ -3,7 +3,7 @@ title: "printDocument: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of binary file of printDocument."
 ms.localizationpriority: medium
 author: "nilakhan"
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required.|
 
 

@@ -3,7 +3,7 @@ title: "serviceHealthIssue: incidentReport"
 description: "Provide the Post-Incident Review (PIR) document of a specified service issue for tenant."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

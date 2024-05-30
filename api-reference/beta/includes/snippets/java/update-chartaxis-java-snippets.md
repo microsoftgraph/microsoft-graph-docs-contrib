@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookChartAxis workbookChartAxis = new WorkbookChartAxis();
-JsonElement majorUnit = new JsonObject();
-workbookChartAxis.majorUnit = majorUnit;
-JsonElement maximum = new JsonObject();
-workbookChartAxis.maximum = maximum;
-JsonElement minimum = new JsonObject();
-workbookChartAxis.minimum = minimum;
+Json majorUnit = new Json();
+workbookChartAxis.setMajorUnit(majorUnit);
+Json maximum = new Json();
+workbookChartAxis.setMaximum(maximum);
+Json minimum = new Json();
+workbookChartAxis.setMinimum(minimum);
+WorkbookChartAxis result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").axes().valueAxis().patch(workbookChartAxis);
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").axes().valueAxis()
-	.buildRequest()
-	.patch(workbookChartAxis);
 
 ```

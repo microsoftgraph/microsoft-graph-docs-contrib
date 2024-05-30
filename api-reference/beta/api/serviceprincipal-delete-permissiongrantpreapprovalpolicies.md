@@ -3,7 +3,7 @@ title: "Remove a permissionGrantPreApprovalPolicy from a servicePrincipal"
 description: "Remove a permissionGrantPreApprovalPolicy from servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

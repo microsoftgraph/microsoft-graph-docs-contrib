@@ -3,7 +3,7 @@ title: "List userAttributeAssignments"
 description: "Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select` and `$expand` parameters to get the details o
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

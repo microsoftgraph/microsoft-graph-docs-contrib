@@ -3,7 +3,7 @@ title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -103,14 +103,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -185,7 +185,7 @@ Content-type: application/json
       {
         "emailAddress": {
           "name": "Samantha Booth",
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
@@ -193,7 +193,7 @@ Content-type: application/json
       {
         "mentioned": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -270,7 +270,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "AlexW@contoso.OnMicrosoft.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
@@ -356,7 +356,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "meganb@contoso.onmicrosoft.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -430,18 +430,30 @@ HTTP/1.1 202 Accepted
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: text/plain
 
-RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
-Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
-bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
-YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
-ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
-MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
-cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
-OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
+RnJvbTogQWRlbGUgVmFuY2UgPEFkZWxlVkBjb250b3NvLmNvbT4KVG86IEFsZXggV2lsYmVyIDxB
+bGV4V0Bjb250b3NvLmNvbT4KU3ViamVjdDpUZXN0IE1lc3NhZ2UKQ29udGVudC1UeXBlOiBtdWx0
+aXBhcnQvbWl4ZWQ7Cglib3VuZGFyeT0iXzAwNF9UWVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURC
+OEZCNDdDOEJDQVRZWlBSMDRNQjY5ODFhcGNwXyIKTUlNRS1WZXJzaW9uOiAxLjAKCi0tXzAwNF9U
+WVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURCOEZCNDdDOEJDQVRZWlBSMDRNQjY5ODFhcGNwXwpD
+b250ZW50LVR5cGU6IG11bHRpcGFydC9hbHRlcm5hdGl2ZTsKCWJvdW5kYXJ5PSJfMDAwX1RZWlBS
+MDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFwY3BfIgoKLS1f
+MDAwX1RZWlBSMDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFw
+Y3BfCkNvbnRlbnQtVHlwZTogdGV4dC9wbGFpbjsgY2hhcnNldD0iaXNvLTg4NTktMSIKQ29udGVu
+dC1UcmFuc2Zlci1FbmNvZGluZzogcXVvdGVkLXByaW50YWJsZQoKdGVzdCB0ZXh0IGJvZHkKCgot
+LV8wMDBfVFlaUFIwNE1CNjk4MTczRkQwMDIxNTJENUFEQjhGQjQ3QzhCQ0FUWVpQUjA0TUI2OTgx
+YXBjcF8KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9Imlzby04ODU5LTEiCkNvbnRl
+bnQtVHJhbnNmZXItRW5jb2Rpbmc6IHF1b3RlZC1wcmludGFibGUKCjxodG1sPgo8aGVhZD4KPC9o
+ZWFkPgo8Ym9keT4KdGVzdCBodG1sIGJvZHkKPC9ib2R5Pgo8L2h0bWw+CgotLV8wMDBfVFlaUFIw
+NE1CNjk4MTczRkQwMDIxNTJENUFEQjhGQjQ3QzhCQ0FUWVpQUjA0TUI2OTgxYXBjcF8tLQoKLS1f
+MDA0X1RZWlBSMDRNQjY5ODE3M0ZEMDAyMTUyRDVBREI4RkI0N0M4QkNBVFlaUFIwNE1CNjk4MWFw
+Y3BfCkNvbnRlbnQtVHlwZTogdGV4dC9wbGFpbjsKQ29udGVudC1EaXNwb3NpdGlvbjogYXR0YWNo
+bWVudDsKICAgICAgICBmaWxlbmFtZT0idGVzdC50eHQiCgp0aGlzIGlzIHRoZSBhdHRhY2htZW50
+IHRleHQKCi0tXzAwNF9UWVpQUjA0TUI2OTgxNzNGRDAwMjE1MkQ1QURCOEZCNDdDOEJDQVRZWlBS
+MDRNQjY5ODFhcGNwXy0t
 ```
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -486,7 +498,7 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "address": "meganb@contoso.onmicrosoft.com"
+        "address": "meganb@contoso.com"
       }
     }
   ],

@@ -1,9 +1,9 @@
 ---
 title: "Get schedulingGroup"
 description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method does not support OData query parameters to customize the response.
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -119,6 +119,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Cashiers",
+  "code": "CashierCode",
   "isActive": true,
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",

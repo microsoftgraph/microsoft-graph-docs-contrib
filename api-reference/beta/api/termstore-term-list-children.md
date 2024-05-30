@@ -2,7 +2,7 @@
 title: "List children"
 description: "Get the terms from the children navigation property."
 author: mohitpcad
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

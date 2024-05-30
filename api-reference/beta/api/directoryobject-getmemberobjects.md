@@ -3,7 +3,7 @@ title: "directoryObject: getMemberObjects"
 description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -113,7 +113,7 @@ POST /devices/{id}/getMemberObjects
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

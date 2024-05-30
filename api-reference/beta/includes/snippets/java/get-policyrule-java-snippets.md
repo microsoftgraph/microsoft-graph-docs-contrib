@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PolicyRule policyRule = graphClient.networkaccess().forwardingPolicies("{forwardingPolicyId}").policyRules("{ruleId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.networkaccess.PolicyRule result = graphClient.networkAccess().forwardingPolicies().byForwardingPolicyId("{forwardingPolicy-id}").policyRules().byPolicyRuleId("{policyRule-id}").get();
+
 
 ```

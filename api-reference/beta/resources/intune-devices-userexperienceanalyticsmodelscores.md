@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsModelScores resource type"
 description: "The user experience analytics model scores entity consolidates the various Endpoint Analytics scores."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -38,6 +38,7 @@ The user experience analytics model scores entity consolidates the various Endpo
 |appReliabilityScore|Double|Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications. Valid values range from 0-100. Value -1 means associated score is unavailable. A higher score indicates a healthier device. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |workFromAnywhereScore|Double|Indicates a weighted score of the work from anywhere on a device level. Valid values range from 0-100. Value -1 means associated score is unavailable. A higher score indicates a healthier device. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |batteryHealthScore|Double|Indicates a calulated score indicating the health of the device's battery. Valid values range from 0-100. Value -1 means associated score is unavailable. A higher score indicates a healthier device. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|meanResourceSpikeTimeScore|Double|Indicates a calulated score indicating the health of the device's resource spike score . Valid values range from 0-100. Value -1 means associated score is unavailable. A higher score indicates a healthier device. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health status of the device. Possible values are: unknown, insufficientData, needsAttention, meetingGoals. Unknown by default. Supports: $filter, $select, $OrderBy. Read-only. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
@@ -63,6 +64,7 @@ Here is a JSON representation of the resource.
   "appReliabilityScore": "4.2",
   "workFromAnywhereScore": "4.2",
   "batteryHealthScore": "4.2",
+  "meanResourceSpikeTimeScore": "4.2",
   "healthStatus": "String"
 }
 ```

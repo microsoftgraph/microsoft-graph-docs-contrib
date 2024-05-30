@@ -3,7 +3,7 @@ title: "Create plannerRosterMember"
 description: "Create a new plannerRosterMember object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /planner/rosters/{plannerRosterId}/members
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ author: daspek
 title: mentionAction resource type
 description: The MentionAction object provides information about who was mentioned during an activity.
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 # mentionAction resource type

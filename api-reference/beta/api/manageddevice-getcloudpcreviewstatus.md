@@ -3,7 +3,7 @@ title: "managedDevice: getCloudPcReviewStatus"
 description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcReviewStatus
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcRevi
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

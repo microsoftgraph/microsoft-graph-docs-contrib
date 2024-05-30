@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateRemoval (deprecated)"
 description: "Evaluate which label to remove and how to remove it based on existing content info. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
 ---
 
@@ -47,7 +47,7 @@ POST /informationProtection/policy/labels/evaluateRemoval
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.                                                                                                                                                       |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 

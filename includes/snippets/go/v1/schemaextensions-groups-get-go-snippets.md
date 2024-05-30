@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,11 +15,8 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-
-
-requestFilter := "id eq 'graphlearn_test'"
+requestFilter := "id eq 'bellowscollege_courses'"
 
 requestParameters := &graphschemaextensions.SchemaExtensionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
@@ -25,6 +25,7 @@ configuration := &graphschemaextensions.SchemaExtensionsRequestBuilderGetRequest
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 schemaExtensions, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
 
 

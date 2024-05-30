@@ -3,7 +3,7 @@ title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
 ms.localizationpriority: medium
 author: "ananmishr"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Details for an attendee to join the meeting online.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

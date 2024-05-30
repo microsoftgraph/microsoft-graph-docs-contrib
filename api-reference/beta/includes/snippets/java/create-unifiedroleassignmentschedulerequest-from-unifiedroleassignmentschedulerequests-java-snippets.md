@@ -4,23 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleAssignmentScheduleRequest unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequest();
-unifiedRoleAssignmentScheduleRequest.action = "AdminAssign";
-unifiedRoleAssignmentScheduleRequest.justification = "Assign User Admin to IT Helpdesk (User) group";
-unifiedRoleAssignmentScheduleRequest.roleDefinitionId = "fdd7a751-b60b-444a-984c-02652fe8fa1c";
-unifiedRoleAssignmentScheduleRequest.directoryScopeId = "/";
-unifiedRoleAssignmentScheduleRequest.principalId = "07706ff1-46c7-4847-ae33-3003830675a1";
+unifiedRoleAssignmentScheduleRequest.setAction("AdminAssign");
+unifiedRoleAssignmentScheduleRequest.setJustification("Assign User Admin to IT Helpdesk (User) group");
+unifiedRoleAssignmentScheduleRequest.setRoleDefinitionId("fdd7a751-b60b-444a-984c-02652fe8fa1c");
+unifiedRoleAssignmentScheduleRequest.setDirectoryScopeId("/");
+unifiedRoleAssignmentScheduleRequest.setPrincipalId("07706ff1-46c7-4847-ae33-3003830675a1");
 RequestSchedule scheduleInfo = new RequestSchedule();
-scheduleInfo.startDateTime = OffsetDateTimeSerializer.deserialize("2021-07-01T00:00:00Z");
+OffsetDateTime startDateTime = OffsetDateTime.parse("2021-07-01T00:00:00Z");
+scheduleInfo.setStartDateTime(startDateTime);
 ExpirationPattern expiration = new ExpirationPattern();
-expiration.type = ExpirationPatternType.NO_EXPIRATION;
-scheduleInfo.expiration = expiration;
-unifiedRoleAssignmentScheduleRequest.scheduleInfo = scheduleInfo;
+expiration.setType(ExpirationPatternType.NoExpiration);
+scheduleInfo.setExpiration(expiration);
+unifiedRoleAssignmentScheduleRequest.setScheduleInfo(scheduleInfo);
+UnifiedRoleAssignmentScheduleRequest result = graphClient.roleManagement().directory().roleAssignmentScheduleRequests().post(unifiedRoleAssignmentScheduleRequest);
 
-graphClient.roleManagement().directory().roleAssignmentScheduleRequests()
-	.buildRequest()
-	.post(unifiedRoleAssignmentScheduleRequest);
 
 ```

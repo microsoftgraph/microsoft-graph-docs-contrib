@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\CategoryTemplate;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CategoryTemplate();
 $requestBody->setOdataType('#microsoft.graph.security.categoryTemplate');
-$requestBody->setDisplayName('String');
-$createdBy = new IdentitySet();
-$createdBy->setOdataType('microsoft.graph.identitySet');
-$requestBody->setCreatedBy($createdBy);
+$requestBody->setDisplayName('Accounts Payable');
 
 $result = $graphServiceClient->security()->labels()->categories()->post($requestBody)->wait();
 

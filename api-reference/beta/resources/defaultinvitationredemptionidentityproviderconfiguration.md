@@ -3,7 +3,7 @@ title: "defaultInvitationRedemptionIdentityProviderConfiguration resource type"
 description: "Defines the invitation redemption provider configuration to set redemption flow settings for Microsoft Entra ID B2B collaboration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

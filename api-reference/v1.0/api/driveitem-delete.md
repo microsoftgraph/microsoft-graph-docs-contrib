@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Delete a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Delete a DriveItem by using its ID or path."
 doc_type: apiPageType
 ---
@@ -35,11 +35,12 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
 
 ## Example
 
@@ -50,7 +51,7 @@ Here's an example of how to call this API.
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 ```
 
 # [C#](#tab/csharp)

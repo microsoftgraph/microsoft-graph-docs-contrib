@@ -3,7 +3,7 @@ title: "List peopleInsights"
 description: "Get the properties of an insightsSettings object for displaying or returning people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -37,7 +37,7 @@ GET /organization/{organizationId}/settings/peopleInsights
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -119,5 +119,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) for an organization.

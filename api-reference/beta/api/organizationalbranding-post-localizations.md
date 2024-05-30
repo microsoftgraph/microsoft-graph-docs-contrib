@@ -3,7 +3,7 @@ title: "Create organizationalBrandingLocalization"
 description: "Create a new organizationalBrandingLocalization object."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "organizationalbranding_post_localizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-post-localizations-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
+
 ## HTTP request
 This request creates a new localization branding and a default branding if one doesn't already exist. 
 <!-- {
@@ -37,7 +39,7 @@ POST /organization/{organizationId}/branding/localizations
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

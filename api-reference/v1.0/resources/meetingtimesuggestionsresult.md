@@ -3,7 +3,7 @@ title: "meetingTimeSuggestionsResult resource type"
 description: "A collection of meeting suggestions if there is any, or the reason if there isn't."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user-findm
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

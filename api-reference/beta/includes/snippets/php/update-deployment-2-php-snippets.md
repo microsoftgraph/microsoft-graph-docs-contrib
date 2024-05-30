@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\Deployment;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringRule;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringSignal;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringAction;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Deployment();

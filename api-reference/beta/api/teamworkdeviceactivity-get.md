@@ -3,7 +3,7 @@ title: "Get teamworkDeviceActivity"
 description: "Get the activity status of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This operation supports the `$select` and `$expand` [OData query parameters](/gr
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

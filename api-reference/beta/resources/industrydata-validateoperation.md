@@ -3,7 +3,7 @@ title: "validateOperation resource type"
 description: "Represents an abstract type for the asynchronous operation that results from any operation that validates data."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

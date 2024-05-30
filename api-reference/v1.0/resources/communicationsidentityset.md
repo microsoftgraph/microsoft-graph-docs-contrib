@@ -3,7 +3,7 @@ title: "communicationsIdentitySet resource type"
 description: "Represents a combination of user and application identities that together identify a participant in a call or meeting."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -39,15 +39,15 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.communicationsIdentitySet",
   "optionalProperties": [
     "application",
-    "user",
-    "phone",
-    "guest",
-    "encrypted",
-    "azureCommunicationServicesUser",
     "applicationInstance",
-    "onPremises",
     "assertedIdentity",
-    "endpointType"
+    "azureCommunicationServicesUser",
+    "encrypted",
+    "endpointType",
+    "guest",
+    "onPremises",
+    "phone",
+    "user"
   ],
 } -->
 ```json

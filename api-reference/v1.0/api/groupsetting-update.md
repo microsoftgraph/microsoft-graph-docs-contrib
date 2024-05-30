@@ -1,9 +1,10 @@
 ---
 title: "Update groupSetting"
 description: "Update the properties of a specific group setting object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -36,6 +37,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 |Delegated (work or school account) | Policy.ReadWrite.Authorization    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.ReadWrite.Authorization |
+
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ## HTTP request
 

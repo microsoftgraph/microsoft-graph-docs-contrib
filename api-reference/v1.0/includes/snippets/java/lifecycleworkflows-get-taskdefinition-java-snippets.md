@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TaskDefinition taskDefinition = graphClient.identityGovernance().lifecycleWorkflows().taskDefinitions("1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.identitygovernance.TaskDefinition result = graphClient.identityGovernance().lifecycleWorkflows().taskDefinitions().byTaskDefinitionId("{taskDefinition-id}").get();
+
 
 ```

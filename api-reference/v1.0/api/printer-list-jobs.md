@@ -3,7 +3,7 @@ title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ Some operators are not supported: `$count`, `$search`.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -100,7 +100,8 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +118,10 @@ Content-Type: application/json
     {
       "id": "103",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {        
+      "createdBy": {
+        "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+        "displayName": "John Smith",
+        "userPrincipalName": "john.smith@contoso.com"
       },
       "status": {
         "state": "completed",

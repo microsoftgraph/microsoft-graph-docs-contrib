@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.channels.item.messages.messages_request_builder import MessagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +15,7 @@ query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
 		expand = ["replies"],
 )
 
-request_configuration = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -3,7 +3,7 @@ title: "certificateAuthorityPath resource type"
 description: "Container for certificate authorities-related configurations for applications in the tenant."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

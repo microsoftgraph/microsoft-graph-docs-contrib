@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleAssignmentSchedule unifiedRoleAssignmentSchedule = graphClient.roleManagement().directory().roleAssignmentSchedules("226faf5f-61b4-40bb-8726-52e48ec914de")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleAssignmentSchedule result = graphClient.roleManagement().directory().roleAssignmentSchedules().byUnifiedRoleAssignmentScheduleId("{unifiedRoleAssignmentSchedule-id}").get();
+
 
 ```

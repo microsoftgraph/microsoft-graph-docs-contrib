@@ -3,7 +3,7 @@ title: "payload resource type"
 description: "Represents an attack simulation training payload in a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List payload](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
-|[Get payload](../api/payload-get.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
-|[Get payloadDetail](../api/payloaddetail-get.md)|[payloadDetail](../resources/payloaddetail.md)|Get an attack simulation campaign payload detail for a tenant.|
+|[List](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
+|[Get](../api/payload-get.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
+|[Get payload detail](../api/payloaddetail-get.md)|[payloadDetail](../resources/payloaddetail.md)|Get an attack simulation campaign payload detail for a tenant.|
 
 ## Properties
 
@@ -191,6 +191,6 @@ The following JSON representation shows the resource type.
 ```
 
 
-## See also
+## Related content
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

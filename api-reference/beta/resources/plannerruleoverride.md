@@ -3,7 +3,7 @@ title: "plannerRuleOverride resource type"
 description: "Represents an overridden rule as part of plannerFieldRules."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Delete conversation thread"
 description: "Delete a thread object."
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ DELETE /groups/{id}/threads/{id}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

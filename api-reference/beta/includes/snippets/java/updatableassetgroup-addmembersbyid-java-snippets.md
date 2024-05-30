@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> idsList = new LinkedList<String>();
-idsList.add("String");
-idsList.add("String");
-idsList.add("String");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
+com.microsoft.graph.beta.admin.windows.updates.updatableassets.item.microsoftgraphwindowsupdatesaddmembersbyid.AddMembersByIdPostRequestBody addMembersByIdPostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.updatableassets.item.microsoftgraphwindowsupdatesaddmembersbyid.AddMembersByIdPostRequestBody();
+LinkedList<String> ids = new LinkedList<String>();
+ids.add("String");
+ids.add("String");
+ids.add("String");
+addMembersByIdPostRequestBody.setIds(ids);
+addMembersByIdPostRequestBody.setMemberEntityType("#microsoft.graph.windowsUpdates.azureADDevice");
+graphClient.admin().windows().updates().updatableAssets().byUpdatableAssetId("{updatableAsset-id}").microsoftGraphWindowsUpdatesAddMembersById().post(addMembersByIdPostRequestBody);
 
-graphClient.admin().windows().updates().updatableAssets("f5ba7065-7065-f5ba-6570-baf56570baf5")
-	.addMembersById(UpdatableAssetAddMembersByIdParameterSet
-		.newBuilder()
-		.withIds(idsList)
-		.withMemberEntityType(memberEntityType)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

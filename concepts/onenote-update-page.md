@@ -3,7 +3,7 @@ title: "Update OneNote page content"
 description: "Update the content of a OneNote page by sending a PATCH request to the page's content endpoint. Then send a JSON change object in the message body."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Update OneNote page content
@@ -479,7 +479,7 @@ For more information about permission scopes and how they work, see [OneNote per
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Add images and files](onenote-images-files.md)
 - [Integrate with OneNote](integrate-with-onenote.md)

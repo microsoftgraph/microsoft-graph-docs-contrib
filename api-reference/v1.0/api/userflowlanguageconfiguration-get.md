@@ -3,7 +3,7 @@ title: "Get userFlowLanguageConfiguration"
 description: "Read the properties and relationships of a userFlowLanguageConfiguration object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Read the properties and relationships of a [userFlowLanguageConfiguration](../re
 
 **Note:** Language customization is enabled by default in [Microsoft Entra user flows](../resources/b2xidentityuserflow.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "userflowlanguageconfiguration_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -44,7 +41,7 @@ GET identity/b2xUserFlows/{id}/languages/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

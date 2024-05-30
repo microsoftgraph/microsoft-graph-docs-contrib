@@ -3,7 +3,7 @@ title: "Create educationClass"
 description: "Create a new class. This will also create a universal group. When you use this API to create a class, it will add special properties to the group, which will"
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /education/classes
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

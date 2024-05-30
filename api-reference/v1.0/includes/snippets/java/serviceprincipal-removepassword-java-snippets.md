@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UUID keyId = UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.servicePrincipals("{id}")
-	.removePassword(ServicePrincipalRemovePasswordParameterSet
-		.newBuilder()
-		.withKeyId(keyId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.serviceprincipals.item.removepassword.RemovePasswordPostRequestBody removePasswordPostRequestBody = new com.microsoft.graph.serviceprincipals.item.removepassword.RemovePasswordPostRequestBody();
+removePasswordPostRequestBody.setKeyId(UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6"));
+graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").removePassword().post(removePasswordPostRequestBody);
+
 
 ```

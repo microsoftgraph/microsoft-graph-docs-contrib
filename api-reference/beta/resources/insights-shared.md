@@ -3,7 +3,7 @@ title: sharedInsight resource type
 description: 'An insight representing files shared with or by a specific user. The following shared files are supported:'
 author: simonhult
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 
@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 An insight representing files shared with or by a specific user. The following shared files are supported:
 
 - Files attached directly in an email or a meeting invite.
-- OneDrive for Business and SharePoint modern attachments - files stored in OneDrive for Business and SharePoint that users share as a links in an email.
+- OneDrive for work or school and SharePoint modern attachments - files stored in OneDrive for work or school and SharePoint that users share as a links in an email.
 
-**Note**: We are currently working on populating the results of the Shared API with data. There may be some data missing in the first weeks after release.
+**Note**: We're currently working on populating the results of the Shared API with data. Some data might be missing in the first weeks after release.
 
 ## Methods
 
@@ -43,7 +43,7 @@ An insight representing files shared with or by a specific user. The following s
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType":"resource",

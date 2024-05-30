@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\TenantRelationships\DelegatedAdminRelationships\Item\AccessAssignments\Item\DelegatedAdminAccessAssignmentItemRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessAssignment;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessDetails;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRole;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DelegatedAdminAccessAssignment();

@@ -3,7 +3,7 @@ title: "List contactInsights"
 description: "Retrieve properties of insightsSettings object for displaying or returning contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /organization/{organizationId}/settings/contactInsights
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

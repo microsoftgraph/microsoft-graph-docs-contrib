@@ -3,7 +3,7 @@ title: "Create accessAssignments"
 description: "Create a new delegatedAdminAccessAssignment object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "delegatedadminrelationship_post_accessassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
 
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,7 +37,7 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

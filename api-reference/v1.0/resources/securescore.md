@@ -3,7 +3,7 @@ title: "secureScore resource type"
 description: "Represents a tenant's secure score per day of scoring data, at the tenant and control level."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScores](../api/security-list-securescores.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
-|[Get secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Read properties and metadata of a secureScore object. | 
+|[List secure scores](../api/security-list-securescores.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
+|[Get secure score](../api/securescore-get.md) | [secureScore](securescore.md) |Read properties and metadata of a secureScore object. |
 
 
 

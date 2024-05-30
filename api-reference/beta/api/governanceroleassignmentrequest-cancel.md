@@ -3,8 +3,9 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Cancel governanceRoleAssignmentRequest
@@ -51,7 +52,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json|
 
 ## Request body
@@ -70,7 +71,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

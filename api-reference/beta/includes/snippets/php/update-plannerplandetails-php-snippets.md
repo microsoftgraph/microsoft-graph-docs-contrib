@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Plans\Item\Details\DetailsRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerPlanDetails;
+use Microsoft\Graph\Beta\Generated\Models\PlannerUserIds;
+use Microsoft\Graph\Beta\Generated\Models\PlannerCategoryDescriptions;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerPlanDetails();

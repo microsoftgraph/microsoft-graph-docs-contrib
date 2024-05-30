@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CertificateBasedApplicationConfiguration certificateBasedApplicationConfiguration = new CertificateBasedApplicationConfiguration();
-certificateBasedApplicationConfiguration.displayName = "New display name";
-certificateBasedApplicationConfiguration.description = "New description text";
+certificateBasedApplicationConfiguration.setOdataType("#microsoft.graph.certificateBasedApplicationConfiguration");
+certificateBasedApplicationConfiguration.setDisplayName("New display name");
+certificateBasedApplicationConfiguration.setDescription("New description text");
+CertificateBasedApplicationConfiguration result = graphClient.directory().certificateAuthorities().certificateBasedApplicationConfigurations().byCertificateBasedApplicationConfigurationId("{certificateBasedApplicationConfiguration-id}").patch(certificateBasedApplicationConfiguration);
 
-graphClient.directory().certificateAuthorities().certificateBasedApplicationConfigurations("d5b0af1c-9376-6b66-16b6-e402965862c1")
-	.buildRequest()
-	.patch(certificateBasedApplicationConfiguration);
 
 ```

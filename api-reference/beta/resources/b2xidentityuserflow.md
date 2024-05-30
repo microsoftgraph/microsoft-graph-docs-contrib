@@ -3,7 +3,7 @@ title: "b2xIdentityUserFlow resource type"
 description: "Represents a self-service sign-up user flow within a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "nanguil"
 ---
 
@@ -57,7 +57,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

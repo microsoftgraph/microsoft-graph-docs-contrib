@@ -3,7 +3,7 @@ title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Create a new Microsoft Bookings business in a tenant.
 
 This is the first step in setting up a Bookings business where you must specify the business display name. You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses
+POST /solutions/bookingbusinesses
 
 ```
 ## Request headers
@@ -53,7 +53,7 @@ The following example shows a request.
   "name": "create_bookingbusiness_from_bookingbusinesses"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses
 Content-type: application/json
 
 {
@@ -97,10 +97,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-bookingbusiness-from-bookingbusinesses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingbusiness-from-bookingbusinesses-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-bookingbusiness-from-bookingbusinesses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,8 +116,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@contoso.onmicrosoft.com",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
+    "id":"fourthcoffee@contoso.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

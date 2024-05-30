@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.authentication_methods_policy import AuthenticationMethodsPolicy
+from msgraph_beta.generated.models.registration_enforcement import RegistrationEnforcement
+from msgraph_beta.generated.models.authentication_methods_registration_campaign import AuthenticationMethodsRegistrationCampaign
+from msgraph_beta.generated.models.advanced_config_state import AdvancedConfigState
+from msgraph_beta.generated.models.exclude_target import ExcludeTarget
+from msgraph_beta.generated.models.authentication_methods_registration_campaign_include_target import AuthenticationMethodsRegistrationCampaignIncludeTarget
+from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
+from msgraph_beta.generated.models.report_suspicious_activity_settings import ReportSuspiciousActivitySettings
+from msgraph_beta.generated.models.include_target import IncludeTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

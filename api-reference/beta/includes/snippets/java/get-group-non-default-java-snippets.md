@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Group group = graphClient.groups("b320ee12-b1cd-4cca-b648-a437be61c5cd")
-	.buildRequest()
-	.select("allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Group result = graphClient.groups().byGroupId("{group-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"allowExternalSenders", "autoSubscribeNewMembers", "isSubscribedByMail", "unseenCount"};
+});
+
 
 ```

@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "NOT)";
+	requestConfiguration.QueryParameters.Filter = "NOT(imAddresses/any(i:i eq 'admin@contoso.com'))";
 	requestConfiguration.QueryParameters.Count = true;
 	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
 });

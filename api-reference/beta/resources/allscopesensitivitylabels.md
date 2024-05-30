@@ -3,7 +3,7 @@ title: "allScopeSensitivityLabels resource type"
 description: "Specifies that sensitivity labels from any resource app in a permissionGrantPreApprovalPolicy are preapproved for consent. It can also be used to specify a matching rule in a permissiongrantconditionset in a permissiongrantpolicy to include or exclude a permission grant event"
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

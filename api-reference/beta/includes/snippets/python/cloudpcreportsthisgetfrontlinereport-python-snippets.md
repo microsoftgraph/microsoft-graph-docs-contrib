@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.reports.get_frontline_report.get_frontline_report_post_request_body import GetFrontlineReportPostRequestBody
+from msgraph_beta.generated.models.cloud_pc_report_name import CloudPcReportName
 
 graph_client = GraphServiceClient(credentials, scopes)
 

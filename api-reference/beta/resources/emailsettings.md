@@ -3,7 +3,7 @@ title: "emailSettings resource type"
 description: "Defines the settings for emails sent using Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

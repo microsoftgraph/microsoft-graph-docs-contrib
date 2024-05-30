@@ -3,7 +3,7 @@ title: "androidScepCertificateProfile resource type"
 description: "Android SCEP certificate profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

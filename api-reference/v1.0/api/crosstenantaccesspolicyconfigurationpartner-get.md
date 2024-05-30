@@ -3,7 +3,7 @@ title: "Get crossTenantAccessPolicyConfigurationPartner"
 description: "Read the properties and relationships of a partner-specific configuration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /policies/crossTenantAccessPolicy/partners/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -113,6 +113,7 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
+  "isInMultiTenantOrganization": false,
   "automaticUserConsentSettings":
   {
     "inboundAllowed": null,

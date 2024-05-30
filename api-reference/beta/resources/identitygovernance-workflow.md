@@ -3,7 +3,7 @@ title: "workflow resource type"
 description: "Represents workflows created using Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents workflows created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension which integrate with Azure Logic Apps.
 
-You can create up to 50 workflows in a tenant.
+You can create up to 100 workflows in a tenant.
 
 Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
@@ -44,7 +44,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `mover`,`unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
 |createdDateTime|DateTimeOffset|When the `workflow` was created. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |deletedDateTime|DateTimeOffset|When the workflow was deleted.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|The description of the `workflow`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|

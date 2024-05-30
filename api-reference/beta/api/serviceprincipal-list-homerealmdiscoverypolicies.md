@@ -3,7 +3,7 @@ title: "List assigned homeRealmDiscoveryPolicies"
 description: "List homeRealmDiscoveryPolicies that are assigned to a servicePrincipal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ GET /servicePrincipals/{id}/homeRealmDiscoveryPolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

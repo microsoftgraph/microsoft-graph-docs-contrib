@@ -3,8 +3,9 @@ title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # List governanceResources
@@ -95,7 +96,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -111,7 +112,7 @@ Content-Length: 1289
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceResources",
-	"value":[
+    "value":[
         {
             "id": "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
             "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/resourceGroups/AnujRG/providers/Microsoft.Storage/storageAccounts/anujstoragefimdev",
@@ -139,7 +140,7 @@ Content-Length: 1289
             "registeredDateTime": "2018-04-05T22:30:37.13Z",
             "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
-	]
+    ]
 }
 ```
 

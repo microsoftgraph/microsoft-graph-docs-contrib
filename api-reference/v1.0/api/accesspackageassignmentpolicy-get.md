@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentPolicy"
 description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get accessPackageAssignmentPolicy
@@ -42,7 +42,7 @@ For example, to retrieve the access package, add `$expand=accessPackage`.
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

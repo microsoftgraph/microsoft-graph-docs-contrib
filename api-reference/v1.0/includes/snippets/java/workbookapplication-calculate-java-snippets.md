@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String calculationType = "calculationType-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook().application()
-	.calculate(WorkbookApplicationCalculateParameterSet
-		.newBuilder()
-		.withCalculationType(calculationType)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.workbook.application.calculate.CalculatePostRequestBody calculatePostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.application.calculate.CalculatePostRequestBody();
+calculatePostRequestBody.setCalculationType("calculationType-value");
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().application().calculate().post(calculatePostRequestBody);
+
 
 ```

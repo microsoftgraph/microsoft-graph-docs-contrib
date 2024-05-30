@@ -3,7 +3,7 @@ title: "b2cIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory B2C tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "jkdouglas"
 ---
 
@@ -60,7 +60,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
+|userFlowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
 |identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
     "userFlowTypeVersion": "Single",
     "isLanguageCustomizationEnabled": "Boolean",
     "defaultLanguageTag": "String",
-    "userflowidentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
+    "userFlowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

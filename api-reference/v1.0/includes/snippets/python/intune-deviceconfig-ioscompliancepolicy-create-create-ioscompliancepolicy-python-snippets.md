@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_compliance_policy import IosCompliancePolicy
+from msgraph.generated.models.required_password_type import RequiredPasswordType
+from msgraph.generated.models.device_threat_protection_level import DeviceThreatProtectionLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

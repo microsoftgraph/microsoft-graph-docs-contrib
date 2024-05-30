@@ -3,7 +3,7 @@ title: "actionStep resource type"
 description: "Represents a single action to take toward completing a recommendation."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

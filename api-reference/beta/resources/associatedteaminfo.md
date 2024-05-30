@@ -3,7 +3,7 @@ title: "associatedTeamInfo resource type"
 description: "Represents a team that is associated with a user."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List associatedTeamInfo](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
+|[List your associated teams](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -55,5 +55,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

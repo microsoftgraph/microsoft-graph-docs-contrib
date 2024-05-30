@@ -3,7 +3,7 @@ title: "tenantTag: unassignTag"
 description: "Un-assigns the tenant tag from the specified managed tenants."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

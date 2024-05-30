@@ -3,7 +3,7 @@ title: "Microsoft Graph Data Connect FAQ"
 description: "Find answers to frequently asked questions about how Data Connect lets developers create apps that provide managed access to at-scale Microsoft Graph datasets."
 author: "David1997sb"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Microsoft Graph Data Connect frequently asked questions

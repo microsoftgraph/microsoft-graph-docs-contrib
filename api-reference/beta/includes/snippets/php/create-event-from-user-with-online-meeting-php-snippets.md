@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Events\EventsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Event;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\Attendee;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
+use Microsoft\Graph\Beta\Generated\Models\OnlineMeetingProviderType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
@@ -28,7 +39,7 @@ $location->setDisplayName('Harry\'s Bar');
 $requestBody->setLocation($location);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('samanthab@contoso.onmicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('samanthab@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Samantha Booth');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));

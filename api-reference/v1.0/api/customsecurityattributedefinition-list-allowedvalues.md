@@ -3,7 +3,7 @@ title: "List allowedValues"
 description: "Get a list of the allowedValue objects and their properties."
 author: "Cecily"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

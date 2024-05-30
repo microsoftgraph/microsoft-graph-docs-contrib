@@ -36,7 +36,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -198,7 +198,7 @@ The interaction between Shifts app and workforce integration endpoints will foll
 
 ### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read

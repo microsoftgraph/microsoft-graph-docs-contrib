@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.information_protection.policy.labels.evaluate_classification_results.evaluate_classification_results_request_builder import EvaluateClassificationResultsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.informationprotection.policy.labels.evaluate_classification_results.evaluate_classification_results_post_request_body import EvaluateClassificationResultsPostRequestBody
+from msgraph_beta.generated.models.content_info import ContentInfo
+from msgraph_beta.generated.models.content_format import ContentFormat
+from msgraph_beta.generated.models.content_state import ContentState
+from msgraph_beta.generated.models.classification_result import ClassificationResult
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -28,12 +35,9 @@ request_body = EvaluateClassificationResultsPostRequestBody(
 	],
 )
 
-request_configuration = EvaluateClassificationResultsRequestBuilder.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(request_body, request_configuration = request_configuration)
 

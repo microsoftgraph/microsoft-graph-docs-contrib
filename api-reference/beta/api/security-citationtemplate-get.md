@@ -3,7 +3,7 @@ title: "Get citationTemplate"
 description: "Read the properties and relationships of a citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a [citationTemplate](../resources/security-citationtemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/citations/{citationTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/citations/c0475d01-d532-8a53-6e26-14ea58c640bf
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/security/labels/citations/{citationTemplate
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,13 +113,16 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.citationTemplate",
     "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
-    "displayName": "String",
+    "displayName": "Contoso Company Policy",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "citationUrl": "String",
-    "citationJurisdiction": "String"
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z",
+    "citationUrl": "www.citationUrl.com",
+    "citationJurisdiction": "Contoso"
   }
 }
 ```

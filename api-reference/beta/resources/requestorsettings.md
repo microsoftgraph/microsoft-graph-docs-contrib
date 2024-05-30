@@ -3,7 +3,7 @@ title: "requestorSettings complex type"
 description: "Used for the `requestorSettings` property of an access package assignment policy. Provides additional settings to select who can create a request."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

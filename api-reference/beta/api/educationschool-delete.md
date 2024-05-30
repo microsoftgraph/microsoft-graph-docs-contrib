@@ -3,7 +3,7 @@ title: "Delete educationSchool"
 description: "Delete a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /education/schools/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -42,7 +42,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10002
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

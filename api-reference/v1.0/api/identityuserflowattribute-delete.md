@@ -4,7 +4,7 @@ description: "Delete a custom identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete identityUserFlowAttribute
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /identity/userFlowAttributes/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

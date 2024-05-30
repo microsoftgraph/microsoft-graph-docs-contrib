@@ -3,7 +3,7 @@ title: "outlookTask: complete"
 description: "Complete an Outlook task which sets the **completedDateTime** property to the current date, "
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
@@ -63,7 +63,7 @@ The following example marks the specified task as complete. It specifies Pacific
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### Response
 
-Here is an example of the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.
+The following example shows the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

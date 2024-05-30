@@ -4,7 +4,7 @@ description: "Update the properties of a conditionalAccessPolicy object."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -44,12 +44,12 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 For the list of properties, see [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
@@ -78,7 +78,7 @@ Content-type: application/json
         "signInRiskLevels": [
             "high",
             "medium",
-            "low",
+            "low"
         ]
     }
 }

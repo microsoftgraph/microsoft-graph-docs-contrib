@@ -1,7 +1,7 @@
-﻿{
+{
   "changelog": [
     {
-      "ChangeList": [  
+      "ChangeList": [
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
@@ -25,7 +25,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [gcpAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/gcpAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
           "Target": "gcpAssociatedIdentities"
-        },   
+        },
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
@@ -33,7 +33,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [azureSource](https://learn.microsoft.com/en-us/graph/api/resources/azureSource?view=graph-rest-beta) resource type.",
           "Target": "azureSource"
-        },   
+        },
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",

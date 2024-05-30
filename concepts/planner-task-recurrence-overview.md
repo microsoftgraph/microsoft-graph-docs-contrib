@@ -3,7 +3,7 @@ title: "Configuring task recurrence in Planner (preview)"
 description: "Learn how to use recurrence with Planner tasks to automate the creation of repetitive tasks."
 author: "DavidMoksha"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: conceptualPageType
 ---
 
@@ -411,7 +411,7 @@ The following example request and response show how to set **percentComplete** t
 
 #### Request
 
-The following is an example of a request that is identical for a task with or without recurrence.
+The following example shows a request that is identical for a task with or without recurrence.
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV

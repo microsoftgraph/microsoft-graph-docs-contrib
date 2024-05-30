@@ -3,7 +3,7 @@ title: "Get schema"
 description: "Read the properties and relationships of a schema object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method does not support [OData query parameters](/graph/query-parameters) t
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

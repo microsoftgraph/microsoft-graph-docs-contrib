@@ -4,7 +4,7 @@ description: "Session control to enforce signin frequency."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -20,10 +20,10 @@ Session control to enforce sign-in frequency. Inherits from [conditionalAccessSe
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
-|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`. This property isn't required when using **frequencyInterval** with the value of `timeBased`. |
+|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`. Sign-in frequency of `everyTime` is available for risky users, risky sign-ins, Intune device enrollment, any application, authentication context, and user actions. For more information, see [Require reauthentication every time](https://aka.ms/RequireReauthentication). |
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is `everyTime` .|
+|type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if **frequencyInterval** is `everyTime` .|
 |value         |Int32        | The number of `days` or `hours`.|
 
 

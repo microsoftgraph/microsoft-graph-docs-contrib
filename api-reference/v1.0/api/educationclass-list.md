@@ -3,7 +3,7 @@ title: "List educationClasses"
 description: "Get a list of the educationClass objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ For more information on OData query options, see [OData query parameters](/graph
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

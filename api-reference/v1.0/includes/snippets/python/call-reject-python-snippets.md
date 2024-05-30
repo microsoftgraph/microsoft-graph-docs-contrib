@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.calls.item.reject.reject_post_request_body import RejectPostRequestBody
+from msgraph.generated.models.reject_reason import RejectReason
 
 graph_client = GraphServiceClient(credentials, scopes)
 

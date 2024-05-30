@@ -3,7 +3,7 @@ title: "device: delta"
 description: "Get created, updated, or deleted devices without performing a full read of the entire resource collection."
 ms.localizationpriority: medium
 author: "msdhou"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ This method supports OData query parameters to help customize the response.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

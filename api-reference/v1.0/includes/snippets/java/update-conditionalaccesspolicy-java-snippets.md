@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 ConditionalAccessConditionSet conditions = new ConditionalAccessConditionSet();
-LinkedList<RiskLevel> signInRiskLevelsList = new LinkedList<RiskLevel>();
-signInRiskLevelsList.add(RiskLevel.HIGH);
-signInRiskLevelsList.add(RiskLevel.MEDIUM);
-signInRiskLevelsList.add(RiskLevel.LOW);
-conditions.signInRiskLevels = signInRiskLevelsList;
-conditionalAccessPolicy.conditions = conditions;
+LinkedList<RiskLevel> signInRiskLevels = new LinkedList<RiskLevel>();
+signInRiskLevels.add(RiskLevel.High);
+signInRiskLevels.add(RiskLevel.Medium);
+signInRiskLevels.add(RiskLevel.Low);
+conditions.setSignInRiskLevels(signInRiskLevels);
+conditionalAccessPolicy.setConditions(conditions);
+ConditionalAccessPolicy result = graphClient.identity().conditionalAccess().policies().byConditionalAccessPolicyId("{conditionalAccessPolicy-id}").patch(conditionalAccessPolicy);
 
-graphClient.identity().conditionalAccess().policies("{id}")
-	.buildRequest()
-	.patch(conditionalAccessPolicy);
 
 ```

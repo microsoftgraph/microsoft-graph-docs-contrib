@@ -3,7 +3,7 @@ title: "message: createReplyAll"
 description: "Create a draft to reply to all recipients of a message in either JSON or MIME format"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft in JSON format to reply-all to an existing message
 The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,7 +132,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -155,7 +155,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "admin@contoso.onmicrosoft.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -163,13 +163,13 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       }
     },
     {
       "emailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@contoso.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       }
     }
   ]
@@ -191,7 +191,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

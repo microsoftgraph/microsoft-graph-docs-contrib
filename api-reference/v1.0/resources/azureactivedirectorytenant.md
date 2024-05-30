@@ -3,7 +3,7 @@ title: "azureActiveDirectoryTenant resource type"
 description: "The azureActiveDirectoryTenant type identifies another Microsoft Entra tenant as an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # azureActiveDirectoryTenant resource type

@@ -3,7 +3,7 @@ title: "yearTimePeriodDefinition resource type"
 description: "Represents annual time periods such as academic or fiscal years."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -19,11 +19,11 @@ Represents annual time periods such as academic or fiscal years. This resource a
 
 | Method                                                                                    | Return type                                                                                                  | Description                                                                                                             |
 | :---------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| [Create yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-post.md)   | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Create a new [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                               |
-| [List yearTimePeriodDefinitions](../api/industrydata-yeartimeperioddefinition-list.md)    | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) collection | Get a list of the [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) objects and their properties.    |
-| [Get yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-get.md)       | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Read the properties and relationships of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object. |
-| [Update yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-update.md) | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Update the properties of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                 |
-| [Delete yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-delete.md) | None                                                                                                         | Delete a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                                   |
+| [Create](../api/industrydata-yeartimeperioddefinition-post.md)   | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Create a new [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                               |
+| [List](../api/industrydata-yeartimeperioddefinition-list.md)    | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) collection | Get a list of the [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) objects and their properties.    |
+| [Get](../api/industrydata-yeartimeperioddefinition-get.md)       | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Read the properties and relationships of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object. |
+| [Update](../api/industrydata-yeartimeperioddefinition-update.md) | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Update the properties of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                 |
+| [Delete](../api/industrydata-yeartimeperioddefinition-delete.md) | None                                                                                                         | Delete a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                                   |
 
 ## Properties
 

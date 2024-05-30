@@ -3,7 +3,7 @@ title: "alertHistoryState resource type"
 description: "Stores changes made to alerts."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
