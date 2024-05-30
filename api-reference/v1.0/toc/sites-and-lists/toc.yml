@@ -169,9 +169,9 @@ items:
     href: ../../resources/richlongrunningoperation.md
   - name: Get
     href: ../../api/richlongrunningoperation-get.md
-- name: Sharepoint settings
+- name: SharePoint settings
   items:
-  - name: Sharepoint settings
+  - name: SharePoint settings
     href: ../../resources/sharepointsettings.md
   - name: Get
     href: ../../api/sharepointsettings-get.md
