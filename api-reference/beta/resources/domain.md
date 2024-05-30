@@ -33,17 +33,21 @@ To associate a domain with a tenant:
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get domain](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
-|[Create domain](../api/domain-post-domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
-|[List domains](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
+|[List](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
+|[Create](../api/domain-post-domains.md) | [domain](domain.md) | Add a domain to the tenant. |
+|[Get](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
+|[Update](../api/domain-update.md) | [domain](domain.md) |Update a domain.|
+|[Delete](../api/domain-delete.md) | None |Delete a domain.|
 |[List domain name references](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
 |[List service configuration records](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
 |[List verification DNS records](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
-|[Update domain](../api/domain-update.md) | [domain](domain.md) |Updates a domain.|
-|[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
-|[Force delete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
-|[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
-|[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
+|[List domain name reference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
+|[List service configuration records](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
+|[List verification DNS records](../api/domain-list-verificationdnsrecords.md) |
+|[Get root domain](../api/domain-list-rootdomain.md) |  Get the root domain of a subdomain. |
+|[Promote](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
+|[Force delete](../api/domain-forcedelete.md)|None|Delete a domain by using an asynchronous operation.|
+|[Verify](../api/domain-verify.md)|[domain](domain.md)|Validate the ownership of the domain.|
 
 ## Properties
 
@@ -72,6 +76,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Supports `$expand`.|
 |federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Supports `$expand`.|
+|rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
