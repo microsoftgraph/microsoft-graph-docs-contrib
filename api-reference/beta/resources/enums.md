@@ -3156,9 +3156,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|
 |:---|
-|file|
-|folder|
-|unknownFutureValue|
+|File|
+|Folder|
+|UnknownFutureValue|
 
 ### connectedOrganizationState values
 
