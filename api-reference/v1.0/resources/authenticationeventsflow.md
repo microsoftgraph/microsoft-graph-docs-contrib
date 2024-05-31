@@ -22,7 +22,6 @@ This resource is an abstract type from which the [externalUsersSelfServiceSignUp
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties. Only objects of the [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) subtype are available.|
