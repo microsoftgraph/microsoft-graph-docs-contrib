@@ -35,6 +35,15 @@ Namespace: microsoft.graph
 | active             |
 | unknownfuturevalue |
 
+## siteLockState enumeration
+
+| Value         | Description
+|:--------------|:-----------------------------------------------
+| unlocked      | Unlocked
+| lockedReadOnly | Read-only. No additions or deletions allowed
+| lockedNoAccess | Read and write is disallowed
+
+
 ### userDefaultAuthenticationMethod values
 
 | Member             |
