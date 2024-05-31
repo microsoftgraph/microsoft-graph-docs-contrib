@@ -122,23 +122,23 @@ items:
       href: ../../api/cloudpc-createsnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Bulk reprovision remote action
+    - name: Bulk reprovision remote action (deprecated)
       href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Bulk resize
+    - name: Bulk resize (deprecated)
       href: ../../api/cloudpc-bulkresize.md
-    - name: Bulk restore remote action
+    - name: Bulk restore remote action (deprecated)
       href: ../../api/manageddevice-bulkrestorecloudpc.md
-    - name: Get review status
+    - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Get shift work access state
+    - name: Get shift work access state (deprecated)
       href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
-    - name: Reprovision remote action
+    - name: Reprovision remote action (deprecated)
       href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action
+    - name: Resize remote action (deprecated)
       href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action
+    - name: Restore remote action (deprecated)
       href: ../../api/manageddevice-restorecloudpc.md
-    - name: Set review status
+    - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
