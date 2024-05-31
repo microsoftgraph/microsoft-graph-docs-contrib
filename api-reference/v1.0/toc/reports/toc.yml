@@ -9,7 +9,7 @@ items:
         items:
         - name: Relying party detailed summary
           href: ../../resources/relyingpartydetailedsummary.md
-        - name: List relyingPartyDetailedSummary
+        - name: Get relying party detailed summary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
     - name: Registration and usage
       items:
@@ -19,21 +19,21 @@ items:
         items:
         - name: User registration details
           href: ../../resources/userregistrationdetails.md
-        - name: List userRegistrationDetails
+        - name: List
           href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
-        - name: Get userRegistrationDetails
+        - name: Get
           href: ../../api/userregistrationdetails-get.md
       - name: User registration feature summary
         items:
         - name: User registration feature summary
           href: ../../resources/userregistrationfeaturesummary.md
-        - name: usersRegisteredByFeature
+        - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
       - name: User registration method summary
         items:
         - name: User registration method summary
           href: ../../resources/userregistrationmethodsummary.md
-        - name: usersRegisteredByMethod
+        - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
   - name: Microsoft Entra audit logs
     items:
@@ -43,23 +43,23 @@ items:
       items:
       - name: Directory audit
         href: ../../resources/directoryaudit.md
-      - name: List directoryAudits
+      - name: List
         href: ../../api/directoryaudit-list.md
-      - name: Get directoryAudit
+      - name: Get
         href: ../../api/directoryaudit-get.md
     - name: Sign in
       items:
       - name: Sign in
         href: ../../resources/signin.md
-      - name: List signIn
+      - name: List
         href: ../../api/signin-list.md
-      - name: Get signIn
+      - name: Get
         href: ../../api/signin-get.md
     - name: Provisioning object summary
       items:
       - name: Provisioning object summary
         href: ../../resources/provisioningobjectsummary.md
-      - name: List provisioningObjectSummary
+      - name: List
         href: ../../api/provisioningobjectsummary-list.md
 - name: Microsoft 365 usage reports
   items:
@@ -293,29 +293,29 @@ items:
     items:
     - name: Billed reconciliation
       href: ../../resources/partners-billing-billedreconciliation.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-billedreconciliation-export.md
   - name: Billed usage
     items:
     - name: Billed usage
       href: ../../resources/partners-billing-billedusage.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-billedusage-export.md
   - name: Manifest
     items:
     - name: Manifest
       href: ../../resources/partners-billing-manifest.md
-    - name: Get manifest
+    - name: Get
       href: ../../api/partners-billing-manifest-get.md
   - name: Operation
     items:
     - name: Operation
       href: ../../resources/partners-billing-operation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/partners-billing-operation-get.md
   - name: Unbilled usage
     items:
     - name: Unbilled usage
       href: ../../resources/partners-billing-unbilledusage.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-unbilledusage-export.md

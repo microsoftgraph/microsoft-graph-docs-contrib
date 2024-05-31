@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Teamwork\Devices\Item\UpdateSoftware\UpdateSoftwarePostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\SoftwareType;
+use Microsoft\Graph\Beta\Generated\Teamwork\Devices\Item\UpdateSoftware\UpdateSoftwarePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkSoftwareType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

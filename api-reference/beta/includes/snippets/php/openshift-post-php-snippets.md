@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Teams\Item\Schedule\OpenShifts\OpenShiftsRequestBuilderPostRequestConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\OpenShift;
 use Microsoft\Graph\Beta\Generated\Models\OpenShiftItem;
-use Microsoft\Graph\Beta\Generated\Models\Theme;
+use Microsoft\Graph\Beta\Generated\Models\ScheduleEntityTheme;
 use Microsoft\Graph\Beta\Generated\Models\ShiftActivity;
 use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;

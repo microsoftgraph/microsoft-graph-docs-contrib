@@ -11,7 +11,7 @@ use Microsoft\Graph\Generated\Models\AccessReviewScope;
 use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
 use Microsoft\Graph\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Generated\Models\RecurrenceRange;
-use Microsoft\Graph\Generated\Models\Type;
+use Microsoft\Graph\Generated\Models\RecurrenceRangeType;
 use Microsoft\Kiota\Abstractions\Types\Date;
 
 

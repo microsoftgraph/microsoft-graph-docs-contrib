@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Call;
-use Microsoft\Graph\Beta\Generated\Models\Direction;
+use Microsoft\Graph\Beta\Generated\Models\CallDirection;
 use Microsoft\Graph\Beta\Generated\Models\Modality;
 use Microsoft\Graph\Beta\Generated\Models\AppHostedMediaConfig;
 use Microsoft\Graph\Beta\Generated\Models\ChatInfo;

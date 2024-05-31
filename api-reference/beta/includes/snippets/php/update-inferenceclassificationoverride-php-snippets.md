@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\InferenceClassificationOverride;
-use Microsoft\Graph\Beta\Generated\Models\ClassifyAs;
+use Microsoft\Graph\Beta\Generated\Models\InferenceClassificationType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\RemoteNetwork
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RemoteNetwork;
 use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Region;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\ForwardingProfile
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\ForwardingProfile;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

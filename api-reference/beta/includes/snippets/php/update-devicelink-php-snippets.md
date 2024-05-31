@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\DeviceLink
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\DeviceLink;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
