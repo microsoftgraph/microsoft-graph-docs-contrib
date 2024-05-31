@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\FileAssessmentRequest;
-use Microsoft\Graph\Beta\Generated\Models\ExpectedAssessment;
-use Microsoft\Graph\Beta\Generated\Models\Category;
+use Microsoft\Graph\Beta\Generated\Models\ThreatExpectedAssessment;
+use Microsoft\Graph\Beta\Generated\Models\ThreatCategory;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

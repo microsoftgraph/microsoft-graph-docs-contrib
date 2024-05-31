@@ -51,13 +51,13 @@ items:
     href: ../../api/list-get.md
   - name: Create list
     href: ../../api/list-create.md
-  - name: Enumerate list items
+  - name: Get items
     href: ../../api/listitem-list.md
-  - name: Update list item
+  - name: Update
     href: ../../api/listitem-update.md
-  - name: Delete list item
+  - name: Delete
     href: ../../api/listitem-delete.md
-  - name: Create list item
+  - name: Create item
     href: ../../api/listitem-create.md
   - name: Get websocket endpoint
     href: ../../api/subscriptions-socketio.md
@@ -141,11 +141,11 @@ items:
     href: ../../api/listitem-update.md
   - name: Update column values
     href: ../../api/listitem-update.md
-  - name: List documentSetVersions
+  - name: List
     href: ../../api/listitem-list-documentsetversions.md
-  - name: Create documentSetVersion
+  - name: Create
     href: ../../api/listitem-post-documentsetversions.md
-  - name: Restore documentSetVersion
+  - name: Restore
     href: ../../api/documentsetversion-restore.md
   - name: Get delta
     href: ../../api/listitem-delta.md
@@ -153,29 +153,29 @@ items:
   items:
   - name: Document set version
     href: ../../resources/documentsetversion.md
-  - name: List documentSetVersions
+  - name: List
     href: ../../api/listitem-list-documentsetversions.md
-  - name: Create documentSetVersion
+  - name: Create
     href: ../../api/listitem-post-documentsetversions.md
-  - name: Get documentSetVersion
+  - name: Get
     href: ../../api/documentsetversion-get.md
-  - name: Delete documentSetVersion
+  - name: Delete
     href: ../../api/documentsetversion-delete.md
-  - name: restore
+  - name: Restore
     href: ../../api/documentsetversion-restore.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
     href: ../../resources/richlongrunningoperation.md
-  - name: Get richLongRunningOperation
+  - name: Get
     href: ../../api/richlongrunningoperation-get.md
-- name: Sharepoint settings
+- name: SharePoint settings
   items:
-  - name: Sharepoint settings
+  - name: SharePoint settings
     href: ../../resources/sharepointsettings.md
-  - name: Get settings
+  - name: Get
     href: ../../api/sharepointsettings-get.md
-  - name: Update settings
+  - name: Update
     href: ../../api/sharepointsettings-update.md
 - name: Taxonomy
   items:
@@ -183,21 +183,21 @@ items:
     items:
     - name: Store
       href: ../../resources/termstore-store.md
-    - name: List groups
+    - name: List
       href: ../../api/termstore-list-groups.md
-    - name: Get store
+    - name: Get
       href: ../../api/termstore-store-get.md
-    - name: Update store
+    - name: Update
       href: ../../api/termstore-store-update.md
   - name: Group
     items:
     - name: Group
       href: ../../resources/termstore-group.md
-    - name: Create group
+    - name: Create
       href: ../../api/termstore-group-post.md
-    - name: Get group
+    - name: Get
       href: ../../api/termstore-group-get.md
-    - name: Delete group
+    - name: Delete
       href: ../../api/termstore-group-delete.md
   - name: Set
     items:
@@ -239,7 +239,7 @@ items:
     items:
     - name: Relation
       href: ../../resources/termstore-relation.md
-    - name: List relations
+    - name: List
       href: ../../api/termstore-term-list-relations.md
-    - name: Create relation
+    - name: Create
       href: ../../api/termstore-relation-post.md

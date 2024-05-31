@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\FilteringPolicy
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\PolicyRule
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\WebCategoryFilteringRule
-use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RuleType;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\RuleDestination
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Networkaccess\WebCategory
-use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Action;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\FilteringPolicy;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\PolicyRule;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\WebCategoryFilteringRule;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\NetworkDestinationType;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RuleDestination;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\WebCategory;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\FilteringPolicyAction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

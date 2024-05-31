@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventthiscancel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventtownhallcancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

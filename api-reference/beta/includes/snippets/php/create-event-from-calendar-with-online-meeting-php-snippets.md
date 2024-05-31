@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Event;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Beta\Generated\Models\Location;
 use Microsoft\Graph\Beta\Generated\Models\Attendee;
 use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
-use Microsoft\Graph\Beta\Generated\Models\Type;
-use Microsoft\Graph\Beta\Generated\Models\OnlineMeetingProvider;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
+use Microsoft\Graph\Beta\Generated\Models\OnlineMeetingProviderType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

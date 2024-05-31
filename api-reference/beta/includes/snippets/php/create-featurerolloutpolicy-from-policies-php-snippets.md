@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\FeatureRolloutPolicy;
-use Microsoft\Graph\Beta\Generated\Models\Feature;
+use Microsoft\Graph\Beta\Generated\Models\StagedFeatureName;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

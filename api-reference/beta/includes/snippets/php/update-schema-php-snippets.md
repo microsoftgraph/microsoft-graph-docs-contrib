@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\Schema
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\Property
-use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Type;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\ExternalConnectors\Label
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Schema;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Property;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\PropertyType;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Label;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
