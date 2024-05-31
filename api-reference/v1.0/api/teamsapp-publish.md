@@ -388,10 +388,10 @@ Content-type: application/json
 |`ApiSpecificationFileServerUrlsContainHttp`| Api based compose extension have server urls that have http protocal defined on apiSpecificationFile.| The API-based compose extension have server urls that contain `http` protocal in the `apiSpecificationFile`.|
 |`ApiSpecificationFileServerUrlsContainInvalidUrl`| Api based compose extension have server urls that are invalid url defined on apiSpecificationFile.| The API-based compose extension have `invalid` url defined in the `apiSpecificationFile`.|
 |`ServerUrlsMissingOnApiSpecificationFile`| Api based compose extension have no server urls defined on apiSpecificationFile.| The error that occurs The API-based compose extension have no server urls defined in the `apiSpecificationFile`.|
-|`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension cannot have apiResponseRenderingTemplateFile defined.|The error that occurs when the bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
-|`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension cannot have apiSpecificationFile defined.|The error that occurs when the bot-based compose extension have API specification file defined in the app manifest.|
-|`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The error that occurs when the bot-based compose extension have no GUID botId.|
-|`CommonAppIdIsNotGuid`| Field 'id' is not a Guid in the manifest.| When the `appId` is not GUID.|
+|`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension cannot have apiResponseRenderingTemplateFile defined.|The bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
+|`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension cannot have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
+|`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
+|`CommonAppIdIsNotGuid`| Field 'id' is not a Guid in the manifest.| When the `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'id' is missing in the manifest.| When the `appId` isn't provided.|
 |`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
 |`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| When schema isn't provided.|
@@ -399,18 +399,18 @@ Content-type: application/json
 |`DashboardCardEntityIdsAreNotUnique`| Dashboard card entity ids should be unique.| Entity Ids for dashboards card aren't unique.|
 |`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| Developer name isn't provided.|
 |`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| Developer name length is more than 32 characters.|
-|`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| When the `privacyUrl` is missing in the app manifest. |
+|`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| When the developer privacy url isn't `https`.|
-|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| When the `termsOfUseUrl` is missing.|
+|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The `termsOfUseUrl` is missing.|
 |`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| When the developer terms of use url isn't `https`.|
-|`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| When the developer website url isn't provided.|
+|`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website url is missing.|
 |`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| When the developer website url isn't `https`.|
 |`UniqueActivityTypeInActivitiesValidation` |Manifest should not contain duplicate Activity Type.| When the activity type isn't unique in the app manifest.|
 |`UniqueIdInActivitiesGroupValidation` |Manifest should not contain duplicate id in Activity Groups.| When the activity group id isn't unique in the app manifest.|
-|`FullDescriptionCannotBeEmpty` |Full Description cannot be empty.| The full description can't be empty.|
-|`FullDescriptionLengthCheck`| Maximum character length for long description must not exceed 4000 chars.| The full description length exceeds more than 4000 characters.|
-|`GroupChatForBotsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat bot is supported in manifest v1.3 onwards.| The error that occurs when the group chat exists in bots for the app manifest version less than 1.3.|
-|`GroupChatForConfigurableTabsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat configurable tabs is supported in manifest v1.3 onwards.|The error which occurs when the group chat exists in configurable tabs in the app manifest version less than 1.3.|
+|`FullDescriptionCannotBeEmpty` |Full Description cannot be empty.| The full description is empty.|
+|`FullDescriptionLengthCheck`| Maximum character length for long description must not exceed 4000 chars.| The full description length is more than 4000 characters.|
+|`GroupChatForBotsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat bot is supported in manifest v1.3 onwards.| The `groupChat` scope for bots isn't supported in the app manifest version 1.3 and below.|
+|`GroupChatForConfigurableTabsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat configurable tabs is supported in manifest v1.3 onwards.|The `groupChat` scope for configurable tabs isn't supported in the app manifest version 1.3 and below.|
 |`InvalidColor32x32IconHeightAndWidth`|Color 32x32 icon should be 32x32 with only white and transparent.| The color 32x32 icon doesn't have the correct dimensions.|
 |`InvalidColorIconHeightAndWidth`| Color Icon is not as per the required dimension.| The color icon doesn't have the correct dimensions.|
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The outline icon doesn't have the correct dimensions.|
@@ -421,12 +421,12 @@ Content-type: application/json
 |`ShortDescriptionCannotBeEmpty`| Short Description can not be empty| The short description can't be empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description length exceeds 80 characters.|
 |`ShortNameEqualsReservedName`|Short name of the app cannot be reserved name.| When the short name is reserved name.|
-|`ShortNameIsRequiredField`| Short name of the app cannot be empty.| When the short name is empty.|
-|`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property cannot be empty.| This message appears when the `staticTabs` name property is empty.|
+|`ShortNameIsRequiredField`| Short name of the app cannot be empty.| The short name is empty.|
+|`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property cannot be empty.| The `staticTabs` name property is empty.|
 |`BotIdIsNotGuid`| BotId is not a Guid value.| The `BotId` isn't GUID in the app manifest.|
 |`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The version in the app package is `null`.|
 |`VersionContainsOnlyNumbersDotSeparated`| App version supports only numbers in the '#.#.#' format.| The version in the app package doesn't match pattern `#.#.#`.|
-|`VersionHasMajorLessThan1`|App version should not start with '0'. Ex: 0.0.1 or 0.1 are not valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | App version is less than 1.0. You need to increase your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
+|`VersionHasMajorLessThan1`|App version should not start with '0'. Ex: 0.0.1 or 0.1 are not valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | App version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
 |`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 32 characters.|
 |`ApiSpecificationFileParameterContainUnsupportedSchemaType` |Api based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays are not supported.|The API-based compose extension have unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
