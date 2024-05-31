@@ -22,7 +22,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "statusDetails",
         "ChangeType": "Deprecation",
-        "Description": "Deprecated the `statusDetails` property to **cloudPc**.",
+        "Description": "Deprecated the `statusDetails` property on the **cloudPc** resource.",
         "Target": "cloudPc"
       },
       {
@@ -46,7 +46,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "statusDetails",
         "ChangeType": "Deprecation",
-        "Description": "Deprecated the `statusDetails` property to **cloudPcRemoteActionResult**.",
+        "Description": "Deprecated the `statusDetails` property on the **cloudPcRemoteActionResult** resource.",
         "Target": "cloudPcRemoteActionResult"
       },
       {
@@ -86,7 +86,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "cloudPcConnectivityResult",
         "ChangeType": "Deprecation",
-        "Description": "Deprecated the `updatedDateTime` member to the **cloudPcConnectivityResult** enumeration.",
+        "Description": "Deprecated the `updatedDateTime` member on the **cloudPcConnectivityResult** enumeration.",
         "Target": "cloudPcConnectivityResult"
       }
     ],
