@@ -99,7 +99,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster",
-  "id": "6519868f-868f-6519-8f86-19658f861965"
+  "id": "6519868f-868f-6519-8f86-19658f861965",
+  "assignedSensitivityLabel": "#microsoft.graph.sensitivityLabelAssignment"
 }
 ```
 

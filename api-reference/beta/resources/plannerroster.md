@@ -60,7 +60,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerRoster",
-  "assignedSensitivityLabel": "String",
+  "assignedSensitivityLabel": "#microsoft.graph.sensitivityLabelAssignment",
   "id": "String (identifier)"
 }
 ```
