@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: "Linked applications"
 ---
 
 # authenticationConditionApplication resource type
