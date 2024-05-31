@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: bulkReprovisionCloudPc (deprecate)"
+title: "managedDevice: bulkReprovisionCloudPc (deprecated)"
 description: "Bulk reprovision a set of Cloud PC devices with Intune managed device IDs."
 author: "RuiHou105"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkReprovisionCloudPc (deprecate)
+# managedDevice: bulkReprovisionCloudPc (deprecated)
 
 Namespace: microsoft.graph
 
