@@ -3,7 +3,7 @@ title: "cloudPC: setReviewStatus"
 description: "Set the review status of a specific Cloud PC device using the Cloud PC ID."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
