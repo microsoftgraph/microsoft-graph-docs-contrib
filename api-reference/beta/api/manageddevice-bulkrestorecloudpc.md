@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: bulkRestoreCloudPc (deprecate)"
+title: "managedDevice: bulkRestoreCloudPc (deprecated)"
 description: "Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkRestoreCloudPc (deprecate)
+# managedDevice: bulkRestoreCloudPc (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
