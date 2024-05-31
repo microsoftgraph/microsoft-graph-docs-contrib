@@ -72,13 +72,13 @@ The following example shows a request.
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/planner/rosters/{rosterId}/assignSensitivityLabel
+POST https://graph.microsoft.com/beta/planner/rosters/3e34de02-b01d-423b-b2ae-ca0ccd1fab05/assignSensitivityLabel
 Content-type: application/json
-If-Match: "string"
+If-Match: 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 {
-    "assignmentMethod" : "microsoft.graph.sensitivityLabelAssignmentMethod",
-    "sensitivityLabelId": "string"
+    "assignmentMethod" : "standard",
+    "sensitivityLabelId": "7a4d7cc1-f72b-46a3-9831-02680eaf56f9"
 }
 ```
 
@@ -100,7 +100,11 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.plannerRoster",
   "id": "6519868f-868f-6519-8f86-19658f861965",
-  "assignedSensitivityLabel": "#microsoft.graph.sensitivityLabelAssignment"
+  "assignedSensitivityLabel": {
+      "assignmentMethod" : "standard",
+      "sensitivityLabelId": "720b42d7-d945-46cd-81f8-8dd825d01960",
+      "tenantId": "88397d78-d160-4545-a01f-cceda28d3fe3"
+  }
 }
 ```
 
