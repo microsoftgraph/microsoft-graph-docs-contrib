@@ -2260,18 +2260,16 @@ items:
           href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
     - name: External users self service sign up events flow
       href: ../../resources/externalusersselfservicesignupeventsflow.md
-    - name: Linked applications
+    - name: Authentication condition application
       items:
       - name: Authentication condition application
-        items:
-        - name: Authentication condition application
-          href: ../../resources/authenticationconditionapplication.md
-        - name: List
-          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-        - name: Add
-          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-        - name: Remove
-          href: ../../api/authenticationconditionapplication-delete.md
+        href: ../../resources/authenticationconditionapplication.md
+      - name: List
+        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+      - name: Add
+        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+      - name: Remove
+        href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants
     items:
     - name: B2X identity user flow
