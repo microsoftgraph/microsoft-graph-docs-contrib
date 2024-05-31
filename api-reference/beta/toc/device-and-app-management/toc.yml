@@ -90,10 +90,8 @@ items:
       href: ../../api/cloudpc-rename.md
     - name: Reprovision
       href: ../../api/cloudpc-reprovision.md
-    - name: Bulk reprovision remote action
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Resize remote action
-      href: ../../api/manageddevice-resizecloudpc.md
+    - name: Resize
+      href: ../../api/cloudpc-resize.md
     - name: Start
       href: ../../api/cloudpc-start.md
     - name: Stop
@@ -102,12 +100,10 @@ items:
       href: ../../api/cloudpc-troubleshoot.md
     - name: Restore
       href: ../../api/cloudpc-restore.md
-    - name: Bulk restore remote action
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
     - name: Set review status
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Get review status
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
+      href: ../../microsoft-graph-docs/..\api\cloudpc-setreviewstatus.md
+    - name: Retrieve review status
+      href: ../../microsoft-graph-docs/..\api\cloudpc-retrievereviewstatus.md
     - name: Bulk set review status
       href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
@@ -120,18 +116,30 @@ items:
       href: ../../api/cloudpc-getsupportedcloudpcremoteactions.md
     - name: Retry partner agent installation
       href: ../../api/cloudpc-retrypartneragentinstallation.md
-    - name: Bulk resize
-      href: ../../api/cloudpc-retrypartneragentinstallation.md
     - name: Validate bulk resize
       href: ../../api/cloudpc-validatebulkresize.md
+    - name: Create snapshot
+      href: ../../api/cloudpc-createsnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Bulk reprovision remote action
+      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
+    - name: Bulk resize
+      href: ../../api/cloudpc-bulkresize.md
+    - name: Bulk restore remote action
+      href: ../../api/manageddevice-bulkrestorecloudpc.md
+    - name: Get review status
+      href: ../../api/manageddevice-getcloudpcreviewstatus.md
     - name: Get shift work access state
       href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
     - name: Reprovision remote action
       href: ../../api/manageddevice-reprovisioncloudpc.md
+    - name: Resize remote action
+      href: ../../api/manageddevice-resizecloudpc.md
     - name: Restore remote action
       href: ../../api/manageddevice-restorecloudpc.md
+    - name: Set review status
+      href: ../../api/manageddevice-setcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event

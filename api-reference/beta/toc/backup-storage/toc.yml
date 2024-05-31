@@ -132,7 +132,7 @@ items:
   - name: List
     href: ../../api/backuprestoreroot-list-serviceapps.md
   - name: Create
-    href: ../../api/backuprestoreroot-post-sharepointprotectionpolicies.md
+    href: ../../api/backuprestoreroot-post-serviceapps.md
   - name: Get
     href: ../../api/serviceapp-get.md
   - name: Delete
