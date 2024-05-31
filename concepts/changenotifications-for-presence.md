@@ -14,8 +14,7 @@ Change notifications in Microsoft Graph enable you to subscribe to changes in [u
 Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview).
 
 > [!NOTE]
-> As of June 30th 2024, to get
-changes that occurred to a user's presence, it's recommended to either use [rich presence notifications](#rich-presence-notifications) or use [basic presence notifications](#basic-presence-notifications) with a follow up call to [GET presence API](/graph/api/presence-get).
+> Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
 
 ## Permissions
 
