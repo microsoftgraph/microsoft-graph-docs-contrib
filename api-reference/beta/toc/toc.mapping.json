@@ -2424,6 +2424,14 @@
           ],
           "childNodes": [
             {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
+            {
               "name": "Web part",
               "resources": [
                 "textWebPart",
