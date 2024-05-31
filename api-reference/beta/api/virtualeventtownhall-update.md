@@ -55,6 +55,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 | displayName | String | Display name of the virtual event. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| isAttendeeEmailNotificationEnabled | Boolean | [PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.] |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
@@ -163,6 +164,7 @@ Content-Type: application/json
     }
   },
   "audience": "organization",
+  "isAttendeeEmailNotificationEnabled": false,
   "isInviteOnly": false,  
   "coOrganizers": [
     {
