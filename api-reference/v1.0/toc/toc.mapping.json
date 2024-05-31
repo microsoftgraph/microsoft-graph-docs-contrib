@@ -5,15 +5,6 @@
       "overview": "../../resources/users.md",
       "resources": [
         "user"
-      ],
-      "childNodes": [
-        {
-          "name": "Insights",
-          "resources": [
-            "officeGraphInsights",
-            "userSettings"
-          ]
-        }
       ]
     },
     {
