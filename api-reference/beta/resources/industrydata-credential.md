@@ -20,7 +20,7 @@ Base type for all kinds of credentials supported in the industryData API. This i
 |:---|:---|:---|
 | displayName       | String         | The name of the credential.                                                           |
 | isValid           | Boolean        | Denotes if the credential provided is usable based on the last successful validation. |
-| lastValidDateTime | DateTimeOffset | Time the credential was last successfully validated.                                  |
+| lastValidDateTime | DateTimeOffset | The most recent time that the credential was successfully validated.                                  |
 
 ## Relationships
 None.

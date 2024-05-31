@@ -1,6 +1,6 @@
 ---
 title: "Delete referenceDefinition"
-description: "Soft Delete a microsoft.graph.industryData.referenceDefinition object."
+description: "Perform a soft delete of a referenceDefinition object."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"

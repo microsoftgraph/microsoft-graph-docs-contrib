@@ -1,6 +1,6 @@
 ---
 title: "Create referenceDefinition"
-description: "Create a new microsoft.graph.industryData.referenceDefinition object."
+description: "Create a new referenceDefinition object."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"

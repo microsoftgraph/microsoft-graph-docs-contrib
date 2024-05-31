@@ -1,6 +1,6 @@
 ---
 title: "Update referenceDefinition"
-description: "Update the properties of a microsoft.graph.industryData.referenceDefinition object."
+description: "Update the properties of a referenceDefinition object."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"

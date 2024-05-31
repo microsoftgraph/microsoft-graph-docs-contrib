@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 |Property|Type|Description|
 |:---|:---|:---|
 | apiFormat             | microsoft.graph.industryData.apiFormat                                             | API format of external systems that the industryDataHub can connect to. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).The possible values are: `oneRoster`, `unknownFutureValue`.           |
-| apiVersion            | String                                                                             | Represents the API version of the OneRoster source. Example: 1.1, 1.2                                                                                                                                                                                       |
+| apiVersion            | String                                                                             | The API version of the OneRoster source. Example: 1.1, 1.2                                                                                                                                                                                       |
 | baseUrl               | String                                                                             | The base URL including the scheme, host, and path for the API (with or without a trailing '/'). Example: https://example.com/ims/oneRoster/. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md). |
 | credential            | [microsoft.graph.industryData.credential](industrydata-credential.md) | Base type for all kinds of credentials supported in the industryData API. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).                                                                    |
 | displayName           | String                                                                             | Name of the data connector. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).                                                                                                        |
@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** that this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

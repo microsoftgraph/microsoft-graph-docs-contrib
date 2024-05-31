@@ -15,7 +15,6 @@ Namespace: microsoft.graph.industryData
 
 Represents a flow to import data via an external API into the canonical store.
 
-
 Inherits from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md).
 
 ## Methods
@@ -28,11 +27,11 @@ Inherits from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| dataDomain         | microsoft.graph.industryData.inboundDomain   | The broad category of data that this flow imports. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md).The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                     |
+| dataDomain         | microsoft.graph.industryData.inboundDomain   | The category of data that this flow imports. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md).The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                     |
 | displayName        | String                                       | The name of the activity. Inherited from [microsoft.graph.industryData.industryDataActivity](industrydata-industrydataactivity.md).                                                                                                                                                                                                |
-| effectiveDateTime  | DateTimeOffset                               | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md). |
+| effectiveDateTime  | DateTimeOffset                               | The first time when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md). |
 | expirationDateTime | DateTimeOffset                               | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md).   |
-| readinessStatus    | microsoft.graph.industryData.readinessStatus | The state of the activity from creation through to ready to do work. Inherited from [microsoft.graph.industryData.industryDataActivity](industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`.                                                 |
+| readinessStatus    | microsoft.graph.industryData.readinessStatus | The state of the activity from its creation through when it is ready to do work. Inherited from [microsoft.graph.industryData.industryDataActivity](industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`.                                                 |
 
 ## Relationships
 |Relationship|Type|Description|

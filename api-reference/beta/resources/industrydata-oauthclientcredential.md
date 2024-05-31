@@ -1,6 +1,6 @@
 ---
 title: "oAuthClientCredential resource type"
-description: "Base abstract type for credentials using one of the OAuth versions and flows to authenticate to a resource."
+description: "Represents a base type for credentials that use one of the OAuth versions and flows to authenticate to a resource."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"

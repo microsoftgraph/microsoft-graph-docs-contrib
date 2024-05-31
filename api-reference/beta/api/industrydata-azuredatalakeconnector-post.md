@@ -51,7 +51,7 @@ You can specify the following properties when you create an **azureDataLakeConne
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
 | displayName | String | The name of the data connector. Required. |
-| fileFormat  | [microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md) | A pointer to a file format entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Optional. |
+| fileFormat  | [microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md) | A reference to a file format entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Optional. |
 
 ## Response
 
