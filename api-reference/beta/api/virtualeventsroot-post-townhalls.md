@@ -59,6 +59,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| isAttendeeEmailNotificationEnabled | Boolean | [PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.] |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
@@ -100,7 +101,8 @@ Content-Type: application/json
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "isAttendeeEmailNotificationEnabled": false,
 }
 ```
 
@@ -162,6 +164,7 @@ Content-Type: application/json
       }
     ],
     "invitedAttendees": [],
+    "isAttendeeEmailNotificationEnabled": false,
     "isInviteOnly": false
 }
 ```
