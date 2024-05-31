@@ -1506,9 +1506,15 @@
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
-                "authenticationConditionApplication"
+                "externalUsersSelfServiceSignUpEventsFlow"
+              ],
+              "childNodes": [
+                {
+                  "name": "Linked applications",
+                  "resources": [
+                    "authenticationConditionApplication"
+                  ]
+                }
               ]
             }
           ]
