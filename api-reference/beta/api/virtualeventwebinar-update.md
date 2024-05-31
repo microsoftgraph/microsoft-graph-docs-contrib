@@ -144,7 +144,6 @@ Content-Type: application/json
     "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.<p>",
     "contentType": "html"
   },
-  "isAttendeeEmailNotificationEnabled": false,
   "startDateTime": {
     "dateTime": "2024-03-31T10:00:00",
     "timeZone": "Pacific Standard Time"
@@ -170,6 +169,7 @@ Content-Type: application/json
       "displayName": "Kenneth Brown",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
-  ]
+  ],
+  "isAttendeeEmailNotificationEnabled": false
 }
 ```
