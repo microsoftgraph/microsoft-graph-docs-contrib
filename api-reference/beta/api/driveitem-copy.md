@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name.
+Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name. Once the request is acknowledged, it enters a queue. The actual copying, including any subitems, occurs at an undetermined time. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,7 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-copy-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
-[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +47,9 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
->**Note:** The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
+
+>[!Note]
+>The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 
 ## Request body
 
@@ -58,13 +59,20 @@ In the request body, provide a JSON object with the following parameters.
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
-| childrenOnly    | Boolean                                        | Optional. Default is `false`. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. Valid on folder items. |
+| childrenOnly    | Boolean                                        | Optional. Default is false. If set to true, the children of the **driveItem** are copied but not the **driveItem** itself. Valid ONLY on folder items. |
 
->**Note:** The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
+
+>[!Note]
+>
+>The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
+>
+>In a single request `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information on [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
 ## Response
 
 Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
+
+The response from the API indicates that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
 
 ## Examples
 
@@ -134,15 +142,11 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-The value of the `Location` header provides a URL for a service that returns the current state of the copy operation.
-You can use this information to [determine when the copy finished](/graph/long-running-actions-overview).
-
-
 
 ### Example 2: Copy the children in a folder
 
 The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The new copy of the file is named `contoso plan (copy).txt`. The `childrenOnly` Boolean parameter is set to `true`.
+The `childrenOnly` parameter is set to true.
 
 #### Request 
 # [HTTP](#tab/http)
@@ -157,7 +161,6 @@ Content-Type: application/json
     "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
-  "name": "contoso plan (copy).txt",
   "childrenOnly": true
 }
 ```
@@ -205,13 +208,280 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-The value of the `Location` header provides a URL for a service that returns the current state of the copy operation.
-You can use this information to [determine when the copy finished](/graph/long-running-actions-overview).
+Monitoring is important because the copy operation with childrenOnly occurs across multiple operations.
 
-### Remarks
+### Example 3: Copy the children in a folder with name conflict
 
-In many cases, the copy action is performed asynchronously.
-The response from the API indicates that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The destination already has the name. The operation is accepted but it encounters a failure during processing.
+
+#### Request
+<!-- { "blockType": "request", "name": "copy-item-3", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+```
+
+Follow the monitor url
+```http
+{
+  "id": "46cf980a-28e1-4623-b8d0-11fc5278efe6",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastActionDateTime": "0001-01-01T00:00:00Z",
+  "status": "failed",
+  "error": {
+    "code": "nameAlreadyExists",
+    "message": "Name already exists"
+  }
+}
+```
+To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters)
+
+### Example 4: Copy the children in a folder with name conflict setting conflictBehavior
+
+The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+Optional query parameter @microsoft.graph.conflictBehavior is set to replace. It can be set as replace, rename, or fail.
+The destination already has the name.
+
+#### Request
+<!-- { "blockType": "request", "name": "copy-item-4", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy?@microsoft.graph.conflictBehavior=replace
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+```
+
+### Example 5: Copy the children in a folder from root
+
+The following example attempts to copy the children in a folder identified by `{item-id}` (also known as root) into a folder identified with a `driveId` and `id` value.
+The `childrenOnly` parameter isn't set to true.
+The request fails since copy operation can't be done on the root folder.
+
+#### Request
+<!-- { "blockType": "ignored", "name": "copy-item-5" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/root/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Content-Length: 283
+
+{
+  "error":
+  {
+    "code": "invalidRequest",
+    "message": "Cannot copy root folder.",
+    "innerError":
+    {
+      "code": "badRequest",
+      "date": "2023-12-11T04:26:35",
+      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
+    }
+  }
+}
+```
+To resolve this error set `childrenOnly` body parameter to true
+
+### Example 6: Copy the children in a folder where source has more than 150 direct children
+
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The `childrenOnly` parameter is set to true. The drive item identified by `{item-id}` contains more than 150 direct children.
+The request fails since the limit is 150 direct children.
+
+#### Request
+<!-- { "blockType": "ignored", "name": "copy-item-6" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 501 Not Implemented
+Content-Type: application/json
+Content-Length: 340
+
+{
+  "error":
+  {
+    "code": "notSupported",
+    "message": "Direct child count limit exceeded. Cannot copy children only when there are more than 150 direct children.",
+    "innerError":
+    {
+      "date": "2023-12-11T04:26:35",
+      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe""
+    }
+  }
+}
+```
+To resolve this error, need to reorganize the source folder structure to only have 150 children
+
+### Example 7: Copy the children where source item is a file
+
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
+The request fails since the `{item-id}` is a nonfolder driveItem.
+
+#### Request
+<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "childrenOnly": true
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Content-Length: 290
+
+{
+  "error":
+  {
+    "code": "invalidRequest",
+    "message": "childrenOnly option is not valid for file items.",
+    "innerError":
+    {
+      "date": "2023-12-11T04:26:35",
+      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe""
+    }
+  }
+}
+```
+
+### Example 8: Copy the children in a folder with childrenOnly and name
+
+The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The `childrenOnly` parameter is set to true and specify a `name` value.
+The request fails because `childrenOnly` and `name` can't be used together.
+
+#### Request
+<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "name": "contoso plan (copy).txt",
+  "childrenOnly": true
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Content-Length: 285
+
+{
+  "error":
+  {
+    "code": "invalidRequest",
+    "message": "Cannot use name parameter alongside childrenOnly.",
+    "innerError":
+    {
+      "date": "2023-12-11T04:26:35",
+      "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe""
+    }
+  }
+}
+```
+
+## Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: /graph/errors
 
 [item-resource]: ../resources/driveitem.md
 
