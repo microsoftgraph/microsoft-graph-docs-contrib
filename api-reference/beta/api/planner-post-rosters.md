@@ -47,6 +47,16 @@ There are no writable properties on [plannerRoster](../resources/plannerroster.m
 
 If successful, this method returns a `201 Created` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
 
+This method fails with a `403 Forbidden` response code in the following situations. The **code** property on the error response indicates the specific error.
+
+| Description | Code property value |
+|:---|:---|
+|If labels are mandatory for the user and the created roster has no sensitivity label, the request fails.|`SensitivityLabelsAreMandatory`|
+|If the roster is created with guest members initially added, but the proposed sensitivity label disallows the addition of guests, the request fails.|`AddingGuestUsersProhibitedByLabel`|
+|If the provided label doesn't have the correct tenant ID, the request fails.|`TenantIdIsIncorrect`|
+
+For more information about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
+
 ## Examples
 
 ### Request
@@ -117,14 +127,4 @@ Content-Type: application/json
   "id": "6519868f-868f-6519-8f86-19658f861965"
 }
 ```
-
-### See also
-
-The method will fail in the following situations, resulting in a 403 error. For more information, see [Errors](/graph/errors).
-
-If labels are mandatory for the user, and the created roster would have no sensitivity label, the request fails, and the **code** property of the error resource type is "SensitivityLabelsAreMandatory".
-
-If the roster would be created with guest members initially added to the roster, but the proposed sensitivityLabel disallows the addition of guests, the request fails, and the **code** property on the error resource type is "AddingGuestUsersProhibitedByLabel".
-
-If the provided label doesn't have the correct tenant ID, the request fails. The **code** property on the error response is "TenantIdIsIncorrect".
 
