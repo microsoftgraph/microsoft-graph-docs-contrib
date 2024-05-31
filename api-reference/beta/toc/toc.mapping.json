@@ -76,6 +76,47 @@
       ]
     },
     {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "serviceApp",
+        "protectionPolicyBase",
+        "sharePointProtectionPolicy",
+        "exchangeProtectionPolicy",
+        "oneDriveForBusinessProtectionPolicy",
+        "protectionUnitBase",
+        "siteProtectionUnit",
+        "mailboxProtectionUnit",
+        "driveProtectionUnit",
+        "protectionRuleBase",
+        "siteProtectionRule",
+        "mailboxProtectionRule",
+        "driveProtectionRule",
+        "restorePoint",
+        "restoreSessionBase",
+        "sharePointRestoreSession",
+        "exchangeRestoreSession",
+        "oneDriveForBusinessRestoreSession",
+        "restoreArtifactBase",
+        "siteRestoreArtifact",
+        "mailboxRestoreArtifact",
+        "driveRestoreArtifact"
+      ],
+      "complexTypes": [
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
+      ]
+    },
+    {
       "name": "Calendars",
       "keywords": [
         "Outlook",
