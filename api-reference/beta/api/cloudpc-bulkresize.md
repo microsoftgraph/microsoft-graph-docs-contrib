@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: bulkResize (deprecate)
+# cloudPC: bulkResize (deprecated)
 
 Namespace: microsoft.graph
 
