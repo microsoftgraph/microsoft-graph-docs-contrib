@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ExternalAuthenticationMethodConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTarget;
-use Microsoft\Graph\Beta\Generated\Models\TargetType;
-use Microsoft\Graph\Beta\Generated\Models\State;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

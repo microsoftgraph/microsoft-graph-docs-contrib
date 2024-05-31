@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\ExternalConnectors\ExternalItem
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\ExternalConnectors\Acl
-use Microsoft\Graph\Generated\Models\ExternalConnectors\Type;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\ExternalItem;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\Acl;
+use Microsoft\Graph\Generated\Models\ExternalConnectors\AclType;
 use Microsoft\Graph\Generated\Models\ExternalConnectors\AccessType;
 
 

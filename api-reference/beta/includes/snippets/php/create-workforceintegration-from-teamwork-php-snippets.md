@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\WorkforceIntegration;
 use Microsoft\Graph\Beta\Generated\Models\WorkforceIntegrationEncryption;
-use Microsoft\Graph\Beta\Generated\Models\Protocol;
-use Microsoft\Graph\Beta\Generated\Models\Supports;
+use Microsoft\Graph\Beta\Generated\Models\WorkforceIntegrationEncryptionProtocol;
+use Microsoft\Graph\Beta\Generated\Models\WorkforceIntegrationSupportedEntities;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
