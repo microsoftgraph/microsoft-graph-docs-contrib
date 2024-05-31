@@ -163,6 +163,7 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
+  "isAttendeeEmailNotificationEnabled": false,
   "isInviteOnly": false
 }
 ```
