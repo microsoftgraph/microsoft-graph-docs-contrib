@@ -87,6 +87,26 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
   "changeType": "created,updated,deleted", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'groupChat') ", 
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
+  "includeResourceData": true, 
+  "encryptionCertificate": "{base64encodedCertificate}", 
+  "encryptionCertificateId": "{customId}", 
+  "expirationDateTime": "2023-11-16T11:00:00.0000000Z", 
+  "clientState": "{secretClientState}" 
+} 
+```
+
+> [!NOTE]
+> When the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from team scope.
+
+To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json 
+{ 
+  "changeType": "created,updated,deleted", 
   "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')", 
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
   "includeResourceData": true, 
