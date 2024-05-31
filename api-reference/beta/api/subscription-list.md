@@ -59,7 +59,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/{id}/channels/getAllMembers` <br /> Members in all private channels of a particular team.| Not supported.  | Not supported.  | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/getAllChannels/getAllMembers` | Not supported. | Not supported. | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) <br />User's personal OneDrive. | Not supported.  | Files.ReadWrite, Subscription.Read.All | Not supported.  |
-|[driveItem](../resources/driveitem.md) <br />OneDrive for Business. | Files.ReadWrite.All, Subscription.Read.All | Not supported.  | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) <br />OneDrive for work or school. | Files.ReadWrite.All, Subscription.Read.All | Not supported.  | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Not supported.  |
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 The following example shows the response.
 
->**Note:** The response shown here might be shortened for readability.
+> **Note:** The response shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

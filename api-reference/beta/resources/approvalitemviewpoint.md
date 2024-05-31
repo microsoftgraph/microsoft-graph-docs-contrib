@@ -18,7 +18,7 @@ Represents user viewpoints data on the approval item. The data includes the user
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roles|approverRole collection|Collection of roles associated with the requesting user for the approval item. If the owner of the approval item is making the request, the collection of roles will include the role `owner`. If the requesting user was assigned as an approver, the collection will include the role `approver`.|
+|roles|approverRole collection|Collection of roles associated with the requesting user for the approval item. If the owner of the approval item is making the request, the collection of roles includes the role `owner`. If the requesting user was assigned as an approver, the collection includes the role `approver`.|
 
 ## Relationships
 None.

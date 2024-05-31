@@ -23,9 +23,9 @@ Represents an approval operation and its status.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Creation date and time for the operation.|
+|createdDateTime|DateTimeOffset|The date and time when the operation was created.|
 |error|[publicError](../resources/publicerror.md)|The error if the operation failed.|
-|lastActionDateTime|DateTimeOffset|The DateTimeOffset for when this operation was last updated.|
+|lastActionDateTime|DateTimeOffset|The date and time when this operation was most recently updated.|
 |resourceLocation|String|The URL for the resource that was newly created or acted upon.|
 |status|approvalOperationStatus|The status of the operation. The possible values are: `scheduled`, `inProgress`, `succeeded`, `failed`, `timeout`, `unknownFutureValue`.|
 

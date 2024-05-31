@@ -64,7 +64,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/{id}/channels/getAllMembers` <br /> Members in all private channels of a particular team. | Not supported.  | Not supported.  | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/getAllChannels/getAllMembers` | Not supported. | Not supported. | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported.  | Files.ReadWrite | Not supported.  |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported.  | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (OneDrive for work or school) | Files.ReadWrite.All | Not supported.  | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported.  | Not supported.  |
@@ -98,9 +98,9 @@ Depending on the resource and the permission type (delegated or application) req
 
 More limitations apply to subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
-On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested changes on the subscribed folder or any file, folder, or other **driveItem** instances in its hierarchy. You can't subscribe to **drive** or **driveItem** instances that aren't folders, such as individual files.
+On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for work or school, you can subscribe to only the root folder. Change notifications are sent for the requested changes on the subscribed folder or any file, folder, or other **driveItem** instances in its hierarchy. You can't subscribe to **drive** or **driveItem** instances that aren't folders, such as individual files.
 
-OneDrive for Business and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header applies to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+OneDrive for work or school and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header applies to SharePoint and OneDrive for work or school but not consumer OneDrive accounts.
 
 ### contact, event, and message
 
@@ -250,7 +250,7 @@ The following are valid values for the resource property.
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,6 +1,6 @@
 ---
 title: "approvalSolution resource type"
-description: "Represents approval provisioning status."
+description: "Represents an approval provisioning status."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents approval provisioning status.
+Represents an approval provisioning status.
 
 ## Methods
 |Method|Return type|Description|
