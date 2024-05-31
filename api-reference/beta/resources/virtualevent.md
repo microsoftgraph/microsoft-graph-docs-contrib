@@ -29,9 +29,9 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The display name of the virtual event. |
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The end time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |id|String|The unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
+|isAttendeeEmailNotificationEnabled|Boolean|[PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.]|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |status|[virtualEventStatus](#virtualeventstatus-values)|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
-|isAttendeeEmailNotificationEnabled|Boolean|[PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.]|
 
 ### virtualEventStatus values
 
