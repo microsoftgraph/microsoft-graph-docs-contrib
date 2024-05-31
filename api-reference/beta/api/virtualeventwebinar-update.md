@@ -54,6 +54,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
 | displayName | String | Display name of the virtual event. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| isAttendeeEmailNotificationEnabled | Boolean | [PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.] |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
@@ -143,6 +144,7 @@ Content-Type: application/json
     "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.<p>",
     "contentType": "html"
   },
+  "isAttendeeEmailNotificationEnabled": false,
   "startDateTime": {
     "dateTime": "2024-03-31T10:00:00",
     "timeZone": "Pacific Standard Time"
