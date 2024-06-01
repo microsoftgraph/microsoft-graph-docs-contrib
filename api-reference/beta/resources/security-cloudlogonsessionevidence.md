@@ -1,7 +1,6 @@
 ---
 title: "cloudLogonSessionEvidence resource type"
-description: "Represents a cloud log-on session created by an account."
-ms.date: 4/30/2024
+description: "Represents a cloud sign-in session created by an account."
 author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud log-on session created by an account.
+Represents a cloud sign-in session created by an account.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property  | Type |Description|
 |:----------|:-------|:---|
-| sessionId | String| The session id for the account reported in the alert. | 
-| account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the log-on session. |
+| sessionId | String| The session ID for the account reported in the alert. | 
+| account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The account associated with the sign-in session. |
 | protocol  | String| The authentication protocol that is used in this session, if known. |
 | deviceName| String| The friendly name of the device, if known.  |
 | operatingSystem  | String| The operating system that the device is running, if known. |
