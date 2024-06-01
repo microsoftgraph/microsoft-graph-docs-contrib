@@ -1,7 +1,6 @@
 ---
 title: "cloudLogonRequestEvidence resource type"
 description: "Represents a cloud sign-in request for an account."
-ms.date: 4/30/2024
 author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
