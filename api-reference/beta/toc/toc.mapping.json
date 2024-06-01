@@ -1507,7 +1507,6 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }

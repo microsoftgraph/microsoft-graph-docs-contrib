@@ -971,13 +971,21 @@
               ]
             },
             {
-              "name": "User flows",
+              "name": "User flows in workforce tenants",
               "resources": [
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
+              ]
+            },
+            {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
               ]
             }
           ]
