@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create or update schema
 Namespace: microsoft.graph.externalConnectors
 
-Create a new or update an existing [schema](../resources/externalconnectors-schema.md) object.
+Create a new or update an existing [schema](../resources/externalconnectors-schema.md) for a Microsoft Search [connection](../resources/externalconnectors-externalconnection.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
