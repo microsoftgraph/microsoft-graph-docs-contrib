@@ -64,7 +64,7 @@ Represents a location where multiple users or a group of users can store files a
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
 |storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**. In bytes. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
-|lockState|[siteLockState](../resources/enums.md#siteLockState-values)|Lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
+|lockState|[siteLockState](../resources/enums.md#sitelockstate-values)|Lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
