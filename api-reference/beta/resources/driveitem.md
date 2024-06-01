@@ -71,6 +71,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Preview item][item-preview]                                                 | `POST /drive/items/{item-id}/preview`                                  |
 | [Check in files](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`                        |
 | [Check out files](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`                       |
+| [discardCheckout](../api/driveitem-discardcheckout.md)                       | `POST /drives/{driveId}/items/{itemId}/discardCheckout`|
 | [Revoke grants on sharing link](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
 | [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 | [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel`                   |
