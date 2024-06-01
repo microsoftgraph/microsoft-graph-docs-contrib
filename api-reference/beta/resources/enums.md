@@ -40,7 +40,7 @@ Namespace: microsoft.graph
 | Value         | Description
 |:--------------|:-----------------------------------------------
 | unlocked      | Unlocked
-| lockedReadOnly | Read-only. No additions or deletions allowed
+| lockedReadOnly | Read-only. No additions or deletions allowed to content or metadata
 | lockedNoAccess | Read and write is disallowed
 
 

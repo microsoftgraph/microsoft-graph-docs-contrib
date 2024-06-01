@@ -13,18 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#siteLockState-values). Only members in the `owner` role can call this method.
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#siteLockState-values).
 
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+When delegated permissions are used, only members in the `owner` role can call this method.
+
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|FileStorageContainer.Selected|Not available.|
+|Delegated (work or school account)|FileStorageContainer.Selected|FileStorageContainer.Manage.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|FileStorageContainer.Selected|Not available.|
+
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_unlock" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-unlock-permissions.md)]
 
 ## HTTP request
 
