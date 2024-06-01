@@ -25,10 +25,10 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 | protocol  | String| The authentication protocol that is used in this session, if known. |
 | deviceName| String| The friendly name of the device, if known.  |
 | operatingSystem  | String| The operating system that the device is running, if known. |
-| browser| String | The browser that is used for the logon, if known. |
-| userAgent  | String | The user agent that is used for the logon, if known. |
+| browser| String | The browser that is used for the sign-in, if known. |
+| userAgent  | String | The user agent that is used for the sign-in, if known. |
 | startUtcDateTime | DateTime| The session start time, if known.  |
-| previousLogonDateTime | DateTime| The previous logon time for this account, if known.  |
+| previousLogonDateTime | DateTime| The previous sign-in time for this account, if known.  |
 
 ## Relationships
 None.
