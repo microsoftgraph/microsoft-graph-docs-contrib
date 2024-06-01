@@ -1,6 +1,6 @@
 ---
 title: "Create or update schema"
-description: "Create the schema for a Microsoft Search connection."
+description: "Create or update the schema for a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
