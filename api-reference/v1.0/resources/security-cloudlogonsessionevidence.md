@@ -1,6 +1,6 @@
 ---
 title: "cloudLogonSessionEvidence resource type"
-description: "Represents a cloud log-on session created by an account."
+description: "Represents a cloud sign-in session created by an account."
 ms.date: 4/30/2024
 author: "hareldamti"
 ms.localizationpriority: medium
@@ -12,22 +12,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a cloud log-on session created by an account.
+Represents a cloud sign-in session created by an account.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property  | Type |Description|
 |:----------|:-------|:---|
-| sessionId | String| The session id for the account reported in the alert. | 
-| account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the log-on session. |
+| sessionId | String| The session ID for the account reported in the alert. | 
+| account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The account associated with the sign-in session. |
 | protocol  | String| The authentication protocol that is used in this session, if known. |
 | deviceName| String| The friendly name of the device, if known.  |
 | operatingSystem  | String| The operating system that the device is running, if known. |
-| browser| String | The browser that is used for the logon, if known. |
-| userAgent  | String | The user agent that is used for the logon, if known. |
+| browser| String | The browser that is used for the sign-in, if known. |
+| userAgent  | String | The user agent that is used for the sign-in, if known. |
 | startUtcDateTime | DateTime| The session start time, if known.  |
-| previousLogonDateTime | DateTime| The previous logon time for this account, if known.  |
+| previousLogonDateTime | DateTime| The previous sign-in time for this account, if known.  |
 
 ## Relationships
 None.
