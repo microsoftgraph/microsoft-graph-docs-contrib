@@ -35,7 +35,7 @@ Namespace: microsoft.graph
 | active             |
 | unknownfuturevalue |
 
-## siteLockState enumeration
+### siteLockState values
 
 | Value         | Description
 |:--------------|:-----------------------------------------------

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/siteLockState.md). This method can only update the lockState to `unlocked`. Only members in the `owner` role can call this method. 
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#siteLockState-values). Only members in the `owner` role can call this method.
 
 
 ## Permissions
