@@ -1,7 +1,6 @@
 ---
 title: "cloudLogonRequestEvidence resource type"
-description: "Represents a cloud log-on request for an account."
-ms.date: 4/30/2024
+description: "Represents a cloud sign-in request for an account."
 author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -12,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a cloud log-on request for an account.
+Represents a cloud sign-in request for an account.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property  |Type|Description|
 |:----------|:---|:---|
-| requestId |String|The unique identifier for the log-on request.|
+| requestId |String|The unique identifier for the sign-in request.|
 
 ## Relationships
 None.
