@@ -30,6 +30,13 @@ When delegated permissions are used, only members in the `owner` role can call t
 POST /storageContainers/{containerId}/lock
 ```
 
+Payload, optional
+```json
+{
+    "lockState": "lockedReadOnly"
+}
+```
+
 ## Request headers
 |Name|Description|
 |:---|:---|
