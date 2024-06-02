@@ -67,7 +67,7 @@ The following table lists the required and optional properties for creating a **
 |Property|Type|Description|
 |:---|:---|:---|
 | referenceType | String  |The categorical type for a collection enumerated values. Required.                                 |
-| displayName   | String  |A human-readable representation of the code for display in a user interface. Optional.               |
+| displayName   | String  |A human-readable representation of the reference code value for display in a user interface. Optional.               |
 | code          | String  |Code value for the definition. Must be unique within the referenceType. Required.                  |
 | isDisabled    | Boolean |Indicates whether the definition is disabled. Required.                                      |
 | sortIndex     | Int32   |The index that specifies the order in which to present the definition to the user. Must be unique within the referenceType. Required. |

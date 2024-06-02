@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.industryData.oAuthClientCredential](../resources/
 | displayName       | String         | The name of the credential. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                                           |
 | isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector validate operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md). |
 | lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector validate operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                  |
-| scope             | String         | The OAuth scope provided to the authentication process.                                                                                                                                      |
+| scope             | String         | The OAuth scope that is provided to the authentication process.                                                                                                                                      |
 | tokenUrl          | String         | The URL with which to retrieve the token after authentication happens.                                                                                                                              |
 
 ## Relationships

@@ -51,7 +51,7 @@ PATCH /external/industryData/referenceDefinitions/{referenceDefinitionId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String  | A human-readable representation of the code for display in a user interface. Optional.               |
+| displayName | String  | A human-readable representation of the reference code value for display in a user interface. Optional.               |
 | isDisabled  | Boolean | Indicates whether the definition is disabled. Required.                                      |
 | sortIndex   | Int32   | The index that specifies the order in which to present the definition to the user. Must be unique within the referenceType. Required. |
 
