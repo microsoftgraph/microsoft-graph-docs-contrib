@@ -17,7 +17,7 @@ Create a new [microsoft.graph.industryData.referenceDefinition](../resources/ind
 
 **referenceDefinition** objects associate incoming data with standardized reference types values for validation.
 
-You can extend the following reference types with additional codes that better align with your source data.
+You can extend the following reference types with other codes that better align with your source data.
 
 |Name|ReferenceType|
 |:---|:---|

@@ -1,6 +1,6 @@
 ---
 title: "apiDataConnector resource type"
-description: "Represents a base type for connectors which establish a connection to a data source that is available from an API."
+description: "Represents a base type for API connectors, which establish a connection to a data source that is available from an API."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base type for connectors which establish a connection to a data source that is available from an API. This is an abstract type.
+Represents a base type for API connectors, which establish a connection to a data source that is available from an API. This is an abstract type.
 
 Inherits from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).
 
