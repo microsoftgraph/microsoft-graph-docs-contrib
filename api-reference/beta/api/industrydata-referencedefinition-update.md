@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Update the properties of a [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -49,9 +51,9 @@ PATCH /external/industryData/referenceDefinitions/{referenceDefinitionId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String  | Human-readable representation of the Code for display in a user interface. Optional.               |
-| isDisabled  | Boolean | Indicates whether the definition has been disabled. Required.                                      |
-| sortIndex   | Int32   | Ordering index to present the definitions within a type consistently in user interfaces. Required. |
+| displayName | String  | A human-readable representation of the code for display in a user interface. Optional.               |
+| isDisabled  | Boolean | Indicates whether the definition is disabled. Required.                                      |
+| sortIndex   | Int32   | The index that specifies the order in which to present the definition to the user. Must be unique within the referenceType. Required. |
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "azureDataLakeConnector resource type"
-description: "Represents a way to connect data uploaded to an Azure Data Lake."
+description: "Represents a connection to data uploaded to an Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a way to connect data uploaded to an Azure Data Lake.
+Represents a connection to data uploaded to an Azure Data Lake.
 
 Inherits from [fileDataConnector](industrydata-filedataconnector.md).
 
@@ -29,14 +29,14 @@ Inherits from [fileDataConnector](industrydata-filedataconnector.md).
 
 | Property    | Type   | Description                                                                                                |
 | :---------- | :----- | :--------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
-| fileFormat  |[microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md)|File format that external systems can upload using this connector|
+| displayName | String | The name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
+| fileFormat  |[microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md)|The file format that external systems can upload using this connector.|
 
 ## Relationships
 
 | Relationship | Type                                                             | Description                                                                                                                                  |
 | :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](industrydata-industrydataconnector.md) |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** object that this connector is connected to. Inherited from [industryDataConnector](industrydata-industrydataconnector.md) |
 
 ## JSON representation
 

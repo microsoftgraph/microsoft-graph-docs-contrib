@@ -1,6 +1,6 @@
 ---
 title: "fileFormatReferenceValue resource type"
-description: "Represents a pointer to a RefFileFormat entry in a collection of referenceDefinition objects."
+description: "Represents a reference to a RefFileFormat entry in a collection of referenceDefinition objects."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a `RefFileFormat` entry in a collection of [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) objects.
+Represents a reference to a `RefFileFormat` entry in a collection of [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) objects.
 
 Inherits from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md).
 
@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.industryData.referenceValue](industrydata-referen
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| value | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md) |
+| value | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | The reference to the bound **referenceDefinition** entity. Inherited from [microsoft.graph.industryData.referenceValue](industrydata-referencevalue.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

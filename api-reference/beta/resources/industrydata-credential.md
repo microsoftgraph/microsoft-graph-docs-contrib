@@ -1,6 +1,6 @@
 ---
 title: "industryData credential resource type"
-description: "Base abstract type for all kinds of credentials supported in the industryData API."
+description: "Represents a base type for credentials supported in the Industry Data API."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base type for all kinds of credentials supported in the industryData API. This is an abstract type.
+Represents a base type for credentials supported in the Industry Data API. This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 | displayName       | String         | The name of the credential.                                                           |
-| isValid           | Boolean        | Denotes if the credential provided is usable based on the last successful validation. |
-| lastValidDateTime | DateTimeOffset | The most recent time that the credential was successfully validated.                                  |
+| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector validate operation. |
+| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector validate operation.                                  |
 
 ## Relationships
 None.

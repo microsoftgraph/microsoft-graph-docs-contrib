@@ -1,6 +1,6 @@
 ---
 title: "oneRosterApiDataConnector resource type"
-description: "Represents a way to connect to an OneRoster API data source."
+description: "Represents a connection to an OneRoster API data source."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a way to connect to an OneRoster API data source.
+Represents a connection to an OneRoster API data source.
 
 
 Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).
@@ -27,19 +27,19 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| apiFormat             | microsoft.graph.industryData.apiFormat                                             | API format of external systems that the industryDataHub can connect to. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).The possible values are: `oneRoster`, `unknownFutureValue`.           |
+| apiFormat             | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).The possible values are: `oneRoster`, `unknownFutureValue`.           |
 | apiVersion            | String                                                                             | The API version of the OneRoster source. Example: 1.1, 1.2                                                                                                                                                                                       |
-| baseUrl               | String                                                                             | The base URL including the scheme, host, and path for the API (with or without a trailing '/'). Example: https://example.com/ims/oneRoster/. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md). |
-| credential            | [microsoft.graph.industryData.credential](industrydata-credential.md) | Base type for all kinds of credentials supported in the industryData API. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).                                                                    |
-| displayName           | String                                                                             | Name of the data connector. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).                                                                                                        |
-| isContactsEnabled     | Boolean                                                                            | Represents user preference to import optional contacts data.                                                                                                                                                                                                |
-| isDemographicsEnabled | Boolean                                                                            | Represents user preference to import optional demographics data.                                                                                                                                                                                            |
-| isFlagsEnabled        | Boolean                                                                            | Represents user preference to import optional flags data.                                                                                                                                                                                                   |
+| baseUrl               | String                                                                             | The base URL including the scheme, host, and path for the API (with or without a trailing '/'). Example: https://example.com/ims/oneRoster/v1p1. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md). |
+| credential            | [microsoft.graph.industryData.credential](industrydata-credential.md) | The base type for all supported credentials. Inherited from [microsoft.graph.industryData.apiDataConnector](industrydata-apidataconnector.md).                                                                    |
+| displayName           | String                                                                             | The name of the data connector. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).                                                                                                        |
+| isContactsEnabled     | Boolean                                                                            | Indicates whether the user specified to import optional contacts data.                                                                                                                                                                                                |
+| isDemographicsEnabled | Boolean                                                                            | Indicates whether the user specified to import optional demographics data.                                                                                                                                                                                            |
+| isFlagsEnabled        | Boolean                                                                            | Indicates whether the user specified to import optional flags data.                                                                                                                                                                                                   |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** that this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** object that this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) |
 
 ## JSON representation
 The following JSON representation shows the resource type.

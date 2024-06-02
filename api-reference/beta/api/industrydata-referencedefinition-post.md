@@ -15,11 +15,11 @@ Namespace: microsoft.graph.industryData
 
 Create a new [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.
 
-**referenceDefinitions** are used throughout the system. **referenceDefinitions** are used to validate incoming data based on corresponding data types that are being associated.
+**referenceDefinition** objects associate incoming data with standardized reference types values for validation.
 
-We're allowing the ability to extend and manage specific data types.
+You can extend the following reference types with additional codes that better align with your source data.
 
-|Name|ReferenceValue|
+|Name|ReferenceType|
 |:---|:---|
 | Academic Subjects      | RefAcademicSubject |
 | Demographic: Race      | RefRace            |
@@ -27,6 +27,8 @@ We're allowing the ability to extend and manage specific data types.
 | Grade Level            | RefGradeLevel      |
 | Organization Types     | RefOrgType         |
 | Person Flags           | RefPersonFlagType  |
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -60,15 +62,15 @@ POST /external/industryData/referenceDefinitions
 
 In the request body, supply a JSON representation of the [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referenceDefinition.md) object.
 
-You can specify the following properties when you create an **referenceDefinition**.
+The following table lists the required and optional properties for creating a **referenceDefinition** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 | referenceType | String  |The categorical type for a collection enumerated values. Required.                                 |
-| displayName   | String  |Human-readable representation of the Code for display in a user interface. Optional.               |
+| displayName   | String  |A human-readable representation of the code for display in a user interface. Optional.               |
 | code          | String  |Code value for the definition. Must be unique within the referenceType. Required.                  |
-| isDisabled    | Boolean |Indicates whether the definition has been disabled. Required.                                      |
-| sortIndex     | Int32   |Ordering index to present the definitions within a type consistently in user interfaces. Required. |
+| isDisabled    | Boolean |Indicates whether the definition is disabled. Required.                                      |
+| sortIndex     | Int32   |The index that specifies the order in which to present the definition to the user. Must be unique within the referenceType. Required. |
 
 ## Response
 

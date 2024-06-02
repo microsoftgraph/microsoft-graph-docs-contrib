@@ -1,6 +1,6 @@
 ---
 title: "industryDataConnector resource type"
-description: "Represents an abstract type that provides the resources to establish a connection with a data source."
+description: "Represents a base type for connectors that provides the resources to establish a connection with a data source."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type that provides the resources to establish a connection with a data source.
+Represents a base type for connectors that provides the resources to establish a connection with a data source. This is an abstract type.
 
 Base type of [fileDataConnector](../resources/industrydata-filedataconnector.md) and [oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md).
 

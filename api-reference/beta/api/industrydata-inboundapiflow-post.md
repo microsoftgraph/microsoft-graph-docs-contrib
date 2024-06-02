@@ -1,6 +1,6 @@
 ---
 title: "Create inboundApiFlow"
-description: "Create a new microsoft.graph.industryData.inboundApiFlow object."
+description: "Create a new inboundApiFlow object."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -15,12 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Create a new [microsoft.graph.industryData.inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
 
-The following prerequisite resources are required when you create an **inboundApiFlow**:
-
-- [dataConnector](../resources/industrydata-industrydataconnector.md)
-- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
-- [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)
-
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -51,16 +46,18 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
+
+The following table lists the required and optional properties for creating an **inboundApiFlow** object.
 
 | Property           | Type                                                                                                           | Description                                                                                                                                                                                                                                          |
 |:------------------ |:---------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
+| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
 | displayName        | String                                                                                                         | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
 | effectiveDateTime  | DateTimeOffset                                                                                                 | The time when the flow is first allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | expirationDateTime | DateTimeOffset                                                                                                 | The time when the flow is no longer allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
-| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
-| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).  
+| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector to the source system from where this flow gets its data. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
+| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year associated to the data that this flow brings in. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).  
 
 
 ## Response
