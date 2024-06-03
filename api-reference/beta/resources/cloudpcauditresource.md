@@ -42,6 +42,6 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.cloudPcAuditProperty"}],
   "resourceId": "String",
-  "resourceType": "String",
+  "resourceType": "String"
 }
 ```
