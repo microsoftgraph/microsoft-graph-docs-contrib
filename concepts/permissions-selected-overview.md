@@ -27,8 +27,6 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 |ListItems.SelectedOperations.Selected|Manages application access at the files, list item, or folder level, providing access to one or more list items|
 |Files.SelectedOperations.Selected|Manages application access at the file or library folder level, providing access to one or more files|
 
-> Because of the architecture of SharePoint files are also list items, but list items are not files. Meaning that while `ListItems.SelectedOperations.Selected` will allow you to read some information about files you will not be able to read the content or perform other file specific operations.
-
 ## How Selected Scopes work with SharePoint & OneDrive Permissions
 
 When an administrator consents to Selected scopes for an application they're delegating management of resource permissions to the owners of that resource within the workload. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. Selected scopes require an explicit assignment action, an application consented for Lists.SelectedOperations.Selected would initially have no access.
@@ -49,6 +47,10 @@ Reading the above there are some implications it is worth making explicit - that
 > Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance as this is the root of permission inheritance.
 
 An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permission.md) but the logic is similar for [lists](../api-reference/beta/api/list-post-permission.md), [list items](../api-reference/beta/api/listitem-post-permission.md), [files](../api-reference/beta/api/driveitem-post-permission.md), or [folders](../api-reference/beta/api/listitem-post-permission.md).
+
+### What's the difference between Files and ListItems Scopes?
+
+Within SharePoint all files are list items, but all list items are not files. This results in applications carrying the `ListItems.SelectedOperations.Selected` scope can access and operate on all list items and files up to their allowed role. Applications with `Files.SelectedOperations.Selected` can only operate on files (list items) with document libraries or other lists marked as containing documents. This mimics the Files.Read.All and Files.ReadWrite.All behavior that exists today, but isolated to a single file. This behavior doesn't change based on the Graph path used such as with `/drives/{driveid}/items/{itemid}` vs `/sites/{siteid}/lists/{listid}/items/{itemid}`, rather it is controlled by the destination being accessed.
 
 ### Roles
 
