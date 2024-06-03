@@ -50,7 +50,7 @@ An example of setting permissions is shown for [sites](../api-reference/beta/api
 
 ### What's the difference between Files and ListItems Scopes?
 
-Within SharePoint all files are list items, but all list items are not files. This results in applications carrying the `ListItems.SelectedOperations.Selected` scope can access and operate on all list items and files up to their allowed role. Applications with `Files.SelectedOperations.Selected` can only operate on files (list items) with document libraries or other lists marked as containing documents. This mimics the Files.Read.All and Files.ReadWrite.All behavior that exists today, but isolated to a single file. This behavior doesn't change based on the Graph path used such as with `/drives/{driveid}/items/{itemid}` vs `/sites/{siteid}/lists/{listid}/items/{itemid}`, rather it is controlled by the destination being accessed.
+Within SharePoint all files are list items, but all list items are not files. This results in applications carrying the `ListItems.SelectedOperations.Selected` scope can access and operate on all list items and files up to their allowed role. Applications with `Files.SelectedOperations.Selected` can only operate on files (list items) within document libraries or other lists marked as containing documents. This mimics the Files.Read.All and Files.ReadWrite.All behavior that exists today, but isolated to a single file. This behavior doesn't change based on the Graph path used such as with `/drives/{driveid}/items/{itemid}` vs `/sites/{siteid}/lists/{listid}/items/{itemid}`, rather it is controlled by the destination being accessed.
 
 ### Roles
 
