@@ -5,7 +5,6 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: "Linked applications"
 ---
 
 # authenticationConditionApplication resource type
@@ -20,9 +19,9 @@ An object representing the application that will be triggered for an authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
-|[Add](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
-|[Remove](../api/authenticationconditionapplication-delete.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[List applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
+|[Add applications](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[Remove applications](../api/authenticationconditionapplication-delete.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +32,7 @@ An object representing the application that will be triggered for an authenticat
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

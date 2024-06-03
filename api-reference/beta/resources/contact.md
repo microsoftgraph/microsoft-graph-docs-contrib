@@ -57,7 +57,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |fileAs|String|The name the contact is filed under.|
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the contact. |
 |gender |String |The contact's gender. |
-|generation|String|The contact's suffix.|
+|generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
 |id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|

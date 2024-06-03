@@ -1509,6 +1509,7 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
+                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }
@@ -2363,8 +2364,6 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
-            "microsoft.graph.security.cloudLogonRequestEvidence",
-            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",

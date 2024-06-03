@@ -58,7 +58,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
-|generation|String|The contact's suffix.|
+|generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|

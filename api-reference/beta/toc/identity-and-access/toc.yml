@@ -3120,17 +3120,39 @@ items:
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+      - name: Linked applications
+        items:
+        - name: List
+          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+        - name: Add
+          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+        - name: Remove
+          href: ../../api/authenticationconditionapplication-delete.md
     - name: External users self service sign up events flow
       href: ../../resources/externalusersselfservicesignupeventsflow.md
+    - name: Identity user flow attribute
+      items:
+      - name: Identity user flow attribute
+        href: ../../resources/identityuserflowattribute.md
+      - name: List
+        href: ../../api/identityuserflowattribute-list.md
+      - name: Create
+        href: ../../api/identityuserflowattribute-post.md
+      - name: Get
+        href: ../../api/identityuserflowattribute-get.md
+      - name: Update
+        href: ../../api/identityuserflowattribute-update.md
+      - name: Delete
+        href: ../../api/identityuserflowattribute-delete.md
     - name: Authentication condition application
       items:
       - name: Authentication condition application
         href: ../../resources/authenticationconditionapplication.md
-      - name: List
+      - name: List applications
         href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-      - name: Add
+      - name: Add applications
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-      - name: Remove
+      - name: Remove applications
         href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
