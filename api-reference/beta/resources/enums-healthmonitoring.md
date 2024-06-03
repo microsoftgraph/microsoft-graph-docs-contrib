@@ -1,13 +1,13 @@
 ---
-title: "Health Monitoring enum values"
-description: "Microsoft Graph Health Monitoring enumeration values"
+title: "Health monitoring enum values"
+description: "Microsoft Graph health monitoring enumeration values"
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-doc_type: enumTypes
+doc_type: enumPageType
 ---
 
-# Health Monitoring enum Values
+# Health monitoring enum Values
 
 Namespace: microsoft.graph.healthMonitoring
 
@@ -65,3 +65,9 @@ Namespace: microsoft.graph.healthMonitoring
 |devices|
 |unknownFutureValue|
 
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.healthMonitoring"
+}
+-->
