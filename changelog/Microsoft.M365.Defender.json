@@ -2163,6 +2163,58 @@
       "SubArea": ""
     },
     {
+      "ChangeList": [
+        {
+          "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonRequestEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonRequestEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonRequestEvidence?view=graph-rest-beta) resource.",
+          "Target": "cloudLogonRequestEvidence"
+        },
+        {
+          "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonSessionEvidence?view=graph-rest-beta) resource.",
+          "Target": "cloudLogonSessionEvidence"
+        }
+      ],
+      "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-31T13:20:45.1529001Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonRequestEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonRequestEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonRequestEvidence?view=graph-rest-1.0) resource.",
+          "Target": "cloudLogonRequestEvidence"
+        },
+        {
+          "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonSessionEvidence?view=graph-rest-1.0) resource.",
+          "Target": "cloudLogonSessionEvidence"
+        }
+      ],
+      "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-31T13:20:45.1531478Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
         "ChangeList": [
           {
             "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
