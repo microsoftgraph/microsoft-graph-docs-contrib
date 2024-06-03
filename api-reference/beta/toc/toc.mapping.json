@@ -76,6 +76,47 @@
       ]
     },
     {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "serviceApp",
+        "protectionPolicyBase",
+        "sharePointProtectionPolicy",
+        "exchangeProtectionPolicy",
+        "oneDriveForBusinessProtectionPolicy",
+        "protectionUnitBase",
+        "siteProtectionUnit",
+        "mailboxProtectionUnit",
+        "driveProtectionUnit",
+        "protectionRuleBase",
+        "siteProtectionRule",
+        "mailboxProtectionRule",
+        "driveProtectionRule",
+        "restorePoint",
+        "restoreSessionBase",
+        "sharePointRestoreSession",
+        "exchangeRestoreSession",
+        "oneDriveForBusinessRestoreSession",
+        "restoreArtifactBase",
+        "siteRestoreArtifact",
+        "mailboxRestoreArtifact",
+        "driveRestoreArtifact"
+      ],
+      "complexTypes": [
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
+      ]
+    },
+    {
       "name": "Calendars",
       "keywords": [
         "Outlook",
@@ -1466,7 +1507,6 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }
@@ -2321,6 +2361,8 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
+            "microsoft.graph.security.cloudLogonRequestEvidence",
+            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",
@@ -2380,6 +2422,14 @@
             "webPart"
           ],
           "childNodes": [
+            {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
             {
               "name": "Web part",
               "resources": [
