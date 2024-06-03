@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get passiveDns](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md)|Read the properties and relationships of a [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) object.|
+|[Get passive DNS record](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md)|Read the properties and relationships of a [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) object.|
 
 ## Properties
 

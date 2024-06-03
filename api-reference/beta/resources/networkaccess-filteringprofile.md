@@ -20,9 +20,9 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filteringProfiles](../api/networkaccess-filteringprofile-list.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) objects and their properties.|
-|[Get filteringProfile](../api/networkaccess-filteringprofile-get.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Get a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
-|[Update filteringProfile](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
+|[List](../api/networkaccess-filteringprofile-list.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) objects and their properties.|
+|[Get](../api/networkaccess-filteringprofile-get.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Get a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
+|[Update](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|

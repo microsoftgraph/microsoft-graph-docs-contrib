@@ -20,12 +20,12 @@ Provides access to Planner resources for a [user](user.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
-|[List myDayTasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) to be shown in the user's MyDay view.|
-|[List favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
-|[List recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
-|[List rosterPlans](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
-|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
+|[List user's assigned tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
+|[List user's My Day tasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) to be shown in the user's MyDay view.|
+|[List user's favorite plans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
+|[List user's recent plans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
+|[List user's plans in rosters](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
+|[Update user's settings](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
 
 
 ## Properties

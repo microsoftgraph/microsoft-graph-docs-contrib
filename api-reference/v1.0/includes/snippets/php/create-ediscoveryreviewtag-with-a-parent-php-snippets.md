@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\EdiscoveryReviewTag;
+use Microsoft\Graph\Generated\Models\Security\EdiscoveryReviewTag;
+use Microsoft\Graph\Generated\Models\Security\ChildSelectability;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

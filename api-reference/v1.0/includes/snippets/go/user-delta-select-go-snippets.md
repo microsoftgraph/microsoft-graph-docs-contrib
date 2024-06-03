@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphusers.UsersDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersDeltaWithRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mobilePhone"},
 }
-configuration := &graphusers.UsersDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

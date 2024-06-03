@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.events.item.tentatively_accept.tentatively_accept_post_request_body import TentativelyAcceptPostRequestBody
-from msgraph.generated.models.time_slot import TimeSlot
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.events.item.tentatively_accept.tentatively_accept_post_request_body import TentativelyAcceptPostRequestBody
+from msgraph_beta.generated.models.time_slot import TimeSlot
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 

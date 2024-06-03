@@ -18,7 +18,7 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get connectionOperation](../api/externalconnectors-connectionoperation-get.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md)|Read the properties and relationships of a [connectionOperation](../resources/externalconnectors-connectionoperation.md) object.|
+|[Get operation](../api/externalconnectors-connectionoperation-get.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md)|Read the properties and relationships of a [connectionOperation](../resources/externalconnectors-connectionoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|

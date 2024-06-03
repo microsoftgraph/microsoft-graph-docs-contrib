@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.onlinemeetings.item.send_virtual_appointment_sms.send_virtual_appointment_sms_post_request_body import SendVirtualAppointmentSmsPostRequestBody
 from msgraph.generated.models.attendee_notification_info import AttendeeNotificationInfo
+from msgraph.generated.models.virtual_appointment_message_type import VirtualAppointmentMessageType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

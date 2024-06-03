@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.compliance_management_partner import ComplianceManagementPartner
+from msgraph.generated.models.device_management_partner_tenant_state import DeviceManagementPartnerTenantState
 from msgraph.generated.models.compliance_management_partner_assignment import ComplianceManagementPartnerAssignment
 from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
