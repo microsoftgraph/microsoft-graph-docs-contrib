@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "provisioningType",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **type** property of the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAuditResource?view=graph-rest-beta) resource.",
+          "Description": "Removed the **type** property from the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAuditResource?view=graph-rest-beta) resource.",
           "Target": "cloudPcAuditResource"
         }
       ],
