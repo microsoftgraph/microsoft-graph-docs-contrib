@@ -41,6 +41,7 @@ POST /planner/rosters/{rosterId}/assignSensitivityLabel
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
+
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 | assignmentMethod | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values) | The method that is used to apply the sensitivity label to the roster. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
