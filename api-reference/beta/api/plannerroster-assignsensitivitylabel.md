@@ -75,7 +75,7 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/planner/rosters/3e34de02-b01d-423b-b2ae-ca0ccd1fab05/assignSensitivityLabel
 Content-type: application/json
-If-Match: 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+If-Match: "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""
 
 {
     "assignmentMethod" : "standard",
