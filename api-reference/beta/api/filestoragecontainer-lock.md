@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Locks a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#sitelockstate-values).
+Lock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#sitelockstate-values).
 
 ## Permissions
 
