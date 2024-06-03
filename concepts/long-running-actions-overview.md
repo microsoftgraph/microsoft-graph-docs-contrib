@@ -216,7 +216,7 @@ Long-running actions are supported on the following methods.
 
 | **Resource** | **API** |
 |:------ | :------ |
-| driveItem | [Copy](/graph/api/driveitem-copy) |
+| driveItem | [copy](/graph/api/driveitem-copy) |
 
 
 <!-- {
