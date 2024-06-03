@@ -51,11 +51,11 @@ This method fails with a `403 Forbidden` response code in the following situatio
 
 | Description | Code property value |
 |:---|:---|
-|If labels are mandatory for the user and the created roster has no sensitivity label, the request fails.|`SensitivityLabelsAreMandatory`|
-|If the roster is created with guest members initially added, but the proposed sensitivity label disallows the addition of guests, the request fails.|`AddingGuestUsersProhibitedByLabel`|
+|If labels are mandatory for the user and the created roster has no sensitivity label the request fails.|`sensitivityLabelsAreMandatory`|
+|If the roster is created with guest members initially added, but the proposed sensitivity label disallows the addition of guests, the request fails.|`addingGuestUsersProhibitedByLabel`|
 |If the provided label doesn't have the correct tenant ID, the request fails.|`TenantIdIsIncorrect`|
 
-For more information about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 

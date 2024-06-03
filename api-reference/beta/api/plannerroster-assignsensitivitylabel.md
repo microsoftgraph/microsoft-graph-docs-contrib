@@ -55,12 +55,12 @@ This method fails in the following situations, each with a respective response c
 
 | Response code | Description | Code property value |
 |:------|:-----|:-----|
-| `400 Bad Request`| If the label has sublabels, it can't be applied to the roster. Only labels without sublabels can be applied. The request fails.  | `SensitivityLabelHasSublabels` |
-| `403 Forbidden` | If labels are mandatory for the user and the user tries to remove the sensitivity label, the request fails. | `SensitivityLabelsAreMandatory` |
-| `403 Forbidden`  | If a previously existing label assignment was applied with `sensitivityLabelAssignmentMethod.privileged` and an app attempts to overwrite the label with `sensitivityLabelAssignmentMethod.standard`, the request fails. | `ExistingSensitivityLabelWasAppliedWithPrivilegedMethod` |
-| `404 Not Found`  | If a label can't be found or if the label isn't in scope for the user, the request fails.                                                                                                                                         | `SensitivityLabelNotFound`  |
+| `400 Bad Request`| If the label has sub-labels, it can't be applied to the roster. Only labels without sub-labels can be applied. The request fails.  | `sensitivityLabelHasSublabels` |
+| `403 Forbidden` | If labels are mandatory for the user and the user tries to remove the sensitivity label, the request fails. | `sensitivityLabelsAreMandatory` |
+| `403 Forbidden`  | If a previously existing label assignment was applied with `sensitivityLabelAssignmentMethod.privileged` and an app attempts to overwrite the label with `sensitivityLabelAssignmentMethod.standard`, the request fails. | `existingSensitivityLabelWasAppliedWithPrivilegedMethod` |
+| `404 Not Found`  | If a label can't be found or the label isn't in scope for the user, the request fails.                                                                                                                                         | `sensitivityLabelNotFound`  |
 
-For more information about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
