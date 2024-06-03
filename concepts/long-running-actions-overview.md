@@ -158,7 +158,7 @@ You can address this new item by using the resource ID, as shown in the followin
   "scopes": "files.readwrite"
 } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
