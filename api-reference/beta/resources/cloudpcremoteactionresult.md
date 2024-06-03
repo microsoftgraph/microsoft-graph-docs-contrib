@@ -1,6 +1,6 @@
 ---
 title: "cloudPcRemoteActionResult resource type"
-description: "Represents a remote action result specified by a Cloud PC."
+description: "Represents a Cloud-PC-specified remote action result."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a remote action result specified by a Cloud PC.
+Represents the Cloud PC-specified remote action result.
 
 ## Methods
 
