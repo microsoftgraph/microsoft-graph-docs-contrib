@@ -94,9 +94,10 @@ Namespace: microsoft.graph
 
 | Member              |
 | :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
+| required            |
+| recommeded          |
+| unknownFutureValue  |
+| peerRecommeded          |
 
 ### courseStatus values
 
