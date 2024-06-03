@@ -19,7 +19,7 @@ This is an abstract type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|impactedCount|String|The count of resources impacted. This may be an exhaustive count or a sampling.|
+|impactedCount|String|The count of resources impacted. The count could be an exhaustive count or a sampling.|
 |impactedCountLimitExceeded|Boolean|A flag indicating if the impactedCount is exhaustive or a sampling.|
 |resourceType|String|The type of resource that was impacted.|
 

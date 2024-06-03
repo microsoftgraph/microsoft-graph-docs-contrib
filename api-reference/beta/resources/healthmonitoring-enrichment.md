@@ -19,7 +19,7 @@ Represent a set of properties that add context to the alert.
 |Property|Type|Description|
 |:---|:---|:---|
 |impacts|[microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md) collection|A collection of resourceImpactSummary that gives a high level view of what kind of resources were impacted and to what degree.|
-|state|microsoft.graph.healthMonitoring.enrichmentState|Indicates if the alert has been enriched with additional data..The possible values are: `none`, `inProgress`, `enriched`, `unknownFutureValue`.|
+|state|microsoft.graph.healthMonitoring.enrichmentState|Indicates if the alert has been enriched with additional data. The possible values are: `none`, `inProgress`, `enriched`, `unknownFutureValue`.|
 |supportingData|[microsoft.graph.healthMonitoring.supportingData](../resources/healthmonitoring-supportingdata.md)|A collection of supportingData locations that can be queried for debugging the alert.|
 
 ## Relationships

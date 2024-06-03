@@ -18,7 +18,7 @@ Represents the email configuration of an alert type defining behavior that occur
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The id of the group to send an email to.|
+|groupId|String|The identifier of the group to send an email to.|
 |isEnabled|Boolean|Flag indicating if email notifications are enabled on the alert type.|
 
 ## Relationships

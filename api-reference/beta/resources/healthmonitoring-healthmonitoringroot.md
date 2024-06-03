@@ -1,6 +1,6 @@
 ---
 title: "healthMonitoringRoot resource type"
-description: "Represents a container for navigation properties of resources for  Microsoft Entra Health Monitoring."
+description: "Represents a container for navigation properties of resources for Microsoft Entra health monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for navigation properties of resources for Microsoft Entra Health Monitoring.
+Represents a container for navigation properties of resources for Microsoft Entra health monitoring.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -31,7 +31,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |alertConfigurations|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) collection|Represents the configuration of an alert type defining behavior that occurs when an alert is created.|
-|alerts|[microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) collection|Represents an alert that was detected by the health monitoring system for anomalous usage patterns found in an Microsoft Entra tenant.|
+|alerts|[microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) collection|Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

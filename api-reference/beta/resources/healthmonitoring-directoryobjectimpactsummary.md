@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resour
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|impactedCount|String|The count of resources impacted. This may be an exhaustive count or a sampling. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
+|impactedCount|String|The count of resources impacted. The count could be an exhaustive count or a sampling. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
 |impactedCountLimitExceeded|Boolean|A flag indicating if the impactedCount is exhaustive or a sampling. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
 |resourceType|String|The type of resource that was impacted. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
 

@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents an alert that was detected by the health monitoring system for anomalous usage patterns found in an Microsoft Entra tenant."
+description: "Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert that was detected by the health monitoring system for anomalous usage patterns found in an Microsoft Entra tenant.
+Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -28,15 +28,15 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.healthMonitoring.alertType|The alert type is associated with the monitored scenario that generated the alert.The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`.|
-|category|microsoft.graph.healthMonitoring.category|The category is a classification grouping the scenario.The possible values are: `unknown`, `authentication`, `unknownFutureValue`.|
+|alertType|microsoft.graph.healthMonitoring.alertType|The alert type is associated with the monitored scenario that generated the alert. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`.|
+|category|microsoft.graph.healthMonitoring.category|The category is a classification grouping the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Time that the Alert was generated at.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|Documentation is a key value pair mapping of name of docs and the link to find the docs.|
 |enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Provides helpful investigative information on the alert.|
-|id|String|Unique id of this alert under associated tenant tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals.The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`.|
+|id|String|Unique identifier of this alert under associated tenant tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`.|
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|A collection of signals that are used in the generation of the alert.|
-|state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert.The possible values are: `active`, `resolved`, `unknownFutureValue`.|
+|state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert. The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 
 ## Relationships
 None.

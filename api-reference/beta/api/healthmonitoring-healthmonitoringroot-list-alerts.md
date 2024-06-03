@@ -42,7 +42,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 `$orderby` is only supported on `createdDateTime` property.
 
-When no `$expand` query parameter is added, this API won't return `resourceSampling` property by default. To view `resourceSampling` in [directoryObjectImpactSummary](../resources//healthmonitoring-directoryobjectimpactsummary.md), you can add `$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling`.
+When no `$expand` query parameter is added, this API does not return `resourceSampling` property by default. To view `resourceSampling` in [directoryObjectImpactSummary](../resources//healthmonitoring-directoryobjectimpactsummary.md), you can add `$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling`.
 
 ## Request headers
 
