@@ -24,8 +24,8 @@ Inherits from [microsoft.graph.industryData.credential](../resources/industrydat
 | clientId          | String         | The client identifier of the application that is authenticating.                                                                                                                                             |
 | clientSecret      | String         | The client secret that is used to authenticate (write-only).                                                                                                                                         |
 | displayName       | String         | The name of the credential. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                                           |
-| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector validate operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md). |
-| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector validate operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                  |
+| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md). |
+| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                  |
 
 ## Relationships
 None.

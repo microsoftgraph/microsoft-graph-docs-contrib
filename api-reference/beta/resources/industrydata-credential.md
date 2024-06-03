@@ -19,8 +19,8 @@ Represents a base type for credentials supported in the Industry Data API. This 
 |Property|Type|Description|
 |:---|:---|:---|
 | displayName       | String         | The name of the credential.                                                           |
-| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector validate operation. |
-| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector validate operation.                                  |
+| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. |
+| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation.                                  |
 
 ## Relationships
 None.

@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.industryData.apiDataConnector](industrydata-apida
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-post.md)   | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)                         | Create a new [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                                                                         |
-| [Update oneRosterApiDataConnector](../api/industrydata-onerosterapidataconnector-update.md) | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)            | Update the properties of a [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                 |
+| [Create](../api/industrydata-onerosterapidataconnector-post.md)   | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)                         | Create a new [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                                                                         |
+| [Update](../api/industrydata-onerosterapidataconnector-update.md) | [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md)            | Update the properties of a [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-onerosterapidataconnector.md) object.                 |
 
 ## Properties
 |Property|Type|Description|

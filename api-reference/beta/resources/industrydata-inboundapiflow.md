@@ -20,8 +20,8 @@ Inherits from [microsoft.graph.industryData.inboundFlow](industrydata-inboundflo
 ## Methods
 | Method| Return type| Description|
 | :------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Create inboundApiFlow](../api/industrydata-inboundapiflow-post.md)                   | [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md)                               | Create a new **inboundApiFlow** object.                                                                                                      |
-| [Update inboundApiFlow](../api/industrydata-inboundapiflow-update.md)                  | [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md)            | Update the properties of a [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md) object.                |
+| [Create](../api/industrydata-inboundapiflow-post.md)                   | [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md)                               | Create a new **inboundApiFlow** object.                                                                                                      |
+| [Update](../api/industrydata-inboundapiflow-update.md)                  | [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md)            | Update the properties of a [microsoft.graph.industryData.inboundApiFlow](industrydata-inboundapiflow.md) object.                |
               
 
 ## Properties
