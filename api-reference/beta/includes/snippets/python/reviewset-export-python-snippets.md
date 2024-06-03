@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.compliance.ediscovery.cases.item.reviewsets.item.microsoft_graph_ediscovery_export.export_post_request_body import ExportPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.compliance.ediscovery.cases.item.reviewsets.item.microsoft_graph_ediscovery_export.export_post_request_body import ExportPostRequestBody
+from msgraph_beta.generated.models.export_options import ExportOptions
+from msgraph_beta.generated.models.export_file_structure import ExportFileStructure
 
 graph_client = GraphServiceClient(credentials, scopes)
 

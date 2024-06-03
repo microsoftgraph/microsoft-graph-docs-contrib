@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationPartner()
 tenantId := "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
@@ -55,6 +55,7 @@ applications.SetTargets(targets)
 b2bDirectConnectInbound.SetApplications(applications)
 requestBody.SetB2bDirectConnectInbound(b2bDirectConnectInbound)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(context.Background(), requestBody, nil)
 
 

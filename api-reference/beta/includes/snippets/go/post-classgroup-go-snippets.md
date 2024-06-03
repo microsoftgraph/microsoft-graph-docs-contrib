@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsindustrydata.NewProvisioningFlow()
 configuration := graphmodelsindustrydata.NewClassGroupConfiguration()
@@ -136,6 +136,7 @@ enrollmentMappings.SetMemberEnrollmentMappings(memberEnrollmentMappings)
 configuration.SetEnrollmentMappings(enrollmentMappings)
 requestBody.SetConfiguration(configuration)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 provisioningFlows, err := graphClient.External().IndustryData().OutboundProvisioningFlowSets().ByOutboundProvisioningFlowSetId("outboundProvisioningFlowSet-id").ProvisioningFlows().Post(context.Background(), requestBody, nil)
 
 

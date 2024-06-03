@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UnhideForUserPostRequestBody;
+use Microsoft\Graph\Generated\Chats\Item\UnhideForUser\UnhideForUserPostRequestBody;
 use Microsoft\Graph\Generated\Models\TeamworkUserIdentity;
 
 

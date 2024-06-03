@@ -27,7 +27,8 @@ Example:
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee"
+  "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee",
+  "openType": true
 }-->
 
 ```json

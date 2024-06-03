@@ -178,7 +178,7 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 
 If you're using role-based access control, the **notificationUrl** property looks like this:
 
-`EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
+`EventHub:https://<eventhubnamespace>.servicebus.windows.net/eventhubname/<eventhubname>?tenantId=<domainname>`
 
 - `eventhubnamespace` is the name you give to the Event Hub namespace. Can be found in the Event Hubs Overview page under Host name.
 - `eventhubname` is the name you give to the Event Hub. Can be found in the Event Hubs -> Overview -> Event Hubs.

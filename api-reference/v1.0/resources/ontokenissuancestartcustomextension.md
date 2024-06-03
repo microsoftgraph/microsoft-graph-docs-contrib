@@ -15,6 +15,10 @@ Custom extension to invoke when handling the event when a token is about to be i
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [customAuthenticationExtension](../resources/customauthenticationextension.md) resource type.
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,20 +15,11 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewCloudPcProvisioningPolicy()
 description := "Description value"
 requestBody.SetDescription(&description) 
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
-domainJoinConfiguration := graphmodels.NewCloudPcDomainJoinConfiguration()
-domainJoinType := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCDOMAINJOINTYPE 
-domainJoinConfiguration.SetDomainJoinType(&domainJoinType) 
-onPremisesConnectionId := "16ee6c71-fc10-438b-88ac-daa1ccafffff"
-domainJoinConfiguration.SetOnPremisesConnectionId(&onPremisesConnectionId) 
-requestBody.SetDomainJoinConfiguration(domainJoinConfiguration)
 
 
 cloudPcDomainJoinConfiguration := graphmodels.NewCloudPcDomainJoinConfiguration()
@@ -54,8 +48,6 @@ imageId := "MicrosoftWindowsDesktop_Windows-10_19h1-evd"
 requestBody.SetImageId(&imageId) 
 imageType := graphmodels.GALLERY_CLOUDPCPROVISIONINGPOLICYIMAGETYPE 
 requestBody.SetImageType(&imageType) 
-onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
-requestBody.SetOnPremisesConnectionId(&onPremisesConnectionId) 
 windowsSettings := graphmodels.NewCloudPcWindowsSettings()
 language := "en-US"
 windowsSettings.SetLanguage(&language) 
@@ -66,7 +58,18 @@ windowsSetting.SetLocale(&locale)
 requestBody.SetWindowsSetting(windowsSetting)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
+additionalData := map[string]interface{}{
+domainJoinConfiguration := graph.New()
+domainJoinType := "hybridAzureADJoin"
+domainJoinConfiguration.SetDomainJoinType(&domainJoinType) 
+onPremisesConnectionId := "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+domainJoinConfiguration.SetOnPremisesConnectionId(&onPremisesConnectionId) 
+	requestBody.SetDomainJoinConfiguration(domainJoinConfiguration)
+	"onPremisesConnectionId" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff", 
+}
+requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
 
 

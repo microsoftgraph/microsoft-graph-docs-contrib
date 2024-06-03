@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreateUploadSessionPostRequestBody;
+use Microsoft\Graph\Generated\Users\Item\Todo\Lists\Item\Tasks\Item\Attachments\CreateUploadSession\CreateUploadSessionPostRequestBody;
 use Microsoft\Graph\Generated\Models\AttachmentInfo;
+use Microsoft\Graph\Generated\Models\AttachmentType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -20,7 +20,7 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
+|[List secure scores](../api/securescores-list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
 
 
 ## Properties
@@ -62,10 +62,8 @@ The following is a JSON representation of the resource.
 {
   "activeUserCount": "Int32",
   "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-  "averageScore": "Double",
   "azureTenantId": "Guid",
   "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
-  "createdDate": "DateTimeOffset",
   "createdDateTime": "2019-02-07T20:33:53.156Z",
   "currentScore": "Int32",
   "enabledServices": "Collection(string)",

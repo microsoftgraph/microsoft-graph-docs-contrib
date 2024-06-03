@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.checklist_item import ChecklistItem
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.checklist_item import ChecklistItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 

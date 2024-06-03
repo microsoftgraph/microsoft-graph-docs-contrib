@@ -179,6 +179,11 @@
             "source_path": "api-reference/v1.0/resources/worksheetprotection.md",
             "redirect_url": "/graph/api/resources/workbookworksheetprotection",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/microsoft365-groups-concept-overview.md",
+            "redirect_url": "/graph/api/resources/groups-overview",
+            "redirect_document_id": false
         }
     ]
 }
