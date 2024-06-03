@@ -19,7 +19,7 @@ The connection setting of a Cloud PC. Currently, only **enableSingleSignOn** is 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableSingleSignOn|Boolean|When `true`, indicates the single sign-on is enabled. When `false` indicates single sign-on is disabled. The default value is `false`.|
+|enableSingleSignOn|Boolean|Indicates whether single sign-on is enabled. The default value is `false`.|
 
 ## Relationships
 
