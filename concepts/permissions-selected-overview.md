@@ -1,6 +1,6 @@
 ---
  "Overview of SharePoint & OneDrive Selected Microsoft Graph permissions"
- "OneDrive and SharePoint services on Microsoft Graph expose a set of Selected scopes allowing for granular consent down to the file/list item level."
+ "OneDrive and SharePoint services on Microsoft Graph expose a set of Selected scopes allowing for granular consent down to the list & list item level."
  patrodg
  patrodg
  patrodg
@@ -24,16 +24,31 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 |---|---|
 |Sites.Selected|Manages application access at the site collection level, providing access to a specific site collection|
 |Lists.SelectedOperations.Selected|Manages application access at the list level, providing access to a specific list|
-|ListItems.SelectedOperations.Selected|Manages application access at the list item or folder level, providing access to one or more list items|
+|ListItems.SelectedOperations.Selected|Manages application access at the files, list item, or folder level, providing access to one or more list items|
 |Files.SelectedOperations.Selected|Manages application access at the file or library folder level, providing access to one or more files|
+
+> Because of the architecture of SharePoint files are also list items, but list items are not files. Meaning that while `ListItems.SelectedOperations.Selected` will allow you to read some information about files you will not be able to read the content or perform other file specific operations.
 
 ## How Selected Scopes work with SharePoint & OneDrive Permissions
 
 When an administrator consents to Selected scopes for an application they're delegating management of resource permissions to the owners of that resource within the workload. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. Selected scopes require an explicit assignment action, an application consented for Lists.SelectedOperations.Selected would initially have no access.
 
-> Assigning application permissions breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design.
+Selected scopes require a series of steps to work, which provides several means of control for administrators. Here we will use `Lists.SelectedOperations.Selected` as an example, but this applies to all of the *.Selected scopes.
 
-An example of setting permissions is shown for [sites](../api-reference/beta/api/site-get-permission.md) but the logic is similar for [lists](../api-reference/beta/api/list-get-permission.md), [list items](../api-reference/beta/api/listitem-get-permission.md), [files](../api-reference/beta/api/driveitem-post-permission.md), or [folders](../api-reference/beta/api/listitem-get-permission.md).
+1. The application must be consented in EntraID to have either the application or delegated `Lists.SelectedOperations.Selected` scope.
+2. The application must be granted permissions to a List via a call to `POST /sites/{siteid}/lists/{listid}/permissions` with a specific role.
+3. The application must acquire a valid token containing the `Lists.SelectedOperations.Selected` scope for calls to the permissioned list.
+
+If any of those three steps are missed, the application will not have access. This allows administrators to leverage two points of control:
+
+- Removing the permissions on a specific list via a call to `DELETE /sites/{siteid}/lists/{listid}/permissions/{id}` which will remove access to the list for that application
+- Revoke the `Lists.SelectedOperations.Selected` scope consent in EntraID, which will block the application from access any list to which it was previously granted permissions.
+
+Reading the above there are some implications it is worth making explicit - that you can consent an application the `Lists.SelectedOperations.Selected` in EntraID, but not grant permissions to any list - meaning the application will have no access. Likewise, you can call `POST /sites/{siteid}/lists/{listid}/permissions` for any application, but without the proper scopes appearing in the token the application will have no access. All three steps must be completed to ensure the expected access. This applies as well for the other *.Selected scopes and their respective levels.
+
+> Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance as this is the root of permission inheritance.
+
+An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permission.md) but the logic is similar for [lists](../api-reference/beta/api/list-post-permission.md), [list items](../api-reference/beta/api/listitem-post-permission.md), [files](../api-reference/beta/api/driveitem-post-permission.md), or [folders](../api-reference/beta/api/listitem-post-permission.md).
 
 ### Roles
 
@@ -109,11 +124,7 @@ The resource documentation contains full examples for managing permissions throu
 
 ### What Permissions Do I need to Manage Permissions?
 
-<<<<<<< HEAD
-The permission requirements vary by level, in all delegated cases the current user also needs sufficient permissions to manage access by calling the API.
-=======
 The permission requirements vary by level, in all delegated cases the current user also needs sufficient permissions to manage access by calling the API. The below table includes scopes and scopes + assigned roles to the parent resource. For example  if you have the Sites.Selected scope AND FullControl role (Sites.Selected+FullControl) you can manage resources within that site collection.
->>>>>>> d04b14179c4e039b1001fe5ebd7a95f82b191a7c
 
 |Resource|Required Resource Permissions|Notes
 |---|---|---|
@@ -146,7 +157,8 @@ When calculating access, we use the values provided in the token to roughly foll
 ### Behavior of Consents / Notes
 
 * Applications can have multiple Selected consents and for those consents to apply at various level across the tenant
-* application access is lost as soon as a scope is revoked, if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoked it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
+* Application access is lost as soon as a scope is revoked, if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoked it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
+* If an application has permissions to a list via a call to list/permissions, and the access is removed via a call to DELETE lists/permissions/id it loses access to that list and all items within that list, regardless of any explicit permissions set on those list items. You can later re-grant specific item permissions if needed.
 * Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Allowing applications to ONLY have access at a specific level
 * Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and we honor any scopes presented in the token
 
