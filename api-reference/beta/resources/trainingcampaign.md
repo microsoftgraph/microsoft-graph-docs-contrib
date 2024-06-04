@@ -3,7 +3,7 @@ title: "trainingCampaign resource type"
 description: "Represents a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 toc.title: Training campaign (preview)
 ---
