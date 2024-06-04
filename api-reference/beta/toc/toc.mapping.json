@@ -2214,6 +2214,7 @@
           "name": "Attack simulation and training",
           "resources": [
             "simulation",
+            "trainingCampaign",
             "attackSimulationOperation",
             "endUserNotification",
             "landingPage",
