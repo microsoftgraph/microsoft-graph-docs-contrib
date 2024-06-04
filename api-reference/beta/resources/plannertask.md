@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object that can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md).
+Represents a planner task in Microsoft 365. A planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object that can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the planner REST API](planner-overview.md).
 
 
 ## Methods
@@ -30,7 +30,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|The number of checklist items with value set to `false`, representing incomplete items.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is applied. See [plannerAppliedCategories resource type](plannerappliedcategories.md) for possible values.|
-|assigneePriority|String|A hint that is used to order items of this type in a list view. For more information, see [Using order hints in Planner](planner-order-hint-format.md).|
+|assigneePriority|String|A hint that is used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the same plan as the task. The value of the bucketId property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
 |checklistItemCount|Int32|The number of checklist items that are present on the task.|
@@ -43,11 +43,11 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |dueDateTime|DateTimeOffset|The date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise,`false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
-|isOnMyDay|Boolean|A Boolean value that indicates whether to show this task in the MyDay view. `true` to show the task. Otherwise, `false`.|
+|isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
-|orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in Planner](planner-order-hint-format.md)n.|
+|orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md)n.|
 |percentComplete|Int32|The percentage of task completion. When set to `100`, the task is completed. |
-|priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
+|priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|The type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
