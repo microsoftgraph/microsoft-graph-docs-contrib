@@ -5171,6 +5171,32 @@
       "CreatedDateTime": "2024-05-16T06:58:17.7596296Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
+          "ApiChange": "Method",
+          "ChangedApiName": "getShiftWorkCloudPcAccessState",
+          "ChangeType": "Change",
+          "Description": "Retire getShiftWorkAccessState Api",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "shiftWorkCloudPcAccessState",
+          "ChangeType": "Change",
+          "Description": "Retire shiftWorkCloudPcAccessState enum",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-04T06:58:17.7596296Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }
