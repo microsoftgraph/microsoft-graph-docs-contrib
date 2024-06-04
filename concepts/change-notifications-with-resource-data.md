@@ -136,7 +136,7 @@ In the following example, the change notification contains two items for the sam
 }
 ```
 
-The change notificaton object is in the structure of the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
+The change notification object is in the structure of the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
 
 ### How to validate
 
