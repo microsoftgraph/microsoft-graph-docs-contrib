@@ -37,7 +37,7 @@ Deleting a **plannerRoster** also deletes the plan and all tasks in the plan. A 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| assignedSensitivityLabel | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values)| The sensitivity label applied to the roster. If mandatory labeling is enabled for the user and no label is specified, the user can't create the roster. Similarly, if labels are mandatory for the user, the user can't change the roster's label to `null`. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
+| assignedSensitivityLabel | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values)| The sensitivity label applied to the roster. If mandatory labeling is enabled for the user and no label is specified, the user can't create the roster. Also, if labels are mandatory for the user, the user can't change the label of the roster to `null`. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
 |id|String|Identifier of the **plannerRoster**. Read only. Inherited from [entity](../resources/entity.md)|
 
 ## Relationships
