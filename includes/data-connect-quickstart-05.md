@@ -4,11 +4,11 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this step, you learn how to register and approve a Microsoft Entra application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend that you create a Microsoft Entra application and a storage destination resource.
+In this step, you learn how to register and approve a Microsoft Entra application with Microsoft Graph Data Connect (Data Connect).
 
 ## Register your application with Microsoft Graph Data Connect
 
-As a prerequisite, please enable Data Connect in your tenant. It's helpful to have a Microsoft Entra app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
+As a prerequisite, you should enable Data Connect in your tenant.  We recommend that you create a Microsoft Entra application and a storage destination resource; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
 ### Provide details in the Registration info tab
 
