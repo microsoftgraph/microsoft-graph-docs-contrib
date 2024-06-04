@@ -1,6 +1,6 @@
 ---
 title: "Explainer: How does the Microsoft Graph API send mail?"
-description: "Different steps involved in sending email using Microsoft Graph API till delivery."
+description: "Different steps involved in sending email using Microsoft Graph API until delivery."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
