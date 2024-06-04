@@ -24,7 +24,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 ### Files
 
-[Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer) object.
+[Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
 ## June 2024: New in preview only
 
