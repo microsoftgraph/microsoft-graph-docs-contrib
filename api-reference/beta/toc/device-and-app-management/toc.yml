@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Browser management
   displayName: Edge, Internet Explorer, IE mode, site list
@@ -101,9 +104,9 @@ items:
     - name: Restore
       href: ../../api/cloudpc-restore.md
     - name: Set review status
-      href: ../../microsoft-graph-docs/..\api\cloudpc-setreviewstatus.md
+      href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
-      href: ../../microsoft-graph-docs/..\api\cloudpc-retrievereviewstatus.md
+      href: ../../api/cloudpc-retrievereviewstatus.md
     - name: Bulk set review status
       href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
