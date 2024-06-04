@@ -83,8 +83,6 @@ items:
     href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
   - name: Get launch info
     href: ../../api/cloudpc-getcloudpclaunchinfo.md
-  - name: Get shift work access state (deprecated)
-    href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
   - name: Reboot
     href: ../../api/cloudpc-reboot.md
   - name: Rename
