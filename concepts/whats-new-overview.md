@@ -31,7 +31,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 ## May 2024: New and generally available
 
 ### Identity and access | Identity and sign-in
-
+ 
 Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
 
 ### Tasks and plans
