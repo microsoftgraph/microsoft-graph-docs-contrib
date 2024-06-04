@@ -2260,9 +2260,9 @@ items:
           href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
     - name: External users self service sign up events flow
       href: ../../resources/externalusersselfservicesignupeventsflow.md
-    - name: Authentication condition application
+    - name: Linked applications
       items:
-      - name: Authentication condition application
+      - name: Linked applications
         href: ../../resources/authenticationconditionapplication.md
       - name: List
         href: ../../api/authenticationconditionsapplications-list-includeapplications.md
