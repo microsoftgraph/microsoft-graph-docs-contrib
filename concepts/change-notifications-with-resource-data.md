@@ -44,7 +44,7 @@ You must also validate both endpoints as described in [Notification endpoint val
 The following example subscribes to channel messages being created or updated in Microsoft Teams.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "change-notifications-rich-notifications-subscription-request"
 }-->
 ```http
