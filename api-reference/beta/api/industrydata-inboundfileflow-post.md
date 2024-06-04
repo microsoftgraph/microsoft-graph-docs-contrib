@@ -44,7 +44,7 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
+In the request body, supply a JSON representation of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
 The following table lists the required and optional properties for creating an **inboundFileFlow** object.
 

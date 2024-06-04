@@ -15,16 +15,16 @@ Namespace: microsoft.graph.industryData
 
 Represents credentials that use OAuth 1.0 to authenticate to a resource.
 
-Inherits from [microsoft.graph.industryData.oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).
+Inherits from [oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| clientId          | String         | The client identifier of the application that is authenticating. Inherited from [microsoft.graph.industryData.oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).                    |
-| clientSecret      | String         | The client secret that is used to authenticate (write-only). Inherited from [microsoft.graph.industryData.oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).                |
-| displayName       | String         | The name of the credential. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                                           |
-| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md). |
-| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [microsoft.graph.industryData.credential](../resources/industrydata-credential.md).                                  |
+| clientId          | String         | The client identifier of the application that is authenticating. Inherited from [oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).                    |
+| clientSecret      | String         | The client secret that is used to authenticate (write-only). Inherited from [oAuthClientCredential](../resources/industrydata-oauthclientcredential.md).                |
+| displayName       | String         | The name of the credential. Inherited from [credential](../resources/industrydata-credential.md).                                                           |
+| isValid           | Boolean        | Indicates whether the credential provided is valid based on the last data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [credential](../resources/industrydata-credential.md). |
+| lastValidDateTime | DateTimeOffset | The time that the credential was last successfully validated by the data connector [validate](../api/industrydata-industrydataconnector-validate.md) operation. Inherited from [credential](../resources/industrydata-credential.md).                                  |
 
 ## Relationships
 None.

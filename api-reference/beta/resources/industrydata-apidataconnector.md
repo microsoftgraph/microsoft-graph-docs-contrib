@@ -15,9 +15,9 @@ Namespace: microsoft.graph.industryData
 
 Represents a base type for API connectors, which establish a connection to a data source that is available from an API. This is an abstract type.
 
-Inherits from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md).
+Inherits from [industryDataConnector](industrydata-industrydataconnector.md).
 
-Base type of [microsoft.graph.industryData.oneRosterApiDataConnector](industrydata-oneRosterApiDataConnector.md).
+Base type of [oneRosterApiDataConnector](industrydata-oneRosterApiDataConnector.md).
 
 ## Properties
 |Property|Type|Description|
@@ -25,12 +25,12 @@ Base type of [microsoft.graph.industryData.oneRosterApiDataConnector](industryda
 | apiFormat   | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. The possible values are: `oneRoster`, `unknownFutureValue`.                          |
 | baseUrl     | String                                                                             | The base URL, including the scheme, host, and path for the API, with or without a trailing '/'. For example, "https://example.com/ims/oneRoster/v1p1"              |
 | credential  | [microsoft.graph.industryData.credential](industrydata-credential.md) | A credential to use to connect to the API.                                                                                                               |
-| displayName | String                                                                             | The name of the data connector. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md). |
+| displayName | String                                                                             | The name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sourceSystem|[microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)|The **sourceSystemDefinition** object that this connector is connected to. Inherited from [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)|
+|sourceSystem|[microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md)|The **sourceSystemDefinition** object that this connector is connected to. Inherited from [industryDataConnector](industrydata-industrydataconnector.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

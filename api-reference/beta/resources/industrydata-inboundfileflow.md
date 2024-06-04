@@ -21,8 +21,8 @@ Inherits from [inboundFlow](industrydata-inboundflow.md).
 
 | Method                                                                  | Return type                                                                                | Description                                                                                            |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| [Create](../api/industrydata-inboundfileflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)                    | Create a new **inboundFileFlow** object.                                                               |
-| [Update](../api/industrydata-inboundfileflow-update.md) | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundfileflow.md)            | Update the properties of an [inboundFileFlow](industrydata-inboundfileflow.md) object.                 |
+| [Create](../api/industrydata-inboundfileflow-post.md)   | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundflow.md)                    | Create a new **inboundFileFlow** object.                                                               |
+| [Update](../api/industrydata-inboundfileflow-update.md) | [microsoft.graph.industryData.inboundFileFlow](industrydata-inboundfileflow.md)            | Update the properties of an **inboundFileFlow** object.                 |
 
 ## Properties
 

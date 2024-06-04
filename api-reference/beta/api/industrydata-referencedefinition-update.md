@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.
+Update the properties of a [referenceDefinition](../resources/industrydata-referencedefinition.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

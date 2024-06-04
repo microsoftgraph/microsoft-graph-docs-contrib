@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.
+Create a new [referenceDefinition](../resources/industrydata-referencedefinition.md) object.
 
 **referenceDefinition** objects associate incoming data with standardized reference types values for validation.
 
@@ -60,7 +60,7 @@ POST /external/industryData/referenceDefinitions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referenceDefinition.md) object.
+In the request body, supply a JSON representation of the [referenceDefinition](../resources/industrydata-referenceDefinition.md) object.
 
 The following table lists the required and optional properties for creating a **referenceDefinition** object.
 

@@ -21,8 +21,8 @@ Inherits from [fileDataConnector](industrydata-filedataconnector.md).
 
 | Method                                                                                | Return type                                                                                              | Description                                                                                                          |
 | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| [Create](../api/industrydata-azuredatalakeconnector-post.md)   | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Create a new [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                                |
-| [Update](../api/industrydata-azuredatalakeconnector-update.md) | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Update the properties of an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                 |
+| [Create](../api/industrydata-azuredatalakeconnector-post.md)   | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Create a new **azureDataLakeConnector** object.                                |
+| [Update](../api/industrydata-azuredatalakeconnector-update.md) | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Update the properties of an **azureDataLakeConnector** object.                 |
 | [Get upload session](../api/industrydata-azuredatalakeconnector-getuploadsession.md)    | [microsoft.graph.industryData.fileUploadSession](industrydata-fileuploadsession.md)                      | Retrieve an upload session used to supply file-based data to an inbound flow.                                       |
 
 ## Properties

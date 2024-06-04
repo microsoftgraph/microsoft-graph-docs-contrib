@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.industryData.inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
+Create a new [inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 ## Permissions
@@ -46,7 +46,7 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
+In the request body, supply a JSON representation of the [inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
 
 The following table lists the required and optional properties for creating an **inboundApiFlow** object.
 

@@ -44,7 +44,7 @@ POST /external/industryData/dataConnectors
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
+In the request body, supply a JSON representation of the [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
 
 You can specify the following properties when you create an **azureDataLakeConnector**.
 

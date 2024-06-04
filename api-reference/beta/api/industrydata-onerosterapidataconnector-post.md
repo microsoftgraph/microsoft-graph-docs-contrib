@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) object.
+Create a new [oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -47,17 +47,17 @@ POST /external/industryData/dataConnectors
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.oneRosterApiDataConnector](../resources/industrydata-oneRosterApiDataConnector.md) object.
+In the request body, supply a JSON representation of the [oneRosterApiDataConnector](../resources/industrydata-oneRosterApiDataConnector.md) object.
 
 The following table lists the required and optional properties for creating an **oneRosterApiDataConnector** object.
 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName           | String                                                                             | The name of the data connector. Inherited from [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md). Required.                                                                                                   |
-| apiFormat             | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. Inherited from [microsoft.graph.industryData.apiDataConnector](../resources/industrydata-apidataconnector.md). The possible values are: `oneRoster`, `unknownFutureValue`. Required.             |
-| baseUrl               | String                                                                             | The base URI, including the scheme, host, and path, with or without a trailing '/'. For example, "https://example.com/ims/oneRoster/v1p1". Inherited from [microsoft.graph.industryData.apiDataConnector](../resources/industrydata-apidataconnector.md). Required.|
-| credential            | [microsoft.graph.industryData.credential](../resources/industrydata-credential.md) | The base type for all supported credentials. Inherited from [microsoft.graph.industryData.apiDataConnector](../resources/industrydata-apidataconnector.md). Required.                                                                   |
+| displayName           | String                                                                             | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required.                                                                                                   |
+| apiFormat             | microsoft.graph.industryData.apiFormat                                             | The API format of the external system being connected to. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). The possible values are: `oneRoster`, `unknownFutureValue`. Required.             |
+| baseUrl               | String                                                                             | The base URI, including the scheme, host, and path, with or without a trailing '/'. For example, "https://example.com/ims/oneRoster/v1p1". Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). Required.|
+| credential            | [microsoft.graph.industryData.credential](../resources/industrydata-credential.md) | The base type for all supported credentials. Inherited from [apiDataConnector](../resources/industrydata-apidataconnector.md). Required.                                                                   |
 | apiVersion            | String                                                                             | The API version of the OneRoster source. Required.                                                                                                                                                                                                        |
 | isDemographicsEnabled | Boolean                                                                            | Indicates whether the user specified to import optional demographics data. Required.                                                                                                                                                                                           |
 | isFlagsEnabled        | Boolean                                                                            | Indicates whether the user specified to import optional flags data. Required.                                                                                                                                                                                                  |

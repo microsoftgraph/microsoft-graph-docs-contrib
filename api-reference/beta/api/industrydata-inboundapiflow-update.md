@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
+Update the properties of a [inboundApiFlow](../resources/industrydata-inboundapiflow.md) object.
 
 ## Permissions
 
