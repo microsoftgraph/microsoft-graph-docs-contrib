@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/groups-overview.md
@@ -33,11 +36,11 @@ items:
       href: ../../api/group-post-owners.md
     - name: Remove owner
       href: ../../api/group-delete-owners.md
-    - name: List groupLifecyclePolicies
+    - name: List group lifecycle policies
       href: ../../api/group-list-grouplifecyclepolicies.md
     - name: List transitive members
       href: ../../api/group-list-transitivemembers.md
-    - name: List transitive memberOf
+    - name: List transitive member of
       href: ../../api/group-list-transitivememberof.md
     - name: Assign license
       href: ../../api/group-assignlicense.md
@@ -69,7 +72,7 @@ items:
       href: ../../api/group-update-event.md
     - name: Delete event
       href: ../../api/group-delete-event.md
-    - name: List calendarView
+    - name: List calendar view
       href: ../../api/group-list-calendarview.md
   - name: Conversations
     items:

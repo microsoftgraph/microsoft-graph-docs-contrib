@@ -42,9 +42,9 @@ This resource supports:
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) collection | Get the owners of the group from the **owners** navigation property. |
 | [Add owners](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. |
-| [List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
+| [List group lifecycle policies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
 | [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups, and devices that are members, including nested members of this group. |
-| [List transitive memberOf](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+| [List transitive member of](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 | [Assign license](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. Renewing extends the group expiration by the number of days defined in the policy. |
 | [Validate properties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
@@ -60,7 +60,7 @@ This resource supports:
 | [Get event](../api/group-get-event.md) | [event](event.md) | Read properties of an event object. |
 | [Update event](../api/group-update-event.md) | None | Update the properties of an event object. |
 | [Delete event](../api/group-delete-event.md) | None | Delete event object. |
-| [List calendarView](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
+| [List calendar view](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
 | **Conversations** |  |  |
 | [List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection | Get a conversation object collection. |
 | [Create conversation](../api/group-post-conversations.md) | [conversation](conversation.md) | Create a new conversation by posting to the conversations collection. |

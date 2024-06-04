@@ -65,11 +65,10 @@ This resource supports:
 | [List owned objects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects owned by the user from the ownedObjects navigation property. |
 | [List registered devices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are registered for the user from the registeredDevices navigation property. |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
-| [List deleted groups](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
-| [List deleted groups owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that owned by a user. |
-| [Get deleted group](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted group by ID. |
-| [Restore deleted group](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a group deleted in the tenant in the last 30 days. |
-| [Permanently delete group](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted group from the tenant. |
+| [List deleted users](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the users deleted in the tenant in the last 30 days. |
+| [Get deleted user](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
+| [Restore deleted user](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
+| [Permanently delete user](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
 | **Drive** |  |  |
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |

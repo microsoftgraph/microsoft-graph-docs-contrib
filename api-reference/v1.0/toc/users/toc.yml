@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/users.md
@@ -87,15 +90,13 @@ items:
       href: ../../api/user-list-registereddevices.md
     - name: Revoke sign-in sessions
       href: ../../api/user-revokesigninsessions.md
-    - name: List deleted groups
+    - name: List deleted users
       href: ../../api/directory-deleteditems-list.md
-    - name: List deleted groups owned by user
-      href: ../../api/directory-deleteditems-getuserownedobjects.md
-    - name: Get deleted group
+    - name: Get deleted user
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted group
+    - name: Restore deleted user
       href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete group
+    - name: Permanently delete user
       href: ../../api/directory-deleteditems-restore.md
   - name: Drive
     items:
