@@ -16,15 +16,14 @@ Namespace: microsoft.graph
 
 Update an [Exchange protection policy](../resources/exchangeprotectionpolicy.md). This method adds a [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|Not available.|
+<!-- { "blockType": "permissions", "name": "exchangeprotectionpolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-update-permissions.md)]
 
 ## HTTP request
 

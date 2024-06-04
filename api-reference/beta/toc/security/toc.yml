@@ -849,6 +849,10 @@ items:
       href: ../../resources/security-artifact.md
     - name: Autonomous system
       href: ../../resources/security-autonomoussystem.md
+    - name: Cloud logon request evidence
+      href: ../../resources/security-cloudlogonrequestevidence.md
+    - name: Cloud logon session evidence
+      href: ../../resources/security-cloudlogonsessionevidence.md
     - name: CVSS summary
       href: ../../resources/security-cvsssummary.md
     - name: Formatted content

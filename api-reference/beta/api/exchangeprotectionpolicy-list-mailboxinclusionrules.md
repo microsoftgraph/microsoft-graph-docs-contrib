@@ -18,15 +18,14 @@ Get a list of [mailboxProtectionRule](../resources/mailboxprotectionrule.md) obj
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "exchangeprotectionpolicy_list_mailboxinclusionrules" } -->
+[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-list-mailboxinclusionrules-permissions.md)]
 
 ## HTTP request
 
