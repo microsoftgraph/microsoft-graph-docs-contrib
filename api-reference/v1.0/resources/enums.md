@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### binaryOperator values
 
 |Member|
@@ -86,9 +94,10 @@ Namespace: microsoft.graph
 
 | Member              |
 | :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
+| required            |
+| recommeded          |
+| unknownFutureValue  |
+| peerRecommeded          |
 
 ### courseStatus values
 

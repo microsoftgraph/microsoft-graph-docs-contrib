@@ -23,11 +23,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningCourseActivities](../api/learningcourseactivity-list.md)|[learningCourseActivity](../resources/learningcourseactivity.md) collection|Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) objects (assigned or self-initiated) for a user.|
-|[Create learningCourseActivity](../api/employeeexperienceuser-post-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.|
-|[Get learningCourseActivity](../api/learningcourseactivity-get.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Get the specified [learningCourseActivity](../resources/learningcourseactivity.md) object using either an ID or an **externalCourseActivityId** of the learning provider, or a **courseActivityId** of a user.|
-|[Update learningCourseActivity](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object. |
-|[Delete learningCourseActivity](../api/learningcourseactivity-delete.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object by using the course activity ID of either an assignment or a self-initiated activity.|
+|[List](../api/learningcourseactivity-list.md)|[learningCourseActivity](../resources/learningcourseactivity.md) collection|Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) objects (assigned or self-initiated) for a user.|
+|[Create](../api/employeeexperienceuser-post-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Get](../api/learningcourseactivity-get.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Get the specified [learningCourseActivity](../resources/learningcourseactivity.md) object using either an ID or an **externalCourseActivityId** of the learning provider, or a **courseActivityId** of a user.|
+|[Update](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object. |
+|[Delete](../api/learningcourseactivity-delete.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object by using the course activity ID of either an assignment or a self-initiated activity.|
 
 ## Properties
 
@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |assignerUserId|String|The user ID of the assigner. Optional.|
-|assignmentType|assignmentType|Assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
+|assignmentType|assignmentType|Assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`, `peerRecommended`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage completion value of the course activity. Optional.|
 |dueDateTime|DateTimeTimeZone|Due date for the course activity. Optional.|

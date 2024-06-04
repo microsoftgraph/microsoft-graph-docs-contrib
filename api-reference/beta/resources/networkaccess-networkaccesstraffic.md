@@ -18,7 +18,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get a list of the [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) objects and their properties.|
+|[List](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get a list of the [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) objects and their properties.|
 
 
 ## Properties

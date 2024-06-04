@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.security.threat_intelligence.whois_records.whois_records_request_builder import WhoisRecordsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = WhoisRecordsRequestBuilder.WhoisRecordsRequestBuilderGetQueryPara
 		orderby = ["registrationDateTime desc""],
 )
 
-request_configuration = WhoisRecordsRequestBuilder.WhoisRecordsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

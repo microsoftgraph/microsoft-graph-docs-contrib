@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ResumePostRequestBody;
+use Microsoft\Graph\Generated\IdentityGovernance\EntitlementManagement\AssignmentRequests\Item\Resume\ResumePostRequestBody;
 use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequestCallbackData;
+use Microsoft\Graph\Generated\Models\AccessPackageCustomExtensionStage;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

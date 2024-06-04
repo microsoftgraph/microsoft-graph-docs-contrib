@@ -17,7 +17,7 @@ An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 

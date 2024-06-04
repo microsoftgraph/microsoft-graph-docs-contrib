@@ -149,9 +149,8 @@ If successful, Microsoft Graph returns a `201 Created` code and a [subscription]
 Each subscription has a unique **subscriptionId**, even if you have multiple subscriptions that monitor the same resource and use the same notification URL.
 
 > [!NOTE]
-> Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered to your service.
-
-> [!NOTE]
+> Any query string parameter included in the **notificationUrl** property is included in the HTTP POST request when notifications are being delivered to your service.
+>
 > Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** as an existing subscription, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
 
 #### notificationUrl validation

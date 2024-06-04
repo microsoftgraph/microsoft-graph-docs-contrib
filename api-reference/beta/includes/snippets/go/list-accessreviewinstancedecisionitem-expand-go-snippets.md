@@ -15,10 +15,10 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Expand: [] string {"instance($expand=definition)"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

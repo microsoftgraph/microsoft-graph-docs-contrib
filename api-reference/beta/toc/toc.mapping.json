@@ -76,6 +76,47 @@
       ]
     },
     {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "serviceApp",
+        "protectionPolicyBase",
+        "sharePointProtectionPolicy",
+        "exchangeProtectionPolicy",
+        "oneDriveForBusinessProtectionPolicy",
+        "protectionUnitBase",
+        "siteProtectionUnit",
+        "mailboxProtectionUnit",
+        "driveProtectionUnit",
+        "protectionRuleBase",
+        "siteProtectionRule",
+        "mailboxProtectionRule",
+        "driveProtectionRule",
+        "restorePoint",
+        "restoreSessionBase",
+        "sharePointRestoreSession",
+        "exchangeRestoreSession",
+        "oneDriveForBusinessRestoreSession",
+        "restoreArtifactBase",
+        "siteRestoreArtifact",
+        "mailboxRestoreArtifact",
+        "driveRestoreArtifact"
+      ],
+      "complexTypes": [
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
+      ]
+    },
+    {
       "name": "Calendars",
       "keywords": [
         "Outlook",
@@ -279,7 +320,7 @@
           ]
         },
         {
-          "name": "Cloud PC (preview)",
+          "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
             "cloudPC",
@@ -298,13 +339,21 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint"
+            "virtualEndpoint",
+            "cloudPcBulkAction"
           ],
           "complexTypes": [
             "appScope",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkPowerOff",
+            "cloudPcBulkPowerOn",
+            "cloudPcBulkReprovision",
+            "cloudPcBulkResize",
+            "cloudPcBulkRestart",
+            "cloudPcBulkRestore",
+            "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -1442,7 +1491,7 @@
               ]
             },
             {
-              "name": "User flows for Microsoft Entra ID and Azure AD B2C",
+              "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
                 "identityUserFlow",
                 "b2cIdentityUserFlow",
@@ -1454,11 +1503,10 @@
               ]
             },
             {
-              "name": "User flows for Microsoft Entra ID for customers (preview)",
+              "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }
@@ -1650,6 +1698,7 @@
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
+            "microsoft.graph.networkaccess.remoteNetwork",
             "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
           ],
           "childNodes": [
@@ -1686,11 +1735,21 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule"
               ]
+            },
+            {
+              "name": "Remote network",
+              "resources": [
+                "microsoft.graph.networkaccess.deviceLink",
+                "microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration"
+              ]
             }
           ]
         },
         {
           "name": "Partner customer administration",
+          "resources": [
+            "microsoft.graph.partner.security.partnerSecurityAlert"
+          ],
           "childNodes": [
             {
               "name": "Granular delegated admin privileges",
@@ -1959,6 +2018,14 @@
           "name": "Identity and access reports",
           "childNodes": [
             {
+              "name": "Microsoft Entra recommendations (preview)",
+              "overview": "../../resources/recommendations-api-overview.md",
+              "resources": [
+                "recommendation",
+                "impactedResource"
+              ]
+            },
+            {
               "name": "Microsoft Entra activity reports",
               "overview": "../../resources/report-identity-access.md",
               "shouldSort": true,
@@ -2123,8 +2190,7 @@
         "secureScore",
         "secureScoreControlProfile",
         "tiIndicator",
-        "microsoft.graph.security.detectionRule",
-        "microsoft.graph.security.threatSubmission"
+        "microsoft.graph.security.detectionRule"
       ],
       "childNodes": [
         {
@@ -2295,6 +2361,8 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
+            "microsoft.graph.security.cloudLogonRequestEvidence",
+            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",
@@ -2315,6 +2383,7 @@
         {
           "name": "Threat submission (preview)",
           "resources": [
+            "microsoft.graph.security.threatSubmission",
             "microsoft.graph.security.emailThreatSubmission",
             "microsoft.graph.security.emailThreatSubmissionPolicy",
             "microsoft.graph.security.fileThreatSubmission",
@@ -2353,6 +2422,14 @@
             "webPart"
           ],
           "childNodes": [
+            {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
             {
               "name": "Web part",
               "resources": [
@@ -2553,6 +2630,7 @@
               "resources": [
                 "virtualEventPresenter",
                 "virtualEventRegistration",
+                "virtualEventWebinarRegistrationConfiguration",
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"
@@ -2799,6 +2877,11 @@
     {
       "resource": "subjectRightsRequest",
       "overview": "../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
+    }
+    ,
+    {
+      "resource": "partnerSecurityAlert",
+      "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
     }
   ]
 }

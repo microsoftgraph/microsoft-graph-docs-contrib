@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.event import Event
 from msgraph.generated.models.response_status import ResponseStatus
+from msgraph.generated.models.response_type import ResponseType
+from msgraph.generated.models.online_meeting_provider_type import OnlineMeetingProviderType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

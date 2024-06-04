@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ReplyPostRequestBody;
+use Microsoft\Graph\Generated\Users\Item\Messages\Item\Reply\ReplyPostRequestBody;
 use Microsoft\Graph\Generated\Models\Message;
 use Microsoft\Graph\Generated\Models\Recipient;
 use Microsoft\Graph\Generated\Models\EmailAddress;

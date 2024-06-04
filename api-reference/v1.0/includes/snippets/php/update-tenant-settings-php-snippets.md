@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\SharepointSettings;
+use Microsoft\Graph\Generated\Models\ImageTaggingChoice;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

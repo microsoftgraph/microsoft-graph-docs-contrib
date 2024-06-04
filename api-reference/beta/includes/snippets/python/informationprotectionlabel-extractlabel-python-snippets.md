@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.information_protection.policy.labels.extract_label.extract_label_request_builder import ExtractLabelRequestBuilder
-from msgraph.generated.informationprotection.policy.labels.extract_label.extract_label_post_request_body import ExtractLabelPostRequestBody
-from msgraph.generated.models.content_info import ContentInfo
-from msgraph.generated.models.key_value_pair import KeyValuePair
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.information_protection.policy.labels.extract_label.extract_label_request_builder import ExtractLabelRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.informationprotection.policy.labels.extract_label.extract_label_post_request_body import ExtractLabelPostRequestBody
+from msgraph_beta.generated.models.content_info import ContentInfo
+from msgraph_beta.generated.models.content_format import ContentFormat
+from msgraph_beta.generated.models.content_state import ContentState
+from msgraph_beta.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -63,7 +66,7 @@ request_body = ExtractLabelPostRequestBody(
 	),
 )
 
-request_configuration = ExtractLabelRequestBuilder.ExtractLabelRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
 

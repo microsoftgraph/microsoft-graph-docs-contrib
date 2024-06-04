@@ -114,9 +114,10 @@ Namespace: microsoft.graph
 
 | Member             |
 | :----------------- |
-| Required           |
-| Recommeded         |
-| UnknownFutureValue |
+| required           |
+| recommeded         |
+| unknownFutureValue |
+| peerRecommeded     |
 
 ### courseStatus values
 
@@ -4879,3 +4880,14 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### meetingRequestType values 
+
+|Member|
+|:---|
+|none|
+|newMeetingRequest|
+|fullUpdate|
+|informationalUpdate|
+|silentUpdate|
+|outdated|
+|principalWantsCopy|

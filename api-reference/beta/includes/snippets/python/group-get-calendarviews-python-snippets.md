@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.calendar_view.calendar_view_request_builder import CalendarViewRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups.item.calendar_view.calendar_view_request_builder import CalendarViewRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryPara
 		end_date_time = "2017-10-01T19:00:00.00-08:00",
 )
 
-request_configuration = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("Prefer", "outlook.body-content-type=\"text\"")
