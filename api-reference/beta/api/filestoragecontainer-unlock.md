@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) by updating the [lockState](../resources/enums.md#sitelockstate-values).
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to adding, updating, or deleting content.
 
+This action updates the [lockState](../resources/enums.md#sitelockstate-values).
 
 ## Permissions
 

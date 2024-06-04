@@ -40,8 +40,8 @@ Namespace: microsoft.graph
 | Value         | Description |
 |:--------------|:----------------------------------------------- |
 | unlocked      | Unlocked |
-| lockedReadOnly | Read-only. No additions or deletions allowed to content or metadata |
-| lockedNoAccess | Read and write is disallowed |
+| lockedReadOnly | Read-only. No additions, updates or deletions allowed to content or metadata |
+
 
 
 ### userDefaultAuthenticationMethod values
