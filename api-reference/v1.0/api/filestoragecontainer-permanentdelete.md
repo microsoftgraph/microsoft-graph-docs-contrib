@@ -59,7 +59,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.permanentdelete"
+  "name": "filestoragecontainerthis.permanentdelete",
+  "sampleKeys": ["b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z"]
 }
 -->
 
