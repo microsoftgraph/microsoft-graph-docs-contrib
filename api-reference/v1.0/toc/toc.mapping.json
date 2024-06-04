@@ -466,7 +466,8 @@
         "drive",
         "driveItem",
         "bundle",
-        "permission"
+        "permission",
+        "fileStorageContainer"
       ]
     },
     {
@@ -970,13 +971,21 @@
               ]
             },
             {
-              "name": "User flows",
+              "name": "User flows in workforce tenants",
               "resources": [
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
+              ]
+            },
+            {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
               ]
             }
           ]
@@ -1409,6 +1418,8 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
+            "microsoft.graph.security.cloudLogonRequestEvidence",
+            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",
@@ -1448,6 +1459,31 @@
         "sharepointSettings"
       ],
       "childNodes": [
+        {
+          "name": "Pages",
+          "resources": [
+            "baseSitePage",
+            "sitePage",
+            "webPart"
+          ],
+          "childNodes": [
+            {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
+            {
+              "name": "Web part",
+              "resources": [
+                "textWebPart",
+                "standardWebPart"
+              ]
+            }
+          ]
+        },
         {
           "name": "Taxonomy",
           "resources": [
