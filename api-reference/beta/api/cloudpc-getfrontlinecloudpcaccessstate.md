@@ -127,7 +127,7 @@ Content-Type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
-    "value": "noLicensesAvailable"
+    "value": "active"
 }
 ```
 
@@ -197,6 +197,6 @@ Content-Type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
-    "value": "noLicensesAvailable"
+    "value": "active"
 }
 ```
