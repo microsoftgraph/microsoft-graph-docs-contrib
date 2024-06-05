@@ -3,7 +3,7 @@ title: "strongAuthenticationRequirements resource type"
 description: "Captures settings relating to per-user Microsoft Entra multifactor authentication."
 author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "identity-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
