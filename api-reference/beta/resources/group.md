@@ -36,15 +36,15 @@ This resource supports:
 | [Create](../api/group-post-groups.md) | [group](group.md) | Create a new group as specified. It can be a Microsoft 365 group, dynamic group, security group, or team. |
 | [Get](../api/group-get.md) | [group](group.md) | Read properties and relationships of group object. |
 | [Update](../api/group-update.md) | None | Update the properties of a group object. |
-| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | [Delete](../api/group-delete.md) | None | Delete group object. |
-| [Get delta](../api/group-delta.md) | group collection | Get incremental changes for groups. |
+| [Get delta](../api/group-delta.md) | [group](group.md) collection | Get incremental changes for groups. |
+| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | **Group management** |  |  |
 | [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) collection | Get the users and groups that are direct members of this group from the **members** navigation property. |
-| [Add members](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a member to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
+| [Add member](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a member to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Remove member](../api/group-delete-members.md) | None | Remove a member from a Microsoft 365 group or a security group through the **members** navigation property. |
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) collection | Get the owners of the group from the **owners** navigation property. |
-| [Add owners](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
+| [Add owner](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. |
 | [List endpoints](../api/group-list-endpoints.md) | [endpoint](endpoint.md) collection | Get an endpoint object collection. |
 | [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
@@ -97,7 +97,7 @@ This resource supports:
 | [Get member objects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups and administrative units the group is a member of. The function is transitive. |
 | **Drive** |  |  |
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
-| [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
+| [List children](../api/driveitem-list-children.md) | [driveItem](driveitem.md) collection | Return a collection of **driveItem** objects in the children relationship of a **driveItem**. |
 | **Group settings** |  |  |
 | [List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection | List properties of all setting objects. |
 | [Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) | Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
