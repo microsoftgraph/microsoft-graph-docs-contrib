@@ -16,23 +16,23 @@ items:
     href: ../../api/group-get.md
   - name: Update
     href: ../../api/group-update.md
-  - name: Upsert
-    href: ../../api/group-upsert.md
   - name: Delete
     href: ../../api/group-delete.md
   - name: Get delta
     href: ../../api/group-delta.md
+  - name: Upsert
+    href: ../../api/group-upsert.md
   - name: Group management
     items:
     - name: List members
       href: ../../api/group-list-members.md
-    - name: Add members
+    - name: Add member
       href: ../../api/group-post-members.md
     - name: Remove member
       href: ../../api/group-delete-members.md
     - name: List owners
       href: ../../api/group-list-owners.md
-    - name: Add owners
+    - name: Add owner
       href: ../../api/group-post-owners.md
     - name: Remove owner
       href: ../../api/group-delete-owners.md
