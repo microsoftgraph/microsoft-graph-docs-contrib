@@ -13175,7 +13175,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **rootDomain** relationship to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
           "Target": "domain"
-        },        
+        },
         {
           "Id": "2f9e7cf5-97c2-4e4b-aa4d-8c5da1598ef6",
           "ApiChange": "Method",
@@ -13220,3 +13220,4 @@
     }
   ]
 }
+  
