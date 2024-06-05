@@ -2,7 +2,6 @@
 title: Shared
 author: spgraph-docs-team
 description: Indicates that a drive item has been shared with others.
-ms.date: 09/10/2017
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
@@ -16,23 +15,6 @@ Namespace: microsoft.graph
 Indicates that a [drive item](driveitem.md) has been shared with others and includes information about how the item is shared.
 
 If a [driveitem](driveitem.md) has a non-null **shared** facet, the item has been shared.
-
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.shared",
-  "optionalProperties": [ "sharedBy", "sharedDateTime" ]
-}-->
-
-```json
-{
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "scope": "anonymous | organization | users",
-  "sharedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "sharedDateTime": "datetime"
-}
-```
 
 ## Properties
 
@@ -53,6 +35,22 @@ If a [driveitem](driveitem.md) has a non-null **shared** facet, the item has bee
 | `organization` | The item is shared by using a link that works for anyone in the owner's organization. |
 | `users`        | The item is shared with specific users only.                                          |
 
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.shared",
+  "optionalProperties": [ "sharedBy", "sharedDateTime" ]
+}-->
+
+```json
+{
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "scope": "anonymous | organization | users",
+  "sharedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "sharedDateTime": "datetime"
+}
+```
 
 <!--
 {
