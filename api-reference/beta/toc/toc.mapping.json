@@ -1782,9 +1782,7 @@
       "name": "Industry data ETL (preview)",
       "overview": "../../resources/industrydata-overview.md",
       "resources": [
-        "microsoft.graph.industryData.azureDataLakeConnector",
         "microsoft.graph.industryData.fileValidateOperation",
-        "microsoft.graph.industryData.inboundFileFlow",
         "microsoft.graph.industryData.inboundFlow",
         "microsoft.graph.industryData.industryDataConnector",
         "microsoft.graph.industryData.industryDataRun",
@@ -1834,6 +1832,20 @@
         "microsoft.graph.industryData.yearReferenceValue"
       ],
       "childNodes": [
+        {
+          "name": "Inbound flow",
+          "resources": [
+            "microsoft.graph.industryData.inboundApiFlow",
+            "microsoft.graph.industryData.inboundFileFlow"
+          ]
+        },
+        {
+          "name": "Industry data connector",
+          "resources": [
+            "microsoft.graph.industryData.azureDataLakeConnector",
+            "microsoft.graph.industryData.oneRosterApiDataConnector"
+          ]
+        },
         {
           "name": "Provisioning flow",
           "resources": [
