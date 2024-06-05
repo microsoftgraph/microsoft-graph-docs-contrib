@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can disable, but not delete a [referenceDefinition](../resources/industrydata-referencedefinition.md), because historical data may be tied to the code value from previous data runs. Disabling keeps the integrity of the data but prevents future data uploads from being associated to the disabled reference code value.
+Perform a soft delete of a [referenceDefinition](../resources/industrydata-referencedefinition.md) object. You can disable, but not delete a reference definition, because historical data might be tied to the code value from previous data runs. Disabling keeps the integrity of the data but prevents future data uploads from being associated with the disabled reference code value.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
