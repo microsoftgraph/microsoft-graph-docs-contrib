@@ -157,7 +157,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/78bf875b-9343-4edc-
 Content-Type: application/json
 
 {
-  "autoReconcileProxyConflict": "true"
+  "autoReconcileProxyConflict": true
 }
 ```
 
