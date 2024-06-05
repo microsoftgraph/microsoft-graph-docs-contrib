@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|Name of the bulk action.|
 |id|String|ID of the bulk action. Inherited from [entity](entity.md).|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action will use maintenance window to schedule action, When `false` means bulk action will not use the maintenance window. Default value is `false`.|
-|status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-value)|Indicates the result of bulk actions. Possible values are `pending`, `succeeded`, `failed`, and `partialFailed`. Default value is `pending`. Read-Only.|
+|status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-value)|Indicates the result of bulk actions. Possible values are `pending`, `succeeded` and `failed`. Default value is `pending`. Read-Only.|
 |initiatedByUserPrincipalName|String|Indicates the IT admin's user principal name (UPN) who initiated this bulk action. Read-Only.|
 
 ### cloudPcBulkActionStatus value
@@ -45,7 +45,6 @@ Inherits from [entity](../resources/entity.md).
 |pending|Default. Indicates the status of the bulk action as "pending" as some of the bulk actions are in progress and not completed.|
 |succeeded|Indicates the status of the bulk action as "succeeded" for all associated actions.|
 |failed|Indicates the status of the bulk action as "failed" for all associated actions.|
-|partialFailed|Indicates the status of the bulk action as "partialFailed" as some of the bulk actions are failed.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
