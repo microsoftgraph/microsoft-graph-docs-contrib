@@ -24,7 +24,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 When delegated permissions are used, only members in the `owner` role can call this method.
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_lock" } -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-lock-permissions.md)]
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|FileStorageContainer.Selected, FileStorageContainer.Manage.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|FileStorageContainer.Selected|Not available.|
 
 ## HTTP request
 
