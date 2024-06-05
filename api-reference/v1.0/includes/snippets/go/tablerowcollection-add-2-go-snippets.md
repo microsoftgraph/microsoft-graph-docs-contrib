@@ -18,8 +18,8 @@ import (
 requestBody := graphdrives.NewAddPostRequestBody()
 index := int32(5)
 requestBody.SetIndex(&index) 
-values := []graph.Jsonable {
-	json := []graph.Numberable {
+values := []graph.Arrayable {
+	 := []graph.Numberable {
  := int32(1)
 requestBody.Set(&) 
  := int32(2)
@@ -27,7 +27,7 @@ requestBody.Set(&)
  := int32(3)
 requestBody.Set(&)
 	}
-	json := []graph.Numberable {
+	 := []graph.Numberable {
  := int32(4)
 requestBody.Set(&) 
  := int32(5)

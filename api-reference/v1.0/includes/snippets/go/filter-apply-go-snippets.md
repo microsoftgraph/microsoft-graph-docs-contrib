@@ -34,7 +34,7 @@ icon.SetIndex(&index)
 criteria.SetIcon(icon)
 dynamicCriteria := "dynamicCriteria-value"
 criteria.SetDynamicCriteria(&dynamicCriteria) 
-values := graphmodels.NewJson()
+values := graph.Newvalues()
 criteria.SetValues(values)
 filterOn := "filterOn-value"
 criteria.SetFilterOn(&filterOn) 
