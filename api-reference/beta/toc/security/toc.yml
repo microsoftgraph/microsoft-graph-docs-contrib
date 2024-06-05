@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/security-api-overview.md
@@ -67,6 +70,20 @@ items:
       href: ../../api/loginpage-get.md
     - name: Get landingPage
       href: ../../api/landingpage-get.md
+  - name: Training campaign (preview)
+    items:
+    - name: Training campaign (preview)
+      href: ../../resources/trainingcampaign.md
+    - name: List
+      href: ../../api/attacksimulationroot-list-trainingcampaigns.md
+    - name: Create
+      href: ../../api/attacksimulationroot-post-trainingcampaigns.md
+    - name: Get
+      href: ../../api/trainingcampaign-get.md
+    - name: Update
+      href: ../../api/trainingcampaign-update.md
+    - name: Delete
+      href: ../../api/attacksimulationroot-delete-trainingcampaigns.md
   - name: Attack simulation operation
     items:
     - name: Attack simulation operation
@@ -849,6 +866,10 @@ items:
       href: ../../resources/security-artifact.md
     - name: Autonomous system
       href: ../../resources/security-autonomoussystem.md
+    - name: Cloud logon request evidence
+      href: ../../resources/security-cloudlogonrequestevidence.md
+    - name: Cloud logon session evidence
+      href: ../../resources/security-cloudlogonsessionevidence.md
     - name: CVSS summary
       href: ../../resources/security-cvsssummary.md
     - name: Formatted content
