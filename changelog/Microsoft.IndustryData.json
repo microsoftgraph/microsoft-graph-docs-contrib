@@ -94,8 +94,8 @@
       "Id": "2b9b53d4-f85b-4860-bc0e-1272fccb34b2",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-05-13T19:57:52.7941477Z",
-      "WorkloadArea": "IndustryData",
+      "CreatedDateTime": "2024-06-04T19:57:52.7941477Z",
+      "WorkloadArea": "Industry data ETL",
       "SubArea": ""
     },
     {
