@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/industrydata-overview.md
@@ -23,9 +26,9 @@ items:
     items:
     - name: Inbound API flow
       href: ../../resources/industrydata-inboundapiflow.md
-    - name: Create inboundApiFlow
+    - name: Create
       href: ../../api/industrydata-inboundapiflow-post.md
-    - name: Update inboundApiFlow
+    - name: Update
       href: ../../api/industrydata-inboundapiflow-update.md
   - name: Inbound file flow
     items:
@@ -61,9 +64,9 @@ items:
     items:
     - name: One roster API data connector
       href: ../../resources/industrydata-onerosterapidataconnector.md
-    - name: Create oneRosterApiDataConnector
+    - name: Create
       href: ../../api/industrydata-onerosterapidataconnector-post.md
-    - name: Update oneRosterApiDataConnector
+    - name: Update
       href: ../../api/industrydata-onerosterapidataconnector-update.md
 - name: Industry data run
   items:
@@ -147,15 +150,15 @@ items:
   items:
   - name: Reference definition
     href: ../../resources/industrydata-referencedefinition.md
-  - name: List referenceDefinitions
+  - name: List
     href: ../../api/industrydata-referencedefinition-list.md
-  - name: Get referenceDefinition
+  - name: Get
     href: ../../api/industrydata-referencedefinition-get.md
-  - name: Create referenceDefinition
+  - name: Create
     href: ../../api/industrydata-referencedefinition-post.md
-  - name: Update referenceDefinition
+  - name: Update
     href: ../../api/industrydata-referencedefinition-update.md
-  - name: Delete referenceDefinition
+  - name: Delete
     href: ../../api/industrydata-referencedefinition-delete.md
 - name: Role group
   items:
