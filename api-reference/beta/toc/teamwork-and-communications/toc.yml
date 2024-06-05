@@ -332,10 +332,6 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List transcripts
-        href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
-        href: ../../api/onlinemeeting-list-recordings.md
     - name: External meeting registration
       items:
       - name: External meeting registration
