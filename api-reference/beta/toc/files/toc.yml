@@ -155,10 +155,6 @@ items:
     href: ../../api/filestoragecontainer-activate.md
   - name: Restore deleted
     href: ../../api/filestoragecontainer-restore.md
-  - name: Lock a file storage container
-    href: ../../api/filestoragecontainer-lock.md
-  - name: Unlock a file storage container
-    href: ../../api/filestoragecontainer-unlock.md
   - name: Remove deleted
     href: ../../api/filestorage-delete-deletedcontainers.md
   - name: Permanently delete
