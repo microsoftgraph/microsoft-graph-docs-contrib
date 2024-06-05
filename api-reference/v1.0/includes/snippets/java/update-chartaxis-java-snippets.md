@@ -9,11 +9,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookChartAxis workbookChartAxis = new WorkbookChartAxis();
-Json majorUnit = new Json();
+MajorUnit majorUnit = new MajorUnit();
 workbookChartAxis.setMajorUnit(majorUnit);
-Json maximum = new Json();
+Maximum maximum = new Maximum();
 workbookChartAxis.setMaximum(maximum);
-Json minimum = new Json();
+Minimum minimum = new Minimum();
 workbookChartAxis.setMinimum(minimum);
 WorkbookChartAxis result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").axes().valueAxis().patch(workbookChartAxis);
 
