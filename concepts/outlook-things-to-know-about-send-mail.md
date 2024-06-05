@@ -59,9 +59,10 @@ For more information about report messages, see [DSNs and NDRs in Exchange Serve
 - [Send messages with MIME content](outlook-send-mime-message.md).
 - [Send Outlook messages from another user](outlook-send-mail-from-other-user.md).
 - [Use the mail API](/graph/api/resources/mail-api-overview)
-- Microsoft Graph APIs that create and send a draft in separate calls:
-  - [Create draft message](/graph/api/user-post-messages)
-  - [Create draft to reply](/graph/api/message-createreply)
-  - [Create draft to reply-all](/graph/api/message-createreplyall)
-  - [Create draft to forward message](/graph/api/message-createforward)
-  - [Send draft message](/graph/api/message-send)
+
+Microsoft Graph APIs that create and send a draft in separate calls:
+- [Create draft message](/graph/api/user-post-messages)
+- [Create draft to reply](/graph/api/message-createreply)
+- [Create draft to reply-all](/graph/api/message-createreplyall)
+- [Create draft to forward message](/graph/api/message-createforward)
+- [Send draft message](/graph/api/message-send)
