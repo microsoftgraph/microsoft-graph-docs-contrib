@@ -68,7 +68,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_authentication"
+  "name": "get_authentication_signInPreferences"
 }
 -->
 ``` http
@@ -135,7 +135,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_authentication"
+  "name": "get_authentication_strongAuthenticationRequirements"
 }
 -->
 ``` http
@@ -148,7 +148,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.signInPreferences"
+  "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
 }
 -->
 ``` http

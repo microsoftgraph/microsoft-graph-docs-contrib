@@ -3,7 +3,7 @@ title: "strongAuthenticationRequirements resource type"
 description: "Captures settings relating to per-user Microsoft Entra multifactor authentication."
 author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "identity-and-sign-in"
+ms.subservice: "identity-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Captures settings relating to per-user Microsoft Entra multifactor authenticatio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|perUserMfaState|perUserMfaState|Sets the per-user MFA state for the user.The possible values are: `disabled`, `enforced`, `enabled`.|
+|perUserMfaState|perUserMfaState|Sets the per-user MFA state for the user. The possible values are: `disabled`, `enforced`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.

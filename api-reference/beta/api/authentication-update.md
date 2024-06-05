@@ -78,7 +78,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authentication"
+  "name": "update_authentication_signInPreferences"
 }
 -->
 ``` http
@@ -142,7 +142,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_authentication"
+  "name": "update_authentication_strongAuthenticationRequirements"
 }
 -->
 ``` http
