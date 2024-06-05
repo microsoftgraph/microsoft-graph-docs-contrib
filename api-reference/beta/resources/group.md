@@ -32,7 +32,7 @@ This resource supports:
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [List](../api/group-list.md) | [group](group.md) | Read properties and relationships of all group objects. |
+| [List](../api/group-list.md) | [group](group.md) collection | Read properties and relationships of all group objects. |
 | [Create](../api/group-post-groups.md) | [group](group.md) | Create a new group as specified. It can be a Microsoft 365 group, dynamic group, security group, or team. |
 | [Get](../api/group-get.md) | [group](group.md) | Read properties and relationships of group object. |
 | [Update](../api/group-update.md) | None | Update the properties of a group object. |
