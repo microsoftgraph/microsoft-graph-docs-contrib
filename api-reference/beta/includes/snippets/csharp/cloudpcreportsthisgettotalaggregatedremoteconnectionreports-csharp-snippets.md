@@ -22,7 +22,7 @@ var requestBody = new GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 		"TotalUsageInHour",
 		"LastActiveTime",
 		"PcType",
-		"CreatedDate"
+		"CreatedDate",
 	},
 };
 
