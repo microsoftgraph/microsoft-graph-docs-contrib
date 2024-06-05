@@ -1,20 +1,20 @@
 ---
-title: "Working with long running actions"
+title: "Working with long-running actions"
 description: "Learn how to work with long-running actions when you use Microsoft Graph APIs."
 ms.localizationpriority: medium
 author: "daspek"
 ---
+
 # Working with long-running actions
 
-
-Some API responses require an indeterminate amount of time to complete. Instead of waiting until the action is complete before returning a response, Microsoft Graph might use a long-running actions pattern. This pattern provides your app a way to poll for status updates on a long-running action, without any request waiting for the action to complete.
+This article describes how to work with long-running actions when you use Microsoft Graph APIs. Some API responses require an indeterminate amount of time to complete. Instead of waiting until the action is complete before returning a response, Microsoft Graph might use a long-running actions pattern. This pattern provides your app a way to poll for status updates on a long-running action, without any request waiting for the action to complete.
 
 The general pattern involves the following steps:
 
-1. Your app requests a long-running action via the API. The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.
-2. Your app requests the action status report URL and receives an [asyncJobStatus](/graph/api/resources/asyncjobstatus) response with the progress of the long-running action.
-3. The long-running action completes. 
-4. Your app requests the action status report URL again and receives an [asyncJobStatus](/graph/api/resources/asyncjobstatus) response that shows the completion of the action.
+1. Your app requests a long-running action via the API. The API accepts the action and returns a `202 Accepted` response along with a `Location` header for the API URL to retrieve action status reports.
+1. Your app requests the action status report URL and receives an [asyncJobStatus](/graph/api/resources/asyncjobstatus) response with the progress of the long-running action.
+1. The long-running action completes. 
+1. Your app requests the action status report URL again and receives an [asyncJobStatus](/graph/api/resources/asyncjobstatus) response that shows the completion of the action.
 
 ## Prerequisites
 
@@ -87,7 +87,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 >**Note:** The location URL returned might not be on the Microsoft Graph API endpoint.
 
-In many cases, this is the end of the request, because the copy action will complete without the app doing any additional work.
+In many cases, this is the end of the request, because the copy action completes without any additional work from the app.
 However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so by using the monitor URL.
 
 ## Retrieve a status report from the monitor URL
@@ -147,8 +147,8 @@ Content-type: application/json
 
 ## Retrieve the results of the completed operation
 
-When the job is completed, the monitor URL returns the resource ID of the result - in this case the new copy of the original item.
-You can address this new item by using the resource ID, as shown in the following example.
+When the job is completed, the monitor URL returns the resource ID of the result. In this case, it's the new copy of the original item.
+The following example shows how you can address this new item by using the resource ID.
 
 
 # [HTTP](#tab/http)
