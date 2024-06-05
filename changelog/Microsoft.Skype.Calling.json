@@ -25,22 +25,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-update?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
-        },
-        {
-          "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
-          "ApiChange": "Method",
-          "ChangedApiName": "virtualEventWebinar",
-          "ChangeType": "Addition",
-          "Description": "Added the [Publish](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-publish?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
-          "Target": "virtualEventWebinar"
-        },
-        {
-          "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
-          "ApiChange": "Method",
-          "ChangedApiName": "virtualEventWebinar",
-          "ChangeType": "Addition",
-          "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
-          "Target": "virtualEventWebinar"
         }
       ],
       "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
