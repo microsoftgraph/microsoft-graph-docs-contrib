@@ -48,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_assign_permissionGrantPreApprovalPolicies"
@@ -61,6 +62,12 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-assign-permissiongrantpreapprovalpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
