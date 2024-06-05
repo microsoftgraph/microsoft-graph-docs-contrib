@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 An abstract type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy. The following types are derived from this abstract type:
 + [webSegmentConfiguration](websegmentconfiguration.md)
++ [ipSegmentConfiguration](ipsegmentconfiguration.md)
 
 ## Properties
 

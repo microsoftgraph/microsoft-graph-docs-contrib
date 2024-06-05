@@ -17,6 +17,18 @@ A [webApplicationSegment](webapplicationsegment.md) object represents the segmen
 
 Inherits from [applicationSegment](applicationsegment.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/websegmentconfiguration-list-applicationsegments.md)|[webApplicationSegment](../resources/webapplicationsegment.md) collection|Get a list of the [webApplicationSegment](../resources/webapplicationsegment.md) objects and their properties.|
+|[Create](../api/websegmentconfiguration-post-applicationsegments.md)|[webApplicationSegment](../resources/webapplicationsegment.md)|Create a new [webApplicationSegment](../resources/webapplicationsegment.md) object.|
+|[Get](../api/webapplicationsegment-get.md)|[webApplicationSegment](../resources/webapplicationsegment.md)|Read the properties and relationships of a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
+|[Update](../api/webapplicationsegment-update.md)|[webApplicationSegment](../resources/webapplicationsegment.md)|Update the properties of a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
+|[Delete](../api/websegmentconfiguration-delete-applicationsegments.md)|None|Delete a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
+|[List corsConfigurations](../api/webapplicationsegment-list-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md) collection|Get the corsConfiguration_v2 resources from the corsConfigurations navigation property.|
+|[Create corsConfiguration_v2](../api/webapplicationsegment-post-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md)|Create a new corsConfiguration_v2 object.|
+
 ## Properties
 
 | Property     | Type        | Description |

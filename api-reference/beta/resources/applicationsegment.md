@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 This resource type is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Microsoft Entra application proxy. The following types are derived from this abstract type:
 + [webApplicationSegment](webapplicationsegment.md)
++ [ipApplicationSegment](ipapplicationsegment.md)
 
 ## Properties
 

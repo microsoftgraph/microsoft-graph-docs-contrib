@@ -31,6 +31,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
 |id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
+|isDefaultAccessEnabled|Boolean|Specifies whether default access for app proxy is enabled or disabled.|
 |isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/entra/identity/app-proxy/) is enabled for the tenant. |
 
 ## Relationships
@@ -39,6 +40,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |:-------------|:------------|:------------|
 |agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| List of existing **onPremisesAgentGroup** objects. Read-only. Nullable.|
 |agents|[onPremisesAgent](onpremisesagent.md) collection| List of existing **onPremisesAgent** objects. Read-only. Nullable.|
+|applicationSegments|[ipApplicationSegment](../resources/ipapplicationsegment.md) collection|Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.|
 |connectorGroups|[connectorGroup](connectorgroup.md) collection| List of existing **connectorGroup** objects for applications published through Application Proxy. Read-only. Nullable.|
 |connectors|[connector](connector.md) collection| List of existing **connector** objects for applications published through Application Proxy. Read-only. Nullable.|
 |publishedResources|[publishedResource](publishedresource.md) collection| List of existing **publishedResource** objects. Read-only. Nullable.|
@@ -49,17 +51,19 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.onPremisesPublishingProfile",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "hybridAgentUpdaterConfiguration": {"@odata.type": "microsoft.graph.hybridAgentUpdaterConfiguration"},
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.onPremisesPublishingProfile",
+  "id": "String (identifier)",
+  "isEnabled": "Boolean",
+  "isDefaultAccessEnabled": "Boolean",
+  "hybridAgentUpdaterConfiguration": {
+    "@odata.type": "microsoft.graph.hybridAgentUpdaterConfiguration"
+  }
 }
 ```
 

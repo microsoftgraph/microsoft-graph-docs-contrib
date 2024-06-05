@@ -2838,6 +2838,26 @@ Possible values for user account types (group membership), per Windows definitio
 | disabled                          |
 | enabledForReportingButNotEnforced |
 
+
+### privateNetworkDestinationType values 
+
+|Member|
+|:---|
+|ipAddress|
+|ipRange|
+|ipRangeCidr|
+|fqdn|
+|dnsSuffix|
+|unknownFutureValue|
+
+### privateNetworkProtocol values 
+
+|Member|
+|:---|
+|tcp|
+|udp|
+|unknownFutureValue|
+
 ### conditionalAccessGrantControl values
 
 | Member               |
