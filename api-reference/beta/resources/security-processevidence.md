@@ -42,7 +42,8 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.processEvidence"
+  "@odata.type": "microsoft.graph.security.processEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

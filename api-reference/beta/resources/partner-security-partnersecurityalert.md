@@ -29,18 +29,18 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |activityLogs|[microsoft.graph.partner.security.activityLog](../resources/partner-security-activitylog.md) collection|Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.|
-|additionalDetails|[microsoft.graph.partner.security.additionalDataDictionary](../resources/partner-security-additionaldatadictionary.md)|A bag of name-value pairs that contain additional details about an alert.|
+|additionalDetails|[microsoft.graph.partner.security.additionalDataDictionary](../resources/partner-security-additionaldatadictionary.md)|A bag of name-value pairs that contain more details about an alert.|
 |affectedResources|[microsoft.graph.partner.security.affectedResource](../resources/partner-security-affectedresource.md) collection|Contains details of the resources affected by the security alert.|
-|alertType|String|The type of vulnerability that impacts the customer due to this alert.|
+|alertType|String|The type of vulnerability that impacts the customer due to this alert. For more information, see [Security alerts reference guide](/partner-center/security/security-alerts-reference-guide).|
 |catalogOfferId|String|The modern offer category ID of the subscription.|
 |confidenceLevel|microsoft.graph.partner.security.securityAlertConfidence|Specifies the confidence in the alert. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |customerTenantId|String|The impacted customer tenant associated with the alert.|
 |description|String|The description for each alert.|
 |detectedDateTime|DateTimeOffset|Time when the alert was detected or created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|The display name of the alert.|
-|firstObservedDateTime|DateTimeOffset|Time of the first activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  subscription.|
+|firstObservedDateTime|DateTimeOffset|Time of the first activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier to represent the alert. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|isTest|Boolean|Indicates whehter an alert is a test alert.|
+|isTest|Boolean|Indicates whether an alert is a test alert.|
 |lastObservedDateTime|DateTimeOffset|Time of the latest activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resolvedBy|String|The UPN of the partner user who resolved the alert.|
 |resolvedOnDateTime|DateTimeOffset|Time when the alert was resolved. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

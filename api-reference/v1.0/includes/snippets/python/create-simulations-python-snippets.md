@@ -7,10 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.simulation import Simulation
 from msgraph.generated.models.email_identity import EmailIdentity
+from msgraph.generated.models.simulation_attack_technique import SimulationAttackTechnique
+from msgraph.generated.models.simulation_status import SimulationStatus
 from msgraph.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
+from msgraph.generated.models.account_target_content_type import AccountTargetContentType
 from msgraph.generated.models.training_setting import TrainingSetting
+from msgraph.generated.models.training_setting_type import TrainingSettingType
 from msgraph.generated.models.end_user_notification_setting import EndUserNotificationSetting
+from msgraph.generated.models.end_user_notification_preference import EndUserNotificationPreference
+from msgraph.generated.models.end_user_notification_setting_type import EndUserNotificationSettingType
 from msgraph.generated.models.positive_reinforcement_notification import PositiveReinforcementNotification
+from msgraph.generated.models.notification_delivery_preference import NotificationDeliveryPreference
 
 graph_client = GraphServiceClient(credentials, scopes)
 

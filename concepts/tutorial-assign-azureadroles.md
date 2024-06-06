@@ -440,7 +440,7 @@ You can confirm your assignment by running `GET https://graph.microsoft.com/v1.0
 
 ## Step 6: Clean up resources
 
-Sign in as the Global Administrator and delete the following resources that you created for this tutorial: the role eligibility request and IT Support (Users) group.
+Sign in as the Privileged Role Administrator and delete the following resources that you created for this tutorial: the role eligibility request and IT Support (Users) group.
 
 ### Revoke the role eligibility request
 

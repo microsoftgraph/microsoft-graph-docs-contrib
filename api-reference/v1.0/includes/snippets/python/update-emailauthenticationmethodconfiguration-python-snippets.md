@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.email_authentication_method_configuration import EmailAuthenticationMethodConfiguration
+from msgraph.generated.models.external_email_otp_state import ExternalEmailOtpState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

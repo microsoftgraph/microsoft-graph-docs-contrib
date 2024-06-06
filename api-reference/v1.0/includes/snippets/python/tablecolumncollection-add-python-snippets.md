@@ -12,7 +12,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = AddPostRequestBody(
 	index = 3,
 	values = [
-		Json(
+		(
 		),
 	],
 )

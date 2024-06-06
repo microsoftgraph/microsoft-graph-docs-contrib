@@ -5,17 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
-use Microsoft\Graph\Generated\Models\RequestorSettings;
-use Microsoft\Graph\Generated\Models\UserSet;
-use Microsoft\Graph\Generated\Models\ApprovalSettings;
-use Microsoft\Graph\Generated\Models\ApprovalStage;
-use Microsoft\Graph\Generated\Models\GroupMembers;
-use Microsoft\Graph\Generated\Models\ExternalSponsors;
-use Microsoft\Graph\Generated\Models\SingleUser;
-use Microsoft\Graph\Generated\Models\InternalSponsors;
-use Microsoft\Graph\Generated\Models\AssignmentReviewSettings;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Beta\Generated\Models\RequestorSettings;
+use Microsoft\Graph\Beta\Generated\Models\UserSet;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalStage;
+use Microsoft\Graph\Beta\Generated\Models\GroupMembers;
+use Microsoft\Graph\Beta\Generated\Models\ExternalSponsors;
+use Microsoft\Graph\Beta\Generated\Models\SingleUser;
+use Microsoft\Graph\Beta\Generated\Models\InternalSponsors;
+use Microsoft\Graph\Beta\Generated\Models\AssignmentReviewSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

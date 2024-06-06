@@ -6,6 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.internal_domain_federation import InternalDomainFederation
+from msgraph.generated.models.authentication_protocol import AuthenticationProtocol
+from msgraph.generated.models.prompt_login_behavior import PromptLoginBehavior
+from msgraph.generated.models.federated_idp_mfa_behavior import FederatedIdpMfaBehavior
 
 graph_client = GraphServiceClient(credentials, scopes)
 

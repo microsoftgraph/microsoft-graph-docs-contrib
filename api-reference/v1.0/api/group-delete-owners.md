@@ -23,6 +23,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_delete_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-owners-permissions.md)]
 
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the required role permission. The following least privileged roles are supported for this operation:
+
+| Microsoft Entra role | Limitations | Key role permission |
+|--|--|--|
+| Group owners | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| User Administrator | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Directory Writers | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Groups Administrator | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| Exchange Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| SharePoint Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Teams Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Yammer Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Intune Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Manager | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Windows 365 Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -30,22 +47,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 DELETE /groups/{id}/owners/{id}/$ref
 ```
-
-The signed-in user must also be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-| Microsoft Entra role             | Limitations                                    |
-|----------------------------------|------------------------------------------------|
-| User Administrator               | Can modify user owners only                    |
-| Directory Writers                | Can modify user owners only                    |
-| Groups Administrator             | Can modify all types of group owners           |
-| Exchange Service Administrator   | Can modify owners of Microsoft 365 groups only |
-| SharePoint Service Administrator | Can modify owners of Microsoft 365 groups only |
-| Teams Administrator              | Can modify owners of Microsoft 365 groups only |
-| Yammer Administrator             | Can modify owners of Microsoft 365 groups only |
-| Intune Administrator             | Can modify owners of security groups only      |
-| Knowledge Administrator          | Can modify owners of security groups only      |
-| Knowledge Manager                | Can modify owners of security groups only      |
-| Windows 365 Administrator        | Can modify owners of security groups only      |
 
 ## Request headers
 

@@ -1,0 +1,3138 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Browser management
+  displayName: Edge, Internet Explorer, IE mode, site list
+  items:
+  - name: Overview
+    href: ../../resources/browser-edge-api-overview.md
+  - name: Browser shared cookie
+    items:
+    - name: Browser shared cookie
+      href: ../../resources/browsersharedcookie.md
+    - name: List
+      href: ../../api/browsersitelist-list-sharedcookies.md
+    - name: Create
+      href: ../../api/browsersitelist-post-sharedcookies.md
+    - name: Get
+      href: ../../api/browsersharedcookie-get.md
+    - name: Update
+      href: ../../api/browsersharedcookie-update.md
+    - name: Delete
+      href: ../../api/browsersitelist-delete-sharedcookies.md
+  - name: Browser site
+    items:
+    - name: Browser site
+      href: ../../resources/browsersite.md
+    - name: List
+      href: ../../api/browsersitelist-list-sites.md
+    - name: Create
+      href: ../../api/browsersitelist-post-sites.md
+    - name: Get
+      href: ../../api/browsersite-get.md
+    - name: Update
+      href: ../../api/browsersite-update.md
+    - name: Delete
+      href: ../../api/browsersitelist-delete-sites.md
+  - name: Browser site list
+    items:
+    - name: Browser site list
+      href: ../../resources/browsersitelist.md
+    - name: List
+      href: ../../api/internetexplorermode-list-sitelists.md
+    - name: Create
+      href: ../../api/internetexplorermode-post-sitelists.md
+    - name: Get
+      href: ../../api/browsersitelist-get.md
+    - name: Update
+      href: ../../api/browsersitelist-update.md
+    - name: Delete
+      href: ../../api/internetexplorermode-delete-sitelists.md
+    - name: Publish
+      href: ../../api/browsersitelist-publish.md
+  - name: Complex types
+    items:
+    - name: Browser shared cookie history
+      href: ../../resources/browsersharedcookiehistory.md
+    - name: Browser site history
+      href: ../../resources/browsersitehistory.md
+    - name: Date time time zone
+      href: ../../resources/datetimetimezone.md
+    - name: Identity
+      href: ../../resources/identity.md
+    - name: Identity set
+      href: ../../resources/identityset.md
+- name: Cloud PC
+  items:
+  - name: Overview
+    href: ../../resources/cloudpc-api-overview.md
+  - name: Cloud PC
+    items:
+    - name: Cloud PC
+      href: ../../resources/cloudpc.md
+    - name: List
+      href: ../../api/virtualendpoint-list-cloudpcs.md
+    - name: Get
+      href: ../../api/cloudpc-get.md
+    - name: End grace period
+      href: ../../api/cloudpc-endgraceperiod.md
+    - name: Reboot
+      href: ../../api/cloudpc-reboot.md
+    - name: Rename
+      href: ../../api/cloudpc-rename.md
+    - name: Troubleshoot
+      href: ../../api/cloudpc-troubleshoot.md
+    - name: Restore
+      href: ../../api/cloudpc-restore.md
+  - name: Cloud PC audit event
+    items:
+    - name: Cloud PC audit event
+      href: ../../resources/cloudpcauditevent.md
+    - name: List
+      href: ../../api/virtualendpoint-list-auditevents.md
+    - name: Get
+      href: ../../api/cloudpcauditevent-get.md
+    - name: Get audit activity types
+      href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+  - name: Cloud PC Azure network connection
+    items:
+    - name: Cloud PC Azure network connection
+      href: ../../resources/cloudpconpremisesconnection.md
+    - name: List
+      href: ../../api/virtualendpoint-list-onpremisesconnections.md
+    - name: Get
+      href: ../../api/cloudpconpremisesconnection-get.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-onpremisesconnections.md
+    - name: Update
+      href: ../../api/cloudpconpremisesconnection-update.md
+    - name: Delete
+      href: ../../api/cloudpconpremisesconnection-delete.md
+    - name: Run health checks
+      href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
+  - name: Cloud PC device image
+    items:
+    - name: Cloud PC device image
+      href: ../../resources/cloudpcdeviceimage.md
+    - name: List
+      href: ../../api/virtualendpoint-list-deviceimages.md
+    - name: Get
+      href: ../../api/cloudpcdeviceimage-get.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-deviceimages.md
+    - name: Delete
+      href: ../../api/cloudpcdeviceimage-delete.md
+    - name: Get source images
+      href: ../../api/cloudpcdeviceimage-getsourceimages.md
+  - name: Cloud PC gallery image
+    items:
+    - name: Cloud PC gallery image
+      href: ../../resources/cloudpcgalleryimage.md
+    - name: List
+      href: ../../api/virtualendpoint-list-galleryimages.md
+    - name: Get
+      href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC provisioning policy
+    items:
+    - name: Cloud PC provisioning policy
+      href: ../../resources/cloudpcprovisioningpolicy.md
+    - name: List
+      href: ../../api/virtualendpoint-list-provisioningpolicies.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-provisioningpolicies.md
+    - name: Get
+      href: ../../api/cloudpcprovisioningpolicy-get.md
+    - name: Update
+      href: ../../api/cloudpcprovisioningpolicy-update.md
+    - name: Delete
+      href: ../../api/cloudpcprovisioningpolicy-delete.md
+    - name: Assign
+      href: ../../api/cloudpcprovisioningpolicy-assign.md
+  - name: Cloud PC user setting
+    items:
+    - name: Cloud PC user setting
+      href: ../../resources/cloudpcusersetting.md
+    - name: List
+      href: ../../api/virtualendpoint-list-usersettings.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-usersettings.md
+    - name: Get
+      href: ../../api/cloudpcusersetting-get.md
+    - name: Update
+      href: ../../api/cloudpcusersetting-update.md
+    - name: Delete
+      href: ../../api/cloudpcusersetting-delete.md
+    - name: Assign
+      href: ../../api/cloudpcusersetting-assign.md
+- name: Cloud printing
+  displayName: Universal Print
+  items:
+  - name: Print
+    items:
+    - name: Print
+      href: ../../resources/print.md
+    - name: List connectors
+      href: ../../api/print-list-connectors.md
+    - name: List printers
+      href: ../../api/print-list-printers.md
+    - name: List shares
+      href: ../../api/print-list-shares.md
+    - name: List services
+      href: ../../api/print-list-services.md
+    - name: Create printerShare
+      href: ../../api/print-post-shares.md
+    - name: Create printer
+      href: ../../api/printer-create.md
+    - name: Update settings
+      href: ../../api/print-update-settings.md
+    - name: List taskDefinitions
+      href: ../../api/print-list-taskdefinitions.md
+    - name: Create taskDefinition
+      href: ../../api/print-post-taskdefinitions.md
+  - name: Print connector
+    items:
+    - name: Print connector
+      href: ../../resources/printconnector.md
+    - name: List
+      href: ../../api/print-list-connectors.md
+    - name: Get
+      href: ../../api/printconnector-get.md
+    - name: Update
+      href: ../../api/printconnector-update.md
+    - name: Delete
+      href: ../../api/printconnector-delete.md
+  - name: Print document
+    items:
+    - name: Print document
+      href: ../../resources/printdocument.md
+    - name: Create upload session
+      href: ../../api/printdocument-createuploadsession.md
+    - name: Download binary file
+      href: ../../api/printdocument-get-file.md
+  - name: Print job
+    items:
+    - name: Print job
+      href: ../../resources/printjob.md
+    - name: Get
+      href: ../../api/printjob-get.md
+    - name: Create print job
+      href: ../../api/printer-post-jobs.md
+    - name: Update
+      href: ../../api/printjob-update.md
+    - name: Start
+      href: ../../api/printjob-start.md
+    - name: Cancel
+      href: ../../api/printjob-cancel.md
+    - name: Abort
+      href: ../../api/printjob-abort.md
+    - name: Redirect
+      href: ../../api/printjob-redirect.md
+  - name: Print operation
+    items:
+    - name: Print operation
+      href: ../../resources/printoperation.md
+    - name: Get
+      href: ../../api/printoperation-get.md
+  - name: Print service
+    items:
+    - name: Print service
+      href: ../../resources/printservice.md
+    - name: List
+      href: ../../api/print-list-services.md
+    - name: Get
+      href: ../../api/printservice-get.md
+    - name: List a service's endpoints
+      href: ../../api/printservice-list-endpoints.md
+  - name: Print service endpoint
+    items:
+    - name: Print service endpoint
+      href: ../../resources/printserviceendpoint.md
+    - name: Get endpoint
+      href: ../../api/printserviceendpoint-get.md
+  - name: Print task definition
+    items:
+    - name: Print task definition
+      href: ../../resources/printtaskdefinition.md
+    - name: List
+      href: ../../api/print-list-taskdefinitions.md
+    - name: Create
+      href: ../../api/print-post-taskdefinitions.md
+    - name: Update
+      href: ../../api/print-update-taskdefinition.md
+    - name: Delete
+      href: ../../api/print-delete-taskdefinition.md
+    - name: List tasks
+      href: ../../api/printtaskdefinition-list-tasks.md
+    - name: Get task
+      href: ../../api/printtask-get.md
+    - name: Update task
+      href: ../../api/printtaskdefinition-update-task.md
+  - name: Print task trigger
+    items:
+    - name: Print task trigger
+      href: ../../resources/printtasktrigger.md
+    - name: List task triggers
+      href: ../../api/printer-list-tasktriggers.md
+    - name: Get task trigger
+      href: ../../api/printtasktrigger-get.md
+  - name: Printer
+    items:
+    - name: Printer
+      href: ../../resources/printer.md
+    - name: Create
+      href: ../../api/printer-create.md
+    - name: Get
+      href: ../../api/printer-get.md
+    - name: Update
+      href: ../../api/printer-update.md
+    - name: Delete
+      href: ../../api/printer-delete.md
+    - name: Restore factory defaults
+      href: ../../api/printer-restorefactorydefaults.md
+    - name: List print jobs
+      href: ../../api/printer-list-jobs.md
+    - name: Create print job
+      href: ../../api/printer-post-jobs.md
+    - name: List connectors
+      href: ../../api/printer-list-connectors.md
+    - name: List printerShares
+      href: ../../api/printer-list-shares.md
+    - name: List task triggers
+      href: ../../api/printer-list-tasktriggers.md
+    - name: Create task trigger
+      href: ../../api/printer-post-tasktriggers.md
+    - name: Delete task trigger
+      href: ../../api/printer-delete-tasktrigger.md
+  - name: Printer create operation
+    items:
+    - name: Printer create operation
+      href: ../../resources/printercreateoperation.md
+    - name: Get
+      href: ../../api/printoperation-get.md
+  - name: Printer share
+    items:
+    - name: Printer share
+      href: ../../resources/printershare.md
+    - name: List
+      href: ../../api/print-list-shares.md
+    - name: Get
+      href: ../../api/printershare-get.md
+    - name: Update
+      href: ../../api/printershare-update.md
+    - name: Delete
+      href: ../../api/printershare-delete.md
+    - name: List jobs for a printer share
+      href: ../../api/printershare-list-jobs.md
+    - name: Create job for a printer share
+      href: ../../api/printershare-post-jobs.md
+    - name: List allowed users
+      href: ../../api/printershare-list-allowedusers.md
+    - name: Create allowed user
+      href: ../../api/printershare-post-allowedusers.md
+    - name: Delete allowed user
+      href: ../../api/printershare-delete-alloweduser.md
+    - name: List allowed groups
+      href: ../../api/printershare-list-allowedgroups.md
+    - name: Create allowed group
+      href: ../../api/printershare-post-allowedgroups.md
+    - name: Delete allowed group
+      href: ../../api/printershare-delete-allowedgroup.md
+  - name: Reports
+    items:
+    - name: Print usage by printer
+      items:
+      - name: Print usage by printer
+        href: ../../resources/printusagebyprinter.md
+      - name: List daily reports by printer
+        href: ../../api/reportroot-list-dailyprintusagebyprinter.md
+      - name: List monthly reports by printer
+        href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
+      - name: Get
+        href: ../../api/printusagebyprinter-get.md
+    - name: Print usage by user
+      items:
+      - name: Print usage by user
+        href: ../../resources/printusagebyuser.md
+      - name: List daily reports by user
+        href: ../../api/reportroot-list-dailyprintusagebyuser.md
+      - name: List monthly reports by user
+        href: ../../api/reportroot-list-monthlyprintusagebyuser.md
+      - name: Get
+        href: ../../api/printusagebyuser-get.md
+    - name: Archived print jobs
+      items:
+      - name: List a user's archived print jobs
+        href: ../../api/reports-getuserarchivedprintjobs.md
+      - name: List a groups's archived print jobs
+        href: ../../api/reports-getgrouparchivedprintjobs.md
+      - name: List a printer's archived print jobs
+        href: ../../api/reports-getprinterarchivedprintjobs.md
+  - name: Complex types
+    items:
+    - name: App identity
+      href: ../../resources/appidentity.md
+    - name: Archived print job
+      href: ../../resources/archivedprintjob.md
+    - name: Identity
+      href: ../../resources/identity.md
+    - name: Integer range
+      href: ../../resources/integerrange.md
+    - name: Print certificate signing request
+      href: ../../resources/printcertificatesigningrequest.md
+    - name: Print document upload properties
+      href: ../../resources/printdocumentuploadproperties.md
+    - name: Print job configuration
+      href: ../../resources/printjobconfiguration.md
+    - name: Print job status
+      href: ../../resources/printjobstatus.md
+    - name: Print margin
+      href: ../../resources/printmargin.md
+    - name: Print operation status
+      href: ../../resources/printoperationstatus.md
+    - name: Print settings
+      href: ../../resources/printsettings.md
+    - name: Print task status
+      href: ../../resources/printtaskstatus.md
+    - name: Printer capabilities
+      href: ../../resources/printercapabilities.md
+    - name: Printer defaults
+      href: ../../resources/printerdefaults.md
+    - name: Printer location
+      href: ../../resources/printerlocation.md
+    - name: Printer share viewpoint
+      href: ../../resources/printershareviewpoint.md
+    - name: Printer status
+      href: ../../resources/printerstatus.md
+    - name: Upload session
+      href: ../../resources/uploadsession.md
+    - name: User identity
+      href: ../../resources/useridentity.md
+- name: Corporate management
+  displayName: Intune
+  items:
+  - name: Overview
+    href: ../../resources/intune-graph-overview.md
+  - name: App management
+    items:
+    - name: Overview
+      href: ../../resources/intune-app-conceptual.md
+    - name: Android LOB app
+      items:
+      - name: Android LOB app
+        href: ../../resources/intune-apps-androidlobapp.md
+      - name: List androidLobApps
+        href: ../../api/intune-apps-androidlobapp-list.md
+      - name: Get androidLobApp
+        href: ../../api/intune-apps-androidlobapp-get.md
+      - name: Create androidLobApp
+        href: ../../api/intune-apps-androidlobapp-create.md
+      - name: Delete androidLobApp
+        href: ../../api/intune-apps-androidlobapp-delete.md
+      - name: Update androidLobApp
+        href: ../../api/intune-apps-androidlobapp-update.md
+    - name: Android store app
+      items:
+      - name: Android store app
+        href: ../../resources/intune-apps-androidstoreapp.md
+      - name: List androidStoreApps
+        href: ../../api/intune-apps-androidstoreapp-list.md
+      - name: Get androidStoreApp
+        href: ../../api/intune-apps-androidstoreapp-get.md
+      - name: Create androidStoreApp
+        href: ../../api/intune-apps-androidstoreapp-create.md
+      - name: Delete androidStoreApp
+        href: ../../api/intune-apps-androidstoreapp-delete.md
+      - name: Update androidStoreApp
+        href: ../../api/intune-apps-androidstoreapp-update.md
+    - name: Device install state
+      items:
+      - name: Device install state
+        href: ../../resources/intune-books-deviceinstallstate.md
+      - name: List deviceInstallStates
+        href: ../../api/intune-books-deviceinstallstate-list.md
+      - name: Get deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-get.md
+      - name: Create deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-create.md
+      - name: Delete deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-delete.md
+      - name: Update deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-update.md
+    - name: eBook install summary
+      items:
+      - name: eBook install summary
+        href: ../../resources/intune-books-ebookinstallsummary.md
+      - name: Get eBookInstallSummary
+        href: ../../api/intune-books-ebookinstallsummary-get.md
+      - name: Update eBookInstallSummary
+        href: ../../api/intune-books-ebookinstallsummary-update.md
+    - name: Enterprise code signing certificate
+      items:
+      - name: Enterprise code signing certificate
+        href: ../../resources/intune-apps-enterprisecodesigningcertificate.md
+      - name: List enterpriseCodeSigningCertificates
+        href: ../../api/intune-apps-enterprisecodesigningcertificate-list.md
+      - name: Get enterpriseCodeSigningCertificate
+        href: ../../api/intune-apps-enterprisecodesigningcertificate-get.md
+      - name: Create enterpriseCodeSigningCertificate
+        href: ../../api/intune-apps-enterprisecodesigningcertificate-create.md
+      - name: Delete enterpriseCodeSigningCertificate
+        href: ../../api/intune-apps-enterprisecodesigningcertificate-delete.md
+      - name: Update enterpriseCodeSigningCertificate
+        href: ../../api/intune-apps-enterprisecodesigningcertificate-update.md
+    - name: iOS iPadOS web clip
+      items:
+      - name: iOS iPadOS web clip
+        href: ../../resources/intune-apps-iosipadoswebclip.md
+      - name: List iosiPadOSWebClips
+        href: ../../api/intune-apps-iosipadoswebclip-list.md
+      - name: Get iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-get.md
+      - name: Create iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-create.md
+      - name: Delete iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-delete.md
+      - name: Update iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-update.md
+    - name: iOS LOB app
+      items:
+      - name: iOS LOB app
+        href: ../../resources/intune-apps-ioslobapp.md
+      - name: List iosLobApps
+        href: ../../api/intune-apps-ioslobapp-list.md
+      - name: Get iosLobApp
+        href: ../../api/intune-apps-ioslobapp-get.md
+      - name: Create iosLobApp
+        href: ../../api/intune-apps-ioslobapp-create.md
+      - name: Delete iosLobApp
+        href: ../../api/intune-apps-ioslobapp-delete.md
+      - name: Update iosLobApp
+        href: ../../api/intune-apps-ioslobapp-update.md
+    - name: iOS LOB app provisioning configuration assignment
+      items:
+      - name: iOS LOB app provisioning configuration assignment
+        href: ../../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md
+      - name: List iosLobAppProvisioningConfigurationAssignments
+        href: ../../api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md
+      - name: Get iosLobAppProvisioningConfigurationAssignment
+        href: ../../api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md
+      - name: Create iosLobAppProvisioningConfigurationAssignment
+        href: ../../api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md
+      - name: Delete iosLobAppProvisioningConfigurationAssignment
+        href: ../../api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md
+      - name: Update iosLobAppProvisioningConfigurationAssignment
+        href: ../../api/intune-apps-ioslobappprovisioningconfigurationassignment-update.md
+    - name: iOS mobile app configuration
+      items:
+      - name: iOS mobile app configuration
+        href: ../../resources/intune-apps-iosmobileappconfiguration.md
+      - name: List iosMobileAppConfigurations
+        href: ../../api/intune-apps-iosmobileappconfiguration-list.md
+      - name: Get iosMobileAppConfiguration
+        href: ../../api/intune-apps-iosmobileappconfiguration-get.md
+      - name: Create iosMobileAppConfiguration
+        href: ../../api/intune-apps-iosmobileappconfiguration-create.md
+      - name: Delete iosMobileAppConfiguration
+        href: ../../api/intune-apps-iosmobileappconfiguration-delete.md
+      - name: Update iosMobileAppConfiguration
+        href: ../../api/intune-apps-iosmobileappconfiguration-update.md
+    - name: iOS store app
+      items:
+      - name: iOS store app
+        href: ../../resources/intune-apps-iosstoreapp.md
+      - name: List iosStoreApps
+        href: ../../api/intune-apps-iosstoreapp-list.md
+      - name: Get iosStoreApp
+        href: ../../api/intune-apps-iosstoreapp-get.md
+      - name: Create iosStoreApp
+        href: ../../api/intune-apps-iosstoreapp-create.md
+      - name: Delete iosStoreApp
+        href: ../../api/intune-apps-iosstoreapp-delete.md
+      - name: Update iosStoreApp
+        href: ../../api/intune-apps-iosstoreapp-update.md
+    - name: iOS VPP app
+      items:
+      - name: iOS VPP app
+        href: ../../resources/intune-apps-iosvppapp.md
+      - name: List iosVppApps
+        href: ../../api/intune-apps-iosvppapp-list.md
+      - name: Get iosVppApp
+        href: ../../api/intune-apps-iosvppapp-get.md
+      - name: Create iosVppApp
+        href: ../../api/intune-apps-iosvppapp-create.md
+      - name: Delete iosVppApp
+        href: ../../api/intune-apps-iosvppapp-delete.md
+      - name: Update iosVppApp
+        href: ../../api/intune-apps-iosvppapp-update.md
+    - name: iOS VPP eBook
+      items:
+      - name: iOS VPP eBook
+        href: ../../resources/intune-books-iosvppebook.md
+      - name: List iosVppEBooks
+        href: ../../api/intune-books-iosvppebook-list.md
+      - name: Get iosVppEBook
+        href: ../../api/intune-books-iosvppebook-get.md
+      - name: Create iosVppEBook
+        href: ../../api/intune-books-iosvppebook-create.md
+      - name: Delete iosVppEBook
+        href: ../../api/intune-books-iosvppebook-delete.md
+      - name: Update iosVppEBook
+        href: ../../api/intune-books-iosvppebook-update.md
+    - name: iOS VPP eBook assignment
+      items:
+      - name: iOS VPP eBook assignment
+        href: ../../resources/intune-books-iosvppebookassignment.md
+      - name: List iosVppEBookAssignments
+        href: ../../api/intune-books-iosvppebookassignment-list.md
+      - name: Get iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-get.md
+      - name: Create iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-create.md
+      - name: Delete iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-delete.md
+      - name: Update iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-update.md
+    - name: macOS LOB app
+      items:
+      - name: macOS LOB app
+        href: ../../resources/intune-apps-macoslobapp.md
+      - name: List macOSLobApps
+        href: ../../api/intune-apps-macoslobapp-list.md
+      - name: Get macOSLobApp
+        href: ../../api/intune-apps-macoslobapp-get.md
+      - name: Create macOSLobApp
+        href: ../../api/intune-apps-macoslobapp-create.md
+      - name: Delete macOSLobApp
+        href: ../../api/intune-apps-macoslobapp-delete.md
+      - name: Update macOSLobApp
+        href: ../../api/intune-apps-macoslobapp-update.md
+    - name: macOS Microsoft Defender app
+      items:
+      - name: macOS Microsoft Defender app
+        href: ../../resources/intune-apps-macosmicrosoftdefenderapp.md
+      - name: List macOSMicrosoftDefenderApps
+        href: ../../api/intune-apps-macosmicrosoftdefenderapp-list.md
+      - name: Get macOSMicrosoftDefenderApp
+        href: ../../api/intune-apps-macosmicrosoftdefenderapp-get.md
+      - name: Create macOSMicrosoftDefenderApp
+        href: ../../api/intune-apps-macosmicrosoftdefenderapp-create.md
+      - name: Delete macOSMicrosoftDefenderApp
+        href: ../../api/intune-apps-macosmicrosoftdefenderapp-delete.md
+      - name: Update macOSMicrosoftDefenderApp
+        href: ../../api/intune-apps-macosmicrosoftdefenderapp-update.md
+    - name: macOS Microsoft Edge app
+      items:
+      - name: macOS Microsoft Edge app
+        href: ../../resources/intune-apps-macosmicrosoftedgeapp.md
+      - name: List macOSMicrosoftEdgeApps
+        href: ../../api/intune-apps-macosmicrosoftedgeapp-list.md
+      - name: Get macOSMicrosoftEdgeApp
+        href: ../../api/intune-apps-macosmicrosoftedgeapp-get.md
+      - name: Create macOSMicrosoftEdgeApp
+        href: ../../api/intune-apps-macosmicrosoftedgeapp-create.md
+      - name: Delete macOSMicrosoftEdgeApp
+        href: ../../api/intune-apps-macosmicrosoftedgeapp-delete.md
+      - name: Update macOSMicrosoftEdgeApp
+        href: ../../api/intune-apps-macosmicrosoftedgeapp-update.md
+    - name: macOS Office Suite app
+      items:
+      - name: macOS Office Suite app
+        href: ../../resources/intune-apps-macosofficesuiteapp.md
+      - name: List macOSOfficeSuiteApps
+        href: ../../api/intune-apps-macosofficesuiteapp-list.md
+      - name: Get macOSOfficeSuiteApp
+        href: ../../api/intune-apps-macosofficesuiteapp-get.md
+      - name: Create macOSOfficeSuiteApp
+        href: ../../api/intune-apps-macosofficesuiteapp-create.md
+      - name: Delete macOSOfficeSuiteApp
+        href: ../../api/intune-apps-macosofficesuiteapp-delete.md
+      - name: Update macOSOfficeSuiteApp
+        href: ../../api/intune-apps-macosofficesuiteapp-update.md
+    - name: Managed Android LOB app
+      items:
+      - name: Managed Android LOB app
+        href: ../../resources/intune-apps-managedandroidlobapp.md
+      - name: List managedAndroidLobApps
+        href: ../../api/intune-apps-managedandroidlobapp-list.md
+      - name: Get managedAndroidLobApp
+        href: ../../api/intune-apps-managedandroidlobapp-get.md
+      - name: Create managedAndroidLobApp
+        href: ../../api/intune-apps-managedandroidlobapp-create.md
+      - name: Delete managedAndroidLobApp
+        href: ../../api/intune-apps-managedandroidlobapp-delete.md
+      - name: Update managedAndroidLobApp
+        href: ../../api/intune-apps-managedandroidlobapp-update.md
+    - name: Managed Android store app
+      items:
+      - name: Managed Android store app
+        href: ../../resources/intune-apps-managedandroidstoreapp.md
+      - name: List managedAndroidStoreApps
+        href: ../../api/intune-apps-managedandroidstoreapp-list.md
+      - name: Get managedAndroidStoreApp
+        href: ../../api/intune-apps-managedandroidstoreapp-get.md
+      - name: Create managedAndroidStoreApp
+        href: ../../api/intune-apps-managedandroidstoreapp-create.md
+      - name: Delete managedAndroidStoreApp
+        href: ../../api/intune-apps-managedandroidstoreapp-delete.md
+      - name: Update managedAndroidStoreApp
+        href: ../../api/intune-apps-managedandroidstoreapp-update.md
+    - name: Managed app
+      items:
+      - name: Managed app
+        href: ../../resources/intune-apps-managedapp.md
+      - name: List managedApps
+        href: ../../api/intune-apps-managedapp-list.md
+      - name: Get managedApp
+        href: ../../api/intune-apps-managedapp-get.md
+    - name: Managed device mobile app configuration
+      items:
+      - name: Managed device mobile app configuration
+        href: ../../resources/intune-apps-manageddevicemobileappconfiguration.md
+      - name: List managedDeviceMobileAppConfigurations
+        href: ../../api/intune-apps-manageddevicemobileappconfiguration-list.md
+      - name: Get managedDeviceMobileAppConfiguration
+        href: ../../api/intune-apps-manageddevicemobileappconfiguration-get.md
+      - name: assign action
+        href: ../../api/intune-apps-manageddevicemobileappconfiguration-assign.md
+    - name: Managed device mobile app configuration assignment
+      items:
+      - name: Managed device mobile app configuration assignment
+        href: ../../resources/intune-apps-manageddevicemobileappconfigurationassignment.md
+      - name: List managedDeviceMobileAppConfigurationAssignments
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
+      - name: Get managedDeviceMobileAppConfigurationAssignment
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
+      - name: Create managedDeviceMobileAppConfigurationAssignment
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationassignment-create.md
+      - name: Delete managedDeviceMobileAppConfigurationAssignment
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationassignment-delete.md
+      - name: Update managedDeviceMobileAppConfigurationAssignment
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationassignment-update.md
+    - name: Managed device mobile app configuration device status
+      items:
+      - name: Managed device mobile app configuration device status
+        href: ../../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md
+      - name: List managedDeviceMobileAppConfigurationDeviceStatuses
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
+      - name: Get managedDeviceMobileAppConfigurationDeviceStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
+      - name: Create managedDeviceMobileAppConfigurationDeviceStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-create.md
+      - name: Delete managedDeviceMobileAppConfigurationDeviceStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete.md
+      - name: Update managedDeviceMobileAppConfigurationDeviceStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-update.md
+    - name: Managed device mobile app configuration device summary
+      items:
+      - name: Managed device mobile app configuration device summary
+        href: ../../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md
+      - name: Get managedDeviceMobileAppConfigurationDeviceSummary
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md
+      - name: Update managedDeviceMobileAppConfigurationDeviceSummary
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update.md
+    - name: Managed device mobile app configuration user status
+      items:
+      - name: Managed device mobile app configuration user status
+        href: ../../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md
+      - name: List managedDeviceMobileAppConfigurationUserStatuses
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
+      - name: Get managedDeviceMobileAppConfigurationUserStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
+      - name: Create managedDeviceMobileAppConfigurationUserStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationuserstatus-create.md
+      - name: Delete managedDeviceMobileAppConfigurationUserStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationuserstatus-delete.md
+      - name: Update managedDeviceMobileAppConfigurationUserStatus
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationuserstatus-update.md
+    - name: Managed device mobile app configuration user summary
+      items:
+      - name: Managed device mobile app configuration user summary
+        href: ../../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md
+      - name: Get managedDeviceMobileAppConfigurationUserSummary
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
+      - name: Update managedDeviceMobileAppConfigurationUserSummary
+        href: ../../api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
+    - name: Managed eBook
+      items:
+      - name: Managed eBook
+        href: ../../resources/intune-books-managedebook.md
+      - name: List managedEBooks
+        href: ../../api/intune-books-managedebook-list.md
+      - name: Get managedEBook
+        href: ../../api/intune-books-managedebook-get.md
+      - name: assign action
+        href: ../../api/intune-books-managedebook-assign.md
+    - name: Managed eBook assignment
+      items:
+      - name: Managed eBook assignment
+        href: ../../resources/intune-books-managedebookassignment.md
+      - name: List managedEBookAssignments
+        href: ../../api/intune-books-managedebookassignment-list.md
+      - name: Get managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-get.md
+      - name: Create managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-create.md
+      - name: Delete managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-delete.md
+      - name: Update managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-update.md
+    - name: Managed iOS LOB app
+      items:
+      - name: Managed iOS LOB app
+        href: ../../resources/intune-apps-managedioslobapp.md
+      - name: List managedIOSLobApps
+        href: ../../api/intune-apps-managedioslobapp-list.md
+      - name: Get managedIOSLobApp
+        href: ../../api/intune-apps-managedioslobapp-get.md
+      - name: Create managedIOSLobApp
+        href: ../../api/intune-apps-managedioslobapp-create.md
+      - name: Delete managedIOSLobApp
+        href: ../../api/intune-apps-managedioslobapp-delete.md
+      - name: Update managedIOSLobApp
+        href: ../../api/intune-apps-managedioslobapp-update.md
+    - name: Managed iOS store app
+      items:
+      - name: Managed iOS store app
+        href: ../../resources/intune-apps-managediosstoreapp.md
+      - name: List managedIOSStoreApps
+        href: ../../api/intune-apps-managediosstoreapp-list.md
+      - name: Get managedIOSStoreApp
+        href: ../../api/intune-apps-managediosstoreapp-get.md
+      - name: Create managedIOSStoreApp
+        href: ../../api/intune-apps-managediosstoreapp-create.md
+      - name: Delete managedIOSStoreApp
+        href: ../../api/intune-apps-managediosstoreapp-delete.md
+      - name: Update managedIOSStoreApp
+        href: ../../api/intune-apps-managediosstoreapp-update.md
+    - name: Managed mobile LOB app
+      items:
+      - name: Managed mobile LOB app
+        href: ../../resources/intune-apps-managedmobilelobapp.md
+      - name: List managedMobileLobApps
+        href: ../../api/intune-apps-managedmobilelobapp-list.md
+      - name: Get managedMobileLobApp
+        href: ../../api/intune-apps-managedmobilelobapp-get.md
+    - name: Microsoft Store for Business app
+      items:
+      - name: Microsoft Store for Business app
+        href: ../../resources/intune-apps-microsoftstoreforbusinessapp.md
+      - name: List microsoftStoreForBusinessApps
+        href: ../../api/intune-apps-microsoftstoreforbusinessapp-list.md
+      - name: Get microsoftStoreForBusinessApp
+        href: ../../api/intune-apps-microsoftstoreforbusinessapp-get.md
+      - name: Create microsoftStoreForBusinessApp
+        href: ../../api/intune-apps-microsoftstoreforbusinessapp-create.md
+      - name: Delete microsoftStoreForBusinessApp
+        href: ../../api/intune-apps-microsoftstoreforbusinessapp-delete.md
+      - name: Update microsoftStoreForBusinessApp
+        href: ../../api/intune-apps-microsoftstoreforbusinessapp-update.md
+    - name: Mobile app
+      items:
+      - name: Mobile app
+        href: ../../resources/intune-apps-mobileapp.md
+      - name: List mobileApps
+        href: ../../api/intune-apps-mobileapp-list.md
+      - name: Get mobileApp
+        href: ../../api/intune-apps-mobileapp-get.md
+      - name: assign action
+        href: ../../api/intune-apps-mobileapp-assign.md
+    - name: Mobile app assignment
+      items:
+      - name: Mobile app assignment
+        href: ../../resources/intune-apps-mobileappassignment.md
+      - name: List mobileAppAssignments
+        href: ../../api/intune-apps-mobileappassignment-list.md
+      - name: Get mobileAppAssignment
+        href: ../../api/intune-apps-mobileappassignment-get.md
+      - name: Create mobileAppAssignment
+        href: ../../api/intune-apps-mobileappassignment-create.md
+      - name: Delete mobileAppAssignment
+        href: ../../api/intune-apps-mobileappassignment-delete.md
+      - name: Update mobileAppAssignment
+        href: ../../api/intune-apps-mobileappassignment-update.md
+    - name: Mobile app category
+      items:
+      - name: Mobile app category
+        href: ../../resources/intune-apps-mobileappcategory.md
+      - name: List mobileAppCategories
+        href: ../../api/intune-apps-mobileappcategory-list.md
+      - name: Get mobileAppCategory
+        href: ../../api/intune-apps-mobileappcategory-get.md
+      - name: Create mobileAppCategory
+        href: ../../api/intune-apps-mobileappcategory-create.md
+      - name: Delete mobileAppCategory
+        href: ../../api/intune-apps-mobileappcategory-delete.md
+      - name: Update mobileAppCategory
+        href: ../../api/intune-apps-mobileappcategory-update.md
+    - name: Mobile app content
+      items:
+      - name: Mobile app content
+        href: ../../resources/intune-apps-mobileappcontent.md
+      - name: List mobileAppContents
+        href: ../../api/intune-apps-mobileappcontent-list.md
+      - name: Get mobileAppContent
+        href: ../../api/intune-apps-mobileappcontent-get.md
+      - name: Create mobileAppContent
+        href: ../../api/intune-apps-mobileappcontent-create.md
+      - name: Delete mobileAppContent
+        href: ../../api/intune-apps-mobileappcontent-delete.md
+      - name: Update mobileAppContent
+        href: ../../api/intune-apps-mobileappcontent-update.md
+    - name: Mobile app content file
+      items:
+      - name: Mobile app content file
+        href: ../../resources/intune-apps-mobileappcontentfile.md
+      - name: List mobileAppContentFiles
+        href: ../../api/intune-apps-mobileappcontentfile-list.md
+      - name: Get mobileAppContentFile
+        href: ../../api/intune-apps-mobileappcontentfile-get.md
+      - name: Create mobileAppContentFile
+        href: ../../api/intune-apps-mobileappcontentfile-create.md
+      - name: Delete mobileAppContentFile
+        href: ../../api/intune-apps-mobileappcontentfile-delete.md
+      - name: Update mobileAppContentFile
+        href: ../../api/intune-apps-mobileappcontentfile-update.md
+      - name: commit action
+        href: ../../api/intune-apps-mobileappcontentfile-commit.md
+      - name: renewUpload action
+        href: ../../api/intune-apps-mobileappcontentfile-renewupload.md
+    - name: Mobile contained app
+      items:
+      - name: Mobile contained app
+        href: ../../resources/intune-apps-mobilecontainedapp.md
+      - name: List mobileContainedApps
+        href: ../../api/intune-apps-mobilecontainedapp-list.md
+      - name: Get mobileContainedApp
+        href: ../../api/intune-apps-mobilecontainedapp-get.md
+    - name: Mobile LOB app
+      items:
+      - name: Mobile LOB app
+        href: ../../resources/intune-apps-mobilelobapp.md
+      - name: List mobileLobApps
+        href: ../../api/intune-apps-mobilelobapp-list.md
+      - name: Get mobileLobApp
+        href: ../../api/intune-apps-mobilelobapp-get.md
+    - name: User install state summary
+      items:
+      - name: User install state summary
+        href: ../../resources/intune-books-userinstallstatesummary.md
+      - name: List userInstallStateSummaries
+        href: ../../api/intune-books-userinstallstatesummary-list.md
+      - name: Get userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-get.md
+      - name: Create userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-create.md
+      - name: Delete userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-delete.md
+      - name: Update userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-update.md
+    - name: Web app
+      items:
+      - name: Web app
+        href: ../../resources/intune-apps-webapp.md
+      - name: List webApps
+        href: ../../api/intune-apps-webapp-list.md
+      - name: Get webApp
+        href: ../../api/intune-apps-webapp-get.md
+      - name: Create webApp
+        href: ../../api/intune-apps-webapp-create.md
+      - name: Delete webApp
+        href: ../../api/intune-apps-webapp-delete.md
+      - name: Update webApp
+        href: ../../api/intune-apps-webapp-update.md
+    - name: Win32 LOB app
+      items:
+      - name: Win32 LOB app
+        href: ../../resources/intune-apps-win32lobapp.md
+      - name: List win32LobApps
+        href: ../../api/intune-apps-win32lobapp-list.md
+      - name: Get win32LobApp
+        href: ../../api/intune-apps-win32lobapp-get.md
+      - name: Create win32LobApp
+        href: ../../api/intune-apps-win32lobapp-create.md
+      - name: Delete win32LobApp
+        href: ../../api/intune-apps-win32lobapp-delete.md
+      - name: Update win32LobApp
+        href: ../../api/intune-apps-win32lobapp-update.md
+    - name: Windows AppX
+      items:
+      - name: Windows AppX
+        href: ../../resources/intune-apps-windowsappx.md
+      - name: List windowsAppXs
+        href: ../../api/intune-apps-windowsappx-list.md
+      - name: Get windowsAppX
+        href: ../../api/intune-apps-windowsappx-get.md
+      - name: Create windowsAppX
+        href: ../../api/intune-apps-windowsappx-create.md
+      - name: Delete windowsAppX
+        href: ../../api/intune-apps-windowsappx-delete.md
+      - name: Update windowsAppX
+        href: ../../api/intune-apps-windowsappx-update.md
+    - name: Windows Microsoft Edge app
+      items:
+      - name: Windows Microsoft Edge app
+        href: ../../resources/intune-apps-windowsmicrosoftedgeapp.md
+      - name: List windowsMicrosoftEdgeApps
+        href: ../../api/intune-apps-windowsmicrosoftedgeapp-list.md
+      - name: Get windowsMicrosoftEdgeApp
+        href: ../../api/intune-apps-windowsmicrosoftedgeapp-get.md
+      - name: Create windowsMicrosoftEdgeApp
+        href: ../../api/intune-apps-windowsmicrosoftedgeapp-create.md
+      - name: Delete windowsMicrosoftEdgeApp
+        href: ../../api/intune-apps-windowsmicrosoftedgeapp-delete.md
+      - name: Update windowsMicrosoftEdgeApp
+        href: ../../api/intune-apps-windowsmicrosoftedgeapp-update.md
+    - name: Windows Mobile MSI
+      items:
+      - name: Windows Mobile MSI
+        href: ../../resources/intune-apps-windowsmobilemsi.md
+      - name: List windowsMobileMSIs
+        href: ../../api/intune-apps-windowsmobilemsi-list.md
+      - name: Get windowsMobileMSI
+        href: ../../api/intune-apps-windowsmobilemsi-get.md
+      - name: Create windowsMobileMSI
+        href: ../../api/intune-apps-windowsmobilemsi-create.md
+      - name: Delete windowsMobileMSI
+        href: ../../api/intune-apps-windowsmobilemsi-delete.md
+      - name: Update windowsMobileMSI
+        href: ../../api/intune-apps-windowsmobilemsi-update.md
+    - name: Windows Universal AppX
+      items:
+      - name: Windows Universal AppX
+        href: ../../resources/intune-apps-windowsuniversalappx.md
+      - name: List windowsUniversalAppXs
+        href: ../../api/intune-apps-windowsuniversalappx-list.md
+      - name: Get windowsUniversalAppX
+        href: ../../api/intune-apps-windowsuniversalappx-get.md
+      - name: Create windowsUniversalAppX
+        href: ../../api/intune-apps-windowsuniversalappx-create.md
+      - name: Delete windowsUniversalAppX
+        href: ../../api/intune-apps-windowsuniversalappx-delete.md
+      - name: Update windowsUniversalAppX
+        href: ../../api/intune-apps-windowsuniversalappx-update.md
+    - name: Windows Universal AppX contained app
+      items:
+      - name: Windows Universal AppX contained app
+        href: ../../resources/intune-apps-windowsuniversalappxcontainedapp.md
+      - name: List windowsUniversalAppXContainedApps
+        href: ../../api/intune-apps-windowsuniversalappxcontainedapp-list.md
+      - name: Get windowsUniversalAppXContainedApp
+        href: ../../api/intune-apps-windowsuniversalappxcontainedapp-get.md
+      - name: Create windowsUniversalAppXContainedApp
+        href: ../../api/intune-apps-windowsuniversalappxcontainedapp-create.md
+      - name: Delete windowsUniversalAppXContainedApp
+        href: ../../api/intune-apps-windowsuniversalappxcontainedapp-delete.md
+      - name: Update windowsUniversalAppXContainedApp
+        href: ../../api/intune-apps-windowsuniversalappxcontainedapp-update.md
+    - name: Windows web app
+      items:
+      - name: Windows web app
+        href: ../../resources/intune-apps-windowswebapp.md
+      - name: List windowsWebApps
+        href: ../../api/intune-apps-windowswebapp-list.md
+      - name: Get windowsWebApp
+        href: ../../api/intune-apps-windowswebapp-get.md
+      - name: Create windowsWebApp
+        href: ../../api/intune-apps-windowswebapp-create.md
+      - name: Delete windowsWebApp
+        href: ../../api/intune-apps-windowswebapp-delete.md
+      - name: Update windowsWebApp
+        href: ../../api/intune-apps-windowswebapp-update.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Android minimum operating system
+        href: ../../resources/intune-apps-androidminimumoperatingsystem.md
+      - name: App configuration setting item
+        href: ../../resources/intune-apps-appconfigurationsettingitem.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: File encryption info
+        href: ../../resources/intune-apps-fileencryptioninfo.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: iOS device type
+        href: ../../resources/intune-apps-iosdevicetype.md
+      - name: iOS LOB app assignment settings
+        href: ../../resources/intune-apps-ioslobappassignmentsettings.md
+      - name: iOS minimum operating system
+        href: ../../resources/intune-apps-iosminimumoperatingsystem.md
+      - name: iOS store app assignment settings
+        href: ../../resources/intune-apps-iosstoreappassignmentsettings.md
+      - name: iOS VPP app assignment settings
+        href: ../../resources/intune-apps-iosvppappassignmentsettings.md
+      - name: macOS LOB app assignment settings
+        href: ../../resources/intune-apps-macoslobappassignmentsettings.md
+      - name: macOS LOB child app
+        href: ../../resources/intune-apps-macoslobchildapp.md
+      - name: macOS minimum operating system
+        href: ../../resources/intune-apps-macosminimumoperatingsystem.md
+      - name: Microsoft Store for Business app assignment settings
+        href: ../../resources/intune-apps-microsoftstoreforbusinessappassignmentsettings.md
+      - name: Mime content
+        href: ../../resources/intune-shared-mimecontent.md
+      - name: Mime content
+        href: ../../resources/intune-shared-mimecontent.md
+      - name: Mobile app assignment settings
+        href: ../../resources/intune-apps-mobileappassignmentsettings.md
+      - name: Mobile app install time settings
+        href: ../../resources/intune-apps-mobileappinstalltimesettings.md
+      - name: VPP licensing type
+        href: ../../resources/intune-apps-vpplicensingtype.md
+      - name: Win32 LOB app assignment settings
+        href: ../../resources/intune-apps-win32lobappassignmentsettings.md
+      - name: Win32 LOB app file system rule
+        href: ../../resources/intune-apps-win32lobappfilesystemrule.md
+      - name: Win32 LOB app install experience
+        href: ../../resources/intune-apps-win32lobappinstallexperience.md
+      - name: Win32 LOB app MSI information
+        href: ../../resources/intune-apps-win32lobappmsiinformation.md
+      - name: Win32 LOB app power shell script rule
+        href: ../../resources/intune-apps-win32lobapppowershellscriptrule.md
+      - name: Win32 LOB app product code rule
+        href: ../../resources/intune-apps-win32lobappproductcoderule.md
+      - name: Win32 LOB app registry rule
+        href: ../../resources/intune-apps-win32lobappregistryrule.md
+      - name: Win32 LOB app restart settings
+        href: ../../resources/intune-apps-win32lobapprestartsettings.md
+      - name: Win32 LOB app return code
+        href: ../../resources/intune-apps-win32lobappreturncode.md
+      - name: Win32 LOB app rule
+        href: ../../resources/intune-apps-win32lobapprule.md
+      - name: Windows AppX app assignment settings
+        href: ../../resources/intune-apps-windowsappxappassignmentsettings.md
+      - name: Windows minimum operating system
+        href: ../../resources/intune-apps-windowsminimumoperatingsystem.md
+      - name: Windows Universal AppX app assignment settings
+        href: ../../resources/intune-apps-windowsuniversalappxappassignmentsettings.md
+  - name: Company terms
+    items:
+    - name: Overview
+      href: ../../resources/intune-company-conceptual.md
+    - name: Terms and conditions
+      items:
+      - name: Terms and conditions
+        href: ../../resources/intune-companyterms-termsandconditions.md
+      - name: List termsAndConditionses
+        href: ../../api/intune-companyterms-termsandconditions-list.md
+      - name: Get termsAndConditions
+        href: ../../api/intune-companyterms-termsandconditions-get.md
+      - name: Create termsAndConditions
+        href: ../../api/intune-companyterms-termsandconditions-create.md
+      - name: Delete termsAndConditions
+        href: ../../api/intune-companyterms-termsandconditions-delete.md
+      - name: Update termsAndConditions
+        href: ../../api/intune-companyterms-termsandconditions-update.md
+    - name: Terms and conditions acceptance status
+      items:
+      - name: Terms and conditions acceptance status
+        href: ../../resources/intune-companyterms-termsandconditionsacceptancestatus.md
+      - name: List termsAndConditionsAcceptanceStatuses
+        href: ../../api/intune-companyterms-termsandconditionsacceptancestatus-list.md
+      - name: Get termsAndConditionsAcceptanceStatus
+        href: ../../api/intune-companyterms-termsandconditionsacceptancestatus-get.md
+      - name: Create termsAndConditionsAcceptanceStatus
+        href: ../../api/intune-companyterms-termsandconditionsacceptancestatus-create.md
+      - name: Delete termsAndConditionsAcceptanceStatus
+        href: ../../api/intune-companyterms-termsandconditionsacceptancestatus-delete.md
+      - name: Update termsAndConditionsAcceptanceStatus
+        href: ../../api/intune-companyterms-termsandconditionsacceptancestatus-update.md
+    - name: Terms and conditions assignment
+      items:
+      - name: Terms and conditions assignment
+        href: ../../resources/intune-companyterms-termsandconditionsassignment.md
+      - name: List termsAndConditionsAssignments
+        href: ../../api/intune-companyterms-termsandconditionsassignment-list.md
+      - name: Get termsAndConditionsAssignment
+        href: ../../api/intune-companyterms-termsandconditionsassignment-get.md
+      - name: Create termsAndConditionsAssignment
+        href: ../../api/intune-companyterms-termsandconditionsassignment-create.md
+      - name: Delete termsAndConditionsAssignment
+        href: ../../api/intune-companyterms-termsandconditionsassignment-delete.md
+      - name: Update termsAndConditionsAssignment
+        href: ../../api/intune-companyterms-termsandconditionsassignment-update.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+  - name: Corporate enrollment
+    items:
+    - name: Overview
+      href: ../../resources/intune-enrollment-conceptual.md
+    - name: Imported Windows Autopilot device identity
+      items:
+      - name: Imported Windows Autopilot device identity
+        href: ../../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
+      - name: List importedWindowsAutopilotDeviceIdentities
+        href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
+      - name: Get importedWindowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
+      - name: Create importedWindowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
+      - name: Delete importedWindowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
+      - name: import action
+        href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
+    - name: Windows Autopilot device identity
+      items:
+      - name: Windows Autopilot device identity
+        href: ../../resources/intune-enrollment-windowsautopilotdeviceidentity.md
+      - name: List windowsAutopilotDeviceIdentities
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-list.md
+      - name: Get windowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-get.md
+      - name: Create windowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-create.md
+      - name: Delete windowsAutopilotDeviceIdentity
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md
+      - name: assignUserToDevice action
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
+      - name: unassignUserFromDevice action
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+      - name: updateDeviceProperties action
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md
+    - name: Complex types
+      items:
+      - name: Imported Windows Autopilot device identity state
+        href: ../../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
+  - name: Device configuration
+    items:
+    - name: Overview
+      href: ../../resources/intune-device-cfg-conceptual.md
+    - name: Android compliance policy
+      items:
+      - name: Android compliance policy
+        href: ../../resources/intune-deviceconfig-androidcompliancepolicy.md
+      - name: List androidCompliancePolicies
+        href: ../../api/intune-deviceconfig-androidcompliancepolicy-list.md
+      - name: Get androidCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidcompliancepolicy-get.md
+      - name: Create androidCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidcompliancepolicy-create.md
+      - name: Delete androidCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidcompliancepolicy-delete.md
+      - name: Update androidCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidcompliancepolicy-update.md
+    - name: Android custom configuration
+      items:
+      - name: Android custom configuration
+        href: ../../resources/intune-deviceconfig-androidcustomconfiguration.md
+      - name: List androidCustomConfigurations
+        href: ../../api/intune-deviceconfig-androidcustomconfiguration-list.md
+      - name: Get androidCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidcustomconfiguration-get.md
+      - name: Create androidCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidcustomconfiguration-create.md
+      - name: Delete androidCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidcustomconfiguration-delete.md
+      - name: Update androidCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidcustomconfiguration-update.md
+    - name: Android general device configuration
+      items:
+      - name: Android general device configuration
+        href: ../../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
+      - name: List androidGeneralDeviceConfigurations
+        href: ../../api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
+      - name: Get androidGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
+      - name: Create androidGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidgeneraldeviceconfiguration-create.md
+      - name: Delete androidGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidgeneraldeviceconfiguration-delete.md
+      - name: Update androidGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidgeneraldeviceconfiguration-update.md
+    - name: Android work profile compliance policy
+      items:
+      - name: Android work profile compliance policy
+        href: ../../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
+      - name: List androidWorkProfileCompliancePolicies
+        href: ../../api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
+      - name: Get androidWorkProfileCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
+      - name: Create androidWorkProfileCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md
+      - name: Delete androidWorkProfileCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md
+      - name: Update androidWorkProfileCompliancePolicy
+        href: ../../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md
+    - name: Android work profile custom configuration
+      items:
+      - name: Android work profile custom configuration
+        href: ../../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md
+      - name: List androidWorkProfileCustomConfigurations
+        href: ../../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
+      - name: Get androidWorkProfileCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
+      - name: Create androidWorkProfileCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md
+      - name: Delete androidWorkProfileCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md
+      - name: Update androidWorkProfileCustomConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md
+    - name: Android work profile general device configuration
+      items:
+      - name: Android work profile general device configuration
+        href: ../../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md
+      - name: List androidWorkProfileGeneralDeviceConfigurations
+        href: ../../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
+      - name: Get androidWorkProfileGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
+      - name: Create androidWorkProfileGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md
+      - name: Delete androidWorkProfileGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md
+      - name: Update androidWorkProfileGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md
+    - name: Apple device features configuration base
+      items:
+      - name: Apple device features configuration base
+        href: ../../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md
+      - name: List appleDeviceFeaturesConfigurationBases
+        href: ../../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
+      - name: Get appleDeviceFeaturesConfigurationBase
+        href: ../../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
+    - name: Device compliance action item
+      items:
+      - name: Device compliance action item
+        href: ../../resources/intune-deviceconfig-devicecomplianceactionitem.md
+      - name: List deviceComplianceActionItems
+        href: ../../api/intune-deviceconfig-devicecomplianceactionitem-list.md
+      - name: Get deviceComplianceActionItem
+        href: ../../api/intune-deviceconfig-devicecomplianceactionitem-get.md
+      - name: Create deviceComplianceActionItem
+        href: ../../api/intune-deviceconfig-devicecomplianceactionitem-create.md
+      - name: Delete deviceComplianceActionItem
+        href: ../../api/intune-deviceconfig-devicecomplianceactionitem-delete.md
+      - name: Update deviceComplianceActionItem
+        href: ../../api/intune-deviceconfig-devicecomplianceactionitem-update.md
+    - name: Device compliance device overview
+      items:
+      - name: Device compliance device overview
+        href: ../../resources/intune-deviceconfig-devicecompliancedeviceoverview.md
+      - name: Get deviceComplianceDeviceOverview
+        href: ../../api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
+      - name: Update deviceComplianceDeviceOverview
+        href: ../../api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
+    - name: Device compliance device status
+      items:
+      - name: Device compliance device status
+        href: ../../resources/intune-deviceconfig-devicecompliancedevicestatus.md
+      - name: List deviceComplianceDeviceStatuses
+        href: ../../api/intune-deviceconfig-devicecompliancedevicestatus-list.md
+      - name: Get deviceComplianceDeviceStatus
+        href: ../../api/intune-deviceconfig-devicecompliancedevicestatus-get.md
+      - name: Create deviceComplianceDeviceStatus
+        href: ../../api/intune-deviceconfig-devicecompliancedevicestatus-create.md
+      - name: Delete deviceComplianceDeviceStatus
+        href: ../../api/intune-deviceconfig-devicecompliancedevicestatus-delete.md
+      - name: Update deviceComplianceDeviceStatus
+        href: ../../api/intune-deviceconfig-devicecompliancedevicestatus-update.md
+    - name: Device compliance policy
+      items:
+      - name: Device compliance policy
+        href: ../../resources/intune-deviceconfig-devicecompliancepolicy.md
+      - name: List deviceCompliancePolicies
+        href: ../../api/intune-deviceconfig-devicecompliancepolicy-list.md
+      - name: Get deviceCompliancePolicy
+        href: ../../api/intune-deviceconfig-devicecompliancepolicy-get.md
+      - name: assign action
+        href: ../../api/intune-deviceconfig-devicecompliancepolicy-assign.md
+      - name: scheduleActionsForRules action
+        href: ../../api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules.md
+    - name: Device compliance policy assignment
+      items:
+      - name: Device compliance policy assignment
+        href: ../../resources/intune-deviceconfig-devicecompliancepolicyassignment.md
+      - name: List deviceCompliancePolicyAssignments
+        href: ../../api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
+      - name: Get deviceCompliancePolicyAssignment
+        href: ../../api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
+      - name: Create deviceCompliancePolicyAssignment
+        href: ../../api/intune-deviceconfig-devicecompliancepolicyassignment-create.md
+      - name: Delete deviceCompliancePolicyAssignment
+        href: ../../api/intune-deviceconfig-devicecompliancepolicyassignment-delete.md
+      - name: Update deviceCompliancePolicyAssignment
+        href: ../../api/intune-deviceconfig-devicecompliancepolicyassignment-update.md
+    - name: Device compliance policy device state summary
+      items:
+      - name: Device compliance policy device state summary
+        href: ../../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md
+      - name: Get deviceCompliancePolicyDeviceStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
+      - name: Update deviceCompliancePolicyDeviceStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
+    - name: Device compliance policy setting state summary
+      items:
+      - name: Device compliance policy setting state summary
+        href: ../../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
+      - name: List deviceCompliancePolicySettingStateSummaries
+        href: ../../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
+      - name: Get deviceCompliancePolicySettingStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
+      - name: Create deviceCompliancePolicySettingStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create.md
+      - name: Delete deviceCompliancePolicySettingStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-delete.md
+      - name: Update deviceCompliancePolicySettingStateSummary
+        href: ../../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update.md
+    - name: Device compliance scheduled action for rule
+      items:
+      - name: Device compliance scheduled action for rule
+        href: ../../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
+      - name: List deviceComplianceScheduledActionForRules
+        href: ../../api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
+      - name: Get deviceComplianceScheduledActionForRule
+        href: ../../api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
+      - name: Create deviceComplianceScheduledActionForRule
+        href: ../../api/intune-deviceconfig-devicecompliancescheduledactionforrule-create.md
+      - name: Delete deviceComplianceScheduledActionForRule
+        href: ../../api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
+      - name: Update deviceComplianceScheduledActionForRule
+        href: ../../api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
+    - name: Device compliance setting state
+      items:
+      - name: Device compliance setting state
+        href: ../../resources/intune-deviceconfig-devicecompliancesettingstate.md
+      - name: List deviceComplianceSettingStates
+        href: ../../api/intune-deviceconfig-devicecompliancesettingstate-list.md
+      - name: Get deviceComplianceSettingState
+        href: ../../api/intune-deviceconfig-devicecompliancesettingstate-get.md
+      - name: Create deviceComplianceSettingState
+        href: ../../api/intune-deviceconfig-devicecompliancesettingstate-create.md
+      - name: Delete deviceComplianceSettingState
+        href: ../../api/intune-deviceconfig-devicecompliancesettingstate-delete.md
+      - name: Update deviceComplianceSettingState
+        href: ../../api/intune-deviceconfig-devicecompliancesettingstate-update.md
+    - name: Device compliance user overview
+      items:
+      - name: Device compliance user overview
+        href: ../../resources/intune-deviceconfig-devicecomplianceuseroverview.md
+      - name: Get deviceComplianceUserOverview
+        href: ../../api/intune-deviceconfig-devicecomplianceuseroverview-get.md
+      - name: Update deviceComplianceUserOverview
+        href: ../../api/intune-deviceconfig-devicecomplianceuseroverview-update.md
+    - name: Device compliance user status
+      items:
+      - name: Device compliance user status
+        href: ../../resources/intune-deviceconfig-devicecomplianceuserstatus.md
+      - name: List deviceComplianceUserStatuses
+        href: ../../api/intune-deviceconfig-devicecomplianceuserstatus-list.md
+      - name: Get deviceComplianceUserStatus
+        href: ../../api/intune-deviceconfig-devicecomplianceuserstatus-get.md
+      - name: Create deviceComplianceUserStatus
+        href: ../../api/intune-deviceconfig-devicecomplianceuserstatus-create.md
+      - name: Delete deviceComplianceUserStatus
+        href: ../../api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
+      - name: Update deviceComplianceUserStatus
+        href: ../../api/intune-deviceconfig-devicecomplianceuserstatus-update.md
+    - name: Device configuration
+      items:
+      - name: Device configuration
+        href: ../../resources/intune-deviceconfig-deviceconfiguration.md
+      - name: List deviceConfigurations
+        href: ../../api/intune-deviceconfig-deviceconfiguration-list.md
+      - name: Get deviceConfiguration
+        href: ../../api/intune-deviceconfig-deviceconfiguration-get.md
+      - name: assign action
+        href: ../../api/intune-deviceconfig-deviceconfiguration-assign.md
+      - name: getOmaSettingPlainTextValue function
+        href: ../../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md
+    - name: Device configuration assignment
+      items:
+      - name: Device configuration assignment
+        href: ../../resources/intune-deviceconfig-deviceconfigurationassignment.md
+      - name: List deviceConfigurationAssignments
+        href: ../../api/intune-deviceconfig-deviceconfigurationassignment-list.md
+      - name: Get deviceConfigurationAssignment
+        href: ../../api/intune-deviceconfig-deviceconfigurationassignment-get.md
+      - name: Create deviceConfigurationAssignment
+        href: ../../api/intune-deviceconfig-deviceconfigurationassignment-create.md
+      - name: Delete deviceConfigurationAssignment
+        href: ../../api/intune-deviceconfig-deviceconfigurationassignment-delete.md
+      - name: Update deviceConfigurationAssignment
+        href: ../../api/intune-deviceconfig-deviceconfigurationassignment-update.md
+    - name: Device configuration device overview
+      items:
+      - name: Device configuration device overview
+        href: ../../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md
+      - name: Get deviceConfigurationDeviceOverview
+        href: ../../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md
+      - name: Update deviceConfigurationDeviceOverview
+        href: ../../api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md
+    - name: Device configuration device state summary
+      items:
+      - name: Device configuration device state summary
+        href: ../../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md
+      - name: Get deviceConfigurationDeviceStateSummary
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md
+      - name: Update deviceConfigurationDeviceStateSummary
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md
+    - name: Device configuration device status
+      items:
+      - name: Device configuration device status
+        href: ../../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md
+      - name: List deviceConfigurationDeviceStatuses
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatus-list.md
+      - name: Get deviceConfigurationDeviceStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatus-get.md
+      - name: Create deviceConfigurationDeviceStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatus-create.md
+      - name: Delete deviceConfigurationDeviceStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatus-delete.md
+      - name: Update deviceConfigurationDeviceStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationdevicestatus-update.md
+    - name: Device configuration user overview
+      items:
+      - name: Device configuration user overview
+        href: ../../resources/intune-deviceconfig-deviceconfigurationuseroverview.md
+      - name: Get deviceConfigurationUserOverview
+        href: ../../api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
+      - name: Update deviceConfigurationUserOverview
+        href: ../../api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
+    - name: Device configuration user status
+      items:
+      - name: Device configuration user status
+        href: ../../resources/intune-deviceconfig-deviceconfigurationuserstatus.md
+      - name: List deviceConfigurationUserStatuses
+        href: ../../api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
+      - name: Get deviceConfigurationUserStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
+      - name: Create deviceConfigurationUserStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationuserstatus-create.md
+      - name: Delete deviceConfigurationUserStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationuserstatus-delete.md
+      - name: Update deviceConfigurationUserStatus
+        href: ../../api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
+    - name: Edition upgrade configuration
+      items:
+      - name: Edition upgrade configuration
+        href: ../../resources/intune-deviceconfig-editionupgradeconfiguration.md
+      - name: List editionUpgradeConfigurations
+        href: ../../api/intune-deviceconfig-editionupgradeconfiguration-list.md
+      - name: Get editionUpgradeConfiguration
+        href: ../../api/intune-deviceconfig-editionupgradeconfiguration-get.md
+      - name: Create editionUpgradeConfiguration
+        href: ../../api/intune-deviceconfig-editionupgradeconfiguration-create.md
+      - name: Delete editionUpgradeConfiguration
+        href: ../../api/intune-deviceconfig-editionupgradeconfiguration-delete.md
+      - name: Update editionUpgradeConfiguration
+        href: ../../api/intune-deviceconfig-editionupgradeconfiguration-update.md
+    - name: iOS certificate profile
+      items:
+      - name: iOS certificate profile
+        href: ../../resources/intune-deviceconfig-ioscertificateprofile.md
+      - name: List iosCertificateProfiles
+        href: ../../api/intune-deviceconfig-ioscertificateprofile-list.md
+      - name: Get iosCertificateProfile
+        href: ../../api/intune-deviceconfig-ioscertificateprofile-get.md
+    - name: iOS compliance policy
+      items:
+      - name: iOS compliance policy
+        href: ../../resources/intune-deviceconfig-ioscompliancepolicy.md
+      - name: List iosCompliancePolicies
+        href: ../../api/intune-deviceconfig-ioscompliancepolicy-list.md
+      - name: Get iosCompliancePolicy
+        href: ../../api/intune-deviceconfig-ioscompliancepolicy-get.md
+      - name: Create iosCompliancePolicy
+        href: ../../api/intune-deviceconfig-ioscompliancepolicy-create.md
+      - name: Delete iosCompliancePolicy
+        href: ../../api/intune-deviceconfig-ioscompliancepolicy-delete.md
+      - name: Update iosCompliancePolicy
+        href: ../../api/intune-deviceconfig-ioscompliancepolicy-update.md
+    - name: iOS custom configuration
+      items:
+      - name: iOS custom configuration
+        href: ../../resources/intune-deviceconfig-ioscustomconfiguration.md
+      - name: List iosCustomConfigurations
+        href: ../../api/intune-deviceconfig-ioscustomconfiguration-list.md
+      - name: Get iosCustomConfiguration
+        href: ../../api/intune-deviceconfig-ioscustomconfiguration-get.md
+      - name: Create iosCustomConfiguration
+        href: ../../api/intune-deviceconfig-ioscustomconfiguration-create.md
+      - name: Delete iosCustomConfiguration
+        href: ../../api/intune-deviceconfig-ioscustomconfiguration-delete.md
+      - name: Update iosCustomConfiguration
+        href: ../../api/intune-deviceconfig-ioscustomconfiguration-update.md
+    - name: iOS device features configuration
+      items:
+      - name: iOS device features configuration
+        href: ../../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
+      - name: List iosDeviceFeaturesConfigurations
+        href: ../../api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
+      - name: Get iosDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
+      - name: Create iosDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md
+      - name: Delete iosDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-iosdevicefeaturesconfiguration-delete.md
+      - name: Update iosDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-iosdevicefeaturesconfiguration-update.md
+    - name: iOS general device configuration
+      items:
+      - name: iOS general device configuration
+        href: ../../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
+      - name: List iosGeneralDeviceConfigurations
+        href: ../../api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
+      - name: Get iosGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
+      - name: Create iosGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md
+      - name: Delete iosGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-iosgeneraldeviceconfiguration-delete.md
+      - name: Update iosGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-iosgeneraldeviceconfiguration-update.md
+    - name: iOS update configuration
+      items:
+      - name: iOS update configuration
+        href: ../../resources/intune-deviceconfig-iosupdateconfiguration.md
+      - name: List iosUpdateConfigurations
+        href: ../../api/intune-deviceconfig-iosupdateconfiguration-list.md
+      - name: Get iosUpdateConfiguration
+        href: ../../api/intune-deviceconfig-iosupdateconfiguration-get.md
+      - name: Create iosUpdateConfiguration
+        href: ../../api/intune-deviceconfig-iosupdateconfiguration-create.md
+      - name: Delete iosUpdateConfiguration
+        href: ../../api/intune-deviceconfig-iosupdateconfiguration-delete.md
+      - name: Update iosUpdateConfiguration
+        href: ../../api/intune-deviceconfig-iosupdateconfiguration-update.md
+    - name: iOS update device status
+      items:
+      - name: iOS update device status
+        href: ../../resources/intune-deviceconfig-iosupdatedevicestatus.md
+      - name: List iosUpdateDeviceStatuses
+        href: ../../api/intune-deviceconfig-iosupdatedevicestatus-list.md
+      - name: Get iosUpdateDeviceStatus
+        href: ../../api/intune-deviceconfig-iosupdatedevicestatus-get.md
+      - name: Create iosUpdateDeviceStatus
+        href: ../../api/intune-deviceconfig-iosupdatedevicestatus-create.md
+      - name: Delete iosUpdateDeviceStatus
+        href: ../../api/intune-deviceconfig-iosupdatedevicestatus-delete.md
+      - name: Update iosUpdateDeviceStatus
+        href: ../../api/intune-deviceconfig-iosupdatedevicestatus-update.md
+    - name: macOS compliance policy
+      items:
+      - name: macOS compliance policy
+        href: ../../resources/intune-deviceconfig-macoscompliancepolicy.md
+      - name: List macOSCompliancePolicies
+        href: ../../api/intune-deviceconfig-macoscompliancepolicy-list.md
+      - name: Get macOSCompliancePolicy
+        href: ../../api/intune-deviceconfig-macoscompliancepolicy-get.md
+      - name: Create macOSCompliancePolicy
+        href: ../../api/intune-deviceconfig-macoscompliancepolicy-create.md
+      - name: Delete macOSCompliancePolicy
+        href: ../../api/intune-deviceconfig-macoscompliancepolicy-delete.md
+      - name: Update macOSCompliancePolicy
+        href: ../../api/intune-deviceconfig-macoscompliancepolicy-update.md
+    - name: macOS custom configuration
+      items:
+      - name: macOS custom configuration
+        href: ../../resources/intune-deviceconfig-macoscustomconfiguration.md
+      - name: List macOSCustomConfigurations
+        href: ../../api/intune-deviceconfig-macoscustomconfiguration-list.md
+      - name: Get macOSCustomConfiguration
+        href: ../../api/intune-deviceconfig-macoscustomconfiguration-get.md
+      - name: Create macOSCustomConfiguration
+        href: ../../api/intune-deviceconfig-macoscustomconfiguration-create.md
+      - name: Delete macOSCustomConfiguration
+        href: ../../api/intune-deviceconfig-macoscustomconfiguration-delete.md
+      - name: Update macOSCustomConfiguration
+        href: ../../api/intune-deviceconfig-macoscustomconfiguration-update.md
+    - name: macOS device features configuration
+      items:
+      - name: macOS device features configuration
+        href: ../../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
+      - name: List macOSDeviceFeaturesConfigurations
+        href: ../../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
+      - name: Get macOSDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
+      - name: Create macOSDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
+      - name: Delete macOSDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-macosdevicefeaturesconfiguration-delete.md
+      - name: Update macOSDeviceFeaturesConfiguration
+        href: ../../api/intune-deviceconfig-macosdevicefeaturesconfiguration-update.md
+    - name: macOS general device configuration
+      items:
+      - name: macOS general device configuration
+        href: ../../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
+      - name: List macOSGeneralDeviceConfigurations
+        href: ../../api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
+      - name: Get macOSGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
+      - name: Create macOSGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md
+      - name: Delete macOSGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md
+      - name: Update macOSGeneralDeviceConfiguration
+        href: ../../api/intune-deviceconfig-macosgeneraldeviceconfiguration-update.md
+    - name: Setting state device summary
+      items:
+      - name: Setting state device summary
+        href: ../../resources/intune-deviceconfig-settingstatedevicesummary.md
+      - name: List settingStateDeviceSummaries
+        href: ../../api/intune-deviceconfig-settingstatedevicesummary-list.md
+      - name: Get settingStateDeviceSummary
+        href: ../../api/intune-deviceconfig-settingstatedevicesummary-get.md
+      - name: Create settingStateDeviceSummary
+        href: ../../api/intune-deviceconfig-settingstatedevicesummary-create.md
+      - name: Delete settingStateDeviceSummary
+        href: ../../api/intune-deviceconfig-settingstatedevicesummary-delete.md
+      - name: Update settingStateDeviceSummary
+        href: ../../api/intune-deviceconfig-settingstatedevicesummary-update.md
+    - name: Shared PC configuration
+      items:
+      - name: Shared PC configuration
+        href: ../../resources/intune-deviceconfig-sharedpcconfiguration.md
+      - name: List sharedPCConfigurations
+        href: ../../api/intune-deviceconfig-sharedpcconfiguration-list.md
+      - name: Get sharedPCConfiguration
+        href: ../../api/intune-deviceconfig-sharedpcconfiguration-get.md
+      - name: Create sharedPCConfiguration
+        href: ../../api/intune-deviceconfig-sharedpcconfiguration-create.md
+      - name: Delete sharedPCConfiguration
+        href: ../../api/intune-deviceconfig-sharedpcconfiguration-delete.md
+      - name: Update sharedPCConfiguration
+        href: ../../api/intune-deviceconfig-sharedpcconfiguration-update.md
+    - name: Software update status summary
+      items:
+      - name: Software update status summary
+        href: ../../resources/intune-deviceconfig-softwareupdatestatussummary.md
+      - name: Get softwareUpdateStatusSummary
+        href: ../../api/intune-deviceconfig-softwareupdatestatussummary-get.md
+      - name: Update softwareUpdateStatusSummary
+        href: ../../api/intune-deviceconfig-softwareupdatestatussummary-update.md
+    - name: Windows 10 compliance policy
+      items:
+      - name: Windows 10 compliance policy
+        href: ../../resources/intune-deviceconfig-windows10compliancepolicy.md
+      - name: List windows10CompliancePolicies
+        href: ../../api/intune-deviceconfig-windows10compliancepolicy-list.md
+      - name: Get windows10CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10compliancepolicy-get.md
+      - name: Create windows10CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10compliancepolicy-create.md
+      - name: Delete windows10CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10compliancepolicy-delete.md
+      - name: Update windows10CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10compliancepolicy-update.md
+    - name: Windows 10 custom configuration
+      items:
+      - name: Windows 10 custom configuration
+        href: ../../resources/intune-deviceconfig-windows10customconfiguration.md
+      - name: List windows10CustomConfigurations
+        href: ../../api/intune-deviceconfig-windows10customconfiguration-list.md
+      - name: Get windows10CustomConfiguration
+        href: ../../api/intune-deviceconfig-windows10customconfiguration-get.md
+      - name: Create windows10CustomConfiguration
+        href: ../../api/intune-deviceconfig-windows10customconfiguration-create.md
+      - name: Delete windows10CustomConfiguration
+        href: ../../api/intune-deviceconfig-windows10customconfiguration-delete.md
+      - name: Update windows10CustomConfiguration
+        href: ../../api/intune-deviceconfig-windows10customconfiguration-update.md
+    - name: Windows 10 endpoint protection configuration
+      items:
+      - name: Windows 10 endpoint protection configuration
+        href: ../../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
+      - name: List windows10EndpointProtectionConfigurations
+        href: ../../api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
+      - name: Get windows10EndpointProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
+      - name: Create windows10EndpointProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md
+      - name: Delete windows10EndpointProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md
+      - name: Update windows10EndpointProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windows10endpointprotectionconfiguration-update.md
+    - name: Windows 10 enterprise modern app management configuration
+      items:
+      - name: Windows 10 enterprise modern app management configuration
+        href: ../../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md
+      - name: List windows10EnterpriseModernAppManagementConfigurations
+        href: ../../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
+      - name: Get windows10EnterpriseModernAppManagementConfiguration
+        href: ../../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
+      - name: Create windows10EnterpriseModernAppManagementConfiguration
+        href: ../../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create.md
+      - name: Delete windows10EnterpriseModernAppManagementConfiguration
+        href: ../../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-delete.md
+      - name: Update windows10EnterpriseModernAppManagementConfiguration
+        href: ../../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-update.md
+    - name: Windows 10 general configuration
+      items:
+      - name: Windows 10 general configuration
+        href: ../../resources/intune-deviceconfig-windows10generalconfiguration.md
+      - name: List windows10GeneralConfigurations
+        href: ../../api/intune-deviceconfig-windows10generalconfiguration-list.md
+      - name: Get windows10GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10generalconfiguration-get.md
+      - name: Create windows10GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10generalconfiguration-create.md
+      - name: Delete windows10GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10generalconfiguration-delete.md
+      - name: Update windows10GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10generalconfiguration-update.md
+    - name: Windows 10 mobile compliance policy
+      items:
+      - name: Windows 10 mobile compliance policy
+        href: ../../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md
+      - name: List windows10MobileCompliancePolicies
+        href: ../../api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
+      - name: Get windows10MobileCompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
+      - name: Create windows10MobileCompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10mobilecompliancepolicy-create.md
+      - name: Delete windows10MobileCompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10mobilecompliancepolicy-delete.md
+      - name: Update windows10MobileCompliancePolicy
+        href: ../../api/intune-deviceconfig-windows10mobilecompliancepolicy-update.md
+    - name: Windows 10 secure assessment configuration
+      items:
+      - name: Windows 10 secure assessment configuration
+        href: ../../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md
+      - name: List windows10SecureAssessmentConfigurations
+        href: ../../api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
+      - name: Get windows10SecureAssessmentConfiguration
+        href: ../../api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
+      - name: Create windows10SecureAssessmentConfiguration
+        href: ../../api/intune-deviceconfig-windows10secureassessmentconfiguration-create.md
+      - name: Delete windows10SecureAssessmentConfiguration
+        href: ../../api/intune-deviceconfig-windows10secureassessmentconfiguration-delete.md
+      - name: Update windows10SecureAssessmentConfiguration
+        href: ../../api/intune-deviceconfig-windows10secureassessmentconfiguration-update.md
+    - name: Windows 10 team general configuration
+      items:
+      - name: Windows 10 team general configuration
+        href: ../../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
+      - name: List windows10TeamGeneralConfigurations
+        href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
+      - name: Get windows10TeamGeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
+      - name: Create windows10TeamGeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-create.md
+      - name: Delete windows10TeamGeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-delete.md
+      - name: Update windows10TeamGeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-update.md
+    - name: Windows 8.1 compliance policy
+      items:
+      - name: Windows 8.1 compliance policy
+        href: ../../resources/intune-deviceconfig-windows81compliancepolicy.md
+      - name: List windows81CompliancePolicies
+        href: ../../api/intune-deviceconfig-windows81compliancepolicy-list.md
+      - name: Get windows81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows81compliancepolicy-get.md
+      - name: Create windows81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows81compliancepolicy-create.md
+      - name: Delete windows81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows81compliancepolicy-delete.md
+      - name: Update windows81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windows81compliancepolicy-update.md
+    - name: Windows 8.1 general configuration
+      items:
+      - name: Windows 8.1 general configuration
+        href: ../../resources/intune-deviceconfig-windows81generalconfiguration.md
+      - name: List windows81GeneralConfigurations
+        href: ../../api/intune-deviceconfig-windows81generalconfiguration-list.md
+      - name: Get windows81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows81generalconfiguration-get.md
+      - name: Create windows81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows81generalconfiguration-create.md
+      - name: Delete windows81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows81generalconfiguration-delete.md
+      - name: Update windows81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windows81generalconfiguration-update.md
+    - name: Windows Defender Advanced Threat Protection configuration
+      items:
+      - name: Windows Defender Advanced Threat Protection configuration
+        href: ../../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md
+      - name: List windowsDefenderAdvancedThreatProtectionConfigurations
+        href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
+      - name: Get windowsDefenderAdvancedThreatProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
+      - name: Create windowsDefenderAdvancedThreatProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create.md
+      - name: Delete windowsDefenderAdvancedThreatProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
+      - name: Update windowsDefenderAdvancedThreatProtectionConfiguration
+        href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
+    - name: Windows Phone 8.1 compliance policy
+      items:
+      - name: Windows Phone 8.1 compliance policy
+        href: ../../resources/intune-deviceconfig-windowsphone81compliancepolicy.md
+      - name: List windowsPhone81CompliancePolicies
+        href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
+      - name: Get windowsPhone81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-get.md
+      - name: Create windowsPhone81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-create.md
+      - name: Delete windowsPhone81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md
+      - name: Update windowsPhone81CompliancePolicy
+        href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-update.md
+    - name: Windows Phone 8.1 custom configuration
+      items:
+      - name: Windows Phone 8.1 custom configuration
+        href: ../../resources/intune-deviceconfig-windowsphone81customconfiguration.md
+      - name: List windowsPhone81CustomConfigurations
+        href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-list.md
+      - name: Get windowsPhone81CustomConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-get.md
+      - name: Create windowsPhone81CustomConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-create.md
+      - name: Delete windowsPhone81CustomConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-delete.md
+      - name: Update windowsPhone81CustomConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-update.md
+    - name: Windows Phone 8.1 general configuration
+      items:
+      - name: Windows Phone 8.1 general configuration
+        href: ../../resources/intune-deviceconfig-windowsphone81generalconfiguration.md
+      - name: List windowsPhone81GeneralConfigurations
+        href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
+      - name: Get windowsPhone81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
+      - name: Create windowsPhone81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
+      - name: Delete windowsPhone81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-delete.md
+      - name: Update windowsPhone81GeneralConfiguration
+        href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-update.md
+    - name: Windows Update for Business configuration
+      items:
+      - name: Windows Update for Business configuration
+        href: ../../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
+      - name: List windowsUpdateForBusinessConfigurations
+        href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
+      - name: Get windowsUpdateForBusinessConfiguration
+        href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
+      - name: Create windowsUpdateForBusinessConfiguration
+        href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
+      - name: Delete windowsUpdateForBusinessConfiguration
+        href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
+      - name: Update windowsUpdateForBusinessConfiguration
+        href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: App list item
+        href: ../../resources/intune-deviceconfig-applistitem.md
+      - name: Bit locker removable drive policy
+        href: ../../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Defender detected malware actions
+        href: ../../resources/intune-deviceconfig-defenderdetectedmalwareactions.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Device compliance policy setting state
+        href: ../../resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
+      - name: Device configuration setting state
+        href: ../../resources/intune-deviceconfig-deviceconfigurationsettingstate.md
+      - name: Device management settings
+        href: ../../resources/intune-deviceconfig-devicemanagementsettings.md
+      - name: Edge search engine
+        href: ../../resources/intune-deviceconfig-edgesearchengine.md
+      - name: Edge search engine base
+        href: ../../resources/intune-deviceconfig-edgesearchenginebase.md
+      - name: Edge search engine custom
+        href: ../../resources/intune-deviceconfig-edgesearchenginecustom.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: iOS home screen app
+        href: ../../resources/intune-deviceconfig-ioshomescreenapp.md
+      - name: iOS home screen folder
+        href: ../../resources/intune-deviceconfig-ioshomescreenfolder.md
+      - name: iOS home screen folder page
+        href: ../../resources/intune-deviceconfig-ioshomescreenfolderpage.md
+      - name: iOS home screen item
+        href: ../../resources/intune-deviceconfig-ioshomescreenitem.md
+      - name: iOS home screen page
+        href: ../../resources/intune-deviceconfig-ioshomescreenpage.md
+      - name: iOS network usage rule
+        href: ../../resources/intune-deviceconfig-iosnetworkusagerule.md
+      - name: iOS notification settings
+        href: ../../resources/intune-deviceconfig-iosnotificationsettings.md
+      - name: Media content rating australia
+        href: ../../resources/intune-deviceconfig-mediacontentratingaustralia.md
+      - name: Media content rating canada
+        href: ../../resources/intune-deviceconfig-mediacontentratingcanada.md
+      - name: Media content rating france
+        href: ../../resources/intune-deviceconfig-mediacontentratingfrance.md
+      - name: Media content rating germany
+        href: ../../resources/intune-deviceconfig-mediacontentratinggermany.md
+      - name: Media content rating ireland
+        href: ../../resources/intune-deviceconfig-mediacontentratingireland.md
+      - name: Media content rating japan
+        href: ../../resources/intune-deviceconfig-mediacontentratingjapan.md
+      - name: Media content rating new zealand
+        href: ../../resources/intune-deviceconfig-mediacontentratingnewzealand.md
+      - name: Media content rating united kingdom
+        href: ../../resources/intune-deviceconfig-mediacontentratingunitedkingdom.md
+      - name: Media content rating united states
+        href: ../../resources/intune-deviceconfig-mediacontentratingunitedstates.md
+      - name: OMA setting
+        href: ../../resources/intune-deviceconfig-omasetting.md
+      - name: OMA setting base 64
+        href: ../../resources/intune-deviceconfig-omasettingbase64.md
+      - name: OMA setting boolean
+        href: ../../resources/intune-deviceconfig-omasettingboolean.md
+      - name: OMA setting date time
+        href: ../../resources/intune-deviceconfig-omasettingdatetime.md
+      - name: OMA setting floating point
+        href: ../../resources/intune-deviceconfig-omasettingfloatingpoint.md
+      - name: OMA setting integer
+        href: ../../resources/intune-deviceconfig-omasettinginteger.md
+      - name: OMA setting string
+        href: ../../resources/intune-deviceconfig-omasettingstring.md
+      - name: OMA setting string xml
+        href: ../../resources/intune-deviceconfig-omasettingstringxml.md
+      - name: Setting source
+        href: ../../resources/intune-deviceconfig-settingsource.md
+      - name: Shared PC account manager policy
+        href: ../../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md
+      - name: Windows 10 network proxy server
+        href: ../../resources/intune-deviceconfig-windows10networkproxyserver.md
+      - name: Windows firewall network profile
+        href: ../../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+      - name: Windows Update active hours install
+        href: ../../resources/intune-deviceconfig-windowsupdateactivehoursinstall.md
+      - name: Windows Update install schedule type
+        href: ../../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+      - name: Windows Update scheduled install
+        href: ../../resources/intune-deviceconfig-windowsupdatescheduledinstall.md
+  - name: Device management
+    items:
+    - name: Overview
+      href: ../../resources/intune-device-mgt-conceptual.md
+    - name: App log collection request
+      items:
+      - name: App log collection request
+        href: ../../resources/intune-devices-applogcollectionrequest.md
+      - name: List appLogCollectionRequests
+        href: ../../api/intune-devices-applogcollectionrequest-list.md
+      - name: Get appLogCollectionRequest
+        href: ../../api/intune-devices-applogcollectionrequest-get.md
+      - name: Create appLogCollectionRequest
+        href: ../../api/intune-devices-applogcollectionrequest-create.md
+      - name: Delete appLogCollectionRequest
+        href: ../../api/intune-devices-applogcollectionrequest-delete.md
+      - name: Update appLogCollectionRequest
+        href: ../../api/intune-devices-applogcollectionrequest-update.md
+      - name: createDownloadUrl action
+        href: ../../api/intune-devices-applogcollectionrequest-createdownloadurl.md
+    - name: Apple push notification certificate
+      items:
+      - name: Apple push notification certificate
+        href: ../../resources/intune-devices-applepushnotificationcertificate.md
+      - name: Get applePushNotificationCertificate
+        href: ../../api/intune-devices-applepushnotificationcertificate-get.md
+      - name: Update applePushNotificationCertificate
+        href: ../../api/intune-devices-applepushnotificationcertificate-update.md
+      - name: downloadApplePushNotificationCertificateSigningRequest function
+        href: ../../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md
+    - name: Detected app
+      items:
+      - name: Detected app
+        href: ../../resources/intune-devices-detectedapp.md
+      - name: List detectedApps
+        href: ../../api/intune-devices-detectedapp-list.md
+      - name: Get detectedApp
+        href: ../../api/intune-devices-detectedapp-get.md
+      - name: Create detectedApp
+        href: ../../api/intune-devices-detectedapp-create.md
+      - name: Delete detectedApp
+        href: ../../api/intune-devices-detectedapp-delete.md
+      - name: Update detectedApp
+        href: ../../api/intune-devices-detectedapp-update.md
+    - name: Device log collection response
+      items:
+      - name: Device log collection response
+        href: ../../resources/intune-devices-devicelogcollectionresponse.md
+      - name: List deviceLogCollectionResponses
+        href: ../../api/intune-devices-devicelogcollectionresponse-list.md
+      - name: Get deviceLogCollectionResponse
+        href: ../../api/intune-devices-devicelogcollectionresponse-get.md
+      - name: Create deviceLogCollectionResponse
+        href: ../../api/intune-devices-devicelogcollectionresponse-create.md
+      - name: Delete deviceLogCollectionResponse
+        href: ../../api/intune-devices-devicelogcollectionresponse-delete.md
+      - name: Update deviceLogCollectionResponse
+        href: ../../api/intune-devices-devicelogcollectionresponse-update.md
+      - name: createDownloadUrl action
+        href: ../../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+    - name: Malware state for windows device
+      items:
+      - name: Malware state for windows device
+        href: ../../resources/intune-devices-malwarestateforwindowsdevice.md
+      - name: List malwareStateForWindowsDevices
+        href: ../../api/intune-devices-malwarestateforwindowsdevice-list.md
+      - name: Get malwareStateForWindowsDevice
+        href: ../../api/intune-devices-malwarestateforwindowsdevice-get.md
+      - name: Create malwareStateForWindowsDevice
+        href: ../../api/intune-devices-malwarestateforwindowsdevice-create.md
+      - name: Delete malwareStateForWindowsDevice
+        href: ../../api/intune-devices-malwarestateforwindowsdevice-delete.md
+      - name: Update malwareStateForWindowsDevice
+        href: ../../api/intune-devices-malwarestateforwindowsdevice-update.md
+    - name: Managed device
+      items:
+      - name: Managed device
+        href: ../../resources/intune-devices-manageddevice.md
+      - name: List managedDevices
+        href: ../../api/intune-devices-manageddevice-list.md
+      - name: Get managedDevice
+        href: ../../api/intune-devices-manageddevice-get.md
+      - name: Create managedDevice
+        href: ../../api/intune-devices-manageddevice-create.md
+      - name: Delete managedDevice
+        href: ../../api/intune-devices-manageddevice-delete.md
+      - name: Update managedDevice
+        href: ../../api/intune-devices-manageddevice-update.md
+    - name: Managed device overview
+      items:
+      - name: Managed device overview
+        href: ../../resources/intune-devices-manageddeviceoverview.md
+      - name: Get managedDeviceOverview
+        href: ../../api/intune-devices-manageddeviceoverview-get.md
+      - name: Update managedDeviceOverview
+        href: ../../api/intune-devices-manageddeviceoverview-update.md
+    - name: Mobile app troubleshooting event
+      items:
+      - name: Mobile app troubleshooting event
+        href: ../../resources/intune-devices-mobileapptroubleshootingevent.md
+      - name: List mobileAppTroubleshootingEvents
+        href: ../../api/intune-devices-mobileapptroubleshootingevent-list.md
+      - name: Get mobileAppTroubleshootingEvent
+        href: ../../api/intune-devices-mobileapptroubleshootingevent-get.md
+      - name: Create mobileAppTroubleshootingEvent
+        href: ../../api/intune-devices-mobileapptroubleshootingevent-create.md
+      - name: Delete mobileAppTroubleshootingEvent
+        href: ../../api/intune-devices-mobileapptroubleshootingevent-delete.md
+      - name: Update mobileAppTroubleshootingEvent
+        href: ../../api/intune-devices-mobileapptroubleshootingevent-update.md
+    - name: User experience analytics app health app performance by app version details
+      items:
+      - name: User experience analytics app health app performance by app version details
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md
+      - name: List userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailses
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-list.md
+      - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-get.md
+    - name: User experience analytics app health app performance by app version device id
+      items:
+      - name: User experience analytics app health app performance by app version device id
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md
+      - name: List userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceIds
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-list.md
+      - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-get.md
+    - name: User experience analytics app health app performance by OS version
+      items:
+      - name: User experience analytics app health app performance by OS version
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
+      - name: List userExperienceAnalyticsAppHealthAppPerformanceByOSVersions
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
+      - name: Get userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
+    - name: User experience analytics app health application performance
+      items:
+      - name: User experience analytics app health application performance
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
+      - name: List userExperienceAnalyticsAppHealthApplicationPerformances
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
+      - name: Get userExperienceAnalyticsAppHealthApplicationPerformance
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
+    - name: User experience analytics app health device model performance
+      items:
+      - name: User experience analytics app health device model performance
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
+      - name: List userExperienceAnalyticsAppHealthDeviceModelPerformances
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
+      - name: Get userExperienceAnalyticsAppHealthDeviceModelPerformance
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
+    - name: User experience analytics app health device performance
+      items:
+      - name: User experience analytics app health device performance
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
+      - name: List userExperienceAnalyticsAppHealthDevicePerformances
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
+      - name: Get userExperienceAnalyticsAppHealthDevicePerformance
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
+    - name: User experience analytics app health device performance details
+      items:
+      - name: User experience analytics app health device performance details
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
+      - name: List userExperienceAnalyticsAppHealthDevicePerformanceDetailses
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
+      - name: Get userExperienceAnalyticsAppHealthDevicePerformanceDetails
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
+    - name: User experience analytics app health OS version performance
+      items:
+      - name: User experience analytics app health OS version performance
+        href: ../../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
+      - name: List userExperienceAnalyticsAppHealthOSVersionPerformances
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
+      - name: Get userExperienceAnalyticsAppHealthOSVersionPerformance
+        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
+    - name: User experience analytics baseline
+      items:
+      - name: User experience analytics baseline
+        href: ../../resources/intune-devices-userexperienceanalyticsbaseline.md
+      - name: List userExperienceAnalyticsBaselines
+        href: ../../api/intune-devices-userexperienceanalyticsbaseline-list.md
+      - name: Get userExperienceAnalyticsBaseline
+        href: ../../api/intune-devices-userexperienceanalyticsbaseline-get.md
+    - name: User experience analytics category
+      items:
+      - name: User experience analytics category
+        href: ../../resources/intune-devices-userexperienceanalyticscategory.md
+      - name: Get userExperienceAnalyticsCategory
+        href: ../../api/intune-devices-userexperienceanalyticscategory-get.md
+    - name: User experience analytics device performance
+      items:
+      - name: User experience analytics device performance
+        href: ../../resources/intune-devices-userexperienceanalyticsdeviceperformance.md
+      - name: List userExperienceAnalyticsDevicePerformances
+        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md
+      - name: Get userExperienceAnalyticsDevicePerformance
+        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md
+      - name: summarizeDevicePerformanceDevices function
+        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
+    - name: User experience analytics device scores
+      items:
+      - name: User experience analytics device scores
+        href: ../../resources/intune-devices-userexperienceanalyticsdevicescores.md
+      - name: List userExperienceAnalyticsDeviceScoreses
+        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-list.md
+      - name: Get userExperienceAnalyticsDeviceScores
+        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-get.md
+    - name: User experience analytics device startup history
+      items:
+      - name: User experience analytics device startup history
+        href: ../../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md
+      - name: List userExperienceAnalyticsDeviceStartupHistories
+        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md
+      - name: Get userExperienceAnalyticsDeviceStartupHistory
+        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md
+    - name: User experience analytics device startup process
+      items:
+      - name: User experience analytics device startup process
+        href: ../../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md
+      - name: List userExperienceAnalyticsDeviceStartupProcesses
+        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
+      - name: Get userExperienceAnalyticsDeviceStartupProcess
+        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
+    - name: User experience analytics metric
+      items:
+      - name: User experience analytics metric
+        href: ../../resources/intune-devices-userexperienceanalyticsmetric.md
+      - name: List userExperienceAnalyticsMetrics
+        href: ../../api/intune-devices-userexperienceanalyticsmetric-list.md
+      - name: Get userExperienceAnalyticsMetric
+        href: ../../api/intune-devices-userexperienceanalyticsmetric-get.md
+    - name: User experience analytics metric history
+      items:
+      - name: User experience analytics metric history
+        href: ../../resources/intune-devices-userexperienceanalyticsmetrichistory.md
+      - name: List userExperienceAnalyticsMetricHistories
+        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-list.md
+      - name: Get userExperienceAnalyticsMetricHistory
+        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-get.md
+    - name: User experience analytics model scores
+      items:
+      - name: User experience analytics model scores
+        href: ../../resources/intune-devices-userexperienceanalyticsmodelscores.md
+      - name: List userExperienceAnalyticsModelScoreses
+        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-list.md
+      - name: Get userExperienceAnalyticsModelScores
+        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-get.md
+    - name: User experience analytics overview
+      items:
+      - name: User experience analytics overview
+        href: ../../resources/intune-devices-userexperienceanalyticsoverview.md
+      - name: Get userExperienceAnalyticsOverview
+        href: ../../api/intune-devices-userexperienceanalyticsoverview-get.md
+    - name: User experience analytics score history
+      items:
+      - name: User experience analytics score history
+        href: ../../resources/intune-devices-userexperienceanalyticsscorehistory.md
+      - name: List userExperienceAnalyticsScoreHistories
+        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-list.md
+      - name: Get userExperienceAnalyticsScoreHistory
+        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-get.md
+    - name: User experience analytics work from anywhere device
+      items:
+      - name: User experience analytics work from anywhere device
+        href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
+      - name: List userExperienceAnalyticsWorkFromAnywhereDevices
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
+      - name: Get userExperienceAnalyticsWorkFromAnywhereDevice
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
+    - name: User experience analytics work from anywhere hardware readiness metric
+      items:
+      - name: User experience analytics work from anywhere hardware readiness metric
+        href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md
+      - name: Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-get.md
+    - name: User experience analytics work from anywhere metric
+      items:
+      - name: User experience analytics work from anywhere metric
+        href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md
+      - name: List userExperienceAnalyticsWorkFromAnywhereMetrics
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
+      - name: Get userExperienceAnalyticsWorkFromAnywhereMetric
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
+    - name: User experience analytics work from anywhere model performance
+      items:
+      - name: User experience analytics work from anywhere model performance
+        href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+      - name: List userExperienceAnalyticsWorkFromAnywhereModelPerformances
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+      - name: Get userExperienceAnalyticsWorkFromAnywhereModelPerformance
+        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
+    - name: Windows device malware state
+      items:
+      - name: Windows device malware state
+        href: ../../resources/intune-devices-windowsdevicemalwarestate.md
+      - name: List windowsDeviceMalwareStates
+        href: ../../api/intune-devices-windowsdevicemalwarestate-list.md
+      - name: Get windowsDeviceMalwareState
+        href: ../../api/intune-devices-windowsdevicemalwarestate-get.md
+      - name: Create windowsDeviceMalwareState
+        href: ../../api/intune-devices-windowsdevicemalwarestate-create.md
+      - name: Delete windowsDeviceMalwareState
+        href: ../../api/intune-devices-windowsdevicemalwarestate-delete.md
+      - name: Update windowsDeviceMalwareState
+        href: ../../api/intune-devices-windowsdevicemalwarestate-update.md
+    - name: Windows malware information
+      items:
+      - name: Windows malware information
+        href: ../../resources/intune-devices-windowsmalwareinformation.md
+      - name: List windowsMalwareInformations
+        href: ../../api/intune-devices-windowsmalwareinformation-list.md
+      - name: Get windowsMalwareInformation
+        href: ../../api/intune-devices-windowsmalwareinformation-get.md
+      - name: Create windowsMalwareInformation
+        href: ../../api/intune-devices-windowsmalwareinformation-create.md
+      - name: Delete windowsMalwareInformation
+        href: ../../api/intune-devices-windowsmalwareinformation-delete.md
+      - name: Update windowsMalwareInformation
+        href: ../../api/intune-devices-windowsmalwareinformation-update.md
+    - name: Windows protection state
+      items:
+      - name: Windows protection state
+        href: ../../resources/intune-devices-windowsprotectionstate.md
+      - name: Get windowsProtectionState
+        href: ../../api/intune-devices-windowsprotectionstate-get.md
+      - name: Update windowsProtectionState
+        href: ../../api/intune-devices-windowsprotectionstate-update.md
+    - name: Complex types
+      items:
+      - name: App log collection download details
+        href: ../../resources/intune-devices-applogcollectiondownloaddetails.md
+      - name: Configuration manager client enabled features
+        href: ../../resources/intune-devices-configurationmanagerclientenabledfeatures.md
+      - name: Delete user from shared Apple device action result
+        href: ../../resources/intune-devices-deleteuserfromsharedappledeviceactionresult.md
+      - name: Device action result
+        href: ../../resources/intune-devices-deviceactionresult.md
+      - name: Device exchange access state summary
+        href: ../../resources/intune-devices-deviceexchangeaccessstatesummary.md
+      - name: Device geo location
+        href: ../../resources/intune-devices-devicegeolocation.md
+      - name: Device health attestation state
+        href: ../../resources/intune-devices-devicehealthattestationstate.md
+      - name: Device operating system summary
+        href: ../../resources/intune-devices-deviceoperatingsystemsummary.md
+      - name: Device protection overview
+        href: ../../resources/intune-devices-deviceprotectionoverview.md
+      - name: Insight value double
+        href: ../../resources/intune-devices-insightvaluedouble.md
+      - name: Insight value int
+        href: ../../resources/intune-devices-insightvalueint.md
+      - name: Locate device action result
+        href: ../../resources/intune-devices-locatedeviceactionresult.md
+      - name: OS version count
+        href: ../../resources/intune-devices-osversioncount.md
+      - name: Remote lock action result
+        href: ../../resources/intune-devices-remotelockactionresult.md
+      - name: Reset passcode action result
+        href: ../../resources/intune-devices-resetpasscodeactionresult.md
+      - name: Update windows device account action parameter
+        href: ../../resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+      - name: User experience analytics autopilot devices summary
+        href: ../../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md
+      - name: User experience analytics cloud identity devices summary
+        href: ../../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md
+      - name: User experience analytics cloud management devices summary
+        href: ../../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md
+      - name: User experience analytics insight
+        href: ../../resources/intune-devices-userexperienceanalyticsinsight.md
+      - name: User experience analytics insight value
+        href: ../../resources/intune-devices-userexperienceanalyticsinsightvalue.md
+      - name: User experience analytics settings
+        href: ../../resources/intune-devices-userexperienceanalyticssettings.md
+      - name: User experience analytics windows 10 devices summary
+        href: ../../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
+      - name: User experience analytics work from anywhere devices summary
+        href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
+      - name: Windows defender scan action result
+        href: ../../resources/intune-devices-windowsdefenderscanactionresult.md
+      - name: Windows device account
+        href: ../../resources/intune-devices-windowsdeviceaccount.md
+      - name: Windows device ad account
+        href: ../../resources/intune-devices-windowsdeviceadaccount.md
+      - name: Windows device Microsoft Entra account
+        href: ../../resources/intune-devices-windowsdeviceazureadaccount.md
+      - name: Windows malware category count
+        href: ../../resources/intune-devices-windowsmalwarecategorycount.md
+      - name: Windows malware execution state count
+        href: ../../resources/intune-devices-windowsmalwareexecutionstatecount.md
+      - name: Windows malware name count
+        href: ../../resources/intune-devices-windowsmalwarenamecount.md
+      - name: Windows malware overview
+        href: ../../resources/intune-devices-windowsmalwareoverview.md
+      - name: Windows malware severity count
+        href: ../../resources/intune-devices-windowsmalwareseveritycount.md
+      - name: Windows malware state count
+        href: ../../resources/intune-devices-windowsmalwarestatecount.md
+  - name: Mobile app management (MAM)
+    items:
+    - name: Overview
+      href: ../../resources/intune-mam-conceptual.md
+    - name: Android managed app protection
+      items:
+      - name: Android managed app protection
+        href: ../../resources/intune-mam-androidmanagedappprotection.md
+      - name: List androidManagedAppProtections
+        href: ../../api/intune-mam-androidmanagedappprotection-list.md
+      - name: Get androidManagedAppProtection
+        href: ../../api/intune-mam-androidmanagedappprotection-get.md
+      - name: Create androidManagedAppProtection
+        href: ../../api/intune-mam-androidmanagedappprotection-create.md
+      - name: Delete androidManagedAppProtection
+        href: ../../api/intune-mam-androidmanagedappprotection-delete.md
+      - name: Update androidManagedAppProtection
+        href: ../../api/intune-mam-androidmanagedappprotection-update.md
+    - name: Android managed app registration
+      items:
+      - name: Android managed app registration
+        href: ../../resources/intune-mam-androidmanagedappregistration.md
+      - name: List androidManagedAppRegistrations
+        href: ../../api/intune-mam-androidmanagedappregistration-list.md
+      - name: Get androidManagedAppRegistration
+        href: ../../api/intune-mam-androidmanagedappregistration-get.md
+      - name: Create androidManagedAppRegistration
+        href: ../../api/intune-mam-androidmanagedappregistration-create.md
+    - name: Default managed app protection
+      items:
+      - name: Default managed app protection
+        href: ../../resources/intune-mam-defaultmanagedappprotection.md
+      - name: List defaultManagedAppProtections
+        href: ../../api/intune-mam-defaultmanagedappprotection-list.md
+      - name: Get defaultManagedAppProtection
+        href: ../../api/intune-mam-defaultmanagedappprotection-get.md
+      - name: Create defaultManagedAppProtection
+        href: ../../api/intune-mam-defaultmanagedappprotection-create.md
+      - name: Delete defaultManagedAppProtection
+        href: ../../api/intune-mam-defaultmanagedappprotection-delete.md
+      - name: Update defaultManagedAppProtection
+        href: ../../api/intune-mam-defaultmanagedappprotection-update.md
+    - name: iOS managed app protection
+      items:
+      - name: iOS managed app protection
+        href: ../../resources/intune-mam-iosmanagedappprotection.md
+      - name: List iosManagedAppProtections
+        href: ../../api/intune-mam-iosmanagedappprotection-list.md
+      - name: Get iosManagedAppProtection
+        href: ../../api/intune-mam-iosmanagedappprotection-get.md
+      - name: Create iosManagedAppProtection
+        href: ../../api/intune-mam-iosmanagedappprotection-create.md
+      - name: Delete iosManagedAppProtection
+        href: ../../api/intune-mam-iosmanagedappprotection-delete.md
+      - name: Update iosManagedAppProtection
+        href: ../../api/intune-mam-iosmanagedappprotection-update.md
+    - name: iOS managed app registration
+      items:
+      - name: iOS managed app registration
+        href: ../../resources/intune-mam-iosmanagedappregistration.md
+      - name: List iosManagedAppRegistrations
+        href: ../../api/intune-mam-iosmanagedappregistration-list.md
+      - name: Get iosManagedAppRegistration
+        href: ../../api/intune-mam-iosmanagedappregistration-get.md
+    - name: Managed app configuration
+      items:
+      - name: Managed app configuration
+        href: ../../resources/intune-mam-managedappconfiguration.md
+      - name: List managedAppConfigurations
+        href: ../../api/intune-mam-managedappconfiguration-list.md
+      - name: Get managedAppConfiguration
+        href: ../../api/intune-mam-managedappconfiguration-get.md
+    - name: Managed app operation
+      items:
+      - name: Managed app operation
+        href: ../../resources/intune-mam-managedappoperation.md
+      - name: List managedAppOperations
+        href: ../../api/intune-mam-managedappoperation-list.md
+      - name: Get managedAppOperation
+        href: ../../api/intune-mam-managedappoperation-get.md
+      - name: Create managedAppOperation
+        href: ../../api/intune-mam-managedappoperation-create.md
+      - name: Delete managedAppOperation
+        href: ../../api/intune-mam-managedappoperation-delete.md
+      - name: Update managedAppOperation
+        href: ../../api/intune-mam-managedappoperation-update.md
+    - name: Managed app policy
+      items:
+      - name: Managed app policy
+        href: ../../resources/intune-mam-managedapppolicy.md
+      - name: List managedAppPolicies
+        href: ../../api/intune-mam-managedapppolicy-list.md
+      - name: Get managedAppPolicy
+        href: ../../api/intune-mam-managedapppolicy-get.md
+      - name: targetApps action
+        href: ../../api/intune-mam-managedapppolicy-targetapps.md
+    - name: Managed app policy deployment summary
+      items:
+      - name: Managed app policy deployment summary
+        href: ../../resources/intune-mam-managedapppolicydeploymentsummary.md
+      - name: Get managedAppPolicyDeploymentSummary
+        href: ../../api/intune-mam-managedapppolicydeploymentsummary-get.md
+      - name: Update managedAppPolicyDeploymentSummary
+        href: ../../api/intune-mam-managedapppolicydeploymentsummary-update.md
+    - name: Managed app protection
+      items:
+      - name: Managed app protection
+        href: ../../resources/intune-mam-managedappprotection.md
+      - name: List managedAppProtections
+        href: ../../api/intune-mam-managedappprotection-list.md
+      - name: Get managedAppProtection
+        href: ../../api/intune-mam-managedappprotection-get.md
+      - name: targetApps action
+        href: ../../api/intune-mam-managedappprotection-targetapps.md
+    - name: Managed app registration
+      items:
+      - name: Managed app registration
+        href: ../../resources/intune-mam-managedappregistration.md
+      - name: List managedAppRegistrations
+        href: ../../api/intune-mam-managedappregistration-list.md
+      - name: Get managedAppRegistration
+        href: ../../api/intune-mam-managedappregistration-get.md
+      - name: getUserIdsWithFlaggedAppRegistration function
+        href: ../../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md
+    - name: Managed app status
+      items:
+      - name: Managed app status
+        href: ../../resources/intune-mam-managedappstatus.md
+      - name: List managedAppStatuses
+        href: ../../api/intune-mam-managedappstatus-list.md
+      - name: Get managedAppStatus
+        href: ../../api/intune-mam-managedappstatus-get.md
+    - name: Managed app status raw
+      items:
+      - name: Managed app status raw
+        href: ../../resources/intune-mam-managedappstatusraw.md
+      - name: List managedAppStatusRaws
+        href: ../../api/intune-mam-managedappstatusraw-list.md
+      - name: Get managedAppStatusRaw
+        href: ../../api/intune-mam-managedappstatusraw-get.md
+    - name: Managed mobile app
+      items:
+      - name: Managed mobile app
+        href: ../../resources/intune-mam-managedmobileapp.md
+      - name: List managedMobileApps
+        href: ../../api/intune-mam-managedmobileapp-list.md
+      - name: Get managedMobileApp
+        href: ../../api/intune-mam-managedmobileapp-get.md
+      - name: Create managedMobileApp
+        href: ../../api/intune-mam-managedmobileapp-create.md
+      - name: Delete managedMobileApp
+        href: ../../api/intune-mam-managedmobileapp-delete.md
+      - name: Update managedMobileApp
+        href: ../../api/intune-mam-managedmobileapp-update.md
+    - name: Mdm windows information protection policy
+      items:
+      - name: Mdm windows information protection policy
+        href: ../../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md
+      - name: List mdmWindowsInformationProtectionPolicies
+        href: ../../api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
+      - name: Get mdmWindowsInformationProtectionPolicy
+        href: ../../api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
+      - name: Create mdmWindowsInformationProtectionPolicy
+        href: ../../api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
+      - name: Delete mdmWindowsInformationProtectionPolicy
+        href: ../../api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
+      - name: Update mdmWindowsInformationProtectionPolicy
+        href: ../../api/intune-mam-mdmwindowsinformationprotectionpolicy-update.md
+    - name: Targeted managed app configuration
+      items:
+      - name: Targeted managed app configuration
+        href: ../../resources/intune-mam-targetedmanagedappconfiguration.md
+      - name: List targetedManagedAppConfigurations
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-list.md
+      - name: Get targetedManagedAppConfiguration
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-get.md
+      - name: Create targetedManagedAppConfiguration
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-create.md
+      - name: Delete targetedManagedAppConfiguration
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-delete.md
+      - name: Update targetedManagedAppConfiguration
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-update.md
+      - name: assign action
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-assign.md
+      - name: targetApps action
+        href: ../../api/intune-mam-targetedmanagedappconfiguration-targetapps.md
+    - name: Targeted managed app policy assignment
+      items:
+      - name: Targeted managed app policy assignment
+        href: ../../resources/intune-mam-targetedmanagedapppolicyassignment.md
+      - name: List targetedManagedAppPolicyAssignments
+        href: ../../api/intune-mam-targetedmanagedapppolicyassignment-list.md
+      - name: Get targetedManagedAppPolicyAssignment
+        href: ../../api/intune-mam-targetedmanagedapppolicyassignment-get.md
+      - name: Delete targetedManagedAppPolicyAssignment
+        href: ../../api/intune-mam-targetedmanagedapppolicyassignment-delete.md
+      - name: Update targetedManagedAppPolicyAssignment
+        href: ../../api/intune-mam-targetedmanagedapppolicyassignment-update.md
+    - name: Targeted managed app protection
+      items:
+      - name: Targeted managed app protection
+        href: ../../resources/intune-mam-targetedmanagedappprotection.md
+      - name: List targetedManagedAppProtections
+        href: ../../api/intune-mam-targetedmanagedappprotection-list.md
+      - name: Get targetedManagedAppProtection
+        href: ../../api/intune-mam-targetedmanagedappprotection-get.md
+      - name: assign action
+        href: ../../api/intune-mam-targetedmanagedappprotection-assign.md
+      - name: targetApps action
+        href: ../../api/intune-mam-targetedmanagedappprotection-targetapps.md
+    - name: Windows information protection
+      items:
+      - name: Windows information protection
+        href: ../../resources/intune-mam-windowsinformationprotection.md
+      - name: List windowsInformationProtections
+        href: ../../api/intune-mam-windowsinformationprotection-list.md
+      - name: Get windowsInformationProtection
+        href: ../../api/intune-mam-windowsinformationprotection-get.md
+      - name: assign action
+        href: ../../api/intune-mam-windowsinformationprotection-assign.md
+    - name: Windows information protection app locker file
+      items:
+      - name: Windows information protection app locker file
+        href: ../../resources/intune-mam-windowsinformationprotectionapplockerfile.md
+      - name: List windowsInformationProtectionAppLockerFiles
+        href: ../../api/intune-mam-windowsinformationprotectionapplockerfile-list.md
+      - name: Get windowsInformationProtectionAppLockerFile
+        href: ../../api/intune-mam-windowsinformationprotectionapplockerfile-get.md
+      - name: Create windowsInformationProtectionAppLockerFile
+        href: ../../api/intune-mam-windowsinformationprotectionapplockerfile-create.md
+      - name: Delete windowsInformationProtectionAppLockerFile
+        href: ../../api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
+      - name: Update windowsInformationProtectionAppLockerFile
+        href: ../../api/intune-mam-windowsinformationprotectionapplockerfile-update.md
+    - name: Windows information protection policy
+      items:
+      - name: Windows information protection policy
+        href: ../../resources/intune-mam-windowsinformationprotectionpolicy.md
+      - name: List windowsInformationProtectionPolicies
+        href: ../../api/intune-mam-windowsinformationprotectionpolicy-list.md
+      - name: Get windowsInformationProtectionPolicy
+        href: ../../api/intune-mam-windowsinformationprotectionpolicy-get.md
+      - name: Create windowsInformationProtectionPolicy
+        href: ../../api/intune-mam-windowsinformationprotectionpolicy-create.md
+      - name: Delete windowsInformationProtectionPolicy
+        href: ../../api/intune-mam-windowsinformationprotectionpolicy-delete.md
+      - name: Update windowsInformationProtectionPolicy
+        href: ../../api/intune-mam-windowsinformationprotectionpolicy-update.md
+    - name: Windows information protection app learning summary
+      items:
+      - name: Windows information protection app learning summary
+        href: ../../resources/intune-wip-windowsinformationprotectionapplearningsummary.md
+      - name: List windowsInformationProtectionAppLearningSummaries
+        href: ../../api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
+      - name: Get windowsInformationProtectionAppLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
+      - name: Create windowsInformationProtectionAppLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
+      - name: Delete windowsInformationProtectionAppLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionapplearningsummary-delete.md
+      - name: Update windowsInformationProtectionAppLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionapplearningsummary-update.md
+    - name: Windows information protection network learning summary
+      items:
+      - name: Windows information protection network learning summary
+        href: ../../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md
+      - name: List windowsInformationProtectionNetworkLearningSummaries
+        href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
+      - name: Get windowsInformationProtectionNetworkLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
+      - name: Create windowsInformationProtectionNetworkLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
+      - name: Delete windowsInformationProtectionNetworkLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete.md
+      - name: Update windowsInformationProtectionNetworkLearningSummary
+        href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-update.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Android mobile app identifier
+        href: ../../resources/intune-mam-androidmobileappidentifier.md
+      - name: Cloud PC audit actor
+        href: ../../resources/cloudpcauditactor.md
+      - name: Cloud PC audit property
+        href: ../../resources/cloudpcauditproperty.md
+      - name: Cloud PC audit resource
+        href: ../../resources/cloudpcauditresource.md
+      - name: Cloud PC domain join configuration
+        href: ../../resources/cloudpcdomainjoinconfiguration.md
+      - name: Cloud PC management assignment target
+        href: ../../resources/cloudpcmanagementassignmenttarget.md
+      - name: Cloud PC management group assignment target
+        href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+      - name: Cloud PC on-premises connection health check
+        href: ../../resources/cloudpconpremisesconnectionhealthcheck.md
+      - name: Cloud PC on-premises connection status detail
+        href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
+      - name: Cloud PC provisioning policy assignment
+        href: ../../resources/cloudpcprovisioningpolicyassignment.md
+      - name: Cloud PC restore point setting
+        href: ../../resources/cloudpcrestorepointsetting.md
+      - name: Cloud PC source device image
+        href: ../../resources/cloudpcsourcedeviceimage.md
+      - name: Cloud PC user role scope tag info
+        href: ../../resources/cloudpcuserrolescopetaginfo.md
+      - name: Cloud PC user setting assignment
+        href: ../../resources/cloudpcusersettingassignment.md
+      - name: Cloud PC windows setting
+        href: ../../resources/cloudpcwindowssetting.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: I pv 4 range
+        href: ../../resources/intune-mam-ipv4range.md
+      - name: I pv 6 range
+        href: ../../resources/intune-mam-ipv6range.md
+      - name: iOS mobile app identifier
+        href: ../../resources/intune-mam-iosmobileappidentifier.md
+      - name: IP range
+        href: ../../resources/iprange.md
+      - name: Json
+        href: ../../resources/json.md
+      - name: Key value pair
+        href: ../../resources/keyvaluepair.md
+      - name: Managed app diagnostic status
+        href: ../../resources/intune-mam-managedappdiagnosticstatus.md
+      - name: Managed app policy deployment summary per app
+        href: ../../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md
+      - name: Microsoft managed desktop
+        href: ../../resources/microsoftmanageddesktop.md
+      - name: Mobile app identifier
+        href: ../../resources/intune-mam-mobileappidentifier.md
+      - name: Proxied domain
+        href: ../../resources/intune-mam-proxieddomain.md
+      - name: Windows information protection app
+        href: ../../resources/intune-mam-windowsinformationprotectionapp.md
+      - name: Windows information protection data recovery certificate
+        href: ../../resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md
+      - name: Windows information protection desktop app
+        href: ../../resources/intune-mam-windowsinformationprotectiondesktopapp.md
+      - name: Windows information protection IP range collection
+        href: ../../resources/intune-mam-windowsinformationprotectioniprangecollection.md
+      - name: Windows information protection proxied domain collection
+        href: ../../resources/intune-mam-windowsinformationprotectionproxieddomaincollection.md
+      - name: Windows information protection resource collection
+        href: ../../resources/intune-mam-windowsinformationprotectionresourcecollection.md
+      - name: Windows information protection store app
+        href: ../../resources/intune-mam-windowsinformationprotectionstoreapp.md
+  - name: Onboarding
+    items:
+    - name: Overview
+      href: ../../resources/intune-onboarding-conceptual.md
+    - name: Compliance management partner
+      items:
+      - name: Compliance management partner
+        href: ../../resources/intune-onboarding-compliancemanagementpartner.md
+      - name: List complianceManagementPartners
+        href: ../../api/intune-onboarding-compliancemanagementpartner-list.md
+      - name: Get complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-get.md
+      - name: Create complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-create.md
+      - name: Delete complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-delete.md
+      - name: Update complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-update.md
+    - name: Device enrollment configuration
+      items:
+      - name: Device enrollment configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentconfiguration.md
+      - name: List deviceEnrollmentConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-list.md
+      - name: Get deviceEnrollmentConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-get.md
+      - name: setPriority action
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
+      - name: assign action
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-assign.md
+    - name: Device enrollment limit configuration
+      items:
+      - name: Device enrollment limit configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
+      - name: List deviceEnrollmentLimitConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
+      - name: Get deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
+      - name: Create deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
+      - name: Delete deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
+      - name: Update deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md
+    - name: Device enrollment platform restrictions configuration
+      items:
+      - name: Device enrollment platform restrictions configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
+      - name: List deviceEnrollmentPlatformRestrictionsConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
+      - name: Get deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
+      - name: Create deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
+      - name: Delete deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
+      - name: Update deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-update.md
+    - name: Device enrollment Windows Hello for Business configuration
+      items:
+      - name: Device enrollment Windows Hello for Business configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md
+      - name: List deviceEnrollmentWindowsHelloForBusinessConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
+      - name: Get deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
+      - name: Create deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
+      - name: Delete deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
+      - name: Update deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update.md
+    - name: Device management Exchange connector
+      items:
+      - name: Device management Exchange connector
+        href: ../../resources/intune-onboarding-devicemanagementexchangeconnector.md
+      - name: List deviceManagementExchangeConnectors
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-list.md
+      - name: Get deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-get.md
+      - name: Create deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-create.md
+      - name: Delete deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-delete.md
+      - name: Update deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-update.md
+      - name: sync action
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-sync.md
+    - name: Device management partner
+      items:
+      - name: Device management partner
+        href: ../../resources/intune-onboarding-devicemanagementpartner.md
+      - name: List deviceManagementPartners
+        href: ../../api/intune-onboarding-devicemanagementpartner-list.md
+      - name: Get deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-get.md
+      - name: Create deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-create.md
+      - name: Delete deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-delete.md
+      - name: Update deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-update.md
+      - name: terminate action
+        href: ../../api/intune-onboarding-devicemanagementpartner-terminate.md
+    - name: Enrollment configuration assignment
+      items:
+      - name: Enrollment configuration assignment
+        href: ../../resources/intune-onboarding-enrollmentconfigurationassignment.md
+      - name: List enrollmentConfigurationAssignments
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-list.md
+      - name: Get enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-get.md
+      - name: Create enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-create.md
+      - name: Delete enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-delete.md
+      - name: Update enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-update.md
+    - name: Mobile threat defense connector
+      items:
+      - name: Mobile threat defense connector
+        href: ../../resources/intune-onboarding-mobilethreatdefenseconnector.md
+      - name: List mobileThreatDefenseConnectors
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-list.md
+      - name: Get mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-get.md
+      - name: Create mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-create.md
+      - name: Delete mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-delete.md
+      - name: Update mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-update.md
+    - name: On-premises conditional access settings
+      items:
+      - name: On-premises conditional access settings
+        href: ../../resources/intune-onboarding-onpremisesconditionalaccesssettings.md
+      - name: Get onPremisesConditionalAccessSettings
+        href: ../../api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
+      - name: Update onPremisesConditionalAccessSettings
+        href: ../../api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
+    - name: VPP token
+      items:
+      - name: VPP token
+        href: ../../resources/intune-onboarding-vpptoken.md
+      - name: List vppTokens
+        href: ../../api/intune-onboarding-vpptoken-list.md
+      - name: Get vppToken
+        href: ../../api/intune-onboarding-vpptoken-get.md
+      - name: Create vppToken
+        href: ../../api/intune-onboarding-vpptoken-create.md
+      - name: Delete vppToken
+        href: ../../api/intune-onboarding-vpptoken-delete.md
+      - name: Update vppToken
+        href: ../../api/intune-onboarding-vpptoken-update.md
+      - name: syncLicenses action
+        href: ../../api/intune-onboarding-vpptoken-synclicenses.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Compliance management partner assignment
+        href: ../../resources/intune-onboarding-compliancemanagementpartnerassignment.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Device and app management data
+        href: ../../resources/intune-onboarding-deviceandappmanagementdata.md
+      - name: Device enrollment platform restriction
+        href: ../../resources/intune-onboarding-deviceenrollmentplatformrestriction.md
+      - name: Device management partner assignment
+        href: ../../resources/intune-onboarding-devicemanagementpartnerassignment.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: Intune brand
+        href: ../../resources/intune-onboarding-intunebrand.md
+      - name: Mime content
+        href: ../../resources/intune-shared-mimecontent.md
+      - name: Rgb color
+        href: ../../resources/intune-onboarding-rgbcolor.md
+  - name: Role-based access control (RBAC)
+    items:
+    - name: Overview
+      href: ../../resources/intune-rbac-conceptual.md
+    - name: Device and app management role assignment
+      items:
+      - name: Device and app management role assignment
+        href: ../../resources/intune-rbac-deviceandappmanagementroleassignment.md
+      - name: List deviceAndAppManagementRoleAssignments
+        href: ../../api/intune-rbac-deviceandappmanagementroleassignment-list.md
+      - name: Get deviceAndAppManagementRoleAssignment
+        href: ../../api/intune-rbac-deviceandappmanagementroleassignment-get.md
+      - name: Create deviceAndAppManagementRoleAssignment
+        href: ../../api/intune-rbac-deviceandappmanagementroleassignment-create.md
+      - name: Delete deviceAndAppManagementRoleAssignment
+        href: ../../api/intune-rbac-deviceandappmanagementroleassignment-delete.md
+      - name: Update deviceAndAppManagementRoleAssignment
+        href: ../../api/intune-rbac-deviceandappmanagementroleassignment-update.md
+    - name: Device and app management role definition
+      items:
+      - name: Device and app management role definition
+        href: ../../resources/intune-rbac-deviceandappmanagementroledefinition.md
+      - name: List deviceAndAppManagementRoleDefinitions
+        href: ../../api/intune-rbac-deviceandappmanagementroledefinition-list.md
+      - name: Get deviceAndAppManagementRoleDefinition
+        href: ../../api/intune-rbac-deviceandappmanagementroledefinition-get.md
+      - name: Create deviceAndAppManagementRoleDefinition
+        href: ../../api/intune-rbac-deviceandappmanagementroledefinition-create.md
+      - name: Delete deviceAndAppManagementRoleDefinition
+        href: ../../api/intune-rbac-deviceandappmanagementroledefinition-delete.md
+      - name: Update deviceAndAppManagementRoleDefinition
+        href: ../../api/intune-rbac-deviceandappmanagementroledefinition-update.md
+    - name: Resource operation
+      items:
+      - name: Resource operation
+        href: ../../resources/intune-rbac-resourceoperation.md
+      - name: List resourceOperations
+        href: ../../api/intune-rbac-resourceoperation-list.md
+      - name: Get resourceOperation
+        href: ../../api/intune-rbac-resourceoperation-get.md
+      - name: Create resourceOperation
+        href: ../../api/intune-rbac-resourceoperation-create.md
+      - name: Delete resourceOperation
+        href: ../../api/intune-rbac-resourceoperation-delete.md
+      - name: Update resourceOperation
+        href: ../../api/intune-rbac-resourceoperation-update.md
+    - name: Role assignment
+      items:
+      - name: Role assignment
+        href: ../../resources/intune-rbac-roleassignment.md
+      - name: List roleAssignments
+        href: ../../api/intune-rbac-roleassignment-list.md
+      - name: Get roleAssignment
+        href: ../../api/intune-rbac-roleassignment-get.md
+      - name: Create roleAssignment
+        href: ../../api/intune-rbac-roleassignment-create.md
+      - name: Delete roleAssignment
+        href: ../../api/intune-rbac-roleassignment-delete.md
+      - name: Update roleAssignment
+        href: ../../api/intune-rbac-roleassignment-update.md
+    - name: Role definition
+      items:
+      - name: Role definition
+        href: ../../resources/intune-rbac-roledefinition.md
+      - name: List roleDefinitions
+        href: ../../api/intune-rbac-roledefinition-list.md
+      - name: Get roleDefinition
+        href: ../../api/intune-rbac-roledefinition-get.md
+      - name: Create roleDefinition
+        href: ../../api/intune-rbac-roledefinition-create.md
+      - name: Delete roleDefinition
+        href: ../../api/intune-rbac-roledefinition-delete.md
+      - name: Update roleDefinition
+        href: ../../api/intune-rbac-roledefinition-update.md
+    - name: Complex types
+      items:
+      - name: Resource action
+        href: ../../resources/intune-rbac-resourceaction.md
+      - name: Role permission
+        href: ../../resources/intune-rbac-rolepermission.md
+- name: Microsoft 365 apps
+  displayName: Microsoft 365 applications
+  items:
+  - name: Installation options
+    items:
+    - name: Installation options
+      href: ../../resources/m365appsinstallationoptions.md
+    - name: Get m365AppsInstallationOptions
+      href: ../../api/m365appsinstallationoptions-get.md
+    - name: Update m365AppsInstallationOptions
+      href: ../../api/m365appsinstallationoptions-update.md
+  - name: Complex types
+    items:
+    - name: Admin
+      href: ../../resources/admin.md
+    - name: Admin Microsoft 365 apps
+      href: ../../resources/adminmicrosoft365apps.md
+    - name: Apps installation options for mac
+      href: ../../resources/appsinstallationoptionsformac.md
+    - name: Apps installation options for windows
+      href: ../../resources/appsinstallationoptionsforwindows.md
+- name: Service health and communications
+  items:
+  - name: Overview
+    href: ../../resources/service-communications-api-overview.md
+  - name: Service announcement
+    items:
+    - name: Service announcement
+      href: ../../resources/serviceannouncement.md
+    - name: List health overviews
+      href: ../../api/serviceannouncement-list-healthoverviews.md
+    - name: List issues
+      href: ../../api/serviceannouncement-list-issues.md
+    - name: List messages
+      href: ../../api/serviceannouncement-list-messages.md
+  - name: Service announcement attachment
+    items:
+    - name: Service announcement attachment
+      href: ../../resources/serviceannouncementattachment.md
+    - name: Get
+      href: ../../api/serviceannouncementattachment-get.md
+  - name: Service health
+    items:
+    - name: Service health
+      href: ../../resources/servicehealth.md
+    - name: Get service health
+      href: ../../api/servicehealth-get.md
+  - name: Service health issue
+    items:
+    - name: Service health issue
+      href: ../../resources/servicehealthissue.md
+    - name: Get issue
+      href: ../../api/servicehealthissue-get.md
+    - name: Get post-incident review report
+      href: ../../api/servicehealthissue-incidentreport.md
+  - name: Service update message
+    items:
+    - name: Service update message
+      href: ../../resources/serviceupdatemessage.md
+    - name: Get message
+      href: ../../api/serviceupdatemessage-get.md
+    - name: Mark read status
+      href: ../../api/serviceupdatemessage-markread.md
+    - name: Mark unread status
+      href: ../../api/serviceupdatemessage-markunread.md
+    - name: Archive status
+      href: ../../api/serviceupdatemessage-archive.md
+    - name: Unarchive status
+      href: ../../api/serviceupdatemessage-unarchive.md
+    - name: Mark favorite status
+      href: ../../api/serviceupdatemessage-favorite.md
+    - name: Remove favorite status
+      href: ../../api/serviceupdatemessage-unfavorite.md
+    - name: List message attachments
+      href: ../../api/serviceupdatemessage-list-attachments.md
+  - name: Complex types
+    items:
+    - name: Admin
+      href: ../../resources/admin.md
+    - name: Item body
+      href: ../../resources/itembody.md
+    - name: Key value pair
+      href: ../../resources/keyvaluepair.md
+    - name: Service health issue post
+      href: ../../resources/servicehealthissuepost.md
+    - name: Service update message viewpoint
+      href: ../../resources/serviceupdatemessageviewpoint.md
