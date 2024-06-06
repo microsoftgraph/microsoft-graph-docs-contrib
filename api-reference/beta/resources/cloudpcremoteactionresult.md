@@ -19,7 +19,7 @@ Represents the Cloud PC-specified remote action result.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md) (deprecated)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the Cloud PC specified remote action results. Cloud PC supports reprovision and resize remote actions. Starting September 30, 2024, getCloudPcRemoteActionResults API bound to managedDevice entity will be deprecated and no longer supported. Please use [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API bound to cloudpc entity instead.|
+|[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md) (deprecated)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the Cloud PC specified remote action results. Cloud PC supports reprovision and resize remote actions. Starting September 30, 2024, getCloudPcRemoteActionResults API bound to managedDevice entity will be deprecated and no longer supported. Use [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API bound to cloudpc entity instead.|
 |[Retrieve remote action results](../api/cloudpc-retrievecloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Retrieve remote action result and check the status of a specific remote action performed on the associated Cloud PC device.|
 
 ## Properties
