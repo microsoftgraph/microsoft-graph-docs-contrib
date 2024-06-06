@@ -37,10 +37,10 @@ Namespace: microsoft.graph
 
 ### siteLockState values
 
-| Value         | Description |
-|:--------------|:----------------------------------------------- |
-| unlocked      | Unlocked |
-| lockedReadOnly | Read-only. No additions, updates or deletions allowed to content or metadata |
+| Value         | 
+|:--------------|
+| unlocked      | 
+| lockedReadOnly |
 
 
 
