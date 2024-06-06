@@ -212,6 +212,8 @@ items:
     href: ../../api/security-detectionrule-list.md
   - name: Get
     href: ../../api/security-detectionrule-get.md
+  - name: Create
+    href: ../../api/security-detectionrule-post-detectionRules.md
   - name: Update
     href: ../../api/security-detectionrule-update.md
   - name: Delete
@@ -466,6 +468,8 @@ items:
     items:
     - name: Health issue
       href: ../../resources/security-healthissue.md
+    - name: List
+      href: ../../api/security-identityContainer-list-healthissues.md
     - name: Get
       href: ../../api/security-healthissue-get.md
     - name: Update
