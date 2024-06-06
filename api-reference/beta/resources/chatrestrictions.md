@@ -26,7 +26,7 @@ Specifies the configuration for meeting chat restrictions.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.chatrrestrictions"
+  "@odata.type": "microsoft.graph.chatrestrictions"
 }
 -->
 
