@@ -16,7 +16,7 @@ If you can't find an application in the Data Connect Azure portal experience, ve
 
 ## Issues with approving an application
 
-To approve an application in the admin center, the user must be a global admin. An E5 license isn't required.
+To approve an application in the [M365 admin center](https://www.microsoft.com/microsoft-365/business/office-365-administration), the user must be a global admin. An E5 license isn't required.
 
 ## Renewing an application consent
 
