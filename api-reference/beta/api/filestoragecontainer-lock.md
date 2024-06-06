@@ -36,7 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /storageContainers/{containerId}/lock
 ```
 
-Payload, optional
+## Request body
+In the request body, you can optionally include a JSON representation of the lockState.
+
 ```json
 {
     "lockState": "lockedReadOnly"
@@ -59,6 +61,9 @@ The following example shows how to lock a fileStorageContainer.
 
 ``` http
 POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/lock
+{
+    "lockState": "lockedReadOnly"
+}
 ```
 
 ### Response
