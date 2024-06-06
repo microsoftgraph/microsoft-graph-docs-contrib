@@ -314,26 +314,10 @@
         },
         {
           "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
-          "ApiChange": "Method",
-          "ChangedApiName": "cloudPcSharedUseServicePlan",
-          "ChangeType": "Change",
-          "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
-          "Target": "cloudPcSharedUseServicePlan"
-        },
-        {
-          "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
-          "ApiChange": "Method",
-          "ChangedApiName": "cloudPcSharedUseServicePlans",
-          "ChangeType": "Change",
-          "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
-          "Target": "cloudPcSharedUseServicePlan"
-        },
-        {
-          "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSharedUseServicePlan",
           "ChangeType": "Change",
-          "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Changed the deprecation date of the **cloudPcSharedUseServicePlan** resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
           "Target": "cloudPcSharedUseServicePlan"
         }
       ],
@@ -1271,7 +1255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSharedUseServicePlan",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Deprecated the **cloudPcSharedUseServicePlan** resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
           "Target": "cloudPcSharedUseServicePlan"
         },
         {
@@ -1603,7 +1587,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSharedUseServicePlan",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the **cloudPcSharedUseServicePlan** resource and supported methods.",
           "Target": "cloudPcSharedUseServicePlan"
         },
         {
