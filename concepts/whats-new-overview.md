@@ -32,6 +32,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 Removed the **type** property from the [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **resourceType** property.
 
+### Tasks and plans
+
+[Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
+
 ## May 2024: New and generally available
 
 ### Identity and access | Identity and sign-in
