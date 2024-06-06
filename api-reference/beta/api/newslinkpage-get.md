@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /newsLinkPage
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.newsLinkPage
 ```
 
 ## Optional query parameters
