@@ -1,5 +1,5 @@
 ---
-title: "Lock fileStorageContainer"
+title: "fileStorageContainer: lock"
 description: "Lock a fileStorageContainer."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Lock fileStorageContainer
+# fileStorageContainer: lock
 
 Namespace: microsoft.graph
 
@@ -21,9 +21,9 @@ This action updates the [lockState](../resources/enums.md#sitelockstate-values).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-When delegated permissions are used, only members in the `owner` role can call this method.
+> [!NOTE]
+> When delegated permissions are used, only members who are assigned the `owner` role can call this method.
 
-<!-- { "blockType": "permissions", "name": "filestoragecontainer_lock" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected, FileStorageContainer.Manage.All|Not available.|
