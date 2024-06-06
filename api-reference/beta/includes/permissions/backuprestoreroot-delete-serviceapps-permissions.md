@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|BackupRestore-Control.ReadWrite.All|Not available.|
