@@ -12,8 +12,12 @@ use Microsoft\Graph\Generated\Models\AccessReviewReviewerScope;
 use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
 use Microsoft\Graph\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\RecurrencePatternType;
 use Microsoft\Graph\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Generated\Models\WeekIndex;
 use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\RecurrenceRangeType;
+use Microsoft\Kiota\Abstractions\Types\Date;
 use Microsoft\Graph\Generated\Models\AccessReviewApplyAction;
 use Microsoft\Graph\Generated\Models\RemoveAccessApplyAction;
 

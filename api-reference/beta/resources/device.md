@@ -46,9 +46,9 @@ This resource is an open type that allows other properties to be passed in. You 
 > [!IMPORTANT]
 > Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries#device-properties).
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Default is `true`. <br/><br/> Supports `$filter` (`eq`, `ne`, `not`, `in`). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Default is `true`. <br/><br/> Supports `$filter` (`eq`, `ne`, `not`, `in`). Only callers with at least the Cloud Device Administrator role can set this property.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderby`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
@@ -88,7 +88,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Microsoft Entra ID). For more information, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction). |
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |commands | [command](command.md) collection | Set of commands sent to this device.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. |

@@ -5,13 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Simulation;
-use Microsoft\Graph\Generated\Models\EmailIdentity;
-use Microsoft\Graph\Generated\Models\AddressBookAccountTargetContent;
-use Microsoft\Graph\Generated\Models\TrainingSetting;
-use Microsoft\Graph\Generated\Models\EndUserNotificationSetting;
-use Microsoft\Graph\Generated\Models\PositiveReinforcementNotification;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Simulation;
+use Microsoft\Graph\Beta\Generated\Models\EmailIdentity;
+use Microsoft\Graph\Beta\Generated\Models\SimulationAttackTechnique;
+use Microsoft\Graph\Beta\Generated\Models\SimulationStatus;
+use Microsoft\Graph\Beta\Generated\Models\AddressBookAccountTargetContent;
+use Microsoft\Graph\Beta\Generated\Models\AccountTargetContentType;
+use Microsoft\Graph\Beta\Generated\Models\TrainingSetting;
+use Microsoft\Graph\Beta\Generated\Models\TrainingSettingType;
+use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationSetting;
+use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationPreference;
+use Microsoft\Graph\Beta\Generated\Models\EndUserNotificationSettingType;
+use Microsoft\Graph\Beta\Generated\Models\PositiveReinforcementNotification;
+use Microsoft\Graph\Beta\Generated\Models\NotificationDeliveryPreference;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |search|String|Specifies a string to search|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as select parameter|
@@ -84,7 +84,9 @@ Content-length: 199
         "ManagedDeviceName",
         "UserPrincipalName",
         "TotalUsageInHour",
-        "DaysSinceLastSignIn"
+        "LastActiveTime",
+        "PcType",
+        "CreatedDate"
     ]
 }
 ```
@@ -156,8 +158,16 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "DaysSinceLastSignIn",
-            "PropertyType": "Int64"
+            "Column": "LastActiveTime",
+            "PropertyType": "DateTime"
+        },
+        {
+            "Column": "PcType",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "CreatedDate",
+            "PropertyType": "DateTime"
         }
     ],
     "Values": [
@@ -166,7 +176,9 @@ Content-Type: application/octet-stream
             "CPC-DisplayName",
             "connie@contoso.com",
             66.36944444444444,
-            0
+            "2023-04-17T01:43:18",
+            "Cloud PC Enterprise 8vCPU/32GB/512GB",
+            "2022-03-30T13:48:38"
         ]
     ]
 }

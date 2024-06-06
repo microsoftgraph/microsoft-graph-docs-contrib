@@ -5,8 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.schema import Schema
-from msgraph.generated.models.property import Property
+from msgraph.generated.models.external_connectors.schema import Schema
+from msgraph.generated.models.external_connectors.property import Property
+from msgraph.generated.models.property_type import PropertyType
+from msgraph.generated.models.external_connectors.label import Label
 from msgraph.generated.models.label import Label
 
 graph_client = GraphServiceClient(credentials, scopes)

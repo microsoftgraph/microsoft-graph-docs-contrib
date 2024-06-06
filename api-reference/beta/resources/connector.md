@@ -19,8 +19,8 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List connectors](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. | 
-| [Get connector](../api/connector-get.md) | [connector](connector.md) | Read the properties and relationships of a connector object. |
+| [List](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. |
+| [Get](../api/connector-get.md) | [connector](connector.md) | Read the properties and relationships of a connector object. |
 | [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | List the **connectorGroup** object collection the connector is a member of. |
 | [Add connector to connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Add a connector to a **connectorGroup**. |
 

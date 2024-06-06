@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ClassGroupProvisioningFlow;
-use Microsoft\Graph\Generated\Models\ClassGroupConfiguration;
-use Microsoft\Graph\Generated\Models\AdditionalClassGroupAttributes;
-use Microsoft\Graph\Generated\Models\AdditionalClassGroupOptions;
-use Microsoft\Graph\Generated\Models\EnrollmentMappings;
-use Microsoft\Graph\Generated\Models\SectionRoleReferenceValue;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\ClassGroupProvisioningFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\ClassGroupConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalClassGroupAttributes;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalClassGroupOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\EnrollmentMappings;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SectionRoleReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

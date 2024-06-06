@@ -3,8 +3,8 @@ title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
 author: "njerigrevious"
+doc_type: conceptualPageType
 ms.subservice: "search"
-doc_type: resourcePageType
 ---
 
 # Use the Microsoft Search API to query data
@@ -177,7 +177,7 @@ See [Use search display layout](/graph/search-concept-display-layout) for exampl
 
 ## Guest search
 
-The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**.
 
 ## Error handling
 
@@ -204,7 +204,7 @@ The search API has the following limitations:
     | externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
     | list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
     | listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
-    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |  
+    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
     | person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
     | qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
     | site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |

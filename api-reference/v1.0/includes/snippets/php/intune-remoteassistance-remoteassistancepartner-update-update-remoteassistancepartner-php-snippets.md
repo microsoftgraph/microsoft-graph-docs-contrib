@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\RemoteAssistancePartner;
+use Microsoft\Graph\Generated\Models\RemoteAssistanceOnboardingStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -1,0 +1,104 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Answer
+  items:
+  - name: Overview
+    href: ../../resources/search-api-answers-overview.md
+  - name: Acronym
+    items:
+    - name: Acronym
+      href: ../../resources/search-acronym.md
+    - name: List
+      href: ../../api/search-searchentity-list-acronyms.md
+    - name: Create
+      href: ../../api/search-searchentity-post-acronyms.md
+    - name: Get
+      href: ../../api/search-acronym-get.md
+    - name: Update
+      href: ../../api/search-acronym-update.md
+    - name: Delete
+      href: ../../api/search-acronym-delete.md
+  - name: Bookmark
+    items:
+    - name: Bookmark
+      href: ../../resources/search-bookmark.md
+    - name: List
+      href: ../../api/search-searchentity-list-bookmarks.md
+    - name: Create
+      href: ../../api/search-searchentity-post-bookmarks.md
+    - name: Get
+      href: ../../api/search-bookmark-get.md
+    - name: Update
+      href: ../../api/search-bookmark-update.md
+    - name: Delete
+      href: ../../api/search-bookmark-delete.md
+  - name: QnA
+    items:
+    - name: QnA
+      href: ../../resources/search-qna.md
+    - name: List
+      href: ../../api/search-searchentity-list-qnas.md
+    - name: Create
+      href: ../../api/search-searchentity-post-qnas.md
+    - name: Get
+      href: ../../api/search-qna-get.md
+    - name: Update
+      href: ../../api/search-qna-update.md
+    - name: Delete
+      href: ../../api/search-qna-delete.md
+- name: Query
+  items:
+  - name: Overview
+    href: ../../resources/search-api-overview.md
+  - name: Search entity
+    items:
+    - name: Search entity
+      href: ../../resources/searchentity.md
+    - name: Query data
+      href: ../../api/search-query.md
+  - name: Search request
+    href: ../../resources/searchrequest.md
+  - name: Search response
+    href: ../../resources/searchresponse.md
+  - name: Complex types
+    items:
+    - name: Aggregation option
+      href: ../../resources/aggregationoption.md
+    - name: Alteration response
+      href: ../../resources/alterationresponse.md
+    - name: Altered query token
+      href: ../../resources/alteredquerytoken.md
+    - name: Bucket aggregation definition
+      href: ../../resources/bucketaggregationdefinition.md
+    - name: Bucket aggregation range
+      href: ../../resources/bucketaggregationrange.md
+    - name: Collapse property
+      href: ../../resources/collapseproperty.md
+    - name: Json
+      href: ../../resources/json.md
+    - name: Result template
+      href: ../../resources/resulttemplate.md
+    - name: Result template option
+      href: ../../resources/resulttemplateoption.md
+    - name: Search aggregation
+      href: ../../resources/searchaggregation.md
+    - name: Search alteration
+      href: ../../resources/searchalteration.md
+    - name: Search alteration options
+      href: ../../resources/searchalterationoptions.md
+    - name: Search bucket
+      href: ../../resources/searchbucket.md
+    - name: Search hit
+      href: ../../resources/searchhit.md
+    - name: Search hits container
+      href: ../../resources/searchhitscontainer.md
+    - name: Search query
+      href: ../../resources/searchquery.md
+    - name: Search query string
+      href: ../../resources/searchquerystring.md
+    - name: Share point one drive options
+      href: ../../resources/sharepointonedriveoptions.md
+    - name: Sort property
+      href: ../../resources/sortproperty.md
