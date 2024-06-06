@@ -16,6 +16,7 @@ var requestBody = new Domain
 	{
 		"Email",
 		"OfficeCommunicationsOnline",
+		"CustomUrlDomain",
 	},
 };
 
