@@ -3,7 +3,7 @@ title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.subservice: "entra-sign-in"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
