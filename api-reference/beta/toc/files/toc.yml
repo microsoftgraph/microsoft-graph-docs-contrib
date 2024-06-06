@@ -54,6 +54,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Permanently delete item
+    href: ../../api/driveitem-permanentdelete.md
   - name: Restore item
     href: ../../api/driveitem-restore.md
   - name: Move item
@@ -110,6 +112,10 @@ items:
     href: ../../api/bundle-get.md
   - name: Create bundle
     href: ../../api/drive-post-bundles.md
+  - name: Add item
+    href: ../../api/bundle-additem.md
+  - name: Remove item
+    href: ../../api/bundle-removeitem.md
   - name: Update bundle
     href: ../../api/bundle-update.md
   - name: Delete bundle

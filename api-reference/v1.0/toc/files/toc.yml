@@ -102,6 +102,10 @@ items:
     href: ../../api/bundle-get.md
   - name: Create bundle
     href: ../../api/drive-post-bundles.md
+  - name: Add item
+    href: ../../api/bundle-additem.md
+  - name: Remove item
+    href: ../../api/bundle-removeitem.md
   - name: Update bundle
     href: ../../api/bundle-update.md
   - name: Delete bundle

@@ -20,6 +20,8 @@ items:
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
     href: ../../api/itemactivity-getbyinterval.md
+  - name: List pages
+    href: ../../api/basesitepage-list.md
   - name: List root sites
     href: ../../api/site-list.md
   - name: List sites across geographies
@@ -180,6 +182,10 @@ items:
       href: ../../resources/basesitepage.md
     - name: List
       href: ../../api/basesitepage-list.md
+    - name: Get
+      href: ../../api/basesitepage-get.md
+    - name: Delete
+      href: ../../api/basesitepage-delete.md
   - name: Site page
     items:
     - name: Site page
