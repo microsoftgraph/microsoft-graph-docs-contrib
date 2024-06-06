@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A bundle is a logical grouping of files used to share multiple files at once. It is represented by a [driveItem][] entity containing a `bundle` facet and can be shared in the same way as any other driveItem.
+A bundle is a logical grouping of files used to share multiple files at once. It's represented by a [driveItem][] entity containing a `bundle` facet and can be shared in the same way as any other driveItem.
 
-The `bundle` facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
+The `bundle` facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It's only included on [driveItem][] resources returned from the **bundles** endpoint.
 
-Note that the `bundle` resource type itself is not an entity of its own, and is only a facet on a [driveItem][]. The `bundles` collection on a [drive][] is of type [driveItem][], not `bundle`.
+The `bundle` resource type itself isn't an entity of its own, and is only a facet on a [driveItem][]. The `bundles` collection on a [drive][] is of type [driveItem][], not `bundle`.
 
 ## Methods
 
