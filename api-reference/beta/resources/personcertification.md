@@ -20,9 +20,9 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |:---|:---|:---|
 |[List](../api/profile-list-certifications.md)|[personCertification](../resources/personcertification.md) collection|Get the personCertification resources from the certifications navigation property.|
 |[Create](../api/profile-post-certifications.md)|[personCertification](../resources/personcertification.md)|Create a new personCertification object.|
-|[Get](../api/personCertification-get.md)|[personCertification](../resources/personcertification.md)|Read the properties and relationships of an [personCertification](../resources/personcertification.md) object.|
-|[Update](../api/personCertification-update.md)|[personCertification](../resources/personcertification.md)|Update the properties of an [personCertification](../resources/personcertification.md) object.|
-|[Delete](../api/personCertification-delete.md)|None|Deletes an [personCertification](../resources/personcertification.md) object.|
+|[Get](../api/personcertification-get.md)|[personCertification](../resources/personcertification.md)|Read the properties and relationships of an [personCertification](../resources/personcertification.md) object.|
+|[Update](../api/personcertification-update.md)|[personCertification](../resources/personcertification.md)|Update the properties of an [personCertification](../resources/personcertification.md) object.|
+|[Delete](../api/personcertification-delete.md)|None|Deletes an [personCertification](../resources/personcertification.md) object.|
 
 ## Properties
 |Property|Type|Description|
