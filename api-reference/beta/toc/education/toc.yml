@@ -22,8 +22,6 @@ items:
     href: ../../api/educationschool-list-users.md
   - name: Remove user
     href: ../../api/educationschool-delete-users.md
-  - name: Get administrativeUnit
-    href: ../../api/educationschool-get-administrativeunit.md
   - name: Update school
     href: ../../api/educationschool-update.md
   - name: Delete school
@@ -286,8 +284,6 @@ items:
     href: ../../api/educationsubmission-return.md
   - name: Reassign submission
     href: ../../api/educationsubmission-reassign.md
-  - name: Set up submission resources folder
-    href: ../../api/educationsubmission-setupResourcesFolder.md
   - name: Submit submission
     href: ../../api/educationsubmission-submit.md
   - name: Unsubmit submission

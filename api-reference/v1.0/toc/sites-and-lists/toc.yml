@@ -44,8 +44,6 @@ items:
     href: ../../api/site-update-permission.md
   - name: List operations
     href: ../../api/site-list-operations.md
-  - name: List pages
-    href: ../../api/baseSitePage-list.md
 - name: List
   items:
   - name: List
@@ -188,10 +186,6 @@ items:
       href: ../../resources/basesitepage.md
     - name: List
       href: ../../api/basesitepage-list.md
-    - name: Get
-      href: ../../api/baseSitePage-get.md
-    - name: Delete
-      href: ../../api/baseSitePage-delete.md
   - name: Site page
     items:
     - name: Site page
@@ -264,8 +258,6 @@ items:
       href: ../../api/webpart-update.md
     - name: Get position
       href: ../../api/webpart-getposition.md
-    - name: Get by position
-      href: ../../api/sitePage-getwebpartsbyposition.md
     - name: Text web part
       href: ../../resources/textwebpart.md
     - name: Standard web part

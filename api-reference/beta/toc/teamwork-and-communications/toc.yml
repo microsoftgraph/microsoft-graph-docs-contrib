@@ -322,8 +322,6 @@ items:
       items:
       - name: Online meeting
         href: ../../resources/onlinemeeting.md
-      - name: Create
-        href: ../../api/application-post-onlineMeetings.md
       - name: Get
         href: ../../api/onlinemeeting-get.md
       - name: Update
@@ -380,8 +378,6 @@ items:
         href: ../../api/calltranscript-get.md
       - name: Get delta by organizer
         href: ../../api/calltranscript-delta.md
-      - name: List transcripts by organizer
-        href: ../../api/onlinemeeting-getAllTranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -452,10 +448,6 @@ items:
         href: ../../api/virtualeventwebinar-get.md
       - name: Update
         href: ../../api/virtualeventwebinar-update.md
-      - name: Publish
-        href: ../../api/virtualeventwebinar-publish.md
-      - name: Cancel
-        href: ../../api/virtualeventwebinar-cancel.md
       - name: List in organization
         href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
@@ -775,8 +767,6 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete message in channel
         href: ../../api/chatmessage-softdelete.md
-      - name: Undo the deletion of a message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -793,8 +783,6 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete reply message in channel
         href: ../../api/chatmessage-softdelete.md
-      - name: Undo deletion of a reply message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
       - name: Set reaction to a reply message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a reply message in channel
@@ -817,8 +805,6 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete message in chat
         href: ../../api/chatmessage-softdelete.md
-      - name: Undo the deletion of a message in chat
-        href: ../../api/chatmessage-undoSoftdelete.md
       - name: Set reaction to a message in chat
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in chat
