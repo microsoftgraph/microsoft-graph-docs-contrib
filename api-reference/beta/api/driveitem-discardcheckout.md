@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action releases a previous [Check-out](driveitem-checkout.md) on a driveItem resource.
+This action releases a previous [Check-out](driveitem-checkout.md) on a driveItem resource. Any changes done to the item while it was checked out are discarded. 
+It most be called by the same user that performed the checkout or with application permissions.
+
 
 ## Permissions
 
@@ -26,6 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-discardcheckout-permissions.md)]
+
+### SPE permissions
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
