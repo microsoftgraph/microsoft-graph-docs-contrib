@@ -895,6 +895,8 @@ items:
         href: ../../api/appconsentrequest-list-userconsentrequests.md
       - name: Get
         href: ../../api/userconsentrequest-get.md
+      - name: Filter by current user
+        href: ../../api/userconsentrequest-filterbycurrentuser.md
   - name: Entitlement management
     items:
     - name: Overview
