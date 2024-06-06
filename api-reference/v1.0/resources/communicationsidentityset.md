@@ -39,15 +39,15 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.communicationsIdentitySet",
   "optionalProperties": [
     "application",
-    "user",
-    "phone",
-    "guest",
-    "encrypted",
-    "azureCommunicationServicesUser",
     "applicationInstance",
-    "onPremises",
     "assertedIdentity",
-    "endpointType"
+    "azureCommunicationServicesUser",
+    "encrypted",
+    "endpointType",
+    "guest",
+    "onPremises",
+    "phone",
+    "user"
   ],
 } -->
 ```json

@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/azure-ad-overview.md
@@ -44,7 +47,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -164,7 +167,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -247,28 +250,36 @@ items:
     items:
     - name: Domain
       href: ../../resources/domain.md
-    - name: Get domain
-      href: ../../api/domain-get.md
-    - name: Create domain
-      href: ../../api/domain-post-domains.md
-    - name: List domains
+    - name: List
       href: ../../api/domain-list.md
+    - name: Create
+      href: ../../api/domain-post-domains.md
+    - name: Get
+      href: ../../api/domain-get.md
+    - name: Update
+      href: ../../api/domain-update.md
+    - name: Delete
+      href: ../../api/domain-delete.md
     - name: List domain name references
       href: ../../api/domain-list-domainnamereferences.md
     - name: List service configuration records
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
-    - name: Update domain
-      href: ../../api/domain-update.md
-    - name: Delete domain
-      href: ../../api/domain-delete.md
-    - name: Force delete domain
-      href: ../../api/domain-forcedelete.md
-    - name: Verify domain
-      href: ../../api/domain-verify.md
-    - name: Promote domain
+    - name: List domain name reference
+      href: ../../api/domain-list-domainnamereferences.md
+    - name: List service configuration records
+      href: ../../api/domain-list-serviceconfigurationrecords.md
+    - name: List verification DNS records
+      href: ../../api/domain-list-verificationdnsrecords.md
+    - name: Get root domain
+      href: ../../api/domain-list-rootdomain.md
+    - name: Promote
       href: ../../api/domain-promote.md
+    - name: Force delete
+      href: ../../api/domain-forcedelete.md
+    - name: Verify
+      href: ../../api/domain-verify.md
   - name: External user profiles
     items:
     - name: External user profile
@@ -2225,6 +2236,16 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
+      - name: Compliant network named location
+        items:
+        - name: Compliant network named location
+          href: ../../resources/compliantnetworknamedlocation.md
+        - name: List
+          href: ../../api/conditionalaccessroot-list-namedlocations.md
+        - name: Get
+          href: ../../api/compliantnetworknamedlocation-get.md
+        - name: Update
+          href: ../../api/compliantnetworknamedlocation-update.md
     - name: Authentication context class reference
       items:
       - name: Authentication context class reference
@@ -3112,39 +3133,17 @@ items:
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-      - name: Linked applications
-        items:
-        - name: List
-          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-        - name: Add
-          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-        - name: Remove
-          href: ../../api/authenticationconditionapplication-delete.md
     - name: External users self service sign up events flow
       href: ../../resources/externalusersselfservicesignupeventsflow.md
-    - name: Identity user flow attribute
+    - name: Linked applications
       items:
-      - name: Identity user flow attribute
-        href: ../../resources/identityuserflowattribute.md
-      - name: List
-        href: ../../api/identityuserflowattribute-list.md
-      - name: Create
-        href: ../../api/identityuserflowattribute-post.md
-      - name: Get
-        href: ../../api/identityuserflowattribute-get.md
-      - name: Update
-        href: ../../api/identityuserflowattribute-update.md
-      - name: Delete
-        href: ../../api/identityuserflowattribute-delete.md
-    - name: Authentication condition application
-      items:
-      - name: Authentication condition application
+      - name: Linked applications
         href: ../../resources/authenticationconditionapplication.md
-      - name: List applications
+      - name: List
         href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-      - name: Add applications
+      - name: Add
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-      - name: Remove applications
+      - name: Remove
         href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:

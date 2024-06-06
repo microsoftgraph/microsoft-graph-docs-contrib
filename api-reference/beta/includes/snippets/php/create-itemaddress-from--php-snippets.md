@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ItemAddress;
 use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

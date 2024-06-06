@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
@@ -411,6 +414,12 @@ items:
         href: ../../api/virtualeventregistration-list.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+    - name: Virtual event webinar registration configuration
+      items:
+      - name: Virtual event webinar registration configuration
+        href: ../../resources/virtualeventwebinarregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
     - name: Virtual event session
       items:
       - name: Virtual event session
