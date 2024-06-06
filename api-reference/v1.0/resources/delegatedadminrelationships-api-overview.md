@@ -26,7 +26,7 @@ For more information about GDAP, see:
 
 The following diagram shows the status of the Delegated Admin relationship transitions.
 
-![Delegated Admin relationship status transition diagram](relationship-status-transitions.png)
+![Delegated Admin relationship status transition diagram](../images/relationship-status-transitions.png)
 
 1. [Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)
 2. [Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)
@@ -46,7 +46,7 @@ To finalize the workflow for enabling admin on behalf of (AOBO) management of th
 
 The delegated admin access assignment goes through the status transitions shown in the following diagram.
 
-![Delegated admin access assignment status transition diagram](access-assignment-status-transitions.png)
+![Delegated admin access assignment status transition diagram](../images/access-assignment-status-transitions.png)
 
 1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
 2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)

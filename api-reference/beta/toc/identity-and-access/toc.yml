@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/azure-ad-overview.md
@@ -44,7 +47,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -164,7 +167,7 @@ items:
     - name: Schema extensions
       items:
       - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
+        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -247,28 +250,36 @@ items:
     items:
     - name: Domain
       href: ../../resources/domain.md
-    - name: Get domain
-      href: ../../api/domain-get.md
-    - name: Create domain
-      href: ../../api/domain-post-domains.md
-    - name: List domains
+    - name: List
       href: ../../api/domain-list.md
+    - name: Create
+      href: ../../api/domain-post-domains.md
+    - name: Get
+      href: ../../api/domain-get.md
+    - name: Update
+      href: ../../api/domain-update.md
+    - name: Delete
+      href: ../../api/domain-delete.md
     - name: List domain name references
       href: ../../api/domain-list-domainnamereferences.md
     - name: List service configuration records
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
-    - name: Update domain
-      href: ../../api/domain-update.md
-    - name: Delete domain
-      href: ../../api/domain-delete.md
-    - name: Force delete domain
-      href: ../../api/domain-forcedelete.md
-    - name: Verify domain
-      href: ../../api/domain-verify.md
-    - name: Promote domain
+    - name: List domain name reference
+      href: ../../api/domain-list-domainnamereferences.md
+    - name: List service configuration records
+      href: ../../api/domain-list-serviceconfigurationrecords.md
+    - name: List verification DNS records
+      href: ../../api/domain-list-verificationdnsrecords.md
+    - name: Get root domain
+      href: ../../api/domain-list-rootdomain.md
+    - name: Promote
       href: ../../api/domain-promote.md
+    - name: Force delete
+      href: ../../api/domain-forcedelete.md
+    - name: Verify
+      href: ../../api/domain-verify.md
   - name: External user profiles
     items:
     - name: External user profile
@@ -885,7 +896,7 @@ items:
       - name: Get
         href: ../../api/userconsentrequest-get.md
       - name: Filter by current user
-        href: ../../api/userconsentrequest-filterByCurrentUser.md
+        href: ../../api/userconsentrequest-filterbycurrentuser.md
   - name: Entitlement management
     items:
     - name: Overview
@@ -1037,9 +1048,9 @@ items:
       - name: Access package custom package workflow extensions
         items:
         - name: List accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-list-accessPackageCustomWorkflowExtensions.md
+          href: ../../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
         - name: Create accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-post-accessPackageCustomWorkflowExtensions.md
+          href: ../../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
         - name: Get accessPackageAssignmentRequestWorkflowExtension
           href: ../../api/accesspackageassignmentrequestworkflowextension-get.md
         - name: Update accessPackageAssignmentRequestWorkflowExtension
@@ -2225,6 +2236,16 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
+      - name: Compliant network named location
+        items:
+        - name: Compliant network named location
+          href: ../../resources/compliantnetworknamedlocation.md
+        - name: List
+          href: ../../api/conditionalaccessroot-list-namedlocations.md
+        - name: Get
+          href: ../../api/compliantnetworknamedlocation-get.md
+        - name: Update
+          href: ../../api/compliantnetworknamedlocation-update.md
     - name: Authentication context class reference
       items:
       - name: Authentication context class reference
@@ -2584,7 +2605,7 @@ items:
     items:
     - name: Invitation
       href: ../../resources/invitation.md
-    - name: Create invitation
+    - name: Create
       href: ../../api/invitation-post.md
   - name: Multitenant organization
     displayName: MTO
@@ -2706,11 +2727,11 @@ items:
       - name: Tenant app management policy
         items:
         - name: Tenant app management policy
-          href: ../../resources/tenantAppManagementPolicy.md
+          href: ../../resources/tenantappmanagementpolicy.md
         - name: Get
-          href: ../../api/tenantAppManagementPolicy-get.md
+          href: ../../api/tenantappmanagementpolicy-get.md
         - name: Update
-          href: ../../api/tenantAppManagementPolicy-update.md
+          href: ../../api/tenantappmanagementpolicy-update.md
       - name: App management policy
         items:
         - name: App management policy
@@ -3112,39 +3133,17 @@ items:
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-      - name: Linked applications
-        items:
-        - name: List
-          href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-        - name: Add
-          href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-        - name: Remove
-          href: ../../api/authenticationconditionapplication-delete.md
     - name: External users self service sign up events flow
       href: ../../resources/externalusersselfservicesignupeventsflow.md
-    - name: Identity user flow attribute
+    - name: Linked applications
       items:
-      - name: Identity user flow attribute
-        href: ../../resources/identityuserflowattribute.md
-      - name: List
-        href: ../../api/identityuserflowattribute-list.md
-      - name: Create
-        href: ../../api/identityuserflowattribute-post.md
-      - name: Get
-        href: ../../api/identityuserflowattribute-get.md
-      - name: Update
-        href: ../../api/identityuserflowattribute-update.md
-      - name: Delete
-        href: ../../api/identityuserflowattribute-delete.md
-    - name: Authentication condition application
-      items:
-      - name: Authentication condition application
+      - name: Linked applications
         href: ../../resources/authenticationconditionapplication.md
-      - name: List applications
+      - name: List
         href: ../../api/authenticationconditionsapplications-list-includeapplications.md
-      - name: Add applications
+      - name: Add
         href: ../../api/authenticationconditionsapplications-post-includeapplications.md
-      - name: Remove applications
+      - name: Remove
         href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
@@ -3189,9 +3188,9 @@ items:
       - name: Create language
         href: ../../api/b2cidentityuserflow-put-languages.md
       - name: Get API connectors configuration for user flow
-        href: ../../api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+        href: ../../api/b2cidentityuserflow-get-apiconnectorconfiguration.md
       - name: Configure an API connector in a user flow
-        href: ../../api/b2cidentityuserflow-put-apiConnectorConfiguration.md
+        href: ../../api/b2cidentityuserflow-put-apiconnectorconfiguration.md
       - name: List identity providers
         href: ../../api/b2cidentityuserflow-list-identityproviders.md
       - name: Add identity provider
@@ -3229,9 +3228,9 @@ items:
       - name: List languages
         href: ../../api/b2xidentityuserflow-list-languages.md
       - name: Get API connectors configuration for user flow
-        href: ../../api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+        href: ../../api/b2xidentityuserflow-get-apiconnectorconfiguration.md
       - name: Configure an API connector in a user flow
-        href: ../../api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+        href: ../../api/b2xidentityuserflow-put-apiconnectorconfiguration.md
     - name: Identity user flow attribute
       items:
       - name: Identity user flow attribute
@@ -3637,7 +3636,7 @@ items:
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyagefinding-get.md
       - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md
+        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
     - name: AWS identity access management key usage finding
       items:
       - name: AWS identity access management key usage finding
@@ -3647,7 +3646,7 @@ items:
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyusagefinding-get.md
       - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md
+        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
     - name: Identity findings
       items:
       - name: Inactive user finding
@@ -3835,7 +3834,7 @@ items:
         - name: Get
           href: ../../api/unenforcedmfaawsuserfinding-get.md
         - name: Aggregated summary
-          href: ../../api/unenforcedMfaAwsUserFinding-aggregatedsummary.md
+          href: ../../api/unenforcedmfaawsuserfinding-aggregatedsummary.md
     - name: Privilege escalation findings
       items:
       - name: Privilege escalation user finding
