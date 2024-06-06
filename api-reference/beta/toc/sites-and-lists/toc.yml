@@ -258,6 +258,8 @@ items:
       href: ../../api/webpart-update.md
     - name: Get position
       href: ../../api/webpart-getposition.md
+    - name: Get by position
+      href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Text web part
       href: ../../resources/textwebpart.md
     - name: Standard web part
