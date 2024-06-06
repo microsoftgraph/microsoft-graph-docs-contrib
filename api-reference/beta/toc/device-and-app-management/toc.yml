@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Browser management
   displayName: Edge, Internet Explorer, IE mode, site list
@@ -8,45 +11,45 @@ items:
     items:
     - name: Browser shared cookie
       href: ../../resources/browsersharedcookie.md
-    - name: List browserSharedCookies
+    - name: List
       href: ../../api/browsersitelist-list-sharedcookies.md
-    - name: Create browserSharedCookie
+    - name: Create
       href: ../../api/browsersitelist-post-sharedcookies.md
-    - name: Get browserSharedCookie
+    - name: Get
       href: ../../api/browsersharedcookie-get.md
-    - name: Update browserSharedCookie
+    - name: Update
       href: ../../api/browsersharedcookie-update.md
-    - name: Delete browserSharedCookie
+    - name: Delete
       href: ../../api/browsersitelist-delete-sharedcookies.md
   - name: Browser site
     items:
     - name: Browser site
       href: ../../resources/browsersite.md
-    - name: List browserSites
+    - name: List
       href: ../../api/browsersitelist-list-sites.md
-    - name: Create browserSite
+    - name: Create
       href: ../../api/browsersitelist-post-sites.md
-    - name: Get browserSite
+    - name: Get
       href: ../../api/browsersite-get.md
-    - name: Update browserSite
+    - name: Update
       href: ../../api/browsersite-update.md
-    - name: Delete browserSite
+    - name: Delete
       href: ../../api/browsersitelist-delete-sites.md
   - name: Browser site list
     items:
     - name: Browser site list
       href: ../../resources/browsersitelist.md
-    - name: List browserSiteLists
+    - name: List
       href: ../../api/internetexplorermode-list-sitelists.md
-    - name: Create browserSiteList
+    - name: Create
       href: ../../api/internetexplorermode-post-sitelists.md
-    - name: Get browserSiteList
+    - name: Get
       href: ../../api/browsersitelist-get.md
-    - name: Update browserSiteList
+    - name: Update
       href: ../../api/browsersitelist-update.md
-    - name: Delete browserSiteList
+    - name: Delete
       href: ../../api/internetexplorermode-delete-sitelists.md
-    - name: Publish a browserSiteList
+    - name: Publish
       href: ../../api/browsersitelist-publish.md
   - name: Complex types
     items:
@@ -60,7 +63,7 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
-- name: Cloud PC (preview)
+- name: Cloud PC
   items:
   - name: Overview
     href: ../../resources/cloudpc-api-overview.md
@@ -90,10 +93,8 @@ items:
       href: ../../api/cloudpc-rename.md
     - name: Reprovision
       href: ../../api/cloudpc-reprovision.md
-    - name: Bulk reprovision remote action
-      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
-    - name: Resize remote action
-      href: ../../api/manageddevice-resizecloudpc.md
+    - name: Resize
+      href: ../../api/cloudpc-resize.md
     - name: Start
       href: ../../api/cloudpc-start.md
     - name: Stop
@@ -102,12 +103,10 @@ items:
       href: ../../api/cloudpc-troubleshoot.md
     - name: Restore
       href: ../../api/cloudpc-restore.md
-    - name: Bulk restore remote action
-      href: ../../api/manageddevice-bulkrestorecloudpc.md
     - name: Set review status
-      href: ../../api/manageddevice-setcloudpcreviewstatus.md
-    - name: Get review status
-      href: ../../api/manageddevice-getcloudpcreviewstatus.md
+      href: ../../api/cloudpc-setreviewstatus.md
+    - name: Retrieve review status
+      href: ../../api/cloudpc-retrievereviewstatus.md
     - name: Bulk set review status
       href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
@@ -120,125 +119,137 @@ items:
       href: ../../api/cloudpc-getsupportedcloudpcremoteactions.md
     - name: Retry partner agent installation
       href: ../../api/cloudpc-retrypartneragentinstallation.md
-    - name: Bulk resize
-      href: ../../api/cloudpc-retrypartneragentinstallation.md
     - name: Validate bulk resize
       href: ../../api/cloudpc-validatebulkresize.md
+    - name: Create snapshot
+      href: ../../api/cloudpc-createsnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Get shift work access state
+    - name: Bulk reprovision remote action (deprecated)
+      href: ../../api/manageddevice-bulkreprovisioncloudpc.md
+    - name: Bulk resize (deprecated)
+      href: ../../api/cloudpc-bulkresize.md
+    - name: Bulk restore remote action (deprecated)
+      href: ../../api/manageddevice-bulkrestorecloudpc.md
+    - name: Get review status (deprecated)
+      href: ../../api/manageddevice-getcloudpcreviewstatus.md
+    - name: Get shift work access state (deprecated)
       href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
-    - name: Reprovision remote action
+    - name: Reprovision remote action (deprecated)
       href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Restore remote action
+    - name: Resize remote action (deprecated)
+      href: ../../api/manageddevice-resizecloudpc.md
+    - name: Restore remote action (deprecated)
       href: ../../api/manageddevice-restorecloudpc.md
+    - name: Set review status (deprecated)
+      href: ../../api/manageddevice-setcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
       href: ../../resources/cloudpcauditevent.md
-    - name: List auditEvents
+    - name: List
       href: ../../api/virtualendpoint-list-auditevents.md
-    - name: Get cloudPcAuditEvent
+    - name: Get
       href: ../../api/cloudpcauditevent-get.md
-    - name: getAuditActivityTypes function
+    - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
   - name: Cloud PC cross cloud government organization mapping
     items:
     - name: Cloud PC cross cloud government organization mapping
       href: ../../resources/cloudpccrosscloudgovernmentorganizationmapping.md
-    - name: Create cloudPcCrossCloudGovernmentOrganizationMapping
+    - name: Create
       href: ../../api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
-    - name: Get cloudPcCrossCloudGovernmentOrganizationMapping
+    - name: Get
       href: ../../api/cloudpccrosscloudgovernmentorganizationmapping-get.md
   - name: Cloud PC device image
     items:
     - name: Cloud PC device image
       href: ../../resources/cloudpcdeviceimage.md
-    - name: List deviceImages
+    - name: List
       href: ../../api/virtualendpoint-list-deviceimages.md
-    - name: Get cloudPcDeviceImage
+    - name: Get
       href: ../../api/cloudpcdeviceimage-get.md
-    - name: Create cloudPcDeviceImage
+    - name: Create
       href: ../../api/virtualendpoint-post-deviceimages.md
-    - name: Delete cloudPcDeviceImage
+    - name: Delete
       href: ../../api/cloudpcdeviceimage-delete.md
-    - name: getSourceImages
+    - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Reupload cloudPcDeviceImage
+    - name: Re-upload
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting
     items:
     - name: Cloud PC external partner setting
       href: ../../resources/cloudpcexternalpartnersetting.md
-    - name: List cloudPcExternalPartnerSettings
+    - name: List
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create cloudPcExternalPartnerSetting
+    - name: Create
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
-    - name: Get cloudPcExternalPartnerSetting
+    - name: Get
       href: ../../api/cloudpcexternalpartnersetting-get.md
-    - name: Update cloudPcExternalPartnerSetting
+    - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
   - name: Cloud PC front line service plan
     items:
     - name: Cloud PC front line service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
-    - name: List cloudPcFrontLineServicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
-    - name: Get cloudPcFrontLineServicePlan
+    - name: Get
       href: ../../api/cloudpcfrontlineserviceplan-get.md
   - name: Cloud PC gallery image
     items:
     - name: Cloud PC gallery image
       href: ../../resources/cloudpcgalleryimage.md
-    - name: List galleryImages
+    - name: List
       href: ../../api/virtualendpoint-list-galleryimages.md
-    - name: Get cloudPcGalleryImage
+    - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
       href: ../../resources/cloudpconpremisesconnection.md
-    - name: List onPremisesConnections
+    - name: List
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
-    - name: Get cloudPcOnPremisesConnection
+    - name: Get
       href: ../../api/cloudpconpremisesconnection-get.md
-    - name: Create cloudPcOnPremisesConnection
+    - name: Create
       href: ../../api/virtualendpoint-post-onpremisesconnections.md
-    - name: Update cloudPcOnPremisesConnection
+    - name: Update
       href: ../../api/cloudpconpremisesconnection-update.md
-    - name: Delete cloudPcOnPremisesConnection
+    - name: Delete
       href: ../../api/cloudpconpremisesconnection-delete.md
-    - name: RunHealthChecks of a cloudPcOnPremisesConnection
+    - name: Run health checks
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
-    - name: updateAdDomainPassword
+    - name: Update Active Directory domain password
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
   - name: Cloud PC organization settings
     items:
     - name: Cloud PC organization settings
       href: ../../resources/cloudpcorganizationsettings.md
-    - name: Get cloudPcOrganizationSettings
+    - name: Get
       href: ../../api/cloudpcorganizationsettings-get.md
-    - name: Update cloudPcOrganizationSettings
+    - name: Update
       href: ../../api/cloudpcorganizationsettings-update.md
   - name: Cloud PC provisioning policy
     items:
     - name: Cloud PC provisioning policy
       href: ../../resources/cloudpcprovisioningpolicy.md
-    - name: List provisioningPolicies
+    - name: List
       href: ../../api/virtualendpoint-list-provisioningpolicies.md
-    - name: Get cloudPcProvisioningPolicy
+    - name: Get
       href: ../../api/cloudpcprovisioningpolicy-get.md
-    - name: Create cloudPcProvisioningPolicy
+    - name: Create
       href: ../../api/virtualendpoint-post-provisioningpolicies.md
-    - name: Update cloudPcProvisioningPolicy
+    - name: Update
       href: ../../api/cloudpcprovisioningpolicy-update.md
-    - name: Delete cloudPcProvisioningPolicy
+    - name: Delete
       href: ../../api/cloudpcprovisioningpolicy-delete.md
-    - name: Assign cloudPcProvisioningPolicy
+    - name: Assign
       href: ../../api/cloudpcprovisioningpolicy-assign.md
-    - name: Apply cloudPcProvisioningPolicy
+    - name: Apply
       href: ../../api/cloudpcprovisioningpolicy-apply.md
-    - name: applyConfig
+    - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
   - name: Cloud PC reports
     items:
@@ -272,51 +283,51 @@ items:
       items:
       - name: Cloud PC export job
         href: ../../resources/cloudpcexportjob.md
-      - name: Create cloudPcExportJob
+      - name: Create export job
         href: ../../api/cloudpcreports-post-exportjobs.md
-      - name: Get cloudPcExportJob
+      - name: Get export job
         href: ../../api/cloudpcexportjob-get.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
       href: ../../resources/cloudpcserviceplan.md
-    - name: List servicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-serviceplans.md
   - name: Cloud PC shared use service plan
     items:
     - name: Cloud PC shared use service plan
       href: ../../resources/cloudpcshareduseserviceplan.md
-    - name: List cloudPcSharedUseServicePlans
+    - name: List
       href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: Get cloudPcSharedUseServicePlan
+    - name: Get
       href: ../../api/cloudpcshareduseserviceplan-get.md
   - name: Cloud PC snapshot
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List snapshots
+    - name: List
       href: ../../api/virtualendpoint-list-snapshots.md
-    - name: Get cloudPcSnapshot
+    - name: Get
       href: ../../api/cloudpcsnapshot-get.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
       href: ../../resources/cloudpcsupportedregion.md
-    - name: List supportedRegions
+    - name: List
       href: ../../api/virtualendpoint-list-supportedregions.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting
       href: ../../resources/cloudpcusersetting.md
-    - name: List cloudPcUserSettings
+    - name: List
       href: ../../api/virtualendpoint-list-usersettings.md
-    - name: Get cloudPcUserSetting
+    - name: Get
       href: ../../api/cloudpcusersetting-get.md
-    - name: Create cloudPcUserSetting
+    - name: Create
       href: ../../api/virtualendpoint-post-usersettings.md
-    - name: Update cloudPcUserSetting
+    - name: Update
       href: ../../api/cloudpcusersetting-update.md
-    - name: Delete cloudPcUserSetting
+    - name: Delete
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
@@ -366,6 +377,16 @@ items:
       href: ../../api/virtualendpoint-list-bulkactions.md
     - name: Create cloudPcBulkAction
       href: ../../api/virtualendpoint-post-bulkactions.md
+  - name: Cloud PC bulk action
+    items:
+    - name: Cloud PC bulk action
+      href: ../../resources/cloudpcbulkaction.md
+    - name: List
+      href: ../../api/virtualendpoint-list-bulkactions.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Get
+      href: ../../api/cloudpcbulkaction-get.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -375,13 +396,13 @@ items:
       items:
       - name: Alert record
         href: ../../resources/devicemanagement-alertrecord.md
-      - name: List alertRecords
+      - name: List
         href: ../../api/devicemanagement-alertrecord-list.md
-      - name: Get alertRecord
+      - name: Get
         href: ../../api/devicemanagement-alertrecord-get.md
-      - name: getPortalNotifications
+      - name: Get portal notifications
         href: ../../api/devicemanagement-alertrecord-getportalnotifications.md
-      - name: setPortalNotificationAsSent
+      - name: Set portal notification as sent
         href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
     - name: Alert rule
       href: ../../resources/devicemanagement-alertrule.md
@@ -395,8 +416,22 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk power off
+      href: ../../resources/cloudpcbulkpoweroff.md
+    - name: Cloud PC bulk power on
+      href: ../../resources/cloudpcbulkpoweron.md
     - name: Cloud PC bulk remote action result
       href: ../../resources/cloudpcbulkremoteactionresult.md
+    - name: Cloud PC bulk reprovision
+      href: ../../resources/cloudpcbulkreprovision.md
+    - name: Cloud PC bulk resize
+      href: ../../resources/cloudpcbulkresize.md
+    - name: Cloud PC bulk restart
+      href: ../../resources/cloudpcbulkrestart.md
+    - name: Cloud PC bulk restore
+      href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk troubleshoot
+      href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC connectivity event
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
@@ -486,13 +521,13 @@ items:
     items:
     - name: Print connector
       href: ../../resources/printconnector.md
-    - name: List connectors
+    - name: List
       href: ../../api/print-list-connectors.md
-    - name: Get connector
+    - name: Get
       href: ../../api/printconnector-get.md
-    - name: Update connector
+    - name: Update
       href: ../../api/printconnector-update.md
-    - name: Delete connector
+    - name: Delete
       href: ../../api/printconnector-delete.md
   - name: Print document
     items:
@@ -508,7 +543,7 @@ items:
       href: ../../resources/printjob.md
     - name: Get
       href: ../../api/printjob-get.md
-    - name: Create
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: Update
       href: ../../api/printjob-update.md
@@ -518,23 +553,23 @@ items:
       href: ../../api/printjob-cancel.md
     - name: Abort
       href: ../../api/printjob-abort.md
-    - name: Redirect (to another printer)
+    - name: Redirect
       href: ../../api/printjob-redirect.md
   - name: Print operation
     items:
     - name: Print operation
       href: ../../resources/printoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Print service
     items:
     - name: Print service
       href: ../../resources/printservice.md
-    - name: List services
+    - name: List
       href: ../../api/print-list-services.md
-    - name: Get service
+    - name: Get
       href: ../../api/printservice-get.md
-    - name: List endpoints
+    - name: List a service's endpoints
       href: ../../api/printservice-list-endpoints.md
   - name: Print service endpoint
     items:
@@ -564,9 +599,9 @@ items:
     items:
     - name: Print task trigger
       href: ../../resources/printtasktrigger.md
-    - name: List
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Get
+    - name: Get task trigger
       href: ../../api/printtasktrigger-get.md
   - name: Printer
     items:
@@ -580,25 +615,25 @@ items:
       href: ../../api/printer-update.md
     - name: Delete
       href: ../../api/printer-delete.md
-    - name: restoreFactoryDefaults
+    - name: Restore factory defaults
       href: ../../api/printer-restorefactorydefaults.md
-    - name: List jobs
+    - name: List print jobs
       href: ../../api/printer-list-jobs.md
-    - name: Create job
+    - name: Create print job
       href: ../../api/printer-post-jobs.md
     - name: List connectors
       href: ../../api/printer-list-connectors.md
-    - name: List taskTriggers
+    - name: List task triggers
       href: ../../api/printer-list-tasktriggers.md
-    - name: Create taskTrigger
+    - name: Create task trigger
       href: ../../api/printer-post-tasktriggers.md
-    - name: Delete taskTrigger
+    - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
   - name: Printer create operation
     items:
     - name: Printer create operation
       href: ../../resources/printercreateoperation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/printoperation-get.md
   - name: Printer share
     items:
@@ -614,21 +649,21 @@ items:
       href: ../../api/printershare-delete.md
     - name: List jobs
       href: ../../api/printershare-list-jobs.md
-    - name: Create job
+    - name: Create job for a printer share
       href: ../../api/printershare-post-jobs.md
-    - name: List allowedUsers
+    - name: List allowed users
       href: ../../api/printershare-list-allowedusers.md
-    - name: Add allowedUser
+    - name: Create allowed user
       href: ../../api/printershare-post-allowedusers.md
-    - name: Remove allowedUser
+    - name: Delete allowed user
       href: ../../api/printershare-delete-alloweduser.md
-    - name: List allowedGroups
+    - name: List allowed groups
       href: ../../api/printershare-list-allowedgroups.md
-    - name: Add allowedGroup
+    - name: Create allowed group
       href: ../../api/printershare-post-allowedgroups.md
-    - name: Remove allowedGroup
+    - name: Delete allowed group
       href: ../../api/printershare-delete-allowedgroup.md
-    - name: List recentPrinterShares
+    - name: List recent shares
       href: ../../api/print-list-recentshares.md
   - name: Reports
     items:
@@ -636,9 +671,9 @@ items:
       items:
       - name: Print usage by printer
         href: ../../resources/printusagebyprinter.md
-      - name: List (daily)
+      - name: List daily reports by printer
         href: ../../api/reportroot-list-dailyprintusagebyprinter.md
-      - name: List (monthly)
+      - name: List monthly reports by printer
         href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
       - name: Get
         href: ../../api/printUsageByPrinter-get.md
@@ -646,9 +681,9 @@ items:
       items:
       - name: Print usage by user
         href: ../../resources/printusagebyuser.md
-      - name: List (daily)
+      - name: List daily reports by user
         href: ../../api/reportroot-list-dailyprintusagebyuser.md
-      - name: List (monthly)
+      - name: List monthly reports by user
         href: ../../api/reportroot-list-monthlyprintusagebyuser.md
       - name: Get
         href: ../../api/printusagebyuser-get.md
@@ -666,17 +701,17 @@ items:
       items:
       - name: Unified storage quota
         href: ../../resources/unifiedstoragequota.md
-      - name: Get unifiedStorageQuota
+      - name: Get
         href: ../../api/unifiedstoragequota-get.md
-      - name: List serviceStorageQuotaBreakdown
+      - name: List
         href: ../../api/unifiedstoragequota-list-services.md
     - name: Service storage quota breakdown
       items:
       - name: Service storage quota breakdown
         href: ../../resources/servicestoragequotabreakdown.md
-      - name: List serviceStorageQuotaBreakdown
+      - name: List
         href: ../../api/unifiedstoragequota-list-services.md
-      - name: Get serviceStorageQuotaBreakdown
+      - name: Get
         href: ../../api/servicestoragequotabreakdown-get.md
   - name: Complex types
     items:
@@ -751,8 +786,6 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-      - name: getDefaultTeamsDeviceNonGmsEnrollmentProfile action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md
     - name: Android for Work app
       items:
       - name: Android for Work app
@@ -6409,14 +6442,10 @@ items:
         href: ../../api/intune-devices-manageddevice-rotatelocaladminpassword.md
       - name: pauseConfigurationRefresh action
         href: ../../api/intune-devices-manageddevice-pauseconfigurationrefresh.md
-      - name: changeAssignments action
-        href: ../../api/intune-devices-manageddevice-changeassignments.md
       - name: appDiagnostics function
         href: ../../api/intune-devices-manageddevice-appdiagnostics.md
       - name: downloadAppDiagnostics action
         href: ../../api/intune-devices-manageddevice-downloadappdiagnostics.md
-      - name: createQuery action
-        href: ../../api/intune-devices-manageddevice-createquery.md
     - name: Managed device cleanup rule
       items:
       - name: Managed device cleanup rule
@@ -6565,12 +6594,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsanomaly-list.md
       - name: Get userExperienceAnalyticsAnomaly
         href: ../../api/intune-devices-userexperienceanalyticsanomaly-get.md
-      - name: Create userExperienceAnalyticsAnomaly
-        href: ../../api/intune-devices-userexperienceanalyticsanomaly-create.md
-      - name: Delete userExperienceAnalyticsAnomaly
-        href: ../../api/intune-devices-userexperienceanalyticsanomaly-delete.md
-      - name: Update userExperienceAnalyticsAnomaly
-        href: ../../api/intune-devices-userexperienceanalyticsanomaly-update.md
     - name: User experience analytics anomaly correlation group overview
       items:
       - name: User experience analytics anomaly correlation group overview
@@ -6579,12 +6602,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-list.md
       - name: Get userExperienceAnalyticsAnomalyCorrelationGroupOverview
         href: ../../api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-get.md
-      - name: Create userExperienceAnalyticsAnomalyCorrelationGroupOverview
-        href: ../../api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-create.md
-      - name: Delete userExperienceAnalyticsAnomalyCorrelationGroupOverview
-        href: ../../api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-delete.md
-      - name: Update userExperienceAnalyticsAnomalyCorrelationGroupOverview
-        href: ../../api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-update.md
     - name: User experience analytics anomaly device
       items:
       - name: User experience analytics anomaly device
@@ -6593,12 +6610,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsanomalydevice-list.md
       - name: Get userExperienceAnalyticsAnomalyDevice
         href: ../../api/intune-devices-userexperienceanalyticsanomalydevice-get.md
-      - name: Create userExperienceAnalyticsAnomalyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsanomalydevice-create.md
-      - name: Delete userExperienceAnalyticsAnomalyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsanomalydevice-delete.md
-      - name: Update userExperienceAnalyticsAnomalyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsanomalydevice-update.md
     - name: User experience analytics app health app performance by app version
       items:
       - name: User experience analytics app health app performance by app version
@@ -6607,12 +6618,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
     - name: User experience analytics app health app performance by app version details
       items:
       - name: User experience analytics app health app performance by app version details
@@ -6621,12 +6626,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-update.md
     - name: User experience analytics app health app performance by app version device id
       items:
       - name: User experience analytics app health app performance by app version device id
@@ -6635,12 +6634,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-update.md
     - name: User experience analytics app health app performance by OS version
       items:
       - name: User experience analytics app health app performance by OS version
@@ -6649,12 +6642,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md
     - name: User experience analytics app health application performance
       items:
       - name: User experience analytics app health application performance
@@ -6663,12 +6650,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthApplicationPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
     - name: User experience analytics app health device model performance
       items:
       - name: User experience analytics app health device model performance
@@ -6677,12 +6658,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthDeviceModelPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-update.md
     - name: User experience analytics app health device performance
       items:
       - name: User experience analytics app health device performance
@@ -6691,12 +6666,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthDevicePerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
     - name: User experience analytics app health device performance details
       items:
       - name: User experience analytics app health device performance details
@@ -6705,12 +6674,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
       - name: Get userExperienceAnalyticsAppHealthDevicePerformanceDetails
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
-      - name: Create userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md
     - name: User experience analytics app health OS version performance
       items:
       - name: User experience analytics app health OS version performance
@@ -6719,12 +6682,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthOSVersionPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
     - name: User experience analytics baseline
       items:
       - name: User experience analytics baseline
@@ -6733,12 +6690,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbaseline-list.md
       - name: Get userExperienceAnalyticsBaseline
         href: ../../api/intune-devices-userexperienceanalyticsbaseline-get.md
-      - name: Create userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-create.md
-      - name: Delete userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-delete.md
-      - name: Update userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-update.md
     - name: User experience analytics battery health app impact
       items:
       - name: User experience analytics battery health app impact
@@ -6747,20 +6698,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-list.md
       - name: Get userExperienceAnalyticsBatteryHealthAppImpact
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-update.md
     - name: User experience analytics battery health capacity details
       items:
       - name: User experience analytics battery health capacity details
         href: ../../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md
       - name: Get userExperienceAnalyticsBatteryHealthCapacityDetails
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-get.md
-      - name: Update userExperienceAnalyticsBatteryHealthCapacityDetails
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-update.md
     - name: User experience analytics battery health device app impact
       items:
       - name: User experience analytics battery health device app impact
@@ -6769,12 +6712,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-list.md
       - name: Get userExperienceAnalyticsBatteryHealthDeviceAppImpact
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthDeviceAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthDeviceAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthDeviceAppImpact
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-update.md
     - name: User experience analytics battery health device performance
       items:
       - name: User experience analytics battery health device performance
@@ -6783,12 +6720,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-list.md
       - name: Get userExperienceAnalyticsBatteryHealthDevicePerformance
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-update.md
     - name: User experience analytics battery health device runtime history
       items:
       - name: User experience analytics battery health device runtime history
@@ -6797,12 +6728,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-list.md
       - name: Get userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-update.md
     - name: User experience analytics battery health model performance
       items:
       - name: User experience analytics battery health model performance
@@ -6811,12 +6736,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-list.md
       - name: Get userExperienceAnalyticsBatteryHealthModelPerformance
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-update.md
     - name: User experience analytics battery health OS performance
       items:
       - name: User experience analytics battery health OS performance
@@ -6825,28 +6744,18 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-list.md
       - name: Get userExperienceAnalyticsBatteryHealthOsPerformance
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-get.md
-      - name: Create userExperienceAnalyticsBatteryHealthOsPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-create.md
-      - name: Delete userExperienceAnalyticsBatteryHealthOsPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-delete.md
-      - name: Update userExperienceAnalyticsBatteryHealthOsPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-update.md
     - name: User experience analytics battery health runtime details
       items:
       - name: User experience analytics battery health runtime details
         href: ../../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md
       - name: Get userExperienceAnalyticsBatteryHealthRuntimeDetails
         href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-get.md
-      - name: Update userExperienceAnalyticsBatteryHealthRuntimeDetails
-        href: ../../api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-update.md
     - name: User experience analytics category
       items:
       - name: User experience analytics category
         href: ../../resources/intune-devices-userexperienceanalyticscategory.md
       - name: Get userExperienceAnalyticsCategory
         href: ../../api/intune-devices-userexperienceanalyticscategory-get.md
-      - name: Update userExperienceAnalyticsCategory
-        href: ../../api/intune-devices-userexperienceanalyticscategory-update.md
     - name: User experience analytics device performance
       items:
       - name: User experience analytics device performance
@@ -6855,12 +6764,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md
       - name: Get userExperienceAnalyticsDevicePerformance
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md
-      - name: Create userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md
-      - name: Delete userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md
-      - name: Update userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md
       - name: summarizeDevicePerformanceDevices function
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
     - name: User experience analytics device scope
@@ -6871,12 +6774,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicescope-list.md
       - name: Get userExperienceAnalyticsDeviceScope
         href: ../../api/intune-devices-userexperienceanalyticsdevicescope-get.md
-      - name: Create userExperienceAnalyticsDeviceScope
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescope-create.md
-      - name: Delete userExperienceAnalyticsDeviceScope
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescope-delete.md
-      - name: Update userExperienceAnalyticsDeviceScope
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescope-update.md
       - name: triggerDeviceScopeAction action
         href: ../../api/intune-devices-userexperienceanalyticsdevicescope-triggerdevicescopeaction.md
     - name: User experience analytics device scores
@@ -6887,12 +6784,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicescores-list.md
       - name: Get userExperienceAnalyticsDeviceScores
         href: ../../api/intune-devices-userexperienceanalyticsdevicescores-get.md
-      - name: Create userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-create.md
-      - name: Delete userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-delete.md
-      - name: Update userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-update.md
     - name: User experience analytics device startup history
       items:
       - name: User experience analytics device startup history
@@ -6901,12 +6792,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md
       - name: Get userExperienceAnalyticsDeviceStartupHistory
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md
-      - name: Create userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-create.md
-      - name: Delete userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md
-      - name: Update userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-update.md
     - name: User experience analytics device startup process
       items:
       - name: User experience analytics device startup process
@@ -6915,12 +6800,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
       - name: Get userExperienceAnalyticsDeviceStartupProcess
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
-      - name: Create userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-create.md
-      - name: Delete userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-delete.md
-      - name: Update userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-update.md
     - name: User experience analytics device startup process performance
       items:
       - name: User experience analytics device startup process performance
@@ -6929,12 +6808,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md
       - name: Get userExperienceAnalyticsDeviceStartupProcessPerformance
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md
-      - name: Create userExperienceAnalyticsDeviceStartupProcessPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-create.md
-      - name: Delete userExperienceAnalyticsDeviceStartupProcessPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-delete.md
-      - name: Update userExperienceAnalyticsDeviceStartupProcessPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-update.md
     - name: User experience analytics device timeline event
       items:
       - name: User experience analytics device timeline event
@@ -6943,12 +6816,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
       - name: Get userExperienceAnalyticsDeviceTimelineEvent
         href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
-      - name: Create userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-create.md
-      - name: Delete userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-delete.md
-      - name: Update userExperienceAnalyticsDeviceTimelineEvent
-        href: ../../api/intune-devices-userexperienceanalyticsdevicetimelineevent-update.md
     - name: User experience analytics device without cloud identity
       items:
       - name: User experience analytics device without cloud identity
@@ -6957,12 +6824,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-list.md
       - name: Get userExperienceAnalyticsDeviceWithoutCloudIdentity
         href: ../../api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-get.md
-      - name: Create userExperienceAnalyticsDeviceWithoutCloudIdentity
-        href: ../../api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-create.md
-      - name: Delete userExperienceAnalyticsDeviceWithoutCloudIdentity
-        href: ../../api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-delete.md
-      - name: Update userExperienceAnalyticsDeviceWithoutCloudIdentity
-        href: ../../api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-update.md
     - name: User experience analytics impacting process
       items:
       - name: User experience analytics impacting process
@@ -6971,12 +6832,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsimpactingprocess-list.md
       - name: Get userExperienceAnalyticsImpactingProcess
         href: ../../api/intune-devices-userexperienceanalyticsimpactingprocess-get.md
-      - name: Create userExperienceAnalyticsImpactingProcess
-        href: ../../api/intune-devices-userexperienceanalyticsimpactingprocess-create.md
-      - name: Delete userExperienceAnalyticsImpactingProcess
-        href: ../../api/intune-devices-userexperienceanalyticsimpactingprocess-delete.md
-      - name: Update userExperienceAnalyticsImpactingProcess
-        href: ../../api/intune-devices-userexperienceanalyticsimpactingprocess-update.md
     - name: User experience analytics metric
       items:
       - name: User experience analytics metric
@@ -6985,12 +6840,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmetric-list.md
       - name: Get userExperienceAnalyticsMetric
         href: ../../api/intune-devices-userexperienceanalyticsmetric-get.md
-      - name: Create userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-create.md
-      - name: Delete userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-delete.md
-      - name: Update userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-update.md
     - name: User experience analytics metric history
       items:
       - name: User experience analytics metric history
@@ -6999,12 +6848,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-list.md
       - name: Get userExperienceAnalyticsMetricHistory
         href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-get.md
-      - name: Create userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-create.md
-      - name: Delete userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
-      - name: Update userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-update.md
     - name: User experience analytics model scores
       items:
       - name: User experience analytics model scores
@@ -7013,12 +6856,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmodelscores-list.md
       - name: Get userExperienceAnalyticsModelScores
         href: ../../api/intune-devices-userexperienceanalyticsmodelscores-get.md
-      - name: Create userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-create.md
-      - name: Delete userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-delete.md
-      - name: Update userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-update.md
     - name: User experience analytics not autopilot ready device
       items:
       - name: User experience analytics not autopilot ready device
@@ -7027,20 +6864,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-list.md
       - name: Get userExperienceAnalyticsNotAutopilotReadyDevice
         href: ../../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-get.md
-      - name: Create userExperienceAnalyticsNotAutopilotReadyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-create.md
-      - name: Delete userExperienceAnalyticsNotAutopilotReadyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-delete.md
-      - name: Update userExperienceAnalyticsNotAutopilotReadyDevice
-        href: ../../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-update.md
     - name: User experience analytics overview
       items:
       - name: User experience analytics overview
         href: ../../resources/intune-devices-userexperienceanalyticsoverview.md
       - name: Get userExperienceAnalyticsOverview
         href: ../../api/intune-devices-userexperienceanalyticsoverview-get.md
-      - name: Update userExperienceAnalyticsOverview
-        href: ../../api/intune-devices-userexperienceanalyticsoverview-update.md
     - name: User experience analytics remote connection
       items:
       - name: User experience analytics remote connection
@@ -7049,12 +6878,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-list.md
       - name: Get userExperienceAnalyticsRemoteConnection
         href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-get.md
-      - name: Create userExperienceAnalyticsRemoteConnection
-        href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-create.md
-      - name: Delete userExperienceAnalyticsRemoteConnection
-        href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-delete.md
-      - name: Update userExperienceAnalyticsRemoteConnection
-        href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-update.md
       - name: summarizeDeviceRemoteConnection function
         href: ../../api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection.md
     - name: User experience analytics resource performance
@@ -7065,12 +6888,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-list.md
       - name: Get userExperienceAnalyticsResourcePerformance
         href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-get.md
-      - name: Create userExperienceAnalyticsResourcePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-create.md
-      - name: Delete userExperienceAnalyticsResourcePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-delete.md
-      - name: Update userExperienceAnalyticsResourcePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-update.md
       - name: summarizeDeviceResourcePerformance function
         href: ../../api/intune-devices-userexperienceanalyticsresourceperformance-summarizedeviceresourceperformance.md
     - name: User experience analytics score history
@@ -7081,12 +6898,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsscorehistory-list.md
       - name: Get userExperienceAnalyticsScoreHistory
         href: ../../api/intune-devices-userexperienceanalyticsscorehistory-get.md
-      - name: Create userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-create.md
-      - name: Delete userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-delete.md
-      - name: Update userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-update.md
     - name: User experience analytics work from anywhere device
       items:
       - name: User experience analytics work from anywhere device
@@ -7095,20 +6906,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereDevice
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-update.md
     - name: User experience analytics work from anywhere hardware readiness metric
       items:
       - name: User experience analytics work from anywhere hardware readiness metric
         href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-get.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-update.md
     - name: User experience analytics work from anywhere metric
       items:
       - name: User experience analytics work from anywhere metric
@@ -7117,12 +6920,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereMetric
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
     - name: User experience analytics work from anywhere model performance
       items:
       - name: User experience analytics work from anywhere model performance
@@ -7131,12 +6928,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereModelPerformance
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
     - name: Windows device malware state
       items:
       - name: Windows device malware state
@@ -8171,12 +7962,6 @@ items:
         href: ../../api/intune-rbac-operationapprovalrequest-delete.md
       - name: Update operationApprovalRequest
         href: ../../api/intune-rbac-operationapprovalrequest-update.md
-      - name: getRequestStatus action
-        href: ../../api/intune-rbac-operationapprovalrequest-getrequeststatus.md
-      - name: getMyRequestById function
-        href: ../../api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
-      - name: getMyRequests function
-        href: ../../api/intune-rbac-operationapprovalrequest-getmyrequests.md
       - name: cancelMyRequest action
         href: ../../api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
       - name: approve action
@@ -8195,13 +7980,13 @@ items:
       items:
       - name: RBAC application multiple
         href: ../../resources/rbacapplicationmultiple.md
-      - name: Create unifiedRoleDefinition
+      - name: Create role definition
         href: ../../api/rbacapplication-post-roledefinitions.md
-      - name: List roleDefinitions
+      - name: List role definitions
         href: ../../api/rbacapplication-list-roledefinitions.md
-      - name: Create unifiedRoleAssignmentMultiple
+      - name: Create
         href: ../../api/rbacapplicationmultiple-post-roleassignments.md
-      - name: List roleAssignments
+      - name: List
         href: ../../api/rbacapplicationmultiple-list-roleassignments.md
     - name: Resource operation
       items:
@@ -8492,51 +8277,51 @@ items:
     items:
     - name: Microsoft Entra device
       href: ../../resources/windowsupdates-azureaddevice.md
-    - name: List azureADDevice resources
+    - name: List Microsoft Entra devices
       href: ../../api/adminwindowsupdates-list-updatableassets-azureaddevice.md
-    - name: Get azureADDevice
+    - name: Get Microsoft Entra device
       href: ../../api/windowsupdates-azureaddevice-get.md
-    - name: Delete azureADDevice
+    - name: Delete Microsoft Entra device
       href: ../../api/windowsupdates-azureaddevice-delete.md
-    - name: Enroll azureADDevice resources in management
+    - name: Enroll in update management
       href: ../../api/windowsupdates-updatableasset-enrollassets.md
-    - name: Enroll azureADDevice resources in management (by ID)
+    - name: Enroll by ID
       href: ../../api/windowsupdates-updatableasset-enrollassetsbyid.md
-    - name: Unenroll azureADDevice resources from management
+    - name: Unenroll from update management
       href: ../../api/windowsupdates-updatableasset-unenrollassets.md
-    - name: Unenroll azureADDevice resources from management (by ID)
+    - name: Unenroll by ID
       href: ../../api/windowsupdates-updatableasset-unenrollassetsbyid.md
   - name: Catalog
     items:
     - name: Catalog
       href: ../../resources/windowsupdates-catalog.md
-    - name: List entries
+    - name: List catalog entries
       href: ../../api/windowsupdates-catalog-list-entries.md
   - name: Compliance change
     items:
     - name: Compliance change
       href: ../../resources/windowsupdates-compliancechange.md
-    - name: List complianceChanges
+    - name: List
       href: ../../api/windowsupdates-updatepolicy-list-compliancechanges.md
-    - name: Get complianceChange
+    - name: Get
       href: ../../api/windowsupdates-compliancechange-get.md
-    - name: Update complianceChange
+    - name: Update
       href: ../../api/windowsupdates-compliancechange-update.md
-    - name: Delete complianceChange
+    - name: Delete
       href: ../../api/windowsupdates-compliancechange-delete.md
   - name: Content approval
     items:
     - name: Content approval
       href: ../../resources/windowsupdates-contentapproval.md
-    - name: List contentApprovals
+    - name: List
       href: ../../api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
-    - name: Create contentApproval
+    - name: Create
       href: ../../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
-    - name: Get contentApproval
+    - name: Get
       href: ../../api/windowsupdates-contentapproval-get.md
-    - name: Update contentApproval
+    - name: Update
       href: ../../api/windowsupdates-contentapproval-update.md
-    - name: Delete contentApproval
+    - name: Delete
       href: ../../api/windowsupdates-contentapproval-delete.md
   - name: Deployment
     items:
@@ -8552,23 +8337,23 @@ items:
       href: ../../api/windowsupdates-deployment-update.md
     - name: Delete deployment
       href: ../../api/windowsupdates-deployment-delete.md
-    - name: List audience members
+    - name: List members
       href: ../../api/windowsupdates-deploymentaudience-list-members.md
-    - name: List audience exclusions
+    - name: List exclusions
       href: ../../api/windowsupdates-deploymentaudience-list-exclusions.md
-    - name: Update audience members and exclusions
+    - name: Update members and exclusions
       href: ../../api/windowsupdates-deploymentaudience-updateaudience.md
   - name: Deployment audience
     items:
     - name: Deployment audience
       href: ../../resources/windowsupdates-deploymentaudience.md
-    - name: List deploymentAudiences
+    - name: List
       href: ../../api/adminwindowsupdates-list-deploymentaudiences.md
-    - name: Create deploymentAudience
+    - name: Create
       href: ../../api/adminwindowsupdates-post-deploymentaudiences.md
-    - name: Get deploymentAudience
+    - name: Get
       href: ../../api/windowsupdates-deploymentaudience-get.md
-    - name: Delete deploymentAudience
+    - name: Delete
       href: ../../api/windowsupdates-deploymentaudience-delete.md
     - name: List members
       href: ../../api/windowsupdates-deploymentaudience-list-members.md
@@ -8576,17 +8361,17 @@ items:
       href: ../../api/windowsupdates-deploymentaudience-list-exclusions.md
     - name: Update members and exclusions
       href: ../../api/windowsupdates-deploymentaudience-updateaudience.md
-    - name: Update members and exclusions (by ID)
+    - name: Update by ID
       href: ../../api/windowsupdates-deploymentaudience-updateaudiencebyid.md
   - name: Operational insights connection
     items:
     - name: Operational insights connection
       href: ../../resources/windowsupdates-operationalinsightsconnection.md
-    - name: List operationalInsightsConnections
+    - name: List
       href: ../../api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
-    - name: Create operationalInsightsConnection
+    - name: Create
       href: ../../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
-    - name: Get operationalInsightsConnection
+    - name: Get
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operationalInsightsConnection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
@@ -8604,39 +8389,39 @@ items:
     items:
     - name: Resource connection
       href: ../../resources/windowsupdates-resourceconnection.md
-    - name: List resourceConnections
+    - name: List
       href: ../../api/adminwindowsupdates-list-resourceconnections.md
-    - name: Get resourceConnection
+    - name: Get
       href: ../../api/windowsupdates-resourceconnection-get.md
-    - name: Delete resourceConnection
+    - name: Delete
       href: ../../api/windowsupdates-resourceconnection-delete.md
   - name: Updatable asset
     items:
     - name: Updatable asset
       href: ../../resources/windowsupdates-updatableasset.md
-    - name: List updatableAsset resources
+    - name: List updatable assets
       href: ../../api/adminwindowsupdates-list-updatableassets.md
-    - name: Create updatableAssetGroup
+    - name: Create updatable asset group
       href: ../../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md
-    - name: Get updatableAsset
+    - name: Get updatable asset
       href: ../../api/windowsupdates-updatableasset-get.md
-    - name: Delete updatableAsset
+    - name: Delete updatable asset
       href: ../../api/windowsupdates-updatableasset-delete.md
-    - name: Enroll asset in management
+    - name: Enroll in update management
       href: ../../api/windowsupdates-updatableasset-enrollassets.md
-    - name: Enroll asset in management (by ID)
+    - name: Enroll by ID
       href: ../../api/windowsupdates-updatableasset-enrollassetsbyid.md
-    - name: Unenroll asset from management
+    - name: Unenroll from update management
       href: ../../api/windowsupdates-updatableasset-unenrollassets.md
-    - name: Unenroll asset from management (by ID)
+    - name: Unenroll by ID
       href: ../../api/windowsupdates-updatableasset-unenrollassetsbyid.md
-    - name: Add members to group
+    - name: Add members
       href: ../../api/windowsupdates-updatableassetgroup-addmembers.md
-    - name: Add members to group (by ID)
+    - name: Add members by ID
       href: ../../api/windowsupdates-updatableassetgroup-addmembersbyid.md
-    - name: Remove members from group
+    - name: Remove members
       href: ../../api/windowsupdates-updatableassetgroup-removemembers.md
-    - name: Remove members from group (by ID)
+    - name: Remove members by ID
       href: ../../api/windowsupdates-updatableassetgroup-removemembersbyid.md
   - name: Updatable asset group
     items:
@@ -8801,121 +8586,121 @@ items:
     items:
     - name: Aggregated policy compliance
       href: ../../resources/managedtenants-aggregatedpolicycompliance.md
-    - name: List aggregatedPolicyCompliances
+    - name: List aggregated policy compliances
       href: ../../api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
   - name: Audit event
     items:
     - name: Audit event
       href: ../../resources/managedtenants-auditevent.md
-    - name: List auditEvents
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-auditevents.md
-    - name: Get auditEvent
+    - name: Get
       href: ../../api/managedtenants-auditevent-get.md
   - name: Cloud PC connection
     items:
     - name: Cloud PC connection
       href: ../../resources/managedtenants-cloudpcconnection.md
-    - name: List cloudPcConnections
+    - name: List cloud PC connections
       href: ../../api/managedtenants-managedtenant-list-cloudpcconnections.md
-    - name: Get cloudPcConnection
+    - name: Get cloud PC connection
       href: ../../api/managedtenants-cloudpcconnection-get.md
   - name: Cloud PC device
     items:
     - name: Cloud PC device
       href: ../../resources/managedtenants-cloudpcdevice.md
-    - name: List cloudPcDevices
+    - name: List cloud PC devices
       href: ../../api/managedtenants-managedtenant-list-cloudpcdevices.md
-    - name: Get cloudPcDevice
+    - name: Get cloud PC device
       href: ../../api/managedtenants-cloudpcdevice-get.md
   - name: Cloud PC overview
     items:
     - name: Cloud PC overview
       href: ../../resources/managedtenants-cloudpcoverview.md
-    - name: List cloudPcOverviews
+    - name: List cloud PC overviews
       href: ../../api/managedtenants-managedtenant-list-cloudpcsoverview.md
-    - name: Get cloudPcOverview
+    - name: Get cloud PC overview
       href: ../../api/managedtenants-cloudpcoverview-get.md
   - name: Conditional access policy coverage
     items:
     - name: Conditional access policy coverage
       href: ../../resources/managedtenants-conditionalaccesspolicycoverage.md
-    - name: List conditionalAccessPolicyCoverages
+    - name: List conditional access coverages
       href: ../../api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
-    - name: Get conditionalAccessPolicyCoverage
+    - name: Get conditional access policy coverage
       href: ../../api/managedtenants-conditionalaccesspolicycoverage-get.md
   - name: Credential user registrations summary
     items:
     - name: Credential user registrations summary
       href: ../../resources/managedtenants-credentialuserregistrationssummary.md
-    - name: List credentialUserRegistrationsSummaries
+    - name: List credential user registration summaries
       href: ../../api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
-    - name: Get credentialUserRegistrationsSummary
+    - name: Get credential user registrations summary
       href: ../../api/managedtenants-credentialuserregistrationssummary-get.md
   - name: Device compliance policy setting state summary
     items:
     - name: Device compliance policy setting state summary
       href: ../../resources/managedtenants-devicecompliancepolicysettingstatesummary.md
-    - name: List deviceCompliancePolicySettingStateSummary
+    - name: List device compliance policy setting state summary
       href: ../../api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
-    - name: Get deviceCompliancePolicySettingStateSummary
+    - name: Get device compliance policy setting state summary
       href: ../../api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
   - name: Managed device compliance
     items:
     - name: Managed device compliance
       href: ../../resources/managedtenants-manageddevicecompliance.md
-    - name: List managedDeviceCompliances
+    - name: List managed device compliances
       href: ../../api/managedtenants-managedtenant-list-manageddevicecompliances.md
-    - name: Get managedDeviceCompliance
+    - name: Get managed device compliance
       href: ../../api/managedtenants-manageddevicecompliance-get.md
   - name: Managed device compliance trend
     items:
     - name: Managed device compliance trend
       href: ../../resources/managedtenants-manageddevicecompliancetrend.md
-    - name: List managedDeviceComplianceTrends
+    - name: List managed device compliance trend
       href: ../../api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
-    - name: Get managedDeviceComplianceTrend
+    - name: Get managed device compliance trend
       href: ../../api/managedtenants-manageddevicecompliancetrend-get.md
   - name: Management action
     items:
     - name: Management action
       href: ../../resources/managedtenants-managementaction.md
-    - name: List managementActions
+    - name: List management action
       href: ../../api/managedtenants-managedtenant-list-managementactions.md
-    - name: Get managementAction
+    - name: Get management action
       href: ../../api/managedtenants-managementaction-get.md
-    - name: apply
+    - name: Apply management action
       href: ../../api/managedtenants-managementaction-apply.md
   - name: Management action tenant deployment status
     items:
     - name: Management action tenant deployment status
       href: ../../resources/managedtenants-managementactiontenantdeploymentstatus.md
-    - name: List managementActionTenantDeploymentStatus
+    - name: List management action deployment statuses
       href: ../../api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
-    - name: Get managementActionTenantDeploymentStatus
+    - name: Get management action deployment status
       href: ../../api/managedtenants-managementactiontenantdeploymentstatus-get.md
-    - name: changeDeploymentStatus
+    - name: Change management action deployment status
       href: ../../api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
   - name: Management intent
     items:
     - name: Management intent
       href: ../../resources/managedtenants-managementintent.md
-    - name: List managementIntents
+    - name: List management intents
       href: ../../api/managedtenants-managedtenant-list-managementintents.md
-    - name: Get managementIntent
+    - name: Get management intent
       href: ../../api/managedtenants-managementintent-get.md
   - name: Management template
     items:
     - name: Management template
       href: ../../resources/managedtenants-managementtemplate.md
-    - name: List managementTemplates
+    - name: List management templates
       href: ../../api/managedtenants-managedtenant-list-managementtemplates.md
-    - name: Get managementTemplate
+    - name: Get management template
       href: ../../api/managedtenants-managementtemplate-get.md
   - name: My role
     items:
     - name: My role
       href: ../../resources/managedtenants-myrole.md
-    - name: List myRoles
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-myroles.md
   - name: Tenant
     items:
@@ -8925,77 +8710,77 @@ items:
       href: ../../api/managedtenants-managedtenant-list-tenants.md
     - name: Get tenant
       href: ../../api/managedtenants-tenant-get.md
-    - name: offboardTenant
+    - name: Offboard tenant
       href: ../../api/managedtenants-tenant-offboardtenant.md
-    - name: resetTenantOnboardingStatus
+    - name: Reset tenant onboarding status
       href: ../../api/managedtenants-tenant-resettenantonboardingstatus.md
   - name: Tenant customized information
     items:
     - name: Tenant customized information
       href: ../../resources/managedtenants-tenantcustomizedinformation.md
-    - name: List tenantCustomizedInformations
+    - name: List tenant customized information
       href: ../../api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
-    - name: Get tenantCustomizedInformation
+    - name: Get tenant customized information
       href: ../../api/managedtenants-tenantcustomizedinformation-get.md
-    - name: Update tenantCustomizedInformation
+    - name: Update tenant customized information
       href: ../../api/managedtenants-tenantcustomizedinformation-update.md
   - name: Tenant detailed information
     items:
     - name: Tenant detailed information
       href: ../../resources/managedtenants-tenantdetailedinformation.md
-    - name: List tenantDetailedInformation
+    - name: List tenant detailed information
       href: ../../api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
-    - name: Get tenantDetailedInformation
+    - name: Get tenant detailed information
       href: ../../api/managedtenants-tenantdetailedinformation-get.md
   - name: Tenant group
     items:
     - name: Tenant group
       href: ../../resources/managedtenants-tenantgroup.md
-    - name: List tenantGroups
+    - name: List tenant groups
       href: ../../api/managedtenants-managedtenant-list-tenantgroups.md
-    - name: Get tenantGroup
+    - name: Get tenant group
       href: ../../api/managedtenants-tenantgroup-get.md
-    - name: tenantSearch
+    - name: Search for tenant
       href: ../../api/managedtenants-tenantgroup-tenantsearch.md
   - name: Tenant tag
     items:
     - name: Tenant tag
       href: ../../resources/managedtenants-tenanttag.md
-    - name: List tenantTags
+    - name: List tenant tags
       href: ../../api/managedtenants-managedtenant-list-tenanttags.md
-    - name: Create tenantTag
+    - name: Create tenant tag
       href: ../../api/managedtenants-managedtenant-post-tenanttags.md
-    - name: Get tenantTag
+    - name: Get tenant tag
       href: ../../api/managedtenants-tenanttag-get.md
-    - name: Update tenantTag
+    - name: Update tenant tag
       href: ../../api/managedtenants-tenanttag-update.md
-    - name: Delete tenantTag
+    - name: Delete tenant tag
       href: ../../api/managedtenants-tenanttag-delete.md
-    - name: assignTag
+    - name: Assign tenant tag
       href: ../../api/managedtenants-tenanttag-assigntag.md
-    - name: unassignTag
+    - name: Unassign tenant tag
       href: ../../api/managedtenants-tenanttag-unassigntag.md
   - name: Tenant usage
     items:
     - name: Tenant usage
       href: ../../resources/managedtenants-tenantusage.md
-    - name: List tenantUsage
+    - name: List
       href: ../../api/managedtenants-managedtenant-list-tenantusage.md
   - name: Windows device malware state
     items:
     - name: Windows device malware state
       href: ../../resources/managedtenants-windowsdevicemalwarestate.md
-    - name: List windowsDeviceMalwareStates
+    - name: List Windows device malware states
       href: ../../api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-    - name: Get windowsDeviceMalwareState
+    - name: Get Windows device malware state
       href: ../../api/managedtenants-windowsdevicemalwarestate-get.md
   - name: Windows protection state
     items:
     - name: Windows protection state
       href: ../../resources/managedtenants-windowsprotectionstate.md
-    - name: List windowsProtectionStates
+    - name: List Windows protection state
       href: ../../api/managedtenants-managedtenant-list-windowsprotectionstates.md
-    - name: Get windowsProtectionState
+    - name: Get Windows protection state
       href: ../../api/managedtenants-windowsprotectionstate-get.md
   - name: Complex types
     items:
@@ -9055,7 +8840,7 @@ items:
     items:
     - name: Service announcement
       href: ../../resources/serviceannouncement.md
-    - name: List healthOverviews
+    - name: List health overviews
       href: ../../api/serviceannouncement-list-healthoverviews.md
     - name: List issues
       href: ../../api/serviceannouncement-list-issues.md
@@ -9065,19 +8850,19 @@ items:
     items:
     - name: Service announcement attachment
       href: ../../resources/serviceannouncementattachment.md
-    - name: Get serviceAnnouncementAttachment
+    - name: Get
       href: ../../api/serviceannouncementattachment-get.md
   - name: Service health
     items:
     - name: Service health
       href: ../../resources/servicehealth.md
-    - name: Get serviceHealth
+    - name: Get service health
       href: ../../api/servicehealth-get.md
   - name: Service health issue
     items:
     - name: Service health issue
       href: ../../resources/servicehealthissue.md
-    - name: Get serviceHealthIssue
+    - name: Get issue
       href: ../../api/servicehealthissue-get.md
     - name: Get post-incident review report
       href: ../../api/servicehealthissue-incidentreport.md
@@ -9085,21 +8870,21 @@ items:
     items:
     - name: Service update message
       href: ../../resources/serviceupdatemessage.md
-    - name: Get serviceUpdateMessage
+    - name: Get message
       href: ../../api/serviceupdatemessage-get.md
-    - name: markRead
+    - name: Mark read status
       href: ../../api/serviceupdatemessage-markread.md
-    - name: markUnread
+    - name: Mark unread status
       href: ../../api/serviceupdatemessage-markunread.md
-    - name: archive
+    - name: Archive status
       href: ../../api/serviceupdatemessage-archive.md
-    - name: unarchive
+    - name: Unarchive status
       href: ../../api/serviceupdatemessage-unarchive.md
-    - name: favorite
+    - name: Mark favorite status
       href: ../../api/serviceupdatemessage-favorite.md
-    - name: unfavorite
+    - name: Remove favorite status
       href: ../../api/serviceupdatemessage-unfavorite.md
-    - name: List attachments
+    - name: List message attachments
       href: ../../api/serviceupdatemessage-list-attachments.md
   - name: Complex types
     items:

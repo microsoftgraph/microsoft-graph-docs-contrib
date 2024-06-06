@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/todo-overview.md
@@ -5,9 +8,9 @@ items:
   items:
   - name: To-do task list
     href: ../../resources/todotasklist.md
-  - name: List lists
+  - name: List task lists
     href: ../../api/todo-list-lists.md
-  - name: Create todoTaskList
+  - name: Create task list
     href: ../../api/todo-post-lists.md
   - name: Get task list
     href: ../../api/todotasklist-get.md
@@ -45,41 +48,41 @@ items:
   items:
   - name: Task file attachment
     href: ../../resources/taskfileattachment.md
-  - name: List attachments
+  - name: List
     href: ../../api/todotask-list-attachments.md
-  - name: Create attachment
+  - name: Attach small file
     href: ../../api/todotask-post-attachments.md
-  - name: Create upload session
+  - name: Attach all file sizes
     href: ../../api/taskfileattachment-createuploadsession.md
-  - name: Get attachment
+  - name: Get
     href: ../../api/taskfileattachment-get.md
-  - name: Delete attachment
+  - name: Delete
     href: ../../api/taskfileattachment-delete.md
 - name: Checklist item
   items:
   - name: Checklist item
     href: ../../resources/checklistitem.md
-  - name: List checklistItems
+  - name: List
     href: ../../api/todotask-list-checklistitems.md
-  - name: Create checklistItem
+  - name: Create
     href: ../../api/todotask-post-checklistitems.md
-  - name: Get checklistItem
+  - name: Get
     href: ../../api/checklistitem-get.md
-  - name: Update checklistItem
+  - name: Update
     href: ../../api/checklistitem-update.md
-  - name: Delete checklistItem
+  - name: Delete
     href: ../../api/checklistitem-delete.md
 - name: Linked resource
   items:
   - name: Linked resource
     href: ../../resources/linkedresource.md
-  - name: List linkedResources
+  - name: List
     href: ../../api/todotask-list-linkedresources.md
-  - name: Create linkedResource
+  - name: Create
     href: ../../api/todotask-post-linkedresources.md
-  - name: Get linkedResource
+  - name: Get
     href: ../../api/linkedresource-get.md
-  - name: Update linkedResource
+  - name: Update
     href: ../../api/linkedresource-update.md
-  - name: Delete linkedResource
+  - name: Delete
     href: ../../api/linkedresource-delete.md

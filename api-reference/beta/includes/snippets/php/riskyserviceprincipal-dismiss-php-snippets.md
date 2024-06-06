@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\IdentityProtection\RiskyServicePrincipals\Dismiss\DismissPostRequestBody
+use Microsoft\Graph\Beta\Generated\IdentityProtection\RiskyServicePrincipals\Dismiss\DismissPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/sharepoint.md
@@ -49,7 +52,7 @@ items:
     href: ../../api/site-list-columns.md
   - name: Create column
     href: ../../api/site-post-columns.md
-  - name: List operations
+  - name: List operations in a site
     href: ../../api/site-list-operations.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
@@ -67,21 +70,21 @@ items:
     href: ../../api/list-get.md
   - name: Get recent activities
     href: ../../api/activities-list.md
-  - name: Enumerate list items
+  - name: Get items
     href: ../../api/listitem-list.md
-  - name: Update list item
+  - name: Update item
     href: ../../api/listitem-update.md
-  - name: Delete list item
+  - name: Delete item
     href: ../../api/listitem-delete.md
-  - name: Create list item
+  - name: Create item
     href: ../../api/listitem-create.md
   - name: Get websocket endpoint
     href: ../../api/subscriptions-socketio.md
-  - name: List operations
+  - name: List operations in a list
     href: ../../api/list-list-operations.md
   - name: List content types
     href: ../../api/list-list-contenttypes.md
-  - name: Add copy of content type from site
+  - name: Add copy to list
     href: ../../api/contenttype-addcopy.md
   - name: List columns
     href: ../../api/list-list-columns.md
@@ -117,31 +120,31 @@ items:
   items:
   - name: Document set version
     href: ../../resources/documentsetversion.md
-  - name: List documentSetVersions
+  - name: List
     href: ../../api/listitem-list-documentsetversions.md
-  - name: Create documentSetVersion
+  - name: Create
     href: ../../api/listitem-post-documentsetversions.md
-  - name: Get documentSetVersion
+  - name: Get
     href: ../../api/documentsetversion-get.md
-  - name: Delete documentSetVersion
+  - name: Delete
     href: ../../api/documentsetversion-delete.md
-  - name: restore
+  - name: Restore
     href: ../../api/documentsetversion-restore.md
 - name: Recycle bin item
   items:
   - name: Recycle bin item
     href: ../../resources/recyclebinitem.md
-  - name: List items
+  - name: List
     href: ../../api/recyclebin-list-items.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
     href: ../../resources/richlongrunningoperation.md
-  - name: List richLongRunningOperations in a site
+  - name: List operations in a site
     href: ../../api/site-list-operations.md
-  - name: List richLongRunningOperations in a list
+  - name: List operations in a list
     href: ../../api/list-list-operations.md
-  - name: Get richLongRunningOperation
+  - name: Get operation
     href: ../../api/richlongrunningoperation-get.md
 - name: Permission
   items:
@@ -155,21 +158,21 @@ items:
     href: ../../api/driveitem-createlink.md
   - name: Invite people
     href: ../../api/driveitem-invite.md
-  - name: Update
+  - name: Update permission
     href: ../../api/permission-update.md
-  - name: Delete
+  - name: Delete permission
     href: ../../api/permission-delete.md
-  - name: Add users to sharing link
+  - name: Grant access to sharing link
     href: ../../api/permission-grant.md
-  - name: Revoke grants
+  - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
-- name: Sharepoint settings
+- name: SharePoint settings
   items:
-  - name: Sharepoint settings
+  - name: SharePoint settings
     href: ../../resources/sharepointsettings.md
-  - name: Get settings
+  - name: Get
     href: ../../api/sharepointsettings-get.md
-  - name: Update settings
+  - name: Update
     href: ../../api/sharepointsettings-update.md
 - name: Pages
   items:
@@ -177,47 +180,85 @@ items:
     items:
     - name: Base site page
       href: ../../resources/basesitepage.md
-    - name: List baseSitePage
+    - name: List
       href: ../../api/basesitepage-list.md
-    - name: Get baseSitePage
+    - name: Get
       href: ../../api/baseSitePage-get.md
-    - name: Delete baseSitePage
+    - name: Delete
       href: ../../api/baseSitePage-delete.md
   - name: Site page
     items:
     - name: Site page
       href: ../../resources/sitepage.md
-    - name: List sitePages
+    - name: List
       href: ../../api/sitepage-list.md
-    - name: Create sitePage
+    - name: Create
       href: ../../api/sitepage-create.md
-    - name: Get sitePage
+    - name: Get
       href: ../../api/sitepage-get.md
-    - name: Update sitePage
+    - name: Update
       href: ../../api/sitepage-update.md
-    - name: Delete sitePage
+    - name: Delete
       href: ../../api/basesitepage-delete.md
-    - name: Publish sitePage
+    - name: Publish
       href: ../../api/sitepage-publish.md
-    - name: Get a collection of WebParts by position information
+    - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Horizontal section
+      items:
+      - name: Horizontal section
+        href: ../../resources/horizontalsection.md
+      - name: List
+        href: ../../api/horizontalsection-list.md
+      - name: Create
+        href: ../../api/sitepage-post-horizontalsection.md
+      - name: Get
+        href: ../../api/horizontalsection-get.md
+      - name: Update
+        href: ../../api/horizontalsection-update.md
+      - name: Delete
+        href: ../../api/horizontalsection-delete.md
+    - name: Horizontal section column
+      items:
+      - name: Horizontal section column
+        href: ../../resources/horizontalsectioncolumn.md
+      - name: List horizontalSectionColumns
+        href: ../../api/horizontalsectioncolumn-list.md
+      - name: Get horizontalSectionColumn
+        href: ../../api/horizontalsectioncolumn-get.md
+      - name: List webParts
+        href: ../../api/webpart-list.md
+    - name: Vertical section
+      items:
+      - name: Vertical section
+        href: ../../resources/verticalsection.md
+      - name: List
+        href: ../../api/webpart-list.md
+      - name: Create
+        href: ../../api/sitepage-post-verticalsection.md
+      - name: Get
+        href: ../../api/verticalsection-get.md
+      - name: Update
+        href: ../../api/verticalsection-update.md
+      - name: Delete
+        href: ../../api/verticalsection-delete.md
   - name: Web part
     items:
     - name: Web part
       href: ../../resources/webpart.md
-    - name: List webParts
+    - name: List
       href: ../../api/webpart-list.md
-    - name: Get webPart
+    - name: Get
       href: ../../api/webpart-get.md
-    - name: Delete webPart
+    - name: Delete
       href: ../../api/webpart-delete.md
-    - name: Create webPart
+    - name: Create
       href: ../../api/sitepage-create-webpart.md
-    - name: Update webPart
+    - name: Update
       href: ../../api/webpart-update.md
-    - name: Get webPart position
+    - name: Get position
       href: ../../api/webpart-getposition.md
-    - name: Get webPart collection by position
+    - name: Get by position
       href: ../../api/sitePage-getwebpartsbyposition.md
     - name: Text web part
       href: ../../resources/textwebpart.md
@@ -229,21 +270,21 @@ items:
     items:
     - name: Store
       href: ../../resources/termstore-store.md
-    - name: List groups
+    - name: List
       href: ../../api/termstore-list-groups.md
-    - name: Get store
+    - name: Get
       href: ../../api/termstore-store-get.md
-    - name: Update store
+    - name: Update
       href: ../../api/termstore-store-update.md
   - name: Group
     items:
     - name: Group
       href: ../../resources/termstore-group.md
-    - name: Create group
+    - name: Create
       href: ../../api/termstore-group-post.md
-    - name: Get group
+    - name: Get
       href: ../../api/termstore-group-get.md
-    - name: Delete group
+    - name: Delete
       href: ../../api/termstore-group-delete.md
   - name: Set
     items:
@@ -285,7 +326,7 @@ items:
     items:
     - name: Relation
       href: ../../resources/termstore-relation.md
-    - name: List relations
+    - name: List
       href: ../../api/termstore-term-list-relations.md
-    - name: Create relation
+    - name: Create
       href: ../../api/termstore-relation-post.md

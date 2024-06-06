@@ -292,6 +292,10 @@
     "override": "SCEP"
   },
   {
+    "term": "sharepoint",
+    "override": "SharePoint"
+  },
+  {
     "term": "sim",
     "override": "SIM"
   },

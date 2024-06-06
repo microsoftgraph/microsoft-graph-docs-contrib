@@ -18,6 +18,8 @@ items:
   href: /graph/sdks/sdks-overview?context=graph/api/beta
 - name: Use the toolkit
   href: /graph/toolkit/overview?context=graph/api/beta
+- name: Deploy with Bicep
+  href: /graph/templates?context=graph/api/beta
 - name: Known issues
   href: https://developer.microsoft.com/graph/known-issues
 - name: Errors
@@ -27,8 +29,5 @@ items:
   expanded: true
   items:
   - name: Overview
+    displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
     href: overview.md
-  - name: Users
-    href: toc/users/toc.yml
-  - name: Groups
-    href: toc/groups/toc.yml

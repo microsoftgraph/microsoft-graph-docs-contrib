@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\Presence\SetPresence\SetPresencePostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\Presence\SetPresence\SetPresencePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

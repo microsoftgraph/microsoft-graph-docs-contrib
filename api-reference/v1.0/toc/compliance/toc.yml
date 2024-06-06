@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/complianceapioverview.md
@@ -7,19 +10,19 @@ items:
     href: ../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md
   - name: Subject rights request
     href: ../../resources/subjectrightsrequest.md
-  - name: List subjectRightsRequests
+  - name: List
     href: ../../api/subjectRightsRequest-list.md
-  - name: Create subjectRightsRequest
+  - name: Create
     href: ../../api/subjectRightsRequest-post.md
-  - name: Get subjectRightsRequest
+  - name: Get
     href: ../../api/subjectRightsRequest-get.md
-  - name: Update subjectRightsRequest
+  - name: Update
     href: ../../api/subjectRightsRequest-update.md
-  - name: getFinalAttachment
+  - name: Get final attachment
     href: ../../api/subjectRightsRequest-getfinalattachment.md
-  - name: getFinalReport
+  - name: Get final report
     href: ../../api/subjectRightsRequest-getfinalreport.md
   - name: List notes
     href: ../../api/subjectRightsRequest-list-notes.md
-  - name: Create authoredNote
+  - name: Create note
     href: ../../api/subjectRightsRequest-post-notes.md

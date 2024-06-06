@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionLabel
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\RetentionDurationInDays
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionLabel;
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionDurationInDays;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Users\Item\Security\InformationProtection\SensitivityLabels\Microsoft\Graph\Security\ExtractContentLabel\ExtractContentLabelRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\Users\Item\Security\InformationProtection\SensitivityLabels\MicrosoftGraphSecurityExtractContentLabel\ExtractContentLabelPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\ContentInfo
-use Microsoft\Graph\Beta\Generated\Models\Security\State;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\KeyValuePair
+use Microsoft\Graph\Beta\Generated\Users\Item\Security\InformationProtection\SensitivityLabels\MicrosoftGraphSecurityExtractContentLabel\ExtractContentLabelPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Security\ContentInfo;
+use Microsoft\Graph\Beta\Generated\Models\Security\ContentState;
+use Microsoft\Graph\Beta\Generated\Models\Security\KeyValuePair;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

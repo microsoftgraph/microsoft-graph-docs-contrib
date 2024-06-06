@@ -1,6 +1,47 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Identity and access reports
   items:
+  - name: Microsoft Entra recommendations (preview)
+    items:
+    - name: Overview
+      href: ../../resources/recommendations-api-overview.md
+    - name: Recommendation
+      items:
+      - name: Recommendation
+        href: ../../resources/recommendation.md
+      - name: List
+        href: ../../api/directory-list-recommendation.md
+      - name: Get
+        href: ../../api/recommendation-get.md
+      - name: Postpone
+        href: ../../api/recommendation-postpone.md
+      - name: Dismiss
+        href: ../../api/recommendation-dismiss.md
+      - name: Complete
+        href: ../../api/recommendation-complete.md
+      - name: Reactivate
+        href: ../../api/recommendation-reactivate.md
+      - name: Get tenant Secure Score
+        href: ../../api/recommendation-tenantsecurescores.md
+    - name: Impacted resource
+      items:
+      - name: Impacted resource
+        href: ../../resources/impactedresource.md
+      - name: List
+        href: ../../api/recommendation-list-impactedresources.md
+      - name: Get
+        href: ../../api/impactedresource-get.md
+      - name: Postpone
+        href: ../../api/impactedresource-postpone.md
+      - name: Dismiss
+        href: ../../api/impactedresource-dismiss.md
+      - name: Complete
+        href: ../../api/impactedresource-complete.md
+      - name: Reactivate
+        href: ../../api/impactedresource-reactivate.md
   - name: Microsoft Entra activity reports
     items:
     - name: Overview
@@ -11,15 +52,15 @@ items:
         items:
         - name: Relying party detailed summary
           href: ../../resources/relyingpartydetailedsummary.md
-        - name: List relyingPartyDetailedSummary
+        - name: Get relying party detailed dummary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
     - name: App credential sign in activity
       items:
       - name: App credential sign in activity
         href: ../../resources/appcredentialsigninactivity.md
-      - name: List appCredentialSignInActivities
+      - name: List
         href: ../../api/reportroot-list-appcredentialsigninactivities.md
-      - name: Get appCredentialSignInActivity
+      - name: Get
         href: ../../api/appcredentialsigninactivity-get.md
     - name: Application sign-in
       items:
@@ -27,15 +68,15 @@ items:
         items:
         - name: Application sign in summary
           href: ../../resources/applicationsigninsummary.md
-        - name: getAzureADApplicationSignInSummary
+        - name: Get
           href: ../../api/reportroot-getazureadapplicationsigninsummary.md
       - name: Application sign in detailed summary
         items:
         - name: Application sign in detailed summary
           href: ../../resources/applicationsignindetailedsummary.md
-        - name: List applicationSignInDetailedSummary
+        - name: List
           href: ../../api/reportroot-list-applicationsignindetailedsummary.md
-        - name: Get applicationSignInDetailedSummary
+        - name: Get
           href: ../../api/applicationsignindetailedsummary-get.md
     - name: Application user activity (preview)
       items:
@@ -47,61 +88,61 @@ items:
         items:
         - name: Active users metric
           href: ../../resources/activeusersmetric.md
-        - name: List daily activeUsers
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-activeusers.md
-        - name: List monthly activeUsers
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-activeusers.md
       - name: Authentications metric
         items:
         - name: Authentications metric
           href: ../../resources/authenticationsmetric.md
-        - name: List daily authentications
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-authentications.md
-        - name: List monthly authentications
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-authentications.md
       - name: Insight summary
         items:
         - name: Insight summary
           href: ../../resources/insightsummary.md
-        - name: List daily summary
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-summary.md
-        - name: List monthly summary
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-summary.md
       - name: MFA completion metric
         items:
         - name: MFA completion metric
           href: ../../resources/mfacompletionmetric.md
-        - name: List daily mfaCompletions
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-mfacompletions.md
-        - name: List monthly mfaCompletions
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-mfacompletions.md
       - name: User count metric
         items:
         - name: User count metric
           href: ../../resources/usercountmetric.md
-        - name: List daily userCount
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-usercount.md
       - name: User requests metric
         items:
         - name: User requests metric
           href: ../../resources/userrequestsmetric.md
-        - name: List daily requests
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-requests.md
-        - name: List monthly requests
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-requests.md
       - name: User sign up metric
         items:
         - name: User sign up metric
           href: ../../resources/usersignupmetric.md
-        - name: List daily signUps
+        - name: List daily
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
-        - name: List monthly signUps
+        - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
     - name: Microsoft Entra authentication
       items:
       - name: Microsoft Entra authentication
         href: ../../resources/azureadauthentication.md
-      - name: Get azureADAuthentication
+      - name: Get Microsoft Entra authentication
         href: ../../api/azureadauthentication-get.md
     - name: Registration and usage
       items:
@@ -111,67 +152,67 @@ items:
         items:
         - name: Credential usage summary
           href: ../../resources/credentialusagesummary.md
-        - name: getCredentialUsageSummary
+        - name: List
           href: ../../api/reportroot-getcredentialusagesummary.md
       - name: Credential user registration count
         items:
         - name: Credential user registration count
           href: ../../resources/credentialuserregistrationcount.md
-        - name: getCredentialUserRegistrationCount
+        - name: Get
           href: ../../api/reportroot-getcredentialuserregistrationcount.md
       - name: Credential user registration details
         items:
         - name: Credential user registration details
           href: ../../resources/credentialuserregistrationdetails.md
-        - name: List credentialUserRegistrationDetails
+        - name: List
           href: ../../api/reportroot-list-credentialuserregistrationdetails.md
       - name: User credential usage details
         items:
         - name: User credential usage details
           href: ../../resources/usercredentialusagedetails.md
-        - name: List userCredentialUsageDetails
+        - name: List
           href: ../../api/reportroot-list-usercredentialusagedetails.md
       - name: User registration details
         items:
         - name: User registration details
           href: ../../resources/userregistrationdetails.md
-        - name: List userRegistrationDetails
+        - name: List
           href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
-        - name: Get userRegistrationDetails
+        - name: Get
           href: ../../api/userregistrationdetails-get.md
       - name: User registration feature summary
         items:
         - name: User registration feature summary
           href: ../../resources/userregistrationfeaturesummary.md
-        - name: usersRegisteredByFeature
+        - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
       - name: User registration method summary
         items:
         - name: User registration method summary
           href: ../../resources/userregistrationmethodsummary.md
-        - name: usersRegisteredByMethod
+        - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
     - name: Service activity
       items:
       - name: Service activity
         href: ../../resources/serviceactivity.md
-      - name: getMetricsForMfaSignInSuccess
+      - name: Get MFA sign-in success metrics
         href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
-      - name: getMetricsForMfaSignInFailure
+      - name: Get MFA sign-in failure metrics
         href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
-      - name: getMetricsForConditionalAccessManagedDevicesSignInSuccess
+      - name: Get managed devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-      - name: getMetricsForConditionalAccessCompliantDevicesSignInSuccess
+      - name: Get compliant devices Conditional Access sign-in metrics
         href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-      - name: getMetricsForSamlSignInSuccess
+      - name: Get SAML sign-in metrics
         href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
     - name: Service principal sign in activity
       items:
       - name: Service principal sign in activity
         href: ../../resources/serviceprincipalsigninactivity.md
-      - name: List servicePrincipalSignInActivities
+      - name: List
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
-      - name: Get servicePrincipalSignInActivity
+      - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
   - name: Microsoft Entra audit logs
     items:
@@ -181,25 +222,25 @@ items:
       items:
       - name: Custom security attribute audit
         href: ../../resources/customsecurityattributeaudit.md
-      - name: List customSecurityAttributeAudits
+      - name: List
         href: ../../api/auditlogroot-list-customsecurityattributeaudits.md
-      - name: Get customSecurityAttributeAudit
+      - name: Get
         href: ../../api/customsecurityattributeaudit-get.md
     - name: Directory audit
       items:
       - name: Directory audit
         href: ../../resources/directoryaudit.md
-      - name: List directoryAudits
+      - name: List
         href: ../../api/directoryaudit-list.md
-      - name: Get directoryAudit
+      - name: Get
         href: ../../api/directoryaudit-get.md
     - name: Sign in
       items:
       - name: Sign in
         href: ../../resources/signin.md
-      - name: List signIn
+      - name: List
         href: ../../api/signin-list.md
-      - name: Get signIn
+      - name: Get
         href: ../../api/signin-get.md
       - name: Confirm compromised
         href: ../../api/signin-confirmcompromised.md
@@ -209,7 +250,7 @@ items:
       items:
       - name: Provisioning object summary
         href: ../../resources/provisioningobjectsummary.md
-      - name: List provisioningObjectSummary
+      - name: List
         href: ../../api/provisioningobjectsummary-list.md
 - name: Microsoft 365 usage reports
   items:
@@ -219,9 +260,9 @@ items:
     items:
     - name: Admin report settings
       href: ../../resources/adminreportsettings.md
-    - name: Get adminReportSettings
+    - name: Get
       href: ../../api/adminreportsettings-get.md
-    - name: Update adminReportSettings
+    - name: Update
       href: ../../api/adminreportsettings-update.md
   - name: Report root
     items:
@@ -501,29 +542,29 @@ items:
     items:
     - name: Billed reconciliation
       href: ../../resources/partners-billing-billedreconciliation.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-billedreconciliation-export.md
   - name: Billed usage
     items:
     - name: Billed usage
       href: ../../resources/partners-billing-billedusage.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-billedusage-export.md
   - name: Manifest
     items:
     - name: Manifest
       href: ../../resources/partners-billing-manifest.md
-    - name: Get manifest
+    - name: Get
       href: ../../api/partners-billing-manifest-get.md
   - name: Operation
     items:
     - name: Operation
       href: ../../resources/partners-billing-operation.md
-    - name: Get operation
+    - name: Get
       href: ../../api/partners-billing-operation-get.md
   - name: Unbilled usage
     items:
     - name: Unbilled usage
       href: ../../resources/partners-billing-unbilledusage.md
-    - name: export
+    - name: Export
       href: ../../api/partners-billing-unbilledusage-export.md

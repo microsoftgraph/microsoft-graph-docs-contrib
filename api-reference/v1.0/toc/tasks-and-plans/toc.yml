@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/planner-overview.md
@@ -5,79 +8,79 @@ items:
   items:
   - name: Planner assigned to task board task format
     href: ../../resources/plannerassignedtotaskboardtaskformat.md
-  - name: Get plannerAssignedToTaskBoardTaskFormat
+  - name: Get assigned to task board format
     href: ../../api/plannerassignedtotaskboardtaskformat-get.md
-  - name: Update
+  - name: Update assigned to task board format
     href: ../../api/plannerassignedtotaskboardtaskformat-update.md
 - name: Planner bucket
   items:
   - name: Planner bucket
     href: ../../resources/plannerbucket.md
-  - name: Get plannerBucket
+  - name: Get bucket
     href: ../../api/plannerbucket-get.md
-  - name: List plannerTasks
+  - name: List bucket tasks
     href: ../../api/plannerbucket-list-tasks.md
-  - name: Create
+  - name: Create bucket
     href: ../../api/planner-post-buckets.md
-  - name: Update
+  - name: Update bucket
     href: ../../api/plannerbucket-update.md
-  - name: Delete
+  - name: Delete bucket
     href: ../../api/plannerbucket-delete.md
 - name: Planner bucket task board task format
   items:
   - name: Planner bucket task board task format
     href: ../../resources/plannerbuckettaskboardtaskformat.md
-  - name: Get plannerBucketTaskBoardTaskFormat
+  - name: Get bucket task board format
     href: ../../api/plannerbuckettaskboardtaskformat-get.md
-  - name: Update
+  - name: Update bucket task board format
     href: ../../api/plannerbuckettaskboardtaskformat-update.md
 - name: Planner plan
   items:
   - name: Planner plan
     href: ../../resources/plannerplan.md
-  - name: Get plannerPlan
+  - name: Get plan
     href: ../../api/plannerplan-get.md
-  - name: List buckets
+  - name: List plan buckets
     href: ../../api/plannerplan-list-buckets.md
-  - name: List tasks
+  - name: List plan tasks
     href: ../../api/plannerplan-list-tasks.md
-  - name: Update
+  - name: Update plan
     href: ../../api/plannerplan-update.md
-  - name: Delete
+  - name: Delete plan
     href: ../../api/plannerplan-delete.md
 - name: Planner plan details
   items:
   - name: Planner plan details
     href: ../../resources/plannerplandetails.md
-  - name: Get plannerPlanDetails
+  - name: Get plan details
     href: ../../api/plannerplandetails-get.md
-  - name: Update
+  - name: Update plan details
     href: ../../api/plannerplandetails-update.md
 - name: Planner progress task board task format
   items:
   - name: Planner progress task board task format
     href: ../../resources/plannerprogresstaskboardtaskformat.md
-  - name: Get plannerProgressTaskBoardTaskFormat
+  - name: Get progress task board format
     href: ../../api/plannerprogresstaskboardtaskformat-get.md
-  - name: Update
+  - name: Update progress task board format
     href: ../../api/plannerprogresstaskboardtaskformat-update.md
 - name: Planner task
   items:
   - name: Planner task
     href: ../../resources/plannertask.md
-  - name: Get plannerTask
+  - name: Get task
     href: ../../api/plannertask-get.md
-  - name: Update
+  - name: Update task
     href: ../../api/plannertask-update.md
-  - name: Delete
+  - name: Delete task
     href: ../../api/plannertask-delete.md
 - name: Planner task details
   items:
   - name: Planner task details
     href: ../../resources/plannertaskdetails.md
-  - name: Get plannerTaskDetails
+  - name: Get task details
     href: ../../api/plannertaskdetails-get.md
-  - name: Update
+  - name: Update task details
     href: ../../api/plannertaskdetails-update.md
 - name: Complex types
   items:

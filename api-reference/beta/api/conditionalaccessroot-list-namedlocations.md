@@ -463,6 +463,54 @@ Content-type: application/json
     ]
 }
 ```
+### Example 5: List all compliantNetworkNamedLocations
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations_5"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.compliantNetworkNamedLocation')
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/namedLocations",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/namedLocations?$select=createdDateTime,displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.compliantNetworkNamedLocation",
+            "id": "3d46dbda-8382-466a-856d-eb00cbc6b910",
+            "displayName": "All Compliant Network locations",
+            "modifiedDateTime": "2024-05-18T00:15:27.662178Z",
+            "createdDateTime": "2023-02-13T06:09:11.6935736Z",
+            "compliantNetworkType": "allTenantCompliantNetworks",
+            "isTrusted": false,
+            "policyInfo": null
+        }
+    ]
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

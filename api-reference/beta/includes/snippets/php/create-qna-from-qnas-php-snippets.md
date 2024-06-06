@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Search\Qna
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Search\AnswerKeyword
+use Microsoft\Graph\Beta\Generated\Models\Search\Qna;
+use Microsoft\Graph\Beta\Generated\Models\Search\AnswerKeyword;
 use Microsoft\Graph\Beta\Generated\Models\DevicePlatformType;
-use Microsoft\Graph\Beta\Generated\Models\Search\State;
+use Microsoft\Graph\Beta\Generated\Models\Search\AnswerState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

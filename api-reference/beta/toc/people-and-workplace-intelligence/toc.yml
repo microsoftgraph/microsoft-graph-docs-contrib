@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/social-overview.md
@@ -51,31 +54,31 @@ items:
     items:
     - name: Pronouns settings
       href: ../../resources/pronounssettings.md
-    - name: List pronounsSettings
+    - name: List
       href: ../../api/peopleadminsettings-list-pronouns.md
-    - name: Update pronounsSettings
+    - name: Update
       href: ../../api/pronounssettings-update.md
   - name: Profile card property
     items:
     - name: Profile card property
       href: ../../resources/profilecardproperty.md
-    - name: List profileCardProperties
+    - name: List
       href: ../../api/peopleadminsettings-list-profilecardproperties.md
-    - name: Create profileCardProperty
+    - name: Create
       href: ../../api/peopleadminsettings-post-profilecardproperties.md
-    - name: Get profileCardProperty
+    - name: Get
       href: ../../api/profilecardproperty-get.md
-    - name: Update profileCardProperty
+    - name: Update
       href: ../../api/profilecardproperty-update.md
-    - name: Delete profileCardProperty
+    - name: Delete
       href: ../../api/profilecardproperty-delete.md
 - name: Pronouns settings
   items:
   - name: Pronouns settings
     href: ../../resources/pronounssettings.md
-  - name: List pronounsSettings
+  - name: List
     href: ../../api/peopleadminsettings-list-pronouns.md
-  - name: Update pronounsSettings
+  - name: Update
     href: ../../api/pronounssettings-update.md
 - name: Profile
   items:
@@ -169,267 +172,267 @@ items:
     items:
     - name: User account information
       href: ../../resources/useraccountinformation.md
-    - name: List accounts
+    - name: List
       href: ../../api/profile-list-accounts.md
-    - name: Create userAccountInformation
+    - name: Create
       href: ../../api/profile-post-accounts.md
-    - name: Get userAccountInformation
+    - name: Get
       href: ../../api/useraccountinformation-get.md
-    - name: Update userAccountInformation
+    - name: Update
       href: ../../api/useraccountinformation-update.md
-    - name: Delete userAccountInformation
+    - name: Delete
       href: ../../api/useraccountinformation-delete.md
   - name: Item address
     items:
     - name: Item address
       href: ../../resources/itemaddress.md
-    - name: List addresses
+    - name: List
       href: ../../api/profile-list-addresses.md
-    - name: Create itemAddress
+    - name: Create
       href: ../../api/profile-post-addresses.md
-    - name: Get itemAddress
+    - name: Get
       href: ../../api/itemaddress-get.md
-    - name: Update itemAddress
+    - name: Update
       href: ../../api/itemaddress-update.md
-    - name: Delete itemAddress
+    - name: Delete
       href: ../../api/itemaddress-delete.md
   - name: Person award
     items:
     - name: Person award
       href: ../../resources/personaward.md
-    - name: List awards
+    - name: List
       href: ../../api/profile-list-awards.md
-    - name: Create personAward
+    - name: Create
       href: ../../api/profile-post-awards.md
-    - name: Get personAward
+    - name: Get
       href: ../../api/personaward-get.md
-    - name: Update personAward
+    - name: Update
       href: ../../api/personaward-update.md
-    - name: Delete personAward
+    - name: Delete
       href: ../../api/personaward-delete.md
   - name: Person certification
     items:
     - name: Person certification
       href: ../../resources/personcertification.md
-    - name: List certifications
+    - name: List
       href: ../../api/profile-list-certifications.md
-    - name: Create personCertification
+    - name: Create
       href: ../../api/profile-post-certifications.md
-    - name: Get personCertification
+    - name: Get
       href: ../../api/personCertification-get.md
-    - name: Update personCertification
+    - name: Update
       href: ../../api/personCertification-update.md
-    - name: Delete personCertification
+    - name: Delete
       href: ../../api/personCertification-delete.md
   - name: Educational activity
     items:
     - name: Educational activity
       href: ../../resources/educationalactivity.md
-    - name: List educationalActivities
+    - name: List
       href: ../../api/profile-list-educationalactivities.md
-    - name: 'Create educationalActivity '
+    - name: Create
       href: ../../api/profile-post-educationalactivities.md
-    - name: Get educationalActivity
+    - name: Get
       href: ../../api/educationalactivity-get.md
-    - name: Update educationalActivity
+    - name: Update
       href: ../../api/educationalactivity-update.md
-    - name: Delete educationalActivity
+    - name: Delete
       href: ../../api/educationalactivity-delete.md
   - name: Item email
     items:
     - name: Item email
       href: ../../resources/itememail.md
-    - name: List emails
+    - name: List
       href: ../../api/profile-list-emails.md
-    - name: Create itemEmail
+    - name: Create
       href: ../../api/profile-post-emails.md
-    - name: Get itemEmail
+    - name: Get
       href: ../../api/itememail-get.md
-    - name: Update itemEmail
+    - name: Update
       href: ../../api/itememail-update.md
-    - name: Delete itemEmail
+    - name: Delete
       href: ../../api/itememail-delete.md
   - name: Person interest
     items:
     - name: Person interest
       href: ../../resources/personinterest.md
-    - name: List interests
+    - name: List
       href: ../../api/profile-list-interests.md
-    - name: Create personInterest
+    - name: Create
       href: ../../api/profile-post-interests.md
-    - name: Get personInterest
+    - name: Get
       href: ../../api/personinterest-get.md
-    - name: Update personInterest
+    - name: Update
       href: ../../api/personinterest-update.md
-    - name: Delete personInterest
+    - name: Delete
       href: ../../api/personinterest-delete.md
   - name: Language proficiency
     items:
     - name: Language proficiency
       href: ../../resources/languageproficiency.md
-    - name: List languages
+    - name: List
       href: ../../api/profile-list-languages.md
-    - name: Create languageProficiency
+    - name: Create
       href: ../../api/profile-post-languages.md
-    - name: Get languageProficiency
+    - name: Get
       href: ../../api/languageproficiency-get.md
-    - name: Update languageProficiency
+    - name: Update
       href: ../../api/languageproficiency-update.md
-    - name: Delete languageProficiency
+    - name: Delete
       href: ../../api/languageproficiency-delete.md
   - name: Person name
     items:
     - name: Person name
       href: ../../resources/personname.md
-    - name: List names
+    - name: List
       href: ../../api/profile-list-names.md
-    - name: Create personName
+    - name: Create
       href: ../../api/profile-post-names.md
-    - name: Get personName
+    - name: Get
       href: ../../api/personname-get.md
-    - name: Update personName
+    - name: Update
       href: ../../api/personname-update.md
-    - name: Delete personName
+    - name: Delete
       href: ../../api/personname-delete.md
   - name: Person annotation
     items:
     - name: Person annotation
       href: ../../resources/personannotation.md
-    - name: List notes
+    - name: List
       href: ../../api/profile-list-notes.md
-    - name: Create personAnnotation
+    - name: Create
       href: ../../api/profile-post-notes.md
-    - name: Get personAnnotation
+    - name: Get
       href: ../../api/personannotation-get.md
-    - name: Update personAnnotation
+    - name: Update
       href: ../../api/personannotation-update.md
-    - name: Delete personAnnotation
+    - name: Delete
       href: ../../api/personannotation-delete.md
   - name: Item patent
     items:
     - name: Item patent
       href: ../../resources/itempatent.md
-    - name: List patents
+    - name: List
       href: ../../api/profile-list-patents.md
-    - name: Create itemPatent
+    - name: Create
       href: ../../api/profile-post-patents.md
-    - name: Get itemPatent
+    - name: Get
       href: ../../api/itempatent-get.md
-    - name: Update itemPatent
+    - name: Update
       href: ../../api/itempatent-update.md
-    - name: Delete itemPatent
+    - name: Delete
       href: ../../api/itempatent-delete.md
   - name: Item phone
     items:
     - name: Item phone
       href: ../../resources/itemphone.md
-    - name: List phones
+    - name: List
       href: ../../api/profile-list-phones.md
-    - name: Create itemPhone
+    - name: Create
       href: ../../api/profile-post-phones.md
-    - name: Get itemPhone
+    - name: Get
       href: ../../api/itemphone-get.md
-    - name: Update itemPhone
+    - name: Update
       href: ../../api/itemphone-update.md
-    - name: Delete itemPhone
+    - name: Delete
       href: ../../api/itemphone-delete.md
   - name: Work position
     items:
     - name: Work position
       href: ../../resources/workposition.md
-    - name: List positions
+    - name: List
       href: ../../api/profile-list-positions.md
-    - name: Create workPosition
+    - name: Create
       href: ../../api/profile-post-positions.md
-    - name: Get workPosition
+    - name: Get
       href: ../../api/workposition-get.md
-    - name: Update workPosition
+    - name: Update
       href: ../../api/workposition-update.md
-    - name: Delete workPosition
+    - name: Delete
       href: ../../api/workposition-delete.md
   - name: Project participation
     items:
     - name: Project participation
       href: ../../resources/projectparticipation.md
-    - name: List projects
+    - name: List
       href: ../../api/profile-list-projects.md
-    - name: Create projectParticipation
+    - name: Create
       href: ../../api/profile-post-projects.md
-    - name: Get projectParticipation
+    - name: Get
       href: ../../api/projectparticipation-get.md
-    - name: Update projectParticipation
+    - name: Update
       href: ../../api/projectparticipation-update.md
-    - name: Delete projectParticipation
+    - name: Delete
       href: ../../api/projectparticipation-delete.md
   - name: Item publication
     items:
     - name: Item publication
       href: ../../resources/itempublication.md
-    - name: List publications
+    - name: List
       href: ../../api/profile-list-publications.md
-    - name: Create itemPublication
+    - name: Create
       href: ../../api/profile-post-publications.md
-    - name: Get itemPublication
+    - name: Get
       href: ../../api/itempublication-get.md
-    - name: Update itemPublication
+    - name: Update
       href: ../../api/itempublication-update.md
-    - name: Delete itemPublication
+    - name: Delete
       href: ../../api/itempublication-delete.md
   - name: Person responsibility
     items:
     - name: Person responsibility
       href: ../../resources/personresponsibility.md
-    - name: List responsibilities
+    - name: List
       href: ../../api/profile-list-responsibilities.md
-    - name: Create personResponsibility
+    - name: Create
       href: ../../api/profile-post-responsibilities.md
-    - name: Get personResponsibility
+    - name: Get
       href: ../../api/personresponsibility-get.md
-    - name: Update personResponsibility
+    - name: Update
       href: ../../api/personresponsibility-update.md
-    - name: Delete personResponsibility
+    - name: Delete
       href: ../../api/personresponsibility-delete.md
   - name: Skill proficiency
     items:
     - name: Skill proficiency
       href: ../../resources/skillproficiency.md
-    - name: List skills
+    - name: List
       href: ../../api/profile-list-skills.md
-    - name: 'Create skillProficiency '
+    - name: Create
       href: ../../api/profile-post-skills.md
-    - name: Get skillProficiency
+    - name: Get
       href: ../../api/skillproficiency-get.md
-    - name: Update skillProficiency
+    - name: Update
       href: ../../api/skillproficiency-update.md
-    - name: Delete skillProficiency
+    - name: Delete
       href: ../../api/skillproficiency-delete.md
   - name: Web account
     items:
     - name: Web account
       href: ../../resources/webaccount.md
-    - name: List webAccounts
+    - name: List
       href: ../../api/profile-list-webaccounts.md
-    - name: Create webAccount
+    - name: Create
       href: ../../api/profile-post-webaccounts.md
-    - name: Get webAccount
+    - name: Get
       href: ../../api/webaccount-get.md
-    - name: Update webAccount
+    - name: Update
       href: ../../api/webaccount-update.md
-    - name: Delete webAccount
+    - name: Delete
       href: ../../api/webaccount-delete.md
   - name: Person website
     items:
     - name: Person website
       href: ../../resources/personwebsite.md
-    - name: List websites
+    - name: List
       href: ../../api/profile-list-websites.md
-    - name: Create personWebsite
+    - name: Create
       href: ../../api/profile-post-websites.md
-    - name: Get personWebsite
+    - name: Get
       href: ../../api/personwebsite-get.md
-    - name: Update personWebsite
+    - name: Update
       href: ../../api/personwebsite-update.md
-    - name: Delete personWebsite
+    - name: Delete
       href: ../../api/personwebsite-delete.md
 - name: User analytics
   items:
@@ -447,7 +450,7 @@ items:
     items:
     - name: Activity statistics
       href: ../../resources/activitystatistics.md
-    - name: List activityStatistics
+    - name: List activity statistics
       href: ../../api/activitystatistics-list.md
   - name: Call activity statistics
     href: ../../resources/callactivitystatistics.md
