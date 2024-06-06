@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnectionSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcConnectionSetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectionSetting?view=graph-rest-beta) resource.",
           "Target": "cloudPcConnectionSetting"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [cloudPcConnectivityResult](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcConnectivityResult?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastModifiedDateTime** property to the [cloudPcConnectivityResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectivityResult?view=graph-rest-beta) resource.",
           "Target": "cloudPcConnectivityResult"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "statusDetail",
           "ChangeType": "Addition",
-          "Description": "Added the **statusDetail** property to the [cloudPcRemoteActionResult](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcRemoteActionResult?view=graph-rest-beta) resource.",
+          "Description": "Added the **statusDetail** property to the [cloudPcRemoteActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionResult?view=graph-rest-beta) resource.",
           "Target": "cloudPcRemoteActionResult"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcStatusDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcStatusDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcStatusDetail?view=graph-rest-beta) resource.",
           "Target": "cloudPcStatusDetail"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "connectionSetting",
           "ChangeType": "Addition",
-          "Description": "Added the **connectionSetting** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
+          "Description": "Added the **connectionSetting** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "statusDetail",
           "ChangeType": "Addition",
-          "Description": "Added the **statusDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
+          "Description": "Added the **statusDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         }
       ],
