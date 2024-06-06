@@ -101,7 +101,9 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> When the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from chat scope.
+>
+> * When the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from chat scope.
+> * Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
 
 To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
 
@@ -156,7 +158,7 @@ The following is the decrypted notification payload. The payload adheres to the 
 
 ```json
 {
-"id":"MTk6NDlkZWMzODRmZWYyNDM1YTkyODI5ODUyNjA4ZDUyYzNAdGhyZWFkLnYyIyM5NWVhZTRmNi0zZmNjLTQyOWItOWEzMC1kYWY5M2Y4ZjBiYjQ=", 
+"id":"N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=", 
 "teamsApp":{ 
 "id":"95eae4f6-3fcc-429b-9a30-daf93f8f0bb4" 
 }, 
