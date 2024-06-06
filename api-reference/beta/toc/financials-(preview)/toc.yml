@@ -230,8 +230,6 @@ items:
     href: ../../api/dynamics-taxgroups-get.md
   - name: Create tax groups
     href: ../../api/dynamics-create-taxgroups.md
-  - name: Update tax groups
-    href: ../../api/dynamics-taxgroups-update.md
   - name: Delete tax groups
     href: ../../api/dynamics-taxgroups-delete.md
 - name: Unit of measure

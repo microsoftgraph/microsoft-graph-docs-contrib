@@ -214,19 +214,3 @@ items:
     href: ../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md
   - name: Subject rights request
     href: ../../resources/subjectrightsrequest.md
-  - name: List
-    href: ../../api/subjectRightsRequest-list.md
-  - name: Create
-    href: ../../api/subjectRightsRequest-post.md
-  - name: Get
-    href: ../../api/subjectRightsRequest-get.md
-  - name: Update
-    href: ../../api/subjectRightsRequest-update.md
-  - name: Get final attachment
-    href: ../../api/subjectRightsRequest-getfinalattachment.md
-  - name: Get final report
-    href: ../../api/subjectRightsRequest-getfinalreport.md
-  - name: List notes
-    href: ../../api/subjectRightsRequest-list-notes.md
-  - name: Create note
-    href: ../../api/subjectRightsRequest-post-notes.md
