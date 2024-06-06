@@ -12,7 +12,7 @@ Microsoft Graph Data Connect (Data Connect) enables you to extend Microsoft 365 
 
 ## Issues with finding an application in the Azure portal experience
 
-If you can find an application in the Data Connect Azure portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
+If you can't find an application in the Data Connect Azure portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
 
 ## Issues with approving an application
 
