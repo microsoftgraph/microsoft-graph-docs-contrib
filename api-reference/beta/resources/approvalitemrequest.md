@@ -1,6 +1,6 @@
 ---
 title: "approvalItemRequest resource type"
-description: "Collections of requests created for each approver on the approval item."
+description: "Represents collections of requests created for each approver on the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collections of requests created for each approver on the approval item.
+Represents collections of requests created for each approver on the approval item.
 
 ## Methods
 |Method|Return type|Description|

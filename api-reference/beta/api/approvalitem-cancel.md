@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel the approval item. The owner of the approval can trigger this endpoint.
+Cancel the [approval item](../resources/approvalitem.md). The owner of the approval can trigger this endpoint.
 
 ## Permissions
 
@@ -68,7 +68,8 @@ POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/ad65e077-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

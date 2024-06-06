@@ -51,8 +51,8 @@ You can specify the following properties when creating an **approvalItemResponse
 
 |Property|Type|Description|
 |:---|:---|:---|
-|comments|String|The comment made by approver. Optional.|
-|response|String|Approver response based on the response option. Required.|
+|comments|String|The comment made by the approver. Optional.|
+|response|String|The approver response in the response option. Required.|
 
 
 ## Response
@@ -83,7 +83,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
