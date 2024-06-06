@@ -3,35 +3,35 @@
     {
       "ChangeList": [
         {
-          "Id": "70a311c3-2996-416d-a616-9f3c601e8c81",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcBulkAction",
+          "Id": "b550ddff-55ce-4194-8fb3-92db2a24e6ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcBulkActionStatus",
           "ChangeType": "Addition",
-          "Description": "Added `status` property in the **cloudPcBulkAction** resource type.",
-          "Target": "cloudPC"
+          "Description": "Added the **cloudPcBulkActionStatus** enumeration type.",
+          "Target": "cloudPcBulkActionStatus"
         },
         {
-          "Id": "70a311c3-2996-416d-a616-9f3c601e8c81",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcBulkAction",
+          "Id": "b550ddff-55ce-4194-8fb3-92db2a24e6ec",
+          "ApiChange": "Property",
+          "ChangedApiName": "initiatedByUserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added `cloudPcBulkActionStatus` enum value in the **cloudPcBulkAction** resource type.",
-          "Target": "cloudPC"
+          "Description": "Added the **initiatedByUserPrincipalName** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkAction?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkAction"
         },
         {
-          "Id": "70a311c3-2996-416d-a616-9f3c601e8c81",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcBulkAction",
+          "Id": "b550ddff-55ce-4194-8fb3-92db2a24e6ec",
+          "ApiChange": "Property",
+          "ChangedApiName": "status",
           "ChangeType": "Addition",
-          "Description": "Added `initiatedByUserPrincipalName` property in the **cloudPcBulkAction** resource type.",
-          "Target": "cloudPC"
+          "Description": "Added the **status** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkAction?view=graph-rest-beta) resource.",
+          "Target": "cloudPcBulkAction"
         }
       ],
-      "Id": "70a311c3-2996-416d-a616-9f3c601e8c81",
+      "Id": "b550ddff-55ce-4194-8fb3-92db2a24e6ec",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-05T12:23:41.3476306Z",
-      "WorkloadArea": "Device and app management",
+      "CreatedDateTime": "2024-06-06T08:18:17.1751094Z",
+      "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud PC"
     },
     {
