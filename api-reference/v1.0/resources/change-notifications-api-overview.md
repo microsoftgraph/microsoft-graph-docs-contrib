@@ -24,9 +24,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [team][], [todoTask][], [user][]|
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][]|
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][]                                        |
-| Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
+| Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][],[team][], [timeOffRequest][], [user][]|
 
 ## Related content
 
@@ -51,9 +51,14 @@ In general, subscription operations require read permission to the resource. For
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[offerShiftRequest]: ./offershiftrequest.md
+[openShiftChangeRequest]: ./openshiftchangerequest.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[shift]: ./shift.md
+[swapShiftsChangeRequest]: ./swapshiftschangerequest.md
 [team]: ./team.md
+[timeOffRequest]: ./timeoffrequest.md
 [To Do task]: ./todotask.md
 [todoTask]: ./todotask.md
 [callTranscript]: ./calltranscript.md
