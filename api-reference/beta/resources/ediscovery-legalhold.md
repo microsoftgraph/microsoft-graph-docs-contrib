@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/ediscovery-legalhold-get.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a **legalHold** object.|
 |[Update](../api/ediscovery-legalhold-update.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Update the properties of a **legalHold** object.|
 |[Delete](../api/ediscovery-legalhold-delete.md)|None|Delete a **legalHold** object.|
-|[List siteSources](../api/ediscovery-legalhold-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the list of [siteSource](../resources/ediscovery-sitesource.md) objects associated with a legal hold.|
-|[Create siteSource](../api/ediscovery-legalhold-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new siteSource object.|
-|[List userSources](../api/ediscovery-legalhold-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the list of [userSource](../resources/ediscovery-usersource.md) objects associated with a legal hold.|
-|[Create userSource](../api/ediscovery-legalhold-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
+|[List site sources](../api/ediscovery-legalhold-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the list of [siteSource](../resources/ediscovery-sitesource.md) objects associated with a legal hold.|
+|[Create site source](../api/ediscovery-legalhold-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new siteSource object.|
+|[List user sources](../api/ediscovery-legalhold-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the list of [userSource](../resources/ediscovery-usersource.md) objects associated with a legal hold.|
+|[Create user source](../api/ediscovery-legalhold-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
 
 ## Properties
 

@@ -21,7 +21,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |:---|:---|:---|
 |[Add additional sources](../api/ediscovery-sourcecollection-post-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add an additional **dataSource** object to the source collection.|
 |[Add custodian sources](../api/ediscovery-sourcecollection-post-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Add a custodian **dataSource** object to the source collection.|
-|[Add noncustodialSource](../api/ediscovery-sourcecollection-post-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Add a non-custodial source **noncustodialSource** object to the source collection.|
+|[Add noncustodial source](../api/ediscovery-sourcecollection-post-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Add a non-custodial source **noncustodialSource** object to the source collection.|
 |[List](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get a list of the **sourceCollection** objects and their properties.|
 |[Create](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
 |[Get](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Read the properties and relationships of a **sourceCollection** object.|
@@ -30,7 +30,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |[Estimate statistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|Run an estimate of the number of emails and documents in the source collection.|
 |[List additional sources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of additional **dataSource** objects associated with a source collection.|
 |[List custodian sources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of custodian **dataSource** objects associated with a source collection.|
-|[List noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of non-custodial sources **noncustodialSource** objects associated with a source collection.|
+|[List noncustodial sources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of non-custodial sources **noncustodialSource** objects associated with a source collection.|
 |[Purge data](../api/ediscovery-sourcecollection-purgedata.md)|None|Run a purge data operation on the Teams data contained in the source collection.|
 
 ## Properties
