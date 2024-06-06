@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Teams\Item\Schedule\Share\SharePostRequestBody
+use Microsoft\Graph\Beta\Generated\Teams\Item\Schedule\Share\SharePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

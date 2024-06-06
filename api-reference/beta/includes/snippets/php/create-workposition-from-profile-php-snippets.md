@@ -10,7 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\WorkPosition;
 use Microsoft\Graph\Beta\Generated\Models\PositionDetail;
 use Microsoft\Graph\Beta\Generated\Models\CompanyDetail;
 use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

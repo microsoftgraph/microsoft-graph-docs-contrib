@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Search\Query\QueryPostRequestBody
+use Microsoft\Graph\Beta\Generated\Search\Query\QueryPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\SearchRequest;
 use Microsoft\Graph\Beta\Generated\Models\EntityType;
 use Microsoft\Graph\Beta\Generated\Models\SearchQuery;

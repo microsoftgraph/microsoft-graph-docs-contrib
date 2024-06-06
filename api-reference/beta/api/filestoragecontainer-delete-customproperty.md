@@ -47,6 +47,7 @@ If successful, this action returns a `200 OK` response code.
 
 ### Request
 The following example deletes multiple custom properties.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainer_customproperty"
@@ -61,6 +62,12 @@ Content-type: application/json
   "color": null
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-customproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

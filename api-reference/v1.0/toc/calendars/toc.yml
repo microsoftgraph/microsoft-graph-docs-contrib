@@ -9,27 +9,27 @@ items:
     href: ../../api/user-post-calendars.md
   - name: Get calendar
     href: ../../api/calendar-get.md
-  - name: Update
+  - name: Update calendar
     href: ../../api/calendar-update.md
-  - name: Delete
+  - name: Delete calendar
     href: ../../api/calendar-delete.md
-  - name: List calendarView
+  - name: List calendar view
     href: ../../api/calendar-list-calendarview.md
   - name: List events
     href: ../../api/calendar-list-events.md
-  - name: Create event
+  - name: Create Event
     href: ../../api/calendar-post-events.md
-  - name: getSchedule
+  - name: Get free/busy schedule
     href: ../../api/calendar-getschedule.md
-  - name: findMeetingTimes
+  - name: Find meeting times
     href: ../../api/user-findmeetingtimes.md
-  - name: Create single-value extended property
+  - name: Create single-value property
     href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-  - name: Get calendar with single-value extended property
+  - name: Get single-value property
     href: ../../api/singlevaluelegacyextendedproperty-get.md
-  - name: Create multi-value extended property
+  - name: Create multi-value property
     href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-  - name: Get calendar with multi-value extended property
+  - name: Get multi-value property
     href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Event
   items:
@@ -41,27 +41,27 @@ items:
     href: ../../api/user-post-events.md
   - name: Get event
     href: ../../api/event-get.md
-  - name: Update
+  - name: Update event
     href: ../../api/event-update.md
-  - name: Delete
+  - name: Delete event
     href: ../../api/event-delete.md
-  - name: delta
+  - name: Get delta
     href: ../../api/event-delta.md
-  - name: forward
+  - name: Forward event
     href: ../../api/event-forward.md
-  - name: cancel
+  - name: Cancel event
     href: ../../api/event-cancel.md
-  - name: accept
+  - name: Accept event
     href: ../../api/event-accept.md
-  - name: tentativelyAccept
+  - name: Tentatively accept
     href: ../../api/event-tentativelyaccept.md
-  - name: decline
+  - name: Decline event
     href: ../../api/event-decline.md
-  - name: dismissReminder
+  - name: Dismiss reminder
     href: ../../api/event-dismissreminder.md
-  - name: snoozeReminder
+  - name: Snooze reminder
     href: ../../api/event-snoozereminder.md
-  - name: List instances
+  - name: List event instances
     href: ../../api/event-list-instances.md
   - name: Attachments
     items:
@@ -78,44 +78,44 @@ items:
   - name: Schema extensions
     items:
     - name: Add schema extension values
-      href: ../../graph/extensibility-schema-groups
+      href: /graph/extensibility-schema-groups
   - name: Extended properties
     items:
-    - name: Create single-value extended property
+    - name: Create single-value property
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-    - name: Get event with single-value extended property
+    - name: Get single-value property
       href: ../../api/singlevaluelegacyextendedproperty-get.md
-    - name: Create multi-value extended property
+    - name: Create multi-value property
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-    - name: Get event with multi-value extended property
+    - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Event message
   items:
   - name: Event message
     href: ../../resources/eventmessage.md
-  - name: Get eventMessage
+  - name: Get event message
     href: ../../api/eventmessage-get.md
-  - name: Update
+  - name: Update event message
     href: ../../api/eventmessage-update.md
-  - name: Delete
+  - name: Delete message
     href: ../../api/message-delete.md
-  - name: copy
+  - name: Copy message
     href: ../../api/message-copy.md
-  - name: createForward
+  - name: Create draft to forward message
     href: ../../api/message-createforward.md
-  - name: createReply
+  - name: Create draft to reply
     href: ../../api/message-createreply.md
-  - name: createReplyAll
+  - name: Create draft to reply-all
     href: ../../api/message-createreplyall.md
-  - name: forward
+  - name: Forward message
     href: ../../api/message-forward.md
-  - name: move
+  - name: Move message
     href: ../../api/message-move.md
-  - name: reply
+  - name: Reply to a message
     href: ../../api/message-reply.md
-  - name: replyAll
+  - name: Reply-all to a message
     href: ../../api/message-replyall.md
-  - name: send
+  - name: Send draft message
     href: ../../api/message-send.md
   - name: Attachments
     items:
@@ -131,13 +131,13 @@ items:
       href: ../../api/opentypeextension-get.md
   - name: Extended properties
     items:
-    - name: Create single-value extended property
+    - name: Create single-value property
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-    - name: Get eventMessage with single-value extended property
+    - name: Get single-value property
       href: ../../api/singlevaluelegacyextendedproperty-get.md
-    - name: Create multi-value extended property
+    - name: Create multi-value property
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-    - name: Get eventMessage with multi-value extended property
+    - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Attachment
   items:
@@ -171,13 +171,13 @@ items:
     href: ../../api/user-post-calendargroups.md
   - name: Get calendar group
     href: ../../api/calendargroup-get.md
-  - name: Update
+  - name: Update calendar group
     href: ../../api/calendargroup-update.md
-  - name: Delete
+  - name: Delete calendar group
     href: ../../api/calendargroup-delete.md
-  - name: List calendars
+  - name: List calendars in calendar group
     href: ../../api/calendargroup-list-calendars.md
-  - name: Create Calendar
+  - name: Create calendar in calendar group
     href: ../../api/calendargroup-post-calendars.md
 - name: Calendar permission
   items:
@@ -187,7 +187,7 @@ items:
     href: ../../api/calendar-list-calendarpermissions.md
   - name: Create
     href: ../../api/calendar-post-calendarpermissions.md
-  - name: Get calendarPermission
+  - name: Get
     href: ../../api/calendarpermission-get.md
   - name: Update
     href: ../../api/calendarpermission-update.md
@@ -201,11 +201,11 @@ items:
     href: ../../api/outlookuser-list-mastercategories.md
   - name: Get category
     href: ../../api/outlookcategory-get.md
-  - name: Create
+  - name: Create category
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update
+  - name: Update category
     href: ../../api/outlookcategory-update.md
-  - name: Delete
+  - name: Delete category
     href: ../../api/outlookcategory-delete.md
 - name: Extended properties
   items:
@@ -215,17 +215,17 @@ items:
     items:
     - name: Single value legacy extended property
       href: ../../resources/singlevaluelegacyextendedproperty.md
-    - name: Post
+    - name: Create single-value property
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-    - name: Get
+    - name: Get single-value property
       href: ../../api/singlevaluelegacyextendedproperty-get.md
   - name: Multivalue legacy extended property
     items:
     - name: Multivalue legacy extended property
       href: ../../resources/multivaluelegacyextendedproperty.md
-    - name: Post
+    - name: Create multi-value property
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-    - name: Get
+    - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Places
   items:

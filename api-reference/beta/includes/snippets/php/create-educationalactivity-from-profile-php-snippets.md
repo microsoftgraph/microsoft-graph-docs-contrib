@@ -10,7 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\EducationalActivity;
 use Microsoft\Kiota\Abstractions\Types\Date;
 use Microsoft\Graph\Beta\Generated\Models\InstitutionData;
 use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
 use Microsoft\Graph\Beta\Generated\Models\EducationalActivityDetail;
 
 
