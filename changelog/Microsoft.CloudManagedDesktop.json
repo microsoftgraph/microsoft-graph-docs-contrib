@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSharedUseServicePlan",
           "ChangeType": "Deletion",
-          "Description": "Removed the **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) resource.",
+          "Description": "Removed the **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource.",
           "Target": "cloudPcSharedUseServicePlan"
         },
         {
