@@ -287,7 +287,7 @@ items:
   - name: Reassign submission
     href: ../../api/educationsubmission-reassign.md
   - name: Set up submission resources folder
-    href: ../../api/educationsubmission-setupResourcesFolder.md
+    href: ../../api/educationsubmission-setupresourcesfolder.md
   - name: Submit submission
     href: ../../api/educationsubmission-submit.md
   - name: Unsubmit submission
