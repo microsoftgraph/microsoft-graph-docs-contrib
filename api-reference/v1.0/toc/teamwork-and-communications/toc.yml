@@ -162,6 +162,8 @@ items:
           href: ../../api/call-playprompt.md
         - name: Record response
           href: ../../api/call-record.md
+        - name: Cancel media processing
+          href: ../../api/call-cancelmediaprocessing.md
         - name: Subscribe to tone
           href: ../../api/call-subscribetotone.md
         - name: Send DTMF tone
@@ -246,6 +248,8 @@ items:
       items:
       - name: Online meeting
         href: ../../resources/onlinemeeting.md
+      - name: Create
+        href: ../../api/application-post-onlinemeetings.md
       - name: Get
         href: ../../api/onlinemeeting-get.md
       - name: Update
@@ -541,6 +545,8 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete message in channel
         href: ../../api/chatmessage-softdelete.md
+      - name: Undo the deletion of a message in channel
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -557,6 +563,8 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete reply message in channel
         href: ../../api/chatmessage-softdelete.md
+      - name: Undo deletion of a reply message in channel
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -579,6 +587,8 @@ items:
         href: ../../api/chatmessage-update.md
       - name: Delete message in chat
         href: ../../api/chatmessage-softdelete.md
+      - name: Undo the deletion of a message in chat
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
