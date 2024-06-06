@@ -48,7 +48,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | rename          | Rename the item.                               |
 
 
->[!Note]
+>[!NOTE]
 >The `conflictBehavior` parameter isn't supported for OneDrive Consumer.
 
 ## Request body
@@ -62,11 +62,10 @@ In the request body, provide a JSON object with the following parameters.
 | childrenOnly    | Boolean                                        | Optional. Default is false. If set to true, the children of the **driveItem** are copied but not the **driveItem** itself. Valid ONLY on folder items. |
 
 
->[!Note]
->
+>[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
 >
->In a single request `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information on [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
+>In a single request, the `childrenOnly` option copies 150 children items, and for the grandchildren items the SharePoint limit applies. For more information, see [SharePoint limitation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites)
 
 ## Response
 
@@ -213,7 +212,7 @@ Monitoring is important because the copy operation with childrenOnly occurs acro
 ### Example 3: Copy the children in a folder with name conflict
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The destination already has the name. The operation is accepted but it encounters a failure during processing.
+The destination already has the same name found at the source. The operation is accepted but it encounters a failure during processing.
 
 #### Request
 <!-- { "blockType": "request", "name": "copy-item-3", "scopes": "files.readwrite", "target": "action" } -->
@@ -240,7 +239,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-Follow the monitor url
+Follow the monitor url.
 ```http
 {
   "id": "46cf980a-28e1-4623-b8d0-11fc5278efe6",
@@ -253,13 +252,13 @@ Follow the monitor url
   }
 }
 ```
-To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters)
+To resolve this error, use the optional query parameter [@microsoft.graph.conflictBehavior](#optional-query-parameters).
 
 ### Example 4: Copy the children in a folder with name conflict setting conflictBehavior
 
 The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-Optional query parameter @microsoft.graph.conflictBehavior is set to replace. It can be set as replace, rename, or fail.
-The destination already has the name.
+The optional query parameter @microsoft.graph.conflictBehavior is set to replace. It can be set as replace, rename, or fail.
+The destination already has the same name found at the source.
 
 #### Request
 <!-- { "blockType": "request", "name": "copy-item-4", "scopes": "files.readwrite", "target": "action" } -->
@@ -332,7 +331,7 @@ Content-Length: 283
   }
 }
 ```
-To resolve this error set `childrenOnly` body parameter to true
+To resolve this error set `childrenOnly` parameter to true.
 
 ### Example 6: Copy the children in a folder where source has more than 150 direct children
 
@@ -379,7 +378,7 @@ Content-Length: 340
   }
 }
 ```
-To resolve this error, need to reorganize the source folder structure to only have 150 children
+To resolve this error, need to reorganize the source folder structure to only have 150 children.
 
 ### Example 7: Copy the children where source item is a file
 
