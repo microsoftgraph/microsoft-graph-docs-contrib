@@ -698,7 +698,7 @@ items:
       href: outlook-send-mime-message.md
     - name: Send mail from another user
       href: outlook-send-mail-from-other-user.md
-    - name: Explainer for sending mail
+    - name: Send mail process
       href: outlook-things-to-know-about-send-mail.md
     - name: Attach large files
       href: outlook-large-attachments.md

@@ -44,7 +44,7 @@ You must also validate both endpoints as described in [Notification endpoint val
 The following example subscribes to channel messages being created or updated in Microsoft Teams.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "change-notifications-rich-notifications-subscription-request"
 }-->
 ```http
@@ -136,7 +136,7 @@ In the following example, the change notification contains two items for the sam
 }
 ```
 
-The change notificaton object is in the structure of the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
+The change notification object is in the structure of the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
 
 ### How to validate
 
