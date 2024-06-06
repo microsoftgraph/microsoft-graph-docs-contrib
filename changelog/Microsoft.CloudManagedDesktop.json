@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "initiatedByUserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **initiatedByUserPrincipalName** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkAction?view=graph-rest-beta) resource.",
+          "Description": "Added the **initiatedByUserPrincipalName** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkAction"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "status",
           "ChangeType": "Addition",
-          "Description": "Added the **status** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkAction?view=graph-rest-beta) resource.",
+          "Description": "Added the **status** property to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkAction"
         }
       ],
