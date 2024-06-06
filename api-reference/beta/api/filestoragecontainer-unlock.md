@@ -1,5 +1,5 @@
 ---
-title: "Unlock fileStorageContainer"
+title: "fileStorageContainer: unlock"
 description: "Unlock a fileStorageContainer."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
@@ -7,15 +7,15 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Unlock fileStorageContainer
+# fileStorageContainer: unlock
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to adding, updating, or deleting content.
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to add, update, or delete content.
 
-This action updates the [lockState](../resources/enums.md#sitelockstate-values).
+This action updates the value of the **lockState** property.
 
 ## Permissions
 
@@ -23,7 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 When delegated permissions are used, only members in the `owner` role can call this method.
 
-<!-- { "blockType": "permissions", "name": "filestoragecontainer_unlock" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected, FileStorageContainer.Manage.All|Not available.|
@@ -41,6 +40,10 @@ POST /storageContainers/{containerId}/unlock
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
+## Request body
+
+Don't supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -48,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following example shows how to unlock a fileStorageContainer.
+The following example shows how to unlock a **fileStorageContainer**.
 
 ``` http
 POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/unlock
