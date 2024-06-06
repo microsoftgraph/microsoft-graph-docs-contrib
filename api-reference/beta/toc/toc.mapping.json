@@ -1,6 +1,20 @@
 {
   "tocNodes": [
     {
+      "name": "Users",
+      "overview": "../../resources/users.md",
+      "resources": [
+        "user"
+      ]
+    },
+    {
+      "name": "Groups",
+      "overview": "../../resources/groups-overview.md",
+      "resources": [
+        "group"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "shouldSort": true,
@@ -1339,7 +1353,8 @@
                   "name": "Named location",
                   "resources": [
                     "countryNamedLocation",
-                    "ipNamedLocation"
+                    "ipNamedLocation",
+                    "compliantNetworkNamedLocation"
                   ]
                 }
               ]
@@ -1799,9 +1814,11 @@
         "microsoft.graph.industryData.adminUnitCreationOptions",
         "microsoft.graph.industryData.aggregatedInboundStatistics",
         "microsoft.graph.industryData.basicFilter",
+        "microsoft.graph.industryData.credential",
         "microsoft.graph.industryData.classGroupConfiguration",
         "microsoft.graph.industryData.enrollmentMappings",
         "microsoft.graph.industryData.fileDataConnector",
+        "microsoft.graph.industryData.fileFormatReferenceValue",
         "microsoft.graph.industryData.fileUploadSession",
         "microsoft.graph.industryData.filter",
         "microsoft.graph.industryData.identifierTypeReferenceValue",
@@ -1813,6 +1830,9 @@
         "microsoft.graph.industryData.industryDataRunEntityCountMetric",
         "microsoft.graph.industryData.industryDataRunRoleCountMetric",
         "microsoft.graph.industryData.industryDataRunStatistics",
+        "microsoft.graph.industryData.oAuth1ClientCredential",
+        "microsoft.graph.industryData.oAuth2ClientCredential",
+        "microsoft.graph.industryData.oAuthClientCredential",
         "microsoft.graph.industryData.outboundFlowActivity",
         "microsoft.graph.industryData.passwordSettings",
         "publicError",
