@@ -35,10 +35,10 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|Name of the bulk action.|
 |id|String|ID of the bulk action. Inherited from [entity](entity.md).|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action uses maintenance window to schedule action, When `false` means bulk action does not use the maintenance window. Default value is `false`.|
-|status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-value)|Indicates the result of bulk actions. Possible values are `pending`, `succeeded` and `failed`. Default value is `pending`. Read-Only.|
+|status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-values)|Indicates the result of bulk actions. Possible values are `pending`, `succeeded` and `failed`. Default value is `pending`. Read-Only.|
 |initiatedByUserPrincipalName|String|Indicates the IT admin's user principal name (UPN) who initiated this bulk action. Read-Only.|
 
-### cloudPcBulkActionStatus value
+### cloudPcBulkActionStatus values
 
 |Member|Description|
 |:---|:---|
@@ -68,7 +68,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "scheduledDuringMaintenanceWindow": "Boolean",
-  "status":"microsoft.graph.cloudPcBulkActionStatus",
+  "status":"string",
   "initiatedByUserPrincipalName":"string"
 }
 ```
