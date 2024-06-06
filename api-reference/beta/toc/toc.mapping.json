@@ -1353,7 +1353,8 @@
                   "name": "Named location",
                   "resources": [
                     "countryNamedLocation",
-                    "ipNamedLocation"
+                    "ipNamedLocation",
+                    "compliantNetworkNamedLocation"
                   ]
                 }
               ]
