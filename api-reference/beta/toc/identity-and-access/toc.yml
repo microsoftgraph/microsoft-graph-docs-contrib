@@ -1047,10 +1047,6 @@ items:
           href: ../../api/accesspackagecatalog-list-accesspackageresourceroles.md
       - name: Access package custom package workflow extensions
         items:
-        - name: List accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-list-accessPackageCustomWorkflowExtensions.md
-        - name: Create accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-post-accessPackageCustomWorkflowExtensions.md
         - name: Get accessPackageAssignmentRequestWorkflowExtension
           href: ../../api/accesspackageassignmentrequestworkflowextension-get.md
         - name: Update accessPackageAssignmentRequestWorkflowExtension
@@ -2718,10 +2714,6 @@ items:
         items:
         - name: Tenant app management policy
           href: ../../resources/tenantAppManagementPolicy.md
-        - name: Get
-          href: ../../api/tenantAppManagementPolicy-get.md
-        - name: Update
-          href: ../../api/tenantAppManagementPolicy-update.md
       - name: App management policy
         items:
         - name: App management policy
@@ -3177,10 +3169,6 @@ items:
         href: ../../api/b2cidentityuserflow-list-languages.md
       - name: Create language
         href: ../../api/b2cidentityuserflow-put-languages.md
-      - name: Get API connectors configuration for user flow
-        href: ../../api/b2cidentityuserflow-get-apiConnectorConfiguration.md
-      - name: Configure an API connector in a user flow
-        href: ../../api/b2cidentityuserflow-put-apiConnectorConfiguration.md
       - name: List identity providers
         href: ../../api/b2cidentityuserflow-list-identityproviders.md
       - name: Add identity provider
@@ -3217,10 +3205,6 @@ items:
         href: ../../api/b2xidentityuserflow-post-userattributeassignments.md
       - name: List languages
         href: ../../api/b2xidentityuserflow-list-languages.md
-      - name: Get API connectors configuration for user flow
-        href: ../../api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-      - name: Configure an API connector in a user flow
-        href: ../../api/b2xidentityuserflow-put-apiConnectorConfiguration.md
     - name: Identity user flow attribute
       items:
       - name: Identity user flow attribute
@@ -3625,8 +3609,6 @@ items:
         href: ../../api/awsidentityaccessmanagementkeyagefinding-list.md
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyagefinding-get.md
-      - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md
     - name: AWS identity access management key usage finding
       items:
       - name: AWS identity access management key usage finding
@@ -3635,8 +3617,6 @@ items:
         href: ../../api/awsidentityaccessmanagementkeyusagefinding-list.md
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyusagefinding-get.md
-      - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md
     - name: Identity findings
       items:
       - name: Inactive user finding
@@ -3823,8 +3803,6 @@ items:
           href: ../../api/unenforcedmfaawsuserfinding-list.md
         - name: Get
           href: ../../api/unenforcedmfaawsuserfinding-get.md
-        - name: Aggregated summary
-          href: ../../api/unenforcedMfaAwsUserFinding-aggregatedsummary.md
     - name: Privilege escalation findings
       items:
       - name: Privilege escalation user finding

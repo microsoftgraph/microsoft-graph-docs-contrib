@@ -218,12 +218,6 @@ items:
       href: ../../api/profile-list-certifications.md
     - name: Create
       href: ../../api/profile-post-certifications.md
-    - name: Get
-      href: ../../api/personCertification-get.md
-    - name: Update
-      href: ../../api/personCertification-update.md
-    - name: Delete
-      href: ../../api/personCertification-delete.md
   - name: Educational activity
     items:
     - name: Educational activity
