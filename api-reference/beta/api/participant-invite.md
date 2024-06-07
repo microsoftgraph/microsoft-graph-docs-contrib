@@ -18,7 +18,7 @@ Invite participants to the active call.
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.
- **Note:** Inviting more than one bot into meeting/group call is not allowed
+ **Note:** Inviting more than one bot to a meeting or group call isn't allowed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
