@@ -214,6 +214,8 @@ items:
     href: ../../resources/industrydata-enrollmentmappings.md
   - name: File data connector
     href: ../../resources/industrydata-filedataconnector.md
+  - name: File format reference value
+    href: ../../resources/industrydata-fileformatreferencevalue.md
   - name: File upload session
     href: ../../resources/industrydata-fileuploadsession.md
   - name: Filter
@@ -236,6 +238,12 @@ items:
     href: ../../resources/industrydata-industrydatarunrolecountmetric.md
   - name: Industry data run statistics
     href: ../../resources/industrydata-industrydatarunstatistics.md
+  - name: OAuth 1 client credential
+    href: ../../resources/industrydata-oauth1clientcredential.md
+  - name: OAuth 2 client credential
+    href: ../../resources/industrydata-oauth2clientcredential.md
+  - name: OAuth client credential
+    href: ../../resources/industrydata-oauthclientcredential.md
   - name: Outbound flow activity
     href: ../../resources/industrydata-outboundflowactivity.md
   - name: Password settings
