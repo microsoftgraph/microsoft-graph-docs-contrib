@@ -37,7 +37,7 @@ POST /storageContainers/{containerId}/lock
 ```
 
 ## Request body
-In the request body, you can optionally include a JSON representation of the lockState.
+In the request body, you can optionally include a JSON representation of the **lockState** property.
 
 ```json
 {
@@ -61,6 +61,7 @@ The following example shows how to lock a fileStorageContainer.
 
 ``` http
 POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/lock
+
 {
     "lockState": "lockedReadOnly"
 }
