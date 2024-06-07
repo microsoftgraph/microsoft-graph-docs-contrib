@@ -22,8 +22,8 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsServerlessFunctionAdministratorFinding objects](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
-|[Get securityToolAwsServerlessFunctionAdministratorFinding](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
+|[List](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
+|[Get](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,13 +1,14 @@
 ---
 title: "Create virtualEventTownhall"
 description: "Create a new virtualEventTownhall object in draft mode."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create virtualEvent
+# Create virtualEventTownhall
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,14 +18,15 @@ Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventsroot-post-townhalls-permissions"
+  "name": "virtualeventsroot-post-virtualevents-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-townhalls-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-virtualevents-permissions.md)]
 
 ## HTTP request
 
@@ -37,26 +39,28 @@ POST /solutions/virtualEvents/townhalls
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
-You can specify the following properties when you create a **virtualEventTownhall**.
+In the request body, supply a JSON representation of the supported derived types of [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+
+You can specify the following properties when you create a [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. Possible values are: `everyone`, `organization`, `unknownFutureValue`. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
-| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| invitedAttendees | [identity](../resources/identity.md) collection | Attendees invited to the town hall. The supported identites are [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | A description of the town hall. |
+| displayName | String | Display name of the town hall. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
+| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
 ## Response
 
@@ -78,7 +82,10 @@ Content-Type: application/json
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
@@ -125,7 +132,10 @@ Content-Type: application/json
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
     "status": "draft",
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 

@@ -1,0 +1,164 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/todo-overview.md
+- name: To-do task list
+  items:
+  - name: To-do task list
+    href: ../../resources/todotasklist.md
+  - name: List task lists
+    href: ../../api/todo-list-lists.md
+  - name: Create task list
+    href: ../../api/todo-post-lists.md
+  - name: Get task list
+    href: ../../api/todotasklist-get.md
+  - name: Update task list
+    href: ../../api/todotasklist-update.md
+  - name: Delete task list
+    href: ../../api/todotasklist-delete.md
+  - name: List tasks
+    href: ../../api/todotasklist-list-tasks.md
+  - name: Create task
+    href: ../../api/todotasklist-post-tasks.md
+- name: To-do task
+  items:
+  - name: To-do task
+    href: ../../resources/todotask.md
+  - name: List tasks
+    href: ../../api/todotasklist-list-tasks.md
+  - name: Create task
+    href: ../../api/todotasklist-post-tasks.md
+  - name: Get task
+    href: ../../api/todotask-get.md
+  - name: Update task
+    href: ../../api/todotask-update.md
+  - name: Delete task
+    href: ../../api/todotask-delete.md
+  - name: List checklistItems
+    href: ../../api/todotask-list-checklistitems.md
+  - name: Create checklistItem
+    href: ../../api/todotask-post-checklistitems.md
+  - name: List linkedResources
+    href: ../../api/todotask-list-linkedresources.md
+  - name: Create linkedResources
+    href: ../../api/todotask-post-linkedresources.md
+- name: Task file attachment
+  items:
+  - name: Task file attachment
+    href: ../../resources/taskfileattachment.md
+  - name: List
+    href: ../../api/todotask-list-attachments.md
+  - name: Attach small file
+    href: ../../api/todotask-post-attachments.md
+  - name: Attach all file sizes
+    href: ../../api/taskfileattachment-createuploadsession.md
+  - name: Get
+    href: ../../api/taskfileattachment-get.md
+  - name: Delete
+    href: ../../api/taskfileattachment-delete.md
+- name: Checklist item
+  items:
+  - name: Checklist item
+    href: ../../resources/checklistitem.md
+  - name: List
+    href: ../../api/todotask-list-checklistitems.md
+  - name: Create
+    href: ../../api/todotask-post-checklistitems.md
+  - name: List checklistItems
+    href: ../../api/basetask-list-checklistitems.md
+  - name: Create checklistItem
+    href: ../../api/basetask-post-checklistitems.md
+  - name: Get
+    href: ../../api/checklistitem-get.md
+  - name: Update
+    href: ../../api/checklistitem-update.md
+  - name: Delete
+    href: ../../api/checklistitem-delete.md
+- name: Linked resource
+  items:
+  - name: Linked resource
+    href: ../../resources/linkedresource.md
+  - name: List
+    href: ../../api/todotask-list-linkedresources.md
+  - name: Create
+    href: ../../api/todotask-post-linkedresources.md
+  - name: Get
+    href: ../../api/linkedresource-get.md
+  - name: Update
+    href: ../../api/linkedresource-update.md
+  - name: Delete
+    href: ../../api/linkedresource-delete.md
+- name: Deprecated Task APIs
+  items:
+  - name: To-do API with base tasks
+    href: ../../resources/tasks-overview.md
+  - name: Outlook tasks
+    items:
+    - name: Outlook task
+      items:
+      - name: Outlook task
+        href: ../../resources/outlooktask.md
+      - name: Get
+        href: ../../api/outlooktask-get.md
+      - name: Update
+        href: ../../api/outlooktask-update.md
+      - name: Delete
+        href: ../../api/outlooktask-delete.md
+      - name: Complete
+        href: ../../api/outlooktask-complete.md
+      - name: Attachments
+        items:
+        - name: List attachments
+          href: ../../api/outlooktask-list-attachments.md
+        - name: Add attachment
+          href: ../../api/outlooktask-post-attachments.md
+      - name: Extended properties
+        items:
+        - name: Create single-value property
+          href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+        - name: Get single-value property
+          href: ../../api/singlevaluelegacyextendedproperty-get.md
+        - name: Create multi-value property
+          href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+        - name: Get multi-value property
+          href: ../../api/multivaluelegacyextendedproperty-get.md
+    - name: Outlook task folder
+      items:
+      - name: Outlook task folder
+        href: ../../resources/outlooktaskfolder.md
+      - name: Get
+        href: ../../api/outlooktaskfolder-get.md
+      - name: Create task folder in group
+        href: ../../api/outlooktaskfolder-post-tasks.md
+      - name: List task folders in group
+        href: ../../api/outlooktaskfolder-list-tasks.md
+      - name: Update
+        href: ../../api/outlooktaskfolder-update.md
+      - name: Delete
+        href: ../../api/outlooktaskfolder-delete.md
+      - name: Extended properties
+        items:
+        - name: Create single-value property
+          href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+        - name: Get single-value property
+          href: ../../api/singlevaluelegacyextendedproperty-get.md
+        - name: Create multi-value property
+          href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+        - name: Get multi-value property
+          href: ../../api/multivaluelegacyextendedproperty-get.md
+    - name: Outlook task group
+      items:
+      - name: Outlook task group
+        href: ../../resources/outlooktaskgroup.md
+      - name: Get
+        href: ../../api/outlooktaskgroup-get.md
+      - name: Create outlookTaskFolder
+        href: ../../api/outlooktaskgroup-post-taskfolders.md
+      - name: List taskFolders
+        href: ../../api/outlooktaskgroup-list-taskfolders.md
+      - name: Update
+        href: ../../api/outlooktaskgroup-update.md
+      - name: Delete
+        href: ../../api/outlooktaskgroup-delete.md

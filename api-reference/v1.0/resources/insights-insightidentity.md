@@ -1,5 +1,5 @@
 ---
-title: "insightIdentity"
+title: insightIdentity complex type
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
 ms.localizationpriority: medium
@@ -7,11 +7,11 @@ ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
-# insightIdentity
+# insightIdentity complex type
 
 Namespace: microsoft.graph
 
-Complex type containing properties of [sharedInsight](insights-shared.md) items. 
+Complex type containing properties of [sharedInsight](insights-shared.md) items.
 
 ## JSON representation
 The following JSON representation shows the resource type.

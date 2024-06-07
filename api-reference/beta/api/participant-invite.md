@@ -18,7 +18,7 @@ Invite participants to the active call.
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.
- **Note:** Inviting more than one  bot into meeting/group call is not allowed
+ **Note:** Inviting another bot into meeting/group call is not allowed
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -543,9 +543,7 @@ Content-Type: application/json
 ### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
 
 
-The invite API supports only one participant when replacing an existing peer-to-peer call. 
-When multiple participants are provided in the request body, only the first participant 
-will be read and the rest of the participants will be ignored.
+The invite API supports only one participant when you replace an existing peer-to-peer call. When multiple participants are provided in the request body, only the first participant is read and the rest of the participants are ignored.
 
 
 > **Note:** The invite API supports only one participant when `replacesCallId` is provided. 

@@ -15,7 +15,7 @@ const conditionalAccessPolicy = {
         signInRiskLevels: [
             'high',
             'medium',
-            'low',
+            'low'
         ]
     }
 };

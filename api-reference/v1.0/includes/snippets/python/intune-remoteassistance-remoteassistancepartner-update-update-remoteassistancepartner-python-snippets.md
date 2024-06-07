@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.remote_assistance_partner import RemoteAssistancePartner
+from msgraph.generated.models.remote_assistance_onboarding_status import RemoteAssistanceOnboardingStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

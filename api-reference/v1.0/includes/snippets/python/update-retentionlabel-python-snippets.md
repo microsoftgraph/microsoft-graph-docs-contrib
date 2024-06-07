@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.retention_label import RetentionLabel
-from msgraph.generated.models.retention_duration_in_days import RetentionDurationInDays
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.retention_label import RetentionLabel
+from msgraph_beta.generated.models.security.retention_duration_in_days import RetentionDurationInDays
 
 graph_client = GraphServiceClient(credentials, scopes)
 

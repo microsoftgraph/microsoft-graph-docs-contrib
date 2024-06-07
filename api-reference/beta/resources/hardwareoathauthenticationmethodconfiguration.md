@@ -21,9 +21,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get hardwareOathAuthenticationMethodConfiguration](../api/hardwareoathauthenticationmethodconfiguration-get.md)|[hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md)|Read the properties and relationships of a [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md) object.|
-|[Update hardwareOathAuthenticationMethodConfiguration](../api/hardwareoathauthenticationmethodconfiguration-update.md)|[hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md)|Update the properties of a [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md) object.|
-|[Delete hardwareOathAuthenticationMethodConfiguration](../api/hardwareoathauthenticationmethodconfiguration-delete.md)|None|Reverts the hardwareOathAuthenticationMethodConfiguration object to its default configuration.|
+|[Get](../api/hardwareoathauthenticationmethodconfiguration-get.md)|[hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md)|Read the properties and relationships of a [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md) object.|
+|[Update](../api/hardwareoathauthenticationmethodconfiguration-update.md)|[hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md)|Update the properties of a [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md) object.|
+|[Delete](../api/hardwareoathauthenticationmethodconfiguration-delete.md)|None|Reverts the hardwareOathAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties
 |Property|Type|Description|
