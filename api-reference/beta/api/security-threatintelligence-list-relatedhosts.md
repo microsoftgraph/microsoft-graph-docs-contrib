@@ -55,7 +55,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_relatedHost",
-  "sampleKeys": ["contoso.com"]
+  "sampleKeys": ["Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg=="]
 }
 -->
 ``` http
