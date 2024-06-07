@@ -24,7 +24,7 @@ This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 > **Microsoft Teams and Microsoft 365 groups support group collaboration**. You can use most of the Microsoft 365 groups API with Microsoft Teams. To create a [team](team.md), first [create group](../api/group-post-groups.md) and then [add a team to it](../api/team-put-teams.md). For details, see the [Microsoft Teams overview](teams-api-overview.md).
 
@@ -109,9 +109,6 @@ This resource supports:
 | **Notes** |  |  |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
-| **Open extensions** |  |  |
-| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing resource. |
-| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name. |
 | **Password-based single sign-on credentials** |  |  |
 | [Get credentials](../api/group-getpasswordsinglesignoncredentials.md) | [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) collection | Get the list of password-based single sign-on credentials for this group. Passwords are never returned, and instead are always returned as null. |
 | [Delete credentials](../api/group-deletepasswordsinglesignoncredentials.md) | None | Delete password-based single sign-on credential for a given service principal that is associated to this group. |
@@ -127,8 +124,6 @@ name. |
 | [Get post](../api/post-get.md) | [post](post.md) | Get a specific post. |
 | [Reply to post](../api/post-reply.md) | None | Reply to a post. |
 | [Forward post](../api/post-forward.md) | None | Forward a post. |
-| **Schema extensions** |  |  |
-| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom-typed data to a resource. |
 | **Other group resources** |  |  |
 | [List permission grants](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions granted to apps to access the group. |
 | **User settings** |  |  |

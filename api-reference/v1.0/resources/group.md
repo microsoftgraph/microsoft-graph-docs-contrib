@@ -22,7 +22,7 @@ This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 ## Methods
 
@@ -101,9 +101,6 @@ This resource supports:
 | **Notes** |  |  |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
-| **Open extensions** |  |  |
-| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing resource. |
-| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name. |
 | **Photo** |  |  |
 | [Get profile photo](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
 | [Update profile photo](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
@@ -115,8 +112,6 @@ This resource supports:
 | [Get post](../api/post-get.md) | [post](post.md) | Get a specific post. |
 | [Reply to post](../api/post-reply.md) | None | Reply to a post. |
 | [Forward post](../api/post-forward.md) | None | Forward a post. |
-| **Schema extensions** |  |  |
-| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Other group resources** |  |  |
 | [List permission grants](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that are granted to apps to access the group. |
 | **User settings** |  |  |
