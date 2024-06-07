@@ -1,9 +1,9 @@
 ---
 title: "Delete webApplicationSegment"
 description: "Delete a webApplicationSegment object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /webApplicationSegment/$ref
-DELETE /webSegmentConfiguration/applicationSegments/{webApplicationSegmentId}/$ref
+DELETE /applications/<Object Id>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>/$ref
 ```
 
 ## Request headers
@@ -62,14 +61,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/webApplicationSegment
+DELETE https://graph.microsoft.com/beta/applications/<Object Id>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>/$ref
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

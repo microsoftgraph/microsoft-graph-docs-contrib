@@ -1,9 +1,9 @@
 ---
 title: "Get ipApplicationSegment"
 description: "Read the properties and relationships of an ipApplicationSegment object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
+GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{applicationSegment-id}
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
+GET https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/<segmentId>}
 ```
 
 
@@ -84,17 +84,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.ipApplicationSegment",
-    "id": "9ceef8f4-7dff-803a-8046-a3fcb133dc1f",
-    "destinationHost": "String",
-    "destinationType": "String",
-    "port": "Integer",
-    "ports": [
-      "String"
-    ],
-    "protocol": "String"
-  }
+  "id": "<id>",
+  "destinationHost": "15.89.235.8",
+  "port": "90"
 }
 ```
 

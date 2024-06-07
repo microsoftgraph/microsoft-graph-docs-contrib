@@ -1,19 +1,19 @@
 ---
-title: "List corsConfiguration_v2 objects"
-description: "Get a list of the corsConfiguration_v2 objects and their properties."
+title: "Get corsConfiguration_v2"
+description: "Read the properties and relationships of a corsConfiguration_v2 object."
 author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "*entra-applications"
 doc_type: apiPageType
 ---
 
-# List corsConfiguration_v2 objects
+# Get corsConfiguration_v2
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [corsConfiguration_v2](../resources/corsconfiguration_v2.md) objects and their properties.
+Read the properties and relationships of a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "webapplicationsegment-list-corsconfigurations-permissions"
+  "name": "corsconfiguration_v2-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/webapplicationsegment-list-corsconfigurations-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/corsconfiguration_v2-get-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}/corsConfigurations
+GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}/corsConfigurations/{corsConfiguration_v2-Id}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [corsConfiguration_v2](../resources/corsconfiguration_v2.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object in the response body.
 
 ## Examples
 
@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_corsconfiguration_v2"
+  "name": "get_corsconfiguration_v2"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/<ObjectId>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>/corsConfigurations
+GET https://graph.microsoft.com/beta/applications/<ObjectId>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentid>/corsConfigurations/<id>
 ```
 
 
@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.corsConfiguration_v2)"
+  "@odata.type": "microsoft.graph.corsConfiguration_v2"
 }
 -->
 ``` http
@@ -84,14 +84,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value" : [{
+  {
     "id": "<id>",
     "resource" : "/",
     "allowedOrigins" : "*",
     "allowedHeaders" : "*",
     "allowedMethods" : "*",
     "maxAgeInSeconds" : "3000"
-  }]
+  }
 }
 ```
 

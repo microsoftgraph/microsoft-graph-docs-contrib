@@ -1,6 +1,6 @@
 ---
 title: "ipApplicationSegment resource type"
-description: "Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy."
+description: "Represents the segment configurations that are allowed for an on-premises nonweb application published through Microsoft Entra application proxy."
 author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
+Represents the segment configurations that are allowed for an on-premises nonweb application published through Microsoft Entra application proxy and accessed via non-HTTP protocols.
 
 
 Inherits from [applicationSegment](../resources/applicationsegment.md).
@@ -34,16 +34,16 @@ Inherits from [applicationSegment](../resources/applicationsegment.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |destinationHost|String|Either the IP address, IP range, or FQDN of the **applicationSegment**, with or without wildcards.|
-|destinationType|privateNetworkDestinationType|**TODO: Add Description**.The possible values are: `ipAddress`, `ipRange`, `ipRangeCidr`, `fqdn`, `dnsSuffix`, `unknownFutureValue`.|
+|destinationType|privateNetworkDestinationType|The possible values are: `ipAddress`, `ipRange`, `ipRangeCidr`, `fqdn`, `dnsSuffix`, `unknownFutureValue`.|
 |id|String|Identifier for the application segment. Inherited from [applicationSegment](../resources/applicationsegment.md).|
 |port (deprecated)|Int32|Port supported for the application segment. **DO NOT USE**.|
 |ports|String collection|List of ports supported for the application segment.|
-|protocol|privateNetworkProtocol|Indicates the protocol of the network traffic acquired for the application segment.The possible values are: `tcp`, `udp`, `unknownFutureValue`.|
+|protocol|privateNetworkProtocol|Indicates the protocol of the network traffic acquired for the application segment. The possible values are: `tcp`, `udp`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|application|[application](../resources/application.md)|The on-premises non-web application that's published through Microsoft Entra application proxy.|
+|application|[application](../resources/application.md)|The on-premises nonweb application that's published through Microsoft Entra application proxy.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

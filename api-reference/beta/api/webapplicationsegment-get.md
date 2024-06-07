@@ -1,9 +1,9 @@
 ---
 title: "Get webApplicationSegment"
 description: "Read the properties and relationships of a webApplicationSegment object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /webApplicationSegment
-GET /webSegmentConfiguration/applicationSegments/{webApplicationSegmentId}
+GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}
 ```
 
 ## Optional query parameters
@@ -66,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/webApplicationSegment
+GET https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>
 ```
 
 
@@ -85,13 +84,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.webApplicationSegment",
-    "id": "15cdc651-b0fc-e299-9820-5eba4187bba4",
-    "internalUrl": "String",
-    "externalUrl": "String",
-    "alternateUrl": "String"
-  }
+  "id": "<id>",
+  "externalUrl": "https://home.testinggs.com",
+  "internalUrl": "https://home.test.com",
+  "alternateUrl": "",
+  "corsConfigurations": []
 }
 ```
 

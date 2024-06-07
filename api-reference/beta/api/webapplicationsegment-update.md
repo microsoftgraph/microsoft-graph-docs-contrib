@@ -1,9 +1,9 @@
 ---
 title: "Update webApplicationSegment"
 description: "Update the properties of a webApplicationSegment object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /webApplicationSegment
-PATCH /webSegmentConfiguration/applicationSegments/{webApplicationSegmentId}
+PATCH /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}
 ```
 
 ## Request headers
@@ -48,19 +47,18 @@ PATCH /webSegmentConfiguration/applicationSegments/{webApplicationSegmentId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|internalUrl|String|**TODO: Add Description** Optional.|
-|externalUrl|String|**TODO: Add Description** Optional.|
-|alternateUrl|String|**TODO: Add Description** Optional.|
+|internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
+|externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
+|alternateUrl|String|If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
+|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|A collection of CORS Rule definitions for a particular application segment.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [webApplicationSegment](../resources/webapplicationsegment.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -73,14 +71,27 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/webApplicationSegment
+PATCH https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.webApplicationSegment",
-  "internalUrl": "String",
-  "externalUrl": "String",
-  "alternateUrl": "String"
+  "externalUrl" : "https://test.contoso.net",
+  "corsConfigurations": [
+        {
+            "id": "d65fd5ca-8d08-4276-a2a6-0f8488227003",
+            "resource": "/",
+            "allowedOrigins": [
+                "https://blah1.testinggs.com/"
+            ],
+            "allowedHeaders": [
+                "*"
+            ],
+            "allowedMethods": [
+                "*"
+            ],
+            "maxAgeInSeconds": 0
+        }
+    ]
 }
 ```
 
@@ -88,22 +99,12 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.webApplicationSegment",
-  "id": "15cdc651-b0fc-e299-9820-5eba4187bba4",
-  "internalUrl": "String",
-  "externalUrl": "String",
-  "alternateUrl": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

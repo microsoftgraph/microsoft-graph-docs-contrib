@@ -1,9 +1,9 @@
 ---
 title: "Create webApplicationSegment"
 description: "Create a new webApplicationSegment object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /webSegmentConfiguration/applicationSegments
+POST /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments
 ```
 
 ## Request headers
@@ -49,18 +49,17 @@ In the request body, supply a JSON representation of the [webApplicationSegment]
 
 You can specify the following properties when creating a **webApplicationSegment**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|internalUrl|String|**TODO: Add Description** Optional.|
-|externalUrl|String|**TODO: Add Description** Optional.|
-|alternateUrl|String|**TODO: Add Description** Optional.|
+|internalUrl|String|**TODO: Add Description** Required.|
+|externalUrl|String|**TODO: Add Description** Required.|
+|alternateUrl|String|**TODO: Add Description** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [webApplicationSegment](../resources/webapplicationsegment.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -73,14 +72,19 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/webSegmentConfiguration/applicationSegments
+POST https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.webApplicationSegment",
-  "internalUrl": "String",
-  "externalUrl": "String",
-  "alternateUrl": "String"
+  "externalUrl" : "https://fe.contoso.com",
+  "internalUrl" : "https://be.contoso.com",
+  "corsConfigurations" : [{
+    "resource" : "/",
+    "allowedOrigins" : "*",
+    "allowedHeaders" : "*",
+    "allowedMethods" : "*",
+    "maxAgeInSeconds" : "3000"
+  }]
 }
 ```
 
@@ -88,23 +92,12 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.webApplicationSegment"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.webApplicationSegment",
-  "id": "15cdc651-b0fc-e299-9820-5eba4187bba4",
-  "internalUrl": "String",
-  "externalUrl": "String",
-  "alternateUrl": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

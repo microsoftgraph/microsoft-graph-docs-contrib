@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Microsoft Entra application proxy.
+A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via http.
 
 Inherits from [applicationSegment](applicationsegment.md).
 
@@ -26,14 +26,12 @@ Inherits from [applicationSegment](applicationsegment.md).
 |[Get](../api/webapplicationsegment-get.md)|[webApplicationSegment](../resources/webapplicationsegment.md)|Read the properties and relationships of a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
 |[Update](../api/webapplicationsegment-update.md)|[webApplicationSegment](../resources/webapplicationsegment.md)|Update the properties of a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
 |[Delete](../api/websegmentconfiguration-delete-applicationsegments.md)|None|Delete a [webApplicationSegment](../resources/webapplicationsegment.md) object.|
-|[List corsConfigurations](../api/webapplicationsegment-list-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md) collection|Get the corsConfiguration_v2 resources from the corsConfigurations navigation property.|
-|[Create corsConfiguration_v2](../api/webapplicationsegment-post-corsconfigurations.md)|[corsConfiguration_v2](../resources/corsconfiguration_v2.md)|Create a new corsConfiguration_v2 object.|
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, this property contains the user-friendly URL that will point to the traffic manager.|
+|alternateUrl|String|If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
 |externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
 |id|String|The unique identifier that is assigned to an applicationSegment by Microsoft Entra ID. Not nullable. Read-only. Supports `$filter` (`eq`). Inherited from [applicationSegment](applicationsegment.md).|
 |internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
