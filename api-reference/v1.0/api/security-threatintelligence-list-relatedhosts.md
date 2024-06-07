@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [relatedHosts]() resources associated with a sslCertificate.
+Get the list of [relatedHosts](../resources/security-host.md) resources associated with a sslCertificate.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
