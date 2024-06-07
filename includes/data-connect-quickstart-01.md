@@ -16,7 +16,7 @@ Additionally, you can use Data Connect to enable machine learning scenarios for 
 
 ## Get started
 
-In this tutorial, you'll create your first single-tenant Data Connect application. The following is a general flow that explains the Data Connect onboarding.
+In this tutorial, you'll create your first single-tenant Data Connect application. The following general flow explains the Data Connect onboarding process.
 
 ![A screenshot that explains the onboarding flow.](../concepts/images/data-connect-overview-flowchart.png)
 
@@ -35,7 +35,7 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 ### Prerequisites
 
-To complete this tutorial, you'll need the following subscriptions or licenses.
+To complete this tutorial, you need the following subscriptions or licenses.
 
 - For this tutorial, we strongly recommend that you use a Microsoft 365 developer tenant.
 - Your Microsoft 365 and Azure tenants must be in the same Microsoft Entra tenancy.
