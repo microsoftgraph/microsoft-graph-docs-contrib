@@ -3,7 +3,7 @@ title: "Get corsConfiguration_v2"
 description: "Read the properties and relationships of a corsConfiguration_v2 object."
 author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.subservice: "*entra-applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
