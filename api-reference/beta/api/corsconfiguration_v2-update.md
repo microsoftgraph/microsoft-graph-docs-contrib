@@ -1,19 +1,19 @@
 ---
-title: "Create corsConfiguration_v2"
-description: "Create a new corsConfiguration_v2 object."
+title: "Update corsConfiguration_v2"
+description: "Update the properties of a corsConfiguration_v2 object."
 author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Create corsConfiguration_v2
+# Update corsConfiguration_v2
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.
+Update the properties of a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.
 
 ## Permissions
 
@@ -21,12 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "webapplicationsegment-post-corsconfigurations-permissions"
+  "name": "corsconfiguration_v2-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/webapplicationsegment-post-corsconfigurations-permissions.md)]
-
-[!INCLUDE [rbac-app-proxy-write](../includes/rbac-for-apis/rbac-app-proxy-write.md)]
+[!INCLUDE [permissions-table](../includes/permissions/corsconfiguration_v2-update-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /webApplicationSegment/corsConfigurations
+PATCH /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}/corsConfigurations/{corsConfiguration_v2-Id}
 ```
 
 ## Request headers
@@ -47,10 +45,10 @@ POST /webApplicationSegment/corsConfigurations
 
 ## Request body
 
-In the request body, supply a JSON representation of the [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-You can specify the following properties when creating a **corsConfiguration_v2**.
 
+**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |resource|String|**TODO: Add Description** Required.|
@@ -63,7 +61,7 @@ You can specify the following properties when creating a **corsConfiguration_v2*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [corsConfiguration_v2](../resources/corsconfiguration_v2.md) object in the response body.
 
 ## Examples
 
@@ -72,11 +70,11 @@ If successful, this method returns a `201 Created` response code and a [corsConf
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_corsconfiguration_v2_from_"
+  "name": "update_corsconfiguration_v2"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/webApplicationSegment/corsConfigurations
+PATCH https://graph.microsoft.com/beta/applications/<ObjectId>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentid>/corsConfigurations/<id>
 Content-Type: application/json
 
 {
@@ -99,31 +97,12 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.corsConfiguration_v2"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.corsConfiguration_v2",
-  "id": "395c08a3-58b7-0b7a-f7b9-64af88bea09d",
-  "resource": "String",
-  "allowedOrigins": [
-    "String"
-  ],
-  "allowedHeaders": [
-    "String"
-  ],
-  "allowedMethods": [
-    "String"
-  ],
-  "maxAgeInSeconds": "Integer"
-}
+HTTP/1.1 204 No Content
 ```
 

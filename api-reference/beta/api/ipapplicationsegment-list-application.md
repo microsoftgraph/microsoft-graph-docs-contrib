@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/ipapplicationsegment-list-application-permissions.md)]
 
+[!INCLUDE [rbac-app-proxy-read](../includes/rbac-for-apis/rbac-app-proxy-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_application"
+  "name": "list_ipApplicationSegment_application"
 }
 -->
 ``` http

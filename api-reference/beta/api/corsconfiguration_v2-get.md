@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/corsconfiguration_v2-get-permissions.md)]
 
+[!INCLUDE [rbac-app-proxy-read](../includes/rbac-for-apis/rbac-app-proxy-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -84,14 +86,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  {
     "id": "<id>",
-    "resource" : "/",
-    "allowedOrigins" : "*",
-    "allowedHeaders" : "*",
-    "allowedMethods" : "*",
-    "maxAgeInSeconds" : "3000"
-  }
+    "resource": "/",
+    "allowedOrigins": "*",
+    "allowedHeaders": "*",
+    "allowedMethods": "*",
+    "maxAgeInSeconds": "3000"
 }
 ```
 
