@@ -1046,6 +1046,8 @@ items:
       - name: Service-specific limits
         displayName: throttling
         href: throttling-limits.md
+    - name: Work with long-running actions
+      href: long-running-actions-overview.md
     - name: Enable metered APIs
       href: metered-api-setup.md
     - name: Work with Graph Explorer
