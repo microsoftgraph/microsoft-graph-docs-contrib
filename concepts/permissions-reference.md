@@ -7003,4 +7003,4 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 
 + [Overview of Microsoft Graph permissions](permissions-overview.md)
 
-[MSA]: /images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
+[MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
