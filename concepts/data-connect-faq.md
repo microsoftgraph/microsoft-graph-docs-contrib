@@ -39,7 +39,7 @@ There are any number of use cases that can be powered by Microsoft 365 data. The
 
 Viva Insights and Microsoft Graph Data Connect are complementary. Although both rely on Microsoft 365, Viva Insights and Data Connect serve different audiences and needs.
 
-When customers are looking for insights and analytics beyond Viva Insights, Data Connect provides the extensibility to deliver custom requirements. For example, it offers Teams call records and transcripts as well as SharePoint Online data sets, which are not currently in scope for Viva Insights. Additionally, Data Connect raw data provides granular details that aren’t otherwise available from Viva Insights.  
+When customers are looking for insights and analytics beyond Viva Insights, Data Connect provides the extensibility to deliver custom requirements. For example, it offers Teams call records and transcripts as well as SharePoint Online data sets, which aren't currently in scope for Viva Insights. Additionally, Data Connect raw data provides granular details that aren’t otherwise available from Viva Insights.  
 
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
@@ -80,9 +80,9 @@ Microsoft Graph Data Connect charges customers on a monthly basis and also does 
 
 For example, a customer has 20 pipeline runs within the month, each yielding 500 rows. In total, the customer runs pipelines for 10,000 rows that month. However, their bill will not be 10,000 rows/1000 rows = 10 units. 
 
-Instead, the customer will be billed for 20 units because Microsoft Graph Data Connect rounds up fractions. Because 500 rows /1000 rows = 0.5 and 0.5 is a fraction, it will rounds up to 1. The customer will be billed one unit per pipeline run, which results in 20 units billed in total.
+Instead, the customer is billed for 20 units because Microsoft Graph Data Connect rounds up fractions. Because 500 rows/1000 rows = 0.5 and 0.5 is a fraction, it rounds up to 1. The customer is billed one unit per pipeline run, which results in 20 units billed in total.
 
-##  What can I do if a dataset is not yet supported for my tenant?
+##  What can I do if a dataset isn't yet supported for my tenant?
 
 For preview datasets, make sure that you meet the criteria described in [Datasets, regions, and sinks](/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
 
@@ -90,11 +90,11 @@ For questions, create a new Azure support request, including the details mention
 
 ## What scenarios is Microsoft Graph Data Connect best for?
 
-Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. Customers build applications across multiple scenarios, such as organization networks for people productivity nalytics, information oversharing for security and compliance analytics, seller relationship strengths for customer relationship analytics, and more.
+Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. Customers build applications across multiple scenarios, such as organization networks for people productivity analytics, information oversharing for security and compliance analytics, seller relationship strengths for customer relationship analytics, and more.
 
 ## Is it possible for my data to stay within the organization's subscription with Microsoft Graph Data Connect?
 
-Microsoft Graph Data Connect respects your organizational tenant boundary when delivering your requested datasets. Both Azure resources and Microsoft 365 services must be located within the same Microsoft Entra tenancy to access your Microsoft 365 dataset. Cross-tenant dataset access is not available today.
+Microsoft Graph Data Connect respects your organizational tenant boundary when delivering your requested datasets. Both Azure resources and Microsoft 365 services must be located within the same Microsoft Entra tenancy to access your Microsoft 365 dataset. Cross-tenant dataset access isn't available today.
 
 ## Are service principals required with Microsoft Graph Data Connect?
 
@@ -110,7 +110,7 @@ As long as the scope of the data being extracted remains the same for datasets, 
 
 ## Can I deduplicate emails when needed?
 
-When you extract emails from the `Message` dataset, there are often multiple JSON objects for the same email. These duplicates exist because when an email is sent to multiple people, there is a copy of the email in every recipient's mailbox. Because the dataset is extracted from every mailbox, it contains all copies across users. In some scenarios, it might be necessary to keep every copy, but in others, you might want to remove the duplicates.
+When you extract emails from the `Message` dataset, there are often multiple JSON objects for the same email. These duplicates exist because when an email is sent to multiple people, there's a copy of the email in every recipient's mailbox. Because the dataset is extracted from every mailbox, it contains all copies across users. In some scenarios, it might be necessary to keep every copy, but in others, you might want to remove the duplicates.
 
 You can deduplicate the exported JSON objects based on the `internetMessageId` of the messages: two messages with the same `internetMessageId` are duplicate copies of the same instance. Because the duplicates can exist in different blobs, you must deduplicate across all blobs rather than deduplicating in each blob separately.
 
@@ -120,7 +120,7 @@ The extracted data includes some meta properties that don't exist when using the
 
 ## Is hybrid mode tenant setup supported?
 
-If your Microsoft 365 setup has some users in Exchange Online and some users in Exchange on-premises, then the users who are in Exchange on-premises would not be supported. Unfortunately, we do not currently support Data Connect for Exchange on-premises users.
+If your Microsoft 365 setup has some users in Exchange Online and some users in Exchange on-premises, then the users who are in Exchange on-premises would not be supported. Unfortunately, Data Connect currently isn't supported for Exchange on-premises users. 
 
 ## Are resource accounts supported?
 
