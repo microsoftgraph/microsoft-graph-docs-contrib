@@ -395,7 +395,7 @@ In the example, create a new app segment with the following settings:
   "name": "tutorial_configure_entraprivateaccess_configure_applicationsegments"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/applicationSegments
+POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 
 {
    "destinationHost": "test2.com",
@@ -443,7 +443,7 @@ The following request updates an existing segment by changing the protocol to bo
   "name": "tutorial_configure_entraprivateaccess_update_applicationsegments"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/applicationSegments/{segmentID}
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{segmentID}
 
 { 
    "protocol":"tcp,udp" 
@@ -584,7 +584,7 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
   "name": "tutorial_configure_entraprivateaccess_create_dnsSuffix"
 }-->
 ```http
-POST https://graph.microsoft-ppe.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/applicationSegments
+POST https://graph.microsoft-ppe.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 
 { 
    "destinationHost": "app1.dns.com", 
