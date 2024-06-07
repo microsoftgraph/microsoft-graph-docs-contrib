@@ -1,13 +1,13 @@
 ---
 author: "spgraph-docs-team"
 description: "Represents an item in a SharePoint list."
-title: "listItem resource"
+title: listItem resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# listItem resource
+# listItem resource type
 
 Namespace: microsoft.graph
 
@@ -35,9 +35,9 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Update column values][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-| [List documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
-| [Create documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
-| [Restore documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [List](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+| [Create](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+| [Restore](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
 | [Get delta][item-changes]    | GET /items/{item-id}/delta
 
 [Get]: ../api/listitem-get.md

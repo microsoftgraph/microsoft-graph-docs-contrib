@@ -41,7 +41,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
-| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [List operations in a site](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
@@ -51,7 +51,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/baseSitePage-list.md
+[List pages]: ../api/basesitepage-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
 [Search for sites]: ../api/site-search.md

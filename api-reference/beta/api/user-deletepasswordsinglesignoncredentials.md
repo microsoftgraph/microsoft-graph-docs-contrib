@@ -3,7 +3,7 @@ title: "user: deletePasswordSingleSignOnCredentials"
 description: "Delete password-based single sign-on credentials for a service principal that is associated to a user."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete the password-based single sign-on credentials for a given user to a given service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

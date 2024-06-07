@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph.generated.print.printers.item.jobs.item.documents.item.create_upload_session.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
 from msgraph.generated.models.print_document_upload_properties import PrintDocumentUploadProperties
 
 graph_client = GraphServiceClient(credentials, scopes)

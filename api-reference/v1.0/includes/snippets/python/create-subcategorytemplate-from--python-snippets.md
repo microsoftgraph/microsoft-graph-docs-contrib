@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.subcategory_template import SubcategoryTemplate
+from msgraph.generated.models.security.subcategory_template import SubcategoryTemplate
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SubcategoryTemplate(
-	odata_type = "#microsoft.graph.security.subCategoryTemplate",
+	odata_type = "#microsoft.graph.security.subcategoryTemplate",
 	display_name = "Vendor Invoice",
 )
 

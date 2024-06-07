@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 For delegated scenarios, the admin must also have the Global Administrator [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
+> [!NOTE]
+> This information is best updated via automation by using either an HR provisioning, Microsoft Entra Connect, or custom sync solution. For more information about this process, see [How to synchronize attributes for lifecycle workflows](/entra/id-governance/how-to-lifecycle-workflow-sync-attributes).
+
 ## Request
 
 The following example configures September 30, 2022 at 23:59 as the date and time when the user will leave the organization.

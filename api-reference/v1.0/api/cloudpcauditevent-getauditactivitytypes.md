@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get audit activity types by tenant ID.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

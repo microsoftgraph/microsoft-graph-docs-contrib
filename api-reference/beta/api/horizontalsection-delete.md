@@ -38,7 +38,7 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ho
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
@@ -55,10 +55,9 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 ```
 
-ve
 ### Response
 
 <!-- { "blockType": "response" } -->

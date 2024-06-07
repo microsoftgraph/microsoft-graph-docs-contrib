@@ -13,8 +13,8 @@ Thank you for your interest in Microsoft Graph documentation!
 
 You can contribute to [Microsoft Graph documentation](https://developer.microsoft.com/graph/docs) in these ways:
 
-- Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs-contrib).
-- Report documentation bugs by scrolling to the **Feedback** section at the bottom of the related documentation page. You can select **This page** and create new feedback that will be tracked via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/issues).
+- Contribute to articles by creating pull requests (PRs) in the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs-contrib).
+- Report bugs against a documentation page by selecting the "👍🏾Feedback" control below the page title or by scrolling to the **Feedback** section at the bottom of the page and providing details in the form.
       ![Report doc bugs from the related documentation page](includes/images/feedback-menu.png)
 - Add or vote for documentation requests at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 

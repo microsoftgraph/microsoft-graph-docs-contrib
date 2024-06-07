@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Specifies properties common to file plan descriptor resources. Base type for each of the descriptors: [appliedCategory](security-appliedcategory.md), [authority](security-authority.md), [citation](security-citation.md), [department](security-department.md), [filePlanReference](security-fileplanreference.md), and [subCategory](security-subcategory.md).
+Specifies properties common to file plan descriptor resources. Base type for each of the descriptors: [filePlanAppliedCategory](security-fileplanappliedcategory.md), [filePlanAuthority](security-fileplanauthority.md), [filePlanCitation](security-fileplancitation.md), [filePlanDepartment](security-fileplandepartment.md), [filePlanReference](security-fileplanreference.md), and [filePlanSubcategory](security-fileplansubcategory.md).
 
 ## Properties
 |Property|Type|Description|

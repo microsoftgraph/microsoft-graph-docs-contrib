@@ -89,6 +89,18 @@ Namespace: microsoft.graph.identityGovernance
 |unknownFutureValue|
 
 
+### membershipChangeType values 
+
+
+
+|Member|
+|:---|
+|add|
+|remove|
+|unknownFutureValue|
+
+
+
 
 <!--
 {

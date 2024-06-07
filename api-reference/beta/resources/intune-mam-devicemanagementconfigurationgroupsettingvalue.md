@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Value of the GroupSetting
 
 
-Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-mam-devicemanagementconfigurationsettingvalue.md)
+Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-shared-devicemanagementconfigurationsettingvalue.md)
 
 ## Properties
 |Property|Type|Description|

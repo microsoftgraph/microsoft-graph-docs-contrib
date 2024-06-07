@@ -11,6 +11,7 @@ $params = @{
 	supportedServices = @(
 	"Email"
 "OfficeCommunicationsOnline"
+"CustomUrlDomain"
 )
 }
 

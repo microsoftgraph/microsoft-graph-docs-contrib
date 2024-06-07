@@ -23,7 +23,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. |
+|[Get issue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. |
 |[Get post-incident review report](../api/servicehealthissue-incidentreport.md)|Stream|Provides the post incident report (PIR) document of a specified service issue for tenant. |
 
 ## Properties

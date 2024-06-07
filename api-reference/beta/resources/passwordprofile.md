@@ -3,7 +3,7 @@ title: "passwordProfile resource type"
 description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "yyuank"
 ms.reviewer: "iamut"
 ---

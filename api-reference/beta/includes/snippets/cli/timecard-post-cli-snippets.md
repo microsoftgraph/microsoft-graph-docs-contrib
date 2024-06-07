@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta teams schedule time-cards create --team-id {team-id} --body '{\
   "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",\
   "clockInEvent":{\

@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: getCloudPcReviewStatus"
+title: "managedDevice: getCloudPcReviewStatus (deprecated)"
 description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
@@ -7,11 +7,14 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: getCloudPcReviewStatus
+# managedDevice: getCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
 
 Get the review status of a specific Cloud PC device.
 

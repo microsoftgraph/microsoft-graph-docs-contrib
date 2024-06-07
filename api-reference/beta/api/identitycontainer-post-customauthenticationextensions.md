@@ -18,6 +18,10 @@ Create a new [customAuthenticationExtension](../resources/customauthenticationex
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 
+> [!NOTE]
+>
+> You can have a maximum of 100 custom extension policies.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

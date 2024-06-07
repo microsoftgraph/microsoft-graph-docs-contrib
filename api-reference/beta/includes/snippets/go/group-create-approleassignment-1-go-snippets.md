@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "github.com/google/uuid"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewAppRoleAssignment()
 principalId := uuid.MustParse("7679d9a4-2323-44cd-b5c2-673ec88d8b12")
@@ -24,6 +24,7 @@ requestBody.SetResourceId(&resourceId)
 appRoleId := uuid.MustParse("00000000-0000-0000-0000-000000000000")
 requestBody.SetAppRoleId(&appRoleId) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 appRoleAssignments, err := graphClient.Groups().ByGroupId("group-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
 
 

@@ -3,7 +3,7 @@ title: "employeeOrgData resource type"
 description: "Represents organization data associated with a user." 
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "cmmdesai"
 ---
 

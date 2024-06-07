@@ -1,16 +1,18 @@
 ---
-title: "Get subCategoryTemplate"
-description: "Read the properties and relationships of a subCategoryTemplate object."
+title: "Get subcategoryTemplate"
+description: "Read the properties and relationships of a subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get subCategoryTemplate
+# Get subcategoryTemplate
 Namespace: microsoft.graph.security
 
-Read the properties and relationships of a [subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
+Read the properties and relationships of a [subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}
+GET /security/labels/categories/{categoryTemplateId}/subcategories/{subcategoryTemplateId}
 ```
 
 ## Optional query parameters
@@ -41,7 +43,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
 
 ## Examples
 
@@ -55,7 +57,7 @@ Here's an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
+GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subcategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
 
 # [C#](#tab/csharp)
@@ -92,14 +94,13 @@ GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46
 
 ---
 
-
 ### Response
 Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.subCategoryTemplate"
+  "@odata.type": "microsoft.graph.security.subcategoryTemplate"
 }
 -->
 ``` http
@@ -108,7 +109,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+    "@odata.type": "#microsoft.graph.security.subcategoryTemplate",
     "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
     "displayName": "Vendor Invoice",
     "createdBy": {

@@ -20,12 +20,13 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
-|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
+|[Get task details](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
+|[Update task details](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|Detailed information about the approval that is attached to the task.|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
 |forms|[plannerFormsDictionary](plannerformsdictionary.md)| Read-only. Represents a dictionary of data about the forms associated with a task. Each entry in the dictionary is a key-value pair, and the value is a [plannerFormReference](plannerformreference.md) object.|
 |completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
@@ -59,7 +60,8 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "notes": {"@odata.type": "microsoft.graph.itemBody"},
   "previewType": "String",
-  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"}
+  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"},
+  "approvalAttachment": {"@odata.type": "microsoft.graph.plannerBaseApprovalAttachment"}
 }
 ```
 

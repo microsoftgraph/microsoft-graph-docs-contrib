@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-identityContainer-list-healthissues.md)|[microsoft.graph.security.healthIssue](../resources/security-healthissue.md) collection|Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.|
+|[List](../api/security-identitycontainer-list-healthissues.md)|[microsoft.graph.security.healthIssue](../resources/security-healthissue.md) collection|Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.|
 |[Get](../api/security-healthissue-get.md)|[microsoft.graph.security.healthIssue](../resources/security-healthissue.md)|Read the properties and relationships of a [healthIssue](../resources/security-healthissue.md) object.|
 |[Update](../api/security-healthissue-update.md)|[microsoft.graph.security.healthIssue](../resources/security-healthissue.md)|Update the properties of a [healthIssue](../resources/security-healthissue.md) object.|
 

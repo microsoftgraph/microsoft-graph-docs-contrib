@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Planner\Tasks\Item\Details\DetailsRequestBuilderPatchRequestConfiguration;
 use Microsoft\Graph\Generated\Models\PlannerTaskDetails;
+use Microsoft\Graph\Generated\Models\PlannerPreviewType;
 use Microsoft\Graph\Generated\Models\PlannerExternalReferences;
 use Microsoft\Graph\Generated\Models\PlannerExternalReference;
 use Microsoft\Graph\Generated\Models\PlannerChecklistItems;

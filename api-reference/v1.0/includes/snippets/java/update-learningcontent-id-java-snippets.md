@@ -19,6 +19,7 @@ learningContent.setNumberOfPages(9);
 PeriodAndDuration duration = PeriodAndDuration.ofDuration(Duration.parse("PT20M"));
 learningContent.setDuration(duration);
 learningContent.setFormat("Book");
+learningContent.setLevel(Level.Beginner);
 OffsetDateTime createdDateTime = OffsetDateTime.parse("2018-01-01T00:00:00Z");
 learningContent.setCreatedDateTime(createdDateTime);
 OffsetDateTime lastModifiedDateTime = OffsetDateTime.parse("2021-04-01T04:26:06.1995367Z");

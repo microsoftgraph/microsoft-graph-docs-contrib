@@ -1,0 +1,202 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Backup restore root
+  items:
+  - name: Backup restore root
+    href: ../../resources/backuprestoreroot.md
+  - name: Get
+    href: ../../api/backuprestoreroot-get.md
+  - name: Enable
+    href: ../../api/backuprestoreroot-enable.md
+- name: Drive protection rule
+  items:
+  - name: Drive protection rule
+    href: ../../resources/driveprotectionrule.md
+  - name: List
+    href: ../../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md
+  - name: Create
+    href: ../../api/protectionrulebase-post.md
+  - name: Get
+    href: ../../api/protectionrulebase-get.md
+  - name: Delete
+    href: ../../api/protectionrulebase-delete.md
+  - name: Run
+    href: ../../api/protectionrulebase-run.md
+- name: Drive protection unit
+  items:
+  - name: Drive protection unit
+    href: ../../resources/driveprotectionunit.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-driveprotectionunits.md
+- name: Drive restore artifact
+  items:
+  - name: Drive restore artifact
+    href: ../../resources/driverestoreartifact.md
+  - name: List
+    href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
+- name: Exchange protection policy
+  items:
+  - name: Exchange protection policy
+    href: ../../resources/exchangeprotectionpolicy.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-exchangeprotectionpolicies.md
+  - name: Update
+    href: ../../api/exchangeprotectionpolicy-update.md
+- name: Exchange restore session
+  items:
+  - name: Exchange restore session
+    href: ../../resources/exchangerestoresession.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-exchangerestoresessions.md
+  - name: List
+    href: ../../api/exchangerestoresession-list-mailboxrestoreartifacts.md
+  - name: Update
+    href: ../../api/exchangerestoresession-update.md
+- name: Mailbox protection rule
+  items:
+  - name: Mailbox protection rule
+    href: ../../resources/mailboxprotectionrule.md
+  - name: List
+    href: ../../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md
+  - name: Create
+    href: ../../api/protectionrulebase-post.md
+  - name: Get
+    href: ../../api/protectionrulebase-get.md
+  - name: Delete
+    href: ../../api/protectionrulebase-delete.md
+  - name: Run
+    href: ../../api/protectionrulebase-run.md
+- name: Mailbox protection unit
+  items:
+  - name: Mailbox protection unit
+    href: ../../resources/mailboxprotectionunit.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-mailboxprotectionunits.md
+- name: Mailbox restore artifact
+  items:
+  - name: Mailbox restore artifact
+    href: ../../resources/mailboxrestoreartifact.md
+  - name: List
+    href: ../../api/exchangerestoresession-list-mailboxrestoreartifacts.md
+- name: OneDrive for Business protection policy
+  items:
+  - name: OneDrive for Business protection policy
+    href: ../../resources/onedriveforbusinessprotectionpolicy.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies.md
+  - name: Update
+    href: ../../api/onedriveforbusinessprotectionpolicy-update.md
+- name: OneDrive for Business restore session
+  items:
+  - name: OneDrive for Business restore session
+    href: ../../resources/onedriveforbusinessrestoresession.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md
+  - name: List
+    href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
+  - name: Update
+    href: ../../api/onedriveforbusinessrestoresession-update.md
+- name: Protection rule base
+  href: ../../resources/protectionrulebase.md
+- name: Protection unit base
+  items:
+  - name: Protection unit base
+    href: ../../resources/protectionunitbase.md
+  - name: Get
+    href: ../../api/protectionunitbase-get.md
+- name: Restore artifact base
+  href: ../../resources/restoreartifactbase.md
+- name: Restore point
+  items:
+  - name: Restore point
+    href: ../../resources/restorepoint.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-restorepoints.md
+  - name: Search
+    href: ../../api/restorepoint-search.md
+- name: Restore session base
+  items:
+  - name: Restore session base
+    href: ../../resources/restoresessionbase.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-restoresessions.md
+  - name: Get
+    href: ../../api/restoresessionbase-get.md
+  - name: Delete
+    href: ../../api/restoresessionbase-delete.md
+  - name: Activate
+    href: ../../api/restoresessionbase-activate.md
+- name: Service app
+  items:
+  - name: Service app
+    href: ../../resources/serviceapp.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-serviceapps.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-serviceapps.md
+  - name: Get
+    href: ../../api/serviceapp-get.md
+  - name: Delete
+    href: ../../api/backuprestoreroot-delete-serviceapps.md
+  - name: Activate
+    href: ../../api/serviceapp-activate.md
+  - name: Deactivate
+    href: ../../api/serviceapp-deactivate.md
+- name: SharePoint protection policy
+  items:
+  - name: SharePoint protection policy
+    href: ../../resources/sharepointprotectionpolicy.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-sharepointprotectionpolicies.md
+  - name: Update
+    href: ../../api/sharepointprotectionpolicy-update.md
+- name: SharePoint restore session
+  items:
+  - name: SharePoint restore session
+    href: ../../resources/sharepointrestoresession.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-sharepointrestoresessions.md
+  - name: List
+    href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+  - name: Update
+    href: ../../api/sharepointrestoresession-update.md
+- name: Site protection rule
+  items:
+  - name: Site protection rule
+    href: ../../resources/siteprotectionrule.md
+  - name: List
+    href: ../../api/sharepointprotectionpolicy-list-siteinclusionrules.md
+  - name: Create
+    href: ../../api/protectionrulebase-post.md
+  - name: Get
+    href: ../../api/protectionrulebase-get.md
+  - name: Delete
+    href: ../../api/protectionrulebase-delete.md
+  - name: Run
+    href: ../../api/protectionrulebase-run.md
+- name: Site protection unit
+  items:
+  - name: Site protection unit
+    href: ../../resources/siteprotectionunit.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-siteprotectionunits.md
+- name: Site restore artifact
+  items:
+  - name: Site restore artifact
+    href: ../../resources/siterestoreartifact.md
+  - name: List
+    href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+- name: Complex types
+  items:
+  - name: Restore point search response
+    href: ../../resources/restorepointsearchresponse.md
+  - name: Restore point search result
+    href: ../../resources/restorepointsearchresult.md
+  - name: Retention setting
+    href: ../../resources/retentionsetting.md
+  - name: Service status
+    href: ../../resources/servicestatus.md
+  - name: Time period
+    href: ../../resources/timeperiod.md
