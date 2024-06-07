@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}/$ref
+DELETE /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentID}/$ref
 ```
 
 ## Request headers
@@ -61,14 +61,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
+DELETE https://graph.microsoft.com/beta/applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentID}/$ref
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

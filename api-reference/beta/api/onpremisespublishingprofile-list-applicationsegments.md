@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /ipSegmentConfiguration/applicationSegments
-GET /onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/applicationSegments
+GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 ```
 
 ## Optional query parameters
@@ -66,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/ipSegmentConfiguration/applicationSegments
+GET https://graph.microsoft.com/beta/applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 ```
 
 

@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /ipSegmentConfiguration/applicationSegments
-POST /onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/applicationSegments
+POST /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 ```
 
 ## Request headers
@@ -76,18 +75,18 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ipSegmentConfiguration/applicationSegments
+POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.ipApplicationSegment",
-  "destinationHost": "String",
-  "destinationType": "String",
-  "port": "Integer",
-  "ports": [
-    "String"
-  ],
-  "protocol": "String"
+   "destinationHost": "test2.com",
+   "destinationType": "fqdn",
+   "port": 0,
+   "ports": [
+      "445-445",
+      "3389-3389"
+   ],
+   "protocol": "tcp"
 }
 ```
 
@@ -103,19 +102,20 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.ipApplicationSegment",
-  "id": "9ceef8f4-7dff-803a-8046-a3fcb133dc1f",
-  "destinationHost": "String",
-  "destinationType": "String",
-  "port": "Integer",
-  "ports": [
-    "String"
-  ],
-  "protocol": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('8706aca4-94e9-4783-a23d-7dae1599a6e0')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/$entity",
+    "destinationHost": "test2.com",
+    "destinationType": "fqdn",
+    "port": 0,
+    "ports": [
+        "445-445",
+        "3389-3389"
+    ],
+    "protocol": "tcp",
+    "id": "2b52958c-9d0c-449d-a985-c29d488a6335"
 }
 ```
 

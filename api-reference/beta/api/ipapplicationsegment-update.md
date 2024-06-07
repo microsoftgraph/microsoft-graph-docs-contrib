@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
+PATCH /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentID}
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ PATCH /ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ipApplicationSegment](../resources/ipapplicationsegment.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -74,45 +74,24 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ipSegmentConfiguration/applicationSegments/{ipApplicationSegmentId}
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{segmentID}
 Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.ipApplicationSegment",
-  "destinationHost": "String",
-  "destinationType": "String",
-  "port": "Integer",
-  "ports": [
-    "String"
-  ],
-  "protocol": "String"
-}
+{ 
+   "protocol":"tcp,udp" 
+} 
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.ipApplicationSegment",
-  "id": "9ceef8f4-7dff-803a-8046-a3fcb133dc1f",
-  "destinationHost": "String",
-  "destinationType": "String",
-  "port": "Integer",
-  "ports": [
-    "String"
-  ],
-  "protocol": "String"
-}
+HTTP/1.1 204 No Content
 ```
 
