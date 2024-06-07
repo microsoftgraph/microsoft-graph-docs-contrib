@@ -572,7 +572,7 @@ This capability is only available for Global Secure Access private applications 
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing
 
 { 
-   "isDnsResolutionEnabled": "true" 
+   "isDnsResolutionEnabled": true 
 } 
 ```
 
