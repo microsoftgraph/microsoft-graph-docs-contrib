@@ -48,7 +48,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 |**Interactive-voice-response**                                            |                                                                     |                                                                                 |
 | [Play prompt](../api/call-playprompt.md)                                  | [playPromptOperation](playpromptoperation.md)                       | Play prompt in the call.                                                        |
 | [Record response](../api/call-record.md)                                  | [recordOperation](recordoperation.md)                               | Records a short audio response from the caller.                                 |
-| [Cancel media processing](../api/call-cancelMediaProcessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
+| [Cancel media processing](../api/call-cancelmediaprocessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
 | [Subscribe to tone](../api/call-subscribetotone.md)                        | [commsOperation](commsoperation.md)                                 | Subscribe to DTMF tones.                                                        |
 | [Send DTMF tone](../api/call-senddtmftones.md)                      | [commsOperation](commsoperation.md)                         | Send DTMF tones in a call.                                                      |
 | **Self participant operations**                                          |                                                                     |                                                                                 |
@@ -134,7 +134,7 @@ The following JSON representation shows the resource type.
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
-  "myParticipantId": "String",  
+  "myParticipantId": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
