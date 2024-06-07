@@ -54,7 +54,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download file](../api/driveitem-get-contentstream.md)                    | `GET /drive/items/{item-id}/contentStream`                             |
 | [Download specific file format][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
 | [Delete item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
-| [Permanently delete item](../api/driveitem-permanentDelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`                |
+| [Permanently delete item](../api/driveitem-permanentdelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`                |
 | [Restore item](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
 | [Move item](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
 | [Copy item](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
