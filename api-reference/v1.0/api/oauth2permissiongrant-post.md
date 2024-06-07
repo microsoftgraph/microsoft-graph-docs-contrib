@@ -3,7 +3,7 @@ title: "Create oAuth2PermissionGrant (a delegated permission grant)"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.subservice: "entra-sign-in"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

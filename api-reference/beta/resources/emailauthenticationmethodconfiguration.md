@@ -22,9 +22,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-get.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Read the properties and relationships of an emailAuthenticationMethodConfiguration object.|
-|[Update emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md)|None|Update the properties of an emailAuthenticationMethodConfiguration object.|
-|[Delete emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md)|None|Reverts the emailAuthenticationMethodConfiguration object to its default configuration.|
+|[Get](../api/emailauthenticationmethodconfiguration-get.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Read the properties and relationships of an emailAuthenticationMethodConfiguration object.|
+|[Update](../api/emailauthenticationmethodconfiguration-update.md)|None|Update the properties of an emailAuthenticationMethodConfiguration object.|
+|[Delete](../api/emailauthenticationmethodconfiguration-delete.md)|None|Reverts the emailAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties
 

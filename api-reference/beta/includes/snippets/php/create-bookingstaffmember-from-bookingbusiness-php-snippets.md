@@ -5,10 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\BookingStaffMember;
-use Microsoft\Graph\Generated\Models\BookingWorkHours;
-use Microsoft\Graph\Generated\Models\BookingWorkTimeSlot;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingStaffMember;
+use Microsoft\Graph\Beta\Generated\Models\BookingStaffRole;
+use Microsoft\Graph\Beta\Generated\Models\BookingWorkHours;
+use Microsoft\Graph\Beta\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Beta\Generated\Models\BookingWorkTimeSlot;
+use Microsoft\Kiota\Abstractions\Types\Time;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

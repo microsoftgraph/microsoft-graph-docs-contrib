@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphusers.NewItemGetMailTipsPostRequestBody()
 emailAddresses := []string {
@@ -25,6 +25,7 @@ requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
 requestBody.SetMailTipsOptions(&mailTipsOptions) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 getMailTips, err := graphClient.Me().GetMailTips().PostAsGetMailTipsPostResponse(context.Background(), requestBody, nil)
 
 

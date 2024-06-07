@@ -92,7 +92,7 @@ Content-length: 200
     "UDPConnectionPercentage",
     "LastConnectionGateway",
     "LastConnectionProtocol",
-    "EventDateTime"
+    "LastActiveTime"
   ],
   "skip": "0",
   "top": "25",
@@ -193,7 +193,7 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "EventDateTime",
+      "Column": "LastActiveTime",
       "PropertyType": "DateTime"
     }
   ],

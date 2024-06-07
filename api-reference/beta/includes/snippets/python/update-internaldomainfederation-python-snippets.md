@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.internal_domain_federation import InternalDomainFederation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.internal_domain_federation import InternalDomainFederation
+from msgraph_beta.generated.models.federated_idp_mfa_behavior import FederatedIdpMfaBehavior
 
 graph_client = GraphServiceClient(credentials, scopes)
 

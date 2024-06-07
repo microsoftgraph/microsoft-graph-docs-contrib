@@ -5,14 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\PlannerTaskConfiguration;
-use Microsoft\Graph\Generated\Models\PlannerTaskPolicy;
-use Microsoft\Graph\Generated\Models\PlannerTaskRoleBasedRule;
-use Microsoft\Graph\Generated\Models\PlannerRelationshipBasedUserType;
-use Microsoft\Graph\Generated\Models\PlannerTaskPropertyRule;
-use Microsoft\Graph\Generated\Models\PlannerFieldRules;
-use Microsoft\Graph\Generated\Models\PlannerRuleOverride;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskPolicy;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskRoleBasedRule;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRelationshipBasedUserType;
+use Microsoft\Graph\Beta\Generated\Models\PlannerUserRoleKind;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRelationshipUserRoles;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskPropertyRule;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRuleKind;
+use Microsoft\Graph\Beta\Generated\Models\PlannerFieldRules;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRuleOverride;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

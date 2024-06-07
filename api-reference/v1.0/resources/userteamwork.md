@@ -17,7 +17,7 @@ Represents a container for the range of Microsoft Teams functionalities that are
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get userTeamwork](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
+|[Get](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
 
 ## Properties
 

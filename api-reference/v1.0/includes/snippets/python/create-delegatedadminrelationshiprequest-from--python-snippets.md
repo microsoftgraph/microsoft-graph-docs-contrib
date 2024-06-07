@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.delegated_admin_relationship_request import DelegatedAdminRelationshipRequest
+from msgraph.generated.models.delegated_admin_relationship_request_action import DelegatedAdminRelationshipRequestAction
 
 graph_client = GraphServiceClient(credentials, scopes)
 
