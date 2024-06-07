@@ -216,6 +216,29 @@ Content-Type: application/json
       ]
     }
   },
+  "tenantRestrictions":
+  {
+    "usersAndGroups":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
   "invitationRedemptionIdentityProviderConfiguration": 
   { 
     "primaryIdentityProviderPrecedenceOrder": [ 
