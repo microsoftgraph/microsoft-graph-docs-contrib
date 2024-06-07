@@ -126,43 +126,40 @@ The API reference documentation provides examples for managing permissions throu
 
 ### What permissions do I need to manage permissions?
 
-The permission requirements vary by level, in all delegated cases the current user also needs sufficient permissions to manage access by calling the API. The below table includes scopes and scopes + assigned roles to the parent resource. For example  if you have the Sites.Selected scope AND FullControl role (Sites.Selected+FullControl) you can manage resources within that site collection.
+The permission requirements vary by level. In all delegated, cases the current user also needs sufficient permissions to manage access by calling the API. The following table includes scopes and scopes + assigned roles to the parent resource. For example, if you have the Sites.Selected scope AND FullControl role (Sites.Selected+FullControl), you can manage resources within that site collection.
 
 |Resource|Required resource permissions|Notes
 |---|---|---|
-|sites|Sites.FullControl.All|Because you can grant full control permissions to a site collection using Sites.Selected this requirement is necessarily high|
-|lists|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner||
-|list items|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner, Lists.SelectedOperations.Selected+FullControl, Lists.SelectedOperations.Selected+Owner||
-|files|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner, Lists.SelectedOperations.Selected+FullControl, Lists.SelectedOperations.Selected+Owner||
+|site|Sites.FullControl.All|Because you can grant full control permissions to a site collection by using Sites.Selected, this requirement is necessarily high.|
+|list|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner||
+|listItem|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner, Lists.SelectedOperations.Selected+FullControl, Lists.SelectedOperations.Selected+Owner||
+|file|Sites.FullControl.All, Sites.Selected+FullControl, Sites.Selected+Owner, Lists.SelectedOperations.Selected+FullControl, Lists.SelectedOperations.Selected+Owner||
 
 
-### How Access is Calculated
+### How access is calculated
 
-There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
+There are two types of tokens: application only and delegated. Application only scenarios have no user present and are considered higher risk. With delegated, the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated is preferred when possible, but both modes are available to meet your needs.
 
-We conceptually store a tuple of Application ID, Resource ID, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permission is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1."
+A tuple of application ID, resource ID, and role is stored. This means that the [application] has [role] access to the [resource]. You specify the application and role when a permission is created through the API, and the resolved path gives you the resource. For example, application Z has read access to the list at /sites/dev/lists/list1.
 
-When calculating access, we use the values provided in the token to roughly follow this flow:
+To calculate access, use the values provided in the token to roughly follow this flow:
 
-1. Review Token type (Application/Delegated)
-2. Find Application record for supplied application ID on resource or a securable hierarchical parent (inheritance)
-3. Then:
+1. Review token type (application or delegated).
+2. Find the application record for the supplied application ID on the resource or a securable hierarchical parent (inheritance).
+3. One of the following occurs:
 
-    *Application Access*
+    - For application access, if a record is found for the application, and the role allows for the operation requested (read an item, update a list), access is granted.
+    - In the delegated scenario, both the application and user permissions are calculated and then intersected, which means that the application can never exceed the user's permissions, and the user can never exceed (through the application) the consented application permissions.
 
-    For application access if a record is found for the application, and the role allows for the operation requested (read an item, update a list) then access is granted
+### Consent behavior notes
 
-    *Delegated Access*
+The following notes apply to consent behavior:
 
-    In the delegated scenario both the application and user permissions are calculated and then intersected, meaning the application can never exceed the user's permissions and the user can never exceed (through the application) the consented application permissions
-
-### Behavior of Consents / Notes
-
-* Applications can have multiple Selected consents and for those consents to apply at various level across the tenant
-* Application access is lost as soon as a scope is revoked, if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoked it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
-* If an application has permissions to a list via a call to list/permissions, and the access is removed via a call to DELETE lists/permissions/id it loses access to that list and all items within that list, regardless of any explicit permissions set on those list items. You can later re-grant specific item permissions if needed.
-* Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Allowing applications to ONLY have access at a specific level
-* Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and we honor any scopes presented in the token
+* Applications can have multiple Selected consents and those consents can apply at various levels across the tenant.
+* Application access is lost as soon as a scope is revoked. If an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection, and then the Sites.* consent is revoked, the application maintains access to the list it was given specific access to via the Lists.* consent and the previous call to `list/permissions`.
+* If an application has permissions to a list via a call to `list/permissions`, and the access is removed via a call to `DELETE lists/permissions/id`, it loses access to that list and all items within that list, regardless of any explicit permissions set on those list items. You can later re-grant specific item permissions if needed.
+* Higher-level scopes such as Sites.* can be used to grant file-specific permissions, but lower scopes can never provide access to higher-level resources. This allows applications to have access at a specific level.
+* Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and any scopes presented in the token are honored.
 
 
 
