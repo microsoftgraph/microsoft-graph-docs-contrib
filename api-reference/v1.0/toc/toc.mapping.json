@@ -1,6 +1,20 @@
 {
   "tocNodes": [
     {
+      "name": "Users",
+      "overview": "../../resources/users.md",
+      "resources": [
+        "user"
+      ]
+    },
+    {
+      "name": "Groups",
+      "overview": "../../resources/groups-overview.md",
+      "resources": [
+        "group"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
