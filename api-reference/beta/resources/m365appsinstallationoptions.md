@@ -20,8 +20,8 @@ Represents the tenant-level installation options for Microsoft 365 apps. You can
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get m365AppsInstallationOptions](../api/m365AppsInstallationOptions-get.md)|[m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Get the tenant-level installation options for Microsoft 365 apps.|
-|[Update m365AppsInstallationOptions](../api/m365AppsInstallationOptions-update.md)|None|Update tenant-level installation options for Microsoft 365 apps.|
+|[Get m365AppsInstallationOptions](../api/m365appsinstallationoptions-get.md)|m365AppsInstallationOptions|Get the tenant-level installation options for Microsoft 365 apps.|
+|[Update m365AppsInstallationOptions](../api/m365appsinstallationoptions-update.md)|None|Update tenant-level installation options for Microsoft 365 apps.|
 
 ## Properties
 
