@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/onenote-api-overview.md
@@ -7,7 +10,7 @@ items:
     href: ../../resources/notebook.md
   - name: Get notebook
     href: ../../api/notebook-get.md
-  - name: getRecentNotebooks
+  - name: Get recent notebooks
     href: ../../api/notebook-getrecentnotebooks.md
   - name: getNotebookFromWebUrl
     href: ../../api/notebook-getnotebookfromweburl.md
@@ -19,7 +22,7 @@ items:
     href: ../../api/notebook-post-sections.md
   - name: List sections
     href: ../../api/notebook-list-sections.md
-  - name: copyNotebook
+  - name: Copy notebook
     href: ../../api/notebook-copynotebook.md
 - name: OneNote
   items:
@@ -49,17 +52,17 @@ items:
     href: ../../resources/page.md
   - name: Get page
     href: ../../api/page-get.md
-  - name: Update page content
+  - name: Update page
     href: ../../api/page-update.md
   - name: Delete page
     href: ../../api/page-delete.md
-  - name: copyToSection
+  - name: Copy to section
     href: ../../api/page-copytosection.md
 - name: OneNote resource
   items:
   - name: OneNote resource
     href: ../../resources/resource.md
-  - name: Get resource binary data
+  - name: Get resource
     href: ../../api/resource-get.md
 - name: OneNote section
   items:
@@ -71,15 +74,15 @@ items:
     href: ../../api/section-post-pages.md
   - name: List pages
     href: ../../api/section-list-pages.md
-  - name: copyToNotebook
+  - name: Copy to notebook
     href: ../../api/section-copytonotebook.md
-  - name: copyToSectionGroup
+  - name: Copy to section group
     href: ../../api/section-copytosectiongroup.md
 - name: Recent notebook
   items:
   - name: Recent notebook
     href: ../../resources/recentnotebook.md
-  - name: getRecentNotebooks
+  - name: Get recent notebooks
     href: ../../api/notebook-getrecentnotebooks.md
 - name: Section group
   items:

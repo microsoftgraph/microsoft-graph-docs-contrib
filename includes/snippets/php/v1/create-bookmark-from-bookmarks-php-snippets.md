@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\Search\Bookmark
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\Search\AnswerKeyword
-use Microsoft\Graph\Generated\Models\Search\State;
+use Microsoft\Graph\Generated\Models\Search\Bookmark;
+use Microsoft\Graph\Generated\Models\Search\AnswerKeyword;
+use Microsoft\Graph\Generated\Models\Search\AnswerState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

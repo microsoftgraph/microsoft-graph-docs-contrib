@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSyst
 use Microsoft\Graph\Beta\Generated\Models\GcpActionPermissionsDefinitionAction;
 use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
 use Microsoft\Graph\Beta\Generated\Models\EdIdentitySource;
-use Microsoft\Graph\Beta\Generated\Models\IdentityType;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionIdentityType;
 use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
 use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
 use Microsoft\Graph\Beta\Generated\Models\TicketInfo;

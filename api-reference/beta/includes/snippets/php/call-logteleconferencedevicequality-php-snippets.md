@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Communications\Calls\LogTeleconferenceDeviceQuality\LogTeleconferenceDeviceQualityPostRequestBody
+use Microsoft\Graph\Beta\Generated\Communications\Calls\LogTeleconferenceDeviceQuality\LogTeleconferenceDeviceQualityPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\TeleconferenceDeviceQuality;
 use Microsoft\Graph\Beta\Generated\Models\TeleconferenceDeviceMediaQuality;
 use Microsoft\Graph\Beta\Generated\Models\TeleconferenceDeviceAudioQuality;

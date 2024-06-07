@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object in draft mode.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,6 +70,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -79,7 +82,10 @@ Content-Type: application/json
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
@@ -97,6 +103,16 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventtownhall-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -116,7 +132,10 @@ Content-Type: application/json
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
     "status": "draft",
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 

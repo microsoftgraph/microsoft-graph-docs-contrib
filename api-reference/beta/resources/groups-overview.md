@@ -32,9 +32,9 @@ Microsoft Entra ID supports the following types of groups.
 > [!NOTE]
 > Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which can't be managed or retrieved through Microsoft Graph.
 
-In Microsoft Graph, the type of group can be identified by the settings of its **groupType**, **mailEnabled**, and **securityEnabled** properties. The following table indicates how to differentiate the groups by their settings, and whether the group types can be managed through the Microsoft Graph groups APIs.
+In Microsoft Graph, the type of group can be identified by the settings of its **groupTypes**, **mailEnabled**, and **securityEnabled** properties. The following table indicates how to differentiate the groups by their settings, and whether the group types can be managed through the Microsoft Graph groups APIs.
 
-| Type |groupType | mailEnabled | securityEnabled | Created and managed via the groups APIs |
+| Type |groupTypes | mailEnabled | securityEnabled | Created and managed via the groups APIs |
 |--|--|--|--|--|
 | [Microsoft 365 groups](#microsoft-365-groups) | `["Unified"]` | `true` | `true` or `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `false` | `true` | Yes |
@@ -142,7 +142,7 @@ The following example shows a complete rule.
 
 You can combine multiple expressions in a rule using the `and`, `or`, and `not` operators.
 
-The **groupType** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
+The **groupTypes** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
 

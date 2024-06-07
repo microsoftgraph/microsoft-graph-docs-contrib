@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Chats\Item\InstalledApps\Item\Upgrade\UpgradePostRequestBody
+use Microsoft\Graph\Beta\Generated\Chats\Item\InstalledApps\Item\Upgrade\UpgradePostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

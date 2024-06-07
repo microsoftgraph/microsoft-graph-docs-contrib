@@ -22,7 +22,7 @@ scope := "scope-value"
 requestBody.SetScope(&scope) 
 comment := "comment-value"
 requestBody.SetComment(&comment) 
-value := graphmodels.NewJson()
+value := graph.Newvalue()
 requestBody.SetValue(value)
 visible := true
 requestBody.SetVisible(&visible) 

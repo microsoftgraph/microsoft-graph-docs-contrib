@@ -1,83 +1,82 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/industrydata-overview.md
-- name: Azure Data Lake connector
-  items:
-  - name: Azure Data Lake connector
-    href: ../../resources/industrydata-azuredatalakeconnector.md
-  - name: Create azureDataLakeConnector
-    href: ../../api/industrydata-azuredatalakeconnector-post.md
-  - name: List azureDataLakeConnectors
-    href: ../../api/industrydata-azuredatalakeconnector-list.md
-  - name: Get azureDataLakeConnector
-    href: ../../api/industrydata-azuredatalakeconnector-get.md
-  - name: Update azureDataLakeConnector
-    href: ../../api/industrydata-azuredatalakeconnector-update.md
-  - name: Delete azureDataLakeConnector
-    href: ../../api/industrydata-azuredatalakeconnector-delete.md
-  - name: getUploadSession
-    href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
 - name: File validate operation
   items:
   - name: File validate operation
     href: ../../resources/industrydata-filevalidateoperation.md
-  - name: List fileValidateOperations
+  - name: List
     href: ../../api/industrydata-filevalidateoperation-list.md
-  - name: Get fileValidateOperation
+  - name: Get
     href: ../../api/industrydata-filevalidateoperation-get.md
-- name: Inbound file flow
-  items:
-  - name: Inbound file flow
-    href: ../../resources/industrydata-inboundfileflow.md
-  - name: Create inboundFileFlow
-    href: ../../api/industrydata-inboundfileflow-post.md
-  - name: List inboundFileFlows
-    href: ../../api/industrydata-inboundfileflow-list.md
-  - name: Get inboundFileFlow
-    href: ../../api/industrydata-inboundfileflow-get.md
-  - name: Update inboundFileFlow
-    href: ../../api/industrydata-inboundfileflow-update.md
-  - name: Delete inboundFileFlow
-    href: ../../api/industrydata-inboundfileflow-delete.md
 - name: Inbound flow
   items:
   - name: Inbound flow
     href: ../../resources/industrydata-inboundflow.md
-  - name: Create inboundFlow
-    href: ../../api/industrydata-inboundflow-post.md
-  - name: List inboundFlows
+  - name: List
     href: ../../api/industrydata-inboundflow-list.md
-  - name: Get inboundFlow
+  - name: Get
     href: ../../api/industrydata-inboundflow-get.md
-  - name: Update inboundFlow
-    href: ../../api/industrydata-inboundflow-update.md
-  - name: Delete inboundFlow
+  - name: Delete
     href: ../../api/industrydata-inboundflow-delete.md
+  - name: Inbound API flow
+    items:
+    - name: Inbound API flow
+      href: ../../resources/industrydata-inboundapiflow.md
+    - name: Create
+      href: ../../api/industrydata-inboundapiflow-post.md
+    - name: Update
+      href: ../../api/industrydata-inboundapiflow-update.md
+  - name: Inbound file flow
+    items:
+    - name: Inbound file flow
+      href: ../../resources/industrydata-inboundfileflow.md
+    - name: Create
+      href: ../../api/industrydata-inboundfileflow-post.md
+    - name: Update
+      href: ../../api/industrydata-inboundfileflow-update.md
 - name: Industry data connector
   items:
   - name: Industry data connector
     href: ../../resources/industrydata-industrydataconnector.md
-  - name: Create industryDataConnector
-    href: ../../api/industrydata-industrydataconnector-post.md
-  - name: List industryDataConnectors
+  - name: List
     href: ../../api/industrydata-industrydataconnector-list.md
-  - name: Get industryDataConnector
+  - name: Get
     href: ../../api/industrydata-industrydataconnector-get.md
-  - name: Update industryDataConnector
-    href: ../../api/industrydata-industrydataconnector-update.md
-  - name: Delete industryDataConnector
+  - name: Delete
     href: ../../api/industrydata-industrydataconnector-delete.md
-  - name: validate
+  - name: Validate
     href: ../../api/industrydata-industrydataconnector-validate.md
+  - name: Azure Data Lake connector
+    items:
+    - name: Azure Data Lake connector
+      href: ../../resources/industrydata-azuredatalakeconnector.md
+    - name: Create
+      href: ../../api/industrydata-azuredatalakeconnector-post.md
+    - name: Update
+      href: ../../api/industrydata-azuredatalakeconnector-update.md
+    - name: Get upload session
+      href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
+  - name: One roster API data connector
+    items:
+    - name: One roster API data connector
+      href: ../../resources/industrydata-onerosterapidataconnector.md
+    - name: Create
+      href: ../../api/industrydata-onerosterapidataconnector-post.md
+    - name: Update
+      href: ../../api/industrydata-onerosterapidataconnector-update.md
 - name: Industry data run
   items:
   - name: Industry data run
     href: ../../resources/industrydata-industrydatarun.md
-  - name: List industryDataRuns
+  - name: List
     href: ../../api/industrydata-industrydatarun-list.md
-  - name: Get industryDataRun
+  - name: Get
     href: ../../api/industrydata-industrydatarun-get.md
-  - name: getStatistics
+  - name: Get statistics
     href: ../../api/industrydata-industrydatarun-getstatistics.md
 - name: Outbound provisioning flow set
   items:
@@ -101,93 +100,101 @@ items:
   items:
   - name: Provisioning flow
     href: ../../resources/industrydata-provisioningflow.md
-  - name: List provisioningFlow objects
+  - name: List
     href: ../../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
-  - name: Create provisioningFlow
+  - name: Create
     href: ../../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+  - name: Reset
+    href: ../../api/industrydata-provisioningflow-reset.md
   - name: Administrative unit provisioning flow
     items:
     - name: Administrative unit provisioning flow
       href: ../../resources/industrydata-administrativeunitprovisioningflow.md
-    - name: Get administrativeUnitProvisioningFlow
+    - name: Get
       href: ../../api/industrydata-administrativeunitprovisioningflow-get.md
-    - name: Update administrativeUnitProvisioningFlow
+    - name: Update
       href: ../../api/industrydata-administrativeunitprovisioningflow-update.md
-    - name: Delete administrativeUnitProvisioningFlow
+    - name: Delete
       href: ../../api/industrydata-administrativeunitprovisioningflow-delete.md
   - name: Class group provisioning flow
     items:
     - name: Class group provisioning flow
       href: ../../resources/industrydata-classgroupprovisioningflow.md
-    - name: Get classGroupProvisioningFlow
+    - name: Get
       href: ../../api/industrydata-classgroupprovisioningflow-get.md
-    - name: Update classGroupProvisioningFlow
+    - name: Update
       href: ../../api/industrydata-classgroupprovisioningflow-update.md
-    - name: Delete classGroupProvisioningFlow
+    - name: Delete
       href: ../../api/industrydata-classgroupprovisioningflow-delete.md
   - name: Security group provisioning flow
     items:
     - name: Security group provisioning flow
       href: ../../resources/industrydata-securitygroupprovisioningflow.md
-    - name: Get securityGroupProvisioningFlow
+    - name: Get
       href: ../../api/industrydata-securitygroupprovisioningflow-get.md
-    - name: Update securityGroupProvisioningFlow
+    - name: Update
       href: ../../api/industrydata-securitygroupprovisioningflow-update.md
-    - name: Delete securityGroupProvisioningFlow
+    - name: Delete
       href: ../../api/industrydata-securitygroupprovisioningflow-delete.md
   - name: User provisioning flow
     items:
     - name: User provisioning flow
       href: ../../resources/industrydata-userprovisioningflow.md
-    - name: Get userProvisioningFlow
+    - name: Get
       href: ../../api/industrydata-userprovisioningflow-get.md
-    - name: Update userProvisioningFlow
+    - name: Update
       href: ../../api/industrydata-userprovisioningflow-update.md
-    - name: Delete userProvisioningFlow
+    - name: Delete
       href: ../../api/industrydata-userprovisioningflow-delete.md
 - name: Reference definition
   items:
   - name: Reference definition
     href: ../../resources/industrydata-referencedefinition.md
-  - name: List referenceDefinitions
+  - name: List
     href: ../../api/industrydata-referencedefinition-list.md
-  - name: Get referenceDefinition
+  - name: Get
     href: ../../api/industrydata-referencedefinition-get.md
+  - name: Create
+    href: ../../api/industrydata-referencedefinition-post.md
+  - name: Update
+    href: ../../api/industrydata-referencedefinition-update.md
+  - name: Delete
+    href: ../../api/industrydata-referencedefinition-delete.md
 - name: Role group
   items:
   - name: Role group
     href: ../../resources/industrydata-rolegroup.md
-  - name: List roleGroups
+  - name: List
     href: ../../api/industrydata-rolegroup-list.md
-  - name: Get roleGroup
+  - name: Get
     href: ../../api/industrydata-rolegroup-get.md
 - name: Source system definition
   items:
   - name: Source system definition
     href: ../../resources/industrydata-sourcesystemdefinition.md
-  - name: Create sourceSystemDefinition
+  - name: Create
     href: ../../api/industrydata-sourcesystemdefinition-post.md
-  - name: List sourceSystemDefinitions
+  - name: List
     href: ../../api/industrydata-sourcesystemdefinition-list.md
-  - name: Get sourceSystemDefinition
+  - name: Get
     href: ../../api/industrydata-sourcesystemdefinition-get.md
-  - name: Update sourceSystemDefinition
+  - name: Update
     href: ../../api/industrydata-sourcesystemdefinition-update.md
-  - name: Delete sourceSystemDefinition
+  - name: Delete
     href: ../../api/industrydata-sourcesystemdefinition-delete.md
 - name: Year time period definition
   items:
   - name: Year time period definition
     href: ../../resources/industrydata-yeartimeperioddefinition.md
-  - name: Create yearTimePeriodDefinition
+  - name: Create
     href: ../../api/industrydata-yeartimeperioddefinition-post.md
-  - name: List yearTimePeriodDefinitions
+  - name: List
     href: ../../api/industrydata-yeartimeperioddefinition-list.md
-  - name: Get yearTimePeriodDefinition
+  - name: Get
     href: ../../api/industrydata-yeartimeperioddefinition-get.md
-  - name: Update yearTimePeriodDefinition
+  - name: Update
     href: ../../api/industrydata-yeartimeperioddefinition-update.md
-  - name: Delete yearTimePeriodDefinition
+  - name: Delete
     href: ../../api/industrydata-yeartimeperioddefinition-delete.md
 - name: Complex types
   items:
@@ -207,6 +214,8 @@ items:
     href: ../../resources/industrydata-enrollmentmappings.md
   - name: File data connector
     href: ../../resources/industrydata-filedataconnector.md
+  - name: File format reference value
+    href: ../../resources/industrydata-fileformatreferencevalue.md
   - name: File upload session
     href: ../../resources/industrydata-fileuploadsession.md
   - name: Filter
@@ -229,6 +238,12 @@ items:
     href: ../../resources/industrydata-industrydatarunrolecountmetric.md
   - name: Industry data run statistics
     href: ../../resources/industrydata-industrydatarunstatistics.md
+  - name: OAuth 1 client credential
+    href: ../../resources/industrydata-oauth1clientcredential.md
+  - name: OAuth 2 client credential
+    href: ../../resources/industrydata-oauth2clientcredential.md
+  - name: OAuth client credential
+    href: ../../resources/industrydata-oauthclientcredential.md
   - name: Outbound flow activity
     href: ../../resources/industrydata-outboundflowactivity.md
   - name: Password settings

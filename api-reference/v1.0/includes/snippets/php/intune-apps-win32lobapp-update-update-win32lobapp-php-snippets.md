@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Win32LobApp;
 use Microsoft\Graph\Generated\Models\MimeContent;
-use Microsoft\Graph\Generated\Models\PublishingState;
-use Microsoft\Graph\Generated\Models\ApplicableArchitectures;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\WindowsArchitecture;
 use Microsoft\Graph\Generated\Models\Win32LobAppRule;
 use Microsoft\Graph\Generated\Models\Win32LobAppRegistryRule;
-use Microsoft\Graph\Generated\Models\RuleType;
-use Microsoft\Graph\Generated\Models\OperationType;
-use Microsoft\Graph\Generated\Models\Operator;
+use Microsoft\Graph\Generated\Models\Win32LobAppRuleType;
+use Microsoft\Graph\Generated\Models\Win32LobAppRegistryRuleOperationType;
+use Microsoft\Graph\Generated\Models\Win32LobAppRuleOperator;
 use Microsoft\Graph\Generated\Models\Win32LobAppInstallExperience;
-use Microsoft\Graph\Generated\Models\RunAsAccount;
-use Microsoft\Graph\Generated\Models\DeviceRestartBehavior;
+use Microsoft\Graph\Generated\Models\RunAsAccountType;
+use Microsoft\Graph\Generated\Models\Win32LobAppRestartBehavior;
 use Microsoft\Graph\Generated\Models\Win32LobAppReturnCode;
-use Microsoft\Graph\Generated\Models\Type;
+use Microsoft\Graph\Generated\Models\Win32LobAppReturnCodeType;
 use Microsoft\Graph\Generated\Models\Win32LobAppMsiInformation;
-use Microsoft\Graph\Generated\Models\PackageType;
+use Microsoft\Graph\Generated\Models\Win32LobAppMsiPackageType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
