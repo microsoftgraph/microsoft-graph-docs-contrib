@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [application](../resour
 
 You can specify the following properties when creating an **application**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |onPremisesPublishing|[onPremisesPublishing](../resources/onpremisespublishing.md)|**TODO: Add Description** Optional.|

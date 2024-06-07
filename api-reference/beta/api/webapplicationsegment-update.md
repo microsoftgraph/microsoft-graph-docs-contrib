@@ -52,7 +52,7 @@ PATCH /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/
 |internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
 |externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
 |alternateUrl|String|If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
-|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|A collection of CORS Rule definitions for a particular application segment.|
+|corsConfigurations|[corsConfiguration_v2](../resources/corsconfiguration_v2.md) collection|A collection of CORS Rule definitions for a particular application segment.|
 
 
 

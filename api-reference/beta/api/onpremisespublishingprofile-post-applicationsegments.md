@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [ipApplicationSegment](
 
 You can specify the following properties when creating an **ipApplicationSegment**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |destinationHost|String|**TODO: Add Description** Optional.|

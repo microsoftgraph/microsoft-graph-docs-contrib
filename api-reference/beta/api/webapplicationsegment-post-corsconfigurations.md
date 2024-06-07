@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [corsConfiguration_v2](
 
 You can specify the following properties when creating a **corsConfiguration_v2**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |resource|String|**TODO: Add Description** Required.|
