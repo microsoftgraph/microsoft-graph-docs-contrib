@@ -10,16 +10,16 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookTableRow workbookTableRow = new WorkbookTableRow();
 LinkedList<LinkedList<Number>> values = new LinkedList<LinkedList<Number>>();
-LinkedList<Number> json = new LinkedList<Number>();
-json.add(1);
-json.add(2);
-json.add(3);
-values.add(json);
-LinkedList<Number> json1 = new LinkedList<Number>();
-json1.add(4);
-json1.add(5);
-json1.add(6);
-values.add(json1);
+LinkedList<Number> property = new LinkedList<Number>();
+property.add(1);
+property.add(2);
+property.add(3);
+values.add(property);
+LinkedList<Number> property4 = new LinkedList<Number>();
+property4.add(4);
+property4.add(5);
+property4.add(6);
+values.add(property4);
 workbookTableRow.setValues(values);
 WorkbookTableRow result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").rows().post(workbookTableRow, requestConfiguration -> {
 	requestConfiguration.headers.add("Prefer", "respond-async");

@@ -82,7 +82,10 @@ Content-Type: application/json
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
@@ -129,7 +132,10 @@ Content-Type: application/json
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
     "status": "draft",
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2023-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 

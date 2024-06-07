@@ -17,7 +17,7 @@ mgc employee-experience learning-providers learning-course-activities patch --le
     "dateTime": "2022-09-22T16:05:00.0000000",\
     "timeZone": "UTC"\
   },\
-  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",\
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",\
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",\
   "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",\
   "notes": {\

@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/authenticationEventsFlows/0313c
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {
