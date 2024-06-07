@@ -23,19 +23,17 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[List group usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) objects granted to the group.|
 |[Get user usageRight](../api/cloudlicensing-usercloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object granted to the user.|
 |[Get group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object granted to the group.|
-|[Get subscribedSku for user usageRight](../api/cloudlicensing-usercloudlicensing-get-usageright-subscribedsku.md)|[microsoft.graph.subscribedSku](../resources/subscribedsku.md) collection|Get the [microsoft.graph.subscribedSku](../resources/subscribedsku.md) associated with a user's [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md).|
-|[Get subscribedSku for group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright-subscribedsku.md)|[microsoft.graph.subscribedSku](../resources/subscribedsku.md) collection|Get the [microsoft.graph.subscribedSku](../resources/subscribedsku.md) associated with a group's [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for the usageRight. It should be treated as an opaque identifier. Inherited from [microsoft.graph.entity](../resources/entity.md). Not nullable. Read-only.|
-|services|[microsoft.graph.cloudLicensing.service](../resources/cloudlicensing-service.md) collection| Information about the services associated with the usageRight. Not nullable. Read-only. Supports `$filter` on the **planId** and **planName** properties.|
+|services|[microsoft.graph.cloudLicensing.service](../resources/cloudlicensing-service.md) collection| Information about the services associated with the usageRight. Not nullable. Read-only. Supports `$filter` on the **planId** property. |
+|skuId|Guid| Unique identifier (GUID) for the service SKU. Equal to the **skuId** property on the related [subscribedSku](subscribedsku.md) object. Read-only. Supports `$filter`. |
+|skuPartNumber|String| Unique SKU display name. Equal to the **skuPartNumber** on the related [subscribedSku](subscribedsku.md) object; for example, `AAD_Premium`. Read-only. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|subscribedSku|[subscribedSku](../resources/subscribedsku.md)|The [subscribedSku](../resources/subscribedsku.md) associated with this usageRight, if applicable. Nullable. Read-only.|
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -55,6 +53,8 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.cloudLicensing.service"
     }
-  ]
+  ],
+  "skuId": "Guid",
+  "skuPartNumber": "String"
 }
 ```
