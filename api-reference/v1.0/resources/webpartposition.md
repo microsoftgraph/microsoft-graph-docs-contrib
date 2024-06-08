@@ -3,7 +3,7 @@ title: 'webPartPosition resource type'
 description: Represents the position information of the given web part to the current page.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

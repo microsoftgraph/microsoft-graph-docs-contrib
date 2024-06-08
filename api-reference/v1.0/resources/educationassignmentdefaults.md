@@ -5,6 +5,7 @@ author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Assignment defaults
 ---
 
 # educationAssignmentDefaults resource type
