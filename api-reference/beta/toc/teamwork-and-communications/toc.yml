@@ -334,7 +334,7 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
     - name: External meeting registration
       items:
