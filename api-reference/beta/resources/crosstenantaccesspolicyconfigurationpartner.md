@@ -40,7 +40,7 @@ For any partner-specific property that is `null`, these settings inherit the beh
 | isInMultiTenantOrganization | Boolean | Identifies whether a tenant is a member of a multitenant organization. |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
 | tenantId | String | The tenant identifier for the partner Microsoft Entra organization. Read-only. Key.|
-| tenantRestrictions | [crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the partner-specific tenant restrictions configuration for users in your organization who access a partner organization using partner supplied idenities on your network or devices. |
+| tenantRestrictions | [crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the partner-specific tenant restrictions configuration for users in your organization who access a partner organization using partner supplied identities on your network or devices. |
 
 ## Relationships
 
