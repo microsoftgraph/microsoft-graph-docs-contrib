@@ -52,6 +52,8 @@ If successful, this action returns:
 
 ### Example 1: Creating registration record with delegated permission
 
+Use delegated permissions to create a registration record for a person who has a [Microsoft Entra ID](MicrosoftDocs/entra-docs/docs/fundamentals/whatis.md) as a way to register a Microsoft Entra user to a webinar.
+
 #### Request
 The following is an example of a request.
 <!-- {
@@ -153,7 +155,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Creating registration record with application permissions
+### Example 2: Creating registration record with application permission
+
+Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](MicrosoftDocs/entra-docs/docs/fundamentals/whatis.md) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following is an example of a request.
