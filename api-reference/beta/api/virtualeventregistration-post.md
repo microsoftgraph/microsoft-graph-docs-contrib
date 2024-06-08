@@ -50,7 +50,7 @@ If successful, this action returns:
 
 ## Examples
 
-### Example 1: Creating registration record with delegated permissions
+### Example 1: Creating registration record with delegated permission
 
 #### Request
 The following is an example of a request.
