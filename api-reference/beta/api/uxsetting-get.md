@@ -3,7 +3,7 @@ title: "Get uxSetting"
 description: "Read the properties and relationships of an uxSetting object."
 author: "skashyap7"
 ms.localizationpriority: medium
-ms.service: "entra-management-admin"
+ms.subservice: "entra-admin"
 doc_type: apiPageType
 ---
 
@@ -13,16 +13,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [uxSetting](../resources/uxsetting.md) object.
-
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "uxsetting-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/uxsetting-get-permissions.md)]
 
 ## HTTP request
 

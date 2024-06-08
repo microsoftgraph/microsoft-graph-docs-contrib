@@ -3,7 +3,7 @@ title: "Update uxSetting"
 description: "Update the properties of an uxSetting object."
 author: "skashyap7"
 ms.localizationpriority: medium
-ms.service: "entra-management-admin"
+ms.subservice: "entra-admin"
 doc_type: apiPageType
 ---
 
@@ -13,16 +13,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [uxSetting](../resources/uxsetting.md) object.
-
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "uxsetting-update-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/uxsetting-update-permissions.md)]
 
 ## HTTP request
 
