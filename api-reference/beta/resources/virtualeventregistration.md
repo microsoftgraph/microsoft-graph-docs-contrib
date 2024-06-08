@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration resource type"
-description: "Represents an attendee's registration record of a virtual event."
+description: "Represents a registrant's registration record of a virtual event."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
