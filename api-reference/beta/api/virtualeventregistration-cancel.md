@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PLACEHOLDER: who can cancel a registration] Cancel an attendee's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+
+Use delegated permission to cancel a registration record for a person who has a [Microsoft Entra ID](MicrosoftDocs/entra-docs/docs/fundamentals/whatis.md).
+
+Use application permission to cancel a registration record for an anonymous user. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
