@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: create"
-description: "Create a registation record for a webinar attendee."
+description: "Create a registration record for a webinar registrant."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
