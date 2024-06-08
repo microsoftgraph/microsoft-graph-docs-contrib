@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyConfigurationDefault resource type"
-description: "The default configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect."
+description: "Represents the default configuration for cross-tenant access and tenant restrictions."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The default configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
+Represents the default configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
 
 ## Methods
 
@@ -31,9 +31,9 @@ The default configuration for cross-tenant access and tenant restrictions. Cross
 | b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your default configuration for users from other organizations accessing your resources via Microsoft Entra B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the default configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. |
-| tenantRestrictions  |[crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the default tenant restrictions configuration for your organization users accessing an external organization on your network or devices. |
 | invitationRedemptionIdentityProviderConfiguration | [defaultInvitationRedemptionIdentityProviderConfiguration](../resources/defaultInvitationRedemptionIdentityProviderConfiguration.md) | Defines the priority order based on which an identity provider is selected during invitation redemption for a guest user. |
 | isServiceDefault | Boolean | If `true`, the default configuration is set to the system default configuration. If `false`, the default settings are customized. |
+| tenantRestrictions  |[crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the default tenant restrictions configuration for users in your organization who access an external organization on your network or devices. |
 
 ## Relationships
 
@@ -59,10 +59,8 @@ The following JSON representation shows the resource type.
   "b2bDirectConnectInbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
   "b2bDirectConnectOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
   "inboundTrust": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"},
-  "tenantRestrictions": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTenantRestrictions"},
-  "invitationRedemptionIdentityProviderConfiguration": {
-    "@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration"
-  },
-  "isServiceDefault": "Boolean"
+  "invitationRedemptionIdentityProviderConfiguration": {"@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration"},
+  "isServiceDefault": "Boolean",
+  "tenantRestrictions": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTenantRestrictions"}
 }
 ```
