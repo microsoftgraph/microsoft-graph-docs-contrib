@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's [email Authentication Method](../resources/emailauthenticationmethod.md) objects and their properties. This call will only return a single object as only one email method can be set on users.
+Retrieve a list of a user's [email Authentication Method](../resources/emailauthenticationmethod.md) objects and their properties. This call only returns a single object referenced by ID `3ddfcfc8-9383-446f-83cc-3ab9be4be18f` as only one email method can be set on users.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
