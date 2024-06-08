@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
-|preferredTimezone|String|The attendee's time zone details.|
+|preferredTimezone|String|The registrant's time zone details.|
 |preferredLanguage|String|The attendee's preferred language.|
 
 ### virtualEventAttendeeRegistrationStatus values
