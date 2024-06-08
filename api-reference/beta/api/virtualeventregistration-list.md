@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 ```
 
-Get a list of all **registration records** for a user by **userId** or **email**:
+Get a list of all **registration records** for a registrant by **userId** or **email**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
