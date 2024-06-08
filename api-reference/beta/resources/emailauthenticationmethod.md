@@ -31,14 +31,14 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the email address registered to this user.|
+|id|String|The identifier of the email address registered to this user. The ID is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.|
 |emailAddress|String|The email address registered to this user.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
