@@ -43,8 +43,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyTenantRestrictions",
   "applications": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"},
-  "devices": {"@odata.type": "microsoft.graph.devicesFilter"}
-  "usersAndGroups": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"},
+  "devices": {"@odata.type": "microsoft.graph.devicesFilter"},
+  "usersAndGroups": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"}
 }
 ```
 
