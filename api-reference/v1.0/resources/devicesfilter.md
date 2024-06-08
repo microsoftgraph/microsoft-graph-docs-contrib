@@ -1,6 +1,6 @@
 ---
 title: "devicesFilter resource type"
-description: "Defines the rule to filter the devices and whether devices that satisfy the rule should be allowed or blocked."
+description: "Defines a rule to filter the devices and whether devices that satisfy the rule should be allowed or blocked."
 author: "vimrang"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines the rule to filter the devices and whether devices that satisfy the rule should be allowed or blocked.
+Defines a rule to filter the devices and whether devices that satisfy the rule should be allowed or blocked.
 
 ## Properties
 
