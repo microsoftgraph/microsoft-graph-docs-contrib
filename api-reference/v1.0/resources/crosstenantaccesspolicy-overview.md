@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 In the traditional Microsoft Entra B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
 **Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on one or a combination of the following:
-**outbound access** - how your users collaborate with other organizations.
++ **outbound access** - how your users collaborate with other organizations.
 + **inbound access** - how other organizations collaborate with you.
 + **tenant restrictions access** - how your users collaborate with other organizations using other organization identities from your network or devices.
 
-+ Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
+Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
 
 + **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
-    + In Azure AD B2B collaboration, both inbound and outbound access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
+    + In Azure AD B2B collaboration, both inbound and outbound access settings are enabled by default. This default configuration means all your users can be invited to external organizations, and all your users can invite external users.
     + In Azure AD B2B direct connect, both inbound and outbound access settings are disabled by default.
     + The service default settings may be updated.
     + In Tenant Restrictions, all access settings are disabled by default.
 
-**Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B collaboration, Azure AD B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
++ **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B collaboration, Azure AD B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
 >
@@ -40,7 +40,7 @@ By default, Microsoft Entra ID assigns all Microsoft Entra tenants a service def
 
 ## Partner cross-tenant access settings
 
-Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with a specific Azure AD organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
+Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with a specific Azure AD organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
 Unless you configure all the properties of the partner-specific object, some of your default settings might still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, the partner configuration inherits the other settings from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` inherits settings from the default policy.
 
