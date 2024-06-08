@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
 |preferredTimezone|String|The registrant's time zone details.|
-|preferredLanguage|String|The attendee's preferred language.|
+|preferredLanguage|String|The registrant's preferred language.|
 
 ### virtualEventAttendeeRegistrationStatus values
 
