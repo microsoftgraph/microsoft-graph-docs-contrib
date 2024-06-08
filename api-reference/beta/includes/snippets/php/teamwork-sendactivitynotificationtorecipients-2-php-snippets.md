@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Teamwork\SendActivityNotificationToRecipients\SendActivityNotificationToRecipientsPostRequestBody
+use Microsoft\Graph\Beta\Generated\Teamwork\SendActivityNotificationToRecipients\SendActivityNotificationToRecipientsPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\TeamworkActivityTopic;
-use Microsoft\Graph\Beta\Generated\Models\Source;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkActivityTopicSource;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
 use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 use Microsoft\Graph\Beta\Generated\Models\TeamworkNotificationRecipient;

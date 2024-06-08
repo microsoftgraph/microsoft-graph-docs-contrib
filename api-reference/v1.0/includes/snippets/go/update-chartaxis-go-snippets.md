@@ -16,11 +16,11 @@ import (
 )
 
 requestBody := graphmodels.NewWorkbookChartAxis()
-majorUnit := graphmodels.NewJson()
+majorUnit := graph.NewmajorUnit()
 requestBody.SetMajorUnit(majorUnit)
-maximum := graphmodels.NewJson()
+maximum := graph.Newmaximum()
 requestBody.SetMaximum(maximum)
-minimum := graphmodels.NewJson()
+minimum := graph.Newminimum()
 requestBody.SetMinimum(minimum)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

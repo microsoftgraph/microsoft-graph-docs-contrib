@@ -9,8 +9,9 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AppManagementPolicy;
 use Microsoft\Graph\Beta\Generated\Models\AppManagementConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
-use Microsoft\Graph\Beta\Generated\Models\RestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessAssignment;
 use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessContainer;
-use Microsoft\Graph\Beta\Generated\Models\AccessContainerType;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessContainerType;
 use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessDetails;
 use Microsoft\Graph\Beta\Generated\Models\UnifiedRole;
 

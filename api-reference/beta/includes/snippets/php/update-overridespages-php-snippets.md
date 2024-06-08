@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Identity\B2cUserFlows\Item\Languages\Item\OverridesPages\Item\Value\$valuePutRequestBody
+use Microsoft\Graph\Beta\Generated\Identity\B2cUserFlows\Item\Languages\Item\OverridesPages\Item\Value\$valuePutRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
