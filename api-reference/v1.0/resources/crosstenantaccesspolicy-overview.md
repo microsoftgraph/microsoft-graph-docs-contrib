@@ -34,13 +34,13 @@ In the traditional Microsoft Entra B2B collaboration, any invited user from an o
 
 ## Default cross-tenant access settings
 
-Default cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings will inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
+Default cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
 
 By default, Microsoft Entra ID assigns all Microsoft Entra tenants a service default configuration for cross-tenant access settings. You can override these service defaults with your own configuration to suit your organization. You can confirm whether you're using the service default settings or custom settings by looking at the **isServiceDefault** property returned when you query the default endpoint.
 
 ## Partner cross-tenant access settings
 
-Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with a specific Azure AD organization. Any collaboration with this organization will inherit these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
+Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with a specific Azure AD organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
 Unless you configure all the properties of the partner-specific object, some of your default settings might still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, the partner configuration inherits the other settings from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` inherits settings from the default policy.
 
