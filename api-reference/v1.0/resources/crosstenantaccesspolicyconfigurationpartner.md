@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents the partner-specific configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
 
-For any partner-specific property that is `null`, these settings inherit the behavior configured in your [default cross tenant access settings](../resources/crosstenantaccesspolicyconfigurationdefault.md).
+For any partner-specific property that is `null`, these settings inherit the behavior configured in your [default cross-tenant access settings](../resources/crosstenantaccesspolicyconfigurationdefault.md).
 
 ## Methods
 
