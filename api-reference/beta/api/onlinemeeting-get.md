@@ -96,6 +96,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` must be URL encoded.
+>- The formats of `joinWebUrl` may differ from the examples below, depending how they were obtained. This does not affect how they are used in the API.
 >- `joinMeetingId` is the meeting ID to be used to join a meeting.
 
 ## Optional query parameters
