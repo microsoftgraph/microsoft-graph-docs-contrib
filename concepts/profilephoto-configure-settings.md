@@ -20,7 +20,7 @@ Configuration of user profile photo updates does not affect other user account p
 
 ### Cloud environment
 
-Hybrid tenant environments where user profile photos are stored in the cloud don't sync on-premises profile photos to the cloud. User profile photos can be updated through Entra ID or Microsoft Graph; for more information, see
+In hybrid tenant and cloud-only environments, user profile photo settings are updated in the cloud and the settings are not sync'd to on-premises. In cloud environments, user profile photo settings can be updated through Entra ID or Microsoft Graph; for more information, see [Change user profile photos](/microsoft-365/admin/add-users/change-user-profile-photos). Tenants in a cloud environment have an option to disable user profile photo updates.
 [Change user profile photos](/microsoft-365/admin/add-users/change-user-profile-photos). For tenants that use this configuration, an option to disable user profile photo updates is available. 
 
 Configuring this option does not remove on-premises photos that are stored in Entra ID or sync cloud photos to on-premises. If you select this option, tenant admins should remove the
