@@ -82,31 +82,12 @@ Content-Type: application/json
 For tenants that store user profile photos in the cloud, an additional option is available to set which roles are able to update user profile photos
 within the organization.
 
-### Configure Global Administrator support for profile photo updates
 
-The following example shows how to configure the Global Administrator role to update profile photos in your organization.
 
-```http
-PATCH https://graph.microsoft.com/beta/admin/people/photoupdatesettings
-Content-Type: application/json
 
-{
-    "source": "cloud",
-    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10"]
-}
-```
 
-If successful, the response returns a `200 OK` response code and a **photoUpdateSettings** object in the response body.
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-    "source": "cloud",
-    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10"]
-}
-```
 ### Configure User Administrator support for profile photo updates
 
 The following example shows how to configure the User Administrator role to update profile photos in your organization.
