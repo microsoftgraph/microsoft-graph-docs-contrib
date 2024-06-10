@@ -50,13 +50,13 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
-| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
-| displayName | String | Display name of the virtual event. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. |
+| displayName | String | Display name of the town hall. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the town hall. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
 ## Response
 
