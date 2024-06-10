@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a v[virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
