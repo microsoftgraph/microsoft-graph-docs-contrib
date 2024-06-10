@@ -2,7 +2,7 @@
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---

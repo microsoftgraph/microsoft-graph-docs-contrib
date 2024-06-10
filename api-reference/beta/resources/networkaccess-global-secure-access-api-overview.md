@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph network access APIs to secure acc
 author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)
@@ -73,13 +73,15 @@ Conditional access settings in the Global Secure Access services involve enablin
 
 Use the [conditionalAccessSettings resource type](../resources/networkaccess-conditionalaccesssettings.md) and its associated APIs to manage conditional access settings.
 
+Use the [compliantNetworkNamedLocation resource type](../resources/compliantnetworknamedlocation.md) to ensure that users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators.
+
 ### Forwarding options
 
 Forwarding options allows administrators to enable or disable the ability to skip DNS lookup at the edge and forward Microsoft 365 traffic directly to Front Door using the client-resolved destination IP. Use the [forwardingOptions resource type](../resources/networkaccess-forwardingoptions.md) and its associated APIs to manage forwarding options.
 
 ## Audit logs
 
-Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and can be retrieved using associated APIs.
+Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and [sign-in logs](../resources/signin.md) can be retrieved using associated APIs.
 
 ## Traffic logs and reports
 

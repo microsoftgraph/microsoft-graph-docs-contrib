@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.agreements.item.file.file_request_builder import FileRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.agreements.item.file.file_request_builder import FileRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = FileRequestBuilder.FileRequestBuilderGetRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Accept-Language", "fr-FR")
 
 

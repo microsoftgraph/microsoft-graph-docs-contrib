@@ -5,16 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\FindMeetingTimesPostRequestBody;
-use Microsoft\Graph\Generated\Models\AttendeeBase;
-use Microsoft\Graph\Generated\Models\EmailAddress;
-use Microsoft\Graph\Generated\Models\LocationConstraint;
-use Microsoft\Graph\Generated\Models\LocationConstraintItem;
-use Microsoft\Graph\Generated\Models\TimeConstraint;
-use Microsoft\Graph\Generated\Models\TimeSlot;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeBase;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraint;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraintItem;
+use Microsoft\Graph\Beta\Generated\Models\TimeConstraint;
+use Microsoft\Graph\Beta\Generated\Models\ActivityDomain;
+use Microsoft\Graph\Beta\Generated\Models\TimeSlot;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

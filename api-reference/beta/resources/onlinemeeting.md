@@ -23,21 +23,21 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 
 | Method | Return Type |Description |
 | :------ | :----------- | :---------- |
-| [Create](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
+| [Create](../api/application-post-onlinemeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
-| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
-| [List recordings of an onlineMeeting](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
+| [Create or get](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
+| [List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [List recordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 
 > [!NOTE]
-> 
+>
 > A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
 
 > [!CAUTION]
-> 
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
+>
+> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/).
 
 ## Properties
 
@@ -127,14 +127,14 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | ------------ | ---- | ----------- |
 | attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
-| registration | [meetingRegistration](meetingregistration.md) | The registration that is enabled for an online meeting. One online meeting can only have one registration enabled.|
 | transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingattendancereport.md) | The attendance report of the latest online meeting session. Read-only. |
+| registration (deprecated) | [meetingRegistration](meetingregistration.md) | The registration that is enabled for an online meeting. One online meeting can only have one registration enabled.|
 
 > [!TIP]
 >
 >- The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
->- The type of **registration** can be [meetingRegistration](meetingregistration.md) or [externalMeetingRegistration](externalmeetingregistration.md), both of which inherit from [meetingRegistrationBase](meetingregistrationbase.md).
+>- The type of **registration** can only be [externalMeetingRegistration](externalmeetingregistration.md), which inherits from [meetingRegistrationBase](meetingregistrationbase.md). The type [meetingRegistration](meetingregistration.md) is deprecated and will stop returning data on July 31, 2024.
 
 ## JSON representation
 
@@ -160,7 +160,7 @@ The following JSON representation shows the resource type.
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",  
+  "id": "String (identifier)",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
@@ -170,9 +170,27 @@ The following JSON representation shows the resource type.
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
-  "startDateTime": "String (timestamp)",  
+  "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update checklistItem",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/me:
+      /me/onlineMeetings/{var}/registration/microsoft.graph.meetingRegistration/customQuestions
+      Uri path requires navigating into unknown object hierarchy: missing property 'registration' on 'onlineMeeting'. Possible issues:
+     1) Doc bug where 'registration' isn't defined on the resource.
+     2) Doc bug where 'registration' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+     3) Doc bug where 'onlineMeeting' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->

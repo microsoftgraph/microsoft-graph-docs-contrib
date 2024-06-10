@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Planner\Tasks\Item\PlannerTaskItemRequestBuilderPatchRequestConfiguration;
-use Microsoft\Graph\Generated\Models\PlannerTask;
-use Microsoft\Graph\Generated\Models\PlannerAssignments;
-use Microsoft\Graph\Generated\Models\PlannerAssignment;
-use Microsoft\Graph\Generated\Models\PlannerAppliedCategories;
-use Microsoft\Graph\Generated\Models\PlannerTaskRecurrence;
-use Microsoft\Graph\Generated\Models\PlannerRecurrenceSchedule;
-use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Tasks\Item\PlannerTaskItemRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTask;
+use Microsoft\Graph\Beta\Generated\Models\PlannerAssignments;
+use Microsoft\Graph\Beta\Generated\Models\PlannerAssignment;
+use Microsoft\Graph\Beta\Generated\Models\PlannerAppliedCategories;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskRecurrence;
+use Microsoft\Graph\Beta\Generated\Models\PlannerRecurrenceSchedule;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -11,17 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Supports CRUD operations to apply and manage the [citation](security-citation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
+Represents the specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. This resource supports CRUD operations to apply and manage the [filePlanCitation](security-fileplancitation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List citations](../api/security-labelsroot-list-citations.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.|
-|[Create citations](../api/security-labelsroot-post-citations.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Get citations](../api/security-citationtemplate-get.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Delete citations](../api/security-labelsroot-delete-citations.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[List](../api/security-labelsroot-list-citations.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.|
+|[Create](../api/security-labelsroot-post-citations.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[Get](../api/security-citationtemplate-get.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[Delete](../api/security-labelsroot-delete-citations.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +37,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

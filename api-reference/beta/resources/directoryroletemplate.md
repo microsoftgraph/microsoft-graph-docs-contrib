@@ -21,7 +21,7 @@ Represents a directory role template. A directory role template specifies the pr
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
+|[Get directory role template](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -4,7 +4,7 @@ description: "Represents a company's privacy profile, which includes a privacy s
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
-author: "adimitui"
+author: "suawat"
 ---
 
 # privacyProfile resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
+Represents a [company's](organization.md) privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
 
 ## Properties
 | Property   | Type|Description|

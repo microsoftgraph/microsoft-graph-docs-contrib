@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_historical_report_post_request_body import GetHistoricalReportPostRequestBody
+from msgraph.generated.devicemanagement.reports.get_historical_report.get_historical_report_post_request_body import GetHistoricalReportPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Teams\Item\Schedule\OfferShiftRequests\OfferShiftRequestsRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\OfferShiftRequest;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\Schedule\OfferShiftRequests\OfferShiftRequestsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\OfferShiftRequest;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
