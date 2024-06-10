@@ -29,7 +29,8 @@ Inherits from [segmentsConfiguration](segmentconfiguration.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.onPremisesApplicationSegment"
+  "@odata.type": "microsoft.graph.onPremisesApplicationSegment",
+  "baseType": "microsoft.graph.segmentConfiguration"
 }
 -->
 ``` json
