@@ -10,8 +10,8 @@ use Microsoft\Graph\Generated\Models\LearningAssignment;
 use Microsoft\Graph\Generated\Models\AssignmentType;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Generated\Models\ItemBody;
-use Microsoft\Graph\Generated\Models\ContentType;
-use Microsoft\Graph\Generated\Models\Status;
+use Microsoft\Graph\Generated\Models\BodyType;
+use Microsoft\Graph\Generated\Models\CourseStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

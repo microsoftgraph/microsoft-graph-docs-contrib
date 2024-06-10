@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/excel.md
@@ -15,40 +18,40 @@ items:
   items:
   - name: Workbook application
     href: ../../resources/workbookapplication.md
-  - name: Get workbookApplication
+  - name: Get
     href: ../../api/workbookapplication-get.md
   - name: Calculate
     href: ../../api/workbookapplication-calculate.md
 - name: Workbook chart
   items:
   - name: Workbook chart
-    href: ../../resources/chart.md
-  - name: Get Chart
+    href: ../../resources/workbookchart.md
+  - name: Get chart
     href: ../../api/chart-get.md
   - name: Create ChartSeries
     href: ../../api/chart-post-series.md
   - name: List series
     href: ../../api/chart-list-series.md
-  - name: Update
+  - name: Update chart
     href: ../../api/chart-update.md
-  - name: Image
+  - name: Get chart image
     href: ../../api/chart-image.md
-  - name: Delete
+  - name: Delete chart
     href: ../../api/chart-delete.md
-  - name: Setdata
+  - name: Reset data
     href: ../../api/chart-setdata.md
-  - name: Setposition
+  - name: Set position data
     href: ../../api/chart-setposition.md
-  - name: List
+  - name: List charts
     href: ../../api/chart-list.md
-  - name: Itemat
+  - name: Item at
     href: ../../api/chartcollection-itemat.md
-  - name: Add
+  - name: Add chart
     href: ../../api/chartcollection-add.md
 - name: Workbook chart axis
   items:
   - name: Workbook chart axis
-    href: ../../resources/chartaxis.md
+    href: ../../resources/workbookchartaxis.md
   - name: Get ChartAxis
     href: ../../api/chartaxis-get.md
   - name: Update
@@ -56,7 +59,7 @@ items:
 - name: Workbook chart axis title
   items:
   - name: Workbook chart axis title
-    href: ../../resources/chartaxistitle.md
+    href: ../../resources/workbookchartaxistitle.md
   - name: Get ChartAxisTitle
     href: ../../api/chartaxistitle-get.md
   - name: Update
@@ -64,7 +67,7 @@ items:
 - name: Workbook chart data labels
   items:
   - name: Workbook chart data labels
-    href: ../../resources/chartdatalabels.md
+    href: ../../resources/workbookchartdatalabels.md
   - name: Get ChartDataLabels
     href: ../../api/chartdatalabels-get.md
   - name: Update
@@ -72,7 +75,7 @@ items:
 - name: Workbook chart fill
   items:
   - name: Workbook chart fill
-    href: ../../resources/chartfill.md
+    href: ../../resources/workbookchartfill.md
   - name: Clear
     href: ../../api/chartfill-clear.md
   - name: Setsolidcolor
@@ -80,7 +83,7 @@ items:
 - name: Workbook chart font
   items:
   - name: Workbook chart font
-    href: ../../resources/chartfont.md
+    href: ../../resources/workbookchartfont.md
   - name: Get ChartFont
     href: ../../api/chartfont-get.md
   - name: Update
@@ -88,7 +91,7 @@ items:
 - name: Workbook chart gridlines
   items:
   - name: Workbook chart gridlines
-    href: ../../resources/chartgridlines.md
+    href: ../../resources/workbookchartgridlines.md
   - name: Get ChartGridlines
     href: ../../api/chartgridlines-get.md
   - name: Update
@@ -96,7 +99,7 @@ items:
 - name: Workbook chart legend
   items:
   - name: Workbook chart legend
-    href: ../../resources/chartlegend.md
+    href: ../../resources/workbookchartlegend.md
   - name: Get ChartLegend
     href: ../../api/chartlegend-get.md
   - name: Update
@@ -104,7 +107,7 @@ items:
 - name: Workbook chart line format
   items:
   - name: Workbook chart line format
-    href: ../../resources/chartlineformat.md
+    href: ../../resources/workbookchartlineformat.md
   - name: Get ChartLineFormat
     href: ../../api/chartlineformat-get.md
   - name: Update
@@ -114,7 +117,7 @@ items:
 - name: Workbook chart point
   items:
   - name: Workbook chart point
-    href: ../../resources/chartpoint.md
+    href: ../../resources/workbookchartpoint.md
   - name: Get ChartPoint
     href: ../../api/chartpoint-get.md
   - name: List
@@ -124,7 +127,7 @@ items:
 - name: Workbook chart series
   items:
   - name: Workbook chart series
-    href: ../../resources/chartseries.md
+    href: ../../resources/workbookchartseries.md
   - name: Get ChartSeries
     href: ../../api/chartseries-get.md
   - name: Create ChartPoints
@@ -140,7 +143,7 @@ items:
 - name: Workbook chart title
   items:
   - name: Workbook chart title
-    href: ../../resources/charttitle.md
+    href: ../../resources/workbookcharttitle.md
   - name: Get ChartTitle
     href: ../../api/charttitle-get.md
   - name: Update
@@ -149,24 +152,24 @@ items:
   items:
   - name: Workbook comment
     href: ../../resources/workbookcomment.md
-  - name: List workbookComments
+  - name: List
     href: ../../api/workbook-list-comments.md
-  - name: Get workbookComment
+  - name: Get
     href: ../../api/workbookcomment-get.md
 - name: Workbook comment reply
   items:
   - name: Workbook comment reply
     href: ../../resources/workbookcommentreply.md
-  - name: List workbookCommentReplies
+  - name: List replies
     href: ../../api/workbookcomment-list-replies.md
-  - name: Get workbookCommentReply
+  - name: Get reply
     href: ../../api/workbookcommentreply-get.md
   - name: Create workbookCommentReply
     href: ../../api/workbookcomment-post-replies.md
 - name: Workbook filter
   items:
   - name: Workbook filter
-    href: ../../resources/filter.md
+    href: ../../resources/workbookfilter.md
   - name: Apply
     href: ../../api/filter-apply.md
   - name: Clear
@@ -182,26 +185,26 @@ items:
 - name: Workbook icon
   items:
   - name: Workbook icon
-    href: ../../resources/icon.md
-  - name: Get Icon
+    href: ../../resources/workbookicon.md
+  - name: Get
     href: ../../api/icon-get.md
   - name: Update
     href: ../../api/icon-update.md
 - name: Workbook named item
   items:
   - name: Workbook named item
-    href: ../../resources/nameditem.md
-  - name: Add
+    href: ../../resources/workbooknameditem.md
+  - name: Add named item
     href: ../../api/nameditem-add.md
   - name: AddFormulaLocal
     href: ../../api/nameditem-addformulalocal.md
-  - name: Get NamedItem
+  - name: Get named item
     href: ../../api/nameditem-get.md
-  - name: Update
+  - name: Update named item
     href: ../../api/nameditem-update.md
-  - name: Range
+  - name: List range
     href: ../../api/nameditem-range.md
-  - name: List
+  - name: List named item
     href: ../../api/nameditem-list.md
 - name: Workbook operation
   items:
@@ -222,10 +225,10 @@ items:
 - name: Workbook range
   items:
   - name: Workbook range
-    href: ../../resources/range.md
-  - name: Get Range
+    href: ../../resources/workbookrange.md
+  - name: Get range
     href: ../../api/range-get.md
-  - name: Update
+  - name: Update range
     href: ../../api/range-update.md
   - name: Boundingrect
     href: ../../api/range-boundingrect.md
@@ -263,7 +266,7 @@ items:
     href: ../../api/range-clear.md
   - name: Delete
     href: ../../api/range-delete.md
-  - name: Insert
+  - name: Insert range
     href: ../../api/range-insert.md
   - name: Merge
     href: ../../api/range-merge.md
@@ -276,7 +279,7 @@ items:
 - name: Workbook range border
   items:
   - name: Workbook range border
-    href: ../../resources/rangeborder.md
+    href: ../../resources/workbookrangeborder.md
   - name: Get RangeBorder
     href: ../../api/rangeborder-get.md
   - name: Update
@@ -288,7 +291,7 @@ items:
 - name: Workbook range fill
   items:
   - name: Workbook range fill
-    href: ../../resources/rangefill.md
+    href: ../../resources/workbookrangefill.md
   - name: Get RangeFill
     href: ../../api/rangefill-get.md
   - name: Update
@@ -298,7 +301,7 @@ items:
 - name: Workbook range font
   items:
   - name: Workbook range font
-    href: ../../resources/rangefont.md
+    href: ../../resources/workbookrangefont.md
   - name: Get RangeFont
     href: ../../api/rangefont-get.md
   - name: Update
@@ -306,14 +309,14 @@ items:
 - name: Workbook range format
   items:
   - name: Workbook range format
-    href: ../../resources/rangeformat.md
-  - name: Get RangeFormat
+    href: ../../resources/workbookrangeformat.md
+  - name: Get range format
     href: ../../api/rangeformat-get.md
   - name: Create RangeBorder
     href: ../../api/rangeformat-post-borders.md
   - name: List borders
     href: ../../api/rangeformat-list-borders.md
-  - name: Update
+  - name: Update range format
     href: ../../api/rangeformat-update.md
   - name: Autofitcolumns
     href: ../../api/rangeformat-autofitcolumns.md
@@ -322,7 +325,7 @@ items:
 - name: Workbook range sort
   items:
   - name: Workbook range sort
-    href: ../../resources/rangesort.md
+    href: ../../resources/workbookrangesort.md
   - name: Apply
     href: ../../api/rangesort-apply.md
 - name: Workbook range view
@@ -338,24 +341,24 @@ items:
 - name: Workbook table
   items:
   - name: Workbook table
-    href: ../../resources/table.md
-  - name: Get Table
+    href: ../../resources/workbooktable.md
+  - name: Get table
     href: ../../api/table-get.md
-  - name: Create TableColumn
+  - name: Create column
     href: ../../api/table-post-columns.md
   - name: List columns
     href: ../../api/table-list-columns.md
-  - name: Create TableRow
+  - name: Create row
     href: ../../api/table-post-rows.md
   - name: List rows
     href: ../../api/table-list-rows.md
-  - name: Update
+  - name: Update table
     href: ../../api/table-update.md
   - name: Databodyrange
     href: ../../api/table-databodyrange.md
   - name: Headerrowrange
     href: ../../api/table-headerrowrange.md
-  - name: Range
+  - name: Get range
     href: ../../api/table-range.md
   - name: Totalrowrange
     href: ../../api/table-totalrowrange.md
@@ -363,13 +366,13 @@ items:
     href: ../../api/table-clearfilters.md
   - name: Converttorange
     href: ../../api/table-converttorange.md
-  - name: Delete
+  - name: Delete table
     href: ../../api/table-delete.md
   - name: Reapplyfilters
     href: ../../api/table-reapplyfilters.md
   - name: List
     href: ../../api/table-list.md
-  - name: Add
+  - name: Add table
     href: ../../api/tablecollection-add.md
 - name: Workbook table column
   items:
@@ -387,7 +390,7 @@ items:
     href: ../../api/tablecolumn-range.md
   - name: Totalrowrange
     href: ../../api/tablecolumn-totalrowrange.md
-  - name: Delete
+  - name: Delete column
     href: ../../api/tablecolumn-delete.md
   - name: List
     href: ../../api/tablecolumn-list.md
@@ -401,24 +404,24 @@ items:
     href: ../../resources/workbooktablerow.md
   - name: List
     href: ../../api/tablerow-list.md
-  - name: Create
+  - name: Create row
     href: ../../api/table-post-rows.md
   - name: Get
     href: ../../api/tablerow-get.md
   - name: Update
     href: ../../api/tablerow-update.md
-  - name: Delete
+  - name: Delete row
     href: ../../api/tablerow-delete.md
-  - name: Range
+  - name: Get range
     href: ../../api/tablerow-range.md
-  - name: Itemat
+  - name: Get item at
     href: ../../api/tablerowcollection-itemat.md
-  - name: Add
+  - name: Add row
     href: ../../api/tablerowcollection-add.md
 - name: Workbook table sort
   items:
   - name: Workbook table sort
-    href: ../../resources/tablesort.md
+    href: ../../resources/workbooktablesort.md
   - name: Get TableSort
     href: ../../api/tablesort-get.md
   - name: Apply
@@ -430,39 +433,39 @@ items:
 - name: Workbook worksheet
   items:
   - name: Workbook worksheet
-    href: ../../resources/worksheet.md
-  - name: Get Worksheet
+    href: ../../resources/workbookworksheet.md
+  - name: Get worksheet
     href: ../../api/worksheet-get.md
-  - name: Create Chart
+  - name: Add chart
     href: ../../api/worksheet-post-charts.md
   - name: List names
     href: ../../api/worksheet-list-names.md
   - name: List charts
     href: ../../api/worksheet-list-charts.md
-  - name: Create Table
+  - name: Add table
     href: ../../api/worksheet-post-tables.md
   - name: List tables
     href: ../../api/worksheet-list-tables.md
-  - name: Update
+  - name: Update worksheet
     href: ../../api/worksheet-update.md
-  - name: Cell
+  - name: Get cell
     href: ../../api/worksheet-cell.md
-  - name: Range
+  - name: Get range
     href: ../../api/worksheet-range.md
-  - name: Usedrange
+  - name: Get usedrange
     href: ../../api/worksheet-usedrange.md
-  - name: Delete
+  - name: Delete worksheet
     href: ../../api/worksheet-delete.md
   - name: List
     href: ../../api/worksheet-list.md
-  - name: Add
+  - name: Add worksheet
     href: ../../api/worksheetcollection-add.md
   - name: List pivotTables
     href: ../../api/workbookworksheet-list-pivottables.md
 - name: Workbook worksheet protection
   items:
   - name: Workbook worksheet protection
-    href: ../../resources/worksheetprotection.md
+    href: ../../resources/workbookworksheetprotection.md
   - name: Get WorksheetProtection
     href: ../../api/worksheetprotection-get.md
   - name: Protect
@@ -474,25 +477,25 @@ items:
   - name: Json
     href: ../../resources/json.md
   - name: Workbook chart area format
-    href: ../../resources/chartareaformat.md
+    href: ../../resources/workbookchartareaformat.md
   - name: Workbook chart axes
-    href: ../../resources/chartaxes.md
+    href: ../../resources/workbookchartaxes.md
   - name: Workbook chart axis format
-    href: ../../resources/chartaxisformat.md
+    href: ../../resources/workbookchartaxisformat.md
   - name: Workbook chart axis title format
-    href: ../../resources/chartaxistitleformat.md
+    href: ../../resources/workbookchartaxistitleformat.md
   - name: Workbook chart data label format
-    href: ../../resources/chartdatalabelformat.md
+    href: ../../resources/workbookchartdatalabelformat.md
   - name: Workbook chart gridlines format
-    href: ../../resources/chartgridlinesformat.md
+    href: ../../resources/workbookchartgridlinesformat.md
   - name: Workbook chart legend format
-    href: ../../resources/chartlegendformat.md
+    href: ../../resources/workbookchartlegendformat.md
   - name: Workbook chart point format
-    href: ../../resources/chartpointformat.md
+    href: ../../resources/workbookchartpointformat.md
   - name: Workbook chart series format
-    href: ../../resources/chartseriesformat.md
+    href: ../../resources/workbookchartseriesformat.md
   - name: Workbook chart title format
-    href: ../../resources/charttitleformat.md
+    href: ../../resources/workbookcharttitleformat.md
   - name: Workbook filter criteria
     href: ../../resources/filtercriteria.md
   - name: Workbook filter datetime

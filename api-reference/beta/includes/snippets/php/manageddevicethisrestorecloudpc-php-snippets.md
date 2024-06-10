@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\Item\RestoreCloudPc\RestoreCloudPcPostRequestBody
+use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\Item\RestoreCloudPc\RestoreCloudPcPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

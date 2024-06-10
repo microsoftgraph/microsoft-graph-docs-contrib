@@ -7,8 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcOnPremisesConnection;
-use Microsoft\Graph\Beta\Generated\Models\ConnectionType;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcOnPremisesConnectionType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

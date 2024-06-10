@@ -35,6 +35,15 @@ Namespace: microsoft.graph
 | active             |
 | unknownfuturevalue |
 
+### siteLockState values
+
+| Value         | 
+|:--------------|
+| unlocked      | 
+| lockedReadOnly |
+
+
+
 ### userDefaultAuthenticationMethod values
 
 | Member             |
@@ -114,9 +123,10 @@ Namespace: microsoft.graph
 
 | Member             |
 | :----------------- |
-| Required           |
-| Recommeded         |
-| UnknownFutureValue |
+| required           |
+| recommeded         |
+| unknownFutureValue |
+| peerRecommeded     |
 
 ### courseStatus values
 
@@ -4877,6 +4887,13 @@ Possible values for user account types (group membership), per Windows definitio
 |minor|
 |moderate|
 |elevated|
+|unknownFutureValue|
+
+### compliantNetworkType values 
+
+|Member|
+|:---|
+|allTenantCompliantNetworks|
 |unknownFutureValue|
 
 ### meetingRequestType values 
