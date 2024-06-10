@@ -352,7 +352,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 0bc85aed-7b0b-437a-bac8-3b29a1b84c99 | ee3409fe-617f-43cf-bd1e-fc8b38049e69 
 | DisplayText | Read audit logs data from Endpoint Data Loss Prevention workload | Read audit logs data from Endpoint Data Loss Prevention workload 
-| Description | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint Data Loss Precention workload, on behalf of the signed-in user. 
+| Description | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -473,7 +473,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | bebd0841-a3d8-4313-a51d-731112c8ee41 | 9f89e109-94b9-4c9b-b4fc-98cdaa54f574 
 | DisplayText | Read restore all sessions and start restore sessions from backups | Read restore sessions and start restore sessions from backups 
-| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up snapshot, on behalf of the signed in user. 
+| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up-snapshot, on behalf of the signed in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -671,7 +671,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 798ee544-9d2d-430c-a058-570e29e34338 | 465a38f9-76ea-45b9-9f34-9e8b0d4b0b42 
 | DisplayText | Read calendars in all mailboxes | Read user calendars  
-| Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars .  
+| Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars.  
 | AdminConsentRequired | Yes | No 
 
 ![personal Microsoft accounts][MSA] The *Calendars.Read* delegated permission is available for consent in personal Microsoft accounts.
@@ -760,7 +760,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1abb026f-7572-49f6-9ddd-ad61cbba181e | - 
 | DisplayText | Read all call events | - 
-| Description | Allows the app to read call event information for all users in your organizatio, without a signed-in user. | - 
+| Description | Allows the app to read call event information for all users in your organization, without a signed-in user. | - 
 | AdminConsentRequired | Yes | - 
 
 ---
@@ -1457,7 +1457,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 88bb2658-5d9e-454f-aacd-a3933e079526 | b2052569-c98c-4f36-a5fb-43e5c111e6d0 
-| DisplayText | Read all custom authentication extensions | Read your oganization's custom authentication extensions 
+| DisplayText | Read all custom authentication extensions | Read your organization's custom authentication extensions 
 | Description | Allows the app to read your organization's custom authentication extensions without a signed-in user. | Allows the app to read your organization's custom authentication extensions on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
@@ -3374,7 +3374,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 39ae4a24-1ef0-49e8-9d63-2a66f5c39edd | 4051c7fc-b429-4804-8d80-8f1f8c24a6f7 
 | DisplayText | Read properties of all branches for network access | Read properties of branches for network access 
-| Description | Allows the app to read your organization's network access braches, without a signed-in user. | Allows the app to read your organization's branches for network access on behalf of the signed-in user. 
+| Description | Allows the app to read your organization's network access branches, without a signed-in user. | Allows the app to read your organization's branches for network access on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | No 
 
 ---
@@ -3385,7 +3385,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 8137102d-ec16-4191-aaf8-7aeda8026183 | b8a36cc2-b810-461a-baa4-a7281e50bd5c 
 | DisplayText | Read and write properties of all branches for network access | Read and write properties of branches for network access 
-| Description | Allows the app to read and write your organization's network access braches, without a signed-in user. | Allows the app to read and write your organization's branches for network access on behalf of the signed-in user. 
+| Description | Allows the app to read and write your organization's network access branches, without a signed-in user. | Allows the app to read and write your organization's branches for network access on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -4946,7 +4946,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 11059518-d6a6-4851-98ed-509268489c4a | 435644c6-a5b1-40bf-8f52-fe8e5b53e19c 
 | DisplayText | Read all alert data, configure alerts, and take actions on all alerts for your company's directory | Read all alert data, configure alerts, and take actions on all alerts for your company's directory 
-| Description | Allows the app to read and manage all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Allows the app to read and manage the role-based access control (RBAC) alerts for your company's directory, on behalf of the signed-in user. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. 
+| Description | Allows the app to read and manage all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes managing alert settings, initiating alert scans, dismissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Allows the app to read and manage the role-based access control (RBAC) alerts for your company's directory, on behalf of the signed-in user. This includes managing alert settings, initiating alert scans, dismissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -6499,7 +6499,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 926a6798-b100-4a20-a22f-a4918f13951d | 059e5840-5353-4c68-b1da-666a033fc5e8 
 | DisplayText | Read and write all of the organization's threat submission policies | Read and write all threat submission policies 
-| Description | Allows the app to read your organization's threat submission policies without a signed-in user. Also allows the app to create new threat submission polices without a signed-in user. | Allows the app to read your organization's threat submission policies on behalf of the signed-in user. Also allows the app to create new threat submission policies on behalf of the signed-in user. 
+| Description | Allows the app to read your organization's threat submission policies without a signed-in user. Also allows the app to create new threat submission policies without a signed-in user. | Allows the app to read your organization's threat submission policies on behalf of the signed-in user. Also allows the app to create new threat submission policies on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -6719,7 +6719,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 9d952b72-f741-4b40-9185-8c53076c2339 | 550e695c-7511-40f4-ac79-e8fb9c82552d 
-| DisplayText | Convert an external user to internal member user | Convert an external user to internal memeber user 
+| DisplayText | Convert an external user to internal member user | Convert an external user to internal member user 
 | Description | Allow the app to convert an external user to an internal member user, without a signed-in user. | Allow the app to convert an external user to an internal member user, on behalf of signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
@@ -6874,7 +6874,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 6b616635-ae58-433a-a918-8c45e4f304dc 
 | DisplayText | - | Read your virtual events 
-| Description | - | Allows the app to read virtual events created by the you 
+| Description | - | Allows the app to read virtual events created by you 
 | AdminConsentRequired | - | Yes 
 
 ---
