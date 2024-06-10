@@ -50,12 +50,12 @@ PATCH /solutions/virtualEvents/webinars/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
-| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
-| displayName | String | Display name of the virtual event. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
+| description | [itemBody](../resources/itembody.md) | Description of the webinar. |
+| displayName | String | Display name of the webinar. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
 | isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the webinar. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
 ## Response
 
