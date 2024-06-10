@@ -9,25 +9,25 @@ ms.localizationpriority: medium
 
 # Manage user profile photo settings in Microsoft 365 by using Microsoft Graph
 
-Administrators can use the Microsoft Graph API to get and configure photo update settings in an organization. This includes controlling the environment where user profile photos can be updated within the organization and defining which roles are required to update profile
+Administrators can use the Microsoft Graph API to get and configure photo update settings in an organization. They can also control the environment where user profile photos can be updated within the organization and define which roles are required to update profile
 user photos.
 
 ## Configure the user profile photo environment 
 
 For hybrid tenants, user accounts can be synced from on-premises Microsoft Entra ID to the cloud via [directory sync](/azure/active-directory/architecture/sync-directory). To determine whether you have a hybrid environment, see [Determine your identity model](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). For hybrid tenants, administrators can configure whether user profile photo updates made on-premises sync to the cloud, or whether user profile photo updates are made from the cloud only.
 
-Configuration of user profile photo updates does not affect other user account properties. Also, this configuration does not affect existing user profile photos in the cloud or on-premises.
+Configuration of user profile photo updates doesn't affect other user account properties. Also, this configuration doesn't affect existing user profile photos in the cloud or on-premises.
 
 ### Cloud environment
 
-In hybrid tenant and cloud-only environments, user profile photo settings are updated in the cloud and the settings are not sync'd to on-premises. In cloud environments, user profile photo settings can be updated through Entra ID or Microsoft Graph; for more information, see [Change user profile photos](/microsoft-365/admin/add-users/change-user-profile-photos). Tenants in a cloud environment have an option to disable user profile photo updates.
+In hybrid tenant and cloud-only environments, user profile photo settings are updated in the cloud and the settings aren't synced to on-premises. In cloud environments, user profile photo settings can be updated through Microsoft Entra ID or Microsoft Graph; for more information, see [Change user profile photos](/microsoft-365/admin/add-users/change-user-profile-photos). Tenants in a cloud environment have the option to disable user profile photo updates.
 
-Configuring this option does not remove on-premises photos that are stored in Entra ID or sync cloud photos to on-premises. If you select this option, tenant admins should remove the
-Entra ID user profile photos by using Exchange PowerShell cmdlets. For more information, see [Remove-UserPhoto](/powershell/module/exchange/remove-userphoto).  
+Configuring this option doesn't remove on-premises photos stored in Microsoft Entra ID or sync cloud photos to on-premises. If you select this option, tenant admins should remove the
+Microsoft Entra ID user profile photos by using Exchange PowerShell cmdlets. For more information, see [Remove-UserPhoto](/powershell/module/exchange/remove-userphoto).  
 
 ### On-premises environment
 
-In hybrid tenants user profile photo settings updated on-premises continue to sync user profile photos from on-premises to the cloud, and user profile photo updates are visible across Microsoft 365 products. Updates through cloud services are disabled for both admins and users. Tenants in a on-premises environment do not have an option to disable user profile photo updates.
+In hybrid tenants, user profile photo settings updated on-premises continue to sync user profile photos from on-premises to the cloud, and user profile photo updates are visible across Microsoft 365 products. Updates through cloud services are disabled for both admins and users. Tenants in an on-premises environment don't have the option to disable user profile photo updates.
 
 > [!Important]
 > When you update user profile photo settings, it can take up to 24 hours for the changes to propagate to Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours for users to be blocked from making updates.
