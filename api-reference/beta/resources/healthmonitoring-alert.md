@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant."
+description: "Represents a scenario health monitoring system detected alert for anomalous usage patterns within identity scenarios found in Microsoft Entra tenant."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant
+Represents a scenario health monitoring system detected alert for anomalous usage patterns within identity scenarios found in Microsoft Entra tenant
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

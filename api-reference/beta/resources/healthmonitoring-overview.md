@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-description: "Use the Microsoft Entra health monitoring API to view anomalous usage pattern for your tenant and receive alert notification"
+description: "Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification"
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft Entra health monitoring API to view anomalous usage pattern for your tenant and receive alert notification
+Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification
 
 ## Licenses
 **TODO: Do we require user to have specific licenses?**

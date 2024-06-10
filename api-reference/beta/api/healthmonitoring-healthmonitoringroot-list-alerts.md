@@ -1,6 +1,6 @@
 ---
 title: "List alert objects"
-description: "Get a list of the microsoft.graph.healthMonitoring.alert objects and their properties."
+description: "Get the list of the microsoft.graph.healthMonitoring.alert objects and their properties from the past 30 days"
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) objects and their properties.
+Get the list of the [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) objects and their properties from the past 30 days
 
 ## Permissions
 
