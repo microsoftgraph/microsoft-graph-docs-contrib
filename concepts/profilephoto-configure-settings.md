@@ -27,7 +27,7 @@ Entra ID user profile photos by using Exchange PowerShell cmdlets. For more info
 
 ### On-premises environment
 
-Hybrid tenants that store user profile photos on-premises continue to sync user profile photos from on-premises to the cloud, and user profile photo updates are visible across Microsoft 365 products. Updates through cloud services are disabled for both admins and users. The option to disable user profile photos is not available when the photos are stored on-premises.
+In hybrid tenants user profile photo settings updated on-premises continue to sync user profile photos from on-premises to the cloud, and user profile photo updates are visible across Microsoft 365 products. Updates through cloud services are disabled for both admins and users. Tenants in a on-premises environment do not have an option to disable user profile photo updates.
 
 > [!Important]
 > When you update user profile photo settings, it can take up to 24 hours for the changes to propagate to Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours for users to be blocked from making updates.
@@ -79,14 +79,8 @@ Content-Type: application/json
 ```
 ## Block users from changing their user profile photos 
 
-For tenants that store user profile photos in the cloud, an additional option is available to set which roles are able to update user profile photos
+Tenants with user profile photo settings updated in the cloud, have the option to set which roles are able to update user profile photos
 within the organization.
-
-
-
-
-
-
 
 ### Configure User Administrator support for profile photo updates
 
