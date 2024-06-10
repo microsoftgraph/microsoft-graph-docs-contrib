@@ -63,7 +63,6 @@ After your item insights are disabled, the following happens:
 * Experiences that show content trending around you is inaccessible to others, in places such as Delve and the **Discover** section in Outlook mobile. The lack of trending insights also reduces your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
 * Insights about your file-based activities in collaborative workspaces are no longer shared with others, protecting you from undesirable discovery of your data. On the other hand, your access to experiences showing trending content is not revoked. You can see the activities and data of users who have not disabled item insights.
-* [Suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) are no longer calculated and shown on your profile card.
 
 ## API reference
 
