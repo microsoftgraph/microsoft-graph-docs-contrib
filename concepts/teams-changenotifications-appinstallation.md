@@ -32,7 +32,7 @@ To get change notifications for Teams app installation in personal scope, subscr
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All |
+| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All|
 
 #### Team scope
 
