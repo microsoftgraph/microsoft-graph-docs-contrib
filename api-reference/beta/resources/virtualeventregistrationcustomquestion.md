@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PLACEHOLDER DESCRIPTION. i.e. Represents a custom registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).]
+Represents a custom registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).
 
 Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).
 
@@ -30,7 +30,7 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 
 ### virtualEventRegistrationQuestionAnswerInputType values
 
-[PLACEHOLDER Descriptions]
+The following shows the supported types of answer input for a custom registration question.
 | Value | Description |
 | ----- | ----------- |
 | text | The registration question accepts single-line text. |
