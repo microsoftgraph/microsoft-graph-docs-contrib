@@ -473,7 +473,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | bebd0841-a3d8-4313-a51d-731112c8ee41 | 9f89e109-94b9-4c9b-b4fc-98cdaa54f574 
 | DisplayText | Read restore all sessions and start restore sessions from backups | Read restore sessions and start restore sessions from backups 
-| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up-snapshot, on behalf of the signed in user. 
+| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, on behalf of the signed in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -4658,7 +4658,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e24d31aa-e1ab-4c80-85fe-23018690335d | 469cd065-729e-4dee-b1fa-d92e0fab6310 
 | DisplayText | Read profile photo of a user or group | Read profile photo of a user or group 
-| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the the signed-in user. 
+| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -4669,7 +4669,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 27baa7f6-5dfb-4ba8-b1d3-1e812c143013 | f5b24df7-511e-48bb-ae88-643f023b55e1 
 | DisplayText | Read and write profile photo of a user or group | Read and write profile photo of a user or group 
-| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the the signed-in user. 
+| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -6444,7 +6444,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e0b77adb-e790-44a3-b0a0-257d06303687 | f266d9c0-ccb9-4fb8-a228-01ac0d8d6627 
 | DisplayText | Read all Threat Intelligence Information | Read all threat intelligence information 
-| Description | Allows the app to read threat intellgence information, such as indicators, observations, and and articles, without a signed in user. | Allows the app to read threat intelligence information, such as indicators, observations, and articles, on behalf of the signed-in user. 
+| Description | Allows the app to read threat intelligence information, such as indicators, observations, and and articles, without a signed in user. | Allows the app to read threat intelligence information, such as indicators, observations, and articles, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
