@@ -209,7 +209,7 @@ If you install an app in a team without obtaining consent for the app’s requir
 
 |Error message | Description | Resolution |
 | ---- | ---- | ---- |
-| The required permissions have not been consented to by the caller. | The request body didn't specify all the RSC permissions required by the app, to which the user must grant consent. | Ensure your request must be as shown in [Example 2: Install an app in a team with consent to the resource-specific permissions required by the app](#example-2-install-an-app-in-a-team-with-consent-to-the-resource-specific-permissions-required-by-the-app).|
+| The required permissions have not been consented to by the caller. | The request body doesn't specify all the RSC permissions required by the app, to which the user must grant consent. | Ensure your request must be as shown in [Example 2: Install an app in a team with consent to the resource-specific permissions required by the app](#example-2-install-an-app-in-a-team-with-consent-to-the-resource-specific-permissions-required-by-the-app).|
 
 ## Related content
 
