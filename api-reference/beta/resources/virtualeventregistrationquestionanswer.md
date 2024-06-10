@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationQuestionAnswer resource type"
-description: "Information about registration question answer of a virtual event."
+description: "Information about the answer to a registration question of a virtual event."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PLACEHOLDER DESCRIPTION. i.e. Represents the answer(s) of a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).]
+Represents the answer(s) of either a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).
 
 ## Properties
 
@@ -22,8 +22,8 @@ Namespace: microsoft.graph
 |booleanValue|Boolean|Boolean answer of the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md). Only appears when **answerInputType** is `boolean`. |
 |displayName|String|Display name of the registration question.|
 |multiChoiceValues|String collection|Collection of text answer of the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md). Only appears when **answerInputType** is `multiChoice`.|
-|questionId|String|**id** of the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).|
-|value|String|Text answer of the registration question. Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
+|questionId|String|**id** of either a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).|
+|value|String|Text answer of the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or the [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md). Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
 
 ## JSON representation
 
