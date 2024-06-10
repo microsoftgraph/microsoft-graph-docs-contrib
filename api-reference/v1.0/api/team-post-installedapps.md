@@ -205,11 +205,11 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-If you install an app in a team without obtaining consent for the app’s required resource-specific permissions, you will receive the following error message:
+If you install an app in a team without the necessary resource-specific permissions for the app, you encounter the following error message:
 
 |Error message | Description | Resolution |
 | ---- | ---- | ---- |
-| The required permissions have not been consented to by the caller. | The request body doesn't specify all the RSC permissions required by the app, to which the user must grant consent. | Ensure your request must be as shown in [Example 2: Install an app in a team with consent to the resource-specific permissions required by the app](#example-2-install-an-app-in-a-team-with-consent-to-the-resource-specific-permissions-required-by-the-app).|
+| The required permissions have not been consented to by the caller. | The request body doesn't specify all the RSC permissions required by the app, to which the user must grant consent. | Ensure that your request matches the [Example 2: Install an app in a team with consent to the resource-specific permissions required by the app](#example-2-install-an-app-in-a-team-with-consent-to-the-resource-specific-permissions-required-by-the-app).|
 
 ## Related content
 
