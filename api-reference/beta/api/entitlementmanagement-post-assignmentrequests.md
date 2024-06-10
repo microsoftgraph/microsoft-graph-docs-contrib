@@ -778,7 +778,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
     "id": "5b682fbb-d6e5-4118-a471-46dfc553e9cc",
     "requestType": "adminUpdate",
     "state": "submitted",
