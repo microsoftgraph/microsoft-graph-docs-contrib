@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PLACEHOLDER DESCRIPTION. i.e. Represents a predefined registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).]
+Represents a predefined registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).
+
+Currently, [virtualEventRegistration](../resources/virtualeventregistration.md) only supports [virtualEventWebinar](../resources/virtualeventwebinar.md) 
 
 Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).
 
@@ -28,7 +30,7 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
-[PLACEHOLDER DESCRIPTION]
+The following shows the different information that can be obtained through predefined registration questions.  
 | Value | Description |
 | ----- | ----------- |
 | street | The registration question accepts single-line text. |
