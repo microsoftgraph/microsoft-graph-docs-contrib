@@ -1,6 +1,6 @@
 ---
 title: "Manage user profile photo settings in Microsoft 365 by using Microsoft Graph"
-description: "Learn how to configure where and how user profile photos are managed in your orgnaization."
+description: "Learn how to configure where and how user profile photo updates are managed in your orgnaization."
 author: "shivanioslo"
 ms.author: "shivansingh"
 ms.topic: concept-article
@@ -84,7 +84,7 @@ within the organization.
 
 ### Configure User Administrator support for profile photo updates
 
-The following example shows how to configure the User Administrator role to update profile photos in your organization.
+The following example shows how to configure the User Administrator role to change profile photo update settings in your organization.
 
 ```http
 PATCH https://graph.microsoft.com/beta/admin/people/photoupdatesettings
@@ -110,7 +110,7 @@ Content-Type: application/json
 ```
 ### Configure User Administrator and Administrator support for profile photo updates
 
-The following example shows how to configure the User Administrator and Administrator roles to update profile photos in your organization.
+The following example shows how to configure the User Administrator and Administrator roles to change profile photo update settings in your organization.
 
 ```http
 PATCH https://graph.microsoft.com/beta/admin/people/photoupdatesettings
