@@ -27,6 +27,7 @@ Represents information about positions related to entities within a user's [prof
 |level|String|The employee’s experience or management level.|
 |role|String|The role the position entailed.|
 |secondaryJobTitle|String|An optional job title for the position.|
+|secondaryRole|String|An optional role for the position entailed.|
 |startMonthYear|Date|The start date of the position.|
 |summary|String|The summary of the position.|
 
@@ -53,6 +54,7 @@ The following JSON representation shows the resource type.
   "level": "String",
   "role": "String",
   "secondaryJobTitle": "String",
+  "secondaryRole": "String",
   "startMonthYear": "String (timestamp)",
   "summary": "String"
 }
