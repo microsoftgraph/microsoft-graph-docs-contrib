@@ -1,3 +1,4 @@
+
 ---
 title: "virtualEventRegistrationQuestionBase resource type"
 description: "Information about a virtual event registration question."
@@ -6,7 +7,6 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
----
 
 # virtualEventRegistrationQuestionBase resource type
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[PLACEHOLDER DESCRIPTION i.e. Represents an abstract base type for a virtual event registration question.]
+Represents an abstract base type for a virtual event registration question.
 
 Base type of [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).
 
@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List virtualEventRegistration Questions](../api/virtualeventregistration-list-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of all [registration](../resources/virtualeventregistration.md) questions of a [webinar](../resources/virtualeventwebinar.md).|
-
+|[Create virtualEventRegistration Questions](../api/virtualeventregistration-post-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object|Create a [registration](../resources/virtualeventregistration.md) question of a [webinar](../resources/virtualeventwebinar.md).|
 ## Properties
 
 |Property|Type|Description|
