@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # siteArchivalDetails resource type
 
-Represents the archival details of a [siteCollection](/graph/sitecollection).
+Represents the archival details of a [siteCollection](../resources/sitecollection.md).
 
 ## Properties
 
