@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/complianceapioverview.md
@@ -7,19 +10,19 @@ items:
     href: ../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md
   - name: Subject rights request
     href: ../../resources/subjectrightsrequest.md
-  - name: List subjectRightsRequests
-    href: ../../api/subjectRightsRequest-list.md
-  - name: Create subjectRightsRequest
-    href: ../../api/subjectRightsRequest-post.md
-  - name: Get subjectRightsRequest
-    href: ../../api/subjectRightsRequest-get.md
-  - name: Update subjectRightsRequest
-    href: ../../api/subjectRightsRequest-update.md
-  - name: getFinalAttachment
-    href: ../../api/subjectRightsRequest-getfinalattachment.md
-  - name: getFinalReport
-    href: ../../api/subjectRightsRequest-getfinalreport.md
+  - name: List
+    href: ../../api/subjectrightsrequest-list.md
+  - name: Create
+    href: ../../api/subjectrightsrequest-post.md
+  - name: Get
+    href: ../../api/subjectrightsrequest-get.md
+  - name: Update
+    href: ../../api/subjectrightsrequest-update.md
+  - name: Get final attachment
+    href: ../../api/subjectrightsrequest-getfinalattachment.md
+  - name: Get final report
+    href: ../../api/subjectrightsrequest-getfinalreport.md
   - name: List notes
-    href: ../../api/subjectRightsRequest-list-notes.md
-  - name: Create authoredNote
-    href: ../../api/subjectRightsRequest-post-notes.md
+    href: ../../api/subjectrightsrequest-list-notes.md
+  - name: Create note
+    href: ../../api/subjectrightsrequest-post-notes.md

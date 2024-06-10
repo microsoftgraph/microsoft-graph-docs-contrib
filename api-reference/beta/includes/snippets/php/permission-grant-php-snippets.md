@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Shares\Item\Permission\Grant\GrantPostRequestBody
+use Microsoft\Graph\Beta\Generated\Shares\Item\Permission\Grant\GrantPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\DriveRecipient;
 
 

@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\UserScopeTeamsAppInstallation;
 use Microsoft\Graph\Beta\Generated\Models\TeamsAppPermissionSet;
 use Microsoft\Graph\Beta\Generated\Models\TeamsAppResourceSpecificPermission;
-use Microsoft\Graph\Beta\Generated\Models\PermissionType;
+use Microsoft\Graph\Beta\Generated\Models\TeamsAppResourceSpecificPermissionType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\EnterpriseCodeSigningCertificate;
-use Microsoft\Graph\Beta\Generated\Models\Status;
+use Microsoft\Graph\Beta\Generated\Models\CertificateStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

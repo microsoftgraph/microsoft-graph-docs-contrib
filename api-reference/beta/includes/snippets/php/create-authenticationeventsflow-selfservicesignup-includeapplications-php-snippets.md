@@ -15,12 +15,12 @@ use Microsoft\Graph\Beta\Generated\Models\IdentityProviderBase;
 use Microsoft\Graph\Beta\Generated\Models\OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp;
 use Microsoft\Graph\Beta\Generated\Models\OnAttributeCollectionExternalUsersSelfServiceSignUp;
 use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttribute;
-use Microsoft\Graph\Beta\Generated\Models\UserFlowAttributeType;
-use Microsoft\Graph\Beta\Generated\Models\DataType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeDataType;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPage;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPageViewConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputConfiguration;
-use Microsoft\Graph\Beta\Generated\Models\InputType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

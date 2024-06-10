@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachment;
-use Microsoft\Graph\Beta\Generated\Models\ProviderType;
-use Microsoft\Graph\Beta\Generated\Models\Permission;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachmentProvider;
+use Microsoft\Graph\Beta\Generated\Models\ReferenceAttachmentPermission;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

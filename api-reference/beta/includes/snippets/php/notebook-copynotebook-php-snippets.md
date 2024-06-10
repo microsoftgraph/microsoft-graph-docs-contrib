@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\Onenote\Notebooks\Item\CopyNotebook\CopyNotebookPostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\Onenote\Notebooks\Item\CopyNotebook\CopyNotebookPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

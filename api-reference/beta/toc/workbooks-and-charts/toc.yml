@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/excel.md
@@ -15,7 +18,7 @@ items:
   items:
   - name: Workbook application
     href: ../../resources/workbookapplication.md
-  - name: Get workbookApplication
+  - name: Get
     href: ../../api/workbookapplication-get.md
   - name: Calculate
     href: ../../api/workbookapplication-calculate.md
@@ -23,27 +26,27 @@ items:
   items:
   - name: Workbook chart
     href: ../../resources/workbookchart.md
-  - name: Get Chart
+  - name: Get chart
     href: ../../api/chart-get.md
   - name: Create ChartSeries
     href: ../../api/chart-post-series.md
   - name: List series
     href: ../../api/chart-list-series.md
-  - name: Update
+  - name: Update chart
     href: ../../api/chart-update.md
-  - name: Image
+  - name: Get chart image
     href: ../../api/chart-image.md
-  - name: Delete
+  - name: Delete chart
     href: ../../api/chart-delete.md
-  - name: Setdata
+  - name: Reset data
     href: ../../api/chart-setdata.md
-  - name: Setposition
+  - name: Set position data
     href: ../../api/chart-setposition.md
-  - name: List
+  - name: List charts
     href: ../../api/chart-list.md
   - name: Itemat
     href: ../../api/chartcollection-itemat.md
-  - name: Add
+  - name: Add chart
     href: ../../api/chartcollection-add.md
 - name: Workbook chart axis
   items:
@@ -149,19 +152,19 @@ items:
   items:
   - name: Workbook comment
     href: ../../resources/workbookcomment.md
-  - name: List workbookComments
+  - name: List
     href: ../../api/workbook-list-comments.md
-  - name: Get workbookComment
+  - name: Get
     href: ../../api/workbookcomment-get.md
 - name: Workbook comment reply
   items:
   - name: Workbook comment reply
     href: ../../resources/workbookcommentreply.md
-  - name: List workbookCommentReplies
+  - name: List replies
     href: ../../api/workbookcomment-list-replies.md
-  - name: Get workbookCommentReply
+  - name: Get reply
     href: ../../api/workbookcommentreply-get.md
-  - name: Create workbookCommentReply
+  - name: Create reply
     href: ../../api/workbookcomment-post-replies.md
 - name: Workbook document task
   items:
@@ -177,9 +180,9 @@ items:
   items:
   - name: Workbook document task change
     href: ../../resources/workbookdocumenttaskchange.md
-  - name: Get workbookDocumentTaskChange
+  - name: Get
     href: ../../api/workbookdocumenttaskchange-get.md
-  - name: List workbookDocumentTaskChanges
+  - name: List
     href: ../../api/workbookdocumenttask-list-changes.md
 - name: Workbook filter
   items:
@@ -213,11 +216,11 @@ items:
     href: ../../api/nameditem-add.md
   - name: AddFormulaLocal
     href: ../../api/nameditem-addformulalocal.md
-  - name: Get NamedItem
+  - name: Get
     href: ../../api/nameditem-get.md
   - name: Update
     href: ../../api/nameditem-update.md
-  - name: Range
+  - name: List range
     href: ../../api/nameditem-range.md
   - name: List
     href: ../../api/nameditem-list.md
@@ -243,9 +246,9 @@ items:
   items:
   - name: Workbook range
     href: ../../resources/workbookrange.md
-  - name: Get Range
+  - name: Get range
     href: ../../api/range-get.md
-  - name: Update
+  - name: Update range
     href: ../../api/range-update.md
   - name: Boundingrect
     href: ../../api/range-boundingrect.md
@@ -283,7 +286,7 @@ items:
     href: ../../api/range-clear.md
   - name: Delete
     href: ../../api/range-delete.md
-  - name: Insert
+  - name: Insert range
     href: ../../api/range-insert.md
   - name: Merge
     href: ../../api/range-merge.md
@@ -327,13 +330,13 @@ items:
   items:
   - name: Workbook range format
     href: ../../resources/workbookrangeformat.md
-  - name: Get workbookRangeFormat
+  - name: Get range format
     href: ../../api/rangeformat-get.md
   - name: Create workbookRangeBorder
     href: ../../api/rangeformat-post-borders.md
   - name: List borders
     href: ../../api/rangeformat-list-borders.md
-  - name: Update
+  - name: Update range format
     href: ../../api/rangeformat-update.md
   - name: Autofitcolumns
     href: ../../api/rangeformat-autofitcolumns.md
@@ -359,23 +362,23 @@ items:
   items:
   - name: Workbook table
     href: ../../resources/workbooktable.md
-  - name: Get workbookTable
+  - name: Get table
     href: ../../api/table-get.md
-  - name: Create workbookTableColumn
+  - name: Create column
     href: ../../api/table-post-columns.md
   - name: List columns
     href: ../../api/table-list-columns.md
-  - name: Create workbookTableRow
+  - name: Create row
     href: ../../api/table-post-rows.md
   - name: List rows
     href: ../../api/table-list-rows.md
-  - name: Update
+  - name: Update table
     href: ../../api/table-update.md
   - name: Databodyrange
     href: ../../api/table-databodyrange.md
   - name: Headerrowrange
     href: ../../api/table-headerrowrange.md
-  - name: Range
+  - name: Get range
     href: ../../api/table-range.md
   - name: Totalrowrange
     href: ../../api/table-totalrowrange.md
@@ -383,13 +386,13 @@ items:
     href: ../../api/table-clearfilters.md
   - name: Converttorange
     href: ../../api/table-converttorange.md
-  - name: Delete
+  - name: Delete table
     href: ../../api/table-delete.md
   - name: Reapplyfilters
     href: ../../api/table-reapplyfilters.md
   - name: List
     href: ../../api/table-list.md
-  - name: Add
+  - name: Add table
     href: ../../api/tablecollection-add.md
 - name: Workbook table column
   items:
@@ -407,7 +410,7 @@ items:
     href: ../../api/tablecolumn-range.md
   - name: Totalrowrange
     href: ../../api/tablecolumn-totalrowrange.md
-  - name: Delete
+  - name: Delete column
     href: ../../api/tablecolumn-delete.md
   - name: List
     href: ../../api/tablecolumn-list.md
@@ -421,19 +424,19 @@ items:
     href: ../../resources/workbooktablerow.md
   - name: List
     href: ../../api/tablerow-list.md
-  - name: Create
+  - name: Create row
     href: ../../api/table-post-rows.md
   - name: Get
     href: ../../api/tablerow-get.md
   - name: Update
     href: ../../api/tablerow-update.md
-  - name: Delete
+  - name: Delete row
     href: ../../api/tablerow-delete.md
-  - name: Range
+  - name: Get range
     href: ../../api/tablerow-range.md
-  - name: Itemat
+  - name: Get item at
     href: ../../api/tablerowcollection-itemat.md
-  - name: Add
+  - name: Add row
     href: ../../api/tablerowcollection-add.md
 - name: Workbook table sort
   items:
@@ -451,35 +454,35 @@ items:
   items:
   - name: Workbook worksheet
     href: ../../resources/workbookworksheet.md
-  - name: Get Worksheet
+  - name: Get worksheet
     href: ../../api/worksheet-get.md
-  - name: Create Chart
+  - name: Add chart
     href: ../../api/worksheet-post-charts.md
   - name: List names
     href: ../../api/worksheet-list-names.md
   - name: List charts
     href: ../../api/worksheet-list-charts.md
-  - name: Create Table
+  - name: Add table
     href: ../../api/worksheet-post-tables.md
   - name: List tables
     href: ../../api/worksheet-list-tables.md
-  - name: Update
+  - name: Update worksheet
     href: ../../api/worksheet-update.md
-  - name: Cell
+  - name: Get cell
     href: ../../api/worksheet-cell.md
-  - name: Range
+  - name: Get range
     href: ../../api/worksheet-range.md
-  - name: Usedrange
+  - name: Get usedrange
     href: ../../api/worksheet-usedrange.md
-  - name: Delete
+  - name: Delete worksheet
     href: ../../api/worksheet-delete.md
   - name: List
     href: ../../api/worksheet-list.md
-  - name: Add
+  - name: Add worksheet
     href: ../../api/worksheetcollection-add.md
   - name: List pivotTables
     href: ../../api/workbookworksheet-list-pivottables.md
-  - name: List tasks
+  - name: List
     href: ../../api/workbookworksheet-list-tasks.md
 - name: Workbook worksheet protection
   items:
