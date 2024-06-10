@@ -10,7 +10,9 @@ doc_type: apiPageType
 # List virtualEventRegistration Questions
 Namespace: microsoft.graph
 
-[PLACEHOLDER DESCRIPTION. i.e. Get a list of all [registration](../resources/virtualeventregistration.md) questions of a [webinar](../resources/virtualeventwebinar.md).]
+Get a list of all [registration](../resources/virtualeventregistration.md) questions of a [webinar](../resources/virtualeventwebinar.md).
+
+The list can include either [predefined registration questions](../resources/virtualEventRegistrationPredefinedQuestion.md) or [custom registration questions](../resources/virtualEventRegistrationCustomQuestion.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,6 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > [!NOTE]
 >
 > To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registration records from virtual events created by that specific user.
+
 ## HTTP request
 
 <!-- {
@@ -31,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/{id}/registrationConfiguration/questions
+GET /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
 ```
 
 ## Optional query parameters
@@ -80,43 +83,28 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
-            "id": "630ce4da-6355-459e-81dc-541fd6b93375",
-            "displayName": "Job title",
-            "isRequired": true,
-            "label": "jobTitle"
-        },
-        {
-            "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
-            "id": "363dc852-452d-4e51-a1f8-a8dc72ce82cd",
-            "displayName": "In what area do you work",
-            "isRequired": false,
-            "answerInputType": "text",
-            "answerChoices": []
-        },
-        {
-            "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
-            "id": "e4ef3e86-9137-4d24-8440-c674f1a3df7b",
-            "displayName": "What is your primary reason for attending this webinar",
-            "isRequired": true,
-            "answerInputType": "singleChoice",
-            "answerChoices": [
-                "To gain knowledge on the topic",
-                "To network with other professionals",
-                "To earn continuing education credits"
-            ]
-        },
-        {
-            "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
-            "id": "e36b964f-2aed-43cf-a13e-2df4f8624652",
-            "displayName": "Are you interested in webinars of the same topic in the future",
-            "isRequired": true,
-            "answerInputType": "boolean",
-            "answerChoices": []
-        }
-    ]
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
+      "id": "00ee391e-9a48-4b5a-9074-c7d75541bfbb",
+      "label": "jobTitle"
+      "displayName": "Job title",
+      "isRequired": true
+    },
+    {
+      "@odata.type": "#microsoft.graph.virtualEventRegistratioCustomQuestion",
+      "id": "80917098-9535-4f84-ac92-c3deea2099fc",
+      "displayName": "What's your job position?",
+      "answerInputType": "multiChoice",
+      "answerChoices": [
+        "Software Engineer",
+        "Engineer Manager",
+        "Product Manager"
+      ],
+      "isRequired": false
+    }
+  ]
 }
 ```
