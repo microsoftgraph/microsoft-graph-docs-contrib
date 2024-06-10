@@ -2582,7 +2582,8 @@
                 "virtualEventRegistration",
                 "virtualEventSession",
                 "virtualEventTownhall",
-                "virtualEventWebinar"
+                "virtualEventWebinar",
+                "virtualEventRegistrationQuestionBase"
               ]
             }
           ]
