@@ -1,6 +1,6 @@
 ---
 title: "Manage user profile photo settings in Microsoft 365 by using Microsoft Graph"
-description: "Learn how to configure where and how user profile photo updates are managed in your orgnaization."
+description: "Learn how to configure where and how user profile photo updates are managed in your organization."
 author: "shivanioslo"
 ms.author: "shivansingh"
 ms.topic: concept-article
