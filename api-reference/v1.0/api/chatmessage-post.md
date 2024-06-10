@@ -3,7 +3,7 @@ title: "Send chatMessage in a channel or a chat"
 description: "Send a new chatMessage in the specified channel or a chat."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.subservice: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
