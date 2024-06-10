@@ -728,7 +728,7 @@ Content-type: application/json
 
 ### Example 7: Update the expiration date for an access package assignment
 
-The following example shows how an admin can update the expiration date for an access package assignment.
+The following example shows how to update the expiration date for an access package assignment.
 
 #### Request
 
