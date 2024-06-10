@@ -320,10 +320,9 @@ Content-Length: 283
   "error":
   {
     "code": "invalidRequest",
-    "message": "Cannot copy root folder.",
+    "message": "Cannot copy the root folder.",
     "innerError":
     {
-      "code": "badRequest",
       "date": "2023-12-11T04:26:35",
       "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
       "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
@@ -360,20 +359,21 @@ The following example shows the response.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP/1.1 501 Not Implemented
+HTTP/1.1 400 Bad Request
 Content-Type: application/json
-Content-Length: 340
+Content-Length: 341
 
 {
   "error":
   {
-    "code": "notSupported",
+    "code": "invalidRequest",
     "message": "Direct child count limit exceeded. Cannot copy children only when there are more than 150 direct children.",
     "innerError":
     {
+      "code": "directChildrenLimitExceeded",
       "date": "2023-12-11T04:26:35",
       "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
-      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe""
+      "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
     }
   }
 }
