@@ -99,7 +99,7 @@ Content-Type: application/json
     "id": "57aff05d-6c80-4d36-b051-acc211400306",
     "lastModifiedDateTime": "2024-06-05T20:39:57Z",
     "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-    "webUrl": "https://a830edad9050849ssgmsit.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+    "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
     "title": "Microsoft Build brings AI tools to the forefront for developers",
     "pageLayout": "newsLink",
     "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
@@ -113,7 +113,10 @@ Content-Type: application/json
         "user": {
             "displayName": "SharePoint App"
         }
-    }
+    },
+    "parentReference": {
+        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+    },
     "publishingState": {
         "level": "published",
         "versionId": "1.0"
