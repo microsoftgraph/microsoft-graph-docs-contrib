@@ -3,7 +3,7 @@ title: "Create team"
 description: "Create a new team."
 author: "anandjo"
 ms.localizationpriority: high
-ms.subservice: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "workPosition resource type"
 description: "workPosition resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.subservice: people-and-workplace-intelligence
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
