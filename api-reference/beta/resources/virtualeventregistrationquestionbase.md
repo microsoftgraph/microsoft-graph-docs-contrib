@@ -1,4 +1,3 @@
-
 ---
 title: "virtualEventRegistrationQuestionBase resource type"
 description: "Information about a virtual event registration question."
@@ -28,7 +27,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List virtualEventRegistration Questions](../api/virtualeventregistration-list-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of all [registration](../resources/virtualeventregistration.md) questions of a [webinar](../resources/virtualeventwebinar.md).|
-|[Create virtualEventRegistration Questions](../api/virtualeventregistration-post-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object|Create a [registration](../resources/virtualeventregistration.md) question of a [webinar](../resources/virtualeventwebinar.md).|
 ## Properties
 
 |Property|Type|Description|
