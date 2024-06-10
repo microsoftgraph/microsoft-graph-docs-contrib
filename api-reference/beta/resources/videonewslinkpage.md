@@ -1,7 +1,7 @@
 ---
 title: videoNewsLinkPage resource type
 description: Represents a Video News Link page in the site's pages list
-author: klam
+author: kevklam
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: resourcePageType

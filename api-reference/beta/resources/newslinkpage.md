@@ -1,9 +1,9 @@
 ---
-title: "newsLinkPage resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: newsLinkPage resource type
+description: Represents a NewsLink page in the site's pages list
+author: shgangan
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a NewsLink page in the site's pages [list](../resources/list.md).
 
 Inherits from [baseSitePage](../resources/basesitepage.md).
 
@@ -25,39 +24,33 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |[Get](../api/newslinkpage-get.md)|[newsLinkPage](../resources/newslinkpage.md)|Read the properties and relationships of a [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Update](../api/newslinkpage-update.md)|[newsLinkPage](../resources/newslinkpage.md)|Update the properties of a [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Delete](../api/newslinkpage-delete.md)|None|Delete a [newsLinkPage](../resources/newslinkpage.md) object.|
-|[publish](../api/newslinkpage-publish.md)|None|**TODO: Add Description**|
-|[List user](../api/newslinkpage-list-createdbyuser.md)|[user](../resources/user.md) collection|Get the user resources from the createdByUser navigation property.|
-|[Add user](../api/newslinkpage-post-createdbyuser.md)|[user](../resources/user.md)|Add createdByUser by posting to the createdByUser collection.|
-|[Remove user](../api/newslinkpage-delete-createdbyuser.md)|None|Remove a [user](../resources/user.md) object.|
-|[List user](../api/newslinkpage-list-lastmodifiedbyuser.md)|[user](../resources/user.md) collection|Get the user resources from the lastModifiedByUser navigation property.|
-|[Add user](../api/newslinkpage-post-lastmodifiedbyuser.md)|[user](../resources/user.md)|Add lastModifiedByUser by posting to the lastModifiedByUser collection.|
-|[Remove user](../api/newslinkpage-delete-lastmodifiedbyuser.md)|None|Remove a [user](../resources/user.md) object.|
+|[Publish](../api/newslinkpage-publish.md)|None|Publish a [newsLinkPage](../resources/newslinkpage.md) object. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bannerImageWebUrl|String|**TODO: Add Description**|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|description|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|eTag|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|name|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|**TODO: Add Description**|
-|newsWebUrl|String|**TODO: Add Description**|
-|pageLayout|pageLayoutType|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md).The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`, `videoNewsLink`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` , `videoNewsLink`.|
-|parentReference|[itemReference](../resources/itemreference.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
-|publishingState|[publicationFacet](../resources/publicationfacet.md)|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md).|
-|title|String|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md).|
-|webUrl|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md).|
+|bannerImageWebUrl|String|A link to the banner image for the [newsLinkPage](../resources/newslinkpage.md).|
+|createdBy|[identitySet](../resources/intune-identityset.md)| Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|createdDateTime|DateTimeOffset|The date and time the item was created. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md).|
+|eTag|String|ETag for the item. Inherited from [baseItem](../resources/baseitem.md).|
+|id|String|The unique identifier of the item. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|name|String|The name of the item. Inherited from [baseItem](../resources/baseitem.md).|
+|newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|The Sharepoint Ids of the referenced news article, if it is recognized to be a Sharepoint resource. Read-only.|
+|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link.|
+|pageLayout|pageLayoutType|The name of the page layout of the page. Inherited from [baseSitePage](../resources/basesitepage.md).The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`, `videoNewsLink`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` , `videoNewsLink`.|
+|parentReference|[itemReference](../resources/itemreference.md)|Parent information, if the item has a parent. Inherited from [baseItem](../resources/baseitem.md).|
+|publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the MM.mm version of the page. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md).|
+|webUrl|String|URL that displays the resource in the browser. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdByUser|[user](../resources/user.md)|**TODO: Add Description** Inherited from [microsoft.graph.baseItem](../resources/baseitem.md)|
-|lastModifiedByUser|[user](../resources/user.md)|**TODO: Add Description** Inherited from [microsoft.graph.baseItem](../resources/baseitem.md)|
+|createdByUser|[user](../resources/user.md)|Identity of the creator of this item. Read-only. Inherited from [microsoft.graph.baseItem](../resources/baseitem.md)|
+|lastModifiedByUser|[user](../resources/user.md)|Identity of the creator of this item. Read-only. Inherited from [microsoft.graph.baseItem](../resources/baseitem.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
