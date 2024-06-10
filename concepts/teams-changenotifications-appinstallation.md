@@ -101,9 +101,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
->
-> * When the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from chat scope.
-> * Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
+> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from chat scope.
 
 To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
 
