@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Answer
   items:
@@ -7,43 +10,43 @@ items:
     items:
     - name: Acronym
       href: ../../resources/search-acronym.md
-    - name: List acronyms
+    - name: List
       href: ../../api/search-searchentity-list-acronyms.md
-    - name: Create acronym
+    - name: Create
       href: ../../api/search-searchentity-post-acronyms.md
-    - name: Get acronym
+    - name: Get
       href: ../../api/search-acronym-get.md
-    - name: Update acronym
+    - name: Update
       href: ../../api/search-acronym-update.md
-    - name: Delete acronym
+    - name: Delete
       href: ../../api/search-acronym-delete.md
   - name: Bookmark
     items:
     - name: Bookmark
       href: ../../resources/search-bookmark.md
-    - name: List bookmarks
+    - name: List
       href: ../../api/search-searchentity-list-bookmarks.md
-    - name: Create bookmark
+    - name: Create
       href: ../../api/search-searchentity-post-bookmarks.md
-    - name: Get bookmark
+    - name: Get
       href: ../../api/search-bookmark-get.md
-    - name: Update bookmark
+    - name: Update
       href: ../../api/search-bookmark-update.md
-    - name: Delete bookmark
+    - name: Delete
       href: ../../api/search-bookmark-delete.md
   - name: QnA
     items:
     - name: QnA
       href: ../../resources/search-qna.md
-    - name: List qnas
+    - name: List
       href: ../../api/search-searchentity-list-qnas.md
-    - name: Create qna
+    - name: Create
       href: ../../api/search-searchentity-post-qnas.md
-    - name: Get qna
+    - name: Get
       href: ../../api/search-qna-get.md
-    - name: Update qna
+    - name: Update
       href: ../../api/search-qna-update.md
-    - name: Delete qna
+    - name: Delete
       href: ../../api/search-qna-delete.md
 - name: Query
   items:
@@ -53,7 +56,7 @@ items:
     items:
     - name: Search entity
       href: ../../resources/searchentity.md
-    - name: query
+    - name: Query data
       href: ../../api/search-query.md
   - name: Search request
     href: ../../resources/searchrequest.md

@@ -12,12 +12,13 @@ use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewerScope;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleSettings;
 use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
 use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
 use Microsoft\Kiota\Abstractions\Types\Date;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewRecommendationInsightSetting;
 use Microsoft\Graph\Beta\Generated\Models\UserLastSignInRecommendationInsightSetting;
-use Microsoft\Graph\Beta\Generated\Models\SignInScope;
+use Microsoft\Graph\Beta\Generated\Models\UserSignInRecommendationScope;
 use Microsoft\Graph\Beta\Generated\Models\GroupPeerOutlierRecommendationInsightSettings;
 
 

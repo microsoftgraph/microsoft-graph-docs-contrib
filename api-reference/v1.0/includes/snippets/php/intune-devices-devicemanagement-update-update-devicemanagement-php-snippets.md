@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DeviceManagement;
-use Microsoft\Graph\Generated\Models\SubscriptionState;
+use Microsoft\Graph\Generated\Models\DeviceManagementSubscriptionState;
 use Microsoft\Graph\Generated\Models\DeviceProtectionOverview;
 use Microsoft\Graph\Generated\Models\WindowsMalwareOverview;
 use Microsoft\Graph\Generated\Models\WindowsMalwareStateCount;
-use Microsoft\Graph\Generated\Models\State;
+use Microsoft\Graph\Generated\Models\WindowsMalwareThreatState;
 use Microsoft\Graph\Generated\Models\WindowsMalwareSeverityCount;
-use Microsoft\Graph\Generated\Models\Severity;
+use Microsoft\Graph\Generated\Models\WindowsMalwareSeverity;
 use Microsoft\Graph\Generated\Models\WindowsMalwareExecutionStateCount;
-use Microsoft\Graph\Generated\Models\ExecutionState;
+use Microsoft\Graph\Generated\Models\WindowsMalwareExecutionState;
 use Microsoft\Graph\Generated\Models\WindowsMalwareCategoryCount;
-use Microsoft\Graph\Generated\Models\Category;
+use Microsoft\Graph\Generated\Models\WindowsMalwareCategory;
 use Microsoft\Graph\Generated\Models\WindowsMalwareNameCount;
 use Microsoft\Graph\Generated\Models\OsVersionCount;
 

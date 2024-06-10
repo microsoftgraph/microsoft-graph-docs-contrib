@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Users\Item\Todo\Lists\Item\Tasks\Item\Attachments\CreateUploadSession\CreateUploadSessionPostRequestBody
+use Microsoft\Graph\Beta\Generated\Users\Item\Todo\Lists\Item\Tasks\Item\Attachments\CreateUploadSession\CreateUploadSessionPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\AttachmentInfo;
 use Microsoft\Graph\Beta\Generated\Models\AttachmentType;
 

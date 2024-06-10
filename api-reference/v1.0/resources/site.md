@@ -54,7 +54,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create permissions]: ../api/site-post-permissions.md
 [Delete permission]: ../api/site-delete-permission.md
 [Update permission]: ../api/site-update-permission.md
-[List pages]: ../api/baseSitePage-list.md
+[List pages]: ../api/basesitepage-list.md
 
 ## Properties
 

@@ -11,7 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\RequestorSettings;
 use Microsoft\Graph\Beta\Generated\Models\UserSet;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageQuestion;
 use Microsoft\Graph\Beta\Generated\Models\CustomExtensionHandler;
-use Microsoft\Graph\Beta\Generated\Models\Stage;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageCustomExtensionStage;
 use Microsoft\Graph\Beta\Generated\Models\CustomAccessPackageWorkflowExtension;
 
 

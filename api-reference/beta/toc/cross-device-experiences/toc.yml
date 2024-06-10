@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/project-rome-overview.md
@@ -15,9 +18,9 @@ items:
     items:
     - name: User activity
       href: ../../resources/projectrome-activity.md
-    - name: Create or replace userActivity
+    - name: Create or replace an activity
       href: ../../api/projectrome-put-activity.md
-    - name: Delete an userActivity
+    - name: Delete activity
       href: ../../api/projectrome-delete-activity.md
     - name: Get activities
       href: ../../api/projectrome-get-activities.md
@@ -27,9 +30,9 @@ items:
     items:
     - name: Activity history item
       href: ../../resources/projectrome-historyitem.md
-    - name: Create or replace activityHistoryItem
+    - name: Create or replace a history item
       href: ../../api/projectrome-put-historyitem.md
-    - name: Delete a activityHistoryItem
+    - name: Delete a history item
       href: ../../api/projectrome-delete-historyitem.md
 - name: Roaming data
   items:
@@ -37,15 +40,15 @@ items:
     items:
     - name: Cloud clipboard
       href: ../../resources/cloudclipboardroot.md
-    - name: List items
+    - name: List
       href: ../../api/cloudclipboardroot-list-items.md
   - name: Cloud clipboard item
     items:
     - name: Cloud clipboard item
       href: ../../resources/cloudclipboarditem.md
-    - name: List cloudClipboardItems
+    - name: List
       href: ../../api/cloudclipboardroot-list-items.md
-    - name: Get cloudClipboardItem
+    - name: Get
       href: ../../api/cloudclipboarditem-get.md
   - name: Windows settings
     items:
@@ -65,9 +68,9 @@ items:
       items:
       - name: Windows setting instance
         href: ../../resources/windowssettinginstance.md
-      - name: List instances
+      - name: List
         href: ../../api/windowssetting-list-instances.md
-      - name: Get windowsSettingInstance
+      - name: Get
         href: ../../api/windowssettinginstance-get.md
   - name: Complex types
     items:
