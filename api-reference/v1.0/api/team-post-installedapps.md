@@ -29,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 <br><sup>1</sup> These permissions cannot be used to install apps that require consent to [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions
 <br><sup>2</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -67,7 +66,6 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 #### Request
 
 The following example shows a request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -207,50 +205,11 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-### Example 3: Install an app in a team without consent to the resource-specific permissions required by the app
+If you install an app in a team without obtaining consent for the app’s required resource-specific permissions, you will receive the following error message:
 
-#### Request
-
-The following example shows the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "add_app_in_team_v1_e2",
-  "sampleKeys": ["7023576d-9e40-47ca-9cf2-daae6838e785"]
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/teams/7023576d-9e40-47ca-9cf2-daae6838e785/installedApps
-Content-Type: application/json
-
-{
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785",
-}
-```
-
-#### Response
-
-The following example shows the response.
-
-```http
-POST https://graph.microsoft.com/v1.0/teams/7023576d-9e40-47ca-9cf2-daae6838e785/installedApps
-Content-Type: application/json
-
-{
-    "error": {
-        "code": "BadRequest",
-        "message": "The required permissions have not been consented to by the caller.",
-        "innerError": {
-            "code": "InvalidRequest",
-            "message": "The required permissions have not been consented to by the caller.",
-            "details": [],
-            "date": "2024-04-18T21:08:55",
-            "request-id": "8c27d813-d34c-46a2-9906-6125ca6201a1",
-            "client-request-id": "68de58a8-c163-9b37-9c4b-2dafb406a888"
-        }
-    }
-}
-```
+|Error message | Description | Resolution |
+| ---- | ---- | ---- |
+| The required permissions have not been consented to by the caller. | The request body didn't specify all the RSC permissions required by the app, to which the user must grant consent. | Ensure your request must be as shown in [Example 2: Install an app in a team with consent to the resource-specific permissions required by the app](#example-2-install-an-app-in-a-team-with-consent-to-the-resource-specific-permissions-required-by-the-app).|
 
 ## Related content
 
