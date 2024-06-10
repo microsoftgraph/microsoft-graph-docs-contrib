@@ -42,7 +42,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
-| isAttendeeEmailNotificationEnabled | Boolean | [PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.] |
+| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the webinar. |
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
 ### meetingAudience values
