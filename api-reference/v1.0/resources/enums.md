@@ -3361,3 +3361,10 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAccount|
 |defaultConfiguredIdp|
 |unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
