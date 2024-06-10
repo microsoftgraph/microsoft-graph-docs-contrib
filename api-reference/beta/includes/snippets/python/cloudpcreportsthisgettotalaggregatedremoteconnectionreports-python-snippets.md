@@ -20,7 +20,7 @@ request_body = GetTotalAggregatedRemoteConnectionReportsPostRequestBody(
 		"TotalUsageInHour",
 		"LastActiveTime",
 		"PcType",
-		"CreatedDate"
+		"CreatedDate",
 	],
 )
 
