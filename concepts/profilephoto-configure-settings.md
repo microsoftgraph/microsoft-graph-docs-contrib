@@ -5,12 +5,12 @@ author: "shivanioslo"
 ms.author: "shivansingh"
 ms.topic: concept-article
 ms.localizationpriority: medium
+ms.subservice: entra-users
 ---
 
 # Manage user profile photo settings in Microsoft 365 by using Microsoft Graph
 
-Administrators can use the Microsoft Graph API to get and configure photo update settings in an organization. They can also control the environment where user profile photos can be updated within the organization and define which roles are required to update profile
-user photos.
+Administrators can use the Microsoft Graph API to get and configure photo update settings in an organization. They can also control the environment where user profile photos can be updated within the organization and define which roles are required to update profile user photos.
 
 ## Configure the user profile photo environment 
 
@@ -79,7 +79,7 @@ Content-Type: application/json
 ```
 ## Block users from changing their user profile photos 
 
-Tenants with user profile photo settings updated in the cloud, have the option to set which roles are able to update user profile photos
+Tenants with user profile photo settings updated in the cloud have the option to set which roles are able to update user profile photos
 within the organization.
 
 ### Configure User Administrator support for profile photo updates
