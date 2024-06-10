@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
 
-Use delegated permission to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/whatis).
+Use delegated permission to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
 
 Use application permission to cancel a registration record for an anonymous user. 
 
