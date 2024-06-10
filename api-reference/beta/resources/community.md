@@ -3,7 +3,7 @@ title: "community resource type"
 description: "Represents a community in Viva Engage that is a central place for conversations, files, events, and updates for people sharing a common interest or goal."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "employee-engagement"
 doc_type: resourcePageType
 ---
 

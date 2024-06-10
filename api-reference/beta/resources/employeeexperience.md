@@ -3,7 +3,7 @@ title: "employeeExperience resource type"
 description: "Represents a container that exposes navigation properties for employee experience resources."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.subservice: "employee-experience"
 doc_type: resourcePageType
 ---
 

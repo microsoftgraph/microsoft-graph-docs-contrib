@@ -3,7 +3,7 @@ title: "goals resource type"
 description: "Represents a goals container in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "employee-goals"
+ms.subservice: "employee-goals"
 doc_type: resourcePageType
 ---
 
