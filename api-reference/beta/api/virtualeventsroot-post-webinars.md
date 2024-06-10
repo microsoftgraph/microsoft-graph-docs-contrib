@@ -58,7 +58,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
-| isAttendeeEmailNotificationEnabled | Boolean | [PLACEHOLDER DESCRIPTION i.e. Disable attendee email notification for a virtual event.] |
+| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the webinar. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
 ## Response
