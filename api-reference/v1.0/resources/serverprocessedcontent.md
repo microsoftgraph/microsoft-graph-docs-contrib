@@ -3,7 +3,7 @@ title: "serverProcessedContent resource type"
 description: Represents the server processed content of a given web part.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

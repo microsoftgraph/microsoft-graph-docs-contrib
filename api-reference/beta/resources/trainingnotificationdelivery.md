@@ -3,7 +3,7 @@ title: "trainingNotificationDelivery resource type"
 description: "Contains aggregate data about training mail delivery over the course of the training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
