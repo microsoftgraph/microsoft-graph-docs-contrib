@@ -3,7 +3,7 @@ title: "ediscoveryCase resource type"
 description: "In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

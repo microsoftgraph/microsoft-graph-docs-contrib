@@ -3,7 +3,7 @@ title: "plannerFormReference resource type"
 description: "Represents complete information about a form, including the form's display name, URL, and the response data."
 ms.localizationpriority: medium
 author: "cpanga22"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
