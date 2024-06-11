@@ -3,7 +3,7 @@ title: "Create siteSource"
 description: "Create a new siteSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
