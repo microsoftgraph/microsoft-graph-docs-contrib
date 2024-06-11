@@ -53,7 +53,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "virtualeventregistrationthis.cancel"
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

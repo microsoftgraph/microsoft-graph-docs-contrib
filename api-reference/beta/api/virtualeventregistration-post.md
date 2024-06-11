@@ -55,7 +55,7 @@ If successful, this action returns:
 Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration",
@@ -99,7 +99,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -160,7 +160,7 @@ Content-Type: application/json
 Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration",
@@ -206,7 +206,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
