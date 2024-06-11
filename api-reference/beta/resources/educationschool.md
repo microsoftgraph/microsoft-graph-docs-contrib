@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: School
 ---
 
 # educationSchool resource type

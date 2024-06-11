@@ -3,7 +3,7 @@ title: "List custodian's unifiedGroupSources"
 description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
