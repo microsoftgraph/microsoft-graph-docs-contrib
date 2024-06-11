@@ -3,7 +3,7 @@ title: "Get engagementAsyncOperation"
 description: "Get an engagementAsyncOperation to track a long-running operation request."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 

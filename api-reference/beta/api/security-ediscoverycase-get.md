@@ -3,7 +3,7 @@ title: "Get ediscoveryCase"
 description: "Read the properties and relationships of an ediscoveryCase object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
