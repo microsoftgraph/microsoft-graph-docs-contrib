@@ -1,13 +1,12 @@
 ---
-title: "Update newsLinkPage"
-description: "Update the properties of a newsLinkPage object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: Update NewsLink page in a SharePoint site
+description: Update the properties of a newsLinkPage object.
+author: shgangan
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
-
-# Update newsLinkPage
+# Update a newsLinkPage
 
 Namespace: microsoft.graph
 
@@ -33,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /newsLinkPage
+PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 ```
 
 ## Request headers
@@ -45,29 +44,16 @@ PATCH /newsLinkPage
 
 ## Request body
 
+> **Notes:**
+> Currently, you can update the bannerImage, by uploading the image bytes of the new bannerImage you want to set directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Required.|
-|description|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|eTag|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Required.|
-|name|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|parentReference|[itemReference](../resources/itemreference.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|webUrl|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|pageLayout|pageLayoutType|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`, `videoNewsLink`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` , `videoNewsLink`. Optional.|
-|publishingState|[publicationFacet](../resources/publicationfacet.md)|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). Optional.|
-|title|String|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). Optional.|
-|newsWebUrl|String|**TODO: Add Description** Optional.|
-|newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|**TODO: Add Description** Optional.|
-|bannerImageWebUrl|String|**TODO: Add Description** Optional.|
-
-
+|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters.|
+|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters.|
+|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ## Response
 
@@ -84,32 +70,28 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/newsLinkPage
+PATCH https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/179210c2-637e-4c61-8491-331d0d4a0c05/microsoft.graph.newsLinkPage
+Content-Type: application/json
+
+prefer: include-unknown-enum-members
+Content-Type: multipart/form-data; boundary=-------------------------acebdf13572468
+
+---------------------------acebdf13572468
+Content-Disposition:form-data; name="metadata"
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.newsLinkPage",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "description": "String",
-  "eTag": "String",
-  "name": "String",
-  "parentReference": {
-    "@odata.type": "microsoft.graph.itemReference"
-  },
-  "webUrl": "String",
-  "pageLayout": "String",
-  "publishingState": {
-    "@odata.type": "microsoft.graph.publicationFacet"
-  },
-  "title": "String",
-  "newsWebUrl": "String",
-  "newsSharepointIds": {
-    "@odata.type": "microsoft.graph.sharepointIds"
-  },
-  "bannerImageWebUrl": "String"
+  "title": "Microsoft Blog | Microsoft Build brings AI tools to the forefront for developers",
+  "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
+
+---------------------------acebdf13572468
+Content-Disposition:form-data; name="content"
+Content-Type: image/jpeg
+
+The contents of the file goes here.
+
+---------------------------acebdf13572468--
 ```
 
 
@@ -127,33 +109,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('976b3828-eade-49c7-a0a6-5baff3f710d9')/pages/$entity",
   "@odata.type": "#microsoft.graph.newsLinkPage",
-  "id": "6db39c63-ba95-1c5b-d6bd-026c917d0529",
+  "@odata.etag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "createdDateTime": "2024-06-11T17:31:20Z",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+  "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "pageLayout": "newsLink",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Blog-Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.jpeg",
+  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
   },
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "eTag": "String",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "String",
   "parentReference": {
-    "@odata.type": "microsoft.graph.itemReference"
+    "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
   },
-  "webUrl": "String",
-  "pageLayout": "String",
   "publishingState": {
-    "@odata.type": "microsoft.graph.publicationFacet"
-  },
-  "title": "String",
-  "newsWebUrl": "String",
-  "newsSharepointIds": {
-    "@odata.type": "microsoft.graph.sharepointIds"
-  },
-  "bannerImageWebUrl": "String"
+    "level": "checkout",
+    "versionId": "0.1",
+    "checkedOutBy": {
+      "user": {
+        "displayName": "John Doe",
+        "email": "jdoe@contoso.com"
+      }
+    }
+  }
 }
 ```
 
