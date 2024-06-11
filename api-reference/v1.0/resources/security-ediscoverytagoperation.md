@@ -3,7 +3,7 @@ title: "ediscoveryTagOperation resource type"
 description: "Represents the process of tagging files in eDiscovery review set."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

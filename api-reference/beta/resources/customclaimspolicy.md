@@ -3,7 +3,7 @@ title: "customClaimsPolicy resource type"
 description: "Represents a claims policy that allows application admins to customize the claims emitted in tokens affected by this policy."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 
