@@ -10,6 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
+	  "time"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
@@ -23,10 +24,8 @@ configuration := &graphsolutions.SolutionsBackupRestoreServiceAppItemActivateReq
 	Headers: headers,
 }
 requestBody := graphsolutions.NewActivatePostRequestBody()
-additionalData := map[string]interface{}{
-	"effectiveDateTime" : "2024-04-19T12-01-03.45Z", 
-}
-requestBody.SetAdditionalData(additionalData)
+effectiveDateTime , err := time.Parse(time.RFC3339, "2024-04-19T12-01-03.45Z")
+requestBody.SetEffectiveDateTime(&effectiveDateTime) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 activate, err := graphClient.Solutions().BackupRestore().ServiceApps().ByServiceAppId("serviceApp-id").Activate().Post(context.Background(), requestBody, configuration)
