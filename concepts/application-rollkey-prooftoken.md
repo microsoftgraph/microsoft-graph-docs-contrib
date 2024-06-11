@@ -1,5 +1,5 @@
 ---
-title: "Generate proof of possession tokens for rolling keys and update certificates programmatically"
+title: "Generate proof-of-possession tokens for rolling keys and update certificates programmatically"
 description: "Learn how to generate a proof-of-possession (PoP) token that is required as part of the request validation for the addKey and removeKey methods on apps and service principals."
 ms.localizationpriority: high
 ms.subservice: entra-applications
@@ -8,7 +8,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan, odaishalabi
 ms.date: 06/12/2024
-#customer intent: As a developer, I want my app to generate proof of possession tokens for rolling keys programmatically, so that I can then use Microsoft Graph to automate the process of rolling keys for applications.
+#customer intent: As a developer, I want to automate the process of rolling keys for applications and service principals.
 ---
 
 # Generate proof-of-possession tokens for rolling keys and update certificates programmatically
@@ -20,8 +20,8 @@ As part of the request validation for these methods, a proof-of-possession (PoP)
 This article provides code examples in C# to demostrate how to:
 1. Compute the client assertion by using an existing valid certificate.
 2. Generate the PoP token by using the generated client assertion key.
-3. Use the proof of possession token to upload a new certificate to the app or service principal object using the **addKey** method.
-4. Use the proof of possession token to remove a certificate from the app or service principal object using the **removeKey** method.
+3. Use the PoP token to upload a new certificate to the app or service principal object using the **addKey** method.
+4. Use the PoP token to remove a certificate from the app or service principal object using the **removeKey** method.
 
 > [!IMPORTANT]
 > Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the update the **keyCredential** property.
@@ -29,10 +29,10 @@ This article provides code examples in C# to demostrate how to:
 ## Prerequisites
 
 - Have a valid client certificate on the target app or service principal. 
-  - You need the details of a valid existing vertificate to generate the client assertion key and proof of possession token.
+  - You need the details of a valid existing vertificate to generate the client assertion key and PoP token.
     - For testing purposes, you can use a self-signed certificate. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/entra/identity-platform/howto-create-self-signed-certificate).
     - Export the certificate with its private key in `.pfx` format. You can alternatively update the script to only require the public certificate without the private key.
-- The client ID (called **appId** on the API) and object ID (called **id** on the API) of the application or service principal for which you're generating the proof of possession token.   
+- The client ID (called **appId** on the API) and object ID (called **id** on the API) of the application or service principal for which you're generating the PoP token.   
 
 ## Sample code
 
@@ -43,9 +43,8 @@ The token should contain the following claims:
 - **nbf**: Not before time.
 - **exp**: Expiration time should be the value of **nbf** + 10 minutes.
 
-You can use the following code examples to generate this proof of possession token.
-
 # [Program.cs](#tab/csharp)
+
 ```csharp
 using System;
 using System.Security.Cryptography.X509Certificates;
@@ -62,7 +61,7 @@ namespace SampleCertCall
         static void Main(string[] args)
         {
             //=============================
-            // Read app registration info
+            // Read app registration info from appsettings.json
             //=============================
             config = new Helper().ReadFromJsonFile();
             string clientId = config.GetValue<string>("ClientId"); //client ID or appId of the target app or service principal
@@ -318,7 +317,7 @@ namespace SampleCertCall
 }
 ```
 
-# [Helper.cs](#tab/csharp)
+# [Helper.cs](#tab/csharp-1)
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -425,7 +424,7 @@ namespace SampleCertCall
 }
 ```
 
-# [GraphAPI.cs](#tab/csharp)
+# [GraphAPI.cs](#tab/csharp-2)
 ```csharp
 using System;
 using System.Net;
@@ -612,7 +611,7 @@ namespace SampleCertCall
 }
 ```
 
-# [GraphSDK.cs](#tab/csharp)
+# [GraphSDK.cs](#tab/csharp-3)
 ```csharp
 using System;
 using System.Net;
@@ -739,7 +738,7 @@ You can also generate the proof using signature in Azure KeyVault. It's importan
 
 ## Related content
 
-Now that you have your proof of possession token, you can use it to:
+Now that you have your PoP token, you can use it to:
 - [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from your application.
 - [Add a key](/graph/api/serviceprincipal-addkey) or [remove a key](/graph/api/serviceprincipal-removekey) from your service principal.
 
