@@ -62,11 +62,10 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
 | externalId            | String | The external ID. A custom ID. Optional.      |
 | id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
-| isBroadcast (deprecated) | Boolean | Indicates whether this event is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| joinWebUrl | String | The join URL of the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). The format of the URL may change and users should not rely on any information from parsing the URL. |
+| joinWebUrl | String | The join URL of the online meeting. Read-only. The format of the URL may change; therefore, users shouldn't rely on any information extracted from parsing the URL. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
@@ -83,6 +82,7 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that are automatically allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
+| isBroadcast (deprecated) | Boolean | Indicates whether this event is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | capabilities (deprecated) | meetingCapabilities collection | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`. |
 
 > [!CAUTION]
