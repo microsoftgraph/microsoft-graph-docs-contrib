@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Feedback outcome
 ---
 
 # educationFeedbackOutcome resource type

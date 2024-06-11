@@ -5,6 +5,7 @@ author: "dipakboyed"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Assignment settings
 ---
 
 # educationAssignmentSettings resource type
@@ -25,7 +26,7 @@ Specifies class-level assignments settings.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the educationAssignmentSettings.|
-|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. If `true`, the animation won't be shown. The default value is `false`.|
+|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation is shown. If `true`, the animation doesn't show. The default value is `false`.|
 
 ## Relationships
 | Relationship | Type	|Description|
