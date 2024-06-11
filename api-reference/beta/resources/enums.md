@@ -2860,6 +2860,15 @@ Possible values for user account types (group membership), per Windows definitio
 | passwordChange       |
 | unknownFutureValue   |
 
+### perUserMfaState values 
+
+|Member|
+|:---|
+|disabled|
+|enforced|
+|enabled|
+|unknownFutureValue|
+
 ### conditionalAccessRule values
 
 | Member                            |

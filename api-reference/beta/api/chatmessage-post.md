@@ -3,7 +3,7 @@ title: "Send chatMessage in a channel or a chat"
 description: "Send a new chatMessage in the specified channel or a chat."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -611,9 +611,9 @@ Content-type: application/json
 
 #### Request
 The following example shows a request
-
+ 
 >**Notes:**
-> - The file to attach must already be in SharePoint. Use any GUID for your attachment ID. Use the file share link as **contentURL**. User must have permissions to drive item using the file [share link](/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
+> - The file to attach must already be in SharePoint. Use any GUID for your attachment ID. Use the file share link as **contentURL**. User must have permissions to drive item using the file [share link](../api/shares-get.md). 
 > - Using file share link for sending messages is not supported in [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario. 
 
 

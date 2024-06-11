@@ -3,7 +3,7 @@ title: "Update customClaimsPolicy"
 description: "Update a custom claims policy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
