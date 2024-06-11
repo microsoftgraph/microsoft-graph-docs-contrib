@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding [sign-in](signin.md) activity.
 
-The data in this object is returned only for callers with privileges to read conditional access data. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list#viewing-applied-conditional-access-ca-policies-in-sign-ins).
+The data in this object is returned only for callers with privileges to read conditional access data. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#viewing-applied-conditional-access-ca-policies-in-sign-ins).
 
 ## Properties
 
