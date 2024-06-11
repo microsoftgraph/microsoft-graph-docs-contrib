@@ -3,7 +3,7 @@ title: "Create projectParticipation"
 description: "Use this API to create a new projectParticipation."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

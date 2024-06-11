@@ -3,7 +3,7 @@ title: "List legalHold userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Update the properties of a healthIssue object."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # Update healthIssue
