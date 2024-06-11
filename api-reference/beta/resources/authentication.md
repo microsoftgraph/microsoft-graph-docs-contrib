@@ -31,6 +31,7 @@ Inherits from [entity](entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier. Read-only.|
+|requirements|[strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)|The settings and preferences for per-user Microsoft Entra multifactor authentication.|
 |signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for the sign-in experience of a user. Use this property to configure the user's default multifactor authentication (MFA) method.|
 
 ## Relationships
@@ -64,6 +65,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "signInPreferences": {
     "@odata.type": "microsoft.graph.signInPreferences"
+  },
+  "requirements": {
+    "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
   }
 }
 ```
