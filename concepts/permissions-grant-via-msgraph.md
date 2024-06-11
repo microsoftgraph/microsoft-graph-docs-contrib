@@ -382,7 +382,7 @@ In this article, you learn how to grant and revoke delegated permissions for an 
 
 To complete these instructions, you need the following resources and privileges:
 
-- A working Microsoft Entra tenant.
+- A valid Microsoft Entra tenant.
 - You run the requests in this article as a user. You must complete the following steps:
     - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user with the *Cloud Application Administrator* Microsoft Entra role, which is the least privilege role for creating applications and granting consent to delegated permissions in the tenant. The privileges to create permission grants might be limited or controlled in your tenant through admin-configured [app consent policies](/entra/identity/enterprise-apps/manage-app-consent-policies).
     - In the app you're signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
@@ -600,7 +600,7 @@ If you granted consent for all users in the tenant, the **consentType** in the r
 
 ### Confirm the permission grant
 
-To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following request.
+To verify the delegated permissions assigned to the service principal on behalf of the user, you run the following request.
 
 #### Request
 
