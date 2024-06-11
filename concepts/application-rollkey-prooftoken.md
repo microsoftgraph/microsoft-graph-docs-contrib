@@ -17,7 +17,7 @@ You can use the **addKey** and **removeKey** methods defined on the [application
 
 As part of the request validation for these methods, a proof-of-possession (PoP) of an existing key is verified before the methods can be invoked. The proof is represented by a self-signed JSON Web Token (JWT). This token must be signed using the private key of one of the application's existing valid certificates. The recommended lifespan for the token is 10 minutes.
 
-This article provides code examples in C# and PowerShell that you can use to:
+This article provides code examples in C# to demostrate how to:
 1. Compute the client assertion by using an existing valid certificate.
 2. Generate the PoP token by using the generated client assertion key.
 3. Use the proof of possession token to upload a new certificate to the app or service principal object using the **addKey** method.
@@ -73,7 +73,7 @@ namespace SampleCertCall
             string aud_POP = config.GetValue<string>("Aud_POP"); // audience for client assertion must always be 00000002-0000-0000-c000-000000000000
             string aud_ClientAssertion = config.GetValue<string>("Aud_ClientAssertion"); // audience for PoP must always be in the format https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0
 
-            // pfxFilePath -> Use an existing valid cert used/uploaded to the app or service principal to generate access token and PoP token
+            // pfxFilePath -> Use an existing valid cert used/uploaded to the app or service principal to generate access token and PoP token; You can read the app/SP object to get details of the existing cert.
             string pfxFilePath = config.GetValue<string>("CertificateDiskPath");
             string password = config.GetValue<string>("CertificatePassword");
             X509Certificate2 signingCert = null;
@@ -91,7 +91,7 @@ namespace SampleCertCall
                 Environment.Exit(-1);
             }
 
-            // newCerFilePath -> This is the new cert which will be uploaded
+            // newCerFilePath -> This is the new cert which will be uploaded. The cert can also be stored in Azure Key Vault.
             string newCerFilePath = config.GetValue<string>("NewCertificateDiskPath");
             string newCertPassword = config.GetValue<string>("NewCertificatePassword");
             X509Certificate2 newCert = null;
@@ -120,7 +120,7 @@ namespace SampleCertCall
             //========================
             var poP = new Helper().GeneratePoPToken(objectId, aud_POP, signingCert);
 
-            // Get the new certificate info which will be uploaded via the graph API 
+            // Get the new certificate info which will be uploaded via Microsoft Graph API call
             var key = new Helper().GetCertificateKey(newCert);
             var graphClient = new Helper().GetGraphClient(scopes, tenantID, clientId, signingCert);
 
@@ -418,7 +418,7 @@ namespace SampleCertCall
         {
             if (clientId.Contains("YOUR_CLIENT_ID_HERE") || tenantID.Contains("YOUR_TENANT_ID_HERE") || objectId.Contains("YOUR_OBJECT_ID_HERE") || aud_ClientAssertion.Contains("{YOUR_TENANT_ID_HERE}"))
             {
-                Console.WriteLine("Please configure the sample to use your Azure AD tenant using appsettings.json file");
+                Console.WriteLine("Please configure the sample to use your tenant and app or service principal settings");
             }
         }
     }
@@ -742,3 +742,5 @@ You can also generate the proof using signature in Azure KeyVault. It's importan
 Now that you have your proof of possession token, you can use it to:
 - [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from your application.
 - [Add a key](/graph/api/serviceprincipal-addkey) or [remove a key](/graph/api/serviceprincipal-removekey) from your service principal.
+
+To learn more about client assertions, see [Microsoft identity platform application authentication certificate credentials](/entra/identity-platform/certificate-credentials#claims-payload).
