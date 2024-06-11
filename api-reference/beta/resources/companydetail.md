@@ -3,7 +3,7 @@ title: "companyDetail resource type"
 description: "companyDetail resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
