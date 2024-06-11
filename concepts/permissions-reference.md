@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/27/2024
+ms.date: 06/11/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -7003,5 +7003,6 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 ## Related content
 
 + [Overview of Microsoft Graph permissions](permissions-overview.md)
++ [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
-[MSA]: images/permissions-reference/msa.png "personal Microsoft accounts (MSA)"
+[MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
