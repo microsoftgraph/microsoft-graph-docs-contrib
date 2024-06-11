@@ -1,9 +1,9 @@
 ---
-title: "Add user"
-description: "Add createdByUser by posting to the createdByUser collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: Create a new NewsLink page in a SharePoint site
+description: Create a new newsLinkPage in the site pages list in a site.
+author: shgangan
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add createdByUser by posting to the createdByUser collection.
+Create a new [newsLinkPage][] in the site pages [list][] in a [site][].
+
+[newsLinkPage]: ../resources/newslinkpage.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
 ## Permissions
 
@@ -21,10 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "newslinkpage-post-createdbyuser-permissions"
+  "name": "newslinkpage-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/newslinkpage-post-createdbyuser-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/newslinkpage-create.md)]
 
 ## HTTP request
 
@@ -33,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /newsLinkPage/createdByUser/$ref
+POST /sites/{site-id}/pages
 ```
 
 ## Request headers
@@ -41,113 +45,36 @@ POST /newsLinkPage/createdByUser/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
+|Content-Type|	`application/json` for a non-multipart request, i.e. when uploading a bannerImage to create a newslinkpage is omitted. When uploading a a bannerImage while creating a newslinkpage, the request will be a multipart request. Multipart requests use `multipart/form-data; boundary=your-boundary` content type. `application/json` for "request" part, and content-type of the the bannerImage `application/json` for the "content" part of the multipart request. Required.|
+|Prefer | include-unknown-enum-members. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [user](../resources/user.md) object.
+In the request body, supply a JSON representation of the [newsLinkPage](../resources/newsLinkPage.md) object.
 
-You can specify the following properties when creating a **user**.
+> **Notes:** :
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
+> 2. Currently, to set the bannerImageWebUrl, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
 
-**TODO: Remove properties that don't apply**
+You can specify the following properties when creating a [newsLinkPage](../resources/newslinkpage.md).
+
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|signInActivity|[signInActivity](../resources/signinactivity.md)|**TODO: Add Description** Optional.|
-|accountEnabled|Boolean|**TODO: Add Description** Optional.|
-|ageGroup|String|**TODO: Add Description** Optional.|
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|**TODO: Add Description** Required.|
-|assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|**TODO: Add Description** Required.|
-|authorizationInfo|[authorizationInfo](../resources/authorizationinfo.md)|**TODO: Add Description** Optional.|
-|businessPhones|String collection|**TODO: Add Description** Required.|
-|city|String|**TODO: Add Description** Optional.|
-|cloudRealtimeCommunicationInfo|[cloudRealtimeCommunicationInfo](../resources/cloudrealtimecommunicationinfo.md)|**TODO: Add Description** Optional.|
-|companyName|String|**TODO: Add Description** Optional.|
-|consentProvidedForMinor|String|**TODO: Add Description** Optional.|
-|country|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|creationType|String|**TODO: Add Description** Optional.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|**TODO: Add Description** Optional.|
-|department|String|**TODO: Add Description** Optional.|
-|deviceKeys|[deviceKey](../resources/devicekey.md) collection|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|employeeHireDate|DateTimeOffset|**TODO: Add Description** Optional.|
-|employeeId|String|**TODO: Add Description** Optional.|
-|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md)|**TODO: Add Description** Optional.|
-|employeeType|String|**TODO: Add Description** Optional.|
-|employeeLeaveDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|faxNumber|String|**TODO: Add Description** Optional.|
-|givenName|String|**TODO: Add Description** Optional.|
-|identities|[objectIdentity](../resources/objectidentity.md) collection|**TODO: Add Description** Optional.|
-|imAddresses|String collection|**TODO: Add Description** Optional.|
-|infoCatalogs|String collection|**TODO: Add Description** Required.|
-|isLicenseReconciliationNeeded|Boolean|**TODO: Add Description** Optional.|
-|isManagementRestricted|Boolean|**TODO: Add Description** Optional.|
-|isResourceAccount|Boolean|**TODO: Add Description** Optional.|
-|jobTitle|String|**TODO: Add Description** Optional.|
-|lastPasswordChangeDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|legalAgeGroupClassification|String|**TODO: Add Description** Optional.|
-|licenseAssignmentStates|[licenseAssignmentState](../resources/licenseassignmentstate.md) collection|**TODO: Add Description** Optional.|
-|mail|String|**TODO: Add Description** Optional.|
-|mailNickname|String|**TODO: Add Description** Optional.|
-|mobilePhone|String|**TODO: Add Description** Optional.|
-|onPremisesDistinguishedName|String|**TODO: Add Description** Optional.|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md)|**TODO: Add Description** Optional.|
-|onPremisesImmutableId|String|**TODO: Add Description** Optional.|
-|onPremisesLastSyncDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](../resources/onpremisesprovisioningerror.md) collection|**TODO: Add Description** Optional.|
-|onPremisesSecurityIdentifier|String|**TODO: Add Description** Optional.|
-|onPremisesSipInfo|[onPremisesSipInfo](../resources/onpremisessipinfo.md)|**TODO: Add Description** Optional.|
-|onPremisesSyncEnabled|Boolean|**TODO: Add Description** Optional.|
-|onPremisesDomainName|String|**TODO: Add Description** Optional.|
-|onPremisesSamAccountName|String|**TODO: Add Description** Optional.|
-|onPremisesUserPrincipalName|String|**TODO: Add Description** Optional.|
-|otherMails|String collection|**TODO: Add Description** Required.|
-|passwordPolicies|String|**TODO: Add Description** Optional.|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md)|**TODO: Add Description** Optional.|
-|officeLocation|String|**TODO: Add Description** Optional.|
-|postalCode|String|**TODO: Add Description** Optional.|
-|preferredDataLocation|String|**TODO: Add Description** Optional.|
-|preferredLanguage|String|**TODO: Add Description** Optional.|
-|provisionedPlans|[provisionedPlan](../resources/provisionedplan.md) collection|**TODO: Add Description** Required.|
-|proxyAddresses|String collection|**TODO: Add Description** Required.|
-|refreshTokensValidFromDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|securityIdentifier|String|**TODO: Add Description** Optional.|
-|serviceProvisioningErrors|[serviceProvisioningError](../resources/serviceprovisioningerror.md) collection|**TODO: Add Description** Optional.|
-|showInAddressList|Boolean|**TODO: Add Description** Optional.|
-|signInSessionsValidFromDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|state|String|**TODO: Add Description** Optional.|
-|streetAddress|String|**TODO: Add Description** Optional.|
-|surname|String|**TODO: Add Description** Optional.|
-|usageLocation|String|**TODO: Add Description** Optional.|
-|userPrincipalName|String|**TODO: Add Description** Optional.|
-|externalUserState|String|**TODO: Add Description** Optional.|
-|externalUserStateChangeDateTime|String|**TODO: Add Description** Optional.|
-|userType|String|**TODO: Add Description** Optional.|
-|mailboxSettings|[mailboxSettings](../resources/mailboxsettings.md)|**TODO: Add Description** Optional.|
-|deviceEnrollmentLimit|Int32|**TODO: Add Description** Required.|
-|print|[userPrint](../resources/intune-userprint.md)|**TODO: Add Description** Optional.|
-|aboutMe|String|**TODO: Add Description** Optional.|
-|birthday|DateTimeOffset|**TODO: Add Description** Required.|
-|hireDate|DateTimeOffset|**TODO: Add Description** Required.|
-|interests|String collection|**TODO: Add Description** Optional.|
-|mySite|String|**TODO: Add Description** Optional.|
-|pastProjects|String collection|**TODO: Add Description** Optional.|
-|preferredName|String|**TODO: Add Description** Optional.|
-|responsibilities|String collection|**TODO: Add Description** Optional.|
-|schools|String collection|**TODO: Add Description** Optional.|
-|skills|String collection|**TODO: Add Description** Optional.|
-
-
+|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters. Optional.|
+|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters. Required.|
+|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md). Required.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [user](../resources/user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [newsLinkPage](../resources/newslinkpage.md) object in the response body.
 
-## Examples
+## Example
+
+The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page.
 
 ### Request
-
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 The following example shows a request.
 <!-- {
   "blockType": "request",
