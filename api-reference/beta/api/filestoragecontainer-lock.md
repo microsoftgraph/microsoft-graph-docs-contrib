@@ -24,6 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_lock" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-lock-permissions.md)]
 
+> [!NOTE]
+> When delegated permissions are used, only members who are assigned the `owner` role can call this method.
+
 ## HTTP request
 
 ``` http
