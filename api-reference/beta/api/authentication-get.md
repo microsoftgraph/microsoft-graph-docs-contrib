@@ -1,6 +1,6 @@
 ---
-title: "Get authentication method states"
-description: "Read the properties of a user's authentication method states, such as their sign-in preferences."
+title: "Get authentication states"
+description: "Read the properties of a user's authentication method states, such as their sign-in preferences and per-user MFA state."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of a user's authentication method states. Use this API to retrieve the following information:
+Read the properties of a user's authentication states. Use this API to retrieve the following information:
 
 - A user's [signInPreferences](../resources/signInPreferences.md)
+- A user's [strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,6 +38,15 @@ To retrieve the sign-in preferences for a user:
 GET /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
+To retrieve the per-user multifactor authentication state for a user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /users/{id | userPrincipalName}/authentication/requirements
+```
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -51,12 +61,14 @@ For sign-in preferences: If successful, this method returns a `200 OK` response 
 
 ## Examples
 
-### Request
+### Example 1: Get a user's default MFA method
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_authentication"
+  "name": "get_authentication_signInPreferences"
 }
 -->
 ``` http
@@ -97,7 +109,7 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -116,3 +128,34 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get a user's MFA state
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_authentication_strongAuthenticationRequirements"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/requirements
+```
+
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "perUserMfaState": "enforced"
+}
+```
