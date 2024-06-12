@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-toc.title: Role management policy
+toc.title: Policy
 ---
 
 # unifiedRoleManagementPolicy resource type

@@ -1426,7 +1426,7 @@
                   ]
                 },
                 {
-                  "name": "",
+                  "name": "Federation with Microsoft Entra ID",
                   "resources": [
                     "internalDomainFederation"
                   ]

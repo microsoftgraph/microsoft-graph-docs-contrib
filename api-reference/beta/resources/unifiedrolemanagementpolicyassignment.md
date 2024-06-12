@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-toc.title: Role management policy assignment
+toc.title: Policy assignment
 ---
 
 # unifiedRoleManagementPolicyAssignment resource type
