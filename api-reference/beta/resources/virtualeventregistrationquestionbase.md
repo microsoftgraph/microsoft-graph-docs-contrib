@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationQuestionBase resource type"
-description: "Information about a virtual event registration question."
+description: "The abstract base type for a virtual event registration question."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
