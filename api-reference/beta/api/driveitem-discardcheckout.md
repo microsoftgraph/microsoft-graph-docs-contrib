@@ -1,6 +1,6 @@
 ---
 title: "driveItem: discardCheckout"
-description: "Discards a previously checked-out driveItem"
+description: "Discards a previously checked-out driveItem."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
