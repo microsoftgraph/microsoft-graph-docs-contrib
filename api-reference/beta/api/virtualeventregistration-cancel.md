@@ -1,5 +1,5 @@
 ---
-title: "virtualEventRegistration: cancel"
+title: "Cancel virtualEventRegistration"
 description: "Cancel a registrant's registration record for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventRegistration: cancel
+# Cancel virtualEventRegistration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
