@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationQuestionAnswer resource type"
-description: "Information about the answer to a registration question of a virtual event."
+description: "Represents an answer or answers to a registration question of a virtual event."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
