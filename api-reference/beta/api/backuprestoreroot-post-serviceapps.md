@@ -63,6 +63,7 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+
 {
 }
 ```
