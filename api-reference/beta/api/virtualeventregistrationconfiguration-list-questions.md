@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and/or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) objects, or both  in the response body.
 
 ## Examples
 
