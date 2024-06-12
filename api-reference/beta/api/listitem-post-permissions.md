@@ -1,7 +1,7 @@
 ---
 title: "Create permission on a listItem"
 description: "Create a new permission object."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

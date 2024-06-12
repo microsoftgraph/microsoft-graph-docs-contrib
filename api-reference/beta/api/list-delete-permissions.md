@@ -1,7 +1,7 @@
 ---
 title: "Delete permission on a list"
 description: "Delete a permission object on a list."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

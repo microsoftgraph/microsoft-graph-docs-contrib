@@ -1,7 +1,7 @@
 ---
 title: "Get permission on a list"
 description: "Retrieve the properties and relationships of a permission object on a list."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

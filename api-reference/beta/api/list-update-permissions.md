@@ -1,7 +1,7 @@
 ---
 title: "Update permission on a listItem"
 description: "Update the permission object on a list."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

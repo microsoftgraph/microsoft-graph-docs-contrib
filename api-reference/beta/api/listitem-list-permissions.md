@@ -1,7 +1,7 @@
 ---
 title: "List permissions on a listItem"
 description: "Get the permission resources from the permissions navigation property on a list item."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
