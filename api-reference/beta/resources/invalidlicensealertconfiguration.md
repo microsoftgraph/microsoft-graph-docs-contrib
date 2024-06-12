@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that's triggered if the tenant doesn't have a valid Microsoft Entra ID P2 license that's required to use the PIM for Microsoft Entra roles feature.
+Represents an alert configuration that's triggered if the tenant doesn't have a valid Microsoft Entra ID P2 license required to use the PIM for Microsoft Entra roles feature.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
