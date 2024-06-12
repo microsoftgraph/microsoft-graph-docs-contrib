@@ -2437,9 +2437,11 @@
       "resources": [
         "site",
         "list",
+        "contentModel",
         "columnDefinition",
         "contentType",
         "listItem",
+        "documentProcessingJob",
         "documentSetVersion",
         "recycleBinItem",
         "richLongRunningOperation",
