@@ -27,13 +27,18 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
 ## June 2024: New in preview only
+
 ### Sites and lists | Content models and document processing jobs
-- [Content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support is added to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
-    - Use [get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
-    - Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
-    - Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from library by using [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
-    - Use [get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
-- New files in the added libraries are automatically processed by [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true)s. Create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
+
+Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
+
+- Use [Get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+- Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using the [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
+- Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from a library by using the [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
+- Use [Get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
+
+The content model automatically processes new files that are added to the libraries. You can create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
+
 ### Change notifications
 
 Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), and [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true).
