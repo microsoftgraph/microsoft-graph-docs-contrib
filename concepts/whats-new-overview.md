@@ -22,7 +22,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Enabled change notifications support to the methods to [list](/graph/api/subscription-list), [get](/graph/api/subscription-get), [create](/graph/api/subscription-post-subscriptions), [reauthorize](/graph/api/subscription-reauthorize), [update](/graph/api/subscription-update), and [delete](/graph/api/subscription-delete) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [shift](/graph/api/resources/shift), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), and [timeOffRequest](/graph/api/resources/timeoffrequest).
 
+### Files
+
+[Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
+
 ## June 2024: New in preview only
+
+### Sites and lists
+
+Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
+
+- Use [Get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+- Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using the [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
+- Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from a library by using the [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
+- Use [Get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
+
+The content model automatically processes new files that are added to the libraries. You can create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
 
 ### Change notifications
 
@@ -52,7 +67,6 @@ The following properties are deprecated:
 - **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
 
 ## May 2024: New in preview only
-
 ### Backup storage
 
 The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
