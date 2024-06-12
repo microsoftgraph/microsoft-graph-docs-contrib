@@ -336,7 +336,7 @@ To resolve this error, set the `childrenOnly` parameter to true.
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter is set to true. The drive item identified by `{item-id}` contains more than 150 direct children.
-The request fails since the limit is 150 direct children.
+The request fails because the limit is 150 direct children.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-6" } -->
@@ -477,7 +477,7 @@ Content-Length: 285
 
 ## Error responses
 
-See [Error Responses][error-response] for more info about
+For more information, See [Error Responses][error-response].
 
 [error-response]: /graph/errors
 
