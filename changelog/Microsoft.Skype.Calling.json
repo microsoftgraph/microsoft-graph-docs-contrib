@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestionBase",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistrationQuestionBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationCustomQuestion",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventRegistrationCustomQuestion](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistrationCustomQuestion?view=graph-rest-beta) resource.",
+          "Description": "Added the [virtualEventRegistrationCustomQuestion](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationcustomquestion?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationPredefinedQuestion",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventRegistrationPredefinedQuestion](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistrationPredefinedQuestion?view=graph-rest-beta) resource.",
+          "Description": "Added the [virtualEventRegistrationPredefinedQuestion](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationpredefinedquestion?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestionAnswer",
           "ChangeType": "Addition",
-          "Description": "Added the **virtualEventRegistrationPredefinedQuestion** and **virtualEventRegistrationCustomQuestion** resources to the properties description of the [virtualEventRegistrationQuestionAnswer](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistrationQuestionAnswer?view=graph-rest-beta) resource.",
+          "Description": "Added the **virtualEventRegistrationPredefinedQuestion** and **virtualEventRegistrationCustomQuestion** resources to the properties description of the [virtualEventRegistrationQuestionAnswer](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionanswer?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestion",
           "ChangeType": "Deletion",
-          "Description": "Removed the [virtualEventRegistrationQuestion](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistrationQuestion?view=graph-rest-beta) resource.",
+          "Description": "Removed the [virtualEventRegistrationQuestion](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestion?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventRegistration",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationQuestionBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         }
       ],
