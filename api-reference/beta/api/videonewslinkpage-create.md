@@ -1,19 +1,23 @@
 ---
-title: "Add user"
-description: "Add createdByUser by posting to the createdByUser collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: Create a new VideoNewsLink page in a SharePoint site
+description: Create a new videoNewsLinkPage in the site pages list in a site.
+author: kevklam
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Add user
+# Create a videoNewsLinkPage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add createdByUser by posting to the createdByUser collection.
+Create a new [videoNewsLinkPage][] in the site pages [list][] in a [site][].
+
+[videoNewsLinkPage]: ../resources/videoNewsLinkPage.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
 ## Permissions
 
@@ -21,10 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "videonewslinkpage-post-createdbyuser-permissions"
+  "name": "videonewslinkpage-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/videonewslinkpage-post-createdbyuser-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/videonewslinkpage-create-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /videoNewsLinkPage/createdByUser/$ref
+POST /sites/{site-id}/pages
 ```
 
 ## Request headers
@@ -41,108 +45,29 @@ POST /videoNewsLinkPage/createdByUser/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
+|Content-Type| `application/json` for a non-multipart request, i.e. when uploading a bannerImage to create a newslinkpage is omitted. When uploading a a bannerImage while creating a newslinkpage, the request will be a multipart request. Multipart requests use `multipart/form-data; boundary=your-boundary` content type. `application/json` for "request" part, and content-type of the the bannerImage `application/json` for the "content" part of the multipart request. Required.|
+|Prefer | include-unknown-enum-members. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `videonewsLink` |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [user](../resources/user.md) object.
+In the request body, supply a JSON representation of the [videoNewsLinkPage](../resources/videonewslinkpage.md) object.
 
-You can specify the following properties when creating a **user**.
+> **Notes:**
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.videoNewsLinkPage` must be included in the request body.
+> 2. Currently, to set the bannerImageWebUrl, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
 
-**TODO: Remove properties that don't apply**
+You can specify the following properties when creating a [videoNewsLinkPage](../resources/videonewslinkpage.md).
+
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|signInActivity|[signInActivity](../resources/signinactivity.md)|**TODO: Add Description** Optional.|
-|accountEnabled|Boolean|**TODO: Add Description** Optional.|
-|ageGroup|String|**TODO: Add Description** Optional.|
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|**TODO: Add Description** Required.|
-|assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|**TODO: Add Description** Required.|
-|authorizationInfo|[authorizationInfo](../resources/authorizationinfo.md)|**TODO: Add Description** Optional.|
-|businessPhones|String collection|**TODO: Add Description** Required.|
-|city|String|**TODO: Add Description** Optional.|
-|cloudRealtimeCommunicationInfo|[cloudRealtimeCommunicationInfo](../resources/cloudrealtimecommunicationinfo.md)|**TODO: Add Description** Optional.|
-|companyName|String|**TODO: Add Description** Optional.|
-|consentProvidedForMinor|String|**TODO: Add Description** Optional.|
-|country|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|creationType|String|**TODO: Add Description** Optional.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|**TODO: Add Description** Optional.|
-|department|String|**TODO: Add Description** Optional.|
-|deviceKeys|[deviceKey](../resources/devicekey.md) collection|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|employeeHireDate|DateTimeOffset|**TODO: Add Description** Optional.|
-|employeeId|String|**TODO: Add Description** Optional.|
-|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md)|**TODO: Add Description** Optional.|
-|employeeType|String|**TODO: Add Description** Optional.|
-|employeeLeaveDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|faxNumber|String|**TODO: Add Description** Optional.|
-|givenName|String|**TODO: Add Description** Optional.|
-|identities|[objectIdentity](../resources/objectidentity.md) collection|**TODO: Add Description** Optional.|
-|imAddresses|String collection|**TODO: Add Description** Optional.|
-|infoCatalogs|String collection|**TODO: Add Description** Required.|
-|isLicenseReconciliationNeeded|Boolean|**TODO: Add Description** Optional.|
-|isManagementRestricted|Boolean|**TODO: Add Description** Optional.|
-|isResourceAccount|Boolean|**TODO: Add Description** Optional.|
-|jobTitle|String|**TODO: Add Description** Optional.|
-|lastPasswordChangeDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|legalAgeGroupClassification|String|**TODO: Add Description** Optional.|
-|licenseAssignmentStates|[licenseAssignmentState](../resources/licenseassignmentstate.md) collection|**TODO: Add Description** Optional.|
-|mail|String|**TODO: Add Description** Optional.|
-|mailNickname|String|**TODO: Add Description** Optional.|
-|mobilePhone|String|**TODO: Add Description** Optional.|
-|onPremisesDistinguishedName|String|**TODO: Add Description** Optional.|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md)|**TODO: Add Description** Optional.|
-|onPremisesImmutableId|String|**TODO: Add Description** Optional.|
-|onPremisesLastSyncDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](../resources/onpremisesprovisioningerror.md) collection|**TODO: Add Description** Optional.|
-|onPremisesSecurityIdentifier|String|**TODO: Add Description** Optional.|
-|onPremisesSipInfo|[onPremisesSipInfo](../resources/onpremisessipinfo.md)|**TODO: Add Description** Optional.|
-|onPremisesSyncEnabled|Boolean|**TODO: Add Description** Optional.|
-|onPremisesDomainName|String|**TODO: Add Description** Optional.|
-|onPremisesSamAccountName|String|**TODO: Add Description** Optional.|
-|onPremisesUserPrincipalName|String|**TODO: Add Description** Optional.|
-|otherMails|String collection|**TODO: Add Description** Required.|
-|passwordPolicies|String|**TODO: Add Description** Optional.|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md)|**TODO: Add Description** Optional.|
-|officeLocation|String|**TODO: Add Description** Optional.|
-|postalCode|String|**TODO: Add Description** Optional.|
-|preferredDataLocation|String|**TODO: Add Description** Optional.|
-|preferredLanguage|String|**TODO: Add Description** Optional.|
-|provisionedPlans|[provisionedPlan](../resources/provisionedplan.md) collection|**TODO: Add Description** Required.|
-|proxyAddresses|String collection|**TODO: Add Description** Required.|
-|refreshTokensValidFromDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|securityIdentifier|String|**TODO: Add Description** Optional.|
-|serviceProvisioningErrors|[serviceProvisioningError](../resources/serviceprovisioningerror.md) collection|**TODO: Add Description** Optional.|
-|showInAddressList|Boolean|**TODO: Add Description** Optional.|
-|signInSessionsValidFromDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|state|String|**TODO: Add Description** Optional.|
-|streetAddress|String|**TODO: Add Description** Optional.|
-|surname|String|**TODO: Add Description** Optional.|
-|usageLocation|String|**TODO: Add Description** Optional.|
-|userPrincipalName|String|**TODO: Add Description** Optional.|
-|externalUserState|String|**TODO: Add Description** Optional.|
-|externalUserStateChangeDateTime|String|**TODO: Add Description** Optional.|
-|userType|String|**TODO: Add Description** Optional.|
-|mailboxSettings|[mailboxSettings](../resources/mailboxsettings.md)|**TODO: Add Description** Optional.|
-|deviceEnrollmentLimit|Int32|**TODO: Add Description** Required.|
-|print|[userPrint](../resources/intune-userprint.md)|**TODO: Add Description** Optional.|
-|aboutMe|String|**TODO: Add Description** Optional.|
-|birthday|DateTimeOffset|**TODO: Add Description** Required.|
-|hireDate|DateTimeOffset|**TODO: Add Description** Required.|
-|interests|String collection|**TODO: Add Description** Optional.|
-|mySite|String|**TODO: Add Description** Optional.|
-|pastProjects|String collection|**TODO: Add Description** Optional.|
-|preferredName|String|**TODO: Add Description** Optional.|
-|responsibilities|String collection|**TODO: Add Description** Optional.|
-|schools|String collection|**TODO: Add Description** Optional.|
-|skills|String collection|**TODO: Add Description** Optional.|
-
-
+|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters. Optional.|
+|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters. Required.|
+|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md). Required.|
+|videoDuration|Duration|Duration of the referenced video. Optional|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [user](../resources/user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [videoNewsLinkPage](../resources/videonewslinkpage.md) object in the response body.
 
 ## Examples
 
@@ -151,174 +76,37 @@ If successful, this method returns a `204 No Content` response code and a [user]
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_videonewslinkpage",
+  "scopes": "sites.readwrite.all"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/videoNewsLinkPage/createdByUser/$ref
+POST https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages
+
+Prefer: include-unknown-enum-members
+Content-Type: multipart/form-data; boundary=---------------------------acebdf13572468
+Content-Length: 1520421
+
+---------------------------acebdf13572468
+Content-Disposition: form-data; name="request"
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.user",
-  "deletedDateTime": "String (timestamp)",
-  "signInActivity": {
-    "@odata.type": "microsoft.graph.signInActivity"
-  },
-  "accountEnabled": "Boolean",
-  "ageGroup": "String",
-  "assignedLicenses": [
-    {
-      "@odata.type": "microsoft.graph.assignedLicense"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedPlan"
-    }
-  ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
-  },
-  "businessPhones": [
-    "String"
-  ],
-  "city": "String",
-  "cloudRealtimeCommunicationInfo": {
-    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
-  },
-  "companyName": "String",
-  "consentProvidedForMinor": "String",
-  "country": "String",
-  "creationType": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
-  "department": "String",
-  "deviceKeys": [
-    {
-      "@odata.type": "microsoft.graph.deviceKey"
-    }
-  ],
-  "displayName": "String",
-  "employeeHireDate": "String (timestamp)",
-  "employeeId": "String",
-  "employeeOrgData": {
-    "@odata.type": "microsoft.graph.employeeOrgData"
-  },
-  "employeeType": "String",
-  "employeeLeaveDateTime": "String (timestamp)",
-  "faxNumber": "String",
-  "givenName": "String",
-  "identities": [
-    {
-      "@odata.type": "microsoft.graph.objectIdentity"
-    }
-  ],
-  "imAddresses": [
-    "String"
-  ],
-  "infoCatalogs": [
-    "String"
-  ],
-  "isLicenseReconciliationNeeded": "Boolean",
-  "isManagementRestricted": "Boolean",
-  "isResourceAccount": "Boolean",
-  "jobTitle": "String",
-  "lastPasswordChangeDateTime": "String (timestamp)",
-  "legalAgeGroupClassification": "String",
-  "licenseAssignmentStates": [
-    {
-      "@odata.type": "microsoft.graph.licenseAssignmentState"
-    }
-  ],
-  "mail": "String",
-  "mailNickname": "String",
-  "mobilePhone": "String",
-  "onPremisesDistinguishedName": "String",
-  "onPremisesExtensionAttributes": {
-    "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
-  },
-  "onPremisesImmutableId": "String",
-  "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
-  "onPremisesSecurityIdentifier": "String",
-  "onPremisesSipInfo": {
-    "@odata.type": "microsoft.graph.onPremisesSipInfo"
-  },
-  "onPremisesSyncEnabled": "Boolean",
-  "onPremisesDomainName": "String",
-  "onPremisesSamAccountName": "String",
-  "onPremisesUserPrincipalName": "String",
-  "otherMails": [
-    "String"
-  ],
-  "passwordPolicies": "String",
-  "passwordProfile": {
-    "@odata.type": "microsoft.graph.passwordProfile"
-  },
-  "officeLocation": "String",
-  "postalCode": "String",
-  "preferredDataLocation": "String",
-  "preferredLanguage": "String",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedPlan"
-    }
-  ],
-  "proxyAddresses": [
-    "String"
-  ],
-  "refreshTokensValidFromDateTime": "String (timestamp)",
-  "securityIdentifier": "String",
-  "serviceProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.serviceProvisioningXmlError"
-    }
-  ],
-  "showInAddressList": "Boolean",
-  "signInSessionsValidFromDateTime": "String (timestamp)",
-  "state": "String",
-  "streetAddress": "String",
-  "surname": "String",
-  "usageLocation": "String",
-  "userPrincipalName": "String",
-  "externalUserState": "String",
-  "externalUserStateChangeDateTime": "String",
-  "userType": "String",
-  "mailboxSettings": {
-    "@odata.type": "microsoft.graph.mailboxSettings"
-  },
-  "deviceEnrollmentLimit": "Integer",
-  "print": {
-    "@odata.type": "microsoft.graph.userPrint"
-  },
-  "aboutMe": "String",
-  "birthday": "String (timestamp)",
-  "hireDate": "String (timestamp)",
-  "interests": [
-    "String"
-  ],
-  "mySite": "String",
-  "pastProjects": [
-    "String"
-  ],
-  "preferredName": "String",
-  "responsibilities": [
-    "String"
-  ],
-  "schools": [
-    "String"
-  ],
-  "skills": [
-    "String"
-  ]
+  "@odata.type" : "#microsoft.graph.videoNewsLinkPage",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "newsWebUrl": "https://contoso.sharepoint.com/:v:/g/Ect6qlxqyFxOmGupMtWuxOwBKTg_WNhkq8MpWefjQ_DlcQ?e=2fTTv2",
+  "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
-```
+---------------------------acebdf13572468
+Content-Disposition: form-data; name="content"; filename="b3.jpg"
+Content-Type: image/jpeg
 
+The contents of the file goes here.
+
+---------------------------acebdf13572468--
+```
 
 ### Response
 
@@ -327,173 +115,60 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.videoNewsLinkPage"
 }
 -->
+
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.user",
-  "id": "30b0600b-c780-a372-789f-e1c7c29bb063",
-  "deletedDateTime": "String (timestamp)",
-  "signInActivity": {
-    "@odata.type": "microsoft.graph.signInActivity"
-  },
-  "accountEnabled": "Boolean",
-  "ageGroup": "String",
-  "assignedLicenses": [
-    {
-      "@odata.type": "microsoft.graph.assignedLicense"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/$entity",
+  "@odata.type": "#microsoft.graph.videoNewsLinkPage",
+  "@odata.etag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "createdDateTime": "2024-06-11T17:31:20Z",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+  "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "pageLayout": "newsLink",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers(7)/BannerImage.png",
+  "newsWebUrl": "https://contoso.sharepoint.com/:v:/g/Ect6qlxqyFxOmGupMtWuxOwBKTg_WNhkq8MpWefjQ_DlcQ?e=2fTTv2",
+  "createdBy": {
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
     }
-  ],
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedPlan"
+  },
+  "lastModifiedBy": {
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
     }
-  ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
   },
-  "businessPhones": [
-    "String"
-  ],
-  "city": "String",
-  "cloudRealtimeCommunicationInfo": {
-    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
+  "parentReference": {
+    "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
   },
-  "companyName": "String",
-  "consentProvidedForMinor": "String",
-  "country": "String",
-  "createdDateTime": "String (timestamp)",
-  "creationType": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  "newsSharepointIds": {
+      "listId": "eb53ff32-f874-4237-8e6a-8eb46a051124",
+      "listItemUniqueId": "5caa7acb-c86a-4e5c-986b-a932d5aec4ec",
+      "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1",
+      "webId": "6fe870f8-dd59-4cf4-a62c-b555c69757c4"
   },
-  "department": "String",
-  "deviceKeys": [
-    {
-      "@odata.type": "microsoft.graph.deviceKey"
+  "publishingState": {
+    "level": "checkout",
+    "versionId": "0.1",
+    "checkedOutBy": {
+      "user": {
+        "displayName": "John Doe",
+        "email": "jdoe@contoso.com"
+      }
     }
-  ],
-  "displayName": "String",
-  "employeeHireDate": "String (timestamp)",
-  "employeeId": "String",
-  "employeeOrgData": {
-    "@odata.type": "microsoft.graph.employeeOrgData"
-  },
-  "employeeType": "String",
-  "employeeLeaveDateTime": "String (timestamp)",
-  "faxNumber": "String",
-  "givenName": "String",
-  "identities": [
-    {
-      "@odata.type": "microsoft.graph.objectIdentity"
-    }
-  ],
-  "imAddresses": [
-    "String"
-  ],
-  "infoCatalogs": [
-    "String"
-  ],
-  "isLicenseReconciliationNeeded": "Boolean",
-  "isManagementRestricted": "Boolean",
-  "isResourceAccount": "Boolean",
-  "jobTitle": "String",
-  "lastPasswordChangeDateTime": "String (timestamp)",
-  "legalAgeGroupClassification": "String",
-  "licenseAssignmentStates": [
-    {
-      "@odata.type": "microsoft.graph.licenseAssignmentState"
-    }
-  ],
-  "mail": "String",
-  "mailNickname": "String",
-  "mobilePhone": "String",
-  "onPremisesDistinguishedName": "String",
-  "onPremisesExtensionAttributes": {
-    "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
-  },
-  "onPremisesImmutableId": "String",
-  "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
-  "onPremisesSecurityIdentifier": "String",
-  "onPremisesSipInfo": {
-    "@odata.type": "microsoft.graph.onPremisesSipInfo"
-  },
-  "onPremisesSyncEnabled": "Boolean",
-  "onPremisesDomainName": "String",
-  "onPremisesSamAccountName": "String",
-  "onPremisesUserPrincipalName": "String",
-  "otherMails": [
-    "String"
-  ],
-  "passwordPolicies": "String",
-  "passwordProfile": {
-    "@odata.type": "microsoft.graph.passwordProfile"
-  },
-  "officeLocation": "String",
-  "postalCode": "String",
-  "preferredDataLocation": "String",
-  "preferredLanguage": "String",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedPlan"
-    }
-  ],
-  "proxyAddresses": [
-    "String"
-  ],
-  "refreshTokensValidFromDateTime": "String (timestamp)",
-  "securityIdentifier": "String",
-  "serviceProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.serviceProvisioningXmlError"
-    }
-  ],
-  "showInAddressList": "Boolean",
-  "signInSessionsValidFromDateTime": "String (timestamp)",
-  "state": "String",
-  "streetAddress": "String",
-  "surname": "String",
-  "usageLocation": "String",
-  "userPrincipalName": "String",
-  "externalUserState": "String",
-  "externalUserStateChangeDateTime": "String",
-  "userType": "String",
-  "mailboxSettings": {
-    "@odata.type": "microsoft.graph.mailboxSettings"
-  },
-  "deviceEnrollmentLimit": "Integer",
-  "print": {
-    "@odata.type": "microsoft.graph.userPrint"
-  },
-  "aboutMe": "String",
-  "birthday": "String (timestamp)",
-  "hireDate": "String (timestamp)",
-  "interests": [
-    "String"
-  ],
-  "mySite": "String",
-  "pastProjects": [
-    "String"
-  ],
-  "preferredName": "String",
-  "responsibilities": [
-    "String"
-  ],
-  "schools": [
-    "String"
-  ],
-  "skills": [
-    "String"
-  ]
+  }
 }
 ```
 

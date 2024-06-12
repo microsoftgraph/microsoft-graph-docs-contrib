@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/microsoft.graph.newsLinkPage
+GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/microsoft.graph.newsLinkPage
 ```
 
 

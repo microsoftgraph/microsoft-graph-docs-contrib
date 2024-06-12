@@ -1,9 +1,9 @@
 ---
-title: "Update videoNewsLinkPage"
-description: "Update the properties of a videoNewsLinkPage object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: Update videoNewsLink page in a SharePoint site
+description: Update the properties of a videoNewsLinkPage object.
+author: kevklam
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -45,28 +45,18 @@ PATCH /videoNewsLinkPage
 
 ## Request body
 
+> **Notes:**
+> Currently, you can update the bannerImage, by uploading the image bytes of the new bannerImage you want to set directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Required.|
-|description|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|eTag|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Required.|
-|name|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|parentReference|[itemReference](../resources/itemreference.md)|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|webUrl|String|**TODO: Add Description** Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|pageLayout|pageLayoutType|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`, `videoNewsLink`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` , `videoNewsLink`. Optional.|
-|publishingState|[publicationFacet](../resources/publicationfacet.md)|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). Optional.|
-|title|String|**TODO: Add Description** Inherited from [baseSitePage](../resources/basesitepage.md). Optional.|
-|newsWebUrl|String|**TODO: Add Description** Optional.|
-|newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|**TODO: Add Description** Optional.|
-|bannerImageWebUrl|String|**TODO: Add Description** Optional.|
-|videoDuration|Duration|**TODO: Add Description** Optional.|
+|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters.|
+|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters.|
+|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md).|
+|videoDuration|Duration|Duration of the referenced video.|
 
 
 

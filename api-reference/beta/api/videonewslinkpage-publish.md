@@ -1,9 +1,9 @@
 ---
-title: "videoNewsLinkPage: publish"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Publish NewsLinkPage"
+description: "Publish the latest version of a newsLinkPage resource, which makes the version of the newLinkPage available to all users."
+author: kevklam
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Publish [videoNewsLinkPage](../resources/videonewslinkpage.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /videoNewsLinkPage/publish
+POST/sites/{siteId}/pages/{pageId}/microsoft.graph.videoNewsLinkPage/publish
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/videoNewsLinkPage/publish
+POST https://graph.microsoft.com/beta/sites/{siteId}/pages/{pageId}/microsoft.graph.videoNewsLinkPage/publish
 ```
 
 

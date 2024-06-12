@@ -1,10 +1,10 @@
 ---
-title: Create a new NewsLink page in a SharePoint site
-description: Create a new newsLinkPage in the site pages list in a site.
-author: shgangan
-ms.localizationpriority: medium
-ms.subservice: sharepoint
-doc_type: apiPageType
+title: "Create a new NewsLink page in a SharePoint site"
+description: "Create a new newsLinkPage in the site pages list in a site."
+author: "shgangan"
+ms.localizationpriority: "medium"
+ms.subservice: "sharepoint"
+doc_type: "apiPageType"
 ---
 
 # Create a newsLinkPage
@@ -74,6 +74,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ### Request
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create_newslinkpage", "scopes": "sites.readwrite.all" } -->
 
 ``` http
@@ -114,7 +115,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created 
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
@@ -127,7 +128,7 @@ Content-Type: application/json
   "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
   "lastModifiedDateTime": "2024-06-11T17:31:21Z",
   "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-  "webUrl": "https://a830edad9050849ssgmsit.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
   "title": "Microsoft Build brings AI tools to the forefront for developers",
   "pageLayout": "newsLink",
   "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers(7)/BannerImage.png",

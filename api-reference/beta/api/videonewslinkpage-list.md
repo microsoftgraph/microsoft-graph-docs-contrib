@@ -1,9 +1,9 @@
 ---
-title: "List videoNewsLinkPage objects"
-description: "Get a list of the videoNewsLinkPage objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: List videoNewsLinkPage objects
+description: Get a list of the videoNewsLinkPage objects and their properties.
+author: kevklam
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.videoNewsLinkPage not found
+GET /sites/{site-id}/pages/microsoft.graph.videoNewsLinkPage
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.videoNewsLinkPage not found
+GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/microsoft.graph.videoNewsLinkPage
 ```
 
 

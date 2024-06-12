@@ -24,7 +24,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |[Get](../api/videonewslinkpage-get.md)|[videoNewsLinkPage](../resources/videonewslinkpage.md)|Read the properties and relationships of a [videoNewsLinkPage](../resources/videonewslinkpage.md) object.|
 |[Update](../api/videonewslinkpage-update.md)|[videoNewsLinkPage](../resources/videonewslinkpage.md)|Update the properties of a [videoNewsLinkPage](../resources/videonewslinkpage.md) object.|
 |[Delete](../api/basesitepage-delete.md)|None|Delete a [videoNewsLinkPage](../resources/videonewslinkpage.md) object.|
-|[Publish](../api/videonewslinkpage-publish.md)|None|Publish a [videoNewsLinkPage](../resources/videonewslinkpage.md) object. |
+|[Publish](../api/videonewslinkpage-publish.md)|None|Publish a [videoNewsLinkPage](../resources/videonewslinkpage.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -95,4 +95,3 @@ The following JSON representation shows the resource type.
   "videoDuration": "String (duration)"
 }
 ```
-

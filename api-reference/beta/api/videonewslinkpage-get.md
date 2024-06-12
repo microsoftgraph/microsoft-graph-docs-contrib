@@ -1,9 +1,9 @@
 ---
-title: "Get videoNewsLinkPage"
-description: "Read the properties and relationships of a videoNewsLinkPage object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: Get videoNewsLinkPage resource type
+description: Represents a Video News Link page in the site's pages list
+author: kevklam
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -84,35 +84,50 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.videoNewsLinkPage",
-    "id": "f869a9f2-d5cd-f1e3-0f16-933015a8338e",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "eTag": "String",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "name": "String",
-    "parentReference": {
-      "@odata.type": "microsoft.graph.itemReference"
-    },
-    "webUrl": "String",
-    "pageLayout": "String",
-    "publishingState": {
-      "@odata.type": "microsoft.graph.publicationFacet"
-    },
-    "title": "String",
-    "newsWebUrl": "String",
-    "newsSharepointIds": {
-      "@odata.type": "microsoft.graph.sharepointIds"
-    },
-    "bannerImageWebUrl": "String",
-    "videoDuration": "String (duration)"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/$entity",
+  "@odata.type": "#microsoft.graph.videoNewsLinkPage",
+  "@odata.etag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "createdDateTime": "2024-06-11T17:31:20Z",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+  "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "pageLayout": "newsLink",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers(7)/BannerImage.png",
+  "newsWebUrl": "https://contoso.sharepoint.com/:v:/g/Ect6qlxqyFxOmGupMtWuxOwBKTg_WNhkq8MpWefjQ_DlcQ?e=2fTTv2",
+  "createdBy": {
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
+  },
+  "parentReference": {
+    "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+  },
+  "newsSharepointIds": {
+      "listId": "eb53ff32-f874-4237-8e6a-8eb46a051124",
+      "listItemUniqueId": "5caa7acb-c86a-4e5c-986b-a932d5aec4ec",
+      "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1",
+      "webId": "6fe870f8-dd59-4cf4-a62c-b555c69757c4"
+  },
+  "publishingState": {
+    "level": "checkout",
+    "versionId": "0.1",
+    "checkedOutBy": {
+      "user": {
+        "displayName": "John Doe",
+        "email": "jdoe@contoso.com"
+      }
+    }
   }
 }
 ```
