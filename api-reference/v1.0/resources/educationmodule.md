@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Module
 ---
 
 # educationModule resource type
