@@ -47,7 +47,7 @@ Based on this, you can consent an application the `Lists.SelectedOperations.Sele
 > [!NOTE]
 > Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance because this is the root of permission inheritance.
 
-An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permission.md) but the logic is similar for [lists](../api-reference/beta/api/list-post-permission.md), [list items](../api-reference/beta/api/listitem-post-permission.md), [files](../api-reference/beta/api/driveitem-post-permission.md), or [folders](../api-reference/beta/api/listitem-post-permission.md).
+An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permissions.md) but the logic is similar for [lists](../api-reference/beta/api/list-post-permissions.md), [list items](../api-reference/beta/api/listitem-post-permissions.md), [files](../api-reference/beta/api/driveitem-post-permissions.md), or [folders](../api-reference/beta/api/listitem-post-permissions.md).
 
 ### What's the difference between files and listItems scopes?
 
