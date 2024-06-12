@@ -59,7 +59,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the town hall. |
+| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees get email notification for the town hall. |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -105,16 +105,6 @@ Content-Type: application/json
     "isAttendeeEmailNotificationEnabled": false
 }
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventtownhall-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
