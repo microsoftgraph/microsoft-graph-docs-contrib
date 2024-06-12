@@ -41,6 +41,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /communications/callRecords/{id}
 ```
 
+> [!CAUTION]
+>
+>- Call records do not currently support streaming participants in live events.
+
 ## Optional query parameters
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).

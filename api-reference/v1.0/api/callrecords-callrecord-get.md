@@ -36,6 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /communications/callRecords/{id}
 ```
+> [!CAUTION]
+>
+>- Call records do not currently support streaming participants in live events.
 
 ## Optional query parameters
 
