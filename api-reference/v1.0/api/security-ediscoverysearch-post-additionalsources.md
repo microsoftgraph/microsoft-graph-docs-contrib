@@ -3,7 +3,7 @@ title: "Add additional sources"
 description: "Create a new additional source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

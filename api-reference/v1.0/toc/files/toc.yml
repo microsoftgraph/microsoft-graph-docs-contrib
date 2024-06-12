@@ -142,6 +142,8 @@ items:
     href: ../../api/filestorage-delete-containers.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
+  - name: Permanently delete
+    href: ../../api/filestoragecontainer-permanentdelete.md
   - name: Get drive
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions
