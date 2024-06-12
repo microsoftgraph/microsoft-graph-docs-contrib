@@ -26,14 +26,14 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List questions](../api/virtualeventregistration-list-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).|
+|[List questions](../api/virtualeventregistrationconfiguration-list-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).|
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the registration question.|
 |id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
-|isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
+|isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`.|
 
 ## JSON representation
 
