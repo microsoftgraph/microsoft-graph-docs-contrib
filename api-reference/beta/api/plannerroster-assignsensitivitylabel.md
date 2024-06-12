@@ -65,6 +65,7 @@ For more information, see [Microsoft Graph error responses and resource types](/
 
 ### Request
 The following example shows a request. 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_sensitivitylabel_to_roster_"
@@ -81,6 +82,36 @@ If-Match: "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""
     "sensitivityLabelId": "7a4d7cc1-f72b-46a3-9831-02680eaf56f9"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assign-sensitivitylabel-to-roster--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/assign-sensitivitylabel-to-roster--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assign-sensitivitylabel-to-roster--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assign-sensitivitylabel-to-roster--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-sensitivitylabel-to-roster--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/assign-sensitivitylabel-to-roster--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/assign-sensitivitylabel-to-roster--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
