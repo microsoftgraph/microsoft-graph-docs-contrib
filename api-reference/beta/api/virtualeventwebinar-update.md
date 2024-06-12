@@ -54,7 +54,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. |
 | displayName | String | Display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
-| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the webinar. |
+| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees get email notification for the webinar. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
 ## Response
