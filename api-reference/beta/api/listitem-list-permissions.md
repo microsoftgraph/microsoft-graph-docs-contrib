@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [permission](../resources/permission.md) resources from the permissions navigation property on a list item.
+Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
