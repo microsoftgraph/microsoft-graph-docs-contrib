@@ -28,7 +28,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 ## June 2024: New in preview only
 
-### Sites and lists | Content models and document processing jobs
+### Sites and lists
 
 Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
 
