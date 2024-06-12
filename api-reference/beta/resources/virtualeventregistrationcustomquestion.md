@@ -26,7 +26,7 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 |answerInputType|[virtualEventRegistrationQuestionAnswerInputType](#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer.|
 |displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
-|isRequired|Boolean| Indicates whether the question is required to answer. Default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 
 ### virtualEventRegistrationQuestionAnswerInputType values
 
