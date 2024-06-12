@@ -213,7 +213,11 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Configure tenant restrictions settings
 
+The following example shows how to configure tenant restrictions settings.
+
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -223,33 +227,34 @@ HTTP/1.1 204 No Content
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
 Content-Type: application/json
+
 {
-"tenantRestrictions": {
-       "usersAndGroups": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "AllUsers",
-                    "targetType": "user"
-                }
-            ]
-        },
-        "applications": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "Office365",
-                    "targetType": "application"
-                }
-            ]
+  "tenantRestrictions": {
+    "usersAndGroups": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
         }
+      ]
+    },
+    "applications": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "Office365",
+          "targetType": "application"
+        }
+      ]
     }
+  }
 }
 ```
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

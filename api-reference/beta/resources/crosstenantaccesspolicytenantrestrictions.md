@@ -31,7 +31,8 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyTenantRestrictions"
@@ -41,15 +42,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyTenantRestrictions",
-  "usersAndGroups": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
-  },
-  "applications": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
-  },
-  "devices": {
-    "@odata.type": "microsoft.graph.devicesFilter"
-  }
+  "applications": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"},
+  "devices": {"@odata.type": "microsoft.graph.devicesFilter"},
+  "usersAndGroups": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"}
 }
 ```
 
