@@ -52,7 +52,9 @@ items:
     href: ../../api/site-list-columns.md
   - name: Create column
     href: ../../api/site-post-columns.md
-  - name: List operations in a site
+  - name: Create document processing job
+    href: ../../api/site-post-documentprocessingjobs.md
+  - name: List operations
     href: ../../api/site-list-operations.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
@@ -90,6 +92,20 @@ items:
     href: ../../api/list-list-columns.md
   - name: Create column
     href: ../../api/list-post-columns.md
+- name: Content model
+  items:
+  - name: Content model
+    href: ../../resources/contentmodel.md
+  - name: Get
+    href: ../../api/contentmodel-get.md
+  - name: Get applied drives
+    href: ../../api/contentmodel-getapplieddrives.md
+  - name: Get by name
+    href: ../../api/contentmodel-getbyname.md
+  - name: Add to drive
+    href: ../../api/contentmodel-addtodrive.md
+  - name: Remove from drive
+    href: ../../api/contentmodel-removefromdrive.md
 - name: Column definition
   items:
   - name: Column definition
@@ -116,6 +132,12 @@ items:
   href: ../../resources/contenttype.md
 - name: List item
   href: ../../resources/listitem.md
+- name: Document processing job
+  items:
+  - name: Document processing job
+    href: ../../resources/documentprocessingjob.md
+  - name: Create
+    href: ../../api/site-post-documentprocessingjobs.md
 - name: Document set version
   items:
   - name: Document set version
