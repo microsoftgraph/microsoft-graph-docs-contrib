@@ -257,7 +257,7 @@ To resolve this error, use the optional query parameter [@microsoft.graph.confli
 ### Example 4: Copy the children in a folder with name conflict setting conflictBehavior
 
 The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The optional query parameter @microsoft.graph.conflictBehavior is set to replace. It can be set as replace, rename, or fail.
+The optional query parameter @microsoft.graph.conflictBehavior is set to replace. The possible values are replace, rename, or fail.
 The destination already has the same name found at the source.
 
 #### Request
@@ -289,7 +289,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 The following example attempts to copy the children in a folder identified by `{item-id}` (also known as root) into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter isn't set to true.
-The request fails since copy operation can't be done on the root folder.
+The request fails since the copy operation can't be done in the root folder.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-5" } -->
@@ -330,7 +330,7 @@ Content-Length: 283
   }
 }
 ```
-To resolve this error set `childrenOnly` parameter to true.
+To resolve this error, set the `childrenOnly` parameter to true.
 
 ### Example 6: Copy the children in a folder where source has more than 150 direct children
 
@@ -378,9 +378,9 @@ Content-Length: 341
   }
 }
 ```
-To resolve this error, need to reorganize the source folder structure to only have 150 children.
+To resolve this error, reorganize the source folder structure only to have 150 children.
 
-### Example 7: Copy the children where source item is a file
+### Example 7: Copy the children where the source item is a file
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
@@ -478,7 +478,6 @@ Content-Length: 285
 ## Error responses
 
 See [Error Responses][error-response] for more info about
-how errors are returned.
 
 [error-response]: /graph/errors
 
