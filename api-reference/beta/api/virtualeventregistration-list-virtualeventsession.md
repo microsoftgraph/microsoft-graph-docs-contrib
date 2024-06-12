@@ -1,5 +1,5 @@
 ---
-title: "virtualEventRegistration: list virtualeventsession"
+title: "List virtualeventsession"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
