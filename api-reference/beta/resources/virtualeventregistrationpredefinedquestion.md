@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationPredefinedQuestion resource type"
-description: "Information about a predefined virtual event registration question."
+description: "Represents a predefined registration question associated with a virtual event."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
