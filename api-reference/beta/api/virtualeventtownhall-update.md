@@ -55,7 +55,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees will get email notification for the town hall. |
+| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees get email notification for the town hall. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
 ## Response
