@@ -289,7 +289,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 The following example attempts to copy the children in a folder identified by `{item-id}` (also known as root) into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter isn't set to true.
-The request fails since the copy operation can't be done in the root folder.
+The request fails because the copy operation can't be done in the root folder.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-5" } -->
