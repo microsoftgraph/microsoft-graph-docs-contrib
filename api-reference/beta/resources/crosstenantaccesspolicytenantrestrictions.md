@@ -22,7 +22,7 @@ Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantacces
 |Property|Type|Description|
 |:---|:---|:---|
 |applications|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of applications targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
-|devices|[devicesFilter](../resources/devicesfilter.md)|Defines the rule for filtering devices and whether devices satisfying the rule should be allowed or blocked. Not implemented.|
+|devices|[devicesFilter](../resources/devicesfilter.md)|Defines the rule for filtering devices and whether devices satisfying the rule should be allowed or blocked. API not supported on the server side yet.|
 |usersAndGroups|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of users and groups targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
 
 ## Relationships
