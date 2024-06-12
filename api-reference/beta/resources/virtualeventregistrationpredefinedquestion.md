@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a predefined registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).
 
-Currently, [virtualEventRegistration](../resources/virtualeventregistration.md) only supports [virtualEventWebinar](../resources/virtualeventwebinar.md) 
+Currently, [virtualEventRegistration](../resources/virtualeventregistration.md) only supports [virtualEventWebinar](../resources/virtualeventwebinar.md). 
 
 Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).
 
