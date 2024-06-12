@@ -1,5 +1,5 @@
 ---
-title: "virtualEventRegistration: create"
+title: "Create virtualEventRegistration"
 description: "Create a registration record for a webinar registrant."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
