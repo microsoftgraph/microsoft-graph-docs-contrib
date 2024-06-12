@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+toc.title: Role assignment multiple
 ---
 
 # unifiedRoleAssignmentMultiple resource type
@@ -49,7 +50,7 @@ The following RBAC providers are currently supported:
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 | appScopes | [appScope](appscope.md) collection |Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.  |
 | directoryScopes | [directoryObject](directoryobject.md) collection | Read-only collection that references the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|

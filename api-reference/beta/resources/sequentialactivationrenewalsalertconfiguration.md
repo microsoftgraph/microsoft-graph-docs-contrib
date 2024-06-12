@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Sequential activations
 ---
 
 # sequentialActivationRenewalsAlertConfiguration resource type

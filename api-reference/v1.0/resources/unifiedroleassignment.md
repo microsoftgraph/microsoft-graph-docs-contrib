@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+toc.title: Role assignment
 ---
 
 # unifiedRoleAssignment resource type

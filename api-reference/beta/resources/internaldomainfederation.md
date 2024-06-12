@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Federation with Microsoft Entra ID
 ---
 
 # internalDomainFederation resource type
