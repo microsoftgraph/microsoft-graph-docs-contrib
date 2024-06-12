@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action releases a previous [Check-out](driveitem-checkout.md) on a driveItem resource. Any changes done to the item while it was checked out are discarded. 
+This action releases a previous [Check out](driveitem-checkout.md) on a driveItem resource. Any changes done to the item while it was checked out are discarded. 
 The same user that performed the checkout must discard the checkout. Another alternative is to use application permissions.
 
 
