@@ -42,6 +42,8 @@ items:
     href: ../../api/message-replyall.md
   - name: Send draft message
     href: ../../api/message-send.md
+  - name: Recall message
+    href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
   - name: Attachments
