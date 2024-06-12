@@ -1,6 +1,6 @@
 ---
 title: "List questions"
-description: "Get a list of all registration questions of a webinar."
+description: "Get a list of all registration questions for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -10,9 +10,9 @@ doc_type: apiPageType
 # List questions
 Namespace: microsoft.graph
 
-Get a list of all [registration](../resources/virtualeventregistration.md) questions of a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).
 
-The list can include either [predefined registration questions](../resources/virtualEventRegistrationPredefinedQuestion.md) or [custom registration questions](../resources/virtualEventRegistrationCustomQuestion.md).
+The list can include either [predefined registration questions](../resources/virtualeventregistrationpredefinedquestion.md) or [custom registration questions](../resources/virtualeventregistrationcustomquestion.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistrationCustomQuestion](../resources/virtualEventRegistrationCustomQuestion.md) and/or [virtualEventRegistrationPredefinedQuestion](../resources/virtualEventRegistrationPredefinedQuestion.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and/or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) objects in the response body.
 
 ## Examples
 
