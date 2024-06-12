@@ -70,8 +70,8 @@ namespace SampleCertCall
             string aud_ClientAssertion = "https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0"; // audience for PoP must always be in the format https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0
 
             // pfxFilePath -> Use an existing valid cert used/uploaded to the app or service principal to generate access token and PoP token.
-            string pfxFilePath = "Current_Active_Certificate_Path"; // Replace the file path with the location of your certificate
-            string password = "Current_Active_Certificate_Password"; // Replace the password value with your certificate password if exists
+            string pfxFilePath = "Current_Active_Certificate_Path"; // Replace the file path with the location of your certificate.
+            string password = "Current_Active_Certificate_Password"; // If applicable, replace the password value with your certificate password.
             X509Certificate2 signingCert = null;
             try
             {
@@ -87,8 +87,8 @@ namespace SampleCertCall
             }
 
             // newCerFilePath -> This is the new cert which will be uploaded. The cert can also be stored in Azure Key Vault.
-            string newCerFilePath = config.GetValue<string>("NewCertificateDiskPath");
-            string newCertPassword = config.GetValue<string>("NewCertificatePassword");
+            string newCerFilePath = "New_Certificate_Path"; // Replace the file path with the location of your new certificate to be uploaded using the Graph API.
+            string newCertPassword = "New_Certificate_Password"; // If applicable, replace the password value with your new certificate password.
             X509Certificate2 newCert = null;
             try
             {
