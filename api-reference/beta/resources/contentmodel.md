@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an AI model used to process documents in SharePoint document libraries. It can either classify documents, or extract metadata from the documents. Some content models set content types to present the classification results.
 
-The extracted metadata is added to columns in the document library. Columns are created when a content model applied. 
+The extracted metadata is added to columns in the document library. Columns are created when a content model is applied. 
 
 ## Methods
 |Method|Return type|Description|
