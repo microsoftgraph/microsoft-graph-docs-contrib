@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |displayName|String|Display name of the registration question.|
 |id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
-|isRequired|Boolean| Indicates whether the question is required to answer. Default value is `false`.|
+|isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
 
 ## JSON representation
 
