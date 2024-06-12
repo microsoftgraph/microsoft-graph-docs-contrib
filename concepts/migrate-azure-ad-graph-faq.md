@@ -29,7 +29,7 @@ Follow these steps to identify apps with a dependency on Azure AD Graph:
 
 Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with the required permissions and roles to view Microsoft Entra ID recommendations. Run the [List recommendations](/graph/api/directory-list-recommendation) Microsoft Graph API to retrieve the list of apps and service principals that use Azure AD Graph.
 
-### Option 2: Use the appId of the app to identify the app's API permissions
+### Option 2: Use the appId of the app to identify its API permissions
 
 #### Step 1: Scan the application source code
 
@@ -109,10 +109,11 @@ To migrate your apps from Azure AD Graph to Microsoft Graph, follow the [App mig
 First, confirm the full list of apps owned by your tenant or third-party applications integrated in your tenant.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a cloud application administrator.
-1. Expand the **Identity** menu > select **Applications** > **App registrations**.
-1. In the App registrations window, select the **All Applications** tab.
-1. Select the app to reveal the app's menu.
-1. From the left pane of the window, menu options reveal the app's details including its owners.
+1. Expand the **Identity** menu > select **Applications**
+1. If the apps are registered in your tenant, select **App registrations**. If the apps are multitenant apps that you consented to in your tenant but are homed in another tenant, select **Enterprise applications**.
+1. Select the **All Applications** tab.
+1. Select the app to reveal its menu.
+1. From the left pane of the window, under the **Manage** group, select the **Owners** menu.
 
     :::image type="content" source="images/aadgraph-to-msgraph-migration/AppOwners.png" alt-text="Find app owners." border="true":::
 
