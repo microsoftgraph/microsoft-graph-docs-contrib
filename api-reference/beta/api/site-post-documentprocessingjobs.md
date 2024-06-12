@@ -54,7 +54,7 @@ You can specify the following properties when you create a **documentProcessingJ
 |jobType|documentProcessingJobType|The document processing job type. The possible values are: `File`, `Folder`. Optional.|
 |status|documentProcessingJobStatus|The document processing job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only. Optional.|
-|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. Use GET [driveItem](../resources/driveitem.md) resource operation and read  [sharepointIds](../resources/sharepointids.md) property to get listItemUniqueId.|
+|listItemUniqueId|String|The unique ID of the file or folder to process. To get the unique ID, use the [GET driveItem](../resources/driveitem.md) method and read the [sharepointIds](../resources/sharepointids.md) property.|
 
 
 
