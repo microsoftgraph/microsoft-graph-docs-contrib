@@ -3,7 +3,7 @@ title: "retentionLabel resource type"
 description: "Represents how customers can manage their data at an item level (email or document), including whether and for how long to retain or delete the item."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

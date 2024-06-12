@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated with a [host](../resources/security-host.md).
 
-This is a forward DNS lookup which queries the IP address of the specified host using its hostname. 
+This method is a forward DNS lookup that queries the IP address of the specified host using its hostname. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -39,7 +39,35 @@ GET /security/threatIntelligence/hosts/{hostId}/passiveDns
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$filter`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name     | Description                                                                                                                                                                                                                    |
+| :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $count   | `$count` is supported to return a holistic count of the number of [passiveDnsRecord](../resources/security-passivednsrecord.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $orderby | `$orderby` supports some properties of the **passiveDns** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby).                                                                |
+| $filter  | `$filter` is **required** in the request URL of this API. The API currently only supports filtering by one field in a call. For details, see [Supported properties with $filter](#supported-properties-with-filter).           |
+| $select  | `$select` is supported to limit the properties returned in this query.                                                                                                                                                         |
+| $skip    | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                        |
+| $top     | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                              |
+
+
+### Supported properties with $filter
+
+The following properties can be used for `$filter` calls:
+
+| Property    | Example                                   
+| :---------- | :----------------------------------------- |
+| recordType       | `$filter=recordType eq 'A'`          |
+
+
+### Supported properties with $orderby
+
+The following properties can be used for `$orderby` calls.
+
+| Property             | Example                              
+| :------------------- | :-----------------------------------  |
+| firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |
+| lastSeenDateTime | `$orderby=lastSeenDateTime desc` |   
 
 ## Request headers
 

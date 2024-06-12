@@ -31,7 +31,3 @@ items:
   - name: Overview
     displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
     href: overview.md
-  - name: Users
-    href: toc/users/toc.yml
-  - name: Groups
-    href: toc/groups/toc.yml

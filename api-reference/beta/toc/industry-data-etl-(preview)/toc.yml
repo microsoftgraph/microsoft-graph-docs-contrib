@@ -1,22 +1,9 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/industrydata-overview.md
-- name: Azure Data Lake connector
-  items:
-  - name: Azure Data Lake connector
-    href: ../../resources/industrydata-azuredatalakeconnector.md
-  - name: Create
-    href: ../../api/industrydata-azuredatalakeconnector-post.md
-  - name: List
-    href: ../../api/industrydata-azuredatalakeconnector-list.md
-  - name: Get
-    href: ../../api/industrydata-azuredatalakeconnector-get.md
-  - name: Update
-    href: ../../api/industrydata-azuredatalakeconnector-update.md
-  - name: Delete
-    href: ../../api/industrydata-azuredatalakeconnector-delete.md
-  - name: Get upload session
-    href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
 - name: File validate operation
   items:
   - name: File validate operation
@@ -25,50 +12,62 @@ items:
     href: ../../api/industrydata-filevalidateoperation-list.md
   - name: Get
     href: ../../api/industrydata-filevalidateoperation-get.md
-- name: Inbound file flow
-  items:
-  - name: Inbound file flow
-    href: ../../resources/industrydata-inboundfileflow.md
-  - name: Create
-    href: ../../api/industrydata-inboundfileflow-post.md
-  - name: List
-    href: ../../api/industrydata-inboundfileflow-list.md
-  - name: Get
-    href: ../../api/industrydata-inboundfileflow-get.md
-  - name: Update
-    href: ../../api/industrydata-inboundfileflow-update.md
-  - name: Delete
-    href: ../../api/industrydata-inboundfileflow-delete.md
 - name: Inbound flow
   items:
   - name: Inbound flow
     href: ../../resources/industrydata-inboundflow.md
-  - name: Create
-    href: ../../api/industrydata-inboundflow-post.md
   - name: List
     href: ../../api/industrydata-inboundflow-list.md
   - name: Get
     href: ../../api/industrydata-inboundflow-get.md
-  - name: Update
-    href: ../../api/industrydata-inboundflow-update.md
   - name: Delete
     href: ../../api/industrydata-inboundflow-delete.md
+  - name: Inbound API flow
+    items:
+    - name: Inbound API flow
+      href: ../../resources/industrydata-inboundapiflow.md
+    - name: Create
+      href: ../../api/industrydata-inboundapiflow-post.md
+    - name: Update
+      href: ../../api/industrydata-inboundapiflow-update.md
+  - name: Inbound file flow
+    items:
+    - name: Inbound file flow
+      href: ../../resources/industrydata-inboundfileflow.md
+    - name: Create
+      href: ../../api/industrydata-inboundfileflow-post.md
+    - name: Update
+      href: ../../api/industrydata-inboundfileflow-update.md
 - name: Industry data connector
   items:
   - name: Industry data connector
     href: ../../resources/industrydata-industrydataconnector.md
-  - name: Create
-    href: ../../api/industrydata-industrydataconnector-post.md
   - name: List
     href: ../../api/industrydata-industrydataconnector-list.md
   - name: Get
     href: ../../api/industrydata-industrydataconnector-get.md
-  - name: Update
-    href: ../../api/industrydata-industrydataconnector-update.md
   - name: Delete
     href: ../../api/industrydata-industrydataconnector-delete.md
   - name: Validate
     href: ../../api/industrydata-industrydataconnector-validate.md
+  - name: Azure Data Lake connector
+    items:
+    - name: Azure Data Lake connector
+      href: ../../resources/industrydata-azuredatalakeconnector.md
+    - name: Create
+      href: ../../api/industrydata-azuredatalakeconnector-post.md
+    - name: Update
+      href: ../../api/industrydata-azuredatalakeconnector-update.md
+    - name: Get upload session
+      href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
+  - name: One roster API data connector
+    items:
+    - name: One roster API data connector
+      href: ../../resources/industrydata-onerosterapidataconnector.md
+    - name: Create
+      href: ../../api/industrydata-onerosterapidataconnector-post.md
+    - name: Update
+      href: ../../api/industrydata-onerosterapidataconnector-update.md
 - name: Industry data run
   items:
   - name: Industry data run
@@ -155,6 +154,12 @@ items:
     href: ../../api/industrydata-referencedefinition-list.md
   - name: Get
     href: ../../api/industrydata-referencedefinition-get.md
+  - name: Create
+    href: ../../api/industrydata-referencedefinition-post.md
+  - name: Update
+    href: ../../api/industrydata-referencedefinition-update.md
+  - name: Delete
+    href: ../../api/industrydata-referencedefinition-delete.md
 - name: Role group
   items:
   - name: Role group
@@ -209,6 +214,8 @@ items:
     href: ../../resources/industrydata-enrollmentmappings.md
   - name: File data connector
     href: ../../resources/industrydata-filedataconnector.md
+  - name: File format reference value
+    href: ../../resources/industrydata-fileformatreferencevalue.md
   - name: File upload session
     href: ../../resources/industrydata-fileuploadsession.md
   - name: Filter
@@ -231,6 +238,12 @@ items:
     href: ../../resources/industrydata-industrydatarunrolecountmetric.md
   - name: Industry data run statistics
     href: ../../resources/industrydata-industrydatarunstatistics.md
+  - name: OAuth 1 client credential
+    href: ../../resources/industrydata-oauth1clientcredential.md
+  - name: OAuth 2 client credential
+    href: ../../resources/industrydata-oauth2clientcredential.md
+  - name: OAuth client credential
+    href: ../../resources/industrydata-oauthclientcredential.md
   - name: Outbound flow activity
     href: ../../resources/industrydata-outboundflowactivity.md
   - name: Password settings
