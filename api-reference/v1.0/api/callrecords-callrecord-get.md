@@ -38,7 +38,7 @@ GET /communications/callRecords/{id}
 ```
 > [!CAUTION]
 >
->- Call records do not currently support streaming participants in live events.
+>- This API doesn't currently return a record of participants who stream a live event.
 
 ## Optional query parameters
 
