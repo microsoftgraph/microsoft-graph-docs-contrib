@@ -3,7 +3,7 @@ title: "ediscoveryReviewSet resource type"
 description: "Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
