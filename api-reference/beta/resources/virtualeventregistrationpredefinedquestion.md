@@ -23,14 +23,13 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 
 |Property|Type|Description|
 |:---|:---|:---|
-|label|[virtualEventRegistrationPredefinedQuestionLabel](#virtualeventregistrationpredefinedquestionlabel-values)|Label of the predefined registration question.|
 |displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |isRequired|Boolean| Indicates whether the question is required to answer. Default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|label|[virtualEventRegistrationPredefinedQuestionLabel](#virtualeventregistrationpredefinedquestionlabel-values)|Label of the predefined registration question.|
 
 ### virtualEventRegistrationPredefinedQuestionLabel values
-
-The following shows the different information that can be obtained through predefined registration questions.  
+ 
 | Value | Description |
 | ----- | ----------- |
 | street | The registration question accepts single-line text. |
