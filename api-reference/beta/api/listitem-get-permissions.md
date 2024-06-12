@@ -19,8 +19,8 @@ Retrieve the properties and relationships of a [permission](../resources/permiss
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "listitem_get_permission" } -->
-[!INCLUDE [permissions-table](../includes/permissions/listitem-get-permission-permissions.md)]
+<!-- { "blockType": "permissions", "name": "listitem_get_permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/listitem-get-permissions-permissions.md)]
 
 ## HTTP request
 
@@ -53,6 +53,12 @@ If successful, this method returns a `200 OK` response code and a [permission](.
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_permission",
+  "sampleKeys": ["f2d90359-865b-4b6c-8848-d2722dd630e5","f2d90359-865b-4b6c-8848-d2722dd630e5", "1", "3"]
+}
+-->
 
 ---
 

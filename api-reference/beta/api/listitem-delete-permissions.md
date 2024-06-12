@@ -50,6 +50,12 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_permission_2"
+}
+-->
+
 ---
 
 ### Response
