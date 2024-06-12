@@ -88,7 +88,7 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
-  - name: Discards a check out
+  - name: Discard a check-out
     href: ../../api/driveitem-discardcheckout.md
   - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
