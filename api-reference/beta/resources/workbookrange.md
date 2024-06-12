@@ -1,6 +1,6 @@
 ---
 title: "workbookRange resource type"
-description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells."
+description: "Represents a set of one or more contiguous cells in a workbook, such as a cell, a row, a column, or a block of cells."
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
+Represents a set of one or more contiguous cells in a workbook, such as a cell, a row, a column, or a block of cells.
 
 
 ## Methods
@@ -56,17 +56,17 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |columnCount|int|Represents the total number of columns in the range. Read-only.|
 |columnHidden|Boolean|Indicates whether all columns of the current range are hidden.|
 |columnIndex|int|Represents the column number of the first cell in the range. Zero-indexed. Read-only.|
-|formulas|JSON|Represents the formula in A1-style notation.|
-|formulasLocal|JSON|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
-|formulasR1C1|JSON|Represents the formula in R1C1-style notation.|
+|formulas|Json|Represents the formula in A1-style notation.|
+|formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
+|formulasR1C1|Json|Represents the formula in R1C1-style notation.|
 |hidden|boolean|Represents if all cells of the current range are hidden. Read-only.|
-|numberFormat|JSON|Represents Excel's number format code for the given cell.|
+|numberFormat|Json|Represents Excel's number format code for the given cell.|
 |rowCount|int|Returns the total number of rows in the range. Read-only.|
 |rowHidden|Boolean|Indicates whether all rows of the current range are hidden.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|
-|text|JSON|Text values of the specified range. The text value doesn't depend on the cell width. The # sign substitution that happens in Excel UI doesn't affect the text value returned by the API. Read-only.|
+|text|Json|Text values of the specified range. The text value doesn't depend on the cell width. The # sign substitution that happens in Excel UI doesn't affect the text value returned by the API. Read-only.|
 |valueTypes|string|Represents the type of data of each cell. Possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
-|values|JSON|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
 
 ## Relationships
 | Relationship | Type	|Description|
