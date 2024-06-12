@@ -477,7 +477,7 @@ Content-Length: 285
 
 ## Error responses
 
-For more information, See [Error Responses][error-response].
+For more information, see [Error Responses][error-response].
 
 [error-response]: /graph/errors
 
