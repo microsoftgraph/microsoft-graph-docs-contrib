@@ -15,7 +15,7 @@ Add multiple members in a single request to a [team](../resources/team.md). The 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-> **Note**: Sometimes this can take a while to reflect the addition after member is added.
+> **Note**: Sometimes this can take a while to reflect the addition after member is added. Users can subscribe to changes to membership in a specific team using [change notifications](../resources/change-notifications-api-overview.md)
 
 ## Permissions
 
