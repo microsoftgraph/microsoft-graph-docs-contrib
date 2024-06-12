@@ -44,7 +44,7 @@ POST /solutions/backupRestore/serviceApps
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply an empty JSON representation.
 
 ## Response
 
@@ -63,6 +63,8 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+{
+}
 ```
 
 # [C#](#tab/csharp)
