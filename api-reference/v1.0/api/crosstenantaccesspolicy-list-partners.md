@@ -155,10 +155,8 @@ Content-Type: application/json
           ]
         }
       },
-      "tenantRestrictions": 
-      {
-        "usersAndGroups": 
-        {
+      "tenantRestrictions": {
+        "usersAndGroups": {
           "accessType": "blocked",
           "targets": [
             {
@@ -167,8 +165,7 @@ Content-Type: application/json
             }
           ]
         },
-        "applications": 
-        {
+        "applications": {
           "accessType": "blocked",
           "targets": [
             {
