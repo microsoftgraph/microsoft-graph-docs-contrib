@@ -24,7 +24,7 @@ This article provides code examples in C# to demostrate how to:
 4. Use the PoP token to remove a certificate from the app or service principal object using the **removeKey** method.
 
 > [!IMPORTANT]
-> Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the update the **keyCredential** property.
+> Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the **keyCredential** property.
 
 ## Prerequisites
 
@@ -48,7 +48,6 @@ The token should contain the following claims:
 ```csharp
 using System;
 using System.Security.Cryptography.X509Certificates;
-using Microsoft.Extensions.Configuration;
 using System.Net;
 using System.Net.Http;
 using Microsoft.IdentityModel.Tokens;
@@ -57,26 +56,23 @@ namespace SampleCertCall
 {
     class Program
     {
-        private static IConfiguration config;
         static void Main(string[] args)
         {
             //=============================
-            // Read app registration info from appsettings.json
+            // Global variables which will be used to store app registation info, you can use appsettings.json to store such data
             //=============================
-            config = new Helper().ReadFromJsonFile();
-            string clientId = config.GetValue<string>("ClientId"); //client ID or appId of the target app or service principal
-            string tenantID = config.GetValue<string>("TenantId");
-            string scopes = config.GetValue<string>("Scopes"); // Use "https://graph.microsoft.com/.default" to get the preconfigured permissions
-            string objectId = config.GetValue<string>("ObjectId"); //client ID/appId of the target app or service principal
-            string api = config.GetValue<string>("ApiUrl"); // Variable for https://graph.microsoft.com/v1.0/applications/ or https://graph.microsoft.com/v1.0/servicePrincipals/
-            string aud_POP = config.GetValue<string>("Aud_POP"); // audience for client assertion must always be 00000002-0000-0000-c000-000000000000
-            string aud_ClientAssertion = config.GetValue<string>("Aud_ClientAssertion"); // audience for PoP must always be in the format https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0
+            string clientId = "Enter_the_Application_Id_Here"; //client ID or appId of the target app or service principal
+            string tenantID = "Enter_the_Tenant_Id_Here"; // Tenant ID value
+            string scopes = "https://graph.microsoft.com/.default"; // The "https://graph.microsoft.com/.default" is required in the client credentials flow, see the consent documentation (https://learn.microsoft.com/en-us/entra/identity-platform/scopes-oidc#the-default-scope)
+            string objectId = "Enter_the_Object_Id_Here"; // The object ID is the identifier of the app or service principal you want to work with. Depending on the endpoint you use, it can be either the application objectId (https://graph.microsoft.com/v1.0/applications)) or the service principal objectId (https://graph.microsoft.com/v1.0/ServicePrincipals)).
+            string api = "Graph_API/ENDPOINT"; // Choose the graph endpoint you need to use, depending on whether you are working with (https://graph.microsoft.com/v1.0/applications) or (https://graph.microsoft.com/v1.0/servicePrincipals)
+            string aud_POP = "00000002-0000-0000-c000-000000000000"; // audience for client assertion must always be 00000002-0000-0000-c000-000000000000
+            string aud_ClientAssertion = "https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0"; // audience for PoP must always be in the format https://login.microsoftonline.com/{YOUR_TENANT_ID_HERE}/v2.0
 
-            // pfxFilePath -> Use an existing valid cert used/uploaded to the app or service principal to generate access token and PoP token; You can read the app/SP object to get details of the existing cert.
-            string pfxFilePath = config.GetValue<string>("CertificateDiskPath");
-            string password = config.GetValue<string>("CertificatePassword");
+            // pfxFilePath -> Use an existing valid cert used/uploaded to the app or service principal to generate access token and PoP token.
+            string pfxFilePath = "Current_Active_Certificate_Path"; // Replace the file path with the location of your certificate
+            string password = "Current_Active_Certificate_Password"; // Replace the password value with your certificate password if exists
             X509Certificate2 signingCert = null;
-            new Helper().IsConfigSetToDefault(clientId, tenantID, scopes, objectId, aud_ClientAssertion);
             try
             {
                 if (!password.IsNullOrEmpty())
@@ -94,7 +90,6 @@ namespace SampleCertCall
             string newCerFilePath = config.GetValue<string>("NewCertificateDiskPath");
             string newCertPassword = config.GetValue<string>("NewCertificatePassword");
             X509Certificate2 newCert = null;
-            new Helper().IsConfigSetToDefault(clientId, tenantID, scopes, objectId, aud_ClientAssertion);
             try
             {
                 if (newCertPassword != "")
@@ -111,8 +106,8 @@ namespace SampleCertCall
             //========================
             //Get acessToken via client assertion
             //========================
-            var client_assertion = new GraphAPI().GenerateClientAssertion(aud_ClientAssertion, clientId, signingCert, tenantID);
-            var token = new GraphAPI().GenerateAccessTokenWithClientAssertion(aud_ClientAssertion, client_assertion, clientId, signingCert, tenantID);
+            var client_assertion = new Helper().GenerateClientAssertion(aud_ClientAssertion, clientId, signingCert, tenantID);
+            var token = new Helper().GenerateAccessTokenWithClientAssertion(aud_ClientAssertion, client_assertion, clientId, signingCert, tenantID);
 
             //========================
             //Get PoP Token
@@ -326,13 +321,69 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.Graph;
 using Azure.Identity;
-using Microsoft.Extensions.Configuration;
 
 namespace SampleCertCall
 {
     class Helper
     {
-        private static IConfiguration configuration;
+        public string GenerateClientAssertion(string aud, string clientId, X509Certificate2 signingCert, string tenantID)
+        {
+            Guid guid = Guid.NewGuid();
+        
+            // aud and iss are the only required claims.
+            var claims = new Dictionary<string, object>()
+            {
+                { "aud", aud },
+                { "iss", clientId },
+                { "sub", clientId },
+                { "jti", guid}
+            };
+        
+            // token validity should not be more than 10 minutes
+            var now = DateTime.UtcNow;
+            var securityTokenDescriptor = new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
+            {
+                Claims = claims,
+                NotBefore = now,
+                Expires = now.AddMinutes(10),
+                SigningCredentials = new X509SigningCredentials(signingCert)
+            };
+        
+            var handler = new JsonWebTokenHandler();
+            // Get Client Assertion
+            var client_assertion = handler.CreateToken(securityTokenDescriptor);
+        
+            return client_assertion;
+        }
+
+        public string GenerateAccessTokenWithClientAssertion(string aud, string client_assertion, string clientId, X509Certificate2 signingCert, string tenantID)
+        {
+            // GET ACCESS TOKEN
+            var data = new[]
+            {
+                new KeyValuePair<string, string>("client_id", clientId),
+                new KeyValuePair<string, string>("client_assertion_type", "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"),
+                new KeyValuePair<string, string>("client_assertion", client_assertion),
+                new KeyValuePair<string, string>("grant_type", "client_credentials"),
+                new KeyValuePair<string, string>("scope", "https://graph.microsoft.com/.default"),
+            };
+        
+            var client = new HttpClient();
+            var url = $"https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token";
+            var t = new FormUrlEncodedContent(data);
+            var res = client.PostAsync(url, new FormUrlEncodedContent(data)).GetAwaiter().GetResult();
+            var token = "";
+            using (HttpResponseMessage response = res)
+            {
+                response.EnsureSuccessStatusCode();
+                string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                JObject obj = JObject.Parse(responseBody);
+                token = (string)obj["access_token"];
+            }
+        
+            return token;
+        }
+
         public string GeneratePoPToken(string objectId, string aud, X509Certificate2 signingCert)
         {
             Guid guid = Guid.NewGuid();
@@ -400,26 +451,6 @@ namespace SampleCertCall
 
             return graphClient;
         }
-
-        public IConfiguration ReadFromJsonFile()
-        {
-            // Using appsettings.json to load the configuration settings
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(System.IO.Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
-
-            configuration = builder.Build();
-
-            return configuration;
-        }
-
-        public void IsConfigSetToDefault(string clientId, string tenantID, string scopes, string objectId, string aud_ClientAssertion)
-        {
-            if (clientId.Contains("YOUR_CLIENT_ID_HERE") || tenantID.Contains("YOUR_TENANT_ID_HERE") || objectId.Contains("YOUR_OBJECT_ID_HERE") || aud_ClientAssertion.Contains("{YOUR_TENANT_ID_HERE}"))
-            {
-                Console.WriteLine("Please configure the sample to use your tenant and app or service principal settings");
-            }
-        }
     }
 }
 ```
@@ -438,15 +469,13 @@ using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Configuration;
 
 
 namespace SampleCertCall
 {
     class GraphAPI
     {
-        private static IConfiguration config;
-        public HttpStatusCode AddKeyWithPassword(string poP, string objectId, string api, string accessToken)
+        public HttpStatusCode AddKeyWithPassword(string poP, string objectId, string api, string accessToken, string key, string password)
         {
             var client = new HttpClient();
             var url = $"{api}{objectId}/addKey";
@@ -457,13 +486,6 @@ namespace SampleCertCall
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
             defaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-            // Get the new certificate info which will be uploaded via Microsoft Graph API call
-            config = new Helper().ReadFromJsonFile();
-            string pfxFilePath = config.GetValue<string>("NewCertificateDiskPath");
-            string password = config.GetValue<string>("NewCertificatePassword");
-            X509Certificate2 CurrentCertUsed = new X509Certificate2(pfxFilePath, password);
-            var key = new Helper().GetCertificateKey(CurrentCertUsed);
 
             var payload = new
             {
@@ -487,7 +509,7 @@ namespace SampleCertCall
             return res.StatusCode;
         }
 
-        public HttpStatusCode AddKey(string poP, string objectId, string api, string accessToken, X509Certificate2 CurrentCertUsed)
+        public HttpStatusCode AddKey(string poP, string objectId, string api, string accessToken, string key)
         {
             var client = new HttpClient();
             var url = $"{api}{objectId}/addKey";
@@ -498,8 +520,6 @@ namespace SampleCertCall
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
             defaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-            var key = new Helper().GetCertificateKey(CurrentCertUsed);
 
             string pass = null;
             var payload = new
@@ -550,63 +570,6 @@ namespace SampleCertCall
 
             return res.StatusCode;
         }
-
-        public string GenerateClientAssertion(string aud, string clientId, X509Certificate2 signingCert, string tenantID)
-        {
-            Guid guid = Guid.NewGuid();
-
-            // aud and iss are the only required claims.
-            var claims = new Dictionary<string, object>()
-            {
-                { "aud", aud },
-                { "iss", clientId },
-                { "sub", clientId },
-                { "jti", guid}
-            };
-
-            // token validity should not be more than 10 minutes
-            var now = DateTime.UtcNow;
-            var securityTokenDescriptor = new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
-            {
-                Claims = claims,
-                NotBefore = now,
-                Expires = now.AddMinutes(10),
-                SigningCredentials = new X509SigningCredentials(signingCert)
-            };
-
-            var handler = new JsonWebTokenHandler();
-            // Get Client Assertion
-            var client_assertion = handler.CreateToken(securityTokenDescriptor);
-
-            return client_assertion;
-        }
-
-        public string GenerateAccessTokenWithClientAssertion(string aud, string client_assertion, string clientId, X509Certificate2 signingCert, string tenantID)
-        {
-            // GET ACCESS TOKEN
-            var data = new[]
-            {
-                new KeyValuePair<string, string>("client_id", clientId),
-                new KeyValuePair<string, string>("client_assertion_type", "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"),
-                new KeyValuePair<string, string>("client_assertion", client_assertion),
-                new KeyValuePair<string, string>("grant_type", "client_credentials"),
-                new KeyValuePair<string, string>("scope", "https://graph.microsoft.com/.default"),
-            };
-
-            var client = new HttpClient();
-            var url = $"https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token";
-            var res = client.PostAsync(url, new FormUrlEncodedContent(data)).GetAwaiter().GetResult();
-            var token = "";
-            using (HttpResponseMessage response = res)
-            {
-                response.EnsureSuccessStatusCode();
-                string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-                JObject obj = JObject.Parse(responseBody);
-                token = (string)obj["access_token"];
-            }
-
-            return token;
-        }
     }
 }
 ```
@@ -615,7 +578,6 @@ namespace SampleCertCall
 ```csharp
 using System;
 using System.Net;
-using System.Net.Http;
 using Microsoft.Graph;
 
 
@@ -635,7 +597,8 @@ namespace SampleCertCall
 
             PasswordCredential passwordCredential = null;
 
-            var res = graphClient.Applications[objectId]
+            // var res = graphClient.ServicePrincipals[objectId] // Uncomment this to update a certificate to a service principal
+            var res = graphClient.Applications[objectId] // Upload a certificate to the application
                 .AddKey(keyCredential, proof, passwordCredential)
                 .Request()
                 .PostResponseAsync().GetAwaiter().GetResult();
@@ -657,7 +620,8 @@ namespace SampleCertCall
                 SecretText = password
             };
 
-            var res = graphClient.Applications[objectId]
+            // var res = graphClient.Applications[objectId] // Uncomment this to update a certificate to a service principal
+            var res = graphClient.Applications[objectId] // Upload a certificate to the application
                         .AddKey(keyCredential, proof, passwordCredential)
                         .Request()
                         .PostResponseAsync().GetAwaiter().GetResult();
@@ -671,7 +635,8 @@ namespace SampleCertCall
 
             try
             {
-                var res = graphClient.Applications[objectId]
+                // var res = graphClient.ServicePrincipals[objectId] // Uncomment this to remove a certificate from a service principal
+                var res = graphClient.Applications[objectId] // Remove a certificate from the application
                     .RemoveKey(keyId, proof)
                     .Request()
                     .PostResponseAsync().GetAwaiter().GetResult();
