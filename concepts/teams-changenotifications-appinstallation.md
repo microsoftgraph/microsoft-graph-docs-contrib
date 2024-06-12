@@ -11,10 +11,10 @@ ms.custom: scenarios:getting-started
 
 Change notifications allow you to subscribe to changes (create, update, and delete) to Teams app installations. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat, or personal scope. For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
 
-Continue with this article about scenarios for Teams app installation resource in **personal**, **team**, or **chat** scope. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+Continue with this article about scenarios for Teams app installation resources in **personal**, **team**, or **chat** scope. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
 
 ## Subscribe to Teams app installations
 
@@ -22,7 +22,7 @@ To get change notifications for Teams app installations, subscribe to `/appCatal
 
 ### Permissions
 
-To subscribe to Teams apps installation, you can use the following specified scope or all scopes along with the corresponding permissions. For more information on including how to choose permissions, see [Permissions](/graph/permissions-reference).
+To subscribe to Teams apps installation, you can use the following specified scope or all scopes along with the corresponding permissions. For more information on how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 #### Personal scope
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from chat scope.
+> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from the chat scope.
 
 To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
 
