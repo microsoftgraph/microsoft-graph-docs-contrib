@@ -64,6 +64,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
 | operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
 | subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
+| permissions   | [permission][] collection                                                       | The set of permissions for the item. Read-only. Nullable.                                                              |
 
 ## JSON representation
 

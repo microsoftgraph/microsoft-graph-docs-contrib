@@ -1,5 +1,5 @@
 ---
-title: "List list permissions"
+title: "List permissions on a list"
 description: "Get the permission resources from the permissions navigation property on a list."
 author: "patrodg"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List list permissions
+# List permissions on a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [permission](../resources/permission.md) resources from the permissions navigation property on a list.
+Get a list of the [permission](../resources/permission.md) objects associated with a [list](../resources/list.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

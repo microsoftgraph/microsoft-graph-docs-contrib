@@ -1,5 +1,5 @@
 ---
-title: "List listitem permissions"
+title: "List permissions on a listItem"
 description: "Get the permission resources from the permissions navigation property on a list item."
 author: "patrodg"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List listitem permissions
+# List permissions on a listItem
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

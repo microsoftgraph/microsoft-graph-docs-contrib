@@ -1,26 +1,26 @@
 ---
-title: "Delete listitem permission"
-description: "Delete a permission object on a list item."
+title: "Delete permission on a list"
+description: "Delete a permission object on a list."
 author: "patrodg"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Delete listitem permission
+# Delete permission on a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [permission](../resources/permission.md) object on a list item.
+Delete a [permission](../resources/permission.md) object on a list.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "listitem_delete_permission" } -->
-[!INCLUDE [permissions-table](../includes/permissions/listitem-delete-permission-permissions.md)]
+<!-- { "blockType": "permissions", "name": "list_delete_permission" } -->
+[!INCLUDE [permissions-table](../includes/permissions/list-delete-permission-permissions.md)]
 
 ## HTTP request
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}/{permissionId}
+DELETE /sites/{site-id}/lists/{list-id}/permissions/{permissionId}
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/lists/1d702d60-503c-4924-cbfd-028c65fc89ed/items/3/permissions/2
+DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/lists/1d702d60-503c-4924-abfd-028c65fc89ed/permissions/2
 ```
 
 # [C#](#tab/csharp)
@@ -108,5 +108,5 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "ListItems/Permissions/Delete listitem permission"
+  "tocPath": "Lists/Permissions/Delete list permission"
 } -->

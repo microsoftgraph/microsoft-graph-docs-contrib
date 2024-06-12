@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-The resource documentation contains full examples for managing permissions through the /permissions API.
+The resource documentation for [Sites](../api/site-post-permissions.md), [Lists](../api/list-post-permissions.md), [ListItems](../api/listitem-post-permissions.md), and [DriveItems](../api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
 
 ### What Permissions Do I need to Manage Permissions?
 
