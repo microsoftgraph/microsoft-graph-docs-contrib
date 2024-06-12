@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-The resource documentation for [Sites](../api-reference/beta/api/site-post-permissions.md), [Lists](../api-reference/beta/api/list-post-permissions.md), [ListItems](.../api-reference/beta/api/listitem-post-permissions.md), and [DriveItems](../api-reference/beta/api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
+The resource documentation for [Sites](../api-reference/beta/api/site-post-permissions.md), [Lists](../api-reference/beta/api/list-post-permissions.md), [ListItems](../api-reference/beta/api/listitem-post-permissions.md), and [DriveItems](../api-reference/beta/api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
 
 ### What permissions do I need to manage permissions?
 
