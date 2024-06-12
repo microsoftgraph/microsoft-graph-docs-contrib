@@ -1602,9 +1602,9 @@ items:
           href: ../../api/unifiedroleeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Role management policy
+      - name: Policy
         items:
-        - name: Role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1618,9 +1618,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Role management policy rule
+      - name: Policy rule
         items:
-        - name: Role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1628,9 +1628,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -1694,7 +1694,7 @@ items:
           href: ../../resources/redundantassignmentalertconfiguration.md
         - name: Roles assigned outside PIM
           href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
-        - name: Sequential activations
+        - name: Sequential activation
           href: ../../resources/sequentialactivationrenewalsalertconfiguration.md
         - name: Inactive account
           href: ../../resources/stalesigninalertconfiguration.md
@@ -1802,9 +1802,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Role management policy
+      - name: Policy
         items:
-        - name: Role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1818,9 +1818,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Role management policy rule
+      - name: Policy rule
         items:
-        - name: Role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1828,9 +1828,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -2565,11 +2565,11 @@ items:
           href: ../../api/samlorwsfedexternaldomainfederation-list-domains.md
         - name: Create domain
           href: ../../api/samlorwsfedexternaldomainfederation-post-domains.md
-    - name: ''
+    - name: Federation with Microsoft Entra ID
       items:
-      - name: Federation with Microsoft Entra ID
+      - name: Internal domain federation
         items:
-        - name: Federation with Microsoft Entra ID
+        - name: Internal domain federation
           href: ../../resources/internaldomainfederation.md
         - name: List
           href: ../../api/domain-list-federationconfiguration.md
