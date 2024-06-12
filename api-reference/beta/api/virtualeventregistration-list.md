@@ -189,7 +189,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve a virtual event registration by user id or email
+### Example 2: Retrieve a virtual event registration by user ID or email
 
 #### Request
 The following example shows a request.
