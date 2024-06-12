@@ -1,7 +1,7 @@
 ---
 title: "Overview of Selected Permissions in OneDrive and SharePoint"
 description: "OneDrive and SharePoint services on Microsoft Graph expose a set of Selected scopes allowing for granular consent down to the list & list item level."
-author: "patrodg"
+author: "patrick-rodgers"
 ms.localizationpriority: high
 ms.subservice: "entra-applications"
 ms.topic: concept-article
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-The resource documentation for [Sites](../api/site-post-permissions.md), [Lists](../api/list-post-permissions.md), [ListItems](../api/listitem-post-permissions.md), and [DriveItems](../api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
+The resource documentation for [Sites](../api-reference/beta/api/site-post-permissions.md), [Lists](../api-reference/beta/api/list-post-permissions.md), [ListItems](.../api-reference/beta/api/listitem-post-permissions.md), and [DriveItems](../api-reference/beta/api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
 
 ### What permissions do I need to manage permissions?
 
