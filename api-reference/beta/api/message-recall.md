@@ -55,7 +55,7 @@ If successful, this method returns a `202 Accepted` response code and a string c
 
 If the ID is invalid, this method returns a `400 Bad request` and the detailed error information in the response body.
 
-## Examples
+## Example
 
 Here is an example of how to call this API.
 
@@ -72,8 +72,9 @@ The following request recall the specified message which is in the specified use
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/sentItems/messages/AAMkADhAAATs28OAAA=/recall
+POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhAAATs28OAAA=/recall
 ```
+
 ##### Response
 
 The following example shows the response.
@@ -81,6 +82,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
+
 {
   "Successfully submitted recall request to Hub server LV8PR00MB1800.NAMPRD00.PROD.OUTLOOK.COM, MessageId is CSRUBSZRRANU4.HEXMGAAG0OPH2@dm6pr00mb0830."
 }
