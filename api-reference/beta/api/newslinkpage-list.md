@@ -120,7 +120,7 @@ Content-Type: application/json
         {
             "@odata.etag": "\"{406766CD-52BD-4221-9310-2954FFCA7A73},2\"",
             "createdDateTime": "2024-06-05T20:39:55Z",
-            "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate."
+            "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
             "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
             "id": "57aff05d-6c80-4d36-b051-acc211400306",
             "lastModifiedDateTime": "2024-06-05T20:39:57Z",

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish [newsLinkPage](../resources/newslinkpage.md) object.
+Publish the latest version of a [newsLinkPage](../resources/newslinkpage.md) resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published.
+
+> If a page approval flow has been activated in the page library, the page is not published until the approval flow is completed.
 
 ## Permissions
 
