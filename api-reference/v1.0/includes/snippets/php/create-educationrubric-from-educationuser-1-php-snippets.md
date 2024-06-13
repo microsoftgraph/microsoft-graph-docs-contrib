@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\EducationRubric;
 use Microsoft\Graph\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\RubricLevel;
 use Microsoft\Graph\Generated\Models\RubricQuality;
 use Microsoft\Graph\Generated\Models\RubricCriterion;

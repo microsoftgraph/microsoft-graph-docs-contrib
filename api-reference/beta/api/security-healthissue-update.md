@@ -4,7 +4,7 @@ description: "Update the properties of a healthIssue object."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # Update healthIssue
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Update the properties of a [healthIssue](../resources/security-healthissue.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

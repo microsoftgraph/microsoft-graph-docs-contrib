@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AssignPostRequestBody;
-use Microsoft\Graph\Generated\Models\CloudPcUserSettingAssignment;
-use Microsoft\Graph\Generated\Models\CloudPcManagementGroupAssignmentTarget;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\UserSettings\Item\Assign\AssignPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSettingAssignment;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcManagementGroupAssignmentTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

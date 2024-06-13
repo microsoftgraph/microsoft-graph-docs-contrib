@@ -3,7 +3,7 @@ title: "community resource type"
 description: "Represents a community in Viva Engage that is a central place for conversations, files, events, and updates for people sharing a common interest or goal."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -25,8 +25,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create community](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
-|[Get community](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
+|[Create](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
+|[Get](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
 
 ## Properties
 

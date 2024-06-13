@@ -3,7 +3,7 @@ title: "Get workplaceSensorDevice"
 description: "Get the properties of a workplace sensor device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

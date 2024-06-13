@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,24 +15,21 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewAccessPackageResourceRoleScope()
 additionalData := map[string]interface{}{
-role := graphmodels.New()
+role := graph.New()
 originId := "Eligible"
 role.SetOriginId(&originId) 
 displayName := "Eligible Member"
 role.SetDisplayName(&displayName) 
 originSystem := "DirectoryRole"
 role.SetOriginSystem(&originSystem) 
-resource := graphmodels.New()
+resource := graph.New()
 id := "ea036095-57a6-4c90-a640-013edf151eb1"
 resource.SetId(&id) 
 	role.SetResource(resource)
 	requestBody.SetRole(role)
-scope := graphmodels.New()
+scope := graph.New()
 description := "Root Scope"
 scope.SetDescription(&description) 
 displayName := "Root"
@@ -44,6 +44,7 @@ scope.SetOriginId(&originId)
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 accessPackageResourceRoleScopes, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").AccessPackageResourceRoleScopes().Post(context.Background(), requestBody, nil)
 
 

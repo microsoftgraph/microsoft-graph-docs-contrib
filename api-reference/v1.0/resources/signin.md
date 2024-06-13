@@ -19,8 +19,8 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
+|[List](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
+|[Get](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
 
 ## Properties
 | Property       | Type    |Description|
@@ -75,7 +75,7 @@ The following JSON representation shows the resource type.
   "clientAppUsed": "String",
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "isInteractive": true,
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},

@@ -1,0 +1,58 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/social-overview.md
+- name: Person
+  items:
+  - name: Person
+    href: ../../resources/person.md
+  - name: List people
+    href: ../../api/user-list-people.md
+- name: People admin settings
+  items:
+  - name: People admin settings
+    href: ../../resources/peopleadminsettings.md
+  - name: Get peopleAdminSettings
+    href: ../../api/peopleadminsettings-get.md
+  - name: List pronounsSettings
+    href: ../../api/peopleadminsettings-list-pronouns.md
+  - name: List profileCardProperties
+    href: ../../api/peopleadminsettings-list-profilecardproperties.md
+  - name: Create profileCardProperty
+    href: ../../api/peopleadminsettings-post-profilecardproperties.md
+- name: Insights
+  items:
+  - name: Shared insight
+    items:
+    - name: Shared insight
+      href: ../../resources/insights-shared.md
+    - name: List shared
+      href: ../../api/insights-list-shared.md
+  - name: Trending
+    items:
+    - name: Trending
+      href: ../../resources/insights-trending.md
+    - name: List trending
+      href: ../../api/insights-list-trending.md
+  - name: Used insight
+    items:
+    - name: Used insight
+      href: ../../resources/insights-used.md
+    - name: List used
+      href: ../../api/insights-list-used.md
+  - name: Complex types
+    items:
+    - name: Insight identity
+      href: ../../resources/insights-insightidentity.md
+    - name: Office graph insights
+      href: ../../resources/officegraphinsights.md
+    - name: Resource reference
+      href: ../../resources/insights-resourcereference.md
+    - name: Resource visualization
+      href: ../../resources/insights-resourcevisualization.md
+    - name: Sharing detail
+      href: ../../resources/insights-sharingdetail.md
+    - name: Usage details
+      href: ../../resources/insights-usagedetails.md

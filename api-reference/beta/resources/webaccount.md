@@ -3,7 +3,7 @@ title: "webAccount resource type"
 description: "webAccount resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List webAccounts](../api/profile-list-webaccounts.md)|[webAccount](../resources/webaccount.md) collection|Get the webAccount resources from the webAccounts navigation property.|
-|[Create webAccount](../api/profile-post-webaccounts.md)|[webAccount](../resources/webaccount.md)|Create a new webAccount object.|
-|[Get webAccount](../api/webaccount-get.md)|[webAccount](../resources/webaccount.md)|Read the properties and relationships of a [webAccount](../resources/webaccount.md) object.|
-|[Update webAccount](../api/webaccount-update.md)|[webAccount](../resources/webaccount.md)|Update the properties of a [webAccount](../resources/webaccount.md) object.|
-|[Delete webAccount](../api/webaccount-delete.md)|None|Deletes a [webAccount](../resources/webaccount.md) object.|
+|[List](../api/profile-list-webaccounts.md)|[webAccount](../resources/webaccount.md) collection|Get the webAccount resources from the webAccounts navigation property.|
+|[Create](../api/profile-post-webaccounts.md)|[webAccount](../resources/webaccount.md)|Create a new webAccount object.|
+|[Get](../api/webaccount-get.md)|[webAccount](../resources/webaccount.md)|Read the properties and relationships of a [webAccount](../resources/webaccount.md) object.|
+|[Update](../api/webaccount-update.md)|[webAccount](../resources/webaccount.md)|Update the properties of a [webAccount](../resources/webaccount.md) object.|
+|[Delete](../api/webaccount-delete.md)|None|Deletes a [webAccount](../resources/webaccount.md) object.|
 
 ## Properties
 

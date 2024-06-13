@@ -3,7 +3,7 @@ title: "List estimateStatisticsOperation"
 description: "Get the last estimateStatisticsOperation object associated with a source collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

@@ -22,7 +22,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | Method                                                                               | Return Type                                     | Description                                         |
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
 | [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                  |
-| [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.    |
+| [Get presence for multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.    |
 | [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set an application's presence session for a user.   |
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear an application's presence session for a user. |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |

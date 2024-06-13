@@ -3,7 +3,7 @@ title: "Delete personAward"
 description: "Deletes an personAward object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 02/28/2024
+ms.date: 05/20/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to Configure Microsoft Entra application proxy u
 ## Prerequisites
 
 - Install a connector and complete the [prerequisites](/entra/identity/app-proxy/application-proxy-add-on-premises-application#prerequisites) for application proxy so that connectors can communicate with Microsoft Entra services.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the Cloud Application Administrator role.
 - Grant yourself the Microsoft Graph `Directory.ReadWrite.All` delegated permission.
 - Have a test user to assign to the application.
 
@@ -722,7 +722,6 @@ Content-type: appplication/json
 
 The following request shows how to configure header-based SSO for the application. In this mode, the value of the **singleSignOnMode** property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignore",
   "name": "tutorial_configure_appproxy_update_app_headerbased_sso"
@@ -740,12 +739,6 @@ Content-type: appplication/json
   } 
 }
 ```
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-app-headerbased-sso-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ## Step 5: Assign a user to the application
 

@@ -21,7 +21,7 @@ Base type of [attackSimulationOperation](../resources/attacksimulationoperation.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get longRunningOperation](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
+|[Get](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
 
 ## Properties
 

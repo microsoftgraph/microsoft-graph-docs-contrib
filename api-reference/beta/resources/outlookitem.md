@@ -13,6 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|categories|String collection|The categories associated with the item.|
+|changeKey|String|Identifies the version of the item. Every time the item is changed, **changeKey** changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|id|String| Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+
+## Relationships
+None.
+
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -35,19 +48,6 @@ The following JSON representation shows the resource type.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|categories|String collection||
-|changeKey|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|id|String| Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-
-## Relationships
-None
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

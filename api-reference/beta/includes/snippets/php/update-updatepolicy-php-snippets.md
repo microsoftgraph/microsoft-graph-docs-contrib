@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UpdatePolicy;
-use Microsoft\Graph\Generated\Models\DeploymentSettings;
-use Microsoft\Graph\Generated\Models\ScheduleSettings;
-use Microsoft\Graph\Generated\Models\RateDrivenRolloutSettings;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\UpdatePolicy;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ScheduleSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RateDrivenRolloutSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -22,9 +22,9 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentityAccessManagementKeyUsageFinding objects](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
-|[Get awsIdentityAccessManagementKeyUsageFinding](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[Get awsIdentityAccessManagementKeyUsageFinding-aggregatedSummary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
+|[List](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
+|[Get](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
+|[Aggregated summary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
 
 
 ## Properties

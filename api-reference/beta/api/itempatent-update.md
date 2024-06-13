@@ -3,7 +3,7 @@ title: "Update itemPatent"
 description: "Update the properties of an itemPatent object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

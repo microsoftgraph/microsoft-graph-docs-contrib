@@ -7,6 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AndroidWorkProfileGeneralDeviceConfiguration;
+use Microsoft\Graph\Generated\Models\AndroidWorkProfileRequiredPasswordType;
+use Microsoft\Graph\Generated\Models\AndroidWorkProfileCrossProfileDataSharingType;
+use Microsoft\Graph\Generated\Models\AndroidWorkProfileDefaultAppPermissionPolicyType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
