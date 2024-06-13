@@ -1,5 +1,5 @@
 ---
-title: "Update listitem permission"
+title: "Update permission on a listItem"
 description: "Update the permission object on a list item."
 author: "BarrySh"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Update listitem permission
+# Update permission on a listItem
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the [permission](../resources/permission.md) object on a list item.
+Update the [permission](../resources/permission.md) object on a [list item](../resources/listitem.md).
 
 >**Note:** You can't use this method to update a user listitem permission.
 
