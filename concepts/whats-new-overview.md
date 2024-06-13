@@ -26,7 +26,15 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Security | Alerts and incidents
+
+Use the **summary** property to get or set details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
+
 ## June 2024: New in preview only
+
+### Change notifications
+
+Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), and [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
@@ -36,6 +44,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 ### Identity and access | Network access
 
 You can now enable and control compliant network check with Conditional Access through the Global Secure Access service by using the [compliantNetworkNamedLocation resource type](/graph/api/resources/compliantnetworknamedlocation?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get or set details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
 ### Sites and lists
 
@@ -48,10 +60,6 @@ Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&pre
 
 The content model automatically processes new files that are added to the libraries. You can create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
 
-### Change notifications
-
-Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), and [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true).
-
 ### Tasks and plans
 
 [Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
@@ -61,10 +69,6 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 ### Identity and access | Identity and sign-in
 
 Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign-up and only allow sign in, and also integrate with systems that are external to Microsoft Entra ID.
-
-### Security | Alerts and incidents
-
-Use the **summary** property to get or set details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
 
 ### Teamwork and communications | Calls and online meetings
 
