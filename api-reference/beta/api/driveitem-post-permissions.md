@@ -1,5 +1,5 @@
 ---
-title: "Create DriveItem Application permission"
+title: "Create permission on a driveItem"
 description: "Create a new permission for a driveItem."
 author: "BarrySh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Create DriveItem Application permission
+# Create permission on a driveItem
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
