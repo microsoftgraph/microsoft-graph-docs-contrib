@@ -1,6 +1,6 @@
 ---
 title: "message: recall"
-description: "Recall a message which is in the specified user's mailbox Sent Items folder."
+description: "Recall a message in the specified user's mailbox Sent Items folder."
 author: "kahua"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recall a message which is in the specified user's mailbox Sent Items folder.
+Recall a message in the specified user's mailbox Sent Items folder.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -35,8 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/mailFolders/sentItems/messages/{id}/recall
-POST /users/{id | userPrincipalName}/mailFolders/sentItems/messages/{id}/recall
+POST /me/mailFolders/sentitems/messages/{id}/recall
+POST /users/{id | userPrincipalName}/mailFolders/sentitems/messages/{id}/recall
 ```
 
 ## Request headers
@@ -53,13 +53,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `202 Accepted` response code and a string contains server information in the response body.
 
-If the id is invalid, this method returns a `400 Bad request` and the detailed error information in the response body.
+If the ID is invalid, this method returns a `400 Bad request` and the detailed error information in the response body.
 
 ## Examples
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 The following request recall the specified message which is in the specified user's mailbox Sent Items folder.
 > **Note:** The id here is shortened for readability.
@@ -74,7 +74,7 @@ The following request recall the specified message which is in the specified use
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/sentItems/messages/AAMkADhAAATs28OAAA=/recall
 ```
-### Response
+##### Response
 
 The following example shows the response.
 
