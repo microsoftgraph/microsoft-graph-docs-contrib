@@ -1,10 +1,10 @@
 ---
-title: Update NewsLink page in a SharePoint site
-description: Update the properties of a newsLinkPage object.
-author: shgangan
-ms.localizationpriority: medium
-ms.subservice: sharepoint
-doc_type: apiPageType
+title: "Update NewsLink page in a SharePoint site"
+description: "Update the properties of a newsLinkPage object."
+author: "shgangan"
+ms.localizationpriority: "medium"
+ms.subservice: "sharepoint"
+doc_type: "apiPageType"
 ---
 # Update a newsLinkPage
 

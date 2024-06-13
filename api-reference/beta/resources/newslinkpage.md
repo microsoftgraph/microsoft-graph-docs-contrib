@@ -1,10 +1,10 @@
 ---
-title: newsLinkPage resource type
-description: Represents a NewsLink page in the site's pages list
-author: shgangan
-ms.localizationpriority: medium
-ms.subservice: sharepoint
-doc_type: resourcePageType
+title: "newsLinkPage resource type"
+description: "Represents a NewsLink page in the site's pages list"
+author: "shgangan"
+ms.localizationpriority: "medium"
+ms.subservice: "sharepoint"
+doc_type: "resourcePageType"
 ---
 
 # newsLinkPage resource type
@@ -24,19 +24,19 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |[Create](../api/newslinkpage-create.md)|[newsLinkPage](../resources/newslinkpage.md) |Create a new [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Get](../api/newslinkpage-get.md)|[newsLinkPage](../resources/newslinkpage.md)|Read the properties and relationships of a [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Update](../api/newslinkpage-update.md)|[newsLinkPage](../resources/newslinkpage.md)|Update the properties of a [newsLinkPage](../resources/newslinkpage.md) object.|
-|[Delete](../api/newslinkpage-delete.md)|None|Delete a [newsLinkPage](../resources/newslinkpage.md) object.|
+|[Delete](../api/basesitepage-delete.md)|None|Delete a [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Publish](../api/newslinkpage-publish.md)|None|Publish a [newsLinkPage](../resources/newslinkpage.md) object. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |bannerImageWebUrl|String|A link to the banner image for the [newsLinkPage](../resources/newslinkpage.md).|
-|createdBy|[identitySet](../resources/intune-identityset.md)| Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|createdBy|[identitySet](../resources/identityset.md)   | Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |createdDateTime|DateTimeOffset|The date and time the item was created. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md).|
 |eTag|String|ETag for the item. Inherited from [baseItem](../resources/baseitem.md).|
 |id|String|The unique identifier of the item. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |name|String|The name of the item. Inherited from [baseItem](../resources/baseitem.md).|
 |newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|The Sharepoint Ids of the referenced news article, if it is recognized to be a Sharepoint resource. Read-only.|

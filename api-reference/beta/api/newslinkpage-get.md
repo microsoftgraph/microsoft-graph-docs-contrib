@@ -2,9 +2,9 @@
 title: "Get newsLinkPage"
 description: "Retrieve the the metadata of a newsLinkPage in the site pages list in a site."
 author: "shgangan"
-ms.localizationpriority: medium
+ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
-doc_type: apiPageType
+doc_type: "apiPageType"
 ---
 
 # Get newsLinkPage
@@ -76,11 +76,13 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/cb9c62e1-07da-46ec-88dc-aed1d5164727/microsoft.graph.newsLinkPage
 prefer: include-unknown-enum-members
 ```
+---
 
 ### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,34 +95,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "createdDateTime": "2024-06-05T20:39:55Z",
-    "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate."
-    "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
-    "id": "57aff05d-6c80-4d36-b051-acc211400306",
-    "lastModifiedDateTime": "2024-06-05T20:39:57Z",
-    "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-    "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-    "title": "Microsoft Build brings AI tools to the forefront for developers",
-    "pageLayout": "newsLink",
-    "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
-    "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
-    "createdBy": {
-        "user": {
-            "displayName": "SharePoint App"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "displayName": "SharePoint App"
-        }
-    },
-    "parentReference": {
-        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
-    },
-    "publishingState": {
-        "level": "published",
-        "versionId": "1.0"
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/microsoft.graph.newsLinkPage/$entity",
+  "createdDateTime": "2024-06-05T20:39:55Z",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate."
+  "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
+  "id": "57aff05d-6c80-4d36-b051-acc211400306",
+  "lastModifiedDateTime": "2024-06-05T20:39:57Z",
+  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "pageLayout": "newsLink",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
+  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
+  "createdBy": {
+      "user": {
+          "displayName": "SharePoint App"
+      }
+  },
+  "lastModifiedBy": {
+      "user": {
+          "displayName": "SharePoint App"
+      }
+  },
+  "parentReference": {
+      "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+  },
+  "publishingState": {
+      "level": "published",
+      "versionId": "1.0"
+  }
 }
 ```
 

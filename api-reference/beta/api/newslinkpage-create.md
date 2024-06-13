@@ -73,6 +73,8 @@ If successful, this method returns a `201 Created` response code and a [newsLink
 The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page.
 
 ### Request
+
+
 # [HTTP](#tab/http)
 
 <!-- { "blockType": "request", "name": "create_newslinkpage", "scopes": "sites.readwrite.all" } -->
@@ -103,6 +105,7 @@ The contents of the file goes here.
 
 ---------------------------acebdf13572468--
 ```
+---
 
 ### Response
 
