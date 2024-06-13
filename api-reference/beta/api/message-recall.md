@@ -21,11 +21,7 @@ Recall a message in the specified user's mailbox Sent Items folder.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "message-recall-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "message_recall" } -->
 [!INCLUDE [permissions-table](../includes/permissions/message-recall-permissions.md)]
 
 ## HTTP request
@@ -35,8 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/mailFolders('SentItems')/messages/{id}/recall
-POST /users/{id | userPrincipalName}/mailFolders('SentItems')/messages/{id}/recall
+POST /me/mailFolders/sentitems/messages/{id}/recall
+POST /users/{id | userPrincipalName}/mailFolders/sentitems/messages/{id}/recall
 ```
 
 ## Request headers
@@ -57,14 +53,14 @@ If the ID is invalid, this method returns a `400 Bad request` and the detailed e
 
 ## Example
 
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 
 ### Request
 
-The following request recall the specified message which is in the specified user's mailbox Sent Items folder.
+The following request recalls the specified message that in the specified user's mailbox Sent Items folder.
 > **Note:** The id here is shortened for readability.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -72,7 +68,7 @@ The following request recall the specified message which is in the specified use
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders('SentItems')/messages/AAMkADhAAATs28OAAA=/recall
+POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhAAATs28OAAA=/recall
 ```
 
 ---
