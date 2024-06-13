@@ -1,6 +1,6 @@
 ---
 title: "driveItem: discardCheckout"
-description: "Discards a previously checked-out driveItem."
+description: "Discard a previously checked out driveItem."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action releases a previous [Check out](driveitem-checkout.md) on a driveItem resource. Any changes done to the item while it was checked out are discarded. 
-The same user that performed the checkout must discard the checkout. Another alternative is to use application permissions.
+This action releases a driveItem resource that was previously [checked out](driveitem-checkout.md). Any changes done to the item while it was checked out are discarded. 
+The same user that performed the check out must discard it. Another alternative is to use application permissions.
 
 
 ## Permissions
