@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolic
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

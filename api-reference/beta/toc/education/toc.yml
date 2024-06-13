@@ -188,9 +188,9 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update
     href: ../../api/educationgradingcategory-update.md
-- name: Education grading scheme
+- name: Grading schema
   items:
-  - name: Education grading scheme
+  - name: Grading schema
     href: ../../resources/educationgradingscheme.md
   - name: Get
     href: ../../api/educationassignmentsettings-get.md

@@ -6,13 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc groups patch --group-id {group-id} --body '{\
-  "description": "Library Assist",\
-  "displayName": "Library Assist",\
-  "groupTypes": [\
-    "Unified"\
-  ],\
-  "mailEnabled": true,\
-  "mailNickname": "library-help"\
+  "description": "Library Assist - ADC",\
+  "displayName": "Library Assist - ADC",\
+  "mailNickname": "library-help-adc"\
 }\
 '
 

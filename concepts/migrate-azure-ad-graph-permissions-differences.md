@@ -3,7 +3,7 @@ title: "Permissions differences between Azure AD Graph and Microsoft Graph"
 description: "Describes permissions differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jackson.woods
+ms.reviewer: jackson.woods, krbash
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.date: 01/18/2024
