@@ -37,12 +37,12 @@ Selected scopes require a series of steps to work, which provides several means 
 2. The application must be granted permissions to a list via a call to `POST /sites/{siteid}/lists/{listid}/permissions` with a specific role.
 3. The application must acquire a valid token that contains the `Lists.SelectedOperations.Selected` scope for calls to the permissioned list.
 
-If any of the three steps are missed, the application will not have access. This provides administrators two points of control:
+If any of the three steps are missed, the application doesn't have access. Administrators two points of control:
 
-- Remove the permissions on a specific list via a call to `DELETE /sites/{siteid}/lists/{listid}/permissions/{id}`, which will remove access to the list for that application.
-- Revoke the `Lists.SelectedOperations.Selected` scope consent in Entra ID, which will block the application from access to any list to which it was previously granted permissions.
+- Remove the permissions on a specific list via a call to `DELETE /sites/{siteid}/lists/{listid}/permissions/{id}`, which removes access to the list for that application.
+- Revoke the `Lists.SelectedOperations.Selected` scope consent in Entra ID, which blocks the application from access to any list to which it was previously granted permissions.
 
-Based on this, you can consent an application the `Lists.SelectedOperations.Selected` scope in Entra ID, but not grant permissions to any list - Which means the application will have no access. Likewise, you can call `POST /sites/{siteid}/lists/{listid}/permissions` for any application, but without the proper scopes appearing in the token, the application will have no access. All three steps must be completed to ensure the expected access. This applies as well for the other *.Selected scopes and their respective levels.
+Based on this, you can consent an application the `Lists.SelectedOperations.Selected` scope in Entra ID, but not grant permissions to any list - which means the application doesn't have access. Likewise, you can call `POST /sites/{siteid}/lists/{listid}/permissions` for any application, but without the proper scopes appearing in the token, the application doesn't have access. All three steps must be completed to ensure the expected access. This applies as well for the other *.Selected scopes and their respective levels.
 
 > [!NOTE]
 > Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance because this is the root of permission inheritance.
@@ -51,7 +51,7 @@ An example of setting permissions is shown for [sites](../api-reference/beta/api
 
 ### What's the difference between files and listItems scopes?
 
-Within SharePoint, all files are list items, but all list items are not files. As a result, applications that carry the `ListItems.SelectedOperations.Selected` scope can access and operate on all list items and files up to their allowed role. Applications with `Files.SelectedOperations.Selected` can only operate on files (list items) within document libraries or other lists marked as containing documents. This mimics the Files.Read.All and Files.ReadWrite.All behavior that exists today, but isolated to a single file. This behavior doesn't change based on the Microsoft Graph path used such as with `/drives/{driveid}/items/{itemid}` and `/sites/{siteid}/lists/{listid}/items/{itemid}`; rather, it is controlled by the destination to be accessed.
+Within SharePoint, all files are list items, but all list items are not files. As a result, applications that carry the `ListItems.SelectedOperations.Selected` scope can access and operate on all list items and files up to their allowed role. Applications with `Files.SelectedOperations.Selected` can only operate on files (list items) within document libraries or other lists marked as containing documents. This mimics the Files.Read.All and Files.ReadWrite.All behavior that exists today, but isolated to a single file. This behavior doesn't change based on the Microsoft Graph path used such as with `/drives/{driveid}/items/{itemid}` and `/sites/{siteid}/lists/{listid}/items/{itemid}`; rather, the destination to be accessed controls the behavior.
 
 ### Roles
 
@@ -140,7 +140,7 @@ The permission requirements vary by level. In all delegated, cases the current u
 
 There are two types of tokens: application only and delegated. Application only scenarios have no user present and are considered higher risk. With delegated, the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated is preferred when possible, but both modes are available to meet your needs.
 
-A tuple of application ID, resource ID, and role is stored. This means that the [application] has [role] access to the [resource]. You specify the application and role when a permission is created through the API, and the resolved path gives you the resource. For example, application Z has read access to the list at /sites/dev/lists/list1.
+A tuple of application ID, resource ID, and role is stored. As such, the [application] has [role] access to the [resource]. You specify the application and role when a permission is created through the API, and the resolved path gives you the resource. For example, application Z has read access to the list at /sites/dev/lists/list1.
 
 To calculate access, use the values provided in the token to roughly follow this flow:
 
@@ -157,7 +157,7 @@ The following notes apply to consent behavior:
 
 * Applications can have multiple Selected consents and those consents can apply at various levels across the tenant.
 * Application access is lost as soon as a scope is revoked. If an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection, and then the Sites.* consent is revoked, the application maintains access to the list it was given specific access to via the Lists.* consent and the previous call to `list/permissions`.
-* If an application has permissions to a list via a call to `list/permissions`, and the access is removed via a call to `DELETE lists/permissions/id`, it loses access to that list and all items within that list, regardless of any explicit permissions set on those list items. You can later re-grant specific item permissions if needed.
+* If an application has permissions to a list via a call to `list/permissions`, and the access is removed via a call to `DELETE lists/permissions/id`, it loses access to that list and all items within that list, regardless of any explicit permissions set on those list items. You can later regrant specific item permissions if needed.
 * Higher-level scopes such as Sites.* can be used to grant file-specific permissions, but lower scopes can never provide access to higher-level resources. This allows applications to have access at a specific level.
 * Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and any scopes presented in the token are honored.
 
