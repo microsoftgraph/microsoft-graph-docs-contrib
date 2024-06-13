@@ -63,6 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |aadDeviceId|String|The Microsoft Entra device ID of the Cloud PC.|
 |allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
+|deviceRegionName|String|The name of the geographical region where the Cloud PC is currently provisioned. For example, `westus3`, `eastus2`, and `southeastasia`. Read-only.|
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -87,7 +88,6 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
-|deviceRegionName|String|The geographical region name where the Cloud PC is currently provisioned. Example values: westus3, eastus2, southeastasia. Read-only.|
 
 ### cloudPcDiskEncryptionState values
 
@@ -174,6 +174,7 @@ The following JSON representation shows the resource type.
   "aadDeviceId": "String",
   "allotmentDisplayName": "String",
   "connectivityResult": "String",
+  "deviceRegionName": "String",
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",
