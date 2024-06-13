@@ -60,18 +60,9 @@ Here's an example of how to call this API.
 The following request recalls the specified message that in the specified user's mailbox Sent Items folder.
 > **Note:** The id here is shortened for readability.
 
-# [HTTP]
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkADhAAATs28OAAA="],
-  "name": "message_recall"
-}-->
-
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhAAATs28OAAA=/recall
 ```
-
----
 
 ### Response
 
