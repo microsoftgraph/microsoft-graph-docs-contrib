@@ -35,8 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/mailFolders/sentitems/messages/{id}/recall
-POST /users/{id | userPrincipalName}/mailFolders/sentitems/messages/{id}/recall
+POST /me/mailFolders('SentItems')/messages/{id}/recall
+POST /users/{id | userPrincipalName}/mailFolders('SentItems')/messages/{id}/recall
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ If the ID is invalid, this method returns a `400 Bad request` and the detailed e
 
 Here is an example of how to call this API.
 
-##### Request
+### Request
 
 The following request recall the specified message which is in the specified user's mailbox Sent Items folder.
 > **Note:** The id here is shortened for readability.
@@ -72,10 +72,10 @@ The following request recall the specified message which is in the specified use
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhAAATs28OAAA=/recall
+POST https://graph.microsoft.com/beta/me/mailFolders('SentItems')/messages/AAMkADhAAATs28OAAA=/recall
 ```
 
-##### Response
+### Response
 
 The following example shows the response.
 
