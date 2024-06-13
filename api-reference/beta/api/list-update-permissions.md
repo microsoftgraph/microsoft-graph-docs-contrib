@@ -1,5 +1,5 @@
 ---
-title: "Update permission on a listItem"
+title: "Update permission on a list"
 description: "Update the permission object on a list."
 author: "patrick-rodgers"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Update permission on a listItem
+# Update permission on a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
