@@ -57,7 +57,7 @@ The following table lists the properties that can be updated.
 | roles    | String collection | The type of permission. The possible values are `read`, `write`, and `owner`.|
 
 
-The followint types of permission modifications aren't supported:
+The following types of permission modifications aren't supported:
 - Organizational sharing links
 - People sharing links
 
