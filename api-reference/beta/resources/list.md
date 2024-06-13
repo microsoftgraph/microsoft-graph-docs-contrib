@@ -63,7 +63,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | drive         | [drive](drive.md)                                                               | Allows access to the list as a **drive** resource with [driveItems](driveitem.md). Only present on document libraries. |
 | items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
 | operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
-| permissions   | [permission][permission.md] collection                                          | The set of permissions for the item. Read-only. Nullable.                                                              |
+| permissions   | [permission](permission.md) collection                                          | The set of permissions for the item. Read-only. Nullable.                                                              |
 | subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
 
 ## JSON representation
