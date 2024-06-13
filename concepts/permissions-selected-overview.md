@@ -45,9 +45,9 @@ If any of the three steps are missed, the application doesn't have access. Admin
 Based on this, you can consent an application the `Lists.SelectedOperations.Selected` scope in Entra ID, but not grant permissions to any list - which means the application doesn't have access. Likewise, you can call `POST /sites/{siteid}/lists/{listid}/permissions` for any application, but without the proper scopes appearing in the token, the application doesn't have access. All three steps must be completed to ensure the expected access. This applies as well for the other *.Selected scopes and their respective levels.
 
 > [!NOTE]
-> Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance because this is the root of permission inheritance.
+> Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance because this is the root of permission inheritance.
 
-An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permissions.md) but the logic is similar for [lists](../api-reference/beta/api/list-post-permissions.md), [list items](../api-reference/beta/api/listitem-post-permissions.md), [files](../api-reference/beta/api/driveitem-post-permissions.md), or [folders](../api-reference/beta/api/listitem-post-permissions.md).
+An example of setting permissions is shown for [sites](../api-reference/beta/api/site-post-permissions.md) but the logic is similar for [lists](/graph/beta/api/list-post-permissions), [list items](/graph/beta/api/listitem-post-permissions), [files](/graph/beta/api/driveitem-post-permissions), or [folders](/graph/beta/api/listitem-post-permissions).
 
 ### What's the difference between files and listItems scopes?
 
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-The resource documentation for [Sites](../api-reference/beta/api/site-post-permissions.md), [Lists](../api-reference/beta/api/list-post-permissions.md), [ListItems](../api-reference/beta/api/listitem-post-permissions.md), and [DriveItems](../api-reference/beta/api/driveitem-post-permissions.md) contains full examples for managing permissions through the /permissions API.
+For examples that show how to manage permissions, see the `/permissions` API topics for [site](/graph/beta/api/site-post-permissions), [list](/graph/beta/api/list-post-permissions), [listItem](../api-reference/beta/api/listitem-post-permissions.md), and [driveItem](../api-reference/beta/api/driveitem-post-permissions.md).
 
 ### What permissions do I need to manage permissions?
 
