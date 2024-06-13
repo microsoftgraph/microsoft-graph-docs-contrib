@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Simulation;
-use Microsoft\Graph\Beta\Generated\Models\AttackTechnique;
-use Microsoft\Graph\Beta\Generated\Models\AttackType;
-use Microsoft\Graph\Beta\Generated\Models\Status;
+use Microsoft\Graph\Beta\Generated\Models\SimulationAttackTechnique;
+use Microsoft\Graph\Beta\Generated\Models\SimulationAttackType;
+use Microsoft\Graph\Beta\Generated\Models\SimulationStatus;
 use Microsoft\Graph\Beta\Generated\Models\AddressBookAccountTargetContent;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\AccountTargetContentType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

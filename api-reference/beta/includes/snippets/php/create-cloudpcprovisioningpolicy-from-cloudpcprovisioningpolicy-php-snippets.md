@@ -8,11 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicy;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcDomainJoinConfiguration;
-use Microsoft\Graph\Beta\Generated\Models\Type;
-use Microsoft\Graph\Beta\Generated\Models\ImageType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcDomainJoinType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicyImageType;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSettings;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSetting;
-use Microsoft\Graph\Beta\Generated\Models\ProvisioningType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

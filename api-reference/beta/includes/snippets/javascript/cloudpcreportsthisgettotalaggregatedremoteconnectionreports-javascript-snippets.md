@@ -19,7 +19,9 @@ const stream = {
         'ManagedDeviceName',
         'UserPrincipalName',
         'TotalUsageInHour',
-        'DaysSinceLastSignIn'
+        'LastActiveTime',
+        'PcType',
+        'CreatedDate'
     ]
 };
 

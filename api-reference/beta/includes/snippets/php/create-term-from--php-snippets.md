@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\TermStore\Term
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\TermStore\LocalizedLabel
+use Microsoft\Graph\Beta\Generated\Models\TermStore\Term;
+use Microsoft\Graph\Beta\Generated\Models\TermStore\LocalizedLabel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

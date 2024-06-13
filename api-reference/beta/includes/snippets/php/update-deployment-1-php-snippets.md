@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\Deployment
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\WindowsUpdates\DeploymentState
-use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RequestedValue;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\Deployment;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentState;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RequestedDeploymentStateValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

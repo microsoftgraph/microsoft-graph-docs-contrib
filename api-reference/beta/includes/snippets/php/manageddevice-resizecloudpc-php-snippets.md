@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\Item\ResizeCloudPc\ResizeCloudPcPostRequestBody
+use Microsoft\Graph\Beta\Generated\DeviceManagement\ManagedDevices\Item\ResizeCloudPc\ResizeCloudPcPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

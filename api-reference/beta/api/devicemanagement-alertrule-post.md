@@ -15,7 +15,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Create an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

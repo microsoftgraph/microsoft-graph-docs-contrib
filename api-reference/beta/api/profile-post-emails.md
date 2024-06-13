@@ -3,7 +3,7 @@ title: "Create itemEmail"
 description: "Create a new itemEmail."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

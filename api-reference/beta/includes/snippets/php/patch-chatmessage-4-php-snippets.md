@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
-use Microsoft\Graph\Beta\Generated\Models\MessageType;
-use Microsoft\Graph\Beta\Generated\Models\Importance;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageImportance;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
 use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageReaction;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageReactionIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageHistoryItem;
-use Microsoft\Graph\Beta\Generated\Models\Actions;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageActions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
