@@ -6955,7 +6955,19 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 |--|--|--|--|
 | Calls.AccessMedia.Chat | e716890c-c30a-4ac3-a0e3-551e7d9e8deb | Access media streams in calls associated with this chat or meeting | Allows the app to access media streams in calls associated with this chat or meeting, without a signed-in user. |
 | Calls.JoinGroupCalls.Chat | a01e73f1-94da-4f6d-9b73-02e4ea65560b | Join calls associated with this chat or meeting | Allows the app to join calls associated with this chat or meeting, without a signed-in user. |
-
+| Channel.Create.Group | 65af85d7-62bb-4339-a206-7160fd427454 | Create channels in this team | Allows the app to create channels in this team, without a signed-in user. |
+| Channel.Delete.Group | 4432e57d-0983-4c17-881c-235c529f96dc | Delete this team's channels | Allows the app to delete this team's channels, without a signed-in user. |
+| ChannelMeeting.ReadBasic.Group | 6c13459c-facc-4b0a-93cb-63f0dff28046 | Read basic properties of the channel meetings in this team | Allows the app to read basic properties, such as name, schedule, organizer, join link, and start or end notifications, of channel meetings in this team, without a signed-in user. |
+| ChannelMeetingNotification.Send.Group | bbb12bdb-71e6-4602-9f5e-b1172c505746 | Send notifications in all the channel meetings associated with this team | Allows the app to send notifications inside all the channel meetings associated with this team, without a signed-in user. |
+| ChannelMeetingParticipant.Read.Group | bd118236-e8f5-4bec-a62d-89a623717e05 | Read the participants of this team's channel meetings | Allows the app to read participant information, including name, role, id, joined and left times, of channel meetings associated with this team, without a signed-in user. |
+| ChannelMeetingRecording.Read.Group | 30a40618-9b50-4764-b62e-b04023a8f5f3 | Read the recordings of all channel meetings associated with this team | Allows the app to read recordings of all the channel meetings associated with this team, without a signed-in user. |
+| ChannelMeetingTranscript.Read.Group | 37e59e88-1a46-482b-b623-0a4aa6abdf67 | Read the transcripts of all channel meetings associated with this team | Allows the app to read transcripts of all the channel meetings associated with this team, without a signed-in user. | 
+| ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. |
+| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send mesages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. | 
+| ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
+| ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. |
+| Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user.  |
+| ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. |
 ---
 
 ## Related content
