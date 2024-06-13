@@ -84,7 +84,7 @@ The following properties are inherited from **[baseItem][]**.
 |documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
-| permissions  | [permission][permission.md] collection | The set of permissions for the item. Read-only. Nullable.                                          |
+| permissions  | [permission](permission.md) collection | The set of permissions for the item. Read-only. Nullable.                                          |
 | versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
 
 ## JSON representation
