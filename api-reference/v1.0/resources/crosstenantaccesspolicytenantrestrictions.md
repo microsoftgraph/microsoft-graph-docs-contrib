@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyTenantRestrictions resource type"
-description: "Defines how to configure Azure AD tenant restrictions settings that give you control over the external organizations that your users can access from your network or devices when they use external identities."
+description: "Defines how to configure Microsoft Entra tenant restrictions settings that give you control over the external organizations that your users can access from your network or devices when they use external identities."
 author: "vimrang"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantacces
 |Property|Type|Description|
 |:---|:---|:---|
 |applications|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of applications targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
-|devices|[devicesFilter](../resources/devicesfilter.md)|Defines the rule for filtering devices and whether devices that satisfy the rule should be allowed or blocked. Not implemented. |
+|devices|[devicesFilter](../resources/devicesfilter.md)|Defines the rule for filtering devices and whether devices that satisfy the rule should be allowed or blocked. This property isn't supported on the server side yet. |
 |usersAndGroups|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of users and groups targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
 
 ## Relationships
