@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name. Once the request is acknowledged, it enters a queue. The actual copying, including any subitems, occurs at an undetermined time. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
+Asynchronously create a copy of a [driveItem][item-resource] (including any children) under a new parent item or with a new name. After the request is acknowledged, it enters a queue. The actual copying, including any subitems, occurs at an undetermined time. Progress is reported until the operation is completed by [monitoring the progress](/graph/long-running-actions-overview).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -59,7 +59,7 @@ In the request body, provide a JSON object with the following parameters.
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
-| childrenOnly    | Boolean                                        | Optional. Default is false. If set to true, the children of the **driveItem** are copied but not the **driveItem** itself. Valid ONLY on folder items. |
+| childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
 
 
 >[!NOTE]
@@ -69,9 +69,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
-
-The response from the API indicates that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
+The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected - for example, if the destination filename is already in use.
 
 ## Examples
 
@@ -257,7 +255,7 @@ To resolve this error, use the optional query parameter [@microsoft.graph.confli
 ### Example 4: Copy the children in a folder with name conflict setting conflictBehavior
 
 The following example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The optional query parameter @microsoft.graph.conflictBehavior is set to replace. The possible values are replace, rename, or fail.
+The optional query parameter @microsoft.graph.conflictBehavior is set to replace. The possible values are `replace`, `rename`, or `fail`.
 The destination already has the same name found at the source.
 
 #### Request
@@ -475,9 +473,9 @@ Content-Length: 285
 }
 ```
 
-## Error responses
+## Related content
 
-For more information, see [Error Responses][error-response].
+For error information, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 
