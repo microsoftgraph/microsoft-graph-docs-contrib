@@ -26,7 +26,7 @@ Granular controls let you determine the users, groups, and apps, both in your or
     + The service default settings may be updated.
     + In Tenant Restrictions, all access settings are disabled by default.
 
-**Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Microsoft Entra B2B collaboration, Microsoft Entra B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
++ **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Microsoft Entra B2B collaboration, Microsoft Entra B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
 >
