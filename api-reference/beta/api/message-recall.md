@@ -75,6 +75,8 @@ The following request recall the specified message which is in the specified use
 POST https://graph.microsoft.com/beta/me/mailFolders('SentItems')/messages/AAMkADhAAATs28OAAA=/recall
 ```
 
+---
+
 ### Response
 
 The following example shows the response.
