@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [permission](../resources/permission.md) object on a list item.
+Delete a [permission](../resources/permission.md) object on a [list item](../resources/listitem.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
