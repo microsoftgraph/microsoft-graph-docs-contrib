@@ -1,6 +1,6 @@
 ---
 title: "List permissions on a listItem"
-description: "Get the permission resources from the permissions navigation property on a list item."
+description: "Get a list of the permissions objects associated with a list item."
 author: "patrick-rodgers"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
