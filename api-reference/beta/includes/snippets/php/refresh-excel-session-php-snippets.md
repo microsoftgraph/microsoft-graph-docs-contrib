@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\RefreshSession\RefreshSessionRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\RefreshSession\RefreshSessionPostRequestBody
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\RefreshSession\RefreshSessionPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

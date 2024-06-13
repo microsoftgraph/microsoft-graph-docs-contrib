@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Microsoft\Graph\Security\EdiscoveryReviewSet
+use Microsoft\Graph\Generated\Models\Security\EdiscoveryReviewSet;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

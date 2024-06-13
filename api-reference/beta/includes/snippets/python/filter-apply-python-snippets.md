@@ -8,7 +8,6 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.drives.item.items.item.workbook.tables.item.columns.item.filter.apply.apply_post_request_body import ApplyPostRequestBody
 from msgraph_beta.generated.models.workbook_filter_criteria import WorkbookFilterCriteria
 from msgraph_beta.generated.models.workbook_icon import WorkbookIcon
-from msgraph_beta.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -24,7 +23,7 @@ request_body = ApplyPostRequestBody(
 			index = 99,
 		),
 		dynamic_criteria = "dynamicCriteria-value",
-		values = Json(
+		values = Values(
 		),
 		filter_on = "filterOn-value",
 	),

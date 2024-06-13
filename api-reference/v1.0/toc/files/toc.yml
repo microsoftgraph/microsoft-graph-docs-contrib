@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/onedrive.md
@@ -33,19 +36,19 @@ items:
     href: ../../api/driveitem-list-children.md
   - name: List versions
     href: ../../api/driveitem-list-versions.md
-  - name: Create item
+  - name: Create folder
     href: ../../api/driveitem-post-children.md
   - name: Update item
     href: ../../api/driveitem-update.md
-  - name: Upload content
+  - name: Upload
     href: ../../api/driveitem-put-content.md
-  - name: Download content
+  - name: Download file
     href: ../../api/driveitem-get-content.md
   - name: Download specific file format
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
-  - name: PermanentDelete item
+  - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
     href: ../../api/driveitem-move.md
@@ -53,13 +56,13 @@ items:
     href: ../../api/driveitem-copy.md
   - name: Search items
     href: ../../api/driveitem-search.md
-  - name: List changes in a drive
+  - name: Track changes
     href: ../../api/driveitem-delta.md
-  - name: Follow Item
+  - name: Follow item
     href: ../../api/driveitem-follow.md
-  - name: Unfollow Item
+  - name: Unfollow item
     href: ../../api/driveitem-unfollow.md
-  - name: List thumbnails
+  - name: Get thumbnails
     href: ../../api/driveitem-list-thumbnails.md
   - name: Create sharing link
     href: ../../api/driveitem-createlink.md
@@ -73,9 +76,9 @@ items:
     href: ../../api/subscriptions-socketio.md
   - name: Preview item
     href: ../../api/driveitem-preview.md
-  - name: Check in
+  - name: Check in files
     href: ../../api/driveitem-checkin.md
-  - name: Check out
+  - name: Check out files
     href: ../../api/driveitem-checkout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
@@ -100,9 +103,9 @@ items:
   - name: Create bundle
     href: ../../api/drive-post-bundles.md
   - name: Add item
-    href: ../../api/bundle-addItem.md
+    href: ../../api/bundle-additem.md
   - name: Remove item
-    href: ../../api/bundle-removeItem.md
+    href: ../../api/bundle-removeitem.md
   - name: Update bundle
     href: ../../api/bundle-update.md
   - name: Delete bundle
@@ -115,11 +118,47 @@ items:
     href: ../../api/driveitem-list-permissions.md
   - name: Get permission
     href: ../../api/permission-get.md
-  - name: Add
+  - name: Add permissions
     href: ../../api/driveitem-invite.md
-  - name: Update
+  - name: Update permission
     href: ../../api/permission-update.md
-  - name: Delete
+  - name: Delete permission
     href: ../../api/permission-delete.md
-  - name: Add users to sharing link
+  - name: Grant access to sharing link
     href: ../../api/permission-grant.md
+- name: File storage container
+  items:
+  - name: File storage container
+    href: ../../resources/filestoragecontainer.md
+  - name: List
+    href: ../../api/filestorage-list-containers.md
+  - name: Create
+    href: ../../api/filestoragecontainer-post.md
+  - name: Get
+    href: ../../api/filestoragecontainer-get.md
+  - name: Update
+    href: ../../api/filestoragecontainer-update.md
+  - name: Delete
+    href: ../../api/filestorage-delete-containers.md
+  - name: Activate
+    href: ../../api/filestoragecontainer-activate.md
+  - name: Permanently delete
+    href: ../../api/filestoragecontainer-permanentdelete.md
+  - name: Get drive
+    href: ../../api/filestoragecontainer-get-drive.md
+  - name: List permissions
+    href: ../../api/filestoragecontainer-list-permissions.md
+  - name: Create permissions
+    href: ../../api/filestoragecontainer-post-permissions.md
+  - name: Update permissions
+    href: ../../api/filestoragecontainer-update-permissions.md
+  - name: Delete permissions
+    href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: List custom property
+    href: ../../api/filestoragecontainer-list-customproperty.md
+  - name: Create custom property
+    href: ../../api/filestoragecontainer-post-customproperty.md
+  - name: Update custom property
+    href: ../../api/filestoragecontainer-update-customproperty.md
+  - name: Delete custom property
+    href: ../../api/filestoragecontainer-delete-customproperty.md

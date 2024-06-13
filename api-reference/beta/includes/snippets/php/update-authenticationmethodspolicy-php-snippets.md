@@ -9,10 +9,10 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsPolicy;
 use Microsoft\Graph\Beta\Generated\Models\RegistrationEnforcement;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsRegistrationCampaign;
-use Microsoft\Graph\Beta\Generated\Models\State;
+use Microsoft\Graph\Beta\Generated\Models\AdvancedConfigState;
 use Microsoft\Graph\Beta\Generated\Models\ExcludeTarget;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodsRegistrationCampaignIncludeTarget;
-use Microsoft\Graph\Beta\Generated\Models\TargetType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
 use Microsoft\Graph\Beta\Generated\Models\ReportSuspiciousActivitySettings;
 use Microsoft\Graph\Beta\Generated\Models\IncludeTarget;
 
