@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates that a [drive item](driveitem.md) has been shared with others and includes information about how the item is shared.
+Indicates that a [drive item](driveitem.md) was shared with others and includes information about how the item was shared.
 
-If a [driveitem](driveitem.md) has a non-null **shared** facet, the item has been shared.
+If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was shared.
 
 ## Properties
 
