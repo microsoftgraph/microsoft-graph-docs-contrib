@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 
 This action releases a driveItem resource that was previously [checked out](driveitem-checkout.md). Any changes done to the item while it was checked out are discarded. 
-The same user that performed the check out must discard it. Another alternative is to use application permissions.
+The same user that performed the checkout must discard it. Another alternative is to use application permissions.
 
 
 ## Permissions
