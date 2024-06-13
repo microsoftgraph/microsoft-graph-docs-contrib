@@ -1,20 +1,20 @@
 ---
-title: Shared
+title: shared resource type
 author: spgraph-docs-team
 description: Indicates that a drive item has been shared with others.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: onedrive
 ---
-# Shared resource type
+# shared resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that a [drive item](driveitem.md) has been shared with others and includes information about how the item is shared.
+Indicates that a [drive item](driveitem.md) was shared with others and includes information about how the item is shared.
 
-If a [driveitem](driveitem.md) has a non-null **shared** facet, the item has been shared.
+If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was shared.
 
 ## Properties
 
