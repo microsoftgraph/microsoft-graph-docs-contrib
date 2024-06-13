@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Rubric
 ---
 
 # educationRubric resource type
