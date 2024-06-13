@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+
 This action releases a driveItem resource that was previously [checked out](driveitem-checkout.md). Any changes done to the item while it was checked out are discarded. 
 The same user that performed the check out must discard it. Another alternative is to use application permissions.
 
@@ -74,7 +75,7 @@ POST https://graph.microsoft.com/beta/drive/root/discardCheckout
 
 
 ### Response
-
+The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
