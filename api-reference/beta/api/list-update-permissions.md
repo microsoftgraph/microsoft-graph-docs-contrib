@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the [permission](../resources/permission.md) object on a list.
+Update the [permission](../resources/permission.md) object on a [list](../resources/list.md).
 
 >**Note:** You can't use this method to update a list permission for a user.
 
