@@ -26,21 +26,7 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 |displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
-|label|[virtualEventRegistrationPredefinedQuestionLabel](#virtualeventregistrationpredefinedquestionlabel-values)|Label of the predefined registration question.|
-
-### virtualEventRegistrationPredefinedQuestionLabel values
- 
-| Value | Description |
-| ----- | ----------- |
-| street | The registration question accepts single-line text. |
-| city | The registration question accepts single-line text. |
-| state | The registration question accepts single-line text. |
-| postalCode | The registration question accepts single-line text. |
-| countryOrRegion | The registration question accepts single-line text. |
-| industry | The registration question accepts single-line text. |
-| jobTitle | The registration question accepts single-line text. |
-| organization | The registration question accepts single-line text. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
 
 ## JSON representation
 
