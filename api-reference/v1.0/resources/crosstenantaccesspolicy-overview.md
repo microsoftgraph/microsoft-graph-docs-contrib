@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 In the traditional Microsoft Entra B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
-**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on one or a combination of the following:
+**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on one or a combination of the following configurations:
 + **outbound access** - how your users collaborate with other organizations.
 + **inbound access** - how other organizations collaborate with you.
 + **tenant restrictions access** - how your users collaborate with other organizations using other organization identities from your network or devices.
@@ -21,7 +21,7 @@ In the traditional Microsoft Entra B2B collaboration, any invited user from an o
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
 
 + **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
-    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite guest users.
+    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This default configuration means all your users can be invited to external organizations, and all your users can invite guest users.
     + In Microsoft Entra B2B direct connect, both inbound and outbound access settings are disabled by default.
     + The service default settings may be updated.
     + In Tenant Restrictions, all access settings are disabled by default.
