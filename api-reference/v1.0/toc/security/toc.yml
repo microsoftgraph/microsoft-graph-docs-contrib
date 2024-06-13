@@ -698,8 +698,6 @@ items:
       href: ../../api/security-host-list-sslcertificates.md
     - name: Get
       href: ../../api/security-hostsslcertificate-get.md
-    - name: List related hosts
-      href: ../../api/security-hostsslcertificate-list-relatedhosts.md
   - name: Host tracker
     items:
     - name: Host tracker
@@ -736,6 +734,8 @@ items:
       href: ../../api/security-threatintelligence-list-sslcertificates.md
     - name: Get
       href: ../../api/security-sslcertificate-get.md
+    - name: List related hosts
+      href: ../../api/security-hostsslcertificate-list-relatedhosts.md
   - name: Subdomain
     items:
     - name: Subdomain
