@@ -26,6 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 |[List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
 |[Create profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
+|[Create photoUpdateSettings](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) for an organization.|
 
 ## Properties
 
@@ -39,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |itemInsights|[insightsSettings](../resources/insightssettings.md)|Represents administrator settings that manage the support for item insights in an organization.|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
+|photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Represents administrator settings that manage the support for item photosettings in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 ## JSON representation
