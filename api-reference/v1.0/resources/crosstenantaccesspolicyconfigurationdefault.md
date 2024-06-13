@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the default configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
+Represents the default configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Microsoft Entra B2B collaboration and B2B direct connect.
 
 ## Methods
 
