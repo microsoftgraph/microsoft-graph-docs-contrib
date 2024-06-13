@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [permission](../resources/permission.md) object on a list item.
+Retrieve the properties and relationships of a [permission](../resources/permission.md) object on a [list item](../resources/listitem.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
