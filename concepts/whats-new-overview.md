@@ -84,6 +84,7 @@ The following properties are deprecated:
 - **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
 
 ## May 2024: New in preview only
+
 ### Backup storage
 
 The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
@@ -127,10 +128,6 @@ Microsoft Graph Bicep is currently in preview, but can be used to deploy Microso
 ### Search
 
 Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
-
-### Security | Alerts and incidents
-
-Use the **summary** property to get or set details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
 ### Security | eDiscovery
 
