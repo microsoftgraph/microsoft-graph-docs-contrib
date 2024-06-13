@@ -28,6 +28,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 ## June 2024: New in preview only
 
+### Device and app management | Cloud PC
+
+Use the **deviceRegionName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the name of the geographical region where the Cloud PC is currently provisioned.
+
 ### Identity and access | Identity and sign-in
 
 - You can now control multifactor authentication (MFA) on an individual user basis, commonly referred to as per-user MFA on the Microsoft Entra admin center, by using the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource and its associated methods.
