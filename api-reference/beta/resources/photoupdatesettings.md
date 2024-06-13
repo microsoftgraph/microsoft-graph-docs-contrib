@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id String The unique identifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
+|id|String|id String The unique identgit stauifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
 |source|photoUpdateSource|The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
 ## Relationships
