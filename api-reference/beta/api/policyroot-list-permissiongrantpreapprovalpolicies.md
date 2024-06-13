@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 
