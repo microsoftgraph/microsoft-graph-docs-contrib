@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppInfo resource type"
-description: "**TODO: Add Description**"
+description: "**This is a description for discovered app risk parameters**"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Please read the disclaimer**
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -27,42 +27,42 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|**TODO: Add Description**.The possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
-|dataAtRestEncryptionMethod|microsoft.graph.security.appInfoDataAtRestEncryptionMethod|**TODO: Add Description**.The possible values are: `aes`, `bitLocker`, `blowfish`, `des3`, `des`, `rc4`, `rsA`, `notSupported`, `unknown`, `unknownFutureValue`.|
-|dataCenter|String|**TODO: Add Description**|
-|dataRetentionPolicy|microsoft.graph.security.appInfoDataRetentionPolicy|**TODO: Add Description**.The possible values are: `dataRetained`, `deletedImmediately`, `deletedWithinTwoWeeks`, `deletedWithinOneMonth`, `deletedWithinThreeMonths`, `deletedWithinMoreThanThreeMonths`, `unknown`, `unknownFutureValue`.|
-|dataTypes|microsoft.graph.security.appInfoUploadedDataTypes|**TODO: Add Description**.The possible values are: `documents`, `mediaFiles`, `codingFiles`, `creditCards`, `databaseFiles`, `none`, `unknown`, `unknownFutureValue`.|
-|domainRegistrationDateTime|DateTimeOffset|**TODO: Add Description**|
-|fedRampLevel|microsoft.graph.security.appInfoFedRampLevel|**TODO: Add Description**.The possible values are: `high`, `moderate`, `low`, `liSaaS`, `unknown`, `unknownFutureValue`, `notSupported`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `notSupported`.|
-|founded|Int32|**TODO: Add Description**|
-|gdprReadinessStatement|String|**TODO: Add Description**|
-|headquarters|String|**TODO: Add Description**|
-|holding|microsoft.graph.security.appInfoHolding|**TODO: Add Description**.The possible values are: `private`, `public`, `unknown`, `unknownFutureValue`.|
-|hostingCompany|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|isAdminAuditTrail|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isCobitCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isCoppaCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isDataAuditTrail|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isDataClassification|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isDataOwnership|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isDisasterRecoveryPlan|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isDmca|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isFerpaCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isFfiecCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isFileSharing|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isFinraCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isFismaCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGaapCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprDataProtectionImpactAssessment|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprDataProtectionOfficer|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprDataProtectionSecureCrossBorderDataTransfer|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprImpactAssessment|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprLawfulBasisForProcessing|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprReportDataBreaches|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprRightsRelatedToAutomatedDecisionMaking|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprRightToAccess|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isGdprRightToBeInformed|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|**Provides the level of CSA STAR program at which the app is certified**.The possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
+|dataAtRestEncryptionMethod|microsoft.graph.security.appInfoDataAtRestEncryptionMethod|**Provides the app mode of encryption of data-at-rest?**.The possible values are: `aes`, `bitLocker`, `blowfish`, `des3`, `des`, `rc4`, `rsA`, `notSupported`, `unknown`, `unknownFutureValue`.|
+|dataCenter|String|**Provides the countries/regions in which your data center resides**|
+|dataRetentionPolicy|microsoft.graph.security.appInfoDataRetentionPolicy|**Provides app's policy for user data retention after account termination**.The possible values are: `dataRetained`, `deletedImmediately`, `deletedWithinTwoWeeks`, `deletedWithinOneMonth`, `deletedWithinThreeMonths`, `deletedWithinMoreThanThreeMonths`, `unknown`, `unknownFutureValue`.|
+|dataTypes|microsoft.graph.security.appInfoUploadedDataTypes|**Provides all the data types that an end user can upload to the app**.The possible values are: `documents`, `mediaFiles`, `codingFiles`, `creditCards`, `databaseFiles`, `none`, `unknown`, `unknownFutureValue`.|
+|domainRegistrationDateTime|DateTimeOffset|**Provides the date the app domain was registered**|
+|fedRampLevel|microsoft.graph.security.appInfoFedRampLevel|**Provides whether the App is fedRamp compliant**.The possible values are: `high`, `moderate`, `low`, `liSaaS`, `unknown`, `unknownFutureValue`, `notSupported`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `notSupported`.|
+|founded|Int32|**Provides the year the specific app vendor was established**|
+|gdprReadinessStatement|String|**Provides whether the App is GDPR compliant in relation to polcies that this app provide to safegaurd user personal data**|
+|headquarters|String|**Provides the location of app headquarters**|
+|holding|microsoft.graph.security.appInfoHolding|**Provides the ownership model of the App**.The possible values are: `private`, `public`, `unknown`, `unknownFutureValue`.|
+|hostingCompany|String|**Provides the company name that provides hosting services for the App**|
+|id|String|**Provides the unique identified SaaS ID of the app** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|isAdminAuditTrail|microsoft.graph.security.cloudAppInfoState|**Provides whether the app supports availability of an admin audit trail**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isCobitCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Cobit compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isCoppaCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Coppa compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isDataAuditTrail|microsoft.graph.security.cloudAppInfoState|**Provides whether the apps supports availability of a data audit trail**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isDataClassification|microsoft.graph.security.cloudAppInfoState|**Provides whethere the app supports data classification**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isDataOwnership|microsoft.graph.security.cloudAppInfoState|**Provides information pertaining to data ownership**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isDisasterRecoveryPlan|microsoft.graph.security.cloudAppInfoState|**Provides whether a disaster recovery is available**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isDmca|microsoft.graph.security.cloudAppInfoState|**Provides whether the app complies with the Digital Millennium Copyright Act (DMCA)**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isFerpaCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Ferpa Complaint**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isFfiecCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whetehre the app is Federal Financial Institutions Examination Council's guidance on the risk management**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isFileSharing|microsoft.graph.security.cloudAppInfoState|**Provides whether app include features that allow file sharing between users**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isFinraCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether app is Finra compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isFismaCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether app is Fisma compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGaapCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether app is Gaap compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprDataProtectionImpactAssessment|microsoft.graph.security.cloudAppInfoState|**Provides whether app conducts GDPR data assessments to identify risk to individuals**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprDataProtectionOfficer|microsoft.graph.security.cloudAppInfoState|**Provides whether the app appoints a data protection officer to oversee data security strategy and GDPR compliance?**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprDataProtectionSecureCrossBorderDataTransfer|microsoft.graph.security.cloudAppInfoState|**Provides whether the app securely transfer data across borders as GDPR guidelines**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprImpactAssessment|microsoft.graph.security.cloudAppInfoState|**Provides whethere the app conducts data protection GDPR impact assessments to identify risk to individuals?**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprLawfulBasisForProcessing|microsoft.graph.security.cloudAppInfoState|**Provides whether app has a valid lawful basis for processing personal data**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprReportDataBreaches|microsoft.graph.security.cloudAppInfoState|**Provides whether the app reports personal data breaches to the relevant supervisory authority as per GDPR**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprRightsRelatedToAutomatedDecisionMaking|microsoft.graph.security.cloudAppInfoState|**Provides whether the app provides specific rights related to automated decision-making and profiling as per GDPR**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprRightToAccess|microsoft.graph.security.cloudAppInfoState|**Provides whether the app gives right to obtain a copy of user's personal data as per GDPR**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isGdprRightToBeInformed|microsoft.graph.security.cloudAppInfoState|**Provides whether the app gives the right to nform users about the data collection and use of their personal data as per GDPR**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isGdprRightToDataPortablility|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isGdprRightToErasure|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isGdprRightToObject|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
