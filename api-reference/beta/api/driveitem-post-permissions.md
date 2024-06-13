@@ -1,6 +1,6 @@
 ---
 title: "Create DriveItem Application permission"
-description: "Create a new permission for a driveitem."
+description: "Create a new permission for a driveItem."
 author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/permission.md).
 
->**Note:** You can only use this method to create a new application permission. If you want to create a new user drive item permission, see [invite](./driveitem-invite.md).
+>**Note:** You can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
