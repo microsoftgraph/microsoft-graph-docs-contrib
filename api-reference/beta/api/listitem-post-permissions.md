@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [permission](../resources/permission.md) object on a list item.
+Create a new [permission](../resources/permission.md) object on a [list item](../resources/listitem.md).
 
 >**Note:** You can only use this method to create a new application permission; you can't use it to create a new list item permission for a user.
 
