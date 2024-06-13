@@ -3,7 +3,7 @@ title: "Work with grading categories"
 description: "Learn how to use the education API in Microsoft Graph to manage grading categories."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

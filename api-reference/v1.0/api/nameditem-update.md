@@ -3,7 +3,7 @@ title: "Update nameditem"
 description: "Update the properties of nameditem object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbook-and-charts 
+ms.subservice: "excel" 
 doc_type: apiPageType
 ---
 

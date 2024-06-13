@@ -3,7 +3,7 @@ title: "Create subcategoryTemplate"
 description: "Create a new subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
