@@ -55,28 +55,27 @@ POST /drive/following/{driveItemId}/discardCheckout
 
 Don't supply a request body for this method.
 
-## Response
+## Example
 
-If successful, this action returns a `204 No Content` response code.
-
-## Examples
-
-### Request
-
-The following example shows a request.
+The following example shows a discard checkout request on a file identified by `{item-id}`.
 <!-- {
   "blockType": "request",
   "name": "driveitemthis.discardcheckout"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/drive/root/discardCheckout
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardCheckout
 ```
 
 
-### Response
-The following example shows the response.
-``` http
-HTTP/1.1 204 No Content
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+<!-- { "blockType": "response" } -->
+
+```http
+HTTP/1.1 204 No content
 ```
+
 
