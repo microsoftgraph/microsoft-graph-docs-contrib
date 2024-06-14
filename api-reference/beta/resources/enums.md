@@ -587,6 +587,14 @@ Namespace: microsoft.graph
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
 | unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
+### appManagementRestrictionState values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### appCredentialRestrictionType values
 
 | Member                 |
