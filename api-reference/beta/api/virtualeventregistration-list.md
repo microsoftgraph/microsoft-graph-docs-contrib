@@ -38,7 +38,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 ```
 
-Get a list of all **registration records** for a registrant by **userId** or **email**:
+Get a list of all **registration records** for a registrant by **userId** or **email**
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
@@ -47,7 +48,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=email eq
 
 ## Optional query parameters
 
-This method supports "filter" from the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports a filter from the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Function parameters
 
