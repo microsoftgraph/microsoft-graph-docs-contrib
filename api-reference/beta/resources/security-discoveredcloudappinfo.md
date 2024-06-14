@@ -92,25 +92,25 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |isPasswordPolicyPersonalInformationUse|microsoft.graph.security.cloudAppInfoState|**Provides whether the app disallows the use of personal information in passwords**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isPenetrationTesting|microsoft.graph.security.cloudAppInfoState|**Provides whether the app carries out penetration testing to detect and assess network vulnerabilities**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isPrivacyShieldCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app complies with the EU-US Privacy Shield Framework**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isRememberPassword|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isRequiresUserAuthentication|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSoc1Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSoc2Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSoc3Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSoxCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSp80053Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSsae16Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isSupportsSaml|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isTrustedCertificate|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isUserAuditTrail|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isUserCanUploadData|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isUserRolesSupport|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isValidCertificateName|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|latestBreachDateTime|DateTimeOffset|**TODO: Add Description**|
-|logonUrls|String|**TODO: Add Description**|
-|pciDssVersion|microsoft.graph.security.appInfoPciDssVersion|**TODO: Add Description**.The possible values are: `v1`, `v2`, `v3`, `v3_1`, `v3_2`, `v3_2_1`, `notSupported`, `unknown`, `unknownFutureValue`, `v4`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `v4`.|
-|tlsEncryptionProtocol|microsoft.graph.security.appInfoTlsEncryptionProtocol|**TODO: Add Description**.The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`.|
-|vendor|String|**TODO: Add Description**|
+|isRememberPassword|microsoft.graph.security.cloudAppInfoState|**Provides whether the app enables the option for remembering and saving user passwords in the app**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isRequiresUserAuthentication|microsoft.graph.security.cloudAppInfoState|**Provides whether the app requires user authentication**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSoc1Compliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Soc1 compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSoc2Compliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Soc2 compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSoc3Compliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Soc3 compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSoxCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Sox compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSp80053Compliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Sp80053 compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSsae16Compliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app is Ssae16 compliant**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isSupportsSaml|microsoft.graph.security.cloudAppInfoState|**Provides whether the app supports SAML authentication**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isTrustedCertificate|microsoft.graph.security.cloudAppInfoState|**Provides whether the app server provides a trusted SSL cetificate**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isUserAuditTrail|microsoft.graph.security.cloudAppInfoState|**Provides whether the app supports availability of audit trail per user account**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isUserCanUploadData|microsoft.graph.security.cloudAppInfoState|**Provides whether the app supports user to upload data**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isUserRolesSupport|microsoft.graph.security.cloudAppInfoState|**Provides whether the app supports distribution of users by roles and levels of permission**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isValidCertificateName|microsoft.graph.security.cloudAppInfoState|**Provides whether the app server provide an SSL certificate matching domain name**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|latestBreachDateTime|DateTimeOffset|**Provides the last date of company's data breach**|
+|logonUrls|String|**Provides the login URL the user can use to access the app**|
+|pciDssVersion|microsoft.graph.security.appInfoPciDssVersion|**Provides the pciDss version**.The possible values are: `v1`, `v2`, `v3`, `v3_1`, `v3_2`, `v3_2_1`, `notSupported`, `unknown`, `unknownFutureValue`, `v4`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `v4`.|
+|tlsEncryptionProtocol|microsoft.graph.security.appInfoTlsEncryptionProtocol|**Provides the tls encryption protocol version**.The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`.|
+|vendor|String|**Provides the app vendor**|
 
 ## Relationships
 None.
