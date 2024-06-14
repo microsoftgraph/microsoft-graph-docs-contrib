@@ -53,12 +53,12 @@ If the ID is invalid, this method returns a `400 Bad request` and the detailed e
 
 ## Example
 
-Here's an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
-The following request recalls the specified message that in the specified user's mailbox Sent Items folder.
-> **Note:** The id here is shortened for readability.
+The following request recalls the specified message in the specified user's mailbox sent items folder.
+> **Note:** The ID here is shortened for readability.
 
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhAAATs28OAAA=/recall
