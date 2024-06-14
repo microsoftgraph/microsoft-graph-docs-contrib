@@ -176,7 +176,7 @@ Content-Type: application/json
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
   "preferredTimezone":"Pacific Standard Time",
-  "preferredLanguage":"en-us"
+  "preferredLanguage":"en-us",
   "registrationQuestionAnswers": [
     {
       "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
