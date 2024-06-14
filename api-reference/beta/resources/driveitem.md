@@ -43,7 +43,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 |:-----------------------------------------------------------------------------|:------------|:-------------|
 | [Get item](../api/driveitem-get.md)                                          | [driveItem](../resources/driveitem.md) |Retrieve the metadata for a **driveItem** in a drive.|
 | [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.|
-| [Get activities by interval][]                                               | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.|
+| [Get activities by interval][]                                               | [itemActivityStat](../resources/itemactivitystat.md) | Get a collection of **itemActivityStats** within the specified time interval.|
 | [List children](../api/driveitem-list-children.md)                           | [driveItem](../resources/driveitem.md) collection | Return a collection of **driveItems** in the children relationship of a **driveItem**.|
 | [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion][] collection | Retrieve the versions of a file in the current user's drive.|
 | [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
