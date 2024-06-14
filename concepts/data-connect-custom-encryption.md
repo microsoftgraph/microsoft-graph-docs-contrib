@@ -46,7 +46,7 @@ If you don't have an existing Data Connect application, use the following steps 
 
 1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide to build your Data Connect application.
 
-2.  When you are on the [Register your Microsoft Entra application with Microsoft Graph Data Connect](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=4) step, keep in mind of the below:
+2.  When you are on the [Register your Microsoft Entra application with Microsoft Graph Data Connect](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=4) step, keep in mind of the below:
     1. Fill out the application details on the **Registration Info** page. 
     2. Choose **Enable encryption for datasets**.
     3. For **Key Vault**, from the drop-down menu, select the AKV URI (name of the AKV).
