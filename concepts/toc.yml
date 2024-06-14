@@ -304,6 +304,8 @@ items:
       displayName: users
     - name: Default user permissions
       href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
+    - name: Profile photo settings
+      href: profilephoto-configure-settings.md
   - name: Groups
     items:
     - name: Overview

@@ -3,7 +3,7 @@ title: "webPartData resource type"
 description: Represents the data of a given web part.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

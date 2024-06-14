@@ -821,8 +821,6 @@
             "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
@@ -941,6 +939,17 @@
                 "multiTenantOrganizationJoinRequestRecord",
                 "multiTenantOrganizationPartnerConfigurationTemplate",
                 "multiTenantOrganizationIdentitySyncPolicyTemplate"
+              ]
+            },
+            {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
               ]
             },
             {
