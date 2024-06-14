@@ -237,7 +237,7 @@
         },
         {
             "source_path": "graph/data-connect-pam",
-            "redirect_url": "/concepts/data-connect-concept-overview.md",
+            "redirect_url": "/concepts/data-connect-concept-overview",
             "redirect_document_id": true
         }
     ]
