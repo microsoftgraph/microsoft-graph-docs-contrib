@@ -65,10 +65,10 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 # [HTTP](#tab/http)
 
 <!--{
-	"blockType": "request",
-	"name": "get-newslinkpage",
-	"scopes": "sites.read.all",
-	"tags": "service.sharepoint"
+  "blockType": "request",
+  "name": "get-newslinkpage",
+  "scopes": "sites.read.all",
+  "tags": "service.sharepoint"
 }
 -->
 
@@ -76,7 +76,6 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/cb9c62e1-07da-46ec-88dc-aed1d5164727/microsoft.graph.newsLinkPage
 prefer: include-unknown-enum-members
 ```
----
 
 ### Response
 
@@ -86,7 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.newsLinkPage"
+  "@odata.type": "microsoft.graph.newsLinkPage",
   "isCollection":false
 }
 -->

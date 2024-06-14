@@ -30,12 +30,12 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |bannerImageWebUrl|String|A link to the banner image for the [videoNewsLinkPage](../resources/videonewslinkpage.md).|
-|createdBy|[identitySet](../resources/intune-identityset.md)| Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|createdBy|[identitySet](../resources/identityset.md)| Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |createdDateTime|DateTimeOffset|The date and time the item was created. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md).|
 |eTag|String|ETag for the item. Inherited from [baseItem](../resources/baseitem.md).|
 |id|String|The unique identifier of the item. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).|
 |name|String|The name of the item. Inherited from [baseItem](../resources/baseitem.md).|
 |newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|The Sharepoint Ids of the referenced news article, if it is recognized to be a Sharepoint resource. Read-only.|

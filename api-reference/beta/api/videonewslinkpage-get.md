@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /videoNewsLinkPage
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.videoNewsLinkPage
 ```
 
 ## Optional query parameters
@@ -61,11 +61,14 @@ If successful, this method returns a `200 OK` response code and a [videoNewsLink
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_videonewslinkpage"
+  "name": "get_videonewslinkpage",
+	"scopes": "sites.read.all",
+	"tags": "service.sharepoint"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/videoNewsLinkPage
+GET https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/cb9c62e1-07da-46ec-88dc-aed1d5164727/microsoft.graph.videoNewsLinkPage
+prefer: include-unknown-enum-members
 ```
 
 
