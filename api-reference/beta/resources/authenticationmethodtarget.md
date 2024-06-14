@@ -20,7 +20,7 @@ The following types are derived from this resource type:
 - [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)
 - [smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md)
 - [voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md)
-
+- [passkeyAuthenticationMethodTarget](../resources/passkeyauthenticationmethodtarget.md)
 
 ## Properties
 |Property|Type|Description|
