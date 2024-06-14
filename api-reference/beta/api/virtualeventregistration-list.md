@@ -194,7 +194,6 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations?$filter=userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations?$filter=email eq 'EmileeMPham@contoso.com'
 ```
 
