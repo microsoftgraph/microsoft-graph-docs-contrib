@@ -5,7 +5,7 @@
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualEventRegistration",
+          "ChangedApiName": "virtualeventregistration-cancel",
           "ChangeType": "Addition",
           "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-cancel?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
@@ -13,7 +13,7 @@
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualEventRegistration",
+          "ChangedApiName": "POST",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-post?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
@@ -21,9 +21,9 @@
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualEventRegistration",
+          "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [list session](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-virtualeventsession?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-virtualeventsession?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
