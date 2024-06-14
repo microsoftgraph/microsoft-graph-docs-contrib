@@ -49,7 +49,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
 | [Update item](../api/driveitem-update.md)                                    | [driveItem](../resources/driveitem.md) | Update a **driveItem** in the drive.|
 | [Upload](../api/driveitem-put-content.md)                            | [driveItem](../resources/driveitem.md) | Upload content to the **driveItem**.|
-| [Download file content](..api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
+| [Download file content](../api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
 | [Download specific file format][download-format]                             | download URL | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
