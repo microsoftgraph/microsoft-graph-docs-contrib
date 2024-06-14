@@ -30,7 +30,6 @@ All examples are relative to a **[list][]**; for example, `https://graph.microso
 | [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
 | [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
 | [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
-| [Get activities by interval](../api/itemactivitystat-getactivitybyinterval.md)                                | [itemActivityStat][]               | Get a collection of itemActivityStats within the specified time interval. |
 | [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
 | [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
 | [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
