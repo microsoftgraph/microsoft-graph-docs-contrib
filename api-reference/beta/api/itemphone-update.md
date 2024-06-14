@@ -3,7 +3,7 @@ title: "Update itemphone"
 description: "Update the properties of an itemPhone object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

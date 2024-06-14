@@ -3,7 +3,7 @@ title: "Update case"
 description: "Update the properties of a case object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

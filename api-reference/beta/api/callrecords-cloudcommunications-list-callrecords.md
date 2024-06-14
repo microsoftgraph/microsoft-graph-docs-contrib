@@ -18,7 +18,9 @@ Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and
 > [!WARNING]
 > A call record is created after a call or meeting ends and remains available for **30 days**. This API doesn't return call records older than 30 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+<!-- { "blockType": "ignored" } -->
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Comment reply
 ---
 
 # workbookCommentReply resource type

@@ -349,7 +349,7 @@ items:
       - name: List monthly reports by printer
         href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
       - name: Get
-        href: ../../api/printUsageByPrinter-get.md
+        href: ../../api/printusagebyprinter-get.md
     - name: Print usage by user
       items:
       - name: Print usage by user
@@ -3057,9 +3057,9 @@ items:
     - name: Installation options
       href: ../../resources/m365appsinstallationoptions.md
     - name: Get m365AppsInstallationOptions
-      href: ../../api/m365AppsInstallationOptions-get.md
+      href: ../../api/m365appsinstallationoptions-get.md
     - name: Update m365AppsInstallationOptions
-      href: ../../api/m365AppsInstallationOptions-update.md
+      href: ../../api/m365appsinstallationoptions-update.md
   - name: Complex types
     items:
     - name: Admin

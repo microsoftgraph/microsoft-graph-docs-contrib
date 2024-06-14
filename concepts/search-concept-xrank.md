@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to XRANK search results"
 description: "You can use the Microsoft Search API xrank expression in Microsoft Graph to boost the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. Only supported on SharePoint files."
 author: "cxiang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to xrank search results
