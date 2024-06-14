@@ -28,14 +28,6 @@
         },
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "cancel",
-          "ChangeType": "Addition",
-          "Description": "Added the **cancel** parameter to the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-cancel?view=graph-rest-beta) method.",
-          "Target": "virtualEventRegistration"
-        },
-        {
-          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
           "ApiChange": "Property",
           "ChangedApiName": "preferredLanguage",
           "ChangeType": "Addition",
