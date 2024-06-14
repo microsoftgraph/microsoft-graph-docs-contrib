@@ -95,7 +95,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/microsoft.graph.newsLinkPage/$entity",
   "createdDateTime": "2024-06-05T20:39:55Z",
   "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate."
   "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
