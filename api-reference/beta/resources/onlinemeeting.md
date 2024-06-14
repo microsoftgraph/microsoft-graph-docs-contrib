@@ -52,11 +52,8 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| alternativeRecording (deprecated) | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
-| broadcastSettings (deprecated)   | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
@@ -66,23 +63,26 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | joinWebUrl | String | The join URL of the online meeting. The format of the URL may change; therefore, users shouldn't rely on any information extracted from parsing the URL. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| recording (deprecated) | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | startDateTime | DateTime | The meeting start time in UTC. Required when you create an online meeting. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | subject | String | The subject of the online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| alternativeRecording (deprecated) | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that are automatically allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
-| isBroadcast (deprecated) | Boolean | Indicates whether this event is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| broadcastSettings (deprecated)   | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | capabilities (deprecated) | meetingCapabilities collection | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`. |
+| isBroadcast (deprecated) | Boolean | Indicates whether this event is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| recording (deprecated) | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 
 > [!CAUTION]
 >
->- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
+>- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbybypasssettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
 
 ### onlineMeetingPresenters values
