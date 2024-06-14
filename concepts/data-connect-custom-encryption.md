@@ -83,7 +83,7 @@ Your application needs to reverse the encryption and compression process to acce
 
 1. Get the file decryption key from the extraction metadata.
 
-2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). For more information, see [Azure Key Vault decrypt API](/rest/api/keyvault/keys/decrypt/decrypt?view=rest-keyvault-keys-7.4&tabs=HTTP).
+2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). For more information, see [Azure Key Vault decrypt API](/rest/api/keyvault/keys/decrypt/decrypt).
 
 3. Decrypt the file by using the file encryption key. For a C# example, see [Encrypting data](/dotnet/standard/security/encrypting-data).
 
