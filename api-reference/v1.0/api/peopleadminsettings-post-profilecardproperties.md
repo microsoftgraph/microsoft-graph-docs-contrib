@@ -3,7 +3,7 @@ title: "Create profileCardProperty"
 description: "Create a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "sourceCollection resource type"
 description: "Represents an eDiscovery collection, commonly known as a search."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

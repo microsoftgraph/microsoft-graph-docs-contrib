@@ -3,7 +3,7 @@ title: "Delete reviewSetQuery"
 description: "Delete a reviewSetQuery object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

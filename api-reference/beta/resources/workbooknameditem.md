@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
+toc.title: Named item
 ---
 
 # workbookNamedItem resource type

@@ -3,7 +3,7 @@ title: "Update itememail"
 description: "Update the properties of an itemEmail object in a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
