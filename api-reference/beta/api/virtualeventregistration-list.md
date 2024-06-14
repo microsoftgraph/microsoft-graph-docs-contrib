@@ -41,6 +41,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 Get a list of all **registration records** for a registrant by **userId** or **email**
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=email eq '{email}'
@@ -72,7 +73,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistration](../resources/virtualeventregistration.md) objects in the response body.
-- If you fetch a virtual event registration by **userId** or **email**, this method returns a collection that contains only one [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
+If you fetch a virtual event registration by **userId** or **email**, this method returns a collection that contains only one [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
 
 ## Examples
 
