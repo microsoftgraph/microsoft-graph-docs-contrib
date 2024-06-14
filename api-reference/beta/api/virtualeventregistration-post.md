@@ -58,7 +58,7 @@ Use delegated permission to create a registration record for a person who has a 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create-virtualeventregistration",
+  "name": "create-virtualeventregistration-delegated",
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
@@ -163,7 +163,7 @@ Use application permission to create a registration record for a person who does
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create-virtualeventregistration",
+  "name": "create-virtualeventregistration-application",
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
