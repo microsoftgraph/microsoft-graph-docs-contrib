@@ -49,8 +49,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
 | [Update item](../api/driveitem-update.md)                                    | [driveItem](../resources/driveitem.md) | Update a **driveItem** in the drive.|
 | [Upload](../api/driveitem-put-content.md)                            | [driveItem](../resources/driveitem.md) | Upload content to the **driveItem**.|
-| [Download file](../api/driveitem-get-content.md)                          | download Url | Download content of a **driveItem**.|
-| [Download specific file format][download-format]                             | download Url | Download content of a **driveItem** with a specific format.|
+| [Download file content](..api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
+| [Download specific file format][download-format]                             | download URL | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
 | [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
@@ -65,6 +65,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on a **driveItem**.|
 | [Create permission](../api/driveitem-post-permissions.md)                     | [permission][] | Create a permission on a **driveItem**.|
 | [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
+| [Revoke grants on sharing link](../api/permission-revokegrants.md)| [permission][] | Revoke access to a **listItem** or **driveItem** granted via a sharing link by removing the specified recipient from the link.|
 | [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
 | [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|
 | [Check in files](../api/driveitem-checkin.md)                                      | None| Check in a checked out **driveItem** resource, which makes the version of the document available to others. |
@@ -75,6 +76,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Set retention label](../api/driveitem-setretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Apply (set) a retention label on a **driveItem** (files and folders). |
 | [Remove retention label](../api/driveitem-removeretentionlabel.md)           | None | Remove a retention label from a **driveItem**. |
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
+| [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
 
 ## Properties
 
