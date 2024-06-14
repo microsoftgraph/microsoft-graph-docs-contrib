@@ -89,9 +89,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |isPasswordPolicyCharacterCombination|microsoft.graph.security.cloudAppInfoState|**Provides whether the app  enforces a character combination on password creation**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isPasswordPolicyPasswordHistoryAndReuse|microsoft.graph.security.cloudAppInfoState|**Provides whether the app disallows the reuse of old passwords**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isPasswordPolicyPasswordLengthLimit|microsoft.graph.security.cloudAppInfoState|**Provides whether the app enforces a length limit on password creation**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isPasswordPolicyPersonalInformationUse|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isPenetrationTesting|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
-|isPrivacyShieldCompliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isPasswordPolicyPersonalInformationUse|microsoft.graph.security.cloudAppInfoState|**Provides whether the app disallows the use of personal information in passwords**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isPenetrationTesting|microsoft.graph.security.cloudAppInfoState|**Provides whether the app carries out penetration testing to detect and assess network vulnerabilities**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
+|isPrivacyShieldCompliant|microsoft.graph.security.cloudAppInfoState|**Provides whether the app complies with the EU-US Privacy Shield Framework**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isRememberPassword|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isRequiresUserAuthentication|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
 |isSoc1Compliant|microsoft.graph.security.cloudAppInfoState|**TODO: Add Description**.The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`.|
