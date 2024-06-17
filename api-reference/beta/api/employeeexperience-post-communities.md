@@ -3,7 +3,7 @@ title: "Create community"
 description: "Create a new community in Viva Engage."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 

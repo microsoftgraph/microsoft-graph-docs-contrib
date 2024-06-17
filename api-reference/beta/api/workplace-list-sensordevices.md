@@ -3,7 +3,7 @@ title: "List sensorDevices"
 description: "Get a list of all workplace sensor devices created for a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List unifiedGroupSources"
 description: "Get a list of the unifiedGroupSource objects and their properties."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

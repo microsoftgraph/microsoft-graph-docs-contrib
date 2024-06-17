@@ -304,6 +304,8 @@ items:
       displayName: users
     - name: Default user permissions
       href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
+    - name: Profile photo settings
+      href: profilephoto-configure-settings.md
   - name: Groups
     items:
     - name: Overview
@@ -1005,6 +1007,9 @@ items:
       - name: Microsoft Entra built-in roles
         displayName: Microsoft Graph permissions
         href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
+      - name: Selected permissions in OneDrive and SharePoint
+        displayName: Selected Permissions in OneDrive and SharePoint
+        href: permissions-selected-overview.md
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access

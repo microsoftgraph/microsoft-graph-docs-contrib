@@ -3,7 +3,7 @@ title: "dataSourceContainer resource type"
 description: "Base class for custodians and noncustodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

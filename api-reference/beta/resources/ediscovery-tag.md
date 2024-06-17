@@ -3,7 +3,7 @@ title: "tag resource type"
 description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content"
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
