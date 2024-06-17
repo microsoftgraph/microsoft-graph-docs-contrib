@@ -65,6 +65,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
         }
       ],
       "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
