@@ -21,8 +21,8 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpAuthorizationSystemTypeActions](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get a list of the [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) objects and their properties.|
-|[Get gcpAuthorizationSystemTypeAction](../api/gcpauthorizationsystemtypeaction-get.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md)|Read the properties and relationships of a [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) object.|
+|[List](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get a list of the [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) objects and their properties.|
+|[Get](../api/gcpauthorizationsystemtypeaction-get.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md)|Read the properties and relationships of a [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|

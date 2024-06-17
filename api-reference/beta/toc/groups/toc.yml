@@ -1,0 +1,214 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/groups-overview.md
+- name: Group
+  items:
+  - name: Group
+    href: ../../resources/group.md
+  - name: List
+    href: ../../api/group-list.md
+  - name: Create
+    href: ../../api/group-post-groups.md
+  - name: Get
+    href: ../../api/group-get.md
+  - name: Update
+    href: ../../api/group-update.md
+  - name: Delete
+    href: ../../api/group-delete.md
+  - name: Get delta
+    href: ../../api/group-delta.md
+  - name: Upsert
+    href: ../../api/group-upsert.md
+  - name: Group management
+    items:
+    - name: List members
+      href: ../../api/group-list-members.md
+    - name: Add member
+      href: ../../api/group-post-members.md
+    - name: Remove member
+      href: ../../api/group-delete-members.md
+    - name: List owners
+      href: ../../api/group-list-owners.md
+    - name: Add owner
+      href: ../../api/group-post-owners.md
+    - name: Remove owner
+      href: ../../api/group-delete-owners.md
+    - name: List endpoints
+      href: ../../api/group-list-endpoints.md
+    - name: Get endpoint
+      href: ../../api/endpoint-get.md
+    - name: List member of
+      href: ../../api/group-list-memberof.md
+    - name: List group lifecycle policies
+      href: ../../api/group-list-grouplifecyclepolicies.md
+    - name: List transitive members
+      href: ../../api/group-list-transitivemembers.md
+    - name: List transitive member of
+      href: ../../api/group-list-transitivememberof.md
+    - name: Assign license
+      href: ../../api/group-assignlicense.md
+    - name: Evaluate dynamic membership
+      href: ../../api/group-evaluatedynamicmembership.md
+    - name: Renew
+      href: ../../api/group-renew.md
+    - name: Validate properties
+      href: ../../api/group-validateproperties.md
+  - name: App role assignments
+    items:
+    - name: List app role assignments
+      href: ../../api/group-list-approleassignments.md
+    - name: Add app role assignment
+      href: ../../api/group-post-approleassignments.md
+    - name: Remove app role assignment
+      href: ../../api/group-delete-approleassignments.md
+  - name: Calendar
+    items:
+    - name: Get calendar
+      href: ../../api/calendar-get.md
+    - name: Update calendar
+      href: ../../api/calendar-update.md
+    - name: List events
+      href: ../../api/group-list-events.md
+    - name: Create event
+      href: ../../api/group-post-events.md
+    - name: Get event
+      href: ../../api/group-get-event.md
+    - name: Update event
+      href: ../../api/group-update-event.md
+    - name: Delete event
+      href: ../../api/group-delete-event.md
+    - name: List calendar view
+      href: ../../api/group-list-calendarview.md
+  - name: Conversations
+    items:
+    - name: List conversations
+      href: ../../api/group-list-conversations.md
+    - name: Create conversation
+      href: ../../api/group-post-conversations.md
+    - name: Get conversation
+      href: ../../api/group-get-conversation.md
+    - name: Delete conversation
+      href: ../../api/group-delete-conversation.md
+    - name: List threads
+      href: ../../api/group-list-threads.md
+    - name: Create thread
+      href: ../../api/group-post-threads.md
+    - name: Get thread
+      href: ../../api/group-get-thread.md
+    - name: Update thread
+      href: ../../api/group-update-thread.md
+    - name: Delete thread
+      href: ../../api/group-delete-thread.md
+    - name: List accepted senders
+      href: ../../api/group-list-acceptedsenders.md
+    - name: Add accepted sender
+      href: ../../api/group-post-acceptedsenders.md
+    - name: Remove accepted sender
+      href: ../../api/group-delete-acceptedsenders.md
+    - name: List rejected senders
+      href: ../../api/group-list-rejectedsenders.md
+    - name: Add rejected sender
+      href: ../../api/group-post-rejectedsenders.md
+    - name: Remove rejected sender
+      href: ../../api/group-delete-rejectedsenders.md
+  - name: Directory objects
+    items:
+    - name: List deleted groups
+      href: ../../api/directory-deleteditems-list.md
+    - name: Get deleted group
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore deleted group
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete group
+      href: ../../api/directory-deleteditems-delete.md
+    - name: List deleted groups owned by user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
+    - name: Check member groups
+      href: ../../api/directoryobject-checkmembergroups.md
+    - name: Get member groups
+      href: ../../api/directoryobject-getmembergroups.md
+    - name: Check member objects
+      href: ../../api/directoryobject-checkmemberobjects.md
+    - name: Get member objects
+      href: ../../api/directoryobject-getmemberobjects.md
+  - name: Drive
+    items:
+    - name: Get drive
+      href: ../../api/drive-get.md
+    - name: List children
+      href: ../../api/driveitem-list-children.md
+  - name: Group settings
+    items:
+    - name: List settings
+      href: ../../api/group-list-settings.md
+    - name: Create setting
+      href: ../../api/group-post-settings.md
+    - name: Get setting
+      href: ../../api/directorysetting-get.md
+    - name: Update setting
+      href: ../../api/directorysetting-update.md
+    - name: Delete setting
+      href: ../../api/directorysetting-delete.md
+    - name: List setting templates
+      href: ../../api/directorysettingtemplate-list.md
+    - name: Get setting template
+      href: ../../api/directorysettingtemplate-get.md
+  - name: Notes
+    items:
+    - name: List notebooks
+      href: ../../api/onenote-list-notebooks.md
+    - name: Create notebook
+      href: ../../api/onenote-post-notebooks.md
+  - name: Password-based single sign-on credentials
+    items:
+    - name: Get credentials
+      href: ../../api/group-getpasswordsinglesignoncredentials.md
+    - name: Delete credentials
+      href: ../../api/group-deletepasswordsinglesignoncredentials.md
+  - name: Photo
+    items:
+    - name: Get profile photo
+      href: ../../api/profilephoto-get.md
+    - name: Update profile photo
+      href: ../../api/profilephoto-update.md
+    - name: Delete profile photo
+      href: ../../api/profilephoto-delete.md
+  - name: Planner
+    items:
+    - name: List plans
+      href: ../../api/plannergroup-list-plans.md
+  - name: Posts
+    items:
+    - name: List posts
+      href: ../../api/conversationthread-list-posts.md
+    - name: Get post
+      href: ../../api/post-get.md
+    - name: Reply to post
+      href: ../../api/post-reply.md
+    - name: Forward post
+      href: ../../api/post-forward.md
+  - name: Other group resources
+    items:
+    - name: List permission grants
+      href: ../../api/group-list-permissiongrants.md
+  - name: User settings
+    items:
+    - name: Add favorite
+      href: ../../api/group-addfavorite.md
+    - name: Remove favorite
+      href: ../../api/group-removefavorite.md
+    - name: List member of
+      href: ../../api/group-list-memberof.md
+    - name: List joined teams
+      href: ../../api/user-list-joinedteams.md
+    - name: List associated teams
+      href: ../../api/associatedteaminfo-list.md
+    - name: Subscribe by mail
+      href: ../../api/group-subscribebymail.md
+    - name: Unsubscribe by mail
+      href: ../../api/group-unsubscribebymail.md
+    - name: Reset unseen count
+      href: ../../api/group-resetunseencount.md

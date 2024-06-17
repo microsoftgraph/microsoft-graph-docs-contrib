@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph API to work with Viva Engage (preview)"
 description: "The Microsoft Graph API enables apps to manage communities in Viva Engage."
 ms.localizationpriority: medium
 author: "aditijha4"
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: conceptualPageType
 ---
 

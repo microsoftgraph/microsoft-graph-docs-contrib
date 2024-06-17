@@ -7,8 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Windows10GeneralConfiguration;
+use Microsoft\Graph\Generated\Models\DiagnosticDataSubmissionMode;
+use Microsoft\Graph\Generated\Models\EdgeCookiePolicy;
+use Microsoft\Graph\Generated\Models\DefenderMonitorFileActivity;
+use Microsoft\Graph\Generated\Models\DefenderCloudBlockLevelType;
+use Microsoft\Graph\Generated\Models\DefenderPromptForSampleSubmission;
+use Microsoft\Kiota\Abstractions\Types\Time;
+use Microsoft\Graph\Generated\Models\DefenderScanType;
+use Microsoft\Graph\Generated\Models\WeeklySchedule;
 use Microsoft\Graph\Generated\Models\DefenderDetectedMalwareActions;
+use Microsoft\Graph\Generated\Models\DefenderThreatAction;
+use Microsoft\Graph\Generated\Models\RequiredPasswordType;
+use Microsoft\Graph\Generated\Models\StateManagementSetting;
+use Microsoft\Graph\Generated\Models\WindowsStartMenuAppListVisibilityType;
+use Microsoft\Graph\Generated\Models\WindowsStartMenuModeType;
+use Microsoft\Graph\Generated\Models\VisibilitySetting;
+use Microsoft\Graph\Generated\Models\WindowsSpotlightEnablementSettings;
 use Microsoft\Graph\Generated\Models\Windows10NetworkProxyServer;
+use Microsoft\Graph\Generated\Models\SafeSearchFilterType;
 use Microsoft\Graph\Generated\Models\EdgeSearchEngineBase;
 
 

@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.team import Team
-from msgraph.generated.models.channel import Channel
-from msgraph.generated.models.teams_tab import TeamsTab
-from msgraph.generated.models.teams_tab_configuration import TeamsTabConfiguration
-from msgraph.generated.models.team_member_settings import TeamMemberSettings
-from msgraph.generated.models.team_guest_settings import TeamGuestSettings
-from msgraph.generated.models.team_fun_settings import TeamFunSettings
-from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
-from msgraph.generated.models.team_discovery_settings import TeamDiscoverySettings
-from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.team import Team
+from msgraph_beta.generated.models.team_visibility_type import TeamVisibilityType
+from msgraph_beta.generated.models.channel import Channel
+from msgraph_beta.generated.models.teams_tab import TeamsTab
+from msgraph_beta.generated.models.teams_tab_configuration import TeamsTabConfiguration
+from msgraph_beta.generated.models.team_member_settings import TeamMemberSettings
+from msgraph_beta.generated.models.team_guest_settings import TeamGuestSettings
+from msgraph_beta.generated.models.team_fun_settings import TeamFunSettings
+from msgraph_beta.generated.models.giphy_rating_type import GiphyRatingType
+from msgraph_beta.generated.models.team_messaging_settings import TeamMessagingSettings
+from msgraph_beta.generated.models.team_discovery_settings import TeamDiscoverySettings
+from msgraph_beta.generated.models.teams_app_installation import TeamsAppInstallation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

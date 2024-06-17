@@ -5,13 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RemoteNetwork;
-use Microsoft\Graph\Generated\Models\ForwardingProfile;
-use Microsoft\Graph\Generated\Models\DeviceLink;
-use Microsoft\Graph\Generated\Models\BgpConfiguration;
-use Microsoft\Graph\Generated\Models\RedundancyConfiguration;
-use Microsoft\Graph\Generated\Models\TunnelConfigurationIKEv2Default;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RemoteNetwork;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\Region;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\ForwardingProfile;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\DeviceLink;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\BandwidthCapacityInMbps;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\DeviceVendor;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\BgpConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RedundancyConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RedundancyTier;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\TunnelConfigurationIKEv2Default;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

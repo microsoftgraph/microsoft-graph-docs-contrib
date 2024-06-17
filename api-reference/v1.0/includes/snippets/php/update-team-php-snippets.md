@@ -10,6 +10,7 @@ use Microsoft\Graph\Generated\Models\Team;
 use Microsoft\Graph\Generated\Models\TeamMemberSettings;
 use Microsoft\Graph\Generated\Models\TeamMessagingSettings;
 use Microsoft\Graph\Generated\Models\TeamFunSettings;
+use Microsoft\Graph\Generated\Models\GiphyRatingType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

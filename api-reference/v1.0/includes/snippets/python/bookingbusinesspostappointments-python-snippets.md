@@ -7,13 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.booking_appointment import BookingAppointment
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph.generated.models.booking_price_type import BookingPriceType
 from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.booking_reminder_recipients import BookingReminderRecipients
 from msgraph.generated.models.location import Location
 from msgraph.generated.models.physical_address import PhysicalAddress
 from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
 from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
 from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
 from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
+from msgraph.generated.models.answer_input_type import AnswerInputType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

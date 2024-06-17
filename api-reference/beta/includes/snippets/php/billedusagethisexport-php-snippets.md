@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ExportPostRequestBody;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Reports\Partners\Billing\Usage\Billed\MicrosoftGraphPartnersBillingExport\ExportPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Partners\Billing\AttributeSet;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

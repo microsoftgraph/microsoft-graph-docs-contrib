@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CancelPostRequestBody;
+use Microsoft\Graph\Generated\Solutions\BookingBusinesses\Item\Appointments\Item\Cancel\CancelPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

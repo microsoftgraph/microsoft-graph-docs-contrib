@@ -3,7 +3,7 @@ author: "sangle7"
 description: "Delete a sitePage from the site pages list in a site."
 title: "Delete baseSitePage"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete baseSitePage

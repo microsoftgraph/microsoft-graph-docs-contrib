@@ -45,7 +45,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get an attendance report for a webinar session by ID:
+To get an attendance report for a webinar session by ID with delegated and app permission:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}

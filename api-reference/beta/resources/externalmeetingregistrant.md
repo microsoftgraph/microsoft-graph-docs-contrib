@@ -21,9 +21,9 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalMeetingRegistrants](../api/externalmeetingregistrant-list.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md) collection|Get a list of the [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects and their properties.|
-|[Create externalMeetingRegistrant](../api/externalmeetingregistrant-post.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md)|Read the properties and relationships of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
-|[Delete externalMeetingRegistrant](../api/externalmeetingregistrant-delete.md)|None|Delete an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
+|[List](../api/externalmeetingregistrant-list.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md) collection|Get a list of the [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects and their properties.|
+|[Create](../api/externalmeetingregistrant-post.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md)|Read the properties and relationships of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
+|[Delete](../api/externalmeetingregistrant-delete.md)|None|Delete an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
 
 ## Properties
 
