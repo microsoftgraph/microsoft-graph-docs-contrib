@@ -1,6 +1,6 @@
 ---
 title: "endpointDiscoveredCloudAppDetail resource type"
-description: "**This is the list of endpoints accessed by discovered apps**"
+description: "Describes the resource that contains the list of endpoints accessed by discovered apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

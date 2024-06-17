@@ -23,7 +23,7 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**This is the list of properties available**|
+|name|String|List of available properties|
 
 ## Relationships
 None.

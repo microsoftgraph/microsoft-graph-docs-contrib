@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppIPAddress resource type"
-description: "Respresents discovered IP address"
+description: "Respresents a discovered IP address."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

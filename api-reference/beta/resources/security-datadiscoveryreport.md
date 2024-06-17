@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryReport resource type"
-description: "This is the Discovery report resource"
+description: "Describes the Discovery report resource."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Please ensure to read the disclaimer**
+**Make sure to read the disclaimer.**
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**These are all the available properties** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|**These are all the available properties.** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
