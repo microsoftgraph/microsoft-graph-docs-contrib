@@ -8,14 +8,14 @@ doc_type: apiPageType
 ---
 
 # List relatedHosts
+
 Namespace: microsoft.graph.security
-  
-  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-=======
-Get a list of related [microsoft.graph.security.host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).
+
+Get a list of related [host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).
 
 
 ## Permissions
@@ -61,11 +61,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_relatedHost",
-  "sampleKeys": ["Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg=="]
+  "sampleKeys": ["MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA=="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/1.0/security/threatIntelligence/sslCertificates/Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg==/relatedHosts
+GET https://graph.microsoft.com/1.0/security/threatIntelligence/sslCertificates/MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA==/relatedHosts
 ```
 
 ---

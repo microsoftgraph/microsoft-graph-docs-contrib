@@ -54,11 +54,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_relatedHost",
-  "sampleKeys": ["Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg=="]
+  "sampleKeys": ["MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA=="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates/Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg==/relatedHosts
+GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates/MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA==/relatedHosts
 ```
 
 ### Response
