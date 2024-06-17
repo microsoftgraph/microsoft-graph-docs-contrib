@@ -30,6 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET security/threatIntelligence/sslCertificates/{sslCertificateId}/relatedHosts
 ```
+
 ## Optional query parameters
 
 This method supports the `$count`, `$select`, `$search`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -74,7 +75,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.host)",
+ "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.host)",
  "value": [
   {
    "@odata.type": "#microsoft.graph.security.ipAddress",
