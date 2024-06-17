@@ -34,7 +34,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
 |[retrieveCrossRegionDisasterRecoveryReport](../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md)|Stream| Retrieve the Windows 365 Cross Region Disaster Recovery Report with configuration health check results, disaster recovery status, latest cross region restore points and user settings.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
