@@ -3,7 +3,7 @@ title: "departmentTemplate resource type"
 description: "Specifies the  department or business unit of an organization to which a label belongs."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

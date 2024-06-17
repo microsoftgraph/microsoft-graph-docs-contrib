@@ -3,7 +3,7 @@ title: "knownIssueHistoryItem resource type"
 description: "Represents the description text for the known issue, used to maintain historical records."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-update-business"
+ms.subservice: "windows-update-business"
 doc_type: resourcePageType
 ---
 

@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/social-overview.md
@@ -216,11 +219,11 @@ items:
     - name: Create
       href: ../../api/profile-post-certifications.md
     - name: Get
-      href: ../../api/personCertification-get.md
+      href: ../../api/personcertification-get.md
     - name: Update
-      href: ../../api/personCertification-update.md
+      href: ../../api/personcertification-update.md
     - name: Delete
-      href: ../../api/personCertification-delete.md
+      href: ../../api/personcertification-delete.md
   - name: Educational activity
     items:
     - name: Educational activity

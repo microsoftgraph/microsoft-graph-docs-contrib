@@ -91,9 +91,8 @@ The following example shows a request.
   "blockType": "request",
   "name": "update_group_1"
 }-->
-
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}
+PATCH https://graph.microsoft.com/beta/groups/0d09007d-45b2-458c-b180-880dde3a302e
 Content-type: application/json
 
 {
