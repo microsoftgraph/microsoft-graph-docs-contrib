@@ -190,7 +190,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualeventregistration-get-byuseridoremail"
+  "name": "virtualeventregistration-get-byuserid"
 }
 -->
 ```http
@@ -267,7 +267,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualeventregistration-get-byuseridoremail"
+  "name": "virtualeventregistration-get-byemail"
 }
 -->
 ```http
