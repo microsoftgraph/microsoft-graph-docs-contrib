@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "ChangeList": [
+            {
+              "Id": "0349a906-b84c-4244-9196-8d431f737e2b",
+              "ApiChange": "Member",
+              "ChangedApiName": "crossRegionDisasterRecoveryReport",
+              "ChangeType": "Addition",
+              "Description": "Added the `crossRegionDisasterRecoveryReport` member to the **cloudPcReportName** enumeration.",
+              "Target": "cloudPcReportName"
+            },
+            {
+              "Id": "0349a906-b84c-4244-9196-8d431f737e2b",
+              "ApiChange": "Method",
+              "ChangedApiName": "retrieveCrossRegionDisasterRecoveryReport",
+              "ChangeType": "Addition",
+              "Description": "Added the [retrieveCrossRegionDisasterRecoveryReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "0349a906-b84c-4244-9196-8d431f737e2b",
+          "Cloud": "Review",
+          "Version": "beta",
+          "CreatedDateTime": "2024-06-17T06:36:07.9741814Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
           "Id": "ab4407dd-6951-4347-85df-29d7b877d8e2",
           "ApiChange": "Property",
           "ChangedApiName": "resourceType",

@@ -2015,6 +2015,8 @@ items:
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
                   - name: Get Windows 365 Frontline reports
                     href: api/cloudpcreports-getfrontlinereport.md
+                  - name: Retrieve the Windows 365 Cross Region Disaster Recovery report.
+                    href: api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
                   - name: Export to download report
                     items:
                       - name: Cloud PC export job
