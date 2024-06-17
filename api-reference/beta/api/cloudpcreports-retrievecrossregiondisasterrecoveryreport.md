@@ -3,7 +3,7 @@ title: "cloudPcReports: retrieveCrossRegionDisasterRecoveryReport"
 description: "Retrieve the Windows 365 Cross Region Disaster Recovery Report including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, ActivationExpirationDateTime."
 author: "ms-linxin"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
