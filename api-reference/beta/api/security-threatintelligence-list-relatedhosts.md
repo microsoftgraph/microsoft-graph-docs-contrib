@@ -1,6 +1,6 @@
 ---
 title: "List relatedHosts"
-description: "Get the list of  resources associated with a host, where that host is either the parent or the child."
+description: "Get a list of related host resources associated with an sslCertificate."
 author: "vinny2020"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,9 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [microsoft.graph.security.host](../resources/security-host.md) resources associated with a sslCertificate.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Get a list of related [host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,6 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET security/threatIntelligence/sslCertificates/{sslCertificateId}/relatedHosts
 ```
+
 ## Optional query parameters
 
 This method supports the `$count`, `$select`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -49,7 +48,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### HTTP
+### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_relatedHost",
@@ -59,8 +60,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates/Yzc3Y2YxMWYyYjY5MGVmZjYx3UJJSPlMDkzODUyYg==/relatedHosts
 ```
-
----
 
 ### Response
 The following example shows the response.
@@ -76,7 +75,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.host)",
+ "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.host)",
  "value": [
   {
    "@odata.type": "#microsoft.graph.security.ipAddress",
