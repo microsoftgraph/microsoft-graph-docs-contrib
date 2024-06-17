@@ -44,8 +44,8 @@ items:
     href: ../../api/driveitem-update.md
   - name: Upload
     href: ../../api/driveitem-put-content.md
-  - name: Download file
-    href: ../../api/driveitem-get-content.md
+  - name: Download file content
+    href: ../../api/driveitem-get-contentstream.md
   - name: Download specific file format
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
@@ -76,6 +76,8 @@ items:
     href: ../../api/driveitem-post-permissions.md
   - name: Delete permission
     href: ../../api/permission-delete.md
+  - name: Revoke grants on sharing link
+    href: ../../api/permission-revokegrants.md
   - name: Get WebSocket channel
     href: ../../api/subscriptions-socketio.md
   - name: Preview item
@@ -96,6 +98,8 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Download file (deprecated)
+    href: ../../api/driveitem-get-content.md
 - name: Bundle
   items:
   - name: Bundle
