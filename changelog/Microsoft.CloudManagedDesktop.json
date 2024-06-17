@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkDisasterRecoveryFailback",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailback](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta resource and its methods.",
+          "Target": "cloudPcBulkDisasterRecoveryFailback"
+        },
+        {
+          "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkDisasterRecoveryFailover",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailover](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcBulkDisasterRecoveryFailover"
+        }
+      ],
+      "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-17T15:45:13.2794293Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a4055d6d-2123-4e14-9603-abe10f33fe8a",
           "ApiChange": "Enum type",
           "ChangedApiName": "provisioningType",
@@ -5097,7 +5123,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
-        },        
+        },
         {
           "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
