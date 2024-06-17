@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [relatedHosts](../resources/security-host.md) resources associated with a sslCertificate.
+Get the list of [microsoft.graph.security.host](../resources/security-host.md) resources associated with a sslCertificate.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,7 +34,7 @@ GET security/threatIntelligence/sslCertificates/{sslCertificateId}/relatedHosts
 ```
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$search`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
