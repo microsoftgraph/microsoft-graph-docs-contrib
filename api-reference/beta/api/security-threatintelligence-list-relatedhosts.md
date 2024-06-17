@@ -67,7 +67,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.hostPair)"
+  "@odata.type": "Collection(microsoft.graph.security.host)"
 }
 -->
 ``` http
