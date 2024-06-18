@@ -1106,7 +1106,7 @@
           "ChangedApiName": "recall",
           "ChangeType": "Addition",
           "Description": "Added [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
-          "Target": "recall"
+          "Target": "message"
         },
         {
           "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
