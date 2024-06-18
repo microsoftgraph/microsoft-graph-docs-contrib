@@ -162,7 +162,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
   "id": "7a852983-013a-4062-9e97-f784c6a57ec8",
-  "label": "street"
+  "label": "street",
   "displayName": "Address",
   "isRequired": false
 }
