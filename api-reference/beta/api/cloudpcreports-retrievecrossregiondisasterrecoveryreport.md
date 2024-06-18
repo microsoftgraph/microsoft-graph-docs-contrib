@@ -8,7 +8,6 @@ doc_type: apiPageType
 ---
 
 # cloudPcReports: retrieveCrossregionDisasterRecoveryReport
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -88,8 +87,6 @@ Content-length: 199
 }
 ```
 
-
----
 
 ### Response
 The following example shows the response.
