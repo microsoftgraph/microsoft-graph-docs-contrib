@@ -42,6 +42,7 @@ POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/que
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -79,9 +80,6 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
-```
-
-``` http
 Content-Type: application/json
 
 {
