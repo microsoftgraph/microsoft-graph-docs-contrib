@@ -101,3 +101,10 @@ items:
   - name: Workbooks and charts
     href: toc/workbooks-and-charts/toc.yml
     displayName: Excel
+  - name: Company subscription
+    href: resources/companysubscription.md
+    items:
+    - name: List
+      href: api/directory-list-subscriptions.md
+    - name: Get
+      href: api/companysubscription-get.md
