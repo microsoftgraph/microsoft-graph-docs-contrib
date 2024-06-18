@@ -56,6 +56,12 @@ You can specify the following properties when you create a **virtualEventRegistr
 |displayName|String|Display name of the registration question.|
 |isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
 
+You can specify the following property when you create a **virtualEventRegistrationPredefinedQuestion**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and either a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or [virtualEventRegistrationPredefinedQuestion](../resources/virtualEventRegistrationPredefinedQuestion.md) object in the response body.
