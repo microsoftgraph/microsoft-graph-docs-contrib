@@ -22,7 +22,31 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Enabled change notifications support to the methods to [list](/graph/api/subscription-list), [get](/graph/api/subscription-get), [create](/graph/api/subscription-post-subscriptions), [reauthorize](/graph/api/subscription-reauthorize), [update](/graph/api/subscription-update), and [delete](/graph/api/subscription-delete) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [shift](/graph/api/resources/shift), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), and [timeOffRequest](/graph/api/resources/timeoffrequest).
 
+### Files
+
+[Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
+
 ## June 2024: New in preview only
+
+### Identity and access | Identity and sign-in
+
+- You can now control multifactor authentication (MFA) on an individual user basis, commonly referred to as per-user MFA on the Microsoft Entra admin center, by using the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource and its associated methods.
+- While [restoring soft-deleted users](/graph/api/directory-deleteditems-restore?view=graph-rest-beta&preserve-view=true), you can now specify whether Microsoft Entra ID should autoreconcile conflicting proxy addresses if one or more of the soft-deleted user's proxy addresses are currently used for an active user.
+
+### Identity and access | Network access
+
+You can now enable and control compliant network check with Conditional Access through the Global Secure Access service by using the [compliantNetworkNamedLocation resource type](/graph/api/resources/compliantnetworknamedlocation?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Sites and lists
+
+Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
+
+- Use [Get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+- Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using the [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
+- Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from a library by using the [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
+- Use [Get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
+
+The content model automatically processes new files that are added to the libraries. You can create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
 
 ### Change notifications
 
@@ -36,11 +60,8 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 ### Identity and access | Identity and sign-in
 
-Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
+Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign-up and only allow sign in, and also integrate with systems that are external to Microsoft Entra ID.
 
-### Teamwork and communications | Messaging
-
-- [Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
 ### Teamwork and communications | Calls and online meetings
 
 Get the list of [callRecord](/graph/api/resources/callrecords-callrecord) objects and their properties and the associated [participant](/graph/api/resources/callrecords-participant) objects for each **callRecord** using the following APIs:
@@ -55,7 +76,6 @@ The following properties are deprecated:
 - **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
 
 ## May 2024: New in preview only
-
 ### Backup storage
 
 The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
@@ -70,7 +90,7 @@ The new Microsoft 365 Backup Storage API enables partners to build customized ve
 [Create a snapshot](/graph/api/cloudpc-createsnapshot?view=graph-rest-beta&preserve-view=true) for a specific Cloud PC device.
 
 Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-- [getCloudPcReviewStatus](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [retrieveReviewStatus](/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta&preserve-view=true) API insted.
+- [getCloudPcReviewStatus](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [retrieveReviewStatus](/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta&preserve-view=true) API instead.
 - [setCloudPcReviewStatus](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [setReviewStatus](/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta&preserve-view=true) API instead.
 - [resizeCloudPc](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [resize](/graph/api/cloudpc-resize?view=graph-rest-beta&preserve-view=true) API instead.
 - [bulkReprovisionCloudPc](/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkReprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
@@ -81,8 +101,7 @@ Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?v
 
 - Use the [externalAuthenticationMethodConfiguration resource type](/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) and its associated methods to manage the configuration of external authentication methods and define users who can use the external authentication methods to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.
 - Added API operations to retrieve or update keys in an Azure AD B2C Identity Experience Framework (IEF) policy through the new [trustFrameworkKey_v2 resource type](/graph/api/resources/trustframeworkkey_v2?view=graph-rest-beta&preserve-view=true) and its associated methods.
-
-The [custom claims policy](/graph/api/resources/customclaimspolicy) API allows application admins to customize the additional claims emitted in tokens affected by this policy. This API enables admins to manage the claims for their application from the Microsoft Entra portal and by using the Microsoft Graph API interchangeably, allowing more flexibility in their application claims management experience.
+- The [custom claims policy](/graph/api/resources/customclaimspolicy?view=graph-rest-beta&preserve-view=true) API allows application admins to customize the additional claims emitted in tokens affected by this policy. This API enables admins to manage the claims for their application from the Microsoft Entra admin center and by using the Microsoft Graph API interchangeably, allowing more flexibility in their application claims management experience.
 
 ### Microsoft Graph Bicep templates
 
@@ -118,113 +137,7 @@ Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-re
 - Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 - Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 - Use the **isHiddenForAllMembers** property to indicate whether a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) is hidden from all its members.
-
-## April 2024: New and generally available
-
-### Applications
-
-- Updated the default value for **signInAudience** for new [applications](/graph/api/resources/application) from `AzureADandPersonalMicrosoftAccount` to `AzureADMyOrg`. Going forward, if you don't explicitly assign a value to the property during [app creation](/graph/api/application-post-applications), the app is automatically assigned the value `AzureADMyOrg`.
-- Added the support for adding password secrets to applications during [app creation](/graph/api/application-post-applications). Previously, you could only add secrets to existing apps through the [Update application](/graph/api/application-update) or the [addPassword](/graph/api/application-addpassword) operations.
-- Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
-
-    - [Upsert application](/graph/api/application-upsert)
-    - [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
-    - [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
-
-### Identity and access | Governance
-
-Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows) operation on the [workflow](/graph/api/resources/identitygovernance-workflow) resource to create now up to 100 workflows that is an increase from the previous limit of 50.
-
-### Identity and access | Identity and sign-in
-
-- Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
-- Use a [custom authentication extension](/graph/api/resources/customauthenticationextension) to manage the configuration and get data from a system external to Microsoft Entra ID, such as a database, so to customize the authentication experience for users. This feature is available for both Microsoft Entra for workforce tenants and Microsoft Entra External ID.
-- To customize an authentication process, use an [authentication event listener](/graph/api/resources/authenticationEventListener) to manage listeners and handlers that trigger the execution of custom logic during the authentication experience. This feature is available for both Microsoft Entra for workforce tenants and Microsoft Entra External ID.
-- Multiple tenants in Microsoft Entra ID can now collaborate seamlessly as a single entity by using [multi-tenant organization APIs](/graph/api/resources/multitenantorganization-overview). Set up and manage a multi-tenant organization, and configure cross-tenant policies for multi-tenant organization tenants through policy templates.
-
-### Groups
-
-Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
-
-### Reports | Identity and access reports
-
-Added the **lastSuccessfulSignInDateTime** and **lastSuccessfulSignInRequestId** properties to the [signInActivity](/graph/api/resources/signinactivity) resource. Use the **lastSuccessfulSignInDateTime** property to get the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
-
-### Security | Legacy alerts
-
-The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
-
-### Sites and lists
-
-You can now:
-- [Track changes for SharePoint site](/graph/api/site-delta) resources.
-- [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
-
-Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.  
-
-### Users
-
-Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assign a sponsor](/graph/api/user-post-sponsors), [list sponsors](/graph/api/user-list-sponsors), and [remove a sponsor](/graph/api/user-delete-sponsors).
-
-## April 2024: New in preview only
-
-### Device and app management | Cloud PC
-
-- Use the **allotmentDisplayName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to divide tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
-- Deprecated the **type** property on [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) in favor of the **resourceType** property.
-- Deprecated the `shared` member on [cloudPcProvisioningType](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values) in favor of the `sharedByUser` member.
-- Added the `sharedbyEntraGroup` member as a new provisioning type under [cloudPcProvisioningType](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values).
-
-### Identity and access | Governance
-
-Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta&preserve-view=true) operation on the [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) resource to create now up to 100 workflows that is an increase from the previous limit of 50.
-
-### Identity and access | Network access
-
-Updated the definition of physical locations for customer premises equipment in the Global Secure Access services from the [branchSite resource type](/graph/api/resources/networkaccess-branchsite?view=graph-rest-beta&preserve-view=true) to the [remoteNetwork resource type](/graph/api/resources/networkaccess-remotenetwork?view=graph-rest-beta&preserve-view=true). The **branchSite** resource type and its associated properties, relationships, and endpoints are deprecated will be retired soon. Use the **remoteNetwork** resource type and its associated properties, relationships, and endpoints.
-
-### Identity and access | Partner customer administration
-
-As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use the [partner security alert](/graph/api/resources/partner-security-partnersecurityalert?view=graph-rest-beta&preserve-view=true) API in Microsoft Graph to detect fraudulent activities and misuse in your customer's Azure resources. Mitigating and responding to the alerts within 24 hours can help to significantly reduce the financial loss that your customers might incur during the compromise.
-
-### Industry data ETL
-
-The [outbound provisioning flow set](/graph/api/resources/industrydata-outboundprovisioningflowset?view=graph-rest-beta&preserve-view=true), which represents a collection of [outbound provisioning flows](/graph/api/resources/industrydata-provisioningflow?view=graph-rest-beta&preserve-view=true) used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID, is now generally available.
-
-An outbound provisioning flow set can contain no more than one of each provisioning flow configuration: [userProvisioningFlow](/graph/api/resources/industrydata-userprovisioningflow?view=graph-rest-beta&preserve-view=true), [classGroupProvisioingFlow](/graph/api/resources/industrydata-classgroupprovisioningflow?view=graph-rest-beta&preserve-view=true), [securityGroupProvisioingFlow](/graph/api/resources/industrydata-securitygroupprovisioningflow?view=graph-rest-beta&preserve-view=true), [administrativeUnitProvisioingFlow](/graph/api/resources/industrydata-administrativeunitprovisioningflow?view=graph-rest-beta&preserve-view=true).
-
-When calling the [industry data ETL API](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true), take advantage of more granular permissions added for reading or writing outbound provisioning flow set data by using the new permissions `IndustryData-OutboundFlow.Read.All` and `IndustryData-OutboundFlow.ReadWrite.All`.
-
-### People and workplace intelligence | People 
-
-Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) method on the **peopleAdminSettings** resource.
-
-### Reports | Identity and access reports
-
-- Added the `nativeAuth` member as a supported protocol type to the **authenticationProtocol** in the [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource.
-- The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
-
-### Security | Legacy alerts
-
-The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
-
-### Security | Threat intelligence indicator
-
-The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
-
-### Teamwork and communications | Calls and online meetings
-
-A town hall is a type of meeting available in Microsoft Teams. Whether you're marking milestone achievements within your organization or covering an election, town hall features enable you to provide high-quality production experiences to large audiences. You can create, publish, and cancel town hall meetings by using the following APIs:
-
-- [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true)
-- [virtualEvent: publish](/graph/api/virtualeventtownhall-publish?view=graph-rest-beta&preserve-view=true)
-- [virtualEvent: cancel](/graph/api/virtualeventtownhall-cancel?view=graph-rest-beta&preserve-view=true)
-
-For more information about town hall APIs, see [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true).
-
-### Teamwork and communications | Messaging
-
-[Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link. 
+- Use the **createdBy** property on [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to retrieve the entity that created the chat.
 
 ## Contribute to Microsoft Graph
 
