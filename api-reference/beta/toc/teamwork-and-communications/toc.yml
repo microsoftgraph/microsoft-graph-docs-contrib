@@ -458,6 +458,14 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+    - name: Virtual event registration question base
+      items:
+      - name: Virtual event registration question base
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List questions
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create questions
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
