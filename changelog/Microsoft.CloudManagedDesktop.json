@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcBulkDisasterRecoveryFailover",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcBulkDisasterRecoveryFailover](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailover](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailover?view=graph-rest-beta) resource type.",
           "Target": "cloudPcBulkDisasterRecoveryFailover"
         }
       ],
@@ -5123,7 +5123,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
-        },
+        },        
         {
           "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
