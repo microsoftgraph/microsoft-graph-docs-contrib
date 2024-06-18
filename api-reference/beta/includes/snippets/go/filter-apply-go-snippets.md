@@ -24,7 +24,7 @@ criterion2 := "criterion2-value"
 criteria.SetCriterion2(&criterion2) 
 color := "color-value"
 criteria.SetColor(&color) 
-operator := graphmodels.Newoperator()
+operator := graph.Newoperator()
 criteria.SetOperator(operator)
 icon := graphmodels.NewWorkbookIcon()
 set := "set-value"
@@ -34,7 +34,7 @@ icon.SetIndex(&index)
 criteria.SetIcon(icon)
 dynamicCriteria := "dynamicCriteria-value"
 criteria.SetDynamicCriteria(&dynamicCriteria) 
-values := graphmodels.NewJson()
+values := graph.Newvalues()
 criteria.SetValues(values)
 filterOn := "filterOn-value"
 criteria.SetFilterOn(&filterOn) 

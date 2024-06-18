@@ -3,7 +3,7 @@ title: "subcategoryTemplate resource type"
 description: "Represents the file plan descriptor of type subcategory for retention labels."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -18,10 +18,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List subcategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) objects and their properties.|
-|[Create subcategories](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
-|[Get subcategories](../api/security-subcategorytemplate-get.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
-|[Delete subcategories](../api/security-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[List](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) objects and their properties.|
+|[Create](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[Get](../api/security-subcategorytemplate-get.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[Delete](../api/security-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "custodian resource type"
 description: "In the context of eDiscovery, represents a user and all of their digital assets, such as email and documents."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,12 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List custodians](../api/ediscovery-case-list-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection|Get a list of **custodian** objects and their properties.|
-|[Create custodian](../api/ediscovery-case-post-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Create a new **custodian** object.|
-|[Get custodian](../api/ediscovery-custodian-get.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Read the properties and relationships of a **custodian** object.|
-|[Update custodian](../api/ediscovery-custodian-update.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Update the properties of a **custodian** object.|
-|[release](../api/ediscovery-custodian-release.md)|None|Release a custodian from a case.|
-|[activate](../api/ediscovery-custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
+|[List](../api/ediscovery-case-list-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection|Get a list of **custodian** objects and their properties.|
+|[Create](../api/ediscovery-case-post-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Create a new **custodian** object.|
+|[Get](../api/ediscovery-custodian-get.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Read the properties and relationships of a **custodian** object.|
+|[Update](../api/ediscovery-custodian-update.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Update the properties of a **custodian** object.|
+|[Release](../api/ediscovery-custodian-release.md)|None|Release a custodian from a case.|
+|[Activate](../api/ediscovery-custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
 |[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the **siteSource** resources associated with the custodian.|
 |[Create siteSources](../api/ediscovery-custodian-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new **siteSource** object.|
 |[List unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)|[microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Get the list of **unifiedGroupSource** resources associated with the custodian.|

@@ -20,8 +20,8 @@ Inherits from [policyBase](../resources/policybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get externalIdentitiesPolicy](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
-|[Update externalIdentitiesPolicy](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Get](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Update](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

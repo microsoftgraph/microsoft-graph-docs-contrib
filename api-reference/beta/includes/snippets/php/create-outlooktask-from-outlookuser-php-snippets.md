@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\Outlook\Tasks\TasksRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\OutlookTask;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Outlook\Tasks\TasksRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\OutlookTask;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

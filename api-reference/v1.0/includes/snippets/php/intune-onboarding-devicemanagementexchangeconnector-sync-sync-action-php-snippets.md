@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\SyncPostRequestBody;
+use Microsoft\Graph\Generated\DeviceManagement\ExchangeConnectors\Item\Sync\SyncPostRequestBody;
+use Microsoft\Graph\Generated\Models\DeviceManagementExchangeConnectorSyncType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

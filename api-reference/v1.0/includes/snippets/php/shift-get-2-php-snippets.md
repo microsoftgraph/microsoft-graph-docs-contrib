@@ -10,8 +10,10 @@ use Microsoft\Graph\Generated\Models\ShiftPreferences;
 use Microsoft\Graph\Generated\Models\ShiftAvailability;
 use Microsoft\Graph\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\RecurrencePatternType;
 use Microsoft\Graph\Generated\Models\DayOfWeek;
 use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\RecurrenceRangeType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

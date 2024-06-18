@@ -21,8 +21,8 @@ Inherits from [gcpIdentity](../resources/gcpidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpUsers](../api/gcpassociatedidentities-list-users.md)|[gcpUser](../resources/gcpuser.md) collection|Get a list of the [gcpUser](../resources/gcpuser.md) objects and their properties.|
-|[Get gcpUser](../api/gcpuser-get.md)|[gcpUser](../resources/gcpuser.md)|Read the properties and relationships of a [gcpUser](../resources/gcpuser.md) object.|
+|[List](../api/gcpassociatedidentities-list-users.md)|[gcpUser](../resources/gcpuser.md) collection|Get a list of the [gcpUser](../resources/gcpuser.md) objects and their properties.|
+|[Get](../api/gcpuser-get.md)|[gcpUser](../resources/gcpuser.md)|Read the properties and relationships of a [gcpUser](../resources/gcpuser.md) object.|
 
 ## Properties
 |Property|Type|Description|

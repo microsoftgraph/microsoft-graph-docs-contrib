@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Synchronization error
 ---
 
 # educationSynchronizationError resource type
@@ -19,7 +20,7 @@ Represents an error during school data profile validation and/or sync. A unique 
 
 | Method                                                                     | Return Type                                  | Description                                                           |
 | :------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------- |
-| [Get synchronization errors](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection | Returns the list of synchronization errors associated with a profile. |
+| [Get](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection | Returns the list of synchronization errors associated with a profile. |
 
 ## Properties
 

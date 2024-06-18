@@ -3,7 +3,7 @@ title: "redundancyDetectionSettings resource type"
 description: "Represents redundancy settings for an eDiscovery case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

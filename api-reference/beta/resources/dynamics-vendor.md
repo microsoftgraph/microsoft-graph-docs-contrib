@@ -22,8 +22,8 @@ Represents a vendor in Dynamics 365 Business Central.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get vendor](../api/dynamics-vendor-get.md)|vendor|Gets a vendor object.|
-|[Post vendor](../api/dynamics-create-vendor.md)|vendor|Creates a vendor object.|
-|[Patch vendor](../api/dynamics-vendor-update.md)|vendor|Updates a vendor object.|
+|[Create vendor](../api/dynamics-create-vendor.md)|vendor|Creates a vendor object.|
+|[Update vendor](../api/dynamics-vendor-update.md)|vendor|Updates a vendor object.|
 |[Delete vendor](../api/dynamics-vendor-delete.md)|none|Deletes a vendor object.|
 
 ## Properties

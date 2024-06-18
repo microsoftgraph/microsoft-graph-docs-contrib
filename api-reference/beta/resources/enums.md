@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### fileStorageContainerOwnershipType values
+
+| Member             |
+|:-------------------|
+| tenantOwned        |
+| unknownfuturevalue |
+
 ### groupAccessType values
 
 | Member             |
@@ -27,6 +34,15 @@ Namespace: microsoft.graph
 | inactive           |
 | active             |
 | unknownfuturevalue |
+
+### siteLockState values
+
+| Value         | 
+|:--------------|
+| unlocked      | 
+| lockedReadOnly |
+
+
 
 ### userDefaultAuthenticationMethod values
 
@@ -107,9 +123,10 @@ Namespace: microsoft.graph
 
 | Member             |
 | :----------------- |
-| Required           |
-| Recommeded         |
-| UnknownFutureValue |
+| required           |
+| recommeded         |
+| unknownFutureValue |
+| peerRecommeded     |
 
 ### courseStatus values
 
@@ -2843,6 +2860,15 @@ Possible values for user account types (group membership), per Windows definitio
 | passwordChange       |
 | unknownFutureValue   |
 
+### perUserMfaState values 
+
+|Member|
+|:---|
+|disabled|
+|enforced|
+|enabled|
+|unknownFutureValue|
+
 ### conditionalAccessRule values
 
 | Member                            |
@@ -3122,6 +3148,35 @@ Possible values for user account types (group membership), per Windows definitio
 | thumbnail          | Image column.                                      |
 | approvalStatus     | Content approval status column.                    |
 | unknownFutureValue | unknownFuturevalue                                 |
+
+### contentModelType values 
+
+|Member|
+|:---|
+|teachingMethod|
+|layoutMethod|
+|freeformSelectionMethod|
+|prebuiltContractModel|
+|prebuiltInvoiceModel|
+|prebuiltReceiptModel|
+|unknownFutureValue|
+
+### documentProcessingJobStatus values 
+
+|Member|
+|:---|
+|inProgress|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### documentProcessingJobType values 
+
+|Member|
+|:---|
+|File|
+|Folder|
+|UnknownFutureValue|
 
 ### connectedOrganizationState values
 
@@ -4872,3 +4927,21 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### compliantNetworkType values 
+
+|Member|
+|:---|
+|allTenantCompliantNetworks|
+|unknownFutureValue|
+
+### meetingRequestType values 
+
+|Member|
+|:---|
+|none|
+|newMeetingRequest|
+|fullUpdate|
+|informationalUpdate|
+|silentUpdate|
+|outdated|
+|principalWantsCopy|

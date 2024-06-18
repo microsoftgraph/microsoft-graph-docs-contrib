@@ -3,7 +3,7 @@ title: "profilePhoto resource type"
 description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "kristinmcleod"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -17,9 +17,9 @@ Represents a profile photo of a user, group, team, or Outlook contact accessed f
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
-|[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
-|[Delete profilePhoto](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the profile photo _of a user or group_.|
+|[Get team photo](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
+|[Update team photo](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Delete photo](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the profile photo _of a user or group_.|
 
 > [!NOTE]
 > - Managing users' photos using the Microsoft Graph API is currently _not supported in Azure AD B2C tenants_.

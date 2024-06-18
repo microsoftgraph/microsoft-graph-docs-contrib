@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.software_oath_authentication_method_configuration import SoftwareOathAuthenticationMethodConfiguration
+from msgraph.generated.models.authentication_method_state import AuthenticationMethodState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

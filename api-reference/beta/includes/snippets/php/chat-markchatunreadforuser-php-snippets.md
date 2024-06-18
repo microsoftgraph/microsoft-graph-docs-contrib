@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\MarkChatUnreadForUserPostRequestBody;
-use Microsoft\Graph\Generated\Models\TeamworkUserIdentity;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Chats\Item\MarkChatUnreadForUser\MarkChatUnreadForUserPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkUserIdentity;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

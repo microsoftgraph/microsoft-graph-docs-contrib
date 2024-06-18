@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
+toc.title: Named item
 ---
 
 # workbookNamedItem resource type
@@ -18,12 +19,12 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem-add.md)|[workbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope.|
+|[Add named item](../api/nameditem-add.md)|[workbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope.|
 |[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[workbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
-|[Get NamedItem](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |Read properties and relationships of namedItem object.|
-|[Update](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)	|Update NamedItem object. |
-|[Range](../api/nameditem-range.md)|[Range](workbookrange.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type isn't a range.|
-|[List](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get namedItem object collection. |
+|[Get named item](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |Read properties and relationships of namedItem object.|
+|[Update named item](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)	|Update NamedItem object. |
+|[List range](../api/nameditem-range.md)|[Range](workbookrange.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type isn't a range.|
+|[List named item](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get namedItem object collection. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -3,7 +3,7 @@ title: "customClaimTransformation resource type"
 description: "Represents an abstract type for a single input attribute."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

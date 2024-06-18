@@ -3,6 +3,100 @@
     {
       "ChangeList": [
         {
+          "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-get?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-update?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-21T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistration",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [meetingRegistration](https://learn.microsoft.com/graph/api/resources/meetingregistration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "meetingRegistration"
+        }
+      ],
+      "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-20T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ef6a80cc-2864-4914-ba3c-ba01cda13811",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-update?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource. Currently, this operation only supports updating presenters for a [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta).",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "ef6a80cc-2864-4914-ba3c-ba01cda13811",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for retrieving one or more presenters for a [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) in the [List](https://learn.microsoft.com/en-us/graph/api/virtualevent-list-presenters?view=graph-rest-beta) and [Get](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-get?view=graph-rest-beta) operations of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "ef6a80cc-2864-4914-ba3c-ba01cda13811",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for creating a presenter for a [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) in the [Create](https://learn.microsoft.com/en-us/graph/api/virtualevent-post-presenters?view=graph-rest-beta) operation of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "ef6a80cc-2864-4914-ba3c-ba01cda13811",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added support for deleting a presenter from a [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) in the [Delete](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-delete?view=graph-rest-beta) operation of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        }
+      ],
+      "Id": "ef6a80cc-2864-4914-ba3c-ba01cda13811",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-20T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
           "ApiChange": "Relationship",
           "ChangedApiName": "registrationConfiguration",
@@ -59,22 +153,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-delete?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
           "Target": "virtualEventPresenter"
-        },
-        {
-          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
-          "ApiChange": "Method",
-          "ChangedApiName": "cancel",
-          "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource. Currently, you can only use the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method in combination with the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
-          "Target": "virtualEvent"
-        },
-        {
-          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
-          "ApiChange": "Method",
-          "ChangedApiName": "publish",
-          "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource. Currently, you can only use the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method in combination with the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
-          "Target": "virtualEvent"
         },
         {
           "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",

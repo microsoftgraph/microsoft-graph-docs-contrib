@@ -16,8 +16,8 @@ The [connection](externalconnectors-externalconnection.md) schema determines how
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create schema](../api/externalconnectors-externalconnection-patch-schema.md)|[schema](../resources/externalconnectors-schema.md)|Create a new [schema](../resources/externalconnectors-schema.md) object.|
-|[Get schema](../api/externalconnectors-schema-get.md)|[schema](../resources/externalconnectors-schema.md)|Read the properties and relationships of a [schema](../resources/externalconnectors-schema.md) object.|
+|[Create](../api/externalconnectors-externalconnection-patch-schema.md)|[schema](../resources/externalconnectors-schema.md)|Create a new [schema](../resources/externalconnectors-schema.md) object.|
+|[Get](../api/externalconnectors-schema-get.md)|[schema](../resources/externalconnectors-schema.md)|Read the properties and relationships of a [schema](../resources/externalconnectors-schema.md) object.|
 
 ## Properties
 |Property|Type|Description|

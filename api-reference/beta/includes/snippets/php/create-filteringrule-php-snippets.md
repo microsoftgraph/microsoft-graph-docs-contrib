@@ -5,10 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\WebCategoryFilteringRule;
-use Microsoft\Graph\Generated\Models\RuleDestination;
-use Microsoft\Graph\Generated\Models\WebCategory;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\WebCategoryFilteringRule;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\NetworkDestinationType;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RuleDestination;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\WebCategory;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

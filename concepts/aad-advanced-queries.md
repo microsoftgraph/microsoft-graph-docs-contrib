@@ -198,28 +198,28 @@ The following table summarizes support for `$orderby` by properties of directory
 
 | Directory object   | Property name                 | $orderby |
 | ------------------ | ----------------------------- | -------- |
-| administrativeUnit | createdDateTime               | ![][AQP] |
-| administrativeUnit | deletedDateTime               | ![][AQP] |
-| administrativeUnit | displayName                   | ![][AQP] |
-| application        | createdDateTime               | ![][AQP] |
-| application        | deletedDateTime               | ![][AQP] |
-| application        | displayName                   | ![][AQP] |
-| orgContact         | createdDateTime               | ![][AQP] |
-| orgContact         | displayName                   | ![][AQP] |
-| device             | approximateLastSignInDateTime | ![][AQP] |
-| device             | createdDateTime               | ![][AQP] |
-| device             | deletedDateTime               | ![][AQP] |
-| device             | displayName                   | ![][AQP] |
-| group              | deletedDateTime               | ![][AQP] |
-| group              | displayName                   | ![][RDS] |
-| servicePrincipal   | createdDateTime               | ![][AQP] |
-| servicePrincipal   | deletedDateTime               | ![][AQP] |
-| servicePrincipal   | displayName                   | ![][AQP] |
-| user               | createdDateTime               | ![][AQP] |
-| user               | deletedDateTime               | ![][AQP] |
-| user               | displayName                   | ![][RDS] |
-| user               | userPrincipalName             | ![][RDS] |
-| [*all others*]     | [*all others*]                | ![][NS]  |
+| administrativeUnit | createdDateTime               | ![Advanced][AQP] |
+| administrativeUnit | deletedDateTime               | ![Advanced][AQP] |
+| administrativeUnit | displayName                   | ![Advanced][AQP] |
+| application        | createdDateTime               | ![Advanced][AQP] |
+| application        | deletedDateTime               | ![Advanced][AQP] |
+| application        | displayName                   | ![Advanced][AQP] |
+| orgContact         | createdDateTime               | ![Advanced][AQP] |
+| orgContact         | displayName                   | ![Advanced][AQP] |
+| device             | approximateLastSignInDateTime | ![Advanced][AQP] |
+| device             | createdDateTime               | ![Advanced][AQP] |
+| device             | deletedDateTime               | ![Advanced][AQP] |
+| device             | displayName                   | ![Advanced][AQP] |
+| group              | deletedDateTime               | ![Advanced][AQP] |
+| group              | displayName                   | ![Default][RDS] |
+| servicePrincipal   | createdDateTime               | ![Advanced][AQP] |
+| servicePrincipal   | deletedDateTime               | ![Advanced][AQP] |
+| servicePrincipal   | displayName                   | ![Advanced][AQP] |
+| user               | createdDateTime               | ![Advanced][AQP] |
+| user               | deletedDateTime               | ![Advanced][AQP] |
+| user               | displayName                   | ![Default][RDS] |
+| user               | userPrincipalName             | ![Default][RDS] |
+| [*all others*]     | [*all others*]                | ![NotSupported][NS]  |
 
 ## Error handling for advanced queries on directory objects
 
