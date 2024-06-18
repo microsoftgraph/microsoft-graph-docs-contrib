@@ -134,6 +134,9 @@ Content-type: application/json
   }
 }
 ```
+### Remarks
+
+When a driveItem is moved within the same site or container, all existing sharing links will continue to work. If the driveItem is moved to a different site or container, existing sharing links will no longer work.
 
 ## Error responses
 
