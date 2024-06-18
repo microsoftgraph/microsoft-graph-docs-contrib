@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: shared resource type
 ms.localizationpriority: medium
-description: "The shared resource indicates a driveItem has been shared with others."
+description: "Indicates that a drive item has been shared with others."
 ms.subservice: onedrive
 doc_type: resourcePageType
 ---
@@ -11,10 +11,28 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **shared** resource indicates a **driveItem** has been shared with others.
-The resource includes information about how the item is shared.
+Indicates that a [drive item](driveitem.md) was shared with others and includes information about how the item was shared.
 
-If a [**driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.
+If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was shared.
+
+## Properties
+
+| Property       | Type                          | Description
+| :------------- |:------------------------------|:----------------------------
+| owner          | [IdentitySet](identityset.md) | The identity of the owner of the shared item. Read-only.|
+| sharedBy       | [identitySet](identityset.md) | The identity of the user who shared the item. Read-only.|
+| sharedDateTime | DateTimeOffset                | The UTC date and time when the item was shared. Read-only.|
+| scope (deprecated)| String                     | Indicates the scope of how the item is shared. The possible values are: `anonymous`, `organization`, or `users`. Read-only.|
+
+[!INCLUDE [scope-property-deprecated](../../includes/shared-scope-property-deprecate.md)]
+
+### scope property values
+
+| Value          | Description                                                                           |
+|:---------------|:--------------------------------------------------------------------------------------|
+| `anonymous`    | The item is shared by using a link that works for anyone with the link.               |
+| `organization` | The item is shared by using a link that works for anyone in the owner's organization. |
+| `users`        | The item is shared with specific users only.                                          |
 
 ## JSON representation
 
@@ -33,26 +51,6 @@ If a [**driveitem**](driveitem.md) has a non-null **shared** facet, the item has
 }
 ```
 
-## Properties
-
-| Property       | Type                          | Description
-| :------------- |:------------------------------|:----------------------------
-| owner          | [IdentitySet](identityset.md) | The identity of the owner of the shared item. Read-only.
-| scope          | String                        | Indicates the scope of how the item is shared: `anonymous`, `organization`, or `users`. Read-only.
-| sharedBy       | [identitySet](identityset.md) | The identity of the user who shared the item. Read-only.
-| sharedDateTime | DateTimeOffset                | The UTC date and time when the item was shared. Read-only.
-
-## Scope options
-
-| Value          | Description                                                                           |
-|:---------------|:--------------------------------------------------------------------------------------|
-| `anonymous`    | The item is shared by using a link that works for anyone with the link.               |
-| `organization` | The item is shared by using a link that works for anyone in the owner's organization. |
-| `users`        | The item is shared with specific users only.                                          |
-
-## Remarks
-
-For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",
