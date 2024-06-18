@@ -87,6 +87,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including primary region, secondary region and capability type. Default is null, which means the Cloud PC does not have cross region disaster recovery status available. Read Only. |
 
 ### cloudPcDiskEncryptionState values
 
@@ -195,6 +196,7 @@ The following JSON representation shows the resource type.
   "servicePlanType": "String",
   "status": "String",
   "userAccountType": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "disasterRecoveryCapability": "String"
 }
 ```
