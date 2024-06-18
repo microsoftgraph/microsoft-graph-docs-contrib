@@ -64,11 +64,8 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ## Examples
 
 ### Request
-
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.retrievecrossregiondisasterrecoveryreport"
@@ -90,7 +87,6 @@ Content-length: 199
 
 ### Response
 The following example shows the response.
-
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
