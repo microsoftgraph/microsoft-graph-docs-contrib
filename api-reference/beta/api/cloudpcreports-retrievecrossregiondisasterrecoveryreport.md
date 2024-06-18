@@ -89,8 +89,9 @@ Content-length: 199
 ```
 
 
-### Response
+---
 
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -103,6 +104,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 {
     "TotalRowCount": 1,
     "Schema": [
