@@ -16,6 +16,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## June 2024: New and generally available
+
+### Change notifications
+
+Enabled change notifications support to the methods to [list](/graph/api/subscription-list), [get](/graph/api/subscription-get), [create](/graph/api/subscription-post-subscriptions), [reauthorize](/graph/api/subscription-reauthorize), [update](/graph/api/subscription-update), and [delete](/graph/api/subscription-delete) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [shift](/graph/api/resources/shift), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), and [timeOffRequest](/graph/api/resources/timeoffrequest).
+
+## June 2024: New in preview only
+
+### Change notifications
+
+Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), and [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true).
+
+### Tasks and plans
+
+[Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
+
 ## May 2024: New and generally available
 
 ### Identity and access | Identity and sign-in
@@ -40,10 +56,26 @@ The following properties are deprecated:
 
 ## May 2024: New in preview only
 
+### Backup storage
+
+The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
+
 ### Change notifications
 
 - Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [user-scoped chat notifications](/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).
 - Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the **resource** property in the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource. You can use the [notifyOnUserSpecificProperties](/graph/teams-changenotifications-chat#notification-payloads-for-user-specific-properties) parameter when you subscribe either to [user-scoped chat notifications](/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).
+
+### Device and app management | Cloud PC
+
+[Create a snapshot](/graph/api/cloudpc-createsnapshot?view=graph-rest-beta&preserve-view=true) for a specific Cloud PC device.
+
+Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+- [getCloudPcReviewStatus](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [retrieveReviewStatus](/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta&preserve-view=true) API insted.
+- [setCloudPcReviewStatus](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [setReviewStatus](/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta&preserve-view=true) API instead.
+- [resizeCloudPc](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [resize](/graph/api/cloudpc-resize?view=graph-rest-beta&preserve-view=true) API instead.
+- [bulkReprovisionCloudPc](/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkReprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [bulkRestoreCloudPc](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [bulkResize](/graph/api/cloudpc-bulkresize?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 
 ### Identity and access | Identity and sign-in
 

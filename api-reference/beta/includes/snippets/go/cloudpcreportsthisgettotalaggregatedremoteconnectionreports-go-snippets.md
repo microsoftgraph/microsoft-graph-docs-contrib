@@ -29,7 +29,7 @@ select := []string {
 	"TotalUsageInHour",
 	"LastActiveTime",
 	"PcType",
-	"CreatedDate"
+	"CreatedDate",
 }
 requestBody.SetSelect(select)
 

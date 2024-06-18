@@ -105,8 +105,6 @@ Content-Type: application/json
 
 To get change notifications for all changes across all chats a particular user is part of, subscribe to `/users/{user-id}/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification and [providing the **notifyOnUserSpecificProperties** query string parameter](#notification-payloads-for-user-specific-properties) in user context.
 
-[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
-
 ### Permissions
 
 | Permission type                        | Permissions (from least to most privileged)           |

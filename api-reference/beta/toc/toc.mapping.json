@@ -1,6 +1,20 @@
 {
   "tocNodes": [
     {
+      "name": "Users",
+      "overview": "../../resources/users.md",
+      "resources": [
+        "user"
+      ]
+    },
+    {
+      "name": "Groups",
+      "overview": "../../resources/groups-overview.md",
+      "resources": [
+        "group"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "shouldSort": true,
@@ -73,6 +87,47 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "serviceApp",
+        "protectionPolicyBase",
+        "sharePointProtectionPolicy",
+        "exchangeProtectionPolicy",
+        "oneDriveForBusinessProtectionPolicy",
+        "protectionUnitBase",
+        "siteProtectionUnit",
+        "mailboxProtectionUnit",
+        "driveProtectionUnit",
+        "protectionRuleBase",
+        "siteProtectionRule",
+        "mailboxProtectionRule",
+        "driveProtectionRule",
+        "restorePoint",
+        "restoreSessionBase",
+        "sharePointRestoreSession",
+        "exchangeRestoreSession",
+        "oneDriveForBusinessRestoreSession",
+        "restoreArtifactBase",
+        "siteRestoreArtifact",
+        "mailboxRestoreArtifact",
+        "driveRestoreArtifact"
+      ],
+      "complexTypes": [
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
       ]
     },
     {
@@ -1298,7 +1353,8 @@
                   "name": "Named location",
                   "resources": [
                     "countryNamedLocation",
-                    "ipNamedLocation"
+                    "ipNamedLocation",
+                    "compliantNetworkNamedLocation"
                   ]
                 }
               ]
@@ -1466,7 +1522,6 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }
@@ -1742,9 +1797,7 @@
       "name": "Industry data ETL (preview)",
       "overview": "../../resources/industrydata-overview.md",
       "resources": [
-        "microsoft.graph.industryData.azureDataLakeConnector",
         "microsoft.graph.industryData.fileValidateOperation",
-        "microsoft.graph.industryData.inboundFileFlow",
         "microsoft.graph.industryData.inboundFlow",
         "microsoft.graph.industryData.industryDataConnector",
         "microsoft.graph.industryData.industryDataRun",
@@ -1761,9 +1814,11 @@
         "microsoft.graph.industryData.adminUnitCreationOptions",
         "microsoft.graph.industryData.aggregatedInboundStatistics",
         "microsoft.graph.industryData.basicFilter",
+        "microsoft.graph.industryData.credential",
         "microsoft.graph.industryData.classGroupConfiguration",
         "microsoft.graph.industryData.enrollmentMappings",
         "microsoft.graph.industryData.fileDataConnector",
+        "microsoft.graph.industryData.fileFormatReferenceValue",
         "microsoft.graph.industryData.fileUploadSession",
         "microsoft.graph.industryData.filter",
         "microsoft.graph.industryData.identifierTypeReferenceValue",
@@ -1775,6 +1830,9 @@
         "microsoft.graph.industryData.industryDataRunEntityCountMetric",
         "microsoft.graph.industryData.industryDataRunRoleCountMetric",
         "microsoft.graph.industryData.industryDataRunStatistics",
+        "microsoft.graph.industryData.oAuth1ClientCredential",
+        "microsoft.graph.industryData.oAuth2ClientCredential",
+        "microsoft.graph.industryData.oAuthClientCredential",
         "microsoft.graph.industryData.outboundFlowActivity",
         "microsoft.graph.industryData.passwordSettings",
         "publicError",
@@ -1794,6 +1852,20 @@
         "microsoft.graph.industryData.yearReferenceValue"
       ],
       "childNodes": [
+        {
+          "name": "Inbound flow",
+          "resources": [
+            "microsoft.graph.industryData.inboundApiFlow",
+            "microsoft.graph.industryData.inboundFileFlow"
+          ]
+        },
+        {
+          "name": "Industry data connector",
+          "resources": [
+            "microsoft.graph.industryData.azureDataLakeConnector",
+            "microsoft.graph.industryData.oneRosterApiDataConnector"
+          ]
+        },
         {
           "name": "Provisioning flow",
           "resources": [
@@ -2174,6 +2246,7 @@
           "name": "Attack simulation and training",
           "resources": [
             "simulation",
+            "trainingCampaign",
             "attackSimulationOperation",
             "endUserNotification",
             "landingPage",
@@ -2321,6 +2394,8 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
+            "microsoft.graph.security.cloudLogonRequestEvidence",
+            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",
@@ -2380,6 +2455,14 @@
             "webPart"
           ],
           "childNodes": [
+            {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
             {
               "name": "Web part",
               "resources": [
