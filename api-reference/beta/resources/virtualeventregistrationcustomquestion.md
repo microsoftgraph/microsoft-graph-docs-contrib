@@ -31,7 +31,8 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 ### virtualEventRegistrationQuestionAnswerInputType values
 
 The following shows the supported types of answer input for a custom registration question.
-| Value | Description |
+
+| Member | Description |
 | ----- | ----------- |
 | text | The registration question accepts single-line text. |
 | multilineText | The registration question accepts multi-line text. |
