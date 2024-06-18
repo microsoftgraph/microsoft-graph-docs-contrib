@@ -412,8 +412,14 @@ items:
         href: ../../resources/virtualeventregistration.md
       - name: List
         href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventregistration-post.md
+      - name: List virtual event registration session
+        href: ../../api/virtualeventregistration-list-virtualeventsession.md  
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
     - name: Virtual event webinar registration configuration
       items:
       - name: Virtual event webinar registration configuration
