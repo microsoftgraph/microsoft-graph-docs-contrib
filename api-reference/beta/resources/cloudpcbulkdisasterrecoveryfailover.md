@@ -3,7 +3,6 @@ title: "cloudPcBulkDisasterRecoveryFailover resource type"
 description: "Represents the entity that performs a bulk disasterRecoveryFailover action with executeAction API."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 

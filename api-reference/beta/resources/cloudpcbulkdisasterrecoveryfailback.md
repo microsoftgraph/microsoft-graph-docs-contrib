@@ -1,9 +1,8 @@
 ---
 title: "cloudPcBulkDisasterRecoveryFailback resource type"
 description: "Represents the entity that performs a bulk disasterRecoveryFailback action with executeAction API."
-author: "Hanhan-Xie"
+author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
