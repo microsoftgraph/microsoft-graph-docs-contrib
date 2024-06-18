@@ -77,6 +77,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 ``` http
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
   "displayName": "What's your job position?",
@@ -103,6 +104,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
   "id": "f3115d4c-9896-42fc-a649-8ca5e3c3a43f",
@@ -132,6 +134,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 ``` http
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
   "label": "street"
@@ -151,6 +154,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
   "id": "7a852983-013a-4062-9e97-f784c6a57ec8",
