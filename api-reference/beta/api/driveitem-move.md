@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
-This is a special case of the [Update](driveitem-update.md) method.
+The move is a special case of the [Update](driveitem-update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
-Items cannot be moved between [Drives](../resources/drive.md) using this request.
+Items can't be moved between [Drives](../resources/drive.md) using this request.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,16 +44,15 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
 In the request body, supply the new value for the **parentReference** property.
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance you shouldn't include existing values that haven't changed.
+Existing properties that aren't included in the request body maintains their previous values or the properties are recalculated based on changes to other property values.
+For optimal performance, include only the values that change and omit the unchanged ones.
 
-**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.
-Your app needs to provide the actual ID of the root folder for the parent reference.
+**Note:**  Your application must use the actual ID of the root folder as the parent reference instead of the `"id: root"` syntax when items are moved to the root of a drive.
 
 ## Response
 
@@ -61,7 +60,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 ## Example
 
-This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
+This example moves an item specified by `{item-id}` into a folder in the user's drive with the ID `new-parent-folder-id`.
 
 
 # [HTTP](#tab/http)
@@ -136,7 +135,7 @@ Content-type: application/json
 ```
 ### Remarks
 
-When a driveItem is moved within the same site or container, all existing sharing links will continue to work. If the driveItem is moved to a different site or container, existing sharing links will no longer work.
+When a driveItem is moved within the same site or container, all existing sharing links continue to work. If the driveItem is moved to a different site or container, existing sharing links no longer work.
 
 ## Error responses
 
