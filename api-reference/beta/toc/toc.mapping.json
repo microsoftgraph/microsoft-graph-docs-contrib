@@ -2683,10 +2683,10 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
-                "virtualEventWebinar",
-                "virtualEventRegistrationQuestionBase"
+                "virtualEventWebinar"
               ]
             }
           ]
