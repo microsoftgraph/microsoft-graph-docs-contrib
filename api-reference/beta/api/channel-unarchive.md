@@ -64,7 +64,7 @@ The following example shows a request to unarchive a channel.
   "name": "unarchive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/unarchive
+POST https://graph.microsoft.com/beta/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 # [C#](#tab/csharp)
@@ -110,7 +110,7 @@ The following example shows the response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{team-id}/operations/{operation-id}
+Location: /teams/okon274d-be71-47e8-8763-04405c2aaf8/operations/n4n3i4-be73-45e8-6663-043435jn28
 Content-Type: text/plain
 Content-Length: 0
 ```
@@ -126,7 +126,7 @@ The following example shows a request to unarchive a channel that fails because 
   "name": "unarchive_channel_on_archived_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/unarchive
+POST https://graph.microsoft.com/beta/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response

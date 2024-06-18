@@ -44,7 +44,7 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json  |
+| Content-Type  | application/json (Optional)  |
 
 ## Request body
 
@@ -79,7 +79,7 @@ The following example shows a request to archive a channel.
   "name": "archive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/archive
+POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
@@ -92,7 +92,7 @@ The following example shows the response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{team-id}/operations/{operation-id}
+Location: /teams/okon274d-be71-47e8-8763-04405c2aaf8/operations/Pojn274d-b798-47e8-8763-04724922aaf8
 Content-Type: text/plain
 Content-Length: 0
 ```
@@ -108,7 +108,7 @@ The following example shows a request to archive a channel that fails because th
   "name": "archive_channel_on_archived_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/archive
+POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
