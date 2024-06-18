@@ -1,5 +1,5 @@
 ---
-title: "Create questions"
+title: "Create question"
 description: "Create a registration question for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create questions
+# Create question
 Namespace: microsoft.graph
 
 Create a [registration](../resources/virtualeventregistration.md) question for a [webinar](../resources/virtualeventwebinar.md).
 
-You can create either a [predefined registration question](../resources/virtualEventRegistrationPredefinedQuestion.md) or a [custom registration question](../resources/virtualEventRegistrationCustomQuestion.md).
+You can create either a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,7 +54,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 |answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
 |answerInputType|virtualEventRegistrationQuestionAnswerInputType|Input type of the registration question answer. The supported values are `text`, `multilineText`, `singleChoice`, `multiChoice`, and `boolean`.|
 |displayName|String|Display name of the registration question.|
-|isRequired|Boolean| Indicates whether the question is required to answer. Default value is `false`.|
+|isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
 
 ## Response
 
