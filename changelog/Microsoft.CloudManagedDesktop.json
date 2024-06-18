@@ -2,8 +2,6 @@
   "changelog": [
     {
       "ChangeList": [
-        {
-          "ChangeList": [
               {
                   "Id": "7BD889DF-F588-E890-E1DA-827C307B4CAC",
                   "ApiChange": "Resource",
@@ -28,6 +26,8 @@
           "WorkloadArea": "Devices and apps",
           "SubArea": "Cloud PC"
       },
+      {
+        "ChangeList": [
         {
           "Id": "a4055d6d-2123-4e14-9603-abe10f33fe8a",
           "ApiChange": "Enum type",
