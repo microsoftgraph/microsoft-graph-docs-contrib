@@ -21,7 +21,12 @@ Retrieve the properties of an [applicationTemplate](../resources/applicationtemp
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "applicationtemplate_get" } -->
+<!-- {
+  "blockType": "permissions",
+  "name": "applicationtemplate-get-permissions"
+}
+-->
+
 [!INCLUDE [permissions-table](../includes/permissions/applicationtemplate-get-permissions.md)]
 
 Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
@@ -30,8 +35,8 @@ Additional permissions aren't required to call this API, as long as your applica
 
 <!-- { "blockType": "ignored" } -->
 
-```http
-GET /applicationTemplates/{id}
+``` http
+GET /applicationTemplates/{applicationTemplatesId}
 ```
 
 ## Optional query parameters

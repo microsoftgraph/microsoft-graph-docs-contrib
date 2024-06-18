@@ -4945,3 +4945,14 @@ Possible values for user account types (group membership), per Windows definitio
 |silentUpdate|
 |outdated|
 |principalWantsCopy|
+
+### uriUsageType values 
+
+|Member|
+|:---|
+|redirectUri|
+|identifierUri|
+|loginUrl|
+|logoutUrl|
+|unknownFutureValue|
+
