@@ -1,6 +1,6 @@
 ---
 title: "documentation resource type"
-description: "Represents a key value pair mapping of name of documents and the link to find the documents."
+description: "Returns a key-value pair containing the name of documentation to aid in investigation of the alert and a link to the documentation."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key value pair mapping of name of documents and the link to find the documents.
+Returns a key-value pair containing the name of documentation to aid in investigation of the alert and a link to the documentation.
 
 
 Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).

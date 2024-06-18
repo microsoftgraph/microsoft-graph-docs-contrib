@@ -25,12 +25,13 @@ The following table lists some common requests that you can use with this API.
 |  Scenarios  | API |
 | ----------- | ----------- |
 | Retrieve all alerts of a Microsoft Entra tenant | [List alerts](../api/healthmonitoring-healthmonitoringroot-list-alerts.md) |
-| Retrieve an alert and its associated data, including the impacted resources. | [Get alert](../api/healthmonitoring-alert-get.md) |
+| Retrieve an alert and its associated data, including the impacted resources | [Get alert](../api/healthmonitoring-alert-get.md) |
 | Update an alert | [Update alert](../api/healthmonitoring-alert-update.md) |
 | Retrieve alert configurations for all alert types | [List alert configurations](../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md) |
 | Retrieve alert configuration for an alert type | [Get alert configuration](../api/healthmonitoring-alertconfiguration-get.md) |
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
 
-
 ## Related content
-**TODO: anything we'd like to add here?**
+
+* [What is Microsoft Entra Health?](/entra/identity/monitoring-health/concept-microsoft-entra-health)
+* [ServiceActivity API documentation for retrieving the health metric streams upon which alerting is built](../resources/serviceactivity.md)
