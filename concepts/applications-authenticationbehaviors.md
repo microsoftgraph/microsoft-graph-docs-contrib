@@ -1,6 +1,6 @@
 ---
 title: "Manage application authenticationBehaviors"
-description: "Manage the application authenticationBehaviors to adopt new breaking changes."
+description: "Manage application authentication behaviors to adopt new breaking changes."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: medbhargava
@@ -8,20 +8,20 @@ ms.topic: how-to
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.subservice: entra-applications
-ms.date: 06/26/2023
+ms.date: 06/10/2024
 #customer intent: As a developer, I want to use Microsoft Graph to configure my app's behavior to adopt new breaking changes.
 ---
 
 # Manage application authenticationBehaviors
 
-The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object allows you to configure breaking-change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`).
+The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object allows you to configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
 
 > [!NOTE]
-> The authenticationBehaviors property of the application object is currently in `beta` only.
+> The authenticationBehaviors property of the application object is currently available in `beta` only.
 
-### Read the authenticationBehaviors setting for an application
+## Read the authenticationBehaviors setting for an application
 
-The **authenticationBehaviors** property is returned only on `$select` requests as follows.
+The **authenticationBehaviors** property is returned only on `$select` requests.
 
 To read the property and other specified properties of all apps in the tenant, run the following sample request. The request returns a `200 OK` response code and a JSON representation of the application object that shows only the selected properties.
 
@@ -140,6 +140,8 @@ Today, the default behavior is to remove email addresses with unverified domain 
 ### Remove email addresses with unverified domain owners from claims
 
 #### Option 1
+
+This pattern for specifying the property in the request URL allows you to update *only* the specified property in the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -190,6 +192,8 @@ Content-Type: application/json
 ---
 
 #### Option 2
+
+This pattern for specifying the property in the request body allows you to update other peer properties in the same request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -457,5 +461,5 @@ Content-Type: application/json
 ## Related content
 
 - [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)
-- [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization)
+- [Migrate away from using email claims for user identification or authorization](/entra/identity-platform/migrate-off-email-claim-authorization)
 - [The false identifier anti-pattern](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/the-false-identifier-anti-pattern/ba-p/3846013)

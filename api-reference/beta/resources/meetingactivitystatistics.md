@@ -3,7 +3,7 @@ title: "meetingActivityStatistics resource type"
 description: "Represents information about meeting activities for users."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 

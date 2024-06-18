@@ -1,6 +1,20 @@
 {
   "tocNodes": [
     {
+      "name": "Users",
+      "overview": "../../resources/users.md",
+      "resources": [
+        "user"
+      ]
+    },
+    {
+      "name": "Groups",
+      "overview": "../../resources/groups-overview.md",
+      "resources": [
+        "group"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "shouldSort": true,
@@ -73,6 +87,47 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "serviceApp",
+        "protectionPolicyBase",
+        "sharePointProtectionPolicy",
+        "exchangeProtectionPolicy",
+        "oneDriveForBusinessProtectionPolicy",
+        "protectionUnitBase",
+        "siteProtectionUnit",
+        "mailboxProtectionUnit",
+        "driveProtectionUnit",
+        "protectionRuleBase",
+        "siteProtectionRule",
+        "mailboxProtectionRule",
+        "driveProtectionRule",
+        "restorePoint",
+        "restoreSessionBase",
+        "sharePointRestoreSession",
+        "exchangeRestoreSession",
+        "oneDriveForBusinessRestoreSession",
+        "restoreArtifactBase",
+        "siteRestoreArtifact",
+        "mailboxRestoreArtifact",
+        "driveRestoreArtifact"
+      ],
+      "complexTypes": [
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
       ]
     },
     {
@@ -1174,6 +1229,13 @@
                         "staleSignInAlertConfiguration",
                         "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
                         "unifiedRoleManagementAlertIncident",
+                        "invalidLicenseAlertIncident",
+                        "noMfaOnRoleActivationAlertIncident",
+                        "redundantAssignmentAlertIncident",
+                        "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
+                        "sequentialActivationRenewalsAlertIncident",
+                        "staleSignInAlertIncident",
+                        "tooManyGlobalAdminsAssignedToTenantAlertIncident",
                         "longRunningOperation"
                       ]
                     }
@@ -1236,8 +1298,6 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
             "invitation",
@@ -1298,7 +1358,8 @@
                   "name": "Named location",
                   "resources": [
                     "countryNamedLocation",
-                    "ipNamedLocation"
+                    "ipNamedLocation",
+                    "compliantNetworkNamedLocation"
                   ]
                 }
               ]
@@ -1394,6 +1455,17 @@
               ]
             },
             {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
+              ]
+            },
+            {
               "name": "Policies",
               "overview": "../../resources/policy-overview.md",
               "shouldSort": true,
@@ -1401,6 +1473,7 @@
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
                 "claimsMappingPolicy",
+                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
@@ -1466,7 +1539,6 @@
               "resources": [
                 "authenticationEventsFlow",
                 "externalUsersSelfServiceSignUpEventsFlow",
-                "identityUserFlowAttribute",
                 "authenticationConditionApplication"
               ]
             }
@@ -1742,9 +1814,7 @@
       "name": "Industry data ETL (preview)",
       "overview": "../../resources/industrydata-overview.md",
       "resources": [
-        "microsoft.graph.industryData.azureDataLakeConnector",
         "microsoft.graph.industryData.fileValidateOperation",
-        "microsoft.graph.industryData.inboundFileFlow",
         "microsoft.graph.industryData.inboundFlow",
         "microsoft.graph.industryData.industryDataConnector",
         "microsoft.graph.industryData.industryDataRun",
@@ -1761,9 +1831,11 @@
         "microsoft.graph.industryData.adminUnitCreationOptions",
         "microsoft.graph.industryData.aggregatedInboundStatistics",
         "microsoft.graph.industryData.basicFilter",
+        "microsoft.graph.industryData.credential",
         "microsoft.graph.industryData.classGroupConfiguration",
         "microsoft.graph.industryData.enrollmentMappings",
         "microsoft.graph.industryData.fileDataConnector",
+        "microsoft.graph.industryData.fileFormatReferenceValue",
         "microsoft.graph.industryData.fileUploadSession",
         "microsoft.graph.industryData.filter",
         "microsoft.graph.industryData.identifierTypeReferenceValue",
@@ -1775,6 +1847,9 @@
         "microsoft.graph.industryData.industryDataRunEntityCountMetric",
         "microsoft.graph.industryData.industryDataRunRoleCountMetric",
         "microsoft.graph.industryData.industryDataRunStatistics",
+        "microsoft.graph.industryData.oAuth1ClientCredential",
+        "microsoft.graph.industryData.oAuth2ClientCredential",
+        "microsoft.graph.industryData.oAuthClientCredential",
         "microsoft.graph.industryData.outboundFlowActivity",
         "microsoft.graph.industryData.passwordSettings",
         "publicError",
@@ -1794,6 +1869,20 @@
         "microsoft.graph.industryData.yearReferenceValue"
       ],
       "childNodes": [
+        {
+          "name": "Inbound flow",
+          "resources": [
+            "microsoft.graph.industryData.inboundApiFlow",
+            "microsoft.graph.industryData.inboundFileFlow"
+          ]
+        },
+        {
+          "name": "Industry data connector",
+          "resources": [
+            "microsoft.graph.industryData.azureDataLakeConnector",
+            "microsoft.graph.industryData.oneRosterApiDataConnector"
+          ]
+        },
         {
           "name": "Provisioning flow",
           "resources": [
@@ -2174,6 +2263,7 @@
           "name": "Attack simulation and training",
           "resources": [
             "simulation",
+            "trainingCampaign",
             "attackSimulationOperation",
             "endUserNotification",
             "landingPage",
@@ -2321,6 +2411,8 @@
           "complexTypes": [
             "microsoft.graph.security.artifact",
             "microsoft.graph.security.autonomousSystem",
+            "microsoft.graph.security.cloudLogonRequestEvidence",
+            "microsoft.graph.security.cloudLogonSessionEvidence",
             "microsoft.graph.security.cvssSummary",
             "microsoft.graph.security.formattedContent",
             "microsoft.graph.security.hostPortBanner",
@@ -2362,9 +2454,11 @@
       "resources": [
         "site",
         "list",
+        "contentModel",
         "columnDefinition",
         "contentType",
         "listItem",
+        "documentProcessingJob",
         "documentSetVersion",
         "recycleBinItem",
         "richLongRunningOperation",
@@ -2380,6 +2474,14 @@
             "webPart"
           ],
           "childNodes": [
+            {
+              "name": "Site page",
+              "resources": [
+                "horizontalSection",
+                "horizontalSectionColumn",
+                "verticalSection"
+              ]
+            },
             {
               "name": "Web part",
               "resources": [
@@ -2580,6 +2682,7 @@
               "resources": [
                 "virtualEventPresenter",
                 "virtualEventRegistration",
+                "virtualEventWebinarRegistrationConfiguration",
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"

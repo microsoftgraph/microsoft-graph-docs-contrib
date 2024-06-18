@@ -42,17 +42,18 @@ One of the following permissions is required to call this API. To learn more, in
 Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
+The ID of the password authentication method, referenced by `{passwordMethods-id}`, is always `28c10230-6103-485e-b985-444c60001490`.
 
 Get details of your own password authentication method.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/authentication/passwordMethods/{id}
+GET /me/authentication/passwordMethods/{passwordMethods-id}
 ```
 
 Get details of your own or another user's password authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/passwordMethods/{passwordMethods-id}
 ```
 
 ## Optional query parameters
