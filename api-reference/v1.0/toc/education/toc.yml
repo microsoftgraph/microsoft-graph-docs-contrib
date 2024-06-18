@@ -216,8 +216,8 @@ items:
     href: ../../api/educationuser-post-rubrics.md
   - name: Get
     href: ../../api/educationrubric-get.md
-  - name: Get
-    href: ../../api/educationuser-list-get.md
+  - name: Get user rubric
+    href: ../../api/educationuser-list-rubric.md
   - name: Update
     href: ../../api/educationrubric-update.md
   - name: Delete
