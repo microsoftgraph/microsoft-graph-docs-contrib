@@ -1113,7 +1113,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recall",
           "ChangeType": "Addition",
-          "Description": "Added [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-beta) resource.",
+          "Description": "Added [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [eventmessage](https://learn.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-beta) resource.",
           "Target": "recall"
         },
         {
