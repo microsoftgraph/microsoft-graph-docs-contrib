@@ -3,7 +3,7 @@ title: "Get ediscoveryFile"
 description: "Read the properties and relationships of an ediscoveryFile object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

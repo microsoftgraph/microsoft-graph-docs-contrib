@@ -3,7 +3,7 @@ title: "userSource resource type"
 description: "The container for a user's mailbox and OneDrive for Business site."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

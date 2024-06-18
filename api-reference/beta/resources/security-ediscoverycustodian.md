@@ -3,7 +3,7 @@ title: "ediscoveryCustodian resource type"
 description: "In the context of eDiscovery, represents a user and all of their digital assets, such as email and documents."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Chart comment
 ---
 
 # workbookComment resource type
