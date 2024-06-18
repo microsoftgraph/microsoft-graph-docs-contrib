@@ -151,7 +151,8 @@ Content-Type: application/json
             "osVersion": null,
             "partnerAgentInstallResults": null,
             "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "userAccountType": null,
+            "disasterRecoveryCapability":null
         },
         {
             "@odata.type": "#microsoft.graph.cloudPC",
@@ -181,7 +182,8 @@ Content-Type: application/json
             "osVersion": null,
             "partnerAgentInstallResults": null,
             "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "userAccountType": null,
+            "disasterRecoveryCapability":null
         }
     ]
 }
