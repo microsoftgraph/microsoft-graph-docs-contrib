@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Eligibility schedule request
 ---
 
 # privilegedAccessGroupEligibilityScheduleRequest resource type

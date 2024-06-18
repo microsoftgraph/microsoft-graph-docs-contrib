@@ -3,7 +3,7 @@ title: "Update personAnniversary"
 description: "Update the properties of personAnniversary object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

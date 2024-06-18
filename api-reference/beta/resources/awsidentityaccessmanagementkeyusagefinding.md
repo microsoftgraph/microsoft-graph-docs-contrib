@@ -24,7 +24,7 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
 |[Get](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[Aggregated summary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
+|[Aggregated summary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
 
 
 ## Properties

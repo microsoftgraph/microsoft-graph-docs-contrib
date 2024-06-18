@@ -3,7 +3,7 @@ title: "Create custodians"
 description: "Create a new ediscoveryCustodian object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
