@@ -19,11 +19,11 @@ Represents a key credential configuration object that contains properties to con
 
 | Property                                    | Type                            | Description |
 | :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| certificateBasedApplicationConfigurationIds | Collection (Guid)               | Collection of Guids that point to the [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) that contains the collection of allowed root and intermediate certificate authorities.|
+| maxLifetime                                 | Duration                        | String value indicating as maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents a duration of four days, twelve hours, thirty minutes, and five seconds. This property is required when **restrictionType** is set to `keyLifetime`.|
+| restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Datetime timestamp indicating the date on or after which the apps are created that the policy restriction should apply to. For existing applications, the enforcement date can be back dated.|
 | restrictionType                             | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`. Each value of restrictionType can be used only once per policy.|
 | state                                       | appManagementRestrictionState   | String value indicating if the restriction will be evaluated. The possible values are: `enabled`, `disabled`. If `enabled`, the restriction will be evaluated. If `disabled`, the restriction will not be evaluated and so will not be enforced.|
-| restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Datetime timestamp indicating the date on or after which the apps are created that the policy restriction should apply to. For existing applications, the enforcement date can be back dated.|
-| maxLifetime                                 | Duration                        | String value indicating as maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents a duration of four days, twelve hours, thirty minutes, and five seconds. This property is required when **restrictionType** is set to `keyLifetime`.|
-| certificateBasedApplicationConfigurationIds | Collection (Guid)               | Collection of Guids that point to the [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) that contains the collection of allowed root and intermediate certificate authorities.|
 
 ## Relationships
 
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
   "maxLifetime": "String (ISO 8601 duration)",
   "certificateBasedApplicationConfigurationIds": [
-    "String"
+    "String (Guid)"
   ]
 }
 ```
