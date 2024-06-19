@@ -1,5 +1,5 @@
 ---
-title: "List virtualeventsession"
+title: "List sessions"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,24 +7,25 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List virtualeventsession 
+# List sessions 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
 
-Currently, this API only supports single session webinars and returns a single session. 
+> [!NOTE]
+> Currently, this API only supports single session webinars and returns a single session. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventregistration-list-virtualeventsession-permissions"
+  "name": "virtualeventregistration-list-sessions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-list-virtualeventsession-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
 
 ## HTTP request
 
