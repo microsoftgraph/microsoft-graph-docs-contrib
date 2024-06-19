@@ -3,7 +3,7 @@ title: "List noncustodialSources"
 description: "Get the list of noncustodialSources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

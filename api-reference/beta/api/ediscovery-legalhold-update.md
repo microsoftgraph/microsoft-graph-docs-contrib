@@ -3,7 +3,7 @@ title: "Update legalHold"
 description: "Update the properties of a legalHold object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

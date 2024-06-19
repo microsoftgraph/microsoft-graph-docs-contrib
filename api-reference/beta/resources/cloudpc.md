@@ -30,27 +30,31 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific Cloud PC object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
-|[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
-|[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with a new vCPU and storage size through Intune managed device ID.|
+|[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.|
 |[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific Cloud PC object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore](../api/cloudpc-restore.md)|None|Restore a Cloud PC object to a previous state from a snapshot.|
-|[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
-|[Set review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|Set the review status of a specific Cloud PC device.|
-|[Get review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device.|
+|[Set review status](../api/cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device using the Cloud PC ID.|
+|[Retrieve review status](../api/cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](..\resources\cloudpcreviewstatus.md) of a Cloud PC.|
 |[Bulk set review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.|
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the Cloud PC.|
-|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of Cloud PCs that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process.|
 |[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of Cloud PC devices meet the requirements to be bulk resized.|
+|[Create snapshot](../api/cloudpc-createsnapshot.md)|None|Create a snapshot for a specific Cloud PC device.|
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
-|[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md) (deprecated)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values-deprecated)|Get the access state of the shift work Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `waitlisted`, `unknownFutureValue`, `standbyMode`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `standbyMode`. This API is deprecated and will stop returning data on December 31, 2023. Going forward, use the [getFrontlineCloudPcAccessState](../api/cloudpc-getfrontlinecloudpcaccessstate.md) API.|
-|[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md) (deprecated)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
-|[Restore remote action](../api/manageddevice-restorecloudpc.md) (deprecated)|None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [restore](../api/cloudpc-restore.md) API.|
+|[Bulk reprovision remote action (deprecated)](../api/manageddevice-bulkreprovisioncloudpc.md) |None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md) resource. |
+|[Bulk resize (deprecated)](../api/cloudpc-bulkresize.md) |[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of Cloud PCs that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkResize](../resources/cloudpcbulkresize.md) resource.|
+|[Bulk restore remote action (deprecated)](../api/manageddevice-bulkrestorecloudpc.md) |[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource.|
+|[Get review status (deprecated)](../api/manageddevice-getcloudpcreviewstatus.md) |[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device by managedDeviceId. This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.|
+|[Get shift work access state (deprecated)](../api/cloudpc-getshiftworkcloudpcaccessstate.md) |[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values-deprecated)|Get the access state of the shift work Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `waitlisted`, `unknownFutureValue`, `standbyMode`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `standbyMode`. This API is deprecated and will stop returning data on December 31, 2023. Going forward, use the [getFrontlineCloudPcAccessState](../api/cloudpc-getfrontlinecloudpcaccessstate.md) API.|
+|[Reprovision remote action (deprecated)](../api/manageddevice-reprovisioncloudpc.md) |None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
+|[Resize remote action (deprecated)](../api/manageddevice-resizecloudpc.md) |None|Upgrade or downgrade an existing Cloud PC to another configuration with a new vCPU and storage size through Intune managed device ID. This API is deprecated and stopped returning data on October 30, 2023. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.|
+|[Restore remote action (deprecated)](../api/manageddevice-restorecloudpc.md) |None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [restore](../api/cloudpc-restore.md) API.|
+|[Set review status (deprecated)](../api/manageddevice-setcloudpcreviewstatus.md) |None|Set the review status of a specific Cloud PC device using the managed device ID. This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: setReviewStatus](../api/cloudpc-setreviewstatus.md) API.|
 
 ## Properties
 
@@ -59,6 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |aadDeviceId|String|The Microsoft Entra device ID of the Cloud PC.|
 |allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
+|deviceRegionName|String|The name of the geographical region where the Cloud PC is currently provisioned. For example, `westus3`, `eastus2`, and `southeastasia`. Read-only.|
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -103,7 +108,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
 
 |Member|Description|
 |:---|:---|
@@ -169,6 +174,7 @@ The following JSON representation shows the resource type.
   "aadDeviceId": "String",
   "allotmentDisplayName": "String",
   "connectivityResult": "String",
+  "deviceRegionName": "String",
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",

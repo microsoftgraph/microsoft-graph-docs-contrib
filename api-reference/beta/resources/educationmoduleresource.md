@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Module resource
 ---
 
 # educationModuleResource resource type

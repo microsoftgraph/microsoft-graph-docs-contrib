@@ -17,20 +17,22 @@ Namespace: microsoft.graph
 Exposes authentication method states for users and relationships that represent the authentication methods supported by Microsoft Entra ID. The following authentication methods states are supported:
 
 - A user's sign-in preferences
+- A users's MFA state
 
 Inherits from [entity](entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication states for a user, such as their sign-in preferences.|
-|[Update](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication states for a user, such as their sign-in preferences.|
+|[Get](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication states for a user, such as their sign-in preferences and their MFA state.|
+|[Update](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication states for a user, such as their sign-in preferences and their MFA state.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier. Read-only.|
+|requirements|[strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)|The settings and preferences for per-user Microsoft Entra multifactor authentication.|
 |signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for the sign-in experience of a user. Use this property to configure the user's default multifactor authentication (MFA) method.|
 
 ## Relationships
@@ -64,6 +66,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "signInPreferences": {
     "@odata.type": "microsoft.graph.signInPreferences"
+  },
+  "requirements": {
+    "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
   }
 }
 ```
