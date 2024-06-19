@@ -47,7 +47,7 @@ When calling an API without a required model parameter the API defaults to evalu
 The owner of the application registration handles billing for metered APIs and services in Microsoft Graph. If you acquired an application that requires you to be the owner of the application registration, you are responsible for any metered APIs and services used by the application.
 
 ### Do I need licenses for every user in my tenant?
-A license is required for each user subject to security and compliance policies. Other scenarios may not require a license, see [Teams API payment models and licensing requirements](teams-licenses.md) for more details about user license requirements for Microsoft Teams export APIs.
+A license is required for each user subject to security and compliance policies. Other scenarios may not require a license. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
 
 ## Cost management and billing FAQ
 
