@@ -3,7 +3,7 @@ title: "workplaceSensorDevice: ingestTelemetry"
 description: "Ingest sensor telemetry for a workplace sensor device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

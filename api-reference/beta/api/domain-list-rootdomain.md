@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/domains/sub.contoso.com/rootDomain
 
 ---
 
-
 ### Response
 
 The following example shows the response.

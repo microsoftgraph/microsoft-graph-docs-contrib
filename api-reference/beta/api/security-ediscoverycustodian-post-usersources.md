@@ -3,7 +3,7 @@ title: "Create custodian userSource"
 description: "Create a new custodian userSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get userAccountInformation"
 description: "Retrieve the properties and relationships of userAccountInformation object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "Profile"
+ms.subservice: "profile"
 doc_type: "apiPageType"
 ---
 
