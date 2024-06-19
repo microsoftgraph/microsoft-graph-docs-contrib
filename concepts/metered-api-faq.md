@@ -51,7 +51,7 @@ A license is required for each user subject to security and compliance policies.
 
 ## Cost management and billing FAQ
 
-### Where can I get the billing information for metered APIs and Services?
+### Where can I get the billing information for metered APIs and services?
 Billing data is submitted to the Azure Subscription used to create the Graph billing resource under the service name "Microsoft Graph Services" typically available 24 hours after the transactions occur.
 
 For more information, see [Azure cost management and billing overview](/azure/cost-management-billing/cost-management-billing-overview).
