@@ -20,7 +20,7 @@ Yes, it requires an application administrator or similar role for the app regist
 Yes, you can create a managed identity for Azure resources. Assign role-based access control to your subscription or resource group, and add the Microsoft Entra application administrator role to the service principal associated with the managed identity. For more information, see [Use a managed identity to access Azure Resource Manager - Windows - Microsoft Entra](/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-ua-arm) for an example.
 
 ### How can I verify that my application is properly set up for billing?
-Instructions for verifying billing setup can be found [here](/graph/metered-api-setup?tabs=azurecloudshell#verify-setup)
+Instructions for verifying billing setup can be found [here](/graph/metered-api-setup?tabs=azurecloudshell#verify-setup).
 
 ## Microsoft Teams export API billing FAQs
 
