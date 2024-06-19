@@ -43,10 +43,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-|pending|Default. Indicates the status of the bulk action as "pending" as some of the bulk actions are in progress and not completed.|
-|succeeded|Indicates the status of the bulk action as "succeeded" for all associated actions.|
-|failed|Indicates the status of the bulk action as "failed" for all associated actions.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|pending|Default. Indicates the status of the bulk action as `pending` because some of the bulk actions are in progress and not yet completed.|
+|succeeded|Indicates the status of the bulk action as `succeeded` for all associated actions.|
+|failed|Indicates the status of the bulk action as `failed` for all associated actions.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
@@ -70,6 +70,6 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "initiatedByUserPrincipalName": "String",
   "scheduledDuringMaintenanceWindow": "Boolean",
-  "status":"sString"
+  "status": "String"
 }
 ```
