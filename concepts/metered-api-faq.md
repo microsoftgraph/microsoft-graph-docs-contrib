@@ -13,7 +13,7 @@ ms.custom: scenarios:getting-started
 ### What permissions are required to set up billing?
 Setting up billing requires permissions both for the application registration and the Azure subscription you wish to use. Required permissions for the application registration are Application Owner or Application Administrator. Required permissions for the Azure subscription are Subscription Contributor, Owner / Resource Group Contributor, or Owner.
 
-### Can I use a Service Principal to set up billing on my App registration?
+### Can I use a service principal to set up billing on my app registration?
 Yes, it requires an application administrator or similar role for the App Registration assigned to the Service Principal. The role can be scoped to only the target application set up for billing to prevent overly broad permissions from being granted.
 
 ### Can I use a Managed Identity to set up billing on my App registration?
