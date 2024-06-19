@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the settings that manage the support of photoupdate settings in an organization. By default, photoupdate are disabled. If enabled, users can optionally add or update their photoupdate settings.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id String The unique identgit stauifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
+|id|String|id String The unique identifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
 |source|photoUpdateSource|The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
 ## Relationships
