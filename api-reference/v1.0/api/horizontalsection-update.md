@@ -3,7 +3,7 @@ title: 'Update horizontalSection'
 description: "Update the properties of a horizontalSection object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Update horizontalSection

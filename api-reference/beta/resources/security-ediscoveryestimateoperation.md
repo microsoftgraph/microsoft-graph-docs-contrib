@@ -3,7 +3,7 @@ title: "ediscoveryEstimateOperation resource type"
 description: "Represents the process of estimating statistics (items count, size and number of locations) of an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

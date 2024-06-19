@@ -35,6 +35,15 @@ Namespace: microsoft.graph
 | active             |
 | unknownfuturevalue |
 
+### siteLockState values
+
+| Value         | 
+|:--------------|
+| unlocked      | 
+| lockedReadOnly |
+
+
+
 ### userDefaultAuthenticationMethod values
 
 | Member             |
@@ -2851,6 +2860,15 @@ Possible values for user account types (group membership), per Windows definitio
 | passwordChange       |
 | unknownFutureValue   |
 
+### perUserMfaState values 
+
+|Member|
+|:---|
+|disabled|
+|enforced|
+|enabled|
+|unknownFutureValue|
+
 ### conditionalAccessRule values
 
 | Member                            |
@@ -3130,6 +3148,35 @@ Possible values for user account types (group membership), per Windows definitio
 | thumbnail          | Image column.                                      |
 | approvalStatus     | Content approval status column.                    |
 | unknownFutureValue | unknownFuturevalue                                 |
+
+### contentModelType values 
+
+|Member|
+|:---|
+|teachingMethod|
+|layoutMethod|
+|freeformSelectionMethod|
+|prebuiltContractModel|
+|prebuiltInvoiceModel|
+|prebuiltReceiptModel|
+|unknownFutureValue|
+
+### documentProcessingJobStatus values 
+
+|Member|
+|:---|
+|inProgress|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### documentProcessingJobType values 
+
+|Member|
+|:---|
+|File|
+|Folder|
+|UnknownFutureValue|
 
 ### connectedOrganizationState values
 

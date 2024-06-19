@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
 
 ---
 
-
 ### Response
 
 The following example shows the response.

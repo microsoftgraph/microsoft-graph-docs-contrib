@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a healthIssue object."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # Get healthIssue
