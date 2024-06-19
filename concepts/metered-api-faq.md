@@ -25,7 +25,7 @@ Instructions for verifying billing setup can be found [here](/graph/metered-api-
 ## Microsoft Teams export API billing FAQs
 
 ### Are there more requirements beyond setting up billing to call Microsoft Teams export APIs?
-Yes, Microsoft Teams export APIs require a Model parameter to be passed as part of the API call. Depending on the value of the model parameter, a user license may also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
+Yes, Microsoft Teams export APIs require a `model` parameter to be passed as part of the API call. Depending on the value of the `model` parameter, a user license may also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
 ### How do I know which model parameter is being used in API calls?
 Inspecting the code of the calling application is the best way to determine which model parameter is being used.
 
