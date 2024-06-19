@@ -1,6 +1,6 @@
 ---
 title: "fido2CombinationConfiguration resource type"
-description: "Configuration to require specific FIDO2 key types in an authentication strength"
+description: "Configuration to require specific FIDO2 keys in an authentication strength"
 ms.localizationpriority: medium
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
@@ -12,8 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Configuration to require specific FIDO2 key types in an authentication strength. An administrator may use this entity to specify which Authenticator Attestation GUIDs (AAGUIDs) are allowed, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
-
+Configuration to require specific FIDO2 keys in an authentication strength. Use this entity to specify which Authenticator Attestation GUIDs (AAGUIDs) are allowed, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
 
 Inherits and derived from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).
 
@@ -25,7 +24,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedAAGUIDs|String collection|A list of AAGUIDs allowed to be used as part of the specified authentication method combinations.|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. The only possible value for fido2combinationConfigurations is `"fido2"`. Inherited from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. The only possible value is `"fido2"`. Inherited from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).|
 |id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
