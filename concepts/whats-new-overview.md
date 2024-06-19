@@ -56,6 +56,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 [Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
 
+### Teamwork and communications | Calls and online meetings
+
+Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-virtualeventsession) for virtual event meeting registrations.
+
 ## May 2024: New and generally available
 
 ### Identity and access | Identity and sign-in
