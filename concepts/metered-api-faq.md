@@ -62,7 +62,7 @@ Most frequently used tools to review and monitor billing charges:
   |:--------------------------|:----------------------------------------|
   |[Cost Analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis)| Interactive chart that displays consumption. Hint: Use accumulated costs and filter by Service Name "Microsoft Graph Services" |
   |[Exports](/azure/cost-management-billing/costs/tutorial-export-acm-data)| Creates detailed reports with desired frequency (ex. daily or monthly). |
-  |[Alerts](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)| Configures alerts by combining filters |
+  |[Alerts](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)| Configures alerts by combining filters. |
 
 ### Is the bill broken down for each API?
 
