@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added here as more async operations are supported.
-Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](https://learn.microsoft.com/en-us/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations):
+Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations):
 
 ## Members
 
