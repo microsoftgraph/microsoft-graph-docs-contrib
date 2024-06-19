@@ -30,4 +30,4 @@ The following table lists the metered APIs and services.
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
-- [Metered APIs Frequently Asked Questions](/graph/metered-api-faq)
+- [Metered APIs frequently asked questions](/graph/metered-api-faq)
