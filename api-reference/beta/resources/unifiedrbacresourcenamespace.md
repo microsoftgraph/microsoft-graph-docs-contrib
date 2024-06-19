@@ -6,6 +6,7 @@ ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Resource namespace
 ---
 
 # unifiedRbacResourceNamespace resource type

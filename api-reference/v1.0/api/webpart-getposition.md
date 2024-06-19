@@ -3,7 +3,7 @@ title: "webPart: getPosition"
 description: "Get position information of a webPart"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

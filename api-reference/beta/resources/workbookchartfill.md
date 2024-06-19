@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart fill
 ---
 
 # workbookChartFill resource type
