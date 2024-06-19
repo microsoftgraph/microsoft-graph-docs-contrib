@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AccessPackageResourceRoleScope;
-use Microsoft\Graph\Generated\Models\AccessPackageResourceRole;
-use Microsoft\Graph\Generated\Models\AccessPackageResource;
-use Microsoft\Graph\Generated\Models\AccessPackageResourceScope;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRoleScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRole;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceScope;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

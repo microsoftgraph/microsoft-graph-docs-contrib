@@ -7,8 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\UnifiedRoleEligibilityScheduleRequest;
+use Microsoft\Graph\Generated\Models\UnifiedRoleScheduleRequestActions;
 use Microsoft\Graph\Generated\Models\RequestSchedule;
 use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\ExpirationPatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

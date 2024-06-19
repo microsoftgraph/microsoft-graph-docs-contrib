@@ -21,8 +21,8 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedAwsStorageBucketFinding objects](../api/encryptedawsstoragebucketfinding-list.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) collection|Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.|
-|[Get encryptedAwsStorageBucketFinding](../api/encryptedawsstoragebucketfinding-get.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)|Read the properties and relationships of an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
+|[List](../api/encryptedawsstoragebucketfinding-list.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) collection|Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.|
+|[Get](../api/encryptedawsstoragebucketfinding-get.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)|Read the properties and relationships of an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

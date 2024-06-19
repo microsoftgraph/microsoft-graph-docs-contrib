@@ -22,7 +22,6 @@ Represents the audit resource. This shows the target edited resource entity, w
 |modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|A list of modified properties.|
 |resourceId|String|The ID of the audit resource.|
 |resourceType|String|The type of the audit resource.|
-|type (deprecated)|String|The type of the audit resource. The **type** property is deprecated and will stop returning data on May 8, 2024. Going forward, use the **resourceType** property.|
 
 ## Relationships
 
@@ -43,7 +42,6 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.cloudPcAuditProperty"}],
   "resourceId": "String",
-  "resourceType": "String",
-  "type": "String"
+  "resourceType": "String"
 }
 ```

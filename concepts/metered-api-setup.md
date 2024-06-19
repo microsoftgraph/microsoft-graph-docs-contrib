@@ -45,27 +45,27 @@ az graph-services account create --resource-group myRG  --resource-name myGraphA
   |:--------------------------|:----------------------------------------|
   | myRG | The name of an existing Azure resource group to add the newly created resource to. |
   | myGraphAppBilling | The name you want to give to this resource instance. |
-  | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. |
-  | mySubscriptionGUID | The ID of the Azure subscription that will receive billing events, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. |
+  | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter; for example, 123e4567-e89b-12d3-a456-426655440000. |
+  | mySubscriptionGUID | The ID of the Azure subscription that will receive billing events, provided as a string parameter; for example, 123e4567-e89b-12d3-a456-426655440000. |
 
   A successful JSON result will look something like this:
 
 ```json
 {
   "extendedLocation": null,
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
   "identity": null,
   "kind": null,
   "location": "Global",
   "managedBy": null,
-  "name": "myGraphAppBilling",
+  "name": "<myGraphAppBilling>",
   "plan": null,
   "properties": {
-    "appId": "00000000-0000-0000-0000-000000000000",
-    "billingPlanId": "00000000-0000-0000-0000-000000000000",
+    "appId": "<myAppGUID>",
+    "billingPlanId": "123e4567-e89b-12d3-a456-426655440000",
     "provisioningState": "Succeeded"
   },
-  "resourceGroup": "myRG",
+  "resourceGroup": "<myRG>",
   "sku": null,
   "systemData": {
     "createdAt": "2023-01-31T00:12:20.7893671Z",
@@ -99,16 +99,16 @@ A successful JSON result will look something like this:
     "changedTime": "2023-04-25T18:12:30.586342+00:00",
     "createdTime": "2023-04-25T18:02:30.141407+00:00",
     "extendedLocation": null,
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+    "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
     "identity": null,
     "kind": null,
     "location": "global",
     "managedBy": null,
-    "name": "myGraphAppBilling",
+    "name": "<myGraphAppBilling>",
     "plan": null,
     "properties": null,
     "provisioningState": "Succeeded",
-    "resourceGroup": "myRG",
+    "resourceGroup": "<myRG>",
     "sku": null,
     "tags": null,
     "type": "Microsoft.GraphServices/accounts"
@@ -120,7 +120,6 @@ A successful JSON result will look something like this:
 
 ```powershell
   az resource show --resource-group myRg --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts
-```
 
 | Parameter | Description |
   |:--------------------------|:----------------------------------------|
@@ -132,18 +131,18 @@ A successful JSON result will look something like this:
 ```json
 {
   "extendedLocation": null,
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
   "identity": null,
   "kind": null,
   "location": "Global",
   "managedBy": null,
-  "name": "myGraphAppBilling",
+  "name": "<myGraphAppBilling>",
   "plan": null,
   "properties": {
-    "appId": "00000000-0000-0000-0000-000000000000",
-    "billingPlanId": "00000000-0000-0000-0000-000000000000"
+    "appId": "<myAppGUID>",
+    "billingPlanId": "123e4567-e89b-12d3-a456-426655440000"
   },
-  "resourceGroup": "myRG",
+  "resourceGroup": "<myRG>",
   "sku": null,
   "tags": null,
   "type": "microsoft.graphservices/accounts"

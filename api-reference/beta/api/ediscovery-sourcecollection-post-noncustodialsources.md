@@ -3,7 +3,7 @@ title: "Add noncustodialDataSource"
 description: "Add noncustodialSources by posting to the noncustodialSources collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

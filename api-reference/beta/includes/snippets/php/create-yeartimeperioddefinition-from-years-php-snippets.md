@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\YearTimePeriodDefinition;
-use Microsoft\Graph\Generated\Models\YearReferenceValue;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\YearTimePeriodDefinition;
+use Microsoft\Kiota\Abstractions\Types\Date;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\YearReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -29,7 +29,8 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerUserIds"
+  "@odata.type": "microsoft.graph.plannerUserIds",
+  "openType": true
 }-->
 
 ```json

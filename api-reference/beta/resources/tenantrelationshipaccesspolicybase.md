@@ -51,3 +51,16 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "tenantRelationshipAccessPolicyBase resource type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: Property 'definition' found in resource definition for 'microsoft.graph.tenantRelationshipAccessPolicyBase', but not described in markdown table."
+  ]
+}
+-->

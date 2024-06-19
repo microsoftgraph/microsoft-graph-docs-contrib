@@ -3,7 +3,7 @@ title: "dataSubject resource type"
 description: "Contains information related to the subject of a content search."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -37,8 +37,7 @@ The following is a JSON representation of the resource.
   "email": "String",
   "firstName": "String",
   "lastName": "String",
-  "residency": "String",
-  "SSN": "String"
+  "residency": "String"
 }
 ```
 

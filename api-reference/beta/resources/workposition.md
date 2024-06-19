@@ -3,7 +3,7 @@ title: "workPosition resource type"
 description: "workPosition resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: people-and-workplace-intelligence
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ This resource type inherits from [itemFacet](itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List positions](../api/profile-list-positions.md)|[workPosition](../resources/workposition.md) collection|Get the workPosition resources from the positions navigation property.|
-|[Create workPosition](../api/profile-post-positions.md)|[workPosition](../resources/workposition.md)|Create a new workPosition object.|
-|[Get workPosition](../api/workposition-get.md)|[workPosition](../resources/workposition.md)|Read the properties and relationships of a [workPosition](../resources/workposition.md) object.|
-|[Update workPosition](../api/workposition-update.md)|[workPosition](../resources/workposition.md)|Update the properties of a [workPosition](../resources/workposition.md) object.|
-|[Delete workPosition](../api/workposition-delete.md)|None|Deletes a [workPosition](../resources/workposition.md) object.|
+|[List](../api/profile-list-positions.md)|[workPosition](../resources/workposition.md) collection|Get the workPosition resources from the positions navigation property.|
+|[Create](../api/profile-post-positions.md)|[workPosition](../resources/workposition.md)|Create a new workPosition object.|
+|[Get](../api/workposition-get.md)|[workPosition](../resources/workposition.md)|Read the properties and relationships of a [workPosition](../resources/workposition.md) object.|
+|[Update](../api/workposition-update.md)|[workPosition](../resources/workposition.md)|Update the properties of a [workPosition](../resources/workposition.md) object.|
+|[Delete](../api/workposition-delete.md)|None|Deletes a [workPosition](../resources/workposition.md) object.|
 
 
 ## Properties
