@@ -1,6 +1,6 @@
 ---
 title: "solution resource type"
-description: "Represents a user's custom solution entity."
+description: "Represents a user's custom solution."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's custom solution entity.
+Represents a user's custom solution.
 
 ## Properties
 
