@@ -3,7 +3,7 @@ title: "extractNumberTransformation resource type"
 description: "Returns the numerical part of the string."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

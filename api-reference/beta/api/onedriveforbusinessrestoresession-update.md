@@ -138,7 +138,6 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
 
 ---
 
-
 ### Response
 
 The following example shows the response.

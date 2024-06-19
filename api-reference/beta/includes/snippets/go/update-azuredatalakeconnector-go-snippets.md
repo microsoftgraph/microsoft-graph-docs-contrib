@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodelsindustrydata.NewIndustryDataConnector()
-displayName := "API Monitor 60201009"
+displayName := "CSV files from SIS"
 requestBody.SetDisplayName(&displayName) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
