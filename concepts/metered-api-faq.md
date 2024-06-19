@@ -35,7 +35,7 @@ Seeded capacity for Teams export APIs being called with the model A parameter is
 ### How is seeded capacity applied?
 Seeded capacity is evaluated at the beginning of the month, and any eligible license counts to the tenant-level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it is depleted. Further consumption by the application is then metered and appears on the monthly bill.
 
-### What happens when an app that is registered but not set up for billing calls a metered Teams export API?
+### What happens when an app that is registered but not set up for billing initiates a metered Teams export API call?
 The API call fails with a 402 Payment Required error. This is the case even if targeting a user with a valid user license and passing the model A parameter.
 
 ### What happens when the model parameter is excluded from a call to a Microsoft Teams export API that requires it?
