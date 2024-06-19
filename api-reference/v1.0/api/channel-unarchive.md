@@ -94,7 +94,7 @@ The following example shows a request to unarchive a channel that fails because 
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response
