@@ -76,7 +76,7 @@ The following example shows a request to archive a channel.
 
 <!-- {
   "blockType": "request",
-  "name": "archive_channel"
+  "name": "archive_channel",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
@@ -89,7 +89,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "name": "archive_channel"
+  "name": "archive_channel",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "Pojn274d-b798-47e8-8763-04724922aaf8"]
 }-->
 ```http
@@ -107,7 +107,7 @@ The following example shows a request to archive a channel that fails because th
 
 <!-- {
   "blockType": "request",
-  "name": "archive_channel_on_archived_team"
+  "name": "archive_channel_on_archived_team",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http

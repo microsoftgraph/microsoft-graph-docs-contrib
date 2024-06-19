@@ -61,7 +61,7 @@ The following example shows a request to unarchive a channel.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "unarchive_channel"
+  "name": "unarchive_channel",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/beta/teams/okon274d-be71-47e8-8763-04405c2aaf8/
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "unarchive_channel"
+  "name": "unarchive_channel",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "n4n3i4-be73-45e8-6663-043435jn28"]
 }-->
 ```http
@@ -125,7 +125,7 @@ The following example shows a request to unarchive a channel that fails because 
 
 <!-- {
   "blockType": "request",
-  "name": "unarchive_channel_on_archived_team"
+  "name": "unarchive_channel_on_archived_team",
   "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
