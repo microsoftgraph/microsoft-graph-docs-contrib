@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CustomTaskExtension;
-use Microsoft\Graph\Generated\Models\LogicAppTriggerEndpointConfiguration;
-use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
-use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
-use Microsoft\Graph\Generated\Models\CustomTaskExtensionCallbackConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\CustomTaskExtension;
+use Microsoft\Graph\Beta\Generated\Models\LogicAppTriggerEndpointConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AzureAdTokenAuthentication;
+use Microsoft\Graph\Beta\Generated\Models\CustomExtensionClientConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\CustomTaskExtensionCallbackConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

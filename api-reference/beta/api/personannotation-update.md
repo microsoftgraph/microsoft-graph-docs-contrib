@@ -3,7 +3,7 @@ title: "Update personAnnotation"
 description: "Update the properties of a personAnnotation object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

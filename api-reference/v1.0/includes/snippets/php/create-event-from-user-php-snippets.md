@@ -9,10 +9,12 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Users\Item\Events\EventsRequestBuilderPostRequestConfiguration;
 use Microsoft\Graph\Generated\Models\Event;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Generated\Models\Location;
 use Microsoft\Graph\Generated\Models\Attendee;
 use Microsoft\Graph\Generated\Models\EmailAddress;
+use Microsoft\Graph\Generated\Models\AttendeeType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -20,8 +20,8 @@ Singleton that acts as container for a collection of Resource Access entities.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-osprovisioninggraphservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-osprovisioninggraphservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-osprovisioninggraphservice-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-osprovisioninggraphservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-osprovisioninggraphservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

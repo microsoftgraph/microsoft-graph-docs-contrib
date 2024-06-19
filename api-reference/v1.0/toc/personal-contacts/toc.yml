@@ -1,0 +1,100 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Contact
+  items:
+  - name: Contact
+    href: ../../resources/contact.md
+  - name: Get contact
+    href: ../../api/contact-get.md
+  - name: Create contact
+    href: ../../api/user-post-contacts.md
+  - name: Update contact
+    href: ../../api/contact-update.md
+  - name: Delete contact
+    href: ../../api/contact-delete.md
+  - name: Get contact delta
+    href: ../../api/contact-delta.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+  - name: Schema extensions
+    items:
+    - name: Add schema extension values
+      href: /graph/extensibility-schema-groups
+  - name: Extended properties
+    items:
+    - name: Create single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Create multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Contact folder
+  items:
+  - name: Contact folder
+    href: ../../resources/contactfolder.md
+  - name: Get contact folder
+    href: ../../api/contactfolder-get.md
+  - name: Update contact folder
+    href: ../../api/contactfolder-update.md
+  - name: Delete contact folder
+    href: ../../api/contactfolder-delete.md
+  - name: List child folders
+    href: ../../api/contactfolder-list-childfolders.md
+  - name: Create child folder
+    href: ../../api/contactfolder-post-childfolders.md
+  - name: Get contact delta
+    href: ../../api/contact-delta.md
+  - name: List contacts in folder
+    href: ../../api/contactfolder-list-contacts.md
+  - name: Create contact in folder
+    href: ../../api/contactfolder-post-contacts.md
+  - name: Create single-value property
+    href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+  - name: Get single-value property
+    href: ../../api/singlevaluelegacyextendedproperty-get.md
+  - name: Create multi-value property
+    href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+  - name: Get multi-value property
+    href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Outlook category
+  items:
+  - name: Outlook category
+    href: ../../resources/outlookcategory.md
+  - name: List categories
+    href: ../../api/outlookuser-list-mastercategories.md
+  - name: Get category
+    href: ../../api/outlookcategory-get.md
+  - name: Create category
+    href: ../../api/outlookuser-post-mastercategories.md
+  - name: Update category
+    href: ../../api/outlookcategory-update.md
+  - name: Delete category
+    href: ../../api/outlookcategory-delete.md
+- name: Extended properties
+  items:
+  - name: Overview
+    href: ../../resources/extended-properties-overview.md
+  - name: Single value legacy extended property
+    items:
+    - name: Single value legacy extended property
+      href: ../../resources/singlevaluelegacyextendedproperty.md
+    - name: Create single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+  - name: Multivalue legacy extended property
+    items:
+    - name: Multivalue legacy extended property
+      href: ../../resources/multivaluelegacyextendedproperty.md
+    - name: Create multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get multi-value property
+      href: ../../api/multivaluelegacyextendedproperty-get.md

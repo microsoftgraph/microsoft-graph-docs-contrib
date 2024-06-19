@@ -3,7 +3,7 @@ title: "Delete departmentTemplate"
 description: "Delete a departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/departments/6cf65e55-6ba
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here's an example of the response.

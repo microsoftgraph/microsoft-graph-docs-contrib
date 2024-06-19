@@ -3,7 +3,7 @@ title: "Delete filePlanReferenceTemplate"
 description: "Delete a filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/6cf65
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here's an example of the response.

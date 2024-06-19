@@ -3,6 +3,7 @@ title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.subservice: non-product-specific
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
@@ -66,9 +67,11 @@ The preceding limits apply to the following resources:
 
 ### Call records limits
 
-The limits listed in the following table apply to the following resource:
+The limits listed in the following table apply to the following resources:
 
 - [callRecord](/graph/api/resources/callrecords-callrecord)
+- [participant](/graph/api/resources/callrecords-participant)
+- [session](/graph/api/resources/callrecords-session)
 
 | Limit type      | Limit    |
 | -------------- | ------------ |
@@ -76,6 +79,23 @@ The limits listed in the following table apply to the following resource:
 | Per tenant for all applications | 10,000 requests per 20 seconds |
 | Per application per tenant  | 1,500 requests per 20 seconds |
 | Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
+| List call records | 15 requests per 20 seconds (first page) <br/> 55 requests per 5 minutes (subsequent pages) |
+
+### PSTN call records limits
+
+The limits listed in the following table apply to the following resources:
+
+- [directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow)
+- [pstnBlockedUsersLogRow](/graph/api/resources/callrecords-pstnblockeduserslogrow)
+- [pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow)
+- [pstnOnlineMeetingDialoutReport](/graph/api/resources/callrecords-pstnonlinemeetingdialoutreport)
+- [smsLogRow](/graph/api/resources/callrecords-smslogrow)
+
+| Limit type      | Limit    |
+| -------------- | ------------ |
+| Per tenant | 1,000 requests per 60 seconds |
+| Per application per tenant  | 200 requests per 60 seconds |
+| Per collection | 50 requests per 60 seconds |
 
 ## Excel service limits
 
@@ -137,9 +157,9 @@ The following table lists base request costs. Any requests not listed have a bas
 | GET | `applications` | 2 | 0 |
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
-| POST | `directoryObjects/getByIds` |  3 | 0 |
+| POST | `directoryObjects/getByIds` | 5 | 0 |
 | GET | `domains/{id}/domainNameReferences` | 4 | 0 |
-| POST | `getObjectsById` | 3 | 0 |
+| POST | `getObjectsById` | 5 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
 | POST | `isMemberOf` | 4 | 0 |
@@ -174,7 +194,8 @@ Other factors that affect a request cost:
 - Creating a user in a Microsoft Entra ID B2C tenant increases cost by 4
 
 > [!NOTE]
-> A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> - A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> - Using `$select` for `directoryObjects/getByIds` and `getObjectsById` will result in 2 ResourceUnits.
 
 ### Additional headers
 
@@ -329,48 +350,57 @@ The preceding limits apply to all [usage reports](/graph/api/resources/report) r
 
 Limits are expressed as requests per second (rps).
 
-| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
+| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      | Limit per app per tenant per resource(chat/channel)|
 |------------------------------------------------------|---------------------------------|------------|
 | GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
-| GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |
-| GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps |
-| GET installedApps for [chat](/graph/api/chat-get-installedapps), [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
+| GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |  1rps |
+| GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps | 1rps |
+| GET installedApps for [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
+| GET installedApps for [chat](/graph/api/chat-get-installedapps) | 30 rps                          | 600 rps | 1rps |
 | GET [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
-| POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  |
-| POST tab for [channel](/graph/api/channel-post-tabs) or [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
+| POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  | 1rps |
+| POST tab for [channel](/graph/api/channel-post-tabs) or [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  | 1rps |
 | POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
- POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
-| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
-| DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  |
-| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  |
+| POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
+| PATCH [team](/graph/api/team-update), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
+| PATCH [channel](/graph/api/channel-patch)|  30 rps                         | 300 rps  | 1rps |
+| DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  | 1rps |
+| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  | 1rps |
 | DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
 | DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
 | POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
 | PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| Six rps | 150 rps  |
 | POST /```{team-id}```/ [clone](/graph/api/team-clone) | Six rps | 150 rps  |
-| GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
-| GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
-| POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
-| POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps |
+| GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps | 1rps |
+| GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps | 1rps |
+| POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps | 1rps |
+| POST [chat member](/graph/api/chat-post-members) | 30 rps | 300 rps | 4rpm |
+| Delete [chat member](/graph/api/chat-delete-members) | 30 rps | 300 rps | 4rpm |
+| POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps | 1rps |
 | GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
 | POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
 |PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
 | POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | Five rps | 50 rps |
-| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | Five rps | 50 rps |
+| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | Five rps | 50 rps | 1rps |
 | POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | Five rps | 50 rps |
 | POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | Two rps | 20 rps |
 | GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps |
+| POST /teams/```{team-id}```/[members](/graph/api/team-post-members) | 30 rps | 300 rps | 4rpm|
+| GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps | 1rps |
+| GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps | 1rps |
 | Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
 | Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
-| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
-| Other API calls for Microsoft Teams              | 30 rps | 300 rps |
+| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps | 1rps |
+| Other API calls for Microsoft Teams              | 30 rps | 300 rps | 1rps |
 
-A maximum of four requests per second per app can be issued on a given team or channel.
+A maximum of four requests per second per app can be issued on a given team.
+
+A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat).
 
 A maximum of one request per second per user can be issued when doing POST message in a given chat or channel (This throttling limit doesn't apply to [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+
+A maximum of five requests per second per user can be issued when doing [List chats](/graph/api/chat-list) or [Get chat](/graph/api/chat-get) or [chat:removeAllAccessForUser](/graph/api/Chat-removeAllAccessForUser)
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).

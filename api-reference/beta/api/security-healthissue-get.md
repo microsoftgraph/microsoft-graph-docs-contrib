@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a healthIssue object."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # Get healthIssue
@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [healthIssue](../resources/security-healthissue.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -96,7 +98,6 @@ GET https://graph.microsoft.com/beta/security/identities/healthIssues/b3c1b5fc-8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

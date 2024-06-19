@@ -13,7 +13,7 @@ In a hybrid workplace, organizations must develop a data-driven culture to evolv
  
 The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes. Data is an organization's competitive advantage. 
 
-You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
+You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph/data-connect) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
 Data Connect unlocks several enterprise analytics scenarios, including: 
 
@@ -49,7 +49,7 @@ At a high level, to set up Data Connect, you:
 1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
 2. Set up your **Microsoft Entra app registration**.
 3. Set up your **Azure Storage resource**.
-4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
+4. Set up your **Azure resource with Microsoft Fabric, Azure Synapse, or Azure Data Factory**.
 5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
 
 For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
@@ -97,7 +97,6 @@ Microsoft Graph Data Connect is integrated with the following Microsoft services
 - [Azure Synapse Analytics](https://azure.microsoft.com/products/synapse-analytics/) 
 - [Azure Data Factory](https://azure.microsoft.com/products/data-factory/) 
 - [Microsoft Viva Insights](https://www.microsoft.com/microsoft-viva/insights)
-- [Microsoft Syntex](https://www.microsoft.com/microsoft-syntex)
 
 ### Microsoft Fabric integration
 

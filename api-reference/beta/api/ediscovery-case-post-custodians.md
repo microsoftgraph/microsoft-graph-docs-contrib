@@ -3,7 +3,7 @@ title: "Create custodian"
 description: "Create a new custodian object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

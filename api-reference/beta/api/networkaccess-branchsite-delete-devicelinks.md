@@ -64,31 +64,31 @@ DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{bra
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-devicelink-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-devicelink-deprecated-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-devicelink-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-devicelink-deprecated-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-devicelink-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-devicelink-deprecated-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-devicelink-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-devicelink-deprecated-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-devicelink-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-devicelink-deprecated-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-devicelink-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-devicelink-deprecated-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-devicelink-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/delete-devicelink-deprecated-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

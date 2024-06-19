@@ -3,7 +3,7 @@ title: "Get projectParticipation"
 description: "Retrieve the properties and relationships of a projectParticipation object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta schema-extensions create --body '{\
     "id":"courses",\
     "description": "Graph Learn training courses extensions",\

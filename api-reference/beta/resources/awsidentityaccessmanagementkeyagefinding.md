@@ -4,7 +4,7 @@ description: "View the age of AWS IAM Access Keys."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentityAccessManagementKeyAgeFinding objects](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
-|[Get awsIdentityAccessManagementKeyAgeFinding](../api/awsidentityaccessmanagementkeyagefinding-get.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) object.|
-|[Get aggregatedSummary](../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)and the total number in a specified authorization system.|
+|[List](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
+|[Get](../api/awsidentityaccessmanagementkeyagefinding-get.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) object.|
+|[Aggregated summary](../api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)and the total number in a specified authorization system.|
 
 ## Properties
 |Property|Type|Description|

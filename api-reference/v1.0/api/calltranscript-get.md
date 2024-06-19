@@ -22,7 +22,7 @@ Retrieving the transcript returns the metadata of the single transcript associat
 > * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 > * If you want to retrieve meeting transcripts, use the [Create event](../api/user-post-events.md) API instead.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

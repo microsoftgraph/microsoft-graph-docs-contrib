@@ -4,7 +4,7 @@ description: "Represents an Azure authorization system onboarded to Permissions 
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureAuthorizationSystems](../api/azureauthorizationsystem-list.md)|[azureAuthorizationSystem](../resources/azureauthorizationsystem.md) collection|Get a list of the [azureAuthorizationSystem](../resources/azureauthorizationsystem.md) objects and their properties.|
+|[List](../api/azureauthorizationsystem-list.md)|[azureAuthorizationSystem](../resources/azureauthorizationsystem.md) collection|Get a list of the [azureAuthorizationSystem](../resources/azureauthorizationsystem.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

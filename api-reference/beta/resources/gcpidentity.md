@@ -4,7 +4,7 @@ description: "Represents GCP identities."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -28,8 +28,8 @@ The following resources inherit from this resource type:
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpIdentities](../api/gcpassociatedidentities-list-all.md)|[gcpIdentity](../resources/gcpidentity.md) collection|Get a list of the [gcpIdentity](../resources/gcpidentity.md) objects and their properties.|
-|[Get gcpIdentity](../api/gcpidentity-get.md)|[gcpIdentity](../resources/gcpidentity.md)|Read the properties and relationships of a [gcpIdentity](../resources/gcpidentity.md) object.|
+|[List](../api/gcpassociatedidentities-list-all.md)|[gcpIdentity](../resources/gcpidentity.md) collection|Get a list of the [gcpIdentity](../resources/gcpidentity.md) objects and their properties.|
+|[Get](../api/gcpidentity-get.md)|[gcpIdentity](../resources/gcpidentity.md)|Read the properties and relationships of a [gcpIdentity](../resources/gcpidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|

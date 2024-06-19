@@ -1,0 +1,112 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/planner-overview.md
+- name: Planner assigned to task board task format
+  items:
+  - name: Planner assigned to task board task format
+    href: ../../resources/plannerassignedtotaskboardtaskformat.md
+  - name: Get assigned to task board format
+    href: ../../api/plannerassignedtotaskboardtaskformat-get.md
+  - name: Update assigned to task board format
+    href: ../../api/plannerassignedtotaskboardtaskformat-update.md
+- name: Planner bucket
+  items:
+  - name: Planner bucket
+    href: ../../resources/plannerbucket.md
+  - name: Get bucket
+    href: ../../api/plannerbucket-get.md
+  - name: List bucket tasks
+    href: ../../api/plannerbucket-list-tasks.md
+  - name: Create bucket
+    href: ../../api/planner-post-buckets.md
+  - name: Update bucket
+    href: ../../api/plannerbucket-update.md
+  - name: Delete bucket
+    href: ../../api/plannerbucket-delete.md
+- name: Planner bucket task board task format
+  items:
+  - name: Planner bucket task board task format
+    href: ../../resources/plannerbuckettaskboardtaskformat.md
+  - name: Get bucket task board format
+    href: ../../api/plannerbuckettaskboardtaskformat-get.md
+  - name: Update bucket task board format
+    href: ../../api/plannerbuckettaskboardtaskformat-update.md
+- name: Planner plan
+  items:
+  - name: Planner plan
+    href: ../../resources/plannerplan.md
+  - name: Get plan
+    href: ../../api/plannerplan-get.md
+  - name: List plan buckets
+    href: ../../api/plannerplan-list-buckets.md
+  - name: List plan tasks
+    href: ../../api/plannerplan-list-tasks.md
+  - name: Update plan
+    href: ../../api/plannerplan-update.md
+  - name: Delete plan
+    href: ../../api/plannerplan-delete.md
+- name: Planner plan details
+  items:
+  - name: Planner plan details
+    href: ../../resources/plannerplandetails.md
+  - name: Get plan details
+    href: ../../api/plannerplandetails-get.md
+  - name: Update plan details
+    href: ../../api/plannerplandetails-update.md
+- name: Planner progress task board task format
+  items:
+  - name: Planner progress task board task format
+    href: ../../resources/plannerprogresstaskboardtaskformat.md
+  - name: Get progress task board format
+    href: ../../api/plannerprogresstaskboardtaskformat-get.md
+  - name: Update progress task board format
+    href: ../../api/plannerprogresstaskboardtaskformat-update.md
+- name: Planner task
+  items:
+  - name: Planner task
+    href: ../../resources/plannertask.md
+  - name: Get task
+    href: ../../api/plannertask-get.md
+  - name: Update task
+    href: ../../api/plannertask-update.md
+  - name: Delete task
+    href: ../../api/plannertask-delete.md
+- name: Planner task details
+  items:
+  - name: Planner task details
+    href: ../../resources/plannertaskdetails.md
+  - name: Get task details
+    href: ../../api/plannertaskdetails-get.md
+  - name: Update task details
+    href: ../../api/plannertaskdetails-update.md
+- name: Complex types
+  items:
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Planner applied categories
+    href: ../../resources/plannerappliedcategories.md
+  - name: Planner assignment
+    href: ../../resources/plannerassignment.md
+  - name: Planner assignments
+    href: ../../resources/plannerassignments.md
+  - name: Planner category descriptions
+    href: ../../resources/plannercategorydescriptions.md
+  - name: Planner checklist item
+    href: ../../resources/plannerchecklistitem.md
+  - name: Planner checklist items
+    href: ../../resources/plannerchecklistitems.md
+  - name: Planner external reference
+    href: ../../resources/plannerexternalreference.md
+  - name: Planner external references
+    href: ../../resources/plannerexternalreferences.md
+  - name: Planner order hints by assignee
+    href: ../../resources/plannerorderhintsbyassignee.md
+  - name: Planner plan container
+    href: ../../resources/plannerplancontainer.md
+  - name: Planner user ids
+    href: ../../resources/planneruserids.md

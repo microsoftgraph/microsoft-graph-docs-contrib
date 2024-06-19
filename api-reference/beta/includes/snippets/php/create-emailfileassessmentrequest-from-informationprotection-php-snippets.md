@@ -5,8 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\EmailFileAssessmentRequest;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EmailFileAssessmentRequest;
+use Microsoft\Graph\Beta\Generated\Models\ThreatExpectedAssessment;
+use Microsoft\Graph\Beta\Generated\Models\ThreatCategory;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

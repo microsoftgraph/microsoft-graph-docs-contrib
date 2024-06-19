@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.email_threat_submission_policy import EmailThreatSubmissionPolicy
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.email_threat_submission_policy import EmailThreatSubmissionPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

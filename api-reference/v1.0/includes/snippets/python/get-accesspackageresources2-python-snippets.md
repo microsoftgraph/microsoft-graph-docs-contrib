@@ -5,7 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.entitlementManagement.catalogs.item.resources.resources_request_builder import ResourcesRequestBuilder
+from msgraph.generated.identity_governance.entitlement_management.catalogs.item.resources.resources_request_builder import ResourcesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = ResourcesRequestBuilder.ResourcesRequestBuilderGetQueryParameters
 		filter = "id eq '{resourceId}'",
 )
 
-request_configuration = ResourcesRequestBuilder.ResourcesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -1,13 +1,14 @@
 ---
-title: "rangeView resource type"
+title: "workbookRangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Range view
 ---
 
-# rangeView resource type
+# workbookRangeView resource type
 
 Namespace: microsoft.graph
 RangeView represents a set of visible cells of the parent range.
@@ -18,12 +19,12 @@ RangeView represents a set of visible cells of the parent range.
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
 |[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
-|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](workbookrange.md)|Return the range object associated with the range view|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cellAddresses|Json|Represents the cell addresses
+|cellAddresses|Json|Represents the cell addresses|
 |columnCount|Int32|Returns the number of visible columns. Read-only.|
 |formulas|Json|Represents the formula in A1-style notation.	|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.	|

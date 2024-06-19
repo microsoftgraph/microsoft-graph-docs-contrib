@@ -18,7 +18,7 @@ Inherits from [printOperation](printoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get operation](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
+| [Get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
 
 ## Properties
 |Property|Type|Description|

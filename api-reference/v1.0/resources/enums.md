@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### binaryOperator values
 
 |Member|
@@ -86,9 +94,10 @@ Namespace: microsoft.graph
 
 | Member              |
 | :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
+| required            |
+| recommeded          |
+| unknownFutureValue  |
+| peerRecommeded          |
 
 ### courseStatus values
 
@@ -146,6 +155,50 @@ Namespace: microsoft.graph
 | :----- |
 | user   |
 | group  |
+
+### multiTenantOrganizationMemberProcessingStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberRole values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberState values
+
+|Member|
+|:---|
+|pending|
+|active|
+|removed|
+|unknownFutureValue|
+
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
 
 ### federatedIdpMfaBehavior values
 | Member                        |
@@ -2017,6 +2070,52 @@ Possible values for user account types (group membership), per Windows definitio
 | stapleDualRight    |
 | stapleDualBottom   |
 | unknownFutureValue |
+| stapleTripleLeft|
+| stapleTripleTop|
+| stapleTripleRight|
+| stapleTripleBottom|
+| bindLeft|
+| bindTop|
+| bindRight|
+| bindBottom|
+| foldAccordion|
+| foldDoubleGate|
+| foldGate|
+| foldHalf|
+| foldHalfZ|
+| foldLeftGate|
+| foldLetter|
+| foldParallel|
+| foldPoster|
+| foldRightGate|
+| foldZ|
+| foldEngineeringZ|
+| punchTopLeft|
+| punchBottomLeft|
+| punchTopRight|
+| punchBottomRight|
+| punchDualLeft|
+| punchDualTop|
+| punchDualRight|
+| punchDualBottom|
+| punchTripleLeft|
+| punchTripleTop|
+| punchTripleRight|
+| punchTripleBottom|
+| punchQuadLeft|
+| punchQuadTop|
+| punchQuadRight|
+| punchQuadBottom|
+| fold|
+| trim|
+| bale|
+| bookletMaker|
+| coat|
+| laminate|
+| trimAfterPages|
+| trimAfterDocuments|
+| trimAfterCopies|
+| trimAfterJob|
 
 ### printMultipageLayout values
 
@@ -2104,6 +2203,16 @@ Possible values for user account types (group membership), per Windows definitio
 | dropdownSingleSelect |
 | emailBox             |
 | checkboxMultiSelect  |
+
+### authenticationAttributeCollectionInputType values
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
 
 ### teamworkActivityTopicSource values
 
@@ -3004,6 +3113,18 @@ Possible values for user account types (group membership), per Windows definitio
 | Succeeded        |
 | Failed           |
 | EntryLevelErrors |
+
+### stagedFeatureName values
+
+| Member                         |
+|:-------------------------------|
+| passthroughAuthentication      |
+| seamlessSso                    |
+| passwordHashSync               |
+| emailAsAlternateId             |
+| unknownFutureValue             |
+| certificateBasedAuthentication |
+| multiFactorAuthentication      |
 
 ### synchronizationJobRestartScope values
 

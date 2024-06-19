@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.windows_defender_scan_post_request_body import WindowsDefenderScanPostRequestBody
+from msgraph.generated.devicemanagement.manageddevices.item.windows_defender_scan.windows_defender_scan_post_request_body import WindowsDefenderScanPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
