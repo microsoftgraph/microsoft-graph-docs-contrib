@@ -3,15 +3,15 @@
     {
       "ChangeList": [
         {
-          "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+          "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcBulkDisasterRecoveryFailback",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcBulkDisasterRecoveryFailback](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta resource and its methods.",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailback](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta) resource type.",
           "Target": "cloudPcBulkDisasterRecoveryFailback"
         },
         {
-          "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+          "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcBulkDisasterRecoveryFailover",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "cloudPcBulkDisasterRecoveryFailover"
         }
       ],
-      "Id": "EA968C7D-ABD9-22B5-D562-6AC4CCF3C43A",
+      "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-06-17T15:45:13.2794293Z",
