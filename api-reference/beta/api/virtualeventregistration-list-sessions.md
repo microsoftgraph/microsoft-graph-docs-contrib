@@ -47,9 +47,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md)* objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body. 
 
-*Currently, this API is only able to return the session summary, which is a partial representation of the full session object.
+> [!NOTE]
+> 
+> Currently, this API is only able to return the session summary, which is a partial representation of the full session object.
 
 ## Examples
 
