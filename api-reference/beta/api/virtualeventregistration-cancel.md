@@ -1,5 +1,5 @@
 ---
-title: "Cancel virtualEventRegistration"
+title: "virtualEventRegistration: cancel"
 description: "Cancel a registrant's registration record for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,16 +7,12 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Cancel virtualEventRegistration
+# virtualEventRegistration: cancel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
-
-Use delegated permission to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
-
-Use application permission to cancel a registration record for an anonymous user. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,6 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-cancel-permissions.md)]
+
+> [!NOTE]
+> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
+> - Use application permissions to cancel a registration record for an anonymous user. 
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,7 +66,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
