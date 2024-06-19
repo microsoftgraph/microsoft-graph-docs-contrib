@@ -53,6 +53,14 @@
         {
           "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
           "ApiChange": "Relationship",
+          "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationQuestionBase** relationship to the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Relationship",
           "ChangedApiName": "virtualEventRegistrationConfiguration",
           "ChangeType": "Deletion",
           "Description": "Removed the **virtualEventRegistrationQuestion** relationship from the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationconfiguration?view=graph-rest-beta) resource.",
