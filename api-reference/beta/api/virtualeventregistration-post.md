@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). It registers the person for the webinar. 
+Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,9 +44,9 @@ In the request body, supply a JSON representation of a [virtualEventRegistration
 
 ## Response
 
-If successful, this action returns:
-* a `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
-* a `204 No Content` response code for application permissions.
+If successful, this action returns one of the following:
+* A `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
+* A `204 No Content` response code for application permissions.
 
 ## Examples
 
@@ -207,7 +207,7 @@ Content-Type: application/json
 
 #### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
