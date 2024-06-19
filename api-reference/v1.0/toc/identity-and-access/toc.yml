@@ -1510,6 +1510,10 @@ items:
         href: ../../api/authenticationcombinationconfiguration-update.md
       - name: Delete
         href: ../../api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+    - name: FIDO2 combination configuration
+      href: ../../resources/fido2combinationconfiguration.md
+    - name: X509 certificate combination configuration
+      href: ../../resources/x509certificatecombinationconfiguration.md
     - name: Authentication method mode detail
       items:
       - name: Authentication method mode detail
