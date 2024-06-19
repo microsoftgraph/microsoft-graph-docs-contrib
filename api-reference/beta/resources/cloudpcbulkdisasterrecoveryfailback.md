@@ -13,26 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk disasterRecoveryFailback action with executeAction API. This triggers/initiates action to deactivate cross region disaster recovery, which will make the Cloud PC back to the original region when the region outage recovered.
+Represents the entity that performs a bulk disaster recovery failback action using the executeAction API. This action initiates the deactivation of cross-region disaster recovery that restores the Cloud PC to its original region when the regional outage is resolved.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
-
-## Methods
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/the numbercloudpcbulkaction.md).|
-|cloudPcIds|String collection|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|createdDateTime|DateTimeOffset|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|displayName|String|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|id|String|from [entity](../resources/entity.md).|
+|cloudPcIds|String collection|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
