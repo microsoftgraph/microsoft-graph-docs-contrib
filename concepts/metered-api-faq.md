@@ -14,7 +14,7 @@ ms.custom: scenarios:getting-started
 Setting up billing requires permissions both for the application registration and the Azure subscription you wish to use. Required permissions for the application registration are Application Owner or Application Administrator. Required permissions for the Azure subscription are Subscription Contributor, Owner / Resource Group Contributor, or Owner.
 
 ### Can I use a service principal to set up billing on my app registration?
-Yes, it requires an application administrator or similar role for the App Registration assigned to the Service Principal. The role can be scoped to only the target application set up for billing to prevent overly broad permissions from being granted.
+Yes, it requires an application administrator or similar role for the app registration assigned to the service principal. The role can be scoped to only the target application set up for billing to prevent overly broad permissions from being granted.
 
 ### Can I use a Managed Identity to set up billing on my App registration?
 Yes, you can create a Managed Identity for Azure resources. Assign role-based access control to your subscription or resource group, and add the Microsoft Entra application administrator role to the service principal associated with the managed identity. See [Use a managed identity to access Azure Resource Manager - Windows - Microsoft Entra](/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-ua-arm) for an example.
