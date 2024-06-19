@@ -23,10 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "virtualeventregistration_post_question" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
 
-> [!NOTE]
->
-> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registration records from virtual events created by that specific user.
-
 ## HTTP request
 
 <!-- {
