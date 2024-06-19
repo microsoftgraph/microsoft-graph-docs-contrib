@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-virtualeventsession?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
         },
         {
