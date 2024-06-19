@@ -68,7 +68,7 @@ Most frequently used tools to review and monitor billing charges:
 
 The billing details can be aggregated or broken down by:
 
-  | Type | Exports property | Cost Analysis, Budgets, and Alerts filter |
+  | Type | Exports property | Cost analysis, budgets, and alerts filter |
   |:--------------------------|:----------------------------------------|:----------------------------------------|
   | Meter information | MeterName, MeterId, MeterCategory, MeterSubcategory, ProductName, ConsumedService | Meter, Meter category, Meter subcategory, Service name|
   | Resource information | InstanceId, ResourceType, ResourceGroup, SubscriptionGuid| Resource, Resource guid, Resource type, Resource group, Service name |
