@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
 
 > [!NOTE]
+> 
 > Currently, this API only supports single session webinars and returns a single session. 
 
 ## Permissions
