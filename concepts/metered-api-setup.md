@@ -169,4 +169,4 @@ The invoice will include details that allow you to understand the amount of usag
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
-- [Metered APIs Frequently Asked Questions](/graph/metered-api-faq)
+- [Metered APIs frequently asked questions](/graph/metered-api-faq)
