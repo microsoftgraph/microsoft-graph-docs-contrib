@@ -38,7 +38,6 @@ Inherits from [entity](../resources/entity.md).
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action uses maintenance window to schedule action, When `false` means bulk action does not use the maintenance window. Default value is `false`.|
 |status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-values)|Indicates the result of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only.|
 
-
 ### cloudPcBulkActionStatus values
 
 |Member|Description|
