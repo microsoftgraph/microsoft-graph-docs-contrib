@@ -30,7 +30,7 @@ Yes, Microsoft Teams export APIs require a `model` parameter to be passed as par
 Inspecting the code of the calling application is the best way to determine which `model` parameter is being used.
 
 ### How is seeded capacity calculated?
-Seeded capacity for Teams export APIs being called with the model A parameter is calculated based on the number of eligible users in the target tenant. Seeded capacity is then applied to each application running against that tenant.
+Seeded capacity for Teams export APIs being called with the `model=a` parameter is calculated based on the number of eligible users in the target tenant. Seeded capacity is then applied to each application running against that tenant.
 
 ### How is seeded capacity applied?
 Seeded capacity is evaluated at the beginning of the month, and any eligible license counts to the tenant-level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it is depleted. Further consumption by the application is then metered and appears on the monthly bill.
