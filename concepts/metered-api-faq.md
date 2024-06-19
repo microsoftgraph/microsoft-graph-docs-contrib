@@ -16,7 +16,7 @@ Setting up billing requires permissions both for the application registration an
 ### Can I use a service principal to set up billing on my app registration?
 Yes, it requires an application administrator or similar role for the app registration assigned to the service principal. The role can be scoped to only the target application set up for billing to prevent overly broad permissions from being granted.
 
-### Can I use a Managed Identity to set up billing on my App registration?
+### Can I use a managed identity to set up billing on my app registration?
 Yes, you can create a Managed Identity for Azure resources. Assign role-based access control to your subscription or resource group, and add the Microsoft Entra application administrator role to the service principal associated with the managed identity. See [Use a managed identity to access Azure Resource Manager - Windows - Microsoft Entra](/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-ua-arm) for an example.
 
 ### How can I verify that my application is properly set up for billing?
