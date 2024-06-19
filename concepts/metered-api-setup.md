@@ -35,7 +35,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 
 2. Use [az graph-services](/cli/azure/service-page/graph%20services) in [Azure Cloudshell](https://shell.azure.com/) or your own [Azure CLI](/cli/azure/) installation to create a new instance of the **Microsoft.GraphServices/accounts** resource type to associate your application registration with the active subscription.
  
-Copy the following command into your preferred command-line interface (PowerShell, Bash, or Windows command prompt), replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created billing resource. 
+Copy the following command into your preferred command-line interface (PowerShell, Bash, or Windows command prompt), replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response includes a JSON representation of the newly created billing resource. 
 
 ```powershell
 az graph-services account create --resource-group myRG  --resource-name myGraphAppBilling --subscription mySubscriptionGUID --location global --app-id AppRegGUID
