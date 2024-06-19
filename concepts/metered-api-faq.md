@@ -39,7 +39,7 @@ Seeded capacity is evaluated at the beginning of the month, and any eligible lic
 The API call fails with a 402 Payment Required error. This is the case even if targeting a user with a valid user license and passing the model A parameter.
 
 ### What happens when the model parameter is excluded from a call to a Microsoft Teams export API that requires it?
-When calling an API without a required model parameter the API defaults to evaluation mode behavior. The evaluation mode provides a limited number of API calls per month before returning the 402 Payment Required error. The evaluation mode is provided for evaluation and development only and isn't intended for production use.  
+When calling an API without a required `model` parameter, the API defaults to evaluation-mode behavior. The evaluation mode provides a limited number of API calls per month before returning the 402 payment required error. The evaluation mode is provided for evaluation and development only and isn't intended for production use.  
 
 ## Application consumer FAQ
 
