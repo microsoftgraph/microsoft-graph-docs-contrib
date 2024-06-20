@@ -56,11 +56,6 @@ If successful, this method returns a `200 OK` response code and a [companySubscr
 
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_companySubscription"
-}-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/subscriptions/f9c1ea2d-2c6e-4717-8c3b-7130812d70ba
 ```
