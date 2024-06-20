@@ -18,7 +18,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app installation
     items:
@@ -152,7 +152,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -163,7 +163,7 @@ items:
         - name: Record response
           href: ../../api/call-record.md
         - name: Cancel media processing
-          href: ../../api/call-cancelMediaProcessing.md
+          href: ../../api/call-cancelmediaprocessing.md
         - name: Subscribe to tone
           href: ../../api/call-subscribetotone.md
         - name: Send DTMF tone
@@ -249,7 +249,7 @@ items:
       - name: Online meeting
         href: ../../resources/onlinemeeting.md
       - name: Create
-        href: ../../api/application-post-onlineMeetings.md
+        href: ../../api/application-post-onlinemeetings.md
       - name: Get
         href: ../../api/onlinemeeting-get.md
       - name: Update
@@ -260,7 +260,7 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
     - name: Call recording
       items:
@@ -546,7 +546,7 @@ items:
       - name: Delete message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -564,7 +564,7 @@ items:
       - name: Delete reply message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo deletion of a reply message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -588,7 +588,7 @@ items:
       - name: Delete message in chat
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in chat
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel

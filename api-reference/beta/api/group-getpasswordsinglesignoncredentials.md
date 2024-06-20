@@ -97,7 +97,6 @@ POST https://graph.microsoft.com/beta/groups/314ac440-129f-4cb3-ad61-24ef4a7de1d
 
 ---
 
-
 ### Response
 
 The following example shows the response.

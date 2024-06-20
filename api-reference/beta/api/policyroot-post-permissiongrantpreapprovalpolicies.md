@@ -148,7 +148,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -265,7 +264,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
