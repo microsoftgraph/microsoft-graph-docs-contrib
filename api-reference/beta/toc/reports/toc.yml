@@ -581,8 +581,6 @@ items:
         href: ../../api/healthmonitoring-alert-get.md
       - name: Update
         href: ../../api/healthmonitoring-alert-update.md
-      - name: Enrichment
-        href: ../../resources/healthmonitoring-enrichment.md
     - name: Alert configuration
       href: ../../resources/healthmonitoring-alertconfiguration.md
       items:

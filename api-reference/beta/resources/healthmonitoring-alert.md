@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|Returns a key-value pair containing the name of documentation to aid in investigation of the alert and a link to the documentation.|
 |enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Provides helpful investigative information on the alert.|
 |id|String|Unique identifier of this alert under the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. New scenarios may be added over time as new monitored scenarios are added.|
+|scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. New scenarios may be added over time.|
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|A collection of signals that are used in the generation of the alert.|
 |state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert. The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 
