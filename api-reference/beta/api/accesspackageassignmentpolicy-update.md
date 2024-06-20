@@ -379,7 +379,7 @@ Content-Type: application/json
 
 ### Example 3: Remove the customExtensionStageSettings from a policy
 
-To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object.
+To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object. 
 
 #### Request
 
