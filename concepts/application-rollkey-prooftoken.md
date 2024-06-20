@@ -136,8 +136,8 @@ namespace SampleCertCall
                 Console.WriteLine("\nEnter the choose number here:");
                 choice = Int32.TryParse(Console.ReadLine(), out choice) ? choice : -1;
 
-                var code = new HttpStatusCode();
-                var response = new KeyCredential();
+                HttpStatusCode code;
+                KeyCredential response;
                 string certID;
                 Guid val;
 
@@ -190,7 +190,6 @@ namespace SampleCertCall
                         {
                             Console.WriteLine("\n______________________");
                             Console.WriteLine("Something went wrong!");
-                            Console.WriteLine("HTTP Status code is " + code);
                             Console.WriteLine("______________________\n");
                         }
 
