@@ -19,7 +19,7 @@ Represents information about positions related to entities within a user's [prof
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|company|[companyDetail](companydetail.md)|Useful information about the company or employer.|
+|company|[companyDetail](companydetail.md)|Information about the company or employer.|
 |description|String|A description for the position in question.|
 |endMonthYear|Date|The date when the position ended.|
 |jobTitle|String|The title of the position.|
