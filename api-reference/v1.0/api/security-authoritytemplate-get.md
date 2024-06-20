@@ -3,7 +3,7 @@ title: "Get authorityTemplate"
 description: "Read the properties and relationships of an authorityTemplate."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here's an example of the response.

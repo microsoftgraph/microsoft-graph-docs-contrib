@@ -18,9 +18,9 @@ Contains metadata for email messages that are analyzed for security threats.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List analyzedEmail objects](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
-|[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.|
-|[remediate](../api/security-analyzedemail-remediate.md)|None|Remove a potential threat from end users' mailboxes.|
+|[List](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
+|[Get](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.|
+|[Remediate](../api/security-analyzedemail-remediate.md)|None|Remove a potential threat from end users' mailboxes.|
 
 ## Properties
 |Property|Type|Description|
@@ -47,13 +47,13 @@ Contains metadata for email messages that are analyzed for security threats.
 |phishConfidenceLevel|String|The phish confidence level associated with the email|
 |policy|String|The action policy that took effect.|
 |policyAction|String|The action taken on the email based on the configured policy.|
-|recipientEmailAddresses|String collection|Contains the email addresses of the recipients.|
+|recipientEmailAddress|String|Contains the email address of the recipient.|
 |returnPath|String|A field that indicates where and how bounced emails are processed.|
 |senderDetail|[microsoft.graph.security.analyzedEmailSenderDetail](../resources/security-analyzedemailsenderdetail.md)|Sender details of the email.|
 |sizeInBytes|Int32| Size of the email in bytes.|
 |spamConfidenceLevel|String|Spam confidence of the email.|
 |subject|String|Subject of the email.|
-|threatType|[microsoft.graph.security.threatType](#threattype-values)|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
 |urlsCount|Int32|The number of URLs in the email.|
 
@@ -74,7 +74,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |unknown|
 |spam|
 |malware|
-|phishing|
+|phish|
 |none|
 |unknownFutureValue|
 
@@ -120,13 +120,11 @@ The following JSON representation shows the resource type.
   "senderDetail": {
     "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
   },
-  "recipientEmailAddresses": [
-    "String"
-  ],
+  "recipientEmailAddress": "String",
   "distributionList": "String",
   "subject": "String",
   "returnPath": "String",
-  "directionality": "String",
+  "directionality": "microsoft.graph.security.antispamDirectionality",
   "originalDelivery": {
     "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
   },
@@ -158,7 +156,9 @@ The following JSON representation shows the resource type.
   "overrideSources": [
     "String"
   ],
-  "threatType": "String",
+  "threatTypes": [
+    "microsoft.graph.security.threatType"
+  ],
   "detectionMethods": [
     "String"
   ],
@@ -176,4 +176,3 @@ The following JSON representation shows the resource type.
   "policy": "String"
 }
 ```
-

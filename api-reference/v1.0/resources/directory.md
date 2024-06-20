@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Deleted item
 ---
 
 # directory resource type
@@ -24,8 +25,8 @@ Inherits from [entity](entity.md).
 | [Get deleted item](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
 | [Restore deleted item](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
 | [List deleted items](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
-| [Permanently delete an item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
-| [List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
+| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 

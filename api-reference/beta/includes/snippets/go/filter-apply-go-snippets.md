@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphdrives.NewApplyPostRequestBody()
 criteria := graphmodels.NewWorkbookFilterCriteria()
@@ -24,7 +24,7 @@ criterion2 := "criterion2-value"
 criteria.SetCriterion2(&criterion2) 
 color := "color-value"
 criteria.SetColor(&color) 
-operator := graphmodels.Newoperator()
+operator := graph.Newoperator()
 criteria.SetOperator(operator)
 icon := graphmodels.NewWorkbookIcon()
 set := "set-value"
@@ -34,12 +34,13 @@ icon.SetIndex(&index)
 criteria.SetIcon(icon)
 dynamicCriteria := "dynamicCriteria-value"
 criteria.SetDynamicCriteria(&dynamicCriteria) 
-values := graphmodels.NewJson()
+values := graph.Newvalues()
 criteria.SetValues(values)
 filterOn := "filterOn-value"
 criteria.SetFilterOn(&filterOn) 
 requestBody.SetCriteria(criteria)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Columns().ByWorkbookTableColumnId("workbookTableColumn-id").Filter().Apply().Post(context.Background(), requestBody, nil)
 
 

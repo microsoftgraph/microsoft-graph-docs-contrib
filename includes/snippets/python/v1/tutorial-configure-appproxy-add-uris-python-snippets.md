@@ -12,7 +12,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Application(
 	identifier_uris = [
-		"https://contosoiwaapp-contoso.msappproxy.net",
+		"api://32977d3b-ee0e-4614-9f50-f583a07842d2",
 	],
 	web = WebApplication(
 		redirect_uris = [

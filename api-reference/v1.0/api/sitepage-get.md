@@ -4,7 +4,7 @@ description: "Returns the metadata for a sitePage in the site pages list in a si
 ms.date: 03/15/2018
 title: Get sitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -107,7 +107,6 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 

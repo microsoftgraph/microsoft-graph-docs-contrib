@@ -3,7 +3,7 @@ title: "skillProficiency resource type"
 description: "skillProficiency resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemfacet.md).
  
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List skills](../api/profile-list-skills.md)|[skillProficiency](../resources/skillproficiency.md) collection|Get the skillProficiency resources from the skills navigation property.|
-|[Create skillProficiency ](../api/profile-post-skills.md)|[skillProficiency](../resources/skillproficiency.md)|Create a new skillProficiency object.|
-|[Get skillProficiency](../api/skillproficiency-get.md)|[skillProficiency](../resources/skillproficiency.md)|Read the properties and relationships of a [skillProficiency](../resources/skillproficiency.md) object.|
-|[Update skillProficiency](../api/skillproficiency-update.md)|[skillProficiency](../resources/skillproficiency.md)|Update the properties of a [skillProficiency](../resources/skillproficiency.md) object.|
-|[Delete skillProficiency](../api/skillproficiency-delete.md)|None|Deletes a [skillProficiency](../resources/skillproficiency.md) object.|
+|[List](../api/profile-list-skills.md)|[skillProficiency](../resources/skillproficiency.md) collection|Get the skillProficiency resources from the skills navigation property.|
+|[Create](../api/profile-post-skills.md)|[skillProficiency](../resources/skillproficiency.md)|Create a new skillProficiency object.|
+|[Get](../api/skillproficiency-get.md)|[skillProficiency](../resources/skillproficiency.md)|Read the properties and relationships of a [skillProficiency](../resources/skillproficiency.md) object.|
+|[Update](../api/skillproficiency-update.md)|[skillProficiency](../resources/skillproficiency.md)|Update the properties of a [skillProficiency](../resources/skillproficiency.md) object.|
+|[Delete](../api/skillproficiency-delete.md)|None|Deletes a [skillProficiency](../resources/skillproficiency.md) object.|
 
 ## Properties
 |Property|Type|Description|

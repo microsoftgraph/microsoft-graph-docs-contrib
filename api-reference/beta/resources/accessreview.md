@@ -21,20 +21,20 @@ Represents a Microsoft Entra [access review](accessreviews-root.md).
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List accessReviews](../api/accessreview-list.md) | [accessReview](accessreview.md) collection | List accessReviews for a businessFlowTemplate. |
-|[Get accessReview](../api/accessreview-get.md) |    [accessReview](accessreview.md) |    Get an access review with a specific id. |
-|[Create accessReview](../api/accessreview-create.md) |    [accessReview](accessreview.md) |    Create a new accessReview. |
-|[Update accessReview](../api/accessreview-update.md) |    [accessReview](accessreview.md)    | Update an accessReview. |
-|[Delete accessReview](../api/accessreview-delete.md) |    None.    | Delete an accessReview. |
-|[List accessReview reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection|    Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview-addreviewer.md) | None.    |    Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None. |    Remove a reviewer from an accessReview. |
-|[List accessReview decisions](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection |    Get the decisions of an accessReview. |
-|[List my accessReview decisions](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection | As a reviewer, get my decisions of an accessReview. |
-|[Send accessReview reminder](../api/accessreview-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](../api/accessreview-stop.md) | None. |    Stop an accessReview. |
-|[Reset accessReview decisions](../api/accessreview-reset.md) | None.    |    Reset the decisions in an in-progress accessReview. |
-|[Apply accessReview decisions](../api/accessreview-apply.md) | None. |    Apply the decisions from a completed accessReview. |
+|[List access reviews](../api/accessreview-list.md) | [accessReview](accessreview.md) collection | List accessReviews for a businessFlowTemplate. |
+|[Get access review](../api/accessreview-get.md) |    [accessReview](accessreview.md) |    Get an access review with a specific id. |
+|[Create access review](../api/accessreview-create.md) |    [accessReview](accessreview.md) |    Create a new accessReview. |
+|[Update access review](../api/accessreview-update.md) |    [accessReview](accessreview.md)    | Update an accessReview. |
+|[Delete access review](../api/accessreview-delete.md) |    None.    | Delete an accessReview. |
+|[List reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection|    Get the reviewers of an accessReview. |
+|[Add reviewer](../api/accessreview-addreviewer.md) | None.    |    Add a reviewer to an accessReview. |
+|[Remove reviewer](../api/accessreview-removereviewer.md) | None. |    Remove a reviewer from an accessReview. |
+|[List decisions](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection |    Get the decisions of an accessReview. |
+|[List my decisions](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection | As a reviewer, get my decisions of an accessReview. |
+|[Send reminder](../api/accessreview-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReview. |
+|[Stop](../api/accessreview-stop.md) | None. |    Stop an accessReview. |
+|[Reset](../api/accessreview-reset.md) | None.    |    Reset the decisions in an in-progress accessReview. |
+|[Apply decisions](../api/accessreview-apply.md) | None. |    Apply the decisions from a completed accessReview. |
 
 ## Properties
 

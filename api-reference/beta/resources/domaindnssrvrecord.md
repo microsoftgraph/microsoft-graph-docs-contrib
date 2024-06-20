@@ -1,7 +1,7 @@
 ---
 title: "domainDnsSrvRecord resource type"
 description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -51,7 +51,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

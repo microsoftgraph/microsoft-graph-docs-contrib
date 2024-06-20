@@ -3,7 +3,7 @@ title: "Update tag"
 description: "Update the properties of a tag object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

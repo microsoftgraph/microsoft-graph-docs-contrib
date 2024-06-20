@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\LifecycleManagementSettings;
+use Microsoft\Graph\Generated\Models\IdentityGovernance\LifecycleManagementSettings;
 use Microsoft\Graph\Generated\Models\EmailSettings;
 
 

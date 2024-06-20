@@ -44,12 +44,12 @@ If you have an existing Data Connect application, use the following steps to ena
 
 If you don't have an existing Data Connect application, use the following steps to create one:
 
-1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience](./onboarding-experience-overview.md) to build your Data Connect application.
+1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide to build your Data Connect application.
 
-2.  When you are on the [Register your Microsoft Entra application with Microsoft Graph Data Connect](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=4) step, keep in mind of the below:
+2.  When you're on the [Register your Microsoft Entra application with Microsoft Graph Data Connect](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=4) step, do the following:
     1. Fill out the application details on the **Registration Info** page. 
     2. Choose **Enable encryption for datasets**.
-    3. For **Key Vault**, from the drop-down menu, select the AKV URI (name of the AKV).
+    3. For **Key Vault**, from the dropdown menu, select the AKV URI (name of the AKV).
     4. If your AKV doesn't exist, open a new tab and follow the steps in [Setting up your Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
     5. Go back to your Data Connect application tab and look for your AKV in the dropdown to select it. You might need to refresh the page for the AKV to populate in the dropdown.
 
@@ -83,7 +83,7 @@ Your application needs to reverse the encryption and compression process to acce
 
 1. Get the file decryption key from the extraction metadata.
 
-2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). For more information, see [Azure Key Vault decrypt API](/rest/api/keyvault/keys/decrypt/decrypt?view=rest-keyvault-keys-7.4&tabs=HTTP).
+2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). For more information, see [Azure Key Vault decrypt API](/rest/api/keyvault/keys/decrypt/decrypt).
 
 3. Decrypt the file by using the file encryption key. For a C# example, see [Encrypting data](/dotnet/standard/security/encrypting-data).
 

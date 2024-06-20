@@ -19,9 +19,9 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection |Get the list of conversations in this group.|
+|[List](../api/group-list-conversations.md) | [conversation](conversation.md) collection |Get the list of conversations in this group.|
 |[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
-|[Get conversation](../api/conversation-get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
+|[Get](../api/conversation-get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Delete](../api/conversation-delete.md) | None |Delete conversation object. |
 |[List conversation threads](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
 |[Create conversation thread](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|

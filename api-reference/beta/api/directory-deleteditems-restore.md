@@ -48,7 +48,13 @@ POST /directory/deleteditems/{id}/restore
 | Content-type | application/json |
 
 ## Request body
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are required when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md). The default value for this paramater is `false`.|
 
 ## Response
 
@@ -139,5 +145,82 @@ Content-type: application/json
   ]
 }
 -->
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "restore_directory_deleteditem_autoreconcileproxyconflict"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
+Content-Type: application/json
+
+{
+  "autoReconcileProxyConflict": true
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-autoreconcileproxyconflict-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restore-directory-deleteditem-autoreconcileproxyconflict-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restore-directory-deleteditem-autoreconcileproxyconflict-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-directory-deleteditem-autoreconcileproxyconflict-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-directory-deleteditem-autoreconcileproxyconflict-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/restore-directory-deleteditem-autoreconcileproxyconflict-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restore-directory-deleteditem-autoreconcileproxyconflict-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/restore-directory-deleteditem-autoreconcileproxyconflict-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "78bf875b-9343-4edc-9130-0d3958113563",
+    "businessPhones": [],
+    "displayName": "SampleUser",
+    "givenName": "Sample",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "sampleuser@contoso.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "sampleuser@contoso.com"
+}
+```
 
 

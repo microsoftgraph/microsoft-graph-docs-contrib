@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.term import Term
-from msgraph.generated.models.localized_label import LocalizedLabel
+from msgraph.generated.models.term_store.term import Term
+from msgraph.generated.models.term_store.localized_label import LocalizedLabel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

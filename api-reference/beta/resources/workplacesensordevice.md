@@ -3,7 +3,7 @@ title: "workplaceSensorDevice resource type"
 description: "Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -21,12 +21,12 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get a list of all workplace sensor devices created for a tenant.|
-|[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new workplace sensor device.|
-|[Get workplaceSensorDevice](../api/workplacesensordevice-get.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Get the properties of a workplace sensor device, including tags, MAC address, sensors, and more.|
-|[Update workplaceSensorDevice](../api/workplacesensordevice-update.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Update the properties of a workplace sensor device.|
-|[Delete workplaceSensorDevice](../api/workplacesensordevice-delete.md)|None|Delete a workplace sensor device.|
-|[ingestTelemetry](../api/workplacesensordevice-ingesttelemetry.md)|None|Ingest sensor telemetry for a workplace sensor device.|
+|[List](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get a list of all workplace sensor devices created for a tenant.|
+|[Create](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new workplace sensor device.|
+|[Get](../api/workplacesensordevice-get.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Get the properties of a workplace sensor device, including tags, MAC address, sensors, and more.|
+|[Update](../api/workplacesensordevice-update.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Update the properties of a workplace sensor device.|
+|[Delete](../api/workplacesensordevice-delete.md)|None|Delete a workplace sensor device.|
+|[Ingest telemetry](../api/workplacesensordevice-ingesttelemetry.md)|None|Ingest sensor telemetry for a workplace sensor device.|
 
 ## Properties
 
