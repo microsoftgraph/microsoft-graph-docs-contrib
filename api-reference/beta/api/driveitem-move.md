@@ -18,8 +18,6 @@ Your app can combine moving an item to a new container and updating other proper
 
 When a **driveItem** is moved within the same site or container, all existing sharing links continue to work. If the **driveItem** is moved to a different site or container, existing sharing links no longer work.
 
-This method doesn't move items between [drives](../resources/drive.md).
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
