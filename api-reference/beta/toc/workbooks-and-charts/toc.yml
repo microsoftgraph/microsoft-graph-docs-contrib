@@ -26,28 +26,28 @@ items:
   items:
   - name: Chart
     href: ../../resources/workbookchart.md
-  - name: Get chart
+  - name: List
+    href: ../../api/chart-list.md
+  - name: Get
     href: ../../api/chart-get.md
-  - name: Create ChartSeries
+  - name: Update
+    href: ../../api/chart-update.md
+  - name: Delete
+    href: ../../api/chart-delete.md
+  - name: Add
+    href: ../../api/chartcollection-add.md
+  - name: Create series
     href: ../../api/chart-post-series.md
   - name: List series
     href: ../../api/chart-list-series.md
-  - name: Update chart
-    href: ../../api/chart-update.md
   - name: Get chart image
     href: ../../api/chart-image.md
-  - name: Delete chart
-    href: ../../api/chart-delete.md
   - name: Reset data
     href: ../../api/chart-setdata.md
   - name: Set position data
     href: ../../api/chart-setposition.md
-  - name: List charts
-    href: ../../api/chart-list.md
-  - name: Itemat
+  - name: Get chart at position
     href: ../../api/chartcollection-itemat.md
-  - name: Add chart
-    href: ../../api/chartcollection-add.md
 - name: Chart axis
   items:
   - name: Chart axis
@@ -212,20 +212,20 @@ items:
   items:
   - name: Named item
     href: ../../resources/workbooknameditem.md
-  - name: Add
-    href: ../../api/nameditem-add.md
-  - name: AddFormulaLocal
-    href: ../../api/nameditem-addformulalocal.md
-  - name: Get
-    href: ../../api/nameditem-get.md
-  - name: Update
-    href: ../../api/nameditem-update.md
-  - name: List range
-    href: ../../api/nameditem-range.md
   - name: List
     href: ../../api/nameditem-list.md
+  - name: Get
+    href: ../../api/nameditem-get.md
+  - name: Add
+    href: ../../api/nameditem-add.md
+  - name: Update
+    href: ../../api/nameditem-update.md
   - name: Delete
     href: ../../api/nameditem-delete.md
+  - name: Add name to collection
+    href: ../../api/nameditem-addformulalocal.md
+  - name: List range
+    href: ../../api/nameditem-range.md
 - name: Operation
   items:
   - name: Operation
