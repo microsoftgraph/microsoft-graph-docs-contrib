@@ -61,10 +61,10 @@ The following example shows a request to unarchive a channel.
 <!-- {
   "blockType": "request",
   "name": "unarchive_channel",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
+  "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response
@@ -72,12 +72,11 @@ POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "unarchive_channel",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "n4n3i4-be73-45e8-6663-043435jn28"]
+  "name": "unarchive_channel"
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/okon274d-be71-47e8-8763-04405c2aaf8/operations/n4n3i4-be73-45e8-6663-043435jn28
+Location: /teams/16dc05c0-2259-4540-a970-3580ff459721/operations/b7ee702a-d87f-4cc6-82b9-e731c16d3aba
 Content-Type: text/plain
 Content-Length: 0
 ```
@@ -91,10 +90,10 @@ The following example shows a request to unarchive a channel that fails because 
 <!-- {
   "blockType": "request",
   "name": "unarchive_channel_on_archived_team",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
+  "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response
