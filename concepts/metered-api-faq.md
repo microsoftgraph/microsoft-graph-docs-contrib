@@ -36,7 +36,7 @@ Seeded capacity for Teams export APIs being called with the `model=a` parameter 
 Seeded capacity is evaluated at the beginning of the month, and any eligible license counts to the tenant-level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it is depleted. Further consumption by the application is then metered and appears on the monthly bill.
 
 ### What happens when an app that is registered but not set up for billing initiates a metered Teams export API call?
-The API call fails with a 402 Payment Required error. This is the case even if targeting a user with a valid user license and passing the model A parameter.
+The API call fails with a 402 payment required error. This occurs even when targeting a user with a valid user license and passing the `model=a` parameter.
 
 ### What happens when the model parameter is excluded from a call to a Microsoft Teams export API that requires it?
 When calling an API without a required `model` parameter, the API defaults to evaluation-mode behavior. The evaluation mode provides a limited number of API calls per month before returning the 402 payment required error. The evaluation mode is provided for evaluation and development only and isn't intended for production use.  
