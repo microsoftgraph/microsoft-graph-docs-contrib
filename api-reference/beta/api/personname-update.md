@@ -3,7 +3,7 @@ title: "Update personName"
 description: "Update the properties of a personName object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "ocrSettings resource type"
 description: "Represents the OCR settings for an eDiscovery case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

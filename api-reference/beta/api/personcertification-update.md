@@ -3,7 +3,7 @@ title: "Update personCertification"
 description: "Update the properties of an personCertification object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

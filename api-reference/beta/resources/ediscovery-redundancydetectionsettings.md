@@ -3,7 +3,7 @@ title: "redundancyDetectionSettings resource type"
 description: "Redundancy settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
