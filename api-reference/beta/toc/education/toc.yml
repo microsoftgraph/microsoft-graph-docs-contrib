@@ -22,7 +22,7 @@ items:
     href: ../../api/educationschool-list-users.md
   - name: Remove user
     href: ../../api/educationschool-delete-users.md
-  - name: Get administrativeUnit
+  - name: Get administrative unit
     href: ../../api/educationschool-get-administrativeunit.md
   - name: Update school
     href: ../../api/educationschool-update.md
@@ -192,15 +192,15 @@ items:
   items:
   - name: Grading schema
     href: ../../resources/educationgradingscheme.md
-  - name: Get
+  - name: List
     href: ../../api/educationassignmentsettings-get.md
-  - name: Create grading scheme
+  - name: Create
     href: ../../api/educationassignment-post-gradingscheme.md
-  - name: Get educationGradingScheme
+  - name: Get
     href: ../../api/educationgradingscheme-get.md
-  - name: Update educationGradingScheme
+  - name: Update
     href: ../../api/educationgradingscheme-update.md
-  - name: Delete grading scheme
+  - name: Delete
     href: ../../api/educationgradingscheme-delete.md
 - name: Module
   items:
