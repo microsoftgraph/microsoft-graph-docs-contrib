@@ -98,14 +98,18 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "protectionPolicyBase",
+        "protectionRuleBase",
+        "protectionUnitBase",
+        "restoreArtifactBase",
         "restorePoint",
+        "restoreSessionBase",
         "serviceApp"
         ],
         "childNodes": [
           {
-            "name": "Protection rule",
+            "name": "Protection rule base",
             "resources": [
-              "protectionRuleBase",
               "driveProtectionRule",
               "mailboxProtectionRule",
               "siteProtectionRule"
@@ -114,9 +118,8 @@
         ],
           "childNodes": [
             {
-              "name": "Protection policy",
+              "name": "Protection policy base",
               "resources": [
-                "protectionPolicyBase",
                 "oneDriveForBusinessProtectionPolicy",
                 "exchangeProtectionPolicy",
                 "sharePointProtectionPolicy"
@@ -125,9 +128,8 @@
         ],
         "childNodes": [
           {
-            "name": "Protection unit",
+            "name": "Protection unit base",
             "resources": [
-              "protectionUnitBase",
               "driveProtectionUnit",
               "mailboxProtectionUnit",
               "siteProtectionUnit"
@@ -136,9 +138,8 @@
         ],
         "childNodes": [
           {
-            "name": "Restore artifact",
+            "name": "Restore artifact base",
             "resources": [
-              "restoreArtifactBase",
               "driveRestoreArtifact",
               "mailboxRestoreArtifact",
               "siteRestoreArtifact"
@@ -147,9 +148,8 @@
         ],
         "childNodes": [
           {
-            "name": "Restore session",
+            "name": "Restore session base",
             "resources": [
-              "restoreSessionBase",
               "oneDriveForBusinessRestoreSession",
               "exchangeRestoreSession",
               "sharePointRestoreSession"
