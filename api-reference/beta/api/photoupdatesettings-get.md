@@ -1,9 +1,9 @@
 ---
 title: "Get photoUpdateSettings"
 description: "Read the properties and relationships of a photoUpdateSettings object."
-author: "**Fred Ondieki: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "fondieki"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Update photoUpdateSettings"
 description: "Update the properties of a photoUpdateSettings object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "fondieki"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -36,14 +36,10 @@ PATCH /admin/people/photoUpdateSettings
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|source|photoUpdateSource|**TODO: Add Description**. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
-|allowedRoles|String collection|**TODO: Add Description** Optional.|
-
-
+|source|photoUpdateSource| Specifies what kind of photo updates will be allowed.. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
+|allowedRoles|String collection| Contains a list of wids that are allowed to perform edit operations in the cloud. Optional.|
 
 ## Response
 

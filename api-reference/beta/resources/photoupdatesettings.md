@@ -1,9 +1,9 @@
 ---
 title: "photoUpdateSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the settings that manage the support of photos are modified in an organization."
+author: "fondieki"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -15,25 +15,31 @@ Namespace: microsoft.graph
 
 Represents the settings that manage the support of photoupdate settings in an organization. By default, photoupdate are disabled. If enabled, users can optionally add or update their photoupdate settings.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) objects and their properties.|
+|[Create](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[Get](../api/photoupdatesettings-get.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Read the properties and relationships of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
 |[Update](../api/photoupdatesettings-update.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Update the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
 |[Delete](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id String The unique identifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
-|source|photoUpdateSource|The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
+|id|String| The unique identifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
+|source|photoUpdateSource| Specifies the types of photo updates permitted.The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -53,4 +59,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-

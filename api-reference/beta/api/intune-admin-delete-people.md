@@ -1,19 +1,19 @@
 ---
-title: "Delete photoUpdateSettings"
-description: "Delete a photoUpdateSettings object."
+title: "Delete peopleAdminSettings"
+description: "Delete a peopleAdminSettings object."
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
 ---
 
-# Delete photoUpdateSettings
+# Delete peopleAdminSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
+Delete a [peopleAdminSettings](../resources/peopleadminsettings.md) object.
 
 ## HTTP request
 
@@ -22,7 +22,7 @@ Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
 }
 -->
 ``` http
-DELETE /admin/people/photoUpdateSettings/$ref
+DELETE /admin/people/$ref
 ```
 
 ## Request headers
@@ -46,11 +46,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_photoupdatesettings"
+  "name": "delete_peopleadminsettings"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/photoUpdateSettings
+DELETE https://graph.microsoft.com/beta/admin/people
 ```
 
 
@@ -66,3 +66,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+

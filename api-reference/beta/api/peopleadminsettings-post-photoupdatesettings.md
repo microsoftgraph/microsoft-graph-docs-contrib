@@ -1,9 +1,9 @@
 ---
 title: "Create photoUpdateSettings"
 description: "Create a new photoUpdateSettings object."
-author: "**Fred Ondieki: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "fondieki"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -38,13 +38,10 @@ In the request body, supply a JSON representation of the [photoUpdateSettings](.
 
 You can specify the following properties when creating a **photoUpdateSettings**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|source|photoUpdateSource|**TODO: Add Description**. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
-|allowedRoles|String collection|**TODO: Add Description** Optional.|
-
-
+|source|photoUpdateSource| Specifies what kind of photo updates will be allowed.. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
+|allowedRoles|String collection| contains a list of wids that are allowed to perform edit operations in cloud. Optional.|
 
 ## Response
 
@@ -73,7 +70,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -97,4 +93,3 @@ Content-Type: application/json
   ]
 }
 ```
-
