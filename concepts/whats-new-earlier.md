@@ -114,7 +114,7 @@ For more information about town hall APIs, see [virtualEventTownhall](/graph/api
 
 ### Teamwork and communications | Messaging
 
-[Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link.
+[Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link. 
 
 ## March 2024: New and generally available
 
