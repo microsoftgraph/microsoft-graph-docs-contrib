@@ -14,7 +14,7 @@ Add a new [conversationMember](../resources/conversationmember.md) to a [team](.
 
 > [!NOTE]
 > * The **roles** property is empty by default for all members. This property only contains additional qualifiers when relevant; for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member shouldn't have any values specified in the **roles** property.
-> * After adding a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md), it might take some time for the addition to be reflected. Users can subscribe to notifications for membership changes in a particular team using [change notifications](../resources/change-notifications-api-overview.md).
+> * After adding a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md), it might take some time for the addition to be reflected. Users can use [change notifications](../resources/change-notifications-api-overview.md) to subscribe to notifications for membership changes in a particular team.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
