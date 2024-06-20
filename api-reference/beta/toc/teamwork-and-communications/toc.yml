@@ -419,7 +419,7 @@ items:
       - name: Cancel
         href: ../../api/virtualeventregistration-cancel.md
       - name: List sessions
-        href: ../../api/virtualeventregistration-list-virtualeventsession.md
+        href: ../../api/virtualeventregistration-list-sessions.md
     - name: Virtual event webinar registration configuration
       items:
       - name: Virtual event webinar registration configuration
