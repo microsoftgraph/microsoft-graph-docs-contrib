@@ -123,3 +123,10 @@ Content-Type: application/json
     ]
 }
 ```
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [ 
+      "Error: listquestionsvirtualeventregistration/container/answerInputType:
+      Expected type String but actual was Boolean. Property: answerInputType, actual value: 'boolean'"
+  ]
+}-->
