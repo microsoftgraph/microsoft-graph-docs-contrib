@@ -10,6 +10,16 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
+- name: Protection rule base
+  href: ../../resources/protectionrulebase.md
+- name: Protection unit base
+  items:
+  - name: Protection unit base
+    href: ../../resources/protectionunitbase.md
+  - name: Get
+    href: ../../api/protectionunitbase-get.md
+- name: Restore artifact base
+  href: ../../resources/restoreartifactbase.md
 - name: Restore point
   items:
   - name: Restore point
@@ -18,36 +28,18 @@ items:
     href: ../../api/backuprestoreroot-list-restorepoints.md
   - name: Search
     href: ../../api/restorepoint-search.md
-- name: Service app
-  items:
-  - name: Service app
-    href: ../../resources/serviceapp.md
-  - name: List
-    href: ../../api/backuprestoreroot-list-serviceapps.md
-  - name: Create
-    href: ../../api/backuprestoreroot-post-serviceapps.md
-  - name: Get
-    href: ../../api/serviceapp-get.md
-  - name: Delete
-    href: ../../api/backuprestoreroot-delete-serviceapps.md
-  - name: Activate
-    href: ../../api/serviceapp-activate.md
-  - name: Deactivate
-    href: ../../api/serviceapp-deactivate.md
-- name: Restore session
+- name: Restore session base
   items:
   - name: Restore session base
-    items:
-    - name: Restore session base
-      href: ../../resources/restoresessionbase.md
-    - name: List
-      href: ../../api/backuprestoreroot-list-restoresessions.md
-    - name: Get
-      href: ../../api/restoresessionbase-get.md
-    - name: Delete
-      href: ../../api/restoresessionbase-delete.md
-    - name: Activate
-      href: ../../api/restoresessionbase-activate.md
+    href: ../../resources/restoresessionbase.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-restoresessions.md
+  - name: Get
+    href: ../../api/restoresessionbase-get.md
+  - name: Delete
+    href: ../../api/restoresessionbase-delete.md
+  - name: Activate
+    href: ../../api/restoresessionbase-activate.md
   - name: OneDrive for Business restore session
     items:
     - name: OneDrive for Business restore session
@@ -78,6 +70,22 @@ items:
       href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
     - name: Update
       href: ../../api/sharepointrestoresession-update.md
+- name: Service app
+  items:
+  - name: Service app
+    href: ../../resources/serviceapp.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-serviceapps.md
+  - name: Create
+    href: ../../api/backuprestoreroot-post-serviceapps.md
+  - name: Get
+    href: ../../api/serviceapp-get.md
+  - name: Delete
+    href: ../../api/backuprestoreroot-delete-serviceapps.md
+  - name: Activate
+    href: ../../api/serviceapp-activate.md
+  - name: Deactivate
+    href: ../../api/serviceapp-deactivate.md
 - name: Complex types
   items:
   - name: Restore point search response
