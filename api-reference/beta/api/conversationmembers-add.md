@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and couldn't be created.
 
 > [!NOTE]
-> Sometimes it takes time to reflect the addition of a member after they're added. Users can subscribe to [change notifications](../resources/change-notifications-api-overview.md) for membership changes in a particular team.  
+> Sometimes it takes time to reflect the addition of a member after they're added. Users can use [change notifications](../resources/change-notifications-api-overview.md) to subscribe to notifications for membership changes in a particular team.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
