@@ -8373,7 +8373,7 @@ items:
       href: ../../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
     - name: Get
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
-    - name: Delete operationalInsightsConnection
+    - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
   - name: Product
     items:
