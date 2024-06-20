@@ -90,6 +90,8 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
+    {
+      "ChangeList": [
         {
           "Id": "01538c8b-1a19-4b41-b438-3b4608ae5834",
           "ApiChange": "Method",
