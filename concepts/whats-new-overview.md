@@ -26,6 +26,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Teamwork and communications | Messaging
+
+[Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+
 ## June 2024: New in preview only
 
 ### Device and app management | Cloud PC
