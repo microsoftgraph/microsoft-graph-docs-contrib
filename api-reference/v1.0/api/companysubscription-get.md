@@ -56,8 +56,6 @@ If successful, this method returns a `200 OK` response code and a [companySubscr
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_companySubscription"
