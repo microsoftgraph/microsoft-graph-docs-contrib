@@ -1,5 +1,5 @@
 ---
-title: "MOverview of access reviews APIs"
+title: "Overview of access reviews APIs"
 description: "Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Microsoft Entra resources."
 ms.localizationpriority: medium
 author: "jyothig123"
