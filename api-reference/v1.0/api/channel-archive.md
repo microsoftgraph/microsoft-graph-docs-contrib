@@ -54,7 +54,7 @@ In the request body, you can optionally provide a JSON object with the following
 |:---------------|:--------|:----------|
 |shouldSetSpoSiteReadOnlyForMembers|Boolean|Defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. If you set it to `false` or omit the parameter, this step is skipped.|
 
-The following example shows the request body with the **shouldSetSpoSiteReadOnlyForMembers** set to `true`.
+The following example shows the request body with **shouldSetSpoSiteReadOnlyForMembers** set to `true`.
 
 ```json
 {
