@@ -674,7 +674,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions"
+    "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
     "value": [
         {
             "id": "b7f4b62a-fa63-4c5d-908e-d760e8f54331",
