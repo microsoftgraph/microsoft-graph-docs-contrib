@@ -674,26 +674,92 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
-  "displayName": "extension-policy",
-  "description": "test",
-  "canExtend": false,
-  "durationInDays": 0,
-  "expirationDateTime": null,
-  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
-  "accessReviewSettings": null,
-  "questions": [],
-  "requestorSettings": {
-    "scopeType": "AllExistingDirectorySubjects",
-    "acceptRequests": true,
-    "allowedRequestors": []
-  },
-  "requestApprovalSettings": {
-    "isApprovalRequired": false,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": false,
-    "approvalMode": "NoApproval",
-    "approvalStages": []
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions"
+    "value": [
+        {
+            "id": "b7f4b62a-fa63-4c5d-908e-d760e8f54331",
+            "displayName": "Test Logic Apps",
+            "description": "Test logic app extension",
+            "createdDateTime": "2023-04-18T01:28:53.6320187Z",
+            "lastModifiedDateTime": "2023-04-18T01:28:53.6320245Z",
+            "callbackConfiguration": null,
+            "endpointConfiguration": {
+                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                "subscriptionId": "68c100c1-d28f-47ea-b50f-f6ac8b2faaa1",
+                "resourceGroupName": "Learning-Group1",
+                "logicAppWorkflowName": "TESTLOGICAPP",
+                "url": "https://prod-02.eastus.logic.azure.com/workflows/fa4a99f78be24196bd2d37573a9bc78c/triggers/manual/paths/invoke?api-version=2019-05-01"
+            },
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+            },
+            "clientConfiguration": {
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 1000
+            },
+            "createdBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            },
+            "lastModifiedBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            }
+        },
+        {
+            "id": "2dda73b5-3d78-4a8a-b38c-e262a4534a0b",
+            "displayName": "test ",
+            "description": "This is a test logic app",
+            "createdDateTime": "2023-04-25T14:12:43.4626911Z",
+            "lastModifiedDateTime": "2023-04-25T14:12:43.4627102Z",
+            "callbackConfiguration": null,
+            "endpointConfiguration": {
+                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                "subscriptionId": "68c100c1-d28f-47ea-b50f-f6ac8b2faaa1",
+                "resourceGroupName": "Learning-Group1",
+                "logicAppWorkflowName": "POPLogicApps",
+                "url": "https://prod-12.eastus.logic.azure.com/workflows/4824797f0e354ce2882933d5a930e6fe/triggers/manual/paths/invoke?api-version=2019-05-01"
+            },
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+            },
+            "clientConfiguration": {
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 1000
+            },
+            "createdBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            },
+            "lastModifiedBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            }
+        },
+        {
+            "id": "4c1a6c98-60a9-4fc7-903f-09b4cef942a7",
+            "displayName": "CustomExtensionTester",
+            "description": "This is a test custom extension",
+            "createdDateTime": "2024-02-05T18:36:40.0187441Z",
+            "lastModifiedDateTime": "2024-02-05T18:36:40.018762Z",
+            "callbackConfiguration": null,
+            "endpointConfiguration": {
+                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                "subscriptionId": "68c100c1-d28f-47ea-b50f-f6ac8b2faaa1",
+                "resourceGroupName": "Learning-Group1",
+                "logicAppWorkflowName": "MyLogicAppy",
+                "url": "https://prod-67.eastus.logic.azure.com/workflows/a791b8921591433e9ac99b301f8072a4/triggers/manual/paths/invoke?api-version=2019-05-01"
+            },
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+            },
+            "clientConfiguration": {
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 1000
+            },
+            "createdBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            },
+            "lastModifiedBy": {
+                "id": "d440ab0e-899a-4658-ac1b-b68bdcc71b3c"
+            }
+        }
+    ]
 }
 ```
