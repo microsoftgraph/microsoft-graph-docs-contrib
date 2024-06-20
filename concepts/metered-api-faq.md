@@ -52,7 +52,7 @@ A license is required for each user subject to security and compliance policies.
 ## Cost management and billing FAQ
 
 ### Where can I get the billing information for metered APIs and services?
-Billing data is submitted to the Azure Subscription used to create the Graph billing resource under the service name "Microsoft Graph Services" typically available 24 hours after the transactions occur.
+Billing data is submitted to the Azure subscription used to create the Microsoft Graph billing resource under the service name "Microsoft Graph services", and it is typically available 24 hours after the transactions occur.
 
 For more information, see [Azure cost management and billing overview](/azure/cost-management-billing/cost-management-billing-overview).
 
@@ -60,7 +60,7 @@ Most frequently used tools to review and monitor billing charges:
 
   | Type | Description |
   |:--------------------------|:----------------------------------------|
-  |[Cost Analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis)| Interactive chart that displays consumption. Hint: Use accumulated costs and filter by Service Name "Microsoft Graph Services" |
+  |[Cost analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis)| Interactive chart that displays consumption. Hint: Use accumulated costs and filter by service name "Microsoft Graph services". |
   |[Exports](/azure/cost-management-billing/costs/tutorial-export-acm-data)| Creates detailed reports with desired frequency (ex. daily or monthly). |
   |[Alerts](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)| Configures alerts by combining filters. |
 
