@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: retrieveCloudPcRemoteActionResults"
-description: "Retrieve remote action results and check the status of a specific remote action performed on an associated Cloud PC device."
+description: "Retrieve remote action results and check the status of a specific remote action performed on the associated Cloud PC device."
 author: "Luoyyy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve [remote action results](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on an associated Cloud PC device.
+Retrieve [remote action results](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on the associated Cloud PC device.
 
 ## Permissions
 
