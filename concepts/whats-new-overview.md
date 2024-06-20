@@ -66,7 +66,7 @@ Removed the **type** property from the [cloudPcAuditResource](/graph/api/resourc
 
 ### Teamwork and communications | Calls and online meetings
 
-Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-virtualeventsession) for virtual event meeting registrations.
+Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-sessions) for virtual event meeting registrations.
 
 ## May 2024: New and generally available
 
