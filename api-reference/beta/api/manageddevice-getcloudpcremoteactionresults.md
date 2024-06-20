@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> Starting September 30, 2024, getCloudPcRemoteActionResults API bound to managedDevice entity will be deprecated and no longer supported. Please use [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API bound to cloudpc entity instead.
+> This API is deprecated and will stop returning data on September 30, 2024. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API of the [cloudPC](../resources/cloudpc.md) resource.
 
 Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Cloud PC supports reprovision and resize remote actions.
 
