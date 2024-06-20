@@ -23,11 +23,12 @@ This method supports federation. Only a user who is a member of the shared chann
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't a member of.
+
 <!-- { "blockType": "permissions", "name": "channel_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-get-permissions.md)]
 
 > [!NOTE]
-> - This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't a member of.
 > - The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - The Group.Read.All, Group.ReadWrite.All, Directory.Read.All, and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
