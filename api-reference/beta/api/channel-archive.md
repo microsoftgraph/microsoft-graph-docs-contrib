@@ -45,7 +45,7 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Optional.  |
 
 ## Request body
 
