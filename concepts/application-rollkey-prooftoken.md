@@ -137,6 +137,7 @@ namespace SampleCertCall
                 choice = Int32.TryParse(Console.ReadLine(), out choice) ? choice : -1;
 
                 var code = new HttpStatusCode();
+                var response = new KeyCredential();
                 string certID;
                 Guid val;
 
@@ -167,19 +168,19 @@ namespace SampleCertCall
                         break;
                     case 4:
                         // Display certificate key
-                        new Helper().DisplayCertificateInfo(newCert);
+                        Helper.DisplayCertificateInfo(newCert);
                         break;
                     case 5:
                         // Call the addKey SDK using Graph SDK
                         if (newCertPassword != "")
                         {
-                            code = new GraphSDK().AddKeyWithPassword_GraphSDK(poP, objectId, key, newCertPassword, graphClient);
+                            response = GraphSDK.AddKeyWithPassword_GraphSDKAsync(poP, objectId, key, newCertPassword, graphClient).GetAwaiter().GetResult();
                         }
                         else
                         {
-                            code = new GraphSDK().AddKey_GraphSDK(poP, objectId, key, graphClient);
+                            response = GraphSDK.AddKey_GraphSDKAsync(poP, objectId, key, graphClient).GetAwaiter().GetResult();
                         }
-                        if (code == HttpStatusCode.OK)
+                        if (response != null)
                         {
                             Console.WriteLine("\n______________________");
                             Console.WriteLine("Uploaded Successfully!");
@@ -198,11 +199,11 @@ namespace SampleCertCall
                         // Call the addKey API directly without using SDK
                         if (!password.IsNullOrEmpty())
                         {
-                            code = new GraphAPI().AddKeyWithPassword(poP, objectId, api, token);
+                            code = GraphAPI.AddKeyWithPassword(poP, objectId, api, token, key, newCertPassword);
                         }
                         else
                         {
-                            code = new GraphAPI().AddKey(poP, objectId, api, token, newCert);
+                            code = GraphAPI.AddKey(poP, objectId, api, token, key);
                         }
                         if (code == HttpStatusCode.OK)
                         {
@@ -222,42 +223,31 @@ namespace SampleCertCall
                         // Call the removeKey API using Graph SDK
                         Console.WriteLine("\nEnter certificate ID that you want to delete:");
                         certID = Console.ReadLine();
-                        try
-                        {
-                            if (Guid.TryParse(certID, out val))
-                            {
-                                code = new GraphSDK().RemoveKey_GraphSDK(poP, objectId, certID, graphClient);
 
-                                if (code == HttpStatusCode.NoContent)
-                                {
-                                    Console.WriteLine("\n______________________");
-                                    Console.WriteLine("Cert Deleted Successfully!");
-                                    Console.WriteLine("_____________________\n");
-                                }
-                                else
-                                {
-                                    Console.WriteLine("\n______________________");
-                                    Console.WriteLine("Something went wrong!");
-                                    Console.WriteLine("HTTP Status code is " + code);
-                                    Console.WriteLine("______________________\n");
-                                }
+                        if (Guid.TryParse(certID, out val))
+                        {
+                            var res = GraphSDK.RemoveKey_GraphSDKAsync(poP, objectId, certID, graphClient).GetAwaiter().GetResult();
+
+                            if (res)
+                            {
+                                Console.WriteLine("\n______________________");
+                                Console.WriteLine("Cert Deleted Successfully!");
+                                Console.WriteLine("_____________________\n");
                             }
                             else
                             {
                                 Console.WriteLine("\n______________________");
-                                Console.WriteLine("Invalid Certificate ID");
+                                Console.WriteLine("Something Went Wrong!");
+                                Console.WriteLine("ERROR: Unable to delete certificate");
                                 Console.WriteLine("______________________\n");
                             }
                         }
-
-                        catch (Exception ex)
+                        else
                         {
-                            Console.WriteLine(ex.Message);
                             Console.WriteLine("\n______________________");
-                            Console.WriteLine("ERROR: CertID Not Found");
+                            Console.WriteLine("ERROR: Invalid Certificate ID");
                             Console.WriteLine("______________________\n");
                         }
-
                         break;
                     case 8:
                         // Call the removeKey API directly without using API
@@ -267,7 +257,7 @@ namespace SampleCertCall
                         {
                             if (Guid.TryParse(certID, out val))
                             {
-                                code = new GraphAPI().RemoveKey(poP, objectId, api, certID, token);
+                                code = GraphAPI.RemoveKey(poP, objectId, api, certID, token);
 
                                 if (code == HttpStatusCode.NoContent)
                                 {
@@ -285,9 +275,9 @@ namespace SampleCertCall
                             }
                             else
                             {
-                                Console.WriteLine("\n______________________");
+                                Console.WriteLine("\n------------------------------");
                                 Console.WriteLine("ERROR: Invalid Certificate ID");
-                                Console.WriteLine("______________________\n");
+                                Console.WriteLine("______________________________\n");
                             }
                         }
 
@@ -295,7 +285,7 @@ namespace SampleCertCall
                         {
                             Console.WriteLine(ex.InnerException.Message);
                             Console.WriteLine("\n______________________");
-                            Console.WriteLine(ex.Message);
+                            Console.WriteLine("ERROR: " + ex.Message);
                             Console.WriteLine("______________________\n");
                         }
                         break;
@@ -314,22 +304,24 @@ namespace SampleCertCall
 
 # [Helper.cs](#tab/csharp-1)
 ```csharp
+using Azure.Identity;
+using Microsoft.Graph;
+using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.IdentityModel.JsonWebTokens;
-using Microsoft.Graph;
-using Azure.Identity;
 
 namespace SampleCertCall
 {
     class Helper
     {
-        public string GenerateClientAssertion(string aud, string clientId, X509Certificate2 signingCert, string tenantID)
+        public static string GenerateClientAssertion(string aud, string clientId, X509Certificate2 signingCert)
         {
             Guid guid = Guid.NewGuid();
-        
+
             // aud and iss are the only required claims.
             var claims = new Dictionary<string, object>()
             {
@@ -338,25 +330,25 @@ namespace SampleCertCall
                 { "sub", clientId },
                 { "jti", guid}
             };
-        
+
             // token validity should not be more than 10 minutes
             var now = DateTime.UtcNow;
-            var securityTokenDescriptor = new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
+            var securityTokenDescriptor = new SecurityTokenDescriptor
             {
                 Claims = claims,
                 NotBefore = now,
                 Expires = now.AddMinutes(10),
                 SigningCredentials = new X509SigningCredentials(signingCert)
             };
-        
+
             var handler = new JsonWebTokenHandler();
             // Get Client Assertion
             var client_assertion = handler.CreateToken(securityTokenDescriptor);
-        
+
             return client_assertion;
         }
 
-        public string GenerateAccessTokenWithClientAssertion(string aud, string client_assertion, string clientId, X509Certificate2 signingCert, string tenantID)
+        public static string GenerateAccessTokenWithClientAssertion(string client_assertion, string clientId, string tenantID)
         {
             // GET ACCESS TOKEN
             var data = new[]
@@ -367,10 +359,9 @@ namespace SampleCertCall
                 new KeyValuePair<string, string>("grant_type", "client_credentials"),
                 new KeyValuePair<string, string>("scope", "https://graph.microsoft.com/.default"),
             };
-        
+
             var client = new HttpClient();
             var url = $"https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token";
-            var t = new FormUrlEncodedContent(data);
             var res = client.PostAsync(url, new FormUrlEncodedContent(data)).GetAwaiter().GetResult();
             var token = "";
             using (HttpResponseMessage response = res)
@@ -380,11 +371,11 @@ namespace SampleCertCall
                 JObject obj = JObject.Parse(responseBody);
                 token = (string)obj["access_token"];
             }
-        
+
             return token;
         }
 
-        public string GeneratePoPToken(string objectId, string aud, X509Certificate2 signingCert)
+        public static string GeneratePoPToken(string objectId, string aud, X509Certificate2 signingCert)
         {
             Guid guid = Guid.NewGuid();
 
@@ -397,7 +388,7 @@ namespace SampleCertCall
 
             // token validity should not be more than 10 minutes
             var now = DateTime.UtcNow;
-            var securityTokenDescriptor = new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
+            var securityTokenDescriptor = new SecurityTokenDescriptor
             {
                 Claims = claims,
                 NotBefore = now,
@@ -413,12 +404,12 @@ namespace SampleCertCall
             return poP;
         }
 
-        public string GetCertificateKey(X509Certificate2 cert)
+        public static string GetCertificateKey(X509Certificate2 cert)
         {
             return Convert.ToBase64String(cert.GetRawCertData());
         }
 
-        public void DisplayCertificateInfo(X509Certificate2 cert)
+        public static void DisplayCertificateInfo(X509Certificate2 cert)
         {
 
             Console.WriteLine("\n[Certificate info which will be used in the request body {keyCredential resource type}]");
@@ -435,10 +426,10 @@ namespace SampleCertCall
             Console.WriteLine("__________________________________________________________________________________________\n");
         }
 
-        public GraphServiceClient GetGraphClient(string scopes, string tenantId, string clientId, X509Certificate2 signingCert)
+        public static GraphServiceClient GetGraphClient(string scopes, string tenantId, string clientId, X509Certificate2 signingCert)
         {
             // using Azure.Identity;
-            var options = new TokenCredentialOptions
+            var options = new ClientCertificateCredentialOptions
             {
                 AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
             };
@@ -447,38 +438,33 @@ namespace SampleCertCall
             var clientCertificateCredential = new ClientCertificateCredential(
                 tenantId, clientId, signingCert, options);
 
-            var graphClient = new GraphServiceClient(clientCertificateCredential, new[] { scopes });
+            var graphClient = new GraphServiceClient(clientCertificateCredential, [scopes]);
 
             return graphClient;
         }
+
     }
 }
 ```
 
 # [GraphAPI.cs](#tab/csharp-2)
 ```csharp
-using System;
-using System.Net;
-using System.Text;
-using System.Net.Http.Headers;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.IdentityModel.JsonWebTokens;
-using System.Net.Http;
-using Newtonsoft.Json.Linq;
-using System.Linq;
 using Newtonsoft.Json;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 
 
 namespace SampleCertCall
 {
     class GraphAPI
     {
-        public HttpStatusCode AddKeyWithPassword(string poP, string objectId, string api, string accessToken, string key, string password)
+        public static HttpStatusCode AddKeyWithPassword(string poP, string objectId, string api, string accessToken, string key, string password)
         {
             var client = new HttpClient();
-            var url = $"{api}{objectId}/addKey";
+            var url = $"{api}/{objectId}/addKey";
 
             var defaultRequestHeaders = client.DefaultRequestHeaders;
             if (defaultRequestHeaders.Accept == null || !defaultRequestHeaders.Accept.Any(m => m.MediaType == "application/json"))
@@ -504,15 +490,15 @@ namespace SampleCertCall
             var stringPayload = JsonConvert.SerializeObject(payload);
             var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
 
-            var res = client.PostAsync(url, httpContent).GetAwaiter().GetResult();
+            var res = client.PostAsync(url, httpContent).Result;
 
             return res.StatusCode;
         }
 
-        public HttpStatusCode AddKey(string poP, string objectId, string api, string accessToken, string key)
+        public static HttpStatusCode AddKey(string poP, string objectId, string api, string accessToken, string key)
         {
             var client = new HttpClient();
-            var url = $"{api}{objectId}/addKey";
+            var url = $"{api}/{objectId}/addKey";
 
             var defaultRequestHeaders = client.DefaultRequestHeaders;
             if (defaultRequestHeaders.Accept == null || !defaultRequestHeaders.Accept.Any(m => m.MediaType == "application/json"))
@@ -536,15 +522,15 @@ namespace SampleCertCall
             var stringPayload = JsonConvert.SerializeObject(payload);
             var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
 
-            var res = client.PostAsync(url, httpContent).GetAwaiter().GetResult();
+            var res = client.PostAsync(url, httpContent).Result;
 
             return res.StatusCode;
         }
 
-        public HttpStatusCode RemoveKey(string poP, string objectId, string api, string keyId, string accessToken)
+        public static HttpStatusCode RemoveKey(string poP, string objectId, string api, string keyId, string accessToken)
         {
             var client = new HttpClient();
-            var url = $"{api}{objectId}/removeKey";
+            var url = $"{api}/{objectId}/removeKey";
             var defaultRequestHeaders = client.DefaultRequestHeaders;
             if (defaultRequestHeaders.Accept == null || !defaultRequestHeaders.Accept.Any(m => m.MediaType == "application/json"))
             {
@@ -561,11 +547,17 @@ namespace SampleCertCall
             var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
 
 
-            var res = client.PostAsync(url, httpContent).GetAwaiter().GetResult();
+            var res = client.PostAsync(url, httpContent).Result;
+            var contents = res.Content.ReadAsStringAsync().Result;
 
             if (res.Content.ReadAsStringAsync().Result.Contains("No credentials found to be removed"))
             {
-                throw new HttpRequestException("CertID Not Found", new HttpRequestException(res.Content.ReadAsStringAsync().Result));
+                throw new HttpRequestException("CertID Not Found", new HttpRequestException(contents, null, res.StatusCode));
+            }
+
+            if (res.Content.ReadAsStringAsync().Result.Contains("Access Token missing or malformed"))
+            {
+                throw new HttpRequestException("proof-of-possession (PoP) token is invalid", new HttpRequestException(contents, null, res.StatusCode));
             }
 
             return res.StatusCode;
@@ -576,9 +568,14 @@ namespace SampleCertCall
 
 # [GraphSDK.cs](#tab/csharp-3)
 ```csharp
-using System;
-using System.Net;
 using Microsoft.Graph;
+// using Microsoft.Graph.ServicePrincipals.Item.AddKey; // Dependencies for the AddKey service principal method
+// using Microsoft.Graph.ServicePrincipals.Item.RemoveKey; // Dependencies for the RemoveKey service principal method
+using Microsoft.Graph.Applications.Item.AddKey;
+using Microsoft.Graph.Applications.Item.RemoveKey;
+using Microsoft.Graph.Models;
+using System;
+using System.Threading.Tasks;
 
 
 namespace SampleCertCall
@@ -586,66 +583,75 @@ namespace SampleCertCall
     class GraphSDK
     {
         // Using GraphSDK instead of calling the API directly
-        public HttpStatusCode AddKey_GraphSDK(string proof, string objectId, string key, GraphServiceClient graphClient)
+        public static async Task<KeyCredential> AddKey_GraphSDKAsync(string proof, string objectId, string key, GraphServiceClient graphClient)
         {
-            var keyCredential = new KeyCredential
+            var requestBody = new AddKeyPostRequestBody
             {
-                Type = "AsymmetricX509Cert",
-                Usage = "Verify",
-                Key = Convert.FromBase64String(key)
+                KeyCredential = new KeyCredential
+                {
+                    Type = "AsymmetricX509Cert",
+                    Usage = "Verify",
+                    Key = Convert.FromBase64String(key)
+                },
+                PasswordCredential = null,
+                Proof = proof
             };
 
-            PasswordCredential passwordCredential = null;
+            // var res = await graphClient.ServicePrincipals[objectId].AddKey.PostAsync(requestBody); // Uncomment this to upload a certificate to a service principal and the using statement at the top
+            var res = await graphClient.Applications[objectId].AddKey.PostAsync(requestBody);
 
-            // var res = graphClient.ServicePrincipals[objectId] // Uncomment this to update a certificate to a service principal
-            var res = graphClient.Applications[objectId] // Upload a certificate to the application
-                .AddKey(keyCredential, proof, passwordCredential)
-                .Request()
-                .PostResponseAsync().GetAwaiter().GetResult();
-
-            return res.StatusCode;
+            return res;
         }
 
-        public HttpStatusCode AddKeyWithPassword_GraphSDK(string proof, string objectId, string key, string password, GraphServiceClient graphClient)
+        public static async Task<KeyCredential> AddKeyWithPassword_GraphSDKAsync(string proof, string objectId, string key, string password, GraphServiceClient graphClient)
         {
-            var keyCredential = new KeyCredential
+            var requestBody = new AddKeyPostRequestBody
             {
-                Type = "X509CertAndPassword",
-                Usage = "Sign",
-                Key = Convert.FromBase64String(key)
+                KeyCredential = new KeyCredential
+                {
+                    Type = "X509CertAndPassword",
+                    Usage = "Sign",
+                    Key = Convert.FromBase64String(key)
+                },
+                PasswordCredential = new PasswordCredential
+                {
+                    SecretText = password
+                },
+                Proof = proof
             };
 
-            var passwordCredential = new PasswordCredential
-            {
-                SecretText = password
-            };
+            // var res = await graphClient.ServicePrincipals[objectId] // Uncomment this to upload a certificate to a service principal and the using statement at the top
+            var res = await graphClient.Applications[objectId] // Upload a certificate to the application
+                        .AddKey
+                        .PostAsync(requestBody);
 
-            // var res = graphClient.Applications[objectId] // Uncomment this to update a certificate to a service principal
-            var res = graphClient.Applications[objectId] // Upload a certificate to the application
-                        .AddKey(keyCredential, proof, passwordCredential)
-                        .Request()
-                        .PostResponseAsync().GetAwaiter().GetResult();
-
-            return res.StatusCode;
+            return res;
         }
 
-        public HttpStatusCode RemoveKey_GraphSDK(string proof, string objectId, string certID, GraphServiceClient graphClient)
+        public static async Task<bool> RemoveKey_GraphSDKAsync(string proof, string objectId, string certID, GraphServiceClient graphClient)
         {
             var keyId = Guid.Parse(certID);
 
             try
             {
-                // var res = graphClient.ServicePrincipals[objectId] // Uncomment this to remove a certificate from a service principal
-                var res = graphClient.Applications[objectId] // Remove a certificate from the application
-                    .RemoveKey(keyId, proof)
-                    .Request()
-                    .PostResponseAsync().GetAwaiter().GetResult();
+                var requestBody = new RemoveKeyPostRequestBody
+                {
+                    KeyId = keyId,
+                    Proof = proof
+                };
 
-                return res.StatusCode;
+                // await graphClient.ServicePrincipals[objectId] // Uncomment this to remove a certificate from a service principal and the using statement at the top
+                await graphClient.Applications[objectId] // Remove a certificate from the application
+                    .RemoveKey
+                    .PostAsync(requestBody);
+
+                return true;
             }
             catch (Exception ex)
             {
-                throw ex;
+                Console.Write($"Exception RemoveKey_GraphSDKAsync: {Environment.NewLine}{ex.Message}{Environment.NewLine}{ex.StackTrace}");
+
+                return false;
             }
         }
     }
