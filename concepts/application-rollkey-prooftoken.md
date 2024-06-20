@@ -103,20 +103,20 @@ namespace SampleCertCall
                 Environment.Exit(-1);
             }
 
-            //========================
-            //Get acessToken via client assertion
-            //========================
-            var client_assertion = new Helper().GenerateClientAssertion(aud_ClientAssertion, clientId, signingCert, tenantID);
-            var token = new Helper().GenerateAccessTokenWithClientAssertion(aud_ClientAssertion, client_assertion, clientId, signingCert, tenantID);
+             //========================
+             //Get acessToken via client assertion
+             //========================
+             var client_assertion = Helper.GenerateClientAssertion(aud_ClientAssertion, clientId, signingCert);
+             var token = Helper.GenerateAccessTokenWithClientAssertion(client_assertion, clientId, tenantID);
 
             //========================
             //Get PoP Token
             //========================
-            var poP = new Helper().GeneratePoPToken(objectId, aud_POP, signingCert);
+            var poP = Helper.GeneratePoPToken(objectId, aud_POP, signingCert);
 
             // Get the new certificate info which will be uploaded via Microsoft Graph API call
-            var key = new Helper().GetCertificateKey(newCert);
-            var graphClient = new Helper().GetGraphClient(scopes, tenantID, clientId, signingCert);
+            var key = Helper.GetCertificateKey(newCert);
+            var graphClient = Helper.GetGraphClient(scopes, tenantID, clientId, signingCert);
 
             int choice = -1;
             while (choice != 0)
