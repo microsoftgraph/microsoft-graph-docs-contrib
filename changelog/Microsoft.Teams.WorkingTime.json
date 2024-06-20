@@ -41,7 +41,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "endWorkingTime",
           "ChangeType": "Addition",
-          "Description": "Added the [endWorkingTime](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [endWorkingTime](https://learn.microsoft.com/en-us/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-beta) resource.",
           "Target": "endWorkingTime"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startWorkingTime",
           "ChangeType": "Addition",
-          "Description": "Added the [startWorkingTime](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [startWorkingTime](https://learn.microsoft.com/en-us/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta) method to the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingTimeSchedule?view=graph-rest-beta) resource.",
           "Target": "startWorkingTime"
         }
       ],
