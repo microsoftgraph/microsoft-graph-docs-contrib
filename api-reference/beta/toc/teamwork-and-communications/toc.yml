@@ -452,6 +452,10 @@ items:
         href: ../../api/virtualeventwebinar-get.md
       - name: Update
         href: ../../api/virtualeventwebinar-update.md
+      - name: Publish
+        href: ../../api/virtualeventwebinar-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventwebinar-cancel.md
       - name: List in organization
         href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
