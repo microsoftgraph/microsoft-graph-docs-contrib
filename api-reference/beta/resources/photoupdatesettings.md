@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings that manage the support of photoupdate settings in an organization. By default, photoupdate are disabled. If enabled, users can optionally add or update their photoupdate settings.
+Represents the settings that manage the support of photo updates settings in an organization. By default, photo updates are disabled. If enabled, users can optionally add or update their photo updates settings.
 
 Inherits from [entity](../resources/entity.md).
 
