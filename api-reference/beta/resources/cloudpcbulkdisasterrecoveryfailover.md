@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkDisasterRecoveryFailover resource type"
-description: "Represents the entity that performs a bulk disasterRecoveryFailover action with executeAction API."
+description: "Represents the entity that performs a bulk disaster recovery failover action using the executeAction API."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk disasterRecoveryFailover action with executeAction API. This triggers/initiates action to activate cross region disaster recovery，which will restore a temp cloud PC in backup region from the cross region snapshot in case of Cloud PC's original region under outage.
+Represents the entity that performs a bulk disaster recovery failover action using the executeAction API. This action initiates the activation of cross-region disaster recovery that restores a temporary cloud PC in the backup region from a cross-region snapshot if the original region experiences an outage.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
@@ -22,17 +22,17 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|cloudPcIds|String collection|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|createdDateTime|DateTimeOffset|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|displayName|String|from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|id|String|from [entity](../resources/entity.md).|
+|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
