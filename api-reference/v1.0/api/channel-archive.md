@@ -77,10 +77,10 @@ The following example shows a request to archive a channel.
 <!-- {
   "blockType": "request",
   "name": "archive_channel",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
+  "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
@@ -89,12 +89,11 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "name": "archive_channel",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "Pojn274d-b798-47e8-8763-04724922aaf8"]
+  "name": "archive_channel"
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/okon274d-be71-47e8-8763-04405c2aaf8/operations/Pojn274d-b798-47e8-8763-04724922aaf8
+Location: /teams/16dc05c0-2259-4540-a970-3580ff459721/operations/b7ee702a-d87f-4cc6-82b9-e731c16d3aba
 Content-Type: text/plain
 Content-Length: 0
 ```
@@ -108,10 +107,10 @@ The following example shows a request to archive a channel that fails because th
 <!-- {
   "blockType": "request",
   "name": "archive_channel_on_archived_team",
-  "sampleKeys": ["okon274d-be71-47e8-8763-04405c2aaf8", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
+  "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/okon274d-be71-47e8-8763-04405c2aaf8/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
