@@ -2,7 +2,7 @@
   "changelog": [
     {
       "ChangeList": [
-        {
+       {
           "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestionBase",
@@ -87,6 +87,30 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-05-22T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+        {
+          "Id": "01538c8b-1a19-4b41-b438-3b4608ae5834",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-publish?view=graph-rest-beta) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "01538c8b-1a19-4b41-b438-3b4608ae5834",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-beta) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "01538c8b-1a19-4b41-b438-3b4608ae5834",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-19T00:00:00Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
