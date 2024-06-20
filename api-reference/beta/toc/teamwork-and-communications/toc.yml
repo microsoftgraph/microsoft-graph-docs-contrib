@@ -18,7 +18,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app icon
     items:
@@ -160,7 +160,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -742,7 +742,7 @@ items:
       - name: List operations
         href: ../../api/chat-list-operations.md
       - name: Get operation on chat
-        href: ../../api/teamsasyncoperation-get.md#example-get-operation-on-chat
+        href: ../../api/teamsasyncoperation-get.md
     - name: Pinned messages
       items:
       - name: List pinned messages
