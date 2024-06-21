@@ -60,7 +60,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all alerts
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -72,8 +74,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -88,26 +89,201 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alerts",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.healthMonitoring.alert",
-      "id": "34e36570-f30c-6b6f-e922-262b19f1c68b",
-      "alertType": "String",
-      "scenario": "String",
-      "category": "String",
-      "createdDateTime": "String (timestamp)",
-      "state": "String",
+      "id": "0c56dfcb-13db-4128-bda2-fc3e42742467",
+      "alertType": "mfaSignInFailure",
+      "scenario": "mfa",
+      "category": "authentication",
+      "createdDateTime": "2024-06-19T11:23:44.1234567Z",
+      "state": "active",
       "enrichment": {
-        "@odata.type": "microsoft.graph.healthMonitoring.enrichment"
+        "state": "enriched",
+        "impacts": [
+          {
+            "@odata.type": "#microsoft.graph.healthMonitoring.userImpactSummary",
+            "resourceType": "user",
+            "impactedCount": 143,
+            "impactedCountLimitExceeded": false
+          },
+          {
+            "@odata.type": "#microsoft.graph.healthMonitoring.applicationImpactSummary",
+            "resourceType": "application",
+            "impactedCount": 1,
+            "impactedCountLimitExceeded": true
+          }
+        ],
+        "supportingData": {
+          "signInRecords": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=({errorCodeFilterStr} and createdDateTime gt {startTime} and createdDateTime le {endTime} and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
+          "auditRecords": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge {startTime} and activityDateTime le {endTime})&$top=50&$orderby=activityDateTime desc"
+        }
       },
       "signals": {
-        "@odata.type": "microsoft.graph.healthMonitoring.signals"
+        "mfaSignInFailure": "https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime={startTime}, exclusiveIntervalEndDateTime={endTime}, aggregationIntervalInMinutes=5)"
       },
       "documentation": {
-        "@odata.type": "microsoft.graph.healthMonitoring.documentation"
+        "mfaAlertTroubleshootingGuide": "https://learn.microsoft.com/en-us/entra/identity/authentication/"
       }
-    }
+    },
   ]
 }
 ```
 
+### Example 2: Get all active alerts
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_alert"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$filter=state eq microsoft.graph.healthmonitoring.alertState'active'&$select=id, alertType
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alerts(id,alertType)",
+  "value": [
+    {
+      "id": "0c56dfcb-13db-4128-bda2-fc3e42742467",
+      "alertType": "mfaSignInFailure"
+    },
+    {
+      "id": "564bc4e2-10f6-4d76-b10c-25657637f748",
+      "alertType": "managedDeviceSignInFailure"
+    },
+  ]
+}
+```
+
+### Example 3: List the state of all alerts in a specific time range
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_alert"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$filter=createdDateTime gt 2024-06-10T11:23:44Z&$select=id, alertType, createdDateTime, state
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alerts(id,alertType,createdDateTime,state)",
+  "value": [
+    {
+      "id": "0c56dfcb-13db-4128-bda2-fc3e42742467",
+      "alertType": "mfaSignInFailure",
+      "createdDateTime": "2024-06-19T11:23:44.1234567Z",
+      "state": "active"
+    },
+    {
+      "id": "564bc4e2-10f6-4d76-b10c-25657637f748",
+      "alertType": "managedDeviceSignInFailure",
+      "createdDateTime": "2024-06-11T01:25:24.1234567Z",
+      "state": "active"
+    },
+  ]
+}
+```
+
+### Example 4: Use $expand to get all alerts with directory object resource sampling
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_alert"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling&$select=alertType, createdDateTime, enrichment'
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alerts(alertType,createdDateTime,enrichment,enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling())",
+  "value": [
+    {
+      "alertType": "mfaSignInFailure",
+      "createdDateTime": "2024-06-19T11:23:44.1234567Z",
+      "enrichment": {
+        "state": "enriched",
+        "impacts": [
+          {
+            "@odata.type": "#microsoft.graph.healthMonitoring.userImpactSummary",
+            "resourceType": "user",
+            "impactedCount": 143,
+            "impactedCountLimitExceeded": false,
+            "resourceSampling": []
+          },
+          {
+            "@odata.type": "#microsoft.graph.healthMonitoring.applicationImpactSummary",
+            "resourceType": "application",
+            "impactedCount": 1,
+            "impactedCountLimitExceeded": true,
+            "resourceSampling": [
+                {
+                    "id": "63c83fa4-d90c-4274-8460-5463e96f1113"
+                }
+            ]
+          }
+        ],
+        "supportingData": {
+          "signInRecords": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=({errorCodeFilterStr} and createdDateTime gt {startTime} and createdDateTime le {endTime} and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
+          "auditRecords": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge {startTime} and activityDateTime le {endTime})&$top=50&$orderby=activityDateTime desc"
+        }
+      }
+    },
+  ]
+}
+```
+
+> Note: Currently `resourceSampling` only contains `id` of the resource. In the future, it'll be able to show other properties of the resource as well.

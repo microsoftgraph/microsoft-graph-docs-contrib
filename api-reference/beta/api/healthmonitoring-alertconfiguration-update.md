@@ -60,7 +60,9 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-### Request
+### Example 1: Set or update alert configuration of a specific alert type
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -73,14 +75,15 @@ PATCH https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfigurati
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.alertConfiguration",
   "emailNotificationConfigurations": [
     {
-      "@odata.type": "microsoft.graph.healthMonitoring.emailNotificationConfiguration"
+      "groupId":"c5140914-9507-4180-b60c-04d5ec5eddcb",
+      "isEnabled": true
     }
   ]
 }
 ```
+> Note: It currently supports only 1 group to receive email notification for an alert type.
 
 
 ### Response
@@ -98,13 +101,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.alertConfiguration",
-  "id": "ec67ef23-cc94-1309-a4a6-93d64bd3290d",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alertConfigurations/$entity",
+  "id": "mfaSignInFailure",
   "emailNotificationConfigurations": [
     {
-      "@odata.type": "microsoft.graph.healthMonitoring.emailNotificationConfiguration"
+      "groupId": "c5140914-9507-4180-b60c-04d5ec5eddcb",
+      "isEnabled": true
     }
   ]
 }
 ```
-

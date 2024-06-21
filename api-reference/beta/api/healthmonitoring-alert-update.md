@@ -59,7 +59,9 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-### Request
+### Example 1: Update state of an alert
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -72,12 +74,11 @@ PATCH https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{alertId}
 Content-Type: application/json
 
 {
-  "state": "String"
+  "state": "resolved"
 }
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -92,21 +93,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.alert",
-  "id": "34e36570-f30c-6b6f-e922-262b19f1c68b",
-  "alertType": "String",
-  "scenario": "String",
-  "category": "String",
-  "createdDateTime": "String (timestamp)",
-  "state": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alerts/$entity",
+  "id": "0c56dfcb-13db-4128-bda2-fc3e42742467",
+  "alertType": "mfaSignInFailure",
+  "scenario": "mfa",
+  "category": "authentication",
+  "createdDateTime": "2024-06-19T11:23:44.1234567Z",
+  "state": "resolved",
   "enrichment": {
-    "@odata.type": "microsoft.graph.healthMonitoring.enrichment"
+    "state": "enriched",
+    "impacts": [
+      {
+        "@odata.type": "#microsoft.graph.healthMonitoring.userImpactSummary",
+        "resourceType": "user",
+        "impactedCount": 143,
+        "impactedCountLimitExceeded": false
+      },
+      {
+        "@odata.type": "#microsoft.graph.healthMonitoring.applicationImpactSummary",
+        "resourceType": "application",
+        "impactedCount": 1,
+        "impactedCountLimitExceeded": true
+      }
+    ],
+    "supportingData": {
+      "signInRecords": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=({errorCodeFilterStr} and createdDateTime gt {startTime} and createdDateTime le {endTime} and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
+      "auditRecords": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge {startTime} and activityDateTime le {endTime})&$top=50&$orderby=activityDateTime desc"
+    }
   },
   "signals": {
-    "@odata.type": "microsoft.graph.healthMonitoring.signals"
+    "mfaSignInFailure": "https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime={startTime}, exclusiveIntervalEndDateTime={endTime}, aggregationIntervalInMinutes=5)"
   },
   "documentation": {
-    "@odata.type": "microsoft.graph.healthMonitoring.documentation"
+    "mfaAlertTroubleshootingGuide": "https://learn.microsoft.com/en-us/entra/identity/authentication/"
   }
 }
 ```

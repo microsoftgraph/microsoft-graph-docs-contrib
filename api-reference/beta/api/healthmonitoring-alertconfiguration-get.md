@@ -56,7 +56,9 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get alert configuration for a specific alert type
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -68,8 +70,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -84,15 +85,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.healthMonitoring.alertConfiguration",
-    "id": "ec67ef23-cc94-1309-a4a6-93d64bd3290d",
-    "emailNotificationConfigurations": [
-      {
-        "@odata.type": "microsoft.graph.healthMonitoring.emailNotificationConfiguration"
-      }
-    ]
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alertConfigurations/$entity",
+  "id": "mfaSignInFailure",
+  "emailNotificationConfigurations": [
+    {
+      "groupId": "c5140914-9507-4180-b60c-04d5ec5eddcb",
+      "isEnabled": true
+    }
+  ]
 }
 ```
-
