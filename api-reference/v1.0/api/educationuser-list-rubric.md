@@ -1,6 +1,6 @@
 ---
 title: "List all educationRubric"
-description: "Returns a list of all the properties and relationships of an educationrubric object."
+description: "Returns a list of all the properties and relationships of your educationRubric objects."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Returns a list of all the properties and relationships of an [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
+Returns a list of all the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -20,7 +20,7 @@ Returns a list of all the properties and relationships of an [educationRubric](.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationuser-list-rubric" } -->
-[!INCLUDE [permissions-table](../includes/permissions/educationrubric-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-list-rubric.md)]
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [educationRubric](../resources/educationrubric.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a list of [educationRubric](../resources/educationrubric.md) objects in the response body.
 
 ## Examples
 
@@ -68,7 +68,8 @@ Here's an example  of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric"
+  "@odata.type": "microsoft.graph.educationRubric",
+  "isCollection": true
 } -->
 
 ```http
