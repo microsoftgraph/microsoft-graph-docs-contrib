@@ -83,61 +83,15 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcRemoteActionResult)",
   "value": [
     {
-            "actionName": "CloudPcPowerOn",
-            "actionState": "done",
-            "startDateTime": "2024-05-28T06:12:47.4100777Z",
-            "lastUpdatedDateTime": "2024-05-28T06:13:45.2270925Z",
-            "cloudPcId": "46ed3acc-70f8-4978-a5ba-62945ecc5e4c",
-            "managedDeviceId": null,
-            "statusDetail": {
-                "code": null,
-                "message": null,
-                "additionalInformation": [
-                    {
-                        "name": "hasDownTime",
-                        "value": "True"
-                    }
-                ]
-            },
-            "statusDetails": {
-                "code": null,
-                "message": null,
-                "additionalInformation": [
-                    {
-                        "name": "hasDownTime",
-                        "value": "True"
-                    }
-                ]
-            }
-        },
-        {
-            "actionName": "CloudPcPowerOff",
-            "actionState": "done",
-            "startDateTime": "2024-05-28T05:30:15.1620746Z",
-            "lastUpdatedDateTime": "2024-05-28T05:30:55.1695142Z",
-            "cloudPcId": "46ed3acc-70f8-4978-a5ba-62945ecc5e4c",
-            "managedDeviceId": null,
-            "statusDetail": {
-                "code": null,
-                "message": null,
-                "additionalInformation": [
-                    {
-                        "name": "hasDownTime",
-                        "value": "True"
-                    }
-                ]
-            },
-            "statusDetails": {
-                "code": null,
-                "message": null,
-                "additionalInformation": [
-                    {
-                        "name": "hasDownTime",
-                        "value": "True"
-                    }
-                ]
-            }
-        }
+      "actionName": "CloudPcPowerOn",
+      "actionState": "done",
+      "startDateTime": "2024-05-28T06:12:47.4100777Z",
+      "lastUpdatedDateTime": "2024-05-28T06:13:45.2270925Z",
+      "cloudPcId": "46ed3acc-70f8-4978-a5ba-62945ecc5e4c",
+      "managedDeviceId": null,
+      "statusDetail": null,
+      "statusDetails": null,
+    },
   ]
 }
 ```
