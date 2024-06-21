@@ -59,7 +59,7 @@ PATCH /employeeExperience/communities/{communityId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [community](../resources/community.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -76,7 +76,6 @@ PATCH https://graph.microsoft.com/beta/employeeExperience/communities/eyJfdHlwZS
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.community",
   "displayName": "Financial Advice for Software Engineers",
   "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.",
   "privacy": "public"
@@ -93,17 +92,7 @@ The following is an example of the response
   "truncated": true
 }
 -->
+-->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.community",
-  "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
-  "displayName": "Financial Advice for Software Engineers",
-  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
-  "privacy": "public",
-  "groupId": "963da73d-a587-4ef3-aab0-d783e937e9e7"
-}
+HTTP/1.1 204 No Content
 ```
-

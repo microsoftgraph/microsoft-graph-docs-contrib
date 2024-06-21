@@ -40,7 +40,7 @@ GET /employeeExperience/communities
 
 ## Optional query parameters
 
-This method supports the `$top`, `$orderby`, `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$top`, `$orderby`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_community"
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/communities
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
