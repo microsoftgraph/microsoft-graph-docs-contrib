@@ -155,6 +155,8 @@ Namespace: microsoft.graph
 | :----- |
 | user   |
 | group  |
+|application|
+|unknownFutureValue|
 
 ### multiTenantOrganizationMemberProcessingStatus values
 
