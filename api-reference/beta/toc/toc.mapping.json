@@ -91,6 +91,7 @@
     },
     {
       "name": "Backup storage",
+      "shouldSort": true,
       "keywords": [
         "M365 Backup Storage",
         "Microsoft 365 Backup Storage",
