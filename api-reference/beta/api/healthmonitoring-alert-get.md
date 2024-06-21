@@ -79,7 +79,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+  "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
 ``` http
@@ -145,7 +145,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+  "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
 ``` http
@@ -184,7 +184,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.healthMonitoring.alert)"
+  "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
 ``` http
