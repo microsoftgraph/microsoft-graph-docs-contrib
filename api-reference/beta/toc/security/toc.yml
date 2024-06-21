@@ -26,13 +26,13 @@ items:
     items:
     - name: Alert
       href: ../../resources/security-alert.md
-    - name: List alerts_v2
+    - name: List
       href: ../../api/security-list-alerts_v2.md
-    - name: Get alert
+    - name: Get
       href: ../../api/security-alert-get.md
-    - name: Update alert
+    - name: Update
       href: ../../api/security-alert-update.md
-    - name: Create comment for alert
+    - name: Create comment
       href: ../../api/security-alert-post-comments.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md

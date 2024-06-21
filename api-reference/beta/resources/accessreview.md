@@ -34,7 +34,7 @@ Represents a Microsoft Entra [access review](accessreviews-root.md).
 |[Send reminder](../api/accessreview-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReview. |
 |[Stop](../api/accessreview-stop.md) | None. |    Stop an accessReview. |
 |[Reset](../api/accessreview-reset.md) | None.    |    Reset the decisions in an in-progress accessReview. |
-|[Apply accessReview decisions](../api/accessreview-apply.md) | None. |    Apply the decisions from a completed accessReview. |
+|[Apply decisions](../api/accessreview-apply.md) | None. |    Apply the decisions from a completed accessReview. |
 
 ## Properties
 
