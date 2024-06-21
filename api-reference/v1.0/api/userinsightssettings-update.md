@@ -3,7 +3,7 @@ title: "Update userInsightsSettings"
 description: "Update the properties of a userInsightsSettings object."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ PATCH /users/{userId}/settings/itemInsights
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that is not changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
