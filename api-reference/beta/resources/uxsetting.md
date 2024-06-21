@@ -34,13 +34,13 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.uxSetting",
+  "@odata.type": "microsoft.graph.nonAdminSetting",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.uxSetting",
+  "@odata.type": "#microsoft.graph.nonAdminSetting",
   "restrictNonAdminAccess": "String"
 }
 ```

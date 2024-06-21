@@ -4945,3 +4945,12 @@ Possible values for user account types (group membership), per Windows definitio
 |silentUpdate|
 |outdated|
 |principalWantsCopy|
+
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|true|
+|false|
+|unknownFutureValue|
