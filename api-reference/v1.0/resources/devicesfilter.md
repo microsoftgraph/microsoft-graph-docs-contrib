@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines a rule to filter the devices and whether devices that satisfy the rule should be allowed or blocked.
 
 ## Properties
