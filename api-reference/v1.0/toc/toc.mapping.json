@@ -1132,6 +1132,12 @@
       ]
     },
     {
+      "name": "Item insights",
+      "resources": [
+        "userInsightsSettings"
+      ]
+    },
+    {
       "name": "Personal contacts",
       "keywords": [
         "Outlook",
