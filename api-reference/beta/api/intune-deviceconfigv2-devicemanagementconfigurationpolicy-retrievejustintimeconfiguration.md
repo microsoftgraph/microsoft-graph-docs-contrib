@@ -1,13 +1,13 @@
 ---
-title: "Delete appVulnerabilityMobileApp"
-description: "Deletes a appVulnerabilityMobileApp."
+title: "retrieveJustInTimeConfiguration action"
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Retrievejustintimeconfiguration Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
-# Delete appVulnerabilityMobileApp
+# retrieveJustInTimeConfiguration action
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [appVulnerabilityMobileApp](../resources/intune-partnerintegration-appvulnerabilitymobileapp.md).
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE ** Entity URI for microsoft.management.services.api.appVulnerabilityMobileApp not found
+POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
+POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
 ```
 
 ## Request headers
@@ -47,18 +48,30 @@ DELETE ** Entity URI for microsoft.management.services.api.appVulnerabilityMobil
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code and a [deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md) in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.appVulnerabilityMobileApp not found
+POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 205
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationJustInTimeAssignmentPolicy",
+    "targetType": "entraSecurityGroup",
+    "target": [
+      "Target value"
+    ]
+  }
+}
 ```

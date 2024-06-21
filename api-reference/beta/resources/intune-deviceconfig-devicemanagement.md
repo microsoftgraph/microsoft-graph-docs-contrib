@@ -10,18 +10,18 @@ doc_type: resourcePageType
 # deviceManagement resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Singleton entity that acts as a container for all device management functionality.
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-deviceconfig-devicemanagement-get.md)|[deviceManagement](../resources/intune-deviceconfig-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-deviceconfig-devicemanagement-update.md)|[deviceManagement](../resources/intune-deviceconfig-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-deviceconfig-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-deviceconfig-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 |[enableUnlicensedAdminstrators action](../api/intune-deviceconfig-devicemanagement-enableunlicensedadminstrators.md)|None|Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license. You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators. Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.|
 |[enableLegacyPcManagement action](../api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement.md)|None||
 |[enableAndroidDeviceAdministratorEnrollment action](../api/intune-deviceconfig-devicemanagement-enableandroiddeviceadministratorenrollment.md)|None||
@@ -42,8 +42,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceConfigurations|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) collection|The device configurations.|
-|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) collection|The device compliance policies.|
+|deviceConfigurations|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|The device configurations.|
+|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) collection|The device compliance policies.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|The software update status summary.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
@@ -58,10 +58,8 @@ Singleton entity that acts as a container for all device management functionalit
 |deviceConfigurationConflictSummary|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) collection|Summary of policies in conflict state for this account.|
 |deviceConfigurationsAllManagedDeviceCertificateStates|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) collection|Summary of all certificates for all devices.|
 |macOSSoftwareUpdateAccountSummaries|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) collection|The MacOS software update account summaries for this account.|
-|hardwareConfigurations|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) collection|BIOS configuration and other settings provides customers the ability to configure hardware/bios settings on the enrolled Windows 10/11 Entra ID joined devices by uploading a configuration file generated with their OEM tool (e.g. Dell Command tool). A BIOS configuration policy can be assigned to multiple devices, allowing admins to remotely control a device's hardware properties (e.g. enable Secure Boot) from the Intune Portal. Supported for Dell only at this time.|
-|hardwarePasswordInfo|[hardwarePasswordInfo](../resources/intune-deviceconfig-hardwarepasswordinfo.md) collection|Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices. Starting from June, 2024 (Intune Release 2406), this type will no longer be supported and will be marked as deprecated|
-|hardwarePasswordDetails|[hardwarePasswordDetail](../resources/intune-deviceconfig-hardwarepassworddetail.md) collection|Device BIOS password information for devices with managed BIOS and firmware configuration, which provides device serial number, list of previous passwords, and current password.|
-|endpointPrivilegeManagementProvisioningStatus|[endpointPrivilegeManagementProvisioningStatus](../resources/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus.md)|Endpoint privilege management (EPM) tenant provisioning status contains tenant level license and onboarding state information.|
+|hardwareConfigurations|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) collection|The hardware configurations for this account.|
+|hardwarePasswordInfo|[hardwarePasswordInfo](../resources/intune-deviceconfig-hardwarepasswordinfo.md) collection|The hardware password info for this account.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
