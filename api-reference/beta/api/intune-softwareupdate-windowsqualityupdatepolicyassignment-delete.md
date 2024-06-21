@@ -1,13 +1,13 @@
 ---
-title: "retrieveJustInTimeConfiguration action"
-description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Retrievejustintimeconfiguration Api ."
+title: "Delete windowsQualityUpdatePolicyAssignment"
+description: "Deletes a windowsQualityUpdatePolicyAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
-# retrieveJustInTimeConfiguration action
+# Delete windowsQualityUpdatePolicyAssignment
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-
+Deletes a [windowsQualityUpdatePolicyAssignment](../resources/intune-softwareupdate-windowsqualityupdatepolicyassignment.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,8 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
-POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
+DELETE /deviceManagement/windowsQualityUpdatePolicies/{windowsQualityUpdatePolicyId}/assignments/{windowsQualityUpdatePolicyAssignmentId}
 ```
 
 ## Request headers
@@ -48,30 +47,18 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md) in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/retrieveJustInTimeConfiguration
+DELETE https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdatePolicies/{windowsQualityUpdatePolicyId}/assignments/{windowsQualityUpdatePolicyAssignmentId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 205
-
-{
-  "value": {
-    "@odata.type": "microsoft.graph.deviceManagementConfigurationJustInTimeAssignmentPolicy",
-    "targetType": "entraSecurityGroup",
-    "target": [
-      "Target value"
-    ]
-  }
-}
+HTTP/1.1 204 No Content
 ```

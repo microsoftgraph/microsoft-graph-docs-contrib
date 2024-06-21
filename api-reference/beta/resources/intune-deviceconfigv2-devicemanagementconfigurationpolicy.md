@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceManagementConfigurationPolicy resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Device Management Configuration Policy
 
@@ -31,6 +31,9 @@ Device Management Configuration Policy
 |[retrieveLatestUpgradeDefaultBaselinePolicy function](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievelatestupgradedefaultbaselinepolicy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)||
 |[retrieveJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievejustintimeconfiguration.md)|[deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md)||
 |[assignJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assignjustintimeconfiguration.md)|Boolean||
+|[retrieveEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrieveenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-deviceconfigv2-enrollmenttimedevicemembershiptargetresult.md)||
+|[setEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-setenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-deviceconfigv2-enrollmenttimedevicemembershiptargetresult.md)||
+|[clearEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-clearenrollmenttimedevicemembershiptarget.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|
@@ -53,6 +56,7 @@ Device Management Configuration Policy
 |Relationship|Type|Description|
 |:---|:---|:---|
 |settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) collection|Policy settings|
+|assignments|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection|Policy assignments|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

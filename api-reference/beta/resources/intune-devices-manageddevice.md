@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # managedDevice resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Devices that are managed or pre-enrolled through Intune
 
@@ -30,6 +30,8 @@ Devices that are managed or pre-enrolled through Intune
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None||
 |[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String||
 |[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)||
+|[retrieveDeviceLogCollectionRequests function](../api/intune-devices-manageddevice-retrievedevicelogcollectionrequests.md)|[managedDeviceLogCollectionRequest](../resources/intune-devices-manageddevicelogcollectionrequest.md) collection||
+|[retrieveDeviceLogsDownloadUrl function](../api/intune-devices-manageddevice-retrievedevicelogsdownloadurl.md)|String||
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -109,6 +111,7 @@ Devices that are managed or pre-enrolled through Intune
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.|
 |isEncrypted|Boolean|Device encryption status. This property is read-only.|
 |userPrincipalName|String|Device user principal name. This property is read-only.|
+|enrolledByUserPrincipalName|String|The Entra (Azure AD) User Principal Name (UPN) of the user responsible for the enrollment of the device. This property is read-only.|
 |model|String|Model of the device. This property is read-only.|
 |manufacturer|String|Manufacturer of the device. This property is read-only.|
 |imei|String|IMEI. This property is read-only.|
@@ -150,6 +153,7 @@ Devices that are managed or pre-enrolled through Intune
 |skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter.|
+|supplementalDeviceDetails|[supplementalDeviceDetail](../resources/intune-devices-supplementaldevicedetail.md) collection|List of properties provided by the device to describe its own state. Each property includes a title, value, and value type. These properties will be specific to platform and are dynamically populated by the device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included as a $SELECT parameter. Read only.|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 |bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
 |deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
@@ -164,6 +168,9 @@ Devices that are managed or pre-enrolled through Intune
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 |deviceHealthScriptStates|[deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) collection|Results of device health scripts that ran for this device. Default is empty list. This property is read-only.|
+|queryResults|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md) collection|Results of device query that ran for this device. Default is empty list. This property is read-only.|
+|deviceInventories|[deviceInventory](../resources/intune-devices-deviceinventory.md) collection|All Intune inventory data collected for this device. This property is read-only.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -273,6 +280,7 @@ Here is a JSON representation of the resource.
   "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
+  "enrolledByUserPrincipalName": "String",
   "model": "String",
   "manufacturer": "String",
   "imei": "String",
@@ -388,6 +396,14 @@ Here is a JSON representation of the resource.
       "value": "String",
       "valueType": "String",
       "updatable": true
+    }
+  ],
+  "supplementalDeviceDetails": [
+    {
+      "@odata.type": "microsoft.graph.supplementalDeviceDetail",
+      "propertyName": "String",
+      "propertyValue": "String",
+      "propertyType": "String"
     }
   ],
   "enrollmentProfileName": "String",
