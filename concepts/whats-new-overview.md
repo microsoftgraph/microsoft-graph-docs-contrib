@@ -65,6 +65,10 @@ The content model automatically processes new files that are added to the librar
 
 [Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
 
+### Teamwork and communications | Calls and online meetings
+
+Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-sessions) for virtual event meeting registrations.
+
 ## May 2024: New and generally available
 
 ### Identity and access | Identity and sign-in
