@@ -94,8 +94,8 @@ If [EwsApplicationAccessPolicy](/powershell/module/exchange/set-organizationconf
 > [!NOTE]
 > Changes to EWS application policies take time to take effect. Your application might continue to receive `403 Forbidden` errors for some time after you make a change.
 
-### 403 Forbidden error: Is your app attempting to access a group containing other groups with different permissions? 
+### 403 Forbidden error: Is your app attempting to access a group containing other groups with different permissions?
 
-Review any groups owned by the group failing to be accessed by your application. In the case of nested groups where the parent group (a group that possesses other groups as members) has sufficient permission to be accessed by your application, but the child group (a group which is a member of another group) does not, this will not only cause failure in accessing the child, but also the parent group. 
+Review any groups owned by the group that the application cannot access. In the case of nested groups where the parent group, a group that possesses other groups as members, has sufficient permission that the application can access, but the child group, a group that is a member of another group, does not, this will cause failure in accessing both the child and the parent groups.
 
-In some cases, an app may fail to read groups and/or service principals due to insufficient permissions, even where the app was previously able to read these groups containing nested groups with insufficient permissions and/or service principals due to advances in security hardening taking place at Microsoft.
+In some cases, an app may fail to read groups or service principals due to insufficient permissions. This can happen even where the app was previously able to read these groups containing nested groups with insufficient permissions or service principals due to advances in security hardening taking place at Microsoft.
