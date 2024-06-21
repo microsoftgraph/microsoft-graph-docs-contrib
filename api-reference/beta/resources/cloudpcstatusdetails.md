@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents details about a Cloud PC status.
 
 > [!NOTE]
-> This resource type is deprecated and will no longer be supported effective August 31, 2024. Use [cloudPcStatusDetail](../resources/cloudpcstatusdetail.md) instead.
+> This resource type is deprecated and will stop returning data on August 31, 2024. Use [cloudPcStatusDetail](../resources/cloudpcstatusdetail.md) instead.
 
 ## Properties
 
