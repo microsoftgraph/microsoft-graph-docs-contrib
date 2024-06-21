@@ -18,7 +18,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app installation
     items:
@@ -152,7 +152,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -260,7 +260,7 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
     - name: Call recording
       items:

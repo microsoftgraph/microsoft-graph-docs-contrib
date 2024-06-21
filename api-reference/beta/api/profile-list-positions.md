@@ -3,7 +3,7 @@ title: "List positions"
 description: "Retrieve a list of workPosition objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
