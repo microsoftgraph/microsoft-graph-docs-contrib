@@ -80,12 +80,14 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByUser`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The default value is `dedicated`. CAUTION: The `shared` member is deprecated and will stop returning on April 30, 2027； in the future, use the `sharedByUser` member. |
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByEntraGroup`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The default value is `dedicated`. CAUTION: The `shared` member is deprecated and will stop returning on April 30, 2027； in the future, use the `sharedByUser` member. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
-|status|[microsoft.graph.cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`.|
-|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
+|status|[microsoft.graph.cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`.|
+|statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
+|statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
+|connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 
@@ -108,7 +110,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`.
 
 |Member|Description|
 |:---|:---|
@@ -125,6 +127,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
 |resizePendingLicense|Indicates that the Cloud PC resize process was initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
+|modifyingSingleSignOn|Indicates that the Cloud PC is updating the single sign on setting.|
 
 ### frontlineCloudPcAccessState values
 

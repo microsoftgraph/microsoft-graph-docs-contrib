@@ -54,6 +54,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Microsoft Entra B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. |
+| tenantRestrictions  |[crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the default tenant restrictions configuration for users in your organization who access an external organization on your network or devices. |
 
 ## Response
 
@@ -214,7 +215,11 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Configure tenant restrictions settings
 
+The following example shows how to configure tenant restrictions settings.
+
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -227,26 +232,26 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
-"tenantRestrictions": {
-       "usersAndGroups": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "AllUsers",
-                    "targetType": "user"
-                }
-            ]
-        },
-        "applications": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "Office365",
-                    "targetType": "application"
-                }
-            ]
+  "tenantRestrictions": {
+    "usersAndGroups": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
         }
+      ]
+    },
+    "applications": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "Office365",
+          "targetType": "application"
+        }
+      ]
     }
+  }
 }
 ```
 
@@ -297,3 +302,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
