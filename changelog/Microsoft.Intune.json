@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -351,7 +351,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -359,7 +359,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -367,7 +367,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -375,7 +375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -383,7 +383,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSImportedPFXCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-macOSImportedPFXCertificateProfile?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSImportedPFXCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosimportedpfxcertificateprofile?view=graph-rest-beta) resource.",
           "Target": "macOSImportedPFXCertificateProfile"
         },
         {
@@ -391,7 +391,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSPkcsCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-macOSPkcsCertificateProfile?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSPkcsCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macospkcscertificateprofile?view=graph-rest-beta) resource.",
           "Target": "macOSPkcsCertificateProfile"
         },
         {
@@ -399,7 +399,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSScepCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-macOSScepCertificateProfile?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSScepCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta) resource.",
           "Target": "macOSScepCertificateProfile"
         },
         {
@@ -407,7 +407,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSTrustedRootCertificate](https://learn.microsoft.com/graph/api/resources/intune-macOSTrustedRootCertificate?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSTrustedRootCertificate](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macostrustedrootcertificate?view=graph-rest-beta) resource.",
           "Target": "macOSTrustedRootCertificate"
         },
         {
@@ -415,7 +415,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSVpnConfiguration](https://learn.microsoft.com/graph/api/resources/intune-macOSVpnConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSVpnConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosvpnconfiguration?view=graph-rest-beta) resource.",
           "Target": "macOSVpnConfiguration"
         },
         {
@@ -423,7 +423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSWiFiConfiguration](https://learn.microsoft.com/graph/api/resources/intune-macOSWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSWiFiConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoswificonfiguration?view=graph-rest-beta) resource.",
           "Target": "macOSWiFiConfiguration"
         },
         {
@@ -431,7 +431,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deploymentChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **deploymentChannel** property to the [macOSWiredNetworkConfiguration](https://learn.microsoft.com/graph/api/resources/intune-macOSWiredNetworkConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **deploymentChannel** property to the [macOSWiredNetworkConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoswirednetworkconfiguration?view=graph-rest-beta) resource.",
           "Target": "macOSWiredNetworkConfiguration"
         },
         {
@@ -447,7 +447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrollmentTimeDeviceMembershipTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [enrollmentTimeDeviceMembershipTarget](https://learn.microsoft.com/graph/api/resources/intune-enrollmentTimeDeviceMembershipTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the [enrollmentTimeDeviceMembershipTarget](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy-clearenrollmenttimedevicemembershiptarget?view=graph-rest-beta) resource.",
           "Target": "enrollmentTimeDeviceMembershipTarget"
         },
         {
@@ -455,7 +455,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -463,7 +463,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -479,7 +479,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -487,7 +487,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -711,7 +711,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -719,7 +719,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -727,7 +727,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bulkDeviceActionId",
           "ChangeType": "Addition",
-          "Description": "Added the **bulkDeviceActionId** property to the [remoteActionAudit](https://learn.microsoft.com/graph/api/resources/intune-remoteActionAudit?view=graph-rest-beta) resource.",
+          "Description": "Added the **bulkDeviceActionId** property to the [remoteActionAudit](https://learn.microsoft.com/graph/api/resources/intune-devices-remoteactionaudit?view=graph-rest-beta) resource.",
           "Target": "remoteActionAudit"
         },
         {
@@ -735,7 +735,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceManufacturerName",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceManufacturerName** property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthDevicePerformance?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceManufacturerName** property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance?view=graph-rest-beta) resource.",
           "Target": "userExperienceAnalyticsBatteryHealthDevicePerformance"
         },
         {
@@ -743,7 +743,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceModelName",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceModelName** property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthDevicePerformance?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceModelName** property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance?view=graph-rest-beta) resource.",
           "Target": "userExperienceAnalyticsBatteryHealthDevicePerformance"
         },
         {
@@ -751,7 +751,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceManufacturerName",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceManufacturerName** property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthModelPerformance?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceManufacturerName** property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
           "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
         },
         {
@@ -759,7 +759,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceModelName",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceModelName** property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthModelPerformance?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceModelName** property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
           "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
         },
         {
@@ -775,7 +775,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -783,7 +783,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -791,7 +791,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -799,7 +799,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -807,7 +807,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -815,7 +815,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1151,7 +1151,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "organizationalMessageFeatureOnboarding",
           "ChangeType": "Addition",
-          "Description": "Added the **organizationalMessageFeatureOnboarding** property to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Description": "Added the **organizationalMessageFeatureOnboarding** property to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
           "Target": "deviceManagement"
         },
         {
@@ -1175,7 +1175,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1183,7 +1183,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1263,7 +1263,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceId",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1271,7 +1271,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "endDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **endDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **endDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1279,7 +1279,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperDeviceAadId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1287,7 +1287,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperDeviceName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1295,7 +1295,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperEmail",
           "ChangeType": "Addition",
-          "Description": "Added the **helperEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1303,7 +1303,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperEnrollmentState",
           "ChangeType": "Addition",
-          "Description": "Added the **helperEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1311,7 +1311,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperFirstName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1319,7 +1319,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperLastName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1327,7 +1327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperOs",
           "ChangeType": "Addition",
-          "Description": "Added the **helperOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1335,7 +1335,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1343,7 +1343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperUserId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperUserId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperUserId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1351,7 +1351,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "id",
           "ChangeType": "Addition",
-          "Description": "Added the **id** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **id** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1359,7 +1359,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "remoteAssistanceSessionType",
           "ChangeType": "Addition",
-          "Description": "Added the **remoteAssistanceSessionType** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **remoteAssistanceSessionType** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1367,7 +1367,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceAadId",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1375,7 +1375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1383,7 +1383,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceSerialNumber",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceSerialNumber** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceSerialNumber** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1391,7 +1391,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerEmail",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1399,7 +1399,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerEnrollmentState",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1407,7 +1407,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerFirstName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1415,7 +1415,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerLastName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1423,7 +1423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerOs",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1431,7 +1431,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1439,7 +1439,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "startDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **startDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteAssistanceReporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **startDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1447,7 +1447,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1455,7 +1455,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1463,7 +1463,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1471,7 +1471,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1479,7 +1479,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1487,7 +1487,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1495,7 +1495,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "entraObjectId",
           "ChangeType": "Addition",
-          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **entraObjectId** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         },
         {
@@ -1503,7 +1503,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetType",
           "ChangeType": "Addition",
-          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-scopeTagGroupAssignmentTarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **targetType** property to the [scopeTagGroupAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-shared-scopetaggroupassignmenttarget?view=graph-rest-beta) resource.",
           "Target": "scopeTagGroupAssignmentTarget"
         }
       ],
