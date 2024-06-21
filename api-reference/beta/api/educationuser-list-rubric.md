@@ -1,6 +1,6 @@
 ---
 title: "List all educationRubric"
-description: "Returns a list of all the properties and relationships of an educationrubric object."
+description: "Returns a list of all the properties and relationships of your educationRubric objects."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
