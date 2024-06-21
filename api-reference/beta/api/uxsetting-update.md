@@ -36,7 +36,7 @@ PATCH /admin/entra/uxSetting
 
 |Property|Type|Description|
 |:---|:---|:---|
-|restrictNonAdminAccess|nonAdminSetting|If the nonAdminSetting is set to true, it restricts non-administrators from browsing the Microsoft Entra administration portal. Non-administrators who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If the nonAdminSetting is set to false, it lets non-administrators browse the Microsoft Entra administration portal. The possible values are: `true`, `false`. Required.|
+|restrictNonAdminAccess|nonAdminSetting|If the nonAdminSetting is set to true, it restricts nonadministrators from browsing the Microsoft Entra administration portal. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If the nonAdminSetting is set to false, it lets nonadministrators  browse the Microsoft Entra administration portal. The possible values are: `true`, `false`. Required.|
 
 
 
