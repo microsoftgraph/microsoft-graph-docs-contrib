@@ -676,12 +676,12 @@ Content-type: application/json
 
 {
   "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
-  "displayName": "extension-policy",
-  "description": "test",
+  "displayName": "customExtensionStageSettings policy",
+  "description": "policy with specified stages for custom extension assignment",
   "canExtend": false,
   "durationInDays": 0,
   "expirationDateTime": null,
-  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "accessPackageId": "5ad1eb64-15f7-4614-b419-05d11ee266bf",
   "accessReviewSettings": null,
   "questions": [],
   "requestorSettings": {
