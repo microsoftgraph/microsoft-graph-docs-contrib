@@ -1,6 +1,20 @@
 {
   "tocNodes": [
     {
+      "name": "Users",
+      "overview": "../../resources/users.md",
+      "resources": [
+        "user"
+      ]
+    },
+    {
+      "name": "Groups",
+      "overview": "../../resources/groups-overview.md",
+      "resources": [
+        "group"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
@@ -807,8 +821,6 @@
             "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
@@ -834,6 +846,8 @@
               "resources": [
                 "authenticationStrengthPolicy",
                 "authenticationCombinationConfiguration",
+                "fido2CombinationConfiguration",
+                "x509CertificateCombinationConfiguration",
                 "authenticationMethodModeDetail"
               ]
             },
@@ -927,6 +941,17 @@
                 "multiTenantOrganizationJoinRequestRecord",
                 "multiTenantOrganizationPartnerConfigurationTemplate",
                 "multiTenantOrganizationIdentitySyncPolicyTemplate"
+              ]
+            },
+            {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
               ]
             },
             {

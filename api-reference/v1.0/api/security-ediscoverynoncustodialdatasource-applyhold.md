@@ -3,7 +3,7 @@ title: "ediscoveryNoncustodialDataSource: applyHold"
 description: "Start the process of applying hold to eDiscovery non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

@@ -12,9 +12,9 @@ using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Add;
 var requestBody = new AddPostRequestBody
 {
 	Index = 3,
-	Values = new List<Json>
+	Values = new List<object>
 	{
-		new Json
+		new 
 		{
 		},
 	},

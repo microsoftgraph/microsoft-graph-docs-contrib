@@ -3,7 +3,7 @@ title: "ediscoveryHoldPolicy resource type"
 description: "*ediscoveryHoldPolicy resource type"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

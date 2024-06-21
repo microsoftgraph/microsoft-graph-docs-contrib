@@ -3,7 +3,7 @@ title: "Update sitePage"
 description: "Update the properties of a sitePage object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

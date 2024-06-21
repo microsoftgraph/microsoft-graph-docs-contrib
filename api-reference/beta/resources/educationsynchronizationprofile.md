@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Synchronization profile
 ---
 
 # educationSynchronizationProfile resource type

@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/onedrive.md
@@ -100,9 +103,9 @@ items:
   - name: Create bundle
     href: ../../api/drive-post-bundles.md
   - name: Add item
-    href: ../../api/bundle-addItem.md
+    href: ../../api/bundle-additem.md
   - name: Remove item
-    href: ../../api/bundle-removeItem.md
+    href: ../../api/bundle-removeitem.md
   - name: Update bundle
     href: ../../api/bundle-update.md
   - name: Delete bundle
@@ -139,6 +142,8 @@ items:
     href: ../../api/filestorage-delete-containers.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
+  - name: Permanently delete
+    href: ../../api/filestoragecontainer-permanentdelete.md
   - name: Get drive
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions

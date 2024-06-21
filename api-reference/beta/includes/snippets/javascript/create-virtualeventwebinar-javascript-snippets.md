@@ -12,7 +12,10 @@ const client = Client.init(options);
 
 const virtualEventWebinar = {
     displayName:  'The Impact of Tech on Our Lives',
-    description:  'Discusses how technology has changed the way we communicate.',
+    description:  {
+      contentType: 'text',
+      content: 'Discusses how technology has changed the way we communicate.'
+    },
     startDateTime:  {
       dateTime:  '2024-03-30T10:00:00', 
       timeZone:  'Pacific Standard Time' 
