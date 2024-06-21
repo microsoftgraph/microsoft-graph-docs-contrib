@@ -41,7 +41,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.healthMonitoring.deviceImpactSummary",
   "resourceType": "String",
-  "impactedCount": "String",
+  "impactedCount": "Integer",
   "impactedCountLimitExceeded": "Boolean"
 }
 ```

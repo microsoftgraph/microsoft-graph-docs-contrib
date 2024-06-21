@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
   "state": "String",
   "impacts": [
     {
-      "@odata.type": "microsoft.graph.healthMonitoring.userImpactSummary"
+      "@odata.type": "microsoft.graph.healthMonitoring.resourceImpactSummary"
     }
   ],
   "supportingData": {

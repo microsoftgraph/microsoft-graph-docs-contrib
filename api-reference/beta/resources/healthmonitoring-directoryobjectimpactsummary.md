@@ -42,7 +42,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.healthMonitoring.directoryObjectImpactSummary",
   "resourceType": "String",
-  "impactedCount": "String",
+  "impactedCount": "Integer",
   "impactedCountLimitExceeded": "Boolean"
 }
 ```

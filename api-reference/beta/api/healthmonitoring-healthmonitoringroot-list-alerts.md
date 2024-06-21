@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert"
+  "name": "list_alert1"
 }
 -->
 ``` http
@@ -137,7 +137,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert"
+  "name": "list_alert2"
 }
 -->
 ``` http
@@ -180,7 +180,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert"
+  "name": "list_alert3"
 }
 -->
 ``` http
@@ -227,7 +227,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert"
+  "name": "list_alert4"
 }
 -->
 ``` http
