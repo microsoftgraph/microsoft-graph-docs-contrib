@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "af619e5d-f9e6-415e-9e97-498f54872fee",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantRestrictions** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationDefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "af619e5d-f9e6-415e-9e97-498f54872fee",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantRestrictions** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationPartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "af619e5d-f9e6-415e-9e97-498f54872fee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTenantRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTenantRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyTenantRestrictions?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyTenantRestrictions"
+        },
+        {
+          "Id": "af619e5d-f9e6-415e-9e97-498f54872fee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "devicesFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [devicesFilter](https://learn.microsoft.com/en-us/graph/api/resources/devicesFilter?view=graph-rest-1.0) resource.",
+          "Target": "devicesFilter"
+        }
+      ],
+      "Id": "af619e5d-f9e6-415e-9e97-498f54872fee",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-18T00:00:00.0166075Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "64b291a7-719d-4f30-b64e-07ef9d7fbbae",
           "ApiChange": "Permission",
           "ChangedApiName": "DELETE",
