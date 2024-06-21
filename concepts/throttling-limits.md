@@ -4,6 +4,7 @@ description: "Identify the throttling limits for each Microsoft Graph service to
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.subservice: non-product-specific
+ms.date: 06/19/2024
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
@@ -386,6 +387,7 @@ Limits are expressed as requests per second (rps).
 | POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | Five rps | 50 rps |
 | POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | Two rps | 20 rps |
 | GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
+| POST /teams/```{team-id}```/[members](/graph/api/team-post-members) | 30 rps | 300 rps | 4rpm|
 | GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps | 1rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps | 1rps |
 | Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
