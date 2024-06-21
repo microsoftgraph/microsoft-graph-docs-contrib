@@ -3,7 +3,7 @@ title: "groupClaimFilter resource type"
 description: "Applies filters to the group of the user to be included in the group claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

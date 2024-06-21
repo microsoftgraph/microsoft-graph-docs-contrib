@@ -3,7 +3,7 @@ title: "Get caseSettings"
 description: "Read the properties and relationships of an eDiscovery caseSettings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

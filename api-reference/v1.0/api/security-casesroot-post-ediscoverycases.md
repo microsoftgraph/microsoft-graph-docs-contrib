@@ -3,7 +3,7 @@ title: "Create ediscoveryCase"
 description: "Create a new eDiscovery case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

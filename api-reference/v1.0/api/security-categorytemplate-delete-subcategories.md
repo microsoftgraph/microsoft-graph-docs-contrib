@@ -3,7 +3,7 @@ title: "Delete subcategoryTemplate"
 description: "Delete a subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

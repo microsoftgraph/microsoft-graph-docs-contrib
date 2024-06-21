@@ -162,12 +162,6 @@ items:
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
-  - name: Open extensions
-    items:
-    - name: Create open extension
-      href: ../../api/opentypeextension-post-opentypeextension.md
-    - name: Get open extension
-      href: ../../api/opentypeextension-get.md
   - name: Password-based single sign-on credentials
     items:
     - name: Get credentials
@@ -196,10 +190,6 @@ items:
       href: ../../api/post-reply.md
     - name: Forward post
       href: ../../api/post-forward.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Other group resources
     items:
     - name: List permission grants
