@@ -108,15 +108,7 @@
       ],
       "childNodes": [
         {
-          "name": "Protection rule base",
-          "resources": [
-            "driveProtectionRule",
-            "mailboxProtectionRule",
-            "siteProtectionRule"
-          ]
-        },
-        {
-          "name": "Protection policy base",
+          "name": "Protection policy",
           "resources": [
             "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
@@ -124,7 +116,15 @@
           ]
         },
         {
-          "name": "Protection unit base",
+          "name": "Protection rule",
+          "resources": [
+            "driveProtectionRule",
+            "mailboxProtectionRule",
+            "siteProtectionRule"
+          ]
+        },
+        {
+          "name": "Protection unit",
           "resources": [
             "driveProtectionUnit",
             "mailboxProtectionUnit",
@@ -132,7 +132,7 @@
           ]
         },
         {
-          "name": "Restore artifact base",
+          "name": "Restore artifact",
           "resources": [
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "name": "Restore session base",
+          "name": "Restore session",
           "resources": [
             "oneDriveForBusinessRestoreSession",
             "exchangeRestoreSession",
