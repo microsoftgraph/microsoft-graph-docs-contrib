@@ -70,7 +70,8 @@ Here's an example  of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric"
+  "@odata.type": "microsoft.graph.educationRubric",
+  "isCollection": true
 } -->
 
 ```http
