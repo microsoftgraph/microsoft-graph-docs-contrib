@@ -10,7 +10,7 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
-- name: Protection rule base
+- name: Protection rule
   href: ../../resources/protectionrulebase.md
   items:
   - name: Drive protection rule
@@ -55,9 +55,9 @@ items:
       href: ../../api/protectionrulebase-delete.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
-- name: Protection unit base
+- name: Protection unit
   items:
-  - name: Protection unit base
+  - name: Protection unit
     href: ../../resources/protectionunitbase.md
   - name: Get
     href: ../../api/protectionunitbase-get.md
@@ -79,7 +79,7 @@ items:
       href: ../../resources/siteprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
-- name: Restore artifact base
+- name: Restore artifact
   href: ../../resources/restoreartifactbase.md
   items:
   - name: Drive restore artifact
@@ -108,9 +108,9 @@ items:
     href: ../../api/backuprestoreroot-list-restorepoints.md
   - name: Search
     href: ../../api/restorepoint-search.md
-- name: Restore session base
+- name: Restore session
   items:
-  - name: Restore session base
+  - name: Restore session
     href: ../../resources/restoresessionbase.md
   - name: List
     href: ../../api/backuprestoreroot-list-restoresessions.md
@@ -166,7 +166,7 @@ items:
     href: ../../api/serviceapp-activate.md
   - name: Deactivate
     href: ../../api/serviceapp-deactivate.md
-- name: Protection policy base
+- name: Protection policy
   items:
   - name: OneDrive for Business protection policy
     items:
