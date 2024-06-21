@@ -155,6 +155,8 @@ Namespace: microsoft.graph
 | :----- |
 | user   |
 | group  |
+|application|
+|unknownFutureValue|
 
 ### multiTenantOrganizationMemberProcessingStatus values
 
@@ -3370,3 +3372,14 @@ Possible values for user account types (group membership), per Windows definitio
 |pendingAcceptance|
 |rejectedByStaff|
 |unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+
