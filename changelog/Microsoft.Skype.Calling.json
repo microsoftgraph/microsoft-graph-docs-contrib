@@ -2,6 +2,96 @@
   "changelog": [
     {
       "ChangeList": [
+       {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationQuestionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationCustomQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationCustomQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationcustomquestion?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationPredefinedQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationPredefinedQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationpredefinedquestion?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationQuestionAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationPredefinedQuestion** and **virtualEventRegistrationCustomQuestion** resources to the properties description of the [virtualEventRegistrationQuestionAnswer](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionanswer?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+        "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationQuestion",
+          "ChangeType": "Deletion",
+          "Description": "Removed the [virtualEventRegistrationQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestion?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "virtualEventRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationQuestionBase** relationship to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationQuestionBase** relationship to the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "virtualEventRegistrationConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **virtualEventRegistrationQuestion** relationship from the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [List questions](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create question](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-20T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "01538c8b-1a19-4b41-b438-3b4608ae5834",
           "ApiChange": "Method",
