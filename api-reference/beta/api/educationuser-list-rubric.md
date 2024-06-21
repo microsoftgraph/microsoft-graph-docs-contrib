@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of all the properties and relationships of an [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
+Returns a list of all the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
