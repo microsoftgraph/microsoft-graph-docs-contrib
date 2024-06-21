@@ -211,9 +211,9 @@ Content-Type: application/json
         "impactedCount": 1,
         "impactedCountLimitExceeded": true,
         "resourceSampling": [
-            {
-                "id": "63c83fa4-d90c-4274-8460-5463e96f1113"
-            }
+          {
+              "id": "63c83fa4-d90c-4274-8460-5463e96f1113"
+          }
         ]
       }
     ],
@@ -224,3 +224,5 @@ Content-Type: application/json
   }
 }
 ```
+
+> Note: Currently `resourceSampling` only contains `id` of the resource. In the future, it'll be able to show other properties of the resource as well.
