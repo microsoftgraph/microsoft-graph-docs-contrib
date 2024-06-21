@@ -7,7 +7,7 @@ ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
-# Customize item insights privacy in Microsoft Graph (preview)
+# Customize item insights privacy in Microsoft Graph
 
 Item insights are relationships that Microsoft calculates using advanced machine learning techniques. When users collaborate over documents, SharePoint sites and lists, Teams chats and channels, Microsoft aggregates these activities as signals. From the signals Microsoft derives insights to make user-centric content recommendations for users in an organization.
 
@@ -30,9 +30,6 @@ There are a few ways to customize users' item insights privacy settings:
   - [Microsoft 365 admin center](#configure-item-insights-settings-via-microsoft-365-admin-center)
   - [Microsoft Graph PowerShell SDK](#configure-item-insights-settings-via-powershell)
   - [Microsoft Graph REST API](#configure-item-insights-settings-using-the-rest-api)
-
-> [!NOTE]
-> The REST and PowerShell APIs for item insights settings are currently available only in the beta version.
 
 The rest of this article describes how an administrator can customize item insights privacy in an organization. 
 
@@ -64,12 +61,6 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 * **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 #### Command examples
-
-> [!NOTE]
-> Because item insights commands are only available in beta, switch to the beta profile before calling it.
-> ```powershell
->    Select-MgProfile beta
-> ```
 
 To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Microsoft Entra tenant ID. You can retrieve this ID from the overview page of your Microsoft Entra ID.
 
