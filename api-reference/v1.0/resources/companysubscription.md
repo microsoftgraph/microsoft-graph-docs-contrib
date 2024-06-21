@@ -19,8 +19,8 @@ Inherits from [entity](entity.md).
 
 | Method                                         | Return Type                                              | Description                                                                 |
 | :--------------------------------------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [Get](../api/companysubscription-get.md)       | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [Get](../api/companysubscription-get.md)       | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization acquired.   |
+| [List](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization acquired. |
 
 ## Properties
 
@@ -34,11 +34,11 @@ Inherits from [entity](entity.md).
 | ownerId                | String                                           | The object ID of the account admin.                                                                                                                                                                                                                                                                                         |
 | ownerTenantId          | String                                           | The unique identifier for the Microsoft partner tenant that created the subscription on a customer tenant.                                                                                                                                                                                                                  |
 | ownerType              | String                                           | Indicates the entity that **ownerId** belongs to, for example, "User".                                                                                                                                                                                                                                                      |
-| serviceStatus          | [servicePlanInfo](serviceplaninfo.md) collection | The provisioning status of each service that's included in this subscription.                                                                                                                                                                                                                                               |
+| serviceStatus          | [servicePlanInfo](serviceplaninfo.md) collection | The provisioning status of each service included in this subscription.                                                                                                                                                                                                                                               |
 | skuId                  | String                                           | The object ID of the SKU associated with this subscription.                                                                                                                                                                                                                                                                 |
 | skuPartNumber          | String                                           | The SKU associated with this subscription.                                                                                                                                                                                                                                                                                  |
 | status                 | String                                           | The status of this subscription. Possible values are: `Enabled`, `Deleted`, `Suspended`, `Warning`, `LockedOut`.                                                                                                                                                                                                            |
-| totalLicenses          | Int32                                            | The number of seats included in this subscription.                                                                                                                                                                                                                                                                          |
+| totalLicenses          | Int32                                            | The number of licenses included in this subscription.                                                                                                                                                                                                                                                                          |
 
 ## Relationships
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 
 <!-- {
   "blockType": "resource",

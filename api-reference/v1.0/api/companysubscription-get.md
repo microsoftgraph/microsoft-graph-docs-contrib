@@ -1,6 +1,6 @@
 ---
 title: "Get companySubscription"
-description: "Get a specific commercial subscription that an organization has acquired."
+description: "Get a specific commercial subscription that an organization acquired."
 ms.localizationpriority: medium
 author: "arp19690"
 ms.subservice: "entra-directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a specific commercial subscription that an organization has acquired.
+Get a specific commercial subscription that an organization acquired.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

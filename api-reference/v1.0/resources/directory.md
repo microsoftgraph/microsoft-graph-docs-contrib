@@ -1,5 +1,5 @@
 ---
-title: "directory resource type (deleted items)"
+title: "Directory resource type (deleted items)"
 description: ". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 toc.title: Deleted item
 ---
 
-# directory resource type
+# Directory resource type
 
 Namespace: microsoft.graph
 
@@ -45,7 +45,7 @@ Inherits from [entity](entity.md).
 | deviceLocalCredentials             | [deviceLocalCredential](../resources/devicelocalcredential.md) collection                | The credentials of the device's local administrator account backed up to Microsoft Entra ID.                            |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |
-| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization has acquired.                                                       |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization acquired.                                                       |
 
 ## JSON representation
 
