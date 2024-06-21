@@ -3363,3 +3363,12 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAccount|
 |defaultConfiguredIdp|
 |unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
