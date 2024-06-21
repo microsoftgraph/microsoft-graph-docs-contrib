@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert1"
+  "name": "get_alert1"
 }
 -->
 ``` http
@@ -131,7 +131,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert2"
+  "name": "get_alert2"
 }
 -->
 ``` http
@@ -170,7 +170,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_alert3"
+  "name": "get_alert3"
 }
 -->
 ``` http
