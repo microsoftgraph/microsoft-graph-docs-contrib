@@ -127,7 +127,7 @@ This method doesn't support the [OData query parameters](/graph/query-parameters
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
