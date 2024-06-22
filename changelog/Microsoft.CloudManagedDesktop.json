@@ -29,6 +29,72 @@
       {
         "ChangeList": [
         {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Member",
+          "ChangedApiName": "modifyingSingleSignOn",
+          "ChangeType": "Addition",
+          "Description": "Added the `modifyingSingleSignOn` member to the **cloudPcStatus** enumeration.",
+          "Target": "cloudPcStatus"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcConnectionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectionSetting?view=graph-rest-beta) resource.",
+          "Target": "cloudPcConnectionSetting"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [cloudPcConnectivityResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectivityResult?view=graph-rest-beta) resource.",
+          "Target": "cloudPcConnectivityResult"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **statusDetail** property to the [cloudPcRemoteActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionResult?view=graph-rest-beta) resource.",
+          "Target": "cloudPcRemoteActionResult"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcStatusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcStatusDetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcStatusDetail"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Property",
+          "ChangedApiName": "connectionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectionSetting** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **statusDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "bfe5786f-6871-43ed-ae70-f3324d0f56fd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-20T09:45:11.7491462Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1c7c95a4-e9d3-4a35-8556-108c150ff753",
           "ApiChange": "Property",
           "ChangedApiName": "provisioningType",

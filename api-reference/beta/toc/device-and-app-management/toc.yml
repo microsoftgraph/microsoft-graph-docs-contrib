@@ -432,6 +432,8 @@ items:
       href: ../../resources/cloudpcbulkrestore.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
+    - name: Cloud PC connection setting
+      href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
@@ -470,6 +472,8 @@ items:
       href: ../../resources/cloudpcscopedpermission.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
+    - name: Cloud PC status detail
+      href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
@@ -8373,7 +8377,7 @@ items:
       href: ../../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
     - name: Get
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
-    - name: Delete operationalInsightsConnection
+    - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
   - name: Product
     items:
