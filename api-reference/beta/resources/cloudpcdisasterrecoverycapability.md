@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryCapability resource type"
-description: "The disaster recovery status of the Cloud PC."
+description: "Represents the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,31 +13,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describe the disaster recovery status of the Cloud PC, including primary region, secondary region and capability type. Default is null, which means the disaster recovery setting is disabled. Read Only.
+Represents the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. Read-only.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
+|capabilityType|[cloudPcDisasterRecoveryCapabilityType](#cloudpcdisasterrecoverycapabilitytype-values)|Defines what disaster recovery action can be performed for the Cloud PC. The possible values are: `none`, `failover`, `failback`, `unknownFutureValue`.|
 |primaryRegion|String|The primary and mainly used region where the Cloud PC is located in.|
-|secondaryRegion|String|The secondary region where the Cloud PC can be failed over to during region outage happening.|
-|capabilityType|[cloudPcDisasterRecoveryCapabilityType](#cloudpcdisasterrecoverycapabilitytype-values)|This enum value defines what action about disaster recovery can be performed for the Cloud PC.The possible values are: `none`, `failover`, `failback`, `unknownFutureValue`.|
+|secondaryRegion|String|The secondary region to which the Cloud PC can be failed over during a regional outage.|
 
-### CloudPcDisasterRecoveryCapabilityType values
+### cloudPcDisasterRecoveryCapabilityType values
 
-Defines what action about disaster recovery can be performed for the Cloud PC.
-
-| Member name          | Description                                                                            | Value |
-|----------------------|----------------------------------------------------------------------------------------|-------|
-| `none`               | Indicates that the Cloud PC device does not support any cross region DR action          | 0     |
-| `failover`           | Indicates that the cloudPcBulkDisasterRecoveryFailover is currently supported for the Cloud PC. | 1     |
-| `failback`           | Indicates that the cloudPcBulkDisasterRecoveryFailback action is currently supported for the Cloud PC. | 2     |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use.                                      | 3     |
+| Member             | Description                                                                            |
+|:-------------------|:---------------------------------------------------------------------------------------|
+| none               | Indicates that the Cloud PC device doesn't support any cross region disaster recovery action.          |
+| failover           | Indicates that the **cloudPcBulkDisasterRecoveryFailover** action is currently supported for the Cloud PC. |
+| failback           | Indicates that the **cloudPcBulkDisasterRecoveryFailback** action is currently supported for the Cloud PC. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                      |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcDisasterRecoveryCapability"
@@ -46,8 +48,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDisasterRecoveryCapability",
-  "primaryRegion": "String",
-  "secondaryRegion": "String",
   "capabilityType": "String"
+  "primaryRegion": "String",
+  "secondaryRegion": "String"
 }
 ```
