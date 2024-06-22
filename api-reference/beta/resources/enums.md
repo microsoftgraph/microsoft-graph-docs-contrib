@@ -3982,6 +3982,24 @@ Possible values for user account types (group membership), per Windows definitio
 | unknown            |
 | noResultAvailable  |
 | unknownFutureValue |
+| beingAnalyzed |
+| notSubmittedToMicrosoft |
+| phishingSimulation |
+| allowedDueToOrganizationOverride |
+| blockedDueToOrganizationOverride |
+| allowedDueToUserOverride |
+| blockedDueToUserOverride |
+| itemNotfound |
+| threatsFound |
+| noThreatsFound |
+| domainImpersonation |
+| userImpersonation |
+| brandImpersonation |
+| authenticationFailure |
+| spoofedBlocked |
+| spoofedAllowed |
+| reasonLostInTransit |
+| bulk |
 
 ### submissionSource values
 
