@@ -64,6 +64,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |deviceRegionName|String|The name of the geographical region where the Cloud PC is currently provisioned. For example, `westus3`, `eastus2`, and `southeastasia`. Read-only.|
+|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. Read-only. |
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -90,7 +91,6 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
-|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including primary region, secondary region and capability type. Default is null, which means the Cloud PC does not have cross region disaster recovery status available. Read Only. |
 
 ### cloudPcDiskEncryptionState values
 
@@ -179,6 +179,7 @@ The following JSON representation shows the resource type.
   "allotmentDisplayName": "String",
   "connectivityResult": "String",
   "deviceRegionName": "String",
+  "disasterRecoveryCapability": "String",
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",
@@ -201,7 +202,6 @@ The following JSON representation shows the resource type.
   "servicePlanType": "String",
   "status": "String",
   "userAccountType": "String",
-  "userPrincipalName": "String",
-  "disasterRecoveryCapability": "String"
+  "userPrincipalName": "String"
 }
 ```
