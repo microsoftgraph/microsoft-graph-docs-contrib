@@ -427,6 +427,10 @@ items:
       href: ../../api/channel-post-members.md
     - name: Get channel member
       href: ../../api/channel-get-members.md
+    - name: Archive channel
+      href: ../../api/channel-archive.md
+    - name: Unarchive channel
+      href: ../../api/channel-unarchive.md
     - name: Update channel member's role
       href: ../../api/channel-update-members.md
     - name: Remove channel member

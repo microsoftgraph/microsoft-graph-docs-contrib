@@ -11,22 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Restore an archived [channel](../resources/channel.md). Unarchiving restores the ability for users to send messages and edit the channel. Channels are archived via the [channel: archive](channel-archive.md) method.
 
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchiving operation completes successfully, which might occur after this method responds.
 
-> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before you unarchive the channel; otherwise, the request fails.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+> **Note**: An archived channel that belongs to an archived team can't be unarchived. Unarchive the team before you unarchive the channel; otherwise, the request fails.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "channel_unarchive" } -->
-[!INCLUDE [permissions-table](../includes/permissions/channel-unarchive-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | ChannelSettings.ReadWrite.All | 
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelSettings.ReadWrite.All | 
 
 > **Note**: This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't a member of.
 
@@ -54,6 +53,7 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 ## Examples
 
 ### Example 1: Unarchive a channel
+
 The following example shows a request to unarchive a channel.
 
 #### Request
@@ -64,7 +64,7 @@ The following example shows a request to unarchive a channel.
   "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response
@@ -93,10 +93,11 @@ The following example shows a request to unarchive a channel that fails because 
   "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/unarchive
 ```
 
 #### Response
+
 The following example shows the `400 Bad Request` response code with a corresponding error message.
 
 <!-- {
@@ -125,16 +126,3 @@ Content-Length: 193
     }
 }
 ```
-
-<!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Unarchive channel",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
