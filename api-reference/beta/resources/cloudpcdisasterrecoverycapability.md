@@ -48,7 +48,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDisasterRecoveryCapability",
-  "capabilityType": "String"
+  "capabilityType": "String",
   "primaryRegion": "String",
   "secondaryRegion": "String"
 }
