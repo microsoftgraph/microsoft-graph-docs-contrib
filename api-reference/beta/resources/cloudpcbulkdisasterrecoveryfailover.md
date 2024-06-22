@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk disaster recovery failover action using the executeAction API. This action initiates the activation of cross-region disaster recovery that restores a temporary Cloud PC in the backup region from a cross-region snapshot if the original region experiences an outage.
+Represents the entity that performs a bulk disaster recovery failover action. This action initiates the activation of cross-region disaster recovery that restores a temporary Cloud PC in the backup region from a cross-region snapshot if the original region experiences an outage.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
@@ -46,6 +46,7 @@ The following JSON representation shows the resource type.
   "cloudPcIds": ["String"],
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "scheduledDuringMaintenanceWindow": "Boolean"
 }
 ```
