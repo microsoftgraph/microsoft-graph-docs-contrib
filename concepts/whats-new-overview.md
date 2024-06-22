@@ -44,6 +44,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 - Removed the **type** property from the [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **resourceType** property.
 - Use the **deviceRegionName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the name of the geographical region where the Cloud PC is currently provisioned.
+- Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
 
 ### Identity and access | Identity and sign-in
 
