@@ -135,7 +135,8 @@ Content-type: application/json
     "createdDateTime": "2020-05-27T19:22:25.692Z",
     "displayName": "General",
     "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
-    "membershipType": "standard"
+    "membershipType": "standard",
+    "isArchived": false
 }
 ```
 
