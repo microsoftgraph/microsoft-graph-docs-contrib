@@ -7,7 +7,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "relatedHosts",
           "ChangeType": "Addition",
-          "Description": "Added the **relatedHosts** method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-beta) resource.",
+          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence-list-relatedhosts?view=graph-rest-beta) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-beta) resource.",
+          "Target": "sslCertificate"
+        },
+        {
+          "Id": "c119fd2f-29a6-4081-94c7-d55a20fa3ee9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "relatedHosts",
+          "ChangeType": "Addition",
+          "Description": "Added the **relatedHosts** relationship to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-beta) resource.",
           "Target": "sslCertificate"
         }
       ],
@@ -25,7 +33,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "relatedHosts",
           "ChangeType": "Addition",
-          "Description": "Added the **relatedHosts** method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-1.0) resource.",
+          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence-list-relatedhosts?view=graph-rest-1.0) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-1.0) resource.",
+          "Target": "sslCertificate"
+        },
+        {
+          "Id": "12b5837a-e072-40e6-8eff-3dcef2c11a77",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "relatedHosts",
+          "ChangeType": "Addition",
+          "Description": "Added the **relatedHosts** relationship to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-1.0) resource.",
           "Target": "sslCertificate"
         }
       ],
