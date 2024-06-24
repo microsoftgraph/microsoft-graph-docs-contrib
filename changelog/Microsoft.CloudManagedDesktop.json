@@ -41,7 +41,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveTenantEncryptionSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievetenantencryptionsetting?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/virtualEndpoint?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievetenantencryptionsetting?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
           "Target": "virtualEndpoint"
         }
       ],

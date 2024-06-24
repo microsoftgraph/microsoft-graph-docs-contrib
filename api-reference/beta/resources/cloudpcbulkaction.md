@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 An abstract type that represents the bulk action applied to Cloud PCs specified in a parameter.
 
-Base type of [cloudPcBulkPowerOff](../resources/cloudpcbulkpoweroff.md), [cloudPcBulkPowerOn](../resources/cloudpcbulkpoweron.md), [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md), [cloudPcBulkResize](../resources/cloudpcbulkresize.md), [cloudPcBulkRestart](../resources/cloudpcbulkrestart.md), [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md), [cloudPcBulkTroubleshoot](../resources/cloudpcbulktroubleshoot.md) and [cloudpcbulkmodifydiskencryptiontype](../resources/cloudpcbulkmodifydiskencryptiontype.md).
+Base type of [cloudPcBulkPowerOff](../resources/cloudpcbulkpoweroff.md), [cloudPcBulkPowerOn](../resources/cloudpcbulkpoweron.md), [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md), [cloudPcBulkResize](../resources/cloudpcbulkresize.md), [cloudPcBulkRestart](../resources/cloudpcbulkrestart.md), [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md), and [cloudPcBulkTroubleshoot](../resources/cloudpcbulktroubleshoot.md).
 
 Inherits from [entity](../resources/entity.md).
 

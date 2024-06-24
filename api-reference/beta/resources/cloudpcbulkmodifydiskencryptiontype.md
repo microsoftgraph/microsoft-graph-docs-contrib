@@ -22,14 +22,19 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|diskEncryptionType|[cloudPcDiskEncryptionType](../resources/cloudpctenantencryptionsetting.md/#cloudpcdiskencryptiontype-values)|Indicates the disk encryption type of the Cloud PC. Possible values are: `platformManagedKey`, `customerManagedKey`. |
+|diskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the disk encryption type of the Cloud PC. Possible values are: `platformManagedKey`, `customerManagedKey`. |
 |cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 
 ### cloudPcDiskEncryptionType values
-Refer to [cloudPcDiskEncryptionType](../resources/cloudpctenantencryptionsetting.md/#cloudpcdiskencryptiontype-values) values.
+
+|Member|Description|
+|:---|:---|
+|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform managed key.|
+|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer managed key.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
