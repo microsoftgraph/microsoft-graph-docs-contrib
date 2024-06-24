@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "relatedHosts",
           "ChangeType": "Addition",
-          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence-list-relatedhosts?view=graph-rest-beta) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-beta) resource.",
+          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-beta) resource.",
           "Target": "sslCertificate"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "relatedHosts",
           "ChangeType": "Addition",
-          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence-list-relatedhosts?view=graph-rest-1.0) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-1.0) resource.",
+          "Description": "Added the [relatedHosts](https://learn.microsoft.com/en-us/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-1.0) method to the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslcertificate?view=graph-rest-1.0) resource.",
           "Target": "sslCertificate"
         }
       ],
