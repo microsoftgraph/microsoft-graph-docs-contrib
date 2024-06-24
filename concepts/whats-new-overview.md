@@ -34,6 +34,10 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 Use the [relatedHosts](/graph/api/security-threatintelligence-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
 
+### Teamwork and communications | Messaging
+
+[Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+
 ## June 2024: New in preview only
 
 ### Change notifications
