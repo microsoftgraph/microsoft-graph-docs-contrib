@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryRoot resource type"
-description: "This contains data discovery reports entities"
+description: "This API provides data about discovery report entities."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
