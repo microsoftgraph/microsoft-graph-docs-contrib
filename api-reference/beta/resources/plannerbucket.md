@@ -58,15 +58,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
   "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "id": "String (identifier)",
-  "isArchived": "Boolean",
   "name": "String",
   "orderHint": "String",
-  "planId": "String",
+  "planId": "String"
 }
 ```
 
