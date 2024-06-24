@@ -25,7 +25,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 |:---|:---|:---|
 |[List](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
 |[Get](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
-|[List related hosts](../api/security-threatintelligence-list-relatedhosts.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get a list of related [host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).|
+|[List related hosts](../api/security-sslcertificate-list-relatedhosts)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get a list of related [host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).|
 
 ## Properties
 

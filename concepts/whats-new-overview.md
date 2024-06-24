@@ -32,7 +32,7 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 ### Security | Threat intelligence
 
-Use the [relatedHosts](/graph/api/security-threatintelligence-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
 
 ### Teamwork and communications | Messaging
 
@@ -60,7 +60,7 @@ You can now enable and control compliant network check with Conditional Access t
 
 ### Security | Threat intelligence
 
-Use the [relatedHosts](/graph/api/security-threatintelligence-list-relatedhosts?view=graph-rest-beta&preserve-view=true) method to get a list of related [host](/graph/api/resources/security-host?view=graph-rest-beta&preserve-view=true) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate?view=graph-rest-beta&preserve-view=true).
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta&preserve-view=true) method to get a list of related [host](/graph/api/resources/security-host?view=graph-rest-beta&preserve-view=true) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate?view=graph-rest-beta&preserve-view=true).
 
 ### Sites and lists
 
