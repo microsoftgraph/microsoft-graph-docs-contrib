@@ -49,7 +49,6 @@ PATCH /employeeExperience/communities/{communityId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 | description | String | The description of the community. Maximum length is 1024 characters. |
