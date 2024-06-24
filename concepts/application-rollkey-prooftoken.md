@@ -17,7 +17,7 @@ You can use the **addKey** and **removeKey** methods defined on the [application
 
 As part of the request validation for these methods, a proof-of-possession (PoP) of an existing key is verified before the methods can be invoked. The proof is represented by a self-signed JSON Web Token (JWT). This token must be signed using the private key of one of the application's existing valid certificates. The recommended lifespan for the token is 10 minutes.
 
-This article provides code examples in C# to demostrate how to:
+This article provides code examples in C# to demonstrate how to:
 1. Compute the client assertion by using an existing valid certificate.
 2. Generate the PoP token by using the generated client assertion key.
 3. Use the PoP token to upload a new certificate to the app or service principal object using the **addKey** method.

@@ -50,7 +50,7 @@ This method supports `$skipToken` [OData query parameters](/graph/query-paramete
 
 | Name          | Description                                                                                                                                                                                                  |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | Bearer {token}. Required.                                                                                                                                                                                    |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer        | odata.maxpagesize={x}. Optional. Specifies a preferred integer {x} page size for paginated results. Acceptable values are 1 to 200, inclusive. If not specified in the header, the default page size is 110. |
 
 ## Request body

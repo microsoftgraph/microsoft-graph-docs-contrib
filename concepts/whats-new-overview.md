@@ -30,6 +30,10 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Teamwork and communications | Messaging
+
+[Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+
 ## June 2024: New in preview only
 
 ### Change notifications
@@ -64,6 +68,10 @@ The content model automatically processes new files that are added to the librar
 ### Tasks and plans
 
 [Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Calls and online meetings
+
+Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-sessions) for virtual event meeting registrations.
 
 ## May 2024: New and generally available
 
