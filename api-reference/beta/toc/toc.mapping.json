@@ -389,6 +389,8 @@
             "cloudPcScopedPermission",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
+            "cloudPcStatusDetail",
+            "CloudPcConnectionSetting",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -1229,6 +1231,13 @@
                         "staleSignInAlertConfiguration",
                         "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
                         "unifiedRoleManagementAlertIncident",
+                        "invalidLicenseAlertIncident",
+                        "noMfaOnRoleActivationAlertIncident",
+                        "redundantAssignmentAlertIncident",
+                        "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
+                        "sequentialActivationRenewalsAlertIncident",
+                        "staleSignInAlertIncident",
+                        "tooManyGlobalAdminsAssignedToTenantAlertIncident",
                         "longRunningOperation"
                       ]
                     }
@@ -1291,8 +1300,6 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
             "invitation",
@@ -1450,6 +1457,17 @@
               ]
             },
             {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
+              ]
+            },
+            {
               "name": "Policies",
               "overview": "../../resources/policy-overview.md",
               "shouldSort": true,
@@ -1457,6 +1475,7 @@
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
                 "claimsMappingPolicy",
+                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
@@ -2666,6 +2685,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"
