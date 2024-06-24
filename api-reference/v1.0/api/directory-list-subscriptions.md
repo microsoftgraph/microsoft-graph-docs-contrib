@@ -1,6 +1,6 @@
 ---
 title: "List subscriptions"
-description: "Get the list of commercial subscriptions that an organization has acquired."
+description: "Get the list of commercial subscriptions that an organization acquired."
 ms.localizationpriority: medium
 author: "arp19690"
 ms.subservice: "entra-directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the list of commercial subscriptions that an organization has acquired.
+Get the list of commercial subscriptions that an organization acquired.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -54,6 +54,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_companySubscriptions"
+}-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/subscriptions
