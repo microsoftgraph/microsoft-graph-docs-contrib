@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|microsoft.graph.security.cloudAppDiscovery|[dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|**These are the available relationships**|
+|microsoft.graph.security.cloudAppDiscovery|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|**These are the available relationships**|
 
 ## JSON representation
 The following JSON representation shows the resource type.

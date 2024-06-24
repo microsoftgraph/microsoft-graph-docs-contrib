@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'P90D')
 ```
 
 ## Function parameters

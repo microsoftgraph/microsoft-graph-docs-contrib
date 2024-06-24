@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'P90D')/{appId}
 ```
 
 

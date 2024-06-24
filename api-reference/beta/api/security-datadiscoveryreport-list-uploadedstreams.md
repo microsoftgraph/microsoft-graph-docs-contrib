@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /dataDiscovery/cloudAppDiscovery/uploadedStreams
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
 
 ## Optional query parameters
