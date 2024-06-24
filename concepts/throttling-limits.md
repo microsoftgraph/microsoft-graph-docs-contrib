@@ -4,6 +4,7 @@ description: "Identify the throttling limits for each Microsoft Graph service to
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.subservice: non-product-specific
+ms.date: 06/19/2024
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
