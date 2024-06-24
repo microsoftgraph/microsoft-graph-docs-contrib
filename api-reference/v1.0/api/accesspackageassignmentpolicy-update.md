@@ -268,7 +268,7 @@ This example updates a policy to include a custom extension.
 -->
 
 ```http
-PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
 Content-Type: application/json
 
 {
