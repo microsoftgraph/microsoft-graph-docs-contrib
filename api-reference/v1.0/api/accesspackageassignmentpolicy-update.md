@@ -256,3 +256,100 @@ Content-Type: application/json
     "accessReviewSettings": null
 }
 ```
+
+### Example 3: Updating the customExtensionStageSettings for a policy
+
+This example updates a policy to include a custom extension.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_updating_customExtensionStageSettings"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
+Content-Type: application/json
+
+{
+    "displayName": "API Created policy with updated customExtensionStageSettings",
+    "description": "policy with updated customExtensionStageSettings",
+    "allowedTargetScope": "notSpecified",
+    "specificAllowedTargets": [],
+    "expiration": {
+        "endDateTime": null,
+        "duration": null,
+        "type": "noExpiration"
+    },
+    "requestorSettings": {
+        "enableTargetsToSelfAddAccess": false,
+        "enableTargetsToSelfUpdateAccess": false,
+        "enableTargetsToSelfRemoveAccess": false,
+        "allowCustomAssignmentSchedule": true,
+        "enableOnBehalfRequestorsToAddAccess": false,
+        "enableOnBehalfRequestorsToUpdateAccess": false,
+        "enableOnBehalfRequestorsToRemoveAccess": false,
+        "onBehalfRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequiredForAdd": false,
+        "isApprovalRequiredForUpdate": false,
+        "stages": []
+    },
+    "accessPackage": {
+        "id": "f9afd2e3-7486-40df-9c35-aa2ae108c495"
+    },
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "API Created policy with updated customExtensionStageSettings",
+    "description": "policy with updated customExtensionStageSettings",
+    "accessPackageId": "f9afd2e3-7486-40df-9c35-aa2ae108c495",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": [],
+    },
+    "accessReviewSettings": null,
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```
