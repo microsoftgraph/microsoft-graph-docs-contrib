@@ -29,7 +29,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |initiatedByUserPrincipalName|String|Indicates the user principal name (UPN) of the user who initiated this bulk action. Read-only.|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`.|
-|status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-values)|Indicates the status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only.|
+|status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|Indicates the status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only.|
 |restorePointDateTime|DateTimeOffset|The date and time point for the selected Cloud PCs to restore. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |timeRange|restoreTimeRange|The time range of the restore point. The possible values are: `before`, `after`, `beforeOrAfter`, `unknownFutureValue`. The default value is `before`.|
 
@@ -58,6 +58,6 @@ The following JSON representation shows the resource type.
   "scheduledDuringMaintenanceWindow": "Boolean",
   "status": "String",
   "restorePointDateTime": "String (timestamp)",
-  "timeRange": "String",
+  "timeRange": "String"
 }
 ```
