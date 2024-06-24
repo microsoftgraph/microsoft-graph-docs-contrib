@@ -18,7 +18,7 @@ Represents the Cloud PC organization settings for a tenant. A tenant has only on
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudPcTenantEncryptionSetting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the tenant encryption setting of the tenant with authenticated IT admin.|
+|[Retrieve](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the tenant encryption setting of the tenant with authenticated IT admin.|
 
 ## Properties
 |Property|Type|Description|
@@ -29,15 +29,15 @@ Represents the Cloud PC organization settings for a tenant. A tenant has only on
 
 |Member|Description|
 |:---|:---|
-|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform managed key.|
-|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer managed key.|
+|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
+|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
