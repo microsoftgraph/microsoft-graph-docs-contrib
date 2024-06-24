@@ -66,9 +66,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
   "contexts": {
     "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
         "@odata.type": "#microsoft.graph.plannerPlanContext",
@@ -85,7 +82,6 @@ The following JSON representation shows the resource type.
   "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isArchived": "Boolean",
   "container": {
     "@odata.type": "microsoft.graph.plannerPlanContainer",
     "url": "String",
