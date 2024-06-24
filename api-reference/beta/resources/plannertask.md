@@ -45,7 +45,6 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise,`false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isArchived|Boolean|Read-only. Value is `true` if the task is archived and `false` otherwise. An archived task is read-only.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md)n.|
@@ -96,9 +95,6 @@ The following JSON representation shows the resource type.
 {
   "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
@@ -111,7 +107,6 @@ The following JSON representation shows the resource type.
   "dueDateTime": "String (timestamp)",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
-  "isArchived": "Boolean",
   "isOnMyDay": "Boolean",
   "isOnMyDayLastModifiedDate": "Date",
   "orderHint": "String",
