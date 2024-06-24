@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Archive a [plannerPlan](../resources/plannerplan.md) object. Archiving a plan, also archives the [plannerTasks](../resources/plannertask.md) and [plannerBuckets](../resources/plannerbucket.md) in the plan. 
 
-Only planner plans in a group container can be archived.
-
 An archived entity is read-only. Archived entities cannot be updated.
 
 An archived plan can be [unarchived](plannerplan-unarchive.md). 
