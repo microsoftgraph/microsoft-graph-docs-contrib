@@ -81,38 +81,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.host)",
- "value": [
-  {
-   "@odata.type": "#microsoft.graph.security.ipAddress",
-   "id": "20.112.250.133",
-   "firstSeenDateTime": null,
-   "lastSeenDateTime": null,
-   "countryOrRegion": null,
-   "netblock": null,
-   "autonomousSystem": null,
-   "hostingProvider": null
-  },
-  {
-   "@odata.type": "#microsoft.graph.security.ipAddress",
-   "id": "20.231.239.246",
-   "firstSeenDateTime": null,
-   "lastSeenDateTime": null,
-   "countryOrRegion": null,
-   "netblock": null,
-   "autonomousSystem": null,
-   "hostingProvider": null
-  },
-  {
-   "@odata.type": "#microsoft.graph.security.ipAddress",
-   "id": "20.236.44.162",
-   "firstSeenDateTime": null,
-   "lastSeenDateTime": null,
-   "countryOrRegion": null,
-   "netblock": null,
-   "autonomousSystem": null,
-   "hostingProvider": null
-  }
- ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.host)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.ipAddress",
+      "id": "20.112.250.133",
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "countryOrRegion": null,
+      "netblock": null,
+      "autonomousSystem": null,
+      "hostingProvider": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.ipAddress",
+      "id": "20.231.239.246",
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "countryOrRegion": null,
+      "netblock": null,
+      "autonomousSystem": null,
+      "hostingProvider": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.ipAddress",
+      "id": "20.236.44.162",
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "countryOrRegion": null,
+      "netblock": null,
+      "autonomousSystem": null,
+      "hostingProvider": null
+    }
+  ]
 }
 ```
