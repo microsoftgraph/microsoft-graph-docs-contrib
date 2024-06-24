@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Archive a [channel](../resources/channel.md) in a team. When a channel is archived, users can't send new messages or react to existing messages in the channel, edit the channel settings, or make other changes to the channel.
 
 You can delete an archived channel or add and remove members from it. If you archive a team, its channels are also archived.
@@ -23,13 +21,14 @@ A channel without an owner or that belongs to a [group](../resources/group.md) t
 
 To restore a channel from its archived state, use the [channel: unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "channel_archive" } -->
-[!INCLUDE [permissions-table](../includes/permissions/channel-archive-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | ChannelSettings.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelSettings.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't members of.
 
@@ -81,12 +80,13 @@ The following example shows a request to archive a channel.
   "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "name": "archive_channel"
@@ -110,10 +110,11 @@ The following example shows a request to archive a channel that fails because th
   "sampleKeys": ["16dc05c0-2259-4540-a970-3580ff459721", "19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
+POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721/channels/19:v32db348d9264477abcf18ffa2cf76dc@thread.tacv2/archive
 ```
 
 #### Response
+
 The following example shows the `400 Bad Request` response code with a corresponding error message.
 
 <!-- {
@@ -142,16 +143,3 @@ Content-Length: 193
     }
 }
 ```
-
-<!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Archive Channel",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
