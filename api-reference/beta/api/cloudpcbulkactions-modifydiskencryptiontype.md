@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a bulk disk encryption modify action to resize a group of [cloudPCs](../resources/cloudpc.md).
+Perform a bulk disk encryption modify action to a group of [cloudPCs](../resources/cloudpc.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -100,11 +100,13 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "@odata.type":"#microsoft.graph.CloudPcBulkModifyDiskEncryptionType",
-  "id":"1d164206-bf41-4fd2-8424-a3192d392273",
-  "cloudPcIds":["*"],
-  "diskEncryptionType": "customerManagedKey",
-  "createdDateTime":"2023-08-10T09:27:06.1351438-07:00",
-  "displayName":"Change disk encryption type of tenant's CPCs"
+  "value": {
+    "@odata.type":"#microsoft.graph.CloudPcBulkModifyDiskEncryptionType",
+    "id":"1d164206-bf41-4fd2-8424-a3192d392273",
+    "cloudPcIds":["*"],
+    "diskEncryptionType": "customerManagedKey",
+    "createdDateTime":"2023-08-10T09:27:06.1351438-07:00",
+    "displayName":"Change disk encryption type of tenant's CPCs"
+  }
 }
 ```
