@@ -3,7 +3,7 @@ title: "cloudPCBulkActions: ModifyDiskEncryptionType"
 description: "Bulk modify disk encryption type of a set of Cloud PC devices."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

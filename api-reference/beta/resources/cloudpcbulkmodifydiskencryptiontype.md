@@ -1,9 +1,9 @@
 ---
-title: "cloudpcbulkmodifydiskencryptiontype resource type"
-description: "Specifiy the bulk disk encryption modify action."
-author: "AshleyYangSZ"
+title: "cloudPcBulkModifyDiskEncryptionType resource type"
+description: "Bulk modify disk encryption type of a set of Cloud PC devices."
+author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,9 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |id|String|ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 
+### cloudPcDiskEncryptionType values
+Refer to [cloudPcDiskEncryptionType](../resources/cloudpctenantencryptionsetting.md/#cloudpcdiskencryptiontype-values) values.
+
 ## Relationships
 None.
 
@@ -36,14 +39,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.CloudPcBulkModifyDiskEncryptionType",
+  "@odata.type": "microsoft.graph.cloudPcBulkModifyDiskEncryptionType",
   "baseType": "microsoft.graph.cloudPcBulkAction",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.CloudPcBulkModifyDiskEncryptionType",
+  "@odata.type": "#microsoft.graph.cloudPcBulkModifyDiskEncryptionType",
   "diskEncryptionType": "customerManagedKey",
   "cloudPcIds": ["*"],
   "createdDateTime": "2023-08-10T09:27:06.1351438-07:00",

@@ -3,7 +3,7 @@ title: "virtualEndpoint: retrieveTenantEncryptionSetting"
 description: "Retrieve the encryption setting of the tenant associated with authenticated IT admin."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
