@@ -90,8 +90,8 @@ Content-Type: application/json
       "cloudPcId": "46ed3acc-70f8-4978-a5ba-62945ecc5e4c",
       "managedDeviceId": null,
       "statusDetail": null,
-      "statusDetails": null,
-    },
+      "statusDetails": null
+    }
   ]
 }
 ```
