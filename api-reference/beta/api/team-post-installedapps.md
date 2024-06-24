@@ -205,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-## Common errors
+## Error response
 
 |Error message | Description | Resolution |
 | ---- | ---- | ---- |
