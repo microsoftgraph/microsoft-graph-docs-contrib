@@ -40,8 +40,8 @@ You can specify the following properties when creating a **photoUpdateSettings**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|source|photoUpdateSource| Specifies what kind of photo updates will be allowed.. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
-|allowedRoles|String collection| contains a list of wids that are allowed to perform edit operations in cloud. Optional.|
+|source|photoUpdateSource| Specifies what photo updates will are allowed. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
+|allowedRoles|String collection| Contains a list of wids to perform edit operations in cloud. Optional.|
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "photoUpdateSettings resource type"
-description: "Represents the settings that manage the support of photos are modified in an organization."
+description: "Represents the settings that manage the support of photos modified in an organization."
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings that manage the support of photo updates settings in an organization. By default, photo updates are disabled. If enabled, users can optionally add or update their photo updates settings.
+Represents the settings that manage the support of photos modified in an organization. By default, photo updates are disabled. If enabled, users can optionally add or update their photo update settings.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| The unique identifier for a peopleAdminSettings object.Inherited from [entity](../resources/entity.md).|
+|id|String| The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
 |source|photoUpdateSource| Specifies the types of photo updates permitted.The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
 ## Relationships

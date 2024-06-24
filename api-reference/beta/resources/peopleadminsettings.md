@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Property | Type   | Description                                                                                     |
 |:---------|:-------|:------------------------------------------------------------------------------------------------|
-| ID       | String | The unique identifier for a **peopleAdminSettings** object. Inherited from [entity](entity.md). |
+| id       | String | The unique identifier for a **peopleAdminSettings** object. Inherited from [entity](entity.md). |
 
 ## Relationships
 
