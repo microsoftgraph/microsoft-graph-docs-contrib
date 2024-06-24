@@ -179,7 +179,7 @@ Content-Type: application/octet-stream
       "k739b389-979f-4j87-945d-d3220b3d4o24",
       "9330ff50-0a1b-4038-8fe8-3c4a67ec4dc5",
       "CPC-Cross-JG79E",
-      "Cross@w365testintint01.onmicrosoft.com",
+      "john.doe@contoso.com",
       true,
       "Unhealthy:'ANC unhealthy', 'Network mismatch'",
       "Cross Region",
