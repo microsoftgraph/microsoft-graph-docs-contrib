@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDetail resource type"
-description: "**This is the resource type for discovered apps**"
+description: "Describes the resource type for discovered apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
