@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.compliance.ediscovery.cases.item.reviewsets.item.queries.item.microsoft_graph_ediscovery_apply_tags.apply_tags_post_request_body import ApplyTagsPostRequestBody
+from msgraph_beta.generated.models.ediscovery.tag import Tag
 
 graph_client = GraphServiceClient(credentials, scopes)
 

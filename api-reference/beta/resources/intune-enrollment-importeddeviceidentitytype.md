@@ -1,9 +1,9 @@
 ---
 title: "importedDeviceIdentityType enum type"
-description: "Not yet documented"
+description: "Intune Enrollment Importeddeviceidentitytype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
@@ -23,3 +23,4 @@ Not yet documented
 |unknown|0|Unknown value of importedDeviceIdentityType.|
 |imei|1|Device Identity is of type imei.|
 |serialNumber|2|Device Identity is of type serial number.|
+|manufacturerModelSerial|3|Device Identity is of type manufacturer + model + serial number semi-colon delimited tuple with enforced order.|

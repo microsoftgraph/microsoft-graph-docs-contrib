@@ -3,7 +3,7 @@ title: "meetingInfo resource type"
 description: "An abstract class that contains meeting-specific information."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

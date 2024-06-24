@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.forwarding_profile import ForwardingProfile
+from msgraph_beta.generated.models.networkaccess.association import Association
+from msgraph_beta.generated.models.networkaccess.associated_branch import AssociatedBranch
 
 graph_client = GraphServiceClient(credentials, scopes)
 

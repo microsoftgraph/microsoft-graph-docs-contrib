@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WindowsInformationProtectionNetworkLearningSummary windowsInformationProtectionNetworkLearningSummary = graphClient.deviceManagement().windowsInformationProtectionNetworkLearningSummaries("{windowsInformationProtectionNetworkLearningSummaryId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+WindowsInformationProtectionNetworkLearningSummary result = graphClient.deviceManagement().windowsInformationProtectionNetworkLearningSummaries().byWindowsInformationProtectionNetworkLearningSummaryId("{windowsInformationProtectionNetworkLearningSummary-id}").get();
+
 
 ```

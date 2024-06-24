@@ -4,7 +4,7 @@ description: "Search across a SharePoint tenant for sites that match keywords pr
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Search for sites
@@ -41,7 +41,7 @@ GET /sites?search={query}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

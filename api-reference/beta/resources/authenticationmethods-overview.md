@@ -5,9 +5,9 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 10/21/2022
+ms.date: 12/05/2023
 ---
 
 # Microsoft Entra authentication methods API overview
@@ -52,8 +52,11 @@ The following authentication methods are not yet supported in Microsoft Graph `b
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
-|Require re-register MFA | A control that requires that when user signs in next time and MFA is required, they're requested to set up a new MFA authentication method.|**NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Microsoft Entra admin UX, the Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. <br/> The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
+
+## Require re-register multifactor authentication
+
+To require users to set up a new multifactor authentication the next time they sign in, call the individual DELETE authentication method operations to delete each of the user's current authentication methods. When the user has no more methods, they're prompted to register the next time they sign in where strong authentication is required.
 
 ## Next steps
 

@@ -1,0 +1,34 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/resources/webhooks.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/webhooks.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/webhooks.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/change-notifications-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/webhooks-lifecycle.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/change-notifications-lifecycle-events",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/webhooks-with-resource-data.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/change-notifications-with-resource-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/toolkit/components/tasks.md",
+      "redirect_url": "https://learn.microsoft.com/graph/toolkit/components/planner",
+      "redirect_document_id": true
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "List customAppScopes"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$filter` and `$count` [OData query parameters](/graph/
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-customappscope-exchangeonlineprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-customappscope-exchangeonlineprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

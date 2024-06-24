@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.industry_data.source_system_definition import SourceSystemDefinition
+from msgraph_beta.generated.models.industry_data.user_matching_setting import UserMatchingSetting
+from msgraph_beta.generated.models.industry_data.user_match_target_reference_value import UserMatchTargetReferenceValue
+from msgraph_beta.generated.models.industry_data.identifier_type_reference_value import IdentifierTypeReferenceValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

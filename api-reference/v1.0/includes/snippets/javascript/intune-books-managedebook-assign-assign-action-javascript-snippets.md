@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const assign = Content-type: application/json
-Content-length: 312
-
-{
+const assign = {
   managedEBookAssignments: [
     {
       '@odata.type': '#microsoft.graph.managedEBookAssignment',

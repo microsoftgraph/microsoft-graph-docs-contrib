@@ -3,7 +3,7 @@ title: "contentInfo resource type"
 description: "Represents the current state of information that is to be labeled."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.security.contentInfo",
   "contentFormat": "String",
-  "format": "String",
   "identifier": "String",
   "metadata": [
     {

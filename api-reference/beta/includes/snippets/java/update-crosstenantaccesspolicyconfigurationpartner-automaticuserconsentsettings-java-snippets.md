@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicyConfigurationPartner crossTenantAccessPolicyConfigurationPartner = new CrossTenantAccessPolicyConfigurationPartner();
 InboundOutboundPolicyConfiguration automaticUserConsentSettings = new InboundOutboundPolicyConfiguration();
-automaticUserConsentSettings.inboundAllowed = true;
-automaticUserConsentSettings.outboundAllowed = true;
-crossTenantAccessPolicyConfigurationPartner.automaticUserConsentSettings = automaticUserConsentSettings;
+automaticUserConsentSettings.setInboundAllowed(true);
+automaticUserConsentSettings.setOutboundAllowed(true);
+crossTenantAccessPolicyConfigurationPartner.setAutomaticUserConsentSettings(automaticUserConsentSettings);
+CrossTenantAccessPolicyConfigurationPartner result = graphClient.policies().crossTenantAccessPolicy().partners().byCrossTenantAccessPolicyConfigurationPartnerTenantId("{crossTenantAccessPolicyConfigurationPartner-tenantId}").patch(crossTenantAccessPolicyConfigurationPartner);
 
-graphClient.policies().crossTenantAccessPolicy().partners("90e29127-71ad-49c7-9ce8-db3f41ea06f1")
-	.buildRequest()
-	.patch(crossTenantAccessPolicyConfigurationPartner);
 
 ```

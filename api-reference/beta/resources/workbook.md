@@ -3,7 +3,7 @@ title: "workbook resource type"
 description: "Contains related workbook objects such as worksheets, tables, ranges, and so on."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

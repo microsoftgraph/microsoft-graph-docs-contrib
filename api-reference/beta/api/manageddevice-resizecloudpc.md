@@ -1,17 +1,20 @@
 ---
-title: "managedDevice: resizeCloudPc"
+title: "managedDevice: resizeCloudPc (deprecated)"
 description: "Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: resizeCloudPc
+# managedDevice: resizeCloudPc (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on October 30, 2023. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.
 
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
@@ -39,7 +42,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

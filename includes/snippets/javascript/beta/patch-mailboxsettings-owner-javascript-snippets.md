@@ -14,7 +14,7 @@ const mailboxSettings = {
   delegateMeetingMessageDeliveryOptions: 'sendToDelegateAndPrincipal'
 };
 
-await client.api('/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings')
+await client.api('/users/AlexW@contoso.com/mailboxsettings')
 	.version('beta')
 	.update(mailboxSettings);
 

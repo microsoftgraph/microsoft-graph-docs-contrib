@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageResourceEnvironmentCollectionPage accessPackageResourceEnvironments = graphClient.identityGovernance().entitlementManagement().accessPackageResourceEnvironments()
-	.buildRequest()
-	.filter("originSystem eq 'SharePointOnline'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageResourceEnvironmentCollectionResponse result = graphClient.identityGovernance().entitlementManagement().accessPackageResourceEnvironments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "originSystem eq 'SharePointOnline'";
+});
+
 
 ```

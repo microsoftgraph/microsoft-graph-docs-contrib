@@ -4,7 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph_beta.generated.models.requestor_settings import RequestorSettings
+from msgraph_beta.generated.models.approval_settings import ApprovalSettings
+from msgraph_beta.generated.models.approval_stage import ApprovalStage
+from msgraph_beta.generated.models.user_set import UserSet
+from msgraph_beta.generated.models.group_members import GroupMembers
+from msgraph_beta.generated.models.external_sponsors import ExternalSponsors
+from msgraph_beta.generated.models.access_package_question import AccessPackageQuestion
+from msgraph_beta.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
+from msgraph_beta.generated.models.access_package_localized_content import AccessPackageLocalizedContent
+from msgraph_beta.generated.models.access_package_localized_text import AccessPackageLocalizedText
+from msgraph_beta.generated.models.access_package_answer_choice import AccessPackageAnswerChoice
+from msgraph_beta.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 
 graph_client = GraphServiceClient(credentials, scopes)
 

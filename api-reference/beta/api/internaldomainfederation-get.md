@@ -3,7 +3,7 @@ title: "Get internalDomainFederation"
 description: "Read the properties and relationships of an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-get-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-- Security Administrator
-- External Identity Provider Administrator
+[!INCLUDE [rbac-domainfederation-apis-read](../includes/rbac-for-apis/rbac-domainfederation-apis-read.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ This method does not support OData query parameters to help customize the respon
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

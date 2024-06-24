@@ -3,7 +3,7 @@ title: "outlookTaskFolder resource type"
 description: "A folder that contains Outlook tasks (collection of outlookTask objects). "
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -26,16 +26,16 @@ You cannot rename or delete these default task group and folder, but you can cre
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Get the properties and relationships of the specified Outlook task folder.|
-|[Create outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the specified task folder.|
-|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the specified folder.|
+|[Get](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Get the properties and relationships of the specified Outlook task folder.|
+|[Create task folder in group](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the specified task folder.|
+|[List task folders in group](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the specified folder.|
 |[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)	|Update the writable properties of an Outlook task folder. |
 |[Delete](../api/outlooktaskfolder-delete.md) | None |Delete the specified Outlook task folder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Create one or more single-value extended properties in a new or existing Outlook task folder.   |
-|[Get task folder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Create one or more multi-value extended properties in a new or existing Outlook task folder.  |
-|[Get task folder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Create one or more single-value extended properties in a new or existing Outlook task folder.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Create one or more multi-value extended properties in a new or existing Outlook task folder.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -54,7 +54,7 @@ You cannot rename or delete these default task group and folder, but you can cre
 |tasks|[outlookTask](outlooktask.md) collection|The tasks in this task folder. Read-only. Nullable.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

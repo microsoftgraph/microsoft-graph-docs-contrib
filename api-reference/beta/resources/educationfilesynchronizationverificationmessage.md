@@ -3,7 +3,7 @@ title: "educationFileSynchronizationVerificationMessage resource type"
 description: "Represents an error returned to the client in response to a request to start synchronization for CSV-based school data profiles. The resource will contain errors that result from the verification. Users must fix the source data before you restart the request to synchronize with Microsoft Entra ID."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Represents an error returned to the client in response to a request to [start sy
 | Property    | Type   | Description                                                                  |
 | :---------- | :----- | :--------------------------------------------------------------------------- |
 | type        | string | Type of the message. Possible values are: `error`, `warning`, `information`. |
-| filename    | string | Source file that contains the error.                                         |
+| fileName    | string | Source file that contains the error.                                         |
 | description | string | Detailed information about the message type.                                 |
 
 ## JSON representation

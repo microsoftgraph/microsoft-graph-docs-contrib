@@ -3,7 +3,7 @@ title: "riskyServicePrincipalHistoryItem resource type"
 description: "Represents the risk history of Microsoft Entra service principals"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -1,11 +1,10 @@
 ---
 author: swapnil1993
-ms.date: 08/30/2020
 title: "Create a columnDefinition in a site"
 description: "Create a site column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Create a columnDefinition in a site
@@ -32,6 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /sites/{site-id}/columns
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 

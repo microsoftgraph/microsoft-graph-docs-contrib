@@ -3,7 +3,7 @@ title: "plannerOrderHintsByAssignee resource type"
 description: "The **plannerOrderHintsByAssignee** is a resource that contains ordering hints for assignees in a plannerTask resource, to indicate the order of the task in Assigned To view of the Task Board."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,8 @@ Example:
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee"
+  "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee",
+  "openType": true
 }-->
 
 ```json

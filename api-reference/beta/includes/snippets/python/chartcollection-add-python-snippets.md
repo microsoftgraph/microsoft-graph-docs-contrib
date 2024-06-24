@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.workbook.worksheets.item.charts.add.add_post_request_body import AddPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

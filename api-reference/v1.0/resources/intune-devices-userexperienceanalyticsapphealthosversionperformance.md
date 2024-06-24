@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAppHealthOSVersionPerformance resource type"
 description: "The user experience analytics device OS version performance entity contains OS version performance details."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

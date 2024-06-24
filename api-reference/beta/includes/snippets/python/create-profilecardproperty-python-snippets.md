@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.profile_card_property import ProfileCardProperty
+from msgraph_beta.generated.models.profile_card_annotation import ProfileCardAnnotation
+from msgraph_beta.generated.models.display_name_localization import DisplayNameLocalization
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +18,7 @@ request_body = ProfileCardProperty(
 			display_name = "Cost Center",
 			localizations = [
 				DisplayNameLocalization(
-					language_tag = "ru-RU",
+					language_tag = "ru",
 					display_name = "центр затрат",
 				),
 			],

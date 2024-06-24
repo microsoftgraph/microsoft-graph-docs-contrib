@@ -1,9 +1,9 @@
 ---
 title: "List schedulingGroups"
 description: "Get the list of schedulingGroup in this schedule."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -119,6 +119,7 @@ Content-type: application/json
       "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
       "displayName": "Cashiers",
       "isActive": true,
+      "code": "CashierCode",
       "userIds": [
         "c5d0c76b-80c4-481c-be50-923cd8d680a1",
         "2a4296b3-a28a-44ba-bc66-0274b9b95851"

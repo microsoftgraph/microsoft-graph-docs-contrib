@@ -3,7 +3,7 @@ title: "androidProfileApplicability enum type"
 description: "Android profile applicability"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

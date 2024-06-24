@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\EducationFeedbackOutcome;
+use Microsoft\Graph\Beta\Generated\Models\EducationFeedback;
+use Microsoft\Graph\Beta\Generated\Models\EducationItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationFeedbackOutcome();

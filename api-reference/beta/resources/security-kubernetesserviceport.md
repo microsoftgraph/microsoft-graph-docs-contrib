@@ -3,7 +3,7 @@ title: "kubernetesServicePort resource type"
 description: "Represents a Kubernetes service port object that is reported as part of a kubernetesServiceEvidence entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create retentionLabel"
 description: "Create a new retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Create a new [retentionLabel](../resources/security-retentionlabel.md) object.
 
 To create a [disposition review stage](../resources/security-dispositionreviewstage.md), include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -37,7 +37,7 @@ POST /security/labels/retentionLabels
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,7 +55,7 @@ Specify the following properties when you create a **retentionLabel**.
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained. |
 |retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content. |
 |retentionTrigger|microsoft.graph.security.retentionTrigger|Specifies whether the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. |
-|defaultRecordBehavior|microsoft.graph.security.defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`. |
+|defaultRecordBehavior|microsoft.graph.security.defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it's created. The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`. |
 |labelToBeApplied|String|Specifies the replacement label to be applied automatically after the retention period of the current label ends. |
 
 
@@ -67,6 +67,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,21 +82,26 @@ Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
+  "displayName": "Retention Schedule 10005",
+  "behaviorDuringRetentionPeriod": "retain",
+  "actionAfterRetentionPeriod": "startDispositionReview",
+  "retentionTrigger": "dateOfEvent",
+  "retentionEventType@odata.bind": "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
+    "days": 2555
   },
-  "isInUse": "Boolean",
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String",
+   "dispositionReviewStages": [
+    {
+      "stageNumber" : 1,
+      "name": "Stage1",
+      "reviewersEmailAddresses ": [
+        "Admin@contoso.onmicrosoft.com"
+      ]
+    }
+  ],
+  "descriptionForAdmins": "retain for 7 years",
+  "descriptionForUsers": "retain for 7 years",
   "descriptors": {
     "authorityTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')",
     "categoryTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')",
@@ -103,6 +109,7 @@ Content-length: 555
     "departmentTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')",
     "filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
   },
+  "defaultRecordBehavior":"startLocked",
 }
 ```
 
@@ -130,10 +137,6 @@ Content-length: 555
 [!INCLUDE [sample-code](../includes/snippets/php/create-retentionlabel-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-retentionlabel-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-retentionlabel-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -141,7 +144,7 @@ Content-length: 555
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -156,26 +159,36 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
+  "displayName": "Retention Schedule 10005",
+  "behaviorDuringRetentionPeriod": "retain",
+  "actionAfterRetentionPeriod": "startDispositionReview",
+  "retentionTrigger": "dateOfEvent",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
+    "days": 2555
   },
-  "isInUse": "Boolean",
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
+  "dispositionReviewStages": [
+    {
+     "stageNumber" : 1,
+      "name": "Stage1",
+      "reviewersEmailAddresses ": [
+        "Admin@contoso.onmicrosoft.com"
+      ]
+    }
+  ],
+  "isInUse": true,
+  "descriptionForAdmins": "retain for 7 years",
+  "descriptionForUsers": "retain for 7 years",
+  "defaultRecordBehavior":"startLocked",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+   "user": {
+      "id": "9563a605-e827-4324-a5a9-09efddff1e90",
+      "displayName": "Admin"
+    }
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String",
+  "createdDateTime": "2021-08-23T16:43:55Z",
+  "labelToBeApplied": " ",
+  "defaultRecordBehavior": "startLocked",
   "descriptors": {
     "authority": {
       "displayName": "Business"

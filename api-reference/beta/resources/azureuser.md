@@ -2,8 +2,9 @@
 title: "azureUser resource type"
 description: "Represents a user in an Azure authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,8 +21,8 @@ Inherits from [azureIdentity](../resources/azureidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List users](../api/azureassociatedidentities-list-users.md)|[azureUser](../resources/azureuser.md) collection|Get a list of the [azureUser](../resources/azureuser.md) objects and their properties.|
-|[Get azureUser](../api/azureuser-get.md)|[azureUser](../resources/azureuser.md)|Read the properties and relationships of an [azureUser](../resources/azureuser.md) object.|
+|[List](../api/azureassociatedidentities-list-users.md)|[azureUser](../resources/azureuser.md) collection|Get a list of the [azureUser](../resources/azureuser.md) objects and their properties.|
+|[Get](../api/azureuser-get.md)|[azureUser](../resources/azureuser.md)|Read the properties and relationships of an [azureUser](../resources/azureuser.md) object.|
 
 ## Properties
 |Property|Type|Description|

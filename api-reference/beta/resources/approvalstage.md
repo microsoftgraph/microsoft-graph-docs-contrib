@@ -3,7 +3,7 @@ title: "approvalStage complex type"
 description: "In entitlement management, used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage. In PIM, defines the settings of the approval stages in a unifiedRoleManagementPolicyApprovalRule object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

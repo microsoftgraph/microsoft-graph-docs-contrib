@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewLearningCourseActivity()
 assignedDateTime , err := time.Parse(time.RFC3339, "2021-05-11T22:57:17+00:00")
@@ -35,8 +35,8 @@ dueDateTime.SetDateTime(&dateTime)
 timeZone := "UTC"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
-externalcourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
-requestBody.SetExternalcourseActivityId(&externalcourseActivityId) 
+externalCourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
+requestBody.SetExternalCourseActivityId(&externalCourseActivityId) 
 learningContentId := "57baf9dc-e020-11ec-9d64-0242ac120002"
 requestBody.SetLearningContentId(&learningContentId) 
 learnerUserId := "7ba2228a-e020-11ec-9d64-0242ac120002"
@@ -50,6 +50,7 @@ requestBody.SetNotes(notes)
 status := graphmodels.INPROGRESS_COURSESTATUS 
 requestBody.SetStatus(&status) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 learningCourseActivities, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivityId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
 
 

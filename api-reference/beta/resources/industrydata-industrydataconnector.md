@@ -1,9 +1,9 @@
 ---
 title: "industryDataConnector resource type"
-description: "Represents an abstract type that provides the resources to establish a connection with a data source."
+description: "Represents a base type for connectors that provides the resources to establish a connection with a data source."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,18 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type that provides the resources to establish a connection with a data source.
+Represents a base type for connectors that provides the resources to establish a connection with a data source. This is an abstract type.
 
-Base type of [fileDataConnector](../resources/industrydata-filedataconnector.md).
+Base type of [fileDataConnector](../resources/industrydata-filedataconnector.md) and [oneRosterApiDataConnector](../resources/industrydata-onerosterapidataconnector.md).
 
 ## Methods
 
 | Method                                                                              | Return type                                                                                            | Description                                                                                                        |
 | :---------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| [Create industryDataConnector](../api/industrydata-industrydataconnector-post.md)   | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Create a new [industryDataConnector](industrydata-industrydataconnector.md) object.                                |
-| [List industryDataConnectors](../api/industrydata-industrydataconnector-list.md)    | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) collection | Get a list of the [industryDataConnector](industrydata-industrydataconnector.md) objects and their properties.     |
-| [Get industryDataConnector](../api/industrydata-industrydataconnector-get.md)       | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](industrydata-industrydataconnector.md) object. |
-| [Update industryDataConnector](../api/industrydata-industrydataconnector-update.md) | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Update the properties of an [industryDataConnector](industrydata-industrydataconnector.md) object.                 |
-| [Delete industryDataConnector](../api/industrydata-industrydataconnector-delete.md) | None                                                                                                   | Delete an [industryDataConnector](industrydata-industrydataconnector.md) object.                                   |
-| [validate](../api/industrydata-industrydataconnector-validate.md)                   | None                                                                                                   | Perform validations applicable for the specific instance of the data connector.                                    |
+| [List](../api/industrydata-industrydataconnector-list.md)    | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) collection | Get a list of the [industryDataConnector](industrydata-industrydataconnector.md) objects and their properties.     |
+| [Get](../api/industrydata-industrydataconnector-get.md)       | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](industrydata-industrydataconnector.md) object. |
+| [Delete](../api/industrydata-industrydataconnector-delete.md) | None                                                                                                   | Delete an [industryDataConnector](industrydata-industrydataconnector.md) object.                                   |
+| [Validate](../api/industrydata-industrydataconnector-validate.md)                   | None                                                                                                   | Perform validations applicable for the specific instance of the data connector.                                    |
 
 ## Properties
 

@@ -3,7 +3,7 @@ title: "externalItem: addActivities"
 description: "Append additional instances of externalActivity on an externalitem."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -66,7 +66,7 @@ A `207 Multi-Status` response code indicates that only some of the added **exter
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

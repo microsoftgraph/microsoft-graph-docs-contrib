@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Deployment deployment = new Deployment();
-DeploymentSettings settings = new DeploymentSettings();
-MonitoringSettings monitoring = new MonitoringSettings();
-LinkedList<MonitoringRule> monitoringRulesList = new LinkedList<MonitoringRule>();
-MonitoringRule monitoringRules = new MonitoringRule();
-monitoringRules.signal = MonitoringSignal.ROLLBACK;
-monitoringRules.threshold = 5;
-monitoringRules.action = MonitoringAction.PAUSE_DEPLOYMENT;
-monitoringRulesList.add(monitoringRules);
-monitoring.monitoringRules = monitoringRulesList;
-settings.monitoring = monitoring;
-deployment.settings = settings;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().windows().updates().deployments("b5171742-1742-b517-4217-17b5421717b5")
-	.buildRequest()
-	.patch(deployment);
+com.microsoft.graph.beta.models.windowsupdates.Deployment deployment = new com.microsoft.graph.beta.models.windowsupdates.Deployment();
+deployment.setOdataType("#microsoft.graph.windowsUpdates.deployment");
+com.microsoft.graph.beta.models.windowsupdates.DeploymentSettings settings = new com.microsoft.graph.beta.models.windowsupdates.DeploymentSettings();
+settings.setOdataType("microsoft.graph.windowsUpdates.deploymentSettings");
+com.microsoft.graph.beta.models.windowsupdates.MonitoringSettings monitoring = new com.microsoft.graph.beta.models.windowsupdates.MonitoringSettings();
+LinkedList<com.microsoft.graph.beta.models.windowsupdates.MonitoringRule> monitoringRules = new LinkedList<com.microsoft.graph.beta.models.windowsupdates.MonitoringRule>();
+com.microsoft.graph.beta.models.windowsupdates.MonitoringRule monitoringRule = new com.microsoft.graph.beta.models.windowsupdates.MonitoringRule();
+monitoringRule.setSignal(com.microsoft.graph.beta.models.windowsupdates.MonitoringSignal.Rollback);
+monitoringRule.setThreshold(5);
+monitoringRule.setAction(com.microsoft.graph.beta.models.windowsupdates.MonitoringAction.PauseDeployment);
+monitoringRules.add(monitoringRule);
+monitoring.setMonitoringRules(monitoringRules);
+settings.setMonitoring(monitoring);
+deployment.setSettings(settings);
+com.microsoft.graph.models.windowsupdates.Deployment result = graphClient.admin().windows().updates().deployments().byDeploymentId("{deployment-id}").patch(deployment);
+
 
 ```

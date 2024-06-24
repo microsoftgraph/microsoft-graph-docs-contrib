@@ -5,8 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceEnrollmentWindowsHelloForBusinessConfiguration;
+use Microsoft\Graph\Generated\Models\WindowsHelloForBusinessPinUsage;
+use Microsoft\Graph\Generated\Models\Enablement;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceEnrollmentWindowsHelloForBusinessConfiguration();

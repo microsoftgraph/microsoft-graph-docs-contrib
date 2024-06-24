@@ -2,8 +2,9 @@
 title: "awsIdentityAccessManagementKeyUsageFinding resource type"
 description: "The IAM access key age represents the number of keys that have not been used in the over 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,9 +22,9 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentityAccessManagementKeyUsageFindings](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
-|[Get awsIdentityAccessManagementKeyUsageFinding](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[Get awsIdentityAccessManagementKeyUsageFinding-aggregatedSummary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
+|[List](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
+|[Get](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
+|[Aggregated summary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)and the total number in a specified authorization system.|
 
 
 ## Properties
@@ -38,7 +39,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|awsAccessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the AWS Access Key in an authorization system. All the standard identity information for the access key's owner is currently unavailable.|
+|accessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the AWS Access Key in an authorization system. All the standard identity information for the access key's owner is currently unavailable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

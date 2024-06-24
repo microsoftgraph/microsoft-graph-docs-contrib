@@ -3,7 +3,7 @@ title: "customExtensionHandlerInstance resource type (deprecated)"
 description: "Used to record the status a custom workflow extension instance being run on an access package assignment request."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

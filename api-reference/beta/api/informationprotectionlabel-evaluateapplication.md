@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateApplication (deprecated)"
 description: "Evaluate which label to apply based on existing content info and desired content state. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
 ---
 
@@ -57,7 +57,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 | Name          | Description                                                                                                                                                           |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                             |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.                                                                                                                                           |
 | User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 

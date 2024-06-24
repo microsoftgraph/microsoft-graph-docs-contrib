@@ -3,7 +3,7 @@ title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
 author: "moti-ba"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: enumTypes
 ---
 
@@ -257,7 +257,24 @@ Namespace: microsoft.graph.networkaccess
 |southAfricaWest|
 |southAfricaNorth|
 |uaeNorth|
+|australiaEast|
+|westCentralUS|
+|centralIndia|
+|southEastAsia|
+|swedenCentral|
+|southIndia|
+|australiaSouthEast|
+|koreaCentral|
+|polandCentral|
+|brazilSouth|
+|japanEast|
+|japanWest|
+|koreaSouth|
+|italyNorth|
+|franceSouth|
+|israelCentral|
 |unknownFutureValue|
+
 
 ### status values 
 

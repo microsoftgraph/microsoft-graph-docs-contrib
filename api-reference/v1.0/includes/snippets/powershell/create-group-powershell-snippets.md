@@ -10,11 +10,11 @@ $params = @{
 	description = "Self help community for library"
 	displayName = "Library Assist"
 	groupTypes = @(
-		"Unified"
-	)
-	mailEnabled = $true
-	mailNickname = "library"
-	securityEnabled = $false
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "library"
+securityEnabled = $false
 }
 
 New-MgGroup -BodyParameter $params

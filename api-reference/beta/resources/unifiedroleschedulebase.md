@@ -3,7 +3,7 @@ title: "unifiedRoleScheduleBase resource type"
 description: "A template that exposes properties and relationships used in unifiedRoleAssignmentSchedule and unifiedRoleEligibilitySchedule resource types."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

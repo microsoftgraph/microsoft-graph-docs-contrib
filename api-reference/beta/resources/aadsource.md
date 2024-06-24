@@ -2,8 +2,9 @@
 title: "aadSource resource type"
 description: "Represents an authorization system identity sourced from Microsoft Entra ID."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

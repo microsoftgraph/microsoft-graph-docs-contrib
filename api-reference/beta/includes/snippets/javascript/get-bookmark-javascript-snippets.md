@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let bookmark = await client.api('/search/bookmarks/{bookmarksId}')
+let bookmark = await client.api('/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897')
 	.version('beta')
 	.get();
 

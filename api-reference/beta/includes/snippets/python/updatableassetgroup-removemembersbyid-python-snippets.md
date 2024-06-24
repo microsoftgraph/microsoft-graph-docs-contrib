@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.admin.windows.updates.updatableassets.item.microsoft_graph_windows_updates_remove_members_by_id.remove_members_by_id_post_request_body import RemoveMembersByIdPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

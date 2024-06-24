@@ -3,7 +3,7 @@ title: "deviceThreatProtectionLevel enum type"
 description: "Device threat protection levels for the Device Threat Protection API."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

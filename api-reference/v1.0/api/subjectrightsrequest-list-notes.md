@@ -3,7 +3,7 @@ title: "List authoredNotes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

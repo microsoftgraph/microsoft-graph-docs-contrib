@@ -3,7 +3,7 @@ title: "submissionAdminReview resource type"
 description: "Represents admin review information for threat submission"
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

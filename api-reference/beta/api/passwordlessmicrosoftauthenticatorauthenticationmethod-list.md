@@ -4,7 +4,7 @@ description: "Retrieve a list of the passwordlessMicrosoftAuthenticatorAuthentic
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -18,7 +18,7 @@ Retrieve a list of a user's [Microsoft Authenticator Passwordless Phone Sign-in 
 > [!CAUTION]
 > The Microsoft Authenticator Passwordless Phone Sign-in method API is deprecated and will stop returning results on December 31, 2020. Please use the new [Microsoft Authenticator Authentication Method](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -56,7 +56,7 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

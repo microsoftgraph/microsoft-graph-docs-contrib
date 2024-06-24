@@ -4,7 +4,7 @@ description: "Provides information about the quarantine state of a synchronizati
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationQuarantine resource type

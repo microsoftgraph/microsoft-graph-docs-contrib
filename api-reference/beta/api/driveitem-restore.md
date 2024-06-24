@@ -3,7 +3,7 @@ title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: files
+ms.subservice: onedrive
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ POST /me/drive/items/{item-id}/restore
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

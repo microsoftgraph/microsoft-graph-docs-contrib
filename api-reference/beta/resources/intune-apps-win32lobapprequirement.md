@@ -3,7 +3,7 @@ title: "win32LobAppRequirement resource type"
 description: "Base class to detect a Win32 App"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

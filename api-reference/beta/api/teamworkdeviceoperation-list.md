@@ -3,7 +3,7 @@ title: "List teamworkDeviceOperations"
 description: "Get a list of operations that are linked to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ This method supports the `$top`, `$select`, and `$skipToken` [OData query parame
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

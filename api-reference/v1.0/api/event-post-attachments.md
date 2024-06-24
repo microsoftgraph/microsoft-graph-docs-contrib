@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -71,7 +71,7 @@ If successful, this method returns `201 Created` response code and [attachment](
 ## Example (file attachment)
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -127,7 +127,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_v1",
@@ -228,7 +228,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",

@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.schedule import Schedule
+from msgraph_beta.generated.models.operation_status import OperationStatus
+from msgraph_beta.generated.models.day_of_week import DayOfWeek
+from msgraph_beta.generated.models.time_clock_settings import TimeClockSettings
+from msgraph_beta.generated.models.geo_coordinates import GeoCoordinates
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,6 +22,10 @@ request_body = Schedule(
 	swap_shifts_requests_enabled = True,
 	offer_shift_requests_enabled = True,
 	time_off_requests_enabled = True,
+	start_day_of_week = DayOfWeek.Tuesday,
+	activities_included_when_copying_shifts_enabled = True,
+	is_cross_location_shifts_enabled = True,
+	is_cross_location_shift_request_approval_required = True,
 	time_clock_enabled = True,
 	time_clock_settings = TimeClockSettings(
 		approved_location = GeoCoordinates(

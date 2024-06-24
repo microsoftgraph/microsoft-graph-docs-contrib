@@ -4,22 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "embed";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.sites("{siteId}").lists("{listId}").items("{itemId}")
-	.createLink(ListItemCreateLinkParameterSet
-		.newBuilder()
-		.withType(type)
-		.withScope(null)
-		.withExpirationDateTime(null)
-		.withPassword(null)
-		.withRecipients(null)
-		.withRetainInheritedPermissions(null)
-		.withSendNotification(null)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("embed");
+var result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().byListItemId("{listItem-id}").createLink().post(createLinkPostRequestBody);
+
 
 ```

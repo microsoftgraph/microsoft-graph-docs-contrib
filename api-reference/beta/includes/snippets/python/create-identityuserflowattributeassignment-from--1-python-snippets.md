@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.identity_user_flow_attribute_assignment import IdentityUserFlowAttributeAssignment
+from msgraph_beta.generated.models.identity_user_flow_attribute_input_type import IdentityUserFlowAttributeInputType
+from msgraph_beta.generated.models.user_attribute_values_item import UserAttributeValuesItem
+from msgraph_beta.generated.models.identity_user_flow_attribute import IdentityUserFlowAttribute
 
 graph_client = GraphServiceClient(credentials, scopes)
 

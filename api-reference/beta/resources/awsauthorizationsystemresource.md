@@ -2,8 +2,9 @@
 title: "awsAuthorizationSystemResource resource type"
 description: "Represents an AWS resource in an AWS authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,8 +21,8 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsAuthorizationSystemResources](../api/awsauthorizationsystem-list-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get a list of the [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) objects and their properties.|
-|[Get awsAuthorizationSystemResource](../api/awsauthorizationsystemresource-get.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Read the properties and relationships of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
+|[List](../api/awsauthorizationsystem-list-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get a list of the [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) objects and their properties.|
+|[Get](../api/awsauthorizationsystemresource-get.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Read the properties and relationships of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|

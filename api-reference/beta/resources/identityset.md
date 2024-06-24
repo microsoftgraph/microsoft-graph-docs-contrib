@@ -4,7 +4,7 @@ description: "Represents a keyed collection of identity resources."
 title: "identitySet resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 ---
 # identitySet resource type
 
@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use **identitySet** resources, see [call](call.md).
 

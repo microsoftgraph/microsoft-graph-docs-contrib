@@ -13,9 +13,19 @@ The File List component displays [a list of multiple folders and files](/graph/a
 
 The following example displays a file using the `mgt-file-list` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list-html--file-list&source=docs" height="500"></iframe>
+ 
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list-html--file-list&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list-react--file-list&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list-react--file-list&source=docs).
+
+---
 
 ## Properties
 
@@ -24,8 +34,8 @@ You can use several properties to customize the component.
 | Attribute                | Property               | Description                                                                                                                                                               |
 | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | file-list-query          | fileListQuery          | The full query or path to the drive or site that contains the list of files to render.                                                                                    |
-| file-queries             | fileQueries            | An array of file queries to be rendered by the component.                                                                                                                 |
-| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
+| file-queries             | fileQueries            | An array of file queries rendered by the component.                                                                                                                 |
+| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this property to access the files loaded by the component. Set this value to load your own files. |
 | insight-type             | insightType            | Set to show the user’s trending, used, or shared files.                                                                                                                   |
 | drive-id                 | driveId                | ID of the drive the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
 | group-id                 | groupId                | ID of the group the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
@@ -41,6 +51,7 @@ You can use several properties to customize the component.
 | excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also set the `enable-file-upload` attribute to `true`.                                              |
 | max-file-size            | maxFileSize            | A number representing the maximum file upload size (KB). Must also set the `enable-file-upload` attribute to `true`.                                                      |
 | max-upload-file          | maxUploadFile          | A number representing the maximum number of files allowed to be uploaded. The default value is `10` files. Must also set the `enable-file-upload` attribute to `true`.    |
+| disable-open-on-click    | disableOpenOnClick     | Boolean to enable or disable the default behavior of opening a file in separate browser tab when clicked.                                                                 |
 
 The following example changes the behavior of the component to fetch a file list from a specific query.
 
@@ -50,13 +61,13 @@ The following example changes the behavior of the component to fetch a file list
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch a file list from a folder by providing the folder id.
+The following example changes the behavior of the component to fetch a file list from a folder by providing the folder ID.
 
 ```html
 <mgt-file-list item-id="01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY"></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a group by providing the group id and folder path.
+The following example changes the behavior of the component to fetch file list from a group by providing the group ID and folder path.
 
 ```html
 <mgt-file-list
@@ -65,7 +76,7 @@ The following example changes the behavior of the component to fetch file list f
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a user by providing the user id and folder id.
+The following example changes the behavior of the component to fetch file list from a user by providing the user ID and folder ID.
 
 ```html
 <mgt-file-list
@@ -205,50 +216,17 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 });
 ```
 
-## Microsoft Graph APIs and permissions
-
-| Configuration                                                      | Permissions                                                                                           | API                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Default (no identifiers or query provided)                         | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /me/drive/root/children`                                                                                                                                                                                              |
-| Provide `enable-file-upload`                                       | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root/children` <br /> `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession`                                                                               |
-| Provide `{drive-id}` AND `{item-id}`                               | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /drives/{drive-id}/items/{item-id}/children`                                                                                                                                                                          |
-| Provide `{drive-id}` AND `{item-id}` AND `enable-file-upload`      | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/items/{item-id}/children` <br /> `PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content` <br /> `POST /drives/{drive-id}/items/{item-id}:/{filename}:/createUploadSession`                   |
-| Provide `{group-id}` AND `{item-id}`                               | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /groups/{group-id}/drive/items/{item-id}/children`                                                                                                                                                                    |
-| Provide `{group-id}` AND `{item-id}` AND `enable-file-upload`      | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /groups/{group-id}/drive/items/{item-id}/children` <br /> `PUT /groups/{group-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /groups/{group-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
-| Provide ONLY `{item-id}`                                           | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /me/drive/items/{item-id}/children`                                                                                                                                                                                   |
-| Provide ONLY `{item-id}` AND `enable-file-upload`                  | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/items/{item-id}/children` <br /> `PUT /me/drive/items/{item-id}:/{filename}:/content` <br /> `POST /me/drive/items/{item-id}:/{filename}:/createUploadSession`                                              |
-| Provide `{site-id}` AND `{item-id}`                                | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /sites/{site-id}/drive/items/{item-id}/children`                                                                                                                                                                      |
-| Provide `{site-id}` AND `{item-id}` AND `enable-file-upload`       | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /sites/{site-id}/drive/items/{item-id}/children` <br /> `PUT /sites/{site-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /sites/{site-id}/drive/items/{item-id}:/{filename}:/createUploadSession`       |
-| Provide `{user-id}` AND `{item-id}`                                | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /users/{user-id}/drive/items/{item-id}/children`                                                                                                                                                                      |
-| Provide `{user-id}` AND `{item-id}` AND `enable-file-upload`       | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /users/{user-id}/drive/items/{item-id}/children` <br /> `PUT /users/{user-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /users/{user-id}/drive/items/{item-id}:/{filename}:/createUploadSession`       |
-| Provide `{drive-id}` AND `{item-path}`                             | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /drives/{drive-id}/root:/{item-path}:/children`                                                                                                                                                                       |
-| Provide `{drive-id}` AND `{item-path}` AND `enable-file-upload`    | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/root:/{item-path}:/children` <br /> `PUT /drives/{drive-id}/root:/{item-path}/{filename}:/content` <br /> `POST /drives/{drive-id}/root:/{item-path}/{filename}:/createUploadSession`              |
-| Provide `{group-id}` AND `{item-path}`                             | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /groups/{group-id}/root:/{item-path}:/children`                                                                                                                                                                       |
-| Provide `{group-id}` AND `{item-path}` AND `enable-file-upload`    | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /groups/{group-id}/root:/{item-path}:/children` <br /> `PUT /groups/{group-id}/root:/{item-path}/{filename}:/content` <br /> `POST /groups/{group-id}/root:/{item-path}/{filename}:/createUploadSession`              |
-| Provide `{site-id}` AND `{item-path}`                              | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /sites/{site-id}/root:/{item-path}:/children`                                                                                                                                                                         |
-| Provide `{site-id}` AND `{item-path}` AND `enable-file-upload`     | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /sites/{site-id}/root:/{item-path}:/children` <br /> `PUT /sites/{site-id}/root:/{item-path}/{filename}:/content` <br /> `POST /sites/{site-id}/root:/{item-path}/{filename}:/createUploadSession`                    |
-| Provide `{user-id}` AND `{item-path}`                              | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /users/{user-id}/root:/{item-path}:/children`                                                                                                                                                                         |
-| Provide `{user-id}` AND `{item-path}` AND `enable-file-upload`     | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /users/{user-id}/root:/{item-path}:/children` <br /> `PUT /users/{user-id}/root:/{item-path}/{filename}:/content` <br /> `POST /users/{user-id}/root:/{item-path}/{filename}:/createUploadSession`                    |
-| Provide only `{item-path}`                                         | Files.Read, Files.Read.All, Sites.Read.All                                                            | `GET /me/drive/root:/{item-path}:/children`                                                                                                                                                                                |
-| Provide only `{item-path}` AND `enable-file-upload`                | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children` <br /> `PUT /me/drive/root:/{item-path}/{filename}:/content` <br /> `POST /me/drive/root:/{item-path}/{filename}:/createUploadSession`                                         |
-| `insight-type` is set to trending                                  | Sites.Read.All                                                                                        | `GET /me/insights/trending`                                                                                                                                                                                                |
-| Provide `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All                                                                                        | `GET /users/{id or userPrincipalName}/insights/trending`                                                                                                                                                                   |
-| `insight-type` is set to `used`                                    | Sites.Read.All                                                                                        | `GET /me/insights/used`                                                                                                                                                                                                    |
-| Provide `{user-id or upn}` AND `insight-type` is set to `used`     | Sites.Read.All                                                                                        | `GET /users/{id or userPrincipalName}/insights/used`                                                                                                                                                                       |
-| `insight-type` is set to shared                                    | Sites.Read.All                                                                                        | `GET /me/insights/shared`                                                                                                                                                                                                  |
-| Provide `{user-id or upn}` AND `insight-type` is set to `shared`   | Sites.Read.All                                                                                        | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))`                                                      |
-
 ## Events
 
-| Event       | When is it emitted                 | Custom data                                     | Cancelable | Bubbles |     Works with custom template     |
-| ----------- | ---------------------------------- | ----------------------------------------------- | :--------: | :-----: | :--------------------------------: |
-| `itemClick` | Fired when the user clicks a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with custom **file** template |
+| Event       | When is it emitted                  | Custom data                                     | Cancelable | Bubbles |     Works with custom template        |
+| ----------- | ----------------------------------- | ----------------------------------------------- | ---------- | ------- | ------------------------------------- |
+| `itemClick` | Fired when the user selects a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with a custom **file** template. |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
-The `mgt-file-list` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
+The `mgt-file-list` component supports many [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
 
 | Data type | Data context                  | Description                                                       |
 | --------- | ----------------------------- | ----------------------------------------------------------------- |
@@ -272,6 +250,33 @@ The `mgt-file-list` component supports several [templates](../customize-componen
   </template>
 </mgt-file-list>
 ```
+
+## Microsoft Graph permissions
+
+
+This component uses the following Microsoft Graph APIs. For each API call, one of the permissions listed is required.
+
+| Configuration                                                      | Permissions                                                                                           | API                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Default (no identifiers or query provided)                         | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /me/drive/root/children`                                                                                                                                                         |
+| Provide `{drive-id}` AND `{item-id}`                               | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/items/{item-id}/children`                                                                                                                                     |
+| Provide `{group-id}` AND `{item-id}`                               | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /groups/{group-id}/drive/items/{item-id}/children`                                                                                                                               |
+| Provide ONLY `{item-id}`                                           | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /me/drive/items/{item-id}/children`                                                                                                                                              |
+| Provide `{site-id}` AND `{item-id}`                                | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /sites/{site-id}/drive/items/{item-id}/children`                                                                                                                                 |
+| Provide `{user-id}` AND `{item-id}`                                | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /users/{user-id}/drive/items/{item-id}/children`                                                                                                                                 |
+| Provide `{drive-id}` AND `{item-path}`                             | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/root:/{item-path}:/children`                                                                                                                                  |
+| Provide `{group-id}` AND `{item-path}`                             | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /groups/{group-id}/root:/{item-path}:/children`                                                                                                                                  |
+| Provide `{site-id}` AND `{item-path}`                              | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /sites/{site-id}/root:/{item-path}:/children`                                                                                                                                    |
+| Provide `{user-id}` AND `{item-path}`                              | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /users/{user-id}/root:/{item-path}:/children`                                                                                                                                    |
+| Provide only `{item-path}`                                         | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children`                                                                                                                                           |
+| `insight-type` is set to `trending`                                | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | `GET /me/insights/trending`                                                                                                                                                           |
+| `insight-type` is set to `used`                                    | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | `GET /me/insights/used`                                                                                                                                                               |
+| `insight-type` is set to `shared`                                  | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | `GET /me/insights/shared`                                                                                                                                                             |
+| Providing `enable-file-upload` additionally requires               | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All                                                                                  | `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession`                                                                               |
+
+### Subcomponents
+
+The `mgt-file-list` component consists of one or more subcomponents that might require permissions other than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-file](file.md).
 
 ## Authentication
 

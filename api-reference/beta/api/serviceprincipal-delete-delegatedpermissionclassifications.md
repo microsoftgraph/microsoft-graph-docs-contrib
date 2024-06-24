@@ -3,7 +3,7 @@ title: "Delete delegatedPermissionClassification"
 description: "Delete a delegated permission classification from an API's service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -38,7 +38,7 @@ DELETE /servicePrincipals(appId='{appId}')/delegatedPermissionClassifications/{i
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

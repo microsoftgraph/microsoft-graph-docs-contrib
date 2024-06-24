@@ -3,7 +3,7 @@ title: "Reset ediscoveryCaseSettings to default"
 description: "Reset a ediscoveryCaseSettingsobject to the default values."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings/resetToDefault
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows10_endpoint_protection_configuration import Windows10EndpointProtectionConfiguration
+from msgraph.generated.models.firewall_pre_shared_key_encoding_method_type import FirewallPreSharedKeyEncodingMethodType
+from msgraph.generated.models.firewall_certificate_revocation_list_check_method_type import FirewallCertificateRevocationListCheckMethodType
+from msgraph.generated.models.firewall_packet_queueing_method_type import FirewallPacketQueueingMethodType
+from msgraph.generated.models.windows_firewall_network_profile import WindowsFirewallNetworkProfile
+from msgraph.generated.models.state_management_setting import StateManagementSetting
+from msgraph.generated.models.app_locker_application_control_type import AppLockerApplicationControlType
+from msgraph.generated.models.application_guard_block_file_transfer_type import ApplicationGuardBlockFileTransferType
+from msgraph.generated.models.application_guard_block_clipboard_sharing_type import ApplicationGuardBlockClipboardSharingType
+from msgraph.generated.models.bit_locker_removable_drive_policy import BitLockerRemovableDrivePolicy
+from msgraph.generated.models.bit_locker_encryption_method import BitLockerEncryptionMethod
 
 graph_client = GraphServiceClient(credentials, scopes)
 

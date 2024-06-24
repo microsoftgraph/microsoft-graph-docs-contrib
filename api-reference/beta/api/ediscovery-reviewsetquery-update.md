@@ -3,7 +3,7 @@ title: "Update reviewSetQuery"
 description: "Update the properties of a reviewSetQuery object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

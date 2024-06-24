@@ -3,7 +3,7 @@ title: "Attach educationRubric to an educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ PUT /education/classes/{id}/assignments/{id}/rubric/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

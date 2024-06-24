@@ -3,7 +3,7 @@ title: "tiIndicator: updateTiIndicators"
 description: "Update multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

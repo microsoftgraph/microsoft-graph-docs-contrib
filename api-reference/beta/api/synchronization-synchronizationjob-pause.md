@@ -4,7 +4,7 @@ description: "Temporarily stop synchronization. All the progress, including job 
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationJob: pause
@@ -35,7 +35,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

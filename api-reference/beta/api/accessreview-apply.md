@@ -3,7 +3,7 @@ title: "Apply accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, apply the decisions of a completed accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  "
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -120,6 +120,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 - [How to complete an access review](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)

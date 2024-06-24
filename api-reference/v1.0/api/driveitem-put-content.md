@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Provide the contents of a new file or update the contents of an existing file in a single API call. "
 doc_type: apiPageType
 ---
@@ -50,6 +50,13 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|text/plain. Required.|
+
 ## Request body
 
 The contents of the request body should be the binary stream of the file to be uploaded.
@@ -65,7 +72,7 @@ This example uploads the string "The contents of the file goes here." to a file 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/root:/FolderA/FileB.txt:/content
+PUT https://graph.microsoft.com/v1.0/me/drive/root:/FolderA/FileB.txt:/content
 Content-Type: text/plain
 
 The contents of the file goes here.
@@ -98,7 +105,7 @@ This example replaces the contents of a file with a known ID.
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/items/{item-id}/content
+PUT https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/content
 Content-Type: text/plain
 
 The contents of the file goes here.
@@ -106,10 +113,6 @@ The contents of the file goes here.
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/upload-via-put-id-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/upload-via-put-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

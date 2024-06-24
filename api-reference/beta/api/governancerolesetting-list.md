@@ -3,8 +3,9 @@ title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # List governanceRoleSettings

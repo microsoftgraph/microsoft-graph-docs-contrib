@@ -3,7 +3,7 @@ title: "accessPackage: getApplicablePolicyRequirements"
 description: "Allow callers to find requirements to request an assignment for a specific accessPackage."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,19 +39,21 @@ None.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method if you wish to retrieve a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
+Don't supply a request body for this method if you wish to retrieve a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there's a policy with no requirements, the **accessPackageAssignmentRequestRequirements** has `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection is returned instead.
 
 ## Examples
 
 ### Example 1: Retrieve a list of access package requirements to create an access package
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,6 +100,8 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 ---
 
 #### Response
+
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -138,11 +142,13 @@ Content-Type: application/json
         }
     ]
 }
-``` 
+```
 
 ### Example 2: Get policy requirements for a given user scope
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -152,7 +158,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11-b207-c8d9d21f4e9a/getApplicablePolicyRequirements
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11-b207-c8d9d21f4e9a/getApplicablePolicyRequirements
 
 {
         "subject": {
@@ -174,7 +180,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-req-for-given-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -186,7 +192,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-req-for-given-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -196,6 +202,8 @@ POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -260,15 +268,16 @@ Content-Type: application/json
 
 #### Request
 
+The following example shows a request.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
 ```
 
-
 #### Response
 
-Here is an example of the response if this is the first time credentials are requested and the requestor has not yet scanned the QR code or clicked the URL.
+The following example shows the response if it is the first time credentials are requested and the requestor didn't scanned the QR code or clicked the URL.
 
 ```http
 HTTP/1.1 200 OK
@@ -310,7 +319,7 @@ Content-Type: application/json
 }
 ```
 
-If the requestor has scanned the QR code or clicked the URL, the verifiableCredentialRequirementStatus will be in the following format.
+If the requestor has scanned the QR code or clicked the URL, the verifiableCredentialRequirementStatus property is in the following format.
 
 ```json
 "verifiableCredentialRequirementStatus": {
@@ -319,7 +328,7 @@ If the requestor has scanned the QR code or clicked the URL, the verifiableCrede
 }
 ```
 
-If the requestor has presented valid credential, the verifiableCredentialRequirementStatus will be in the following format.
+If the requestor presented valid credential, the verifiableCredentialRequirementStatus property is in the following format.
 
 ```json
 "verifiableCredentialRequirementStatus": {

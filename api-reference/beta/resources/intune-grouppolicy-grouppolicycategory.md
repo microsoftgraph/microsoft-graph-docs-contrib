@@ -3,7 +3,7 @@ title: "groupPolicyCategory resource type"
 description: "The category entity stores the category of a group policy definition"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

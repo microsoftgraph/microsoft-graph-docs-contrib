@@ -3,7 +3,7 @@ title: "Create identity"
 description: "Create a new member as an identity resource in an externalGroup."
 author: "sacampbe"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

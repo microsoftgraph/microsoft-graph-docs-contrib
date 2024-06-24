@@ -3,7 +3,7 @@ author: learafa
 description: "Follow a driveItem."
 title: Follow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow drive item
@@ -35,6 +35,12 @@ POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Request body
 
 No request body is required.
@@ -52,7 +58,7 @@ This example follows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/follow
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/follow
 ```
 
 # [C#](#tab/csharp)

@@ -3,7 +3,7 @@ title: "deviceEnrollmentNotificationConfiguration resource type"
 description: "Enrollment Notification Configuration which is used to send notification"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

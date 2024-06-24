@@ -4,7 +4,7 @@ title: "Delete contentType"
 description: "Delete a content type from a SharePoint list or a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Delete contentType
@@ -35,7 +35,7 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body

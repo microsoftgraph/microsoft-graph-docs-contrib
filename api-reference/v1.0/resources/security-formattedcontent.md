@@ -3,7 +3,7 @@ title: "formattedContent resource type"
 description: "Represents formatted data content, and indicates both the content and format of that data."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

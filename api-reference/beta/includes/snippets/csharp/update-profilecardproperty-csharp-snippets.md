@@ -20,7 +20,7 @@ var requestBody = new ProfileCardProperty
 			{
 				new DisplayNameLocalization
 				{
-					LanguageTag = "nb-NO",
+					LanguageTag = "no",
 					DisplayName = "Kostnadssenter",
 				},
 			},

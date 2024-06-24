@@ -3,7 +3,7 @@ title: "emailPayloadDetail resource type"
 description: "Represents details of an email type payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.emailPayloadDetail"
+  "@odata.type": "microsoft.graph.emailPayloadDetail",
+  "baseType": "microsoft.graph.payloadDetail"
 }
 -->
 ``` json

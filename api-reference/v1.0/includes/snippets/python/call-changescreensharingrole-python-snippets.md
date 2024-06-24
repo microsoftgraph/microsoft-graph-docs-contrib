@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.calls.item.change_screen_sharing_role.change_screen_sharing_role_post_request_body import ChangeScreenSharingRolePostRequestBody
+from msgraph.generated.models.screen_sharing_role import ScreenSharingRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 

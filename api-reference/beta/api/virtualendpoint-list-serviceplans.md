@@ -3,7 +3,7 @@ title: "List servicePlans"
 description: "List the currently available service plans that an organization can purchase for their Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ This method does not support OData query parameters to customize the response. F
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "cloudPcAuditActor resource type"
 description: "The audit actor represented by the Microsoft Entra user and application associated with the audit event."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -19,26 +19,26 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `Unknown`.|
-|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
-|userPrincipalName|String|User Principal Name (UPN).|
-|servicePrincipalName|String|Service Principal Name (SPN).|
+|applicationId|String|Microsoft Entra application ID.|
 |ipAddress|String|IP address.|
-|userId|String|Microsoft Entra user ID.|
-|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant ID.|
 |remoteUserId|String|The delegated partner user ID.|
+|servicePrincipalName|String|Service Principal Name (SPN).|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
+|userId|String|Microsoft Entra user ID.|
+|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
+|userPrincipalName|String|User Principal Name (UPN).|
+|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 
 ### cloudPcAuditActorType values
 
 |Member|Description|
 |:---|:---|
-|itPro|The operation was performed by an IT pro.|
-|application|The operation was performed by the application.|
-|partner|The operation was performed by a partner.|
-|unknown|Unknown actor.|
+|itPro|Indicates the operation was triggered by an IT Pro/IT Admin.|
+|application|Indicates the operation was triggered by an application.|
+|partner|Indicates the operation was triggered by a partner.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditActor"

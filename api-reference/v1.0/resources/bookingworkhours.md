@@ -3,7 +3,7 @@ title: "bookingWorkHours resource type"
 description: "Represents the set of working hours in a single day of the week, for a bookingBusiness or bookingStaffMember."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

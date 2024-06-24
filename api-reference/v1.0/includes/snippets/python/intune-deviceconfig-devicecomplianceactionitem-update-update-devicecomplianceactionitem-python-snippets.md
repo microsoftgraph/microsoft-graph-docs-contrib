@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_compliance_action_item import DeviceComplianceActionItem
+from msgraph.generated.models.device_compliance_action_type import DeviceComplianceActionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

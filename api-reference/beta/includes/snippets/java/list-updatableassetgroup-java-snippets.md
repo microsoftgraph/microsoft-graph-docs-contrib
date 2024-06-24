@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UpdatableAssetGroupCollectionPage updatableAssetGroup = graphClient.admin().windows().updates().updatableAssets().microsoft.graph.windowsUpdates.updatableAssetGroup()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.windowsupdates.UpdatableAsset result = graphClient.admin().windows().updates().updatableAssets().byUpdatableAssetId("{updatableAsset-id}").get();
+
 
 ```

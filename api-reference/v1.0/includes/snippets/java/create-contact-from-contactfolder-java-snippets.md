@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Contact contact = new Contact();
-contact.parentFolderId = "parentFolderId-value";
-contact.birthday = OffsetDateTimeSerializer.deserialize("datetime-value");
-contact.fileAs = "fileAs-value";
-contact.displayName = "displayName-value";
-contact.givenName = "givenName-value";
-contact.initials = "initials-value";
+contact.setParentFolderId("parentFolderId-value");
+OffsetDateTime birthday = OffsetDateTime.parse("datetime-value");
+contact.setBirthday(birthday);
+contact.setFileAs("fileAs-value");
+contact.setDisplayName("displayName-value");
+contact.setGivenName("givenName-value");
+contact.setInitials("initials-value");
+Contact result = graphClient.me().contactFolders().byContactFolderId("{contactFolder-id}").contacts().post(contact);
 
-graphClient.me().contactFolders("{id}").contacts()
-	.buildRequest()
-	.post(contact);
 
 ```

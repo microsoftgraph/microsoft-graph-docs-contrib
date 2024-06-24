@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BookingBusiness bookingBusiness = new BookingBusiness();
-bookingBusiness.email = "admin@fabrikam.com";
+bookingBusiness.setEmail("admin@fabrikam.com");
 BookingSchedulingPolicy schedulingPolicy = new BookingSchedulingPolicy();
-schedulingPolicy.timeSlotInterval = DatatypeFactory.newInstance().newDuration("PT60M");
-schedulingPolicy.minimumLeadTime = DatatypeFactory.newInstance().newDuration("P1D");
-schedulingPolicy.maximumAdvance = DatatypeFactory.newInstance().newDuration("P30D");
-schedulingPolicy.sendConfirmationsToOwner = true;
-schedulingPolicy.allowStaffSelection = true;
-bookingBusiness.schedulingPolicy = schedulingPolicy;
+PeriodAndDuration timeSlotInterval = PeriodAndDuration.ofDuration(Duration.parse("PT60M"));
+schedulingPolicy.setTimeSlotInterval(timeSlotInterval);
+PeriodAndDuration minimumLeadTime = PeriodAndDuration.ofDuration(Duration.parse("P1D"));
+schedulingPolicy.setMinimumLeadTime(minimumLeadTime);
+PeriodAndDuration maximumAdvance = PeriodAndDuration.ofDuration(Duration.parse("P30D"));
+schedulingPolicy.setMaximumAdvance(maximumAdvance);
+schedulingPolicy.setSendConfirmationsToOwner(true);
+schedulingPolicy.setAllowStaffSelection(true);
+bookingBusiness.setSchedulingPolicy(schedulingPolicy);
+BookingBusiness result = graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").patch(bookingBusiness);
 
-graphClient.solutions().bookingBusinesses("fabrikam@contoso.onmicrosoft.com")
-	.buildRequest()
-	.patch(bookingBusiness);
 
 ```

@@ -3,7 +3,7 @@ title: "Delete externalMeetingRegistrant"
 description: "Delete an externalMeetingRegistrant from an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{regi
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

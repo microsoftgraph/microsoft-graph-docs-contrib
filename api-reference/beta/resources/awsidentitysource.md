@@ -2,8 +2,9 @@
 title: "awsIdentitySource resource type"
 description: "Represents an permissionsDefinitionIdentitySource for a cross-account user in AWS."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

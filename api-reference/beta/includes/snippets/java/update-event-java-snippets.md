@@ -4,28 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.originalStartTimeZone = "originalStartTimeZone-value";
-event.originalEndTimeZone = "originalEndTimeZone-value";
+event.setOriginalStartTimeZone("originalStartTimeZone-value");
+event.setOriginalEndTimeZone("originalEndTimeZone-value");
 ResponseStatus responseStatus = new ResponseStatus();
-responseStatus.response = ResponseType.NONE;
-responseStatus.time = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
-event.responseStatus = responseStatus;
-event.recurrence = null;
-event.uid = "iCalUId-value";
-event.reminderMinutesBeforeStart = 99;
-event.isOnlineMeeting = true;
-event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
-event.isReminderOn = true;
-event.hideAttendees = false;
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("Red category");
-event.categories = categoriesList;
+responseStatus.setResponse(ResponseType.None);
+OffsetDateTime time = OffsetDateTime.parse("2016-10-19T10:37:00Z");
+responseStatus.setTime(time);
+event.setResponseStatus(responseStatus);
+event.setRecurrence(null);
+event.setReminderMinutesBeforeStart(99);
+event.setIsOnlineMeeting(true);
+event.setOnlineMeetingProvider(OnlineMeetingProviderType.TeamsForBusiness);
+event.setIsReminderOn(true);
+event.setHideAttendees(false);
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("Red category");
+event.setCategories(categories);
+Event result = graphClient.me().events().byEventId("{event-id}").patch(event);
 
-graphClient.me().events("{id}")
-	.buildRequest()
-	.patch(event);
 
 ```

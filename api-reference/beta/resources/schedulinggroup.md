@@ -1,9 +1,9 @@
 ---
 title: schedulingGroup resource type
 description: A logical grouping of members in the schedule (usually by role).
-author: aaku
+author: shanemalone
 ms.localizationpriority: high
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 
@@ -19,27 +19,28 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 
 | Method                                                             | Return Type                                      | Description                                       |
 | :----------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------ |
-| [Create schedulingGroup](../api/schedule-post-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md)            | Create a new `schedulingGroup`.                   |
-| [List schedulingGroups](../api/schedule-list-schedulinggroups.md)  | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in a schedule. |
-| [Get schedulingGroup](../api/schedulinggroup-get.md)               | [schedulingGroup](schedulinggroup.md)            | Get a `schedulingGroup` by ID.                    |
-| [Replace schedulingGroup](../api/schedulinggroup-put.md)           | [schedulingGroup](schedulinggroup.md)            | Replace a `schedulingGroup`.                      |
-| [Delete schedulingGroup](../api/schedulinggroup-delete.md)         | None                                             | Mark `schedulingGroup` as inactive.               |
+| [Create](../api/schedule-post-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md)            | Create a new `schedulingGroup`.                   |
+| [List](../api/schedule-list-schedulinggroups.md)  | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in a schedule. |
+| [Get](../api/schedulinggroup-get.md)               | [schedulingGroup](schedulinggroup.md)            | Get a `schedulingGroup` by ID.                    |
+| [Replace](../api/schedulinggroup-put.md)           | [schedulingGroup](schedulinggroup.md)            | Replace a `schedulingGroup`.                      |
+| [Delete](../api/schedulinggroup-delete.md)         | None                                             | Mark `schedulingGroup` as inactive.               |
 
 ## Properties
 
-| Property             | Type                          | Description                                                                                                                                                                                                                                    |
-| -------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | `string`                      | ID of the `schedulingGroup`.                                                                                                                                                                                                                   |
-| displayName          | `string`                      | The display name for the `schedulingGroup`. Required.                                                                                                                                                                                          |
-| isActive             | `bool`                        | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones. Required.                                                                                                                            |
-| userIds              | `collection(string)`          | The list of user IDs that are a member of the `schedulingGroup`. Required.                                                                                                                                                                     |
-| createdDateTime      | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| Property             | Type                          | Description            |
+| -------------------- | ----------------------------- | ---------------------- |
+| code          | `string`                      | The code for the `schedulingGroup` to represent an external identifier. This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters. |
+| createdDateTime      | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |                 |
+| displayName          | `string`                      | The display name for the `schedulingGroup`. Required.      |
+| id                   | `string`                      | ID of the `schedulingGroup`.  
+| isActive             | `bool`                        | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones. Required.             |
+| lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this `schedulingGroup`. |
 | lastModifiedDateTime | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
-| lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this `schedulingGroup`.                                                                                                                                                                                         |
+| userIds              | `collection(string)`          | The list of user IDs that are a member of the `schedulingGroup`. Required.   |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -56,7 +57,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "isActive": true,
   "userIds": ["String (identifier)"],
-  "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
+  "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"},
+  "code": "String"
 }
 ```
 

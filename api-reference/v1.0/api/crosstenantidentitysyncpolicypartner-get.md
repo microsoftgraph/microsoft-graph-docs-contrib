@@ -3,7 +3,7 @@ title: "Get crossTenantIdentitySyncPolicyPartner"
 description: "Get the user synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "crosstenantidentitysyncpolicypartner_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantidentitysyncpolicypartner-get-permissions.md)]
 
-The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The signed-in user must also be assigned the following minimum [directory role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Security Administrator
 
@@ -44,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [crossTenantId
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

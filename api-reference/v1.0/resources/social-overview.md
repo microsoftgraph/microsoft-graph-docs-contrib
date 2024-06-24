@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph API to integrate people intelligence in an app"
 description: "Microsoft Graph enables access to useful data about people and documents they interact with."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: conceptualPageType
 ---
 
@@ -20,7 +20,7 @@ about a person from across mail, contacts, and social networks. The results are 
 relevance based on multiple communication and collaboration patterns and business relationships. The API
 lets you browse, sort, select, filter, or search for persons based on your criteria.
 
-For scenarios and examples, see [Get information about relevant people](/graph/people-example).
+For scenarios and examples, see [Get information about relevant people](/graph/people-insights-overview).
 
 To use the API, see the following:
 
@@ -37,5 +37,3 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

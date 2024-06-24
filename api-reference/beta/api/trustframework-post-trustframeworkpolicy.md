@@ -1,9 +1,9 @@
 ---
 title: "Create trustFrameworkPolicy"
-description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant." 
+description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # Create trustFrameworkPolicy
@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframework_post_trustframeworkpolicy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframework-post-trustframeworkpolicy-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+The work or school account must have at least the *B2C IEF Keyset Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /trustFramework/policies
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/xml. Required.|
 
 ## Request body
@@ -62,7 +62,7 @@ The following example creates a **trustFrameworkPolicy**.
 POST https://graph.microsoft.com/beta/trustFramework/policies
 Content-Type: application/xml
 
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="contoso.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
 ```
@@ -79,7 +79,7 @@ HTTP/1.1 201 Created
 Content-Type: application/xml
 Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
 
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="contoso.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base" PublicPolicyUri="http://contoso.com/B2C_1A_Test">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
 ```

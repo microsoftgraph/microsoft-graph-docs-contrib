@@ -3,7 +3,7 @@ title: "remoteAssistanceSettings resource type"
 description: "Remote assistance settings for the account"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

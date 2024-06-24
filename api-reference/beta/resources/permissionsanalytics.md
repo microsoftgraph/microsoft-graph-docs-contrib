@@ -2,8 +2,9 @@
 title: "permissionsAnalytics resource type"
 description: "Container for permissions analytics findings in Microsoft Entra Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

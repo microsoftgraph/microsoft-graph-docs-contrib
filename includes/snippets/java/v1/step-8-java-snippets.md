@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Subscription subscription = new Subscription();
-subscription.expirationDateTime = OffsetDateTimeSerializer.deserialize("2023-01-12T18:23:45.9356913Z");
+OffsetDateTime expirationDateTime = OffsetDateTime.parse("2023-01-12T18:23:45.9356913Z");
+subscription.setExpirationDateTime(expirationDateTime);
+Subscription result = graphClient.subscriptions().bySubscriptionId("{subscription-id}").patch(subscription);
 
-graphClient.subscriptions("88aa8a88-88a8-88a8-8888-88a8aa88a88a")
-	.buildRequest()
-	.patch(subscription);
 
 ```

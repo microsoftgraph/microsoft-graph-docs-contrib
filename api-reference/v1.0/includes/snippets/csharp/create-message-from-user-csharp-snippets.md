@@ -24,7 +24,7 @@ var requestBody = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AdeleV@contoso.onmicrosoft.com",
+				Address = "AdeleV@contoso.com",
 			},
 		},
 	},

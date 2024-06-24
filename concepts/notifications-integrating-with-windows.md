@@ -2,7 +2,7 @@
 title: "Integrate your Windows UWP app with the client-side SDK (deprecated)"
 description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Windows UWP apps (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ---
 
 # Integrate your Windows UWP app with the client-side SDK for user notifications (deprecated)
@@ -273,7 +273,7 @@ A notification is removed from the user notification store only if it is expired
 await channel.DeleteUserNotificationAsync(notification.Id);
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-windows/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) for Windows UWP apps.

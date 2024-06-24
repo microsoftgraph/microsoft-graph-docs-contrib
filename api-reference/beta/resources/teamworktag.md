@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -22,11 +22,11 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTags](../api/teamworktag-list.md)|[**teamworkTag**](teamworktag.md) collection|Get a list of the **teamworkTag** objects and their properties.|
-|[Create teamworkTag](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Create a new **teamworkTag** object.|
-|[Get teamworkTag](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
-|[Update teamworkTag](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object permanently.|
+|[List](../api/teamworktag-list.md)|[**teamworkTag**](teamworktag.md) collection|Get a list of the **teamworkTag** objects and their properties.|
+|[Create](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Create a new **teamworkTag** object.|
+|[Get](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
+|[Update](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
+|[Delete](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object permanently.|
 
 ## Properties
 |Property|Type|Description|
@@ -51,7 +51,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -72,5 +72,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [teamworkTagMember](../resources/teamworktagmember.md)

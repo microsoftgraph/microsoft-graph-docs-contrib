@@ -3,7 +3,7 @@ title: "bookingService resource type"
 description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -17,9 +17,9 @@ Represents information about a particular service provided by a [bookingBusiness
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingBusiness](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingBusiness](../resources/bookingbusiness.md).|
+|[List](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingBusiness](../resources/bookingbusiness.md).|
+|[Create](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Get](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingBusiness](../resources/bookingbusiness.md).|
 |[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [bookingBusiness](../resources/bookingbusiness.md). |
 |[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [bookingBusiness](../resources/bookingbusiness.md). |
 

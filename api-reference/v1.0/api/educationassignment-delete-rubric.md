@@ -3,7 +3,7 @@ title: "Delete educationRubric from educationAssignment"
 description: "Delete an educationRubric from an educationAssignment"
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /education/classes/{class-id}/assignments/{assignment-id}/rubric/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

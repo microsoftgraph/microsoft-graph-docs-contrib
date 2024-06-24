@@ -2,14 +2,16 @@
 title: "mobileAppTroubleshootingAppPolicyCreationHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "jaiprakashmb"
-ms.localizationpriority: medium
-ms.prod: "intune"
+localization_priority: Normal
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # mobileAppTroubleshootingAppPolicyCreationHistory resource type
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,7 +25,7 @@ Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubles
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|runState|[runState](../resources/intune-troubleshooting-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
 ## Relationships

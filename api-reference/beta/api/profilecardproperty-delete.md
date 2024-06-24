@@ -3,7 +3,7 @@ title: "Delete profileCardProperty"
 description: "Delete a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -42,7 +42,7 @@ DELETE /admin/people/profileCardProperties/{id}
 
 | Name          | Description    |
 |:--------------|:---------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

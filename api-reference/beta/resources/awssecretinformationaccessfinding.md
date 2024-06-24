@@ -2,8 +2,9 @@
 title: "awsSecretInformationAccessFinding resource type"
 description: "Represents findings for identities who can access secret information."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

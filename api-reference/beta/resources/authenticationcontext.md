@@ -3,7 +3,7 @@ title: "authenticationContext resource type"
 description: "Describes the conditional access authentication context of a sign-in event."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ For more information about authentication context in conditional access, see the
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationContext"

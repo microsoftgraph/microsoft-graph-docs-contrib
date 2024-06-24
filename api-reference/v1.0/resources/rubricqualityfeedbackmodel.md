@@ -3,7 +3,7 @@ title: "rubricQualityFeedbackModel resource type"
 description: "Feedback related to a specific quality of an educationRubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

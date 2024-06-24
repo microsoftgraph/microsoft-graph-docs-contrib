@@ -3,7 +3,7 @@ title: "List deviceImages"
 description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -37,13 +37,13 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## Optional query parameters
 
-This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,12 +106,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
 }
 -->
 
@@ -119,20 +121,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/deviceImages",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-      "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
-      "displayName": "Display Name value",
-      "expirationDate": "2022-11-10",
-      "osBuildNumber": "OS Build Number value",
+      "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
+      "displayName": "ImageForDev",
+      "expirationDate": "2024-06-11",
+      "osBuildNumber": "21H2",
       "osStatus": "supported",
-      "operatingSystem": "Operating System value",
-      "version": "Version value",
-      "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "lastModifiedDateTime": "2020-11-03T07:03:44Z",
-      "status": "pending",
-      "statusDetails": null
+      "operatingSystem": "Windows 10 Enterprise",
+      "version": "0.0.1",
+      "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
+      "status": "ready",
+      "statusDetails": null,
+      "errorCode": null
     }
   ]
 }

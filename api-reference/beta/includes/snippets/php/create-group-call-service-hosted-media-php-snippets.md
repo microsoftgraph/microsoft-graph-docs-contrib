@@ -5,8 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Call;
+use Microsoft\Graph\Beta\Generated\Models\CallDirection;
+use Microsoft\Graph\Beta\Generated\Models\ParticipantInfo;
+use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
+use Microsoft\Graph\Beta\Generated\Models\InvitationParticipantInfo;
+use Microsoft\Graph\Beta\Generated\Models\Modality;
+use Microsoft\Graph\Beta\Generated\Models\ServiceHostedMediaConfig;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();

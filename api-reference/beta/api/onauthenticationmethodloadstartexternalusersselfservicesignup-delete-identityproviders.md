@@ -3,7 +3,7 @@ title: "Remove identityProvider (from a user flow)"
 description: "Remove an identity provider from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microso
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ## Examples
 
 #### Request
-Here's an example of a request to remove Facebook as an identity provider option for account creation.
+The following example shows a request to remove Facebook as an identity provider option for account creation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 [!INCLUDE [sample-code](../includes/snippets/php/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

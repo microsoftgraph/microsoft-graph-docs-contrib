@@ -3,7 +3,7 @@ title: "Working with Intune in Microsoft Graph"
 description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "jaiprakashmb"
 ms.localizationpriority: high
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: conceptualPageType
 ---
 
@@ -51,9 +51,6 @@ Microsoft Graph includes two sets of APIs that you can use to manage Windows upd
 - [Windows updates APIs](/graph/windowsupdates-concept-overview)
 
 You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next Steps
 

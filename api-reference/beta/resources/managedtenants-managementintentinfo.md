@@ -3,7 +3,7 @@ title: "managementIntentInfo resource type"
 description: "Represents relationship information for a management intent."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ThreatAssessmentRequest threatAssessmentRequest = graphClient.informationProtection().threatAssessmentRequests("11922306-b25b-4605-ff0d-08d772fcf996")
-	.buildRequest()
-	.expand("results")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ThreatAssessmentRequest result = graphClient.informationProtection().threatAssessmentRequests().byThreatAssessmentRequestId("{threatAssessmentRequest-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"results"};
+});
+
 
 ```

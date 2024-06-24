@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.sites.item.contenttypes.item.copy_to_default_content_location.copy_to_default_content_location_post_request_body import CopyToDefaultContentLocationPostRequestBody
+from msgraph_beta.generated.models.item_reference import ItemReference
+from msgraph_beta.generated.models.sharepoint_ids import SharepointIds
 
 graph_client = GraphServiceClient(credentials, scopes)
 

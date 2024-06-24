@@ -3,7 +3,7 @@ title: "deviceGeoLocation resource type"
 description: "Device location"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

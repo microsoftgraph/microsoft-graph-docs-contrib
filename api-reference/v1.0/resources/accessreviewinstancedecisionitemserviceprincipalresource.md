@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
 description: "Represents service principals whose access to a resource is represented through an accessReviewInstanceDecisionItem object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

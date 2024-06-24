@@ -3,7 +3,7 @@ title: "educationSynchronizationDataProvider resource type"
 description: "Represents the source SIS schema. This allows the system to know how to map the incoming data to the Microsoft Entra schema. "
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

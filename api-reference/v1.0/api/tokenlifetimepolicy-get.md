@@ -3,7 +3,7 @@ title: "Get tokenLifetimePolicy"
 description: "Retrieve the properties and relationships of tokenLifetimePolicy object."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ This method supports the `$expand` and `$select` OData query parameters to help 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

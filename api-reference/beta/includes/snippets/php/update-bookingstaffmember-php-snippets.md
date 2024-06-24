@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingStaffMember;
+use Microsoft\Graph\Beta\Generated\Models\BookingWorkHours;
+use Microsoft\Graph\Beta\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Beta\Generated\Models\BookingWorkTimeSlot;
+use Microsoft\Kiota\Abstractions\Types\Time;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingStaffMember();
@@ -87,6 +93,6 @@ $workingHoursArray []= $workingHoursBookingWorkHours5;
 $requestBody->setWorkingHours($workingHoursArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
 
 ```

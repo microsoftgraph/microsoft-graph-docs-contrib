@@ -3,7 +3,7 @@ title: "bookingStaffMember resource type"
 description: "Represents a staff member who provides services in a bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -29,9 +29,9 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List staff members](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
-|[Create bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md). |
-|[Get bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md).|
+|[List](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Create](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Get](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md).|
 |[Update](../api/bookingstaffmember-update.md) | None	|Update the properties of a **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md).|
 |[Delete](../api/bookingstaffmember-delete.md) | None |Delete a staff member in the specified [bookingBusiness](../resources/bookingbusiness.md). |
 

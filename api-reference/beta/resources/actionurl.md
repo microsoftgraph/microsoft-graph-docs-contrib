@@ -3,7 +3,7 @@ title: "actionUrl resource type"
 description: "The link to the documentation or Microsoft Entra admin center page that provides more information about an actionStep."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

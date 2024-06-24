@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAnomalyCorrelationGroupOverview resource type"
 description: "The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

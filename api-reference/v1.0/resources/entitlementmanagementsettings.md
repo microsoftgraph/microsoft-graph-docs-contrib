@@ -3,7 +3,7 @@ title: "entitlementManagementSettings resource type"
 description: "Represents tenant-wide settings for Microsoft Entra entitlement management."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # entitlementManagementSettings resource type
@@ -16,8 +16,8 @@ Represents settings that control the behavior of [Microsoft Entra entitlement ma
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get entitlementManagementSettings](../api/entitlementmanagementsettings-get.md)|[entitlementManagementSettings](entitlementmanagementsettings.md)|Read the properties of an **entitlementManagementSettings** object. |
-|[Update entitlementManagementSettings](../api/entitlementmanagementsettings-update.md)|[entitlementManagementSettings](entitlementmanagementsettings.md)|Update the properties of an **entitlementManagementSettings** object. |
+|[Get](../api/entitlementmanagementsettings-get.md)|[entitlementManagementSettings](entitlementmanagementsettings.md)|Read the properties of an **entitlementManagementSettings** object. |
+|[Update](../api/entitlementmanagementsettings-update.md)|[entitlementManagementSettings](entitlementmanagementsettings.md)|Update the properties of an **entitlementManagementSettings** object. |
 
 ## Properties
 |Property|Type|Description|

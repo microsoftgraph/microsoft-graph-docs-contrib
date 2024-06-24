@@ -1,10 +1,11 @@
 ---
 title: "educationPointsOutcome resource type"
-description: "An educationOutcome that gives a numerical grade"
+description: "Represents an educationOutcome that gives a numerical grade"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Points outcome
 ---
 
 # educationPointsOutcome resource type
@@ -13,20 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An [educationOutcome](educationoutcome.md) that gives a numerical grade.
+Represents an [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update **educationOutcome** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Unique identifier for the educationPointsOutcome.|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade the teacher has given the student for this assignment.|
+|id|String|Unique identifier for the **educationPointsOutcome**.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade that the teacher gave the student for this assignment.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A copy of the points property that is made when the grade is released to the student.|
 
 ## Relationships
@@ -35,7 +36,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

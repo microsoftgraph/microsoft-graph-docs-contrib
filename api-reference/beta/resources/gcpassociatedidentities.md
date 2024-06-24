@@ -2,8 +2,9 @@
 title: "gcpAssociatedIdentities resource type"
 description: "A container for different kinds of GCP identities."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

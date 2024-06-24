@@ -3,7 +3,7 @@ title: "List calendarView"
 description: "Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range."
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
@@ -81,7 +81,7 @@ If the result set spans multiple pages, **calendarView** returns an **@odata.nex
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

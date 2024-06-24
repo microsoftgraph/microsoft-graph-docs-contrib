@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
-identityProviderBase.responseType = EnumSet.of(OpenIdConnectResponseTypes.ID_TOKEN);
+identityProviderBase.setOdataType("#microsoft.graph.socialIdentityProvider");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("responseType", "id_token");
+identityProviderBase.setAdditionalData(additionalData);
+IdentityProviderBase result = graphClient.identity().identityProviders().byIdentityProviderBaseId("{identityProviderBase-id}").patch(identityProviderBase);
 
-graphClient.identity().identityProviders("OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7")
-	.buildRequest()
-	.patch(identityProviderBase);
 
 ```

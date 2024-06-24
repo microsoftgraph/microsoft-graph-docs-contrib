@@ -3,7 +3,7 @@ title: "browserSite resource type"
 description: "Represents a site to use in Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
 ---
 
@@ -16,11 +16,11 @@ Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) t
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List browserSites](../api/browsersitelist-list-sites.md)|[browserSite](../resources/browsersite.md) collection|Get a list of the [browserSite](../resources/browsersite.md) objects and their properties.|
-|[Create browserSite](../api/browsersitelist-post-sites.md)|[browserSite](../resources/browsersite.md)|Create a new [browserSite](../resources/browsersite.md) object in a [browserSiteList](../resources/browsersitelist.md).|
-|[Get browserSite](../api/browsersite-get.md)|[browserSite](../resources/browsersite.md)|Get a [browserSite](../resources/browsersite.md) that resides on a [browserSiteList](../resources/browsersitelist.md).|
-|[Update browserSite](../api/browsersite-update.md)|None|Update the properties of a [browserSite](../resources/browsersite.md) object.|
-|[Delete browserSite](../api/browsersitelist-delete-sites.md)|None|Delete a [browserSite](../resources/browsersite.md) from a [browserSiteList](../resources/browsersitelist.md).|
+|[List](../api/browsersitelist-list-sites.md)|[browserSite](../resources/browsersite.md) collection|Get a list of the [browserSite](../resources/browsersite.md) objects and their properties.|
+|[Create](../api/browsersitelist-post-sites.md)|[browserSite](../resources/browsersite.md)|Create a new [browserSite](../resources/browsersite.md) object in a [browserSiteList](../resources/browsersitelist.md).|
+|[Get](../api/browsersite-get.md)|[browserSite](../resources/browsersite.md)|Get a [browserSite](../resources/browsersite.md) that resides on a [browserSiteList](../resources/browsersitelist.md).|
+|[Update](../api/browsersite-update.md)|None|Update the properties of a [browserSite](../resources/browsersite.md) object.|
+|[Delete](../api/browsersitelist-delete-sites.md)|None|Delete a [browserSite](../resources/browsersite.md) from a [browserSiteList](../resources/browsersitelist.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Internet Explorer mode (IE mode)](https://www.microsoft.com/edge/business/ie-mode)
 - [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)

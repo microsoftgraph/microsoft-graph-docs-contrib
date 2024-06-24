@@ -3,7 +3,7 @@ title: "ediscoveryCustodian: applyHold"
 description: "Start the process of applying hold to eDiscovery custodians."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{eDiscoveryCu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Add tab to chat"
 description: "Adds (pins) a tab to the specified chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
 The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
+> **Notes**:
+> * If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then the tab is effectively added to the meeting.
+> * If the app manifest for a given **appId** contains a static tab that matches the current scope (`chat`/`groupChat`), the static tab is pinned by default.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -34,11 +36,14 @@ POST /chats/{chat-id}/tabs
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
 In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
+
+> [!NOTE] 
+> When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code.
 
 ## Response
 
@@ -139,7 +144,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add tab to channel](channel-post-tabs.md)

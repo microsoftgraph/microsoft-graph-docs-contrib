@@ -2,7 +2,7 @@
 title: "reportRoot: getSharePointSiteUsagePages"
 description: "Get the number of pages viewed across all sites."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -80,7 +80,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsagePages(period=
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -126,7 +126,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -141,7 +141,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsagePages(period=
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -3,7 +3,7 @@ title: "autoReviewSettings resource type (deprecated)"
 description: "Specifies the behavior for when an access review completes."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

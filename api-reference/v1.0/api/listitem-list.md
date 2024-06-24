@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get the collection of items in a list."
 doc_type: apiPageType
 ---
@@ -50,14 +50,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?$expand=fields($select=Name,Color,Quantity)
 ```
 
 # [C#](#tab/csharp)

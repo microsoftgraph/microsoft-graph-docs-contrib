@@ -3,7 +3,7 @@ title: governanceRoleAssignmentRequestStatus resource type
 description: Represents the status of the governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: governance
+ms.subservice: entra-id-governance
 author: rkarim-ms
 ---
 
@@ -25,7 +25,7 @@ Represents the status of the [governanceRoleAssignmentRequest](../resources/gove
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

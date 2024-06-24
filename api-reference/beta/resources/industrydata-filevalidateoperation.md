@@ -3,7 +3,7 @@ title: "fileValidateOperation resource type"
 description: "Represents the asynchronous operation that results from any operation that validates file data."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -27,8 +27,8 @@ Inherits from [validateOperation](industrydata-validateoperation.md).
 
 | Method                                                                            | Return type                                                                                              | Description                                                                                                          |
 | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| [List fileValidateOperations](../api/industrydata-filevalidateoperation-list.md) | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md) collection | Get a list of the [fileValidateOperation](industrydata-filevalidateoperation.md) objects and their properties.     |
-| [Get fileValidateOperation](../api/industrydata-filevalidateoperation-get.md)    | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md)            | Read the properties and relationships of an [fileValidateOperation](industrydata-filevalidateoperation.md) object. |
+| [List](../api/industrydata-filevalidateoperation-list.md) | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md) collection | Get a list of the [fileValidateOperation](industrydata-filevalidateoperation.md) objects and their properties.     |
+| [Get](../api/industrydata-filevalidateoperation-get.md)    | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md)            | Read the properties and relationships of an [fileValidateOperation](industrydata-filevalidateoperation.md) object. |
 
 ## Properties
 

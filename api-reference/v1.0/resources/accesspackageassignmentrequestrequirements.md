@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequestRequirements resource type"
 description: "Identifies the requirements necessary to request the specified access package."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentRequestRequirements resource type

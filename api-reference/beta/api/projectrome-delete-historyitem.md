@@ -1,13 +1,13 @@
 ---
-title: "Delete a historyItem"
+title: "Delete an activityHistoryItem"
 description: "Delete an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---
 
-# Delete a historyItem
+# Delete an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -37,7 +37,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +51,7 @@ If successful, this method returns the `204 No Content` response code if the his
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -66,7 +66,7 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -87,7 +87,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-	
+
   ]
 }
 -->

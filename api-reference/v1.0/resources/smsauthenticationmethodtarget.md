@@ -4,7 +4,7 @@ description: "A collection of groups enabled to use the text message authenticat
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

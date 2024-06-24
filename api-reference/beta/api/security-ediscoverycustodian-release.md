@@ -3,7 +3,7 @@ title: "ediscoveryCustodian: release"
 description: "Release a custodian from a case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 # ediscoveryCustodian: release
@@ -34,7 +34,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -46,7 +46,7 @@ If successful, this action returns a `202 Accepted` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

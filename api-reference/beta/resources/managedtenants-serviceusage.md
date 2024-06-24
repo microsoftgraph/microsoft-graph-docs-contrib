@@ -3,7 +3,7 @@ title: "serviceUsage resource type"
 description: "Represents monthly active usage data for a service in a managed tenant."
 author: "kylewirpel"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

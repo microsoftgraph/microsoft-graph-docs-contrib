@@ -3,7 +3,7 @@ title: "policySet resource type"
 description: "A class containing the properties used for PolicySet."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,8 +25,8 @@ A class containing the properties used for PolicySet.
 |[Create policySet](../api/intune-policyset-policyset-create.md)|[policySet](../resources/intune-policyset-policyset.md)|Create a new [policySet](../resources/intune-policyset-policyset.md) object.|
 |[Delete policySet](../api/intune-policyset-policyset-delete.md)|None|Deletes a [policySet](../resources/intune-policyset-policyset.md).|
 |[Update policySet](../api/intune-policyset-policyset-update.md)|[policySet](../resources/intune-policyset-policyset.md)|Update the properties of a [policySet](../resources/intune-policyset-policyset.md) object.|
-|[update action](../api/intune-policyset-policyset-update.md)|None|Not yet documented|
-|[getPolicySets action](../api/intune-policyset-policyset-getpolicysets.md)|[policySet](../resources/intune-policyset-policyset.md) collection|Not yet documented|
+|[update action](../api/intune-policyset-policyset-update.md)|None||
+|[getPolicySets action](../api/intune-policyset-policyset-getpolicysets.md)|[policySet](../resources/intune-policyset-policyset.md) collection||
 
 ## Properties
 |Property|Type|Description|

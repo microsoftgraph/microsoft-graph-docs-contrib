@@ -3,7 +3,7 @@ title: "tunnelConfiguration resource type"
 description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key for a customer premises equipment (CPE) in a branchSite."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -20,6 +20,7 @@ This is an abstract type from which the [microsoft.graph.networkaccess.tunnelCon
 |Property|Type|Description|
 |:---|:---|:---|
 |preSharedKey|String|A key to establish secure connection between the link and VPN tunnel on the edge.|
+|zoneRedundancyPreSharedKey|String|Another key for zone redundant tunnel. Required only when you select `zoneRedundancy` redindancyTier when creating a deviceLink.|
 
 ## Relationships
 None.
@@ -34,7 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.tunnelConfiguration",
-  "preSharedKey": "String"
+  "preSharedKey": "String",
+  "zoneRedundancyPreSharedKey": "String"
 }
 ```
 

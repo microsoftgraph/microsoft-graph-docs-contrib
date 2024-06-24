@@ -3,7 +3,7 @@ title: "securityNetworkProtocol enum type"
 description: "Possible values for the network protocol."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: enumPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Create schedulingGroup"
 description: "Create a new schedulingGroup."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -62,6 +62,7 @@ Content-type: application/json
 {
   "displayName": "Cashiers",
   "isActive": true,
+  "code": "CashierCode",
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",
     "2a4296b3-a28a-44ba-bc66-0274b9b95851"
@@ -123,6 +124,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Cashiers",
+  "code": "CashierCode",
   "isActive": true,
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",

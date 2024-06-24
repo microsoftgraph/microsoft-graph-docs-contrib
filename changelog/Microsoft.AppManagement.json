@@ -1,0 +1,30 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "0bf4b30a-2aae-46cc-96ea-a79e476b6c20",
+          "ApiChange": "Method",
+          "ChangedApiName": "deletePasswordSingleSignOnCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletePasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for deleting the [password-based single sign-on](https://learn.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user to a given service principal.",
+          "Target": "user"
+        },
+        {
+          "Id": "0bf4b30a-2aae-46cc-96ea-a79e476b6c20",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPasswordSingleSignOnCredentials",
+          "ChangeType": "Addition",
+          "Description": "[getPasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for retrieving the [password-based single sign-on](https://learn.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "0bf4b30a-2aae-46cc-96ea-a79e476b6c20",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-31T20:34:41.7424684Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    }
+  ]
+}

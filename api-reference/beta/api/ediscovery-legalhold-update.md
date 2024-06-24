@@ -3,7 +3,7 @@ title: "Update legalHold"
 description: "Update the properties of a legalHold object."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

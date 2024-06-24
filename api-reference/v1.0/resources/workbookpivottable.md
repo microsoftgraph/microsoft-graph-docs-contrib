@@ -1,13 +1,14 @@
 ---
-title: "pivotTable resource type"
+title: "workbookPivotTable resource type"
 description: "Represents an Excel PivotTable."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Pivot table
 ---
 
-# pivotTable resource type
+# workbookPivotTable resource type
 
 Namespace: microsoft.graph
 
@@ -30,10 +31,10 @@ Represents an Excel PivotTable.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

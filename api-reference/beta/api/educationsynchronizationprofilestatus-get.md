@@ -3,7 +3,7 @@ title: "Get the status of an educationSynchronizationProfile"
 description: "Get the status of a specific school data synchronization profile in the tenant. The response will indicate the status of the sync."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /education/synchronizationProfiles/{id}/profileStatus
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: favorite"
 description: "Change the status of a list of service update messages to favorited for the signed in user."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /admin/serviceAnnouncement/messages/favorite
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

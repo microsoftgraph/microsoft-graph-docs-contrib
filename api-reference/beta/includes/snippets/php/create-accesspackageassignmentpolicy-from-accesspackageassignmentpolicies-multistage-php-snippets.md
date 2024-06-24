@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Beta\Generated\Models\RequestorSettings;
+use Microsoft\Graph\Beta\Generated\Models\UserSet;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalStage;
+use Microsoft\Graph\Beta\Generated\Models\GroupMembers;
+use Microsoft\Graph\Beta\Generated\Models\ExternalSponsors;
+use Microsoft\Graph\Beta\Generated\Models\SingleUser;
+use Microsoft\Graph\Beta\Generated\Models\InternalSponsors;
+use Microsoft\Graph\Beta\Generated\Models\AssignmentReviewSettings;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();

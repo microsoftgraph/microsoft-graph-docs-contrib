@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewHistoryDefinition;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewHistoryDecisionFilter;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewQueryScope;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewHistoryDefinition();

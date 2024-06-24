@@ -3,7 +3,7 @@ title: Create taskDefinition
 description: Create a new task definition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /print/taskDefinitions
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body

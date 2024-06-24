@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.open_id_connect_provider import OpenIdConnectProvider
+from msgraph_beta.generated.models.claims_mapping import ClaimsMapping
+from msgraph_beta.generated.models.open_id_connect_response_mode import OpenIdConnectResponseMode
+from msgraph_beta.generated.models.open_id_connect_response_types import OpenIdConnectResponseTypes
 
 graph_client = GraphServiceClient(credentials, scopes)
 

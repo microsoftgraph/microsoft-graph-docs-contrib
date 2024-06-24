@@ -3,7 +3,7 @@ title: "security resource type"
 description: "Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Connects Microsoft security products, services, and partners to streamline secur
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[runHuntingQuery](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
+|[Run hunting query](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
 
 ## Properties
 None.
@@ -29,7 +29,10 @@ None.
 |alerts |[alert](../resources/alert.md) collection|Notifications for suspicious or potential security issues in a customer’s tenant.|
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
+|collaboration|[microsoft.graph.security.collaborationRoot](../resources/security-collaborationroot.md)|Enables read and other actions on collaborative entities in Microsoft Defender.|
+|identities|[microsoft.graph.security.identityContainer](../resources/security-identityContainer.md)|A container for security identities APIs.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
+|partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | A container that safeguards the Microsoft Azure resources of Microsoft Cloud Solution Provider (CSP) partners’ customers, including alerts, scores, and all aspects of security. |
 |secureScores | [secureScore](securescores.md) collection | Measurements of tenants’ security posture to help protect them from threats. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|

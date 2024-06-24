@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: "driveItem: createUploadSession"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
 ---
@@ -76,8 +76,10 @@ For example, the **item** property allows setting the following parameters:
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
   "fileSize": 1234,
-  "name": "filename.txt"
+  "name": "filename.txt",
+  "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
@@ -390,7 +392,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "request", "name": "explicit-upload-commit"} -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT https://graph.microsoft.com/v1.0/me/drive/root:/{path_to_parent}
 Content-Type: application/json
 If-Match: {etag or ctag}
 
@@ -440,8 +442,10 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+[driveItemSource]: ../resources/driveItemSource.md
+[mediaSource]: ../resources/mediaSource.md
 
-## See also
+## Related content
 
 [Large file upload](/graph/sdks/large-file-upload)
 

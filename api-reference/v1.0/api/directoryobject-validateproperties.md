@@ -3,7 +3,7 @@ title: "directoryObject: validateProperties"
 description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ POST /directoryObjects/validateProperties
 
 | Name           | Description      |
 |:---------------|:-----------------|
-| Authorization  | Bearer {token}. Required.    |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body

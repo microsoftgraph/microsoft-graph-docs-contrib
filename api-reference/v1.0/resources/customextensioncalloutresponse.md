@@ -3,7 +3,7 @@ title: "customExtensionCalloutResponse resource type"
 description: "Defines the custom extension callout response payload that external systems send back for callback scenarios of custom extensions."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

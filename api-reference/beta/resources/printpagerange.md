@@ -3,7 +3,7 @@ title: printPageRange resource type
 description: Specifies the range of pages to be printed.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

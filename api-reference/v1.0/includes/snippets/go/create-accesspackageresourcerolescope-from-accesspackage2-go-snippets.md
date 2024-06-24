@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,17 +15,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewAccessPackageResourceRoleScope()
 role := graphmodels.NewAccessPackageResourceRole()
-id := "6646a29e-da03-49f6-bcd9-dec124492de3"
-role.SetId(&id) 
 displayName := "Contributors"
 role.SetDisplayName(&displayName) 
-description := null
-role.SetDescription(&description) 
 originSystem := "SharePointOnline"
 role.SetOriginSystem(&originSystem) 
 originId := "4"
@@ -33,8 +29,6 @@ resource.SetId(&id)
 role.SetResource(resource)
 requestBody.SetRole(role)
 scope := graphmodels.NewAccessPackageResourceScope()
-id := "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33"
-scope.SetId(&id) 
 displayName := "Root"
 scope.SetDisplayName(&displayName) 
 description := "Root Scope"
@@ -47,6 +41,7 @@ isRootScope := true
 scope.SetIsRootScope(&isRootScope) 
 requestBody.SetScope(scope)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 resourceRoleScopes, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").ResourceRoleScopes().Post(context.Background(), requestBody, nil)
 
 

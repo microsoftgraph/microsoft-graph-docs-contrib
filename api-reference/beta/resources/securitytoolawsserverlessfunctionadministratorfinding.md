@@ -2,8 +2,9 @@
 title: "securityToolAwsServerlessFunctionAdministratorFinding resource type"
 description: "View AWS Serverless functions that can administer security tools."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,8 +22,8 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsServerlessFunctionAdministratorFindings](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
-|[Get securityToolAwsServerlessFunctionAdministratorFinding](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
+|[List](../api/securitytoolawsserverlessfunctionadministratorfinding-list.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) collection|Get a list of the [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) objects and their properties.|
+|[Get](../api/securitytoolawsserverlessfunctionadministratorfinding-get.md)|[securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

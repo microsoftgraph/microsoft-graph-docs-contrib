@@ -3,7 +3,7 @@ title: "callStartedEventMessageDetail resource type"
 description: "Represents the details of an event message about call started."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -46,6 +46,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about call started](/graph/system-messages/#call-started)
 - For more information about other types of events, see [System messages](/graph/system-messages).

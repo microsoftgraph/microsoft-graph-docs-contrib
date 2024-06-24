@@ -3,7 +3,7 @@ title: "companySubscription resource type"
 description: "Represents subscriptions for a tenant."
 ms.localizationpriority: medium
 author: "arp19690"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [entity](entity.md).
 
 | Method                                                              | Return Type                                                | Description                                                                 |
 | :------------------------------------------------------------------ | :--------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [Get companySubscription](../api/companysubscription-get.md)      | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List companySubscriptions](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [Get](../api/companysubscription-get.md)      | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
+| [List](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 

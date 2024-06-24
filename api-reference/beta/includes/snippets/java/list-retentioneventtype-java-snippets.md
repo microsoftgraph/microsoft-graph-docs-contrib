@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RetentionEventTypeCollectionPage retentionEventTypes = graphClient.security().triggerTypes().retentionEventTypes()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.RetentionEventTypeCollectionResponse result = graphClient.security().triggerTypes().retentionEventTypes().get();
+
 
 ```

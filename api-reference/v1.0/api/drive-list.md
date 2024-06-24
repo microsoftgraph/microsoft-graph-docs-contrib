@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Drives
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 doc_type: apiPageType
 ---
@@ -64,6 +64,11 @@ GET /me/drives
 
 This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -141,14 +146,14 @@ Content-Type: application/json
             },
             "lastModifiedBy": {
                 "user": {
-                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "email": "MeganB@contoso.com",
                     "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
                     "displayName": "Megan Bowen"
                 }
             },
             "owner": {
                 "user": {
-                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "email": "MeganB@contoso.com",
                     "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
                     "displayName": "Megan Bowen"
                 }

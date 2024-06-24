@@ -3,7 +3,7 @@ title: "samlSingleSignOnSettings resource type"
 description: "Represents the SAML single sign-on settings."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -19,7 +19,7 @@ Represents a container for settings related to SAML single sign-on.
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

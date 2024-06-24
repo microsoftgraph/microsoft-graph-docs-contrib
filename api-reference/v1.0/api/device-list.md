@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, 
 
 | Name       |  Description|
 |:-----------|:------------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body

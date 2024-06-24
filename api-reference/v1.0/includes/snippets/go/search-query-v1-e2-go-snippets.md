@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphsearch.NewQueryPostRequestBody()
 
@@ -25,6 +25,8 @@ entityTypes := []graphmodels.EntityTypeable {
 	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
+region := "US"
+searchRequest.SetRegion(&region) 
 query := graphmodels.NewSearchQuery()
 queryString := "contoso"
 query.SetQueryString(&queryString) 
@@ -41,7 +43,8 @@ requests := []graphmodels.SearchRequestable {
 }
 requestBody.SetRequests(requests)
 
-query, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+query, err := graphClient.Search().Query().PostAsQueryPostResponse(context.Background(), requestBody, nil)
 
 
 ```

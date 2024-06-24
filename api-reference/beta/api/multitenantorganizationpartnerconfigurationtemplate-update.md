@@ -3,7 +3,7 @@ title: "Update multiTenantOrganizationPartnerConfigurationTemplate"
 description: "Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartner
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -4,7 +4,7 @@ description: "Update the role of member in a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update member in channel
@@ -34,7 +34,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -131,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Update member's role in a team](team-update-members.md)
 

@@ -3,7 +3,7 @@ title: "List onSignUpStart listeners"
 description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$expand` OData query parameter to expand the details o
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -192,7 +192,9 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: list_authenticationlistener_invokeuserflowlistener/container/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_authenticationlistener_invokeuserflowlistener/container/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

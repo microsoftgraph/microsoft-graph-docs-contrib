@@ -4,32 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicyConfigurationPartner crossTenantAccessPolicyConfigurationPartner = new CrossTenantAccessPolicyConfigurationPartner();
 CrossTenantAccessPolicyTenantRestrictions tenantRestrictions = new CrossTenantAccessPolicyTenantRestrictions();
 CrossTenantAccessPolicyTargetConfiguration usersAndGroups = new CrossTenantAccessPolicyTargetConfiguration();
-usersAndGroups.accessType = CrossTenantAccessPolicyTargetConfigurationAccessType.ALLOWED;
-LinkedList<CrossTenantAccessPolicyTarget> targetsList = new LinkedList<CrossTenantAccessPolicyTarget>();
-CrossTenantAccessPolicyTarget targets = new CrossTenantAccessPolicyTarget();
-targets.target = "AllUsers";
-targets.targetType = CrossTenantAccessPolicyTargetType.USER;
-targetsList.add(targets);
-usersAndGroups.targets = targetsList;
-tenantRestrictions.usersAndGroups = usersAndGroups;
+usersAndGroups.setAccessType(CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed);
+LinkedList<CrossTenantAccessPolicyTarget> targets = new LinkedList<CrossTenantAccessPolicyTarget>();
+CrossTenantAccessPolicyTarget crossTenantAccessPolicyTarget = new CrossTenantAccessPolicyTarget();
+crossTenantAccessPolicyTarget.setTarget("AllUsers");
+crossTenantAccessPolicyTarget.setTargetType(CrossTenantAccessPolicyTargetType.User);
+targets.add(crossTenantAccessPolicyTarget);
+usersAndGroups.setTargets(targets);
+tenantRestrictions.setUsersAndGroups(usersAndGroups);
 CrossTenantAccessPolicyTargetConfiguration applications = new CrossTenantAccessPolicyTargetConfiguration();
-applications.accessType = CrossTenantAccessPolicyTargetConfigurationAccessType.ALLOWED;
-LinkedList<CrossTenantAccessPolicyTarget> targetsList1 = new LinkedList<CrossTenantAccessPolicyTarget>();
-CrossTenantAccessPolicyTarget targets1 = new CrossTenantAccessPolicyTarget();
-targets1.target = "Office365";
-targets1.targetType = CrossTenantAccessPolicyTargetType.APPLICATION;
-targetsList1.add(targets1);
-applications.targets = targetsList1;
-tenantRestrictions.applications = applications;
-crossTenantAccessPolicyConfigurationPartner.tenantRestrictions = tenantRestrictions;
+applications.setAccessType(CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed);
+LinkedList<CrossTenantAccessPolicyTarget> targets1 = new LinkedList<CrossTenantAccessPolicyTarget>();
+CrossTenantAccessPolicyTarget crossTenantAccessPolicyTarget1 = new CrossTenantAccessPolicyTarget();
+crossTenantAccessPolicyTarget1.setTarget("Office365");
+crossTenantAccessPolicyTarget1.setTargetType(CrossTenantAccessPolicyTargetType.Application);
+targets1.add(crossTenantAccessPolicyTarget1);
+applications.setTargets(targets1);
+tenantRestrictions.setApplications(applications);
+crossTenantAccessPolicyConfigurationPartner.setTenantRestrictions(tenantRestrictions);
+CrossTenantAccessPolicyConfigurationPartner result = graphClient.policies().crossTenantAccessPolicy().partners().byCrossTenantAccessPolicyConfigurationPartnerTenantId("{crossTenantAccessPolicyConfigurationPartner-tenantId}").patch(crossTenantAccessPolicyConfigurationPartner);
 
-graphClient.policies().crossTenantAccessPolicy().partners("90e29127-71ad-49c7-9ce8-db3f41ea06f1")
-	.buildRequest()
-	.patch(crossTenantAccessPolicyConfigurationPartner);
 
 ```

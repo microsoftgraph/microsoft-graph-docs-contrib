@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_submission_resource import EducationSubmissionResource
+from msgraph.generated.models.education_file_resource import EducationFileResource
 
 graph_client = GraphServiceClient(credentials, scopes)
 

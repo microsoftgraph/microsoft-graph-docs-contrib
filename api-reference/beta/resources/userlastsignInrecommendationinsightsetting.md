@@ -3,7 +3,7 @@ title: "userLastSignInRecommendationInsightSetting resource type"
 description: "In the Microsoft Entra access reviews, the userLastSignInRecommendationInsightSetting represents the settings associated with the insight that is based on the last sign-in date and time of the user, and that is used to aid reviewers to make decisions."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

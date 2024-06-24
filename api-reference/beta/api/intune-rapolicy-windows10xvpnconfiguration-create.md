@@ -3,7 +3,7 @@ title: "Create windows10XVpnConfiguration"
 description: "Create a new windows10XVpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/resourceAccessProfiles
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -55,6 +57,7 @@ The following table shows the properties that are required when you create the w
 |creationDateTime|DateTimeOffset|DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |roleScopeTagIds|String collection|Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |authenticationCertificateId|Guid|ID to the Authentication Certificate|
 |customXmlFileName|String|Custom Xml file name.|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 byte encoding)|
@@ -71,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
 Content-type: application/json
-Content-length: 446
+Content-length: 589
 
 {
   "@odata.type": "#microsoft.graph.windows10XVpnConfiguration",
@@ -81,6 +84,12 @@ Content-length: 446
   "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
   "customXmlFileName": "Custom Xml File Name value",
@@ -93,7 +102,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 559
+Content-Length: 702
 
 {
   "@odata.type": "#microsoft.graph.windows10XVpnConfiguration",
@@ -105,6 +114,12 @@ Content-Length: 559
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
   "customXmlFileName": "Custom Xml File Name value",

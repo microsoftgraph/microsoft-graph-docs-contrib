@@ -3,7 +3,7 @@ title: "identityUserFlowAttributeAssignment resource type"
 description: "identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -17,11 +17,11 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-get.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Read the properties and relationships of an identityUserFlowAttributeAssignment object.|
-|[Update identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-update.md)|None|Update the properties of an identityUserFlowAttributeAssignment object.|
-|[Delete identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-delete.md)|None|Delete a specific identityUserFlowAttributeAssignment object.|
-|[getOrder](../api/identityuserflowattributeassignment-getorder.md)|[assignmentOrder](../resources/assignmentorder.md)|Gets the order of the identityUserFlowAttributes being collected within a user flow.|
-|[setOrder](../api/identityuserflowattributeassignment-setorder.md)|None|Sets the order of the identityUserFlowAttributes being collected within a user flow.|
+|[Get](../api/identityuserflowattributeassignment-get.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Read the properties and relationships of an identityUserFlowAttributeAssignment object.|
+|[Update](../api/identityuserflowattributeassignment-update.md)|None|Update the properties of an identityUserFlowAttributeAssignment object.|
+|[Delete](../api/identityuserflowattributeassignment-delete.md)|None|Delete a specific identityUserFlowAttributeAssignment object.|
+|[Get order](../api/identityuserflowattributeassignment-getorder.md)|[assignmentOrder](../resources/assignmentorder.md)|Gets the order of the identityUserFlowAttributes being collected within a user flow.|
+|[Set order](../api/identityuserflowattributeassignment-setorder.md)|None|Sets the order of the identityUserFlowAttributes being collected within a user flow.|
 
 ## Properties
 
@@ -42,7 +42,7 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

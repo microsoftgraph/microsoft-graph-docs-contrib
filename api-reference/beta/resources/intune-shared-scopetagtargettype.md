@@ -3,7 +3,7 @@ title: "scopeTagTargetType enum type"
 description: "Specifies which type of Entra object to target in the Group for a given ScopeTag."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

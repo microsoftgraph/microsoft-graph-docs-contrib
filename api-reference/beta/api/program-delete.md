@@ -3,7 +3,7 @@ title: "Delete program (deprecated)"
 description: "In the Microsoft Entra access reviews feature, delete a program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 

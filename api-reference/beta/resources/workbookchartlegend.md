@@ -3,8 +3,9 @@ title: "workbookChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart legend
 ---
 
 # workbookChartLegend resource type
@@ -36,7 +37,7 @@ Represents the legend in a chart.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

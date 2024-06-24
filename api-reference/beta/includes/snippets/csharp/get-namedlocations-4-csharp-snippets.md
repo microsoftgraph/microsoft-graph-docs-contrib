@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.ConditionalAccess.NamedLocations.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any";
+	requestConfiguration.QueryParameters.Filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')";
 });
 
 

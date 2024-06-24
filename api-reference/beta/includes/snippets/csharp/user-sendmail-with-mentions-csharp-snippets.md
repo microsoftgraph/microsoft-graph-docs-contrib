@@ -22,7 +22,7 @@ var requestBody = new SendMailPostRequestBody
 				EmailAddress = new EmailAddress
 				{
 					Name = "Samantha Booth",
-					Address = "samanthab@contoso.onmicrosoft.com",
+					Address = "samanthab@contoso.com",
 				},
 			},
 		},
@@ -33,7 +33,7 @@ var requestBody = new SendMailPostRequestBody
 				Mentioned = new EmailAddress
 				{
 					Name = "Dana Swope",
-					Address = "danas@contoso.onmicrosoft.com",
+					Address = "danas@contoso.com",
 				},
 			},
 		},

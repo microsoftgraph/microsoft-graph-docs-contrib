@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 FeatureRolloutPolicy featureRolloutPolicy = new FeatureRolloutPolicy();
-featureRolloutPolicy.displayName = "PassthroughAuthentication rollout policy";
-featureRolloutPolicy.description = "PassthroughAuthentication rollout policy";
-featureRolloutPolicy.feature = StagedFeatureName.PASSTHROUGH_AUTHENTICATION;
-featureRolloutPolicy.isEnabled = true;
-featureRolloutPolicy.isAppliedToOrganization = false;
+featureRolloutPolicy.setDisplayName("PassthroughAuthentication rollout policy");
+featureRolloutPolicy.setDescription("PassthroughAuthentication rollout policy");
+featureRolloutPolicy.setFeature(StagedFeatureName.PassthroughAuthentication);
+featureRolloutPolicy.setIsEnabled(true);
+featureRolloutPolicy.setIsAppliedToOrganization(false);
+FeatureRolloutPolicy result = graphClient.policies().featureRolloutPolicies().post(featureRolloutPolicy);
 
-graphClient.policies().featureRolloutPolicies()
-	.buildRequest()
-	.post(featureRolloutPolicy);
 
 ```

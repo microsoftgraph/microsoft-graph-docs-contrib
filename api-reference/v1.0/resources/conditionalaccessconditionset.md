@@ -4,7 +4,7 @@ description: "Represents the type of conditions that govern when the policy appl
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ Represents the type of conditions that govern when the policy applies.
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider risk levels included in the policy. The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -62,7 +63,8 @@ The following is a JSON representation of the resource.
   "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"],
   "userRiskLevels": ["String"],
-  "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"}
+  "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "insiderRiskLevels": "String"
 }
 ```
 

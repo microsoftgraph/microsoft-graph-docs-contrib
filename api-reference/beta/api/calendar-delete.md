@@ -3,7 +3,7 @@ title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## Request headers
 | Name           |  Type    | Description|
 |:---------------|:---------|:----------|
-| Authorization  |  string  | Bearer {token}. Required. |
+| Authorization  |  string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -60,10 +60,6 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/me/calendar
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/me/calendar
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

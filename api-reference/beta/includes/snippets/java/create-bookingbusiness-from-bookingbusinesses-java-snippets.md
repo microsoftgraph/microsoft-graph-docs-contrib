@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BookingBusiness bookingBusiness = new BookingBusiness();
-bookingBusiness.displayName = "Fourth Coffee";
+bookingBusiness.setDisplayName("Fourth Coffee");
 PhysicalAddress address = new PhysicalAddress();
-address.postOfficeBox = "P.O. Box 123";
-address.street = "4567 Main Street";
-address.city = "Buffalo";
-address.state = "NY";
-address.countryOrRegion = "USA";
-address.postalCode = "98052";
-bookingBusiness.address = address;
-bookingBusiness.phone = "206-555-0100";
-bookingBusiness.email = "manager@fourthcoffee.com";
-bookingBusiness.webSiteUrl = "https://www.fourthcoffee.com";
-bookingBusiness.defaultCurrencyIso = "USD";
+address.setPostOfficeBox("P.O. Box 123");
+address.setStreet("4567 Main Street");
+address.setCity("Buffalo");
+address.setState("NY");
+address.setCountryOrRegion("USA");
+address.setPostalCode("98052");
+bookingBusiness.setAddress(address);
+bookingBusiness.setPhone("206-555-0100");
+bookingBusiness.setEmail("manager@fourthcoffee.com");
+bookingBusiness.setWebSiteUrl("https://www.fourthcoffee.com");
+bookingBusiness.setDefaultCurrencyIso("USD");
+BookingBusiness result = graphClient.solutions().bookingBusinesses().post(bookingBusiness);
 
-graphClient.bookingBusinesses()
-	.buildRequest()
-	.post(bookingBusiness);
 
 ```

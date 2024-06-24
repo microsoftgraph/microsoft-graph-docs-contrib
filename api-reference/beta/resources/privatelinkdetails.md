@@ -3,7 +3,7 @@ title: "privateLinkDetails resource type"
 description: "Provides details about Private Links in your Microsoft Entra tenant"
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

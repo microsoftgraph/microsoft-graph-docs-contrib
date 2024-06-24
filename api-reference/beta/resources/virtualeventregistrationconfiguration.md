@@ -1,9 +1,9 @@
 ---
 title: "virtualEventRegistrationConfiguration resource type"
 description: "Represents the registration configuration of a virtual event."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|questions|[virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md) collection|Registration questions.|
+|questions|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection|Registration questions.|
 
 ## JSON representation
 

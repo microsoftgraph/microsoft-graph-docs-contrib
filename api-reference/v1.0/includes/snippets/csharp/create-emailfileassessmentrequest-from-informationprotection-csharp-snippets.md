@@ -12,7 +12,7 @@ using Microsoft.Graph.Models;
 var requestBody = new EmailFileAssessmentRequest
 {
 	OdataType = "#microsoft.graph.emailFileAssessmentRequest",
-	RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+	RecipientEmail = "tifc@contoso.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Malware,
 	ContentData = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....",

@@ -3,7 +3,7 @@ title: printTaskTrigger resource type
 description: Determines the conditions under which a new printTask will be executed based on the associated printTaskDefinition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ For details about how to use this resource to add pull printing support to Unive
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Get a list of printTaskTriggers associated with a particular [printer](printer.md). |
-| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get a particular printTaskTrigger associated with a particular [printer](printer.md).|
+| [List task triggers](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Get a list of printTaskTriggers associated with a particular [printer](printer.md). |
+| [Get task trigger](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get a particular printTaskTrigger associated with a particular [printer](printer.md).|
 
 
 ## Properties
@@ -45,7 +45,7 @@ For details about how to use this resource to add pull printing support to Unive
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

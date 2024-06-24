@@ -3,7 +3,7 @@ title: "Get hostPort"
 description: "Read the properties and relationships of a hostPort object."
 author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Read the properties and relationships of a [hostPort](../resources/security-hostport.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -57,7 +59,7 @@ The following properties can be used for `$expand` calls.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a [hostPort](../
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +123,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPorts/ODUuM
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

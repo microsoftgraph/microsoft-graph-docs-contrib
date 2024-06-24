@@ -2,8 +2,9 @@
 title: "List group transitive members"
 description: "Get a list of the group's members."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -26,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_transitivemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-transitivemembers-permissions.md)]
 
-> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
 
 ## HTTP request
 
@@ -50,7 +51,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Name             | Description                                                                                                                                                                                                       |
 | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

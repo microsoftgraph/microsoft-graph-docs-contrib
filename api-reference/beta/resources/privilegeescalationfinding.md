@@ -2,8 +2,9 @@
 title: "privilegeEscalationFinding resource type"
 description: "Represents findings for a list of privilege escalations in AWS or GCP."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

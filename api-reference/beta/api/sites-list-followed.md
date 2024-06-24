@@ -3,7 +3,7 @@ author: learafa
 description: "List the sites that have been followed by the signed in user."
 title: List followed sites
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # List followed sites

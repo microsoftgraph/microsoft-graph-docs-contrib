@@ -2,8 +2,9 @@
 title: "awsUser resource type"
 description: "Represents AWS users."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,9 +21,9 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS users](../api/awsassociatedidentities-list-users.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
-|[Get AWS user](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
-|[List AWS users with assumable roles](../api/awsuser-list-assumableroles.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
+|[List](../api/awsassociatedidentities-list-users.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[Get](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[List assumable roles](../api/awsuser-list-assumableroles.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 
 ## Properties
 |Property|Type|Description|

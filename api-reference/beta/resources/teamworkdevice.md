@@ -3,7 +3,7 @@ title: "teamworkDevice resource type"
 description: "Represents details about a Microsoft Teams-enabled device that is provisioned for the tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -88,7 +88,7 @@ Inherits from [entity](../resources/entity.md).
 |operations|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|The async operations on the device.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

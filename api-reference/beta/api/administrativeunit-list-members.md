@@ -3,7 +3,7 @@ title: "List members"
 description: "Use this API to get the members list (users, groups, and devices) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -23,12 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_list_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-list-members-permissions.md)]
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 > [!NOTE]
-> To view the members with a hidden membership in an administrative unit, the app must be granted the `Member.Read.Hidden` delegated or application permission.
+> To view the members with a hidden membership in an administrative unit, the app must be granted the *Member.Read.Hidden* delegated or application permission.
 
 [!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
-
-[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ This method (when used without `$ref`) supports the [OData query parameters](/gr
 ## Request headers
 | Header      |Value|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body

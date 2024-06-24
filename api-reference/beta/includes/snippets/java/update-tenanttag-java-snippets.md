@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TenantTag tenantTag = new TenantTag();
-tenantTag.displayName = "Onboarding";
-tenantTag.description = "Tenants that we are currently onboarding";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.tenantRelationships().managedTenants().tenantTags("{tenantTagId}")
-	.buildRequest()
-	.patch(tenantTag);
+com.microsoft.graph.beta.models.managedtenants.TenantTag tenantTag = new com.microsoft.graph.beta.models.managedtenants.TenantTag();
+tenantTag.setDisplayName("Onboarding");
+tenantTag.setDescription("Tenants that we are currently onboarding");
+com.microsoft.graph.models.managedtenants.TenantTag result = graphClient.tenantRelationships().managedTenants().tenantTags().byTenantTagId("{tenantTag-id}").patch(tenantTag);
+
 
 ```

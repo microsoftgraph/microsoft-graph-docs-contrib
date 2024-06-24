@@ -1,9 +1,9 @@
 ---
 title: "deviceComplianceScriptRuleError resource type"
-description: ""
+description: "Intune Deviceconfig Devicecompliancescriptruleerror Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

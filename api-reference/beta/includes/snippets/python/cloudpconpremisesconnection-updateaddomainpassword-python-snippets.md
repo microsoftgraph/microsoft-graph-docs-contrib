@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.onpremisesconnections.item.update_ad_domain_password.update_ad_domain_password_post_request_body import UpdateAdDomainPasswordPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

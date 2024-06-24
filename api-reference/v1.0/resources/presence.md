@@ -4,7 +4,7 @@ description: "Contains information about a user's presence, including their avai
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence resource type
@@ -15,14 +15,14 @@ Contains information about a user's presence, including their availability and u
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/changenotifications-for-presence).
 
 ## Methods
 
 | Method                                                                               | Return Type                                     | Description                                         |
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
 | [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                  |
-| [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.    |
+| [Get presence for multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.    |
 | [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set an application's presence session for a user.   |
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear an application's presence session for a user. |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

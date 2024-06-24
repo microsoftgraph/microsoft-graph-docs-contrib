@@ -3,7 +3,7 @@ title: "Update caseSettings"
 description: "Update the properties of an eDiscovery caseSettings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/settings
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

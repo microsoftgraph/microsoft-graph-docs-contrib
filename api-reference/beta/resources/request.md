@@ -3,7 +3,7 @@ title: "request resource type"
 description: "Represents the details of a request in PIM or userConsentRequests."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

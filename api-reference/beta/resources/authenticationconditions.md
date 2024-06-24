@@ -3,7 +3,7 @@ title: "authenticationConditions resource type"
 description: "The conditions on which an authenticationEventListener should trigger."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

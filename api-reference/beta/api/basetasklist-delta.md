@@ -3,7 +3,7 @@ title: "baseTaskList: delta"
 description: "Get a set of baseTaskList resources that have been added, deleted, or removed in Microsoft To Do."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ includes the encoded, desired parameters.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
@@ -82,10 +82,6 @@ If successful, this function returns a `200 OK` response code and a [baseTaskLis
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]

@@ -1,10 +1,11 @@
 ---
 title: "educationGradingCategory resource type"
-description: "Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade."
+description: "Represents the weighted contribution of an assignment to a class average grade."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Grading category
 ---
 
 # educationGradingCategory resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
+Represents the weighted contribution of an assignment to a class average grade.
 
 **Note:** Configure grading categories using [Assignment settings](../resources/educationassignmentsettings.md).
 
@@ -21,9 +22,9 @@ Add grading categories to the existing class-wide settings to weight assignments
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
-|[Remove gradingCategory](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
-|[Update gradingCategory](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
+|[Add](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Delete](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
+|[Update](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
 
 ## Properties

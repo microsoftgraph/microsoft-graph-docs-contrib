@@ -3,7 +3,7 @@ title: "Outlook personal contacts API overview"
 description: "Use the Outlook personal contacts API in Microsoft Graph to manage emails, schedule meetings, find user information, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 

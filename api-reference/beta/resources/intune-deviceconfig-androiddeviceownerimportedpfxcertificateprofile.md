@@ -3,7 +3,7 @@ title: "androidDeviceOwnerImportedPFXCertificateProfile resource type"
 description: "Android Device Owner PFX Import certificate profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

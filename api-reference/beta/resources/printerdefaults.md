@@ -3,7 +3,7 @@ title: printerDefaults resource type
 description: Represents the printer's default settings. Check the printer's capabilities to see all the values that it supports.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -151,7 +151,7 @@ The following is a JSON representation of the resource.
 
 ```
 
-## See also
+## Related content
 
 * [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md)
 

@@ -3,7 +3,7 @@ title: "Embed Microsoft Teams in your app"
 description: "Learn how to embed the Microsoft Teams experience within your own application."
 author: "erichui-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Embed Microsoft Teams in your app
@@ -874,7 +874,7 @@ If your app has 50 users, and each user receives messages from 20 users and send
 
 For the most up-to-date pricing information, see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
-## See also
+## Related content
 
 - [Add reactions to chat messages](/graph/api/chatmessage-setreaction)
 - [Add @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples)

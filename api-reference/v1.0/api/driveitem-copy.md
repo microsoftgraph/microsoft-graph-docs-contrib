@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: "driveItem: copy"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType
 ---
@@ -45,6 +45,13 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 **Note:** The _conflictBehavior_ is not supported for OneDrive Consumer.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
@@ -73,7 +80,7 @@ The new copy of the file will be named `contoso plan (copy).txt`.
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/copy
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
 Content-Type: application/json
 
 {

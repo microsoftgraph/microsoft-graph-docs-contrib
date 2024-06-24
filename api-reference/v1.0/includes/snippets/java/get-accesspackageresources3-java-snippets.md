@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageResourceCollectionPage resources = graphClient.identityGovernance().entitlementManagement().catalogs("{catalogId}").resources()
-	.buildRequest()
-	.filter("originId eq '0282e19d-bf41-435d-92a4-99bab93af305'")
-	.expand("roles,scopes")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageResourceCollectionResponse result = graphClient.identityGovernance().entitlementManagement().catalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").resources().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"roles", "scopes"};
+	requestConfiguration.queryParameters.filter = "originId eq '0282e19d-bf41-435d-92a4-99bab93af305'";
+});
+
 
 ```

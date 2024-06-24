@@ -3,7 +3,7 @@ title: "teamworkHardwareConfiguration resource type"
 description: "Represents the details about the hardware configuration for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

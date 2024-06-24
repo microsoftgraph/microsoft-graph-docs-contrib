@@ -3,7 +3,7 @@ title: "directoryObjectPartnerReference resource type"
 description: "Represents a reference to a directory object in a partner tenant. Inherits from directoryObject."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Get directory objects from a list of ids](../api/directoryobject-getbyids.md)
 

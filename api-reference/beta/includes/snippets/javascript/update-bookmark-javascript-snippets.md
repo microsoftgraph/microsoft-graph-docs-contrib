@@ -14,7 +14,7 @@ const bookmark = {
   description: 'Book a fancy vacation in Tuscany or browse museums in Florence.'
 };
 
-await client.api('/search/bookmarks/{bookmarksId}')
+await client.api('/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897')
 	.version('beta')
 	.update(bookmark);
 

@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ChatMessage;
+use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolation;
+use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolationPolicyTip;
+use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolationVerdictDetailsTypes;
+use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolationDlpActionTypes;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();

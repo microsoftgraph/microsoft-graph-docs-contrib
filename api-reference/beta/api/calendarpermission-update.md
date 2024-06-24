@@ -3,7 +3,7 @@ title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -50,7 +50,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -151,7 +151,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Adele Vance",
-        "address": "AdeleV@contoso.OnMicrosoft.com"
+        "address": "AdeleV@contoso.com"
     }
 }
 ```

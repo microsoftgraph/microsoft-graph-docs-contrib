@@ -1,9 +1,9 @@
 ---
 title: "androidSafetyNetEvaluationType enum type"
-description: "An enum representing the Android SafetyNet attestation evaluation types."
+description: "An enum representing the Android Play Integrity API evaluation types."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-An enum representing the Android SafetyNet attestation evaluation types.
+An enum representing the Android Play Integrity API evaluation types.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
 |basic|0|Default value. Typical measurements and reference data were used.|
-|hardwareBacked|1|Hardware-backed security features (such as Key Attestation) were used.|
+|hardwareBacked|1|Strong Integrity checks (such as a hardware-backed proof of boot integrity) were used.|

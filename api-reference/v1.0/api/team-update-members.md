@@ -4,7 +4,7 @@ description: "Update the role of member in a team."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update member in team
@@ -35,7 +35,7 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -135,7 +135,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Update member in channel](channel-update-members.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

@@ -5,7 +5,7 @@ title: "Create columnDefinition"
 description: "Create a list column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Create columnDefinition 

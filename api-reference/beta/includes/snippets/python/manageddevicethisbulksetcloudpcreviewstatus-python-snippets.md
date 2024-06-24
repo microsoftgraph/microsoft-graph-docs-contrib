@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.manageddevices.bulk_set_cloud_pc_review_status.bulk_set_cloud_pc_review_status_post_request_body import BulkSetCloudPcReviewStatusPostRequestBody
+from msgraph_beta.generated.models.cloud_pc_review_status import CloudPcReviewStatus
+from msgraph_beta.generated.models.cloud_pc_user_access_level import CloudPcUserAccessLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

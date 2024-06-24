@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.serviceprincipals.item.add_token_signing_certificate.add_token_signing_certificate_post_request_body import AddTokenSigningCertificatePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

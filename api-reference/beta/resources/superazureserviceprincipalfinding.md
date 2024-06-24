@@ -2,8 +2,9 @@
 title: "superAzureServicePrincipalFinding resource type"
 description: "Represents the super Azure service principals."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -19,9 +20,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superAzureServicePrincipalFindings](../api/superazureserviceprincipalfinding-list.md)|[superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) collection|Get a list of the [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) objects and their properties.|
-|[Get superAzureServicePrincipalFinding](../api/superazureserviceprincipalfinding-get.md)|[superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md)|Read the properties and relationships of a [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) object.|
-|[aggregatedSummary](../api/superazureserviceprincipalfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/superazureserviceprincipalfinding-list.md)|[superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) collection|Get a list of the [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) objects and their properties.|
+|[Get](../api/superazureserviceprincipalfinding-get.md)|[superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md)|Read the properties and relationships of a [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) object.|
+|[Aggregated summary](../api/superazureserviceprincipalfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 ## Properties
 

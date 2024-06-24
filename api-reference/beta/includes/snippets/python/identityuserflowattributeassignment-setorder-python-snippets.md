@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.b2cuserflows.item.userattributeassignments.set_order.set_order_post_request_body import SetOrderPostRequestBody
+from msgraph_beta.generated.models.assignment_order import AssignmentOrder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

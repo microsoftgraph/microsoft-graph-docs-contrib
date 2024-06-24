@@ -3,7 +3,7 @@ title: "List userConsentRequests"
 description: "Retrieve userConsentRequest objects and their properties."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$o
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

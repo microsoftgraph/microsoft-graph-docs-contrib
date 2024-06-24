@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.print_connector import PrintConnector
+from msgraph_beta.generated.models.printer_location import PrinterLocation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

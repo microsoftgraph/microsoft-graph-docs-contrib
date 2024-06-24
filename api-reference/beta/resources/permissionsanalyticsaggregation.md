@@ -2,8 +2,9 @@
 title: "permissionsAnalyticsAggregation resource type"
 description: "Represents permissions analytics findings for authorization systems onboarded to Microsoft Entra Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

@@ -2,8 +2,9 @@
 title: "securityToolAwsRoleAdministratorFinding resource type"
 description: "View AWS roles that can administer security tools."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,8 +21,8 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsRoleAdministratorFindings](../api/securitytoolawsroleadministratorfinding-list.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) collection|Get a list of the [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) objects and their properties.|
-|[Get securityToolAwsRoleAdministratorFinding](../api/securitytoolawsroleadministratorfinding-get.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) object.|
+|[List](../api/securitytoolawsroleadministratorfinding-list.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) collection|Get a list of the [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) objects and their properties.|
+|[Get](../api/securitytoolawsroleadministratorfinding-get.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

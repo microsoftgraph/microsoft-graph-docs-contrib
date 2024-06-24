@@ -3,7 +3,7 @@ title: "browserSharedCookie resource type"
 description: "Represents a session cookie for Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,11 @@ Represents a session cookie for [Internet Explorer mode](/deployedge/edge-ie-mod
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List browserSharedCookies](../api/browsersitelist-list-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md) collection|Get a list of the [browserSharedCookie](../resources/browsersharedcookie.md) objects and their properties.|
-|[Create browserSharedCookie](../api/browsersitelist-post-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Create a new [browserSharedCookie](../resources/browsersharedcookie.md) object in a [browserSiteList](../resources/browsersitelist.md).|
-|[Get browserSharedCookie](../api/browsersharedcookie-get.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Get a [session cookie](../resources/browsersharedcookie.md) that can be shared between a Microsoft Edge process and an Internet Explorer process, while using [Internet Explorer mode](/deployedge/edge-ie-mode).|
-|[Update browserSharedCookie](../api/browsersharedcookie-update.md)|None|Update the properties of a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
-|[Delete browserSharedCookie](../api/browsersitelist-delete-sharedcookies.md)|None|Delete a [browserSharedCookie](../resources/browsersharedcookie.md) from a [browserSiteList](../resources/browsersitelist.md).|
+|[List](../api/browsersitelist-list-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md) collection|Get a list of the [browserSharedCookie](../resources/browsersharedcookie.md) objects and their properties.|
+|[Create](../api/browsersitelist-post-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Create a new [browserSharedCookie](../resources/browsersharedcookie.md) object in a [browserSiteList](../resources/browsersitelist.md).|
+|[Get](../api/browsersharedcookie-get.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Get a [session cookie](../resources/browsersharedcookie.md) that can be shared between a Microsoft Edge process and an Internet Explorer process, while using [Internet Explorer mode](/deployedge/edge-ie-mode).|
+|[Update](../api/browsersharedcookie-update.md)|None|Update the properties of a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
+|[Delete](../api/browsersitelist-delete-sharedcookies.md)|None|Delete a [browserSharedCookie](../resources/browsersharedcookie.md) from a [browserSiteList](../resources/browsersitelist.md).|
 
 ## Properties
 |Property|Type|Description|

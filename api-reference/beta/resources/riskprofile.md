@@ -2,8 +2,9 @@
 title: "riskProfile resource type"
 description: "Contains information for human and workload identity counts in a specific risk bucket."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

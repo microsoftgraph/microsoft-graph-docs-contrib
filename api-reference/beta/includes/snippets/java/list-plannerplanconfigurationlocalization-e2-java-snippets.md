@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PlannerPlanConfigurationLocalizationCollectionPage localizations = graphClient.solutions().businessScenarios("c5d514e6c6864911ac46c720affb6e4d").planner().planConfiguration().localizations()
-	.buildRequest()
-	.filter("languageTag eq 'en-us'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PlannerPlanConfigurationLocalizationCollectionResponse result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().planConfiguration().localizations().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "languageTag eq 'en-us'";
+});
+
 
 ```

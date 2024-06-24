@@ -4,7 +4,7 @@ title: "contentType: unpublish"
 description: "Unpublish a content type from a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: unpublish
@@ -35,7 +35,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

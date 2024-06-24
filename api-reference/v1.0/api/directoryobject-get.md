@@ -3,7 +3,7 @@ title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
 author: "keylimesoda"
 ms.localizationpriority: high
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /directoryObjects/{id}
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

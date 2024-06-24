@@ -3,7 +3,7 @@ title: "deviceManagementReportSchedule resource type"
 description: "Entity representing a schedule for which reports are delivered"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -2,8 +2,9 @@
 title: "singleResourceGcpPermissionsDefinition resource type"
 description: "Represents permissions for a GCP resource."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

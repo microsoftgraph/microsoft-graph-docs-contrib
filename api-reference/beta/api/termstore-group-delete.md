@@ -3,7 +3,7 @@ title: "Delete group"
 description: "Delete a group object in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ DELETE /termStore/groups/{groupId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

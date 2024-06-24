@@ -3,7 +3,7 @@ title: "Delete namedItem"
 description: Delete a workbookNamedItem object
 author: isvargasmsft
 ms.localizationpriority: medium
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/{name}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "isEmpty": true

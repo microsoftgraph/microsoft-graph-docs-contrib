@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TargetDeviceGroup targetDeviceGroup = new TargetDeviceGroup();
-targetDeviceGroup.displayName = "Device Group A";
+targetDeviceGroup.setOdataType("#microsoft.graph.targetDeviceGroup");
+targetDeviceGroup.setDisplayName("Device Group A");
+TargetDeviceGroup result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").remoteDesktopSecurityConfiguration().targetDeviceGroups().byTargetDeviceGroupId("{targetDeviceGroup-id}").patch(targetDeviceGroup);
 
-graphClient.servicePrincipals("00af5dfb-85da-4b41-a677-0c6b86dd34f8").remoteDesktopSecurityConfiguration().targetDeviceGroups("b9e4eae4-b781-45a1-ce65-f2dd8ac3b696")
-	.buildRequest()
-	.patch(targetDeviceGroup);
 
 ```

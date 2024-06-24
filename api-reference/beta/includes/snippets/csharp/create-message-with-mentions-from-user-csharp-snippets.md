@@ -19,7 +19,7 @@ var requestBody = new Message
 			EmailAddress = new EmailAddress
 			{
 				Name = "Samantha Booth",
-				Address = "samanthab@contoso.onmicrosoft.com",
+				Address = "samanthab@contoso.com",
 			},
 		},
 	},
@@ -30,7 +30,7 @@ var requestBody = new Message
 			Mentioned = new EmailAddress
 			{
 				Name = "Dana Swope",
-				Address = "danas@contoso.onmicrosoft.com",
+				Address = "danas@contoso.com",
 			},
 		},
 	},

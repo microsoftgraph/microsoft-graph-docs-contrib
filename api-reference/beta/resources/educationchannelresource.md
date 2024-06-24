@@ -3,7 +3,7 @@ title: "educationChannelResource resource type"
 description: "A subclass of educationResource that represents a Microsoft Teams channel in the class."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

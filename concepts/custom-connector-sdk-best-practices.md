@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Apply best practices when you use the Microsoft Graph connectors SDK."
 ---
 
@@ -233,6 +233,6 @@ The following errors move the connection to failed state:
 
 The other operation codes will be treated as transient failures and will be retried in subsequent crawls.
 
-## See also
+## Related content
 
 * [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

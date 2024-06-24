@@ -3,7 +3,7 @@ title: "Get contactMergeSuggestions"
 description: "Read the properties and relationships of a contactMergeSuggestions object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /me/settings/contactMergeSuggestions
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [contactMergeS
 
 ### Request
 
-The following is an example of the request to get **contactMergeSuggestions** settings for the user.
+The following example shows a request to get **contactMergeSuggestions** settings for the user.
 
 # [HTTP](#tab/http)
 <!-- {

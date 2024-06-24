@@ -4,7 +4,7 @@ description: "Specifies in which order a content type appears in the selection U
 title: "contentTypeOrder resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentTypeOrder resource type

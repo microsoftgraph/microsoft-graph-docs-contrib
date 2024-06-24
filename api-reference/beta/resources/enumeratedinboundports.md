@@ -2,8 +2,9 @@
 title: "enumeratedInboundPorts resource type"
 description: "Allows incoming traffic from certain ports."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

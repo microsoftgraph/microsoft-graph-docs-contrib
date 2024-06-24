@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ PUT /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflo
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,10 +75,6 @@ Content-Type: application/json
   "description": "this is for graph testing only"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentworkflowextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentworkflowextension-javascript-snippets.md)]

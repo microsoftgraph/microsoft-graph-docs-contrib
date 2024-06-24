@@ -4,37 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CustomSecurityAttributeDefinition customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition();
-customSecurityAttributeDefinition.attributeSet = "Engineering";
-customSecurityAttributeDefinition.description = "Active projects for user";
-customSecurityAttributeDefinition.isCollection = true;
-customSecurityAttributeDefinition.isSearchable = true;
-customSecurityAttributeDefinition.name = "Project";
-customSecurityAttributeDefinition.status = "Available";
-customSecurityAttributeDefinition.type = "String";
-customSecurityAttributeDefinition.usePreDefinedValuesOnly = true;
-LinkedList<AllowedValue> allowedValuesList = new LinkedList<AllowedValue>();
-AllowedValue allowedValues = new AllowedValue();
-allowedValues.id = "Alpine";
-allowedValues.isActive = true;
-allowedValuesList.add(allowedValues);
-AllowedValue allowedValues1 = new AllowedValue();
-allowedValues1.id = "Baker";
-allowedValues1.isActive = true;
-allowedValuesList.add(allowedValues1);
-AllowedValue allowedValues2 = new AllowedValue();
-allowedValues2.id = "Cascade";
-allowedValues2.isActive = true;
-allowedValuesList.add(allowedValues2);
-AllowedValueCollectionResponse allowedValueCollectionResponse = new AllowedValueCollectionResponse();
-allowedValueCollectionResponse.value = allowedValuesList;
-AllowedValueCollectionPage allowedValueCollectionPage = new AllowedValueCollectionPage(allowedValueCollectionResponse, null);
-customSecurityAttributeDefinition.allowedValues = allowedValueCollectionPage;
+customSecurityAttributeDefinition.setAttributeSet("Engineering");
+customSecurityAttributeDefinition.setDescription("Active projects for user");
+customSecurityAttributeDefinition.setIsCollection(true);
+customSecurityAttributeDefinition.setIsSearchable(true);
+customSecurityAttributeDefinition.setName("Project");
+customSecurityAttributeDefinition.setStatus("Available");
+customSecurityAttributeDefinition.setType("String");
+customSecurityAttributeDefinition.setUsePreDefinedValuesOnly(true);
+LinkedList<AllowedValue> allowedValues = new LinkedList<AllowedValue>();
+AllowedValue allowedValue = new AllowedValue();
+allowedValue.setId("Alpine");
+allowedValue.setIsActive(true);
+allowedValues.add(allowedValue);
+AllowedValue allowedValue1 = new AllowedValue();
+allowedValue1.setId("Baker");
+allowedValue1.setIsActive(true);
+allowedValues.add(allowedValue1);
+AllowedValue allowedValue2 = new AllowedValue();
+allowedValue2.setId("Cascade");
+allowedValue2.setIsActive(true);
+allowedValues.add(allowedValue2);
+customSecurityAttributeDefinition.setAllowedValues(allowedValues);
+CustomSecurityAttributeDefinition result = graphClient.directory().customSecurityAttributeDefinitions().post(customSecurityAttributeDefinition);
 
-graphClient.directory().customSecurityAttributeDefinitions()
-	.buildRequest()
-	.post(customSecurityAttributeDefinition);
 
 ```

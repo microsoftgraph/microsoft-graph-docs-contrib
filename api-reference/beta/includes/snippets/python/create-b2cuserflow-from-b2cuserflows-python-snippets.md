@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.b2c_identity_user_flow import B2cIdentityUserFlow
+from msgraph_beta.generated.models.user_flow_type import UserFlowType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

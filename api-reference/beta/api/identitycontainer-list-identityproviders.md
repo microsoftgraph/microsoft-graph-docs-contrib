@@ -4,7 +4,7 @@ description: "Get a collection of identity provider resources that are configure
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List identityProviders
@@ -27,11 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_identityproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-identityproviders-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity Provider Administrator
-* External ID user flow administrator
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 
@@ -45,7 +41,7 @@ GET /identity/identityProviders
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -233,7 +229,7 @@ Content-type: application/json
             "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
             "clientSecret": "******",
             "scope": "openid",
-            "metadataUrl": "https://login.microsoftonline.com/sashawho.onmicrosoft.com/.well-known/openid-configuration",
+            "metadataUrl": "https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration",
             "domainHint": "",
             "responseType": "code",
             "responseMode": "form_post",

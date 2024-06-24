@@ -4,7 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.booking_appointment import BookingAppointment
+from msgraph_beta.generated.models.location import Location
+from msgraph_beta.generated.models.physical_address import PhysicalAddress
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta.generated.models.booking_invoice_status import BookingInvoiceStatus
+from msgraph_beta.generated.models.booking_price_type import BookingPriceType
+from msgraph_beta.generated.models.booking_reminder import BookingReminder
+from msgraph_beta.generated.models.booking_reminder_recipients import BookingReminderRecipients
+from msgraph_beta.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph_beta.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph_beta.generated.models.physical_address_type import PhysicalAddressType
+from msgraph_beta.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph_beta.generated.models.booking_question_answer import BookingQuestionAnswer
+from msgraph_beta.generated.models.answer_input_type import AnswerInputType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -56,6 +70,7 @@ request_body = BookingAppointment(
 	),
 	invoice_id = "1001",
 	invoice_status = BookingInvoiceStatus.Open,
+	is_customer_allowed_to_manage_booking = True,
 	invoice_url = "theInvoiceUrl",
 	is_location_online = True,
 	opt_out_of_customer_email = False,
@@ -187,7 +202,7 @@ request_body = BookingAppointment(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
 
 
 ```

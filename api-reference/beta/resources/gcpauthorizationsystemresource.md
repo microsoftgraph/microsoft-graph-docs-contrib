@@ -2,8 +2,9 @@
 title: "gcpAuthorizationSystemResource resource type"
 description: "Represents a GCP resource in an GCP authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,8 +21,8 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpAuthorizationSystemResources](../api/gcpauthorizationsystem-list-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) collection|Get a list of the [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) objects and their properties.|
-|[Get gcpAuthorizationSystemResource](../api/gcpauthorizationsystemresource-get.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|Read the properties and relationships of a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
+|[List](../api/gcpauthorizationsystem-list-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) collection|Get a list of the [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) objects and their properties.|
+|[Get](../api/gcpauthorizationsystemresource-get.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|Read the properties and relationships of a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|

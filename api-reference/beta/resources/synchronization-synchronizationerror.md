@@ -4,7 +4,7 @@ description: "Represents an error that occurred during the synchronization proce
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationError resource type

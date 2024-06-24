@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Folder
 ms.localizationpriority: medium
 description: "The Folder resource groups folder-related data on an item into a single structure. "
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ The **Folder** resource groups folder-related data on an item into a single stru
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

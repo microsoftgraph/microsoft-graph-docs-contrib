@@ -3,7 +3,7 @@ title: "calendarPermission resource type"
 description: "The permissions of a user with whom the calendar is shared."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Once a share recipient or delegate has been set up for a calendar, you can [upda
 |:-------------|:------------|:------------|
 | [List](../api/calendar-list-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Get a collection of calendarPermission objects that describe the identity and roles of users with whom the specified calendar has been shared or delegated. |
 | [Create](../api/calendar-post-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Create calendarPermission object. |
-| [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Read properties and relationships of calendarPermission object. |
+| [Get](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Read properties and relationships of calendarPermission object. |
 | [Update](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Update calendarPermission object. |
 | [Delete](../api/calendarpermission-delete.md) | None | Delete calendarPermission object. |
 
@@ -58,7 +58,7 @@ Once a share recipient or delegate has been set up for a calendar, you can [upda
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "Delete organizationalBrandingLocalization"
 description: "Deletes an organizationalBrandingLocalization object."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "organizationalbrandinglocalization_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandinglocalization-delete-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +35,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -46,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request to delete the `fr-FR` localization object.
+The following example shows a request to delete the `fr-FR` localization object.
 
 
 # [HTTP](#tab/http)

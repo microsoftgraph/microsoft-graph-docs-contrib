@@ -3,7 +3,7 @@ title: "directorySetting resource type"
 description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -24,11 +24,11 @@ By default, all entities inherit the preset defaults. To change the default sett
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
-|[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
-|[List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
-|[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
-|[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
+|[Create](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
+|[Get](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
+|[List](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
+|[Update](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
+|[Delete](../api/directorysetting-delete.md) | None |Delete a setting object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,7 +44,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

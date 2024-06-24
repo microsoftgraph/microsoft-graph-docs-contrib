@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationReferenceSettingValue resource type"
 description: "Model for ReferenceSettingValue"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

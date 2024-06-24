@@ -3,7 +3,7 @@ title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment that has been granted to a group."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
 ---
 
@@ -39,7 +39,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,7 +53,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)

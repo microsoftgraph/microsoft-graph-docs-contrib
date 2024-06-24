@@ -3,7 +3,7 @@ title: "languageProficiency resource type"
 description: "languageProficiency resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemFacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List languages](../api/profile-list-languages.md)|[languageProficiency](../resources/languageproficiency.md) collection|Get the languageProficiency resources from the languages navigation property.|
-|[Create languageProficiency](../api/profile-post-languages.md)|[languageProficiency](../resources/languageproficiency.md)|Create a new languageProficiency object.|
-|[Get languageProficiency](../api/languageproficiency-get.md)|[languageProficiency](../resources/languageproficiency.md)|Read the properties and relationships of a [languageProficiency](../resources/languageproficiency.md) object.|
-|[Update languageProficiency](../api/languageproficiency-update.md)|[languageProficiency](../resources/languageproficiency.md)|Update the properties of a [languageProficiency](../resources/languageproficiency.md) object.|
-|[Delete languageProficiency](../api/languageproficiency-delete.md)|None|Deletes a [languageProficiency](../resources/languageproficiency.md) object.|
+|[List](../api/profile-list-languages.md)|[languageProficiency](../resources/languageproficiency.md) collection|Get the languageProficiency resources from the languages navigation property.|
+|[Create](../api/profile-post-languages.md)|[languageProficiency](../resources/languageproficiency.md)|Create a new languageProficiency object.|
+|[Get](../api/languageproficiency-get.md)|[languageProficiency](../resources/languageproficiency.md)|Read the properties and relationships of a [languageProficiency](../resources/languageproficiency.md) object.|
+|[Update](../api/languageproficiency-update.md)|[languageProficiency](../resources/languageproficiency.md)|Update the properties of a [languageProficiency](../resources/languageproficiency.md) object.|
+|[Delete](../api/languageproficiency-delete.md)|None|Deletes a [languageProficiency](../resources/languageproficiency.md) object.|
 
 ## Properties
 

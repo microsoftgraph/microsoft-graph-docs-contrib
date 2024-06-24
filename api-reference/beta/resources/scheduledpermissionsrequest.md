@@ -2,8 +2,9 @@
 title: "scheduledPermissionsRequest resource type"
 description: "Represents a request for permissions on resources in a target authorization system that an identity makes through Microsoft Entra Permissions Management, either directly or indirectly."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -20,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Create a new [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
-|[Cancel scheduledPermissionsRequest](../api/scheduledpermissionsrequest-cancelall.md)|None|Cancels a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md).|
+|[Create](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Create a new [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
+|[Cancel all](../api/scheduledpermissionsrequest-cancelall.md)|None|Cancels a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md).|
 
 ## Properties
 |Property|Type|Description|

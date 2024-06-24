@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ExtensionProperty extensionProperty = new ExtensionProperty();
-extensionProperty.name = "jobGroup";
-extensionProperty.dataType = "String";
-extensionProperty.isMultiValued = true;
-LinkedList<String> targetObjectsList = new LinkedList<String>();
-targetObjectsList.add("User");
-extensionProperty.targetObjects = targetObjectsList;
+extensionProperty.setName("jobGroup");
+extensionProperty.setDataType("String");
+extensionProperty.setIsMultiValued(true);
+LinkedList<String> targetObjects = new LinkedList<String>();
+targetObjects.add("User");
+extensionProperty.setTargetObjects(targetObjects);
+ExtensionProperty result = graphClient.applications().byApplicationId("{application-id}").extensionProperties().post(extensionProperty);
 
-graphClient.applications("fd918e4b-c821-4efb-b50a-5eddd23afc6f").extensionProperties()
-	.buildRequest()
-	.post(extensionProperty);
 
 ```

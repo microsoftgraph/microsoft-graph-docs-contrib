@@ -3,7 +3,7 @@ author: sangle7
 description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users."
 title: "sitePage: publish"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # sitePage: publish
@@ -36,7 +36,7 @@ POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/publish
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

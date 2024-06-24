@@ -3,7 +3,7 @@ title: "keyValuePair resource type"
 description: "Represents a key-value pair for sensitivity labels in Microsoft Purview Information Protection."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

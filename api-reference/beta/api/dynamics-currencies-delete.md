@@ -5,7 +5,7 @@ services: "project-madeira"
 documentationcenter: ''
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **currencies**, the **currencies** won't be updated. |
 
 ## Request body
@@ -50,7 +50,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
@@ -58,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 ```http
 HTTP/1.1 204 No Content

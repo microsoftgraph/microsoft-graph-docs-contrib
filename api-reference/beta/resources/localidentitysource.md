@@ -2,8 +2,9 @@
 title: "localIdentitySource resource type"
 description: "Represents local source of identity."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

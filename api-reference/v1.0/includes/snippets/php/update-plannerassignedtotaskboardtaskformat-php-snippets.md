@@ -5,8 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Planner\Tasks\Item\AssignedToTaskBoardFormat\AssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Generated\Models\PlannerAssignedToTaskBoardTaskFormat;
+use Microsoft\Graph\Generated\Models\PlannerOrderHintsByAssignee;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerAssignedToTaskBoardTaskFormat();

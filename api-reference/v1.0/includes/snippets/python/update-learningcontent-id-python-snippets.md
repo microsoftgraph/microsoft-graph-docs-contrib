@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.learning_content import LearningContent
+from msgraph.generated.models.level import Level
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -18,6 +20,7 @@ request_body = LearningContent(
 	number_of_pages = 9,
 	duration = "PT20M",
 	format = "Book",
+	level = Level.Beginner,
 	created_date_time = "2018-01-01T00:00:00Z",
 	last_modified_date_time = "2021-04-01T04:26:06.1995367Z",
 	contributors = [

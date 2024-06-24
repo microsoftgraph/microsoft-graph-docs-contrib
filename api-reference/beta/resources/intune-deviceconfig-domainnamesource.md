@@ -3,7 +3,7 @@ title: "domainNameSource enum type"
 description: "Domainname source."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

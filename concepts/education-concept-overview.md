@@ -3,7 +3,7 @@ title: "Education API overview"
 description: "Use the education API in Microsoft Graph to build solutions that integrate with educational resources for classroom scenarios such as rosters and assignments."
 author: "mmast-msft"
 ms.localizationpriority: high
-ms.prod: "education"
+ms.subservice: "education"
 ms.custom: scenarios:getting-started
 ---
 
@@ -62,14 +62,12 @@ Looking for the API reference for this service?
 - [Education API in Microsoft Graph v1.0](/graph/api/resources/education-overview?view=graph-rest-1.0&preserve-view=true)
 - [Education API in Microsoft Graph beta](/graph/api/resources/education-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 To start using the education APIs, see:
 - [Use the roster APIs](/graph/api/resources/education-overview)
 - [Use the assignment APIs](/graph/api/resources/educationassignment)
 - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile)
-
-Try the education APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 
 Explore the following education-related samples:
 - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)

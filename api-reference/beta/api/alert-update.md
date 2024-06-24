@@ -3,7 +3,7 @@ title: "Update alert"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -66,7 +66,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 
 #### Request
 
-The following is an example of the request without the `Prefer` header.
+The following example shows a request without the `Prefer` header.
 
 # [HTTP](#tab/http)
 <!-- {
