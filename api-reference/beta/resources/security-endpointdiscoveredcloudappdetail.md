@@ -49,7 +49,7 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appInfo|[discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|**This is the available relationships available** Inherited from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|
+|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|**This is the available relationships available** Inherited from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|
 |devices|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|**Represents the devices accessing discovered apps**|
 |ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|**Represents the IPAddressses accessing discovered apps** Inherited from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|
 |users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|**Represents the users accessing discovered apps** Inherited from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|

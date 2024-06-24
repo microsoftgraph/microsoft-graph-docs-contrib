@@ -46,7 +46,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appInfo|[discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|The application information|
+|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|The application information|
 |ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|The list of IP addresses accessed by the app|
 |users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|The list of users accessing the app|
 
