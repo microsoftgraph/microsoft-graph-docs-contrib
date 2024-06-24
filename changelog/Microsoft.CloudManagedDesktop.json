@@ -123,7 +123,6 @@
     {
       "ChangeList": [
         {
-          
           "Id": "a4055d6d-2123-4e14-9603-abe10f33fe8a",
           "ApiChange": "Enum type",
           "ChangedApiName": "provisioningType",
