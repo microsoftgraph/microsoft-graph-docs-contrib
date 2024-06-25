@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a", 
 }
 requestBody.SetAdditionalData(additionalData)
 

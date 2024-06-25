@@ -24,7 +24,7 @@ customAttributes := graphmodels.NewCustomAppScopeAttributesDictionary()
 additionalData := map[string]interface{}{
 	exclusive := false
 customAttributes.SetExclusive(&exclusive) 
-	"recipientFilter" : "Title -like 'VP*'", 
+	"RecipientFilter" : "Title -like 'VP*'", 
 }
 customAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomAttributes(customAttributes)
