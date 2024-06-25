@@ -20,7 +20,7 @@ Represents admin review information for a threat submission. Currently, only a u
 |:---------------|:-------------------------|:---------------------------------------------|
 | reviewBy       | String                   | Specifies who reviewed the email. The identification is an email ID or other identity strings.|
 | reviewDateTime | DateTimeOffset           | Specifies the date time when the review occurred.|
-| reviewResult   | submissionResultCategory | Specifies what the review result was. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable`, `unknownFutureValue`, `beingAnalyzed`, `notSubmittedToMicrosoft`, `phishingSimulation`, `allowedDueToOrganizationOverride`, `blockedDueToOrganizationOverride`, `allowedDueToUserOverride`, `blockedDueToUserOverride`, `itemNotfound`, `threatsFound`, `noThreatsFound`, `domainImpersonation`, `userImpersonation`, `brandImpersonation`, `authenticationFailure`, `spoofedBlocked`, `bulk` and `reasonLostInTransit`.  |
+| reviewResult   | submissionResultCategory | Specifies what the review result was. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable`, `unknownFutureValue`, `beingAnalyzed`, `notSubmittedToMicrosoft`, `phishingSimulation`, `allowedDueToOrganizationOverride`, `blockedDueToOrganizationOverride`, `allowedDueToUserOverride`, `blockedDueToUserOverride`, `itemNotfound`, `threatsFound`, `noThreatsFound`, `domainImpersonation`, `userImpersonation`, `brandImpersonation`, `authenticationFailure`, `spoofedBlocked`, `bulk`, and `reasonLostInTransit`.  |
 
 ## Relationships
 None.
