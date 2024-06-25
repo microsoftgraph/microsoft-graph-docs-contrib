@@ -30,7 +30,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
