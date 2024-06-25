@@ -3997,7 +3997,6 @@ Possible values for user account types (group membership), per Windows definitio
 | brandImpersonation |
 | authenticationFailure |
 | spoofedBlocked |
-| spoofedAllowed |
 | reasonLostInTransit |
 | bulk |
 
