@@ -105,7 +105,7 @@ Represents the result of a review after the threat submission is processed by Mi
 | unknownFutureValue                     | Any future value, which isn't in use now.                     |
 | willNotifyOnceDone                     | We'll notify you as soon as we've analyzed your message. |
 | checkUserReportedSettings              | If you want to submit messages to Microsoft, go to User reported settings and select either Microsoft only or Microsoft and my reporting mailbox under Reported message destinations. |
-| partOfEducationCampaign                | The reported message was part of a phishing education campaign. See the Advanced Delivery or Attack Simulation page for more information. |
+| partOfEducationCampaign                | The reported message was part of a phishing education campaign. For more information, see the Advanced Delivery or Attack Simulation page. |
 | allowedByAdvancedDelivery              | The reported message was allowed due to advanced delivery flow for security operators mailbox. To block the message, remove it from advanced delivery. |
 | allowedByEnhancedFiltering             | The reported message was either allowed due to enhanced filtering for connectors policy. If you no longer want to allow this item remove the entry.  |
 | itemDeleted                            | Microsoft can't provide a verdict on the reported message as Microsoft can't find the actual message. Resubmit by uploading the email using submissions in security.microsoft.com. |
