@@ -321,8 +321,9 @@ Content-type: application/json
 
 <br>
 
-<details>
-<summary>Inner error codes</summary>
+## Error response
+
+If you sent a request to upload an app manifest that contains missing information or errors, it responds with an error message, which includes the inner error code `UnableToParseTeamsAppManifest`. The inner error `details` provide the error code and the error message. The following table describes the most frequently encountered error codes:
 
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
@@ -429,8 +430,6 @@ Content-type: application/json
 |`VersionHasMajorLessThan1`|App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | App version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
 |`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 32 characters.|
 |`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension have unsupported parameter schema type defined in the `apiSpecificationFile`.|
-
-</details>
 
 ## Related content
 
