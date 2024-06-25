@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryCapability resource type"
-description: "Represents the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type."
+description: "Represents the disaster recovery status of a Cloud PC, including the primary region, secondary region, and capability type."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. Read-only.
+Represents the disaster recovery status of a Cloud PC, including the primary region, secondary region, and capability type.
 
 ## Properties
 
