@@ -26,7 +26,7 @@ Represents admin review information for a threat submission. Currently, only a u
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionAdminReview"
