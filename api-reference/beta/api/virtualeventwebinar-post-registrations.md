@@ -42,6 +42,25 @@ POST /solutions/virtualEvents/webinars/{webinarId}/registrations
 ## Request body
 In the request body, supply a JSON representation of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.
 
+You can specify the following properties when you create a **virtualEventRegistration** with delegated permission.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
+
+You can specify the following properties when you create a **virtualEventRegistration** with application permission.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|firstName|String|First name of the registrant. Required. |
+|lastName|String|Last name of the registrant. Required. |
+|email|String|Email address of the registrant. Required. |
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
+
 ## Response
 
 If successful, this action returns one of the following:
