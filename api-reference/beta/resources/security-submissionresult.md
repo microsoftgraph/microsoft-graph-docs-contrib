@@ -126,7 +126,8 @@ None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
-<!-- {![image](https://github.com/microsoftgraph/microsoft-graph-docs/assets/171278006/76da52c2-7ff2-4a19-9cb2-8a49b86a5731)
+<!-- {
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionResult"
 }
 -->
