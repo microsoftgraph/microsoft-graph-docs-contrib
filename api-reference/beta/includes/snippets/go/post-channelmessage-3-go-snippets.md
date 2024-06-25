@@ -45,7 +45,7 @@ chatMessageHostedContent.SetContentBytes(&contentBytes)
 contentType := "image/png"
 chatMessageHostedContent.SetContentType(&contentType) 
 additionalData := map[string]interface{}{
-	"microsoftGraphTemporaryId" : "1", 
+	"@microsoft.graph.temporaryId" : "1", 
 }
 chatMessageHostedContent.SetAdditionalData(additionalData)
 
