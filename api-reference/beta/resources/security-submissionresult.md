@@ -95,11 +95,11 @@ Represents the result of a review after the threat submission is processed by Mi
 | invalidFalseNegative                   | The reported message is already blocked by EOP/MDO.                     |
 | spoofBlocked                           | The reported message has been determined spoof by our system and so blocked. Create a spoof allow in Tenant allow/block list so that EOP/MDO can allow emails from this spoofed sender. |
 | goodReclassifiedAsBad                  | Microsoft finds the reported message to be malicious. Existing emails are quarantined. The phish and malware filters will learn from this after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
-| goodReclassifiedAsBulk                 | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
+| goodReclassifiedAsBulk                 | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this message after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
 | goodReclassifiedAsGood                 | Microsoft finds the reported message to be clean. If you disagree with this verdict resubmit the email. Until Microsoft blocks the message, create a block entry in Tenant allow/block list if not done already. |
 | goodReclassifiedAsCannotMakeDecision   | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately block it if not done already. |
 | badReclassifiedAsGood                  | Microsoft finds the reported message to be clean. Existing emails have been released. The phish and malware filters will learn from this after a few weeks. Until the filters learn, create an allow entry in Tenant allow/block list if not done already. |
-| badReclassifiedAsBulk                  | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Until the filters learn, create an allow entry in Tenant allow/block list if not done already. |
+| badReclassifiedAsBulk                  | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this message after a few weeks. Until the filters learn, create an allow entry in Tenant allow/block list if not done already. |
 | badReclassifiedAsBad                   | Microsoft finds the reported message to be malicious. If you disagree with this verdict, resubmit the email. Until the message is allowed, create an allow entry in Tenant allow/block list if not done already. |
 | badReclassifiedAsCannotMakeDecision    | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow it if not done already. |
 | unknownFutureValue                     | Any future value, which isn't in use now.                     |
@@ -107,25 +107,25 @@ Represents the result of a review after the threat submission is processed by Mi
 | checkUserReportedSettings              | If you want to submit messages to Microsoft, go to User reported settings and select either Microsoft only or Microsoft and my reporting mailbox under Reported message destinations. |
 | partOfEducationCampaign                | The reported message was part of a phishing education campaign. See the Advanced Delivery or Attack Simulation page for more information. |
 | allowedByAdvancedDelivery              | The reported message was allowed due to advanced delivery flow for security operators mailbox. To block the message, remove it from advanced delivery. |
-| allowedByEnhancedFiltering             | The reported message was either allowed due to enhanced filtering for connectors policy. If you no longer want to allow this item, please remove the entry.  |
+| allowedByEnhancedFiltering             | The reported message was either allowed due to enhanced filtering for connectors policy. If you no longer want to allow this item remove the entry.  |
 | itemDeleted                            | Microsoft can't provide a verdict on the reported message as Microsoft can't find the actual message. Resubmit by uploading the email using submissions in security.microsoft.com. |
 | itemFoundClean                         | Microsoft finds the reported message to be clean. If you disagree with this verdict resubmit the email. Until Microsoft blocks the message, create a block entry in Tenant allow/block list if not done already. |
 | itemFoundMalicious                     | Microsoft finds the reported message to be malicious. If you disagree with this verdict, resubmit the email. Until the message is allowed, create an allow entry in Tenant allow/block list if not done already. |
 | unableToMakeDecision                   | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow or block it if not done already. |
-| domainResembledYourOrganization        | The reported message comes from a domain that resembles your organization. Please reevaluate item and, if it still appears to be clean, add the sender domain to the list of trusted domains within the Anti phish policy. |
-| endUserBeingImpersonated               | This reported message was sent by someone impersonating an end user. Please reevaluate item and, if it still appears to be clean, add the sender address to the list of trusted senders within the Anti phish policy. |
-| associatedWithBrand                    | The reported message contains content that appears to be associated with a particular brand. Please review and, if you deem it to be clean and necessary, use the Tenant Allow Block List to allow these items in the future. |
+| domainResembledYourOrganization        | The reported message comes from a domain that resembles your organization. Reevaluate item and, if it still appears to be clean, add the sender domain to the list of trusted domains within the Anti phish policy. |
+| endUserBeingImpersonated               | This reported message was sent by someone impersonating an end user. Reevaluate item and, if it still appears to be clean, add the sender address to the list of trusted senders within the Anti phish policy. |
+| associatedWithBrand                    | The reported message contains content that appears to be associated with a particular brand. Review and, if you deem it to be clean and necessary, use the Tenant Allow Block List to allow these items in the future. |
 | senderFailedAuthentication             | The reported message wasn't delivered because it failed authentication. Review your domain authentication settings or contact the domain owner. |
 | endUserBeingSpoofed                    | The reported message has been determined spoof by our system and so blocked. Create a spoof allow in Tenant allow/block list so that EOP/MDO can allow emails from this spoofed sender. |
-| itemFoundBulk                          | Microsoft finds the reported message to be bulk. The spam and bulk filters will learn from this after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
+| itemFoundBulk                          | Microsoft finds the reported message to be bulk. The spam and bulk filters will learn from this message after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
 | itemNotReceivedByService               | Microsoft can't provide a verdict on the reported message as Microsoft can't find the actual message. Verify that no policies or mail flow rules prevent items from reaching our service. |
-| itemFoundSpam                          | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
+| itemFoundSpam                          | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this message after a few weeks. Until the filters learn, create a block entry in Tenant allow/block list if not done already. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation shows the resource type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionResult"
