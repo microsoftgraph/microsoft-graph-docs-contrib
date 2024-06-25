@@ -59,7 +59,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "Microsoft.MAUXServices.nonAdminSetting"
+  "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting"
 }
 ```
 
