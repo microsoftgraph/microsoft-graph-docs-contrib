@@ -4,7 +4,7 @@ description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, 
 author: "lauragra"
 ms.localizationpriority: high
 ---
- 
+
 # What's new in Microsoft Graph
 
 Microsoft Graph provides a unified programmability model that you can use to access data in Microsoft 365, Windows, and Enterprise Mobility + Security. This article provides information about what's new in Microsoft Graph APIs, documentation, SDKs, and more.
