@@ -125,7 +125,7 @@ Represents the result of a review after the threat submission is processed by Mi
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type.
+The following is a JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionResult"
