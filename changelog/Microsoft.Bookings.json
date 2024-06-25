@@ -921,33 +921,9 @@
         {
           "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
           "ApiChange": "Property",
-          "ChangedApiName": "customerEmailAddress",
-          "ChangeType": "Addition",
-          "Description": "Added the **customerEmailAddress** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-          "Target": "bookingAppointment"
-        },
-        {
-          "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
-          "ApiChange": "Property",
-          "ChangedApiName": "customerName",
-          "ChangeType": "Addition",
-          "Description": "Added the **customerName** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-          "Target": "bookingAppointment"
-        },
-        {
-          "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
-          "ApiChange": "Property",
           "ChangedApiName": "customerNotes",
           "ChangeType": "Addition",
           "Description": "Added the **customerNotes** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-          "Target": "bookingAppointment"
-        },
-        {
-          "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
-          "ApiChange": "Property",
-          "ChangedApiName": "customerPhone",
-          "ChangeType": "Addition",
-          "Description": "Added the **customerPhone** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
           "Target": "bookingAppointment"
         },
         {
