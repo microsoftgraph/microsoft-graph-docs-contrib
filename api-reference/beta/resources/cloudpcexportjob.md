@@ -63,7 +63,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | inaccessibleCloudPcReports                  | The Cloud PCs that are inaccessible.                                     |
 | rawRemoteConnectionReports                  | The raw real-time remote connection report.                              |
 | cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |
-| crossRegionDisasterRecoveryReport           | The cross region disaster recovery status for Cloud PCs.                 |
+| crossRegionDisasterRecoveryReport           | The cross-region disaster recovery status for Cloud PCs                  |
 
 ## Relationships
 
