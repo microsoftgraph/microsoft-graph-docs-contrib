@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/sentitems/messages/{id}/recall
 
 | Header | Value |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Required. |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a string contains server information in the response body.
+If successful, this method returns a `202 Accepted` response code and a string that contains server information in the response body.
 
 If the ID is invalid, this method returns a `400 Bad request` and the detailed error information in the response body.
 
