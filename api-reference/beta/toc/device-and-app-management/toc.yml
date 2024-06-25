@@ -263,8 +263,12 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: getDailyAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: getFrontlineReport
+      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getInaccessibleCloudPcReports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: getRawRemoteConnectionReports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
     - name: getRealTimeRemoteConnectionLatency
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: getRealTimeRemoteConnectionStatus
@@ -273,12 +277,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: getSharedUseLicenseUsageReport
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getFrontlineReport
-      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getTotalAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getRawRemoteConnectionReports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
     - name: retrieveCrossRegionDisasterRecoveryReport
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Cloud PC export job
