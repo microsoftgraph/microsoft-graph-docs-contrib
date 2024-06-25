@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete registration question
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a registration question from a webinar. The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -18,7 +20,7 @@ Delete a registration question from a webinar. The question can either be a [pre
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualeventregistration_post_question" } -->
+<!-- { "blockType": "permissions", "name": "virtualeventregistration_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistrationquestion-delete-permissions.md)]
 
 ## HTTP request
@@ -51,7 +53,8 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_virtualeventregistrationquestion"
+  "name": "delete_virtualeventregistrationquestion",
+  "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143", "f3115d4c-9896-42fc-a649-8ca5e3c3a43f"]
 }
 -->
 ``` http
