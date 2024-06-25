@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: Protection unit
 ---
 
 # protectionUnitBase resource type
@@ -16,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md).
 
-This is an abstract type.
+This resource is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,7 +27,7 @@ This is an abstract type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identitifer of the protection unit.|
+|id|String|The unique identifier of the protection unit.|
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
@@ -38,12 +39,12 @@ This is an abstract type.
 ### protectionUnitStatus values
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of the unit was requested. This is the state when a policy is activated or new units are added to an active policy.|
+|protectRequested | Protection of the unit was requested. |
 |protected | The protection unit is successfully enabled.|
-|unprotectRequested | Disabling protection of the unit was requested. This is the state when a policy is deactivated.|
+|unprotectRequested | Disabling protection of the unit was requested. |
 |unprotected | The protection unit is successfully disabled.|
-|removeRequested |A request to remove the protected unit from the policy was made. The user wants to explicitly remove units from the policy. |
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|removeRequested |A request to remove the protected unit from the policy was made. |
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
