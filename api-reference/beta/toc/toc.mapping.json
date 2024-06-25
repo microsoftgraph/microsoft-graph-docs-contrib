@@ -361,6 +361,8 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecoveryFailback",
+            "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
