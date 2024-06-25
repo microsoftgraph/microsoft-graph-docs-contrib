@@ -21,7 +21,7 @@ requestBody := graphmodels.NewSharePointRestoreSession()
 siteRestoreArtifact := graphmodels.NewSiteRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
 additionalData := map[string]interface{}{
-	"odataId" : "1f1fccc3-a642-4f61-bf49-f37b9a888279", 
+	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279", 
 }
 restorePoint.SetAdditionalData(additionalData)
 siteRestoreArtifact.SetRestorePoint(restorePoint)
@@ -30,7 +30,7 @@ siteRestoreArtifact.SetDestinationType(&destinationType)
 siteRestoreArtifact1 := graphmodels.NewSiteRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
 additionalData := map[string]interface{}{
-	"odataId" : "1f1fccc3-a642-4f61-bf49-f37b9a888280", 
+	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888280", 
 }
 restorePoint.SetAdditionalData(additionalData)
 siteRestoreArtifact1.SetRestorePoint(restorePoint)
