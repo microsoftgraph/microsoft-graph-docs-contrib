@@ -24,8 +24,8 @@ requestBody.SetDescription(&description)
 createdDateTime , err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
 additionalData := map[string]interface{}{
-	"microsoftGraphTeamCreationMode" : "migration", 
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
+	"@microsoft.graph.teamCreationMode" : "migration", 
+	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
