@@ -13,16 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the bulk modify disk encryption type action, with Cloud PC IDs as the only input parameter for the bulk modify disk encryption type operation.
+Defines the disk encryption type to apply to a collection of Cloud PCs.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ## Methods
+None
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|diskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the disk encryption type of the Cloud PC. Possible values are: `platformManagedKey`, `customerManagedKey`. |
+|diskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the disk encryption type that is specific to an individual Cloud PC. Possible values are: `platformManagedKey`, `customerManagedKey`. |
 |cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |

@@ -13,17 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC organization settings for a tenant. A tenant has only one **cloudPcTenantEncryptionSetting** object.
+Represents the Cloud PC encryption setting for a tenant. Only one encryption setting can be applied to the tenant.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudPcTenantEncryptionSetting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the tenant encryption setting of the tenant with authenticated IT admin.|
+|[Get cloudPcTenantEncryptionSetting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the encryption setting of the tenant associated with the current authenticated user|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantDiskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Defines the Cloud PC disk encryption type of a tenant. Possible values are: `platformManagedKey`, `customerManagedKey`, `unknownFutureValue`. Read-only.|
+|tenantDiskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the Cloud PC disk encryption type for a tenant. It is a tenant-level setting that applies globally to all Cloud PCs in the tenant. Possible values are: `platformManagedKey`, `customerManagedKey`, `unknownFutureValue`. Read-only.|
+|lastSyncDateTime|DateTimeOffset|Indicates the date and time when last sync tenant encryption setting.|
 
 ### cloudPcDiskEncryptionType values
 

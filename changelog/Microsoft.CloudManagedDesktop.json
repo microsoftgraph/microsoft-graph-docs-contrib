@@ -9,19 +9,9 @@
           "ChangeType": "Addition",
           "Description": "Added the [cloudPcBulkModifyDiskEncryptionType](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkModifyDiskEncryptionType?view=graph-rest-beta) resource",
           "Target": "cloudPcBulkModifyDiskEncryptionType"
-        }
-      ],
-      "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-06-24T07:08:27.3298762Z",
-      "WorkloadArea": "Devices and apps",
-      "SubArea": "Cloud PC"
-    },
-    {
-      "ChangeList": [
+        },
         {
-          "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcDiskEncryptionType",
           "ChangeType": "Addition",
@@ -29,7 +19,7 @@
           "Target": "cloudPcDiskEncryptionType"
         },
         {
-          "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcTenantEncryptionSetting",
           "ChangeType": "Addition",
@@ -37,7 +27,7 @@
           "Target": "cloudPcTenantEncryptionSetting"
         },
         {
-          "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
           "ApiChange": "Method",
           "ChangedApiName": "retrieveTenantEncryptionSetting",
           "ChangeType": "Addition",
@@ -45,10 +35,10 @@
           "Target": "virtualEndpoint"
         }
       ],
-      "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+      "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-22T01:26:32.7526479Z",
+      "CreatedDateTime": "2024-06-24T07:08:27.3298762Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud PC"
     },
