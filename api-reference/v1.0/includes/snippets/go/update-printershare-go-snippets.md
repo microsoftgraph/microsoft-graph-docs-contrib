@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 allowAllUsers := false
 requestBody.SetAllowAllUsers(&allowAllUsers) 
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/print/printers/{printerId}", 
+	"printer@odata.bind" : "https://graph.microsoft.com/v1.0/print/printers/{printerId}", 
 }
 requestBody.SetAdditionalData(additionalData)
 
