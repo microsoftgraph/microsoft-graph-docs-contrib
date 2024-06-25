@@ -30,15 +30,15 @@ Represents the Cloud PC encryption setting for a tenant. Only one encryption set
 
 |Member|Description|
 |:---|:---|
-|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform managed key.|
-|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer managed key.|
+|platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
+|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
