@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get externalMeetingRegistration
+# Get externalMeetingRegistration (deprecated)
 
 Namespace: microsoft.graph
 
