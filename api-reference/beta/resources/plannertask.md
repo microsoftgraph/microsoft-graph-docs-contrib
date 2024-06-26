@@ -44,7 +44,7 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |dueDateTime|DateTimeOffset|The date and time at which the task is due. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise,`false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
-|isArchived|Boolean|Read-only. Value is `true` if the task is archived and `false` otherwise. An archived task is read-only.|
+|isArchived|Boolean|Read-only. If set to `true`, the task is archived. An archived task is read-only.|
 |isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md)n.|

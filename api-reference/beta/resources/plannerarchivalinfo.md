@@ -1,6 +1,6 @@
 ---
 title: "plannerArchivalInfo resource type"
-description: "Represents who archived or unarchived a plan, task or bucket and why"
+description: "Represents who archived or unarchived a plan, task, or bucket and why."
 author: "dianambb"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents who archived or unarchived a [plannerPlan](plannerplan.md), [plannerTask](plannertask.md) or [plannerBucket](plannerbucket.md) and why. Properties of **plannerArchivalInfo** are only set when a plan is [archived](../api/plannerplan-archive.md) or [unarchived](../api/plannerplan-unarchive.md).
 
-An archived entity is read only.
+An archived entity is read-only.
 
 ## Properties
 |Property|Type|Description|
