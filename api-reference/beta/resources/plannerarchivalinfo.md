@@ -1,6 +1,6 @@
 ---
 title: "plannerArchivalInfo resource type"
-description: "Represents who archived or unarchived a plan, task, or bucket and why."
+description: "Represents the identity of the user or app who archived or unarchived a plan, task, or bucket and why."
 author: "dianambb"
 ms.localizationpriority: medium
 ms.subservice: "planner"
