@@ -30,6 +30,10 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Security | Threat intelligence
+
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
+
 ### Teamwork and communications | Messaging
 
 [Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
@@ -54,6 +58,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 ### Identity and access | Network access
 
 You can now enable and control compliant network check with Conditional Access through the Global Secure Access service by using the [compliantNetworkNamedLocation resource type](/graph/api/resources/compliantnetworknamedlocation?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Security | Threat intelligence
+
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta&preserve-view=true) method to get a list of related [host](/graph/api/resources/security-host?view=graph-rest-beta&preserve-view=true) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate?view=graph-rest-beta&preserve-view=true).
 
 ### Sites and lists
 
