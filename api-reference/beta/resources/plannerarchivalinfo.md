@@ -3,7 +3,7 @@ title: "plannerArchivalInfo resource type"
 description: "Represents who archived or unarchived a plan, task, or bucket and why."
 author: "dianambb"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.service: "planner"
 doc_type: resourcePageType
 ---
 
