@@ -5,4 +5,4 @@ ms.localizationpriority: high
 <!-- markdownlint-disable MD002 MD041 -->
 
 > [!NOTE]
-> Do not use *Directory.Write.Restricted*. This permission is being deprecated by September 2024.
+> Do not use *Directory.Write.Restricted*. This permission is deprecated and will be removed in September 2024.
