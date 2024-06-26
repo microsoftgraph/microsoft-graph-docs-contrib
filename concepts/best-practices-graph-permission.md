@@ -36,11 +36,11 @@ Also, don't recreate existing platform features for minor customizations; instea
 
 Microsoft Graph supports two types of access scenarios: delegated access and application access. With delegated access, the app calls Microsoft Graph on behalf of a signed-in user. In application access, the app calls Microsoft Graph with its own identity, without a signed in user. [Resource-specific Consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, which also have both levels, are restricted to the domain where the app is installed. For more information, see [Microsoft Graph permissions](permissions-overview.md).
 
-The least privileged permissions an app requests, the fewer privacy concerns it will raise for the customer’s tenant admin.
+The least privileged permissions an app requests, the fewer privacy concerns it raises for the customer’s tenant admin.
 
 Use the URL `https://learn.microsoft.com/en-us/graph/api/user-get` to get a list of permissions that allow the `user-get` call. For example, this `user-get` endpoint can use many permissions like `User.Read` and `User.ReadWrite`. If the app only needs the current user’s data, it must use `User.Read` instead of `Directory.ReadWrite.All`. To apply this method to your endpoint, replace `user-get` in the URL with the specific endpoint name.
 
-Prefer RSC permissions because they offer a higher level of privacy.  Delegated permissions allow the application to act on behalf of a signed-in user, limiting access to the data within the user’s scope. If you can't use either RCS or delegated permissions, you will have to use application permissions. Application permissions carry the most privacy risks as they allow access to data without a signed-in user present.
+Prefer RSC permissions because they offer a higher level of privacy.  Delegated permissions allow the application to act on behalf of a signed-in user, limiting access to the data within the user’s scope. If you can't use either RSC or delegated permissions, you have to use application permissions. Application permissions carry the most privacy risks as they allow access to data without a signed-in user present.
 
 For example, use `ChatMessage.Send.Chat` RSC permission to send a message to a chat with your app, instead of the `Chat.ReadWrite` Microsoft Graph permission, because `ChatMessage.Send.Chat` is the least permission level that you need for this action.
 
@@ -48,7 +48,7 @@ If you use RSC permissions, create an admin dashboard as it allows the tenant ad
 
 ## Maximize app value and user experience for customers with limited permissions
 
-Tenant admins can block permissions on which your app relies. It is important to anticipate this and provide alternatives to maximize your app's value. Even without certain permissions granted on a customer tenant, an app must still offer value to the user, with only the specific functionality requiring the blocked permission being unavailable.
+Tenant admins can block permissions on which your app relies. It's important to anticipate this and provide alternatives to maximize your app's value. Even without certain permissions granted on a customer tenant, an app must still offer value to the user, with only the specific functionality requiring the blocked permission being unavailable.
 
 * **Create fallback workarounds**: Have permissionless alternatives ready for when preferred features are blocked, ensuring users still receive the best possible experience. For example, if you use `Presence.Read.All` to display users’ statuses in the app and the permission is denied, hide the presence indicator to avoid confusion from the *Unknown* status. Or, if an app creates a calendar event, use the [deep link method](/microsoftteams/platform/concepts/build-and-test/deep-link-workflow?tabs=teamsjs-v2) as an alternative to using Graph and requesting the `Calendar.ReadWrite` permission. This allows customers to use the **add event to my calendar** feature even if they don’t grant the permissions.
 * **Implement feature management**: Use toggles or other management tools to adjust features based on the permissions granted by the customer.
@@ -83,7 +83,7 @@ To provide an experience that is trustworthy and will be perceived as such by th
 
 ## Microsoft 365 certification for Teams app
 
-To help customers to overcome app security and privacy concerns, certify your Teams app through the [Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) program. With Microsoft 365 certification, you affirm your dedication to adhering to security and privacy standards, which increases the customer confidence and facilitates the approval process for your app.
+To help customers to overcome app security and privacy concerns, certify your Teams app through the [Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) program. With Microsoft 365 certification, you affirm your dedication to adhering to security and privacy standards, which increase the customer confidence and facilitates the approval process for your app.
 
 ## See also
 
