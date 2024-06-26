@@ -3,7 +3,7 @@ title: "Get profilePhoto"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
 ms.localizationpriority: medium
 author: "kristinmcleod"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -126,7 +126,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

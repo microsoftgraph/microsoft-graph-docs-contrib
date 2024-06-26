@@ -17,7 +17,7 @@ const plannerPlan = {
     }
 };
 
-await client.api('/planner/plans/planId/moveToContainer')
+await client.api('/planner/plans/{planId}/moveToContainer')
 	.version('beta')
 	.post(plannerPlan);
 

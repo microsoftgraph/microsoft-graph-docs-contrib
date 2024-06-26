@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewQueryScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewerScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
+use Microsoft\Kiota\Abstractions\Types\Date;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewScheduleDefinition();

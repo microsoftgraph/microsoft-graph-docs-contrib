@@ -3,7 +3,7 @@ title: "Get subjectRightsRequest"
 description: "Read the properties and relationships of a subjectRightsRequest object."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method doesn't support the [OData query parameter](/graph/query-parameters)
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

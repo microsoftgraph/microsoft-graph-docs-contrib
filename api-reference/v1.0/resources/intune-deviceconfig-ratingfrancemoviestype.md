@@ -3,7 +3,7 @@ title: "ratingFranceMoviesType enum type"
 description: "Movies rating labels in France"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

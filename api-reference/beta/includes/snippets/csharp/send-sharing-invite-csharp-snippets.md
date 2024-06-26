@@ -31,7 +31,7 @@ var requestBody = new InvitePostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Invite.PostAsync(requestBody);
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Invite.PostAsInvitePostResponseAsync(requestBody);
 
 
 ```

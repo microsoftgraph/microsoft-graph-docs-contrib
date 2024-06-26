@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcSharedUseServicePlan cloudPcSharedUseServicePlan = graphClient.deviceManagement().virtualEndpoint().sharedUseServicePlans("613a8d85-6c33-1268-9f55-b96a6540017c")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CloudPcSharedUseServicePlan result = graphClient.deviceManagement().virtualEndpoint().sharedUseServicePlans().byCloudPcSharedUseServicePlanId("{cloudPcSharedUseServicePlan-id}").get();
+
 
 ```

@@ -3,7 +3,7 @@ title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ This method does not support OData query parameters to customize the response.
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -134,7 +134,9 @@ Content-type: application/json
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Monday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -152,6 +154,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

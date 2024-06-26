@@ -3,7 +3,7 @@ title: "Get sourceCollection"
 description: "Read the properties and relationships of a sourceCollection object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -143,7 +143,7 @@ Content-Type: application/json
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalname": "admin@contoso.onmicrosoft.com"
+            "userPrincipalname": "admin@contoso.com"
         }
     },
     "addToReviewSetOperation": {

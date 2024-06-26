@@ -3,7 +3,7 @@ title: "Get orgContact"
 description: "Retrieve the properties of an orgContact object."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 ## Request headers
 | Header       | Value |
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

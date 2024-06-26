@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: bundle resource type
 description: Facet describing a driveItem that is a logical grouping of other driveItems
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # bundle resource type
@@ -53,8 +53,8 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 [bundle-list]: ../api/bundle-list.md
 [bundle-get]: ../api/bundle-get.md
 [bundle-create]: ../api/drive-post-bundles.md
-[bundle-add-item]: ../api/bundle-addItem.md
-[bundle-remove-item]: ../api/bundle-removeItem.md
+[bundle-add-item]: ../api/bundle-additem.md
+[bundle-remove-item]: ../api/bundle-removeitem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
 

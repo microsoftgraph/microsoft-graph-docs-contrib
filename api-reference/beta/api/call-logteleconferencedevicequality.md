@@ -3,7 +3,7 @@ title: "call: logTeleconferenceDeviceQuality"
 description: "Log video teleconferencing device quality data."
 ms.localizationpriority: medium
 author: "dongkyun"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Required.|
 
 ## Request body

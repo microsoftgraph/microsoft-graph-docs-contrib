@@ -3,7 +3,7 @@ title: "Item insights in Microsoft Graph"
 description: "Learn about item insights, user-centric recommendations for you and those you work with, based on your collaborative file-based experiences in Microsoft 365."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 # Item insights overview

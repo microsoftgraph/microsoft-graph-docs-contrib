@@ -3,7 +3,7 @@ title: "serviceAnnouncementBase resource type"
 description: "This is an abstract base type for serviceHealthIssue and serviceUpdateMessage."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

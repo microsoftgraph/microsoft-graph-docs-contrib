@@ -3,7 +3,7 @@ title: "contentApproval resource type"
 description: "Represents content approval to be deployed according to a policy."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ Inherits from [complianceChange](../resources/windowsupdates-compliancechange.md
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List contentApprovals](../api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) collection|Get a list of the [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) objects and their properties.|
-|[Create contentApproval](../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Create a new [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
-|[Get contentApproval](../api/windowsupdates-contentapproval-get.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Read the properties and relationships of a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
-|[Update contentApproval](../api/windowsupdates-contentapproval-update.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Update the properties of a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
-|[Delete contentApproval](../api/windowsupdates-contentapproval-delete.md)|None|Delete a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
+|[List](../api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) collection|Get a list of the [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) objects and their properties.|
+|[Create](../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Create a new [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
+|[Get](../api/windowsupdates-contentapproval-get.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Read the properties and relationships of a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
+|[Update](../api/windowsupdates-contentapproval-update.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Update the properties of a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
+|[Delete](../api/windowsupdates-contentapproval-delete.md)|None|Delete a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.admin_dynamics import AdminDynamics
+from msgraph_beta.generated.models.customer_voice_settings import CustomerVoiceSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

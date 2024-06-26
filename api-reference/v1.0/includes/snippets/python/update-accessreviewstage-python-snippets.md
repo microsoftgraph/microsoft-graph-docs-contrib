@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_stage import AccessReviewStage
+from msgraph.generated.models.access_review_reviewer_scope import AccessReviewReviewerScope
 
 graph_client = GraphServiceClient(credentials, scopes)
 

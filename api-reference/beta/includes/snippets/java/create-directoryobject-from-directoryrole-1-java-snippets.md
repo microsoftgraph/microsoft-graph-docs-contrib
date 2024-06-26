@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DirectoryObject directoryObject = new DirectoryObject();
-directoryObject.id = "0f933635-5b77-4cf4-a577-f78a5eb090a2";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directoryRoles("0afed502-2456-4fd4-988e-3c21924c28a7").members().references()
-	.buildRequest()
-	.post(directoryObject);
+com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/beta/users/0f933635-5b77-4cf4-a577-f78a5eb090a2");
+graphClient.directoryRoles().byDirectoryRoleId("{directoryRole-id}").members().ref().post(referenceCreate);
+
 
 ```

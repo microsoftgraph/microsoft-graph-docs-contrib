@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ProfileCardProperty profileCardProperty = graphClient.admin().people().profileCardProperties("CustomAttribute1")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ProfileCardProperty result = graphClient.admin().people().profileCardProperties().byProfileCardPropertyId("{profileCardProperty-id}").get();
+
 
 ```

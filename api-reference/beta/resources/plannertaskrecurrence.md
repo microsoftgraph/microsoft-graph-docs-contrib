@@ -3,7 +3,7 @@ title: "plannerTaskRecurrence resource type"
 description: "Represents recurrence for a Planner task in Microsoft 365."
 author: "DaMoksha"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

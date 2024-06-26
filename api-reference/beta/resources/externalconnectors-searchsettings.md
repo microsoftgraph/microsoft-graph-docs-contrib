@@ -3,7 +3,7 @@ title: "searchSettings resource type"
 description: "Collects all configurable settings related to search over connector content."
 author: "emzho"
 ms.localizationpriority: normal
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

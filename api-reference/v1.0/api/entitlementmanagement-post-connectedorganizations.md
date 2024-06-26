@@ -3,7 +3,7 @@ title: "Create connectedOrganization"
 description: "Create a new connectedOrganization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Create connectedOrganization
@@ -36,7 +36,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

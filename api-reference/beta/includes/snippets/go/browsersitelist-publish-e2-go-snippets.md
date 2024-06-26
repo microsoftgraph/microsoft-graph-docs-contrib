@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphadmin.NewPublishPostRequestBody()
 revision := "1.0"
@@ -28,7 +28,7 @@ browserSite1 := graphmodels.NewBrowserSite()
 id := "2e27cc86-3662-447e-b751-274fb9f869ea"
 browserSite1.SetId(&id) 
 
-sites := []graphmodels.browserSiteable {
+sites := []graphmodels.BrowserSiteable {
 	browserSite,
 	browserSite1,
 }
@@ -39,11 +39,12 @@ browserSharedCookie := graphmodels.NewBrowserSharedCookie()
 id := "7f639835-23ab-4793-b1e6-1a06fad127a2"
 browserSharedCookie.SetId(&id) 
 
-sharedCookies := []graphmodels.browserSharedCookieable {
+sharedCookies := []graphmodels.BrowserSharedCookieable {
 	browserSharedCookie,
 }
 requestBody.SetSharedCookies(sharedCookies)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 publish, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").Publish().Post(context.Background(), requestBody, nil)
 
 

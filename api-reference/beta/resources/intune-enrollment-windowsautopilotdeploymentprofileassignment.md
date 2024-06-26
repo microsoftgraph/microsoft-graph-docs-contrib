@@ -3,7 +3,7 @@ title: "windowsAutopilotDeploymentProfileAssignment resource type"
 description: "An assignment of a Windows Autopilot deployment profile to an AAD group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

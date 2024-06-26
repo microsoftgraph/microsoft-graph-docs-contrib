@@ -3,7 +3,7 @@ title: "Get updatableAsset"
 description: "Read the properties and relationships of an updatableAsset object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ To use a query parameter on a property that is not inherited from [updatableAsse
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

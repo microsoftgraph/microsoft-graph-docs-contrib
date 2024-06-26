@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get an appCredentialSignInActivity object that contains recent activity of an application credential."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get appCredentialSignInActivity
@@ -39,7 +39,7 @@ This method does not support OData query parameters to help customize the respon
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an [appCredentia
 
 ### Request
 
-The following is an example of a request that shows how to get an **appCredentialSignInActivity** object based on its ID.
+The following example shows a request that gets an **appCredentialSignInActivity** object based on its ID.
 
 # [HTTP](#tab/http)
 <!-- {

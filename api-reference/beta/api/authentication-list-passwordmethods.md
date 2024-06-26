@@ -3,7 +3,7 @@ title: "List passwordMethods"
 description: "Retrieve a list of passwordauthenticationmethod objects."
 ms.localizationpriority: medium
 author: "zhvolosh"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object, as a user can have exactly one password.
+Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object referenced by ID `28c10230-6103-485e-b985-444c60001490`, as a user can have exactly one password. For security, the password itself is never returned in the object and the **password** property is always `null`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -63,7 +63,7 @@ This method doesn't support optional query parameters to customize the response.
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

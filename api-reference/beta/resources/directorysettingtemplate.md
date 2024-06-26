@@ -2,8 +2,9 @@
 title: "directorySettingTemplate resource type"
 description: "Directory setting templates represent system-defined settings available to the tenant."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "directory-management"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -24,8 +25,8 @@ For more information about the Microsoft 365 groups-specific settings, see [grou
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
-|[List directorySettingTemplate](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
+|[Get directory setting template](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
+|[List directory setting templates](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
 
 ## Properties
 | Property       | Type    |Description|
@@ -41,7 +42,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

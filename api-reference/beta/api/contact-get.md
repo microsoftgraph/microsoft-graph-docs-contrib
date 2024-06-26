@@ -3,7 +3,7 @@ title: "Get contact"
 description: "Retrieve the properties and relationships of contact object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ A [contact](../resources/contact.md) from a top level [contactFolder](../resourc
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -66,7 +66,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -146,17 +146,17 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "unknown"
     },
     {
       "name": "Garth",
-      "address": "garth@contoso.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "personal"
     }
   ],
   "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",
@@ -180,7 +180,7 @@ Content-type: application/json
   }],
   "spouseName": null,
   "personalNotes": null,
-  "children": [], 
+  "children": [],
   "gender": null,
   "websites": [{
       "type": "work",
@@ -191,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

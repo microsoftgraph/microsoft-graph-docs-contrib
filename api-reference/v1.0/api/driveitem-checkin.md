@@ -3,7 +3,7 @@ author: learafa
 description: "Check in a checked out driveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: checkin
@@ -33,6 +33,13 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
@@ -57,7 +64,7 @@ This example checks in a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkin
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/checkin
 Content-Type: application/json
 
 {

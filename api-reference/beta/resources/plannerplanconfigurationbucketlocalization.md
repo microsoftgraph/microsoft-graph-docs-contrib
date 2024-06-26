@@ -3,7 +3,7 @@ title: "plannerPlanConfigurationBucketLocalization resource type"
 description: "Represents the localized name of a bucket in a plannerPlanConfigurationLocalization."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

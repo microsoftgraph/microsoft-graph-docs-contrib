@@ -3,7 +3,7 @@ title: "tenantAttachRBAC resource type"
 description: "Singleton entity that acts as a container for tenant attach enablement functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ Singleton entity that acts as a container for tenant attach enablement functiona
 |:---|:---|:---|
 |[Get tenantAttachRBAC](../api/intune-devices-tenantattachrbac-get.md)|[tenantAttachRBAC](../resources/intune-devices-tenantattachrbac.md)|Read properties and relationships of the [tenantAttachRBAC](../resources/intune-devices-tenantattachrbac.md) object.|
 |[Update tenantAttachRBAC](../api/intune-devices-tenantattachrbac-update.md)|[tenantAttachRBAC](../resources/intune-devices-tenantattachrbac.md)|Update the properties of a [tenantAttachRBAC](../resources/intune-devices-tenantattachrbac.md) object.|
-|[enable action](../api/intune-devices-tenantattachrbac-enable.md)|None|Not yet documented|
-|[getState function](../api/intune-devices-tenantattachrbac-getstate.md)|[tenantAttachRBACState](../resources/intune-devices-tenantattachrbacstate.md)|Not yet documented|
+|[enable action](../api/intune-devices-tenantattachrbac-enable.md)|None||
+|[getState function](../api/intune-devices-tenantattachrbac-getstate.md)|[tenantAttachRBACState](../resources/intune-devices-tenantattachrbacstate.md)||
 
 ## Properties
 |Property|Type|Description|

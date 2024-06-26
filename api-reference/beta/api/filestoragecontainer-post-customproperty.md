@@ -3,7 +3,7 @@ title: "Add custom properties to a fileStorageContainer"
 description: "Add custom properties to a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Namespace: microsoft.graph
 Add custom properties to a [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference). The application calling this API must have write permissions to fileStorageContainers for the respective container type.
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|FileStorageContainer.Selected|
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_post_customproperty" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-customproperty-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -53,12 +50,15 @@ You can specify the following properties when you create a custom property.
 
 ## Response
 
-If successful, this method returns either a `200 Created` or `201 Created` response code.
+If successful, this method returns a `200 Created` response code.
 
 ## Examples
 
-### Request
+### Example 1: Create a custom property
+
+#### Request
 The following example shows how to create a custom property called `clientUniqueId` for a container.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_1"
@@ -75,7 +75,13 @@ Content-Type: application/json
 }
 ```
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-filestoragecontainer-customproperty-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The following example shows the response. By default, the property isn't searchable.
 <!-- {
   "blockType": "response",
@@ -85,9 +91,11 @@ The following example shows the response. By default, the property isn't searcha
 ``` http
 HTTP/1.1 200 Created
 ```
+### Example 2: Create a custom searchable property
 
-### Request
+#### Request
 The following example shows how to create a searchable custom property called `clientUniqueId` for a container.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_2"
@@ -104,7 +112,14 @@ Content-Type: application/json
   }
 }
 ```
-### Response
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-filestoragecontainer-customproperty-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -115,38 +130,5 @@ The following example shows the response.
 HTTP/1.1 200 Created
 ```
 
-### Request
-The following example shows how to create multiple custom properties for a container.
-<!-- {
-  "blockType": "request",
-  "name": "post_filestoragecontainer_customproperty_3"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties
-Content-Type: application/json
-
-{
-  "property1": {
-    "value": "valueOfProperty1",
-    "isSearchable": true
-  },
-  "property2": {
-    "value": "valueOfProperty2",
-    "isSearchable": false
-  }
-}
-```
-
-### Response
-The following example shows the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 201 Created
-```
 
 

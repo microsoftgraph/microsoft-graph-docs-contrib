@@ -3,7 +3,7 @@ title: "outlookUser: supportedTimeZones"
 description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 ---
 
 ##### Response 1
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -167,7 +167,7 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStand
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-iana-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -189,7 +189,7 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStand
 ---
 
 ##### Response 2
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

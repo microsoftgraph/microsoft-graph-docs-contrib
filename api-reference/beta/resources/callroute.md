@@ -3,7 +3,7 @@ title: "callRoute resource type"
 description: "The callRoute type."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

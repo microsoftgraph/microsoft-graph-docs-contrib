@@ -3,15 +3,18 @@ title: "meetingRegistration resource type"
 description: "Contains information about online meeting registration."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistration resource type
+# meetingRegistration resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The meeting registration API is deprecated and will stop returning data on **July 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
 
 Contains registration details of an online meeting, such as a [Microsoft Teams Webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). 
 
@@ -35,7 +38,7 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 | endDateTime | DateTime | The meeting end time in UTC. |
 | registrationPageViewCount | Int32 | The number of times the registration page has been visited. Read-only. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
-| speakers | [meetingSpeaker](meetingSpeaker.md) collection | The meeting speaker's information. |
+| speakers | [meetingSpeaker](meetingspeaker.md) collection | The meeting speaker's information. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the meeting. |
 
@@ -45,16 +48,18 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 | ------------------ | ----------- |
 | everyone           | Everyone can register for the meeting. |
 | organization       | Everyone in the organizer’s organization can register for the meeting. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| Custom registration questions. |
-| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Registrants of the online meeting. |
+| customQuestions | [meetingRegistrationQuestion](meetingregistrationquestion.md) collection| Custom registration questions. |
+| registrants | [meetingRegistrant](meetingregistrant.md) collection | Registrants of the online meeting. |
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -70,9 +75,6 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
   "registrationPageWebUrl": "String",
   "speakers": [{ "@odata.type": "microsoft.graph.meetingSpeaker" }],
   "startDateTime": "String (timestamp)",
-  "subject": "String",
-
-  "customQuestions": [{ "@odata.type": "microsoft.graph.meetingRegistrationQuestion" }],
-  "registrants": [{ "@odata.type": "microsoft.graph.meetingRegistrant" }]
+  "subject": "String"
 }
 ```

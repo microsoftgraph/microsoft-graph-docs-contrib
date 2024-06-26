@@ -108,7 +108,7 @@ var requestBody = new EvaluateApplicationPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateApplication.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateApplication.PostAsEvaluateApplicationPostResponseAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLobApp/1.0");
 });

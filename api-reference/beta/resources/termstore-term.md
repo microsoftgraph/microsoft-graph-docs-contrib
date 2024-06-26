@@ -3,7 +3,7 @@ title: "term resource type"
 description: "Defines a term entity in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

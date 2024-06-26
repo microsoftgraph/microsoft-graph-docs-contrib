@@ -3,7 +3,7 @@ title: "Update deviceManagementCachedReportConfiguration"
 description: "Update the properties of a deviceManagementCachedReportConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,15 +50,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportName|String|Name of the report|
+|id|String|Unique identifier for this entity.|
+|reportName|String|Name of the report.|
 |filter|String|Filters applied on report creation.|
-|select|String collection|Columns selected from the report|
-|orderBy|String collection|Ordering of columns in the report|
-|metadata|String|Caller-managed metadata associated with the report|
+|select|String collection|Columns selected from the report.|
+|orderBy|String collection|Ordering of columns in the report.|
+|metadata|String|Caller-managed metadata associated with the report.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
-|expirationDateTime|DateTimeOffset|Time that the cached report expires|
+|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed.|
+|expirationDateTime|DateTimeOffset|Time that the cached report expires.|
 
 
 

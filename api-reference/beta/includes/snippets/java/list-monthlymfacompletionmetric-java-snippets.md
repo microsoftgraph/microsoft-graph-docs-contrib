@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MfaCompletionMetricCollectionWithReferencesPage mfaCompletions = graphClient.reports().userInsights().monthly().mfaCompletions()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MfaCompletionMetricCollectionResponse result = graphClient.reports().userInsights().monthly().mfaCompletions().get();
+
 
 ```

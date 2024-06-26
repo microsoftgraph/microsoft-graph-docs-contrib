@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -14,9 +17,6 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
@@ -25,8 +25,8 @@ configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestCon
 }
 requestBody := graphusers.NewItemGetSchedulePostRequestBody()
 schedules := []string {
-	"adelev@contoso.onmicrosoft.com",
-	"meganb@contoso.onmicrosoft.com",
+	"adelev@contoso.com",
+	"meganb@contoso.com",
 }
 requestBody.SetSchedules(schedules)
 startTime := graphmodels.NewDateTimeTimeZone()
@@ -44,7 +44,8 @@ requestBody.SetEndTime(endTime)
 availabilityViewInterval := int32(60)
 requestBody.SetAvailabilityViewInterval(&availabilityViewInterval) 
 
-getSchedule, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+getSchedule, err := graphClient.Me().Calendar().GetSchedule().PostAsGetSchedulePostResponse(context.Background(), requestBody, configuration)
 
 
 ```

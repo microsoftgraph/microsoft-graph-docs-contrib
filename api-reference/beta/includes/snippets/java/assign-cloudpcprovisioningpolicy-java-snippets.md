@@ -4,26 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<CloudPcProvisioningPolicyAssignment> assignmentsList = new LinkedList<CloudPcProvisioningPolicyAssignment>();
-CloudPcProvisioningPolicyAssignment assignments = new CloudPcProvisioningPolicyAssignment();
-assignments.id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.provisioningpolicies.item.assign.AssignPostRequestBody assignPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.provisioningpolicies.item.assign.AssignPostRequestBody();
+LinkedList<CloudPcProvisioningPolicyAssignment> assignments = new LinkedList<CloudPcProvisioningPolicyAssignment>();
+CloudPcProvisioningPolicyAssignment cloudPcProvisioningPolicyAssignment = new CloudPcProvisioningPolicyAssignment();
+cloudPcProvisioningPolicyAssignment.setId("b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff");
 CloudPcManagementGroupAssignmentTarget target = new CloudPcManagementGroupAssignmentTarget();
-target.groupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff";
-assignments.target = target;
+target.setOdataType("microsoft.graph.cloudPcManagementGroupAssignmentTarget");
+target.setGroupId("64ff06de-9c00-4a5a-98b5-7f5abe26ffff");
+cloudPcProvisioningPolicyAssignment.setTarget(target);
+assignments.add(cloudPcProvisioningPolicyAssignment);
+assignPostRequestBody.setAssignments(assignments);
+graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().byCloudPcProvisioningPolicyId("{cloudPcProvisioningPolicy-id}").assign().post(assignPostRequestBody);
 
-assignmentsList.add(assignments);
-CloudPcProvisioningPolicyAssignmentCollectionResponse cloudPcProvisioningPolicyAssignmentCollectionResponse = new CloudPcProvisioningPolicyAssignmentCollectionResponse();
-cloudPcProvisioningPolicyAssignmentCollectionResponse.value = assignmentsList;
-CloudPcProvisioningPolicyAssignmentCollectionPage cloudPcProvisioningPolicyAssignmentCollectionPage = new CloudPcProvisioningPolicyAssignmentCollectionPage(cloudPcProvisioningPolicyAssignmentCollectionResponse, null);
-
-graphClient.deviceManagement().virtualEndpoint().provisioningPolicies("{id}")
-	.assign(CloudPcProvisioningPolicyAssignParameterSet
-		.newBuilder()
-		.withAssignments(assignmentsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

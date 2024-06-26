@@ -3,7 +3,7 @@ title: "customExtensionCallbackConfiguration resource type"
 description: "Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

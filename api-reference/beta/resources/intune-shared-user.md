@@ -3,7 +3,7 @@ title: "user resource type"
 description: "Represents an Azure Active Directory user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents an Azure Active Directory user object.
 |[Delete user](../api/intune-shared-user-delete.md).|None|Deletes a [user](../resources/intune-shared-user.md).|
 |[Update user](../api/intune-shared-user-update.md) object.|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |**Device management**|
-|[getLoggedOnManagedDevices function](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) collection|Not yet documented|
+|[getLoggedOnManagedDevices function](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) collection||
 |[removeAllDevicesFromManagement action](../api/intune-shared-user-removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile application management (MAM)**|
 |[getManagedAppDiagnosticStatuses function](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
@@ -34,8 +34,8 @@ Represents an Azure Active Directory user object.
 |[wipeManagedAppRegistrationByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |[wipeManagedAppRegistrationsByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |**Onboarding**|
-|[exportDeviceAndAppManagementData function](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Not yet documented|
-|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|Not yet documented|
+|[exportDeviceAndAppManagementData function](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)||
+|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection||
 |**Troubleshooting**|
 |[getManagedDevicesWithAppFailures function](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
 

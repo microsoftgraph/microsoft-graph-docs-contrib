@@ -3,7 +3,7 @@ title: "fqdn resource type"
 description: "A fully qualified domain name (FQDN) refers to the complete address of an internet host or computer. It includes the hostname and the domain name, providing a specific and unique identification for the device on the internet."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

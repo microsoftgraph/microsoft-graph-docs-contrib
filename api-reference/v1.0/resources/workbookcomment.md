@@ -3,8 +3,9 @@ title: "workbookComment resource type"
 description: "Definition of workbookComment resource type"
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Chart comment
 ---
 
 # workbookComment resource type
@@ -17,8 +18,8 @@ Represents a comment in workbook.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+| [List](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
+| [Get](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
 
 ## Properties
 

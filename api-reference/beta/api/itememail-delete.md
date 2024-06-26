@@ -3,7 +3,7 @@ title: "Delete itemEmail"
 description: "Delete an itemEmail object from a users profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -37,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/profile/emails/{id}
 
 | Name           |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

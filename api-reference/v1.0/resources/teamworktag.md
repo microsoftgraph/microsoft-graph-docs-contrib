@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -22,11 +22,11 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTags](../api/teamworktag-list.md)|[teamworkTag](teamworktag.md) collection|Get a list of the [tag](../resources/teamworktag.md) objects and their properties.|
-|[Create teamworkTag](../api/teamworktag-post.md)|[teamworkTag](teamworktag.md)|Create a standard [tag](../resources/teamworktag.md) for members in a team.|
-|[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](teamworktag.md)|Read the properties and relationships of a [tag](../resources/teamworktag.md) object.|
-|[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](teamworktag.md)|Update the properties of a [tag](../resources/teamworktag.md) object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a [tag](../resources/teamworktag.md) object permanently.|
+|[List](../api/teamworktag-list.md)|[teamworkTag](teamworktag.md) collection|Get a list of the [tag](../resources/teamworktag.md) objects and their properties.|
+|[Create](../api/teamworktag-post.md)|[teamworkTag](teamworktag.md)|Create a standard [tag](../resources/teamworktag.md) for members in a team.|
+|[Get](../api/teamworktag-get.md)|[teamworkTag](teamworktag.md)|Read the properties and relationships of a [tag](../resources/teamworktag.md) object.|
+|[Update](../api/teamworktag-update.md)|[teamworkTag](teamworktag.md)|Update the properties of a [tag](../resources/teamworktag.md) object.|
+|[Delete](../api/teamworktag-delete.md)|None|Delete a [tag](../resources/teamworktag.md) object permanently.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,6 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |:---------|:----------------------------------------------------------------------------------------------------------|
 | standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                               |
+| scheduled | Shift-based tag created and managed from the Shifts app.                                                 |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -72,5 +73,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [teamworkTagMember](../resources/teamworktagmember.md)

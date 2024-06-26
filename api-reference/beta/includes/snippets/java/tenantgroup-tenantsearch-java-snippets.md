@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String tenantId = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.tenantRelationships().managedTenants().tenantGroups()
-	.tenantSearch(TenantGroupTenantSearchParameterSet
-		.newBuilder()
-		.withTenantId(tenantId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.tenantrelationships.managedtenants.tenantgroups.microsoftgraphmanagedtenantstenantsearch.TenantSearchPostRequestBody tenantSearchPostRequestBody = new com.microsoft.graph.beta.tenantrelationships.managedtenants.tenantgroups.microsoftgraphmanagedtenantstenantsearch.TenantSearchPostRequestBody();
+tenantSearchPostRequestBody.setTenantId("String");
+var result = graphClient.tenantRelationships().managedTenants().tenantGroups().microsoftGraphManagedTenantsTenantSearch().post(tenantSearchPostRequestBody);
+
 
 ```

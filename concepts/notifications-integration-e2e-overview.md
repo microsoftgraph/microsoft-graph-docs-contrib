@@ -2,7 +2,7 @@
 title: "Integrate with Microsoft Graph notifications (deprecated)"
 description: "Integrate your apps with Microsoft Graph notifications with a few simple steps (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 author: "merzink"
 ---
 

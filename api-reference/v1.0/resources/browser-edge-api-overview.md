@@ -3,7 +3,7 @@ title: "Use the Edge API in Microsoft Graph"
 description: "The Edge API in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: conceptualPageType
 ---
 
@@ -24,10 +24,6 @@ The Edge API provides methods and actions that support some administrator's task
 | Create, read, update, delete, and publish browser site lists. | [browserSiteList](../resources/browsersitelist.md) | [Methods of browserSiteList](../resources/browsersitelist.md#methods) |
 | Modify the browser sites on a browser site list. | [browserSite](../resources/browsersite.md) | [Methods of browserSite](../resources/browsersite.md#methods) |
 | Modify the browser shared cookies on a browser site list. | [browserSharedCookie](../resources/browsersharedcookie.md) | [Methods of browserSharedCookie](../resources/browsersharedcookie.md#methods) |
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

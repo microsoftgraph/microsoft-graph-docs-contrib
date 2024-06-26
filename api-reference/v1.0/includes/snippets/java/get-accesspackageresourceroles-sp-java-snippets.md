@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageResourceRoleCollectionPage resourceRoles = graphClient.identityGovernance().entitlementManagement().catalogs("29db1374-74cc-485d-b21e-506e08b836a5").resourceRoles()
-	.buildRequest()
-	.filter("(originSystem eq 'SharePointOnline' and resource/id eq 'dcc3f966-a73c-48e2-8c1d-bcac775488c3')")
-	.expand("resource/id eq 'dcc3f966-a73c-48e2-8c1d-bcac775488c3')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageResourceRoleCollectionResponse result = graphClient.identityGovernance().entitlementManagement().catalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").resourceRoles().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "(originSystem eq 'SharePointOnline' and resource/id eq 'dcc3f966-a73c-48e2-8c1d-bcac775488c3')";
+	requestConfiguration.queryParameters.expand = new String []{"resource"};
+});
+
 
 ```

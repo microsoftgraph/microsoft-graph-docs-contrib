@@ -3,7 +3,7 @@ title: "Remove connected organization internal sponsor"
 description: "Remove a user or group from the connected organization's internal sponsors."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

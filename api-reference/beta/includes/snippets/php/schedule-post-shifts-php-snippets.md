@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Shift;
+use Microsoft\Graph\Beta\Generated\Models\ShiftItem;
+use Microsoft\Graph\Beta\Generated\Models\ScheduleEntityTheme;
+use Microsoft\Graph\Beta\Generated\Models\ShiftActivity;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Shift();

@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.clone.clone_post_request_body import ClonePostRequestBody
+from msgraph.generated.models.clonable_team_parts import ClonableTeamParts
+from msgraph.generated.models.team_visibility_type import TeamVisibilityType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

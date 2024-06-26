@@ -4,7 +4,7 @@ description: "Retrieve a list of scopedRoleMembership objects for a directory ro
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1:  Get the scoped members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+The following example shows a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +131,7 @@ Content-type: application/json
 ### Example 2:  Get the scoped members of a directory role using roleTemplateId
 
 #### Request
-The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
+The following example shows a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 <!-- {
   "blockType": "request",

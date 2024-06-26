@@ -3,7 +3,7 @@ title: "People and workplace intelligence in Microsoft Graph"
 description: "Learn about Microsoft Graph API options that let you build smarter apps for accessing user data: the people API, insights API, profile API, and profile card API."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
@@ -65,6 +65,10 @@ The [profile](/graph/api/resources/profile) API represents the next generation i
 
 Profile cards let users in an organization see information about one another, such as their names and contact information. Administrators can use the [profile card](/graph/api/resources/profilecardproperty) API to customize how information about their organization surfaces within Microsoft 365 people experiences.
 
+## Why configure pronouns in your organization?
+
+Pronouns serve as substitutes for a person's name in sentences, with gender-neutral versions available in multiple languages, for example in English, "she", "her, "he", "him" and the gender-neutral "they", "them". Accurate pronoun usage shows inclusivity and respect, avoiding assumptions based on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another. Administrators can use the [pronounsSettings](/graph/api/resources/pronounssettings) API to configure pronouns settings in your organization.
+
 ## Why integrate with document-based insights?
 
 ### Use intelligence to improve collaboration
@@ -110,6 +114,7 @@ Looking for the API reference for these services?
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
 - [Profile card property](/graph/api/resources/profilecardproperty) resource
+- [Pronouns settings](/graph/api/resources/pronounssettings) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
 - [Analytics API (preview)](/graph/api/resources/useranalytics)
 
@@ -118,6 +123,7 @@ Looking for the API reference for these services?
 - Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, expand **People** or **Insights** in the column on the left, and try their sample queries.
 - Find more about the [people API](people-insights-overview.md).
 - See how to [customize the profile card](add-properties-profilecard.md).
+- See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
 - Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
 - Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 - Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).

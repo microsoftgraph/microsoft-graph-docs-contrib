@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.solutions.businessscenarios.item.planner.get_plan.get_plan_post_request_body import GetPlanPostRequestBody
+from msgraph_beta.generated.models.business_scenario_group_target import BusinessScenarioGroupTarget
+from msgraph_beta.generated.models.planner_task_target_kind import PlannerTaskTargetKind
 
 graph_client = GraphServiceClient(credentials, scopes)
 

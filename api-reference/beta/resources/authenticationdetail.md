@@ -3,7 +3,7 @@ title: "authenticationDetail resource type"
 description: "Provides the authentication details for a user sign-in, such as multifactor authentication (MFA) information and PTA/PHS details."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

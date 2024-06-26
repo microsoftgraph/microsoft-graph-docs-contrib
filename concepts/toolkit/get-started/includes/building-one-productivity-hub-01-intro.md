@@ -14,6 +14,6 @@ This sample creates a web app that consumes the Microsoft Graph Toolkit MSAL2 pr
 
 ## Prerequisites
 
-- Make sure to get a free Microsoft 365 tenant by joining the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+- You need a Microsoft 365 developer tenant. You might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 - Install [Visual Studio Code](https://code.visualstudio.com/).
 - Install [Visual Studio Code Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to test your web app.

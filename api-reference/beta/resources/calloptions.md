@@ -3,7 +3,7 @@ title: "callOptions resource type"
 description: "An abstract base class that contains the optional features for a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

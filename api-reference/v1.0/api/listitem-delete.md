@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Removes an item from a list."
 doc_type: apiPageType
 ---
@@ -32,11 +32,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
 

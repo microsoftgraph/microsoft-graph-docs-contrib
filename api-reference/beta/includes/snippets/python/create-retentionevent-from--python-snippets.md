@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.retention_event import RetentionEvent
+from msgraph_beta.generated.models.security.event_query import EventQuery
+from msgraph_beta.generated.models.identity_set import IdentitySet
+from msgraph_beta.generated.models.security.event_propagation_result import EventPropagationResult
+from msgraph_beta.generated.models.security.retention_event_status import RetentionEventStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +19,7 @@ request_body = RetentionEvent(
 	description = "String",
 	event_queries = [
 		EventQuery(
-			odata_type = "microsoft.graph.security.eventQueries",
+			odata_type = "microsoft.graph.security.eventQuery",
 		),
 	],
 	event_trigger_date_time = "String (timestamp)",

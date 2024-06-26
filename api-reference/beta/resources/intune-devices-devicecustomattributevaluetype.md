@@ -3,7 +3,7 @@ title: "deviceCustomAttributeValueType enum type"
 description: "Represents the expected type for a macOS custom attribute script value."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

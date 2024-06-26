@@ -3,8 +3,9 @@ title: "workbookChartLineFormat resource type"
 description: "Enapsulates the formatting options for line elements."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart line format
 ---
 
 # workbookChartLineFormat resource type
@@ -35,7 +36,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

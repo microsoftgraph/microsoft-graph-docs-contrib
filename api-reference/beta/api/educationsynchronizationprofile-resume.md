@@ -3,7 +3,7 @@ title: "Resume sync on an educationSynchronizationProfile"
 description: "Resume the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /education/synchronizationProfiles/{id}/resume
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

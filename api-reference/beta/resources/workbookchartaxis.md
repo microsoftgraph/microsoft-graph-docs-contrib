@@ -3,8 +3,9 @@ title: "workbookChartAxis resource type"
 description: "Represents a single axis in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart axis
 ---
 
 # workbookChartAxis resource type
@@ -42,7 +43,7 @@ Represents a single axis in a chart.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

@@ -2,7 +2,7 @@
 title: "Listing versions of a ListItem"
 description: "SharePoint can be configured to retain the history for list items."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -33,6 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

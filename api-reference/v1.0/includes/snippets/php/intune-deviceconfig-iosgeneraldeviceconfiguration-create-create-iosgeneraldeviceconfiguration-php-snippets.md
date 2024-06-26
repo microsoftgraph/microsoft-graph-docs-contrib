@@ -5,8 +5,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosGeneralDeviceConfiguration;
+use Microsoft\Graph\Generated\Models\AppListItem;
+use Microsoft\Graph\Generated\Models\AppListType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingAustralia;
+use Microsoft\Graph\Generated\Models\RatingAustraliaMoviesType;
+use Microsoft\Graph\Generated\Models\RatingAustraliaTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingCanada;
+use Microsoft\Graph\Generated\Models\RatingCanadaMoviesType;
+use Microsoft\Graph\Generated\Models\RatingCanadaTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingFrance;
+use Microsoft\Graph\Generated\Models\RatingFranceMoviesType;
+use Microsoft\Graph\Generated\Models\RatingFranceTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingGermany;
+use Microsoft\Graph\Generated\Models\RatingGermanyMoviesType;
+use Microsoft\Graph\Generated\Models\RatingGermanyTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingIreland;
+use Microsoft\Graph\Generated\Models\RatingIrelandMoviesType;
+use Microsoft\Graph\Generated\Models\RatingIrelandTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingJapan;
+use Microsoft\Graph\Generated\Models\RatingJapanMoviesType;
+use Microsoft\Graph\Generated\Models\RatingJapanTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingNewZealand;
+use Microsoft\Graph\Generated\Models\RatingNewZealandMoviesType;
+use Microsoft\Graph\Generated\Models\RatingNewZealandTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedKingdom;
+use Microsoft\Graph\Generated\Models\RatingUnitedKingdomMoviesType;
+use Microsoft\Graph\Generated\Models\RatingUnitedKingdomTelevisionType;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedStates;
+use Microsoft\Graph\Generated\Models\RatingUnitedStatesMoviesType;
+use Microsoft\Graph\Generated\Models\RatingUnitedStatesTelevisionType;
+use Microsoft\Graph\Generated\Models\IosNetworkUsageRule;
+use Microsoft\Graph\Generated\Models\RatingAppsType;
+use Microsoft\Graph\Generated\Models\RequiredPasswordType;
+use Microsoft\Graph\Generated\Models\WebBrowserCookieSettings;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IosGeneralDeviceConfiguration();

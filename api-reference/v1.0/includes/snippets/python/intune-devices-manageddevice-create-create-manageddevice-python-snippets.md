@@ -4,7 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_device import ManagedDevice
+from msgraph.generated.models.managed_device_owner_type import ManagedDeviceOwnerType
+from msgraph.generated.models.device_action_result import DeviceActionResult
+from msgraph.generated.models.action_state import ActionState
+from msgraph.generated.models.compliance_state import ComplianceState
+from msgraph.generated.models.management_agent_type import ManagementAgentType
+from msgraph.generated.models.device_enrollment_type import DeviceEnrollmentType
+from msgraph.generated.models.device_registration_state import DeviceRegistrationState
+from msgraph.generated.models.device_management_exchange_access_state import DeviceManagementExchangeAccessState
+from msgraph.generated.models.device_management_exchange_access_state_reason import DeviceManagementExchangeAccessStateReason
+from msgraph.generated.models.configuration_manager_client_enabled_features import ConfigurationManagerClientEnabledFeatures
+from msgraph.generated.models.device_health_attestation_state import DeviceHealthAttestationState
+from msgraph.generated.models.managed_device_partner_reported_health_state import ManagedDevicePartnerReportedHealthState
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -113,6 +126,7 @@ request_body = ManagedDevice(
 	notes = "Notes value",
 	ethernet_mac_address = "Ethernet Mac Address value",
 	physical_memory_in_bytes = 5,
+	enrollment_profile_name = "Enrollment Profile Name value",
 )
 
 result = await graph_client.device_management.managed_devices.post(request_body)

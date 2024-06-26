@@ -2,7 +2,7 @@
 title: "reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts"
 description: "Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

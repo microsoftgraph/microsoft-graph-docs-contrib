@@ -15,17 +15,37 @@ For more information about the `mgt-person` component, see [mgt-person](./person
 
 The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover or click on the person to see the Person Card.
 
+# [HTML](#tab/html)
+
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-properties--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-properties--person-card&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-properties--person-card&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-react--person-card&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-react--person-card&source=docs).
+
+---
 
 ## Example using mgt-person-card as a standalone component
 
 The following example shows the use of the `mgt-person-card` component. Use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card-html--person-card&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card-html--person-card&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card-react--person-card&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card-react--person-card&source=docs).
+
+---
 
 ## Global component configuration
 
@@ -65,7 +85,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | mailMessages        | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.                                   |
 | files               | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.                                      |
 | profile             | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.                                    |
-| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it does not flow out of the card section. Default value is `false`. |
+| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it doesn't flow out of the card section. Default value is `false`. |
 
 To disable a section, simply set the property to `false` in your app initialization code:
 
@@ -90,16 +110,16 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 ## Properties
 
-By default, the `mgt-person` component will pass the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
+By default, the `mgt-person` component passes the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
 
 | Attribute       | Type                                                                       | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | person-details  | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user.                                                                                             |
-| person-image    | string                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
-| inherit-details | None.                                                                      | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
-| user-id         | string                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
-| person-query    | string                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
-| person-card     | string                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
+| person-image    | String                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
+| inherit-details | None                                                                       | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
+| user-id         | String                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
+| person-query    | String                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
+| person-card     | String                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
 
 ## CSS custom properties
 
@@ -148,6 +168,14 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --organization-coworker-hover-color: grey;
   --organization-coworker-border-color: purple;
   --organization-active-org-member-border-color: red;
+  --organization-coworker-person-avatar-size: 50px;
+  --organization-member-person-avatar-size: 60px;
+  --organization-direct-report-person-avatar-size: 80px;
+
+  /** Style for the avatar-size in the person-card sections */
+  --organization-member-person-avatar-size: 60px;
+  --coworker-person-avatar-size: 50px;
+  --direct-report-person-avatar-size: 40px;
 
   /** Files: Uses custom css properties for mgt-file-list and mgt-file */
 
@@ -157,6 +185,13 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --message-from-color: blue;
   --message-color: black;
   --message-hover-color: grey;
+  --message-subject-font-size: 18px;
+  --message-subject-font-weight: 600;
+  --message-subject-line-height: 25px;
+  --message-from-font-size: 40px;
+  --message-from-font-weight: 800;
+  --message-date-color: purple;
+  --message-from-line-height: 25px;
 
   /** Contact */
 
@@ -182,7 +217,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The Person-Card component uses [templates](../customize-components/templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
+The Person-Card component uses [templates](../customize-components/templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` to one of the following values.
 
 | Data type          | Data context                                                                 | Description                                                                  |
 | ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -222,27 +257,39 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-The Person-Card control uses the following Microsoft Graph APIs and permissions.
+The Person-Card control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed.
 
 | Configuration                                                                                          | Permission         | API                                                                                                           | Section      |
 | ------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------- | ------------ |
-| `personDetails` set with user's `id` but without e-mail, or `userId` set, or `personQuery` set to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get)           | Default      |
-| `personQuery` set to a value different than `me`                                                       | People.Read        | [/me/people/?$search=](/graph/api/user-list-people)                                                           | Default      |
-| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default)   | Contacts.Read      | [/me/contacts/\*](/graph/api/user-list-contacts)                                                              | Default      |
-| `showPresence` set to `true`                                                                           | Presence.Read.All  | [/users/{id}/presence](/graph/api/presence-get)                                                               | Default      |
-| `sections.organization` enabled (default)                                                              | User.Read.All      | [/users/{id}/manager](/graph/api/user-list-manager)                                                           | Organization |
-| `sections.organization.showWorksWith` set (default)                                                    | People.Read.All    | [/users/{id}/people](/graph/api/user-list-people)                                                             | Organization |
-| `sections.mailMessages` enabled (default)                                                              | Mail.ReadBasic     | [/me/messages](/graph/api/user-list-messages)                                                                 | Messages     |
-| `sections.files` enabled (default)                                                                     | Sites.Read.All     | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files        |
-| `sections.profile` enabled (default)                                                                   | User.Read.All      | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true)                         | Profile      |
+| In all configurations                                                                                  | User.Read, User.ReadWrite                                                                                                          | [/me](/graph/api/user-get)                                                                             | Default      |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set                               | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                 | [/users/{id}](/graph/api/user-get)                       | Default      |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set                               | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                              | [/users/{id}/photo/$value](/graph/api/profilephoto-get)  | Default      |
+| `personQuery` set to `me`                                                                              | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All      | [/me](/graph/api/user-get), [/users/{id}/photo/$value](/graph/api/profilephoto-get)           | Default      |
+| `personQuery` set to `me`                                                                              | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                   | [/me/photo/$value](/graph/api/profilephoto-get)           | Default      |
+| `personQuery` set to a value different than `me`                                                       | People.Read, People.Read.All                                                                                                       | [/me/people/?$search=](/graph/api/user-list-people)                                                           | Default      |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default)   | Contacts.Read, Contacts.ReadWrite                                                                                                  | [/me/contacts/\*](/graph/api/user-list-contacts)                                                              | Default      |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `false`            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                              | [/users/{id}/photo/$value](/graph/api/profilephoto-get)  | Default      |
+| `showPresence` set to `true`                                                                           | Presence.Read.All                                                                                                                  | [/users/{id}/presence](/graph/api/presence-get)                                                               | Default      |
+| `sections.organization` enabled (default)                                                              | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                 | [/users/{id}?$expand=manager($levels=max)](/graph/api/user-list-manager), [/users/${id}/directReports](/graph/api/user-list-manager) | Organization |
+| `sections.organization.showWorksWith` set (default)                                                    | People.Read.All                                                                                                                    | [/users/{id}/people](/graph/api/user-list-people)                                                             | Organization |
+| `sections.mailMessages` enabled (default)                                                              | Mail.ReadBasic, Mail.Read, Mail.ReadWrite                                                                                          | [/me/messages](/graph/api/user-list-messages)                                                                 | Messages     |
+| `sections.files` enabled (default)                                                                     | Sites.Read.All, Sites.ReadWrite.All                                                                                                | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files        |
+| `sections.profile` enabled (default)                                                                   | User.Read.All, User.ReadWrite.All                                                                                                  | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true)                         | Profile      |
 
-The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
+The `getMgtPersonCardScopes()` function returns an array of scopes required for the person card to function based on the global person card configuration.
 
 ```ts
-import { MgtPersonCard } from `@microsoft/mgt`;
+import { getMgtPersonCardScopes } from `@microsoft/mgt-components`;
 
-const neededScopes = MgtPersonCard.getScopes();
+const neededScopes = getMgtPersonCardScopes();
 ```
+
+### Subcomponents
+
+The `mgt-person-card` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent:
+
+- [mgt-file-list](file-list.md)
+- [mgt-person](person.md)
 
 ## Authentication
 
@@ -251,7 +298,7 @@ The Person-Card control uses the global authentication provider described in the
 ## Cache
 
 > [!IMPORTANT]
-> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and is not cached.
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and isn't cached.
 
 | Object store | Cached data               | Remarks                                                                   |
 | ------------ | ------------------------- | ------------------------------------------------------------------------- |
@@ -260,7 +307,7 @@ The Person-Card control uses the global authentication provider described in the
 | `presence`   | Person's presence         | Used, when `showPresence` is set to `true`                                |
 | `users`      | Person's user information | Used when `userId` is specified or the `personQuery` is set to `me`       |
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For more information about how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Localization
 
@@ -278,3 +325,59 @@ The control exposes the following variables that can be localized. For details a
 | chatButtonLabel            | `Chat`                    |
 | videoButtonLabel           | `Video`                   |
 | closeCardLabel             | `Close card`              |
+
+You can also localize the following variables in the person-card sections.
+
+### Contact
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| contactSectionTitle        | `Contact`                 |
+| emailTitle                 | `Email`                   |
+| chatTitle                  | `Teams`                   |
+| businessPhoneTitle         | `Business Phone`          |
+| cellPhoneTitle             | `Mobile Phone`            |
+| departmentTitle            | `Department`              |
+| personTitle                | `Email`                   |
+| officeLocationTitle        | `Office Location`         |
+| copyToClipboardButton      | `Copy to clipboard`       |
+
+### Files
+
+| String name        | Default value     |
+| ------------------ | ----------------- |
+| showMoreSubtitle   | `Show more items` |
+| filesSectionTitle  | `Files`           |
+| sharedTextSubtitle | `Shared`          |
+
+### Messages
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| emailsSectionTitle         | `Emails`                  |
+
+### Organization
+
+| String name                    | Default value             |
+| ------------------------------ | ------------------------- |
+| reportsToSectionTitle          | `Reports to`              |
+| directReportsSectionTitle      | `Direct reports`          |
+| organizationSectionTitle       | `Organization`            |
+| youWorkWithSubSectionTitle     | `You work with`           |
+| userWorksWithSubSectionTitle   | `works with`              |
+
+### Profile
+
+| String name                          | Default value             |
+| -----------------------------------  | ------------------------- |
+| SkillsAndExperienceSectionTitle      | `Skills & Experience`     |
+| AboutCompactSectionTitle             | `About`                   |
+| SkillsSubSectionTitle                | `Skills`                  |
+| LanguagesSubSectionTitle             | `Languages`               |
+| WorkExperienceSubSectionTitle        | `Work Experience`         |
+| EducationSubSectionTitle             | `Education`               |
+| professionalInterestsSubSectionTitle | `Professional Interests`  |
+| personalInterestsSubSectionTitle     | `Personal Interests`      |
+| birthdaySubSectionTitle              | `Birthday`                |
+| currentYearSubtitle                  | `Current`                 |
+| socialMediaSubSectionTitle           | `Social Media`            |

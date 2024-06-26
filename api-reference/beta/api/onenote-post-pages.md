@@ -3,7 +3,7 @@ title: "Create page"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ POST /sites/{id}/onenote/pages
 ## Request headers  
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | `text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
 
 ## Request body
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and the new [on
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
@@ -100,7 +100,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

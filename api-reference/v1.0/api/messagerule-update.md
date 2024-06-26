@@ -3,7 +3,7 @@ title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -28,17 +28,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /me/mailFolders/inbox/messageRules/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will
 maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |
@@ -109,7 +112,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

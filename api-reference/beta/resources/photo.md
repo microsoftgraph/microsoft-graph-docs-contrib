@@ -4,7 +4,7 @@ description: "The photo resource provides photo and camera properties, for examp
 ms.date: 09/10/2017
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: files
+ms.subservice: onedrive
 doc_type: "resourcePageType"
 ---
 

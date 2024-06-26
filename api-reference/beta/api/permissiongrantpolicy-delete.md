@@ -3,7 +3,7 @@ title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -36,7 +36,7 @@ DELETE /policies/permissionGrantPolicies/{id}
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

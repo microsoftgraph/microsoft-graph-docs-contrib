@@ -3,7 +3,7 @@ title: "mdmWindowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection with MDM"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [windowsInformationProtection](../resources/intune-mam-windowsinfo
 |[Delete mdmWindowsInformationProtectionPolicy](../api/intune-shared-mdmwindowsinformationprotectionpolicy-delete.md)|None|Deletes a [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md).|
 |[Update mdmWindowsInformationProtectionPolicy](../api/intune-shared-mdmwindowsinformationprotectionpolicy-update.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md)|Update the properties of a [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) object.|
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "workloadActionDeploymentStatus resource type"
 description: "Represents the deployment status for the workload action."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

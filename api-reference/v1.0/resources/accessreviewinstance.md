@@ -3,7 +3,7 @@ title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an accessReviewScheduleDefinition object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -52,11 +52,11 @@ Inherits from [entity](../resources/entity.md).
 |:---------------|:--------|:----------|
 | contactedReviewers   |[accessReviewReviewer](../resources/accessreviewreviewer.md) collection| Returns the collection of reviewers who were contacted to complete this review. While the **reviewers** and **fallbackReviewers** properties of the **accessReviewScheduleDefinition** might specify group owners or managers as **reviewers**, **contactedReviewers** returns their individual identities. Supports `$select`. Read-only. |
 | decisions               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Each user reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed. |
-|stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
+| stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -75,7 +75,6 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.accessReviewReviewer"
     }
   ],
- "displayName": "string",
  "endDateTime": "string (timestamp)",
  "fallbackReviewers": [
     {

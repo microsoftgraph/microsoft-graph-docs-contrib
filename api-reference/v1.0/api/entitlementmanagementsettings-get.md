@@ -3,7 +3,7 @@ title: "Get entitlementManagementSettings"
 description: "Retrieve the properties of the entitlementManagementSettings object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get entitlementManagementSettings
@@ -39,7 +39,7 @@ This method does not support the OData query parameters to customize the respons
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "Get rbacApplicationMultiple"
 description: "Read properties and relationships of the rbacApplicationMultiple object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,12 +65,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 137
+Content-Length: 86
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.rbacApplicationMultiple",
-    "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
+    "@odata.type": "#microsoft.graph.rbacApplicationMultiple"
   }
 }
 ```

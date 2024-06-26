@@ -3,7 +3,7 @@ title: "Create onenotePage"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /sites/{id}/onenote/pages
 ## Request headers  
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | `text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
 
 ## Request body
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code and the new [pa
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 

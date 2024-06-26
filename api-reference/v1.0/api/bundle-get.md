@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Get bundle"
 description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, a  `304 Not Modified` response is returned.|
 
 ## Request body
@@ -58,7 +58,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata_e1" } -->
@@ -137,7 +137,7 @@ Use the `expand` [query string parameter](/graph/query-parameters) to include th
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children_e2" } -->

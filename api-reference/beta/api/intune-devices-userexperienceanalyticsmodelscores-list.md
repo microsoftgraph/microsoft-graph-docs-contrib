@@ -3,7 +3,7 @@ title: "List userExperienceAnalyticsModelScoreses"
 description: "List properties and relationships of the userExperienceAnalyticsModelScores objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ GET /deviceManagement/userExperienceAnalyticsModelScores
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 540
+Content-Length: 597
 
 {
   "value": [
@@ -77,6 +77,7 @@ Content-Length: 540
       "appReliabilityScore": 6.333333333333333,
       "workFromAnywhereScore": 7.0,
       "batteryHealthScore": 6.0,
+      "meanResourceSpikeTimeScore": 8.6666666666666661,
       "healthStatus": "insufficientData"
     }
   ]

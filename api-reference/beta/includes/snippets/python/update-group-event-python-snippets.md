@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.event import Event
+from msgraph_beta.generated.models.response_status import ResponseStatus
+from msgraph_beta.generated.models.response_type import ResponseType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

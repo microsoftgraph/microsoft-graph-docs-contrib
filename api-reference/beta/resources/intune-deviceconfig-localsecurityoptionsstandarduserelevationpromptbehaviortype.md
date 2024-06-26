@@ -3,7 +3,7 @@ title: "localSecurityOptionsStandardUserElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

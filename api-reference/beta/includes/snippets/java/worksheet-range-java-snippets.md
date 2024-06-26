@@ -4,11 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}")
-	.range()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.drives.item.items.item.workbook.worksheets.item.range.Range()GetRequestBody rangeGetRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.worksheets.item.range.Range()GetRequestBody();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("address", "address-value");
+rangeGetRequestBody.setAdditionalData(additionalData);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").range().get(rangeGetRequestBody);
+
 
 ```

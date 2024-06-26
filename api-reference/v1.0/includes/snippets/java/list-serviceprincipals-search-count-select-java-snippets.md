@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "\"displayName:Team\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ServicePrincipalCollectionPage servicePrincipals = graphClient.servicePrincipals()
-	.buildRequest( requestOptions )
-	.select("accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience")
-	.get();
+ServicePrincipalCollectionResponse result = graphClient.servicePrincipals().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.search = "\"displayName:Team\"";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.select = new String []{"accountEnabled", "displayName", "publisherName", "servicePrincipalType", "signInAudience"};
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

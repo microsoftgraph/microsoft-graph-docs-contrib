@@ -3,7 +3,7 @@ title: "Get personResponsibility"
 description: "Read the properties and relationships of a personResponsibility object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the `$select` query parameter. Specify a list of properties
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

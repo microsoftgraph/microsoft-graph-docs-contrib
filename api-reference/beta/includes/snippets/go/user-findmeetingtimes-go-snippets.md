@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
@@ -32,11 +32,11 @@ attendeeBase.SetType(&type)
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
-address := "alexw@contoso.onmicrosoft.com"
+address := "alexw@contoso.com"
 emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 
-attendees := []graphmodels.attendeeBaseable {
+attendees := []graphmodels.AttendeeBaseable {
 	attendeeBase,
 }
 requestBody.SetAttendees(attendees)
@@ -53,7 +53,7 @@ locationConstraintItem.SetResolveAvailability(&resolveAvailability)
 displayName := "Conf room Hood"
 locationConstraintItem.SetDisplayName(&displayName) 
 
-locations := []graphmodels.locationConstraintItemable {
+locations := []graphmodels.LocationConstraintItemable {
 	locationConstraintItem,
 }
 locationConstraint.SetLocations(locations)
@@ -91,6 +91,7 @@ requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons)
 minimumAttendeePercentage := float64(100)
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 findMeetingTimes, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 

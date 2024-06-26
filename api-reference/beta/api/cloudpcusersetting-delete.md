@@ -3,7 +3,7 @@ title: "Delete cloudPcUserSetting"
 description: "Delete a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /deviceManagement/virtualEndpoint/userSettings/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

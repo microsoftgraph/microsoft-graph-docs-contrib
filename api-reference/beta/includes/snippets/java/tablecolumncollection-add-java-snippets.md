@@ -4,23 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-int index = new int();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<JsonElement> valuesList = new LinkedList<JsonElement>();
-JsonElement values = new JsonObject();
+com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody();
+Index index = new Index();
+addPostRequestBody.setIndex(index);
+LinkedList<Object> values = new LinkedList<Object>();
+ property = new ();
+values.add(property);
+addPostRequestBody.setValues(values);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").columns().add().post(addPostRequestBody);
 
-valuesList.add(values);
-
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
-	.add(WorkbookTableColumnAddParameterSet
-		.newBuilder()
-		.withIndex(index)
-		.withValues(values)
-		.withName(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

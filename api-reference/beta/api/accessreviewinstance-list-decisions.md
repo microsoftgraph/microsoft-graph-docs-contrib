@@ -3,7 +3,7 @@ title: "List decisions"
 description: "Get the accessReviewInstanceDecisionItem resources from the decisions navigation property."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ The default page size for this API is 100 **accessReviewInstance** objects. To i
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

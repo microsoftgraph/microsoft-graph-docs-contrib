@@ -3,7 +3,7 @@ title: "sensitivityLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on an existing content information."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.                                                                                                                                                       |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is `ApplicationName/Version`. Optional. |
 
@@ -79,7 +79,7 @@ If successful, this action returns a `200 OK` response code and an [informationP
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

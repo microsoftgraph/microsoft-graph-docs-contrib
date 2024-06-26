@@ -4,7 +4,7 @@ description: "List the synchronization templates associated with a given applica
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # List existing synchronization templates
@@ -36,7 +36,7 @@ GET /applications/{id}/synchronization/templates
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -2,7 +2,7 @@
 title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -54,7 +54,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

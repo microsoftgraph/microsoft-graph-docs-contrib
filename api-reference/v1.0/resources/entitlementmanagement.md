@@ -3,7 +3,7 @@ title: "entitlementManagement resource type"
 description: "The container for entitlement management resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

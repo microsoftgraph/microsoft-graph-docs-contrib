@@ -21,7 +21,6 @@ const scheduleActionsForRules = {
 };
 
 await client.api('/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules')
-	.version('beta')
 	.post(scheduleActionsForRules);
 
 ```

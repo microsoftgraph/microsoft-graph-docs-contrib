@@ -3,7 +3,7 @@ title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for a user as defined in the userRegistrationDetails object."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.
+Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object. This method doesn't work for disabled users. 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AuditLog.Read.All|
+
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -54,7 +56,7 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.web_category_filtering_rule import WebCategoryFilteringRule
+from msgraph_beta.generated.models.networkaccess.rule_destination import RuleDestination
+from msgraph_beta.generated.models.networkaccess.web_category import WebCategory
 
 graph_client = GraphServiceClient(credentials, scopes)
 

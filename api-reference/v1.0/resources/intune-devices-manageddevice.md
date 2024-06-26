@@ -3,7 +3,7 @@ title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Devices that are managed or pre-enrolled through Intune
 |[Create managedDevice](../api/intune-devices-manageddevice-create.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Create a new [managedDevice](../resources/intune-devices-manageddevice.md) object.|
 |[Delete managedDevice](../api/intune-devices-manageddevice-delete.md)|None|Deletes a [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.|
-|[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Not yet documented|
+
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -38,10 +38,10 @@ Devices that are managed or pre-enrolled through Intune
 |[cleanWindowsDevice action](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|None|Clean Windows device|
 |[logoutSharedAppleDeviceActiveUser action](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|None|Logout shared Apple device active user|
 |[deleteUserFromSharedAppleDevice action](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|None|Delete user from shared Apple device|
-|[syncDevice action](../api/intune-devices-manageddevice-syncdevice.md)|None|Not yet documented|
-|[windowsDefenderScan action](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|Not yet documented|
-|[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Not yet documented|
-|[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None|Not yet documented|
+|[syncDevice action](../api/intune-devices-manageddevice-syncdevice.md)|None||
+|[windowsDefenderScan action](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None||
+|[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None||
+|[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -100,6 +100,7 @@ Devices that are managed or pre-enrolled through Intune
 |notes|String|Notes on the device created by IT Admin. Default is null. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported.|
 |ethernetMacAddress|String|Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values. Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. Read-only. This property is read-only.|
+|enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -223,6 +224,7 @@ Here is a JSON representation of the resource.
   "udid": "String",
   "notes": "String",
   "ethernetMacAddress": "String",
-  "physicalMemoryInBytes": 1024
+  "physicalMemoryInBytes": 1024,
+  "enrollmentProfileName": "String"
 }
 ```

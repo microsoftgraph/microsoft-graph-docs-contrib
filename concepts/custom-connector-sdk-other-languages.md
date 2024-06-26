@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn how to use other languages to build a Microsoft Graph connector."
 ---
 
@@ -35,7 +35,7 @@ You can develop your custom Microsoft Graph connector in languages other than C\
 
 8. [Publish a connection](/graph/custom-connector-sdk-publish) for your custom connector on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
-## See also
+## Related content
 
 * [Best practices](/graph/custom-connector-sdk-best-practices)
 * [Troubleshooting](/graph/custom-connector-sdk-troubleshooting)

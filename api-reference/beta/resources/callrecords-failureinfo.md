@@ -3,7 +3,7 @@ title: "failureInfo resource type"
 description: "The failureInfo type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

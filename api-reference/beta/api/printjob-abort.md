@@ -3,7 +3,7 @@ title: "printJob: abort"
 description: Abort a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ POST /print/printers/{id}/jobs/{id}/abort
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, you can optionally provide the reason why the job is being aborted.

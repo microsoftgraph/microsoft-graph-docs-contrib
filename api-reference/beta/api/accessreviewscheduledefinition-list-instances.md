@@ -3,7 +3,7 @@ title: "List instances"
 description: "Retrieve accessReviewInstance objects."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
 - [Get accessReviewInstance](accessreviewinstance-get.md)

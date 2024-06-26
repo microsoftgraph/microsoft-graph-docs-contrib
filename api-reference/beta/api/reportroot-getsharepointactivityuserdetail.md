@@ -2,7 +2,7 @@
 title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -54,7 +54,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

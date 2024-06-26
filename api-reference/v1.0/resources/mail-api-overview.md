@@ -3,7 +3,7 @@ title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: conceptualPageType
 ---
 
@@ -62,16 +62,13 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
 | Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-2-get-internet-message-headers). |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
-| Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
+| Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/change-notifications-api-overview.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
 | **App development** | | |
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** property of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

@@ -3,7 +3,7 @@ title: "Update externalConnection"
 description: "Update the properties of an externalConnection object."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -35,11 +35,11 @@ PATCH /external/connections/{connectionsId}
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
 
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SynchronizationJob synchronizationJob = new SynchronizationJob();
-synchronizationJob.templateId = "BoxOutDelta";
+synchronizationJob.setTemplateId("BoxOutDelta");
+SynchronizationJob result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").synchronization().jobs().post(synchronizationJob);
 
-graphClient.servicePrincipals("{id}").synchronization().jobs()
-	.buildRequest()
-	.post(synchronizationJob);
 
 ```

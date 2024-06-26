@@ -2,9 +2,9 @@
 author: spgraph-docs-team
 description: "List the effective sharing permissions of on a driveItem."
 ms.date: 09/10/2017
-title: List who has access to a file
+title: List sharing permissions on a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List sharing permissions on a driveItem
@@ -21,9 +21,9 @@ List the effective sharing permissions on a [driveItem](../resources/driveitem.m
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
 
-* For the owner of the item, all sharing permissions will be returned. This includes co-owners.
+* For the owner of the item, all sharing permissions are returned. It includes co-owners.
 * For a non-owner caller, only the sharing permissions that apply to the caller are returned.
-* Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
+* Sharing permission properties that contain secrets (for example, `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
 
 ## Permissions
 
@@ -59,10 +59,10 @@ This method supports the `$select` [OData Query Parameters](/graph/query-paramet
 
 If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.
 
-Effective sharing permissions of a DriveItem can come from two sources:
+Effective sharing permissions of a driveItem can come from two sources:
 
-* Sharing permissions applied directly on the DriveItem itself
-* Sharing permissions inherited from the DriveItem's ancestors
+* Sharing permissions applied directly on the driveItem itself
+* Sharing permissions inherited from the driveItem's ancestors
 
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
@@ -178,12 +178,12 @@ Content-Type: application/json
 
 ## Remarks
 
-The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems.
+The **permissions** relationship of driveItem can't be expanded as part of a call to [get driveItem](driveitem-get.md) or a collection of driveItems.
 You must access the permissions property directly.
 
 ## Error responses
 
-Read the [Error Responses][error-response] topic for more information about
+Read the [Error responses][error-response] topic for more information about
 how errors are returned.
 
 [error-response]: /graph/errors

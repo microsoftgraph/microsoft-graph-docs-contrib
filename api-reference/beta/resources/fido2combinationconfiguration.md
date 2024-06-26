@@ -4,7 +4,7 @@ description: "Configuration to require specific FIDO2 key types in an authentica
 ms.localizationpriority: medium
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

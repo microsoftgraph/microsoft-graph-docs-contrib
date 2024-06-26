@@ -1,10 +1,10 @@
 ---
 author: swapnil1993
 title: "Get columnDefinition"
-description: " Get a site, list or content type column."
+description: " Get a site, list, or content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Get columnDefinition
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
+Retrieve the metadata for a [site][], [list][], or [contentType][] [column][columnDefinition].
 
   
 
@@ -44,7 +44,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|  
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|  
 
 ## Request body
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [columnDefinit
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->

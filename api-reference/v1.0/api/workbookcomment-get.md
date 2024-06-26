@@ -3,7 +3,7 @@ title: "Get workbookComment"
 description: "Retrieve the properties and relationships of workbookcomment object."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 
@@ -34,7 +34,7 @@ GET /me/drive/items/{id}/workbook/comments/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and the requested [w
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

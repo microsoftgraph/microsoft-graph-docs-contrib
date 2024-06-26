@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.print.shares.item.printer_share_item_request_builder import PrinterShareItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = PrinterShareItemRequestBuilder.PrinterShareItemRequestBuilderGetQ
 		select = ["id","displayName","capabilities"],
 )
 
-request_configuration = PrinterShareItemRequestBuilder.PrinterShareItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

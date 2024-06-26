@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.simulation import Simulation
+from msgraph_beta.generated.models.simulation_attack_technique import SimulationAttackTechnique
+from msgraph_beta.generated.models.simulation_attack_type import SimulationAttackType
+from msgraph_beta.generated.models.simulation_status import SimulationStatus
+from msgraph_beta.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
+from msgraph_beta.generated.models.account_target_content_type import AccountTargetContentType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

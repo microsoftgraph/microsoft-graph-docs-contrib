@@ -3,7 +3,7 @@ title: "Get secureScore"
 description: "Retrieve the properties and relationships of a secureScore object."
 author: "preetikr"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

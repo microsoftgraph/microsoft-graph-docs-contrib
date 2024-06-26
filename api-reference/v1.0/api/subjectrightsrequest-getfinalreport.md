@@ -3,7 +3,7 @@ title: "subjectRightsRequest: getFinalReport"
 description: "Get the final report for a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /privacy/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinal
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

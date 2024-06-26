@@ -2,8 +2,9 @@
 title: "Remove group owner"
 description: "Use this API to remove an owner from a Microsoft 365 group or a security group through the owners navigation property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -24,6 +25,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_delete_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-owners-permissions.md)]
 
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the required role permission. The following least privileged roles are supported for this operation:
+
+| Microsoft Entra role | Limitations | Key role permission |
+|--|--|--|
+| Group owners | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| User Administrator | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Directory Writers | Can modify user owners only | microsoft.directory/groups/owners/update |
+| Groups Administrator | Can modify all types of group owners | microsoft.directory/groups/owners/update |
+| Exchange Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| SharePoint Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Teams Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Yammer Administrator | Can modify owners of Microsoft 365 groups only | microsoft.directory/groups.unified/owners/update |
+| Intune Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Knowledge Manager | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+| Windows 365 Administrator | Can modify owners of security groups only | microsoft.directory/groups.security/owners/update |
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +54,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -111,7 +129,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

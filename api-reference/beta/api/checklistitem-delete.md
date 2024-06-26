@@ -3,7 +3,7 @@ title: "Delete checklistItem"
 description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ DELETE /users/{id | userPrincipalName}/tasks/lists/{todoTaskListId}/tasks/{todoT
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -64,9 +64,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request 1
+### Example 1: Delete a checklistItem associated to a todoTask
 
-Here is an example to delete a **checklistItem** associated to a **todoTask**.
+#### Request
+
+The following example shows how to delete a **checklistItem** associated to a **todoTask**.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,8 +115,10 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 
 ---
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -124,9 +128,11 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 HTTP/1.1 204 No Content
 ```
 
-### Request 2
+### Example 2: Delete a checklistItem associated to a baseTask
 
-Here is an example to delete a **checklistItem** associated to a **baseTask** (deprecated).
+#### Request
+
+The following example shows how to delete a **checklistItem** associated to a **baseTask** (deprecated).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -152,7 +158,7 @@ DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtN
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-checklistitem-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -173,8 +179,10 @@ DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtN
 
 ---
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

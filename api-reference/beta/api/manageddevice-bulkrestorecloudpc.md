@@ -1,16 +1,19 @@
 ---
-title: "managedDevice: bulkRestoreCloudPc"
+title: "managedDevice: bulkRestoreCloudPc (deprecated)"
 description: "Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkRestoreCloudPc
+# managedDevice: bulkRestoreCloudPc (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource and its supported APIs.
 
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
@@ -35,7 +38,7 @@ POST /deviceManagement/managedDevices/bulkRestoreCloudPc
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -65,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a [cloudPcBulkRe
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

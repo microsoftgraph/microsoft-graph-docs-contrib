@@ -3,7 +3,7 @@ title: "Get accessReviewHistoryDefinition"
 description: "Retrieve an accessReviewHistoryDefinition object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

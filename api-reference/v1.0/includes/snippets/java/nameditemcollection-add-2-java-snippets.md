@@ -4,22 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String name = "test7";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)";
+com.microsoft.graph.drives.item.items.item.workbook.names.addformulalocal.AddFormulaLocalPostRequestBody addFormulaLocalPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.names.addformulalocal.AddFormulaLocalPostRequestBody();
+addFormulaLocalPostRequestBody.setName("test7");
+addFormulaLocalPostRequestBody.setFormula("=SUM(Sheet2!$A$1+Sheet2!$A$2)");
+addFormulaLocalPostRequestBody.setComment("Comment for the named item");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().addFormulaLocal().post(addFormulaLocalPostRequestBody);
 
-String comment = "Comment for the named item";
-
-graphClient.me().drive().items("{id}").workbook().names()
-	.addFormulaLocal(WorkbookNamedItemAddFormulaLocalParameterSet
-		.newBuilder()
-		.withName(name)
-		.withFormula(formula)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

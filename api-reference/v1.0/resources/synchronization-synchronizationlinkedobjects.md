@@ -3,7 +3,7 @@ title: "synchronizationLinkedObjects resource type"
 description: "Represents any references to be provisioned during on-demand provisioning."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

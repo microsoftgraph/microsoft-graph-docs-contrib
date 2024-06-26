@@ -3,7 +3,7 @@ title: "deviceManagementComplexSettingInstance resource type"
 description: "A setting instance representing a complex value"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceActionResult resource type"
 description: "Device action result"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.workbook.tables.item.rows.rows_request_builder import RowsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.workbook_table_row import WorkbookTableRow
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -23,7 +26,7 @@ request_body = WorkbookTableRow(
 	],
 )
 
-request_configuration = RowsRequestBuilder.RowsRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "respond-async")
 request_configuration.headers.add("Workbook-Session-Id", "{Workbook-Session-Id}")
 

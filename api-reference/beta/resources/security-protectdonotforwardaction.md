@@ -3,7 +3,7 @@ title: "protectDoNotForwardAction resource type"
 description: "Informs the application to apply Don't Forward protection."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.protectDoNotForwardAction"

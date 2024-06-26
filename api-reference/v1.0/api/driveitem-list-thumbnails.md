@@ -3,15 +3,13 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve a collection of ThumbnailSet resources for a DriveItem resource."
 doc_type: apiPageType
 ---
 # List thumbnails for a DriveItem
 
 Namespace: microsoft.graph
-
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
@@ -58,13 +56,19 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
 This is currently only supported on OneDrive Personal.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.
 
 ## Example
 
-Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
+The following example shows a request which retrieves available thumbnails for an item in the current user's OneDrive.
 
 
 # [HTTP](#tab/http)
@@ -162,7 +166,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-one-thumbnail-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -231,7 +235,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-content-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

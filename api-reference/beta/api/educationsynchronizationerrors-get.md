@@ -3,7 +3,7 @@ title: "Get educationSynchronizationErrors"
 description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the following [OData Query Parameters](/graph/query-paramet
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

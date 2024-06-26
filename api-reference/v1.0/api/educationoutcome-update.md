@@ -3,7 +3,7 @@ title: "Update educationOutcome"
 description: "Update the properties of educationOutcome object."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -34,7 +34,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}/submissions/{sub
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

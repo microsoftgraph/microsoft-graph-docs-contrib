@@ -3,7 +3,7 @@ title: "customExtensionStageSetting resource type"
 description: "Defines when to execute an access package custom workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ None
 |customExtension|[customCalloutExtension](../resources/customcalloutextension.md)|Indicates the custom workflow extension that is executed at this stage. Nullable. Supports `$expand`.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

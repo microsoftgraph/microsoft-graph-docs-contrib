@@ -3,7 +3,7 @@ title: "message: forward"
 description: "Forward a message using either JSON or MIME format"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
@@ -70,7 +70,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Forward a message using JSON format
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,7 +88,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }
@@ -133,7 +133,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -161,7 +161,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

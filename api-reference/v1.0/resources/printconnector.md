@@ -3,7 +3,7 @@ title: printConnector resource type
 description: Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -16,10 +16,10 @@ Represents a print connector that has been registered by using a Universal Print
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
-| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
-| [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
+| [List](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
+| [Get](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
+| [Update](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
+| [Delete](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
 
 ## Properties
 |Property|Type|Description|

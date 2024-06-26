@@ -3,7 +3,7 @@ title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ POST /policies/featureRolloutPolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

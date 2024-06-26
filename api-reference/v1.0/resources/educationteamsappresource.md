@@ -3,7 +3,7 @@ title: "educationTeamsAppResource resource type"
 description: "Corresponds to an installed Microsoft Teams app."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

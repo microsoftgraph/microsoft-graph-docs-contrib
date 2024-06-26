@@ -4,35 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcReportName reportName = CloudPcReportName.SHARED_USE_LICENSE_USAGE_REPORT;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String filter = "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'";
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getshareduselicenseusagereport.GetSharedUseLicenseUsageReportPostRequestBody getSharedUseLicenseUsageReportPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getshareduselicenseusagereport.GetSharedUseLicenseUsageReportPostRequestBody();
+getSharedUseLicenseUsageReportPostRequestBody.setReportName(CloudPcReportName.SharedUseLicenseUsageReport);
+getSharedUseLicenseUsageReportPostRequestBody.setFilter("ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'");
+LinkedList<String> select = new LinkedList<String>();
+select.add("ServicePlanId");
+select.add("LicenseCount");
+select.add("ClaimedLicenseCount");
+select.add("DateTimeUTC");
+getSharedUseLicenseUsageReportPostRequestBody.setSelect(select);
+getSharedUseLicenseUsageReportPostRequestBody.setSkip(0);
+getSharedUseLicenseUsageReportPostRequestBody.setTop(100);
+graphClient.deviceManagement().virtualEndpoint().reports().getSharedUseLicenseUsageReport().post(getSharedUseLicenseUsageReportPostRequestBody);
 
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("ServicePlanId");
-selectList.add("LicenseCount");
-selectList.add("ClaimedLicenseCount");
-selectList.add("DateTimeUTC");
-
-int skip = 0;
-
-int top = 100;
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getSharedUseLicenseUsageReport(CloudPcReportsGetSharedUseLicenseUsageReportParameterSet
-		.newBuilder()
-		.withReportName(reportName)
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(null)
-		.withGroupBy(null)
-		.withOrderBy(null)
-		.withSkip(skip)
-		.withTop(top)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

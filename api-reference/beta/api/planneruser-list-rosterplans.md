@@ -3,7 +3,7 @@ title: "List rosterPlans"
 description: "Get the list of plannerPlans that are contained by the plannerRosters of which the user is a member."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ This method only supports the `$select` [OData query parameter](/graph/query-par
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleEligibilityScheduleRequest unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRequest();
-unifiedRoleEligibilityScheduleRequest.action = UnifiedRoleScheduleRequestActions.ADMIN_REMOVE;
-unifiedRoleEligibilityScheduleRequest.roleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4";
-unifiedRoleEligibilityScheduleRequest.directoryScopeId = "/";
-unifiedRoleEligibilityScheduleRequest.principalId = "071cc716-8147-4397-a5ba-b2105951cc0b";
+unifiedRoleEligibilityScheduleRequest.setAction(UnifiedRoleScheduleRequestActions.AdminRemove);
+unifiedRoleEligibilityScheduleRequest.setRoleDefinitionId("8424c6f0-a189-499e-bbd0-26c1753c96d4");
+unifiedRoleEligibilityScheduleRequest.setDirectoryScopeId("/");
+unifiedRoleEligibilityScheduleRequest.setPrincipalId("071cc716-8147-4397-a5ba-b2105951cc0b");
+UnifiedRoleEligibilityScheduleRequest result = graphClient.roleManagement().directory().roleEligibilityScheduleRequests().post(unifiedRoleEligibilityScheduleRequest);
 
-graphClient.roleManagement().directory().roleEligibilityScheduleRequests()
-	.buildRequest()
-	.post(unifiedRoleEligibilityScheduleRequest);
 
 ```

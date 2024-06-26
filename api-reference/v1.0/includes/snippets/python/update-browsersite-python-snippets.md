@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.browser_site import BrowserSite
+from msgraph.generated.models.browser_site_target_environment import BrowserSiteTargetEnvironment
+from msgraph.generated.models.browser_site_merge_type import BrowserSiteMergeType
+from msgraph.generated.models.browser_site_compatibility_mode import BrowserSiteCompatibilityMode
 
 graph_client = GraphServiceClient(credentials, scopes)
 

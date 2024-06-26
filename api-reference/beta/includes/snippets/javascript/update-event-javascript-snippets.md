@@ -17,8 +17,7 @@ const event = {
     response: '',
     time: '2016-10-19T10:37:00Z'
   },
-  recurrence: null,
-  uid: 'iCalUId-value',
+  recurrence: null, 
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
   onlineMeetingProvider: 'teamsForBusiness',

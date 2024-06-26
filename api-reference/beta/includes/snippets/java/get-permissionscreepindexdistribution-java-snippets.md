@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PermissionsCreepIndexDistribution permissionsCreepIndexDistribution = graphClient.identityGovernance().permissionsAnalytics().aws().permissionsCreepIndexDistributions("MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM3ODMyLTIzNzgzMy0yMzc4MzQ")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PermissionsCreepIndexDistribution result = graphClient.identityGovernance().permissionsAnalytics().aws().permissionsCreepIndexDistributions().byPermissionsCreepIndexDistributionId("{permissionsCreepIndexDistribution-id}").get();
+
 
 ```

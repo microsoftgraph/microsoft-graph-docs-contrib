@@ -3,7 +3,7 @@ title: "nonEapAuthenticationMethodForPeap enum type"
 description: "Non-EAP methods for authentication when PEAP is the selected EAP type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

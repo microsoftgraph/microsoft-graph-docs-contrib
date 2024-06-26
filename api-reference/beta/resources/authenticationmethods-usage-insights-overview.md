@@ -1,11 +1,11 @@
 ---
 title: "Working with the authentication methods usage report API"
-description: "The authentication methods usage report helps an organization understand how their end users are using Microsoft Entra capabilities such as self-service password reset and multifactor authentication (MFA)."
+description: "The authentication methods usage report helps you understand how users in your organization are using Microsoft Entra authentication capabilities such as self-service password reset and multifactor authentication (MFA)."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "conceptualPageType"
-ms.date: 01/25/2022
+ms.date: 01/18/2024
 ---
 
 # Working with the authentication methods usage report API
@@ -14,30 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The authentication methods usage reports help you understand how users in your organization use Microsoft Entra features such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
+The authentication methods usage reports help you understand how users in your organization are using Microsoft Entra authentication capabilities such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
 
 These reports provide information such as:
 
 - How many users are registered for each authentication method
 - How many users are registered for features such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
 - The failure rates of each authentication method 
-
-## Permissions
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Reports.Read.All, AuditLog.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All, AuditLog.Read.All|
-
-In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
-
-* Reports reader
-* Security reader
-* Security admin
-* Global reader
-* Global admin
 
 ## Licenses
 
@@ -49,15 +32,15 @@ The following table lists some common requests that you can use with this API.
 
 | Operation | Try in Graph Explorer | Description |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
-| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Get the number of users using self-service password reset. |
-| [credentialUserRegistrationDetails (deprecated)](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
-| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
-| [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users capable of multifactor authentication, self-service password reset and passwordless authentication. |
-| [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users registered for each authentication method. |
-| [userRegistrationDetails](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Get the MFA registration details for all users. |
+| [getCredentialUserRegistrationcount](../resources/credentialuserregistrationcount.md) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
+| [getCredentialUsageSummary](../resources/credentialusagesummary.md) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Get the number of users using self-service password reset. |
+| [credentialUserRegistrationDetails (deprecated)](../resources/credentialuserregistrationdetails.md) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
+| [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
+| [usersRegisteredByFeature](../resources/userregistrationfeaturesummary.md) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users capable of multifactor authentication, self-service password reset and passwordless authentication. |
+| [usersRegisteredByMethod](../resources/userregistrationmethodsummary.md) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users registered for each authentication method. |
+| [userRegistrationDetails](../resources/userRegistrationDetails.md) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Get the MFA registration details for all users. |
 
-## Next steps
+## Related content
 
 - Learn how to [deploy Microsoft Entra self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment).
 - Learn how to deploy [Microsoft Entra multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted).

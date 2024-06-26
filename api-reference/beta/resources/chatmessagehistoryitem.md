@@ -3,7 +3,7 @@ title: "chatMessageHistoryItem resource type"
 description: "Represents the edition history of a message in a chat or a channel."
 author: "agnesliu"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Deletes a user's emailAuthenticationMethod object."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -45,23 +45,24 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
+The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
 
 Delete the email method from your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
 <!-- {  "blockType": "ignored" } -->
 ``` http
-DELETE /me/authentication/emailMethods/{id}
+DELETE /me/authentication/emailMethods/{emailMethods-id}
 ```
 
 Delete the email authentication method from another user's account.
 <!-- {  "blockType": "ignored" } -->
 ``` http
-DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

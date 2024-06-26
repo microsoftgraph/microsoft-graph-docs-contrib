@@ -3,7 +3,7 @@ title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
 description: "Get a virtual appointment join link."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWe
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body

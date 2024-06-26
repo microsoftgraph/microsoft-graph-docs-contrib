@@ -4,44 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BookingCustomer bookingCustomer = new BookingCustomer();
-bookingCustomer.displayName = "Joni Sherman";
-bookingCustomer.emailAddress = "jonis@relecloud.com";
-LinkedList<PhysicalAddress> addressesList = new LinkedList<PhysicalAddress>();
-PhysicalAddress addresses = new PhysicalAddress();
-addresses.postOfficeBox = "";
-addresses.street = "4567 Main Street";
-addresses.city = "Buffalo";
-addresses.state = "NY";
-addresses.countryOrRegion = "USA";
-addresses.postalCode = "98052";
-addresses.type = PhysicalAddressType.HOME;
-addressesList.add(addresses);
-PhysicalAddress addresses1 = new PhysicalAddress();
-addresses1.postOfficeBox = "";
-addresses1.street = "4570 Main Street";
-addresses1.city = "Buffalo";
-addresses1.state = "NY";
-addresses1.countryOrRegion = "USA";
-addresses1.postalCode = "98054";
-addresses1.type = PhysicalAddressType.BUSINESS;
-addressesList.add(addresses1);
-bookingCustomer.addresses = addressesList;
-LinkedList<Phone> phonesList = new LinkedList<Phone>();
-Phone phones = new Phone();
-phones.number = "206-555-0100";
-phones.type = PhoneType.HOME;
-phonesList.add(phones);
-Phone phones1 = new Phone();
-phones1.number = "206-555-0200";
-phones1.type = PhoneType.BUSINESS;
-phonesList.add(phones1);
-bookingCustomer.phones = phonesList;
+bookingCustomer.setDisplayName("Joni Sherman");
+bookingCustomer.setEmailAddress("jonis@relecloud.com");
+LinkedList<PhysicalAddress> addresses = new LinkedList<PhysicalAddress>();
+PhysicalAddress physicalAddress = new PhysicalAddress();
+physicalAddress.setPostOfficeBox("");
+physicalAddress.setStreet("4567 Main Street");
+physicalAddress.setCity("Buffalo");
+physicalAddress.setState("NY");
+physicalAddress.setCountryOrRegion("USA");
+physicalAddress.setPostalCode("98052");
+physicalAddress.setType(PhysicalAddressType.Home);
+addresses.add(physicalAddress);
+PhysicalAddress physicalAddress1 = new PhysicalAddress();
+physicalAddress1.setPostOfficeBox("");
+physicalAddress1.setStreet("4570 Main Street");
+physicalAddress1.setCity("Buffalo");
+physicalAddress1.setState("NY");
+physicalAddress1.setCountryOrRegion("USA");
+physicalAddress1.setPostalCode("98054");
+physicalAddress1.setType(PhysicalAddressType.Business);
+addresses.add(physicalAddress1);
+bookingCustomer.setAddresses(addresses);
+LinkedList<Phone> phones = new LinkedList<Phone>();
+Phone phone = new Phone();
+phone.setNumber("206-555-0100");
+phone.setType(PhoneType.Home);
+phones.add(phone);
+Phone phone1 = new Phone();
+phone1.setNumber("206-555-0200");
+phone1.setType(PhoneType.Business);
+phones.add(phone1);
+bookingCustomer.setPhones(phones);
+BookingCustomer result = graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").customers().post(bookingCustomer);
 
-graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").customers()
-	.buildRequest()
-	.post(bookingCustomer);
 
 ```

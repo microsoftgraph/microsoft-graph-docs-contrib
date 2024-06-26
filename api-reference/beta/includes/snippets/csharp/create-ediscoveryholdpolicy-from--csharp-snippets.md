@@ -21,7 +21,7 @@ var requestBody = new EdiscoveryHoldPolicy
 				new 
 				{
 					OdataType = "microsoft.graph.security.userSource",
-					Email = "SalesTeam@M365x809305.OnMicrosoft.com",
+					Email = "SalesTeam@contoso.com",
 				},
 			}
 		},

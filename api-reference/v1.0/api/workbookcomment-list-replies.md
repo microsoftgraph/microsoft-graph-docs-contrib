@@ -3,7 +3,7 @@ title: "List workbookCommentReplies"
 description: "Retrieve a list of workbookcommentreply objects."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 
@@ -35,7 +35,7 @@ GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

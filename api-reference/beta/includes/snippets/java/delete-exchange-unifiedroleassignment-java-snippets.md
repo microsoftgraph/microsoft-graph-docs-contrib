@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.roleManagement().exchange().roleAssignments("e664cde0-fbdf-4b1e-bcb2-d134ef32194d")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.roleManagement().exchange().roleAssignments().byUnifiedRoleAssignmentId("{unifiedRoleAssignment-id}").delete();
+
 
 ```

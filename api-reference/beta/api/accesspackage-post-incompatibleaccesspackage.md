@@ -3,7 +3,7 @@ title: "Add accessPackage to incompatibleAccessPackages"
 description: "Add a link to indicate an access package is incompatible with a specified access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [accessPackage](../resources/accesspackage.md) to the list of access packages that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Add an [accessPackage](../resources/accesspackage.md) to the list of access packages marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -36,7 +36,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleA
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

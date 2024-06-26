@@ -3,7 +3,7 @@ title: "Send message in a chat"
 description: "Send a new message in a chat."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "identityApiConnector: uploadClientCertificate"
 description: "Upload a PKCS 12 format key (PFX) to an API connectors authentication configuration."
 ms.localizationpriority: medium
 author: "nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityapiconnector_uploadclientcertificate" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body

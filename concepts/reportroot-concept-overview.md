@@ -2,7 +2,7 @@
 title: "Microsoft Graph reports API overview"
 description: "Use the reports API to incorporate Microsoft 365 usage data into your organization's reporting solution so that all IT service reports are in a unified location."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
 ---
@@ -52,6 +52,7 @@ You can use the reports API to access the data sets listed in the following tabl
 | Microsoft 365 (general) | [Activations](/graph/api/resources/office-365-activations-reports)<br/>[Active users](/graph/api/resources/office-365-active-users-reports)<br/>[Apps usage](/graph/api/resources/microsoft-365-apps-usage-report)<br/>[Browser usage (preview)](/graph/api/resources/microsoft-365-browser-usage-report)<br/>[Groups activity](/graph/api/resources/office-365-groups-activity-reports) |
 | OneDrive | [Activity](/graph/api/resources/onedrive-activity-reports)<br/>[Usage](/graph/api/resources/onedrive-usage-reports) |
 | Outlook | [Activity](/graph/api/resources/email-activity-reports)<br/>[App usage](/graph/api/resources/email-app-usage-reports)<br/>[Mailbox usage](/graph/api/resources/mailbox-usage-reports) |
+| Partner billing |  [Billed usage](/graph/api/resources/partners-billing-billedusage)<br/>[Unbilled usage](/graph/api/resources/partners-billing-unbilledusage) |
 | SharePoint | [Activity](/graph/api/resources/sharepoint-activity-reports)<br/>[Site usage](/graph/api/resources/sharepoint-site-usage-reports) |
 | Skype for Business | [Activity](/graph/api/resources/skype-for-business-activity-reports)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Organizer activity](/graph/api/resources/skype-for-business-organizer-activity-reports)<br/>[Participant activity](/graph/api/resources/skype-for-business-participant-activity-reports)<br/>[Peer to peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity) |
 | Yammer | [Activity](/graph/api/resources/yammer-activity-reports)<br/>[Device usage](/graph/api/resources/yammer-device-usage-reports)<br/>[Groups activity](/graph/api/resources/yammer-groups-activity-reports) |
@@ -63,6 +64,8 @@ Looking for the API reference for this service?
 - [Identity and access reports API in Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta&preserve-view=true)
 - [Microsoft 365 usage reports API in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true)
 - [Microsoft 365 usage reports API in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)
+- [Partner billing reports API in Microsoft Graph v1.0](/graph/api/resources/partners-billing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Partner billing reports API in Microsoft Graph beta](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 

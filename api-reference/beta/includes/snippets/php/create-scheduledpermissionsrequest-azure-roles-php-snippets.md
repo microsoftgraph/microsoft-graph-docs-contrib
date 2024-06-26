@@ -5,8 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ScheduledPermissionsRequest;
+use Microsoft\Graph\Beta\Generated\Models\SingleResourceAzurePermissionsDefinition;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystem;
+use Microsoft\Graph\Beta\Generated\Models\AzureRolePermissionsDefinitionAction;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAzureRole;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
+use Microsoft\Graph\Beta\Generated\Models\EdIdentitySource;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionIdentityType;
+use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Beta\Generated\Models\TicketInfo;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ScheduledPermissionsRequest();

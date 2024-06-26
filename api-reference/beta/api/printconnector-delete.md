@@ -3,7 +3,7 @@ title: "Delete printConnector"
 description: "Delete (unregister) a printConnector."
 author: "braedenp-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /print/connectors/{printConnectorId}
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "Update filteringPolicyLink"
 description: "Modify the properties of an existing filteringPolicyLink object to update its traffic rules."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,10 @@ Namespace: microsoft.graph.networkaccess
 Modify the properties of an existing [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object to update its traffic rules.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "networkaccess_filteringpolicylink_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-filteringpolicylink-update-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -38,7 +35,7 @@ PATCH networkAccess/filteringProfiles({filteringProfile_id})/policies({Policy_li
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

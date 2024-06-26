@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentPolicy"
 description: "Delete an accessPackageAssignmentPolicy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -50,7 +50,7 @@ If successful, this method returns a 204 No Content response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

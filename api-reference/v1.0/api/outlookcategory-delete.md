@@ -3,7 +3,7 @@ title: "Delete outlookCategory"
 description: "Delete the specified outlookCategory object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -42,7 +42,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "delete_outlookcategory",

@@ -3,7 +3,7 @@ title: "teamworkTagMember resource type"
 description: "Represents a user in a team to whom a tag is applied."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -18,10 +18,10 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[teamworkTagMember](teamworktagmember.md) collection|Get a list of the [members](../resources/teamworktagmember.md) of a standard tag in a team and their properties.|
-|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[teamworkTagMember](teamworktagmember.md)|Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.|
-|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[teamworkTagMember](teamworktagmember.md)|Get the properties and relationships of a [member](../resources/teamworktagmember.md) of a standard tag in a team.|
-|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a [member](../resources/teamworktagmember.md) from a standard tag in a team.|
+|[List](../api/teamworktagmember-list.md)|[teamworkTagMember](teamworktagmember.md) collection|Get a list of the [members](../resources/teamworktagmember.md) of a standard tag in a team and their properties.|
+|[Create](../api/teamworktagmember-post.md)|[teamworkTagMember](teamworktagmember.md)|Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.|
+|[Get](../api/teamworktagmember-get.md)|[teamworkTagMember](teamworktagmember.md)|Get the properties and relationships of a [member](../resources/teamworktagmember.md) of a standard tag in a team.|
+|[Delete](../api/teamworktagmember-delete.md)|None|Delete a [member](../resources/teamworktagmember.md) from a standard tag in a team.|
 
 ## Properties
 |Property|Type|Description|

@@ -4,7 +4,7 @@ description: "Create new synchronization job with a default synchronization sche
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create synchronizationJob
@@ -35,7 +35,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -48,7 +48,7 @@ If successful, returns a `201 Created` response code and a [synchronizationJob](
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of a response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

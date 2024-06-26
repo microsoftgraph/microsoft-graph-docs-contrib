@@ -3,7 +3,7 @@ title: "x509CertificateAuthenticationModeConfiguration resource type"
 description: "Defines the strong authentication configurations for the X.509 certificate."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

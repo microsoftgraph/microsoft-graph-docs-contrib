@@ -3,8 +3,9 @@ title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for a role eligibility in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Eligibility schedule
 ---
 
 # unifiedRoleEligibilitySchedule resource type
@@ -19,9 +20,9 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRoleEligibilitySchedules](../api/rbacapplication-list-roleeligibilityschedules.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the schedules for role eligibility operations.|
-|[Get unifiedRoleEligibilitySchedule](../api/unifiedroleeligibilityschedule-get.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Retrieve the schedule for a role eligibility operation.|
-|[filterByCurrentUser](../api/unifiedroleeligibilityschedule-filterbycurrentuser.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Retrieve the schedules for role eligibilities for which the signed-in user is the principal.|
+|[List](../api/rbacapplication-list-roleeligibilityschedules.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the schedules for role eligibility operations.|
+|[Get](../api/unifiedroleeligibilityschedule-get.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Retrieve the schedule for a role eligibility operation.|
+|[Filter by current user](../api/unifiedroleeligibilityschedule-filterbycurrentuser.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Retrieve the schedules for role eligibilities for which the signed-in user is the principal.|
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "contentType: addCopyFromContentTypeHub"
 description: "Add or sync a copy of a published content type from the content type hub to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "List fileStorageContainer custom properties"
 description: "List the custom properties of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 List the custom properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object. The caller can retrieve all custom properties or get a specific property by name.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference). The application calling this API must have permission to read fileStorageContainers for the respective container type.
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|FileStorageContainer.Selected|
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_list_customproperty" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-customproperty-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ GET /storage/fileStorage/containers/{containerId}/customProperties/{propertyName
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -48,6 +45,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 The following example shows how to get a custom property named `clientUniquieId`.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_1"
@@ -56,6 +54,12 @@ The following example shows how to get a custom property named `clientUniquieId`
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-filestoragecontainer-customproperty-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.
@@ -77,6 +81,7 @@ Content-type: application/json
 ```
 ### Request
 The following example shows how to get all the custom properties of a **fileStorageContainer**.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_2"
@@ -85,6 +90,12 @@ The following example shows how to get all the custom properties of a **fileStor
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties/
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-filestoragecontainer-customproperty-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

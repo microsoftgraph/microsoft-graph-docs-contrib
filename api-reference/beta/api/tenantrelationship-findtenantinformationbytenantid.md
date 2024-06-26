@@ -3,7 +3,7 @@ title: "tenantRelationship: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -122,6 +122,6 @@ Content-Type: application/json
     "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
     "federationBrandName": null,
     "displayName": "Contoso, Ltd",
-    "defaultDomainName": "CONTOSO18839.onmicrosoft.com"
+    "defaultDomainName": "contoso.com"
 }
 ```

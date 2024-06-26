@@ -3,7 +3,7 @@ title: "Get bookingAppointment"
 description: "Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Get the properties and relationships of a [bookingAppointment](../resources/book
 
 The **startDateTime** and **endDateTime** properties are always returned in UTC.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -57,10 +57,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_get",
-  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -113,7 +113,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -188,7 +188,7 @@ Content-type: application/json
             "emailAddress": "jordanm@contoso.com",
             "phone": "213-555-0199",
             "notes": null,
-            "location": 
+            "location":
             {
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -196,7 +196,7 @@ Content-type: application/json
                 "locationType": null,
                 "uniqueId": null,
                 "uniqueIdType": null,
-                "address": 
+                "address":
                 {
                     "street": "",
                     "city": "",

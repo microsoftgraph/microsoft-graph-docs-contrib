@@ -3,7 +3,7 @@ title: "webSegmentConfiguration resource type"
 description: "Represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageSubject resource type"
 description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageSubject resource type
@@ -33,7 +33,7 @@ None.
 |connectedOrganization|[connectedOrganization](connectedorganization.md)|The connected organization of the subject. Read-only. Nullable.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

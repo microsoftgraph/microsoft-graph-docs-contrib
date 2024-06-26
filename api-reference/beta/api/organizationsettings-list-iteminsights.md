@@ -1,9 +1,9 @@
 ---
-title: "List itemInsights"
+title: "List itemInsights (deprecated)"
 description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -13,10 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [organizationiteminsights-deprecate](../../includes/organizationiteminsights-deprecate.md)]
+
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization.
 
 To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy). 
-
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,7 +39,7 @@ GET /organization/{organizationId}/settings/itemInsights
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -118,5 +119,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize people insights privacy](/graph/insights-customize-people-insights-privacy) for an organization.

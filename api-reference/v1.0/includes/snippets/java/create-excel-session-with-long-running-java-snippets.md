@@ -4,19 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "respond-async"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Boolean persistChanges = true;
+com.microsoft.graph.drives.item.items.item.workbook.createsession.CreateSessionPostRequestBody createSessionPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.createsession.CreateSessionPostRequestBody();
+createSessionPostRequestBody.setPersistChanges(true);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().createSession().post(createSessionPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "respond-async");
+});
 
-graphClient.me().drive().items("{drive-item-id}").workbook()
-	.createSession(WorkbookCreateSessionParameterSet
-		.newBuilder()
-		.withPersistChanges(persistChanges)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

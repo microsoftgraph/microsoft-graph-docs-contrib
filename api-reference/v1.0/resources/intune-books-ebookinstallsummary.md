@@ -3,7 +3,7 @@ title: "eBookInstallSummary resource type"
 description: "Contains properties for the installation summary of a book for a device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

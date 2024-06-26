@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentPolicy"
 description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -134,7 +134,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
+The following example shows a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
 
 
 # [HTTP](#tab/http)
@@ -247,7 +247,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
+The following example shows a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
 
 
 # [HTTP](#tab/http)

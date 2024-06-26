@@ -4,7 +4,7 @@ description: "The calculated column on a columnDefinition resource indicates tha
 title: "calculatedColumn resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # calculatedColumn resource type

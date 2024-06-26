@@ -3,7 +3,7 @@ title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSessi
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body

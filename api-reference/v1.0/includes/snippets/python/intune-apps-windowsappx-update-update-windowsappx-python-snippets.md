@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_app_x import WindowsAppX
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
+from msgraph.generated.models.windows_architecture import WindowsArchitecture
+from msgraph.generated.models.windows_minimum_operating_system import WindowsMinimumOperatingSystem
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [directoryAudit]
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

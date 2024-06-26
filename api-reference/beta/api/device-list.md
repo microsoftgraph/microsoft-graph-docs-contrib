@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of devices registered in the directory. 
+Retrieve a list of devices registered in the directory.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-* Global Administrator
 * Users
 * Directory Readers
 * Directory Writers
@@ -69,7 +68,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, 
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
@@ -86,7 +85,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -296,7 +295,7 @@ The following example shows a request. This request requires the **ConsistencyLe
   "name": "list_devices_startswith_e4"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
+GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
 
@@ -371,7 +370,7 @@ Content-type: application/json
       "Manufacturer":"Microsoft",
       "Model":"Surface",
       "operatingSystemVersion":"windows10EnterpriseN",
-      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
+      "hostNames":["contoso.com", "device_1"]
     }
   ]
 }

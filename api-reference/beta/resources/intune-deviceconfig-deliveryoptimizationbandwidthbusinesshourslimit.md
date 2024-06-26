@@ -3,7 +3,7 @@ title: "deliveryOptimizationBandwidthBusinessHoursLimit resource type"
 description: "Bandwidth business hours and percentages type"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

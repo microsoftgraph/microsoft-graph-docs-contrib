@@ -3,7 +3,7 @@ title: "caseSettings: resetToDefault"
 description: "Reset a caseSetting object to the default values."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

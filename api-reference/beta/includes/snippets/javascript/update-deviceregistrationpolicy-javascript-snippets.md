@@ -11,26 +11,31 @@ const options = {
 const client = Client.init(options);
 
 const deviceRegistrationPolicy = {
-    id: 'deviceRegistrationPolicy',
-    displayName: 'Device Registration Policy',
-    description: 'Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks',
-    userDeviceQuota: 50,
-    multiFactorAuthConfiguration: '0',
-    azureADRegistration: {
-        appliesTo: '1',
-        isAdminConfigurable: false,
-        allowedUsers: [],
-        allowedGroups: []
+  userDeviceQuota: 2,
+  multiFactorAuthConfiguration: 'notRequired',
+  azureADRegistration: {
+    isAdminConfigurable: false,
+    allowedToRegister: {
+      '@odata.type': '#microsoft.graph.enumeratedDeviceRegistrationMembership',
+      users: ['3c8ef067-8b96-44de-b2ae-557dfa0f97a0'],
+      groups: []
     },
-    azureADJoin: {
-        appliesTo: '1',
-        isAdminConfigurable: true,
-        allowedUsers: [],
-        allowedGroups: []
+  },
+  azureADJoin: {
+    isAdminConfigurable: true,
+    allowedToJoin: {
+      '@odata.type': '#microsoft.graph.allDeviceRegistrationMembership'
     },
-    localAdminPassword: {
-      isEnabled: true
-    }
+    localAdmins: {
+      enableGlobalAdmins: false,
+      registeringUsers: {
+        '@odata.type': '#microsoft.graph.noDeviceRegistrationMembership'
+      }
+    },
+  },
+  localAdminPassword: {
+    isEnabled: true
+  }
 };
 
 await client.api('/policies/deviceRegistrationPolicy')

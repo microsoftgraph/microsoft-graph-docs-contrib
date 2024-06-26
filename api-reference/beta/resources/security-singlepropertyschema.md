@@ -3,7 +3,7 @@ title: "singlePropertySchema resource type"
 description: "The schema of one property from the results of hunting query API"
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "Name": "Timestamp",
-    "Type": "DateTime"
+    "name": "Timestamp",
+    "type": "DateTime"
 }
 ```

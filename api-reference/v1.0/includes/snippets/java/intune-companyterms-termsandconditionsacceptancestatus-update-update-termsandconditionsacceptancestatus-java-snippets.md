@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TermsAndConditionsAcceptanceStatus termsAndConditionsAcceptanceStatus = new TermsAndConditionsAcceptanceStatus();
-termsAndConditionsAcceptanceStatus.userDisplayName = "User Display Name value";
-termsAndConditionsAcceptanceStatus.acceptedVersion = 15;
-termsAndConditionsAcceptanceStatus.acceptedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:57:43.6165506+00:00");
-termsAndConditionsAcceptanceStatus.userPrincipalName = "User Principal Name value";
+termsAndConditionsAcceptanceStatus.setOdataType("#microsoft.graph.termsAndConditionsAcceptanceStatus");
+termsAndConditionsAcceptanceStatus.setUserDisplayName("User Display Name value");
+termsAndConditionsAcceptanceStatus.setAcceptedVersion(15);
+OffsetDateTime acceptedDateTime = OffsetDateTime.parse("2016-12-31T23:57:43.6165506-08:00");
+termsAndConditionsAcceptanceStatus.setAcceptedDateTime(acceptedDateTime);
+termsAndConditionsAcceptanceStatus.setUserPrincipalName("User Principal Name value");
+TermsAndConditionsAcceptanceStatus result = graphClient.deviceManagement().termsAndConditions().byTermsAndConditionsId("{termsAndConditions-id}").acceptanceStatuses().byTermsAndConditionsAcceptanceStatusId("{termsAndConditionsAcceptanceStatus-id}").patch(termsAndConditionsAcceptanceStatus);
 
-graphClient.deviceManagement().termsAndConditions("{termsAndConditionsId}").acceptanceStatuses("{termsAndConditionsAcceptanceStatusId}")
-	.buildRequest()
-	.patch(termsAndConditionsAcceptanceStatus);
 
 ```

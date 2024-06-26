@@ -3,7 +3,7 @@ title: "teamsAsyncOperation resource type"
 description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,26 +25,26 @@ When the request completes successfully, the status will be "succeeded" and the 
 
 |  Method                                                                   |  Return Type                                                                     | Description                                                       | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| [List operations on a chat](../api/chat-list-operations.md)               | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List async operations that ran or are running on a specific chat. |
+| [List operations](../api/chat-list-operations.md)               | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List async operations that ran or are running on a specific chat. |
 | [Get operation](../api/teamsasyncoperation-get.md)                   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | Get an async operation that ran or is running on a specific resource. |
 
 ## Properties
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|id|string |Unique operation id.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation being described. |
-|createdDateTime|DateTimeOffset |Time when the operation was created.|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
-|lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
-|targetResourceId|guid |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
-|targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
+|createdDateTime|DateTimeOffset |Time when the operation was created.|
 |error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
+|id|string |Unique operation ID.|
+|lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation described. Possible values are: `invalid`, `cloneTeam`, `archiveTeam`, `unarchiveTeam`, `createTeam`, `unknownFutureValue`, `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`.|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
+|targetResourceId|String |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
+|targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -54,15 +54,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "string",
-    "operationType": "string",
-    "createdDateTime": "string (timestamp)",
-    "status": "string",
-    "lastActionDateTime": "string (timestamp)",
-    "attemptsCount": "Integer",
-    "targetResourceId": "string",
-    "targetResourceLocation": "string",
-    "error": null
+  "attemptsCount": "Int32",
+  "createdDateTime": "String (timestamp)",
+  "error": { "@odata.type": "microsoft.graph.operationError" },
+  "id": "String (identifier)",
+  "lastActionDateTime": "String (timestamp)",
+  "operationType": "String",
+  "status": "String",
+  "targetResourceId": "String",
+  "targetResourceLocation": "String"
 }
 ```
 

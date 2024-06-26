@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RiskyServicePrincipal riskyServicePrincipal = graphClient.identityProtection().riskyServicePrincipals("9089a539-a539-9089-39a5-899039a58990")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RiskyServicePrincipal result = graphClient.identityProtection().riskyServicePrincipals().byRiskyServicePrincipalId("{riskyServicePrincipal-id}").get();
+
 
 ```

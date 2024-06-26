@@ -3,7 +3,7 @@ title: "plannerPlanContextCollection resource type"
 description: "The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the plannerPlan object. The value in the property-value pair is the plannerPlanContext object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerPlanContextCollection"
+  "@odata.type": "microsoft.graph.plannerPlanContextCollection",
+  "openType": true
 }-->
 
 ```json

@@ -4,7 +4,7 @@ description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -46,7 +46,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | RoleManagement.ReadWrite.Exchange |
 
 ## HTTP request
 
@@ -75,7 +75,7 @@ POST /roleManagement/exchange/roleAssignments
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -86,7 +86,7 @@ You can specify the following properties when creating a **unifiedRoleAssignment
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |appScopeId|String|Required. Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by a resource application only. <br/><br/>For the entitlement management provider, use this property to specify a catalog, for example `/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997`. <br/><br/> Either **appScopeId** or **directoryScopeId** must be specified.|
-|directoryScopeId|String|Required. Identifier of the [directory object](../resources/directoryobject.md) representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only. <br/><br/> For the directory (Microsoft Entra ID) provider, this property supports the following formats: <li> `/` for tenant-wide scope <li> `/administrativeUnits/{administrativeunit-ID}` to scope to an administrative unit <li> `/{application-objectID}` to scope to a resource application <li> `/attributeSets/{attributeSet-ID}` to scope to an attribute set <br/><br/> For entitlement management provider, `/` for tenant-wide scope. To scope to an access package catalog, use the **appScopeId** property. <br/><br/> For Exchange Online provider, this property supports following formats: <li> `/` for tenant-wide scope <li> `/Users/{ObjectId of user}` to scope the role assignment to a specific user <li> `/AdministrativeUnits/{ObjectId of AU}` to scope the role assignment to an administrative unit <br/><br/> Either **appScopeId** or **directoryScopeId** must be specified.|
+|directoryScopeId|String|Required. Identifier of the [directory object](../resources/directoryobject.md) representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only. <br/><br/> For the directory (Microsoft Entra ID) provider, this property supports the following formats: <li> `/` for tenant-wide scope <li> `/administrativeUnits/{administrativeunit-ID}` to scope to an administrative unit <li> `/{application-objectID}` to scope to a resource application <li> `/attributeSets/{attributeSet-ID}` to scope to an attribute set <br/><br/> For entitlement management provider, `/` for tenant-wide scope. To scope to an access package catalog, use the **appScopeId** property. <br/><br/> For Exchange Online provider, this property supports following formats: <li> `/` for tenant-wide scope <li> `/Users/{ObjectId of user}` to scope the role assignment to a specific user <li> `/AdministrativeUnits/{ObjectId of AU}` to scope the role assignment to an administrative unit <li> `/Groups/{ObjectId of group}` to scope the role assinment to direct members of a specific group <br/><br/> Either **appScopeId** or **directoryScopeId** must be specified.|
 |principalId|String|Required. Identifier of the principal to which the assignment is granted. |
 |roleDefinitionId|String| Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports `$filter` (`eq`, `in`). |
 
@@ -481,7 +481,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment5-from-rbacapplication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

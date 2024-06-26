@@ -3,7 +3,7 @@ title: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal"
 description: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/$ref
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -48,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_assign_permissionGrantPreApprovalPolicies"
@@ -62,6 +63,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-assign-permissiongrantpreapprovalpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- {

@@ -3,8 +3,9 @@ title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Feedback outcome
 ---
 
 # educationFeedbackOutcome resource type
@@ -17,7 +18,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 

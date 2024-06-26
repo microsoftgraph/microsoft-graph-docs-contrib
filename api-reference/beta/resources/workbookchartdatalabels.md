@@ -3,8 +3,9 @@ title: "workbookChartDataLabels resource type"
 description: "Represents a collection of all the data labels on a chart point."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart data labels
 ---
 
 # workbookChartDataLabels resource type
@@ -42,7 +43,7 @@ Represents a collection of all the data labels on a chart point.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

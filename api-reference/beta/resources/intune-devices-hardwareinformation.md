@@ -3,7 +3,7 @@ title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

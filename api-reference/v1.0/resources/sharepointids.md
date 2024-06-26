@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: SharePointIds
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "The SharePointIds resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure."
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ The **SharePointIds** resource groups the various identifiers for an item stored
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

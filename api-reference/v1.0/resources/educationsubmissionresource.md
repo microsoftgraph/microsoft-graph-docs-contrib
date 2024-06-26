@@ -3,8 +3,9 @@ title: "educationSubmissionResource resource type"
 description: "A wrapper around a resource for use on a submission."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Submission resource
 ---
 
 # educationSubmissionResource resource type
@@ -20,9 +21,9 @@ The wrapper adds a pointer to the assignment resource if the resource was copied
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
-|[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
-|[Delete](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
+|[List submission resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
+|[Get submission resource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
+|[Delete submission resource](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,7 +38,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "user: findRoomLists"
 description: "Get the room lists defined in a tenant."
 author: "vrod9429"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /users/{id}/findRoomLists
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 
 
@@ -55,7 +55,7 @@ If no lists are defined in the tenant, then an empty array is returned.
 ## Example
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -121,11 +121,11 @@ Content-type: application/json
     "value": [
         {
             "name": "Building 1 Rooms",
-            "address": "Building1Rooms@contoso.onmicrosoft.com"
+            "address": "Building1Rooms@contoso.com"
         },
         {
             "name": "Building 2 Rooms",
-            "address": "Building2Rooms@contoso.onmicrosoft.com"
+            "address": "Building2Rooms@contoso.com"
         }
     ]
 }

@@ -4,7 +4,7 @@ description: "Represents the new system-generated password after a password rese
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "sectionGroup resource type"
 description: "A section group in a OneNote notebook. Section groups can contain sections and section groups."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ A section group in a OneNote notebook. Section groups can contain sections and s
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -70,11 +70,11 @@ Here is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get section group](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |Read the properties and relationships of the section group.|
-|[Create section group](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified section group.|
-|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get collection of section groups in the specified section group.|
-|[Create section](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| Create a section by posting to the sections collection in the specified section group.|
+|[List](../api/sectiongroup-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get collection of section groups in the specified section group.|
+|[Get](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |Read the properties and relationships of the section group.|
+|[Create](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified section group.|
 |[List sections](../api/sectiongroup-list-sections.md) |[onenoteSection](onenotesection.md) collection| Get a collection of sections in the specified section group.|
+|[Create section](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| Create a section by posting to the sections collection in the specified section group.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

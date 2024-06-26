@@ -3,7 +3,7 @@ title: "List alertConfigurations"
 description: "Get a list of the unifiedRoleManagementAlertConfiguration objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request that retrieves all the alert configurations for Microsoft Entra roles under the tenant resource scope.
+The following example shows a request that retrieves all the alert configurations for Microsoft Entra roles under the tenant resource scope.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

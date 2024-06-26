@@ -4,7 +4,7 @@ description: "Represents location information of an event."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Location resource type
@@ -17,9 +17,8 @@ Represents location information of an [event](event.md).
 
 There are multiple ways to create events in a calendar, for example, through an app using the 
 [create event](../api/user-post-events.md) REST API, or manually using the Outlook user interface. When you create an event using the user interface, 
-you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, 
-[Bing Autosuggest](https://blogs.bing.com/search/2013/02/20/a-look-at-autosuggest/), or 
-[Bing local search](https://blogs.bing.com/search/2010/08/17/local-search-on-m-bing-com/). 
+you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, Bing Autosuggest, or 
+Bing local search. 
 
 Depending on how an event is created, expect Outlook to set the read-only **locationType** property differently. 
 

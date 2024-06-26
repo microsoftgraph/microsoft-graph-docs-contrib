@@ -4,7 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.scheduled_permissions_request import ScheduledPermissionsRequest
+from msgraph_beta.generated.models.single_resource_azure_permissions_definition import SingleResourceAzurePermissionsDefinition
+from msgraph_beta.generated.models.permissions_definition_authorization_system import PermissionsDefinitionAuthorizationSystem
+from msgraph_beta.generated.models.azure_role_permissions_definition_action import AzureRolePermissionsDefinitionAction
+from msgraph_beta.generated.models.permissions_definition_azure_role import PermissionsDefinitionAzureRole
+from msgraph_beta.generated.models.permissions_definition_authorization_system_identity import PermissionsDefinitionAuthorizationSystemIdentity
+from msgraph_beta.generated.models.ed_identity_source import EdIdentitySource
+from msgraph_beta.generated.models.permissions_definition_identity_type import PermissionsDefinitionIdentityType
+from msgraph_beta.generated.models.request_schedule import RequestSchedule
+from msgraph_beta.generated.models.expiration_pattern import ExpirationPattern
+from msgraph_beta.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgBetaUserChat -UserId $userId -ChatId $chatId
+Get-MgBetaUserChatRetainedMessage -UserId $userId
 
 ```

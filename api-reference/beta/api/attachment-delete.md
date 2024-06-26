@@ -3,7 +3,7 @@ title: "Delete attachment"
 description: "Delete an attachment from a calendar event, message, Outlook task, or post."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 ---
 
@@ -116,7 +116,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -130,7 +130,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of the request to delete an attachment on an event.
+The following example shows a request to delete an attachment on an event.
 
 # [HTTP](#tab/http)
 <!-- {

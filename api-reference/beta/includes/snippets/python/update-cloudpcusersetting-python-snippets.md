@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.cloud_pc_user_setting import CloudPcUserSetting
+from msgraph_beta.generated.models.cloud_pc_restore_point_setting import CloudPcRestorePointSetting
+from msgraph_beta.generated.models.cloud_pc_restore_point_frequency_type import CloudPcRestorePointFrequencyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,6 +17,7 @@ request_body = CloudPcUserSetting(
 	self_service_enabled = True,
 	restore_point_setting = CloudPcRestorePointSetting(
 		frequency_in_hours = 16,
+		frequency_type = CloudPcRestorePointFrequencyType.SixteenHours,
 		user_restore_enabled = True,
 	),
 	local_admin_enabled = False,

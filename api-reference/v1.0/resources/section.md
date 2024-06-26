@@ -1,13 +1,13 @@
 ---
-title: "section resource type"
+title: "onenoteSection resource type"
 description: "A section in a OneNote notebook. Sections can contain pages."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
-# section resource type
+# onenoteSection resource type
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ A section in a OneNote notebook. Sections can contain pages.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -71,8 +71,8 @@ Here is a JSON representation of the resource.
 |[Get section](../api/section-get.md) | [OnenoteSection](section.md) |Read the properties and relationships of the section.|
 |[Create page](../api/section-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection in the specified section.|
 |[List pages](../api/section-list-pages.md) |[Page](page.md) collection| Get a collection of pages in the specified section.|
-|[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
+|[Copy to notebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
+|[Copy to section group](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

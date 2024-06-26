@@ -3,7 +3,7 @@ title: "Get notebook"
 description: "Retrieve the properties and relationships of a notebook object."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept | string | `application/json` |
 
 ## Request body
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here's truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-GroupCollectionPage groups = graphClient.groups()
-	.buildRequest()
-	.filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
-	.select("id,membershipRule,membershipRuleProcessingState")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+GroupCollectionResponse result = graphClient.groups().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.select = new String []{"id", "membershipRule", "membershipRuleProcessingState"};
+});
+
 
 ```

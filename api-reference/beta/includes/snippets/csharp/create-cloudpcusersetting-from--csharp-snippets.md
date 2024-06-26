@@ -18,6 +18,7 @@ var requestBody = new CloudPcUserSetting
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
 		FrequencyInHours = 16,
+		FrequencyType = CloudPcRestorePointFrequencyType.SixteenHours,
 		UserRestoreEnabled = true,
 	},
 };

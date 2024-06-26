@@ -5,8 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Event;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
+use Microsoft\Graph\Beta\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
+use Microsoft\Kiota\Abstractions\Types\Date;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\Attendee;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
@@ -40,7 +56,7 @@ $location->setDisplayName('Harry\'s Bar');
 $requestBody->setLocation($location);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('AdeleV@contoso.onmicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('AdeleV@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Adele Vance');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));

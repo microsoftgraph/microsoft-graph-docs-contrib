@@ -3,7 +3,7 @@ title: "microsoftAccountUserConversationMember resource type"
 description: "Represents a personal Microsoft account user in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

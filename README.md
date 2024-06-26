@@ -4,9 +4,11 @@ Thank you for your interest in Microsoft Graph documentation! For the best exper
 
 ## Give us your feedback
 
+**Coming soon:** In March 2024, we will be phasing out the current feedback mechanism for content (GitHub issues) described below and replacing it with a new feedback system. For more information, see https://aka.ms/ContentUserFeedback.
+
 Your feedback is important to us.
 
-- To let us know about any questions or issues you find in the documentation, [submit an issue](https://github.com/microsoftgraph/microsoft-graph-docs/issues) in this repository.
+- To let us know about any questions or issues you find in the documentation, [leave feedback using the standard experience](https://learn.microsoft.com/en-us/contribute/content/provide-feedback#use-the-standard-experience).
 - We also encourage you to fork, make the fix, and do a pull request of your proposed changes. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
 - To let us know about your programming experience, what you would like to see in future versions, code samples, and so on, enter your suggestions and ideas at [Microsoft 365 Developer Platform Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 

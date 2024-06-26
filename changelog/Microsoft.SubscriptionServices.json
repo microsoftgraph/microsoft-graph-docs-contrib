@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "VirtualEvent.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "VirtualEvent.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-08T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
+          "ApiChange": "Permission",
+          "ChangedApiName": "VirtualEvent.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
+          "ApiChange": "Permission",
+          "ChangedApiName": "VirtualEvent.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-08T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9e028122-3fa9-4297-8d3f-dd34a91e4367",
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingRecording.Read.All",
@@ -331,194 +383,184 @@
     {
       "ChangeList": [
         {
-          "Id": "8d387285-5143-475a-af21-dac8aad73f39",
-          "ApiChange": "Property",
-          "ChangedApiName": "chatMessage,Set up change notifications for chat messages, including message properties (preview)",
+          "Id": "9e028122-3fa9-4297-8d3f-dd34a91e4367",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingRecording.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data).",
-          "Target": "chatMessage,Set up change notifications for chat messages, including message properties (preview)"
-        }
-      ],
-      "Id": "8d387285-5143-475a-af21-dac8aad73f39",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Create and send notifications",
-          "ChangeType": "Addition",
-          "Description": "Added the [Create and send notifications](https://learn.microsoft.com/en-us/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens.",
-          "Target": "Create and send notifications"
+          "Description": "Added support for the delegated and application permission `OnlineMeetingRecording.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/graph/api/resources/subscription?view=graph-rest-1.0) resource: [LIST](https:/learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0), [POST](https:/learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0), [DELETE](https:/learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0), and [reauthorize](https:/learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0).",
+          "Target": "subscription"
         },
         {
-          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
-          "ApiChange": "Property",
-          "ChangedApiName": "targetPolicy",
+          "Id": "d9c669e9-66a4-4453-89e8-2628acdd1fbe",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingTranscript.Read.All",
           "ChangeType": "Addition",
-          "Description": "Introduced the **targetPolicy** property on the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush.",
-          "Target": "notification"
-        },
-        {
-          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
-          "ApiChange": "Property",
-          "ChangedApiName": "fallbackPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the **fallbackPolicy** property on the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications.",
-          "Target": "notification"
+          "Description": "Added support for the delegated and application permission `OnlineMeetingTranscript.Read.All` to the following operations of the [subscription](https://learn.microsoft.com/graph/api/resources/subscription?view=graph-rest-1.0) resource: [LIST](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0), [POST](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https://learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0), [DELETE](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0), and [reauthorize](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0).",
+          "Target": "subscription"
         }
       ],
-      "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "cad40a53-4aae-43ac-bfb0-c12dc684fcfa",
-          "ApiChange": "Resource",
-          "ChangedApiName": "subscriptionRemoved,missed",
-          "ChangeType": "Addition",
-          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](https://learn.microsoft.com/en-us/graph/webhooks-lifecycle).",
-          "Target": "Reduce missing subscriptions and notifications for Outlook resources (preview)"
-        }
-      ],
-      "Id": "cad40a53-4aae-43ac-bfb0-c12dc684fcfa",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
-          "ApiChange": "Resource",
-          "ChangedApiName": "notification",
-          "ChangeType": "Addition",
-          "Description": "Added the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource type.",
-          "Target": "notification"
-        },
-        {
-          "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Create and publish notification",
-          "ChangeType": "Addition",
-          "Description": "Added the **Create and publish notification** API.",
-          "Target": "Create and publish notification"
-        }
-      ],
-      "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "User notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "7ef120d5-951b-4639-aeb9-be91c7caaa2a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "webhooks",
-          "ChangeType": "Change",
-          "Description": "Added support to [webhooks](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta) for users and groups.",
-          "Target": "webhooks"
-        }
-      ],
-      "Id": "7ef120d5-951b-4639-aeb9-be91c7caaa2a",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "fac1d829-477b-4363-98be-e12b20773a35",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Added Drive root items to Webhooks as a resource that is available to subscribe to.",
-          "Target": ""
-        }
-      ],
-      "Id": "fac1d829-477b-4363-98be-e12b20773a35",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2016-09-01T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "87dc2ada-5a12-43cd-9caf-38efeded8061",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "App-only scopes are now supported for _mail_ and _contacts_ subscriptions.",
-          "Target": ""
-        }
-      ],
-      "Id": "87dc2ada-5a12-43cd-9caf-38efeded8061",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2016-06-01T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "2f9fda70-fab6-4e5d-817b-27882fb5a38d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Webhooks are now GA on v1.0 endpoint via the _/Subscriptions_ resource. Create, Read, Renew and Delete subscriptions to receive notifications on data from Outlook and Microsoft 365 group conversations.",
-          "Target": ""
-        }
-      ],
-      "Id": "2f9fda70-fab6-4e5d-817b-27882fb5a38d",
+      "Id": "9e028122-3fa9-4297-8d3f-dd34a91e4367",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2023-12-08T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Microsoft Graph WebHooks Update - January 2016",
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "notificationUrl validation on subscription creation. For details, see [Microsoft Graph WebHooks Update - January 2016](https:/developer.microsoft.com/office/blogs/Microsoft-Graph-WebHooks-Update-January-2016/).",
-          "Target": "Microsoft Graph WebHooks Update - January 2016"
+          "Description": "Enabled change notifications support to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
         },
         {
-          "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
-          "ApiChange": "Resource",
-          "ChangedApiName": "",
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Subscription entities can now be deleted: DELETE https:/graph.microsoft.com/beta/subscriptions/",
-          "Target": ""
-        }
+          "Description": "Enabled change notifications support to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "reauthorize",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe either to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).",
+          "Target": "subscription"
+       }
       ],
-      "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
+      "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-02-01T00:00:00",
+      "CreatedDateTime": "2024-05-20T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the methods to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) and [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+          "ApiChange": "Method",
+          "ChangedApiName": "reauthorize",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-beta) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta).",
+          "Target": "subscription"
+       }
+      ],
+      "Id": "db5f0ba7-1243-4764-b3ce-fcb67d70198e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-03T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the methods to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0) and [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+          "ApiChange": "Method",
+          "ChangedApiName": "reauthorize",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to the method to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-1.0) a subscription for [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), and [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0).",
+          "Target": "subscription"
+       }
+      ],
+      "Id": "5185e372-b697-4677-bc60-85c4a7cb9b98",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-03T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     }

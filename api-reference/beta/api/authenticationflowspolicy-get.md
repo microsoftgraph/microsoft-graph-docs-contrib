@@ -3,7 +3,7 @@ title: "Get authenticationFlowsPolicy"
 description: "Read the properties and relationships of an authenticationFlowsPolicy object."
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /policies/authenticationFlowsPolicy
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

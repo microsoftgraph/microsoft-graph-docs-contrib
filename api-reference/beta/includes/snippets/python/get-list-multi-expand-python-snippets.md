@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.sites.item.lists.item.list_item_request_builder import ListItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +15,7 @@ query_params = ListItemRequestBuilder.ListItemRequestBuilderGetQueryParameters(
 		expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"],
 )
 
-request_configuration = ListItemRequestBuilder.ListItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

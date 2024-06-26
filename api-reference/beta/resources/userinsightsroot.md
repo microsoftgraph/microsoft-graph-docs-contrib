@@ -3,7 +3,7 @@ title: "userInsightsRoot resource type"
 description: "A container for entities that represent summaries of daily and monthly user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

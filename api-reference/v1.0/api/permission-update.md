@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Change sharing permissions
 ms.localizationpriority: medium
 description: "Update the properties of a sharing permission by patching the permission resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Update sharing permission
@@ -36,28 +36,28 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated.
+In the request body, supply the values for the relevant fields to be updated.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance you shouldn't include existing values that haven't changed.
+Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following properties on these permission types can be modified.
+The following table lists the properties that can be updated.
 
-| Permission Type        | Property | Type              | Description                   |
-|:-----------------------|:---------|:------------------|:------------------------------|
-<!-- { "blockType": "permissions", "name": "permission_update_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/permission-update-3-permissions.md)]
+| Property | Type              | Description                   |
+|:---------|:------------------|:------------------------------|
+| roles    | String collection | The type of permission. The possible values are `read`, `write`, and `owner`.|
 
-### Remarks
-Unsupported permission modifications include the following:
+
+The following types of permission modifications aren't supported:
 - Organizational sharing links
 - People sharing links
 
@@ -65,9 +65,11 @@ Unsupported permission modifications include the following:
 
 If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
 
-## Example
+## Examples
 
-Here is an example of the request that changes the role on the sharing permission to read-only.
+### Request
+
+The following example shows a request that changes the role on the sharing permission to read-only.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +120,7 @@ Content-type: application/json
 
 ### Response
 
-If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 

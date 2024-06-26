@@ -4,7 +4,7 @@ description: "Adds a comment to the end of the alert comments list"
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /security/alerts_v2/{alertId}/comments
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated list 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,6 +81,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/alert-v2-addcomment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-v2-addcomment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -120,12 +124,12 @@ Content-type: application/json
     "value": [
         {
             "comment": "test",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:30.1606766Z"
         },
         {
             "comment": "Demo for docs",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:40.3825324Z"
         }
     ]

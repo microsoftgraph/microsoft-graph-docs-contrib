@@ -3,7 +3,7 @@ title: "deviceEnrollmentConfiguration resource type"
 description: "The Base Class of Device Enrollment Configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -23,10 +23,10 @@ The Base Class of Device Enrollment Configuration
 |[List deviceEnrollmentConfigurations](../api/intune-shared-deviceenrollmentconfiguration-list.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|List properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) objects.|
 |[Get deviceEnrollmentConfiguration](../api/intune-shared-deviceenrollmentconfiguration-get.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Read properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) object.|
 |**Onboarding**|
-|[setPriority action](../api/intune-shared-deviceenrollmentconfiguration-setpriority.md)|None|Not yet documented|
-|[assign action](../api/intune-shared-deviceenrollmentconfiguration-assign.md)|None|Not yet documented|
+|[setPriority action](../api/intune-shared-deviceenrollmentconfiguration-setpriority.md)|None||
+|[assign action](../api/intune-shared-deviceenrollmentconfiguration-assign.md)|None||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.b2x_user_flows.b2x_user_flows_request_builder import B2xUserFlowsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = B2xUserFlowsRequestBuilder.B2xUserFlowsRequestBuilderGetQueryPara
 		expand = ["identityProviders"],
 )
 
-request_configuration = B2xUserFlowsRequestBuilder.B2xUserFlowsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

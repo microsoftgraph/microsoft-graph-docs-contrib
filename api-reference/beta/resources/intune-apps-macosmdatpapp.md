@@ -3,7 +3,7 @@ title: "macOSMdatpApp resource type"
 description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App. This is deprecated for MacOSMicrosoftDefenderApp in 2305 (May 2023)."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

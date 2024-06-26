@@ -3,7 +3,7 @@ title: "onPremisesApplicationSegment resource type (deprecated)"
 description: "Represents onPremisesApplicationSegment object when publishing an on-premises wildcard application with Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

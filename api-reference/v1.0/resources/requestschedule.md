@@ -3,7 +3,7 @@ title: "requestSchedule resource type"
 description: "In PIM, use this resource to define the schedule for when the principal has an eligible or active role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) a
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSchedule"

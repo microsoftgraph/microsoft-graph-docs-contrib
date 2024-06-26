@@ -3,7 +3,7 @@ title: "aospDeviceOwnerScepCertificateProfile resource type"
 description: "AOSP Device Owner SCEP certificate profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

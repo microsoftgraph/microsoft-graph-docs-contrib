@@ -1,13 +1,14 @@
 ---
-title: "formatProtection resource type"
+title: "workbookFormatProtection resource type"
 description: "Represents the format protection of a range object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: resourcePageType
+toc.title: Format protection
 ---
 
-# formatProtection resource type
+# workbookFormatProtection resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +19,8 @@ Represents the format protection of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
-|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
+|[Get workbookFormatProtection](../api/formatprotection-get.md) | [workbookFormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
+|[Update](../api/formatprotection-update.md) | [workbookFormatProtection](formatprotection.md)	|Update FormatProtection object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,7 +34,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

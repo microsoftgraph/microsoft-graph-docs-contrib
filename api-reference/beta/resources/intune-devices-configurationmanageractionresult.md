@@ -3,7 +3,7 @@ title: "configurationManagerActionResult resource type"
 description: "Result of the ConfigurationManager action"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

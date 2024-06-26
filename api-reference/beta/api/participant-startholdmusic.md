@@ -3,7 +3,7 @@ title: "participant: startHoldMusic"
 description: "Put a participant on hold and play music in the background."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -52,7 +52,7 @@ If successful, this method returns a `202 Accepted` response code and a [startHo
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { 

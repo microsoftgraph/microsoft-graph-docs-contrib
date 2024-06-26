@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
 ---
 
@@ -219,18 +219,11 @@ Map of the source property key and its value in the data source. It stores the p
 
 Enumeration members of content type.
 
-|Member |Value |Description |
-|:----------|:-------------|:----------|
-|None |0 |Default value |
-|Text |1 |Text content type |
-|Html |2 |Html content type |
-|Binary |3 |Binary content type |
-|Bmp |4 |Bmp content type |
-|Jpg |5 |Jpg content type |
-|Pdf |6 |Pdf content type |
-|Png |7 |Png content type |
-|Tif |8 |Tif content type |
-|UnknownFutureValue |9 |For future-proofing, following Microsoft Graph enumerations. All new enumerations will be added below until a major API version change. |
+| Member | Value | Description        |
+|:-------|:------|:-------------------|
+| None   | 0     | Default value.     |
+| Text   | 1     | Text content type. |
+| Html   | 2     | HTML content type. |
 
 #### Content
 
@@ -243,7 +236,7 @@ Value of the content property of the item, used to render search results.
 
 #### CrawlCheckpoint
 
-Identifies the item that was crawled last. It will be saved by the platform and the checkpoint from last successful item batch will be used for resuming crawl if there is a failure or crash. The platform will send the checkpoint in the **GetCrawlStream** API.
+Identifies the item that was crawled last. It will be saved by the platform and the checkpoint from last successful item batch will be used for resuming crawl if there's a failure or crash. The platform will send the checkpoint in the **GetCrawlStream** API.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|

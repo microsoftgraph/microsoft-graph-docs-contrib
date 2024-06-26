@@ -3,7 +3,7 @@ title: "List educationSynchronizationProfiles"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method supports the following [OData Query Parameters](/graph/query-paramet
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

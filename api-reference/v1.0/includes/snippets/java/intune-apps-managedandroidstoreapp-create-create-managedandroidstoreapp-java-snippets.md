@@ -4,48 +4,52 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ManagedAndroidStoreApp mobileApp = new ManagedAndroidStoreApp();
-mobileApp.displayName = "Display Name value";
-mobileApp.description = "Description value";
-mobileApp.publisher = "Publisher value";
+mobileApp.setOdataType("#microsoft.graph.managedAndroidStoreApp");
+mobileApp.setDisplayName("Display Name value");
+mobileApp.setDescription("Description value");
+mobileApp.setPublisher("Publisher value");
 MimeContent largeIcon = new MimeContent();
-largeIcon.type = "Type value";
-largeIcon.value = Base64.getDecoder().decode("dmFsdWU=");
-mobileApp.largeIcon = largeIcon;
-mobileApp.isFeatured = true;
-mobileApp.privacyInformationUrl = "https://example.com/privacyInformationUrl/";
-mobileApp.informationUrl = "https://example.com/informationUrl/";
-mobileApp.owner = "Owner value";
-mobileApp.developer = "Developer value";
-mobileApp.notes = "Notes value";
-mobileApp.publishingState = MobileAppPublishingState.PROCESSING;
-mobileApp.appAvailability = ManagedAppAvailability.LINE_OF_BUSINESS;
-mobileApp.version = "Version value";
-mobileApp.packageId = "Package Id value";
-mobileApp.appStoreUrl = "https://example.com/appStoreUrl/";
+largeIcon.setOdataType("microsoft.graph.mimeContent");
+largeIcon.setType("Type value");
+byte[] value = Base64.getDecoder().decode("dmFsdWU=");
+largeIcon.setValue(value);
+mobileApp.setLargeIcon(largeIcon);
+mobileApp.setIsFeatured(true);
+mobileApp.setPrivacyInformationUrl("https://example.com/privacyInformationUrl/");
+mobileApp.setInformationUrl("https://example.com/informationUrl/");
+mobileApp.setOwner("Owner value");
+mobileApp.setDeveloper("Developer value");
+mobileApp.setNotes("Notes value");
+mobileApp.setPublishingState(MobileAppPublishingState.Processing);
+mobileApp.setAppAvailability(ManagedAppAvailability.LineOfBusiness);
+mobileApp.setVersion("Version value");
+mobileApp.setPackageId("Package Id value");
+mobileApp.setAppStoreUrl("https://example.com/appStoreUrl/");
 AndroidMinimumOperatingSystem minimumSupportedOperatingSystem = new AndroidMinimumOperatingSystem();
-minimumSupportedOperatingSystem.v4_0 = true;
-minimumSupportedOperatingSystem.v4_0_3 = true;
-minimumSupportedOperatingSystem.v4_1 = true;
-minimumSupportedOperatingSystem.v4_2 = true;
-minimumSupportedOperatingSystem.v4_3 = true;
-minimumSupportedOperatingSystem.v4_4 = true;
-minimumSupportedOperatingSystem.v5_0 = true;
-minimumSupportedOperatingSystem.v5_1 = true;
-minimumSupportedOperatingSystem.v6_0 = true;
-minimumSupportedOperatingSystem.v7_0 = true;
-minimumSupportedOperatingSystem.v7_1 = true;
-minimumSupportedOperatingSystem.v8_0 = true;
-minimumSupportedOperatingSystem.v8_1 = true;
-minimumSupportedOperatingSystem.v9_0 = true;
-minimumSupportedOperatingSystem.v10_0 = true;
-minimumSupportedOperatingSystem.v11_0 = true;
-mobileApp.minimumSupportedOperatingSystem = minimumSupportedOperatingSystem;
+minimumSupportedOperatingSystem.setOdataType("microsoft.graph.androidMinimumOperatingSystem");
+minimumSupportedOperatingSystem.setV40(true);
+minimumSupportedOperatingSystem.setV403(true);
+minimumSupportedOperatingSystem.setV41(true);
+minimumSupportedOperatingSystem.setV42(true);
+minimumSupportedOperatingSystem.setV43(true);
+minimumSupportedOperatingSystem.setV44(true);
+minimumSupportedOperatingSystem.setV50(true);
+minimumSupportedOperatingSystem.setV51(true);
+minimumSupportedOperatingSystem.setV60(true);
+minimumSupportedOperatingSystem.setV70(true);
+minimumSupportedOperatingSystem.setV71(true);
+minimumSupportedOperatingSystem.setV80(true);
+minimumSupportedOperatingSystem.setV81(true);
+minimumSupportedOperatingSystem.setV90(true);
+minimumSupportedOperatingSystem.setV100(true);
+minimumSupportedOperatingSystem.setV110(true);
+mobileApp.setMinimumSupportedOperatingSystem(minimumSupportedOperatingSystem);
+MobileApp result = graphClient.deviceAppManagement().mobileApps().post(mobileApp);
 
-graphClient.deviceAppManagement().mobileApps()
-	.buildRequest()
-	.post(mobileApp);
 
 ```

@@ -20,7 +20,7 @@ var requestBody = new FindMeetingTimesPostRequestBody
 			EmailAddress = new EmailAddress
 			{
 				Name = "Alex Wilbur",
-				Address = "alexw@contoso.onmicrosoft.com",
+				Address = "alexw@contoso.com",
 			},
 		},
 	},

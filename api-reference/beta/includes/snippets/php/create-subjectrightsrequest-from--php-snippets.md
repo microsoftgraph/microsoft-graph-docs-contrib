@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\SubjectRightsRequest;
+use Microsoft\Graph\Beta\Generated\Models\SubjectRightsRequestType;
+use Microsoft\Graph\Beta\Generated\Models\DataSubjectType;
+use Microsoft\Graph\Beta\Generated\Models\DataSubject;
+use Microsoft\Graph\Beta\Generated\Models\SubjectRightsRequestAllSiteLocation;
+use Microsoft\Graph\Beta\Generated\Models\User;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SubjectRightsRequest();

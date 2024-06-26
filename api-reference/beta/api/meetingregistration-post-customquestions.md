@@ -3,7 +3,7 @@ title: "Create meetingRegistrationQuestion"
 description: "Create a custom meeting registration question associated with a meetingRegistration object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /me/onlineMeetings/{id}/registration/microsoft.graph.meetingRegistration/cu
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -72,10 +72,6 @@ Content-Type: application/json
   "answerInputType": "text"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-custom-question-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-custom-question-javascript-snippets.md)]

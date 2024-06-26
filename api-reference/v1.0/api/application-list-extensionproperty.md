@@ -3,7 +3,7 @@ title: "List extensionProperties (directory extensions)"
 description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select` and `$filter` (`eq` on **name**) OData query 
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

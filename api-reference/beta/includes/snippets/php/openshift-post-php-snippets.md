@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\Schedule\OpenShifts\OpenShiftsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\OpenShift;
+use Microsoft\Graph\Beta\Generated\Models\OpenShiftItem;
+use Microsoft\Graph\Beta\Generated\Models\ScheduleEntityTheme;
+use Microsoft\Graph\Beta\Generated\Models\ShiftActivity;
+use Microsoft\Graph\Beta\Generated\Models\IdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenShift();

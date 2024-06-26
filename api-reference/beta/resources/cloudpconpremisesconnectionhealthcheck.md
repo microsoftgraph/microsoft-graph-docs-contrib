@@ -1,9 +1,9 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
-description: "The result of a Cloud PC Azure network connection health check."
+description: "Represents the result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of a Cloud PC Azure network connection health check.
+Represents the result of a Cloud PC Azure network connection health check.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -21,13 +21,13 @@ The result of a Cloud PC Azure network connection health check.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[Run health checks](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalDetails|String|More details about the health check or the recommended action.|
+|additionalDetail|String|More details about the health check or the recommended action. Read-only.|
 |correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
@@ -37,6 +37,7 @@ The result of a Cloud PC Azure network connection health check.
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|additionalDetails (deprecated)|String|More details about the health check or the recommended action. Read-only. The **additionalDetails** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **additionalDetail** property. |
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
@@ -94,7 +95,9 @@ The result of a Cloud PC Azure network connection health check.
 |permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |
 |permissionCheckNoVNetContributorRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure virtual network. Make sure that the Cloud PC service has the *Network contributor* permissions on the virtual network.|
-|permissionCheckNoResourceGroupNetworkContributorRole| The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the  application has Network contributor permissions on the resource group.|
+|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the  application has Network contributor permissions on the resource group.|
+|permissionCheckNoWindows365NetworkUserRole|Cloud PC service principal does not have Windows 365 network user role on the specified virtual network. Work with the subscription owner to add the Windows 365 network user role assignment for the Cloud PC service principal.|
+|permissionCheckNoWindows365NetworkInterfaceContributorRole|Cloud PC service principal does not have Windows 365 network interface contributor role on the specified resource group. Work with the subscription owner to add Windows 365 network interface contributor role assignment on the resource group for the Cloud PC service principal.|
 |permissionCheckTransientServiceError|The first-party app permission check failed due to a transient error. Try it again. If the issue persists, contact customer support.|
 |permissionCheckUnknownError|The Cloud PC service principal doesn't have sufficient permissions. Make sure that the Cloud PC service principal is granted sufficient Azure permissions.|
 |udpConnectivityCheckStunUrlNotAllowListed|Your current network configuration doesn't allow UDP direct connect Session Traversal Utilities for NAT (STUN). This configuration doesn't prevent using Cloud PCs but can prevent optimal performance. Consider your network configuration policies before you apply changes.|
@@ -115,7 +118,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck"
@@ -125,13 +128,14 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+  "additionalDetail": "String",
+  "additionalDetails": "String",
+  "correlationId": "String",
   "displayName": "String",
-  "status": "String",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "additionalDetails": "String",
-  "correlationId": "String"
+  "startDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

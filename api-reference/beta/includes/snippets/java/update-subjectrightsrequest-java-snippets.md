@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SubjectRightsRequest subjectRightsRequest = new SubjectRightsRequest();
-subjectRightsRequest.internalDueDateTime = OffsetDateTimeSerializer.deserialize("2021-08-30T00:00:00Z");
+subjectRightsRequest.setOdataType("#microsoft.graph.subjectRightsRequest");
+OffsetDateTime internalDueDateTime = OffsetDateTime.parse("2021-08-30T00:00:00Z");
+subjectRightsRequest.setInternalDueDateTime(internalDueDateTime);
+SubjectRightsRequest result = graphClient.privacy().subjectRightsRequests().bySubjectRightsRequestId("{subjectRightsRequest-id}").patch(subjectRightsRequest);
 
-graphClient.privacy().subjectRightsRequests("{subjectRightsRequestId}")
-	.buildRequest()
-	.patch(subjectRightsRequest);
 
 ```

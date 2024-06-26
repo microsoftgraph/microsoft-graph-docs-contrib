@@ -3,7 +3,7 @@ title: "Delete appRoleAssignedTo"
 description: "Delete an appRoleAssignment granted for a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -42,7 +42,7 @@ DELETE /servicePrincipals(appId='{appId}')/appRoleAssignedTo/{appRoleAssignment-
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request to delete an app role assignment from the resource service principal.
+The following example shows a request to delete an app role assignment from the resource service principal.
 
 
 
@@ -108,7 +108,7 @@ In this example, `{resource-SP-id}` is the id of the resource service principal,
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

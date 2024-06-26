@@ -3,7 +3,7 @@ title: "personDataSource resource type"
 description: "Represents the sources the user data comes from, such as Directory and Outlook Contacts."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents the sources the user data comes from, such as Directory and Outlook C
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

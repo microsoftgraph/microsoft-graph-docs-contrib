@@ -3,7 +3,7 @@ title: "onenote resource type"
 description: "Represents the entry point for OneNote resources."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,7 @@ For information about the permissions required to work with OneNote APIs, see [N
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",

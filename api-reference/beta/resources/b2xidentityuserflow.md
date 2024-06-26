@@ -3,7 +3,7 @@ title: "b2xIdentityUserFlow resource type"
 description: "Represents a self-service sign-up user flow within a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "nanguil"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a self-service sign-up user flow within a Microsoft Entra tenant.
 
-User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up, including which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, along with which attributes are collected as part of the sign up process.
+User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up. This experience includes which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, and which attributes are collected as part of the sign up process.
 
 ## Methods
 
@@ -34,8 +34,8 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
 |[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
 |[List languages](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2X user flow.|
-|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter isn't supported for this method.|
-|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
+|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiconnectorconfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter isn't supported for this method.|
+|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiconnectorconfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
 
 ## Properties
 
@@ -57,7 +57,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

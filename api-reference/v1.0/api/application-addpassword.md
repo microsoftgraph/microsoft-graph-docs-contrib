@@ -2,8 +2,8 @@
 title: "application: addPassword"
 description: "Add a strong password to an application."
 ms.localizationpriority: medium
-author: "sureshja"
-ms.prod: "applications"
+author: "madansr7"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Adds a strong password or secret to an [application](../resources/application.md).
+Adds a strong password or secret to an [application](../resources/application.md). You can also [add passwords while creating the application](../api/application-post-applications.md#example-2-create-a-new-application-and-add-a-password-secret).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -36,14 +36,14 @@ POST /applications(appId='{appId}')/addPassword
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.|
 
 ## Request body
 
 In the request body, provide an optional `passwordCredential` object with the following properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | displayName | String | Friendly name for the password. Optional. |
 | endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional. The default value is "startDateTime + 2 years". |

@@ -3,7 +3,7 @@ title: "channel: provisionEmail"
 description: "Provision an email address for a channel."
 author: "anandab-msft"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Microsoft Teams doesn't automatically provision an email address for a **channel
 
 To remove the email address of a **channel**, use the [removeEmail](channel-removeemail.md) method.
 
-> **Notes**: 
+> **Notes**:
 > This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -37,7 +37,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 ## Request headers
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [provisionChan
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,7 +112,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.provisionChannelEmailResult",
-    "email": "1df8f174.teamsgraph.onmicrosoft.com@amer.teams.ms"
+    "email": "contoso.com@amer.teams.ms"
 }
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8

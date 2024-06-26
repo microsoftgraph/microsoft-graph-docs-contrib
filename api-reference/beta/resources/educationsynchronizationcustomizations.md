@@ -3,7 +3,7 @@ title: "educationSynchronizationCustomizations resource type"
 description: "Contains the list of entities to sync and their customizations, if any."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

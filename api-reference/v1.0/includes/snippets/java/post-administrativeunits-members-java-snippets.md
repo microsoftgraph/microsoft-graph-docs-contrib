@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group directoryObject = new Group();
-directoryObject.description = "Self help community for golf";
-directoryObject.displayName = "Golf Assist";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("Unified");
-directoryObject.groupTypes = groupTypesList;
-directoryObject.mailEnabled = true;
-directoryObject.mailNickname = "golfassist";
-directoryObject.securityEnabled = false;
+directoryObject.setOdataType("#microsoft.graph.group");
+directoryObject.setDescription("Self help community for golf");
+directoryObject.setDisplayName("Golf Assist");
+LinkedList<String> groupTypes = new LinkedList<String>();
+groupTypes.add("Unified");
+directoryObject.setGroupTypes(groupTypes);
+directoryObject.setMailEnabled(true);
+directoryObject.setMailNickname("golfassist");
+directoryObject.setSecurityEnabled(false);
+DirectoryObject result = graphClient.directory().administrativeUnits().byAdministrativeUnitId("{administrativeUnit-id}").members().post(directoryObject);
 
-graphClient.directory().administrativeUnits("{id}").members()
-	.buildRequest()
-	.post(directoryObject);
 
 ```

@@ -3,7 +3,7 @@ title: "enrollmentConfigurationAssignment resource type"
 description: "Enrollment Configuration Assignment"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "alternativeSecurityId resource type"
 description: "For internal use only."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "myra-ramdenbourg"
 ---
 

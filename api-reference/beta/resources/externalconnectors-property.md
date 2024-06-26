@@ -3,7 +3,7 @@ title: "property resource type"
 description: "A schema property definition for a Microsoft Search connection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -32,7 +32,7 @@ A [schema](externalconnectors-schema.md) property definition for a Microsoft Sea
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "teamwork resource type"
 description: "A container for the range of Microsoft Teams functionalities that are available for the organization."
 author: "charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -22,11 +22,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the list of [teamTemplate](../resources/teamtemplate.md) objects available for the tenant. |
+|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| A unique identifier. Inherited from [entity](../resources/entity.md).|
+|id|string|The default teamwork identifier.|
+|isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
+|region|string|Represents the region of the organization.|
 
 ## Relationships
 | Relationship | Type | Description |
@@ -39,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,11 +55,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.teamwork",
-    "id": "String (identifier)"
+    "id": "String",
+    "isTeamsEnabled": "boolean",
+    "region": "String"
 }
 ```
 
-## See also
+## Related content
 
 - [userTeamwork resource](userteamwork.md)
-

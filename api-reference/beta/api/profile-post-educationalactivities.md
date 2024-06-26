@@ -3,7 +3,7 @@ title: "Create educationalActivity"
 description: "Create a new educationalActivity."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -37,7 +37,7 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 | Name           |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required. |
 
 ## Request body
@@ -74,7 +74,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST /me/profile/educationalActivities
+POST https://graph.microsoft.com/beta/me/profile/educationalActivities
 Content-type: application/json
 
 {

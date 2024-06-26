@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get servicePrincipalSignInActivity
@@ -40,7 +40,7 @@ This method does not support OData query parameters to help customize the respon
 
 | Name          | Description    |
 | :------------ | :------------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 
 ### Request
 
-The following is an example of a request that shows how to get the last sign-in information for a service principal based on its ID.
+The following example shows how to get the last sign-in information for a service principal based on its ID.
 
 # [HTTP](#tab/http)
 <!-- {

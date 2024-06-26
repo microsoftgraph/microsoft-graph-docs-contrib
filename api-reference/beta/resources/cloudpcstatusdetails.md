@@ -1,19 +1,22 @@
 ---
-title: "cloudPcStatusDetails resource type"
+title: "cloudPcStatusDetails resource type (deprecated)"
 description: "Represents details about the status of a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcStatusDetails resource type
+# cloudPcStatusDetails resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about the status of a Cloud PC.
+Represents details about a Cloud PC status.
+
+> [!NOTE]
+> This resource type is deprecated and will stop returning data on August 31, 2024. Use [cloudPcStatusDetail](../resources/cloudpcstatusdetail.md) instead.
 
 ## Properties
 
@@ -29,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcStatusDetails",

@@ -5,12 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\Alert;
+use Microsoft\Graph\Beta\Generated\Models\Security\AlertClassification;
+use Microsoft\Graph\Beta\Generated\Models\Security\AlertDetermination;
+use Microsoft\Graph\Beta\Generated\Models\Security\AlertStatus;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Alert();
-$requestBody->setAssignedTo('secAdmin@contoso.onmicrosoft.com');
+$requestBody->setAssignedTo('secAdmin@contoso.com');
 $requestBody->setClassification(new AlertClassification('truePositive'));
 $requestBody->setDetermination(new AlertDetermination('malware'));
 $requestBody->setStatus(new AlertStatus('inProgress'));

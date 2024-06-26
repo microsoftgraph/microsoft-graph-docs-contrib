@@ -3,7 +3,7 @@ title: "userFlowApiConnectorConfiguration resource type"
 description: "Represents which API connectors are enabled for a user flow."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Defines which APIs are called at specific points in the user flow.  Each relatio
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"

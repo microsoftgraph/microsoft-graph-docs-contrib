@@ -3,7 +3,7 @@ title: "bookingAppointment resource type"
 description: "Represents a customer appointment for a bookingService, performed by a set of staff members, provided by a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -20,12 +20,12 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
-|[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
+|[List](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
+|[Create](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
+|[Get](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
 |[Update](../api/bookingappointment-update.md) | None |Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
-|[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
+|[Cancel appointment](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
 ## Properties
 
@@ -63,7 +63,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

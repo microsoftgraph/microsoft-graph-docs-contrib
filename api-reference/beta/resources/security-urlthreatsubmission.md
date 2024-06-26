@@ -3,7 +3,7 @@ title: "urlThreatSubmission resource type"
 description: "Represent a threat submission related to a URL"
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -22,9 +22,9 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List urlThreatSubmissions](../api/security-urlthreatsubmission-list.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.|
-|[Create urlThreatSubmission](../api/security-urlthreatsubmission-post-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Create a new [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
-|[Get urlThreatSubmission](../api/security-urlthreatsubmission-get.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Read the properties and relationships of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
+|[List](../api/security-urlthreatsubmission-list.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.|
+|[Create](../api/security-urlthreatsubmission-post-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Create a new [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
+|[Get](../api/security-urlthreatsubmission-get.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Read the properties and relationships of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 
 ## Properties
 | Property | Type   | Description                 |

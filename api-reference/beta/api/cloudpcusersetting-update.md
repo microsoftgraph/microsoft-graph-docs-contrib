@@ -3,7 +3,7 @@ title: "Update cloudPcUserSetting"
 description: "Update the properties of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /deviceManagement/virtualEndpoint/userSettings/{id}
 
 | Name          | Description                |
 | :------------ | :------------------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body
@@ -51,12 +51,11 @@ The following table shows the properties that are required when you update the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The setting name displayed in the user interface.|
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.|
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
-|selfServiceEnabled|Boolean|To turn on the self-service option, change this setting to `true`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self-service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
@@ -66,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -84,6 +83,7 @@ Content-Type: application/json
   "selfServiceEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false,

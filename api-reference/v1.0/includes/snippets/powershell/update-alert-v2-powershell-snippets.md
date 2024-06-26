@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	assignedTo = "secAdmin@contoso.onmicrosoft.com"
+	assignedTo = "secAdmin@contoso.com"
 	classification = "truePositive"
 	determination = "malware"
 	status = "inProgress"

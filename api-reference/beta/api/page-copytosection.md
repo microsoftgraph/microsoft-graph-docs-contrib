@@ -3,7 +3,7 @@ title: "page: copyToSection"
 description: "Copy a page to a specific section."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | application/json |
 
 ## Request body

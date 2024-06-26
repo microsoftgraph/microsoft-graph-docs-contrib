@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: File
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # File resource type
 
@@ -20,7 +20,7 @@ In addition to other properties, files have a **content** relationship that cont
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

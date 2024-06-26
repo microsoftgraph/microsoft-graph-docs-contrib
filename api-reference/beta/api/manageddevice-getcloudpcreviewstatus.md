@@ -1,17 +1,20 @@
 ---
-title: "managedDevice: getCloudPcReviewStatus"
+title: "managedDevice: getCloudPcReviewStatus (deprecated)"
 description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: getCloudPcReviewStatus
+# managedDevice: getCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
 
 Get the review status of a specific Cloud PC device.
 
@@ -36,7 +39,7 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcReviewStatus
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +52,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcRevi
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

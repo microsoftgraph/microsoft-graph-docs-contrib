@@ -3,7 +3,7 @@ title: "List assigned tokenIssuancePolicies"
 description: "List tokenIssuancePolicies that are assigned to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ GET /applications(appId='{appId}')/tokenIssuancePolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

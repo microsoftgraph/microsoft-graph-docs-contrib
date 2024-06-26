@@ -3,7 +3,7 @@ title: "Get resource"
 description: "Retrieve the binary data of a file or image resource object."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and the image or fil
 Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity_governance.lifecycle_workflows.workflows.item.versions.{workflow_version-version_number}.workflow_version_item_request_builder import WorkflowVersionItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +15,7 @@ query_params = WorkflowVersionItemRequestBuilder.WorkflowVersionItemRequestBuild
 		expand = ["tasks"],
 )
 
-request_configuration = WorkflowVersionItemRequestBuilder.WorkflowVersionItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

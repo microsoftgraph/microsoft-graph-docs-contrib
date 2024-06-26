@@ -3,7 +3,7 @@ title: "accessPackage: getApplicablePolicyRequirements"
 description: "Allow callers to find requirements to request an assignment for a specific accessPackage."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # accessPackage: getApplicablePolicyRequirements
@@ -33,7 +33,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "Delete legalHold"
 description: "Delete a legalHold object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/legalHolds/{legalHoldId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

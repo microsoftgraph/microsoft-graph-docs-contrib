@@ -2,7 +2,7 @@
 title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ---
@@ -152,7 +152,7 @@ Access the list item associated with the following components.
 | {list-id}                  | The GUID ID of the list (`SPList`) in the site.                     |
 | {item-id}                  | The GUID or integer ID of the list item (`SPListItem`) in the list. |
 
-The following is an example of a request that contains the previous components.
+The following example shows a request that contains the previous components.
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{site-server-relative-url}:/lists/{list-id}/items/{item-id}
@@ -165,10 +165,6 @@ The following example returns information about the `SPListItem` with integer ID
 ```http
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/teams/hr/benefits:/lists/5771e865-4e91-48b8-a0de-35a25d4e52fe/items/42
 ```
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 [site]: site.md
 [list]: list.md

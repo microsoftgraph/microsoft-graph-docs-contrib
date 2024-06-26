@@ -3,7 +3,7 @@ title: "participant: invite"
 description: "Invite participants to the active call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,9 @@ Invite participants to the active call.
 
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
->**Note:** Inviting multiple participants in one request is only supported for group calls.
+>**Note:**
+> * Inviting multiple participants in one request is only supported for group calls.
+> * Inviting more than one bot to a meeting or group call isn't allowed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +40,7 @@ POST /communications/calls/{id}/participants/invite
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body
@@ -106,7 +108,7 @@ Content-Length: 464
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-participant-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -280,7 +282,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
 Content-Type: application/json
 
 {
@@ -327,7 +329,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-multiple-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -542,9 +544,7 @@ Content-Type: application/json
 ### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
 
 
-The invite API supports only one participant when replacing an existing peer-to-peer call. 
-When multiple participants are provided in the request body, only the first participant 
-will be read and the rest of the participants will be ignored.
+The invite API supports only one participant when you replace an existing peer-to-peer call. When multiple participants are provided in the request body, only the first participant is read and the rest of the participants are ignored.
 
 
 > **Note:** The invite API supports only one participant when `replacesCallId` is provided. 
@@ -560,7 +560,7 @@ will be read and the rest of the participants will be ignored.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {
@@ -595,7 +595,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-existing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -978,7 +978,7 @@ For more information about how to create an online meeting, see [Create onlineMe
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -988,7 +988,7 @@ The following is an example of a request.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {
@@ -1024,7 +1024,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

@@ -3,7 +3,7 @@ title: "retentionEvent resource type"
 description: "Represents a trigger for event-based retention labels where start of the retention period is based on when a specific type of event occurs."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -35,9 +35,9 @@ To learn more about it, see [Start retention when an event occurs](/microsoft-36
 |createdDateTime|DateTimeOffset|The date time when the retentionEvent was created.|
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
-|eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Represents the success status of a created event and additional information.|
-|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
-|retentionEventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Status of event propogation to the scoped locations after the event has been created.|
+|eventPropagationResults|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md) collection|Represents the success status of a created event and additional information.|
+|eventQueries|[microsoft.graph.security.eventQuery](../resources/security-eventquery.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
+|eventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md)|Status of event propogation to the scoped locations after the event has been created.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |id|String|Represents the unique ID of the user who created the retentionEvent. [entity](/graph/api/resources/entity).|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEvent.|
@@ -67,7 +67,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",

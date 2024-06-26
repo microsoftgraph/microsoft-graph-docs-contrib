@@ -3,7 +3,7 @@ title: "Delete unifiedGroupSource"
 description: "Delete a unifiedGroupSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /compliance/ediscovery/cases/{id}/custodians/{id}/unifiedGroupSources/{id
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

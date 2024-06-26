@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Schedule;
+use Microsoft\Graph\Beta\Generated\Models\OperationStatus;
+use Microsoft\Graph\Beta\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Beta\Generated\Models\TimeClockSettings;
+use Microsoft\Graph\Beta\Generated\Models\GeoCoordinates;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Schedule();
@@ -18,6 +24,10 @@ $requestBody->setOpenShiftsEnabled(true);
 $requestBody->setSwapShiftsRequestsEnabled(true);
 $requestBody->setOfferShiftRequestsEnabled(true);
 $requestBody->setTimeOffRequestsEnabled(true);
+$requestBody->setStartDayOfWeek(new DayOfWeek('tuesday'));
+$requestBody->setActivitiesIncludedWhenCopyingShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftRequestApprovalRequired(true);
 $requestBody->setTimeClockEnabled(true);
 $timeClockSettings = new TimeClockSettings();
 $timeClockSettingsApprovedLocation = new GeoCoordinates();
@@ -26,11 +36,6 @@ $timeClockSettingsApprovedLocation->setLatitude(26.13246);
 $timeClockSettingsApprovedLocation->setLongitude(24.34616);
 $timeClockSettings->setApprovedLocation($timeClockSettingsApprovedLocation);
 $requestBody->setTimeClockSettings($timeClockSettings);
-$additionalData = [
-	'startDayOfWeek' => 'Tuesday',
-	'activitiesIncludedWhenCopyingShiftsEnabled' => true,
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->put($requestBody)->wait();
 

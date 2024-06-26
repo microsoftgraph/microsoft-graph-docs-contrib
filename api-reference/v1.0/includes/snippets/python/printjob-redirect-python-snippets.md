@@ -4,7 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.print.printers.item.jobs.item.redirect.redirect_post_request_body import RedirectPostRequestBody
+from msgraph.generated.models.print_job_configuration import PrintJobConfiguration
+from msgraph.generated.models.printer_feed_orientation import PrinterFeedOrientation
+from msgraph.generated.models.integer_range import IntegerRange
+from msgraph.generated.models.print_quality import PrintQuality
+from msgraph.generated.models.print_orientation import PrintOrientation
+from msgraph.generated.models.print_duplex_mode import PrintDuplexMode
+from msgraph.generated.models.print_color_mode import PrintColorMode
+from msgraph.generated.models.print_margin import PrintMargin
+from msgraph.generated.models.print_multipage_layout import PrintMultipageLayout
+from msgraph.generated.models.print_scaling import PrintScaling
 
 graph_client = GraphServiceClient(credentials, scopes)
 

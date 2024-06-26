@@ -3,7 +3,7 @@ title: "Update simulation"
 description: "Update an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /security/attackSimulation/simulations/{simulationId}
 
 |Header         |Value                    |
 |---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type   |application/json         |
 
 ## Request body
@@ -67,7 +67,7 @@ The following example shows how to update an attack simulation campaign for a te
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -154,7 +154,7 @@ The following example shows how to schedule an attack simulation campaign. The s
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -242,7 +242,7 @@ The following example shows how to cancel an attack simulation campaign for a te
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -311,7 +311,7 @@ The following example shows how to exclude an attack simulation campaign for a t
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

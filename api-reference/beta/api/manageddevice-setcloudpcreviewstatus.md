@@ -1,17 +1,20 @@
 ---
-title: "managedDevice: setCloudPcReviewStatus"
+title: "managedDevice: setCloudPcReviewStatus (deprecated)"
 description: "Set the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: setCloudPcReviewStatus
+# managedDevice: setCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on April 30, 2024. Going forward, use the [cloudPC: setReviewStatus](../api/cloudpc-setreviewstatus.md) API.
 
 Set the review status of a specific Cloud PC device. Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious. After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
@@ -37,7 +40,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/setCloudPcReviewStatus
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -58,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -1,16 +1,19 @@
 ---
-title: "Create deviceLink"
+title: "Create deviceLink (deprecated)"
 description: "Create a branch site with associated device links."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Create deviceLink
+# Create deviceLink (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Create a branch site with associated device links.
 
@@ -37,7 +40,7 @@ POST /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

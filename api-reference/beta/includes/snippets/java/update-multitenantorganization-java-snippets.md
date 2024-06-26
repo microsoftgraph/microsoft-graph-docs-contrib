@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MultiTenantOrganization multiTenantOrganization = new MultiTenantOrganization();
-multiTenantOrganization.displayName = "Contoso organization";
-multiTenantOrganization.description = "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank";
+multiTenantOrganization.setDisplayName("Contoso organization");
+multiTenantOrganization.setDescription("Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank");
+MultiTenantOrganization result = graphClient.tenantRelationships().multiTenantOrganization().patch(multiTenantOrganization);
 
-graphClient.tenantRelationships().multiTenantOrganization()
-	.buildRequest()
-	.patch(multiTenantOrganization);
 
 ```

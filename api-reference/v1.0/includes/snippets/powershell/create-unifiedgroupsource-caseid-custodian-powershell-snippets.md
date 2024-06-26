@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	group = @{
-		mail = "SOCTeam@M365x809305.onmicrosoft.com"
+		mail = "SOCTeam@contoso.com"
 	}
 	includedSources = "mailbox, site"
 }

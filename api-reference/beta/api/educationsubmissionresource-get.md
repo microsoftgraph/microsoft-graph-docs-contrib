@@ -3,7 +3,7 @@ title: "Get educationSubmissionResource"
 description: "Retrieve the properties of a specific resource associated with the submission."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "Get tenantDetailedInformation"
 description: "Read the properties and relationships of a tenantDetailedInformation object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -112,7 +112,7 @@ Content-Type: application/json
   "id": "34298981-4fc8-4974-9486-c8909ed1521b",
   "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
   "companyName": "Fourth Coffee",
-  "defaultDomainName": "fourthcoffee001.onmicrosoft.com",
+  "defaultDomainName": "contoso.com",
   "countryName": "United States",
   "countryCode": "US",
   "city": "Redmond",

@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicyTargetConfiguration resource type"
 description: "Defines the target of a cross-tenant access policy setting configuration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

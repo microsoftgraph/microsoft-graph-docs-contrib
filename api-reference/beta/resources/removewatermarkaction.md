@@ -3,7 +3,7 @@ title: "removeWatermarkAction resource type (deprecated)"
 description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Overview of federated identity credentials in Microsoft Entra ID"
 description: "Federated identity credentials allow you to access Azure and Microsoft Graph resources without having to manage secrets. This is part of workload identity federation in Azure AD."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: conceptualPageType
 ms.date: 08/03/2022
 ---
@@ -38,9 +38,9 @@ The combination of **issuer** and **subject** must be unique on the app.
 
 ## Design considerations
 
-Federated identity credentials are supported on applications only. A maximum of 20 federated identity credentials can be added per application object.
+A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity.
 
-## See also
+## Related content
 
 + [federatedIdentityCredential resource type](federatedidentitycredential.md)
 + [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)

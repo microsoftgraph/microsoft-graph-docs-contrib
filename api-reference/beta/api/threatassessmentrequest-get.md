@@ -3,7 +3,7 @@ title: "Get threatAssessmentRequest"
 description: "Retrieve the properties and relationships of a specified threatassessmentrequest object."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
 ---
 
@@ -52,7 +52,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -140,7 +140,7 @@ Content-type: application/json
   "category": "spam",
   "status": "pending",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
   "createdBy": {
@@ -228,7 +228,7 @@ Content-type: application/json
   "category": "malware",
   "status": "completed",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "contentData": "",
   "createdBy": {
@@ -489,7 +489,7 @@ Content-type: application/json
     "category": "phishing",
     "status": "completed",
     "requestSource": "administrator",
-    "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
+    "recipientEmail": "tifc@contoso.com",
     "destinationRoutingReason": "notJunk",
     "messageUri": "",
     "createdBy": {

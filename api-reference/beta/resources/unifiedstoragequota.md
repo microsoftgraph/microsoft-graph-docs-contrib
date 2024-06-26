@@ -3,7 +3,7 @@ title: "unifiedStorageQuota resource type"
 description: Provides an aggregate view of a user's quota information across multiple services.
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -18,14 +18,14 @@ Provides an aggregate view of a user's quota information across multiple service
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get unifiedStorageQuota](../api/unifiedstoragequota-get.md)|[unifiedStorageQuota](../resources/unifiedstoragequota.md)|Read the properties and relationships of a [unifiedStorageQuota](../resources/unifiedstoragequota.md) object.|
-|[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get the list of services in a **serviceStorageQuotaBreakdown**.|
+|[Get](../api/unifiedstoragequota-get.md)|[unifiedStorageQuota](../resources/unifiedstoragequota.md)|Read the properties and relationships of a [unifiedStorageQuota](../resources/unifiedstoragequota.md) object.|
+|[List](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get the list of services in a **serviceStorageQuotaBreakdown**.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The user IF.|
+|id|String|The user ID.|
 |manageWebUrl|String| A URL that can be used in a browser to manage the breakdown. Read-only. |
 |remaining|Int64| Total space remaining before reaching the quota limit in bytes. |
 |state|usqState| Indicates the state of the storage space. The possible values are: `normal`, `nearing`, `critical`, `full`, and `overLimit`.|

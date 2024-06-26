@@ -3,7 +3,7 @@ title: "educationExternalResource resource type"
 description: "Represents a generic type to map resources not exposed to Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

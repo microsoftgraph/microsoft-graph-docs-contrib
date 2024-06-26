@@ -3,7 +3,7 @@ title: "reports: getGroupArchivedPrintJobs"
 description: Get a list of archived print jobs for a particular group.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ GET /reports/getGroupArchivedPrintJobs(groupId='{groupId}',startDateTime='{start
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Function parameters
 

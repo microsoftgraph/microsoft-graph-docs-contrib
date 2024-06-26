@@ -1,17 +1,20 @@
 ---
-title: "tiIndicator resource type"
+title: "tiIndicator resource type (deprecated)"
 description: "Threat intelligence (TI) indicators represent data used to identify malicious activities."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# tiIndicator resource type
+# tiIndicator resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by April 2026.
 
 Represents data used to identify malicious activities. 
 
@@ -44,15 +47,15 @@ For details about the types of indicators supported and limits on indicator coun
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get tiIndicator](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Read properties and relationships of tiIndicator object. |
-| [Create tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Create a new tiIndicator by posting to the tiIndicators collection. |
-| [List tiIndicators](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md) collection | Get a tiIndicator object collection. |
+| [Get](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Read properties and relationships of tiIndicator object. |
+| [Create](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Create a new tiIndicator by posting to the tiIndicators collection. |
+| [List](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md) collection | Get a tiIndicator object collection. |
 | [Update](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Update tiIndicator object. |
 | [Delete](../api/tiindicator-delete.md) | None | Delete tiIndicator object. |
-|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|None| Delete multiple tiIndicator objects.|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|None| Delete multiple tiIndicator objects by the `externalId` property.|
-|[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) collection|Create new tiIndicators by posting a tiIndicators collection.|
-|[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) collection| Update multiple tiIndicator objects.|
+|[Delete multiple](../api/tiindicator-deletetiindicators.md)|None| Delete multiple tiIndicator objects.|
+|[Delete multiple by external ID](../api/tiindicator-deletetiindicatorsbyexternalid.md)|None| Delete multiple tiIndicator objects by the `externalId` property.|
+|[Submit multiple](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) collection|Create new tiIndicators by posting a tiIndicators collection.|
+|[Update multiple](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) collection| Update multiple tiIndicator objects.|
 
 ### Methods supported by each target product
 
@@ -202,7 +205,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

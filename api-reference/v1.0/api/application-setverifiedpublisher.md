@@ -3,7 +3,7 @@ title: "application: setVerifiedPublisher"
 description: "Set the verified publisher of an application."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -35,7 +35,7 @@ POST /applications(appId='{appId}')/setVerifiedPublisher
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.|
 
 ## Request body

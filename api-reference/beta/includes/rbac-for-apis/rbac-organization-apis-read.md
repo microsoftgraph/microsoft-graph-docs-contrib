@@ -1,5 +1,5 @@
 ---
-author: adimitui
+author: suawat
 ms.topic: include
 ---
 
@@ -30,7 +30,7 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Mailbox Administrator
 - Microsoft Managed Desktop Administrator
 - Microsoft Store for Business User
-- Modern Commerce User
+- Modern Commerce Administrator
 - Power BI Administrator
 - Power BI Administrator
 - Privileged Authentication Administrator
@@ -49,4 +49,4 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Volume Licensing Business Center User
 - Volume Licensing Service Center User
 
-Applications granted the *User.Read* permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization.  All other properties will return with `null` values. To read all properties, use at least *Organization.Read.All*.
+Applications granted the *User.Read* permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization. All other properties return with `null` values. To read all properties, use at least *Organization.Read.All*.

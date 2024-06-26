@@ -3,7 +3,7 @@ title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # accessPackage: filterByCurrentUser
@@ -42,7 +42,7 @@ The following table shows the parameters that can be used with this function.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CountryNamedLocation namedLocation = new CountryNamedLocation();
-namedLocation.displayName = "Updated named location without unknown countries and regions";
-LinkedList<String> countriesAndRegionsList = new LinkedList<String>();
-countriesAndRegionsList.add("CA");
-countriesAndRegionsList.add("IN");
-namedLocation.countriesAndRegions = countriesAndRegionsList;
-namedLocation.includeUnknownCountriesAndRegions = false;
+namedLocation.setOdataType("#microsoft.graph.countryNamedLocation");
+namedLocation.setDisplayName("Updated named location without unknown countries and regions");
+LinkedList<String> countriesAndRegions = new LinkedList<String>();
+countriesAndRegions.add("CA");
+countriesAndRegions.add("IN");
+namedLocation.setCountriesAndRegions(countriesAndRegions);
+namedLocation.setIncludeUnknownCountriesAndRegions(false);
+NamedLocation result = graphClient.identity().conditionalAccess().namedLocations().byNamedLocationId("{namedLocation-id}").patch(namedLocation);
 
-graphClient.identity().conditionalAccess().namedLocations("1c4427fd-0885-4a3d-8b23-09a899ffa959")
-	.buildRequest()
-	.patch(namedLocation);
 
 ```

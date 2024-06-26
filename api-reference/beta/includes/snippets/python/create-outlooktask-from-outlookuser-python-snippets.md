@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.outlook.tasks.tasks_request_builder import TasksRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.outlook_task import OutlookTask
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -20,7 +24,7 @@ request_body = OutlookTask(
 	),
 )
 
-request_configuration = TasksRequestBuilder.TasksRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
 
