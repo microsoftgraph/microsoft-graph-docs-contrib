@@ -420,7 +420,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
-|`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description length exceeds 80 characters.|
+|`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
 |`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| When the short name is reserved name.|
 |`ShortNameIsRequiredField`| Short name of the app can't be empty.| The short name is empty.|
 |`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property can't be empty.| The `staticTabs` name property is empty.|
