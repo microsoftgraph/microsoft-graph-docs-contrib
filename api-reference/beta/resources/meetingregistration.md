@@ -1,5 +1,5 @@
 ---
-title: "meetingRegistration resource type"
+title: "meetingRegistration resource type (deprecated)"
 description: "Contains information about online meeting registration."
 author: "awang119"
 ms.localizationpriority: medium
