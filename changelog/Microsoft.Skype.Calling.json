@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestion",
           "ChangeType": "Deletion",
-          "Description": "Removed the [virtualEventRegistrationQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestion?view=graph-rest-beta) resource.",
+          "Description": "Removed the **virtualEventRegistrationQuestion** resource.",
           "Target": "virtualEventRegistration"
         },
         {
@@ -987,7 +987,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestion",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventRegistrationQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationQuestion?view=graph-rest-beta) resource",
+          "Description": "Added the **virtualEventRegistrationQuestion** resource.",
           "Target": "virtualEventRegistrationQuestion"
         },
         {

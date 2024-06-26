@@ -10,4 +10,3 @@ ms.localizationpriority: medium
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|ConsentRequest.Read.All|ConsentRequest.ReadWrite.All|
 
-
