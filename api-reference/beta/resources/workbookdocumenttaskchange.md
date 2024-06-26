@@ -5,6 +5,7 @@ author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Document task change
 ---
 
 # workbookDocumentTaskChange resource type

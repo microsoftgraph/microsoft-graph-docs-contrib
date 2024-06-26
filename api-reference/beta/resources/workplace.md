@@ -3,7 +3,7 @@ title: "workplace resource type"
 description: "Represents a workplace in a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

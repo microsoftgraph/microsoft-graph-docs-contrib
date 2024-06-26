@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: School
 ---
 
 # educationSchool resource type
@@ -28,7 +29,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 | [Add user](../api/educationschool-post-users.md)                           | [educationUser](educationuser.md)                | Add a new **educationUser** for the school by posting to the **users** navigation property. |
 | [List users](../api/educationschool-list-users.md)                         | [educationUser](educationuser.md) collection     | Get the **educationUser** object collection.                                                |
 | [Remove user](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Remove an **educationUser** from the school through the **users** navigation property.      |
-| [Get administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Get the **administrativeUnit** that corresponds to this **educationSchool**.                |
+| [Get administrative unit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Get the **administrativeUnit** that corresponds to this **educationSchool**.                |
 | [Update school](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Update an **educationSchool** object.                                                       |
 | [Delete school](../api/educationschool-delete.md)                                 | None                                             | Delete an **educationSchool** object.                                                       |
 | [Get delta](../api/educationschool-delta.md)                                   | [educationSchool](educationschool.md) collection | Get incremental changes for **educationSchools**                                            |

@@ -3,7 +3,7 @@ title: "Delete departmentTemplate"
 description: "Delete a departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/departmen
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

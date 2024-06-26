@@ -36,9 +36,9 @@ metadata := []graphmodelssecurity.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.security.contentFormat", 
+	"format@odata.type" : "#microsoft.graph.security.contentFormat", 
 	"format" : "default", 
-	"odataType" : "#microsoft.graph.security.contentState", 
+	"state@odata.type" : "#microsoft.graph.security.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)

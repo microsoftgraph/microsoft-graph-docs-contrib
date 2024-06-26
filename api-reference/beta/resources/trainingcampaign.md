@@ -3,8 +3,9 @@ title: "trainingCampaign resource type"
 description: "Represents a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+toc.title: Training campaign (preview)
 ---
 
 # trainingCampaign resource type
@@ -16,7 +17,6 @@ Namespace: microsoft.graph
 Represents a training campaign. In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, training campaigns are a fast, direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign training campaigns directly to users.
 
 A training campaign contains one or more built-in training modules that you select. Currently, there are over 70 training modules to select from. For more information about training modules, see training modules for Training campaigns in Attack simulation training.
-
 
 Inherits from [entity](../resources/entity.md).
 
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|Report of the training campaign.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign.|
 
-### campaignStatus values 
+### campaignStatus values
 
 |Member|Description |
 |:---|:---|
