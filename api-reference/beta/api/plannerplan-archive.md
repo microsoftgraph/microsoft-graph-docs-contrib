@@ -3,7 +3,7 @@ title: "plannerPlan: archive"
 description: "Archive a plan"
 author: "dianambb"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.service: "planner"
 doc_type: apiPageType
 ---
 
