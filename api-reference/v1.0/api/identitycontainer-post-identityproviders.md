@@ -165,7 +165,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieves Apple identity provider (only for Azure AD B2C)
+### Example 2: Create Apple identity provider (only for Azure AD B2C)
 
 #### Request
 
