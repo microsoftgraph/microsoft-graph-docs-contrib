@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update meetingRegistration
+# Update meetingRegistration (deprecated)
 
 Namespace: microsoft.graph
 
