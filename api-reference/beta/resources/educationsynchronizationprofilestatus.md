@@ -34,7 +34,7 @@ Represents the synchronization status of a school data [synchronization profile]
 | id                          | String                         | The unique identifier for the resource. Read-only.                                                                      |
 | lastActivityDateTime | DateTimeOffset                 | Date and time when most recent changes were observed in the profile.                                        |
 | lastSynchronizationDateTime | DateTimeOffset                 | Date and time of the most recent successful synchronization.                                        |
-| status                      | educationSynchronizationStatus | The status of a sync. The possible values are: `paused`, `inProgress`, `success`, `error`, `validationError`, `quarantined`, `unknownFutureValue`, `extracting`, `validating`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `extracting`, `validating`.|
+| status                      | microsoft.graph.educationSynchronizationStatus | The status of a sync. The possible values are: `paused`, `inProgress`, `success`, `error`, `validationError`, `quarantined`, `unknownFutureValue`, `extracting`, `validating`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `extracting`, `validating`.|
 | statusMessage | String                 | Status message for the synchronization stage of the current profile.                                        |
 
 
