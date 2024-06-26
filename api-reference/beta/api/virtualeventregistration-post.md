@@ -52,7 +52,7 @@ If successful, this action returns one of the following:
 
 ### Example 1: Creating registration record with delegated permission
 
-Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
+Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
 
 #### Request
 The following example shows a request.
