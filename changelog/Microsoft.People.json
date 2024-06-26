@@ -59,6 +59,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-1.0) resource and supported methods.",
           "Target": "profileCardProperty"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "photoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
         }
       ],
       "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
