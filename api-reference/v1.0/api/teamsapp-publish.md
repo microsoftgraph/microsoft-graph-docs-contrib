@@ -392,20 +392,20 @@ If you send a request to upload an app manifest that contains missing informatio
 |`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension can't have apiResponseRenderingTemplateFile defined.|The bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
 |`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
 |`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
-|`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| When the `appId` isn't GUID.|
+|`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| When the `appId` isn't provided.|
 |`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
-|`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| When schema isn't provided.|
+|`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| The schema isn't provided.|
 |`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and url.| Dashboard cards icon mustn't contain both icon name and url.|
 |`DashboardCardEntityIdsAreNotUnique`| Dashboard card entity IDs should be unique.| Entity Ids for dashboards card aren't unique.|
-|`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| Developer name isn't provided.|
-|`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| Developer name length is more than 32 characters.|
+|`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| The developer name isn't provided.|
+|`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| The developer name is more than 32 characters long.|
 |`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
-|`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| When the developer privacy url isn't `https`.|
+|`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| The developer privacy URL did not use HTTPS.|
 |`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The `termsOfUseUrl` is missing.|
 |`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| When the developer terms of use url isn't `https`.|
 |`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website url is missing.|
-|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| When the developer website url isn't `https`.|
+|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL did not use HTTPS.|
 |`UniqueActivityTypeInActivitiesValidation` |Manifest shouldn't contain duplicate Activity Type.| When the activity type isn't unique in the app manifest.|
 |`UniqueIdInActivitiesGroupValidation` |Manifest shouldn't contain duplicate ID in Activity Groups.| When the activity group ID isn't unique in the app manifest.|
 |`FullDescriptionCannotBeEmpty` |Full Description can't be empty.| The full description is empty.|
@@ -420,7 +420,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
-|`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description length exceeds 80 characters.|
+|`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
 |`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| When the short name is reserved name.|
 |`ShortNameIsRequiredField`| Short name of the app can't be empty.| The short name is empty.|
 |`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property can't be empty.| The `staticTabs` name property is empty.|
