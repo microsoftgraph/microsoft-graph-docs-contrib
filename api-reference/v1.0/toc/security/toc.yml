@@ -734,6 +734,8 @@ items:
       href: ../../api/security-threatintelligence-list-sslcertificates.md
     - name: Get
       href: ../../api/security-sslcertificate-get.md
+    - name: List related hosts
+      href: ../../api/security-sslcertificate-list-relatedhosts.md
   - name: Subdomain
     items:
     - name: Subdomain
