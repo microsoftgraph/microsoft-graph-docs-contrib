@@ -43,7 +43,7 @@ requestBody.SetIsFlagsEnabled(&isFlagsEnabled)
 isContactsEnabled := false
 requestBody.SetIsContactsEnabled(&isContactsEnabled) 
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/sourceSystems('c93a6e02-aeb7-437f-cc52-08dc3fc158af')", 
+	"sourceSystem@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/sourceSystems('c93a6e02-aeb7-437f-cc52-08dc3fc158af')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
