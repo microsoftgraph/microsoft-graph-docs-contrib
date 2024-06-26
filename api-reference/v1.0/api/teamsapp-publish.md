@@ -398,7 +398,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| The schema isn't provided.|
 |`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and url.| Dashboard cards icon mustn't contain both icon name and url.|
 |`DashboardCardEntityIdsAreNotUnique`| Dashboard card entity IDs should be unique.| Entity Ids for dashboards card aren't unique.|
-|`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| Developer name isn't provided.|
+|`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| The developer name isn't provided.|
 |`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| Developer name length is more than 32 characters.|
 |`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| When the developer privacy url isn't `https`.|
