@@ -18,7 +18,7 @@ Represents the Cloud PC encryption setting for a tenant. Only one encryption set
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudPcTenantEncryptionSetting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the encryption setting of the tenant associated with the current authenticated user|
+|[Retrieve encryption setting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the encryption setting for the tenant associated with the current authenticated user|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Represents the Cloud PC encryption setting for a tenant. Only one encryption set
 |Member|Description|
 |:---|:---|
 |platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
-|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer-managed key.|
+|customerManagedKey|Indicates that the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
