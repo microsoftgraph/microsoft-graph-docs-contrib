@@ -323,7 +323,7 @@ Content-type: application/json
 
 ## Error response
 
-If you sent a request to upload an app manifest that contains missing information or errors, it responds with an error message, which includes the inner error code `UnableToParseTeamsAppManifest`. The inner error `details` provide the error code and the error message. The following table describes the most frequently encountered error codes:
+If you send a request to upload an app manifest that contains missing information or errors, you receive an error message that includes the inner error code `UnableToParseTeamsAppManifest`. The *details* property of the inner error contains the error code and the error message. The following table describes the most frequently encountered error codes:
 
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
