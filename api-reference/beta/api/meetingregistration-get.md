@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get meetingRegistration
+# Get meetingRegistration (deprecated)
 
 Namespace: microsoft.graph
 
