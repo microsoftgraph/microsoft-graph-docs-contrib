@@ -22,6 +22,8 @@ Get the list of [callRecording](../resources/callrecording.md) objects associate
 
 One of the following permissions is required to call this API. For more information, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignore", "name": "onlinemeeting_list_recordings" } -->
+
 | Permission type                        | Permissions (from least to most privileged)                        |
 |:---------------------------------------|:-------------------------------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                    |
