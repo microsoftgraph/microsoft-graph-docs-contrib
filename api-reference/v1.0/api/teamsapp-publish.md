@@ -392,7 +392,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension can't have apiResponseRenderingTemplateFile defined.|The bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
 |`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
 |`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
-|`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| When the `appId` isn't GUID.|
+|`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| When the `appId` isn't provided.|
 |`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
 |`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| When schema isn't provided.|
