@@ -38,7 +38,7 @@ Microsoft Graph supports two types of access scenarios: delegated access and app
 
 The least privileged permissions an app requests, the fewer privacy concerns it raises for the customer’s tenant admin.
 
-Use the URL `https://learn.microsoft.com/en-us/graph/api/user-get` to get a list of permissions that allow the `user-get` call. This `user-get` endpoint can use many permissions like `User.Read` and `User.ReadWrite`. If the app only needs the current user’s data, it must use `User.Read` instead of `Directory.ReadWrite.All`. To apply this method to your endpoint, replace `user-get` in the URL with the specific endpoint name.
+Use the URL `https://learn.microsoft.com/en-us/graph/api/user-get` to get a list of permissions that allow the `user-get` call. This `user-get` endpoint can use many permissions like `User.Read` and `User.ReadWrite`. If the app only needs the current user’s data, it should use `User.Read` instead of `Directory.ReadWrite.All`. To apply this method to your endpoint, replace `user-get` in the URL with the specific endpoint name.
 
 Prefer RSC permissions because they offer a higher level of privacy.  Delegated permissions allow the application to act on behalf of a signed-in user, limiting access to the data within the user’s scope. If you can't use either RSC or delegated permissions, you have to use application permissions. Application permissions carry the most privacy risks as they allow access to data without a signed-in user present.
 
