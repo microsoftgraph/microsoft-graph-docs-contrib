@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The meeting registration API is deprecated and will stop returning data on **July 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+
 Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer. An online meeting can only have one registration enabled.
 
 ## Permissions
