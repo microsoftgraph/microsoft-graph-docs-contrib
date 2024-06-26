@@ -1,5 +1,5 @@
 ---
-title: "meetingRegistrationBase resource type"
+title: "meetingRegistrationBase resource type (deprecated)"
 description: "Contains information about base meeting registration."
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistrationBase resource type
+# meetingRegistrationBase resource type (deprecated)
 
 Namespace: microsoft.graph
 
