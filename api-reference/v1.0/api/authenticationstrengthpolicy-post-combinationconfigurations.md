@@ -85,35 +85,35 @@ Content-length: 130
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-fido2combinationconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-from--cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-fido2combinationconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-fido2combinationconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-fido2combinationconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-fido2combinationconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-fido2combinationconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-fido2combinationconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-from--python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-fido2combinationconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,6 +148,7 @@ Content-Type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationcombinationconfiguration_x509CertificateCombinationConfiguration"
@@ -167,6 +168,40 @@ POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationS
     ] 
 } 
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
