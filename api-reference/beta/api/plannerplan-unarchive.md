@@ -3,7 +3,7 @@ title: "plannerPlan: unarchive"
 description: "Unarchive a plan"
 author: "dianambb"
 ms.localizationpriority: medium
-ms.service: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
