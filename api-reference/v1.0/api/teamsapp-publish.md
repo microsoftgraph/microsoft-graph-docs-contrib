@@ -395,7 +395,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| When the `appId` isn't provided.|
 |`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
-|`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| When schema isn't provided.|
+|`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| The schema isn't provided.|
 |`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and url.| Dashboard cards icon mustn't contain both icon name and url.|
 |`DashboardCardEntityIdsAreNotUnique`| Dashboard card entity IDs should be unique.| Entity Ids for dashboards card aren't unique.|
 |`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| Developer name isn't provided.|
