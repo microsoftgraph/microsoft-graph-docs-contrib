@@ -1,5 +1,5 @@
 ---
-title: "educationIdentityCreationConfiguration resource type"
+title: "educationIdentityCreationConfiguration resource type (deprecated)"
 description: "Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,9 +7,11 @@ ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationIdentityCreationConfiguration resource type
+# educationIdentityCreationConfiguration resource type (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory.
 

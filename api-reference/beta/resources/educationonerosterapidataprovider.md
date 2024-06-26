@@ -1,5 +1,5 @@
 ---
-title: educationOneRosterApiDataProvider resource type
+title: educationOneRosterApiDataProvider resource type (deprecated)
 description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationOneRosterApiDataProvider resource type
+# educationOneRosterApiDataProvider resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Used to set up the school data synchronization profile when the [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) is used as the input source.
 

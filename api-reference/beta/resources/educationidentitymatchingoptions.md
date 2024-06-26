@@ -1,5 +1,5 @@
 ---
-title: "educationIdentityMatchingOptions resource type"
+title: "educationIdentityMatchingOptions resource type (deprecated)"
 description: "Provides a mapping between a source property and a target property for matching user accounts. The source property should exist in the source data. The target property should be a valid property in Microsoft Entra ID."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationIdentityMatchingOptions resource type
+# educationIdentityMatchingOptions resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Provides a mapping between a source property and a target property for matching user accounts. The source property should exist in the source data. The target property should be a valid property in Microsoft Entra ID.
 
