@@ -40,7 +40,7 @@ The least privileged permissions an app requests, the fewer privacy concerns it 
 
 Use the URL `https://learn.microsoft.com/en-us/graph/api/user-get` to get a list of permissions that allow the `user-get` call. For example, this `user-get` endpoint can use many permissions like `User.Read` and `User.ReadWrite`. If the app only needs the current user’s data, it must use `User.Read` instead of `Directory.ReadWrite.All`. To apply this method to your endpoint, replace `user-get` in the URL with the specific endpoint name.
 
-Prefer RSC permissions because they offer a higher level of privacy.  Delegated permissions allow the application to act on behalf of a signed-in user, limiting access to the data within the user’s scope. If you cannot use either RCS or delegated permissions, you will have to use application permissions. Application permissions carry the most privacy risks as they allow access to data without a signed-in user present.
+Prefer RSC permissions because they offer a higher level of privacy.  Delegated permissions allow the application to act on behalf of a signed-in user, limiting access to the data within the user’s scope. If you can't use either RCS or delegated permissions, you will have to use application permissions. Application permissions carry the most privacy risks as they allow access to data without a signed-in user present.
 
 For example, use `ChatMessage.Send.Chat` RSC permission to send a message to a chat with your app, instead of the `Chat.ReadWrite` Microsoft Graph permission, because `ChatMessage.Send.Chat` is the least permission level that you need for this action.
 
