@@ -405,7 +405,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The `termsOfUseUrl` is missing.|
 |`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| When the developer terms of use url isn't `https`.|
 |`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website url is missing.|
-|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| When the developer website url isn't `https`.|
+|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL did not use HTTPS.|
 |`UniqueActivityTypeInActivitiesValidation` |Manifest shouldn't contain duplicate Activity Type.| When the activity type isn't unique in the app manifest.|
 |`UniqueIdInActivitiesGroupValidation` |Manifest shouldn't contain duplicate ID in Activity Groups.| When the activity group ID isn't unique in the app manifest.|
 |`FullDescriptionCannotBeEmpty` |Full Description can't be empty.| The full description is empty.|
