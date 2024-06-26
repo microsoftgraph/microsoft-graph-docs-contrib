@@ -38,7 +38,7 @@ Represents the Cloud PC encryption setting for a tenant. Only one encryption set
 None.
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
