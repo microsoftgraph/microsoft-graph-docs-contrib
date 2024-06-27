@@ -13293,6 +13293,32 @@
       "CreatedDateTime": "2024-06-07T05:48:06.5135016Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6434350c-1102-4db1-b67c-253a23f78a5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "companySubscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [companySubscription](https://learn.microsoft.com/en-us/graph/api/resources/companysubscription?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "companySubscription"
+        },
+        {
+          "Id": "6434350c-1102-4db1-b67c-253a23f78a5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "2fa20a6b-7caa-4d36-a129-0c78b19e5de8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-26T13:40:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
