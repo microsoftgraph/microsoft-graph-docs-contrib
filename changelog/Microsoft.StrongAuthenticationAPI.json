@@ -303,6 +303,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [creationOptions](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [creationOptions](https://learn.microsoft.com/en-us/graph/api/resources/creationOptions?view=graph-rest-beta) resource.",
           "Target": "creationOptions"
+        },
+        {
+          "Id": "cd2520bf-b70f-482a-b505-18c3696c46fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passkeyAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [passkeyAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/passkeyAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "passkeyAuthenticationMethodTarget"
         }
       ],
       "Id": "e15c4ed7-c59c-4925-87c9-f75fa8c74211",
