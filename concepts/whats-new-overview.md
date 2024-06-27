@@ -30,6 +30,14 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Security | Threat intelligence
+
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
+
+### Teamwork and communications | Messaging
+
+[Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+
 ## June 2024: New in preview only
 
 ### Change notifications
@@ -42,6 +50,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 - Use the **deviceRegionName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the name of the geographical region where the Cloud PC is currently provisioned.
 - Use the **initiatedByUserPrincipalName** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the user principal name (UPN) of the user who initiated a bulk action.
 - Use the **status** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the status of bulk actions.
+- Deprecated the [getCloudPcRemoteActionResults](/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcRemoteActionResults](/graph/api/cloudpc-retrievecloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method.
 
 ### Identity and access | Identity and sign-in
 
@@ -51,6 +60,10 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 ### Identity and access | Network access
 
 You can now enable and control compliant network check with Conditional Access through the Global Secure Access service by using the [compliantNetworkNamedLocation resource type](/graph/api/resources/compliantnetworknamedlocation?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Security | Threat intelligence
+
+Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta&preserve-view=true) method to get a list of related [host](/graph/api/resources/security-host?view=graph-rest-beta&preserve-view=true) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate?view=graph-rest-beta&preserve-view=true).
 
 ### Sites and lists
 
@@ -69,7 +82,7 @@ The content model automatically processes new files that are added to the librar
 
 ### Teamwork and communications | Calls and online meetings
 
-Introduced the ability to [list](/graph/api/virtualeventregistration-list), [create](/graph/api/virtualeventregistration-post), [cancel](/graph/api/virtualeventregistration-cancel), and [list sessions](/graph/api/virtualeventregistration-list-sessions) for virtual event meeting registrations.
+Introduced the ability to [list](/graph/api/virtualeventregistration-list?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualeventregistration-post?view=graph-rest-beta&preserve-view=true), [cancel](/graph/api/virtualeventregistration-cancel?view=graph-rest-beta&preserve-view=true), and [list sessions](/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta&preserve-view=true) for virtual event meeting registrations.
 
 ## May 2024: New and generally available
 

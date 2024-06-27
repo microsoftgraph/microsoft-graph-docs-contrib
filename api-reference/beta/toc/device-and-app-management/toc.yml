@@ -81,8 +81,6 @@ items:
       href: ../../api/cloudpc-changeuseraccounttype.md
     - name: End grace period
       href: ../../api/cloudpc-endgraceperiod.md
-    - name: Get remote action results
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Power on
       href: ../../api/cloudpc-poweron.md
     - name: Power off
@@ -117,6 +115,8 @@ items:
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
       href: ../../api/cloudpc-getsupportedcloudpcremoteactions.md
+    - name: Retrieve remote action results
+      href: ../../api/cloudpc-retrievecloudpcremoteactionresults.md
     - name: Retry partner agent installation
       href: ../../api/cloudpc-retrypartneragentinstallation.md
     - name: Validate bulk resize
@@ -131,6 +131,8 @@ items:
       href: ../../api/cloudpc-bulkresize.md
     - name: Bulk restore remote action (deprecated)
       href: ../../api/manageddevice-bulkrestorecloudpc.md
+    - name: Get remote action results (deprecated)
+      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
     - name: Get shift work access state (deprecated)
@@ -432,6 +434,8 @@ items:
       href: ../../resources/cloudpcbulkrestore.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
+    - name: Cloud PC connection setting
+      href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
@@ -470,6 +474,8 @@ items:
       href: ../../resources/cloudpcscopedpermission.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
+    - name: Cloud PC status detail
+      href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
