@@ -4,6 +4,7 @@ description: "A uri utilized for preintegrated application's single sign-on."
 author: "allisonAm"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

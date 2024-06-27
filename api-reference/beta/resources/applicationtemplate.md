@@ -20,10 +20,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 |[List](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
-|[Create applicationTemplate](../api/applicationtemplate-post-applicationtemplates.md)|[applicationTemplate](../resources/applicationtemplate.md)|Create a new [applicationTemplate](../resources/applicationtemplate.md) object.|
 | [Get](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-|[Update applicationTemplate](../api/applicationtemplate-update.md)|[applicationTemplate](../resources/applicationtemplate.md)|Update the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.|
-|[Delete applicationTemplate](../api/applicationtemplate-delete.md)|None|Delete an [applicationTemplate](../resources/applicationtemplate.md) object.|
 |[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.|
 
 
