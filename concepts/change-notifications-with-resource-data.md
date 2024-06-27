@@ -384,7 +384,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8&preserve-view=true)) with the private key.
+2. Initialize an RSA cryptographic component with the private key. One of the easiest way to do this is using the [RSACertificateExtensions.GetRSAPrivateKey(X509Certificate2) Method](/dotnet/api/system.security.cryptography.x509certificates.rsacertificateextensions.getrsaprivatekey?view=netframework-4.8&preserve-view=true) with an [X509Certificate2](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netframework-4.8&preserve-view=true) instance which contains the private key described in [Managing encryption keys](#managing-encryption-keys).
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.
 
@@ -445,11 +445,12 @@ This section contains some useful code snippets that use C# and .NET for each st
 # [C#](#tab/csharp)
 ```csharp
 // Initialize with the private key that matches the encryptionCertificateId.
-RSACryptoServiceProvider rsaProvider = ...;        
+X509Certificate2 certificate = <instance of X509Certificate2 matching the encryptionCertificateId property>;
+RSA rsa = certificate.GetRSAPrivateKey();        
 byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from dataKey property>);
 
 // Decrypt using OAEP padding.
-byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP: true);
+byte[] decryptedSymmetricKey = rsa.Decrypt(encryptedSymmetricKey, fOAEP: true);
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
