@@ -47,7 +47,7 @@ Based on this, you can consent an application the `Lists.SelectedOperations.Sele
 > [!NOTE]
 > Assigning application permissions to lists, list items, folders, or files breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design. Permissions at the site collection level do not break inheritance because this is the root of permission inheritance.
 
-An example of setting permissions is shown for [sites](/graph/api/site-post-permissions); the logic is similar for [lists](/graph/beta/api/list-post-permissions), [list items](/graph/beta/api/listitem-post-permissions), [files](/graph/beta/api/driveitem-post-permissions), or [folders](/graph/beta/api/listitem-post-permissions).
+An example of setting permissions is shown for [sites](/graph/api/site-post-permissions); the logic is similar for [lists](/graph/api/list-post-permissions), [list items](/graph/api/listitem-post-permissions), [files](/graph/api/driveitem-post-permissions), or [folders](/graph/api/listitem-post-permissions).
 
 ### What's the difference between files and listItems scopes?
 
@@ -157,7 +157,7 @@ Content-Type: application/json
 }
 ```
 
-For examples that show how to manage permissions, see the `/permissions` API topics for [site](/graph/beta/api/site-post-permissions), [list](/graph/beta/api/list-post-permissions), [listItem](/beta/api/listitem-post-permissions), and [driveItem](/beta/api/driveitem-post-permissions).
+For examples that show how to manage permissions, see the `/permissions` API topics for [site](/graph/api/site-post-permissions), [list](/graph/api/list-post-permissions), [listItem](/graph/api/listitem-post-permissions), and [driveItem](/graph/api/driveitem-post-permissions).
 
 ### What permissions do I need to manage permissions?
 
