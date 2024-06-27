@@ -119,7 +119,7 @@ Content-Type: application/json
         "scheduledDuringMaintenanceWindow": false,
         "createdDateTime": "2024-06-14T20:05:44.5239567Z",
         "status": "succeeded",
-        "initiatedByUserPrincipalName": "example@example.com",
+        "initiatedByUserPrincipalName": "johnd@contoso.com",
         "actionSummary": null
       }
     }
