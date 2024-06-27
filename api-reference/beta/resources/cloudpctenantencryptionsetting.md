@@ -29,14 +29,14 @@ None
 |Member|Description|
 |:---|:---|
 |platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
-|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer-managed key.|
+|customerManagedKey|Indicates that the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

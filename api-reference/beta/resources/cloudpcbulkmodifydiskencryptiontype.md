@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkModifyDiskEncryptionType resource type"
-description: "Bulk modify disk encryption type of a set of Cloud PC devices."
+description: "Defines the disk encryption type to apply to a collection of Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -18,7 +18,7 @@ Defines the disk encryption type to apply to a collection of Cloud PCs.
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ## Methods
-None
+None.
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +35,7 @@ None
 |Member|Description|
 |:---|:---|
 |platformManagedKey|Default. The Cloud PC disk is encrypted with a platform-managed key.|
-|customerManagedKey|Indicates the Cloud PC disk is encrypted with a customer-managed key.|
+|customerManagedKey|Indicates that the Cloud PC disk is encrypted with a customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
