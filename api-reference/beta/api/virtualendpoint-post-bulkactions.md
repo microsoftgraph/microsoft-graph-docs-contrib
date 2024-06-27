@@ -135,7 +135,7 @@ Content-Type: application/json
     "85994912-197b-4927-b569-447bd81350ec"
   ],
   "actionSummary": null,
-  "initiatedByUserPrincipalName": "admin@example.com",
+  "initiatedByUserPrincipalName": "johnd@contoso.com",
   "scheduledDuringMaintenanceWindow": true,
   "status": "pending",
   "createdDateTime": "2024-02-05T10:29:57Z"
