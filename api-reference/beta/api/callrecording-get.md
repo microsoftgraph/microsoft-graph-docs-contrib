@@ -31,11 +31,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignore", "name": "callrecording_get" } -->
 
-| Permission type                        | Permissions (from least to most privileged)                        |
-|:---------------------------------------|:-------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                    |
-| Delegated (personal Microsoft account) | Not supported.                                                     |
-| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat |
+| Permission type                        | Least privileged permissions                                      | Higher privileged permissions |
+| :------------------------------------- | :---------------------------------------------------------------- | :---------------------------- |
+| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                   | Not available.                |
+| Delegated (personal Microsoft account) | Not supported.                                                    | Not supported.                |
+| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat | Not available.                |
 
 > **Notes:**
 >

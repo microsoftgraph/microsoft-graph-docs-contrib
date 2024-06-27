@@ -30,11 +30,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignore", "name": "calltranscript_get" } -->
 
-| Permission type                        | Permissions (from least to most privileged)                        |
-|:---------------------------------------|:-------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All                                    |
-| Delegated (personal Microsoft account) | Not supported.                                                     |
-| Application                            | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat |
+| Permission type                        | Least privileged permissions                                        | Higher privileged permissions |
+| :------------------------------------- | :------------------------------------------------------------------ | :---------------------------- |
+| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All                                    | Not available.                |
+| Delegated (personal Microsoft account) | Not supported.                                                      | Not supported.                |
+| Application                            | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat | Not available.                |
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
