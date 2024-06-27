@@ -50,6 +50,8 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
-  "scheduledDuringMaintenanceWindow": "Boolean"
+  "initiatedByUserPrincipalName": "String",
+  "scheduledDuringMaintenanceWindow": "Boolean",
+  "status": "String"
 }
 ```
