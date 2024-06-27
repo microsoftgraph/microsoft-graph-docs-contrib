@@ -1,6 +1,6 @@
 ---
-title: "Directory resource type (deleted items)"
-description: ". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
+title: "directory resource type (deleted items)"
+description: "Represents a deleted item in the directory."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 toc.title: Deleted item
 ---
 
-# Directory resource type
+# directory resource type
 
 Namespace: microsoft.graph
 
