@@ -14,9 +14,8 @@ Namespace: microsoft.graph
 Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call transcripts from channel meetings.
 
 > [!NOTE]
->
-> - This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
-> - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
+> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -26,11 +25,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignore", "name": "onlinemeeting_list_transcripts" } -->
 
-| Permission type                        | Least privileged permissions                                        | Higher privileged permissions |
-| :------------------------------------- | :------------------------------------------------------------------ | :----------------------------- |
-| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All                                    | Not available.                |
-| Delegated (personal Microsoft account) | Not supported.                                                      | Not supported.                |
-| Application                            | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat | Not available.                |
+| Permission type                        | Permissions (from least to most privileged)                        |
+|:---------------------------------------|:-------------------------------------------------------------------|
+| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All                                    |
+| Delegated (personal Microsoft account) | Not supported.                                                     |
+| Application                            | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat |
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -42,7 +41,6 @@ To use application permissions for this API, tenant administrators must create a
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /me/onlineMeetings/{online-meeting-id}/transcripts
 GET /users/{user-id}/onlineMeetings/{online-meeting-id}/transcripts
@@ -54,9 +52,9 @@ This method doesn't support any [OData query parameters](/graph/query-parameters
 
 ## Request headers
 
-| Header        | Value                                                                                                     |
-| :------------ | :-------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+| Header       | Value |
+|:---------------|:--------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,56 +69,46 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "list_callTranscripts",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ"]
 }
 -->
-
-```http
+``` http
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts
 
 ```
 
 # [C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-calltranscripts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-
 [!INCLUDE [sample-code](../includes/snippets/cli/list-calltranscripts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/list-calltranscripts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/list-calltranscripts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-calltranscripts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-
 [!INCLUDE [sample-code](../includes/snippets/php/list-calltranscripts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-calltranscripts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-
 [!INCLUDE [sample-code](../includes/snippets/python/list-calltranscripts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -138,8 +126,7 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
   "@odata.type": "Collection(microsoft.graph.callTranscript)"
 }
 -->
-
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -197,7 +184,7 @@ Content-Type: application/json
                     "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
                 }
             }
-        }
+        }        
     ]
 }
 ```

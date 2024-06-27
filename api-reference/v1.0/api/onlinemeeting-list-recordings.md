@@ -14,9 +14,8 @@ Namespace: microsoft.graph
 Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call recordings from channel meetings.
 
 > [!NOTE]
->
-> - This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
-> - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
+> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -26,11 +25,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignore", "name": "onlinemeeting_list_recordings" } -->
 
-| Permission type                        | Least privileged permissions                                      | Higher privileged permissions |
-| :------------------------------------- | :---------------------------------------------------------------- | ----------------------------- |
-| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                   | Not available.                |
-| Delegated (personal Microsoft account) | Not supported.                                                    | Not supported.                |
-| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat | Not available.                |
+| Permission type                        | Permissions (from least to most privileged)                        |
+|:---------------------------------------|:-------------------------------------------------------------------|
+| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                    |
+| Delegated (personal Microsoft account) | Not supported.                                                     |
+| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat |
 
 > **Note:** The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -52,9 +51,9 @@ This method doesn't support the [OData query parameters](/graph/query-parameters
 
 ## Request headers
 
-| Header        | Value                                                                                                     |
-| :------------ | :-------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+| Header       | Value |
+|:---------------|:--------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,55 +70,45 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "list_callRecordings",
   "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy"]
 }
 -->
-
-```http
+``` http
 GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/recordings/
 ```
 
 # [C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-callrecordings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-
 [!INCLUDE [sample-code](../includes/snippets/cli/list-callrecordings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/list-callrecordings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/list-callrecordings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-callrecordings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-
 [!INCLUDE [sample-code](../includes/snippets/php/list-callrecordings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-callrecordings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-
 [!INCLUDE [sample-code](../includes/snippets/python/list-callrecordings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -137,8 +126,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.callRecording)"
 }
 -->
-
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
