@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventRegistrationQuestionBase",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete question](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestion-delete?view=graph-rest-beta) method to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta) operation to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistrationQuestionBase"
         }
     ],
