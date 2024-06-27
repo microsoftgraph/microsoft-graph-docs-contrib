@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 Represents the Cloud PC encryption setting for a tenant. Only one encryption setting can be applied to the tenant.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get cloudPcTenantEncryptionSetting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the encryption setting of the tenant associated with the current authenticated user|
+None
 
 ## Properties
 |Property|Type|Description|
