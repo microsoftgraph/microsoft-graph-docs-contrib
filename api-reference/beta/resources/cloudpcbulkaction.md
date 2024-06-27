@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-|pending|Default. Indicates the status of the bulk action as `pending` because some of the bulk actions are in progress and not yet completed.|
+|pending|Default. Indicates the status of the bulk action as `pending` because some of the bulk actions are still in progress and not yet completed.|
 |succeeded|Indicates the status of the bulk action as `succeeded` for all associated actions.|
 |failed|Indicates the status of the bulk action as `failed` for all associated actions.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
