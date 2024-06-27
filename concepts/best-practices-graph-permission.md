@@ -1,6 +1,6 @@
 ---
 title: "Best practices for using Microsoft Graph permissions"
-description: "In this module, learn best practices for using Microsoft Graph permissions when building a Microsoft Teams app."
+description: "Best practices for using Microsoft Graph permissions when building a Microsoft Teams app."
 ms.localizationpriority: high
 author: v-sdhakshina
 ms.author: v-sdhakshina
