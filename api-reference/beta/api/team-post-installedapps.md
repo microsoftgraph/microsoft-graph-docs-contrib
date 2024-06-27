@@ -205,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-If you receive an error message `The required permissions have not been consented to by the caller`, it indicates that the request body doesn't specify all the RSC permissions required by the app, to which the user must grant consent. Ensure you build your request as shown in the [example](#request-1).
+If your call results in an error message that states `The required permissions have not been consented to by the caller`, the request body doesn't specify all the RSC permissions required by the app to which the user must grant consent. Make sure that you build your request as shown in the [example](#request-1).
 
 ## Related content
 
