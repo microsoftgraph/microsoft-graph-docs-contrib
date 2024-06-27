@@ -2127,7 +2127,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2135,7 +2135,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added application permission of **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added application permission of **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -2249,7 +2249,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "setPresence",
           "ChangeType": "Addition",
-          "Description": "Added the [setPresence](https://learn.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-v1.0) action.",
+          "Description": "Added the [setPresence](https://learn.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-1.0) action.",
           "Target": "presence"
         },
         {
@@ -2257,7 +2257,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "clearPresence",
           "ChangeType": "Addition",
-          "Description": "Added the [clearPresence](https://learn.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-v1.0) action.",
+          "Description": "Added the [clearPresence](https://learn.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-1.0) action.",
           "Target": "presence"
         }
       ],
@@ -2335,7 +2335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "participantJoiningNotification",
           "ChangeType": "Addition",
-          "Description": "Added the [participantJoiningNotification](https://learn.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [participantJoiningNotification](https://learn.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-1.0) resource type.",
           "Target": "participantJoiningNotification"
         },
         {
@@ -2343,7 +2343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "participantLeftNotification",
           "ChangeType": "Addition",
-          "Description": "Added the [participantLeftNotification](https://learn.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [participantLeftNotification](https://learn.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-1.0) resource type.",
           "Target": "participantLeftNotification"
         },
         {
@@ -2351,7 +2351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "participantJoiningResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [participantJoiningResponse](https://learn.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [participantJoiningResponse](https://learn.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-1.0) resource type.",
           "Target": "participantJoiningResponse"
         },
         {
@@ -2359,7 +2359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "acceptJoinResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [acceptJoinResponse](https://learn.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [acceptJoinResponse](https://learn.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-1.0) resource type.",
           "Target": "acceptJoinResponse"
         },
         {
@@ -2367,7 +2367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inviteNewBotResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [inviteNewBotResponse](https://learn.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [inviteNewBotResponse](https://learn.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-1.0) resource type.",
           "Target": "inviteNewBotResponse"
         },
         {
@@ -2375,7 +2375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "rejectJoinResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [rejectJoinResponse](https://learn.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [rejectJoinResponse](https://learn.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-1.0) resource type.",
           "Target": "rejectJoinResponse"
         }
       ],
@@ -2393,7 +2393,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
-          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2401,7 +2401,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
-          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2409,7 +2409,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowMeetingChat",
           "ChangeType": "Addition",
-          "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2417,7 +2417,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowTeamworkReactions",
           "ChangeType": "Addition",
-          "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2649,7 +2649,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added [PATCH](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-update?view=graph-rest-v1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added [PATCH](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-update?view=graph-rest-1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -2743,7 +2743,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetings.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of **OnlineMeetings.Read.All** to the read operations of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for the policy-based application permission of **OnlineMeetings.Read.All** to the read operations of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -2751,7 +2751,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetings.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of **OnlineMeetings.ReadWrite.All** to the read and write operations of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for the policy-based application permission of **OnlineMeetings.ReadWrite.All** to the read and write operations of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
