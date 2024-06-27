@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partner.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 This entity contains aggregate data from the customer's Entra tenant MFA policy configuration and usage. 
 
 ## Properties
@@ -18,8 +20,8 @@ This entity contains aggregate data from the customer's Entra tenant MFA policy 
 |:---|:---|:---|
 |compliantAdminsCount|Int64|The number of admins that are compliant with the MFA requirements|
 |compliantNonAdminsCount|Int64|The number of users that are compliant with the MFA requirements|
+|legacyPerUserMfaStatus|microsoft.graph.partner.security.policyStatus|The status of per-user mfa to require MFA in the tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |mfaConditionalAccessPolicyStatus|microsoft.graph.partner.security.policyStatus|The status of conditional access policies to require MFA in the tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|perUserMfaStatus|microsoft.graph.partner.security.policyStatus|The status of per-user mfa to require MFA in the tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |securityDefaultsStatus|microsoft.graph.partner.security.policyStatus|The status of security defaults in the tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |totalUsersCount|Int64|The total number of users in the tenant|
 
@@ -41,7 +43,7 @@ The following JSON representation shows the resource type.
   "totalUsersCount": "Integer",
   "securityDefaultsStatus": "String",
   "mfaConditionalAccessPolicyStatus": "String",
-  "perUserMfaStatus": "String"
+  "legacyPerUserMfaStatus": "String"
 }
 ```
 

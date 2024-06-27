@@ -1,19 +1,19 @@
 ---
-title: "List customerInsights for Partner"
-description: "Get a list of the microsoft.graph.partner.security.customerInsight data and their properties."
+title: "Get securityRequirement"
+description: "Read the properties and relationships of a microsoft.graph.partner.security.securityRequirement object."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
 ---
 
-# List customerInsights
+# Get securityRequirement
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) objects and their properties.
+Read the properties and relationships of a [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/partner/securityScore/customerInsights
+GET /security/partner/securityScore/requirements/{securityRequirementId}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [customerInsight](../resources/partner-security-customerinsight.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) object in the response body.
 
 ## Examples
 
@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_customerinsight"
+  "name": "get_securityrequirement"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/partner/securityScore/customerInsights
+GET https://graph.microsoft.com/beta/security/partner/securityScore/requirements/{securityRequirementId}
 ```
 
 
@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.partner.security.customerInsight)"
+  "@odata.type": "microsoft.graph.partner.security.securityRequirement"
 }
 -->
 ``` http
@@ -84,15 +84,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.partner.security.customerInsight",
-      "tenantId": "d90cb160-123d-0608-3fd6-c53551dcc20c",
-      "mfa": {
-        "@odata.type": "microsoft.graph.partner.security.customerMfaInsight"
-      }
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.partner.security.securityRequirement",
+    "id": "adc3e54c-8dde-f1cb-b92e-ffb989948282",
+    "requirementType": "String",
+    "complianceStatus": "String",
+    "actionUrl": "String",
+    "helpUrl": "String",
+    "score": "Integer",
+    "maxScore": "Integer",
+    "state": "String",
+    "updatedDateTime": "String (timestamp)"
+  }
 }
 ```
 

@@ -11,13 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partner.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the aggregate security score for the partner along with history of score changes, detailed customer insights, and requirement score information.
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/partner-security-partnersecurityscore-get.md)|[microsoft.graph.partner.security.partnerSecurityScore](../resources/partner-security-partnersecurityscore.md)|Read the properties and relationships of a [microsoft.graph.partner.security.partnerSecurityScore](../resources/partner-security-partnersecurityscore.md) object.|
 |[List customerInsights](../api/partner-security-partnersecurityscore-list-customerinsights.md)|[microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) collection|Get the customerInsight resources from the customerInsights navigation property.|
+|[List history](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Get the securityScoreHistory resources from the history navigation property.|
+|[List requirements](../api/partner-security-partnersecurityscore-list-requirements.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) collection|Get the securityRequirement resources from the requirements navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,6 +46,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.partner.security.partnerSecurityScore",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

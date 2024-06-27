@@ -15,7 +15,8 @@ Namespace: microsoft.graph.partner.security
 
 Represents the root for various types of partner security entities.
 
-Inherits from [entity](../resources/entity.md).
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 

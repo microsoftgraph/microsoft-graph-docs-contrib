@@ -1,6 +1,6 @@
 ---
 title: "customerInsight resource type"
-description: "Represents a single customer of a partner"
+description: "Represents a single customer's security score insights for a partner"
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # customerInsight resource type
 
 Namespace: microsoft.graph.partner.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This entity contains insights into the security posture of a Partner's customer.
 

@@ -1,19 +1,19 @@
 ---
-title: "customersMfaEnforcedSecurityRequirement resource type"
-description: "Describes the Customer MFA Enforced security requirement from the partner security score"
+title: "adminsMfaEnforcedSecurityRequirement resource type"
+description: "Describes the partner admin mfa enforcement security requirements from the partner security score"
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# customersMfaEnforcedSecurityRequirement resource type
+# adminsMfaEnforcedSecurityRequirement resource type
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This requirement aggregates the partner's customers and their mfa policy compliance.
+This requirement aggregates the partner's Entra tenant MFA usage data to determine if admins are adequately protected with MFA. 
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).
 
@@ -21,16 +21,23 @@ Inherits from [microsoft.graph.partner.security.securityRequirement](../resource
 |Property|Type|Description|
 |:---|:---|:---|
 |actionUrl|String|Link to site where the admin can take action on the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|adminsRequiredNotUsingMfaCount|Int64|The count of admins who are required to use MFA, but haven't completed registration.|
 |complianceStatus|microsoft.graph.partner.security.complianceStatus|Represents if the partner is compliant with this requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `compliant`, `noncomplaint`, `unknownFutureValue`.|
-|compliantTenantCount|Int64|The count of customer tenants that are compliant.|
 |helpUrl|String|Link to help documentation for the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
 |id|String|Identifier for the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|legacyPerUserMfaStatus|microsoft.graph.partner.security.policyStatus|Describes the status of per-user MFA in the partner tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |maxScore|Int64|The maximum score possible for the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
-|requirementType|microsoft.graph.partner.security.securityRequirementType|Always set to `mfaEnforcedForAdminsOfCustomers`. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `mfaEnforcedForAdmins`, `mfaEnforcedForAdminsOfCustomers`, `securityAlertsPromptlyResolved`, `securityContactProvided`, `spendingBudgetSetForCustomerAzureSubscriptions`, `unknownFutureValue`.|
+|mfaConditionalAccessPolicyStatus|microsoft.graph.partner.security.policyStatus|The status of Conditional Access Policies in the partner tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|mfaEnabledAdminsCount|Int64|Count of admins who are using MFA.|
+|mfaEnabledUsersCount|Int64|Count of users who are using MFA.|
+|requirementType|microsoft.graph.partner.security.securityRequirementType|The type of requirement. Always set to `mfaEnforcedForAdminsOfCustomers`. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).The possible values are: `mfaEnforcedForAdmins`, `mfaEnforcedForAdminsOfCustomers`, `securityAlertsPromptlyResolved`, `securityContactProvided`, `spendingBudgetSetForCustomerAzureSubscriptions`, `unknownFutureValue`.|
 |score|Int64|The score received for this requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|securityDefaultsStatus|microsoft.graph.partner.security.policyStatus|The status of security defaults in the partner tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |state|microsoft.graph.partner.security.securityRequirementState|Describes if the requirement is in preview or is fully released. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `active`, `preview`, `unknownFutureValue`.|
-|totalTenantCount|Int64|The total number of customer tenants associated with this partner|
+|totalAdminsCount|Int64|Total admin count from the partner's tenant.|
+|totalUsersCount|Int64|Total user count from the partner's tenant.|
 |updatedDateTime|DateTimeOffset|The date the requirement properties were last updated. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|usersRequiredNotUsingMfaCount|Int64|The count of users who are required to use MFA, but haven't completed registration.|
 
 ## Relationships
 None.
@@ -40,14 +47,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+  "@odata.type": "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
   "baseType": "microsoft.graph.partner.security.securityRequirement",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+  "@odata.type": "#microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
   "id": "String (identifier)",
   "requirementType": "String",
   "complianceStatus": "String",
@@ -57,8 +64,15 @@ The following JSON representation shows the resource type.
   "maxScore": "Integer",
   "state": "String",
   "updatedDateTime": "String (timestamp)",
-  "totalTenantCount": "Integer",
-  "compliantTenantCount": "Integer"
+  "totalAdminsCount": "Integer",
+  "adminsRequiredNotUsingMfaCount": "Integer",
+  "mfaEnabledAdminsCount": "Integer",
+  "totalUsersCount": "Integer",
+  "usersRequiredNotUsingMfaCount": "Integer",
+  "mfaEnabledUsersCount": "Integer",
+  "securityDefaultsStatus": "String",
+  "mfaConditionalAccessPolicyStatus": "String",
+  "legacyPerUserMfaStatus": "String"
 }
 ```
 

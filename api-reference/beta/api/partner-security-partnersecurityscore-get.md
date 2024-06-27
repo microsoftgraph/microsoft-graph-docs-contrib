@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "partner-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partnersecurityscore-get-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /partnerSecurity/securityScore
+GET /security/partner/securityScore
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/partnerSecurity/securityScore
+GET https://graph.microsoft.com/beta/security/partner/securityScore
 ```
 
 
@@ -86,6 +86,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.partner.security.partnerSecurityScore",
+    "id": "9021efeb-af08-e3dd-9c11-ac69f92e43b8",
     "updatedDateTime": "String (timestamp)",
     "lastRefreshDateTime": "String (timestamp)",
     "currentScore": "Single",

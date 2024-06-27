@@ -11,16 +11,27 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partner.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a single history entry for the security score where the score or the requirements changed.
+
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Get a list of the [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects and their properties.|
+|[Get](../api/partner-security-securityscorehistory-get.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md)|Read the properties and relationships of a [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compliantSecurityRequirementsCount|Int64|The count of compliant security requirements at the time.|
+|compliantRequirementsCount|Int64|The count of compliant security requirements at the time.|
 |createdDateTime|DateTimeOffset|The date the history entry was created.|
 |id|String|Identifier for the history entry.|
 |score|Single|The score recorded at this time.|
-|totalSecurityRequirementsCount|Int64|The total count of requirements at the time.|
+|totalRequirementsCount|Int64|The total count of requirements at the time.|
 
 ## Relationships
 None.
@@ -31,6 +42,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.partner.security.securityScoreHistory",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -40,8 +52,8 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "score": "Single",
-  "compliantSecurityRequirementsCount": "Integer",
-  "totalSecurityRequirementsCount": "Integer"
+  "compliantRequirementsCount": "Integer",
+  "totalRequirementsCount": "Integer"
 }
 ```
 

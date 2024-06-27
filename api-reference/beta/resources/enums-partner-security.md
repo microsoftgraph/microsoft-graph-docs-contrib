@@ -80,11 +80,11 @@ Namespace: microsoft.graph.partner.security
 
 |Member|
 |:---|
-|mfaEnforcedForAuthenticationOfAdminUsers|
-|mfaEnforcedForAuthenticationOfAllUsers|
-|securityAlertsRespondedToWithinExpectedTimeWindow|
+|mfaEnforcedForAdmins|
+|mfaEnforcedForAdminsOfCustomers|
+|securityAlertsPromptlyResolved|
 |securityContactProvided|
-|spendingBudgetSetForAzureCustomers|
+|spendingBudgetSetForCustomerAzureSubscriptions|
 |unknownFutureValue|
 
 <!--
