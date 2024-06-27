@@ -56,8 +56,9 @@ By default, all sections and APIs are enabled. The following example shows how t
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
-MgtPersonCard.config.useContactApis = false;
-MgtPersonCard.config.sections.profile = false;
+MgtPersonCardConfig.useContactApis = false;
+MgtPersonCardConfig.sections.profile = false;
+MgtPersonCardConfig.sections.files = false;
 ```
 
 The following properties are available on the config object.
