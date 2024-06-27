@@ -12,7 +12,7 @@ toc.title: Deleted item
 
 Namespace: microsoft.graph
 
-Represents a deleted item in the directory. When an item is deleted, it's added to the deleted items "container". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
+Represents a deleted item in the directory. When an item is deleted, it moves to the deleted items container. Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
 Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
