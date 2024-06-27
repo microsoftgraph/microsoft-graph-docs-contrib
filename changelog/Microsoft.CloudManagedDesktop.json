@@ -38,8 +38,34 @@
       "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-24T07:08:27.3298762Z",
+      "CreatedDateTime": "2024-06-27T07:08:27.3298762Z",
       "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkDisasterRecoveryFailback",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailback](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailback?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcBulkDisasterRecoveryFailback"
+        },
+        {
+          "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkDisasterRecoveryFailover",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkDisasterRecoveryFailover](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkDisasterRecoveryFailover?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcBulkDisasterRecoveryFailover"
+        }
+      ],
+      "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-26T15:45:13.2794293Z",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
