@@ -59,7 +59,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting"
+  "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting",
+  "tenantId" : "String"
 }
 ```
 

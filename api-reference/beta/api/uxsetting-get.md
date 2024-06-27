@@ -59,7 +59,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.graph.uxSetting"
+  "@odata.type": "microsoft.graph.uxSetting"
 }
 -->
 ``` http
@@ -69,7 +69,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/entra/uxSetting/$entity",
   "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting",
-  "id" : "tenantId"
+  "id" : "String"
 }
 
 ```

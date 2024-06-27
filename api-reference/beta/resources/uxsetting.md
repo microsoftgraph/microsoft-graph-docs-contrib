@@ -41,7 +41,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "String"
+  "restrictNonAdminAccess": ""Microsoft.graph.nonAdminSetting""
 }
 ```
 
