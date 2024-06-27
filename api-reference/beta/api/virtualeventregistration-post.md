@@ -192,7 +192,7 @@ Content-Type: application/json
 
 ### Example 2: Creating registration record with application permission
 
-Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following example shows a request.
