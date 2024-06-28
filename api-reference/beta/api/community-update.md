@@ -1,9 +1,9 @@
 ---
 title: "Update community"
-description: "Update the properties of a community object."
+description: "Update the properties of an existing Viva Engage community."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_community"
@@ -83,14 +83,13 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
--->
 -->
 ``` http
 HTTP/1.1 204 No Content
