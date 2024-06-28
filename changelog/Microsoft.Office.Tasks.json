@@ -1895,7 +1895,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerArchivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `plannerArchivalInfo` resource type.",
+          "Description": "Added the [plannerArchivalInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerarchivalinfo?view=graph-rest-beta) resource.",
           "Target": "plannerArchivalInfo"
         },
         {
@@ -1903,7 +1903,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `archivalInfo` property to **plannerBucket**.",
+          "Description": "Added the **archivalInfo** property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1911,7 +1911,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the `isArchived` property to **plannerBucket**.",
+          "Description": "Added the **isArchived** property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1919,7 +1919,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `archivalInfo` property to **plannerPlan**.",
+          "Description": "Added the **archivalInfo** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1927,7 +1927,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the `isArchived` property to **plannerPlan**.",
+          "Description": "Added the **isArchived** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1935,7 +1935,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `archivalInfo` property to **plannerTask**.",
+          "Description": "Added the **archivalInfo** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1943,7 +1943,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the `isArchived` property to **plannerTask**.",
+          "Description": "Added the **isArchived** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1951,7 +1951,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
-          "Description": "Added the `archive` method to **plannerPlan**.",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/plannerplan-archive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1959,7 +1959,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
-          "Description": "Added the `unarchive` method to **plannerPlan**.",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/plannerplan-unarchive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
