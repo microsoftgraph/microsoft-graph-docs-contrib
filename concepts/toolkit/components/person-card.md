@@ -49,24 +49,25 @@ The following example shows the use of the `mgt-person-card` component. Use the 
 
 ## Global component configuration
 
-The `MgtPersonCard` class exposes a static `config` object that configures all person card components in the application. The config object configures what sections and what APIs are used by the person card to fetch details about a user from Microsoft Graph.
+The `MgtPersonCardConfig` class exposes static configuration properties that configure all person card components in the application. The class configures what sections and what APIs are used by the person card to fetch details about a user from Microsoft Graph.
 
-By default, all sections and APIs are enabled. The following example shows how to use the config object to disable sections or APIs.
+By default, all sections and APIs are enabled. The following example shows how to use the class properties to disable sections or APIs.
 
 ```ts
-import { MgtPersonCard } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from `@microsoft/mgt`;
 
 MgtPersonCardConfig.useContactApis = false;
 MgtPersonCardConfig.sections.profile = false;
 MgtPersonCardConfig.sections.files = false;
 ```
 
-The following properties are available on the config object.
+The following properties are available as properties.
 
-| Property       | Description                                                                                                                                                    |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| useContactApis | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
-| sections       | `object` - Configures what sections are shown in the person card.                                                                                              |
+| Property             | Description                                                                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| useContactApis       | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
+| sections             | `object` - Configures what sections are shown in the person card.                                                                                              |
+| isSendMessageVisible | `boolean` - Indicates whether the send message button is visible. Default value is `true`.                                                                     |
 
 ### Person card sections
 
@@ -78,7 +79,7 @@ The person card contains several configurable sections for displaying person det
 - Files - Most relevant shared files with the current signed in user.
 - Profile - Profile information such as projects, skills, languages, and more.
 
-Sections are loaded by default, but they can be disabled globally via the `MgtPersonCard.config.sections` object property. The following properties are available.
+Sections are loaded by default, but they can be disabled globally via the `MgtPersonCardConfig.sections` object property. The following properties are available.
 
 | Property            | Description                                                                                                                         |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -91,9 +92,9 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 To disable a section, simply set the property to `false` in your app initialization code:
 
 ```ts
-import { MgtPersonCard } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from `@microsoft/mgt`;
 
-MgtPersonCard.config.sections.profile = false;
+MgtPersonCardConfig.sections.profile = false;
 ```
 
 ## Setup for Teams integrations
