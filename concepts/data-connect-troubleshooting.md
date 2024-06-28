@@ -125,6 +125,9 @@ The following scenarios provide troubleshooting information for registering a Mi
 
 In the [Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
 
+ > [!NOTE]
+ > Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
+
 ![Screenshot that shows an error encountered during the creation of a billing resource.](images/app-registration-unable-create-resource.png)
 
 The previous image indicates that you don't have the **Microsoft.GraphServices** resource provider registered nor permission to register it in the selected subscription. You need to request a subscription administrator to register this resource provider. For more information, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types) and [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell#enable-an-application). The following image shows a registered **Microsoft.GraphServices** resource provider.
