@@ -54,9 +54,9 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 |Property|Type|Description|
 |:---|:---|:---|
-|firstName|String|First name of the registrant. Required. |
-|lastName|String|Last name of the registrant. Required. |
-|email|String|Email address of the registrant. Required. |
+|firstName|String|The registrant's first name. Required. |
+|lastName|String|The registrant's last name. Required. |
+|email|String|The registrant's email address. Required. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
