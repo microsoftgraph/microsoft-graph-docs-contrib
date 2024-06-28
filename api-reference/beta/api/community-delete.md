@@ -1,9 +1,9 @@
 ---
 title: "Delete community"
-description: "Delete a community object."
+description: "Delete a community in Viva Engage."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
@@ -23,10 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "employeeexperience-delete-communities-permissions"
+  "name": "community-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/employeeexperience-delete-communities-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/community-delete-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ DELETE /employeeExperience/communities/{communityId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,22 +56,20 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_community"
+  "name": "delete_community",
+  "sampleKeys": ["eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"]
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
-
 ### Response
 
-The following is an example of the response
-
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
