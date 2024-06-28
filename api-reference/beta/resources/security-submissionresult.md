@@ -104,7 +104,7 @@ Represents the result of a review after the threat submission is processed by Mi
 | badReclassifiedAsCannotMakeDecision    | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow it if not done already. |
 | unknownFutureValue                     | Any future value, which isn't in use now.                     |
 | willNotifyOnceDone                     | We'll notify you as soon as we've analyzed your message. |
-| checkUserReportedSettings              | If you want to submit messages to Microsoft, go to User reported settings and select either Microsoft only or Microsoft and my reporting mailbox under Reported message destinations. |
+| checkUserReportedSettings              | If you want to submit messages to Microsoft, go to "User Reported Settings" and select either Microsoft only or Microsoft and my reporting mailbox under "Reported Message Destinations". |
 | partOfEducationCampaign                | The reported message was part of a phishing education campaign. For more information, see the Advanced Delivery or Attack Simulation page. |
 | allowedByAdvancedDelivery              | The reported message was allowed due to advanced delivery flow for security operators mailbox. To block the message, remove it from advanced delivery. |
 | allowedByEnhancedFiltering             | The reported message was either allowed due to enhanced filtering for connectors policy, if you no longer want to allow this item remove the entry.  |
