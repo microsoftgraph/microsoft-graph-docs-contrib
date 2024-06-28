@@ -1,6 +1,6 @@
 ---
 title: "Update uxSetting"
-description: "Update the properties of an uxSetting object."
+description: "Update the properties of a uxSetting object."
 author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-admin"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [uxSetting](../resources/uxsetting.md) object.
+Update the properties of a [uxSetting](../resources/uxsetting.md) object.
 
 ## HTTP request
 
@@ -27,7 +27,7 @@ PATCH /admin/entra/uxSetting
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -36,7 +36,7 @@ PATCH /admin/entra/uxSetting
 
 |Property|Type|Description|
 |:---|:---|:---|
-|restrictNonAdminAccess|nonAdminSetting|If the nonAdminSetting is set to true, it restricts nonadministrators from browsing the Microsoft Entra administration portal. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If the nonAdminSetting is set to false, it lets nonadministrators  browse the Microsoft Entra administration portal. The possible values are: `true`, `false`.For more information, see [nonAdminSetting](../resources/enums.md#nonadminsetting-values). Required|
+|restrictNonAdminAccess|nonAdminSetting|If the nonAdminSetting is set to true, it restricts nonadministrators from browsing the Microsoft Entra administration portal. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If the nonAdminSetting is set to false, nonadministrators can browse the Microsoft Entra administration portal. The possible values are: `true`, `false`. For more information, see [nonAdminSetting](../resources/enums.md#nonadminsetting-values). Required|
 
 
 
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_uxsetting"
@@ -66,8 +66,8 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response
+
 <!-- {
   "blockType": "response",
   "truncated": true
