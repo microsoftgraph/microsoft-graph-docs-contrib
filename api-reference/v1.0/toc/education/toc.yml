@@ -42,15 +42,15 @@ items:
   items:
   - name: User
     href: ../../resources/educationuser.md
-  - name: List users
+  - name: List
     href: ../../api/educationuser-list.md
-  - name: Create user
+  - name: Create
     href: ../../api/educationuser-post.md
-  - name: Get user
+  - name: Get
     href: ../../api/educationuser-get.md
-  - name: Update educationUser
+  - name: Update
     href: ../../api/educationuser-update.md
-  - name: Delete user
+  - name: Delete
     href: ../../api/educationuser-delete.md
   - name: Get changes to users
     href: ../../api/educationuser-delta.md
@@ -202,15 +202,15 @@ items:
     href: ../../resources/educationoutcome.md
   - name: Update outcome
     href: ../../api/educationoutcome-update.md
-- name: Education points outcome
+- name: Points outcome
   items:
-  - name: Education points outcome
+  - name: Points outcome
     href: ../../resources/educationpointsoutcome.md
   - name: Update outcome
     href: ../../api/educationoutcome-update.md
-- name: Education rubric
+- name: Rubric
   items:
-  - name: Education rubric
+  - name: Rubric
     href: ../../resources/educationrubric.md
   - name: Create
     href: ../../api/educationuser-post-rubrics.md
@@ -220,9 +220,9 @@ items:
     href: ../../api/educationrubric-update.md
   - name: Delete
     href: ../../api/educationrubric-delete.md
-- name: Education rubric outcome
+- name: Rubric outcome
   items:
-  - name: Education rubric outcome
+  - name: Rubric outcome
     href: ../../resources/educationrubricoutcome.md
   - name: Update outcome
     href: ../../api/educationoutcome-update.md

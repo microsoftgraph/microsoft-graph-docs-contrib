@@ -41,7 +41,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
-| [List operations in a site](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
+| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
@@ -104,8 +105,10 @@ The `root` identifier always references the root site for a given target, as fol
 | :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place on this site.                                                                          |
 | columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
+|contentModels    | [contentModel](../resources/contentmodel.md) collection| The collection of content models applied to this site.|
 | contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
+|documentProcessingJobs |[documentProcessingJob](../resources/documentprocessingjob.md) collection  | The document processing jobs running on this site. |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
 | externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
 | items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |
