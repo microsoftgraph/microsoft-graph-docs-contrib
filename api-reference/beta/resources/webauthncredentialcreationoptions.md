@@ -1,6 +1,6 @@
 ---
 title: "webauthnCredentialCreationOptions resource type"
-description: "webauthnCredentialCreationOptions description: Represents the data returned from a WebAuthn Authenticator after the Authenticator creates a new public key credential."
+description: "Represents the data returned from a WebAuthn Authenticator after the Authenticator creates a new public key credential."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data returned from a WebAuthn Authenticator after the Authenticator creates a new public key credential. More details at [https://www.w3.org/TR/WebAuthn-2/#idl-index](WebAuthn-2/#idl-index).
+Represents the data returned from a WebAuthn Authenticator after the Authenticator creates a new public key credential. For more information, see [Web Authentication: An API for accessing Public Key Credentials Level 2](https://www.w3.org/TR/WebAuthn-2/#idl-index).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|challengeTimeoutDateTime|Edm.DateTimeOffset| Defines when the challenge in the creation options is no longer valid. Expired challenges are rejected when attempting to create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md). |  
+|challengeTimeoutDateTime|DateTimeOffset| Defines when the challenge in the creation options is no longer valid. Expired challenges are rejected when you attempt to create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md). |  
 |publicKey|[microsoft.strongAuthentication.webAuthnPublicKeyCredentialCreationOptions](webauthnpublickeycredentialcreationOptions.md)|Defines public key options for the creation of a new WebAuthn public key credential.|  
 
 ## Relationships
