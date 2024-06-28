@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0
 
 ---
 
-
 ### Response
 
 The following example shows the response.
