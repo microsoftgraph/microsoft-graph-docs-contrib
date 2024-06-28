@@ -71,7 +71,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
+> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List Attendance Records](attendancerecord-list.md) API. Alternatively to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
 
 ## Request headers
 
@@ -330,7 +330,7 @@ Content-Type: application/json
 The following example shows how to get the attendance report for a webinar session based on its **id**.
 
 > [!TIP]
-> To retrieve **attendanceRecords**, use the [List Attendance Records](attendancerecord-list.md) API. Alternatively to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
+> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List Attendance Records](attendancerecord-list.md) API. Alternatively to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
 
 #### Request
 
@@ -351,7 +351,8 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f8ce2a5f-0
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventattendancereport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventattendancereport-cli-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventattendancereport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
