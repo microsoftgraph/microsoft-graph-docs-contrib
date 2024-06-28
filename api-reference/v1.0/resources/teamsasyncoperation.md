@@ -28,16 +28,16 @@ When the request completes successfully, the status will be "succeeded" and the 
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
 |createdDateTime|DateTimeOffset |Time when the operation was created.|
 |error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
-|id|string |Unique operation id.|
+|id|string |Unique operation ID.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of operation is being described.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation described. Possible values are: `invalid`, `cloneTeam`, `archiveTeam`, `unarchiveTeam`, `createTeam`, `unknownFutureValue`, `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `teamifyGroup`, `createChannel`, `archiveChannel`, `unarchiveChannel`. |
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
-|targetResourceId|guid |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
+|targetResourceId|String |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
 |targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -47,15 +47,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "string",
-    "operationType": "archiveTeam",
-    "createdDateTime": "2018-01-01T00:00:00.0000000Z",
-    "status": "succeeded",
-    "lastActionDateTime": "2018-01-01T00:00:00.0000000Z",
-    "attemptsCount": 1,
-    "targetResourceId": "fa4aa5a2-a75b-4769-86f4-9e2742a18fda",
-    "targetResourceLocation": "/groups('fa4aa5a2-a75b-4769-86f4-9e2742a18fda')/team",
-    "error": null
+  "attemptsCount": "Int32",
+  "createdDateTime": "String (timestamp)",
+  "error": { "@odata.type": "microsoft.graph.operationError" },
+  "id": "String (identifier)",
+  "lastActionDateTime": "String (timestamp)",
+  "operationType": "String",
+  "status": "String",
+  "targetResourceId": "String",
+  "targetResourceLocation": "String"
 }
 ```
 

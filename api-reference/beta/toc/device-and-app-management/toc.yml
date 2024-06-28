@@ -81,8 +81,6 @@ items:
       href: ../../api/cloudpc-changeuseraccounttype.md
     - name: End grace period
       href: ../../api/cloudpc-endgraceperiod.md
-    - name: Get remote action results
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Power on
       href: ../../api/cloudpc-poweron.md
     - name: Power off
@@ -117,6 +115,8 @@ items:
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
       href: ../../api/cloudpc-getsupportedcloudpcremoteactions.md
+    - name: Retrieve remote action results
+      href: ../../api/cloudpc-retrievecloudpcremoteactionresults.md
     - name: Retry partner agent installation
       href: ../../api/cloudpc-retrypartneragentinstallation.md
     - name: Validate bulk resize
@@ -131,6 +131,8 @@ items:
       href: ../../api/cloudpc-bulkresize.md
     - name: Bulk restore remote action (deprecated)
       href: ../../api/manageddevice-bulkrestorecloudpc.md
+    - name: Get remote action results (deprecated)
+      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
     - name: Get shift work access state (deprecated)
@@ -263,8 +265,12 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: getDailyAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: getFrontlineReport
+      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getInaccessibleCloudPcReports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: getRawRemoteConnectionReports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
     - name: getRealTimeRemoteConnectionLatency
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: getRealTimeRemoteConnectionStatus
@@ -273,12 +279,10 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: getSharedUseLicenseUsageReport
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getFrontlineReport
-      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getTotalAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getRawRemoteConnectionReports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: retrieveCrossRegionDisasterRecoveryReport
+      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
@@ -416,6 +420,10 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk disaster recovery failback
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
+    - name: Cloud PC bulk disaster recovery failover
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -432,6 +440,8 @@ items:
       href: ../../resources/cloudpcbulkrestore.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
+    - name: Cloud PC connection setting
+      href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
@@ -470,6 +480,8 @@ items:
       href: ../../resources/cloudpcscopedpermission.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
+    - name: Cloud PC status detail
+      href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC subscription
@@ -8373,7 +8385,7 @@ items:
       href: ../../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
     - name: Get
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
-    - name: Delete operationalInsightsConnection
+    - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
   - name: Product
     items:

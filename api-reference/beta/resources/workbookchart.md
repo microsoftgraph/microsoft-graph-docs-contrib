@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart
 ---
 
 # workbookChart resource type
@@ -20,17 +21,18 @@ Represents a chart object in a workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get chart](../api/chart-get.md) | [workbookChart](workbookchart.md) |Read properties and relationships of chart object.|
-|[Create ChartSeries](../api/chart-post-series.md) |[workbookChartSeries](workbookchartseries.md)| Create a new ChartSeries by posting to the series collection.|
-|[List series](../api/chart-list-series.md) |[workbookChartSeries](workbookchartseries.md) collection| Get a ChartSeries object collection.|
-|[Update chart](../api/chart-update.md) | [workbookChart](workbookchart.md)	|Update Chart object. |
+|[List](../api/chart-list.md) | [workbookChart](workbookchart.md) collection |Get chart object collection. |
+|[Get](../api/chart-get.md) | [workbookChart](workbookchart.md) |Read properties and relationships of chart object.|
+|[Update](../api/chart-update.md) | [workbookChart](workbookchart.md)	|Update Chart object. |
+|[Delete](../api/chart-delete.md)|None|Deletes the chart object.|
+|[Add](../api/chartcollection-add.md)|[workbookChart](workbookchart.md)|Creates a new chart.|
+|[Create series](../api/chart-post-series.md) |[workbookChartSeries](workbookchartseries.md)| Create a new chartSeries by posting to the series collection.|
+|[List series](../api/chart-list-series.md) |[workbookChartSeries](workbookchartseries.md) collection| Get a chartSeries object collection.|
 |[Get chart image](../api/chart-image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
-|[Delete chart](../api/chart-delete.md)|None|Deletes the chart object.|
 |[Reset data](../api/chart-setdata.md)|None|Resets the source data for the chart.|
 |[Set position data](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
-|[List charts](../api/chart-list.md) | [workbookChart](workbookchart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|Gets a chart based on its position in the collection.|
-|[Add chart](../api/chartcollection-add.md)|[workbookChart](workbookchart.md)|Creates a new chart.|
+|[Get chart at position](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|Gets a chart based on its position in the collection.|
+
 
 ## Properties
 | Property	   | Type	|Description|
