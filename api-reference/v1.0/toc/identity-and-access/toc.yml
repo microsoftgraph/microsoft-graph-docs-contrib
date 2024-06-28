@@ -274,9 +274,9 @@ items:
         href: ../../api/orgcontact-get-manager.md
       - name: List direct reports
         href: ../../api/orgcontact-list-directreports.md
-      - name: List memberOf
+      - name: List memberships
         href: ../../api/orgcontact-list-memberof.md
-      - name: List transitiveMemberOf
+      - name: List transitive memberships
         href: ../../api/orgcontact-list-transitivememberof.md
       - name: Check member groups
         href: ../../api/directoryobject-checkmembergroups.md
@@ -365,7 +365,7 @@ items:
         href: ../../resources/accessreviewhistoryinstance.md
       - name: List
         href: ../../api/accessreviewhistorydefinition-list-instances.md
-      - name: generateDownloadUri
+      - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
     - name: Access review instance
       items:
@@ -1494,7 +1494,7 @@ items:
         href: ../../api/authenticationstrengthroot-delete-policies.md
       - name: List usage
         href: ../../api/authenticationstrengthpolicy-usage.md
-      - name: updateAllowedCombinations
+      - name: Update allowed combinations
         href: ../../api/authenticationstrengthpolicy-updateallowedcombinations.md
     - name: Authentication combination configuration
       items:
@@ -1510,6 +1510,10 @@ items:
         href: ../../api/authenticationcombinationconfiguration-update.md
       - name: Delete
         href: ../../api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+    - name: FIDO2 combination configuration
+      href: ../../resources/fido2combinationconfiguration.md
+    - name: X509 certificate combination configuration
+      href: ../../resources/x509certificatecombinationconfiguration.md
     - name: Authentication method mode detail
       items:
       - name: Authentication method mode detail
@@ -2069,7 +2073,7 @@ items:
         href: ../../api/authenticationstrengthroot-delete-policies.md
       - name: List usage
         href: ../../api/authenticationstrengthpolicy-usage.md
-      - name: updateAllowedCombinations
+      - name: Update allowed combinations
         href: ../../api/authenticationstrengthpolicy-updateallowedcombinations.md
     - name: Feature rollout policy
       items:
@@ -2330,9 +2334,9 @@ items:
         href: ../../api/identityuserflowattributeassignment-update.md
       - name: Delete
         href: ../../api/identityuserflowattributeassignment-delete.md
-      - name: getOrder
+      - name: Get order
         href: ../../api/identityuserflowattributeassignment-getorder.md
-      - name: setOrder
+      - name: Set order
         href: ../../api/identityuserflowattributeassignment-setorder.md
     - name: User flow language configuration
       items:

@@ -101,7 +101,6 @@ DELETE https://graph.microsoft.com/beta/external/industryData/referenceDefinitio
 
 ---
 
-
 ### Response
 
 The following example shows the response.
