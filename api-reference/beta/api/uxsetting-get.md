@@ -1,6 +1,6 @@
 ---
 title: "Get uxSetting"
-description: "Read the properties and relationships of an uxSetting object."
+description: "Read the properties and relationships of a uxSetting object."
 author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-admin"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [uxSetting](../resources/uxsetting.md) object.
+Read the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.
 
 ## HTTP request
 
@@ -30,19 +30,19 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [uxSetting](../resources/uxsetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [uxSetting](../resources/uxsetting.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following example is a sample of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_uxsetting"
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/beta/admin/entra/uxSetting
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
