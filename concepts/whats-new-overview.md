@@ -58,6 +58,9 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 - Deprecated the [getCloudPcRemoteActionResults](/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcRemoteActionResults](/graph/api/cloudpc-retrievecloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method.
 - Use the [retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method on the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource to retrieve the Windows 365 cross-region disaster recovery report with configuration health check results, disaster recovery status, latest cross-region restore points, and user settings.
 
+### Employee experience | Employee engagement
+
+[List](/graph/api/employeeexperience-list-communities?view=graph-rest-beta&preserve-view=true), [update](/graph/api/community-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/community-delete?view=graph-rest-beta&preserve-view=true) Viva Engage [community] objects.
 
 ### Identity and access | Identity and sign-in
 
