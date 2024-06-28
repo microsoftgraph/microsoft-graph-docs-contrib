@@ -30,6 +30,10 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
+### Microsoft Graph Data Connect
+
+Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Microsoft Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
+
 ### Security | Threat intelligence
 
 Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts) method to get a list of related [host](/graph/api/resources/security-host) resources associated with an [sslCertificate](/graph/api/resources/security-sslcertificate).
@@ -48,6 +52,8 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 - Removed the **type** property from the [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **resourceType** property.
 - Use the **deviceRegionName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the name of the geographical region where the Cloud PC is currently provisioned.
+- Use the **initiatedByUserPrincipalName** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the user principal name (UPN) of the user who initiated a bulk action.
+- Use the **status** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the status of bulk actions.
 - Perform bulk disaster recovery [failover](/graph/api/resources/cloudpcbulkdisasterrecoveryfailover?view=graph-rest-beta&preserve-view=true) and [failback](/graph/api/resources/cloudpcbulkdisasterrecoveryfailback?view=graph-rest-beta&preserve-view=true) actions to initiate the activation or deactivation of cross-region disaster recovery during regional outage scenarios.
 - Deprecated the [getCloudPcRemoteActionResults](/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcRemoteActionResults](/graph/api/cloudpc-retrievecloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method.
 
