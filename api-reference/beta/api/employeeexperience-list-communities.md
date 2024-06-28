@@ -1,9 +1,9 @@
 ---
 title: "List communities"
-description: "Get a list of the community objects and their properties."
+description: "Get a list of the Viva Engage community objects and their properties."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ GET /employeeExperience/communities
 
 ## Optional query parameters
 
-This method supports the `$top`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. It also supports `$orderby` parameter for the `displayName` property.
+This method supports the `$top`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. It also supports `$orderby` parameter for the **displayName** property.
 
 ## Request headers
 
@@ -50,7 +50,7 @@ This method supports the `$top`, `$select`, and `$expand` [OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,6 +59,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1: Get a list of communities 
+
+The following example shows how to get a list of Viva Engage communities.
 
 #### Request
 
@@ -111,13 +113,15 @@ Content-Type: application/json
 
 ### Example 2: Get a list of communities with client-side paging
 
+The following example shows how to get a list of Viva Engage communities using the `$top` query parameter to set the page size of results. 
+
 #### Request
 
-The following example shows a request with `$top` query parameter, to set page size of results. 
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_community"
+  "name": "list_community_top"
 }
 -->
 ``` http
@@ -126,10 +130,9 @@ GET https://graph.microsoft.com/beta/employeeExperience/communities?$top=2
 
 #### Response
 
-If there are more than 20 communities, or you're using the `$top` query parameter to set page size of results, more than one query request may be required to retrieve all the results.
-In this scenario, the API will continue to return a reference to the next page of results in the `@odata.nextLink` property with each response until there are no more pages of results to retrieve. 
+If the number of communities exceeds 20 or you use the `$top` query parameter to set the page size of results, multiple query requests might be necessary to retrieve all results. In this scenario, the API continues to return a reference to the next page of results in the **@odata.nextLink** property with each response until no more pages remain to be retrieved.
 
-The following example shows the response including the `@odata.nextLink` property.
+The following example shows the response  that includes the **@odata.nextLink** property.
 
 >**Note:** The response object shown here might be shortened for readability.
 
