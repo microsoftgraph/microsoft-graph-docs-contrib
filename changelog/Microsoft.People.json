@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "photoUpdateSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoUpdateSource** enumeration type.",
+          "Target": "photoUpdateSource"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
