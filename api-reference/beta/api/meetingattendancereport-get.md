@@ -91,7 +91,7 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 
 ### Example 1: Get the attendance report with attendance records for an online meeting by ID
 
-The following example shows how to get the attendance report for an online meeting with delegated permission.
+The following example shows how to get the attendance report with attendance records inline for an online meeting with delegated permission.
 
 #### Request
 
