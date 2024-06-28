@@ -434,6 +434,8 @@ items:
         href: ../../api/virtualeventregistrationconfiguration-list-questions.md
       - name: Create
         href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
