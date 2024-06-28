@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get uxSetting](../api/uxsetting-get.md)|[uxSetting](../resources/uxsetting.md)|Read the properties and relationships of an [uxSetting](../resources/uxsetting.md) object.|
-|[Update uxSetting](../api/uxsetting-update.md)|[uxSetting](../resources/uxsetting.md)|Update the properties of an [uxSetting](../resources/uxsetting.md) object.|
+|[Get](../api/uxsetting-get.md)|[uxSetting](../resources/uxsetting.md)|Read the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
+|[Update](../api/uxsetting-update.md)|[uxSetting](../resources/uxsetting.md)|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type.
+The following is a JSON representation of the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
