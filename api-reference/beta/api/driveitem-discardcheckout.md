@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-This action releases a driveItem resource that was previously [checked out](driveitem-checkout.md). Any changes done to the item while it was checked out are discarded. 
+Discard the check out of a [driveItem](../resources/driveitem.md). This action releases a **driveItem** resource that was previously [checked out](driveitem-checkout.md). Any changes made to the item while it was checked out are discarded. 
+
 The same user that performed the checkout must discard it. Another alternative is to use application permissions.
 
 
@@ -55,7 +56,13 @@ POST /drive/following/{driveItemId}/discardCheckout
 
 Don't supply a request body for this method.
 
-## Example
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
 
 The following example shows a discard checkout request on a file identified by `{item-id}`.
 <!-- {
@@ -68,9 +75,9 @@ POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardC
 ```
 
 
-## Response
+### Response
 
-If successful, this action returns a `204 No Content` response code.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 
