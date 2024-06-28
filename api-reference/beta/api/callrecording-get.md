@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|OnlineMeetingRecording.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not supported.|
+|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not available|
 
 > **Notes:**
 >
