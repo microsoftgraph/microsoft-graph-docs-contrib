@@ -56,6 +56,8 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 - Use the **status** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the status of bulk actions.
 - Perform bulk disaster recovery [failover](/graph/api/resources/cloudpcbulkdisasterrecoveryfailover?view=graph-rest-beta&preserve-view=true) and [failback](/graph/api/resources/cloudpcbulkdisasterrecoveryfailback?view=graph-rest-beta&preserve-view=true) actions to initiate the activation or deactivation of cross-region disaster recovery during regional outage scenarios.
 - Deprecated the [getCloudPcRemoteActionResults](/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcRemoteActionResults](/graph/api/cloudpc-retrievecloudpcremoteactionresults?view=graph-rest-beta&preserve-view=true) method.
+- Use the [retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method on the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource to retrieve the Windows 365 cross-region disaster recovery report with configuration health check results, disaster recovery status, latest cross-region restore points, and user settings.
+
 
 ### Identity and access | Identity and sign-in
 
