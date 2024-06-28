@@ -301,7 +301,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "creationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [creationOptions](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [creationOptions](https://learn.microsoft.com/en-us/graph/api/resources/creationOptions?view=graph-rest-beta) resource.",
+          "Description": "Added the [creationOptions](https://learn.microsoft.com/en-us/graph/api/resources/creationOptions?view=graph-rest-beta) action to the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-beta) resource.",
           "Target": "creationOptions"
         }
       ],
