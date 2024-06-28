@@ -5,10 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.retention_label import RetentionLabel
-from msgraph.generated.models.retention_duration_in_days import RetentionDurationInDays
-from msgraph.generated.models.disposition_review_stage import DispositionReviewStage
-from msgraph.generated.models.file_plan_descriptor import FilePlanDescriptor
+from msgraph.generated.models.security.retention_label import RetentionLabel
+from msgraph.generated.models.behavior_during_retention_period import BehaviorDuringRetentionPeriod
+from msgraph.generated.models.action_after_retention_period import ActionAfterRetentionPeriod
+from msgraph.generated.models.retention_trigger import RetentionTrigger
+from msgraph.generated.models.security.retention_duration_in_days import RetentionDurationInDays
+from msgraph.generated.models.security.disposition_review_stage import DispositionReviewStage
+from msgraph.generated.models.security.file_plan_descriptor import FilePlanDescriptor
+from msgraph.generated.models.default_record_behavior import DefaultRecordBehavior
 
 graph_client = GraphServiceClient(credentials, scopes)
 

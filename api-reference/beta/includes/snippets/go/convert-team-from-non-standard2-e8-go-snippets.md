@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewTeam()
 displayName := "My Class Team"
@@ -54,12 +54,12 @@ requestBody.SetMemberSettings(memberSettings)
 
 teamsAppInstallation := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
 }
 teamsAppInstallation.SetAdditionalData(additionalData)
 teamsAppInstallation1 := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
 }
 teamsAppInstallation1.SetAdditionalData(additionalData)
 
@@ -69,10 +69,11 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('educationClass')", 
+	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('educationClass')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 teams, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 

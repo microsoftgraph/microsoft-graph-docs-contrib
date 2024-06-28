@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.send_activity_notification.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
 from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph.generated.models.teamwork_activity_topic_source import TeamworkActivityTopicSource
 from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.channel_members_notification_recipient import ChannelMembersNotificationRecipient
 

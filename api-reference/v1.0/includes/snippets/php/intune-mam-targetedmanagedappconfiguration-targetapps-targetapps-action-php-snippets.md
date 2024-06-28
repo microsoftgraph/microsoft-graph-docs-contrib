@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\TargetAppsPostRequestBody;
+use Microsoft\Graph\Generated\DeviceAppManagement\TargetedManagedAppConfigurations\Item\TargetApps\TargetAppsPostRequestBody;
 use Microsoft\Graph\Generated\Models\ManagedMobileApp;
 use Microsoft\Graph\Generated\Models\AndroidMobileAppIdentifier;
+use Microsoft\Graph\Generated\Models\TargetedManagedAppGroupType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

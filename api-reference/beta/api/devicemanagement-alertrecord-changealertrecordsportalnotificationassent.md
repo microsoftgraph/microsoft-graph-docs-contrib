@@ -15,7 +15,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Set the **isPortalNotificationSent** property of all [portal notification](../resources/devicemanagement-portalnotification.md) resources associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) to `true`, marking them as sent. A maximum of 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs can be received at one time, and a maximum of 100 **portal notification** resources can be changed in the **isPortalNotificationSent** property status.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

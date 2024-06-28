@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.security.attack_simulation.login_pages.login_pages_request_builder import LoginPagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = LoginPagesRequestBuilder.LoginPagesRequestBuilderGetQueryParamete
 		filter = "source eq 'tenant'",
 )
 
-request_configuration = LoginPagesRequestBuilder.LoginPagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

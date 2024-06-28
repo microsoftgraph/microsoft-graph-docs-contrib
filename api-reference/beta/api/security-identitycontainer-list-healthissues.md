@@ -4,7 +4,7 @@ description: "Get a list of health issue objects and their properties."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # List healthIssues

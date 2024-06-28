@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewShiftPreferences()
 id := "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -52,10 +52,11 @@ availability := []graphmodels.ShiftAvailabilityable {
 }
 requestBody.SetAvailability(availability)
 additionalData := map[string]interface{}{
-	"odataEtag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
+	"@odata.etag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 shiftPreferences, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
 
 

@@ -1,0 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.virtual_event_webinar import VirtualEventWebinar
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+
+graph_client = GraphServiceClient(credentials, scopes)
+
+request_body = VirtualEventWebinar(
+	start_date_time = DateTimeTimeZone(
+		date_time = "2024-03-31T10:00:00",
+		time_zone = "Pacific Standard Time",
+	),
+	end_date_time = DateTimeTimeZone(
+		date_time = "2024-03-31T17:00:00",
+		time_zone = "Pacific Standard Time",
+	),
+)
+
+result = await graph_client.solutions.virtual_events.webinars.by_virtual_event_webinar_id('virtualEventWebinar-id').patch(request_body)
+
+
+```

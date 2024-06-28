@@ -11,9 +11,13 @@ doc_type: apiPageType
 # Update authenticationCombinationConfiguration
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) may be updated as they're the only type of [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) that may be created.
+Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. 
+The properties can be for one of the following derived types:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,9 +49,7 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations to which this configuration applies. The only possible value for fido2combinationConfigurations is `fido2`. Required.|
-
-
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 ## Response
 

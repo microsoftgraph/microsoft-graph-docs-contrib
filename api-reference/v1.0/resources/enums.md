@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### binaryOperator values
 
 |Member|
@@ -86,9 +94,10 @@ Namespace: microsoft.graph
 
 | Member              |
 | :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
+| required            |
+| recommeded          |
+| unknownFutureValue  |
+| peerRecommeded          |
 
 ### courseStatus values
 
@@ -146,6 +155,8 @@ Namespace: microsoft.graph
 | :----- |
 | user   |
 | group  |
+|application|
+|unknownFutureValue|
 
 ### multiTenantOrganizationMemberProcessingStatus values
 
@@ -2061,6 +2072,52 @@ Possible values for user account types (group membership), per Windows definitio
 | stapleDualRight    |
 | stapleDualBottom   |
 | unknownFutureValue |
+| stapleTripleLeft|
+| stapleTripleTop|
+| stapleTripleRight|
+| stapleTripleBottom|
+| bindLeft|
+| bindTop|
+| bindRight|
+| bindBottom|
+| foldAccordion|
+| foldDoubleGate|
+| foldGate|
+| foldHalf|
+| foldHalfZ|
+| foldLeftGate|
+| foldLetter|
+| foldParallel|
+| foldPoster|
+| foldRightGate|
+| foldZ|
+| foldEngineeringZ|
+| punchTopLeft|
+| punchBottomLeft|
+| punchTopRight|
+| punchBottomRight|
+| punchDualLeft|
+| punchDualTop|
+| punchDualRight|
+| punchDualBottom|
+| punchTripleLeft|
+| punchTripleTop|
+| punchTripleRight|
+| punchTripleBottom|
+| punchQuadLeft|
+| punchQuadTop|
+| punchQuadRight|
+| punchQuadBottom|
+| fold|
+| trim|
+| bale|
+| bookletMaker|
+| coat|
+| laminate|
+| trimAfterPages|
+| trimAfterDocuments|
+| trimAfterCopies|
+| trimAfterJob|
 
 ### printMultipageLayout values
 
@@ -2148,6 +2205,16 @@ Possible values for user account types (group membership), per Windows definitio
 | dropdownSingleSelect |
 | emailBox             |
 | checkboxMultiSelect  |
+
+### authenticationAttributeCollectionInputType values
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
 
 ### teamworkActivityTopicSource values
 
@@ -3296,3 +3363,23 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAccount|
 |defaultConfiguredIdp|
 |unknownFutureValue|
+
+### bookingStaffMembershipStatus values
+
+|Member|
+|:---|
+|active|
+|pendingAcceptance|
+|rejectedByStaff|
+|unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+

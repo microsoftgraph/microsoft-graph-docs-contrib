@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Points outcome
 ---
 
 # educationPointsOutcome resource type
@@ -17,7 +18,7 @@ An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 

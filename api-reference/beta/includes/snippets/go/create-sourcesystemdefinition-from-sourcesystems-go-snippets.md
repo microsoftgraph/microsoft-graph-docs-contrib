@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsindustrydata.NewSourceSystemDefinition()
 displayName := "Rostering source"
@@ -32,7 +32,7 @@ code := "username"
 sourceIdentifier.SetCode(&code) 
 userMatchingSetting.SetSourceIdentifier(sourceIdentifier)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
 }
 userMatchingSetting.SetAdditionalData(additionalData)
 userMatchingSetting1 := graphmodelsindustrydata.NewUserMatchingSetting()
@@ -47,7 +47,7 @@ code := "username"
 sourceIdentifier.SetCode(&code) 
 userMatchingSetting1.SetSourceIdentifier(sourceIdentifier)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')", 
 }
 userMatchingSetting1.SetAdditionalData(additionalData)
 
@@ -57,6 +57,7 @@ userMatchingSettings := []graphmodelsindustrydata.UserMatchingSettingable {
 }
 requestBody.SetUserMatchingSettings(userMatchingSettings)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 sourceSystems, err := graphClient.External().IndustryData().SourceSystems().Post(context.Background(), requestBody, nil)
 
 

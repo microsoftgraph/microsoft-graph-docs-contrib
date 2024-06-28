@@ -5,19 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicy;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRule;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyApprovalRule;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTarget;
-use Microsoft\Graph\Generated\Models\ApprovalSettings;
-use Microsoft\Graph\Generated\Models\ApprovalStage;
-use Microsoft\Graph\Generated\Models\UserSet;
-use Microsoft\Graph\Generated\Models\SingleUser;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyAuthenticationContextRule;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyEnablementRule;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyExpirationRule;
-use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyNotificationRule;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicy;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyRule;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyApprovalRule;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyRuleTarget;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalStage;
+use Microsoft\Graph\Beta\Generated\Models\UserSet;
+use Microsoft\Graph\Beta\Generated\Models\SingleUser;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyAuthenticationContextRule;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyEnablementRule;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyExpirationRule;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleManagementPolicyNotificationRule;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

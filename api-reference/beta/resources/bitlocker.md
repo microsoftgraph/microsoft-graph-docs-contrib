@@ -18,7 +18,7 @@ The parent resource for a stored BitLocker key with the navigation property **bi
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the bitlockerRecoveryKey objects and their properties.|
+|[List](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the bitlockerRecoveryKey objects and their properties.|
 
 ## Properties
 None.

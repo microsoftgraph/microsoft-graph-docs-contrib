@@ -12,10 +12,6 @@ CloudPcProvisioningPolicy cloudPcProvisioningPolicy = new CloudPcProvisioningPol
 cloudPcProvisioningPolicy.setOdataType("#microsoft.graph.cloudPcProvisioningPolicy");
 cloudPcProvisioningPolicy.setDescription("Description value");
 cloudPcProvisioningPolicy.setDisplayName("Display Name value");
-CloudPcDomainJoinConfiguration domainJoinConfiguration = new CloudPcDomainJoinConfiguration();
-domainJoinConfiguration.setDomainJoinType(CloudPcDomainJoinType.HybridAzureADJoin);
-domainJoinConfiguration.setOnPremisesConnectionId("16ee6c71-fc10-438b-88ac-daa1ccafffff");
-cloudPcProvisioningPolicy.setDomainJoinConfiguration(domainJoinConfiguration);
 LinkedList<CloudPcDomainJoinConfiguration> domainJoinConfigurations = new LinkedList<CloudPcDomainJoinConfiguration>();
 CloudPcDomainJoinConfiguration cloudPcDomainJoinConfiguration = new CloudPcDomainJoinConfiguration();
 cloudPcDomainJoinConfiguration.setOnPremisesConnectionId("16ee6c71-fc10-438b-88ac-daa1ccafffff");
@@ -31,7 +27,6 @@ cloudPcProvisioningPolicy.setEnableSingleSignOn(true);
 cloudPcProvisioningPolicy.setImageDisplayName("Windows-10 19h1-evd");
 cloudPcProvisioningPolicy.setImageId("MicrosoftWindowsDesktop_Windows-10_19h1-evd");
 cloudPcProvisioningPolicy.setImageType(CloudPcProvisioningPolicyImageType.Gallery);
-cloudPcProvisioningPolicy.setOnPremisesConnectionId("4e47d0f6-6f77-44f0-8893-c0fe1701ffff");
 CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
 windowsSettings.setLanguage("en-US");
 cloudPcProvisioningPolicy.setWindowsSettings(windowsSettings);
@@ -39,6 +34,13 @@ CloudPcWindowsSetting windowsSetting = new CloudPcWindowsSetting();
 windowsSetting.setLocale("en-US");
 cloudPcProvisioningPolicy.setWindowsSetting(windowsSetting);
 cloudPcProvisioningPolicy.setProvisioningType(CloudPcProvisioningType.Dedicated);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ domainJoinConfiguration = new ();
+domainJoinConfiguration.setDomainJoinType("hybridAzureADJoin");
+domainJoinConfiguration.setOnPremisesConnectionId("16ee6c71-fc10-438b-88ac-daa1ccafffff");
+additionalData.put("domainJoinConfiguration", domainJoinConfiguration);
+additionalData.put("onPremisesConnectionId", "4e47d0f6-6f77-44f0-8893-c0fe1701ffff");
+cloudPcProvisioningPolicy.setAdditionalData(additionalData);
 CloudPcProvisioningPolicy result = graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().post(cloudPcProvisioningPolicy);
 
 

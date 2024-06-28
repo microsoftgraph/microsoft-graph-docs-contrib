@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLobApp/1.0")
@@ -80,10 +80,10 @@ metadata := []graphmodelssecurity.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.security.contentFormat", 
+	"format@odata.type" : "#microsoft.graph.security.contentFormat", 
 	"format" : "default", 
-	"odataType" : "#microsoft.graph.security.contentState", 
-	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"state@odata.type" : "#microsoft.graph.security.contentState", 
+	"metadata@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -103,13 +103,14 @@ extendedProperties := []graphmodelssecurity.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.security.assignmentMethod", 
-	"odataType" : "#Guid", 
-	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"assignmentMethod@odata.type" : "#microsoft.graph.security.assignmentMethod", 
+	"labelId@odata.type" : "#Guid", 
+	"extendedProperties@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 microsoftGraphSecurityEvaluateApplication, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateApplication().PostAsEvaluateApplicationPostResponse(context.Background(), requestBody, configuration)
 
 

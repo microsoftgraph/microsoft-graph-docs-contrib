@@ -1,5 +1,5 @@
 ---
-title: "Delete a historyItem"
+title: "Delete an activityHistoryItem"
 description: "Delete an existing history item for an existing user activity."
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
@@ -7,7 +7,7 @@ author: "ailae"
 doc_type: apiPageType
 ---
 
-# Delete a historyItem
+# Delete an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -35,7 +35,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

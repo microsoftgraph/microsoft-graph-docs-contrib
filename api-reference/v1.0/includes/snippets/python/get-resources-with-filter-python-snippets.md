@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.education.classes.item.assignments.item.resources.resources_request_builder import ResourcesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = ResourcesRequestBuilder.ResourcesRequestBuilderGetQueryParameters
 		filter = "id eq 'bc98d7cd-7cf3-449c-b1b9-3a9683024d4e'",
 )
 
-request_configuration = ResourcesRequestBuilder.ResourcesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

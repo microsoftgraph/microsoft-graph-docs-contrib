@@ -1,17 +1,18 @@
 ---
 title: "directory resource type (deleted items)"
-description: ". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
+description: "Represents a deleted item in the directory."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Deleted item
 ---
 
 # directory resource type
 
 Namespace: microsoft.graph
 
-Represents a deleted item in the directory. When an item is deleted, it's added to the deleted items "container". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
+Represents a deleted item in the directory. When an item is deleted, it moves to the deleted items container. Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
 Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
@@ -24,8 +25,8 @@ Inherits from [entity](entity.md).
 | [Get deleted item](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
 | [Restore deleted item](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
 | [List deleted items](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
-| [Permanently delete an item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
-| [List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
+| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 
@@ -44,6 +45,7 @@ Inherits from [entity](entity.md).
 | deviceLocalCredentials             | [deviceLocalCredential](../resources/devicelocalcredential.md) collection                | The credentials of the device's local administrator account backed up to Microsoft Entra ID.                            |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization acquired.                                                       |
 
 ## JSON representation
 

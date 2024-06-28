@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Outcome
 ---
 
 # educationOutcome resource type
@@ -19,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update the **educationOutcome** object. |
+| [Update outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update the **educationOutcome** object. |
 
 ## Properties
 | Property	   | Type	|Description|

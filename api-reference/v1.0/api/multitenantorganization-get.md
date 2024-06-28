@@ -38,7 +38,7 @@ This method supports the `$select` OData query parameter to help customize the r
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-multitenantorganization-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-multitenantorganization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

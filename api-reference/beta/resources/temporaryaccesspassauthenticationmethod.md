@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.keywords: [ TAP ]
 ---
 
 # temporaryAccessPassAuthenticationMethod resource type

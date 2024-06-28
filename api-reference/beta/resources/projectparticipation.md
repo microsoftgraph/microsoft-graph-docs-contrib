@@ -3,7 +3,7 @@ title: "projectParticipation resource type"
 description: "projectParticipation resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemfacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List projects](../api/profile-list-projects.md)|[projectParticipation](../resources/projectparticipation.md) collection|Get the projectParticipation resources from the projects navigation property.|
-|[Create projectParticipation](../api/profile-post-projects.md)|[projectParticipation](../resources/projectparticipation.md)|Create a new projectParticipation object.|
-|[Get projectParticipation](../api/projectparticipation-get.md)|[projectParticipation](../resources/projectparticipation.md)|Read the properties and relationships of a [projectParticipation](../resources/projectparticipation.md) object.|
-|[Update projectParticipation](../api/projectparticipation-update.md)|[projectParticipation](../resources/projectparticipation.md)|Update the properties of a [projectParticipation](../resources/projectparticipation.md) object.|
-|[Delete projectParticipation](../api/projectparticipation-delete.md)|None|Deletes a [projectParticipation](../resources/projectparticipation.md) object.|
+|[List](../api/profile-list-projects.md)|[projectParticipation](../resources/projectparticipation.md) collection|Get the projectParticipation resources from the projects navigation property.|
+|[Create](../api/profile-post-projects.md)|[projectParticipation](../resources/projectparticipation.md)|Create a new projectParticipation object.|
+|[Get](../api/projectparticipation-get.md)|[projectParticipation](../resources/projectparticipation.md)|Read the properties and relationships of a [projectParticipation](../resources/projectparticipation.md) object.|
+|[Update](../api/projectparticipation-update.md)|[projectParticipation](../resources/projectparticipation.md)|Update the properties of a [projectParticipation](../resources/projectparticipation.md) object.|
+|[Delete](../api/projectparticipation-delete.md)|None|Deletes a [projectParticipation](../resources/projectparticipation.md) object.|
 
 ## Properties
 

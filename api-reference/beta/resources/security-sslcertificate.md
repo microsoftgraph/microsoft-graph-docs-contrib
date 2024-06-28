@@ -21,10 +21,11 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List sslCertificates](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
-|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
+| Method                                                                    |Return type|Description|
+|:--------------------------------------------------------------------------|:---|:---|
+| [List](../api/security-threatintelligence-list-sslcertificates.md)        |[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+| [Get](../api/security-sslcertificate-get.md)                              |[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
+| [List related hosts](../api/security-sslcertificate-list-relatedhosts.md) |[microsoft.graph.security.host](../resources/security-host.md) collection|Get a list of related [host](../resources/security-host.md) resources associated with an [sslCertificate](../resources/security-sslcertificate.md).|
 
 ## Properties
 
@@ -45,11 +46,11 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|relatedHosts|[microsoft.graph.security.host](../resources/security-host.md) collection|The **hosts** related with this **sslCertificate**.|
+|relatedHosts|[microsoft.graph.security.host](../resources/security-host.md) collection|The **host** resources related with this **sslCertificate**.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

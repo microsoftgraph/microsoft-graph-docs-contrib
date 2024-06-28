@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewBookingStaffMember()
 colorIndex := int32(1)
@@ -46,8 +46,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours.SetAdditionalData(additionalData)
 bookingWorkHours1 := graphmodels.NewBookingWorkHours()
@@ -66,8 +66,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours1.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours1.SetAdditionalData(additionalData)
 bookingWorkHours2 := graphmodels.NewBookingWorkHours()
@@ -86,8 +86,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours2.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours2.SetAdditionalData(additionalData)
 bookingWorkHours3 := graphmodels.NewBookingWorkHours()
@@ -106,8 +106,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours3.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours3.SetAdditionalData(additionalData)
 bookingWorkHours4 := graphmodels.NewBookingWorkHours()
@@ -126,8 +126,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours4.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours4.SetAdditionalData(additionalData)
 
@@ -142,11 +142,12 @@ requestBody.SetWorkingHours(workingHours)
 isEmailNotificationEnabled := false
 requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingStaffRole", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkHours)", 
+	"role@odata.type" : "#microsoft.graph.bookingStaffRole", 
+	"workingHours@odata.type" : "#Collection(microsoft.graph.bookingWorkHours)", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 staffMembers, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").StaffMembers().Post(context.Background(), requestBody, nil)
 
 

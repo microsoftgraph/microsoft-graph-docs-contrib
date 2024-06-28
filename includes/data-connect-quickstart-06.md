@@ -4,9 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-This exercise describes how to set up your Azure resources and connect Microsoft Graph Data Connect (Data Connect) to it. In this step, you can either choose Azure Synapse or Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Data Connect.
-
-We recommend that you use Azure Synapse because it has more in-built capabilities for data processing.
+This exercise describes how to set up your Azure resources and connect Microsoft Graph Data Connect (Data Connect) to it. In this step, you can either choose Azure Synapse, Azure Data Factory, or Microsoft Fabric to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Data Connect. 
 
 ## Setting up your Azure resources
 
@@ -14,7 +12,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Ensure that you're signed-in with your developer account that has privileges to create Azure resources within your subscription.
 
 1. On the left pane, select **Create a resource**.
 
@@ -99,7 +97,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
     ![A screenshot of the New integration dataset pane with Azure Blob Storage highlighted.](../concepts/images/data-connect-synapse-integration-service.png)
 
     1. For the format for the data, select **Binary**, and then choose **Continue**.
-    1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
+    1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it doesn't exist already.
 
         ![A screenshot of the Set properties pane with Linked service highlighted.](../concepts/images/data-connect-synapse-set-properties.png)
 
@@ -132,7 +130,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 Now that you've created the pipeline, it's time to run it.
 
 > [!NOTE]
-> It can take several minutes for the consent request to appear, and it is not uncommon for the entire process (start, requesting consent, and after approving the consent completing the pipeline run) to take over 40 minutes.
+> It can take several minutes for the consent request to appear, and it's not uncommon for the entire process (start, requesting consent, and after approving the consent completing the pipeline run) to take over 40 minutes.
 
 1. In the Azure Synapse Analytics designer, with the pipeline open, select **Add trigger > Trigger Now**, and then choose **OK**.
 
@@ -154,13 +152,13 @@ Now that you've created the pipeline, it's time to run it.
 
     ![A screenshot of the Details page with ConsentPending highlighted.](../concepts/images/data-connect-synapse-accept-request.png)
 
-1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
+1. The request is sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin privileges enabled so you can approve the pipeline request.
 
 # [Create an Azure Data Factory Pipeline](#tab/AzureDataFactoryPipeline)
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in to the Azure portal with an account that has either the [Application administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Make sure you are using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
+1. Sign in to the Azure portal with an account that has either the [Application administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Make sure you're using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
 
 1. On the home page, select **Create a resource**.
 
@@ -295,4 +293,8 @@ With the pipeline created, now it is time to run it.
 
     ![A screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
 
-1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
+1. The request is sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin privileges enabled so you can approve the pipeline request.
+<!--
+# [Create a Microsoft Fabric Pipeline](#tab/MicrosoftFabricPipeline)
+
+(More instructions coming soon)-->

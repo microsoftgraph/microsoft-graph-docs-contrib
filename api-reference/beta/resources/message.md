@@ -30,36 +30,35 @@ by providing a [delta](../api/message-delta.md) function.
 | Method | Return type |Description|
 |:-------|:------------|:----------|
 |[List messages](../api/user-list-messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
-|[Create message](../api/user-post-messages.md) | [message](message.md) | Create a draft of a new message. |
+|[Create draft message](../api/user-post-messages.md) | [message](message.md) | Create a draft of a new message. |
 |[Get message](../api/message-get.md) | [message](message.md) |Read properties and relationships of message object.|
-|[Update](../api/message-update.md) | [message](message.md) |Update message object. |
-|[Delete](../api/message-delete.md) | None |Delete message object. |
-|[copy](../api/message-copy.md)|[Message](message.md)|Copy a message to a folder.|
-|[createForward](../api/message-createforward.md)|[Message](message.md)|Create a draft forward message to include a comment or update any message properties all in one **createForward** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReply](../api/message-createreply.md)|[Message](message.md)|Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that were added, deleted, or updated in a specified folder.|
-|[forward](../api/message-forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
-|[markAsJunk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
-|[markAsNotJunk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
-|[move](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
-|[reply](../api/message-reply.md)|None|Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.|
-|[replyAll](../api/message-replyall.md)|None|Reply to all the recipients of a message by specifying a comment and modifying any updateable properties for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.|
-|[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
-|[unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
+|[Update message](../api/message-update.md) | [message](message.md) |Update message object. |
+|[Delete message](../api/message-delete.md) | None |Delete message object. |
+|[Copy message](../api/message-copy.md)|[Message](message.md)|Copy a message to a folder.|
+|[Create draft to forward message](../api/message-createforward.md)|[Message](message.md)|Create a draft forward message to include a comment or update any message properties all in one **createForward** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply](../api/message-createreply.md)|[Message](message.md)|Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Create draft to reply-all](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[Get message delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that were added, deleted, or updated in a specified folder.|
+|[Forward message](../api/message-forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
+|[Mark as junk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
+|[Mark as not junk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
+|[Move message](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
+|[Reply to message](../api/message-reply.md)|None|Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.|
+|[Reply-all to message](../api/message-replyall.md)|None|Reply to all the recipients of a message by specifying a comment and modifying any updateable properties for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.|
+|[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
+|[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
-|[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
-|[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 

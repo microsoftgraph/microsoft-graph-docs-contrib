@@ -1,13 +1,13 @@
 ---
-author: "spgraph-docs-team"
-title: "listItem resource"
-description: "Represents an item in a SharePoint list."
+author: spgraph-docs-team
+title: listItem resource type
+description: Represents an item in a sharepoint list.
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# listItem resource
+# listItem resource type
 
 Namespace: microsoft.graph
 
@@ -32,9 +32,9 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
 | [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
 | [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
-| [List documentSetVersions](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
-| [Create documentSetVersion](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
-| [Restore documentSetVersion](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
+| [List](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
+| [Create](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
+| [Restore](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
 | [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
 
 [Get]: ../api/listitem-get.md
