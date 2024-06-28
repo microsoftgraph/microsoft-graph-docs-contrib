@@ -67,7 +67,8 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_community"
+  "name": "update_community",
+  "sampleKeys": ["eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"]
 }
 -->
 ``` http
@@ -85,7 +86,6 @@ Content-Type: application/json
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
