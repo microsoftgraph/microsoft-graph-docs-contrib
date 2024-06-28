@@ -27,6 +27,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 |[Move to container](../api/plannerplan-movetocontainer.md) | [plannerPlan](../resources/plannerplan.md) | Move a **plannerPlan** object from one **plannerPlanContainer** to another. |
 |[Archive plan](../api/plannerplan-archive.md) | [plannerPlan](plannerplan.md) | Archive a **plannerPlan** object.|
+|[Unarchive plan](../api/plannerplan-unarchive.md) | [plannerPlan](plannerplan.md) | Unarchive an archived **plannerPlan** object.|
 
 ## Properties
 | Property	   | Type	|Description|
