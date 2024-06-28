@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "newslinkpage-create-permissions"
+  "name": "newslinkpage_create"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/newslinkpage-create.md)]
@@ -74,9 +74,6 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ### Request
 
-
-# [HTTP](#tab/http)
-
 <!-- { "blockType": "request", "name": "create_newslinkpage", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -105,7 +102,6 @@ The contents of the file goes here.
 
 ---------------------------acebdf13572468--
 ```
----
 
 ### Response
 
