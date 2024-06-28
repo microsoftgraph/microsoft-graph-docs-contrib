@@ -11,7 +11,7 @@ from kiota_abstractions.base_request_configuration import RequestConfiguration
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetQueryParameters(
-		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName"],
+		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName","deviceRegionName"],
 )
 
 request_configuration = RequestConfiguration(
