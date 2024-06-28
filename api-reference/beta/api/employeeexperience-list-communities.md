@@ -40,7 +40,7 @@ GET /employeeExperience/communities
 
 ## Optional query parameters
 
-This method supports the `$top`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. It also supports `$orderby` parameter for the **displayName** property.
+This method supports the `$top`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. It also supports the `$orderby` parameter for the **displayName** property.
 
 ## Request headers
 
