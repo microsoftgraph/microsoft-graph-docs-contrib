@@ -60,7 +60,7 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 ### Files
 
-You can now [discard a checkout](/graph/api/driveitem-discardcheckout) of a [driveItem](/graph/api/resources/driveitem).
+You can now [discard a checkout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
