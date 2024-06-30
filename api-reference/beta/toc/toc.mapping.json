@@ -2951,6 +2951,13 @@
         "workbookSortField",
         "workbookWorksheetProtectionOptions"
       ]
+    },
+    {
+      "name": "UXSettings",
+      "overview": "../../resources/uxsetting.md",
+      "resources": [
+        "uxsetting"
+      ]
     }
   ],
   "resourceOverviews": [
