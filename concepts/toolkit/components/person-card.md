@@ -61,7 +61,7 @@ MgtPersonCardConfig.sections.profile = false;
 MgtPersonCardConfig.sections.files = false;
 ```
 
-The following properties are available as properties.
+The following properties are available.
 
 | Property             | Description                                                                                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
