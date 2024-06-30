@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Person-Card component in Microsoft Graph Toolkit
 
-A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
+A Person-Card component is a responsive component to display more information related to a person. It's used as a flyout on the `mgt-person` component.
 
 For more information about the `mgt-person` component, see [mgt-person](./person.md).
 
@@ -89,7 +89,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | profile             | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.                                    |
 | lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it doesn't flow out of the card section. Default value is `false`. |
 
-To disable a section, simply set the property to `false` in your app initialization code:
+To disable a section, set the property to `false` in your app initialization code:
 
 ```ts
 import { MgtPersonCardConfig } from `@microsoft/mgt`;
@@ -101,7 +101,7 @@ MgtPersonCardConfig.sections.profile = false;
 
 The Person-Card component allows the user to contact the target person, including via Teams chat. If using the component inside a Teams tab app, you can ensure that the component deep links directly to a chat instead of opening a browser window by setting the `microsoftTeamsLib` in `TeamsHelper`.
 
-If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
+If the Person-Card component is unable to detect the Teams lib, the component attempts to open the Teams web client instead.
 
 ```ts
 import * as microsoftTeams from "@microsoft/teams-js";
@@ -121,7 +121,7 @@ By default, the `mgt-person` component passes the person details to the `mgt-per
 | inherit-details | None                                                                       | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
 | user-id         | String                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
 | person-query    | String                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
-| person-card     | String                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
+| person-card     | String                                                                     | Specifies whether the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
 
 ## CSS custom properties
 
