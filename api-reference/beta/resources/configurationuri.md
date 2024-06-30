@@ -1,9 +1,8 @@
 ---
 title: "configurationUri resource type"
-description: "A uri utilized for preintegrated application's single sign-on."
+description: "Represents a URI for the single sign-on configuration of a preintegrated application."
 author: "allisonAm"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
@@ -14,22 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A configurationURI is a uri needed to configuring single sign-on for preintegrated applications. 
+Represents a URI for the single sign-on configuration of a preintegrated application.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToSingleSignOnMode|String|The single sign-on mode that the uri is configured for. Possible values are 'saml' and 'password.|
-|examples|String collection|The various formats that the uri should follow|
-|isRequired|Boolean|Designates if this uri is required in the single sign-on configuration.|
-|usage|uriUsageType|How the uri is used in single sign-on. The possible values are: `redirectUri`, `identifierUri`, `loginUrl`, `logoutUrl`, `unknownFutureValue`.|
-|values|String collection|The suggested values for the uri. Developers may need to customize these values for their tenant.|
+|appliesToSingleSignOnMode|String|The single sign-on mode that the URI is configured for. Possible values are: `saml`, `password`.|
+|examples|String collection|The various formats that the URI should follow.|
+|isRequired|Boolean|Designates if this URI is required in the single sign-on configuration.|
+|usage|uriUsageType|How the URI is used in single sign-on. The possible values are: `redirectUri`, `identifierUri`, `loginUrl`, `logoutUrl`, `unknownFutureValue`.|
+|values|String collection|The suggested values for the URI. Developers may need to customize these values for their tenant.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationUri"
@@ -38,15 +41,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationUri",
-  "values": [
-    "String"
-  ],
-  "examples": [
-    "String"
-  ],
-  "usage": "String",
+  "appliesToSingleSignOnMode": "String",
+  "examples": ["String"],
   "isRequired": "Boolean",
-  "appliesToSingleSignOnMode": "String"
+  "usage": "String",
+  "values": ["String"]
 }
 ```
 
