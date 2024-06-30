@@ -25,7 +25,7 @@ GET /admin/entra/uxSetting
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -71,16 +71,3 @@ Content-Type: application/json
   "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting",
   "id" : "String"
 }
-
-```
-Sample response 
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/entra/uxSetting/$entity",
-  "restrictNonAdminAccess": "false",
-  "id": "<tenantId>"
-}
-```

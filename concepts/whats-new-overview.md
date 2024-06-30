@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Change notifications
 
-Get or update the [uxsetting](/graph/api/resources/uxsetting) that restrict access to Microsoft Entra administration portal to administrators.
+Get or update the [uxsetting](/graph/api/resources/uxsetting) that restrict access to Microsoft Entra administration portal to only administrators.
 
 
 ## June 2024: New and generally available

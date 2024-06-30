@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the tenant's setting to restrict access to Microsoft Entra Administration portal to only administrators. 
 
 ## Methods
 |Method|Return type|Description|
