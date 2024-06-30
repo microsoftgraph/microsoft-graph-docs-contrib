@@ -191,7 +191,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "aggregatedAppsDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [aggregatedAppsDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudappdiscoveryreport-aggregatedappsdetails?view=graph-rest-beta) method to the [aggregatedAppsDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudappdiscoveryreport?view=graph-rest-beta) resource.",
+          "Description": "Added the [aggregatedAppsDetails](https://learn.microsoft.com/en-us/graph/api/security-cloudappdiscoveryreport-aggregatedappsdetails?view=graph-rest-beta) method to the [aggregatedAppsDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudappdiscoveryreport?view=graph-rest-beta) resource.",
           "Target": "aggregatedAppsDetails"
         }
       ],
