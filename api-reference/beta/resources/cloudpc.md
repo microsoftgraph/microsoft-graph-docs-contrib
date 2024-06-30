@@ -180,7 +180,7 @@ The following JSON representation shows the resource type.
   "allotmentDisplayName": "String",
   "connectivityResult": "String",
   "deviceRegionName": "String",
-  "disasterRecoveryCapability": "String",
+  "disasterRecoveryCapability": {"@odata.type": "microsoft.graph.cloudPcDisasterRecoveryCapability"},
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",
