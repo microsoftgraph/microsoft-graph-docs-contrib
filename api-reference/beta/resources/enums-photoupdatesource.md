@@ -4,7 +4,7 @@ description: "photoUpdateSource. The possible values are: `cloud`, `onPremises`,
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
-doc_type: enumTypes
+doc_type: enumPageType
 ---
 
 ### photoUpdateSource values
