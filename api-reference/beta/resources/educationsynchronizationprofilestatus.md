@@ -5,7 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-toc.title: Synchronization profile status
+toc.title: Synchronization profile status (deprecated)
 ---
 
 # educationSynchronizationProfileStatus resource type (deprecated)

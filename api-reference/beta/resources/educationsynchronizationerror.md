@@ -5,7 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-toc.title: Synchronization error
+toc.title: Synchronization error (deprecated)
 ---
 
 # educationSynchronizationError resource type (deprecated)
