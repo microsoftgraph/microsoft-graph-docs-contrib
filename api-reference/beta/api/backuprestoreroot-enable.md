@@ -102,7 +102,6 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/enable
 
 ---
 
-
 ### Response
 
 The following example shows the response.

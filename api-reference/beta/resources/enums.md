@@ -11,6 +11,20 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### virtualEventRegistrationPredefinedQuestionLabel values
+
+| Member             |
+|:-------------------|
+| street             |
+| city               |
+| state              |
+| postalCode         | 
+| countryOrRegion    |
+| industry           |
+| jobTitle           |
+| organization       |
+| unknownFutureValue |
+
 ### fileStorageContainerOwnershipType values
 
 | Member             |
@@ -586,6 +600,14 @@ Namespace: microsoft.graph
 | all                | 1     | The policy applies to all users and groups in the organization. Default value. |
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
 | unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
+
+### appManagementRestrictionState values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
 
 ### appCredentialRestrictionType values
 
@@ -2860,6 +2882,15 @@ Possible values for user account types (group membership), per Windows definitio
 | passwordChange       |
 | unknownFutureValue   |
 
+### perUserMfaState values 
+
+|Member|
+|:---|
+|disabled|
+|enforced|
+|enabled|
+|unknownFutureValue|
+
 ### conditionalAccessRule values
 
 | Member                            |
@@ -3139,6 +3170,35 @@ Possible values for user account types (group membership), per Windows definitio
 | thumbnail          | Image column.                                      |
 | approvalStatus     | Content approval status column.                    |
 | unknownFutureValue | unknownFuturevalue                                 |
+
+### contentModelType values 
+
+|Member|
+|:---|
+|teachingMethod|
+|layoutMethod|
+|freeformSelectionMethod|
+|prebuiltContractModel|
+|prebuiltInvoiceModel|
+|prebuiltReceiptModel|
+|unknownFutureValue|
+
+### documentProcessingJobStatus values 
+
+|Member|
+|:---|
+|inProgress|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### documentProcessingJobType values 
+
+|Member|
+|:---|
+|File|
+|Folder|
+|UnknownFutureValue|
 
 ### connectedOrganizationState values
 

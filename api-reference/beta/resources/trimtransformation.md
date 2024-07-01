@@ -3,7 +3,7 @@ title: "trimTransformation resource type"
 description: "Eliminates leading and trailing characters that match the provided input."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 
