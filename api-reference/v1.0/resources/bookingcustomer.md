@@ -1,7 +1,7 @@
 ---
 title: "bookingCustomer resource type"
 description: "Represents a customer of a bookingBusiness."
-ms.localizationpriority: medium
+ms.localizationpriority: Normal
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
@@ -29,9 +29,11 @@ Inherits from [bookingCustomerBase](bookingcustomerbase.md).
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the customer was created.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the customer was last updated.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships
@@ -53,20 +55,22 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "addresses": [
+  "@odata.type": "#microsoft.graph.bookingCustomer",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "emailAddress": "String",
+   "addresses": [
     {
       "@odata.type": "microsoft.graph.physicalAddress"
     }
   ],
-  "displayName": "String",
-  "emailAddress": "String",
-  "id": "String (identifier)",
-  
   "phones": [
     {
       "@odata.type": "microsoft.graph.phone"
     }
-  ]
+  ],
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
 
 ```
