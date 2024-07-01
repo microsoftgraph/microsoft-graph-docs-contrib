@@ -99,28 +99,55 @@
       ],
       "resources": [
         "backupRestoreRoot",
-        "serviceApp",
         "protectionPolicyBase",
-        "sharePointProtectionPolicy",
-        "exchangeProtectionPolicy",
-        "oneDriveForBusinessProtectionPolicy",
-        "protectionUnitBase",
-        "siteProtectionUnit",
-        "mailboxProtectionUnit",
-        "driveProtectionUnit",
         "protectionRuleBase",
-        "siteProtectionRule",
-        "mailboxProtectionRule",
-        "driveProtectionRule",
+        "protectionUnitBase",
+        "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
-        "sharePointRestoreSession",
-        "exchangeRestoreSession",
-        "oneDriveForBusinessRestoreSession",
-        "restoreArtifactBase",
-        "siteRestoreArtifact",
-        "mailboxRestoreArtifact",
-        "driveRestoreArtifact"
+        "serviceApp"
+      ],
+      "childNodes": [
+        {
+          "name": "Protection policy",
+          "resources": [
+            "oneDriveForBusinessProtectionPolicy",
+            "exchangeProtectionPolicy",
+            "sharePointProtectionPolicy"
+          ]
+        },
+        {
+          "name": "Protection rule",
+          "resources": [
+            "driveProtectionRule",
+            "mailboxProtectionRule",
+            "siteProtectionRule"
+          ]
+        },
+        {
+          "name": "Protection unit",
+          "resources": [
+            "driveProtectionUnit",
+            "mailboxProtectionUnit",
+            "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Restore artifact",
+          "resources": [
+            "driveRestoreArtifact",
+            "mailboxRestoreArtifact",
+            "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore session",
+          "resources": [
+            "oneDriveForBusinessRestoreSession",
+            "exchangeRestoreSession",
+            "sharePointRestoreSession"
+          ]
+        }
       ],
       "complexTypes": [
         "restorePointSearchResponse",
@@ -361,6 +388,8 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecoveryFailback",
+            "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -389,6 +418,8 @@
             "cloudPcScopedPermission",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
+            "cloudPcStatusDetail",
+            "CloudPcConnectionSetting",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
@@ -1229,6 +1260,13 @@
                         "staleSignInAlertConfiguration",
                         "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
                         "unifiedRoleManagementAlertIncident",
+                        "invalidLicenseAlertIncident",
+                        "noMfaOnRoleActivationAlertIncident",
+                        "redundantAssignmentAlertIncident",
+                        "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
+                        "sequentialActivationRenewalsAlertIncident",
+                        "staleSignInAlertIncident",
+                        "tooManyGlobalAdminsAssignedToTenantAlertIncident",
                         "longRunningOperation"
                       ]
                     }
@@ -1291,8 +1329,6 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
             "invitation",
@@ -1450,6 +1486,17 @@
               ]
             },
             {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
+              ]
+            },
+            {
               "name": "Policies",
               "overview": "../../resources/policy-overview.md",
               "shouldSort": true,
@@ -1457,6 +1504,7 @@
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
                 "claimsMappingPolicy",
+                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
@@ -1953,6 +2001,7 @@
         "person",
         "mention",
         "peopleAdminSettings",
+        "insightsSettings",
         "pronounsSettings",
         "profile",
         "userAnalytics"
@@ -2437,9 +2486,11 @@
       "resources": [
         "site",
         "list",
+        "contentModel",
         "columnDefinition",
         "contentType",
         "listItem",
+        "documentProcessingJob",
         "documentSetVersion",
         "recycleBinItem",
         "richLongRunningOperation",
@@ -2664,6 +2715,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"

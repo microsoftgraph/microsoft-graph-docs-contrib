@@ -3,7 +3,7 @@ title: "ediscoveryAddToReviewSetOperation resource type"
 description: "Represents an operation to add an eDiscoverySearch to an eDiscoveryReviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

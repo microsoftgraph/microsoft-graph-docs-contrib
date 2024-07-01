@@ -44,10 +44,6 @@ items:
         href: ../../api/opentypeextension-post-opentypeextension.md
       - name: Get open extension
         href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -376,7 +372,7 @@ items:
       items:
       - name: Get manager
         href: ../../api/orgcontact-get-manager.md
-      - name: Get transitiveReports
+      - name: Get transitive reports
         href: ../../api/orgcontact-get-transitivereports.md
       - name: List direct reports
         href: ../../api/orgcontact-list-directreports.md
@@ -481,25 +477,25 @@ items:
     items:
     - name: Role management
       href: ../../resources/rolemanagement.md
-    - name: Unified role definition
+    - name: Role definition
       items:
-      - name: Unified role definition
+      - name: Role definition
         href: ../../resources/unifiedroledefinition.md
-      - name: List role definitions
+      - name: List
         href: ../../api/rbacapplication-list-roledefinitions.md
-      - name: Get role definition
-        href: ../../api/unifiedroledefinition-get.md
-      - name: Create role definition
+      - name: Create
         href: ../../api/rbacapplication-post-roledefinitions.md
-      - name: Update role definition
+      - name: Get
+        href: ../../api/unifiedroledefinition-get.md
+      - name: Update
         href: ../../api/unifiedroledefinition-update.md
-      - name: Delete role definition
+      - name: Delete
         href: ../../api/unifiedroledefinition-delete.md
       - name: List assigned principals
         href: ../../api/unifiedroledefinition-assignedprincipals.md
-    - name: Unified role assignment
+    - name: Role assignment
       items:
-      - name: Unified role assignment
+      - name: Role assignment
         href: ../../resources/unifiedroleassignment.md
       - name: List role assignment
         href: ../../api/rbacapplication-list-roleassignments.md
@@ -511,9 +507,9 @@ items:
         href: ../../api/rbacapplication-post-roleassignments.md
       - name: Delete role assignment
         href: ../../api/unifiedroleassignment-delete.md
-    - name: Unified role assignment multiple
+    - name: Role assignment multiple
       items:
-      - name: Unified role assignment multiple
+      - name: Role assignment multiple
         href: ../../resources/unifiedroleassignmentmultiple.md
       - name: List
         href: ../../api/rbacapplicationmultiple-list-roleassignments.md
@@ -525,17 +521,17 @@ items:
         href: ../../api/unifiedroleassignmentmultiple-update.md
       - name: Delete
         href: ../../api/unifiedroleassignmentmultiple-delete.md
-    - name: Unified RBAC resource namespace
+    - name: Resource namespace
       items:
-      - name: Unified RBAC resource namespace
+      - name: Resource namespace
         href: ../../resources/unifiedrbacresourcenamespace.md
       - name: List
         href: ../../api/rbacapplicationmultiple-list-resourcenamespaces.md
       - name: Get
         href: ../../api/unifiedrbacresourcenamespace-get.md
-    - name: Unified RBAC resource action
+    - name: Resource action
       items:
-      - name: Unified RBAC resource action
+      - name: Resource action
         href: ../../resources/unifiedrbacresourceaction.md
       - name: List
         href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
@@ -624,7 +620,7 @@ items:
         href: ../../resources/accessreviewhistoryinstance.md
       - name: List
         href: ../../api/accessreviewhistorydefinition-list-instances.md
-      - name: generateDownloadUri
+      - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
     - name: Access review instance
       items:
@@ -823,7 +819,7 @@ items:
         href: ../../api/accessreview-stop.md
       - name: Reset
         href: ../../api/accessreview-reset.md
-      - name: Apply accessReview decisions
+      - name: Apply decisions
         href: ../../api/accessreview-apply.md
     - name: Business flow template
       items:
@@ -1534,9 +1530,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagementv3-overview.md
-      - name: Unified role assignment schedule request
+      - name: Assignment schedule request
         items:
-        - name: Unified role assignment schedule request
+        - name: Assignment schedule request
           href: ../../resources/unifiedroleassignmentschedulerequest.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentschedulerequests.md
@@ -1548,9 +1544,9 @@ items:
           href: ../../api/unifiedroleassignmentschedulerequest-cancel.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-      - name: Unified role assignment schedule
+      - name: Assignment schedule
         items:
-        - name: Unified role assignment schedule
+        - name: Assignment schedule
           href: ../../resources/unifiedroleassignmentschedule.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentschedules.md
@@ -1558,9 +1554,9 @@ items:
           href: ../../api/unifiedroleassignmentschedule-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedule-filterbycurrentuser.md
-      - name: Unified role assignment schedule instance
+      - name: Assignment schedule instance
         items:
-        - name: Unified role assignment schedule instance
+        - name: Assignment schedule instance
           href: ../../resources/unifiedroleassignmentscheduleinstance.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentscheduleinstances.md
@@ -1568,9 +1564,9 @@ items:
           href: ../../api/unifiedroleassignmentscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-      - name: Unified role eligibility schedule request
+      - name: Eligibility schedule request
         items:
-        - name: Unified role eligibility schedule request
+        - name: Eligibility schedule request
           href: ../../resources/unifiedroleeligibilityschedulerequest.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityschedulerequests.md
@@ -1582,9 +1578,9 @@ items:
           href: ../../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/unifiedroleeligibilityschedulerequest-cancel.md
-      - name: Unified role eligibility schedule
+      - name: Eligibility schedule
         items:
-        - name: Unified role eligibility schedule
+        - name: Eligibility schedule
           href: ../../resources/unifiedroleeligibilityschedule.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityschedules.md
@@ -1592,9 +1588,9 @@ items:
           href: ../../api/unifiedroleeligibilityschedule-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-      - name: Unified role eligibility schedule instance
+      - name: Eligibility schedule instance
         items:
-        - name: Unified role eligibility schedule instance
+        - name: Eligibility schedule instance
           href: ../../resources/unifiedroleeligibilityscheduleinstance.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityscheduleinstances.md
@@ -1602,9 +1598,9 @@ items:
           href: ../../api/unifiedroleeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Unified role management policy
+      - name: Policy
         items:
-        - name: Unified role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1618,9 +1614,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy rule
+      - name: Policy rule
         items:
-        - name: Unified role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1628,9 +1624,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Unified role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -1656,9 +1652,9 @@ items:
           href: ../../api/approvalstep-update.md
       - name: Role management alerts
         items:
-        - name: Unified role management alert
+        - name: Role management alert
           items:
-          - name: Unified role management alert
+          - name: Role management alert
             href: ../../resources/unifiedrolemanagementalert.md
           - name: List
             href: ../../api/rolemanagementalert-list-alerts.md
@@ -1668,17 +1664,17 @@ items:
             href: ../../api/unifiedrolemanagementalert-update.md
           - name: Refresh
             href: ../../api/unifiedrolemanagementalert-refresh.md
-        - name: Unified role management alert definition
+        - name: Role management alert definition
           items:
-          - name: Unified role management alert definition
+          - name: Role management alert definition
             href: ../../resources/unifiedrolemanagementalertdefinition.md
           - name: List
             href: ../../api/rolemanagementalert-list-alertdefinitions.md
           - name: Get
             href: ../../api/unifiedrolemanagementalertdefinition-get.md
-        - name: Unified role management alert configuration
+        - name: Role management alert configuration
           items:
-          - name: Unified role management alert configuration
+          - name: Role management alert configuration
             href: ../../resources/unifiedrolemanagementalertconfiguration.md
           - name: List
             href: ../../api/rolemanagementalert-list-alertconfigurations.md
@@ -1686,23 +1682,23 @@ items:
             href: ../../api/unifiedrolemanagementalertconfiguration-get.md
           - name: Update
             href: ../../api/unifiedrolemanagementalertconfiguration-update.md
-        - name: Invalid license alert configuration
+        - name: Invalid license
           href: ../../resources/invalidlicensealertconfiguration.md
-        - name: No MFA on role activation alert configuration
+        - name: No MFA on role activation
           href: ../../resources/nomfaonroleactivationalertconfiguration.md
-        - name: Redundant assignment alert configuration
+        - name: Redundant assignment
           href: ../../resources/redundantassignmentalertconfiguration.md
-        - name: Roles assigned outside privileged identity management alert configuration
+        - name: Roles assigned outside PIM
           href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
-        - name: Sequential activation renewals alert configuration
+        - name: Sequential activation
           href: ../../resources/sequentialactivationrenewalsalertconfiguration.md
-        - name: Stale sign in alert configuration
+        - name: Inactive account
           href: ../../resources/stalesigninalertconfiguration.md
-        - name: Too many global admins assigned to tenant alert configuration
+        - name: Too many Global Administrators
           href: ../../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md
-        - name: Unified role management alert incident
+        - name: Role management alert incident
           items:
-          - name: Unified role management alert incident
+          - name: Role management alert incident
             href: ../../resources/unifiedrolemanagementalertincident.md
           - name: List
             href: ../../api/unifiedrolemanagementalert-list-alertincidents.md
@@ -1710,6 +1706,20 @@ items:
             href: ../../api/unifiedrolemanagementalertincident-get.md
           - name: Remediate
             href: ../../api/unifiedrolemanagementalertincident-remediate.md
+        - name: Invalid license
+          href: ../../resources/invalidlicensealertincident.md
+        - name: No MFA on activation
+          href: ../../resources/nomfaonroleactivationalertincident.md
+        - name: Redundant assignment
+          href: ../../resources/redundantassignmentalertincident.md
+        - name: Roles assigned outside PIM
+          href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md
+        - name: Sequential activation
+          href: ../../resources/sequentialactivationrenewalsalertincident.md
+        - name: Inactive account
+          href: ../../resources/stalesigninalertincident.md
+        - name: Too many Global Administrators
+          href: ../../resources/toomanyglobaladminsassignedtotenantalertincident.md
         - name: Long running operation
           items:
           - name: Long running operation
@@ -1720,9 +1730,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagement-for-groups-api-overview.md
-      - name: Privileged access group assignment schedule request
+      - name: Assignment schedule request
         items:
-        - name: Privileged access group assignment schedule request
+        - name: Assignment schedule request
           href: ../../resources/privilegedaccessgroupassignmentschedulerequest.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentschedulerequests.md
@@ -1734,9 +1744,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-cancel.md
-      - name: Privileged access group assignment schedule
+      - name: Assignment schedule
         items:
-        - name: Privileged access group assignment schedule
+        - name: Assignment schedule
           href: ../../resources/privilegedaccessgroupassignmentschedule.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentschedules.md
@@ -1744,9 +1754,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedule-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md
-      - name: Privileged access group assignment schedule instance
+      - name: Assignment schedule instance
         items:
-        - name: Privileged access group assignment schedule instance
+        - name: Assignment schedule instance
           href: ../../resources/privilegedaccessgroupassignmentscheduleinstance.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentscheduleinstances.md
@@ -1754,9 +1764,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md
-      - name: Privileged access group eligibility schedule request
+      - name: Eligibility schedule request
         items:
-        - name: Privileged access group eligibility schedule request
+        - name: Eligibility schedule request
           href: ../../resources/privilegedaccessgroupeligibilityschedulerequest.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityschedulerequests.md
@@ -1768,9 +1778,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupeligibilityschedulerequest-cancel.md
-      - name: Privileged access group eligibility schedule
+      - name: Eligibility schedule
         items:
-        - name: Privileged access group eligibility schedule
+        - name: Eligibility schedule
           href: ../../resources/privilegedaccessgroupeligibilityschedule.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityschedules.md
@@ -1778,9 +1788,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityschedule-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md
-      - name: Privileged access group eligibility schedule instance
+      - name: Eligibility schedule instance
         items:
-        - name: Privileged access group eligibility schedule instance
+        - name: Eligibility schedule instance
           href: ../../resources/privilegedaccessgroupeligibilityscheduleinstance.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md
@@ -1788,9 +1798,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Unified role management policy
+      - name: Policy
         items:
-        - name: Unified role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1804,9 +1814,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy rule
+      - name: Policy rule
         items:
-        - name: Unified role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1814,9 +1824,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Unified role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -2681,27 +2691,30 @@ items:
     - name: Delta
       href: ../../api/oauth2permissiongrant-delta.md
   - name: Organizational branding
+    displayName: Tenant branding, UX customization
     items:
     - name: Organizational branding
-      href: ../../resources/organizationalbranding.md
-    - name: Get
-      href: ../../api/organizationalbranding-get.md
-    - name: Update
-      href: ../../api/organizationalbranding-update.md
-  - name: Organizational branding localization
-    items:
+      items:
+      - name: Organizational branding
+        href: ../../resources/organizationalbranding.md
+      - name: Get
+        href: ../../api/organizationalbranding-get.md
+      - name: Update
+        href: ../../api/organizationalbranding-update.md
     - name: Organizational branding localization
-      href: ../../resources/organizationalbrandinglocalization.md
-    - name: List
-      href: ../../api/organizationalbranding-list-localizations.md
-    - name: Create
-      href: ../../api/organizationalbranding-post-localizations.md
-    - name: Get
-      href: ../../api/organizationalbrandinglocalization-get.md
-    - name: Update
-      href: ../../api/organizationalbrandinglocalization-update.md
-    - name: Delete
-      href: ../../api/organizationalbrandinglocalization-delete.md
+      items:
+      - name: Organizational branding localization
+        href: ../../resources/organizationalbrandinglocalization.md
+      - name: List
+        href: ../../api/organizationalbranding-list-localizations.md
+      - name: Create
+        href: ../../api/organizationalbranding-post-localizations.md
+      - name: Get
+        href: ../../api/organizationalbrandinglocalization-get.md
+      - name: Update
+        href: ../../api/organizationalbrandinglocalization-update.md
+      - name: Delete
+        href: ../../api/organizationalbrandinglocalization-delete.md
   - name: Policies
     items:
     - name: Overview
@@ -2901,6 +2914,16 @@ items:
         href: ../../api/continuousaccessevaluationpolicy-get.md
       - name: Update
         href: ../../api/continuousaccessevaluationpolicy-update.md
+    - name: Custom claims policy (preview)
+      items:
+      - name: Custom claims policy (preview)
+        href: ../../resources/customclaimspolicy.md
+      - name: Get
+        href: ../../api/customclaimspolicy-get.md
+      - name: Create or replace
+        href: ../../api/serviceprincipal-put-claimspolicy.md
+      - name: Update
+        href: ../../api/customclaimspolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -3071,9 +3094,9 @@ items:
       href: ../../api/trustframeworkkeyset-uploadsecret.md
     - name: Get active key
       href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload certificate
+    - name: Upload X.509 certificate
       href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: uploadPkcs12
+    - name: Upload PKCS12 certificate
       href: ../../api/trustframeworkkeyset-uploadpkcs12.md
   - name: Trust framework policy
     items:
@@ -3255,9 +3278,9 @@ items:
         href: ../../api/identityuserflowattributeassignment-update.md
       - name: Delete
         href: ../../api/identityuserflowattributeassignment-delete.md
-      - name: getOrder
+      - name: Get order
         href: ../../api/identityuserflowattributeassignment-getorder.md
-      - name: setOrder
+      - name: Set order
         href: ../../api/identityuserflowattributeassignment-setorder.md
     - name: User flow language configuration
       items:
@@ -4104,7 +4127,7 @@ items:
         href: ../../resources/networkaccess-forwardingpolicylink.md
       - name: List
         href: ../../api/networkaccess-forwardingprofile-list-policies.md
-      - name: Get forwardingPolicyLink
+      - name: Get
         href: ../../api/networkaccess-forwardingpolicylink-get.md
       - name: Update
         href: ../../api/networkaccess-forwardingpolicylink-update.md
