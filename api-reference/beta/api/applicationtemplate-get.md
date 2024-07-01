@@ -36,7 +36,7 @@ Additional permissions aren't required to call this API, as long as your applica
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-GET /applicationTemplates/{applicationTemplatesId}
+GET /applicationTemplates/{applicationTemplate-id}
 ```
 
 ## Optional query parameters
