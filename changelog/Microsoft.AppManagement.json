@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "d9c722d5-7d5d-4d5d-8941-4e79bace02c4",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "uriUsageType",
           "ChangeType": "Addition",
           "Description": "Added the **uriUsageType** enumeration type.",
