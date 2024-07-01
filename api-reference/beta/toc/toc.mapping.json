@@ -99,28 +99,55 @@
       ],
       "resources": [
         "backupRestoreRoot",
-        "serviceApp",
         "protectionPolicyBase",
-        "sharePointProtectionPolicy",
-        "exchangeProtectionPolicy",
-        "oneDriveForBusinessProtectionPolicy",
-        "protectionUnitBase",
-        "siteProtectionUnit",
-        "mailboxProtectionUnit",
-        "driveProtectionUnit",
         "protectionRuleBase",
-        "siteProtectionRule",
-        "mailboxProtectionRule",
-        "driveProtectionRule",
+        "protectionUnitBase",
+        "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
-        "sharePointRestoreSession",
-        "exchangeRestoreSession",
-        "oneDriveForBusinessRestoreSession",
-        "restoreArtifactBase",
-        "siteRestoreArtifact",
-        "mailboxRestoreArtifact",
-        "driveRestoreArtifact"
+        "serviceApp"
+      ],
+      "childNodes": [
+        {
+          "name": "Protection policy",
+          "resources": [
+            "oneDriveForBusinessProtectionPolicy",
+            "exchangeProtectionPolicy",
+            "sharePointProtectionPolicy"
+          ]
+        },
+        {
+          "name": "Protection rule",
+          "resources": [
+            "driveProtectionRule",
+            "mailboxProtectionRule",
+            "siteProtectionRule"
+          ]
+        },
+        {
+          "name": "Protection unit",
+          "resources": [
+            "driveProtectionUnit",
+            "mailboxProtectionUnit",
+            "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Restore artifact",
+          "resources": [
+            "driveRestoreArtifact",
+            "mailboxRestoreArtifact",
+            "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore session",
+          "resources": [
+            "oneDriveForBusinessRestoreSession",
+            "exchangeRestoreSession",
+            "sharePointRestoreSession"
+          ]
+        }
       ],
       "complexTypes": [
         "restorePointSearchResponse",
@@ -361,6 +388,8 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecoveryFailback",
+            "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -1972,6 +2001,7 @@
         "person",
         "mention",
         "peopleAdminSettings",
+        "insightsSettings",
         "pronounsSettings",
         "profile",
         "userAnalytics"

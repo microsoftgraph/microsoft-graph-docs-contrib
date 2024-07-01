@@ -33,7 +33,7 @@ children := []graphmodels.DriveItemable {
 }
 requestBody.SetChildren(children)
 additionalData := map[string]interface{}{
-	"microsoftGraphConflictBehavior" : "rename", 
+	"@microsoft.graph.conflictBehavior" : "rename", 
 }
 requestBody.SetAdditionalData(additionalData)
 
