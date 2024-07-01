@@ -418,7 +418,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined on API specification file. |
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
-|`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
+|`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
 |`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| When the short name is reserved name.|
