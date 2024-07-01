@@ -413,7 +413,7 @@ items:
       - name: List
         href: ../../api/virtualeventregistration-list.md
       - name: Create
-        href: ../../api/virtualeventregistration-post.md
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
       - name: Cancel

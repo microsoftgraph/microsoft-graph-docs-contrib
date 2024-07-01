@@ -3,7 +3,7 @@ title: "getManagedAppPolicies function"
 description: "Gets app restrictions for a given user."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ Gets app restrictions for a given user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Permissions
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
