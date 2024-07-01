@@ -362,8 +362,8 @@ If you send a request to upload an app manifest that contains missing informatio
 |`SchemaError_Then`|JSON doesn't match schema from "then".| The app manifest file failed the `then` validation of the schema. The `then` isn't localizable.|
 |`SchemaError_Else`| JSON doesn't match schema from "else".|The app manifest file failed the `else` validation of the schema. The `else` isn't localizable.|
 | `SchemaError_Other`| The value doesn't conform to the schema for this property.| The app manifest file failed other unhandled validations of the schema.|
-|`ActivityGroupIdFromActivitiesTypeValidation` 	| ActivityGroupId field in ActivityType must be a subset of ID field in ActivityGroup.| When the `ActivityGroupId` field in `ActivityType` isn't a subset of the `Id` field in `ActivityGroup` in the app manifest.|
-|`ActivityTypesMustExistWithActivitiesGroupValidation` |	Manifest shouldn't contain Activity Group when Activity Types is missing.| When the `ActivityGroup` property is available, but `ActivityType` property is missing in the app manifest.|
+|`ActivityGroupIdFromActivitiesTypeValidation` 	| ActivityGroupId field in ActivityType must be a subset of ID field in ActivityGroup.| The `ActivityGroupId` field in `ActivityType` isn't a subset of the `Id` field in `ActivityGroup` in the app manifest.|
+|`ActivityTypesMustExistWithActivitiesGroupValidation` |	Manifest shouldn't contain Activity Group when Activity Types is missing.| The `ActivityGroup` property is available, but `ActivityType` property is missing in the app manifest.|
 |`ApiSecretServiceAuthTypeComposeExtensionContainsMsftEntraConfiguration`|API-based compose extension with apiSecretServiceAuth authType have microsoftEntraConfiguration defined.| The API-based compose extension has `microsoftEntraConfiguration` defined in the app manifest.|
 |`ApiSecretServiceAuthTypeComposeExtensionContainsNoApiSecretRegistrationId`| API-based compose extension with apiSecretServiceAuth authType have no apiSecretRegistrationId defined.| The API-based compose extension with `apiSecretServiceAuth` authType without `apiSecretRegistrationId` defined in the app manifest.|
 |`ApiSecretServiceAuthTypeComposeExtensionContainsNoApiSecretServiceAuthConfiguration` | API-based compose extension with apiSecretServiceAuth authType have no apiSecretServiceConfiguration.| The API-based compose extension doesn't set `supportsSingleSignOn` to `true` in the app manifest.|
@@ -393,7 +393,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
 |`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
 |`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
-|`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| When the `appId` isn't provided.|
+|`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| The `appId` isn't provided.|
 |`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
 |`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| The schema isn't provided.|
 |`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and url.| Dashboard cards icon mustn't contain both icon name and url.|
@@ -402,12 +402,12 @@ If you send a request to upload an app manifest that contains missing informatio
 |`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| The developer name is more than 32 characters long.|
 |`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| The developer privacy URL did not use HTTPS.|
-|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The `termsOfUseUrl` is missing.|
-|`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| When the developer terms of use url isn't `https`.|
+|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The termsOfUseUrl** is missing.|
+|`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| The developer terms of use url isn't `https`.|
 |`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website url is missing.|
 |`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL did not use HTTPS.|
-|`UniqueActivityTypeInActivitiesValidation` |Manifest shouldn't contain duplicate Activity Type.| When the activity type isn't unique in the app manifest.|
-|`UniqueIdInActivitiesGroupValidation` |Manifest shouldn't contain duplicate ID in Activity Groups.| When the activity group ID isn't unique in the app manifest.|
+|`UniqueActivityTypeInActivitiesValidation` |Manifest shouldn't contain duplicate Activity Type.| The activity type isn't unique in the app manifest.|
+|`UniqueIdInActivitiesGroupValidation` |Manifest shouldn't contain duplicate ID in Activity Groups.| The activity group ID isn't unique in the app manifest.|
 |`FullDescriptionCannotBeEmpty` |Full Description can't be empty.| The full description is empty.|
 |`FullDescriptionLengthCheck`| Maximum character length for long description must not exceed 4,000 chars.| The full description length is more than 4,000 characters.|
 |`GroupChatForBotsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat bot is supported in manifest v1.3 onwards.| The `groupChat` scope for bots isn't supported in the app manifest version 1.3 and below.|
@@ -417,18 +417,18 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The outline icon doesn't have the correct dimensions.|
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest isn't defined on API specification file. |
-|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
+|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
-|`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| When the short name is reserved name.|
+|`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| The short name is reserved name.|
 |`ShortNameIsRequiredField`| Short name of the app can't be empty.| The short name is empty.|
 |`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property can't be empty.| The `staticTabs` name property is empty.|
 |`BotIdIsNotGuid`| BotId isn't a Guid value.| The `BotId` isn't GUID in the app manifest.|
 |`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The version in the app package is `null`.|
 |`VersionContainsOnlyNumbersDotSeparated`| App version supports only numbers in the '#.#.#' format.| The version in the app package doesn't match pattern `#.#.#`.|
 |`VersionHasMajorLessThan1`|App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | App version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
-|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 32 characters.|
+|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 30 characters.|
 |`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension have unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
 ## Related content
