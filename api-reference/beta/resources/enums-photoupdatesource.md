@@ -1,6 +1,6 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
+title: "photoUpdateSource values"
+description: "photoUpdateSource. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`."
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
