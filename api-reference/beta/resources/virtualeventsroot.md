@@ -43,3 +43,4 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.virtualEventsRoot"
 }
+```
