@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,6 +44,25 @@ POST /solutions/virtualEvents/webinars/{webinarId}/registrations
 ## Request body
 In the request body, supply a JSON representation of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.
 
+You can specify the following properties when you create a **virtualEventRegistration** with delegated permission.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
+
+You can specify the following properties when you create a **virtualEventRegistration** with application permission.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|firstName|String|The registrant's first name. Required. |
+|lastName|String|The registrant's last name. Required. |
+|email|String|The registrant's email address. Required. |
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
+
 ## Response
 
 If successful, this action returns one of the following:
@@ -52,7 +73,7 @@ If successful, this action returns one of the following:
 
 ### Example 1: Creating registration record with delegated permission
 
-Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
+Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
 
 #### Request
 The following example shows a request.
@@ -192,7 +213,7 @@ Content-Type: application/json
 
 ### Example 2: Creating registration record with application permission
 
-Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following example shows a request.
