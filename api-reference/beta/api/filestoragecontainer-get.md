@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -21,8 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-permissions.md)]
-
-[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}
 ```
 
 # [C#](#tab/csharp)
