@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
 The respective container type identified by **containerTypeId** must be enabled in the tenant. 
@@ -25,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-permissions.md)]
-
-[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -71,7 +71,7 @@ The following example shows how to create a **fileStorageContainer**.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers
 Content-Type: application/json
 
 {
@@ -130,15 +130,15 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainer",
   "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
-  "displayName": "Some Name",
-  "description": "Some Description",
+  "displayName": "My Application Storage Container",
+  "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
-  "status": "active",
+  "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
     "isOcrEnabled": true
   }
-} 
+}
 
 ```
 
