@@ -6,6 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: Restore session
 ---
 
 # restoreSessionBase resource type
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). APIs are used by Global Admin or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts which are protected as part of Protection Policy.
+Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). APIs are used by Global Admin or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts that are protected as part of Protection Policy.
 
 ## Methods
 
@@ -36,7 +37,7 @@ Represents a restore session for a [protection unit](protectionunitbase.md) that
 |error|publicError|Contains error details if the restore session fails or completes with an error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified the restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the restore session.|
-|status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 
@@ -48,7 +49,7 @@ Represents a restore session for a [protection unit](protectionunitbase.md) that
 |completedWithError|Some artifacts failed to restore, and some succeeded.|
 |completed| All restore artifacts successfully restored.|
 |failed| All restore artifacts failed to restore.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
