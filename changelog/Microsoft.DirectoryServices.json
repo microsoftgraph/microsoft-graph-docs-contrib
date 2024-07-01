@@ -51,6 +51,10 @@
       "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9f36ca59-dedd-4ed2-b95d-713f02df87d3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementRestrictionState",

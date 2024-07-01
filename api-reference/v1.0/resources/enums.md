@@ -3364,13 +3364,6 @@ Possible values for user account types (group membership), per Windows definitio
 |defaultConfiguredIdp|
 |unknownFutureValue|
 
-### nativeAuthenticationApisEnabled values
-
-| Member|
-|:---|
-|none|
-|all|
-|unknownFutureValue|
 ### bookingStaffMembershipStatus values
 
 |Member|
@@ -3389,4 +3382,10 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### nativeAuthenticationApisEnabled values
 
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|
