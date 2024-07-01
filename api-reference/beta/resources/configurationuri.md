@@ -21,8 +21,8 @@ Represents a URI for the single sign-on configuration of a preintegrated applica
 |:---|:---|:---|
 |appliesToSingleSignOnMode|String|The single sign-on mode that the URI is configured for. Possible values are: `saml`, `password`.|
 |examples|String collection|The various formats that the URI should follow.|
-|isRequired|Boolean|Designates if this URI is required in the single sign-on configuration.|
-|usage|uriUsageType|How the URI is used in single sign-on. The possible values are: `redirectUri`, `identifierUri`, `loginUrl`, `logoutUrl`, `unknownFutureValue`.|
+|isRequired|Boolean|Indicates whether this URI is required for the single sign-on configuration.|
+|usage|uriUsageType|Indicates how the URI is used in single sign-on. The possible values are: `redirectUri`, `identifierUri`, `loginUrl`, `logoutUrl`, `unknownFutureValue`.|
 |values|String collection|The suggested values for the URI. Developers may need to customize these values for their tenant.|
 
 ## Relationships
