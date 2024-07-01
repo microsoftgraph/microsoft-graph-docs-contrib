@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewCustomAppScope()
 customAttributes := graphmodels.NewCustomAppScopeAttributesDictionary()
 additionalData := map[string]interface{}{
-	"recipientFilter" : "City -eq 'Seattle'", 
+	"RecipientFilter" : "City -eq 'Seattle'", 
 }
 customAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomAttributes(customAttributes)

@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/11/2024
+ms.date: 06/28/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1371,28 +1371,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### CrossTenantContentMigration.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | - | b85f44c8-673a-4b31-a0c1-3070d0ae487e 
-| DisplayText | - | Read all cross tenant content migration job details 
-| Description | - | Allows the app to read your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
-| AdminConsentRequired | - | Yes 
-
----
-
-### CrossTenantContentMigration.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | - | 0569b6eb-c9e3-4dc6-a998-6df963be6689 
-| DisplayText | - | Read and write all cross tenant content migration job details 
-| Description | - | Allows the app to read and write your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
-| AdminConsentRequired | - | Yes 
-
----
-
 ### CrossTenantInformation.ReadBasic.All
 
 | Category | Application | Delegated |
@@ -2531,6 +2509,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Files.SelectedOperations.Selected
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bd61925e-3bf4-4d62-bc0b-06b06c96d95c | ef2779dc-ef1b-4211-8310-8a0ac2450081 
+| DisplayText | Access selected Files without a signed in user. | Access selected Files, on behalf of the signed-in user 
+| Description | Allow the application to access a subset of files without a signed in user.  The specific files and the permissions granted will be configured in SharePoint Online or OneDrive. | Allow the application to access files explicitly permissioned to the application on behalf of the signed in user.  The specific files and the permissions granted will be configured in SharePoint Online or OneDrive. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### FileStorageContainer.Selected
 
 | Category | Application | Delegated |
@@ -2630,6 +2619,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | dbaae8cf-10b5-4b86-a4a1-f871c94c6695 | f81125ac-d3b7-4573-a3b2-7099cc39df9e 
 | DisplayText | Read and write all group memberships | Read and write group memberships 
 | Description | Allows the app to list groups, read basic properties, read and update the membership of the groups this app has access to without a signed-in user. Group properties and owners cannot be updated and groups cannot be deleted. | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### HealthMonitoringAlert.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5183ed5d-b7f8-4e9a-915e-dafb46b9cb62 | 74b4ff32-4917-4536-a66d-38a4861e6220 
+| DisplayText | Read all scenario health monitoring alert | Read all scenario health monitoring alerts 
+| Description | Allows the app to read all scenario health monitoring alerts, without a signed-in user. | Allows the app to read all scenario health monitoring alerts 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### HealthMonitoringAlert.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ac29eb50-f2f9-4518-a117-4bef18e84c7d | b7c60f27-2195-4d5f-96a7-6b98bdfd9664 
+| DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alerts 
+| Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alerts, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### HealthMonitoringAlertConfig.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bb424d73-e898-4c97-9d42-688c32810003 | fb873030-8626-47e6-96ff-8a5bff3b725f 
+| DisplayText | Read all scenario health monitoring alert configurations | Read all scenario health monitoring alert configurations 
+| Description | Allows the app to read all scenario health monitoring alert configurations, without a signed-in user. | Allows the app to read all scenario health monitoring alert configurations 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### HealthMonitoringAlertConfig.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 432e76f0-8af6-4315-a853-66ab9538f480 | b3e5ebc6-1c23-4337-8286-3f27165addb4 
+| DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alert configurations. 
+| Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alert configurations, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -2852,6 +2885,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 6ee891c3-74a4-4148-8463-0c834375dfaf | a3f96ffe-cb84-40a8-ac85-582d7ef97c2a 
 | DisplayText | View reference definitions | View reference definitions 
 | Description | Allows the app to read reference definitions without a signed-in user. | Allows the app to read reference definitions on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### IndustryData-ReferenceDefinition.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bda16293-63d3-45b7-b16b-833841d27d56 | a757d430-be6d-430f-af57-28aabe79d247 
+| DisplayText | Manage reference definitions | Manage reference definitions 
+| Description | Allows the app to read and write reference definitions without a signed-in user. | Allows the app to read and write reference definitions on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -3127,6 +3171,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 5c505cf4-8424-4b8e-aa14-ee06e3bb23e3 | 84b9d731-7db8-4454-8c90-fd9e95350179 
 | DisplayText | Read and write all lifecycle workflows resources | Read and write all lifecycle workflows resources 
 | Description | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources without a signed-in user. | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### ListItems.SelectedOperations.Selected
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | de4e4161-a10a-4dfd-809c-e328d89aefeb | d6d361b3-211a-4191-9fa7-15f72de4aac4 
+| DisplayText | Access selected ListItems without a signed in user. | Access selected ListItems, on behalf of the signed-in user 
+| Description | Allow the application to access a subset of listitems without a signed in user.  The specific listitems and the permissions granted will be configured in SharePoint Online. | Allow the application to access a subset of listitems on behalf of the signed in user.  The specific listitems and the permissions granted will be configured in SharePoint Online. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### Lists.SelectedOperations.Selected
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 23c5a9bd-d900-4ecf-be26-a0689755d9e5 | 033b51ee-d6fa-4add-b627-ee680c7212b5 
+| DisplayText | Access selected Lists without a signed in user. | Access selected Lists, on behalf of the signed-in user 
+| Description | Allow the application to access a subset of lists without a signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. | Allow the application to access a subset of lists on behalf of the signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -5171,6 +5237,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SecurityIdentitiesSensors.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5f0ffea2-f474-4cf2-9834-61cda2bcea5c | 2c221239-7c5c-4b30-9355-d84663bfcd96 
+| DisplayText | Read all identity security sensors | Read identity security sensors 
+| Description | Allows the app to read all the identity security sensors without a signed-in user. | Allows the app to read all the identity security sensors of signed user 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### SecurityIdentitiesSensors.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d4dcee6d-0774-412a-b06c-aeabbd99e816 | 087c3ad9-c2ca-4b82-9885-d5e25ce9e183 
+| DisplayText | Read and write all identity security sensors | Read and write identity security sensors 
+| Description | Allows the app to read and write identity security sensors without a signed-in user. | Allows the app to read and write identity security sensors on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### SecurityIncident.Read.All
 
 | Category | Application | Delegated |
@@ -5685,6 +5773,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Send a teamwork activity to any user | Send a teamwork activity as the user 
 | Description | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. 
 | AdminConsentRequired | Yes | No 
+
+---
+
+### TeamsAppInstallation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 0fdf35a5-82f8-41ff-9ded-0b761cc73512 | - 
+| DisplayText | Read installed Teams apps for all installation scopes | - 
+| Description | Allows the app to read the Teams apps that are installed in any scope, without a signed-in user. Does not give the ability to read application-specific settings. | - 
+| AdminConsentRequired | Yes | - 
 
 ---
 
@@ -6654,6 +6753,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes 
 
 ![personal Microsoft accounts][MSA] The *User.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+
+---
+
+### User.RevokeSessions.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 77f3a031-c388-4f99-b373-dc68676a979e | fc30e98b-8810-4501-81f5-c20a3196387b 
+| DisplayText | Revoke all sign in sessions for a user | Revoke all sign in sessions for a user 
+| Description | Allow the app to revoke all sign in sessions for a user, without a signed-in user. | Allow the app to revoke all sign in sessions for a user, on behalf of a signed-in user. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 

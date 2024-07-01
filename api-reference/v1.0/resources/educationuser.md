@@ -20,11 +20,11 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                           | Return type                                                 | Description                                                                                        |
 | :--------------------------------------------------------------- | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
-| [List users](../api/educationuser-list.md)              | [educationUser](../resources/educationuser.md) collection   | Get a list of the [educationUser](../resources/educationuser.md) objects and their properties.     |
-| [Create user](../api/educationuser-post.md)             | [educationUser](../resources/educationuser.md)              | Create a new [educationUser](../resources/educationuser.md) object.                                |
-| [Get user](../api/educationuser-get.md)                 | [educationUser](../resources/educationuser.md)              | Read the properties and relationships of an [educationUser](../resources/educationuser.md) object. |
-| [Update educationUser](../api/educationuser-update.md)           | [educationUser](../resources/educationuser.md)              | Update the properties of an [educationUser](../resources/educationuser.md) object.                 |
-| [Delete user](../api/educationuser-delete.md)           | None                                                        | Delete an [educationUser](../resources/educationuser.md) object.                                   |
+| [List](../api/educationuser-list.md)              | [educationUser](../resources/educationuser.md) collection   | Get a list of the [educationUser](../resources/educationuser.md) objects and their properties.     |
+| [Create](../api/educationuser-post.md)             | [educationUser](../resources/educationuser.md)              | Create a new [educationUser](../resources/educationuser.md) object.                                |
+| [Get](../api/educationuser-get.md)                 | [educationUser](../resources/educationuser.md)              | Read the properties and relationships of an [educationUser](../resources/educationuser.md) object. |
+| [Update](../api/educationuser-update.md)           | [educationUser](../resources/educationuser.md)              | Update the properties of an [educationUser](../resources/educationuser.md) object.                 |
+| [Delete](../api/educationuser-delete.md)           | None                                                        | Delete an [educationUser](../resources/educationuser.md) object.                                   |
 | [Get changes to users](../api/educationuser-delta.md)                           | [educationUser](../resources/educationuser.md) collection   | Get incremental changes to the resource collection.                                                |
 | [List taught classes](../api/educationuser-list-taughtclasses.md) | [educationClass](../resources/educationclass.md) collection | Get the **educationClass** resources from the **taughtClasses** navigation property.                       |
 

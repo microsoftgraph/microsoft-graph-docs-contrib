@@ -88,16 +88,16 @@ items:
   items:
   - name: Section group
     href: ../../resources/sectiongroup.md
-  - name: Get section group
-    href: ../../api/sectiongroup-get.md
-  - name: Create section group
-    href: ../../api/sectiongroup-post-sectiongroups.md
-  - name: List section groups
+  - name: List
     href: ../../api/sectiongroup-list-sectiongroups.md
-  - name: Create section
-    href: ../../api/sectiongroup-post-sections.md
+  - name: Get
+    href: ../../api/sectiongroup-get.md
+  - name: Create
+    href: ../../api/sectiongroup-post-sectiongroups.md
   - name: List sections
     href: ../../api/sectiongroup-list-sections.md
+  - name: Create section
+    href: ../../api/sectiongroup-post-sections.md
 - name: Complex types
   items:
   - name: Diagnostic

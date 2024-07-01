@@ -154,11 +154,11 @@ items:
         href: ../../resources/outlooktaskgroup.md
       - name: Get
         href: ../../api/outlooktaskgroup-get.md
-      - name: Create outlookTaskFolder
-        href: ../../api/outlooktaskgroup-post-taskfolders.md
-      - name: List taskFolders
-        href: ../../api/outlooktaskgroup-list-taskfolders.md
       - name: Update
         href: ../../api/outlooktaskgroup-update.md
       - name: Delete
         href: ../../api/outlooktaskgroup-delete.md
+      - name: List task folders
+        href: ../../api/outlooktaskgroup-list-taskfolders.md
+      - name: Create task folder
+        href: ../../api/outlooktaskgroup-post-taskfolders.md

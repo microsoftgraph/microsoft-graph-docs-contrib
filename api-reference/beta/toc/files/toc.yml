@@ -86,6 +86,8 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
+  - name: Discard checkout
+    href: ../../api/driveitem-discardcheckout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
   - name: Assign sensitivity label
@@ -190,7 +192,7 @@ items:
     href: ../../api/filestoragecontainer-get-column.md
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebin-items.md
-  - name: Delete recyclebin items
+  - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebin-items.md
   - name: Get recycle bin items
     href: ../../api/filestoragecontainer-list-recyclebin-items.md
