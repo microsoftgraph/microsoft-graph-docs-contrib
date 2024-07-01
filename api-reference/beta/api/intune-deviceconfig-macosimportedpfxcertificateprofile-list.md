@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1654
+Content-Length: 1697
 
 {
   "value": [
@@ -105,7 +105,8 @@ Content-Length: 1654
       "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
-      "intendedPurpose": "smimeEncryption"
+      "intendedPurpose": "smimeEncryption",
+      "deploymentChannel": "userChannel"
     }
   ]
 }
