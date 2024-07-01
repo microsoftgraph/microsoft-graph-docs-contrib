@@ -413,13 +413,13 @@ If you send a request to upload an app manifest that contains missing informatio
 |`GroupChatForBotsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat bot is supported in manifest v1.3 onwards.| The `groupChat` scope for bots isn't supported in the app manifest version 1.3 and below.|
 |`GroupChatForConfigurableTabsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat configurable tabs is supported in manifest v1.3 onwards.|The `groupChat` scope for configurable tabs isn't supported in the app manifest version 1.3 and below.|
 |`InvalidColor32x32IconHeightAndWidth`|Color 32x32 icon should be 32x32 with only white and transparent.| The color 32x32 icon doesn't have the correct dimensions.|
-|`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The color icon doesn't have the correct dimensions.|
-|`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The outline icon doesn't have the correct dimensions.|
+|`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The dimensions of the color icon are incorrect.|
+|`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The dimensions of the outline icon are incorrect.|
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
-|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest isn't defined on API specification file. |
-|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
-|`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
-|`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
+|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined on API specification file. |
+|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
+|`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
+|`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description was empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
 |`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| The short name is reserved name.|
 |`ShortNameIsRequiredField`| Short name of the app can't be empty.| The short name is empty.|
@@ -428,8 +428,8 @@ If you send a request to upload an app manifest that contains missing informatio
 |`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The version in the app package is `null`.|
 |`VersionContainsOnlyNumbersDotSeparated`| App version supports only numbers in the '#.#.#' format.| The version in the app package doesn't match pattern `#.#.#`.|
 |`VersionHasMajorLessThan1`|App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | App version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
-|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 30 characters.|
-|`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension have unsupported parameter schema type defined in the `apiSpecificationFile`.|
+|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 32 characters.|
+|`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension has an unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
 ## Related content
 
