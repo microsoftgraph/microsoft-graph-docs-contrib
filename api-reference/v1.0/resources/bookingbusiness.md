@@ -1,7 +1,7 @@
 ---
 title: "bookingBusiness resource type"
 description: "Represents a business in Microsoft Bookings."
-ms.localizationpriority: medium
+ms.localizationpriority: Normal
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
@@ -15,12 +15,12 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## Methods
 
-| Method  | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of **bookingBusiness** objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
 |[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of a **bookingBusiness** object.|
-|[Update](../api/bookingbusiness-update.md) | None	|Update properties in a **bookingBusiness** object. |
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update the properties of a  **bookingBusiness** object. |
 |[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new **bookingAppointment** by posting to the appointments collection.|
 |[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a **bookingAppointment** object collection.|
@@ -38,17 +38,20 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## Properties
 
-| Property   | Type	|Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
+|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the booking business was created.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
 |displayName|String|The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.|
 |email|String|The email address for the business.|
 |id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
 |languageTag|String|The language of the self-service booking page.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
 |phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness-publish.md) or [unpublish](../api/bookingbusiness-unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
@@ -61,7 +64,6 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |appointments|[bookingAppointment](bookingappointment.md) collection| All the appointments of this business. Read-only. Nullable.|
 |calendarView|[bookingAppointment](bookingappointment.md) collection| The set of appointments of this business in a specified date range. Read-only. Nullable.|
 |customers|[bookingCustomer](bookingcustomer.md) collection| All the customers of this business. Read-only. Nullable.|
-|customQuestions|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection| All the custom questions of this business. Read-only. Nullable.|
 |services|[bookingService](bookingservice.md) collection| All the services offered by this business. Read-only. Nullable.|
 |staffMembers|[bookingStaffMember](bookingstaffmember.md) collection| All the staff members that provide services in this business. Read-only. Nullable.|
 
@@ -78,21 +80,35 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.bookingBusiness"
 }-->
 
-```json
+``` json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "businessHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
-  "businessType": "String",
-  "defaultCurrencyIso": "String",
-  "displayName": "String",
-  "email": "String",
+  "@odata.type": "#microsoft.graph.bookingBusiness",
   "id": "String (identifier)",
-  "isPublished": "Boolean",
+  "displayName": "String",
+  "businessType": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "phone": "String",  
+  "email": "String",
+  "webSiteUrl": "String",
+  "defaultCurrencyIso": "String",
+  "businessHours": [
+    {
+      "@odata.type": "microsoft.graph.bookingWorkHours"
+    }
+  ],  
   "languageTag": "String",
-  "phone": "String",
-  "publicUrl": "String",
-  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "webSiteUrl": "String"
+   "schedulingPolicy": {
+    "@odata.type": "microsoft.graph.bookingSchedulingPolicy"
+  },
+  "bookingPageSettings": {
+    "@odata.type": "microsoft.graph.bookingPageSettings"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "isPublished": "Boolean",
+  "publicUrl": "String"
 }
 ```
 
