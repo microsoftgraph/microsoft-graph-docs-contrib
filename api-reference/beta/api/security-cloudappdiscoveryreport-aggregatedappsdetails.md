@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**The `aggregatedAppsDetails` field shows the information of all apps. Provide the specific time period as input for this field.**
+**The `aggregatedAppsDetails` method shows the information of all apps. Provide the specific time period as input for this method.**
 
 ## Permissions
 
