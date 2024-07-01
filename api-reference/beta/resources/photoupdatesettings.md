@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String| The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
-|source|[photoUpdateSource](../resources/enums-photoupdatesource.md)| Specifies the types of photo updates permitted. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
+|source|photoUpdateSource| Specifies the types of photo updates permitted. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
 ## Relationships
 
