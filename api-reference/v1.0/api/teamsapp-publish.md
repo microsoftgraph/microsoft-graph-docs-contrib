@@ -413,7 +413,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`GroupChatForBotsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat bot is supported in manifest v1.3 onwards.| The `groupChat` scope for bots isn't supported in the app manifest version 1.3 and below.|
 |`GroupChatForConfigurableTabsLessThanV13`| Please upgrade the version of manifest to V1.3 as group chat configurable tabs is supported in manifest v1.3 onwards.|The `groupChat` scope for configurable tabs isn't supported in the app manifest version 1.3 and below.|
 |`InvalidColor32x32IconHeightAndWidth`|Color 32x32 icon should be 32x32 with only white and transparent.| The color 32x32 icon doesn't have the correct dimensions.|
-|`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The color icon doesn't have the correct dimensions.|
+|`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The dimensions of the color icon are incorrect.|
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The outline icon doesn't have the correct dimensions.|
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest isn't defined on API specification file. |
