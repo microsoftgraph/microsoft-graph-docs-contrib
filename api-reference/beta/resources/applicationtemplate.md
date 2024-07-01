@@ -29,7 +29,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`.|
-|configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for pre-integrated application's single sign-on.|
+|configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
@@ -58,19 +58,15 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "id" : "id-value",
-    "displayName" : "displayName-value",
-    "homePageUrl" : "homePageUrl-value",
-    "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-    "logoUrl" : "logoUrl-value",
-    "categories" : ["categories-value"],
-    "configurationUris": [
-    {
-      "@odata.type": "microsoft.graph.configurationUri"
-    }
-  ],
-    "publisher" : "publisher-value",
-    "description" : "description-value"
+  "categories": ["categories-value"],
+  "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "homePageUrl": "homePageUrl-value",
+  "id": "id-value",
+  "logoUrl": "logoUrl-value",
+  "publisher": "publisher-value",
+  "supportedSingleSignOnModes": ["supportedSingleSignOnModes-value"]
 }
 ```
 
