@@ -416,7 +416,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The dimensions of the color icon are incorrect.|
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The dimensions of the outline icon are incorrect.|
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
-|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest isn't defined on API specification file. |
+|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined on API specification file. |
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| This message appears when the reserved `staticTabs` name property is specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description can't be empty.|
