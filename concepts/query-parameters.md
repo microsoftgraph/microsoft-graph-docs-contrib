@@ -325,7 +325,7 @@ The `$count` query parameter is supported for collections of the following frequ
 
 Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
 
-Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. Only one relationship can be expanded in a single request.
+You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. For some APIs, only one relationship can be expanded in a single request. <!-- A small subset of APIs support expanding all the relationships of the resource by using the `*` wildcard character instead of specifying each relationship explicitly.-->
 
 The following example gets root drive information along with the top-level child items in a drive:
 
