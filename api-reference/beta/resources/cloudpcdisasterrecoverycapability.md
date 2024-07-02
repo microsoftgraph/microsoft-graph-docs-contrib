@@ -27,9 +27,9 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
 
 | Member             | Description                                                                            |
 |:-------------------|:---------------------------------------------------------------------------------------|
-| none               | Indicates that the Cloud PC device doesn't support any cross region disaster recovery action.          |
-| failover           | Indicates that the **cloudPcBulkDisasterRecoveryFailover** action is currently supported for the Cloud PC. |
-| failback           | Indicates that the **cloudPcBulkDisasterRecoveryFailback** action is currently supported for the Cloud PC. |
+| none               | Indicates that the Cloud PC device doesn't support any cross-region disaster recovery action.          |
+| failover           | Indicates that the [cloudPcBulkDisasterRecoveryFailover](../resources/cloudpcbulkdisasterrecoveryfailover.md) action is currently supported for the Cloud PC. |
+| failback           | Indicates that the [cloudPcBulkDisasterRecoveryFailback](../resources/cloudpcbulkdisasterrecoveryfailback.md) action is currently supported for the Cloud PC. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                      |
 
 ## Relationships
