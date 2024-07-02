@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{id | userPrincipalName}/authentication/fido2methods 
+POST /users/{id}/authentication/fido2methods 
 ```
 
 ## Request headers
@@ -79,19 +79,17 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/fido2Methods
-Content-Type: application/json
-
+POST https://graph.microsoft.com/beta/users/{id}/authentication/fido2Methods
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "displayName": "Red Key",
   "publicKeyCredential": {
-    "id": "tUvuW...8=",
+    "id": "73ecec75-b546-cd6a-d74d-8bb81e58d4a7",
     "response": {
-      "clientDataJSON": "eyJ0eXBlI...",
-      "attestationObject": "o2Nmb..."
+      "clientDataJSON": "o2NmbXRmcGFja2VkZ2F0dFN0bXSjY2FsZyZjc2lnWEYwRAIgAojuEKIwQgmA9l4vsd"
+      "attestationObject": "yJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiWlhsS2FHSkh"
     }
   }
 }
@@ -125,5 +123,6 @@ Content-Type: application/json
   "attestationLevel": "attested"
 }
 ```
+
 > [!NOTE]
 > Ensure proper base64URL encoding and decoding of the publicKeyCredential.id is properly performed prior to using response data to create a passkey on a FIDO2 security key.
