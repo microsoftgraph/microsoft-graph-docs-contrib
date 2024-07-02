@@ -12,34 +12,10 @@
         },
         {
           "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
-          "ApiChange": "Method",
-          "ChangedApiName": "LIST",
+          "ApiChange": "Resource",
+          "ChangedApiName": "photoUpdateSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **List** photoUpdateSettings resource",
-          "Target": "photoUpdateSettings"
-        },
-        {
-          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
-          "ChangeType": "Addition",
-          "Description": "Added the **Update** photoUpdateSettings resource ",
-          "Target": "photoUpdateSettings"
-        },
-        {
-          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the **Get** photoUpdateSettings resource",
-          "Target": "photoUpdateSettings"
-        },
-        {
-          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
-          "ApiChange": "Method",
-          "ChangedApiName": "CREATE",
-          "ChangeType": "Addition",
-          "Description": "Added the **Create** photoUpdateSettings resource",
+          "Description": "Added the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
           "Target": "photoUpdateSettings"
         },
         {
@@ -47,7 +23,23 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the **List** photoUpdateSettings resource",
+          "Description": "Added the [List photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-delete-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "photoUpdateSettings"
         }
       ],
@@ -117,14 +109,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-1.0) resource and supported methods.",
           "Target": "profileCardProperty"
-        },
-        {
-          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
-          "ApiChange": "Resource",
-          "ChangedApiName": "photoUpdateSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource and supported methods.",
-          "Target": "photoUpdateSettings"
         }
       ],
       "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
@@ -542,6 +526,14 @@
           "ChangedApiName": "PeopleSettings.ReadWrite.All",
           "ChangeType": "Addition",
           "Description": "Added support for `PeopleSettings.ReadWrite.All` delegated permission to read and write tenant-wide properties of the [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "photoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoUpdateSettings** relationship to [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         }
       ],
