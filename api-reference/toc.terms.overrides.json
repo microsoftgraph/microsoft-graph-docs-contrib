@@ -61,12 +61,20 @@
     "override": "BitLocker"
   },
   {
+    "term": "Certificate based",
+    "override": "Certificate-based"
+  },
+  {
     "term": "cloud pc",
     "override": "Cloud PC"
   },
   {
     "term": "cors",
     "override": "CORS"
+  },
+  {
+    "term": "Cross tenant",
+    "override": "Cross-tenant"
   },
   {
     "term": "cvss",
