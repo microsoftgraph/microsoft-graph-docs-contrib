@@ -31,15 +31,16 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
-|appointmentLabel|String|Custom label that can be stamped on this appointment by the user.|
-|createdDateTime|DateTimeOffset|The date, time and timezone when the appointment was created.	|
+|appointmentLabel|String|The user can stamp a custom label on the appointment.|
+|createdDateTime|DateTimeOffset|The date, time, and timezone when the appointment was created.	|
 |customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of customer properties for an appointment. An appointment contains a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment.|
 |id|String| The ID of the **bookingAppointment**. Read-only.|
-|isLocationOnline|Boolean|If `true`, indicates that the appointment will be held online. Default value is `false`.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
+|isLocationOnline|Boolean|Indicates that the appointment is held online. The default value is `false`.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.|
@@ -49,7 +50,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |price|Double|The regular price for an appointment for the specified [bookingService](bookingservice.md).|
 |priceType|bookingPriceType| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |reminders|[bookingReminder](bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer. Only supported for appointment if maxAttendeeCount is 1.|
+|selfServiceAppointmentId|String|Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of customer.|
 |serviceId|String|The ID of the [bookingService](bookingservice.md) associated with this appointment.|
 |serviceLocation|[location](location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it's computed from the service associated with the appointment by the **serviceId** property.|
@@ -136,7 +137,8 @@ The following JSON representation shows the resource type.
   },
   "invoiceId": "String",
   "invoiceStatus": "String",
-  "invoiceUrl": "String"
+  "invoiceUrl": "String",
+  "isCustomerAllowedToManageBooking": "Boolean",
 }
 ```
 
