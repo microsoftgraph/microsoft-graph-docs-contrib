@@ -27,8 +27,8 @@ None.
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|webinars|[virtualEventWebinar](virtualeventwebinar.md) collection | A collection of webinars. Nullable.|
 |townhalls|[virtualEventTownhall](virtualeventtownhall.md) collection | A collection of town halls. Nullable.|
+|webinars|[virtualEventWebinar](virtualeventwebinar.md) collection | A collection of webinars. Nullable.|
 
 ## JSON representation
 
