@@ -86,10 +86,10 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "displayName": "Red Key",
   "publicKeyCredential": {
-    "id": "73ecec75-b546-cd6a-d74d-8bb81e58d4a7",
+    "id": "pgIfj2fnom8rJdb4_h1gKqDkq-gxHFksI-m2aR5T-PNNycBfENAM4ksEBvoXky6d",
     "response": {
-      "clientDataJSON": "o2NmbXRmcGFja2VkZ2F0dFN0bXSjY2FsZyZjc2lnWEYwRAIgAojuEKIwQgmA9l4vsd"
-      "attestationObject": "yJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiWlhsS2FHSkh"
+      "clientDataJSON": "VGhpcyBpcyB0aGUgY2xpZW50RGF0YUpTT04gZW5jb2RlZCB0byBiZSB3ZWJzYWZlIHdoaWNoIHdpbGwgYmUgc2VudCB0byBFbnRyYSBJRA",
+      "attestationObject": "VGhpcyBpcyB0aGUgYXR0ZXN0YXRpb25PYmplY3QgZW5jb2RlZCB0byBiZSB3ZWJzYWZlIHdoaWNoIHdpbGwgYmUgc2VudCB0byBFbnRyYSBJRA"
     }
   }
 }
