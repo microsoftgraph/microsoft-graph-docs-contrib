@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveWin32CatalogAppsUpdateReport",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveWin32CatalogAppsUpdateReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-retrieveWin32CatalogAppsUpdateReport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the **retrieveWin32CatalogAppsUpdateReport** method to the **deviceManagementReports** resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -447,7 +447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrollmentTimeDeviceMembershipTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [enrollmentTimeDeviceMembershipTarget](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy-clearenrollmenttimedevicemembershiptarget?view=graph-rest-beta) resource.",
+          "Description": "Added the **enrollmentTimeDeviceMembershipTarget** resource.",
           "Target": "enrollmentTimeDeviceMembershipTarget"
         },
         {
@@ -471,7 +471,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setEnrollmentTimeDeviceMembershipTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [setEnrollmentTimeDeviceMembershipTarget](https://learn.microsoft.com/graph/api/intune-deviceManagementConfigurationPolicy-setEnrollmentTimeDeviceMembershipTarget?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **setEnrollmentTimeDeviceMembershipTarget** method to the **deviceManagementConfigurationPolicy** resource.",
           "Target": "deviceManagementConfigurationPolicy"
         },
         {
@@ -695,7 +695,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeAssignmentsActionResult",
           "ChangeType": "Addition",
-          "Description": "Added the [changeAssignmentsActionResult](https://learn.microsoft.com/graph/api/resources/intune-changeAssignmentsActionResult?view=graph-rest-beta) resource.",
+          "Description": "Added the **changeAssignmentsActionResult** resource.",
           "Target": "changeAssignmentsActionResult"
         },
         {
@@ -703,7 +703,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceAssignmentItem",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceAssignmentItem](https://learn.microsoft.com/graph/api/resources/intune-deviceAssignmentItem?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceAssignmentItem** resource.",
           "Target": "deviceAssignmentItem"
         },
         {
@@ -767,7 +767,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "changeAssignments",
           "ChangeType": "Addition",
-          "Description": "Added the [changeAssignments](https://learn.microsoft.com/graph/api/intune?view=graph-rest-beta) method to the [changeAssignments](https://learn.microsoft.com/graph/api/resources/intune-changeAssignments?view=graph-rest-beta) resource.",
+          "Description": "Added the **changeAssignments** method to the **changeAssignments** resource.",
           "Target": "changeAssignments"
         },
         {
@@ -823,7 +823,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ipv6Network",
           "ChangeType": "Addition",
-          "Description": "Added the **ipv6Network** property to the [microsoftTunnelConfiguration](https://learn.microsoft.com/graph/api/resources/microsoftTunnelConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **ipv6Network** property to the **microsoftTunnelConfiguration** resource.",
           "Target": "microsoftTunnelConfiguration"
         },
         {
@@ -847,7 +847,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDeviceWindowsOperatingSystemEdition",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceWindowsOperatingSystemEdition](https://learn.microsoft.com/graph/api/resources/managedDeviceWindowsOperatingSystemEdition?view=graph-rest-beta) resource.",
+          "Description": "Added the **managedDeviceWindowsOperatingSystemEdition** resource.",
           "Target": "managedDeviceWindowsOperatingSystemEdition"
         },
         {
@@ -855,7 +855,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDeviceWindowsOperatingSystemUpdate",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceWindowsOperatingSystemUpdate](https://learn.microsoft.com/graph/api/resources/managedDeviceWindowsOperatingSystemUpdate?view=graph-rest-beta) resource.",
+          "Description": "Added the **managedDeviceWindowsOperatingSystemUpdate** resource.",
           "Target": "managedDeviceWindowsOperatingSystemUpdate"
         },
         {
@@ -863,7 +863,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagement](https://learn.microsoft.com/graph/api/resources/deviceManagement?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceManagement** resource.",
           "Target": "deviceManagement"
         },
         {
@@ -871,7 +871,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDeviceWindowsOperatingSystemImage",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceWindowsOperatingSystemImage](https://learn.microsoft.com/graph/api/resources/managedDeviceWindowsOperatingSystemImage?view=graph-rest-beta) resource.",
+          "Description": "Added the **managedDeviceWindowsOperatingSystemImage** resource.",
           "Target": "managedDeviceWindowsOperatingSystemImage"
         },
         {
@@ -879,7 +879,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllManagedDeviceWindowsOSImages",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllManagedDeviceWindowsOSImages](https://learn.microsoft.com/graph/api/managedDeviceWindowsOperatingSystemImage-getAllManagedDeviceWindowsOSImages?view=graph-rest-beta) method to the [managedDeviceWindowsOperatingSystemImage](https://learn.microsoft.com/graph/api/resources/managedDeviceWindowsOperatingSystemImage?view=graph-rest-beta) resource.",
+          "Description": "Added the **getAllManagedDeviceWindowsOSImages** method to the **managedDeviceWindowsOperatingSystemImage** resource.",
           "Target": "managedDeviceWindowsOperatingSystemImage"
         },
         {
@@ -1263,7 +1263,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceId",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1271,7 +1271,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "endDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **endDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **endDateTime** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1279,7 +1279,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperDeviceAadId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperDeviceAadId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1287,7 +1287,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperDeviceName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperDeviceName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1295,7 +1295,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperEmail",
           "ChangeType": "Addition",
-          "Description": "Added the **helperEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperEmail** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1303,7 +1303,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperEnrollmentState",
           "ChangeType": "Addition",
-          "Description": "Added the **helperEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperEnrollmentState** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1311,7 +1311,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperFirstName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperFirstName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1319,7 +1319,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperLastName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperLastName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1327,7 +1327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperOs",
           "ChangeType": "Addition",
-          "Description": "Added the **helperOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperOs** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1335,7 +1335,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperTenantId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1343,7 +1343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperUserId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperUserId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperUserId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1351,7 +1351,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "id",
           "ChangeType": "Addition",
-          "Description": "Added the **id** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **id** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1359,7 +1359,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "remoteAssistanceSessionType",
           "ChangeType": "Addition",
-          "Description": "Added the **remoteAssistanceSessionType** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **remoteAssistanceSessionType** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1367,7 +1367,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceAadId",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceAadId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceAadId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1375,7 +1375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1383,7 +1383,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerDeviceSerialNumber",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerDeviceSerialNumber** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerDeviceSerialNumber** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1391,7 +1391,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerEmail",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerEmail** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerEmail** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1399,7 +1399,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerEnrollmentState",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerEnrollmentState** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerEnrollmentState** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1407,7 +1407,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerFirstName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerFirstName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerFirstName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1415,7 +1415,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerLastName",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerLastName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1423,7 +1423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerOs",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerOs** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1431,7 +1431,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharerTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **sharerTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharerTenantId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1439,7 +1439,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "startDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **startDateTime** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **startDateTime** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
