@@ -21,9 +21,9 @@ All Microsoft Graph calls to resources under `/solutions` use the following serv
 https://graph.microsoft.com/{version}/solutions/
 ```
 
-<!-- { "blockType": "ignored" } -->
 To access Bookings businesses, use the following syntax:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/{version}/solutions/bookingBusinesses 
 ```
