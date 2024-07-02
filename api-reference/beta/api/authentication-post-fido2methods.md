@@ -117,7 +117,7 @@ Content-Type: application/json
   "id": "73ecec75-b546-cd6a-d74d-8bb81e58d4a7",
   "displayName": "Red Key",
   "createdDateTime": "2020-08-10T06:44:09Z",
-  "aaGuid": ""2fc0579f-8113-47ea-b116-555a8db9202a"",
+  "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
   "model": "NFC Key",
   "attestationCertificates": [
     "dbe793efdf1945e2df25d93653a1e8a3268a9075"

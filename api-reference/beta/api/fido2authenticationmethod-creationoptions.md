@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/authentication/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes=10)
+GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes=10)
 ```
 
 
