@@ -22,7 +22,7 @@ Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) obj
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.photoUpdateSettings not found
+GET /admin/people/photosource
 ```
 
 ## Optional query parameters

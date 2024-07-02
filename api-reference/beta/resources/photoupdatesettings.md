@@ -31,6 +31,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|allowedRoles|String collection|Contains a list of wids to perform edit operations in cloud. Optional.|
 |id|String| The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
 |source|string| Specifies the types of photo updates permitted. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`.|
 
