@@ -3,7 +3,7 @@ title: "windowsUpdateState resource type"
 description: "Intune Shared Windowsupdatestate Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
