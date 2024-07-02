@@ -38,7 +38,7 @@ PATCH /admin/people/photoUpdateSettings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|source|photoUpdateSource| Specifies what photo updates will are allowed. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
+|source|photoUpdateSource| Specifies what photo updates are allowed. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
 |allowedRoles|String collection| Contains a list of wids allowed to perform edit operations in the cloud. Optional.|
 
 ## Response
