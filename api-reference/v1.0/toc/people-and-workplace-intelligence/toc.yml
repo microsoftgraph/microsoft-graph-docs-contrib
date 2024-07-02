@@ -16,12 +16,30 @@ items:
     href: ../../resources/peopleadminsettings.md
   - name: Get peopleAdminSettings
     href: ../../api/peopleadminsettings-get.md
+  - name: List itemInsights
+    href: ../../api/peopleadminsettings-list-iteminsights.md
   - name: List pronounsSettings
     href: ../../api/peopleadminsettings-list-pronouns.md
   - name: List profileCardProperties
     href: ../../api/peopleadminsettings-list-profilecardproperties.md
   - name: Create profileCardProperty
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
+- name: Insights settings
+  items:
+  - name: Insights settings
+    href: ../../resources/insightssettings.md
+  - name: List itemInsights
+    href: ../../api/peopleadminsettings-list-iteminsights.md
+  - name: Update insightsSettings
+    href: ../../api/insightssettings-update.md
+- name: Pronouns settings
+  items:
+  - name: Pronouns settings
+    href: ../../resources/pronounssettings.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-pronouns.md
+  - name: Update
+    href: ../../api/pronounssettings-update.md
 - name: Insights
   items:
   - name: Shared insight
