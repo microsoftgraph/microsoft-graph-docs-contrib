@@ -16,6 +16,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
+
 ## June 2024: New and generally available
 
 ### Change notifications
@@ -57,7 +63,6 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 
 - Removed the **type** property from the [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **resourceType** property.
 - Use the **deviceRegionName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the name of the geographical region where the Cloud PC is currently provisioned.
-- Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
 - Use the **initiatedByUserPrincipalName** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the user principal name (UPN) of the user who initiated a bulk action.
 - Use the **status** property on [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true) to get the status of bulk actions.
 - Perform bulk disaster recovery [failover](/graph/api/resources/cloudpcbulkdisasterrecoveryfailover?view=graph-rest-beta&preserve-view=true) and [failback](/graph/api/resources/cloudpcbulkdisasterrecoveryfailback?view=graph-rest-beta&preserve-view=true) actions to initiate the activation or deactivation of cross-region disaster recovery during regional outage scenarios.
