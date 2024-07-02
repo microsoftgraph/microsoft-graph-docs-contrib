@@ -544,7 +544,7 @@ else
 
 # [C#](#tab/csharp)
 ```csharp
-AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+Aes aesProvider = Aes.Create();
 aesProvider.Key = decryptedSymmetricKey;
 aesProvider.Padding = PaddingMode.PKCS7;
 aesProvider.Mode = CipherMode.CBC;
