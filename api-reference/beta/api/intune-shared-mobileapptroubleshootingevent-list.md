@@ -3,7 +3,7 @@ title: "List mobileAppTroubleshootingEvents"
 description: "Describes the List mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
 author: "jaiprakashmb"
-ms.subservice: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ List properties and relationships of the [mobileAppTroubleshootingEvent](../reso
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Permissions
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
