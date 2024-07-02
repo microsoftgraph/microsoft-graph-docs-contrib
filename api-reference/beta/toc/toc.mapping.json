@@ -2001,6 +2001,7 @@
         "person",
         "mention",
         "peopleAdminSettings",
+        "insightsSettings",
         "pronounsSettings",
         "profile",
         "userAnalytics"
