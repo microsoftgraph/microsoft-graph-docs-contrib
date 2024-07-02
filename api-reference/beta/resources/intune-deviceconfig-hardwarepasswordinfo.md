@@ -1,6 +1,6 @@
 ---
 title: "hardwarePasswordInfo resource type"
-description: "Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices."
+description: "Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices. Starting from June, 2024 (Intune Release 2406), this type will no longer be supported and will be marked as deprecated"
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.subservice: "intune"
@@ -10,12 +10,12 @@ doc_type: resourcePageType
 # hardwarePasswordInfo resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices.
+
+Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices. Starting from June, 2024 (Intune Release 2406), this type will no longer be supported and will be marked as deprecated
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,10 +29,10 @@ Intune will provide customer the ability to configure hardware/bios settings on 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the hardware password info|
-|serialNumber|String|Device serial number|
-|currentPassword|String|Current device password|
-|previousPasswords|String collection|List of previous device passwords|
+|id|String|A unique string Id that is based on associated Intune Device Id. This property is read-only.|
+|serialNumber|String|Associated device's serial number . This property is read-only.|
+|currentPassword|String|Current device password. This property is read-only.|
+|previousPasswords|String collection|List of previous device passwords. This property is read-only.|
 
 ## Relationships
 None
