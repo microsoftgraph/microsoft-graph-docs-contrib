@@ -136,7 +136,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all Teams-associated Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-associated Microsoft 365 groups to review. Groups that are of dynamic membership or role-assignable aren't included in this review.
 
-This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 15: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-15-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 ```http
 "instanceEnumerationScope": {
@@ -154,7 +154,7 @@ This review doesn't include B2B direct connect users in teams with shared channe
 
 Because this review is applied on all Teams-associated Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-associated Microsoft 365 groups to review. Groups that are of dynamic membership or role-assignable aren't included in this review.
 
-This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 15: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-15-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 ```http
 "instanceEnumerationScope": {
