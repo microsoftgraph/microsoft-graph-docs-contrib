@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [List photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added the [Create photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-delete-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-delete-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         }
       ],
