@@ -66,7 +66,7 @@ None.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |bookingBusinesses|[bookingBusiness](bookingbusiness.md) collection | A collection of businesses in Microsoft Bookings. Read-only. Nullable.|
-|bookingCurrencies|[bookingcurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
+|bookingCurrencies|[bookingCurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
 |virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
 
