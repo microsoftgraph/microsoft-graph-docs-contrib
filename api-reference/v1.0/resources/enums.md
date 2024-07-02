@@ -3382,4 +3382,13 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
+
 
