@@ -5,6 +5,7 @@ author: "SarahBar"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: "Microsoft Entra health"
 ---
 
 # azureADAuthentication resource type
@@ -20,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get Microsoft Entra authentication](../api/azureadauthentication-get.md)|[azureADAuthentication](../resources/azureadauthentication.md)|Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object.|
+|[Get SLA attainment](../api/azureadauthentication-get.md)|[azureADAuthentication](../resources/azureadauthentication.md)|Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object.|
 
 
 ## Properties
