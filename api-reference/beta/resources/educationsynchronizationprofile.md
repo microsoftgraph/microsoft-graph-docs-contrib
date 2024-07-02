@@ -45,7 +45,7 @@ Represents a set of configurations used to synchronize education entities and ro
 | handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] Microsoft Entra users.                                  |
 | licensesToAssign                     | [educationSynchronizationLicenseAssignment] collection | License setup configuration.                                                                                                      |
-| state                                | microsoft.graph.educationSynchronizationProfileState                   | The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
+| state                                | educationSynchronizationProfileState                   | The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
 
 ## Relationships
 
@@ -82,9 +82,7 @@ The following is a JSON representation of the **educationSynchronizationProfile*
 {
   "id": "String",
   "displayName": "String",
-  "state": {
-    "@odata.type": "microsoft.graph.educationSynchronizationProfileState"
-  },
+  "state": "String"
   "profileStatus": {
     "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
   },
