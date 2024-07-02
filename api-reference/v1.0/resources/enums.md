@@ -3390,5 +3390,15 @@ Possible values for user account types (group membership), per Windows definitio
 |restrictedToOrganization|
 |unknownFutureValue|
 
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
+|unknownFutureValue|
+
+
 
 
