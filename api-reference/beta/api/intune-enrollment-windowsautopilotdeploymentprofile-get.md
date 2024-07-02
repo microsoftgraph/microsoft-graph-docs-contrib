@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) object.
+Read properties and relationships of the [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +52,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) object in the response body.
 
 ## Example
 
@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1907
+Content-Length: 1904
 
 {
   "value": {
@@ -110,7 +110,7 @@ Content-Length: 1907
     "extractHardwareHash": true,
     "hardwareHashExtractionEnabled": true,
     "deviceNameTemplate": "Device Name Template value",
-    "deviceType": "surfaceHub2",
+    "deviceType": "holoLens",
     "enableWhiteGlove": true,
     "preprovisioningAllowed": true,
     "roleScopeTagIds": [
