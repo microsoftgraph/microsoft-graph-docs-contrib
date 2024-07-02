@@ -8,4 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|OnlineMeetings.Read|OnlineMeetings.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Onlinemeetings.Read.All|Onlinemeetings.Readwrite.All|
+|Application|Not supported.|Not supported.|
+
