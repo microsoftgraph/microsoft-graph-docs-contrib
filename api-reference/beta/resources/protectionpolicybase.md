@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection policy
---- 
+---
 
 # protectionPolicyBase resource
 
