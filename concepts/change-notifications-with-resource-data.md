@@ -13,7 +13,7 @@ ms.date: 05/30/2024
 
 # Set up change notifications that include resource data (rich notifications)
 
-Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. While you can subscribe to the basic kind of change notifications, some resources such as Microsoft Teams chat message and presence resources, support rich notifications. 
+Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. While you can subscribe to basic change notifications, resources such as Microsoft Teams chat message and presence resources, for example, support rich notifications. 
 
 **Rich notifications** include the resource data that changed, allowing your app to run business logic without having to make a separate API call to fetch the changed resource. This article guides you through the process of setting up rich notifications in your application.
 
@@ -384,7 +384,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component with the private key. One of the easiest way to do this is using the [RSACertificateExtensions.GetRSAPrivateKey(X509Certificate2) Method](/dotnet/api/system.security.cryptography.x509certificates.rsacertificateextensions.getrsaprivatekey?view=netframework-4.8&preserve-view=true) with an [X509Certificate2](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netframework-4.8&preserve-view=true) instance which contains the private key described in [Managing encryption keys](#managing-encryption-keys).
+2. Initialize an RSA cryptographic component with the private key. An easy way to initialize an RSA component is to use the [RSACertificateExtensions.GetRSAPrivateKey(X509Certificate2) Method](/dotnet/api/system.security.cryptography.x509certificates.rsacertificateextensions.getrsaprivatekey?view=netframework-4.8&preserve-view=true) with an [X509Certificate2](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netframework-4.8&preserve-view=true) instance, which contains the private key described in [Managing encryption keys](#managing-encryption-keys).
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.
 
