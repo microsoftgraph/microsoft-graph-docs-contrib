@@ -22,7 +22,7 @@ Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) obj
 }
 -->
 ``` http
-GET /admin/people/photosource
+GET /admin/people/photoUpdateSettings
 ```
 
 ## Optional query parameters
