@@ -1319,7 +1319,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperLastName",
           "ChangeType": "Addition",
-          "Description": "Added the **helperLastName** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperLastName** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1327,7 +1327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperOs",
           "ChangeType": "Addition",
-          "Description": "Added the **helperOs** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperOs** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1335,7 +1335,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperTenantId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperTenantId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
@@ -1343,7 +1343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "helperUserId",
           "ChangeType": "Addition",
-          "Description": "Added the **helperUserId** property to the [remoteAssistanceReporting](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancereporting?view=graph-rest-beta) resource.",
+          "Description": "Added the **helperUserId** property to the **remoteAssistanceReporting** resource.",
           "Target": "remoteAssistanceReporting"
         },
         {
