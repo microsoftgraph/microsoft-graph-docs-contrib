@@ -64,7 +64,10 @@ The following is a JSON representation of the resource.
   "attestationCertificates": [
     "String"
   ],
-  "attestationLevel": "String"
+  "attestationLevel": "String",
+  "publicKeyCredential": {
+    "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
+  }
 }
 ```
 

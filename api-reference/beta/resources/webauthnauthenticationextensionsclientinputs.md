@@ -1,5 +1,5 @@
 ---
-title: "webAuthnAuthenticationExtensionsClientsInputs resource type"
+title: "webauthnAuthenticationExtensionsClientInputs resource type"
 description: "Represents the untyped inputs to extensions processed by the client and WebAuthn authenticator."  
 author: "tilarso"  
 ms.reviewer: intelligentaccesspm  

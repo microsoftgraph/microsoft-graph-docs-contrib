@@ -20,7 +20,7 @@ Represents the data returned from a WebAuthn Authenticator after the Authenticat
 |Property|Type|Description|
 |:---|:---|:---|
 |challengeTimeoutDateTime|DateTimeOffset| Defines when the challenge in the creation options is no longer valid. Expired challenges are rejected when you attempt to create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md). |  
-|publicKey|[microsoft.strongAuthentication.webAuthnPublicKeyCredentialCreationOptions](webauthnpublickeycredentialcreationOptions.md)|Defines public key options for the creation of a new WebAuthn public key credential.|  
+|publicKey|[webauthnCredentialCreationOptions](webauthnpublickeycredentialcreationOptions.md)|Defines public key options for the creation of a new WebAuthn public key credential.|  
 
 ## Relationships
 None.
