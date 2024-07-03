@@ -7,3 +7,5 @@ The signed-in user must also be assigned at least one of the following [director
 
 - Security Reader
 - Global Reader
+
+Signed-in users are able to read basic attributes of a multitenant organization, and of the multitenant organization member tenants, without being assigned the Security Reader or Global Reader roles.
