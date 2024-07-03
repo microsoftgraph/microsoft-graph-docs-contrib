@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "commerceSubscriptionId": "String",
+  "commerceSubscriptionId": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",

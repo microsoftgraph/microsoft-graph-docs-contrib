@@ -51,6 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_virtualeventregistrationquestion",
@@ -60,6 +61,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions/f3115d4c-9896-42fc-a649-8ca5e3c3a43f
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-virtualeventregistrationquestion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
