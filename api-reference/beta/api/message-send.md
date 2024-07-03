@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Length | number | 0. Required. |
 
 ## Request body
