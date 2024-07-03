@@ -2068,5 +2068,31 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }
+	{
+      "ChangeList": [
+        {
+          "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOrganizerId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **meetingOrganizerId** property from the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOrganizerId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **meetingOrganizerId** property from the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-03T20:32:27.9708769Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    }
   ]
 }
