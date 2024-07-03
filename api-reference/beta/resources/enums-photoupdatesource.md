@@ -1,6 +1,6 @@
 ---
 title: "photoUpdateSource values"
-description: "photoUpdateSource. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`."
+description: "Microsoft Graph photoUpdateSource enumeration values"
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"

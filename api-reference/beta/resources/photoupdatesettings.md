@@ -21,8 +21,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/photoupdatesettings-get.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Read the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[List](../api/peopleadminsettings-list-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md) collection|Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) objects and their properties.|
+|[Create](../api/peopleadminsettings-post-photoupdatesettings.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Create a new [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[Get](../api/photoupdatesettings-get.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Read the properties and relationships of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
 |[Update](../api/photoupdatesettings-update.md)|[photoUpdateSettings](../resources/photoupdatesettings.md)|Update the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
+|[Delete](../api/peopleadminsettings-delete-photoupdatesettings.md)|None|Delete a [photoUpdateSettings](../resources/photoupdatesettings.md) object.|
 
 ## Properties
 
