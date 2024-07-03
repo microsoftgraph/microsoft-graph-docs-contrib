@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification
 
 ## Licenses
-**TODO: Do we require user to have specific licenses?**
+**TODO: Are we required user to have specific licenses?**
 
 ## Common requests
 
