@@ -56,13 +56,13 @@ You can specify the following properties when creating a **fido2AuthenticationMe
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Custom name given to the registered fido2AuthenticationMethod|
-|publicKeyCredential|[webAuthnPublicKeyCredential](../resources/webAuthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered|
 
 > [!NOTE]
 > The publicKeyCredential|[webAuthnPublicKeyCredential](../resources/webAuthnpublickeycredential.md) is a write-only property and will not be returned in GET requests.
 
 ## Acceptable attestation formats 
-Currently attestation formats of “packed” or “None” are only supported at this time.
+Currently attestation formats of "packed" or "None" are only supported at this time.
 
 ## Response
 

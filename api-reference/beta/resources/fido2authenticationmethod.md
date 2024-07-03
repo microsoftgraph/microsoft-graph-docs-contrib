@@ -25,7 +25,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |[Create](../api/authentication-post-fido2methods.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object based on [WebAuthn W3C standards](https://www.w3.org/TR/webauthn-2/#iface-pkcredential).|
 |[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's fido2AuthenticationMethod object.|
 |[Delete](../api/fido2authenticationmethod-delete.md)|None|Deletes a user's fido2AuthenticationMethod object.|
-|[creationOptions](../api/fido2authenticationmethod-creationoptions.md)|[webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md)|Retrieve creation options required to generate and register an Entra ID compatible passkey.|
+|[Creation options](../api/fido2authenticationmethod-creationoptions.md)|[webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md)|Retrieve creation options required to generate and register an Entra ID compatible passkey.|
 
 ## Properties
 |Property|Type|Description|

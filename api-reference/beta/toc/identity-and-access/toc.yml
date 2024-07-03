@@ -569,9 +569,9 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: Trusted certificate authorities for apps (preview)
     items:
-    - name: Certificate based application configuration
+    - name: Certificate-based application configuration
       items:
-      - name: Certificate based application configuration
+      - name: Certificate-based application configuration
         href: ../../resources/certificatebasedapplicationconfiguration.md
       - name: List
         href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
@@ -2000,9 +2000,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/authenticationmethods-overview.md
-    - name: Authentication
+    - name: Authentication states
       items:
-      - name: Authentication
+      - name: Authentication states
         href: ../../resources/authentication.md
       - name: Get
         href: ../../api/authentication-get.md
@@ -2034,14 +2034,10 @@ items:
         href: ../../resources/fido2authenticationmethod.md
       - name: List
         href: ../../api/fido2authenticationmethod-list.md
-      - name: Create 
-        href: ../../api/authentication-post-fido2methods.md
       - name: Get
         href: ../../api/fido2authenticationmethod-get.md
       - name: Delete
         href: ../../api/fido2authenticationmethod-delete.md
-      - name: creationOptions
-        href: ../../api/fido2authenticationmethod-creationoptions.md     
     - name: Microsoft Authenticator authentication method
       items:
       - name: Microsoft Authenticator authentication method
@@ -2183,10 +2179,10 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate based auth configuration
+  - name: Certificate-based auth configuration
     displayName: CBA
     items:
-    - name: Certificate based auth configuration
+    - name: Certificate-based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
     - name: List
       href: ../../api/certificatebasedauthconfiguration-list.md
@@ -2287,17 +2283,17 @@ items:
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Cross tenant access policy
+    - name: Cross-tenant access policy
       items:
-      - name: Cross tenant access policy
+      - name: Cross-tenant access policy
         href: ../../resources/crosstenantaccesspolicy.md
       - name: Get
         href: ../../api/crosstenantaccesspolicy-get.md
       - name: Update
         href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Cross tenant access policy configuration default
+    - name: Cross-tenant access policy configuration default
       items:
-      - name: Cross tenant access policy configuration default
+      - name: Cross-tenant access policy configuration default
         href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
       - name: Get
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
@@ -2305,9 +2301,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
       - name: Reset to system default
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Cross tenant access policy configuration partner
+    - name: Cross-tenant access policy configuration partner
       items:
-      - name: Cross tenant access policy configuration partner
+      - name: Cross-tenant access policy configuration partner
         href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
       - name: List
         href: ../../api/crosstenantaccesspolicy-list-partners.md
@@ -2319,9 +2315,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-    - name: Cross tenant identity sync policy partner
+    - name: Cross-tenant identity sync policy partner
       items:
-      - name: Cross tenant identity sync policy partner
+      - name: Cross-tenant identity sync policy partner
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -4079,9 +4075,9 @@ items:
     href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
-    - name: Cross tenant access settings
+    - name: Cross-tenant access settings
       items:
-      - name: Cross tenant access settings
+      - name: Cross-tenant access settings
         href: ../../resources/networkaccess-crosstenantaccesssettings.md
       - name: Get
         href: ../../api/networkaccess-crosstenantaccesssettings-get.md
