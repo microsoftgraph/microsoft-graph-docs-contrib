@@ -15,6 +15,8 @@ ms.date: 03/14/2024
 
 The Microsoft Entra [access reviews APIs](/graph/api/resources/accessreviewsv2-overview) allow you to programmatically review access that users, service principals, or groups have to Microsoft Entra resources in your tenant.
 
+These 17 examples are currently the only valid combos for the Graph API.
+
 You configure the Microsoft Entra resources to review in the **scope** property of the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource. The following resources expose the settings to configure the scope of the access review:
 
 |Resource|Description|Example access review scenarios|
