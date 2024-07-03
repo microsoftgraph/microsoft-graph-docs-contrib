@@ -267,6 +267,7 @@ Content-type: application/json
             "optOutOfCustomerEmail": false,
             "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
+			"isCustomerAllowedToManageBooking": true,
             "startDateTime": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
                 "timeZone": "UTC"
