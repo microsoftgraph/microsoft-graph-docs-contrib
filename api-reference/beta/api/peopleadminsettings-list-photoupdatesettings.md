@@ -7,7 +7,7 @@ ms.subservice: "people"
 doc_type: apiPageType
 ---
 
-# List photoUpdateSettings
+# List photoUpdateSettings objects
 
 Namespace: microsoft.graph
 
