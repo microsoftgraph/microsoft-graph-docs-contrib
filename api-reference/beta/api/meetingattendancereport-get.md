@@ -330,7 +330,7 @@ Content-Type: application/json
 The following example shows how to get the attendance report for a webinar session based on its **id**.
 
 > [!TIP]
-> The **attendanceRecords** property provides participant data. It is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List Attendance Records](attendancerecord-list.md) API. Alternatively to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
+> The **attendanceRecords** property provides participant data. It is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List attendance records](attendancerecord-list.md) API. Alternatively, to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
 
 
 #### Request
