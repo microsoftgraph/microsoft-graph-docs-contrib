@@ -125,12 +125,12 @@ Content-Type: application/json
           }
         ],
         "supportingData": {
-          "signInRecords": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=({errorCodeFilterStr} and createdDateTime gt {startTime} and createdDateTime le {endTime} and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
-          "auditRecords": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge {startTime} and activityDateTime le {endTime})&$top=50&$orderby=activityDateTime desc"
+          "signIns": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=((status/errorCode eq 500121) and createdDateTime gt 2024-06-08T11:23:44.1234567Z and createdDateTime le 2024-06-19T11:23:44.1234567Z and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
+          "audits": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge 2024-06-08T11:23:44.1234567Z and activityDateTime le 2024-06-19T11:23:44.1234567Z)&$top=50&$orderby=activityDateTime desc"
         }
       },
       "signals": {
-        "mfaSignInFailure": "https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime={startTime}, exclusiveIntervalEndDateTime={endTime}, aggregationIntervalInMinutes=5)"
+        "mfaSignInFailure": "https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime=2024-06-08T11:23:44.1234567Z, exclusiveIntervalEndDateTime=2024-06-19T11:23:44.1234567Z, aggregationIntervalInMinutes=5)"
       },
       "documentation": {
         "mfaAlertTroubleshootingGuide": "https://learn.microsoft.com/en-us/entra/identity/authentication/"
@@ -287,8 +287,8 @@ Content-Type: application/json
           }
         ],
         "supportingData": {
-          "signInRecords": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=({errorCodeFilterStr} and createdDateTime gt {startTime} and createdDateTime le {endTime} and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
-          "auditRecords": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge {startTime} and activityDateTime le {endTime})&$top=50&$orderby=activityDateTime desc"
+          "signIns": "https://graph.microsoft.com/beta/auditLogs/signIns?$filter=((status/errorCode eq 500121) and createdDateTime gt 2024-06-08T11:23:44.1234567Z and createdDateTime le 2024-06-19T11:23:44.1234567Z and (signInEventTypes/any(t:t eq 'interactiveUser' or t eq 'noninteractiveUser')))",
+          "audits": "https://graph.microsoft.com/beta/auditLogs/directoryaudits?$filter=(activityDateTime ge 2024-06-08T11:23:44.1234567Z and activityDateTime le 2024-06-19T11:23:44.1234567Z)&$top=50&$orderby=activityDateTime desc"
         }
       }
     },
