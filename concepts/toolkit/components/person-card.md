@@ -54,7 +54,7 @@ The `MgtPersonCardConfig` class exposes static configuration properties that con
 By default, all sections and APIs are enabled. The following example shows how to use the class properties to disable sections or APIs.
 
 ```ts
-import { MgtPersonCardConfig } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from '@microsoft/mgt-components';
 
 MgtPersonCardConfig.useContactApis = false;
 MgtPersonCardConfig.sections.profile = false;
@@ -92,7 +92,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 To disable a section, set the property to `false` in your app initialization code:
 
 ```ts
-import { MgtPersonCardConfig } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from '@microsoft/mgt-components';
 
 MgtPersonCardConfig.sections.profile = false;
 ```

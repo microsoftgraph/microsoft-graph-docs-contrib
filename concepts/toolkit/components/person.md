@@ -243,7 +243,7 @@ The `MgtPerson` class exposes a static `config` object that configures all perso
 The following example shows how to use the config object.
 
 ```ts
-import { MgtPerson } from `@microsoft/mgt`;
+import { MgtPerson } from '@microsoft/mgt-components';
 
 MgtPerson.config.useContactApis = false;
 ```
