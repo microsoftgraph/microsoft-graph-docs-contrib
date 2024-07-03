@@ -82,7 +82,7 @@ The following is a JSON representation of the **educationSynchronizationProfile*
 {
   "id": "String",
   "displayName": "String",
-  "state": "String"
+  "state": "String",
   "profileStatus": {
     "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
   },
