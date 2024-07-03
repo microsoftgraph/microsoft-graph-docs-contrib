@@ -394,7 +394,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
   
     Compare it to the value in **dataSignature**. If they don't match, assume the payload has been tampered with and don't decrypt it.
 
-5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
+5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
 
     - Use the following decryption parameters for the AES algorithm:
 
@@ -545,7 +545,7 @@ else
 
 # [C#](#tab/csharp)
 ```csharp
-AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+Aes aesProvider = Aes.Create();
 aesProvider.Key = decryptedSymmetricKey;
 aesProvider.Padding = PaddingMode.PKCS7;
 aesProvider.Mode = CipherMode.CBC;
