@@ -490,6 +490,7 @@
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
+        "Microsoft Entra ID",
         "Identity and access"
       ],
       "childNodes": [
@@ -498,6 +499,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -543,7 +545,8 @@
             "Access reviews",
             "Entitlement Management",
             "Terms of Use",
-            "Privileged Identity Management"
+            "Privileged Identity Management",
+            "Microsoft Entra ID Governance"
           ],
           "childNodes": [
             {

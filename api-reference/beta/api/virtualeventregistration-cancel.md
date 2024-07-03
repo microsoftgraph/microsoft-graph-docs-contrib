@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 ---
 
-
 ### Response
 The following example shows the response.
 
