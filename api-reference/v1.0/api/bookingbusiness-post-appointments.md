@@ -46,7 +46,7 @@ If the maximum number of customers (**maximumAttendeesCount**) allowed in the [s
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
 
-- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is invalid, that customer isn't included in the appointment object.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following example shows a request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment doesn't involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,6 +77,7 @@ Content-type: application/json
         "dateTime": "2018-05-01T12:30:00.0000000+00:00",
         "timeZone": "UTC"
     },
+	"isCustomerAllowedToManageBooking": true,
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
@@ -258,6 +259,7 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
+	"isCustomerAllowedToManageBooking": true,
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
