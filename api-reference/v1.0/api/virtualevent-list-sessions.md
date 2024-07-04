@@ -1,6 +1,6 @@
 ---
-title: "List virtualEventSessions"
-description: "Get a list of all virtual event sessions under a virtual event."
+title: "List sessions"
+description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -8,9 +8,12 @@ doc_type: apiPageType
 ---
 
 # List sessions
+
 Namespace: microsoft.graph
 
 Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
+
+Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,7 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventsession-list-permissions.md)]
 
 > [!NOTE]
->
 > To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
@@ -31,10 +33,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
 To list all sessions of a webinar:
 
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
+```
+
+To list all sessions of a town hall:
+
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
 ## Optional query parameters
@@ -70,16 +79,20 @@ Currently, only the following properties of a **virtualEventSession** object con
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventsession"
+  "name": "list_virtualeventsessions",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
 ```
+---
 
 ### Response
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
