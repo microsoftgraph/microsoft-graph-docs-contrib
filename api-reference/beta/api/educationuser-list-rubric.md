@@ -1,19 +1,19 @@
 ---
-title: "List all educationRubric"
-description: "Returns a list of all the properties and relationships of your educationRubric objects."
+title: "List rubrics"
+description: "Get a list of the properties and relationships of your educationRubric objects."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
-# List all educationRubric
+# List rubrics
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of all the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
+Get a list of the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a list of [educa
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -63,15 +63,14 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationRubric)"
 } -->
 
 ```http
