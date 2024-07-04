@@ -758,7 +758,7 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
-    - name: Customize item insights privacy (preview)
+    - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
