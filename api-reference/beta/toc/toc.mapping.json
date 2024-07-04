@@ -110,10 +110,9 @@
       "childNodes": [
         {
           "name": "Protection policy",
-          "shouldSort": true,
           "resources": [
-            "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
             "sharePointProtectionPolicy"
           ]
         },
