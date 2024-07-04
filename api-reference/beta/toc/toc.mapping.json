@@ -41,6 +41,25 @@
           ]
         },
         {
+          "name": "Service principal",
+          "shouldSort": true,
+          "resources": [],
+          "childNodes": [
+            {
+              "name": "Policies",
+              "resources": [
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy",
+                "remoteDesktopSecurityConfiguration",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy",
+                "permissionGrantPreApprovalPolicy"
+              ]
+            }
+          ]
+        },
+        {
           "name": "On-premises publishing",
           "overview": "../../resources/onpremisespublishingprofile-root.md",
           "resources": [
@@ -1549,6 +1568,13 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
+                  ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetdevicegroup"
                   ]
                 }
               ]

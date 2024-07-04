@@ -43,16 +43,16 @@
         },
         {
           "name": "Service principal",
+          "shouldSort": true,
           "childNodes": [
             {
               "name": "Policies",
               "resources": [
-                "claimsMappingPolicy",
-                "homeRealmDiscoveryPolicy",
-                "permissionGrantPolicy",
-                "permissionGrantConditionSet",
                 "tokenIssuancePolicy",
-                "tokenLifetimePolicy"
+                "tokenLifetimePolicy",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy"
               ]
             }
           ]
