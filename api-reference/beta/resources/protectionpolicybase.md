@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Contains details about protection policies applied to Microsoft 365 data in an organization. Protection policies are defined by the Global Admin (or the SharePoint Online Admin or Exchange Online Admin) and include what data to protect, when to protect it, and for what time period to retain the protected data for a single Microsoft 365 service.
 
-This is the base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md), [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md), and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md), [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md), and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 ## Methods
 
@@ -50,7 +50,7 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 |activeWithErrors | Some units are protected and others are unprotected.|
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
