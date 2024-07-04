@@ -37,7 +37,7 @@ For more information, see [Education rubric overview](/graph/education-rubric-ov
 |createdDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|[itemBody](itembody.md)|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|The grading type of this rubric -- null for a no-points rubric, or [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) for a points rubric.|
+|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|The grading type of this rubric. You can use `null` for a no-points rubric or [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) for a points rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |levels|[rubricLevel](rubriclevel.md) collection|The collection of levels making up this rubric.|
