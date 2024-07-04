@@ -35,12 +35,13 @@ This resource supports:
 |[Update](../api/application-update.md) | None |Update application object. |
 |[Upsert](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
 |[Delete](../api/application-delete.md) | None |Delete application object. |
-|[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
+|**Deleted applications**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
 | [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
-|[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
-|[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
-|[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
-|[delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
 |**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password or secret to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password or secret from an application.|

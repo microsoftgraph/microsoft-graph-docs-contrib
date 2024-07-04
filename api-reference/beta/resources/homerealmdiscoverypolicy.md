@@ -21,15 +21,15 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Create a homeRealmDiscoveryPolicy object. |
-| [Get homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
-| [List homeRealmDiscoveryPolicies](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
-| [Update homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
-| [Delete homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
-| [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
-| [Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | None | Assign a homeRealmDiscoveryPolicy object to a [servicePrincipal](serviceprincipal.md) object. |
-| [List assigned homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection | List the homeRealmDiscoveryPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
-| [Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | None | Remove a homeRealmDiscoveryPolicy object from a [servicePrincipal](serviceprincipal.md) object. |
+| [List](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
+| [Create](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Create a homeRealmDiscoveryPolicy object. |
+| [Get](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
+| [Update](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
+| [Delete](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
+| [List applies to](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign to service principal](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | None | Assign a homeRealmDiscoveryPolicy object to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned to service principal](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection | List the homeRealmDiscoveryPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Unassign from service principal](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | None | Remove a homeRealmDiscoveryPolicy object from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
@@ -63,7 +63,7 @@ The properties below form the JSON object that represents a token lifetime polic
   ]
 ```
 
-| Property	   | Type	|Description| 
+| Property       | Type    |Description| 
 |:---------------|:--------|:----------|
 |AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there's only one verified and federated domain in the tenant, then users are taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there's more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
 |AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Microsoft Entra token endpoint. Only works if Password Hash Sync is enabled. Optional.|

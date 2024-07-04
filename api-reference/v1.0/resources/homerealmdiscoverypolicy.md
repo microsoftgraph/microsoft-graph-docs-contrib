@@ -24,8 +24,10 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Get](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
 | [Update](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
 | [Delete](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
-| [List applied to applications](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
-
+| [List applies to](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign to service principal](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | None | Assign a homeRealmDiscoveryPolicy object to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned to service principal](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection | List the homeRealmDiscoveryPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Unassign from service principal](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | None | Remove a homeRealmDiscoveryPolicy object from a [servicePrincipal](serviceprincipal.md) object. |
 ## Properties
 
 | Property     | Type        | Description |
