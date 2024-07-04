@@ -12,6 +12,18 @@ items:
     href: ../../api/backuprestoreroot-enable.md
 - name: Protection policy
   items:
+  - name: Protection policy
+    href: ../../resources/protectionpolicybase.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-protectionpolicies.md
+  - name: Get
+    href: ../../api/protectionpolicybase-get.md
+  - name: Delete
+    href: ../../api/protectionpolicybase-delete.md
+  - name: Activate
+    href: ../../api/protectionpolicybase-activate.md
+  - name: Deactivate
+    href: ../../api/protectionpolicybase-deactivate.md
   - name: Exchange protection policy
     items:
     - name: Exchange protection policy
