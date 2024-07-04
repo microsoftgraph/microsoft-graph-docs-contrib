@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
 Currently the supported virtual event type is [virtualEventWebinar](../resources/virtualeventwebinar.md).
@@ -68,7 +66,7 @@ The following example shows how to update a presenter on a **virtualEventWebinar
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
+PATCH https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
 Content-Type: application/json
 
 {
