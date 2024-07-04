@@ -257,9 +257,13 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Updating the customExtensionStageSettings for a policy
+### Example 3: Update the customExtensionStageSettings for a policy
 
-This example updates a policy to include a custom extension.
+The following example shows how to update a policy to include a custom extension.
+
+#### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -339,7 +343,7 @@ Content-Type: application/json
     "requestorSettings": {
         "acceptRequests": true,
         "scopeType": "AllExistingDirectorySubjects",
-        "allowedRequestors": [],
+        "allowedRequestors": []
     },
     "accessReviewSettings": null,
     "customExtensionStageSettings": [
