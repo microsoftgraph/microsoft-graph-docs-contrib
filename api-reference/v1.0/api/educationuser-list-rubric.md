@@ -1,17 +1,17 @@
 ---
-title: "List all educationRubric"
-description: "Returns a list of all the properties and relationships of your educationRubric objects."
+title: "List rubrics"
+description: "Get a list of the properties and relationships of your educationRubric objects."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
-# List all educationRubric
+# List rubrics
 
 Namespace: microsoft.graph
 
-Returns a list of all the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
+Get a list of the properties and relationships of your [educationRubric](../resources/educationrubric.md) objects. Only teachers and students can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -42,13 +42,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [educationRubric](../resources/educationrubric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [educationRubric](../resources/educationrubric.md) objects in the response body.
 
 ## Examples
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -61,15 +61,14 @@ GET https://graph.microsoft.com/v1.0/education/me/rubrics
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationRubric)"
 } -->
 
 ```http
@@ -77,198 +76,198 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/me/rubrics",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/me/rubrics?$skiptoken=MyZRVkZCUVVGQlFVRmtOWE5CUVVGQlFVRkJRWGxCUVVGQmFITnBWR2QwTDB0RlZWZFlhVWxIUjJGTFlsWlRaejA5",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/rubrics?$select=createdBy,createdDateTime",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/me/rubrics",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/me/rubrics?$skiptoken=MyZRVkZCUVVGQlFVRmtOWE5CUVVGQlFVRkJRWGxCUVVGQmFITnBWR2QwTDB0RlZWZFlhVWxIUjJGTFlsWlRaejA5",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/rubrics?$select=createdBy,createdDateTime",
+  "value": [
+    {
+      "displayName": "Postman Test Rubric",
+      "createdDateTime": "2024-06-13T08:10:39.3765737Z",
+      "lastModifiedDateTime": "2024-06-13T08:10:46.4098043Z",
+      "id": "9866d364-7b05-483f-a828-9ad5c3079511",
+      "description": {
+        "content": "This is the rubric we use on postman testing",
+        "contentType": "text"
+      },
+      "qualities": [
         {
-            "displayName": "Postman Test Rubric",
-            "createdDateTime": "2024-06-13T08:10:39.3765737Z",
-            "lastModifiedDateTime": "2024-06-13T08:10:46.4098043Z",
-            "id": "9866d364-7b05-483f-a828-9ad5c3079511",
-            "description": {
-                "content": "This is the rubric we use on postman testing",
+          "qualityId": "a227c1f2-e301-4816-9ca6-9fd8afba44a2",
+          "displayName": null,
+          "weight": 33.33,
+          "description": {
+            "content": "First quality",
+            "contentType": "text"
+          },
+          "criteria": [
+            {
+              "description": {
+                "content": "First quality is excellent",
                 "contentType": "text"
+              }
             },
-            "qualities": [
-                {
-                    "qualityId": "a227c1f2-e301-4816-9ca6-9fd8afba44a2",
-                    "displayName": null,
-                    "weight": 33.33,
-                    "description": {
-                        "content": "First quality",
-                        "contentType": "text"
-                    },
-                    "criteria": [
-                        {
-                            "description": {
-                                "content": "First quality is excellent",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "First quality is good",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "First quality is fair",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "First quality is poor",
-                                "contentType": "text"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "qualityId": "05f4349e-1fd9-4f25-a060-e2d178b6a930",
-                    "displayName": null,
-                    "weight": 33.33,
-                    "description": {
-                        "content": "Second quality",
-                        "contentType": "text"
-                    },
-                    "criteria": [
-                        {
-                            "description": {
-                                "content": "Second quality is excellent",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "Second quality is good",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "Second quality is fair",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "Second quality is poor",
-                                "contentType": "text"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "qualityId": "3d2d6593-064d-486c-a4c4-302f60d46aa0",
-                    "displayName": null,
-                    "weight": 33.33,
-                    "description": {
-                        "content": "Third quality",
-                        "contentType": "text"
-                    },
-                    "criteria": [
-                        {
-                            "description": {
-                                "content": "Third quality is excellent",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "Third quality is good",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "Third quality is fair",
-                                "contentType": "text"
-                            }
-                        },
-                        {
-                            "description": {
-                                "content": "This quality is poor",
-                                "contentType": "text"
-                            }
-                        }
-                    ]
-                }
-            ],
-            "levels": [
-                {
-                    "levelId": "1f892671-61fb-40ff-9609-e2da9add505c",
-                    "displayName": "Excellent",
-                    "description": {
-                        "content": "",
-                        "contentType": "text"
-                    },
-                    "grading": {
-                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                        "maxPoints": 4
-                    }
-                },
-                {
-                    "levelId": "7ce3a121-ff04-4c62-9d11-665f1082cddf",
-                    "displayName": "Good",
-                    "description": {
-                        "content": "",
-                        "contentType": "text"
-                    },
-                    "grading": {
-                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                        "maxPoints": 3
-                    }
-                },
-                {
-                    "levelId": "730f09ee-6848-41f5-95fa-e2f045c3e870",
-                    "displayName": "Fair",
-                    "description": {
-                        "content": "",
-                        "contentType": "text"
-                    },
-                    "grading": {
-                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                        "maxPoints": 2
-                    }
-                },
-                {
-                    "levelId": "6758adc5-acbe-43f6-881e-9769560bddfc",
-                    "displayName": "Poor",
-                    "description": {
-                        "content": "",
-                        "contentType": "text"
-                    },
-                    "grading": {
-                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                        "maxPoints": 1
-                    }
-                }
-            ],
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 100
+            {
+              "description": {
+                "content": "First quality is good",
+                "contentType": "text"
+              }
             },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
+            {
+              "description": {
+                "content": "First quality is fair",
+                "contentType": "text"
+              }
             },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "96134727-5b49-4f67-9a6b-68e133681d2a",
-                    "displayName": null
-                }
+            {
+              "description": {
+                "content": "First quality is poor",
+                "contentType": "text"
+              }
             }
+          ]
+        },
+        {
+          "qualityId": "05f4349e-1fd9-4f25-a060-e2d178b6a930",
+          "displayName": null,
+          "weight": 33.33,
+          "description": {
+            "content": "Second quality",
+            "contentType": "text"
+          },
+          "criteria": [
+            {
+              "description": {
+                "content": "Second quality is excellent",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "Second quality is good",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "Second quality is fair",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "Second quality is poor",
+                "contentType": "text"
+              }
+            }
+          ]
+        },
+        {
+          "qualityId": "3d2d6593-064d-486c-a4c4-302f60d46aa0",
+          "displayName": null,
+          "weight": 33.33,
+          "description": {
+            "content": "Third quality",
+            "contentType": "text"
+          },
+          "criteria": [
+            {
+              "description": {
+                "content": "Third quality is excellent",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "Third quality is good",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "Third quality is fair",
+                "contentType": "text"
+              }
+            },
+            {
+              "description": {
+                "content": "This quality is poor",
+                "contentType": "text"
+              }
+            }
+          ]
         }
-    ]
+      ],
+      "levels": [
+        {
+          "levelId": "1f892671-61fb-40ff-9609-e2da9add505c",
+          "displayName": "Excellent",
+          "description": {
+            "content": "",
+            "contentType": "text"
+          },
+          "grading": {
+            "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+            "maxPoints": 4
+          }
+        },
+        {
+          "levelId": "7ce3a121-ff04-4c62-9d11-665f1082cddf",
+          "displayName": "Good",
+          "description": {
+            "content": "",
+            "contentType": "text"
+          },
+          "grading": {
+            "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+            "maxPoints": 3
+          }
+        },
+        {
+          "levelId": "730f09ee-6848-41f5-95fa-e2f045c3e870",
+          "displayName": "Fair",
+          "description": {
+            "content": "",
+            "contentType": "text"
+          },
+          "grading": {
+            "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+            "maxPoints": 2
+          }
+        },
+        {
+          "levelId": "6758adc5-acbe-43f6-881e-9769560bddfc",
+          "displayName": "Poor",
+          "description": {
+            "content": "",
+            "contentType": "text"
+          },
+          "grading": {
+            "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+            "maxPoints": 1
+          }
+        }
+      ],
+      "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
+      },
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+          "displayName": null
+        }
+      },
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "id": "96134727-5b49-4f67-9a6b-68e133681d2a",
+          "displayName": null
+        }
+      }
+    }
+  ]
 }
 ```
 
