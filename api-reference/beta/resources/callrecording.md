@@ -60,7 +60,6 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "meetingId": "String",
   "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
-  "meetingOrganizerId": "String",
   "recordingContentUrl": "String"
 }
 ```
