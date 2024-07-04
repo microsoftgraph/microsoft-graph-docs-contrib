@@ -36,11 +36,11 @@ items:
     href: ../../api/user-exportpersonaldata.md
   - name: App role assignments
     items:
-    - name: List
+    - name: List app role assignments
       href: ../../api/user-list-approleassignments.md
-    - name: Add
+    - name: Add app role assignment
       href: ../../api/user-post-approleassignments.md
-    - name: Remove
+    - name: Remove app role assignment
       href: ../../api/user-delete-approleassignments.md
     - name: List appRoleAssignedResources
       href: ../../api/user-list-approleassignedresources.md
@@ -200,13 +200,13 @@ items:
       href: ../../api/user-translateexchangeids.md
   - name: Password-based single sign-on credentials
     items:
-    - name: Get
+    - name: Get credentials
       href: ../../api/user-getpasswordsinglesignoncredentials.md
-    - name: Delete
+    - name: Delete credentials
       href: ../../api/user-deletepasswordsinglesignoncredentials.md
   - name: People
     items:
-    - name: List
+    - name: List people
       href: ../../api/user-list-people.md
   - name: Personal contacts
     items:
@@ -214,17 +214,17 @@ items:
       href: ../../api/user-list-contacts.md
     - name: Create contact
       href: ../../api/user-post-contacts.md
-    - name: List contact folders
+    - name: List contactFolders
       href: ../../api/user-list-contactfolders.md
-    - name: Create contact folder
+    - name: Create contactFolder
       href: ../../api/user-post-contactfolders.md
-  - name: Profile photo
+  - name: Photo
     items:
-    - name: Get
+    - name: Get profile photo
       href: ../../api/profilephoto-get.md
-    - name: Update
+    - name: Update profile photo
       href: ../../api/profilephoto-update.md
-    - name: Delete
+    - name: Delete profile photo
       href: ../../api/profilephoto-delete.md
   - name: Planner
     items:
@@ -238,17 +238,17 @@ items:
       href: ../../api/planneruser-update.md
   - name: Profile
     items:
-    - name: Get
+    - name: Get profile
       href: ../../api/profile-get.md
-    - name: Delete
+    - name: Delete profile
       href: ../../api/profile-delete.md
   - name: Sponsors
     items:
-    - name: Assign
+    - name: Assign sponsors
       href: ../../api/user-post-sponsors.md
-    - name: List
+    - name: List sponsors
       href: ../../api/user-list-sponsors.md
-    - name: Remove
+    - name: Remove sponsors
       href: ../../api/user-delete-sponsors.md
     - name: List invited by
       href: ../../api/user-list-invitedby.md
@@ -280,7 +280,7 @@ items:
       href: ../../api/todo-post-lists.md
   - name: User settings
     items:
-    - name: Get
+    - name: Get settings
       href: ../../api/usersettings-get.md
-    - name: Update
+    - name: Update settings
       href: ../../api/usersettings-update.md
