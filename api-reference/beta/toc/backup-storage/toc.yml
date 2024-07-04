@@ -2,9 +2,9 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
-- name: Backup restore root
+- name: Backup restore
   items:
-  - name: Backup restore root
+  - name: Backup restore
     href: ../../resources/backuprestoreroot.md
   - name: Get
     href: ../../api/backuprestoreroot-get.md
