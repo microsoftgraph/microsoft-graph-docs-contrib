@@ -1,5 +1,5 @@
 ---
-title: "protectionPolicyBase resource"
+title: "protectionPolicyBase resource type"
 description: "Contains details about protection policies applied to Microsoft 365 data."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
@@ -9,7 +9,7 @@ doc_type: resourcePageType
 toc.title: Protection policy
 ---
 
-# protectionPolicyBase resource
+# protectionPolicyBase resource type
 
 Namespace: microsoft.graph
 
