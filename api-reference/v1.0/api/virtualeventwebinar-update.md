@@ -1,30 +1,29 @@
 ---
 title: "Update virtualEventWebinar"
 description: "Update the properties of a virtualEventWebinar object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Update virtualEventWebinar
-
 Namespace: microsoft.graph
-
-
 
 Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventwebinar-update-permissions"
+  "name": "virtualevent-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-update-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /solutions/virtualEvents/webinars/{virtualEventWebinarId}
+PATCH /solutions/virtualEvents/webinars/{id}
 ```
 
 ## Request headers
@@ -47,20 +46,13 @@ PATCH /solutions/virtualEvents/webinars/{virtualEventWebinarId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|status|virtualEventStatus|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`. Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|description|[itemBody](../resources/itembody.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|createdBy|[communicationsIdentitySet](../resources/communicationsidentityset.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|audience|meetingAudience|**TODO: Add Description**. The possible values are: `everyone`, `organization`, `unknownFutureValue`. Optional.|
-|coOrganizers|[communicationsUserIdentity](../resources/communicationsuseridentity.md) collection|**TODO: Add Description** Optional.|
-
-
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
+| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
+| displayName | String | Display name of the virtual event. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
 
@@ -69,42 +61,30 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 ## Examples
 
 ### Request
-
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_virtualeventwebinar"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/{virtualEventWebinarId}
+PATCH https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "status": "String",
-  "displayName": "String",
-  "description": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
   "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2024-03-31T10:00:00",
+    "timeZone": "Pacific Standard Time"
   },
   "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
-  "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ]
+    "dateTime": "2024-03-31T17:00:00",
+    "timeZone": "Pacific Standard Time"
+  }
 }
 ```
 
+---
 
 ### Response
 
@@ -112,7 +92,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
 ``` http
@@ -121,27 +102,38 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2",
-  "status": "String",
-  "displayName": "String",
+  "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
+  "status": "draft",
+  "displayName": "The Impact of Tech on Our Lives",
   "description": {
-    "@odata.type": "microsoft.graph.itemBody"
+    "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.<p>",
+    "contentType": "html"
   },
   "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2024-03-31T10:00:00",
+    "timeZone": "Pacific Standard Time"
   },
   "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2024-03-31T17:00:00",
+    "timeZone": "Pacific Standard Time"
   },
   "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+      "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
+      "displayName": "Diane Demoss",
+      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+    }
   },
-  "audience": "String",
+  "audience": "organization",
   "coOrganizers": [
     {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+      "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+      "displayName": "Kenneth Brown",
+      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ]
 }
 ```
-

@@ -1,30 +1,27 @@
 ---
 title: "virtualEventWebinar: cancel"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Cancel a virtual event webinar."
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # virtualEventWebinar: cancel
-
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventwebinar-cancel-permissions"
+  "name": "virtualevent-cancel-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-cancel-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-cancel-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/virtualEvents/webinars/{virtualEventWebinarId}/cancel
+POST /solutions/virtualEvents/webinars/{id}/cancel
 ```
 
 ## Request headers
@@ -48,27 +45,31 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "virtualeventwebinarthis.cancel"
+  "name": "virtualeventwebinar.cancel",
+  "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/{virtualEventWebinarId}/cancel
+POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/cancel
 ```
 
+---
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -77,4 +78,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

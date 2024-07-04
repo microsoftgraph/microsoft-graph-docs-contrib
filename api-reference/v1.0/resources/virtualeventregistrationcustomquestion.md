@@ -1,44 +1,46 @@
 ---
 title: "virtualEventRegistrationCustomQuestion resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Information about a custom virtual event registration question."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+---
 ---
 
 # virtualEventRegistrationCustomQuestion resource type
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+Represents a custom registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).
 
 Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/virtualeventregistrationcustomquestion-list.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection|Get a list of the [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) objects and their properties.|
-|[Get](../api/virtualeventregistrationcustomquestion-get.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md)|Read the properties and relationships of a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object.|
-|[Update](../api/virtualeventregistrationcustomquestion-update.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md)|Update the properties of a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object.|
-|[Delete](../api/virtualeventregistrationcustomquestion-delete.md)|None|Delete a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object.|
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|answerChoices|String collection|**TODO: Add Description**|
-|answerInputType|virtualEventRegistrationQuestionAnswerInputType|**TODO: Add Description**.The possible values are: `text`, `multilineText`, `singleChoice`, `multiChoice`, `boolean`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description** Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isRequired|Boolean|**TODO: Add Description** Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
+|answerInputType|[virtualEventRegistrationQuestionAnswerInputType](#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer.|
+|displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 
-## Relationships
-None.
+### virtualEventRegistrationQuestionAnswerInputType values
+
+The following shows the supported types of answer input for a custom registration question.
+
+| Member | Description |
+| ----- | ----------- |
+| text | The registration question accepts single-line text. |
+| multilineText | The registration question accepts multi-line text. |
+| singleChoice | The registration question accepts one answer from a list of options. |
+| multiChoice | The registration question accepts more than one answer from a list of options. |
+| boolean | The registration question accepts a yes, or no answer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -51,13 +53,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "isRequired": "Boolean",
   "answerChoices": [
     "String"
   ],
-  "answerInputType": "String"
+  "answerInputType": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isRequired": "Boolean"
 }
 ```
-

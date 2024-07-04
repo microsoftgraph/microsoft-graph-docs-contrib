@@ -1,23 +1,27 @@
 ---
 title: "List sessions"
-description: "Get the virtualEventSession resources from the sessions navigation property."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a list of sessions that a registrant registered for in a webinar."
+author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions
-
+# List sessions 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
 
-Get the virtualEventSession resources from the sessions navigation property.
+> [!NOTE]
+> 
+> Currently, this API only supports single session webinars and returns a single session. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -33,44 +37,42 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /virtualEventRegistration/sessions
+GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
-
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body. 
+
+> [!NOTE]
+> 
+> Currently, this API is only able to return the session summary, which is a partial representation of the full session object.
 
 ## Examples
 
 ### Request
-
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventsession"
+  "name": "list_virtualeventregistrationsessions"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/virtualEventRegistration/sessions
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions
 ```
 
+---
 
 ### Response
-
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -87,45 +89,31 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.virtualEventSession",
-      "id": "5d14c090-1e97-a9ce-a3e9-f0eb1b6d37ed",
-      "joinWebUrl": "String",
-      "subject": "String",
-      "audioConferencing": {
-        "@odata.type": "microsoft.graph.audioConferencing"
-      },
-      "chatInfo": {
-        "@odata.type": "microsoft.graph.chatInfo"
-      },
-      "videoTeleconferenceId": "String",
-      "joinMeetingIdSettings": {
-        "@odata.type": "microsoft.graph.joinMeetingIdSettings"
-      },
-      "joinInformation": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "lobbyBypassSettings": {
-        "@odata.type": "microsoft.graph.lobbyBypassSettings"
-      },
-      "isEntryExitAnnounced": "Boolean",
-      "allowedPresenters": "String",
-      "allowAttendeeToEnableMic": "Boolean",
-      "allowAttendeeToEnableCamera": "Boolean",
-      "allowMeetingChat": "String",
-      "allowTeamworkReactions": "Boolean",
-      "shareMeetingChatHistoryDefault": "String",
-      "allowParticipantsToChangeName": "Boolean",
-      "recordAutomatically": "Boolean",
-      "watermarkProtection": {
-        "@odata.type": "microsoft.graph.watermarkProtectionValues"
-      },
-      "startDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "endDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      }
+      "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
+      "startDateTime": "2023-08-08T12:30:00Z",
+      "endDateTime": "2023-08-09T22:00:00Z",
+      "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+      "subject": "Session one",
+      "isBroadcast": null,
+      "broadcastSettings": null,
+      "capabilities": [],
+      "audioConferencing": null,
+      "chatInfo": null,
+      "videoTeleconferenceId": null,
+      "externalId": null,
+      "joinMeetingIdSettings": null,
+      "lobbyBypassSettings": null,
+      "isEntryExitAnnounced": null,
+      "allowedPresenters": null,
+      "allowAttendeeToEnableMic": null,
+      "allowAttendeeToEnableCamera": null,
+      "allowMeetingChat": null,
+      "shareMeetingChatHistoryDefault": null,
+      "allowTeamworkReactions": null,
+      "recordAutomatically": null,
+      "watermarkProtection": null,
+      "allowParticipantsToChangeName": null
     }
   ]
 }
 ```
-

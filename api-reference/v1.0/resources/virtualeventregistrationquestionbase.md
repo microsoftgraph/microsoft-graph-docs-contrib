@@ -1,44 +1,44 @@
 ---
 title: "virtualEventRegistrationQuestionBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The abstract base type for a virtual event registration question."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+toc.title: Virtual event registration question
 ---
 
 # virtualEventRegistrationQuestionBase resource type
 
 Namespace: microsoft.graph
 
+The abstract base type for a virtual event registration question.
 
-
-**TODO: Add Description**
-This is an abstract type.
-
+Base type of [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md).
 
 Inherits from [entity](../resources/entity.md).
 
+> [!TIP]
+> This is an abstract type and can't be used directly. Use the derived types [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) and [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) instead.
+
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualeventregistrationconfiguration-list-questions.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection|Get a list of the [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) objects and their properties.|
-|[Create](../api/virtualeventregistrationconfiguration-post-questions.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md)|Create a new [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.|
-|[Get](../api/virtualeventregistrationquestionbase-get.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md)|Read the properties and relationships of a [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.|
-|[Update](../api/virtualeventregistrationquestionbase-update.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md)|Update the properties of a [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.|
-|[Delete](../api/virtualeventregistrationconfiguration-delete-questions.md)|None|Delete a [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.|
+|[List](../api/virtualeventregistrationconfiguration-list-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) collection or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).|
+|[Create](../api/virtualeventregistrationconfiguration-post-questions.md)|[virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) object or [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object|Create a [registration](../resources/virtualeventregistration.md) question for a [webinar](../resources/virtualeventwebinar.md).|
+|[Delete](../api/virtualeventregistrationquestionbase-delete.md)|None|Delete a registration question from a [webinar](../resources/virtualeventwebinar.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isRequired|Boolean|**TODO: Add Description**|
-
-## Relationships
-None.
+|displayName|String|Display name of the registration question.|
+|id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
+|isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -51,9 +51,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationQuestionBase",
+  "displayName": "String",  
   "id": "String (identifier)",
-  "displayName": "String",
   "isRequired": "Boolean"
 }
 ```
-

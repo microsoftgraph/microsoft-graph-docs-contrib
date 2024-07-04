@@ -1,29 +1,26 @@
 ---
-title: "Create virtualEventRegistrationQuestionBase"
-description: "Create a new virtualEventRegistrationQuestionBase object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Create question"
+description: "Create a registration question for a webinar."
+author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create virtualEventRegistrationQuestionBase
-
+# Create question
 Namespace: microsoft.graph
 
+Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).
 
+You can create either a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md).
 
-Create a new [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventregistrationconfiguration-post-questions-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "virtualeventregistration_post_question" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
 
 ## HTTP request
@@ -33,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /virtualEventRegistrationConfiguration/questions
+POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
 ```
 
 ## Request headers
@@ -45,63 +42,131 @@ POST /virtualEventRegistrationConfiguration/questions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object.
+In the request body, supply a JSON representation of etiher a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or a [virtualEventRegistrationPredefinedQuestion](../resources/virtualEventRegistrationPredefinedQuestion.md) object.
 
-You can specify the following properties when creating a **virtualEventRegistrationQuestionBase**.
+You can specify the following properties when you create a **virtualEventRegistrationCustomQuestion**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|isRequired|Boolean|**TODO: Add Description** Optional.|
+|answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
+|answerInputType|virtualEventRegistrationQuestionAnswerInputType|Input type of the registration question answer. The supported values are `text`, `multilineText`, `singleChoice`, `multiChoice`, and `boolean`.|
+|displayName|String|Display name of the registration question.|
+|isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
 
+You can specify the following property when you create a **virtualEventRegistrationPredefinedQuestion**.
 
+|Property|Type|Description|
+|:---|:---|:---|
+|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and either a [virtualEventRegistrationCustomQuestion](../resources/virtualeventregistrationcustomquestion.md) or [virtualEventRegistrationPredefinedQuestion](../resources/virtualEventRegistrationPredefinedQuestion.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Add a custom registration question to a webinar registration
 
+#### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_virtualeventregistrationquestionbase_from_"
+  "name": "post_custom_question_virtualeventregistration"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/virtualEventRegistrationConfiguration/questions
+POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventRegistrationQuestionBase",
-  "displayName": "String",
-  "isRequired": "Boolean"
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
+  "displayName": "What's your job position?",
+  "answerInputType": "multiChoice",
+  "answerChoices": [
+    "Software Engineer",
+    "Engineer Manager",
+    "Product Manager"
+  ],
 }
 ```
 
+---
 
-### Response
+---
 
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionBase"
+  "@odata.type": "microsoft.graph.virtualEventRegistrationCustomQuestion"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationCustomQuestion",
+  "id": "f3115d4c-9896-42fc-a649-8ca5e3c3a43f",
+  "displayName": "What's your job position?",
+  "answerInputType": "multiChoice",
+  "answerChoices": [
+    "Software Engineer",
+    "Engineer Manager",
+    "Product Manager"
+  ],
+  "isRequired": false
+}
+```
+
+### Example 2: Add a predefined registration question to a webinar registration
+
+#### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_predefined_question_virtualeventregistration"
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
+```
+
+---
+
+``` http
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventRegistrationQuestionBase",
-  "id": "28ee9f01-a6f4-b37c-b2be-64f394e5e531",
-  "displayName": "String",
-  "isRequired": "Boolean"
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
+  "label": "street"
+}
+```
+
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventRegistrationPredefinedQuestion"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
+  "id": "7a852983-013a-4062-9e97-f784c6a57ec8",
+  "label": "street",
+  "displayName": "Address",
+  "isRequired": false
 }
 ```
 

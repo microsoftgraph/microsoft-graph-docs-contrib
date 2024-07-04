@@ -1,9 +1,9 @@
 ---
 title: "virtualEventWebinarRegistrationConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information about a webinar registration configuration."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,40 +11,32 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Contains information about a webinar registration configuration.
 
-
-**TODO: Add Description**
-
-
-Inherits from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).
+Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherits a subset of the properties and relationships from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualeventwebinar-list-registrationconfiguration.md)|[virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) collection|Get a list of the [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) objects and their properties.|
-|[Create](../api/virtualeventwebinar-post-registrationconfiguration.md)|[virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md)|Create a new [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object.|
-|[Get](../api/virtualeventwebinarregistrationconfiguration-get.md)|[virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md)|Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object.|
-|[Update](../api/virtualeventwebinarregistrationconfiguration-update.md)|[virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md)|Update the properties of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object.|
-|[Delete](../api/virtualeventwebinar-delete-registrationconfiguration.md)|None|Delete a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object.|
-|[List questions](../api/virtualeventwebinarregistrationconfiguration-list-questions.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection|Get the virtualEventRegistrationQuestionBase resources from the questions navigation property.|
-|[Create virtualEventRegistrationQuestionBase](../api/virtualeventwebinarregistrationconfiguration-post-questions.md)|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md)|Create a new virtualEventRegistrationQuestionBase object.|
+| [Get](../api/virtualeventwebinarregistrationconfiguration-get.md) | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|capacity|Int32|**TODO: Add Description** Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isManualApprovalEnabled|Boolean|**TODO: Add Description**|
-|isWaitlistEnabled|Boolean|**TODO: Add Description**|
-|registrationWebUrl|String|**TODO: Add Description** Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).|
+| registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|questions|[virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md)|
+| questions | [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection | Registration questions. |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -56,11 +48,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinarRegistrationConfiguration",
-  "id": "String (identifier)",
-  "registrationWebUrl": "String",
-  "capacity": "Integer",
-  "isWaitlistEnabled": "Boolean",
-  "isManualApprovalEnabled": "Boolean"
+  "registrationWebUrl": "String"
 }
 ```
-

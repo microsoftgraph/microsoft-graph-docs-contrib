@@ -1,30 +1,28 @@
 ---
 title: "Create virtualEventRegistration"
-description: "Create a new virtualEventRegistration object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Create a registration record for a webinar registrant."
+author: "halleclottey-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Create virtualEventRegistration
-
 Namespace: microsoft.graph
 
+Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
 
-
-Create a new [virtualEventRegistration](../resources/virtualeventregistration.md) object.
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventwebinar-post-registrations-permissions"
+  "name": "virtualeventregistration-post-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-post-registrations-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-post-permissions.md)]
 
 ## HTTP request
 
@@ -33,58 +31,128 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+POST /solutions/virtualEvents/webinars/{webinarId}/registrations
 ```
 
 ## Request headers
-
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply a JSON representation of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.
 
-In the request body, supply a JSON representation of the [virtualEventRegistration](../resources/virtualeventregistration.md) object.
+You can specify the following properties when you create a **virtualEventRegistration** with delegated permission.
 
-You can specify the following properties when creating a **virtualEventRegistration**.
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description** Optional.|
-|firstName|String|**TODO: Add Description** Optional.|
-|lastName|String|**TODO: Add Description** Optional.|
-|email|String|**TODO: Add Description** Optional.|
-|status|virtualEventAttendeeRegistrationStatus|**TODO: Add Description**. The possible values are: `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, `unknownFutureValue`. Optional.|
-|registrationDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|cancelationDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|**TODO: Add Description** Optional.|
-|preferredTimezone|String|**TODO: Add Description** Optional.|
-|preferredLanguage|String|**TODO: Add Description** Optional.|
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
 
+You can specify the following properties when you create a **virtualEventRegistration** with application permission.
 
+|Property|Type|Description|
+|:---|:---|:---|
+|firstName|String|The registrant's first name. Required. |
+|lastName|String|The registrant's last name. Required. |
+|email|String|The registrant's email address. Required. |
+|preferredTimezone|String|The registrant's time zone details. Required. |
+|preferredLanguage|String|The registrant's preferred language. Required. |
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object in the response body.
+If successful, this action returns one of the following:
+* A `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
+* A `204 No Content` response code for application permissions.
 
 ## Examples
 
-### Request
+### Example 1: Creating registration record with delegated permission
 
+Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
+
+#### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_virtualeventregistration_from_"
+  "name": "create-virtualeventregistration-delegated",
+  "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
 ``` http
+POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
+Content-Type: application/json
 
+{
+  "preferredTimezone":"Pacific Standard Time",
+  "preferredLanguage":"en-us",
+  "registrationQuestionAnswers": [
+    {
+      "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Seattle"
+      ]
+    },
+    {
+      "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
+      "value": null,
+      "booleanValue": true,
+      "multiChoiceValues": []
+    },
+    {
+      "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Cancun",
+        "Hoboken",
+        "Beijing"
+      ]
+    }
+  ]
+}
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-delegated-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-delegated-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-virtualeventregistration-delegated-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-virtualeventregistration-delegated-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventregistration-delegated-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-virtualeventregistration-delegated-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-virtualeventregistration-delegated-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-delegated-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -99,21 +167,109 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
-  "id": "34d6f3f4-8ace-b7df-db7f-ede79594f7b5",
+  "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
   "userId": "String",
-  "firstName": "String",
-  "lastName": "String",
-  "email": "String",
-  "status": "String",
-  "registrationDateTime": "String (timestamp)",
-  "cancelationDateTime": "String (timestamp)",
+  "firstName": "Emilee",
+  "lastName": "Pham",
+  "email": "EmileeMPham@contoso.com",
+  "status": "registered",
+  "registrationDateTime": "2023-03-07T22:04:17",
+  "cancelationDateTime": null,
+  "preferredTimezone":"Pacific Standard Time",
+  "preferredLanguage":"en-us",
   "registrationQuestionAnswers": [
     {
-      "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"
+      "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
+      "displayName": "Which city do you currently work in?",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Seattle"
+      ]
+    },
+    {
+      "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
+      "displayName": "Do you live in the same city where you work?",
+      "value": null,
+      "booleanValue": true,
+      "multiChoiceValues": []
+    },
+    {
+      "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
+      "displayName": "Which cities have you worked in?",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Cancun",
+        "Hoboken",
+        "Beijing"
+      ]
     }
-  ],
-  "preferredTimezone": "String",
-  "preferredLanguage": "String"
+  ]
 }
 ```
 
+### Example 2: Creating registration record with application permission
+
+Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+
+#### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-virtualeventregistration-application",
+  "@odata.type": "microsoft.graph.virtualEventRegistration"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
+Content-Type: application/json
+
+{
+  "firstName" : "Diane",
+  "lastName" : "Demoss",
+  "email" : "DianeDemoss@contoso.com",
+  "preferredTimezone":"Pacific Standard Time",
+  "preferredLanguage":"en-us",
+  "registrationQuestionAnswers": [
+    {
+      "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Seattle"
+      ]
+    },
+    {
+      "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
+      "value": null,
+      "booleanValue": true,
+      "multiChoiceValues": []
+    },
+    {
+      "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "London",
+        "New York City"
+      ]
+    }
+  ]
+}
+```
+
+---
+
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

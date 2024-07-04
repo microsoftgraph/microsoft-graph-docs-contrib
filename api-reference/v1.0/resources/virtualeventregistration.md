@@ -1,9 +1,9 @@
 ---
 title: "virtualEventRegistration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an attendee's registration record of a virtual event."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,48 +11,52 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents a registrant's registration record for a [virtualEvent](../resources/virtualevent.md).
 
-
-**TODO: Add Description**
-
+Currently, only [virtualEventWebinar](../resources/virtualeventwebinar.md) is supported.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualeventwebinar-list-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of the [virtualEventRegistration](../resources/virtualeventregistration.md) objects and their properties.|
-|[Create](../api/virtualeventwebinar-post-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Create a new [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
-|[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Read the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
-|[Update](../api/virtualeventregistration-update.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Update the properties of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
-|[Delete](../api/virtualeventwebinar-delete-registrations.md)|None|Delete a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
-|[cancel](../api/virtualeventregistration-cancel.md)|None|**TODO: Add Description**|
-|[List sessions](../api/virtualeventregistration-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get the virtualEventSession resources from the sessions navigation property.|
-|[Add virtualEventSession](../api/virtualeventregistration-post-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md)|Add sessions by posting to the sessions collection.|
-|[Remove sessions](../api/virtualeventregistration-delete-sessions.md)|None|Remove a [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[List](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
+|[Create](../api/virtualeventwebinar-post-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Create a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
+|[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
+|[Cancel](../api/virtualeventregistration-cancel.md)|None|Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
+|[List sessions](../api/virtualeventregistration-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|cancelationDateTime|DateTimeOffset|**TODO: Add Description**|
-|email|String|**TODO: Add Description**|
-|firstName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastName|String|**TODO: Add Description**|
-|preferredLanguage|String|**TODO: Add Description**|
-|preferredTimezone|String|**TODO: Add Description**|
-|registrationDateTime|DateTimeOffset|**TODO: Add Description**|
-|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|**TODO: Add Description**|
-|status|virtualEventAttendeeRegistrationStatus|**TODO: Add Description**.The possible values are: `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, `unknownFutureValue`.|
-|userId|String|**TODO: Add Description**|
+|cancelationDateTime|DateTimeOffset|Date and time when the registrant cancels their registration for the virtual event. Only appears when applicable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|email|String|Email address of the registrant.|
+|firstName|String|First name of the registrant.|
+|id|String|Unique identifier of the registrant. Read-only. Inherited from [entity](../resources/entity.md).|
+|lastName|String|Last name of the registrant.|
+|registrationDateTime|DateTimeOffset|Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
+|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
+|userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
+|preferredTimezone|String|The registrant's time zone details.|
+|preferredLanguage|String|The registrant's preferred language.|
 
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|**TODO: Add Description**|
+### virtualEventAttendeeRegistrationStatus values
+
+| Value | Description |
+| ----- | ----------- |
+| registered | The attendee successfully registered for the virtual event. |
+| canceled | The attendee canceled registration for the virtual event. |
+| waitlisted | Waitlist is enabled and the virtual event is at full capacity. The attendee is on the waitlist. |
+| pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
+| rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
-The following JSON representation shows the resource type.
+
+The following JSON representation shows the resource type
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -64,19 +68,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
-  "id": "String (identifier)",
-  "userId": "String",
-  "firstName": "String",
-  "lastName": "String",
-  "email": "String",
-  "status": "String",
-  "registrationDateTime": "String (timestamp)",
   "cancelationDateTime": "String (timestamp)",
-  "registrationQuestionAnswers": [
-    {
-      "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"
-    }
-  ],
+  "email": "String",
+  "firstName": "String",
+  "id": "String (identifier)",  
+  "lastName": "String",
+  "registrationDateTime": "String (timestamp)",
+  "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
+  "status": "String",
+  "userId": "String",
   "preferredTimezone": "String",
   "preferredLanguage": "String"
 }

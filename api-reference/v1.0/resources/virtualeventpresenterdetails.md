@@ -1,9 +1,9 @@
 ---
 title: "virtualEventPresenterDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents detail information about a virtual event presenter."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,25 +11,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Represents detail information about a virtual event presenter.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|bio|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|company|String|**TODO: Add Description**|
-|jobTitle|String|**TODO: Add Description**|
-|linkedInProfileWebUrl|String|**TODO: Add Description**|
-|personalSiteWebUrl|String|**TODO: Add Description**|
-|photo|Stream|**TODO: Add Description**|
-|twitterProfileWebUrl|String|**TODO: Add Description**|
-
-## Relationships
-None.
+|bio|[itemBody](../resources/itembody.md)|Bio of the presenter.|
+|company|String|The presenter's company name.|
+|jobTitle|String|The presenter's job title.|
+|linkedInProfileWebUrl|String|The presenter's LinkedIn profile URL.|
+|personalSiteWebUrl|String|The presenter's personal website URL.|
+|photo|Stream|The content stream of the presenter's photo.|
+|twitterProfileWebUrl|String|The presenter's Twitter profile URL.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -39,15 +36,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventPresenterDetails",
-  "photo": "Stream",
+  "bio": {"@odata.type": "microsoft.graph.itemBody"},
   "company": "String",
   "jobTitle": "String",
-  "bio": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "personalSiteWebUrl": "String",
   "linkedInProfileWebUrl": "String",
+  "personalSiteWebUrl": "String",
+  "photo": "Stream",
   "twitterProfileWebUrl": "String"
 }
 ```
-

@@ -1,23 +1,24 @@
 ---
 title: "List presenters"
-description: "Get the virtualEventPresenter resources from the presenters navigation property."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get the list of all virtualEventPresenter objects of a virtual event."
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
-
 # List presenters
 
 Namespace: microsoft.graph
 
+Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects associated with a virtual event.
 
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
-Get the virtualEventPresenter resources from the presenters navigation property.
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -33,12 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/virtualEvents/events/{virtualEventId}/presenters
+GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
+GET /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,16 +56,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows how to list all presenters of a **virtualEventTownhall**.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventpresenter"
+  "name": "list_virtualeventpresenter",
+  "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/events/{virtualEventId}/presenters
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/presenters
 ```
-
 
 ### Response
 
@@ -86,17 +85,25 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.virtualEventPresenter",
       "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
       "identity": {
-        "@odata.type": "microsoft.graph.identity"
+        "displayName": "Diane Demoss",
+        "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
       },
-      "email": "String",
-      "presenterDetails": {
-        "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-      }
+      "email": "DianeDemoss@contoso.com",
+      "presenterDetails": null
+    },
+    {
+      "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+      "identity": {
+        "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+        "displayName": "Kenneth Brown",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+      },
+      "email": "KennethBrown@contoso.com",
+      "presenterDetails": null
     }
   ]
 }
 ```
-

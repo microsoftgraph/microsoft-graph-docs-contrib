@@ -1,9 +1,9 @@
 ---
 title: "virtualEventRegistrationPredefinedQuestion resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a predefined registration question associated with a virtual event."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,33 +11,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents a predefined registration question associated with a [virtualEventRegistration](../resources/virtualeventregistration.md).
 
-
-**TODO: Add Description**
-
+Currently, [virtualEventRegistration](../resources/virtualeventregistration.md) only supports [virtualEventWebinar](../resources/virtualeventwebinar.md). 
 
 Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/virtualeventregistrationpredefinedquestion-list.md)|[virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) collection|Get a list of the [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) objects and their properties.|
-|[Get](../api/virtualeventregistrationpredefinedquestion-get.md)|[virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md)|Read the properties and relationships of a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object.|
-|[Update](../api/virtualeventregistrationpredefinedquestion-update.md)|[virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md)|Update the properties of a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object.|
-|[Delete](../api/virtualeventregistrationpredefinedquestion-delete.md)|None|Delete a [virtualEventRegistrationPredefinedQuestion](../resources/virtualeventregistrationpredefinedquestion.md) object.|
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isRequired|Boolean|**TODO: Add Description** Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
-|label|virtualEventRegistrationPredefinedQuestionLabel|**TODO: Add Description**.The possible values are: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, `organization`, `unknownFutureValue`.|
-
-## Relationships
-None.
+|displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
+|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -50,10 +40,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationPredefinedQuestion",
+  "label": "String",
+  "displayName": "String",  
   "id": "String (identifier)",
-  "displayName": "String",
-  "isRequired": "Boolean",
-  "label": "String"
+  "isRequired": "Boolean"
 }
 ```
-
