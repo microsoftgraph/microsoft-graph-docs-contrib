@@ -13,7 +13,7 @@ ms.date: 05/30/2024
 
 # Set up change notifications that include resource data (rich notifications)
 
-Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. While you can subscribe to the basic kind of change notifications, some resources such as Microsoft Teams chat message and presence resources, support rich notifications. 
+Microsoft Graph allows apps to subscribe to and receive notifications of changes to resources they're interested in. While you can subscribe to basic change notifications, resources such as Microsoft Teams chat message and presence resources, for example, support rich notifications. 
 
 **Rich notifications** include the resource data that changed, allowing your app to run business logic without having to make a separate API call to fetch the changed resource. This article guides you through the process of setting up rich notifications in your application.
 
@@ -384,7 +384,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8&preserve-view=true)) with the private key.
+2. Initialize an RSA cryptographic component with the private key. An easy way to initialize an RSA component is to use the [RSACertificateExtensions.GetRSAPrivateKey(X509Certificate2) Method](/dotnet/api/system.security.cryptography.x509certificates.rsacertificateextensions.getrsaprivatekey?view=netframework-4.8&preserve-view=true) with an [X509Certificate2](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netframework-4.8&preserve-view=true) instance, which contains the private key described in [Managing encryption keys](#managing-encryption-keys).
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.
 
@@ -394,7 +394,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
   
     Compare it to the value in **dataSignature**. If they don't match, assume the payload has been tampered with and don't decrypt it.
 
-5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
+5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
 
     - Use the following decryption parameters for the AES algorithm:
 
@@ -445,11 +445,12 @@ This section contains some useful code snippets that use C# and .NET for each st
 # [C#](#tab/csharp)
 ```csharp
 // Initialize with the private key that matches the encryptionCertificateId.
-RSACryptoServiceProvider rsaProvider = ...;        
+X509Certificate2 certificate = <instance of X509Certificate2 matching the encryptionCertificateId property>;
+RSA rsa = certificate.GetRSAPrivateKey();        
 byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from dataKey property>);
 
 // Decrypt using OAEP padding.
-byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP: true);
+byte[] decryptedSymmetricKey = rsa.Decrypt(encryptedSymmetricKey, fOAEP: true);
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
@@ -544,7 +545,7 @@ else
 
 # [C#](#tab/csharp)
 ```csharp
-AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+Aes aesProvider = Aes.Create();
 aesProvider.Key = decryptedSymmetricKey;
 aesProvider.Padding = PaddingMode.PKCS7;
 aesProvider.Mode = CipherMode.CBC;
