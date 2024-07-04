@@ -65,14 +65,19 @@
             "synchronization",
             "synchronizationTemplate",
             "synchronizationJob",
-            "synchronizationSchema",
-            "directoryDefinition"
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
                 "bulkUpload"
+              ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
               ]
             }
           ]

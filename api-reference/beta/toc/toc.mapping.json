@@ -103,6 +103,12 @@
               "resources": [
                 "bulkUpload"
               ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
+              ]
             }
           ]
         }
