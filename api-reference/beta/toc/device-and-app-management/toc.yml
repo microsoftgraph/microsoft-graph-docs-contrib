@@ -81,8 +81,6 @@ items:
       href: ../../api/cloudpc-changeuseraccounttype.md
     - name: End grace period
       href: ../../api/cloudpc-endgraceperiod.md
-    - name: Get remote action results
-      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Power on
       href: ../../api/cloudpc-poweron.md
     - name: Power off
@@ -117,6 +115,8 @@ items:
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
       href: ../../api/cloudpc-getsupportedcloudpcremoteactions.md
+    - name: Retrieve remote action results
+      href: ../../api/cloudpc-retrievecloudpcremoteactionresults.md
     - name: Retry partner agent installation
       href: ../../api/cloudpc-retrypartneragentinstallation.md
     - name: Validate bulk resize
@@ -131,6 +131,8 @@ items:
       href: ../../api/cloudpc-bulkresize.md
     - name: Bulk restore remote action (deprecated)
       href: ../../api/manageddevice-bulkrestorecloudpc.md
+    - name: Get remote action results (deprecated)
+      href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
     - name: Get shift work access state (deprecated)
@@ -263,8 +265,12 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: getDailyAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: getFrontlineReport
+      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getInaccessibleCloudPcReports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: getRawRemoteConnectionReports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
     - name: getRealTimeRemoteConnectionLatency
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: getRealTimeRemoteConnectionStatus
@@ -273,12 +279,10 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: getSharedUseLicenseUsageReport
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getFrontlineReport
-      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getTotalAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getRawRemoteConnectionReports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: retrieveCrossRegionDisasterRecoveryReport
+      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
@@ -416,6 +420,10 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk disaster recovery failback
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
+    - name: Cloud PC bulk disaster recovery failover
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -5894,8 +5902,6 @@ items:
         href: ../../api/intune-devices-devicelogcollectionresponse-update.md
       - name: createDownloadUrl action
         href: ../../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
-      - name: downloadDeviceLogs action
-        href: ../../api/intune-devices-devicelogcollectionresponse-downloaddevicelogs.md
     - name: Device management abstract complex setting definition
       items:
       - name: Device management abstract complex setting definition
@@ -6446,6 +6452,8 @@ items:
         href: ../../api/intune-devices-manageddevice-rotatelocaladminpassword.md
       - name: pauseConfigurationRefresh action
         href: ../../api/intune-devices-manageddevice-pauseconfigurationrefresh.md
+      - name: changeAssignments action
+        href: ../../api/intune-devices-manageddevice-changeassignments.md
       - name: appDiagnostics function
         href: ../../api/intune-devices-manageddevice-appdiagnostics.md
       - name: downloadAppDiagnostics action
@@ -7944,10 +7952,6 @@ items:
         href: ../../api/intune-rbac-operationapprovalpolicy-delete.md
       - name: Update operationApprovalPolicy
         href: ../../api/intune-rbac-operationapprovalpolicy-update.md
-      - name: getApprovableOperations function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md
-      - name: getOperationsRequiringApproval function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md
       - name: retrieveApprovableOperations function
         href: ../../api/intune-rbac-operationapprovalpolicy-retrieveapprovableoperations.md
       - name: retrieveOperationsRequiringApproval function

@@ -3,7 +3,7 @@ title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ Create a new [androidManagedAppProtection](../resources/intune-shared-androidman
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Permissions
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
