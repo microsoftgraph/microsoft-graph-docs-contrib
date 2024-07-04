@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 946
+Content-Length: 1066
 
 {
   "value": [
@@ -73,6 +73,8 @@ Content-Length: 946
       "deviceName": "Device Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
+      "deviceModelName": "Device Model Name value",
+      "deviceManufacturerName": "Device Manufacturer Name value",
       "maxCapacityPercentage": 5,
       "estimatedRuntimeInMinutes": 9,
       "batteryAgeInDays": 0,

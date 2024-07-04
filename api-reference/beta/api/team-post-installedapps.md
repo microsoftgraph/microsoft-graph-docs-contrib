@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 
 ## Examples
 
-### Example 1: Install app in a chat
+### Example 1: Install an app in a chat
 
 #### Request
 
@@ -128,7 +128,8 @@ The following example shows the response.
 HTTP/1.1 200 OK
 ```
 
-### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
+### Example 2: Install an app in a team with consent to the resource-specific permissions required by the app
+
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
@@ -203,7 +204,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
+
+If your call results in an error message that states `The required permissions have not been consented to by the caller`, the request body doesn't specify all the RSC permissions required by the app to which the user must grant consent. Make sure that you build your request as shown in the [example](#request-1).
+
 ## Related content
+
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
@@ -220,5 +225,3 @@ HTTP/1.1 201 Created
   "suppressions": []
 }
 -->
-
-
