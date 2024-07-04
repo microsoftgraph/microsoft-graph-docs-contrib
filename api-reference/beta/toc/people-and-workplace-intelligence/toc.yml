@@ -50,6 +50,12 @@ items:
     href: ../../api/peopleadminsettings-list-profilecardproperties.md
   - name: Create profileCardProperty
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
+  - name: List photoUpdateSettings
+    href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+  - name: Create photoUpdateSettings
+    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+  - name: Delete photoUpdateSettings
+    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
   - name: Pronouns settings
     items:
     - name: Pronouns settings
@@ -72,6 +78,20 @@ items:
       href: ../../api/profilecardproperty-update.md
     - name: Delete
       href: ../../api/profilecardproperty-delete.md
+  - name: Photo update settings
+    items:
+    - name: Photo update settings
+      href: ../../resources/photoupdatesettings.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+    - name: Get
+      href: ../../api/photoupdatesettings-get.md
+    - name: Update
+      href: ../../api/photoupdatesettings-update.md
+    - name: Delete
+      href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -92,6 +112,20 @@ items:
     href: ../../api/peopleadminsettings-list-pronouns.md
   - name: Update
     href: ../../api/pronounssettings-update.md
+- name: Photo update settings
+  items:
+  - name: Photo update settings
+    href: ../../resources/photoupdatesettings.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+  - name: Get
+    href: ../../api/photoupdatesettings-get.md
+  - name: Update
+    href: ../../api/photoupdatesettings-update.md
+  - name: Delete
+    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
 - name: Profile
   items:
   - name: Profile
