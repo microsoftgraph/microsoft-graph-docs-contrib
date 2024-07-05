@@ -2112,7 +2112,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "azureADAuthentication",
                 "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
@@ -2142,6 +2141,21 @@
                     "userCountMetric",
                     "userRequestsMetric",
                     "userSignUpMetric"
+                  ]
+                },
+                {
+                  "name": "Microsoft Entra health",
+                  "resources": [
+                    "azureADAuthentication"
+                  ],
+                  "childNodes": [
+                    {
+                      "name": "Microsoft Entra health monitoring",
+                      "overview": "../../resources/healthmonitoring-overview.md",
+                      "resources": [
+                        "healthmonitoring-alert"
+                      ]
+                    }
                   ]
                 },
                 {

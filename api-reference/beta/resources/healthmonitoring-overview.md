@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: "Microsoft Entra health monitoring"
 ---
 
 # Overview
