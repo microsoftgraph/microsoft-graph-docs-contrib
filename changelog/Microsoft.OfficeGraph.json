@@ -107,7 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userInsightsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-1.0) resource and supported methods.",
           "Target": "userInsightsSettings"
         },
         {
