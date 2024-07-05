@@ -2886,24 +2886,26 @@ items:
       items:
       - name: Claims mapping policy
         href: ../../resources/claimsmappingpolicy.md
-      - name: List
-        href: ../../api/claimsmappingpolicy-list.md
-      - name: Create
+      - name: Create claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get
+      - name: Get claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-get.md
-      - name: Update
+      - name: List claimsMappingPolicies
+        href: ../../api/claimsmappingpolicy-list.md
+      - name: Update claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete
+      - name: Delete claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-delete.md
-      - name: List appliesTo
-        href: ../../api/claimsmappingpolicy-list-appliesto.md
-      - name: Assign to service principal
-        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-      - name: List assigned to service principal
-        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-      - name: Unassign from service principal
-        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+      - name: Directory objects
+        items:
+        - name: List appliesTo
+          href: ../../api/claimsmappingpolicy-list-appliesto.md
+        - name: Assign claimsMappingPolicy
+          href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+        - name: List assigned claimsMappingPolicy
+          href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+        - name: Remove claimsMappingPolicy
+          href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Continuous access evaluation policy
       items:
       - name: Continuous access evaluation policy
@@ -2952,23 +2954,23 @@ items:
       items:
       - name: Home realm discovery policy
         href: ../../resources/homerealmdiscoverypolicy.md
-      - name: List
-        href: ../../api/homerealmdiscoverypolicy-list.md
-      - name: Create
+      - name: Create homeRealmDiscoveryPolicy
         href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-      - name: Get
+      - name: Get homeRealmDiscoveryPolicy
         href: ../../api/homerealmdiscoverypolicy-get.md
-      - name: Update
+      - name: List homeRealmDiscoveryPolicies
+        href: ../../api/homerealmdiscoverypolicy-list.md
+      - name: Update homeRealmDiscoveryPolicy
         href: ../../api/homerealmdiscoverypolicy-update.md
-      - name: Delete
+      - name: Delete homeRealmDiscoveryPolicy
         href: ../../api/homerealmdiscoverypolicy-delete.md
-      - name: List applies to
+      - name: List appliesTo
         href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
-      - name: Assign to service principal
+      - name: Assign homeRealmDiscoveryPolicy
         href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
-      - name: List assigned to service principal
+      - name: List assigned homeRealmDiscoveryPolicy
         href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
-      - name: Unassign from service principal
+      - name: Remove homeRealmDiscoveryPolicy
         href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
     - name: Identity security defaults enforcement policy
       items:
@@ -3010,50 +3012,22 @@ items:
       items:
       - name: Permission grant preapproval policy
         href: ../../resources/permissiongrantpreapprovalpolicy.md
-      - name: List
+      - name: List permissionGrantPreApprovalPolicies
         href: ../../api/policyroot-list-permissiongrantpreapprovalpolicies.md
-      - name: Create
+      - name: Create permissionGrantPreApprovalPolicy
         href: ../../api/policyroot-post-permissiongrantpreapprovalpolicies.md
-      - name: Get
+      - name: Get permissionGrantPreApprovalPolicy
         href: ../../api/permissiongrantpreapprovalpolicy-get.md
-      - name: Update
+      - name: Update permissionGrantPreApprovalPolicy
         href: ../../api/permissiongrantpreapprovalpolicy-update.md
-      - name: Delete
+      - name: Delete permissionGrantPreApprovalPolicy
         href: ../../api/permissiongrantpreapprovalpolicy-delete.md
-      - name: List assigned to service principal
+      - name: List permissionGrantPreApprovalPolicy assigned to servicePrincipal
         href: ../../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
-      - name: Assign to service principal
+      - name: Assign permissionGrantPreApprovalPolicy to servicePrincipal
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
-      - name: Unassign from service principal
+      - name: Remove permissionGrantPreApprovalPolicy from servicePrincipal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        items:
-        - name: Remote desktop security configuration
-          href: ../../resources/remotedesktopsecurityconfiguration.md
-        - name: Create
-          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-        - name: Get
-          href: ../../api/remotedesktopsecurityconfiguration-get.md
-        - name: Update
-          href: ../../api/remotedesktopsecurityconfiguration-update.md
-        - name: Delete
-          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-      - name: Targetdevicegroup
-        items:
-        - name: Targetdevicegroup
-          href: ../../resources/targetdevicegroup.md
-        - name: List
-          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-        - name: Create
-          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-        - name: Get
-          href: ../../api/targetdevicegroup-get.md
-        - name: Update
-          href: ../../api/targetdevicegroup-update.md
-        - name: Delete
-          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy

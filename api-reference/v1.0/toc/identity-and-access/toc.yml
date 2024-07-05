@@ -1989,24 +1989,26 @@ items:
       items:
       - name: Claims mapping policy
         href: ../../resources/claimsmappingpolicy.md
-      - name: List
-        href: ../../api/claimsmappingpolicy-list.md
-      - name: Create
+      - name: Create claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get
+      - name: Get claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-get.md
-      - name: Update
+      - name: List claimsMappingPolicies
+        href: ../../api/claimsmappingpolicy-list.md
+      - name: Update claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete
+      - name: Delete claimsMappingPolicy
         href: ../../api/claimsmappingpolicy-delete.md
-      - name: List appliesTo
-        href: ../../api/claimsmappingpolicy-list-appliesto.md
-      - name: Assign to service principal
-        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-      - name: List assigned to service principal
-        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-      - name: Unassign from service principal
-        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+      - name: Directory objects
+        items:
+        - name: List appliesTo
+          href: ../../api/claimsmappingpolicy-list-appliesto.md
+        - name: Assign claimsMappingPolicy
+          href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+        - name: List assigned claimsMappingPolicy
+          href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+        - name: Remove claimsMappingPolicy
+          href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Home realm discovery policy
       items:
       - name: Home realm discovery policy
@@ -2021,14 +2023,8 @@ items:
         href: ../../api/homerealmdiscoverypolicy-update.md
       - name: Delete
         href: ../../api/homerealmdiscoverypolicy-delete.md
-      - name: List applies to
+      - name: List applied to applications
         href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
-      - name: Assign to service principal
-        href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
-      - name: List assigned to service principal
-        href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
-      - name: Unassign from service principal
-        href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
