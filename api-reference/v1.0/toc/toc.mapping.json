@@ -490,6 +490,7 @@
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
+        "Microsoft Entra ID",
         "Identity and access"
       ],
       "childNodes": [
@@ -498,6 +499,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -543,7 +545,8 @@
             "Access reviews",
             "Entitlement Management",
             "Terms of Use",
-            "Privileged Identity Management"
+            "Privileged Identity Management",
+            "Microsoft Entra ID Governance"
           ],
           "childNodes": [
             {
@@ -821,8 +824,6 @@
             "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organizationalBranding",
-            "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
@@ -848,6 +849,8 @@
               "resources": [
                 "authenticationStrengthPolicy",
                 "authenticationCombinationConfiguration",
+                "fido2CombinationConfiguration",
+                "x509CertificateCombinationConfiguration",
                 "authenticationMethodModeDetail"
               ]
             },
@@ -941,6 +944,17 @@
                 "multiTenantOrganizationJoinRequestRecord",
                 "multiTenantOrganizationPartnerConfigurationTemplate",
                 "multiTenantOrganizationIdentitySyncPolicyTemplate"
+              ]
+            },
+            {
+              "name": "Organizational branding",
+              "keywords": [
+                "Tenant branding",
+                "UX customization"
+              ],
+              "resources": [
+                "organizationalBranding",
+                "organizationalBrandingLocalization"
               ]
             },
             {
@@ -1099,7 +1113,9 @@
       "overview": "../../resources/social-overview.md",
       "resources": [
         "person",
-        "peopleAdminSettings"
+        "peopleAdminSettings",
+        "insightsSettings",
+        "pronounsSettings"
       ],
       "childNodes": [
         {

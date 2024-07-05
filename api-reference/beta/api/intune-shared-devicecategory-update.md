@@ -3,7 +3,7 @@ title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ Update the properties of a [deviceCategory](../resources/intune-shared-devicecat
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-## Permissions
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -3,7 +3,7 @@ title: "List tags"
 description: "Get a list of tag resources from an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
