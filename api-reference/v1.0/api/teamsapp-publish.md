@@ -331,7 +331,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`Serialization_ManifestVersionPropertyMissing`| The file doesn't contain the "{0}" property.| The `manifestVersion` property is missing in the app manifest file. Here, {0} is the string for `manifestVersion` property.|
 |`Serialization_FileMissing`| The file {0} couldn't be found in the app package.| The expected file is missing in the app package.|
 |`Serialization_TrailingCommaInManifestJsonFile`| Manifest json file contains trailing comma.| The app manifest file contains trailing comma.|
-|`SchemaError_MultipleOf`| Integer {0} isn't a multiple of {1}.| The app manifest file failed the `multipleOf` validation of the schema.  Here, {0} represents the integer value and {1} indicates the required multiple. |
+|`SchemaError_MultipleOf`| Integer {0} isn't a multiple of {1}.| The app manifest file failed the `multipleOf` validation of the schema. Here, {0} represents the integer value and {1} indicates the required multiple. |
 |`SchemaError_Maximum`| Integer {0} exceeds maximum value of {1}.| The app manifest file failed the `maximum` validation of the schema. Here, {0} represents the value that exceeds the maximum limit and {1} represents the maximum limit. |
 |`SchemaError_Minimum`| Integer {0} is less than minimum value of {1}.|The app manifest file failed the `minimum` validation of the schema. Here, {0} represents the value that exceeds the minimum limit and {1} represents the minimum limit.|
 |`SchemaError_MaximumLength`| String {0} exceeds maximum length of {1}.| The app manifest file failed the `maximumLength` validation of the schema. Here, {0} represents the string that exceeds the maximum length and {1} represents the maximum length.|
@@ -377,7 +377,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`MsftEntraAuthTypeComposeExtensionContainsNoMsftEntraConfiguration`|API-based compose extension with microsoftEntra authType have no microsoftEntraConfiguration defined.| The API-based compose extension doesn't have `microsoftEntraConfiguration` defined in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionWebApplicationInfoOrResourceNotDefined`|API-based compose extension with microsoftEntra authType have no webApplicationInfo or resource defined on manifest.| The API-based compose extension with `microsoftEntra` authType doesn't have `webApplicationInfo` or `resource` defined in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionSupportsSingleSignOnFalse` | API-based compose extension with microsoftEntra authType doesn't set supportsSingleSignOn to true.| The API-based compose extension doesn't set `supportsSingleSignOn` to `true` in the app manifest.|
-|`MsftEntraAuthTypeComposeExtensionResourceURLNotMatchServerURLOnApiSpec` |API-based compose extension with microsoftEntra authType resource url on manifest doesn't match server url on API specification file.| The API-based compose extension with `microsoftEntra` authType resource URL in the app manifest doesn't match server URL in the API specification file.|
+|`MsftEntraAuthTypeComposeExtensionResourceURLNotMatchServerURLOnApiSpec` |API-based compose extension with microsoftEntra authType resource URL on manifest doesn't match server URL on API specification file.| The API-based compose extension with `microsoftEntra` authType resource URL in the app manifest doesn't match server URL in the API specification file.|
 |`NoAuthTypeComposeExtensionContainsAuthConfiguration` |API-based compose extension with none authType have auth-related configuration defined.| The API-based compose extension with authType `microsoftEntraConfiguration` or `apiSecretServiceConfiguration` isn't defined in the app manifest.|
 |`ApiSpecificationFileContainUnsupportedHttpMethod`| API-based compose extension have server urls that have unsupported http method defined on apiSpecificationFile. Currently only GET and POST are supported.| The API-based compose extension has unsupported `http` method defined in the `apiSpecificationFile`.|
 |`ApiSpecificationFileRequiredParameterContainUnsupportedLocation`| API-based compose extension have unsupported parameter location defined on apiSpecificationFile for {0}. Currently only path and query supported.| The API-based compose extension has unsupported parameter location defined in the `apiSpecificationFile`.|
@@ -386,26 +386,26 @@ If you send a request to upload an app manifest that contains missing informatio
 |`ApiSpecificationFileRequestBodySchemaContainKeywords` | API-based compose extension have keywords.|The API-based compose extension have keywords defined in request body in the `apiSpecificationFile`.|
 |`ApiSpecificationFileRequiredParameterOrPropertyNotDefinedOnManifest`| API-based compose extension have required parameters or properties {0} not defined on manifest.| The API-based compose extension have `required` parameter isn't defined in the app manifest.|
 |`ApiSpecificationFileResponseContainUnsupportedMediaType`| API-based compose extension have unsupported media type defined in response on apiSpecificationFile. Currently only application/json supported.	| The API-based compose extension have unsupported `media` type defined in response in the `apiSpecificationFile`.|
-|`ApiSpecificationFileServerUrlsContainHttp`| API-based compose extension have server urls that have http protocal defined on apiSpecificationFile.| The API-based compose extension have server urls that contain `http` protocal in the `apiSpecificationFile`.|
-|`ApiSpecificationFileServerUrlsContainInvalidUrl`| API-based compose extension have server urls that are invalid url defined on apiSpecificationFile.| The API-based compose extension have `invalid` url defined in the `apiSpecificationFile`.|
+|`ApiSpecificationFileServerUrlsContainHttp`| API-based compose extension have server urls that have http protocol defined on apiSpecificationFile.| The API-based compose extension have server urls that contain `http` protocol in the `apiSpecificationFile`.|
+|`ApiSpecificationFileServerUrlsContainInvalidUrl`| API-based compose extension have server urls that are invalid URL defined on apiSpecificationFile.| The API-based compose extension have `invalid` URL defined in the `apiSpecificationFile`.|
 |`ServerUrlsMissingOnApiSpecificationFile`| API-based compose extension have no server urls defined on apiSpecificationFile.| The error that occurs The API-based compose extension have no server urls defined in the `apiSpecificationFile`.|
 |`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension can't have apiResponseRenderingTemplateFile defined.|The bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
 |`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
 |`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
 |`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| The `appId` isn't provided.|
-|`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| When manifest version isn't provided.|
+|`CommonManifestVersionIsRequiredField`|The required field in manifest 'manifest Version' is missing.| The manifest version isn't provided.|
 |`CommonSchemaUrlIsRequiredField`| Schema URL must be present.| The schema isn't provided.|
-|`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and url.| Dashboard cards icon mustn't contain both icon name and url.|
+|`DashboardCardBothIconNameAndUrlPresent`| Dashboard cards icon shouldn't contain both icon name and URL.| Dashboard cards icon mustn't contain both icon name and URL.|
 |`DashboardCardEntityIdsAreNotUnique`| Dashboard card entity IDs should be unique.| Entity Ids for dashboards card aren't unique.|
 |`DeveloperNameIsRequiredField`| Required field 'developer name' is missing in the manifest.| The developer name isn't provided.|
 |`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| The developer name is more than 32 characters long.|
 |`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| The developer privacy URL did not use HTTPS.|
 |`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The termsOfUseUrl** is missing.|
-|`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| The developer terms of use url isn't `https`.|
-|`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website url is missing.|
-|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL did not use HTTPS.|
+|`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| The developer terms of use URL isn't `https`.|
+|`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website URL is missing.|
+|`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL didn't use HTTPS.|
 |`UniqueActivityTypeInActivitiesValidation` |Manifest shouldn't contain duplicate Activity Type.| The activity type isn't unique in the app manifest.|
 |`UniqueIdInActivitiesGroupValidation` |Manifest shouldn't contain duplicate ID in Activity Groups.| The activity group ID isn't unique in the app manifest.|
 |`FullDescriptionCannotBeEmpty` |Full Description can't be empty.| The full description is empty.|
@@ -417,7 +417,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The dimensions of the outline icon are incorrect.|
 |`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined on API specification file. |
-|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| When the `systemDefault` activity type is defined in the app manifest.|
+|`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description was empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
