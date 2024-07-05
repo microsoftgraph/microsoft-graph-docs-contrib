@@ -179,7 +179,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,disasterRecoveryCapability
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName
 ```
 
 #### Response
@@ -229,12 +229,67 @@ Content-Type: application/json
       ]
     },
     "allotmentDisplayName": null,
-    "deviceRegionName": "eastus2",
-    "disasterRecoveryCapability": null
+    "deviceRegionName": "eastus2"
 }
 ```
 
-### Exmaple 3: Get the default properties of a Cloud PC of the signed-in user
+### Example 3: List Cloud PCs with disasterRecoveryCapability.capabilityType filter and select parameter
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc_selected_properties"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$select=id,displayName,disasterRecoveryCapability&$filter=disasterRecoveryCapability/capabilityType eq 'failover'
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc_selected_and_filtered_properties",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/cloudPCs(id,displayName,disasterRecoveryCapability)",
+    "value": [
+        {
+            "id": "662009bc-7732-4f6f-8726-25883518b33e",
+            "displayName": "Demo-0",
+            "disasterRecoveryCapability": {
+                "primaryRegion": "eastus",
+                "secondaryRegion": "westus",
+                "capabilityType": "failover"
+    }
+        },
+        {
+            "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+            "displayName": "Demo-1",
+            "disasterRecoveryCapability": {
+                "primaryRegion": "eastus",
+                "secondaryRegion": "westus",
+                "capabilityType": "failover"
+    }
+        }
+    ]
+}
+```
+
+### Exmaple 4: Get the default properties of a Cloud PC of the signed-in user
 
 #### Request
 
