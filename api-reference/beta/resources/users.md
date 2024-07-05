@@ -4,7 +4,7 @@ description: "Build compelling app experiences based on users, their relationshi
 ms.localizationpriority: high
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: : yyuank, iamut
+ms.reviewer: yyuank, iamut
 ms.subservice: entra-users
 doc_type: conceptualPageType
 ms.topic: overview
