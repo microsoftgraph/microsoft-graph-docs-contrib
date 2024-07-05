@@ -42,15 +42,15 @@ items:
   items:
   - name: User
     href: ../../resources/educationuser.md
-  - name: List users
+  - name: List
     href: ../../api/educationuser-list.md
-  - name: Create user
+  - name: Create
     href: ../../api/educationuser-post.md
-  - name: Get user
+  - name: Get
     href: ../../api/educationuser-get.md
-  - name: Update educationUser
+  - name: Update
     href: ../../api/educationuser-update.md
-  - name: Delete user
+  - name: Delete
     href: ../../api/educationuser-delete.md
   - name: Get changes to users
     href: ../../api/educationuser-delta.md
