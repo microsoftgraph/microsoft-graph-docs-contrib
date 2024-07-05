@@ -37,8 +37,8 @@ This resource supports:
 |**Deleted applications**| | |
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
-|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
 |[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
 | [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
 |**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|

@@ -28,13 +28,13 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Upsert](../api/serviceprincipal-upsert.md) | [servicePrincipal](serviceprincipal.md) | Create a new servicePrincipal if it doesn't exist, or update the properties of an existing servicePrincipal.|
 |[Delete](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object.|
 |[Get delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
-|[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get an ownedObject object collection.|
+|[List created objects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
+|[List owned objects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get an ownedObject object collection.|
 |**Deleted service principals**| | |
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted servicePrincipal objects. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted servicePrincipal object. |
-|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete a servicePrincipal object. |
 |[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted servicePrincipal object. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete a servicePrincipal object. |
 |**App role assignments**| | |
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the app roles that this service principal is assigned.|
 |[Add appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this service principal.|
@@ -56,7 +56,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[List](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get the delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.|
 |**Membership**| | |
 |[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this service principal is a direct member of from the memberOf navigation property.|
-|[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this service principal is a member of. This operation is transitive and includes the groups that this service principal is a nested member of. |
+|[List transitive member of](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this service principal is a member of. This operation is transitive and includes the groups that this service principal is a nested member of. |
 |[Check member groups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a specified list of groups.|
 |[Check member objects](../api/directoryobject-checkmemberobjects.md)|String collection|Check for membership in a specified list of groups, directory roles, or administrative unit objects.|
 |[Get member groups](../api/directoryobject-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
