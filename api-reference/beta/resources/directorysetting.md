@@ -22,16 +22,16 @@ By default, all entities inherit the preset defaults. To change the default sett
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
+|[List](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Create](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
 |[Get](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
-|[List](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
-|[Update](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
+|[Update](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)    |Update a setting object. Only settingValues can be changed in an update.|
 |[Delete](../api/directorysetting-delete.md) | None |Delete a setting object. |
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
 |id|string| Unique identifier for these settings. Read-only.|
