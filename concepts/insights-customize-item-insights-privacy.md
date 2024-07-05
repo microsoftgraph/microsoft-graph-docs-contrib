@@ -47,11 +47,11 @@ The next section describes how to use the admin center to configure item insight
 
 ### Configure item insights settings via Microsoft 365 admin center
 
-An administrator with the _global administrator role_ can tune item insights privacy settings via toggles for an orgnization or a subset of people in a group as part of the organization. To do so, in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, then select **Configurations**, and under **Item insights**, choose **Change**.
+An administrator with the _global administrator role_ can tune item insights privacy settings via toggles for an orgnization or a subset of people in a group as part of the organization. To change privacy settings for item insights in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, then select **Configurations**. In the **Item insights** tile, choose **Change**.
 
 ![admincenter_toggleoverview](images/itemInsights/iteminsights_admincenter_toggleoverview.png)
 
-Then toggle settings on organization level, or disable for specific groups.
+Then toggle item insights for your organization, or enable it or disable it for specific groups.
 
 ![admincenter_toggleoverview](images/itemInsights/iteminsights_admincenter_toggledetails.png)
 
