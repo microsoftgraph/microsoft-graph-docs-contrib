@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph connector experiences"
 description: "Discover the experiences that you can enable with Microsoft Graph connectors and the requirements to build those experiences."
-author: monaray
+author: "monaray97"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
