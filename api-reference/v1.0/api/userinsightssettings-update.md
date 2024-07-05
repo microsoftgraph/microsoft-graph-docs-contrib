@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 
 ### Request
 
-The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights and meeting hours insights.
+The following example shows a request on how user updates "**isEnabled**" privacy setting in order to disable their item insights and meeting hours insights.
 
 <!-- {
   "blockType": "request",
@@ -88,6 +88,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "isEnabled": false,
+  "isEnabled": false
 }
 ```
