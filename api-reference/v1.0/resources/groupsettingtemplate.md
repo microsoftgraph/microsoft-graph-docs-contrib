@@ -23,8 +23,8 @@ For more information about the Microsoft 365 groups-specific settings, see [grou
 
 | Method                                                           | Return Type                                                   | Description                                                                             |
 | :--------------------------------------------------------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
-| [Get group setting template](../api/groupsettingtemplate-get.md)   | [groupSettingTemplate](groupsettingtemplate.md)               | Read the specific properties of one of the system defined groupSettingTemplate objects. |
-| [List group setting templates](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) | List all of the system defined groupSettingTemplate objects.                            |
+| [Get](../api/groupsettingtemplate-get.md)   | [groupSettingTemplate](groupsettingtemplate.md)               | Read the specific properties of one of the system defined groupSettingTemplate objects. |
+| [List](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) | List all of the system defined groupSettingTemplate objects.                            |
 
 ## Properties
 

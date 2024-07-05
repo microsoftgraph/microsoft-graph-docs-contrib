@@ -25,8 +25,8 @@ For more information about the Microsoft 365 groups-specific settings, see [grou
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get directory setting template](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
-|[List directory setting templates](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
+|[Get](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
+|[List](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
 
 ## Properties
 | Property       | Type    |Description|
