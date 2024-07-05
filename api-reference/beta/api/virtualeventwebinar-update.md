@@ -54,7 +54,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. |
 | displayName | String | Display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
-| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees get email notification for the webinar. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
 ## Response
@@ -170,6 +170,8 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
-  "isAttendeeEmailNotificationEnabled": false
+  "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+  }
 }
 ```

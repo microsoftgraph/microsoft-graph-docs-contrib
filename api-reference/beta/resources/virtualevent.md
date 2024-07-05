@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The display name of the virtual event. |
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The end time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |id|String|The unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
-|isAttendeeEmailNotificationEnabled|Boolean|Indicates whether attendees get email notification for the virtual event. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |status|[virtualEventStatus](#virtualeventstatus-values)|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
@@ -74,7 +74,9 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "id": "String (identifier)",
-  "isAttendeeEmailNotificationEnabled": "Boolean",
+  "settings": {
+      "isAttendeeEmailNotificationEnabled": "Boolean"
+  },
   "startDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },

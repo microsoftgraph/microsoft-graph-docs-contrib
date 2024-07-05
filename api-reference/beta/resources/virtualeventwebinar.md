@@ -42,7 +42,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| isAttendeeEmailNotificationEnabled | Boolean | Indicates whether attendees get email notification for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
 ### meetingAudience values
@@ -91,7 +91,9 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "isAttendeeEmailNotificationEnabled": "Boolean",
+  "settings": {
+    "isAttendeeEmailNotificationEnabled": "Boolean"
+  }
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"
 }
