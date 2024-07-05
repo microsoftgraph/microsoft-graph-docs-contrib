@@ -421,7 +421,7 @@
     },
     {
       "name": "Extensions",
-      "overview": "/graph/extensibility-overview?context=graph/api/1.0&preserve-view=true",
+      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true",
       "keywords": [
         "Directory extensions",
         "Schema extensions",
