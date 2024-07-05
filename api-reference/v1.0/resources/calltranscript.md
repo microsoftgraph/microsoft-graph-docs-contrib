@@ -25,9 +25,12 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | content| Stream| The content of the transcript. Read-only.|
-| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
+| callId | String | The unique identifier for the [call](call.md) that is related to this transcript. Read-only.|
+| contentCorrelationId | String | The unique identifier that links the transcript with its corresponding recording. Read-only.|
+| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| endDateTime | DateTimeOffset |  Date and time at which the transcription ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
 | meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
@@ -45,10 +48,13 @@ The following JSON is the representation of the resource.
 ```json
 {
   "content": "Stream",
-  "createdDateTime": "DateTimeOffset",  
+  "contentCorrelationId": "String",
+  "createdDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "meetingId": "String",
-  "meetingOrganizer": "IdentitySet",
+  "callId": "String",
+  "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
   "metadataContent": "Stream",
   "transcriptContentUrl": "String"
 }
