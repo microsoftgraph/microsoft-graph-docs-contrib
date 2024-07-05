@@ -20,18 +20,20 @@ items:
     href: ../../api/application-upsert.md
   - name: Delete
     href: ../../api/application-delete.md
-  - name: List deleted applications
-    href: ../../api/directory-deleteditems-list.md
-  - name: List deleted applications owned by user
-    href: ../../api/directory-deleteditems-getuserownedobjects.md
-  - name: Get deleted application
-    href: ../../api/directory-deleteditems-get.md
-  - name: Permanently delete application
-    href: ../../api/directory-deleteditems-delete.md
-  - name: Restore deleted application
-    href: ../../api/directory-deleteditems-restore.md
-  - name: delta
+  - name: Get delta
     href: ../../api/application-delta.md
+  - name: Deleted applications
+    items:
+    - name: List
+      href: ../../api/directory-deleteditems-list.md
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Permanently delete
+      href: ../../api/directory-deleteditems-delete.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: List deleted applications owned by user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
   - name: Certificates and secrets
     items:
     - name: Add password
@@ -393,26 +395,24 @@ items:
       items:
       - name: Claims mapping policy
         href: ../../resources/claimsmappingpolicy.md
-      - name: Create claimsMappingPolicy
-        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get claimsMappingPolicy
-        href: ../../api/claimsmappingpolicy-get.md
-      - name: List claimsMappingPolicies
+      - name: List
         href: ../../api/claimsmappingpolicy-list.md
-      - name: Update claimsMappingPolicy
+      - name: Create
+        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
+      - name: Get
+        href: ../../api/claimsmappingpolicy-get.md
+      - name: Update
         href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete claimsMappingPolicy
+      - name: Delete
         href: ../../api/claimsmappingpolicy-delete.md
-      - name: Directory objects
-        items:
-        - name: List appliesTo
-          href: ../../api/claimsmappingpolicy-list-appliesto.md
-        - name: Assign claimsMappingPolicy
-          href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-        - name: List assigned claimsMappingPolicy
-          href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-        - name: Remove claimsMappingPolicy
-          href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+      - name: List appliesTo
+        href: ../../api/claimsmappingpolicy-list-appliesto.md
+      - name: Assign to service principal
+        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+      - name: List assigned to service principal
+        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+      - name: Unassign from service principal
+        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Custom claims policy (preview)
       items:
       - name: Custom claims policy (preview)
@@ -427,43 +427,43 @@ items:
       items:
       - name: Home realm discovery policy
         href: ../../resources/homerealmdiscoverypolicy.md
-      - name: Create homeRealmDiscoveryPolicy
-        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-      - name: Get homeRealmDiscoveryPolicy
-        href: ../../api/homerealmdiscoverypolicy-get.md
-      - name: List homeRealmDiscoveryPolicies
+      - name: List
         href: ../../api/homerealmdiscoverypolicy-list.md
-      - name: Update homeRealmDiscoveryPolicy
+      - name: Create
+        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+      - name: Get
+        href: ../../api/homerealmdiscoverypolicy-get.md
+      - name: Update
         href: ../../api/homerealmdiscoverypolicy-update.md
-      - name: Delete homeRealmDiscoveryPolicy
+      - name: Delete
         href: ../../api/homerealmdiscoverypolicy-delete.md
-      - name: List appliesTo
+      - name: List applies to
         href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
-      - name: Assign homeRealmDiscoveryPolicy
+      - name: Assign to service principal
         href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
-      - name: List assigned homeRealmDiscoveryPolicy
+      - name: List assigned to service principal
         href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
-      - name: Remove homeRealmDiscoveryPolicy
+      - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
     - name: Permission grant preapproval policy
       items:
       - name: Permission grant preapproval policy
         href: ../../resources/permissiongrantpreapprovalpolicy.md
-      - name: List permissionGrantPreApprovalPolicies
+      - name: List
         href: ../../api/policyroot-list-permissiongrantpreapprovalpolicies.md
-      - name: Create permissionGrantPreApprovalPolicy
+      - name: Create
         href: ../../api/policyroot-post-permissiongrantpreapprovalpolicies.md
-      - name: Get permissionGrantPreApprovalPolicy
+      - name: Get
         href: ../../api/permissiongrantpreapprovalpolicy-get.md
-      - name: Update permissionGrantPreApprovalPolicy
+      - name: Update
         href: ../../api/permissiongrantpreapprovalpolicy-update.md
-      - name: Delete permissionGrantPreApprovalPolicy
+      - name: Delete
         href: ../../api/permissiongrantpreapprovalpolicy-delete.md
-      - name: List permissionGrantPreApprovalPolicy assigned to servicePrincipal
+      - name: List assigned to service principal
         href: ../../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
-      - name: Assign permissionGrantPreApprovalPolicy to servicePrincipal
+      - name: Assign to service principal
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
-      - name: Remove permissionGrantPreApprovalPolicy from servicePrincipal
+      - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
 - name: Synchronization
   items:
@@ -499,20 +499,16 @@ items:
       href: ../../api/synchronization-synchronization-post-jobs.md
     - name: Start
       href: ../../api/synchronization-synchronizationjob-start.md
-    - name: Restart
-      href: ../../api/synchronization-synchronizationjob-restart.md
     - name: Pause
       href: ../../api/synchronization-synchronizationjob-pause.md
+    - name: Restart
+      href: ../../api/synchronization-synchronizationjob-restart.md
     - name: Delete
       href: ../../api/synchronization-synchronizationjob-delete.md
-    - name: Get schema
-      href: ../../api/synchronization-synchronizationschema-get.md
-    - name: Update schema
-      href: ../../api/synchronization-synchronizationschema-update.md
-    - name: Validate credentials
-      href: ../../api/synchronization-synchronizationjob-validatecredentials.md
     - name: Provision on demand
       href: ../../api/synchronization-synchronizationjob-provisionondemand.md
+    - name: Validate credentials
+      href: ../../api/synchronization-synchronizationjob-validatecredentials.md
     - name: Bulk upload
       items:
       - name: Bulk upload
@@ -523,11 +519,11 @@ items:
     items:
     - name: Synchronization schema
       href: ../../resources/synchronization-synchronizationschema.md
-    - name: Get schema
+    - name: Get
       href: ../../api/synchronization-synchronizationschema-get.md
-    - name: Update schema
+    - name: Update
       href: ../../api/synchronization-synchronizationschema-update.md
-    - name: Reset schema
+    - name: Reset
       href: ../../api/synchronization-synchronizationschema-delete.md
     - name: Get schema filter operators
       href: ../../api/synchronization-synchronizationschema-filteroperators.md
@@ -535,3 +531,9 @@ items:
       href: ../../api/synchronization-synchronizationschema-functions.md
     - name: Parse attribute mapping expression
       href: ../../api/synchronization-synchronizationschema-parseexpression.md
+    - name: Directory definition
+      items:
+      - name: Directory definition
+        href: ../../resources/synchronization-directorydefinition.md
+      - name: Discover
+        href: ../../api/synchronization-directorydefinition-discover.md
