@@ -48,7 +48,7 @@ By allowing Microsoft to compute item insights from signals in your shared works
 
 Even though Microsoft never discloses your private documents and only uses insights of content that users already have access to, there can be cases where the risk of discovering the content by undesirable users outweighs the possible benefits. In these cases, you should consider turning off item insights. Remember that disabling item insights isn't a security measure, and you should always start by reviewing your work patterns and ensure that your security access is configured as intended. 
 If you want to make your content and activities less discoverable, you can disable item insights by using the [toggle available in MyAccount, under Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
-![item insights toggle in MyAccount](images/item-insights-toggle-in-MyAccount.PNG)
+![item insights toggle in MyAccount](images/itemInsights/iteminsights_myaccount_toggle.png)
 
 ### Disable or re-enable item insights 
 By default, item insights are enabled. Administrators use specific settings to control item insights. If an administrator disables your item insights, you can re-enable them only by working with the administrator. 
