@@ -28,14 +28,6 @@
         },
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
-          "ApiChange": "Resource",
-          "ChangedApiName": "virtualEventPresenterInfo",
-          "ChangeType": "Addition",
-          "Description": "Added the [virtualEventPresenterInfo](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenterInfo?view=graph-rest-1.0) resource.",
-          "Target": "virtualEventPresenterInfo"
-        },
-        {
-          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Relationship",
           "ChangedApiName": "presenters",
           "ChangeType": "Addition",
@@ -143,24 +135,40 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualEvent-cancel?view=graph-rest-1.0) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
-          "Target": "virtualEvent"
-        },
-        {
-          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
-          "ApiChange": "Method",
-          "ChangedApiName": "cancel",
-          "ChangeType": "Addition",
           "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistration-cancel?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
           "Target": "virtualEventRegistration"
         },
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Method",
-          "ChangedApiName": "publish",
+          "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualEvent-publish?view=graph-rest-1.0) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
-          "Target": "virtualEvent"
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-publish?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-publish?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-cancel?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
         }
       ],
       "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",

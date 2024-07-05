@@ -133,7 +133,6 @@ The following example shows how to create a guest user as a presenter on a **vir
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventpresenter_external",

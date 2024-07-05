@@ -323,7 +323,7 @@ items:
       - name: Virtual event registration
         href: ../../resources/virtualeventregistration.md
       - name: List
-        href: ../../api/virtualeventwebinar-list-registrations.md
+        href: ../../api/virtualeventregistration-list.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
     - name: Virtual event session
