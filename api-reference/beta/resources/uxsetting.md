@@ -3,7 +3,7 @@ title: "uxSetting resource type"
 description: "UXSetting resource Type"
 author: "skashyap7"
 ms.localizationpriority: medium
-ms.subservice: "entra-admin"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant's setting to restrict access to Microsoft Entra Administration portal to only administrators. 
+Represents settings relating to access to the Microsoft Entra admin center. 
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +24,7 @@ Represents the tenant's setting to restrict access to Microsoft Entra Administra
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra administration portal. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra administration portal. The possible values are: `true`, `false`. Required.|
+|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `true`, `false`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -41,7 +41,7 @@ The following is a JSON representation of the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting"
+  "restrictNonAdminAccess": "String"
 }
 ```
 

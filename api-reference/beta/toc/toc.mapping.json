@@ -2953,8 +2953,7 @@
       ]
     },
     {
-      "name": "UXSettings",
-      "overview": "../../resources/uxsetting.md",
+      "name": "Admin portal settings",
       "resources": [
         "uxsetting"
       ]

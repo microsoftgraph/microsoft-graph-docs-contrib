@@ -3,7 +3,7 @@ title: "Update uxSetting"
 description: "Update the properties of a uxSetting object."
 author: "skashyap7"
 ms.localizationpriority: medium
-ms.subservice: "entra-admin"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /admin/entra/uxSetting
 
 |Property|Type|Description|
 |:---|:---|:---|
-|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra administration portal. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra administration portal. The possible values are: `true`, `false`. Required.|
+|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `true`, `false`.|
 
 
 
@@ -58,9 +58,8 @@ PATCH https://graph.microsoft.com/beta/admin/entra/uxSetting
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "Microsoft.graph.nonAdminSetting",
-  "tenantId" : "String"
+  "restrictNonAdminAccess": "true",
+  "tenantId" : "00000000-0000-0000-0000-000000000000"
 }
 ```
 
