@@ -9,7 +9,7 @@ from msgraph import GraphServiceClient
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.device_management.apple_push_notification_certificate.download_apple_push_notification_certificate_signing_request.get()
+result = await graph_client.directory.subscriptions.get()
 
 
 ```

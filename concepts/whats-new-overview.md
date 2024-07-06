@@ -16,7 +16,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2024: New and generally available
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
+
 ## July 2024: New in preview only
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Directory management
 
@@ -37,8 +47,8 @@ Get or update the [cross-tenant access default settings](/graph/api/resources/cr
 
 ### People and workplace intelligence | People admin settings
 
-- Use more [granular privacy control](insights-customize-item-insights-privacy.md) over the availability and display of [item insights](/graph/api/resources/iteminsights) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for work or school, calculated using advanced analytics and machine learning techniques.
-- Update [insightsSettings](insightssettings.md) to disable item insights for a specific Microsoft Entra group or an entire organization. You can also use the [List itemInsights](/graph/api/peopleadminsettings-list-iteminsights) API to display or return item insights in an organization.
+- Use more [granular privacy control](/graph/insights-customize-item-insights-privacy) over the availability and display of [item insights](/graph/api/resources/iteminsights) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for work or school, calculated using advanced analytics and machine learning techniques.
+- Update [insightsSettings](/graph/api/resources/insightssettings) to disable item insights for a specific Microsoft Entra group or an entire organization. You can also use the [List itemInsights](/graph/api/peopleadminsettings-list-iteminsights) API to display or return item insights in an organization.
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
@@ -104,7 +114,7 @@ The content model automatically processes new files that are added to the librar
 
 ### Teamwork and communications | Calls and online meetings
 
-- Introduced the ability to [list](/graph/api/virtualeventregistration-list?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualeventregistration-post?view=graph-rest-beta&preserve-view=true), [cancel](/graph/api/virtualeventregistration-cancel?view=graph-rest-beta&preserve-view=true), and [list sessions](/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta&preserve-view=true) for virtual event meeting registrations.
+- Introduced the ability to [list](/graph/api/virtualeventregistration-list?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta&preserve-view=true), [cancel](/graph/api/virtualeventregistration-cancel?view=graph-rest-beta&preserve-view=true), and [list sessions](/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta&preserve-view=true) for virtual event meeting registrations.
 - [Delete](/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta&preserve-view=true) a registration question from a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true). The question can either be a [predefined registration question](/graph/api/resources/virtualeventregistrationpredefinedquestion?view=graph-rest-beta&preserve-view=true) or a [custom registration question](/graph/api/resources/virtualeventregistrationcustomquestion?view=graph-rest-beta&preserve-view=true).  
 
 

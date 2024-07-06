@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let string = await client.api('/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest')
-	.get();
+await client.api('/drives/{drive-id}/items/{item-id}/discardCheckout')
+	.version('beta')
+	.post();
 
 ```
