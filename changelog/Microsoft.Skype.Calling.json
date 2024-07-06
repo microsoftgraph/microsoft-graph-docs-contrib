@@ -3,20 +3,20 @@
     {
       "ChangeList": [
         {
-          "Id": "496235c6-497f-40c1-8f0d-fd269abcfd62",
-          "ApiChange": "Method",
-          "ChangedApiName": "virtualEventRegistrationQuestionBase",
+          "Id": "19affcdd-980e-4708-be4b-a9e81a003f3b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingLiveShareOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta) operation to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
-          "Target": "virtualEventRegistrationQuestionBase"
+          "Description": "Added the **meetingLiveShareOptions** enumeration type.",
+          "Target": "meetingLiveShareOptions"
         }
-    ],
-      "Id": "496235c6-497f-40c1-8f0d-fd269abcfd62",
+      ],
+      "Id": "19affcdd-980e-4708-be4b-a9e81a003f3b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-27T00:00:00Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"
+      "CreatedDateTime": "2024-07-05T18:39:29.7392578Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
     },
     {
       "ChangeList": [
