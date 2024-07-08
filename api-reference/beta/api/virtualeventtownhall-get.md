@@ -164,8 +164,8 @@ Content-Type: application/json
     }
   ],
   "settings": {
-      "isAttendeeEmailNotificationEnabled": false
-    }
+    "isAttendeeEmailNotificationEnabled": false
+  },
   "isInviteOnly": false
 }
 ```
