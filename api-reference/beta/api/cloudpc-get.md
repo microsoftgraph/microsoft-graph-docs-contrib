@@ -179,6 +179,7 @@ The following example shows a request.
   "name": "get_cloudpc_selected_properties"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName
 ```
