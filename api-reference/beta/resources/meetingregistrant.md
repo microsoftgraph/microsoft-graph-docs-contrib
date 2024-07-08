@@ -18,6 +18,9 @@ Represents a meeting registrant who has enrolled in an [online meeting](onlineme
 
 Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
+> [!CAUTION]
+> The meeting registrant API is deprecated and will stop returning data on **December 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+
 ## Methods
 
 | Method | Return Type | Description |
