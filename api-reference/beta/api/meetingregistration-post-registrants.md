@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The meeting registrant API is deprecated and will stop returning data on **December 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+
 Enroll a [meeting registrant](../resources/meetingregistrant.md) in an online meeting that has [meeting registration](../resources/meetingregistration.md) enabled on behalf of the registrant. This operation has two scenarios:
 
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingregistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Microsoft Entra ID.
