@@ -55,7 +55,11 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Example 1: Retrieve a policy
 
+The following example shows how to retrieve a policy.
+
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,6 +107,8 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -145,9 +151,11 @@ Content-Type: application/json
 
 ### Example 2: Retrieve the custom extension stage settings for a policy
 
+The following example shows how to retrieve the collection of custom extension stage settings defined for a policy, along with their associated access package custom workflow extension.
+
 #### Request
 
-The following example shows a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -219,10 +227,14 @@ Content-type: application/json
         }
     ],
     "verifiableCredentialSettings": {
-        "credentialTypes":[{
-            "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."],
-            "credentialType": "VerifiedCredentialExpert"
-        }]
+        "credentialTypes": [
+            {
+                "issuers": [
+                    "did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."
+                ],
+                "credentialType": "VerifiedCredentialExpert"
+            }
+        ]
     }
 }
 ```

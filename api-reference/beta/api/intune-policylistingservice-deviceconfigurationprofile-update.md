@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceConfigurationProfile](../resources/intune-policylistingservice-deviceconfigurationprofile.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |createdDateTime|DateTimeOffset|The date and time the object was created.|
 |profileName|String|Profile name|
 |profileType|[profileType](../resources/intune-policylistingservice-profiletype.md)|Profile Type. Possible values are: `settingsCatalog`, `administrativeTemplates`, `importedADMXTemplates`, `oemAppConfig`, `hardwareConfig`, `dcV1EndpointProtection`, `dcV1DeviceRestrictions`.|
-|platformType|[platformType](../resources/intune-policylistingservice-platformtype.md)|Platform Type. Possible values are: `none`, `android`, `androidEnterprise`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|platformType|[platformType](../resources/intune-policylistingservice-platformtype.md)|Platform Type. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`, `androidEnterprise`, `aosp`.|
 |configurationTechnologies|Int32|Configuration Technologies for Settins Catalog Policies|
 |templateId|String|TemplateId for Settings Catalog Policies|
 |roleScopeTagIds|String collection|The list of scope tags for the configuration.|

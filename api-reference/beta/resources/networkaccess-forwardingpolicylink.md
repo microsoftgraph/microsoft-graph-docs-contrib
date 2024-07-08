@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-forwardingprofile-list-policies.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) objects and their properties.|
-|[Get forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
+|[Get](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
 |[Update](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
 |[Delete](../api/networkaccess-forwardingpolicylink-delete.md)|None|Delete a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
 

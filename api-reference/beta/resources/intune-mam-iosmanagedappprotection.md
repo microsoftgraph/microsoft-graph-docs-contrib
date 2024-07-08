@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # iosManagedAppProtection resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
 
@@ -23,11 +23,11 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) objects.|
-|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
-|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
-|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).|
-|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
+|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.|
+|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
+|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
+|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
+|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -93,6 +93,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
+|allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
 |exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
@@ -194,6 +195,7 @@ Here is a JSON representation of the resource.
   "minimumRequiredSdkVersion": "String",
   "deployedAppCount": 1024,
   "faceIdBlocked": true,
+  "allowWidgetContentSync": true,
   "exemptedAppProtocols": [
     {
       "@odata.type": "microsoft.graph.keyValuePair",

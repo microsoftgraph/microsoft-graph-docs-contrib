@@ -19,7 +19,7 @@ requestBody := graphmodelsnetworkaccess.NewConditionalAccessSettings()
 signalingStatus := graphmodels.DISABLED_STATUS 
 requestBody.SetSignalingStatus(&signalingStatus) 
 additionalData := map[string]interface{}{
-	"odataContext" : "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess", 
+	"@odata.context" : "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess", 
 }
 requestBody.SetAdditionalData(additionalData)
 
