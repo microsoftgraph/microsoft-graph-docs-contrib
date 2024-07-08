@@ -428,7 +428,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The version in the app package is `null`.|
 |`VersionContainsOnlyNumbersDotSeparated`| App version supports only numbers in the '#.#.#' format.| The version in the app package doesn't match pattern `#.#.#`.|
 |`VersionHasMajorLessThan1`|App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | The app version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
-|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 32 characters.|
+|`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 30 characters.|
 |`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension has an unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
 ## Related content
