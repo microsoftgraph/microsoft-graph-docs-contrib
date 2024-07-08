@@ -1,5 +1,5 @@
 ---
-title: "Delete meetingRegistrant (deprecated)"
+title: "Delete meetingRegistrant"
 description: "Cancel an onlineMeeting registration for a meetingRegistrant."
 author: "awang119"
 ms.localizationpriority: medium
