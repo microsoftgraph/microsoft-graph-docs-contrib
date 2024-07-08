@@ -1,5 +1,5 @@
 ---
-title: "List photoUpdateSettings objects"
+title: "List photoUpdateSettings"
 description: "Get a list of the photoUpdateSettings objects and their properties."
 author: "fondieki"
 ms.localizationpriority: medium
