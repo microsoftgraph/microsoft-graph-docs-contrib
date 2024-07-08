@@ -8,7 +8,7 @@ doc_type: resourcePageType
 toc.title: Meeting Registrant (deprecated)
 ---
 
-# meetingRegistrant resource type
+# meetingRegistrant resource type (deprecated)
 
 Namespace: microsoft.graph
 
