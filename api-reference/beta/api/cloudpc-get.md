@@ -382,7 +382,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc_selected_properties"
+  "name": "get_cloudpc_disasterrecoverycapability"
 }
 -->
 ``` http
@@ -396,7 +396,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc_selected_and_filtered_properties",
+  "name": "get_cloudpc_disasterrecoverycapability",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
