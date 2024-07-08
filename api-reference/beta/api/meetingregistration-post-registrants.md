@@ -1,5 +1,5 @@
 ---
-title: "Create meetingRegistrant"
+title: "Create meetingRegistrant (deprecated)"
 description: "Enroll a meeting registrant."
 author: "awang119"
 ms.localizationpriority: medium
