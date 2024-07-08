@@ -1,6 +1,6 @@
 ---
 title: "externalMeetingRegistrant resource type (deprecated)"
-description: "Represents an external meeting registrant who has enrolled in an online meeting."
+description: "Represents an external meeting registrant who enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external meeting registrant who has enrolled in an online meeting.
+Represents an external meeting registrant who enrolled in an online meeting.
 
 Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 
