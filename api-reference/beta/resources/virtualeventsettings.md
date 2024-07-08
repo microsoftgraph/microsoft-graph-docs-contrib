@@ -16,17 +16,21 @@ Namespace: microsoft.graph
 Represents the settings for a [virtual event](../resources/virtualevent.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|isAttendeeEmailNotificationEnabled|Boolean| Flag to determine if virtual event attendees should receive email notifications.|
+|isAttendeeEmailNotificationEnabled|Boolean| Indicates whether virtual event attendees receive email notifications.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|virtualEvents|[virtualEvent](../resources/virtualevent.md)| Provides settings configuration for virtual event resource type|
+|virtualEvents|[virtualEvent](../resources/virtualevent.md)| Provides configuration settings for a [virtual event](../resources/virtualevent.md).|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.virtualEventSettings"
@@ -40,6 +44,7 @@ The following JSON representation shows the resource type.
 ```
 
 ## Related content
-[Virtual event resource](../resources/virtualevent.md)
-[Virtual event webinars](../resources/virtualeventwebinar.md)
-[Virtual event townhalls](../resources/virtualeventtownhall.md)
+
+- [Virtual event resource](../resources/virtualevent.md)
+- [Virtual event townhalls](../resources/virtualeventtownhall.md)
+- [Virtual event webinars](../resources/virtualeventwebinar.md)
