@@ -111,8 +111,8 @@
         {
           "name": "Protection policy",
           "resources": [
-            "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
             "sharePointProtectionPolicy"
           ]
         },
@@ -388,6 +388,8 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcBulkDisasterRecoveryFailback",
+            "cloudPcBulkDisasterRecoveryFailover",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -1999,6 +2001,7 @@
         "person",
         "mention",
         "peopleAdminSettings",
+        "insightsSettings",
         "pronounsSettings",
         "profile",
         "userAnalytics"

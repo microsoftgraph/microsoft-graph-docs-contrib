@@ -7,6 +7,7 @@ ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 05/22/2024
 ---
 
