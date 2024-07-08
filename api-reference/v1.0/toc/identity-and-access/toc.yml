@@ -246,9 +246,9 @@ items:
     items:
     - name: Group setting template
       href: ../../resources/groupsettingtemplate.md
-    - name: Get group setting template
+    - name: Get
       href: ../../api/groupsettingtemplate-get.md
-    - name: List group setting templates
+    - name: List
       href: ../../api/groupsettingtemplate-list.md
   - name: On-premises directory synchronization
     items:
@@ -336,9 +336,9 @@ items:
     items:
     - name: Subscribed SKU
       href: ../../resources/subscribedsku.md
-    - name: Get subscribedSku
+    - name: Get
       href: ../../api/subscribedsku-get.md
-    - name: List subscribedSkus
+    - name: List
       href: ../../api/subscribedsku-list.md
   - name: Tenant information
     items:
