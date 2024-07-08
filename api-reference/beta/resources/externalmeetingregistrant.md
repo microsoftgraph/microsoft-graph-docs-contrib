@@ -8,7 +8,7 @@ doc_type: resourcePageType
 toc.title: External Meeting Registrant (deprecated)
 ---
 
-# externalMeetingRegistrant resource type
+# externalMeetingRegistrant resource type (deprecated)
 
 Namespace: microsoft.graph
 
