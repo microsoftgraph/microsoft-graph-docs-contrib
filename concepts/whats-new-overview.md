@@ -16,6 +16,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2024: New and generally available
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
+
+## July 2024: New in preview only
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
+
 ## June 2024: New and generally available
 
 ### Change notifications

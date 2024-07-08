@@ -111,8 +111,8 @@
         {
           "name": "Protection policy",
           "resources": [
-            "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
             "sharePointProtectionPolicy"
           ]
         },
