@@ -33,6 +33,9 @@ The following table lists common use cases for the Viva Engage API.
 | Remove a member from a community | [DELETE /groups/{groupId}/members/{userId}/$ref](../api/group-delete-members.md) | When a member is removed from a group, the associated membership of the community is automatically updated. |
 | Add a community admin | [POST /groups/{groupId}/owners/$ref](../api/group-post-owners.md) | When a user is added as a group owner, they automatically become an admin of the associated community. |
 | Remove a community admin | [DELETE /groups/{groupId}/owners/{userId}/$ref](../api/group-delete-owners.md) | When a group owner is removed, they stop being admin for the associated community. You can't remove the last owner ([user](../resources/user.md) object) of a group. | 
+| Get a list of communities | [GET /employeeExperience/communities](../api/employeeexperience-list-communities.md) | If successful, this method returns a `200 OK` response code and a collection of [community](../resources/community.md) objects in the response body.|
+| Update a community | [PATCH /employeeExperience/communities/{communityId}](../api/community-update.md) | If successful, this method returns a `204 No Content` response code. |
+| Delete a community | [DELETE /employeeExperience/communities/{communityId}](../api/community-delete.md) | If successful, this method returns a `204 No Content` response code. |
 
 ## Communities and groups
 
