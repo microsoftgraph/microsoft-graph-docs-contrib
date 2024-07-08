@@ -1,6 +1,6 @@
 ---
 title: "meetingRegistrant resource type (deprecated)"
-description: "Represents a meeting registrant who has enrolled in an online meeting."
+description: "Represents a meeting registrant who enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md). 
+Represents a meeting registrant who enrolled in an [online meeting](onlinemeeting.md). 
 
 Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
@@ -25,7 +25,7 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[List](../api/meetingregistration-list-registrants.md) | [meetingRegistrant](meetingregistrant.md) | List all registrants who have enrolled in the meeting. |
+|[List](../api/meetingregistration-list-registrants.md) | [meetingRegistrant](meetingregistrant.md) | List all registrants who enrolled in the meeting. |
 |[Create](../api/meetingregistration-post-registrants.md) | [meetingRegistrant](meetingregistrant.md) | Enroll a registrant in an online meeting. |
 |[Delete](../api/meetingregistrant-delete.md) | [meetingRegistrant](meetingregistrant.md) | Unenroll a registrant from an online meeting. |
 
@@ -38,7 +38,7 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 | firstName | String | The first name of the registrant. |
 | id | String | The unique identifier of the registrant. Read-only. |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only. |
-| lastName | String | The last name of the registrant. |
+| lastName | String | The family name of the registrant. |
 | registrationDateTime | String | Time in UTC when the registrant registers for the meeting. Read-only. |
 | status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | The registration status of the registrant. Read-only. |
 
@@ -49,7 +49,7 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 | registered | Registrant has enrolled in the meeting. |
 | canceled | Registrant has canceled their registration. |
 | processing | Interim status indicating the status is processing. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
