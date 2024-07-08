@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-toc.title: "meetingRegistrationBase resource type (deprecated)"
+toc.title: Meeting Registration Base resource type (deprecated)
 ---
 
 # meetingRegistrationBase resource type (deprecated)
