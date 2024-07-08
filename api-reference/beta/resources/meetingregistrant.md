@@ -1,5 +1,5 @@
 ---
-title: "meetingRegistrant resource type (deprecated)"
+title: "meetingRegistrant resource type"
 description: "Represents a meeting registrant who enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
