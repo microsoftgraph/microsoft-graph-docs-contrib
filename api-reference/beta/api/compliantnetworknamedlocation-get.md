@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/3
 
 ---
 
-
 ### Response
 
 The following example shows the response.

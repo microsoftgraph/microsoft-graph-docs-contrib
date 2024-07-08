@@ -44,10 +44,6 @@ items:
         href: ../../api/opentypeextension-post-opentypeextension.md
       - name: Get open extension
         href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -376,7 +372,7 @@ items:
       items:
       - name: Get manager
         href: ../../api/orgcontact-get-manager.md
-      - name: Get transitiveReports
+      - name: Get transitive reports
         href: ../../api/orgcontact-get-transitivereports.md
       - name: List direct reports
         href: ../../api/orgcontact-list-directreports.md
@@ -573,9 +569,9 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: Trusted certificate authorities for apps (preview)
     items:
-    - name: Certificate based application configuration
+    - name: Certificate-based application configuration
       items:
-      - name: Certificate based application configuration
+      - name: Certificate-based application configuration
         href: ../../resources/certificatebasedapplicationconfiguration.md
       - name: List
         href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
@@ -624,7 +620,7 @@ items:
         href: ../../resources/accessreviewhistoryinstance.md
       - name: List
         href: ../../api/accessreviewhistorydefinition-list-instances.md
-      - name: generateDownloadUri
+      - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
     - name: Access review instance
       items:
@@ -823,7 +819,7 @@ items:
         href: ../../api/accessreview-stop.md
       - name: Reset
         href: ../../api/accessreview-reset.md
-      - name: Apply accessReview decisions
+      - name: Apply decisions
         href: ../../api/accessreview-apply.md
     - name: Business flow template
       items:
@@ -2004,9 +2000,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/authenticationmethods-overview.md
-    - name: Authentication
+    - name: Authentication states
       items:
-      - name: Authentication
+      - name: Authentication states
         href: ../../resources/authentication.md
       - name: Get
         href: ../../api/authentication-get.md
@@ -2183,10 +2179,10 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate based auth configuration
+  - name: Certificate-based auth configuration
     displayName: CBA
     items:
-    - name: Certificate based auth configuration
+    - name: Certificate-based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
     - name: List
       href: ../../api/certificatebasedauthconfiguration-list.md
@@ -2287,17 +2283,17 @@ items:
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Cross tenant access policy
+    - name: Cross-tenant access policy
       items:
-      - name: Cross tenant access policy
+      - name: Cross-tenant access policy
         href: ../../resources/crosstenantaccesspolicy.md
       - name: Get
         href: ../../api/crosstenantaccesspolicy-get.md
       - name: Update
         href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Cross tenant access policy configuration default
+    - name: Cross-tenant access policy configuration default
       items:
-      - name: Cross tenant access policy configuration default
+      - name: Cross-tenant access policy configuration default
         href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
       - name: Get
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
@@ -2305,9 +2301,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
       - name: Reset to system default
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Cross tenant access policy configuration partner
+    - name: Cross-tenant access policy configuration partner
       items:
-      - name: Cross tenant access policy configuration partner
+      - name: Cross-tenant access policy configuration partner
         href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
       - name: List
         href: ../../api/crosstenantaccesspolicy-list-partners.md
@@ -2319,9 +2315,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-    - name: Cross tenant identity sync policy partner
+    - name: Cross-tenant identity sync policy partner
       items:
-      - name: Cross tenant identity sync policy partner
+      - name: Cross-tenant identity sync policy partner
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -3098,9 +3094,9 @@ items:
       href: ../../api/trustframeworkkeyset-uploadsecret.md
     - name: Get active key
       href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload certificate
+    - name: Upload X.509 certificate
       href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: uploadPkcs12
+    - name: Upload PKCS12 certificate
       href: ../../api/trustframeworkkeyset-uploadpkcs12.md
   - name: Trust framework policy
     items:
@@ -3282,9 +3278,9 @@ items:
         href: ../../api/identityuserflowattributeassignment-update.md
       - name: Delete
         href: ../../api/identityuserflowattributeassignment-delete.md
-      - name: getOrder
+      - name: Get order
         href: ../../api/identityuserflowattributeassignment-getorder.md
-      - name: setOrder
+      - name: Set order
         href: ../../api/identityuserflowattributeassignment-setorder.md
     - name: User flow language configuration
       items:
@@ -4079,9 +4075,9 @@ items:
     href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
-    - name: Cross tenant access settings
+    - name: Cross-tenant access settings
       items:
-      - name: Cross tenant access settings
+      - name: Cross-tenant access settings
         href: ../../resources/networkaccess-crosstenantaccesssettings.md
       - name: Get
         href: ../../api/networkaccess-crosstenantaccesssettings-get.md
@@ -4131,7 +4127,7 @@ items:
         href: ../../resources/networkaccess-forwardingpolicylink.md
       - name: List
         href: ../../api/networkaccess-forwardingprofile-list-policies.md
-      - name: Get forwardingPolicyLink
+      - name: Get
         href: ../../api/networkaccess-forwardingpolicylink-get.md
       - name: Update
         href: ../../api/networkaccess-forwardingpolicylink-update.md

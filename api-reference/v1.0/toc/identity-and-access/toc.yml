@@ -44,6 +44,14 @@ items:
       href: ../../api/bitlocker-list-recoverykeys.md
     - name: Get
       href: ../../api/bitlockerrecoverykey-get.md
+  - name: Company subscription
+    items:
+    - name: Company subscription
+      href: ../../resources/companysubscription.md
+    - name: Get
+      href: ../../api/companysubscription-get.md
+    - name: List
+      href: ../../api/directory-list-subscriptions.md
   - name: Contract
     items:
     - name: Contract
@@ -274,9 +282,9 @@ items:
         href: ../../api/orgcontact-get-manager.md
       - name: List direct reports
         href: ../../api/orgcontact-list-directreports.md
-      - name: List memberOf
+      - name: List memberships
         href: ../../api/orgcontact-list-memberof.md
-      - name: List transitiveMemberOf
+      - name: List transitive memberships
         href: ../../api/orgcontact-list-transitivememberof.md
       - name: Check member groups
         href: ../../api/directoryobject-checkmembergroups.md
@@ -341,7 +349,7 @@ items:
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
 - name: Governance
-  displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
+  displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
   - name: Overview
     href: ../../resources/identitygovernance-overview.md
@@ -365,7 +373,7 @@ items:
         href: ../../resources/accessreviewhistoryinstance.md
       - name: List
         href: ../../api/accessreviewhistorydefinition-list-instances.md
-      - name: generateDownloadUri
+      - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
     - name: Access review instance
       items:
@@ -1494,7 +1502,7 @@ items:
         href: ../../api/authenticationstrengthroot-delete-policies.md
       - name: List usage
         href: ../../api/authenticationstrengthpolicy-usage.md
-      - name: updateAllowedCombinations
+      - name: Update allowed combinations
         href: ../../api/authenticationstrengthpolicy-updateallowedcombinations.md
     - name: Authentication combination configuration
       items:
@@ -1510,6 +1518,10 @@ items:
         href: ../../api/authenticationcombinationconfiguration-update.md
       - name: Delete
         href: ../../api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+    - name: FIDO2 combination configuration
+      href: ../../resources/fido2combinationconfiguration.md
+    - name: X509 certificate combination configuration
+      href: ../../resources/x509certificatecombinationconfiguration.md
     - name: Authentication method mode detail
       items:
       - name: Authentication method mode detail
@@ -1518,10 +1530,10 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate based auth configuration
+  - name: Certificate-based auth configuration
     displayName: CBA
     items:
-    - name: Certificate based auth configuration
+    - name: Certificate-based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
     - name: List
       href: ../../api/certificatebasedauthconfiguration-list.md
@@ -1609,17 +1621,17 @@ items:
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Cross tenant access policy
+    - name: Cross-tenant access policy
       items:
-      - name: Cross tenant access policy
+      - name: Cross-tenant access policy
         href: ../../resources/crosstenantaccesspolicy.md
       - name: Get
         href: ../../api/crosstenantaccesspolicy-get.md
       - name: Update
         href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Cross tenant access policy configuration default
+    - name: Cross-tenant access policy configuration default
       items:
-      - name: Cross tenant access policy configuration default
+      - name: Cross-tenant access policy configuration default
         href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
       - name: Get
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
@@ -1627,9 +1639,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
       - name: Reset to system default
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Cross tenant access policy configuration partner
+    - name: Cross-tenant access policy configuration partner
       items:
-      - name: Cross tenant access policy configuration partner
+      - name: Cross-tenant access policy configuration partner
         href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
       - name: List
         href: ../../api/crosstenantaccesspolicy-list-partners.md
@@ -1641,9 +1653,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-    - name: Cross tenant identity sync policy partner
+    - name: Cross-tenant identity sync policy partner
       items:
-      - name: Cross tenant identity sync policy partner
+      - name: Cross-tenant identity sync policy partner
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -2069,7 +2081,7 @@ items:
         href: ../../api/authenticationstrengthroot-delete-policies.md
       - name: List usage
         href: ../../api/authenticationstrengthpolicy-usage.md
-      - name: updateAllowedCombinations
+      - name: Update allowed combinations
         href: ../../api/authenticationstrengthpolicy-updateallowedcombinations.md
     - name: Feature rollout policy
       items:
@@ -2330,9 +2342,9 @@ items:
         href: ../../api/identityuserflowattributeassignment-update.md
       - name: Delete
         href: ../../api/identityuserflowattributeassignment-delete.md
-      - name: getOrder
+      - name: Get order
         href: ../../api/identityuserflowattributeassignment-getorder.md
-      - name: setOrder
+      - name: Set order
         href: ../../api/identityuserflowattributeassignment-setorder.md
     - name: User flow language configuration
       items:
