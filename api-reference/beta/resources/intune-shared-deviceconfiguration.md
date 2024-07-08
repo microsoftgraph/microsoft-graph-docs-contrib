@@ -3,7 +3,7 @@ title: "deviceConfiguration resource type"
 description: "Device Configuration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 

@@ -413,7 +413,7 @@ items:
       - name: List
         href: ../../api/virtualeventregistration-list.md
       - name: Create
-        href: ../../api/virtualeventregistration-post.md
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
       - name: Cancel
@@ -434,6 +434,8 @@ items:
         href: ../../api/virtualeventregistrationconfiguration-list-questions.md
       - name: Create
         href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session

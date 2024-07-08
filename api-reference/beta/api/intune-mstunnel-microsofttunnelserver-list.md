@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 469
 
 {
   "value": [
@@ -73,7 +73,8 @@ Content-Length: 422
       "tunnelServerHealthStatus": "healthy",
       "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
       "agentImageDigest": "Agent Image Digest value",
-      "serverImageDigest": "Server Image Digest value"
+      "serverImageDigest": "Server Image Digest value",
+      "deploymentMode": "standaloneRootless"
     }
   ]
 }
