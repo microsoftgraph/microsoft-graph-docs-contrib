@@ -1,5 +1,5 @@
 ---
-title: "Create externalMeetingRegistrant (deprecated)"
+title: "Create externalMeetingRegistrant"
 description: "Enroll an external meeting registrant."
 author: "awang119"
 ms.localizationpriority: medium
