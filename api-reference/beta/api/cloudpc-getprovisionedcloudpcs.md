@@ -113,7 +113,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPC)",
-  "name": "cloudpc.getProvisionedCloudPCs"
+  "name": "cloudpc.getProvisionedCloudPCs",
+  "truncated": true
 }
 -->
 
