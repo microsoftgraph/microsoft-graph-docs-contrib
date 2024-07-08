@@ -1,5 +1,5 @@
 ---
-title: "Delete externalMeetingRegistrant (deprecated)"
+title: "Delete externalMeetingRegistrant"
 description: "Delete an externalMeetingRegistrant from an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
