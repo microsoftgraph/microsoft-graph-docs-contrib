@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageassignmentPolicies/87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187
 Content-Type: application/json
 
 {
