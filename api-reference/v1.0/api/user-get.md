@@ -1,5 +1,5 @@
 ---
-title: "Get a user"
+title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.reviewer: "iamut"
