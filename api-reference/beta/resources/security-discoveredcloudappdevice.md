@@ -13,8 +13,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Please read the disclaimer**
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

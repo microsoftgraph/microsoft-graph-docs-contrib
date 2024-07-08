@@ -13,8 +13,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Please read disclaimer**
-
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
