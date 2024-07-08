@@ -1,5 +1,5 @@
 ---
-title: "List registrants (deprecated)"
+title: "List registrants"
 description: "Get a list of the meetingRegistrants of an onlineMeeting."
 author: "awang119"
 ms.localizationpriority: medium
