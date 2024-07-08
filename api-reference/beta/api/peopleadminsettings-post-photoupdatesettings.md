@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.photoUpdateSettings not found
+POST /admin/people/photoUpdateSettings
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ You can specify the following properties when creating a **photoUpdateSettings**
 |Property|Type|Description|
 |:---|:---|:---|
 |source|photoUpdateSource| Specifies what photo updates are allowed. The possible values are: `cloud`, `onPremises`, `unknownFutureValue`. Optional.|
-|allowedRoles|String collection| Contains a list of wids to perform edit operations in the cloud. Optional.|
+|allowedRoles|String collection| Contains a list of roles to perform edit operations in the cloud. Optional.|
 
 ## Response
 
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.photoUpdateSettings not found
+POST https://graph.microsoft.com/beta/admin/people/photoUpdateSettings
 Content-Type: application/json
 
 {
