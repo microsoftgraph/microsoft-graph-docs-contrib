@@ -592,9 +592,9 @@ items:
     items:
     - name: Secure score
       href: ../../resources/securescore.md
-    - name: List secure scores
+    - name: List
       href: ../../api/security-list-securescores.md
-    - name: Get secure score
+    - name: Get
       href: ../../api/securescore-get.md
   - name: Secure score control profile
     items:
