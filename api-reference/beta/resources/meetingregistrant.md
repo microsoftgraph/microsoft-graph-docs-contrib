@@ -53,6 +53,7 @@ Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
 ## JSON representation
 
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.meetingRegistrant"
