@@ -1,5 +1,5 @@
 ---
-title: "List externalMeetingRegistrants (deprecated)"
+title: "List externalMeetingRegistrants"
 description: "Get a list of the externalMeetingRegistrants of an onlineMeeting."
 author: "awang119"
 ms.localizationpriority: medium
