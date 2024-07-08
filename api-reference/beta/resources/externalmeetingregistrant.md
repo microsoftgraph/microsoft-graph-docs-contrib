@@ -1,10 +1,11 @@
 ---
-title: "externalMeetingRegistrant resource type"
+title: "externalMeetingRegistrant resource type (deprecated)"
 description: "Represents an external meeting registrant who has enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+toc.title: External Meeting Registrant (deprecated)
 ---
 
 # externalMeetingRegistrant resource type
