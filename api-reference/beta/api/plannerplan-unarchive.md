@@ -17,6 +17,8 @@ Unarchive a [plannerPlan](../resources/plannerplan.md) object. Unarchiving a pla
 
 Only a plan that is [archived](plannerplan-archive.md) can be unarchived.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
