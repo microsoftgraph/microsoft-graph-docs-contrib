@@ -60,7 +60,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows how to delete a presenter from a **virtualEventTownhall**.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_presenters_from_virtualeventtownhall",

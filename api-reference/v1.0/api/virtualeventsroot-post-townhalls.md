@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"

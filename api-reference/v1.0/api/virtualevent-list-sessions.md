@@ -79,7 +79,6 @@ Currently, only the following properties of a **virtualEventSession** object con
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_virtualeventsessions",

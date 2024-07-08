@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and either a [v
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_custom_question_virtualeventregistration"
@@ -126,7 +126,7 @@ Content-type: application/json
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_predefined_question_virtualeventregistration"

@@ -75,7 +75,7 @@ Use delegated permission to create a registration record for a person who has a 
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration-delegated",
@@ -183,7 +183,7 @@ Use application permission to create a registration record for a person who does
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration-application",

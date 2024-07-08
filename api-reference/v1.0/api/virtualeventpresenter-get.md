@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and a [virtualEventP
 
 The following example shows how to get a presenter on a **virtualEventTownhall**.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_virtualeventpresenter",

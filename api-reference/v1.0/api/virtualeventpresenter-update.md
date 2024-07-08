@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 ### Request
 
 The following example shows how to update a presenter on a **virtualEventWebinar**.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_virtualeventpresenter",

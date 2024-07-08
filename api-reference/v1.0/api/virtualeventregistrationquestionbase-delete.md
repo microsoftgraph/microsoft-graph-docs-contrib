@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_virtualeventregistrationquestion",
