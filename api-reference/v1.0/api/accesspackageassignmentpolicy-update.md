@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 
 ## Examples
 
-### Example 1: Update an  access package assignment policy
+### Example 1: Update the details of a policy
 
 #### Request
 
