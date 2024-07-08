@@ -1,10 +1,11 @@
 ---
-title: "meetingRegistrationBase resource type (deprecated)"
+title: "meetingRegistrationBase resource type"
 description: "Contains information about base meeting registration."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+toc.title: "meetingRegistrationBase resource type (deprecated)"
 ---
 
 # meetingRegistrationBase resource type (deprecated)
