@@ -54,7 +54,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. |
 | displayName | String | Display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
-| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
 ## Response
