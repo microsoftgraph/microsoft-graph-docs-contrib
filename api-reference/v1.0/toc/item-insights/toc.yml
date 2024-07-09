@@ -1,0 +1,12 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: User insights settings
+  items:
+  - name: User insights settings
+    href: ../../resources/userinsightssettings.md
+  - name: Get
+    href: ../../api/userinsightssettings-get.md
+  - name: Update
+    href: ../../api/userinsightssettings-update.md
