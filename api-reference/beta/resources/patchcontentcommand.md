@@ -3,8 +3,7 @@ title: "patchContentCommand resource type"
 description: "The changes to make to a OneNote page in a PATCH request."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.subservice: cloud-pc
-ms.technology: microsoft-graph
+ms.subservice: "onenote"
 author: "jewan-microsoft"
 ---
 
