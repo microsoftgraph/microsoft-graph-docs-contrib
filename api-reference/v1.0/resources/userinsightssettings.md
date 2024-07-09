@@ -22,8 +22,8 @@ Use the [insightsSettings](insightssettings.md) resource to enable or disable th
 
 | Method                                          | Return Type                                     | Description                                                 |
 |:------------------------------------------------|:------------------------------------------------|:------------------------------------------------------------|
-| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Read the properties of a **userInsightsSettings** object.   |
-| [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Update the properties of a **userInsightsSettings** object. |
+| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Get the user-customizable privacy settings for [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1).   |
+| [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Update the privacy settings for [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) of a user. |
 
 ## Properties
 
@@ -46,5 +46,3 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean"
 }
 ```
-
-
