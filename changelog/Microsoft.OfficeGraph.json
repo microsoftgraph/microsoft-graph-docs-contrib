@@ -117,6 +117,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **itemInsights** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-1.0) resource.",
           "Target": "userSettings"
+        },
+        {
+          "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **insights** navigation property of the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource from [officeGraphInsights](https://learn.microsoft.com/en-us/graph/api/resources/officegraphinsights?view=graph-rest-1.0) to [itemInsights](https://learn.microsoft.com/graph/api/resources/iteminsights?view=graph-rest-1.0).",
+          "Target": "user"
         }
       ],
       "Id": "3670025f-0d7d-463a-a670-7c7be6341f75",
