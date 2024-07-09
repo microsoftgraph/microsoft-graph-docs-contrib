@@ -83,6 +83,10 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sample-code](../includes/snippets/php/educationsubmission-excuse-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-excuse-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/educationsubmission-excuse-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -196,6 +200,10 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/educationsubmission-excuse-header-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-excuse-header-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
