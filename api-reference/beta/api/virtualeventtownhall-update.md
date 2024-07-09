@@ -55,7 +55,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
 ## Response
