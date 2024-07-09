@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "peopleadminsettings-post-photoupdatesettings-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-photoupdatesettings-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/photoupdatesettings-update-permissions.md)]
 
 ## HTTP request
 
