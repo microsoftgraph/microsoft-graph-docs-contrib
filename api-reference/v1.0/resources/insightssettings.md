@@ -15,6 +15,8 @@ Represents settings to calculate and manage the display or programmatic return o
 
 Item insights and [meeting hours insights](https://support.microsoft.com/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) represent relationships between users and items such as documents, sites, and other content types in Microsoft 365. Programmatically, they're represented by the [itemInsights](iteminsights.md) resource. You can get documents that are [shared](../api/insights-list-shared.md) with a user, [trending](../api/insights-list-trending.md) around a user, or [used](../api/insights-list-used.md) by a user. You can use **insightsSettings** to [customize the privacy settings for calculating, displaying, or returning item insights in an organization](/graph/insights-customize-item-insights-privacy).
 
+In contrast, for item insights and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1), you can also manage their calculation and visibility at a user level by using the [userInsightsSettings](userinsightssettings.md) resource.
+
 ## Methods
 
 | Method       | Return Type | Description |
