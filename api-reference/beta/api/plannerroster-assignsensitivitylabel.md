@@ -107,6 +107,10 @@ If-Match: "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""
 [!INCLUDE [sample-code](../includes/snippets/php/assign-sensitivitylabel-to-roster--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-sensitivitylabel-to-roster--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/assign-sensitivitylabel-to-roster--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

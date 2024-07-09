@@ -1,6 +1,6 @@
 ---
 title: "List secureScores"
-description: "Retrieve the properties and relationships of a secureScores object."
+description: "Retrieve the properties and relationships of a secureScore object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: security
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.
+Retrieve the properties and relationships of a [secureScore](../resources/securescore.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -21,8 +21,8 @@ Retrieve the properties and relationships of a [secureScores](../resources/secur
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "securescores_list" } -->
-[!INCLUDE [permissions-table](../includes/permissions/securescores-list-permissions.md)]
+<!-- { "blockType": "permissions", "name": "security_list_securescores" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-list-securescores-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.
+If successful, this method returns a `200 OK` response code and a [secureScore](../resources/securescore.md) object in the response body.
 
 ## Example
 

@@ -297,6 +297,296 @@
       "CreatedDateTime": "2022-07-18T06:16:30.715023Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "beingAnalyzed",
+          "ChangeType": "Addition",
+          "Description": "Added the `beingAnalyzed` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "notSubmittedToMicrosoft",
+          "ChangeType": "Addition",
+          "Description": "Added the `notSubmittedToMicrosoft` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "phishingSimulation",
+          "ChangeType": "Addition",
+          "Description": "Added the `phishingSimulation` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "allowedDueToOrganizationOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedDueToOrganizationOverride` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "blockedDueToOrganizationOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the `blockedDueToOrganizationOverride` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "allowedDueToUserOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedDueToUserOverride` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "blockedDueToUserOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the `blockedDueToUserOverride` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemNotfound",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemNotfound` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "threatsFound",
+          "ChangeType": "Addition",
+          "Description": "Added the `threatsFound` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "noThreatsFound",
+          "ChangeType": "Addition",
+          "Description": "Added the `noThreatsFound` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "domainImpersonation",
+          "ChangeType": "Addition",
+          "Description": "Added the `domainImpersonation` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "userImpersonation",
+          "ChangeType": "Addition",
+          "Description": "Added the `userImpersonation` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "brandImpersonation",
+          "ChangeType": "Addition",
+          "Description": "Added the `brandImpersonation` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationFailure",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationFailure` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "spoofedBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the `spoofedBlocked` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "spoofedAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the `spoofedAllowed` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "reasonLostInTransit",
+          "ChangeType": "Addition",
+          "Description": "Added the `reasonLostInTransit` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "bulk",
+          "ChangeType": "Addition",
+          "Description": "Added the `bulk` member to the **submissionResultCategory** enumeration.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "willNotifyOnceDone",
+          "ChangeType": "Addition",
+          "Description": "Added the `willNotifyOnceDone` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "checkUserReportedSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `checkUserReportedSettings` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "partOfEducationCampaign",
+          "ChangeType": "Addition",
+          "Description": "Added the `partOfEducationCampaign` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "allowedByAdvancedDelivery",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedByAdvancedDelivery` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "allowedByEnhancedFiltering",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedByEnhancedFiltering` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemDeleted",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemDeleted` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemFoundClean",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemFoundClean` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemFoundMalicious",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemFoundMalicious` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "unableToMakeDecision",
+          "ChangeType": "Addition",
+          "Description": "Added the `unableToMakeDecision` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "domainResembledYourOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the `domainResembledYourOrganization` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "endUserBeingImpersonated",
+          "ChangeType": "Addition",
+          "Description": "Added the `endUserBeingImpersonated` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "associatedWithBrand",
+          "ChangeType": "Addition",
+          "Description": "Added the `associatedWithBrand` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "senderFailedAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the `senderFailedAuthentication` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "endUserBeingSpoofed",
+          "ChangeType": "Addition",
+          "Description": "Added the `endUserBeingSpoofed` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemFoundBulk",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemFoundBulk` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemNotReceivedByService",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemNotReceivedByService` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemFoundSpam",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemFoundSpam` member to the **submissionResultDetail** enumeration.",
+          "Target": "submissionResultDetail"
+        }
+      ],
+      "Id": "26b23e03-e788-4890-a96b-a14cc6d277c5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-08T22:26:55.2815324Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
