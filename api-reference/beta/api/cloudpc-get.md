@@ -181,7 +181,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName
 ```
 
 # [C#](#tab/csharp)
@@ -201,7 +201,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -264,7 +264,8 @@ Content-Type: application/json
         }
       ]
     },
-    "allotmentDisplayName": null
+    "allotmentDisplayName": null,
+    "deviceRegionName": "eastus2"
 }
 ```
 
@@ -370,3 +371,63 @@ Content-Type: application/json
     "diskEncryptionState": "notAvailable"
 }
 ```
+
+### Example 4: List Cloud PCs filtered by disaster recovery capability type
+
+The following example shows how to list Cloud PCs filtered by disaster recovery capability type and select specific parameters.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc_disasterrecoverycapability"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$select=id,displayName,disasterRecoveryCapability&$filter=disasterRecoveryCapability/capabilityType eq 'failover'
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc_disasterrecoverycapability",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/cloudPCs(id,displayName,disasterRecoveryCapability)",
+  "value": [
+    {
+      "id": "662009bc-7732-4f6f-8726-25883518b33e",
+      "displayName": "Demo-0",
+      "disasterRecoveryCapability": {
+        "primaryRegion": "eastus",
+        "secondaryRegion": "westus",
+        "capabilityType": "failover"
+      }
+    },
+    {
+      "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+      "displayName": "Demo-1",
+      "disasterRecoveryCapability": {
+        "primaryRegion": "eastus",
+        "secondaryRegion": "westus",
+        "capabilityType": "failover"
+      }
+    }
+  ]
+}
+```
+
+

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mlafleur"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Class
 ---
 
 # educationClass resource type

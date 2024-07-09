@@ -26,7 +26,7 @@ var requestBody = new ApplyPostRequestBody
 			Index = 99,
 		},
 		DynamicCriteria = "dynamicCriteria-value",
-		Values = new Json
+		Values = new Values
 		{
 		},
 		FilterOn = "filterOn-value",

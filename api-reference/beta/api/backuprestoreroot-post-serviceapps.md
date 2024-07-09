@@ -44,7 +44,7 @@ POST /solutions/backupRestore/serviceApps
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 
@@ -55,6 +55,7 @@ If successful, this method returns a `201 Created` response code and a [serviceA
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_serviceapp"
@@ -62,6 +63,10 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+Content-type: application/json
+
+{
+}
 ```
 
 ### Response

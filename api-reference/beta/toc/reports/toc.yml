@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Identity and access reports
   items:
@@ -135,11 +138,11 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
-    - name: Microsoft Entra authentication
+    - name: Microsoft Entra health
       items:
-      - name: Microsoft Entra authentication
+      - name: Microsoft Entra health
         href: ../../resources/azureadauthentication.md
-      - name: Get Microsoft Entra authentication
+      - name: Get SLA attainment
         href: ../../api/azureadauthentication-get.md
     - name: Registration and usage
       items:

@@ -75,7 +75,7 @@ None.
 
 ## JSON representation
 
-The following is an example of the resource type.
+The following example shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

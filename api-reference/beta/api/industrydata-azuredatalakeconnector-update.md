@@ -59,7 +59,6 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,7 +73,7 @@ Content-type: application/json
 
 {
   "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
-  "displayName": "API Monitor 60201009"
+  "displayName": "CSV files from SIS"
 }
 ```
 

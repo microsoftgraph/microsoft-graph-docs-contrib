@@ -37,7 +37,7 @@ PATCH /groups/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -91,9 +91,8 @@ The following example shows a request.
   "blockType": "request",
   "name": "update_group_1"
 }-->
-
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}
+PATCH https://graph.microsoft.com/beta/groups/0d09007d-45b2-458c-b180-880dde3a302e
 Content-type: application/json
 
 {

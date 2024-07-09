@@ -3,7 +3,7 @@ title: "workplaceSensorDevice: ingestTelemetry"
 description: "Ingest sensor telemetry for a workplace sensor device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /workplace/sensorDevices/ingestTelemetry
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

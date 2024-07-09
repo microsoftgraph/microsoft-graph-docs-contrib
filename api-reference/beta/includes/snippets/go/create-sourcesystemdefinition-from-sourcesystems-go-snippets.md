@@ -32,7 +32,7 @@ code := "username"
 sourceIdentifier.SetCode(&code) 
 userMatchingSetting.SetSourceIdentifier(sourceIdentifier)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
 }
 userMatchingSetting.SetAdditionalData(additionalData)
 userMatchingSetting1 := graphmodelsindustrydata.NewUserMatchingSetting()
@@ -47,7 +47,7 @@ code := "username"
 sourceIdentifier.SetCode(&code) 
 userMatchingSetting1.SetSourceIdentifier(sourceIdentifier)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')", 
 }
 userMatchingSetting1.SetAdditionalData(additionalData)
 
