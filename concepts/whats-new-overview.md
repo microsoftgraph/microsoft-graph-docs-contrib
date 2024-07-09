@@ -32,6 +32,10 @@ Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resource
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
+### Teamwork and communications | Calls and online meetings
+
+Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
+
 ## June 2024: New and generally available
 
 ### Change notifications
