@@ -1,6 +1,6 @@
 ---
 title: "meetingRegistrantBase resource type"
-description: "Represents a base meeting registrant who has enrolled in an online meeting."
+description: "Represents a base meeting registrant who enrolled in an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base meeting registrant who has enrolled in an online meeting.
+Represents a base meeting registrant who enrolled in an online meeting.
 
 Base type of [meetingRegistrant](meetingregistrant.md) and [externalMeetingRegistrant](externalmeetingregistrant.md).
 
