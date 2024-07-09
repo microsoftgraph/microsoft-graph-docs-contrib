@@ -25,6 +25,14 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [externalMeetingRegistrant](https://learn.microsoft.com/en-us/graph/api/resources/externalmeetingregistrant?view=graph-rest-beta) resource and supported methods.",
           "Target": "externalMeetingRegistrant"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrantId",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **registrantId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendancerecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
         }
       ],
       "Id": "d5e79f6a-dcf2-423a-97fb-93713a35f711",
