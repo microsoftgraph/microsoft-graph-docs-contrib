@@ -46,6 +46,12 @@ This resource supports:
 |id|String|Unique identifier of the user setting. Read-only. Inherited from [entity](entity.md).|
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
 
+## Relationships
+
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
