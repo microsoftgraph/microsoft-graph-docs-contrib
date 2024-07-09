@@ -91,8 +91,8 @@ The following JSON representation shows the resource type.
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
   "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
-  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "isInviteOnly": "Boolean",
+  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"
 }
