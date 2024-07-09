@@ -3,7 +3,7 @@ title: "Delete userAccountInformation"
 description: "Delete a userAccountInformation object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

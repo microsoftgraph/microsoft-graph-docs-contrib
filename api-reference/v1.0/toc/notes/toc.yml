@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/onenote-api-overview.md
@@ -9,7 +12,7 @@ items:
     href: ../../api/notebook-get.md
   - name: Get recent notebooks
     href: ../../api/notebook-getrecentnotebooks.md
-  - name: getNotebookFromWebUrl
+  - name: Get notebook from web
     href: ../../api/notebook-getnotebookfromweburl.md
   - name: Create section group
     href: ../../api/notebook-post-sectiongroups.md

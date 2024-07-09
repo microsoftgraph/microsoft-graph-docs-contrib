@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "My Class Team’s Description"
 requestBody.SetDescription(&description) 
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('educationClass')", 
+	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('educationClass')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

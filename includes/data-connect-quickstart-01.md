@@ -4,25 +4,19 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-> [!NOTE]
-> This content is intended for tenants on the new consent experience. If you're still on the Privileged Access Management (PAM) experience, see [Existing customer migration](/graph/existing-customer-migration) to migrate your consents to the new experience.
-
 Microsoft Graph Data Connect (Data Connect) augments transactional APIs with an intelligent way to access rich data at scale. Data Connect is ideal for big data applications and machine learning as it allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Microsoft Azure. Through this offering, you'll be able to take advantage of the vast suite of compute and storage in Azure while staying compliant with industry standards and keeping your data secure.
 
 ![An architectural diagram of Microsoft Graph Data Connect, showing defined data controls, extending Office 365 data into Azure, and enabling big data and machine learning.](../concepts/images/data-connect-mgdc-capabilities.PNG)
 
-Data Connect uses Azure Synapse or Azure Data Factory to copy Microsoft 365 data to your application's storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Azure, letting you access the most applicable development and hosting tools available.
+Data Connect uses Microsoft Fabric, Azure Synapse, or Azure Data Factory to copy Microsoft 365 data to your application's storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Azure, letting you access the most applicable development and hosting tools available.
 
 Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
 Additionally, you can use Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
-> [!NOTE]
-> The guidance for using the former consent process involving Privileged Access Management (PAM) is included in a separate tab for reference purposes. We recommend that you follow the new consent flow for a simplified onboarding process.
-
 ## Get started
 
-In this tutorial, you'll create your first single-tenant Data Connect application. The following is a general flow that explains the Data Connect onboarding.
+In this tutorial, you'll create your first single-tenant Data Connect application. The following general flow explains the Data Connect onboarding process.
 
 ![A screenshot that explains the onboarding flow.](../concepts/images/data-connect-overview-flowchart.png)
 
@@ -41,11 +35,11 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 ### Prerequisites
 
-To complete this tutorial, you'll need the following subscriptions or licenses.
+To complete this tutorial, you need the following subscriptions or licenses.
 
 - For this tutorial, we strongly recommend that you use a Microsoft 365 developer tenant.
 - Your Microsoft 365 and Azure tenants must be in the same Microsoft Entra tenancy.
-- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Data Connect can export data across tenants (for example, to enable ISVs), but this tutorial doesn't explore this scenario.
+- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. 
 - One user in your Microsoft 365 tenant has the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". Only an "admin" user can approve the test application.
 - A different user in your Microsoft 365 tenant with [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Going forward, this tutorial refers to this user as the "developer". The developer user does the majority of this tutorial.
 

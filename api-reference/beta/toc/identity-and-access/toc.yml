@@ -1,6 +1,9 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
-  href: ../../resources/azure-ad-overview.md
+  href: ../../resources/identity-network-access-overview.md
 - name: Directory management
   items:
   - name: Administrative unit
@@ -19,32 +22,22 @@ items:
       href: ../../api/administrativeunit-delete.md
     - name: Get delta
       href: ../../api/administrativeunit-delta.md
-    - name: Add a member
+    - name: Add member
       href: ../../api/administrativeunit-post-members.md
     - name: List members
       href: ../../api/administrativeunit-list-members.md
-    - name: Get a member
+    - name: Get member
       href: ../../api/administrativeunit-get-members.md
-    - name: Remove a member
+    - name: Remove member
       href: ../../api/administrativeunit-delete-members.md
-    - name: Assign a role with scope
+    - name: Assign role with scope
       href: ../../api/administrativeunit-post-scopedrolemembers.md
     - name: List role assignments with scope
       href: ../../api/administrativeunit-list-scopedrolemembers.md
-    - name: Get a role assignment with scope
+    - name: Get role assignment with scope
       href: ../../api/administrativeunit-get-scopedrolemembers.md
-    - name: Remove a role assignment with scope
+    - name: Remove role assignment with scope
       href: ../../api/administrativeunit-delete-scopedrolemembers.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -65,9 +58,9 @@ items:
     items:
     - name: Contract
       href: ../../resources/contract.md
-    - name: Get contract
+    - name: Get
       href: ../../api/contract-get.md
-    - name: List contracts
+    - name: List
       href: ../../api/contract-list.md
   - name: Custom security attributes
     items:
@@ -113,13 +106,13 @@ items:
     items:
     - name: Deleted item
       href: ../../resources/directory.md
-    - name: Get deleted item
-      href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted item
-      href: ../../api/directory-deleteditems-restore.md
-    - name: List deleted items
+    - name: List
       href: ../../api/directory-deleteditems-list.md
-    - name: Permanently delete item
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete
       href: ../../api/directory-deleteditems-delete.md
     - name: List deleted items owned by user
       href: ../../api/directory-deleteditems-getuserownedobjects.md
@@ -127,44 +120,36 @@ items:
     items:
     - name: Device
       href: ../../resources/device.md
-    - name: Get device
-      href: ../../api/device-get.md
-    - name: List devices
+    - name: List
       href: ../../api/device-list.md
-    - name: Update device
+    - name: Create
+      href: ../../api/device-post-devices.md
+    - name: Get
+      href: ../../api/device-get.md
+    - name: Update
       href: ../../api/device-update.md
-    - name: Delete device
+    - name: Delete
       href: ../../api/device-delete.md
-    - name: delta
+    - name: Get delta
       href: ../../api/device-delta.md
-    - name: List memberOf
+    - name: List member of
       href: ../../api/device-list-memberof.md
-    - name: List transitive memberOf
+    - name: List transitive member of
       href: ../../api/device-list-transitivememberof.md
-    - name: List registeredOwners
+    - name: List registered owners
       href: ../../api/device-list-registeredowners.md
-    - name: List registeredUsers
+    - name: List registered users
       href: ../../api/device-list-registeredusers.md
-    - name: List usageRights
+    - name: List usage rights
       href: ../../api/device-list-usagerights.md
-    - name: checkMemberGroups
+    - name: Check member groups
       href: ../../api/directoryobject-checkmembergroups.md
-    - name: getMemberGroups
+    - name: Get member groups
       href: ../../api/directoryobject-getmembergroups.md
-    - name: checkMemberObjects
+    - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: getMemberObjects
+    - name: Get member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -219,18 +204,20 @@ items:
     items:
     - name: Directory role template
       href: ../../resources/directoryroletemplate.md
-    - name: Get directory role template
+    - name: Get
       href: ../../api/directoryroletemplate-get.md
+    - name: List
+      href: ../../api/directoryroletemplate-list.md
   - name: Directory setting
     items:
     - name: Directory setting
       href: ../../resources/directorysetting.md
+    - name: List
+      href: ../../api/group-list-settings.md
     - name: Create
       href: ../../api/group-post-settings.md
     - name: Get
       href: ../../api/directorysetting-get.md
-    - name: List
-      href: ../../api/group-list-settings.md
     - name: Update
       href: ../../api/directorysetting-update.md
     - name: Delete
@@ -239,9 +226,9 @@ items:
     items:
     - name: Directory setting template
       href: ../../resources/directorysettingtemplate.md
-    - name: Get directory setting template
+    - name: Get
       href: ../../api/directorysettingtemplate-get.md
-    - name: List directory setting templates
+    - name: List
       href: ../../api/directorysettingtemplate-list.md
   - name: Domain
     items:
@@ -257,26 +244,20 @@ items:
       href: ../../api/domain-update.md
     - name: Delete
       href: ../../api/domain-delete.md
+    - name: Force delete
+      href: ../../api/domain-forcedelete.md
+    - name: Verify
+      href: ../../api/domain-verify.md
+    - name: Promote
+      href: ../../api/domain-promote.md
+    - name: Get root domain
+      href: ../../api/domain-list-rootdomain.md
     - name: List domain name references
       href: ../../api/domain-list-domainnamereferences.md
     - name: List service configuration records
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
-    - name: List domain name reference
-      href: ../../api/domain-list-domainnamereferences.md
-    - name: List service configuration records
-      href: ../../api/domain-list-serviceconfigurationrecords.md
-    - name: List verification DNS records
-      href: ../../api/domain-list-verificationdnsrecords.md
-    - name: Get root domain
-      href: ../../api/domain-list-rootdomain.md
-    - name: Promote
-      href: ../../api/domain-promote.md
-    - name: Force delete
-      href: ../../api/domain-forcedelete.md
-    - name: Verify
-      href: ../../api/domain-verify.md
   - name: External user profiles
     items:
     - name: External user profile
@@ -319,38 +300,42 @@ items:
       href: ../../api/featurerolloutpolicy-update.md
     - name: Delete
       href: ../../api/featurerolloutpolicy-delete.md
-    - name: Create appliesTo
+    - name: Create applies to
       href: ../../api/featurerolloutpolicy-post-appliesto.md
-    - name: Delete appliesTo
+    - name: Delete applies to
       href: ../../api/featurerolloutpolicy-delete-appliesto.md
   - name: Mobility management policy
     items:
     - name: Mobility management policy
       href: ../../resources/mobilitymanagementpolicy.md
-    - name: List mobileDeviceManagementPolicies
-      href: ../../api/mobiledevicemanagementpolicies-list.md
-    - name: Get mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-get.md
-    - name: Update mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-update.md
-    - name: List includedGroups of mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-    - name: Add group to mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-    - name: Delete group from mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
-    - name: List mobileAppManagementPolicies
-      href: ../../api/mobileappmanagementpolicies-list.md
-    - name: Get mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-get.md
-    - name: Update mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-update.md
-    - name: List includedGroups of mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-    - name: Add group to mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-    - name: Delete group from mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+    - name: Mobile device management policy
+      items:
+      - name: List
+        href: ../../api/mobiledevicemanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobiledevicemanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobiledevicemanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
+    - name: Mobile app management policy
+      items:
+      - name: List
+        href: ../../api/mobileappmanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobileappmanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobileappmanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -365,20 +350,18 @@ items:
       href: ../../resources/orgcontact.md
     - name: Organizational contacts
       items:
-      - name: List org contacts
+      - name: List
         href: ../../api/orgcontact-list.md
-      - name: Get org contact
+      - name: Get
         href: ../../api/orgcontact-get.md
-    - name: Organizational hierarchy
-      items:
-      - name: Get manager
-        href: ../../api/orgcontact-get-manager.md
-      - name: Get transitiveReports
-        href: ../../api/orgcontact-get-transitivereports.md
-      - name: List direct reports
-        href: ../../api/orgcontact-list-directreports.md
-      - name: List memberOf
+      - name: Get delta
+        href: ../../api/orgcontact-delta.md
+      - name: Get delta for directory object
+        href: ../../api/directoryobject-delta.md
+      - name: List member of
         href: ../../api/orgcontact-list-memberof.md
+      - name: List transitive member of
+        href: ../../api/orgcontact-list-transitivememberof.md
       - name: Check member groups
         href: ../../api/directoryobject-checkmembergroups.md
       - name: Get member groups
@@ -386,7 +369,17 @@ items:
       - name: Check member objects
         href: ../../api/directoryobject-checkmemberobjects.md
       - name: Get member objects
-        href: ../../api/directoryobject-getmemberobjects.md
+        href: ../../api/directoryobject-checkmemberobjects.md
+      - name: Retry service provisioning
+        href: ../../api/orgcontact-retryserviceprovisioning.md
+      - name: Get transitive reports
+        href: ../../api/orgcontact-get-transitivereports.md
+    - name: Organizational hierarchy
+      items:
+      - name: Get manager
+        href: ../../api/orgcontact-get-manager.md
+      - name: List direct reports
+        href: ../../api/orgcontact-list-directreports.md
   - name: Organization
     items:
     - name: Organization
@@ -478,39 +471,39 @@ items:
     items:
     - name: Role management
       href: ../../resources/rolemanagement.md
-    - name: Unified role definition
+    - name: Role definition
       items:
-      - name: Unified role definition
+      - name: Role definition
         href: ../../resources/unifiedroledefinition.md
-      - name: List role definitions
+      - name: List
         href: ../../api/rbacapplication-list-roledefinitions.md
-      - name: Get role definition
-        href: ../../api/unifiedroledefinition-get.md
-      - name: Create role definition
+      - name: Create
         href: ../../api/rbacapplication-post-roledefinitions.md
-      - name: Update role definition
+      - name: Get
+        href: ../../api/unifiedroledefinition-get.md
+      - name: Update
         href: ../../api/unifiedroledefinition-update.md
-      - name: Delete role definition
+      - name: Delete
         href: ../../api/unifiedroledefinition-delete.md
       - name: List assigned principals
         href: ../../api/unifiedroledefinition-assignedprincipals.md
-    - name: Unified role assignment
+    - name: Role assignment
       items:
-      - name: Unified role assignment
+      - name: Role assignment
         href: ../../resources/unifiedroleassignment.md
-      - name: List role assignment
+      - name: List
         href: ../../api/rbacapplication-list-roleassignments.md
+      - name: Create
+        href: ../../api/rbacapplication-post-roleassignments.md
+      - name: Get
+        href: ../../api/unifiedroleassignment-get.md
+      - name: Delete
+        href: ../../api/unifiedroleassignment-delete.md
       - name: List transitive role assignments
         href: ../../api/rbacapplication-list-transitiveroleassignments.md
-      - name: Get role assignment
-        href: ../../api/unifiedroleassignment-get.md
-      - name: Create role assignment
-        href: ../../api/rbacapplication-post-roleassignments.md
-      - name: Delete role assignment
-        href: ../../api/unifiedroleassignment-delete.md
-    - name: Unified role assignment multiple
+    - name: Role assignment multiple
       items:
-      - name: Unified role assignment multiple
+      - name: Role assignment multiple
         href: ../../resources/unifiedroleassignmentmultiple.md
       - name: List
         href: ../../api/rbacapplicationmultiple-list-roleassignments.md
@@ -522,22 +515,22 @@ items:
         href: ../../api/unifiedroleassignmentmultiple-update.md
       - name: Delete
         href: ../../api/unifiedroleassignmentmultiple-delete.md
-    - name: Unified RBAC resource namespace
+    - name: Resource namespace
       items:
-      - name: Unified RBAC resource namespace
+      - name: Resource namespace
         href: ../../resources/unifiedrbacresourcenamespace.md
       - name: List
         href: ../../api/rbacapplicationmultiple-list-resourcenamespaces.md
       - name: Get
         href: ../../api/unifiedrbacresourcenamespace-get.md
-    - name: Unified RBAC resource action
-      items:
-      - name: Unified RBAC resource action
-        href: ../../resources/unifiedrbacresourceaction.md
-      - name: List
-        href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
-      - name: Get
-        href: ../../api/unifiedrbacresourceaction-get.md
+      - name: Resource action
+        items:
+        - name: Resource action
+          href: ../../resources/unifiedrbacresourceaction.md
+        - name: List
+          href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
+        - name: Get
+          href: ../../api/unifiedrbacresourceaction-get.md
     - name: Custom app scope
       items:
       - name: Custom app scope
@@ -570,9 +563,9 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: Trusted certificate authorities for apps (preview)
     items:
-    - name: Certificate based application configuration
+    - name: Certificate-based application configuration
       items:
-      - name: Certificate based application configuration
+      - name: Certificate-based application configuration
         href: ../../resources/certificatebasedapplicationconfiguration.md
       - name: List
         href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
@@ -621,7 +614,7 @@ items:
         href: ../../resources/accessreviewhistoryinstance.md
       - name: List
         href: ../../api/accessreviewhistorydefinition-list-instances.md
-      - name: generateDownloadUri
+      - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
     - name: Access review instance
       items:
@@ -820,7 +813,7 @@ items:
         href: ../../api/accessreview-stop.md
       - name: Reset
         href: ../../api/accessreview-reset.md
-      - name: Apply accessReview decisions
+      - name: Apply decisions
         href: ../../api/accessreview-apply.md
     - name: Business flow template
       items:
@@ -893,7 +886,7 @@ items:
       - name: Get
         href: ../../api/userconsentrequest-get.md
       - name: Filter by current user
-        href: ../../api/userconsentrequest-filterByCurrentUser.md
+        href: ../../api/userconsentrequest-filterbycurrentuser.md
   - name: Entitlement management
     items:
     - name: Overview
@@ -1045,9 +1038,9 @@ items:
       - name: Access package custom package workflow extensions
         items:
         - name: List accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-list-accessPackageCustomWorkflowExtensions.md
+          href: ../../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
         - name: Create accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-post-accessPackageCustomWorkflowExtensions.md
+          href: ../../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
         - name: Get accessPackageAssignmentRequestWorkflowExtension
           href: ../../api/accesspackageassignmentrequestworkflowextension-get.md
         - name: Update accessPackageAssignmentRequestWorkflowExtension
@@ -1531,9 +1524,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagementv3-overview.md
-      - name: Unified role assignment schedule request
+      - name: Assignment schedule request
         items:
-        - name: Unified role assignment schedule request
+        - name: Assignment schedule request
           href: ../../resources/unifiedroleassignmentschedulerequest.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentschedulerequests.md
@@ -1545,9 +1538,9 @@ items:
           href: ../../api/unifiedroleassignmentschedulerequest-cancel.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-      - name: Unified role assignment schedule
+      - name: Assignment schedule
         items:
-        - name: Unified role assignment schedule
+        - name: Assignment schedule
           href: ../../resources/unifiedroleassignmentschedule.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentschedules.md
@@ -1555,9 +1548,9 @@ items:
           href: ../../api/unifiedroleassignmentschedule-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedule-filterbycurrentuser.md
-      - name: Unified role assignment schedule instance
+      - name: Assignment schedule instance
         items:
-        - name: Unified role assignment schedule instance
+        - name: Assignment schedule instance
           href: ../../resources/unifiedroleassignmentscheduleinstance.md
         - name: List
           href: ../../api/rbacapplication-list-roleassignmentscheduleinstances.md
@@ -1565,9 +1558,9 @@ items:
           href: ../../api/unifiedroleassignmentscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-      - name: Unified role eligibility schedule request
+      - name: Eligibility schedule request
         items:
-        - name: Unified role eligibility schedule request
+        - name: Eligibility schedule request
           href: ../../resources/unifiedroleeligibilityschedulerequest.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityschedulerequests.md
@@ -1579,9 +1572,9 @@ items:
           href: ../../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/unifiedroleeligibilityschedulerequest-cancel.md
-      - name: Unified role eligibility schedule
+      - name: Eligibility schedule
         items:
-        - name: Unified role eligibility schedule
+        - name: Eligibility schedule
           href: ../../resources/unifiedroleeligibilityschedule.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityschedules.md
@@ -1589,9 +1582,9 @@ items:
           href: ../../api/unifiedroleeligibilityschedule-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-      - name: Unified role eligibility schedule instance
+      - name: Eligibility schedule instance
         items:
-        - name: Unified role eligibility schedule instance
+        - name: Eligibility schedule instance
           href: ../../resources/unifiedroleeligibilityscheduleinstance.md
         - name: List
           href: ../../api/rbacapplication-list-roleeligibilityscheduleinstances.md
@@ -1599,9 +1592,9 @@ items:
           href: ../../api/unifiedroleeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Unified role management policy
+      - name: Policy
         items:
-        - name: Unified role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1615,9 +1608,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy rule
+      - name: Policy rule
         items:
-        - name: Unified role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1625,9 +1618,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Unified role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -1653,9 +1646,9 @@ items:
           href: ../../api/approvalstep-update.md
       - name: Role management alerts
         items:
-        - name: Unified role management alert
+        - name: Role management alert
           items:
-          - name: Unified role management alert
+          - name: Role management alert
             href: ../../resources/unifiedrolemanagementalert.md
           - name: List
             href: ../../api/rolemanagementalert-list-alerts.md
@@ -1665,17 +1658,17 @@ items:
             href: ../../api/unifiedrolemanagementalert-update.md
           - name: Refresh
             href: ../../api/unifiedrolemanagementalert-refresh.md
-        - name: Unified role management alert definition
+        - name: Role management alert definition
           items:
-          - name: Unified role management alert definition
+          - name: Role management alert definition
             href: ../../resources/unifiedrolemanagementalertdefinition.md
           - name: List
             href: ../../api/rolemanagementalert-list-alertdefinitions.md
           - name: Get
             href: ../../api/unifiedrolemanagementalertdefinition-get.md
-        - name: Unified role management alert configuration
+        - name: Role management alert configuration
           items:
-          - name: Unified role management alert configuration
+          - name: Role management alert configuration
             href: ../../resources/unifiedrolemanagementalertconfiguration.md
           - name: List
             href: ../../api/rolemanagementalert-list-alertconfigurations.md
@@ -1683,23 +1676,23 @@ items:
             href: ../../api/unifiedrolemanagementalertconfiguration-get.md
           - name: Update
             href: ../../api/unifiedrolemanagementalertconfiguration-update.md
-        - name: Invalid license alert configuration
+        - name: Invalid license
           href: ../../resources/invalidlicensealertconfiguration.md
-        - name: No MFA on role activation alert configuration
+        - name: No MFA on role activation
           href: ../../resources/nomfaonroleactivationalertconfiguration.md
-        - name: Redundant assignment alert configuration
+        - name: Redundant assignment
           href: ../../resources/redundantassignmentalertconfiguration.md
-        - name: Roles assigned outside privileged identity management alert configuration
+        - name: Roles assigned outside PIM
           href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
-        - name: Sequential activation renewals alert configuration
+        - name: Sequential activation
           href: ../../resources/sequentialactivationrenewalsalertconfiguration.md
-        - name: Stale sign in alert configuration
+        - name: Inactive account
           href: ../../resources/stalesigninalertconfiguration.md
-        - name: Too many global admins assigned to tenant alert configuration
+        - name: Too many Global Administrators
           href: ../../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md
-        - name: Unified role management alert incident
+        - name: Role management alert incident
           items:
-          - name: Unified role management alert incident
+          - name: Role management alert incident
             href: ../../resources/unifiedrolemanagementalertincident.md
           - name: List
             href: ../../api/unifiedrolemanagementalert-list-alertincidents.md
@@ -1707,6 +1700,20 @@ items:
             href: ../../api/unifiedrolemanagementalertincident-get.md
           - name: Remediate
             href: ../../api/unifiedrolemanagementalertincident-remediate.md
+        - name: Invalid license
+          href: ../../resources/invalidlicensealertincident.md
+        - name: No MFA on activation
+          href: ../../resources/nomfaonroleactivationalertincident.md
+        - name: Redundant assignment
+          href: ../../resources/redundantassignmentalertincident.md
+        - name: Roles assigned outside PIM
+          href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md
+        - name: Sequential activation
+          href: ../../resources/sequentialactivationrenewalsalertincident.md
+        - name: Inactive account
+          href: ../../resources/stalesigninalertincident.md
+        - name: Too many Global Administrators
+          href: ../../resources/toomanyglobaladminsassignedtotenantalertincident.md
         - name: Long running operation
           items:
           - name: Long running operation
@@ -1717,9 +1724,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagement-for-groups-api-overview.md
-      - name: Privileged access group assignment schedule request
+      - name: Assignment schedule request
         items:
-        - name: Privileged access group assignment schedule request
+        - name: Assignment schedule request
           href: ../../resources/privilegedaccessgroupassignmentschedulerequest.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentschedulerequests.md
@@ -1731,9 +1738,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-cancel.md
-      - name: Privileged access group assignment schedule
+      - name: Assignment schedule
         items:
-        - name: Privileged access group assignment schedule
+        - name: Assignment schedule
           href: ../../resources/privilegedaccessgroupassignmentschedule.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentschedules.md
@@ -1741,9 +1748,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedule-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md
-      - name: Privileged access group assignment schedule instance
+      - name: Assignment schedule instance
         items:
-        - name: Privileged access group assignment schedule instance
+        - name: Assignment schedule instance
           href: ../../resources/privilegedaccessgroupassignmentscheduleinstance.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-assignmentscheduleinstances.md
@@ -1751,9 +1758,9 @@ items:
           href: ../../api/privilegedaccessgroupassignmentscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md
-      - name: Privileged access group eligibility schedule request
+      - name: Eligibility schedule request
         items:
-        - name: Privileged access group eligibility schedule request
+        - name: Eligibility schedule request
           href: ../../resources/privilegedaccessgroupeligibilityschedulerequest.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityschedulerequests.md
@@ -1765,9 +1772,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupeligibilityschedulerequest-cancel.md
-      - name: Privileged access group eligibility schedule
+      - name: Eligibility schedule
         items:
-        - name: Privileged access group eligibility schedule
+        - name: Eligibility schedule
           href: ../../resources/privilegedaccessgroupeligibilityschedule.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityschedules.md
@@ -1775,9 +1782,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityschedule-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md
-      - name: Privileged access group eligibility schedule instance
+      - name: Eligibility schedule instance
         items:
-        - name: Privileged access group eligibility schedule instance
+        - name: Eligibility schedule instance
           href: ../../resources/privilegedaccessgroupeligibilityscheduleinstance.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md
@@ -1785,9 +1792,9 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
-      - name: Unified role management policy
+      - name: Policy
         items:
-        - name: Unified role management policy
+        - name: Policy
           href: ../../resources/unifiedrolemanagementpolicy.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicies.md
@@ -1801,9 +1808,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy rule
+      - name: Policy rule
         items:
-        - name: Unified role management policy rule
+        - name: Policy rule
           href: ../../resources/unifiedrolemanagementpolicyrule.md
         - name: List rules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
@@ -1811,9 +1818,9 @@ items:
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
         - name: Update rule
           href: ../../api/unifiedrolemanagementpolicyrule-update.md
-      - name: Unified role management policy assignment
+      - name: Policy assignment
         items:
-        - name: Unified role management policy assignment
+        - name: Policy assignment
           href: ../../resources/unifiedrolemanagementpolicyassignment.md
         - name: List
           href: ../../api/policyroot-list-rolemanagementpolicyassignments.md
@@ -1987,9 +1994,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/authenticationmethods-overview.md
-    - name: Authentication
+    - name: Authentication states
       items:
-      - name: Authentication
+      - name: Authentication states
         href: ../../resources/authentication.md
       - name: Get
         href: ../../api/authentication-get.md
@@ -2166,10 +2173,10 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate based auth configuration
+  - name: Certificate-based auth configuration
     displayName: CBA
     items:
-    - name: Certificate based auth configuration
+    - name: Certificate-based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
     - name: List
       href: ../../api/certificatebasedauthconfiguration-list.md
@@ -2233,6 +2240,16 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
+      - name: Compliant network named location
+        items:
+        - name: Compliant network named location
+          href: ../../resources/compliantnetworknamedlocation.md
+        - name: List
+          href: ../../api/conditionalaccessroot-list-namedlocations.md
+        - name: Get
+          href: ../../api/compliantnetworknamedlocation-get.md
+        - name: Update
+          href: ../../api/compliantnetworknamedlocation-update.md
     - name: Authentication context class reference
       items:
       - name: Authentication context class reference
@@ -2260,17 +2277,17 @@ items:
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Cross tenant access policy
+    - name: Cross-tenant access policy
       items:
-      - name: Cross tenant access policy
+      - name: Cross-tenant access policy
         href: ../../resources/crosstenantaccesspolicy.md
       - name: Get
         href: ../../api/crosstenantaccesspolicy-get.md
       - name: Update
         href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Cross tenant access policy configuration default
+    - name: Cross-tenant access policy configuration default
       items:
-      - name: Cross tenant access policy configuration default
+      - name: Cross-tenant access policy configuration default
         href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
       - name: Get
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
@@ -2278,9 +2295,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
       - name: Reset to system default
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Cross tenant access policy configuration partner
+    - name: Cross-tenant access policy configuration partner
       items:
-      - name: Cross tenant access policy configuration partner
+      - name: Cross-tenant access policy configuration partner
         href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
       - name: List
         href: ../../api/crosstenantaccesspolicy-list-partners.md
@@ -2292,9 +2309,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-    - name: Cross tenant identity sync policy partner
+    - name: Cross-tenant identity sync policy partner
       items:
-      - name: Cross tenant identity sync policy partner
+      - name: Cross-tenant identity sync policy partner
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -2592,7 +2609,7 @@ items:
     items:
     - name: Invitation
       href: ../../resources/invitation.md
-    - name: Create invitation
+    - name: Create
       href: ../../api/invitation-post.md
   - name: Multitenant organization
     displayName: MTO
@@ -2668,27 +2685,30 @@ items:
     - name: Delta
       href: ../../api/oauth2permissiongrant-delta.md
   - name: Organizational branding
+    displayName: Tenant branding, UX customization
     items:
     - name: Organizational branding
-      href: ../../resources/organizationalbranding.md
-    - name: Get
-      href: ../../api/organizationalbranding-get.md
-    - name: Update
-      href: ../../api/organizationalbranding-update.md
-  - name: Organizational branding localization
-    items:
+      items:
+      - name: Organizational branding
+        href: ../../resources/organizationalbranding.md
+      - name: Get
+        href: ../../api/organizationalbranding-get.md
+      - name: Update
+        href: ../../api/organizationalbranding-update.md
     - name: Organizational branding localization
-      href: ../../resources/organizationalbrandinglocalization.md
-    - name: List
-      href: ../../api/organizationalbranding-list-localizations.md
-    - name: Create
-      href: ../../api/organizationalbranding-post-localizations.md
-    - name: Get
-      href: ../../api/organizationalbrandinglocalization-get.md
-    - name: Update
-      href: ../../api/organizationalbrandinglocalization-update.md
-    - name: Delete
-      href: ../../api/organizationalbrandinglocalization-delete.md
+      items:
+      - name: Organizational branding localization
+        href: ../../resources/organizationalbrandinglocalization.md
+      - name: List
+        href: ../../api/organizationalbranding-list-localizations.md
+      - name: Create
+        href: ../../api/organizationalbranding-post-localizations.md
+      - name: Get
+        href: ../../api/organizationalbrandinglocalization-get.md
+      - name: Update
+        href: ../../api/organizationalbrandinglocalization-update.md
+      - name: Delete
+        href: ../../api/organizationalbrandinglocalization-delete.md
   - name: Policies
     items:
     - name: Overview
@@ -2714,11 +2734,11 @@ items:
       - name: Tenant app management policy
         items:
         - name: Tenant app management policy
-          href: ../../resources/tenantAppManagementPolicy.md
+          href: ../../resources/tenantappmanagementpolicy.md
         - name: Get
-          href: ../../api/tenantAppManagementPolicy-get.md
+          href: ../../api/tenantappmanagementpolicy-get.md
         - name: Update
-          href: ../../api/tenantAppManagementPolicy-update.md
+          href: ../../api/tenantappmanagementpolicy-update.md
       - name: App management policy
         items:
         - name: App management policy
@@ -2888,6 +2908,16 @@ items:
         href: ../../api/continuousaccessevaluationpolicy-get.md
       - name: Update
         href: ../../api/continuousaccessevaluationpolicy-update.md
+    - name: Custom claims policy (preview)
+      items:
+      - name: Custom claims policy (preview)
+        href: ../../resources/customclaimspolicy.md
+      - name: Get
+        href: ../../api/customclaimspolicy-get.md
+      - name: Create or replace
+        href: ../../api/serviceprincipal-put-claimspolicy.md
+      - name: Update
+        href: ../../api/customclaimspolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -2910,9 +2940,9 @@ items:
         href: ../../api/featurerolloutpolicy-update.md
       - name: Delete
         href: ../../api/featurerolloutpolicy-delete.md
-      - name: Create appliesTo
+      - name: Create applies to
         href: ../../api/featurerolloutpolicy-post-appliesto.md
-      - name: Delete appliesTo
+      - name: Delete applies to
         href: ../../api/featurerolloutpolicy-delete-appliesto.md
     - name: Home realm discovery policy
       items:
@@ -3058,9 +3088,9 @@ items:
       href: ../../api/trustframeworkkeyset-uploadsecret.md
     - name: Get active key
       href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload certificate
+    - name: Upload X.509 certificate
       href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: uploadPkcs12
+    - name: Upload PKCS12 certificate
       href: ../../api/trustframeworkkeyset-uploadpkcs12.md
   - name: Trust framework policy
     items:
@@ -3175,9 +3205,9 @@ items:
       - name: Create language
         href: ../../api/b2cidentityuserflow-put-languages.md
       - name: Get API connectors configuration for user flow
-        href: ../../api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+        href: ../../api/b2cidentityuserflow-get-apiconnectorconfiguration.md
       - name: Configure an API connector in a user flow
-        href: ../../api/b2cidentityuserflow-put-apiConnectorConfiguration.md
+        href: ../../api/b2cidentityuserflow-put-apiconnectorconfiguration.md
       - name: List identity providers
         href: ../../api/b2cidentityuserflow-list-identityproviders.md
       - name: Add identity provider
@@ -3215,9 +3245,9 @@ items:
       - name: List languages
         href: ../../api/b2xidentityuserflow-list-languages.md
       - name: Get API connectors configuration for user flow
-        href: ../../api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+        href: ../../api/b2xidentityuserflow-get-apiconnectorconfiguration.md
       - name: Configure an API connector in a user flow
-        href: ../../api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+        href: ../../api/b2xidentityuserflow-put-apiconnectorconfiguration.md
     - name: Identity user flow attribute
       items:
       - name: Identity user flow attribute
@@ -3242,9 +3272,9 @@ items:
         href: ../../api/identityuserflowattributeassignment-update.md
       - name: Delete
         href: ../../api/identityuserflowattributeassignment-delete.md
-      - name: getOrder
+      - name: Get order
         href: ../../api/identityuserflowattributeassignment-getorder.md
-      - name: setOrder
+      - name: Set order
         href: ../../api/identityuserflowattributeassignment-setorder.md
     - name: User flow language configuration
       items:
@@ -3623,7 +3653,7 @@ items:
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyagefinding-get.md
       - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md
+        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
     - name: AWS identity access management key usage finding
       items:
       - name: AWS identity access management key usage finding
@@ -3633,7 +3663,7 @@ items:
       - name: Get
         href: ../../api/awsidentityaccessmanagementkeyusagefinding-get.md
       - name: Aggregated summary
-        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md
+        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
     - name: Identity findings
       items:
       - name: Inactive user finding
@@ -3821,7 +3851,7 @@ items:
         - name: Get
           href: ../../api/unenforcedmfaawsuserfinding-get.md
         - name: Aggregated summary
-          href: ../../api/unenforcedMfaAwsUserFinding-aggregatedsummary.md
+          href: ../../api/unenforcedmfaawsuserfinding-aggregatedsummary.md
     - name: Privilege escalation findings
       items:
       - name: Privilege escalation user finding
@@ -4039,9 +4069,9 @@ items:
     href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
-    - name: Cross tenant access settings
+    - name: Cross-tenant access settings
       items:
-      - name: Cross tenant access settings
+      - name: Cross-tenant access settings
         href: ../../resources/networkaccess-crosstenantaccesssettings.md
       - name: Get
         href: ../../api/networkaccess-crosstenantaccesssettings-get.md
@@ -4091,7 +4121,7 @@ items:
         href: ../../resources/networkaccess-forwardingpolicylink.md
       - name: List
         href: ../../api/networkaccess-forwardingprofile-list-policies.md
-      - name: Get forwardingPolicyLink
+      - name: Get
         href: ../../api/networkaccess-forwardingpolicylink-get.md
       - name: Update
         href: ../../api/networkaccess-forwardingpolicylink-update.md

@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/social-overview.md
@@ -69,6 +72,18 @@ items:
       href: ../../api/profilecardproperty-update.md
     - name: Delete
       href: ../../api/profilecardproperty-delete.md
+- name: Insights settings
+  items:
+  - name: Insights settings
+    href: ../../resources/insightssettings.md
+  - name: List contactInsights
+    href: ../../api/organizationsettings-list-contactinsights.md
+  - name: List itemInsights
+    href: ../../api/peopleadminsettings-list-iteminsights.md
+  - name: List peopleInsights
+    href: ../../api/organizationsettings-list-peopleinsights.md
+  - name: Update insightsSettings
+    href: ../../api/insightssettings-update.md
 - name: Pronouns settings
   items:
   - name: Pronouns settings
@@ -216,11 +231,11 @@ items:
     - name: Create
       href: ../../api/profile-post-certifications.md
     - name: Get
-      href: ../../api/personCertification-get.md
+      href: ../../api/personcertification-get.md
     - name: Update
-      href: ../../api/personCertification-update.md
+      href: ../../api/personcertification-update.md
     - name: Delete
-      href: ../../api/personCertification-delete.md
+      href: ../../api/personcertification-delete.md
   - name: Educational activity
     items:
     - name: Educational activity

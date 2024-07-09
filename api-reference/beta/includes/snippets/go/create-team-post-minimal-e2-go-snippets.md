@@ -28,7 +28,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')", 
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
@@ -37,7 +37,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
+	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
