@@ -1580,7 +1580,7 @@
                   "name": "Remote desktop security configuration",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
-                    "targetdevicegroup"
+                    "targetDeviceGroup"
                   ]
                 }
               ]

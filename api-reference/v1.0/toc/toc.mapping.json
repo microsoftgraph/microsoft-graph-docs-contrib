@@ -1000,6 +1000,13 @@
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
                   ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
                 }
               ]
             },
