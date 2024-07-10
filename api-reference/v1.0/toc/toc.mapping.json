@@ -486,7 +486,7 @@
     },
     {
       "name": "Identity and access",
-      "overview": "../../resources/azure-ad-overview.md",
+      "overview": "../../resources/identity-network-access-overview.md",
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",

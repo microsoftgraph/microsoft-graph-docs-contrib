@@ -20,9 +20,9 @@ items:
   items:
   - name: Open type extension
     href: ../../resources/opentypeextension.md
-  - name: Create open extension
+  - name: Create
     href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
+  - name: Get
     href: ../../api/opentypeextension-get.md
   - name: Update
     href: ../../api/opentypeextension-update.md

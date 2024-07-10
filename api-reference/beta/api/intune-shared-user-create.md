@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Create a new [user](../resources/intune-shared-user.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  The specific permission required depends on the context.
@@ -36,6 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 

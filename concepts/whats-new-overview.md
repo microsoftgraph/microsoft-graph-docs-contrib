@@ -24,6 +24,10 @@ Use the **summary** property to get details about what happened, impacted assets
 
 ## July 2024: New in preview only
 
+### Device and app management | Cloud PC
+
+Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
+
 ### Security | Alerts and incidents
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
