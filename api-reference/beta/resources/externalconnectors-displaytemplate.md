@@ -2,7 +2,7 @@
 title: "displayTemplate resource type"
 description: "Defines the appearance of the content and the conditions that dictate when the template should be displayed."
 author: "emzho"
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
 ---

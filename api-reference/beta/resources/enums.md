@@ -3976,21 +3976,6 @@ Possible values for user account types (group membership), per Windows definitio
 | app                |
 | unknownFutureValue |
 
-### submissionResultCategory values
-
-| Member             |
-| :----------------- |
-| notJunk            |
-| spam               |
-| phishing           |
-| malware            |
-| allowedByPolicy    |
-| blockedByPolicy    |
-| spoof              |
-| unknown            |
-| noResultAvailable  |
-| unknownFutureValue |
-
 ### submissionSource values
 
 | Member             |
