@@ -17,14 +17,15 @@ Represents information about companies related to entities within their [profile
 
 ## Properties
 
-| Property       | Type                                | Description                                 |
-|:---------------|:------------------------------------|:--------------------------------------------|
-|address         |[physicalAddress](physicaladdress.md)| Address of the company.                     |
-|department      |String                               | Department Name within a company.           |
-|displayName     |String                               | Company name.                               |
-|officeLocation  |String                               | Office Location of the person referred to.  |
-|pronunciation   |String                               | Pronunciation guide for the company name.   |
-|webUrl          |String                               | Link to the company home page.              |
+| Property       | Type                                | Description                                            |
+|:---------------|:------------------------------------|:-------------------------------------------------------|
+|address         |[physicalAddress](physicaladdress.md)| Address of the company.                                |
+|department      |String                               | Department Name within a company.                      |
+|displayName     |String                               | Company name.                                          |
+|companyCode     |String                               | Legal entity number of the company or it's subdivision |
+|officeLocation  |String                               | Office Location of the person referred to.             |
+|pronunciation   |String                               | Pronunciation guide for the company name.              |
+|webUrl          |String                               | Link to the company home page.                         |
 
 ## JSON representation
 
@@ -44,6 +45,7 @@ The following is a JSON representation of the resource.
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "department": "String",
   "displayName": "String",
+  "companyCode": "String",
   "officeLocation": "String",
   "pronunciation": "String",
   "webUrl": "String"
