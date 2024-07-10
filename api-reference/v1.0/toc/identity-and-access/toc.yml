@@ -3,7 +3,7 @@
 #
 items:
 - name: Overview
-  href: ../../resources/azure-ad-overview.md
+  href: ../../resources/identity-network-access-overview.md
 - name: Directory management
   items:
   - name: Administrative unit
@@ -20,21 +20,21 @@ items:
       href: ../../api/administrativeunit-update.md
     - name: Delete
       href: ../../api/administrativeunit-delete.md
-    - name: Add a member
+    - name: Add member
       href: ../../api/administrativeunit-post-members.md
     - name: List members
       href: ../../api/administrativeunit-list-members.md
-    - name: Get a member
+    - name: Get member
       href: ../../api/administrativeunit-get-members.md
-    - name: Remove a member
+    - name: Remove member
       href: ../../api/administrativeunit-delete-members.md
-    - name: Assign a role with scope
-      href: ../../api/administrativeunit-post-scopedrolemembers.md
     - name: List role assignments with scope
       href: ../../api/administrativeunit-list-scopedrolemembers.md
-    - name: Get a role assignment with scope
+    - name: Assign role with scope
+      href: ../../api/administrativeunit-post-scopedrolemembers.md
+    - name: Get role assignment with scope
       href: ../../api/administrativeunit-get-scopedrolemembers.md
-    - name: Remove a role assignment with scope
+    - name: Remove role assignment with scope
       href: ../../api/administrativeunit-delete-scopedrolemembers.md
   - name: BitLocker recovery key
     items:
@@ -56,9 +56,9 @@ items:
     items:
     - name: Contract
       href: ../../resources/contract.md
-    - name: Get contract
+    - name: Get
       href: ../../api/contract-get.md
-    - name: List contracts
+    - name: List
       href: ../../api/contract-list.md
   - name: Custom security attributes
     items:
@@ -104,13 +104,13 @@ items:
     items:
     - name: Deleted item
       href: ../../resources/directory.md
-    - name: Get deleted item
-      href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted item
-      href: ../../api/directory-deleteditems-restore.md
-    - name: List deleted items
+    - name: List
       href: ../../api/directory-deleteditems-list.md
-    - name: Permanently delete item
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete
       href: ../../api/directory-deleteditems-delete.md
     - name: List deleted items owned by user
       href: ../../api/directory-deleteditems-getuserownedobjects.md
@@ -118,38 +118,30 @@ items:
     items:
     - name: Device
       href: ../../resources/device.md
-    - name: Get device
-      href: ../../api/device-get.md
-    - name: List devices
+    - name: List
       href: ../../api/device-list.md
-    - name: Update device
+    - name: Create
+      href: ../../api/device-post-devices.md
+    - name: Get
+      href: ../../api/device-get.md
+    - name: Update
       href: ../../api/device-update.md
-    - name: Delete device
+    - name: Delete
       href: ../../api/device-delete.md
-    - name: delta
+    - name: Get delta
       href: ../../api/device-delta.md
-    - name: List memberOf
+    - name: List member of
       href: ../../api/device-list-memberof.md
-    - name: List transitive memberOf
+    - name: List transitive member of
       href: ../../api/device-list-transitivememberof.md
-    - name: List registeredOwners
+    - name: List registered owners
       href: ../../api/device-list-registeredowners.md
-    - name: List registeredUsers
+    - name: List registered users
       href: ../../api/device-list-registeredusers.md
-    - name: checkMemberObjects
+    - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: getMemberObjects
+    - name: Get member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -206,46 +198,46 @@ items:
     items:
     - name: Directory role template
       href: ../../resources/directoryroletemplate.md
-    - name: Get directoryRoleTemplate
+    - name: Get
       href: ../../api/directoryroletemplate-get.md
-    - name: List directoryRoleTemplates
+    - name: List
       href: ../../api/directoryroletemplate-list.md
   - name: Domain
     items:
     - name: Domain
       href: ../../resources/domain.md
-    - name: Get domain
-      href: ../../api/domain-get.md
-    - name: Create domain
-      href: ../../api/domain-post-domains.md
-    - name: List domains
+    - name: List
       href: ../../api/domain-list.md
+    - name: Create
+      href: ../../api/domain-post-domains.md
+    - name: Get
+      href: ../../api/domain-get.md
+    - name: Update
+      href: ../../api/domain-update.md
+    - name: Delete
+      href: ../../api/domain-delete.md
+    - name: Force delete
+      href: ../../api/domain-forcedelete.md
+    - name: Verify
+      href: ../../api/domain-verify.md
+    - name: Promote
+      href: ../../api/domain-promote.md
     - name: List domain name references
       href: ../../api/domain-list-domainnamereferences.md
     - name: List service configuration records
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
-    - name: Update domain
-      href: ../../api/domain-update.md
-    - name: Delete domain
-      href: ../../api/domain-delete.md
-    - name: Force delete domain
-      href: ../../api/domain-forcedelete.md
-    - name: Verify domain
-      href: ../../api/domain-verify.md
-    - name: Promote domain
-      href: ../../api/domain-promote.md
   - name: Group setting
     items:
     - name: Group setting
       href: ../../resources/groupsetting.md
+    - name: List
+      href: ../../api/group-list-settings.md
     - name: Create
       href: ../../api/group-post-settings.md
     - name: Get
       href: ../../api/groupsetting-get.md
-    - name: List
-      href: ../../api/group-list-settings.md
     - name: Update
       href: ../../api/groupsetting-update.md
     - name: Delete
@@ -254,9 +246,9 @@ items:
     items:
     - name: Group setting template
       href: ../../resources/groupsettingtemplate.md
-    - name: Get group setting template
+    - name: Get
       href: ../../api/groupsettingtemplate-get.md
-    - name: List group setting templates
+    - name: List
       href: ../../api/groupsettingtemplate-list.md
   - name: On-premises directory synchronization
     items:
@@ -276,22 +268,30 @@ items:
         href: ../../api/orgcontact-list.md
       - name: Get
         href: ../../api/orgcontact-get.md
+      - name: Get delta
+        href: ../../api/orgcontact-delta.md
+      - name: Get delta for directory object
+        href: ../../api/directoryobject-delta.md
+      - name: List member of
+        href: ../../api/orgcontact-list-memberof.md
+      - name: List transitive members of
+        href: ../../api/orgcontact-list-transitivememberof.md
+      - name: Check member groups
+        href: ../../api/directoryobject-checkmembergroups.md
+      - name: Get member groups
+        href: ../../api/directoryobject-getmembergroups.md
+      - name: Check member objects
+        href: ../../api/directoryobject-checkmemberobjects.md
+      - name: Get member objects
+        href: ../../api/directoryobject-checkmemberobjects.md
+      - name: Retry service provisioning
+        href: ../../api/orgcontact-retryserviceprovisioning.md
     - name: Organizational hierarchy
       items:
       - name: Get manager
         href: ../../api/orgcontact-get-manager.md
       - name: List direct reports
         href: ../../api/orgcontact-list-directreports.md
-      - name: List memberships
-        href: ../../api/orgcontact-list-memberof.md
-      - name: List transitive memberships
-        href: ../../api/orgcontact-list-transitivememberof.md
-      - name: Check member groups
-        href: ../../api/directoryobject-checkmembergroups.md
-      - name: Get member groups
-        href: ../../api/directoryobject-getmembergroups.md
-      - name: Get member objects
-        href: ../../api/directoryobject-getmemberobjects.md
   - name: Organization
     items:
     - name: Organization
@@ -336,9 +336,9 @@ items:
     items:
     - name: Subscribed SKU
       href: ../../resources/subscribedsku.md
-    - name: Get subscribedSku
+    - name: Get
       href: ../../api/subscribedsku-get.md
-    - name: List subscribedSkus
+    - name: List
       href: ../../api/subscribedsku-list.md
   - name: Tenant information
     items:
@@ -2097,9 +2097,9 @@ items:
         href: ../../api/featurerolloutpolicy-update.md
       - name: Delete
         href: ../../api/featurerolloutpolicy-delete.md
-      - name: Create appliesTo
+      - name: Create applies to
         href: ../../api/featurerolloutpolicy-post-appliesto.md
-      - name: Delete appliesTo
+      - name: Delete applies to
         href: ../../api/featurerolloutpolicy-delete-appliesto.md
     - name: Identity security defaults enforcement policy
       items:
