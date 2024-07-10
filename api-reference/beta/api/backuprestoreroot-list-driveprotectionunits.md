@@ -92,6 +92,10 @@ GET /solutions/backupRestore/driveProtectionUnits
 [!INCLUDE [sample-code](../includes/snippets/php/list-all-driveprotectionunit-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-all-driveprotectionunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-all-driveprotectionunit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -324,6 +328,10 @@ GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-driveprotectionunit-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-driveprotectionunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

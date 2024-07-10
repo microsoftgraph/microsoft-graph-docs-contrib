@@ -58,7 +58,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "commerceSubscriptionId": "String",
+  "commerceSubscriptionId": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",

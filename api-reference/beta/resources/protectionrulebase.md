@@ -9,7 +9,7 @@ doc_type: resourcePageType
 toc.title: Protection rule
 ---
 
-# protectionRuleBase resource
+# protectionRuleBase resource type
 
 Namespace: microsoft.graph
 

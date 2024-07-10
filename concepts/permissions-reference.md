@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/11/2024
+ms.date: 06/28/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2889,6 +2889,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### IndustryData-ReferenceDefinition.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bda16293-63d3-45b7-b16b-833841d27d56 | a757d430-be6d-430f-af57-28aabe79d247 
+| DisplayText | Manage reference definitions | Manage reference definitions 
+| Description | Allows the app to read and write reference definitions without a signed-in user. | Allows the app to read and write reference definitions on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### IndustryData-Run.Read.All
 
 | Category | Application | Delegated |
@@ -5226,6 +5237,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SecurityIdentitiesSensors.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5f0ffea2-f474-4cf2-9834-61cda2bcea5c | 2c221239-7c5c-4b30-9355-d84663bfcd96 
+| DisplayText | Read all identity security sensors | Read identity security sensors 
+| Description | Allows the app to read all the identity security sensors without a signed-in user. | Allows the app to read all the identity security sensors of signed user 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### SecurityIdentitiesSensors.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d4dcee6d-0774-412a-b06c-aeabbd99e816 | 087c3ad9-c2ca-4b82-9885-d5e25ce9e183 
+| DisplayText | Read and write all identity security sensors | Read and write identity security sensors 
+| Description | Allows the app to read and write identity security sensors without a signed-in user. | Allows the app to read and write identity security sensors on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### SecurityIncident.Read.All
 
 | Category | Application | Delegated |
@@ -6720,6 +6753,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes 
 
 ![personal Microsoft accounts][MSA] The *User.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+
+---
+
+### User.RevokeSessions.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 77f3a031-c388-4f99-b373-dc68676a979e | fc30e98b-8810-4501-81f5-c20a3196387b 
+| DisplayText | Revoke all sign in sessions for a user | Revoke all sign in sessions for a user 
+| Description | Allow the app to revoke all sign in sessions for a user, without a signed-in user. | Allow the app to revoke all sign in sessions for a user, on behalf of a signed-in user. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 
