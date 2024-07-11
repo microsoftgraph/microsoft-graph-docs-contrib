@@ -1,5 +1,5 @@
 ---
-title: "List cloudAppDiscoveryReport objects"
+title: "List cloudAppDiscoveryReport"
 description: "Get a list of the microsoft.graph.security.cloudAppDiscoveryReport objects and their properties."
 author: "nechamam"
 ms.localizationpriority: medium
