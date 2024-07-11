@@ -1,6 +1,6 @@
 ---
-title: "List discoveredCloudAppDetail objects"
-description: "Get a list of the microsoft.graph.security.discoveredCloudAppDetail objects and their properties."
+title: "List discoveredCloudAppDetail"
+description: "Get the details of discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) objects and their properties.
+Get the details of discovered cloud apps including tha Name of the app, Tag of the app, risk score of the app & the usage analytics of the app.
 
 ## Permissions
 
