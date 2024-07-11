@@ -1,6 +1,6 @@
 ---
 title: "Get dataDiscoveryReport"
-description: "Read the properties and relationships of a microsoft.graph.security.dataDiscoveryReport object."
+description: "Read the properties and relationships of discovery data report"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.
+Read the properties and relationships of a discovery data report.
 
 ## Permissions
 
