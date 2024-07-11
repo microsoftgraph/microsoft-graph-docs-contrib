@@ -1,6 +1,6 @@
 ---
-title: "List discoveredCloudAppDevice objects"
-description: "Get a list of the microsoft.graph.security.discoveredCloudAppDevice objects and their properties."
+title: "List discoveredCloudAppDevice"
+description: "Get a list of all devices that are accessing discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects and their properties.
+Get a list of all devices that are accessing discovered cloud apps. You can get information of which device is accessing a specific cloud app
 
 ## Permissions
 
