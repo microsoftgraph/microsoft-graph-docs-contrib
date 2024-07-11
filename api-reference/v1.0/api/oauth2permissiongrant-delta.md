@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "oauth2permissiongrant_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-delta-permissions.md)]
 
+[!INCLUDE [rbac-oauth2permissiongrant-apis-read](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-read.md)]
+
 ## HTTP request
 
 
@@ -41,7 +43,7 @@ You only need to specify query parameters once.
 In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. The URL 
 includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL, including this token, in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same resource collection. |

@@ -16,11 +16,25 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2024: New and generally available
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
+
 ## July 2024: New in preview only
 
 ### Applications | Application
 
 Use the **configurationUris** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to define the URIs required for the single sign-on configuration of a preintegrated application.
+
+### Device and app management | Cloud PC
+
+Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
 
 ## June 2024: New and generally available
 

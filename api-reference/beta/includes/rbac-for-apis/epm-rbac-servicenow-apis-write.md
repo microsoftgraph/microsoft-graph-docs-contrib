@@ -1,7 +1,6 @@
 ---
 author: mrudulahg01
 ms.topic: include
-ms.date: 09/29/2023
 ms.author: mrudulahg01
 ---
 
