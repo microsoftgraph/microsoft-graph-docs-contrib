@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport: aggregatedAppsDetails"
-description: "This is a aggregation of discovered apps for the given duration"
+description: "Get the aggregated details of discovered apps by providing the time period"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**The `aggregatedAppsDetails` method shows the information of all apps. Provide the specific time period as input for this method.**
+**Get the aggregated details of discovered apps by providing the time period .The supported time periods are last 7, 30, or 90 days**
 
 ## Permissions
 
@@ -42,7 +42,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|Duration|**Provide time frame in which you want to query the data. Supported time frames include the last 7, 30, or 90 days.**|
+|period|Duration|Provide time frame in which you want to query the data. Supported time frames include - last 7 days ,last 30 days or last 90 days|
 
 
 ## Request headers
