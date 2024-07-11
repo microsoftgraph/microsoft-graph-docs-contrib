@@ -1,6 +1,6 @@
 ---
-title: "List dataDiscoveryReport objects"
-description: "Get a list of the microsoft.graph.security.dataDiscoveryReport objects and their properties."
+title: "List dataDiscoveryReport"
+description: "Get a list of the DiscoveryReport objects and their properties."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
