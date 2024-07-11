@@ -117,7 +117,7 @@ The following JSON representation shows the resource type.
   "itemMajorVersionLimit": "int64",
   "isItemVersioningEnabled": "boolean",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
-  "settings": [ { "@odata.type": "microsoft.graph.fileStorageContainerSettings" } ]
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
 }
 ```
 
