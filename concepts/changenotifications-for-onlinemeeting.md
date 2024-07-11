@@ -41,7 +41,7 @@ To park a subscription, the argument must be URL encoded and used as the `joinWe
 > [!NOTE]
 > Replace `{JoinWebUrl}` with the actual URL-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
-Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications. Basic notifications without change data are sent if these properties aren't provided.
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
 
 ### Subscription to rich notifications payload sample
 
