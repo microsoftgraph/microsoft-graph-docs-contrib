@@ -1,7 +1,7 @@
 ---
 title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams admin center"
 description: "Deploy your custom Graph connector in your Teams App with simplified enablement."
-author: monaray
+author: "monaray97"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search

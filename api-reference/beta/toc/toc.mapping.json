@@ -136,8 +136,8 @@
         {
           "name": "Protection policy",
           "resources": [
-            "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
             "sharePointProtectionPolicy"
           ]
         },
@@ -907,7 +907,7 @@
     },
     {
       "name": "Identity and access",
-      "overview": "../../resources/azure-ad-overview.md",
+      "overview": "../../resources/identity-network-access-overview.md",
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
@@ -986,8 +986,15 @@
                 "unifiedRoleAssignment",
                 "unifiedRoleAssignmentMultiple",
                 "unifiedRbacResourceNamespace",
-                "unifiedRbacResourceAction",
                 "customAppScope"
+              ],
+              "childNodes": [
+                {
+                  "name": "Resource namespace",
+                  "resources": [
+                    "unifiedRbacResourceAction"
+                  ]
+                }
               ]
             },
             {
