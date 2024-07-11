@@ -318,6 +318,8 @@ items:
     href: ../../api/educationsynchronizationprofile-get.md
   - name: Create profile
     href: ../../api/educationsynchronizationprofile-post.md
+  - name: Update profile
+    href: ../../api/educationsynchronizationprofile-put.md
   - name: Delete profile
     href: ../../api/educationsynchronizationprofile-delete.md
   - name: Pause profile
