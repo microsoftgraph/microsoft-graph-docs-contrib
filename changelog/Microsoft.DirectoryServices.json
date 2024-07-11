@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **nativeAuthenticationApisEnabled** enumeration type.",
+          "Target": "application"
+        },
+        {
+          "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `nativeAuthenticationApisEnabled` property to the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-v1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **nativeAuthenticationApisEnabled** enumeration type.",
+          "Target": "application"
+        },
+        {
+          "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `nativeAuthenticationApisEnabled` property to the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9f36ca59-dedd-4ed2-b95d-713f02df87d3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementRestrictionState",
