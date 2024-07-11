@@ -1,6 +1,6 @@
 ---
 title: "Get endpointDiscoveredCloudAppDetail"
-description: "Read the properties and relationships of a microsoft.graph.security.endpointDiscoveredCloudAppDetail object."
+description: "Get the details of all the discovered apps for a specific stream/endpoint"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.endpointDiscoveredCloudAppDetail](../resources/security-endpointdiscoveredcloudappdetail.md) object.
+Get the details of all the discovered apps for a specific stream/endpoint. 
 
 ## Permissions
 
