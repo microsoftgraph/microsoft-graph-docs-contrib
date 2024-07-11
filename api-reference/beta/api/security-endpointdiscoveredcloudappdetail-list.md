@@ -1,6 +1,6 @@
 ---
-title: "List endpointDiscoveredCloudAppDetail objects"
-description: "Get a list of the microsoft.graph.security.endpointDiscoveredCloudAppDetail objects and their properties."
+title: "List endpointDiscoveredCloudAppDetail"
+description: "Get a list of the discovered apps in a specific endpoint/stream"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.endpointDiscoveredCloudAppDetail](../resources/security-endpointdiscoveredcloudappdetail.md) objects and their properties.
+Get a list of the discovered apps in a specific endpoint/stream. You may chose any specific endpoint that you have onbaorded to cloud discovery
 
 ## Permissions
 
