@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Upsert federatedIdentityCredential
 Namespace: microsoft.graph
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application if it does exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
