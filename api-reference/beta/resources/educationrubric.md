@@ -1,6 +1,6 @@
 ---
 title: "educationRubric resource type"
-description: "Represents a grading rubric that can be attached to an assignment"
+description: "Represents a grading rubric that can be attached to an assignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
 ms.subservice: "education"
