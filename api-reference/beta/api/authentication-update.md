@@ -23,11 +23,19 @@ Update the properties of a user's authentication method states. Use this API to 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to update system-preferred MFA
+
 <!-- { "blockType": "permissions", "name": "authentication_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-update-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
+### Permissions to update per-user MFA state
+
+<!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-update-2-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
 To update the sign-in preferences for a user:
