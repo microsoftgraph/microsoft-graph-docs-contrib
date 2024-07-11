@@ -1,6 +1,6 @@
 ---
 title: "Get discoveredCloudAppInfo"
-description: "Read the properties and relationships of a microsoft.graph.security.discoveredCloudAppInfo object."
+description: "Get the details of risk attributes of the discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.
+Get the details of the security, legal & complaince risk attributes of the discovered cloud apps
 
 ## Permissions
 
