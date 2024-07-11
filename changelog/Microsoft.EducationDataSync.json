@@ -123,7 +123,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationCsvDataProvider",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationCsvDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationCsvDataProvider?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationCsvDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationCsvDataProvider?view=graph-rest-beta) resource.",
           "Target": "educationCsvDataProvider"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationFileSynchronizationVerificationMessage",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationFileSynchronizationVerificationMessage](https://learn.microsoft.com/en-us/graph/api/resources/educationFileSynchronizationVerificationMessage?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationFileSynchronizationVerificationMessage](https://learn.microsoft.com/en-us/graph/api/resources/educationFileSynchronizationVerificationMessage?view=graph-rest-beta) resource.",
           "Target": "educationFileSynchronizationVerificationMessage"
         },
         {
@@ -139,7 +139,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationIdentityCreationConfiguration",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationIdentityCreationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityCreationConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationIdentityCreationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityCreationConfiguration?view=graph-rest-beta) resource.",
           "Target": "educationIdentityCreationConfiguration"
         },
         {
@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationIdentityDomain",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationIdentityDomain](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityDomain?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationIdentityDomain](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityDomain?view=graph-rest-beta) resource.",
           "Target": "educationIdentityDomain"
         },
         {
@@ -155,7 +155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationIdentityMatchingConfiguration",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationIdentityMatchingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityMatchingConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationIdentityMatchingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityMatchingConfiguration?view=graph-rest-beta) resource.",
           "Target": "educationIdentityMatchingConfiguration"
         },
         {
@@ -163,7 +163,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationIdentityMatchingOptions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationIdentityMatchingOptions](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityMatchingOptions?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationIdentityMatchingOptions](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentityMatchingOptions?view=graph-rest-beta) resource.",
           "Target": "educationIdentityMatchingOptions"
         },
         {
@@ -171,7 +171,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationIdentitySynchronizationConfiguration",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationIdentitySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentitySynchronizationConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationIdentitySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/educationIdentitySynchronizationConfiguration?view=graph-rest-beta) resource.",
           "Target": "educationIdentitySynchronizationConfiguration"
         },
         {
@@ -179,7 +179,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationOneRosterApiDataProvider",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationOneRosterApiDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationOneRosterApiDataProvider?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationOneRosterApiDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationOneRosterApiDataProvider?view=graph-rest-beta) resource.",
           "Target": "educationOneRosterApiDataProvider"
         },
         {
@@ -187,7 +187,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationPowerSchoolDataProvider",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationPowerSchoolDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationPowerSchoolDataProvider?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationPowerSchoolDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationPowerSchoolDataProvider?view=graph-rest-beta) resource.",
           "Target": "educationPowerSchoolDataProvider"
         },
         {
@@ -195,7 +195,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationConnectionSettings",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationConnectionSettings?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationConnectionSettings?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationConnectionSettings"
         },
         {
@@ -203,7 +203,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationCustomization",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationCustomization](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationCustomization?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationCustomization](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationCustomization?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationCustomization"
         },
         {
@@ -211,7 +211,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationCustomizations",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationCustomizations](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationCustomizations?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationCustomizations](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationCustomizations?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationCustomizations"
         },
         {
@@ -219,15 +219,23 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationDataProvider",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationDataProvider?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationDataProvider](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationDataProvider?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationDataProvider"
+        },
+        {
+          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSynchronizationError",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [educationSynchronizationError](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) resource and a supported method.",
+          "Target": "educationSynchronizationError"
         },
         {
           "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationLicenseAssignment",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationLicenseAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationLicenseAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationLicenseAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationLicenseAssignment?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationLicenseAssignment"
         },
         {
@@ -235,7 +243,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationOAuth1ConnectionSettings",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationOAuth1ConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationOAuth1ConnectionSettings?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationOAuth1ConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationOAuth1ConnectionSettings?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationOAuth1ConnectionSettings"
         },
         {
@@ -243,23 +251,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationOAuth2ClientCredentialsConnectionSettings?view=graph-rest-beta) resource type.",
+          "Description": "Deprecated the [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationOAuth2ClientCredentialsConnectionSettings?view=graph-rest-beta) resource.",
           "Target": "educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "educationSynchronizationError",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationError](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) resource",
-          "Target": "educationSynchronizationError"
         },
         {
           "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationProfile",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource",
+          "Description": "Deprecated the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource and supported methods.",
           "Target": "educationSynchronizationProfile"
         },
         {
@@ -267,8 +267,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationProfileStatus",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationProfileStatus](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofileStatus?view=graph-rest-beta) resource",
+          "Description": "Deprecated the [educationSynchronizationProfileStatus](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofileStatus?view=graph-rest-beta) resource and a supported method.",
           "Target": "educationSynchronizationProfileStatus"
+        },
+        {
+          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "synchronizationProfiles",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **synchronizationProfiles** relationship on the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationroot?view=graph-rest-beta) resource.",
+          "Target": "educationRoot"
         },
         {
           "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
