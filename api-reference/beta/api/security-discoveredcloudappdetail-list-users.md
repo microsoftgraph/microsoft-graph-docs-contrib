@@ -1,6 +1,6 @@
 ---
-title: "List discoveredCloudAppUser objects"
-description: "Get a list of the microsoft.graph.security.discoveredCloudAppUser objects and their properties."
+title: "List discoveredCloudAppUsers"
+description: "Get a list of users for the discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) objects and their properties.
+Get a list of users for the discovered cloud apps.
 
 ## Permissions
 
