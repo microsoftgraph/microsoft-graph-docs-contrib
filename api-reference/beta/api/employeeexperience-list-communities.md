@@ -132,7 +132,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/communities?$top=2
 
 If the number of communities exceeds 20 or you use the `$top` query parameter to set the page size of results, multiple query requests might be necessary to retrieve all results. In this scenario, the API continues to return a reference to the next page of results in the **@odata.nextLink** property with each response until no more pages remain to be retrieved.
 
-The following example shows the response  that includes the **@odata.nextLink** property.
+The following example shows the response that includes the **@odata.nextLink** property.
 
 >**Note:** The response object shown here might be shortened for readability.
 
