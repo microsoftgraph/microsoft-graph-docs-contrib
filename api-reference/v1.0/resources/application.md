@@ -21,24 +21,25 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
-- Alternate key syntax. The `appId` property is a supported alternate key. For more information, see [Get application](../api/application-get.md).
+- Alternate key syntax. The `appId` property is a supported alternate key. For more information, see [Get application](../api/application-get.md). 
 
 ## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
-|[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
-|[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
-|[Update application](../api/application-update.md) | None |Update application object. |
-|[Upsert application](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
-|[Delete application](../api/application-delete.md) | None |Delete application object. |
+|[List](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
+|[Create](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
+|[Get](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
+|[Update](../api/application-update.md) | None |Update application object. |
+|[Upsert](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
+|[Delete](../api/application-delete.md) | None |Delete application object. |
 |[Get delta](../api/application-delta.md)|[application](application.md)|Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.|
-|[List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
-| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that a user owns. |
-|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
-|[Permanently delete item](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
-|[Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|**Deleted applications**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
+| [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
 |**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|

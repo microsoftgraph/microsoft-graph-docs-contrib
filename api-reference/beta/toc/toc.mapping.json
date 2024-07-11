@@ -41,6 +41,25 @@
           ]
         },
         {
+          "name": "Service principal",
+          "shouldSort": true,
+          "resources": [],
+          "childNodes": [
+            {
+              "name": "Policies",
+              "resources": [
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy",
+                "remoteDesktopSecurityConfiguration",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy",
+                "permissionGrantPreApprovalPolicy"
+              ]
+            }
+          ]
+        },
+        {
           "name": "On-premises publishing",
           "overview": "../../resources/onpremisespublishingprofile-root.md",
           "resources": [
@@ -83,6 +102,12 @@
               "name": "Synchronization job",
               "resources": [
                 "bulkUpload"
+              ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
               ]
             }
           ]
@@ -1556,6 +1581,13 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
+                  ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
                   ]
                 }
               ]
