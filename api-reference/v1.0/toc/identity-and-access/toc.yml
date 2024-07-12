@@ -676,20 +676,24 @@ items:
       items:
       - name: Access package catalog
         href: ../../resources/accesspackagecatalog.md
-      - name: List accessPackageCatalogs
+      - name: List
         href: ../../api/entitlementmanagement-list-catalogs.md
-      - name: Create accessPackageCatalog
+      - name: Create
         href: ../../api/entitlementmanagement-post-catalogs.md
-      - name: Get accessPackageCatalog
+      - name: Get
         href: ../../api/accesspackagecatalog-get.md
-      - name: Update accessPackageCatalog
+      - name: Update
         href: ../../api/accesspackagecatalog-update.md
-      - name: Delete accessPackageCatalog
+      - name: Delete
         href: ../../api/accesspackagecatalog-delete.md
-      - name: List accessPackageCatalog resources
-        href: ../../api/accesspackagecatalog-list-resources.md
-      - name: List accessPackageCatalog resource roles
-        href: ../../api/accesspackagecatalog-list-resourceroles.md
+      - name: Access package catalog resources
+        items:
+        - name: List
+          href: ../../api/accesspackagecatalog-list-resources.md
+      - name: Access package catalog resource roles
+        items:
+        - name: List
+          href: ../../api/accesspackagecatalog-list-resourceroles.md
     - name: Access package resource
       items:
       - name: Access package resource
@@ -760,18 +764,22 @@ items:
         href: ../../api/connectedorganization-update.md
       - name: Delete
         href: ../../api/connectedorganization-delete.md
-      - name: List external sponsors
-        href: ../../api/connectedorganization-list-externalsponsors.md
-      - name: Add external sponsors
-        href: ../../api/connectedorganization-post-externalsponsors.md
-      - name: List internal sponsors
-        href: ../../api/connectedorganization-list-internalsponsors.md
-      - name: Add internal sponsors
-        href: ../../api/connectedorganization-post-internalsponsors.md
-      - name: Remove internal sponsors
-        href: ../../api/connectedorganization-delete-internalsponsors.md
-      - name: Remove external sponsors
-        href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: External sponsors
+        items:
+        - name: List
+          href: ../../api/connectedorganization-list-externalsponsors.md
+        - name: Add
+          href: ../../api/connectedorganization-post-externalsponsors.md
+        - name: Remove
+          href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: Internal sponsors
+        items:
+        - name: List
+          href: ../../api/connectedorganization-list-internalsponsors.md
+        - name: Add
+          href: ../../api/connectedorganization-post-internalsponsors.md
+        - name: Remove
+          href: ../../api/connectedorganization-delete-internalsponsors.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings

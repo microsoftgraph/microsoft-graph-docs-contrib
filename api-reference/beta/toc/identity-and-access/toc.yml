@@ -1017,54 +1017,24 @@ items:
       items:
       - name: Access package catalog
         href: ../../resources/accesspackagecatalog.md
-      - name: List accessPackageCatalogs
+      - name: List
         href: ../../api/entitlementmanagement-list-accesspackagecatalogs.md
-      - name: Create accessPackageCatalog
+      - name: Create
         href: ../../api/entitlementmanagement-post-accesspackagecatalogs.md
-      - name: Get accessPackageCatalog
+      - name: Get
         href: ../../api/accesspackagecatalog-get.md
-      - name: Update accessPackageCatalog
+      - name: Update
         href: ../../api/accesspackagecatalog-update.md
-      - name: Delete accessPackageCatalog
+      - name: Delete
         href: ../../api/accesspackagecatalog-delete.md
-      - name: Access package resources
+      - name: Access package catalog resources
         items:
-        - name: List accessPackageCatalog resources
+        - name: List
           href: ../../api/accesspackagecatalog-list-accesspackageresources.md
-      - name: Access package resource roles
+      - name: Access package catalog resource roles
         items:
-        - name: List accessPackageCatalog resource roles
+        - name: List
           href: ../../api/accesspackagecatalog-list-accesspackageresourceroles.md
-      - name: Access package custom package workflow extensions
-        items:
-        - name: List accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
-        - name: Create accessPackageCustomWorkflowExtensions
-          href: ../../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
-        - name: Get accessPackageAssignmentRequestWorkflowExtension
-          href: ../../api/accesspackageassignmentrequestworkflowextension-get.md
-        - name: Update accessPackageAssignmentRequestWorkflowExtension
-          href: ../../api/accesspackageassignmentrequestworkflowextension-update.md
-        - name: Delete accessPackageAssignmentRequestWorkflowExtension
-          href: ../../api/accesspackageassignmentrequestworkflowextension-delete.md
-        - name: Get accessPackageAssignmentWorkflowExtension
-          href: ../../api/accesspackageassignmentworkflowextension-get.md
-        - name: Update accessPackageAssignmentWorkflowExtension
-          href: ../../api/accesspackageassignmentworkflowextension-update.md
-        - name: Delete accessPackageAssignmentWorkflowExtension
-          href: ../../api/accesspackageassignmentworkflowextension-delete.md
-      - name: Custom access package package workflow extensions
-        items:
-        - name: List customAccessPackageWorkflowExtensions
-          href: ../../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
-        - name: Create customAccessPackageWorkflowExtensions
-          href: ../../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
-        - name: Get customAccessPackageWorkflowExtension
-          href: ../../api/customaccesspackageworkflowextension-get.md
-        - name: Update customAccessPackageWorkflowExtension
-          href: ../../api/customaccesspackageworkflowextension-update.md
-        - name: Delete customAccessPackageWorkflowExtension
-          href: ../../api/customaccesspackageworkflowextension-delete.md
     - name: Access package resource role
       items:
       - name: Access package resource role
@@ -1145,18 +1115,22 @@ items:
         href: ../../api/connectedorganization-update.md
       - name: Delete
         href: ../../api/connectedorganization-delete.md
-      - name: List internal sponsors
-        href: ../../api/connectedorganization-list-internalsponsors.md
-      - name: List external sponsors
-        href: ../../api/connectedorganization-list-externalsponsors.md
-      - name: Add internal sponsors
-        href: ../../api/connectedorganization-post-internalsponsors.md
-      - name: Add external sponsors
-        href: ../../api/connectedorganization-post-externalsponsors.md
-      - name: Remove internal sponsors
-        href: ../../api/connectedorganization-delete-internalsponsors.md
-      - name: Remove external sponsors
-        href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: External sponsors
+        items:
+        - name: List external sponsors
+          href: ../../api/connectedorganization-list-externalsponsors.md
+        - name: Add external sponsors
+          href: ../../api/connectedorganization-post-externalsponsors.md
+        - name: Remove external sponsors
+          href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: Internal sponsors
+        items:
+        - name: List internal sponsors
+          href: ../../api/connectedorganization-list-internalsponsors.md
+        - name: Add internal sponsors
+          href: ../../api/connectedorganization-post-internalsponsors.md
+        - name: Remove internal sponsors
+          href: ../../api/connectedorganization-delete-internalsponsors.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
