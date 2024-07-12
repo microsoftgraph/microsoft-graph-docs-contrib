@@ -1,6 +1,6 @@
 ---
 title: "Update authentication method states"
-description: "Update the properties of a user's authentication states."
+description: "Update the properties of a user's authentication states, such as their sign-in preferences (system-preferred MFA) and per-user MFA state."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a user's authentication method states. Use this API to update the following information:
 
-- A user's [signInPreferences](../resources/signInPreferences.md)
-- A user's [strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)
+- A user's [signInPreferences (system-preferred MFA)](../resources/signInPreferences.md)
+- A user's [strongAuthenticationRequirements (per-user MFA)](../resources/strongauthenticationrequirements.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
-To update the sign-in preferences for a user:
+To update the sign-in preferences (system-preferred MFA) for a user:
 <!-- {
   "blockType": "ignored"
 }
@@ -53,6 +53,7 @@ To update the per-user multifactor authentication state for a user:
 }
 -->
 ``` http
+PATCH /me/authentication/requirements
 PATCH /users/{id | userPrincipalName}/authentication/requirements
 ```
 
@@ -79,7 +80,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update a user's default MFA method
+### Example 1: Update a user's system-preferred MFA method
 
 #### Request
 The following example shows a request.
