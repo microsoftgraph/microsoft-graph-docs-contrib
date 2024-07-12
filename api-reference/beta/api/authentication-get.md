@@ -32,8 +32,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions to read per-user MFA state
 
+#### Permissions acting on self
+
 <!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-2-permissions.md)]
+
+#### Permissions acting on others
+
+<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-get-3-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
 

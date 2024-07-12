@@ -2,4 +2,4 @@
 |:---|:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Policy.ReadWrite.AuthenticationMethod|Not available.|
+|Application|Not supported.|Not supported.|

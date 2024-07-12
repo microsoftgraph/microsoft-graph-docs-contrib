@@ -32,8 +32,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions to update per-user MFA state
 
+#### Permissions acting on self
+
 <!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-update-2-permissions.md)]
+
+#### Permissions acting on others
+
+<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-update-3-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
