@@ -919,7 +919,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -932,7 +931,6 @@
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
-            "subscribedSku",
             "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
