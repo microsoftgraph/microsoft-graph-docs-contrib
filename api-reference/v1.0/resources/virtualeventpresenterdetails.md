@@ -1,6 +1,6 @@
 ---
 title: "virtualEventPresenterDetails resource type"
-description: "Represents detail information about a virtual event presenter."
+description: "Represents detailed information about a virtual event presenter."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
