@@ -27,7 +27,7 @@ Represents information about companies related to entities within their [profile
 |pronunciation   |String                               | Pronunciation guide for the company name.              |
 |webUrl          |String                               | Link to the company home page.                         |
 
-*For more information on how to set the value for **companyCode**, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
+*For more information on how to update the value for **companyCode**, see [profileSourceAnnotation resource type](profilesourceannotation.md).
 
 ## JSON representation
 
