@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents detail information about a virtual event presenter.
+Represents detailed information about a virtual event presenter.
 
 ## Properties
 
