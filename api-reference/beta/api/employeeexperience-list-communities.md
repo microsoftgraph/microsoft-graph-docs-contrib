@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a list of communities with client-side paging
+### Example 2: Get a list of communities with pagination
 
 The following example shows how to get a list of Viva Engage communities using the `$top` query parameter to set the page size of results. 
 
