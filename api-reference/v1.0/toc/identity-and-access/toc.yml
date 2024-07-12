@@ -250,6 +250,24 @@ items:
       href: ../../api/groupsettingtemplate-get.md
     - name: List
       href: ../../api/groupsettingtemplate-list.md
+  - name: Licenses and subscriptions
+    items:
+    - name: Company subscription
+      items:
+      - name: Company subscription
+        href: ../../resources/companysubscription.md
+      - name: Get
+        href: ../../api/companysubscription-get.md
+      - name: List
+        href: ../../api/directory-list-subscriptions.md
+    - name: Subscribed SKU
+      items:
+      - name: Subscribed SKU
+        href: ../../resources/subscribedsku.md
+      - name: Get
+        href: ../../api/subscribedsku-get.md
+      - name: List
+        href: ../../api/subscribedsku-list.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -1918,19 +1936,19 @@ items:
         href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
       - name: Reset
         href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
-  - name: OAuth 2 permission grant
+  - name: OAuth2 (delegated) permission grant
     items:
-    - name: OAuth 2 permission grant
+    - name: OAuth2 (delegated) permission grant
       href: ../../resources/oauth2permissiongrant.md
-    - name: List oAuth2PermissionGrants
+    - name: List
       href: ../../api/oauth2permissiongrant-list.md
-    - name: Get oAuth2PermissionGrant
+    - name: Get
       href: ../../api/oauth2permissiongrant-get.md
-    - name: Create oAuth2PermissionGrant
+    - name: Create
       href: ../../api/oauth2permissiongrant-post.md
-    - name: Update oAuth2PermissionGrant
+    - name: Update
       href: ../../api/oauth2permissiongrant-update.md
-    - name: Delete oAuth2PermissionGrant
+    - name: Delete
       href: ../../api/oauth2permissiongrant-delete.md
     - name: Get delta
       href: ../../api/oauth2permissiongrant-delta.md
