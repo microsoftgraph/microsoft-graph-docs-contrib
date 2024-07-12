@@ -533,6 +533,13 @@
               ]
             },
             {
+              "name": "Licenses and subscriptions",
+              "resources": [
+                "companySubscription",
+                "subscribedSku"
+              ]
+            },
+            {
               "name": "Role management",
               "resources": [
                 "roleManagement",

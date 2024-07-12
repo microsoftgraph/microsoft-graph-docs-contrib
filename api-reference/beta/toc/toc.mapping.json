@@ -958,6 +958,13 @@
               ]
             },
             {
+              "name": "Licenses and subscriptions",
+              "resources": [
+                "companySubscription",
+                "subscribedSku"
+              ]
+            },
+            {
               "name": "Organization settings",
               "resources": [
                 "microsoftApplicationDataAccessSettings",
