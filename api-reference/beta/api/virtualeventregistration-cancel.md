@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-cancel-permissions.md)]
 
 > [!NOTE]
-> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis).
+> - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis).
 > - Use application permissions to cancel a registration record for an anonymous user. 
 
 ## HTTP request
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualeventregistrationthiscancel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualeventregistrationthiscancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

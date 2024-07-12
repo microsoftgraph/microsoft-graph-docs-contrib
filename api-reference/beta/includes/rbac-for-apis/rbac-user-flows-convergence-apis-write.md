@@ -3,4 +3,4 @@ author: nanguil
 ms.topic: include
 ---
 
-For delegated scenarios, the administrator needs at least the *External ID User Flow Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be an owner or member of the group or be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *External ID User Flow Administrator* is the following least privileged role supported for this operation.
