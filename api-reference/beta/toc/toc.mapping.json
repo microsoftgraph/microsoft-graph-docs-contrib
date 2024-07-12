@@ -41,6 +41,25 @@
           ]
         },
         {
+          "name": "Service principal",
+          "shouldSort": true,
+          "resources": [],
+          "childNodes": [
+            {
+              "name": "Policies",
+              "resources": [
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy",
+                "remoteDesktopSecurityConfiguration",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy",
+                "permissionGrantPreApprovalPolicy"
+              ]
+            }
+          ]
+        },
+        {
           "name": "On-premises publishing",
           "overview": "../../resources/onpremisespublishingprofile-root.md",
           "resources": [
@@ -84,6 +103,12 @@
               "resources": [
                 "bulkUpload"
               ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
+              ]
             }
           ]
         }
@@ -111,8 +136,8 @@
         {
           "name": "Protection policy",
           "resources": [
-            "oneDriveForBusinessProtectionPolicy",
             "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
             "sharePointProtectionPolicy"
           ]
         },
@@ -785,7 +810,7 @@
     },
     {
       "name": "Extensions",
-      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
+      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2Fbeta&preserve-view=true",
       "keywords": [
         "Directory extensions",
         "Schema extensions",
@@ -882,7 +907,7 @@
     },
     {
       "name": "Identity and access",
-      "overview": "../../resources/azure-ad-overview.md",
+      "overview": "../../resources/identity-network-access-overview.md",
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
@@ -961,8 +986,15 @@
                 "unifiedRoleAssignment",
                 "unifiedRoleAssignmentMultiple",
                 "unifiedRbacResourceNamespace",
-                "unifiedRbacResourceAction",
                 "customAppScope"
+              ],
+              "childNodes": [
+                {
+                  "name": "Resource namespace",
+                  "resources": [
+                    "unifiedRbacResourceAction"
+                  ]
+                }
               ]
             },
             {
@@ -1549,6 +1581,13 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
+                  ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
                   ]
                 }
               ]

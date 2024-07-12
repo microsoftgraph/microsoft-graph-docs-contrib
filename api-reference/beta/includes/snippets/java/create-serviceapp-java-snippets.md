@@ -8,7 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ServiceApp result = graphClient.solutions().backupRestore().serviceApps().post(null);
+ServiceApp serviceApp = new ServiceApp();
+ServiceApp result = graphClient.solutions().backupRestore().serviceApps().post(serviceApp);
 
 
 ```

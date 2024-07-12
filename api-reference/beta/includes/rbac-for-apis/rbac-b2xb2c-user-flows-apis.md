@@ -3,4 +3,4 @@ author: nanguil
 ms.topic: include
 ---
 
-The work or school account needs to belong to at least the *External ID User Flow Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *External ID User Flow Administrator* is the least privileged role supported for this operation.

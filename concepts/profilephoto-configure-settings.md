@@ -62,7 +62,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": null
+    "allowedRoles": []
 }
 ```
 
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": {}
+    "allowedRoles": []
 }
 ```
 ## Block users from changing their user profile photos 
@@ -92,7 +92,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": [" fe930be7-5e62-47db-91af-98c3a49a38b1"]
+    "allowedRoles": ["fe930be7-5e62-47db-91af-98c3a49a38b1"]
 }
 ```
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 {
 
     "source": "cloud",
-    "allowedRoles": [" fe930be7-5e62-47db-91af-98c3a49a38b1"]
+    "allowedRoles": ["fe930be7-5e62-47db-91af-98c3a49a38b1"]
 }
 ```
 ### Configure User Administrator and Administrator support for profile photo updates
@@ -143,8 +143,8 @@ PATCH https://graph.microsoft.com/beta/admin/people/photoupdatesettings
 Content-Type: application/json
 
 {
-    "source": "onpremises",
-    "allowedRoles": null
+    "source": "onPremises",
+    "allowedRoles": []
 }
 ```
 If successful, the response returns a `200 OK` response code and a **photoUpdateSettings** object in the response body.
@@ -155,6 +155,6 @@ Content-Type: application/json
 
 {
     "source": "onPremises",
-    "allowedRoles": {}
+    "allowedRoles": []
 }
 ```
