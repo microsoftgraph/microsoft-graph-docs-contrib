@@ -2706,7 +2706,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 90db2b9a-d928-4d33-a4dd-8442ae3d41e4 | f13ce604-1677-429f-90bd-8a10b9f01325 
 | DisplayText | Read and write identity providers | Read and write identity providers 
-| Description | Allows the app to read and write your organization’s identity (authentication) providers’ properties without a signed in user. | Allows the app to read and write your organization’s identity (authentication) providers’ properties on behalf of the user. 
+| Description | Allows the app to read and write your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read and write your organization's identity (authentication) providers' properties on behalf of the user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -3484,7 +3484,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 8137102d-ec16-4191-aaf8-7aeda8026183 | b8a36cc2-b810-461a-baa4-a7281e50bd5c 
 | DisplayText | Read and write properties of all branches for network access | Read and write properties of branches for network access 
-| Description | Allows the app to read and write your organization's network access braches, without a signed-in user. | Allows the app to read and write your organization's branches for network access on behalf of the signed-in user. 
+| Description | Allows the app to read and write your organization's network access branches, without a signed-in user. | Allows the app to read and write your organization's branches for network access on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
