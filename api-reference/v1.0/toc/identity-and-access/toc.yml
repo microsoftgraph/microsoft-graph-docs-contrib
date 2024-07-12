@@ -44,14 +44,6 @@ items:
       href: ../../api/bitlocker-list-recoverykeys.md
     - name: Get
       href: ../../api/bitlockerrecoverykey-get.md
-  - name: Company subscription
-    items:
-    - name: Company subscription
-      href: ../../resources/companysubscription.md
-    - name: Get
-      href: ../../api/companysubscription-get.md
-    - name: List
-      href: ../../api/directory-list-subscriptions.md
   - name: Contract
     items:
     - name: Contract
@@ -350,14 +342,6 @@ items:
         href: ../../api/unifiedroleassignment-get.md
       - name: Delete
         href: ../../api/unifiedroleassignment-delete.md
-  - name: Subscribed SKU
-    items:
-    - name: Subscribed SKU
-      href: ../../resources/subscribedsku.md
-    - name: Get
-      href: ../../api/subscribedsku-get.md
-    - name: List
-      href: ../../api/subscribedsku-list.md
   - name: Tenant information
     items:
     - name: Tenant information
