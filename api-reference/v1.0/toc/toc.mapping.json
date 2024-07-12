@@ -43,16 +43,16 @@
         },
         {
           "name": "Service principal",
+          "shouldSort": true,
           "childNodes": [
             {
               "name": "Policies",
               "resources": [
-                "claimsMappingPolicy",
-                "homeRealmDiscoveryPolicy",
-                "permissionGrantPolicy",
-                "permissionGrantConditionSet",
                 "tokenIssuancePolicy",
-                "tokenLifetimePolicy"
+                "tokenLifetimePolicy",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy"
               ]
             }
           ]
@@ -65,14 +65,19 @@
             "synchronization",
             "synchronizationTemplate",
             "synchronizationJob",
-            "synchronizationSchema",
-            "directoryDefinition"
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
                 "bulkUpload"
+              ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
               ]
             }
           ]
@@ -421,7 +426,7 @@
     },
     {
       "name": "Extensions",
-      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
+      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true",
       "keywords": [
         "Directory extensions",
         "Schema extensions",
@@ -486,10 +491,11 @@
     },
     {
       "name": "Identity and access",
-      "overview": "../../resources/azure-ad-overview.md",
+      "overview": "../../resources/identity-network-access-overview.md",
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
+        "Microsoft Entra ID",
         "Identity and access"
       ],
       "childNodes": [
@@ -498,6 +504,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -543,7 +550,8 @@
             "Access reviews",
             "Entitlement Management",
             "Terms of Use",
-            "Privileged Identity Management"
+            "Privileged Identity Management",
+            "Microsoft Entra ID Governance"
           ],
           "childNodes": [
             {
@@ -991,6 +999,13 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
+                  ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
                   ]
                 }
               ]

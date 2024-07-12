@@ -3382,4 +3382,10 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### nativeAuthenticationApisEnabled values
 
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|

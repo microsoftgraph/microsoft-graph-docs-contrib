@@ -67,6 +67,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a discard checkout request on a file identified by `{item-id}`.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveitemthis.discardcheckout"
@@ -76,6 +77,11 @@ The following example shows a discard checkout request on a file identified by `
 POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardCheckout
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitemthisdiscardcheckout-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
