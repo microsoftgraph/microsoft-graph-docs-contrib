@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [community](../resources/community.md) in Viva Engage.
+Delete a Viva Engage [community](../resources/community.md) and all the Microsoft 365 content associated, including the connected M365 Group. For more information see [What happens if I delete a Viva Engage community connected to Microsoft 365 Groups?](/viva/engage/engage-microsoft-365-groups#q-what-happens-if-i-delete-a-viva-engage-community-connected-to-microsoft-365-groups).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
