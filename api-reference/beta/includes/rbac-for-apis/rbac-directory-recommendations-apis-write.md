@@ -3,7 +3,7 @@ author: ddeeps2610
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must also have the appropriate [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) to call this API. The following least privilege roles are supported for this operation:
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
 
 - Security Administrator
 - Security Operator
