@@ -17,15 +17,15 @@ Represents information about companies related to entities within their [profile
 
 ## Properties
 
-| Property       | Type                                | Description                                            |
-|:---------------|:------------------------------------|:-------------------------------------------------------|
-|address         |[physicalAddress](physicaladdress.md)| Address of the company.                                |
-|companyCode     |String                               | Legal entity number of the company or its subdivision. |
-|department      |String                               | Department Name within a company.                      |
-|displayName     |String                               | Company name.                                          |
-|officeLocation  |String                               | Office Location of the person referred to.             |
-|pronunciation   |String                               | Pronunciation guide for the company name.              |
-|webUrl          |String                               | Link to the company home page.                         |
+| Property       | Type                                | Description                                                                              |
+|:---------------|:------------------------------------|:-----------------------------------------------------------------------------------------|
+|address         |[physicalAddress](physicaladdress.md)| Address of the company.                                                                  |
+|companyCode     |String                               | Legal entity number of the company or its subdivision. <br/> This property is read-only. |
+|department      |String                               | Department Name within a company.                                                        |
+|displayName     |String                               | Company name.                                                                            |
+|officeLocation  |String                               | Office Location of the person referred to.                                               |
+|pronunciation   |String                               | Pronunciation guide for the company name.                                                |
+|webUrl          |String                               | Link to the company home page.                                                           |
 
 ## JSON representation
 
