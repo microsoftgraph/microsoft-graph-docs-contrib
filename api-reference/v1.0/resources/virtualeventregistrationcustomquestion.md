@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationCustomQuestion resource type"
-description: "Information about a custom virtual event registration question."
+description: "Represents a custom registration question associated with a virtual event registration."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
