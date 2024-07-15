@@ -70,7 +70,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.bookingStaffMember",
   "availabilityIsAffectedByPersonalCalendar": "Boolean",
-  "colorIndex": "Integer",
+  "colorIndex": "Int32",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "emailAddress": "String",
