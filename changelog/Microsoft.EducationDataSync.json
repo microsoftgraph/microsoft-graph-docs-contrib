@@ -267,7 +267,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationProfile",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Deprecated the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource along with its supported methods and operations.",
           "Target": "educationSynchronizationProfile"
         },
         {
@@ -285,46 +285,6 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the **synchronizationProfiles** relationship on the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationroot?view=graph-rest-beta) resource.",
           "Target": "educationRoot"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "pause",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [pause](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) method of the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
-          "Target": "educationSynchronizationProfile"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "reset",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [reset](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) method of the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
-          "Target": "educationSynchronizationProfile"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "resume",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [resume](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) method of the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
-          "Target": "educationSynchronizationProfile"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "start",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [start](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) method of the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
-          "Target": "educationSynchronizationProfile"
-        },
-        {
-          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "uploadUrl",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [uploadUrl](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) method of the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.",
-          "Target": "educationSynchronizationProfile"
         }
       ],
       "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
