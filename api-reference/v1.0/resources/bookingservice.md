@@ -42,7 +42,7 @@ Represents information about a particular service provided by a [booking busines
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
-|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the Service  was last updated.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the service was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation. |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
@@ -58,7 +58,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -71,45 +71,31 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.bookingService",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "customQuestions": [
-    {
-      "@odata.type": "microsoft.graph.bookingQuestionAssignment"
-    }
-  ],
+  "additionalInformation": "String",
+  "createdDateTime": "String (timestamp)",
+  "customQuestions": [{"@odata.type": "microsoft.graph.bookingQuestionAssignment"}],
   "defaultDuration": "String (duration)",
-  "defaultLocation": {
-    "@odata.type": "microsoft.graph.location"
-  },
+  "defaultLocation": {"@odata.type": "microsoft.graph.location"},
   "defaultPrice": "Double",
   "defaultPriceType": "String",
-  "defaultReminders": [
-    {
-      "@odata.type": "microsoft.graph.bookingReminder"
-    }
-  ],
+  "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "description": "String",
-  "languageTag": "String",
-  "isHiddenFromCustomers": "Boolean",
-  "notes": "String",
-  "additionalInformation": "String",
-  "maximumAttendeesCount": "Integer",
-  "preBuffer": "String (duration)",
-  "postBuffer": "String (duration)",
-  "schedulingPolicy": {
-    "@odata.type": "microsoft.graph.bookingSchedulingPolicy"
-  },
-  "staffMemberIds": [
-    "String"
-  ],
-  "isLocationOnline": "Boolean",
-  "smsNotificationsEnabled": "Boolean",
+  "displayName": "String",
+  "id": "String (identifier)",
   "isAnonymousJoinEnabled": "Boolean",
   "isCustomerAllowedToManageBooking": "Boolean",
-  "webUrl": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)"
+  "isHiddenFromCustomers": "Boolean",
+  "isLocationOnline": "Boolean",
+  "languageTag": "String",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "maximumAttendeesCount": "Int32",
+  "notes": "String",
+  "postBuffer": "String (duration)",
+  "preBuffer": "String (duration)",
+  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
+  "smsNotificationsEnabled": "Boolean",
+  "staffMemberIds": ["String"],
+  "webUrl": "String"
 }
 ```
 
