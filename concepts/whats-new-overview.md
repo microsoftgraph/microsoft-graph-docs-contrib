@@ -30,7 +30,7 @@ Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resource
 
 ### People and workplace intelligence | Profile
 
-Use the **companyCode** on [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true) to get the legal entity number of the company or its subdivision.
+Use the **companyCode** on [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true) to get or set the legal entity number of the company or its subdivision.
 
 ### Security | Alerts and incidents
 
