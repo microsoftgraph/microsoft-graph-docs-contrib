@@ -61,7 +61,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 ## Relationships
 
-None
+None.
 
 
 ## JSON representation
