@@ -27,6 +27,11 @@ Inherits from [externalProfile](externalprofile.md).
 |[Create](../api/directory-post-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md)| Creates a new pending external user profile. |
 |[Update](../api/pendingexternaluserprofile-update.md) | None | Update a pending external user profile. |
 |[Delete](../api/directory-delete-pendingexternaluserprofiles.md) | None | Delete a pending external user profile. |
+|**Deleted items**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted pending external user profiles from a collection of directory objects. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted pending external user profile object. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted pending external user profile object. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete a pending external user profile. |
 
 ## Properties
 
