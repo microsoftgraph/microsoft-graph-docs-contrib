@@ -1,7 +1,7 @@
 ---
 title: "bookingBusiness resource type"
 description: "Represents a business in Microsoft Bookings."
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
