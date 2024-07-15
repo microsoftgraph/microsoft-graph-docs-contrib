@@ -35,10 +35,9 @@ The following table shows the mapping between the **id** value and the source sy
 | 46a57efc-33f8-4eec-a512-b90039ad6187                                            | User initiated edits                      |
 | 107a83c9-714e-4d52-9d08-c303f081323b                                            | Photo Etag                                |
 
->**Note:** The two Microsoft Entra IDs result from implementation differences and might be combined into one in the future.
-
-If the value of the property comes from tenant admin controlled systems like Microsoft Entra ID or Organizational Data in Microsoft 365, users cannot directly edit the value from MS Graph. 
-<BR>If the value of the property comes from User initiated edits, users can directly edit the value through MS Graph.
+>**Note:**
+> * The two Microsoft Entra IDs result from implementation differences and might be combined into one in the future.
+> * If the value of a property derives from tenant admin-controlled systems, such as Microsoft Entra ID or Organizational Data in Microsoft 365, users can't directly edit the value through Microsoft Graph. If the value of a property originates from user-initiated edits, users can directly edit the value via Microsoft Graph.
 
 For more information about how to set the values of properties in the **profileSourceAnnotation** resource, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
