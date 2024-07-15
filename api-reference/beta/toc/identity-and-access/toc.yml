@@ -276,16 +276,14 @@ items:
         href: ../../api/externaluserprofile-update.md
       - name: Delete
         href: ../../api/directory-delete-externaluserprofiles.md
-      - name: Deleted items
-        items:
-        - name: List
-          href: ../../api/directory-deleteditems-list.md
-        - name: Get
-          href: ../../api/directory-deleteditems-get.md
-        - name: Restore
-          href: ../../api/directory-deleteditems-restore.md
-        - name: Permanently delete
-          href: ../../api/directory-deleteditems-delete.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
     - name: Pending external user profile
       items:
       - name: Pending external user profile
@@ -300,16 +298,14 @@ items:
         href: ../../api/pendingexternaluserprofile-update.md
       - name: Delete
         href: ../../api/directory-delete-pendingexternaluserprofiles.md
-      - name: Deleted items
-        items:
-        - name: List
-          href: ../../api/directory-deleteditems-list.md
-        - name: Get
-          href: ../../api/directory-deleteditems-get.md
-        - name: Restore
-          href: ../../api/directory-deleteditems-restore.md
-        - name: Permanently delete
-          href: ../../api/directory-deleteditems-delete.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: Feature rollout policy
     items:
     - name: Feature rollout policy
