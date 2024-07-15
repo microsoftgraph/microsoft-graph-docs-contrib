@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,13 +53,11 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)",
-  "displayName": "String",
   "answerInputType": "String",
-  "answerOptions": [
-    "String"
-  ]
+  "answerOptions": ["String"],
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
