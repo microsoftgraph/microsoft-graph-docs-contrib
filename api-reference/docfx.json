@@ -10,7 +10,6 @@
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -43,7 +42,6 @@
           "group": "beta",
           "exclude": [
             "**/obj/**",
-            "**/includes/**",
             "README.md",
             "LICENSE",
             "LICENSE-CODE",
