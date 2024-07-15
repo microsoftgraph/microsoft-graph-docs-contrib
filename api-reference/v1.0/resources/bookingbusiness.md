@@ -69,7 +69,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -83,32 +83,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bookingBusiness",
-  "id": "String (identifier)",
-  "displayName": "String",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "bookingPageSettings": {"@odata.type": "microsoft.graph.bookingPageSettings"},
+  "businessHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
   "businessType": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "phone": "String",  
-  "email": "String",
-  "webSiteUrl": "String",
-  "defaultCurrencyIso": "String",
-  "businessHours": [
-    {
-      "@odata.type": "microsoft.graph.bookingWorkHours"
-    }
-  ],  
-  "languageTag": "String",
-   "schedulingPolicy": {
-    "@odata.type": "microsoft.graph.bookingSchedulingPolicy"
-  },
-  "bookingPageSettings": {
-    "@odata.type": "microsoft.graph.bookingPageSettings"
-  },
   "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)",
+  "defaultCurrencyIso": "String",
+  "displayName": "String",
+  "email": "String",
+  "id": "String (identifier)",
   "isPublished": "Boolean",
-  "publicUrl": "String"
+  "languageTag": "String",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "phone": "String",
+  "publicUrl": "String",
+  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
+  "webSiteUrl": "String"
 }
 ```
 
