@@ -321,7 +321,7 @@ Content-type: application/json
 
 <br>
 
-[Error response](../../includes/teamsapp-publish-error-response.md)
+[!INCLUDE [sample-code](../../includes/teamsapp-publish-error-response.md)]
 
 ## Related content
 
