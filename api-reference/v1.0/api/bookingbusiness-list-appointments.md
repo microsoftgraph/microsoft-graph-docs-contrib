@@ -171,7 +171,7 @@ Content-type: application/json
             "optOutOfCustomerEmail": false,
             "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-04-30T13:00:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -268,7 +268,7 @@ Content-type: application/json
             "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
             "isCustomerAllowedToManageBooking": true,
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
