@@ -28,5 +28,5 @@ items:
   expanded: true
   items:
   - name: Overview
-    href: overview.md
+    href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     displayName: Microsoft Graph REST API v1.0 reference
