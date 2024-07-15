@@ -249,7 +249,6 @@ Content-type: application/json
 
 The following example shows a request to retrieve the collection of custom extension stage settings that are defined for a policy and their associated access package custom workflow extension.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

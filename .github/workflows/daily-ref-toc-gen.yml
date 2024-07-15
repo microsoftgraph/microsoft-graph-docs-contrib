@@ -2,7 +2,7 @@ name: Daily reference TOC generation
 
 on:
   schedule:
-  - cron: 0 11 * * *
+  - cron: 0 11 * * 1-5
   workflow_dispatch:
 
 permissions:

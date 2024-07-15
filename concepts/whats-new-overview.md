@@ -32,6 +32,10 @@ Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resource
 
 Deprecated the **synchronizationProfiles** relationship on the [educationRoot](/graph/api/resources/educationroot?view=graph-rest-beta&preserve-view=true), including all types serviced under this endpoint.
 
+### People and workplace intelligence | Profile
+
+Use the **companyCode** on [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true) to get or set the legal entity number of the company or its subdivision.
+
 ### Security | Alerts and incidents
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
