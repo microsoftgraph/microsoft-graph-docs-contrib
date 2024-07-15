@@ -76,6 +76,10 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Delegated permission grants
+    items:
+    - name: List delegated permission grants
+      href: ../../api/user-list-oauth2permissiongrants.md
   - name: Directory objects
     items:
     - name: Get by IDs

@@ -2672,17 +2672,17 @@ items:
     items:
     - name: OAuth 2 permission grant
       href: ../../resources/oauth2permissiongrant.md
-    - name: List oAuth2PermissionGrants
+    - name: List
       href: ../../api/oauth2permissiongrant-list.md
-    - name: Get oAuth2PermissionGrant
-      href: ../../api/oauth2permissiongrant-get.md
-    - name: Create oAuth2PermissionGrant
+    - name: Create
       href: ../../api/oauth2permissiongrant-post.md
-    - name: Update oAuth2PermissionGrant
+    - name: Get
+      href: ../../api/oauth2permissiongrant-get.md
+    - name: Update
       href: ../../api/oauth2permissiongrant-update.md
-    - name: Delete oAuth2PermissionGrant
+    - name: Delete
       href: ../../api/oauth2permissiongrant-delete.md
-    - name: Delta
+    - name: Get delta
       href: ../../api/oauth2permissiongrant-delta.md
   - name: Organizational branding
     displayName: Tenant branding, UX customization
