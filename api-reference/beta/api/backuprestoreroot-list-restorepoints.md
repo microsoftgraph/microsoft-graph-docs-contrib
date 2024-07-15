@@ -16,6 +16,10 @@ Namespace: microsoft.graph
 
 Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
 
+The following limitations apply to listing restorePoints:
+
+- API will always return a maximum of 5 restorePoints.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

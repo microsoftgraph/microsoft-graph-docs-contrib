@@ -191,3 +191,10 @@ Content-Type: application/json
     "noResultProtectionUnitIds": ["63014d8c-71fe-4d00-a01a-31850bc5b42c"]
 }
 ```
+
+### Limits
+
+The following limitations apply to all API calls:
+
+- Search Restore Points APIs will always return a maximum of 5 restore points.
+- Search Restore Points APIs will only support max 20 Protection Units in one request & the response will be not paginated.

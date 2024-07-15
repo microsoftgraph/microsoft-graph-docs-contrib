@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). APIs are used by Global Admin or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts that are protected as part of Protection Policy.
 
+We do not support both new location & in-place restores in a single restore session.
+
 ## Methods
 
 |Method|Return type|Description|
