@@ -3399,6 +3399,10 @@ Possible values for user account types (group membership), per Windows definitio
 |customWeeklyHours|
 |unknownFutureValue|
 
+### nativeAuthenticationApisEnabled values
 
-
-
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|

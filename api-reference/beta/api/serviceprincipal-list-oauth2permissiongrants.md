@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_oauth2permissiongrants" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
 
+[!INCLUDE [rbac-oauth2permissiongrant-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-oauth2permissiongrant-serviceprincipal-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
