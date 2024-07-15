@@ -563,12 +563,12 @@
               "name": "Access reviews",
               "overview": "../../resources/accessreviewsv2-overview.md",
               "resources": [
-                "accessReviewHistoryDefinition",
-                "accessReviewHistoryInstance",
-                "accessReviewInstance",
-                "accessReviewInstanceDecisionItem",
                 "accessReviewScheduleDefinition",
-                "accessReviewStage"
+                "accessReviewInstance",
+                "accessReviewStage",
+                "accessReviewInstanceDecisionItem",
+                "accessReviewHistoryDefinition",
+                "accessReviewHistoryInstance"
               ],
               "complexTypes": [
                 "accessReviewApplyAction",
@@ -624,16 +624,19 @@
               "resources": [
                 "accessPackage",
                 "accessPackageAssignment",
+                "approval",
+                "approvalStage",
+                "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
-                "accessPackageAssignmentRequestWorkflowExtension",
-                "accessPackageAssignmentWorkflowExtension",
                 "accessPackageCatalog",
                 "accessPackageResource",
+                "accessPackageResourceRole",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
-                "accessPackageResourceRole",
-                "accessPackageResourceRoleScope",
+                "accessPackageAssignmentRequestWorkflowExtension",
+                "accessPackageAssignmentWorkflowExtension",
+                "accessPackageSubject",
                 "connectedOrganization",
                 "entitlementManagementSettings"
               ],
@@ -656,7 +659,6 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
-                "accessPackageSubject",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "attributeRuleMembers",
@@ -707,11 +709,11 @@
                 "Leaver"
               ],
               "resources": [
-                "microsoft.graph.identityGovernance.customTaskExtension",
-                "microsoft.graph.identityGovernance.lifecycleManagementSettings",
-                "microsoft.graph.identityGovernance.taskDefinition",
                 "microsoft.graph.identityGovernance.workflow",
-                "microsoft.graph.identityGovernance.workflowTemplate"
+                "microsoft.graph.identityGovernance.workflowTemplate",
+                "microsoft.graph.identityGovernance.taskDefinition",
+                "microsoft.graph.identityGovernance.customTaskExtension",
+                "microsoft.graph.identityGovernance.lifecycleManagementSettings"
               ],
               "complexTypes": [
                 "azureAdPopTokenAuthentication",
