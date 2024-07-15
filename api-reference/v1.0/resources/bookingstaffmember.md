@@ -55,7 +55,7 @@ None.
 
 ## JSON representation
 
-The following JSON is a representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -69,22 +69,18 @@ The following JSON is a representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.bookingStaffMember",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "emailAddress": "String",
   "availabilityIsAffectedByPersonalCalendar": "Boolean",
   "colorIndex": "Integer",
-  "role": "String",
-  "useBusinessHours": "Boolean",
-  "workingHours": [
-    {
-      "@odata.type": "microsoft.graph.bookingWorkHours"
-    }
-  ],
-  "timeZone": "String",
-  "isEmailNotificationEnabled": "Boolean",
   "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)"
+  "displayName": "String",
+  "emailAddress": "String",
+  "id": "String (identifier)",
+  "isEmailNotificationEnabled": "Boolean",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "role": "String",
+  "timeZone": "String",
+  "useBusinessHours": "Boolean",
+  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
 }
 ```
 
