@@ -3,7 +3,6 @@ title: "bookingsAvailability resource type"
 description: "Represents the availability details of a booking service in a scheduling policy."
 author: "PurvaEkatpure"
 ms.localizationpriority: medium
-ms.prod: "bookings"
 ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
