@@ -2020,7 +2020,7 @@ Namespace: microsoft.graph
 | maxColor    | 9     |
 
 
-### educationSynchronizationProfileState values (deprecated)
+### educationSynchronizationProfileState values
 
 | Member             | Value |
 | :----------------- | :---- |
@@ -2032,7 +2032,7 @@ Namespace: microsoft.graph
 | unknownFutureValue | 8     |
 
 
-### educationSynchronizationStatus values (deprecated)
+### educationSynchronizationStatus values
 
 | Member             |
 | :----------------- |
@@ -2094,7 +2094,7 @@ Namespace: microsoft.graph
 | high
 
 
-### educationUserRole values (deprecated)
+### educationUserRole values
 | Member
 |:---------------------
 | student
