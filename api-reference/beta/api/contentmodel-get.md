@@ -85,10 +85,10 @@ Content-Type: application/json
     "name":"BenefitChangeNotice",
     "createdBy": {
          "user": {
-            "displayName": "Travis Li",
-            "email": "travisli@microsoft.com",
+            "displayName": "John Doe",
+            "email": "johnd@contoso.com",
             "resourceVisualization": {
-                 "acronym": "TL",
+                 "acronym": "JD",
                  "color": "#881798"
               }
            }
@@ -96,10 +96,10 @@ Content-Type: application/json
     "createdDateTime": "2023-04-30T08:32:00Z",
     "lastModifiedBy": {
          "user": {
-            "displayName": "Travis Li",
-            "email": "travisli@microsoft.com",
+            "displayName": "John Doe",
+            "email": "johnd@contoso.com",
             "resourceVisualization": {
-                 "acronym": "TL",
+                 "acronym": "JD",
                  "color": "#881798"
               }
            }

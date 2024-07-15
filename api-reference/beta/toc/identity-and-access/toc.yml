@@ -3,7 +3,7 @@
 #
 items:
 - name: Overview
-  href: ../../resources/azure-ad-overview.md
+  href: ../../resources/identity-network-access-overview.md
 - name: Directory management
   items:
   - name: Administrative unit
@@ -22,28 +22,22 @@ items:
       href: ../../api/administrativeunit-delete.md
     - name: Get delta
       href: ../../api/administrativeunit-delta.md
-    - name: Add a member
+    - name: Add member
       href: ../../api/administrativeunit-post-members.md
     - name: List members
       href: ../../api/administrativeunit-list-members.md
-    - name: Get a member
+    - name: Get member
       href: ../../api/administrativeunit-get-members.md
-    - name: Remove a member
+    - name: Remove member
       href: ../../api/administrativeunit-delete-members.md
-    - name: Assign a role with scope
+    - name: Assign role with scope
       href: ../../api/administrativeunit-post-scopedrolemembers.md
     - name: List role assignments with scope
       href: ../../api/administrativeunit-list-scopedrolemembers.md
-    - name: Get a role assignment with scope
+    - name: Get role assignment with scope
       href: ../../api/administrativeunit-get-scopedrolemembers.md
-    - name: Remove a role assignment with scope
+    - name: Remove role assignment with scope
       href: ../../api/administrativeunit-delete-scopedrolemembers.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -64,9 +58,9 @@ items:
     items:
     - name: Contract
       href: ../../resources/contract.md
-    - name: Get contract
+    - name: Get
       href: ../../api/contract-get.md
-    - name: List contracts
+    - name: List
       href: ../../api/contract-list.md
   - name: Custom security attributes
     items:
@@ -112,13 +106,13 @@ items:
     items:
     - name: Deleted item
       href: ../../resources/directory.md
-    - name: Get deleted item
-      href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted item
-      href: ../../api/directory-deleteditems-restore.md
-    - name: List deleted items
+    - name: List
       href: ../../api/directory-deleteditems-list.md
-    - name: Permanently delete item
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete
       href: ../../api/directory-deleteditems-delete.md
     - name: List deleted items owned by user
       href: ../../api/directory-deleteditems-getuserownedobjects.md
@@ -126,44 +120,36 @@ items:
     items:
     - name: Device
       href: ../../resources/device.md
-    - name: Get device
-      href: ../../api/device-get.md
-    - name: List devices
+    - name: List
       href: ../../api/device-list.md
-    - name: Update device
+    - name: Create
+      href: ../../api/device-post-devices.md
+    - name: Get
+      href: ../../api/device-get.md
+    - name: Update
       href: ../../api/device-update.md
-    - name: Delete device
+    - name: Delete
       href: ../../api/device-delete.md
-    - name: delta
+    - name: Get delta
       href: ../../api/device-delta.md
-    - name: List memberOf
+    - name: List member of
       href: ../../api/device-list-memberof.md
-    - name: List transitive memberOf
+    - name: List transitive member of
       href: ../../api/device-list-transitivememberof.md
-    - name: List registeredOwners
+    - name: List registered owners
       href: ../../api/device-list-registeredowners.md
-    - name: List registeredUsers
+    - name: List registered users
       href: ../../api/device-list-registeredusers.md
-    - name: List usageRights
+    - name: List usage rights
       href: ../../api/device-list-usagerights.md
-    - name: checkMemberGroups
+    - name: Check member groups
       href: ../../api/directoryobject-checkmembergroups.md
-    - name: getMemberGroups
+    - name: Get member groups
       href: ../../api/directoryobject-getmembergroups.md
-    - name: checkMemberObjects
+    - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: getMemberObjects
+    - name: Get member objects
       href: ../../api/directoryobject-checkmemberobjects.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: /graph/extensibility-schema-groups
   - name: Device local credential info
     items:
     - name: Device local credential info
@@ -218,18 +204,20 @@ items:
     items:
     - name: Directory role template
       href: ../../resources/directoryroletemplate.md
-    - name: Get directory role template
+    - name: Get
       href: ../../api/directoryroletemplate-get.md
+    - name: List
+      href: ../../api/directoryroletemplate-list.md
   - name: Directory setting
     items:
     - name: Directory setting
       href: ../../resources/directorysetting.md
+    - name: List
+      href: ../../api/group-list-settings.md
     - name: Create
       href: ../../api/group-post-settings.md
     - name: Get
       href: ../../api/directorysetting-get.md
-    - name: List
-      href: ../../api/group-list-settings.md
     - name: Update
       href: ../../api/directorysetting-update.md
     - name: Delete
@@ -238,9 +226,9 @@ items:
     items:
     - name: Directory setting template
       href: ../../resources/directorysettingtemplate.md
-    - name: Get directory setting template
+    - name: Get
       href: ../../api/directorysettingtemplate-get.md
-    - name: List directory setting templates
+    - name: List
       href: ../../api/directorysettingtemplate-list.md
   - name: Domain
     items:
@@ -256,26 +244,20 @@ items:
       href: ../../api/domain-update.md
     - name: Delete
       href: ../../api/domain-delete.md
+    - name: Force delete
+      href: ../../api/domain-forcedelete.md
+    - name: Verify
+      href: ../../api/domain-verify.md
+    - name: Promote
+      href: ../../api/domain-promote.md
+    - name: Get root domain
+      href: ../../api/domain-list-rootdomain.md
     - name: List domain name references
       href: ../../api/domain-list-domainnamereferences.md
     - name: List service configuration records
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
-    - name: List domain name reference
-      href: ../../api/domain-list-domainnamereferences.md
-    - name: List service configuration records
-      href: ../../api/domain-list-serviceconfigurationrecords.md
-    - name: List verification DNS records
-      href: ../../api/domain-list-verificationdnsrecords.md
-    - name: Get root domain
-      href: ../../api/domain-list-rootdomain.md
-    - name: Promote
-      href: ../../api/domain-promote.md
-    - name: Force delete
-      href: ../../api/domain-forcedelete.md
-    - name: Verify
-      href: ../../api/domain-verify.md
   - name: External user profiles
     items:
     - name: External user profile
@@ -318,38 +300,42 @@ items:
       href: ../../api/featurerolloutpolicy-update.md
     - name: Delete
       href: ../../api/featurerolloutpolicy-delete.md
-    - name: Create appliesTo
+    - name: Create applies to
       href: ../../api/featurerolloutpolicy-post-appliesto.md
-    - name: Delete appliesTo
+    - name: Delete applies to
       href: ../../api/featurerolloutpolicy-delete-appliesto.md
   - name: Mobility management policy
     items:
     - name: Mobility management policy
       href: ../../resources/mobilitymanagementpolicy.md
-    - name: List mobileDeviceManagementPolicies
-      href: ../../api/mobiledevicemanagementpolicies-list.md
-    - name: Get mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-get.md
-    - name: Update mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-update.md
-    - name: List includedGroups of mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-    - name: Add group to mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-    - name: Delete group from mobileDeviceManagementPolicy
-      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
-    - name: List mobileAppManagementPolicies
-      href: ../../api/mobileappmanagementpolicies-list.md
-    - name: Get mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-get.md
-    - name: Update mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-update.md
-    - name: List includedGroups of mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-    - name: Add group to mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-    - name: Delete group from mobileAppManagementPolicy
-      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+    - name: Mobile device management policy
+      items:
+      - name: List
+        href: ../../api/mobiledevicemanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobiledevicemanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobiledevicemanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
+    - name: Mobile app management policy
+      items:
+      - name: List
+        href: ../../api/mobileappmanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobileappmanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobileappmanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -364,20 +350,18 @@ items:
       href: ../../resources/orgcontact.md
     - name: Organizational contacts
       items:
-      - name: List org contacts
+      - name: List
         href: ../../api/orgcontact-list.md
-      - name: Get org contact
+      - name: Get
         href: ../../api/orgcontact-get.md
-    - name: Organizational hierarchy
-      items:
-      - name: Get manager
-        href: ../../api/orgcontact-get-manager.md
-      - name: Get transitive reports
-        href: ../../api/orgcontact-get-transitivereports.md
-      - name: List direct reports
-        href: ../../api/orgcontact-list-directreports.md
-      - name: List memberOf
+      - name: Get delta
+        href: ../../api/orgcontact-delta.md
+      - name: Get delta for directory object
+        href: ../../api/directoryobject-delta.md
+      - name: List member of
         href: ../../api/orgcontact-list-memberof.md
+      - name: List transitive member of
+        href: ../../api/orgcontact-list-transitivememberof.md
       - name: Check member groups
         href: ../../api/directoryobject-checkmembergroups.md
       - name: Get member groups
@@ -385,7 +369,17 @@ items:
       - name: Check member objects
         href: ../../api/directoryobject-checkmemberobjects.md
       - name: Get member objects
-        href: ../../api/directoryobject-getmemberobjects.md
+        href: ../../api/directoryobject-checkmemberobjects.md
+      - name: Retry service provisioning
+        href: ../../api/orgcontact-retryserviceprovisioning.md
+      - name: Get transitive reports
+        href: ../../api/orgcontact-get-transitivereports.md
+    - name: Organizational hierarchy
+      items:
+      - name: Get manager
+        href: ../../api/orgcontact-get-manager.md
+      - name: List direct reports
+        href: ../../api/orgcontact-list-directreports.md
   - name: Organization
     items:
     - name: Organization
@@ -497,16 +491,16 @@ items:
       items:
       - name: Role assignment
         href: ../../resources/unifiedroleassignment.md
-      - name: List role assignment
+      - name: List
         href: ../../api/rbacapplication-list-roleassignments.md
+      - name: Create
+        href: ../../api/rbacapplication-post-roleassignments.md
+      - name: Get
+        href: ../../api/unifiedroleassignment-get.md
+      - name: Delete
+        href: ../../api/unifiedroleassignment-delete.md
       - name: List transitive role assignments
         href: ../../api/rbacapplication-list-transitiveroleassignments.md
-      - name: Get role assignment
-        href: ../../api/unifiedroleassignment-get.md
-      - name: Create role assignment
-        href: ../../api/rbacapplication-post-roleassignments.md
-      - name: Delete role assignment
-        href: ../../api/unifiedroleassignment-delete.md
     - name: Role assignment multiple
       items:
       - name: Role assignment multiple
@@ -529,14 +523,14 @@ items:
         href: ../../api/rbacapplicationmultiple-list-resourcenamespaces.md
       - name: Get
         href: ../../api/unifiedrbacresourcenamespace-get.md
-    - name: Resource action
-      items:
       - name: Resource action
-        href: ../../resources/unifiedrbacresourceaction.md
-      - name: List
-        href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
-      - name: Get
-        href: ../../api/unifiedrbacresourceaction-get.md
+        items:
+        - name: Resource action
+          href: ../../resources/unifiedrbacresourceaction.md
+        - name: List
+          href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
+        - name: Get
+          href: ../../api/unifiedrbacresourceaction-get.md
     - name: Custom app scope
       items:
       - name: Custom app scope
@@ -569,9 +563,9 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: Trusted certificate authorities for apps (preview)
     items:
-    - name: Certificate based application configuration
+    - name: Certificate-based application configuration
       items:
-      - name: Certificate based application configuration
+      - name: Certificate-based application configuration
         href: ../../resources/certificatebasedapplicationconfiguration.md
       - name: List
         href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
@@ -2000,9 +1994,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/authenticationmethods-overview.md
-    - name: Authentication
+    - name: Authentication states
       items:
-      - name: Authentication
+      - name: Authentication states
         href: ../../resources/authentication.md
       - name: Get
         href: ../../api/authentication-get.md
@@ -2179,10 +2173,10 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate based auth configuration
+  - name: Certificate-based auth configuration
     displayName: CBA
     items:
-    - name: Certificate based auth configuration
+    - name: Certificate-based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
     - name: List
       href: ../../api/certificatebasedauthconfiguration-list.md
@@ -2283,17 +2277,17 @@ items:
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Cross tenant access policy
+    - name: Cross-tenant access policy
       items:
-      - name: Cross tenant access policy
+      - name: Cross-tenant access policy
         href: ../../resources/crosstenantaccesspolicy.md
       - name: Get
         href: ../../api/crosstenantaccesspolicy-get.md
       - name: Update
         href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Cross tenant access policy configuration default
+    - name: Cross-tenant access policy configuration default
       items:
-      - name: Cross tenant access policy configuration default
+      - name: Cross-tenant access policy configuration default
         href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
       - name: Get
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
@@ -2301,9 +2295,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
       - name: Reset to system default
         href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Cross tenant access policy configuration partner
+    - name: Cross-tenant access policy configuration partner
       items:
-      - name: Cross tenant access policy configuration partner
+      - name: Cross-tenant access policy configuration partner
         href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
       - name: List
         href: ../../api/crosstenantaccesspolicy-list-partners.md
@@ -2315,9 +2309,9 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-    - name: Cross tenant identity sync policy partner
+    - name: Cross-tenant identity sync policy partner
       items:
-      - name: Cross tenant identity sync policy partner
+      - name: Cross-tenant identity sync policy partner
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -2886,26 +2880,24 @@ items:
       items:
       - name: Claims mapping policy
         href: ../../resources/claimsmappingpolicy.md
-      - name: Create claimsMappingPolicy
-        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get claimsMappingPolicy
-        href: ../../api/claimsmappingpolicy-get.md
-      - name: List claimsMappingPolicies
+      - name: List
         href: ../../api/claimsmappingpolicy-list.md
-      - name: Update claimsMappingPolicy
+      - name: Create
+        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
+      - name: Get
+        href: ../../api/claimsmappingpolicy-get.md
+      - name: Update
         href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete claimsMappingPolicy
+      - name: Delete
         href: ../../api/claimsmappingpolicy-delete.md
-      - name: Directory objects
-        items:
-        - name: List appliesTo
-          href: ../../api/claimsmappingpolicy-list-appliesto.md
-        - name: Assign claimsMappingPolicy
-          href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-        - name: List assigned claimsMappingPolicy
-          href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-        - name: Remove claimsMappingPolicy
-          href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+      - name: List applies to
+        href: ../../api/claimsmappingpolicy-list-appliesto.md
+      - name: Assign to service principal
+        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+      - name: List assigned to service principal
+        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+      - name: Unassign from service principal
+        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Continuous access evaluation policy
       items:
       - name: Continuous access evaluation policy
@@ -2946,31 +2938,31 @@ items:
         href: ../../api/featurerolloutpolicy-update.md
       - name: Delete
         href: ../../api/featurerolloutpolicy-delete.md
-      - name: Create appliesTo
+      - name: Create applies to
         href: ../../api/featurerolloutpolicy-post-appliesto.md
-      - name: Delete appliesTo
+      - name: Delete applies to
         href: ../../api/featurerolloutpolicy-delete-appliesto.md
     - name: Home realm discovery policy
       items:
       - name: Home realm discovery policy
         href: ../../resources/homerealmdiscoverypolicy.md
-      - name: Create homeRealmDiscoveryPolicy
-        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-      - name: Get homeRealmDiscoveryPolicy
-        href: ../../api/homerealmdiscoverypolicy-get.md
-      - name: List homeRealmDiscoveryPolicies
+      - name: List
         href: ../../api/homerealmdiscoverypolicy-list.md
-      - name: Update homeRealmDiscoveryPolicy
+      - name: Create
+        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+      - name: Get
+        href: ../../api/homerealmdiscoverypolicy-get.md
+      - name: Update
         href: ../../api/homerealmdiscoverypolicy-update.md
-      - name: Delete homeRealmDiscoveryPolicy
+      - name: Delete
         href: ../../api/homerealmdiscoverypolicy-delete.md
-      - name: List appliesTo
+      - name: List applies to
         href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
-      - name: Assign homeRealmDiscoveryPolicy
+      - name: Assign to service principal
         href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
-      - name: List assigned homeRealmDiscoveryPolicy
+      - name: List assigned to service principal
         href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
-      - name: Remove homeRealmDiscoveryPolicy
+      - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
     - name: Identity security defaults enforcement policy
       items:
@@ -3012,22 +3004,50 @@ items:
       items:
       - name: Permission grant preapproval policy
         href: ../../resources/permissiongrantpreapprovalpolicy.md
-      - name: List permissionGrantPreApprovalPolicies
+      - name: List
         href: ../../api/policyroot-list-permissiongrantpreapprovalpolicies.md
-      - name: Create permissionGrantPreApprovalPolicy
+      - name: Create
         href: ../../api/policyroot-post-permissiongrantpreapprovalpolicies.md
-      - name: Get permissionGrantPreApprovalPolicy
+      - name: Get
         href: ../../api/permissiongrantpreapprovalpolicy-get.md
-      - name: Update permissionGrantPreApprovalPolicy
+      - name: Update
         href: ../../api/permissiongrantpreapprovalpolicy-update.md
-      - name: Delete permissionGrantPreApprovalPolicy
+      - name: Delete
         href: ../../api/permissiongrantpreapprovalpolicy-delete.md
-      - name: List permissionGrantPreApprovalPolicy assigned to servicePrincipal
+      - name: List assigned to service principal
         href: ../../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
-      - name: Assign permissionGrantPreApprovalPolicy to servicePrincipal
+      - name: Assign to service principal
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
-      - name: Remove permissionGrantPreApprovalPolicy from servicePrincipal
+      - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+    - name: Remote desktop security configuration
+      items:
+      - name: Remote desktop security configuration
+        items:
+        - name: Remote desktop security configuration
+          href: ../../resources/remotedesktopsecurityconfiguration.md
+        - name: Create
+          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+        - name: Get
+          href: ../../api/remotedesktopsecurityconfiguration-get.md
+        - name: Update
+          href: ../../api/remotedesktopsecurityconfiguration-update.md
+        - name: Delete
+          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+      - name: Target device group
+        items:
+        - name: Target device group
+          href: ../../resources/targetdevicegroup.md
+        - name: List
+          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+        - name: Create
+          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+        - name: Get
+          href: ../../api/targetdevicegroup-get.md
+        - name: Update
+          href: ../../api/targetdevicegroup-update.md
+        - name: Delete
+          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
@@ -4075,9 +4095,9 @@ items:
     href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
-    - name: Cross tenant access settings
+    - name: Cross-tenant access settings
       items:
-      - name: Cross tenant access settings
+      - name: Cross-tenant access settings
         href: ../../resources/networkaccess-crosstenantaccesssettings.md
       - name: Get
         href: ../../api/networkaccess-crosstenantaccesssettings-get.md

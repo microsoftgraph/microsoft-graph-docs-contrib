@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a v[virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,12 +50,13 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
-| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
-| displayName | String | Display name of the virtual event. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. |
+| displayName | String | Display name of the town hall. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
 ## Response
 
@@ -163,6 +164,9 @@ Content-Type: application/json
     }
   },
   "audience": "organization",
+  "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+  },
   "isInviteOnly": false,  
   "coOrganizers": [
     {

@@ -16,6 +16,26 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2024: New and generally available
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
+
+## July 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
+
+### Security | Alerts and incidents
+
+Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
+
 ## June 2024: New and generally available
 
 ### Change notifications
@@ -27,6 +47,11 @@ Enabled change notifications support to the methods to [list](/graph/api/subscri
 Get or update the [cross-tenant access default settings](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault) to include [cross-tenant access policy tenant restrictions](/graph/api/resources/crosstenantaccesspolicytenantrestrictions) that restrict organization users accessing an external organization on their network or devices.
 
 ### Files
+
+### People and workplace intelligence | People admin settings
+
+- Use more [granular privacy control](/graph/insights-customize-item-insights-privacy) over the availability and display of [item insights](/graph/api/resources/iteminsights) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for work or school, calculated using advanced analytics and machine learning techniques.
+- Update [insightsSettings](/graph/api/resources/insightssettings) to disable item insights for a specific Microsoft Entra group or an entire organization. You can also use the [List itemInsights](/graph/api/peopleadminsettings-list-iteminsights) API to display or return item insights in an organization.
 
 [Permanently delete](/graph/api/filestoragecontainer-permanentdelete) a [fileStorageContainer](/graph/api/resources/filestoragecontainer).
 
@@ -79,7 +104,7 @@ Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts?view
 
 Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
 
-- Use [Get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+- Use [Get model](/graph/api/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
 - Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using the [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
 - Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from a library by using the [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
 - Use [Get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
@@ -92,10 +117,8 @@ The content model automatically processes new files that are added to the librar
 
 ### Teamwork and communications | Calls and online meetings
 
-- Introduced the ability to [list](/graph/api/virtualeventregistration-list?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualeventregistration-post?view=graph-rest-beta&preserve-view=true), [cancel](/graph/api/virtualeventregistration-cancel?view=graph-rest-beta&preserve-view=true), and [list sessions](/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta&preserve-view=true) for virtual event meeting registrations.
+- Introduced the ability to [list](/graph/api/virtualeventregistration-list?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta&preserve-view=true), [cancel](/graph/api/virtualeventregistration-cancel?view=graph-rest-beta&preserve-view=true), and [list sessions](/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta&preserve-view=true) for virtual event meeting registrations.
 - [Delete](/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta&preserve-view=true) a registration question from a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true). The question can either be a [predefined registration question](/graph/api/resources/virtualeventregistrationpredefinedquestion?view=graph-rest-beta&preserve-view=true) or a [custom registration question](/graph/api/resources/virtualeventregistrationcustomquestion?view=graph-rest-beta&preserve-view=true).  
-
-
 
 ## Contribute to Microsoft Graph
 
