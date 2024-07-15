@@ -40,7 +40,6 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -56,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 |isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) is generated for the appointment booked for this service.|
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |isHiddenFromCustomers|Boolean|If `true`, the service isn't available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service are held online. The default value is `false`.|
+|isLocationOnline|Boolean|`True` indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
