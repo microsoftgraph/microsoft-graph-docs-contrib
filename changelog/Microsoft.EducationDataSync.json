@@ -105,6 +105,14 @@
         {
           "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
           "ApiChange": "Enum type",
+          "ChangedApiName": "educationUserRole",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **educationUserRole** enumeration type.",
+          "Target": "educationUserRole"
+        },
+        {
+          "Id": "3ba8e7b6-d690-40e8-b090-03fb3cdf7c1b",
+          "ApiChange": "Enum type",
           "ChangedApiName": "educationSynchronizationProfileState",
           "ChangeType": "Deprecation",
           "Description": "Deprecated the **educationSynchronizationProfileState** enumeration type.",
