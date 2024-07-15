@@ -2094,7 +2094,7 @@ Namespace: microsoft.graph
 | high
 
 
-### educationUserRole values
+### educationUserRole values (deprecated)
 | Member
 |:---------------------
 | student
