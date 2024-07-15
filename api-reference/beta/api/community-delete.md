@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a Viva Engage [community](../resources/community.md) along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans. For more information, see [What happens if I delete a Viva Engage community connected to Microsoft 365 groups?](/viva/engage/engage-microsoft-365-groups#q-what-happens-if-i-delete-a-viva-engage-community-connected-to-microsoft-365-groups).
+Delete a Viva Engage [community](../resources/community.md) along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans. For more information, see [What happens if I delete a Viva Engage community connected to Microsoft 365 groups](/viva/engage/engage-microsoft-365-groups#q-what-happens-if-i-delete-a-viva-engage-community-connected-to-microsoft-365-groups).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
