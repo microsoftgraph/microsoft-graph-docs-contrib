@@ -57,7 +57,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |smsNotificationsEnabled|Boolean|If `true`, indicates SMS notifications will be sent to the customers for the appointment. Default value is `false`.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Relationships
 
