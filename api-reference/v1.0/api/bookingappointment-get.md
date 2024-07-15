@@ -132,7 +132,7 @@ Content-type: application/json
     "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "isCustomerAllowedToManageBooking": false,
-    "startDateTime": {
+    "start": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
