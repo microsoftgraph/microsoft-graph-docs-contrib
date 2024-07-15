@@ -20,14 +20,12 @@ Represents information about companies related to entities within their [profile
 | Property       | Type                                | Description                                            |
 |:---------------|:------------------------------------|:-------------------------------------------------------|
 |address         |[physicalAddress](physicaladdress.md)| Address of the company.                                |
-|companyCode     |String                               | Legal entity number of the company or its subdivision.*|
+|companyCode     |String                               | Legal entity number of the company or its subdivision. For information on how to set the value for the **companyCode**, see [profileSourceAnnotation](profilesourceannotation.md).|
 |department      |String                               | Department Name within a company.                      |
 |displayName     |String                               | Company name.                                          |
 |officeLocation  |String                               | Office Location of the person referred to.             |
 |pronunciation   |String                               | Pronunciation guide for the company name.              |
 |webUrl          |String                               | Link to the company home page.                         |
-
-*For more information on how to update the value for **companyCode**, see [profileSourceAnnotation resource type](profilesourceannotation.md).
 
 ## JSON representation
 
