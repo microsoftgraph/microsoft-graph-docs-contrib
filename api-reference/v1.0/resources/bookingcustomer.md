@@ -28,13 +28,13 @@ Inherits from [bookingCustomerBase](bookingcustomerbase.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
-|createdDateTime|DateTimeOffset|The date, time and timezone when the customer was created.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of **physicalAddress** isn't supported in v1.0. Internally we map the addresses to the type `others`.|
+|createdDateTime|DateTimeOffset|The date, time, and timezone when the customer was created.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the customer was last updated.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time, and timezone when the customer was last updated.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Relationships
 None
@@ -42,7 +42,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -56,23 +56,14 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.bookingCustomer",
-  "id": "String (identifier)",
+  "addresses": [{"@odata.type": "microsoft.graph.physicalAddress"}],
+  "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "emailAddress": "String",
-   "addresses": [
-    {
-      "@odata.type": "microsoft.graph.physicalAddress"
-    }
-  ],
-  "phones": [
-    {
-      "@odata.type": "microsoft.graph.phone"
-    }
-  ],
-  "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)"
+  "id": "String (identifier)",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "phones": [{"@odata.type": "microsoft.graph.phone"}]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
