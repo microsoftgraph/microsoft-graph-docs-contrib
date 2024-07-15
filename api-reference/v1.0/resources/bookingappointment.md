@@ -18,8 +18,8 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
 |[Get](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
@@ -79,66 +79,46 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bookingAppointment",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)",
-  "selfServiceAppointmentId": "String",
   "additionalInformation": "String",
-  "appointmentLabel": "String",
-  "isLocationOnline": "Boolean",
-  "joinWebUrl": "String",
-  "smsNotificationsEnabled": "Boolean",
-  "customerId": "String",
-  "customerName": "String",
-  "customerEmailAddress": "String",
-  "customerPhone": "String",
-  "customerLocation": {
-    "@odata.type": "microsoft.graph.location"
-  },
-  "customerTimeZone": "String",
-  "customerNotes": "String",
-  "serviceId": "String",
-  "serviceName": "String",
-  "start": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "end": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "duration": "String (duration)",
-  "preBuffer": "String (duration)",
-  "postBuffer": "String (duration)",
-  "serviceLocation": {
-    "@odata.type": "microsoft.graph.location"
-  },
-  "priceType": "String",
-  "price": "Double",
-  "serviceNotes": "String",
-  "reminders": [
-    {
-      "@odata.type": "microsoft.graph.bookingReminder"
-    }
-  ],
-  "optOutOfCustomerEmail": "Boolean",
   "anonymousJoinWebUrl": "String",
-  "customers": [
-    {
-      "@odata.type": "microsoft.graph.bookingCustomerInformation"
-    }
-  ],
-  "maximumAttendeesCount": "Int32",
+  "appointmentLabel": "String",
+  "createdDateTime": "String (timestamp)",
+  "customerEmailAddress": "String",
+  "customerId": "String",
+  "customerLocation": {"@odata.type": "microsoft.graph.location"},
+  "customerName": "String",
+  "customerNotes": "String",
+  "customerPhone": "String",
+  "customers": [{"@odata.type": "microsoft.graph.bookingCustomerInformation"}],
+  "customerTimeZone": "String",
+  "duration": "String (duration)",
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "filledAttendeesCount": "Int32",
-  "staffMemberIds": [
-    "String"
-  ],
+  "id": "String (identifier)",
   "invoiceAmount": "Double",
-  "invoiceDate": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
+  "invoiceDate": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "invoiceId": "String",
   "invoiceStatus": "String",
   "invoiceUrl": "String",
   "isCustomerAllowedToManageBooking": "Boolean",
+  "isLocationOnline": "Boolean",
+  "joinWebUrl": "String",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "maximumAttendeesCount": "Int32",
+  "optOutOfCustomerEmail": "Boolean",
+  "postBuffer": "String (duration)",
+  "preBuffer": "String (duration)",
+  "price": "Double",
+  "priceType": "String",
+  "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
+  "selfServiceAppointmentId": "String",
+  "serviceId": "String",
+  "serviceLocation": {"@odata.type": "microsoft.graph.location"},
+  "serviceName": "String",
+  "serviceNotes": "String",
+  "smsNotificationsEnabled": "Boolean",
+  "staffMemberIds": ["String"],
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
 ```
 
