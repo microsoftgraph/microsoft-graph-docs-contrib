@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the availability details of a booking service in a scheduling policy between two dates.
 
 Inherits from [bookingsAvailability](../resources/bookingsavailability.md).
