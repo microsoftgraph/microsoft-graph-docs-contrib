@@ -17,9 +17,9 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of **bookingBusiness** objects in the tenant. |
-|[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
-|[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of a **bookingBusiness** object.|
+|[List](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of **bookingBusiness** objects in the tenant. |
+|[Create](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
+|[Get](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of a **bookingBusiness** object.|
 |[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update the properties of a  **bookingBusiness** object. |
 |[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new **bookingAppointment** by posting to the appointments collection.|
@@ -44,14 +44,14 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
-|createdDateTime|DateTimeOffset|The date, time and timezone when the booking business was created.|
+|createdDateTime|DateTimeOffset|The date, time, and time zone when the booking business was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
 |displayName|String|The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.|
 |email|String|The email address for the business.|
 |id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
 |languageTag|String|The language of the self-service booking page.|
-|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time, and time zone when the booking business was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness-publish.md) or [unpublish](../api/bookingbusiness-unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
