@@ -17,9 +17,9 @@ Represents information about a particular service provided by a [booking busines
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
+|[List](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
+|[Create](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
+|[Get](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
 |[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 |[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 
@@ -27,7 +27,7 @@ Represents information about a particular service provided by a [booking busines
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
-|createdDateTime|DateTimeOffset|The date, time and timezone when the Service was created.|
+|createdDateTime|DateTimeOffset|The date, time, and time zone when the service was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains the set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
@@ -42,7 +42,7 @@ Represents information about a particular service provided by a [booking busines
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
-|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the service was last updated.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time, and time zone when the service was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation. |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
