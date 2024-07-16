@@ -15,26 +15,18 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
+This API supports the following PSTN scenarios:
 
-| PSTN Scenerios                                                                           | supported/not supported |
-| -----------------------------------------------------------------------------------------| ------------------------|
-| Incoming call to Bot's PSTN number and then bot invites another PSTN                     | Supported               |
-| Incoming call to Bot's PSTN number and then bot transfer to another PSTN                 | Supported               |
-| Incoming call to Bot's PSTN number and then bot redirects to another PSTN                | Supported               |
-| Incoming call to Bot's UPN and then bot invites another PSTN                             | Not Supported           |
-| Incoming call to Bot's UPN and then bot transfer to another PSTN: Not supported          | Not Supported           |
-| Incoming call to Bot's UPN and then bot redirects to another PSTN: Not supported         | Not Supported           |
-| Incoming call to Bot's Instance Id and then bot invites another PSTN                     | Supported               |
-| Incoming call to Bot's Instance Id and then bot transfer to another PSTN                 | Supported               |
-| Incoming call to Bot's Instance Id and then bot redirects to another PSTN                | Supported               |
-| Incoming call to Bot's UPN from Scheduled Meeting and then bot invites PSTN              | Not Supported           |
-| Incoming call to Bot's Instance Id from Scheduled Meeting and then bot invites PSTN      | Supported               |
-| Outgoing call from Bot (with Instance Id) to a PSTN                                      | Supported               |
-| Outgoing call from Bot (without Instance Id) to a PSTN                                   | Not Supported           |
-| P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN       | Supported               |
-| P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user | Supported               |
-| Bot join the scheduled meeting and then invite PSTN                                      | Supported               |
-| Bot join the call using Join Token and then invite PSTN                                  | Not Supported           |
++ Incoming call to Bot's PSTN number and then bot invites another PSTN.
++ Incoming call to Bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to Bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to Bot's Instance Id and then bot invites another PSTN.
++ Incoming call to Bot's Instance Id and then bot transfer to another PSTN.
++ Incoming call to Bot's Instance Id and then bot redirects to another PSTN.
++ Incoming call to Bot's Instance Id from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from Bot (with Instance Id) to a PSTN.
++ P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user.
 
 ## Permissions
 
