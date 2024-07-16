@@ -602,17 +602,19 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Send a message with a file attachment in it using file share link
+### Example 5: Send a message that includes a file attachment using a file share link
+
+The following example shows how to send a message that includes a file attachment using a file share link.
 
 #### Request
-The following example shows a request
+
+The following example shows a request.
  
 >**Notes:**
-> - The file to attach must already be in SharePoint. Use any GUID for your attachment ID. Use the file share link as **contentURL**. User must have permissions to drive item using the file [share link](../api/shares-get.md). 
-> - Using file share link for sending messages is not supported in [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario. 
+> - The file to be attached must already be located in SharePoint. Use any GUID as your attachment ID and the file share link as the **contentURL**. The user must have permissions to access the drive item via the [share link](../api/shares-get.md).
+> - Using a file share link to send messages isn't supported in a [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_5",
@@ -623,23 +625,24 @@ POST https://graph.microsoft.com/v1.0/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1
 Content-type: application/json
 
 {
-    "body": {
-        "contentType": "html",
-        "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
-    },
-    "attachments": [
-        {
-            "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
-            "contentType": "reference",
-            "contentUrl": "https://teamsgraph-my.sharepoint.com/:w:/g/personal/test_teamsgraph_onmicrosoft_com/Eah_j2YpgedNsyv-G0QubvEBma6Sd_76UtYkXwoJ-nYVEg?e=0H2Ibm"
-        }
-    ]
+  "body": {
+    "contentType": "html",
+    "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
+  },
+  "attachments": [
+    {
+      "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
+      "contentType": "reference",
+      "contentUrl": "https://teamsgraph-my.sharepoint.com/:w:/g/personal/test_teamsgraph_onmicrosoft_com/Eah_j2YpgedNsyv-G0QubvEBma6Sd_76UtYkXwoJ-nYVEg?e=0H2Ibm"
+    }
+  ]
 }
 ```
 
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -650,54 +653,54 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('1e769eab-06a8-4b2e-ac42-1f040a4e52a1')/channels('19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2')/messages/$entity",
-    "id": "1709663385319",
-    "replyToId": null,
-    "etag": "1709663385319",
-    "messageType": "message",
-    "createdDateTime": "2024-03-05T18:29:45.319Z",
-    "lastModifiedDateTime": "2024-03-05T18:29:45.319Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": null,
-    "summary": null,
-    "chatId": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2/1709663385319?groupId=1e769eab-06a8-4b2e-ac42-1f040a4e52a1&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1709663385319&parentMessageId=1709663385319",
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
-    },
-    "channelIdentity": {
-        "teamId": "1e769eab-06a8-4b2e-ac42-1f040a4e52a1",
-        "channelId": "19:e28d1f9b354f4de88d2e9e4d8b983763@thread.tacv2"
-    },
-    "attachments": [
-        {
-            "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
-            "contentType": "reference",
-            "contentUrl": "https://teamsgraph-my.sharepoint.com/personal/test_teamsgraph_onmicrosoft_com/Documents/Personal%20Drive%20file%201.docx",
-            "content": null,
-            "name": "Personal Drive file 1.docx",
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-    "mentions": [],
-    "reactions": []
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('1e769eab-06a8-4b2e-ac42-1f040a4e52a1')/channels('19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2')/messages/$entity",
+  "id": "1709663385319",
+  "replyToId": null,
+  "etag": "1709663385319",
+  "messageType": "message",
+  "createdDateTime": "2024-03-05T18:29:45.319Z",
+  "lastModifiedDateTime": "2024-03-05T18:29:45.319Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": null,
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": "https://teams.microsoft.com/l/message/19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2/1709663385319?groupId=1e769eab-06a8-4b2e-ac42-1f040a4e52a1&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1709663385319&parentMessageId=1709663385319",
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Test User",
+      "userIdentityType": "aadUser"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
+  },
+  "channelIdentity": {
+    "teamId": "1e769eab-06a8-4b2e-ac42-1f040a4e52a1",
+    "channelId": "19:e28d1f9b354f4de88d2e9e4d8b983763@thread.tacv2"
+  },
+  "attachments": [
+    {
+      "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
+      "contentType": "reference",
+      "contentUrl": "https://teamsgraph-my.sharepoint.com/personal/test_teamsgraph_onmicrosoft_com/Documents/Personal%20Drive%20file%201.docx",
+      "content": null,
+      "name": "Personal Drive file 1.docx",
+      "thumbnailUrl": null,
+      "teamsAppId": null
+    }
+  ],
+  "mentions": [],
+  "reactions": []
 }
 ```
 
@@ -714,7 +717,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_5",
+  "name": "post_chatmessage_6",
   "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```http
@@ -838,7 +841,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_6",
+  "name": "post_chatmessage_7",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
@@ -1278,7 +1281,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_9",
+  "name": "post_chatmessage_10",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 
@@ -1417,7 +1420,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_10",
+  "name": "post_chatmessage_11",
   "sampleKeys": ["5c884e2f-83f8-4cff-af8e-0177f260b9f8", "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"]
 }-->
 
@@ -1565,7 +1568,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_11",
+  "name": "post_chatmessage_12",
   "sampleKeys": ["19:b7867210a3fa4848a5a2a30c210eb9ae@thread.v2"]
 }-->
 
