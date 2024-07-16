@@ -680,7 +680,9 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 ---
 
 
-## Configure trusted certificate authorities
+## Configure trusted certificate authorities for apps
+
+You can restrict certificate credential usage for apps in your tenant to only the certificates issued by trusted certificate authorities. This policy is enforced when you add a certificate to an app and doesn't affect existing certificates unless they are rotated. When an app tries to rotate its certificate credentials, it goes through the policy evaluation to ensure the credentials being added comply with the trusted certificate authority restriction.
 
 ### Step 1: Create a certificate chain of trust
 
