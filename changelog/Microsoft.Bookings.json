@@ -964,7 +964,7 @@
       "ChangeList": [
         {
           "Id": "b3d89c83-9721-47ac-8cd9-e44628ebaa92",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "bookingPageAccessControl",
           "ChangeType": "Addition",
           "Description": "Added the **bookingPageAccessControl** enumeration type.",
@@ -972,7 +972,7 @@
         },
         {
           "Id": "b3d89c83-9721-47ac-8cd9-e44628ebaa92",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "bookingsServiceAvailabilityType",
           "ChangeType": "Addition",
           "Description": "Added the **bookingsServiceAvailabilityType** enumeration type.",
@@ -983,7 +983,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingPageSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingPageSettings](https://learn.microsoft.com/en-us/graph/api/resources/bookingPageSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [bookingPageSettings](https://learn.microsoft.com/en-us/graph/api/resources/bookingPageSettings?view=graph-rest-1.0) resource type.",
           "Target": "bookingPageSettings"
         },
         {
@@ -991,7 +991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingsAvailability",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingsAvailability](https://learn.microsoft.com/en-us/graph/api/resources/bookingsAvailability?view=graph-rest-1.0) resource.",
+          "Description": "Added the [bookingsAvailability](https://learn.microsoft.com/en-us/graph/api/resources/bookingsAvailability?view=graph-rest-1.0) resource type.",
           "Target": "bookingsAvailability"
         },
         {
@@ -999,7 +999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingsAvailabilityWindow",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingsAvailabilityWindow](https://learn.microsoft.com/en-us/graph/api/resources/bookingsAvailabilityWindow?view=graph-rest-1.0) resource.",
+          "Description": "Added the [bookingsAvailabilityWindow](https://learn.microsoft.com/en-us/graph/api/resources/bookingsAvailabilityWindow?view=graph-rest-1.0) resource type.",
           "Target": "bookingsAvailabilityWindow"
         },
         {
