@@ -71,4 +71,4 @@ For details about changes to Microsoft Graph APIs in v1.0, explore the [API chan
 - [Overview of Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
-- [Use Microsoft Graph SDKs](/graph/sdks/sdks-overview) 
+- [Use Microsoft Graph SDKs](/graph/sdks/sdks-overview)
