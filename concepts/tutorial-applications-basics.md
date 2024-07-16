@@ -684,6 +684,9 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 
 ### Step 1: Create a certificate chain of trust
 
+Least privileged delegated permission: `AppCertTrustConfiguration.Read.All`
+Least privileged Microsoft Entra role: `Application Administrator`
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-certbasedappconfig"
@@ -715,9 +718,13 @@ The following sample sets up a policy to ensure that only certificates issued by
 
 This policy ensures that only certificates from the specified intermediate certificate authority can be added to apps. The **applicationRestrictions** > **keyCredentials** object sets a **restrictionType** to `trustedCertificateAuthority`, referencing the created ID. This policy applies to all apps in the tenant, rejecting any noncompliant certificates.
 
+
+Least privileged delegated permission: `Policy.Read.ApplicationConfiguration`
+Least privileged Microsoft Entra role: `Security Administrator`
+
 <!-- {
   "blockType": "request",
-  "name": "tutorial-application-basics-appmanagementpolicy"
+  "name": "tutorial-application-basics-update-appmanagementpolicy"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
