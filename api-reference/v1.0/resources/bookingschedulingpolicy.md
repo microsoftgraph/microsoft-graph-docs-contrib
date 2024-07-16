@@ -16,7 +16,7 @@ Represents the set of policies that determine how appointments should be created
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Boolean|`True` if to allow customers to choose a specific person for the booking.|
+|allowStaffSelection|Boolean|`True` to allow customers to choose a specific person for the booking.|
 |customAvailabilities|[bookingsAvailabilityWindow](../resources/bookingsavailabilitywindow.md) collection|Custom availability of the service in a given time frame of the service.|
 |generalAvailability|[bookingsAvailability](../resources/bookingsavailability.md)|General availability of the service defined by the scheduling policy.|
 |isMeetingInviteToCustomersEnabled|Boolean|Indicates whether the meeting invite is sent to the customers. The default value is `false`. |
