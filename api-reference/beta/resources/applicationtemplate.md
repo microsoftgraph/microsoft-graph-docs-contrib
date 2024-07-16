@@ -58,15 +58,16 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "categories": ["categories-value"],
+  "categories": ["String"],
   "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "homePageUrl": "homePageUrl-value",
-  "id": "id-value",
-  "logoUrl": "logoUrl-value",
-  "publisher": "publisher-value",
-  "supportedSingleSignOnModes": ["supportedSingleSignOnModes-value"]
+  "description": "String",
+  "displayName": "String",
+  "homePageUrl": "String",
+  "id": "String (identifier)",
+  "logoUrl": "String",
+  "publisher": "String",
+  "supportedProvisioningTypes": ["String"],
+  "supportedSingleSignOnModes": ["String"]
 }
 ```
 
