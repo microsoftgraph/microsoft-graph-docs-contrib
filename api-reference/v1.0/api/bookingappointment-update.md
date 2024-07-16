@@ -46,7 +46,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment contains a list of customer information and each unit indicates the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
-|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
+|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, and `corrective`.|
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
@@ -92,12 +92,12 @@ Content-type: application/json
 
 {
     "@odata.type":"#microsoft.graph.bookingAppointment",
-    "endDateTime":{
+    "end":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-06T12:30:00.0000000+00:00",
         "timeZone":"UTC"
     },
-    "startDateTime":{
+    "start":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-06T12:00:00.0000000+00:00",
         "timeZone":"UTC"
