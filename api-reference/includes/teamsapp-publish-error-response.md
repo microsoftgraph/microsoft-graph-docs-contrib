@@ -1,3 +1,10 @@
+---
+author: v-sdhakshina
+ms.topic: include
+ms.date: 07/16/2024
+ms.localizationpriority: medium
+---
+
 ### Error response
 
 If you send a request to upload an app manifest that contains missing information or errors, you receive an error message that includes the inner error code `UnableToParseTeamsAppManifest`. The *details* property of the inner error contains the error code and the error message. The following table describes the most frequently encountered error codes:
@@ -58,16 +65,16 @@ If you send a request to upload an app manifest that contains missing informatio
 |`NoAuthTypeComposeExtensionContainsAuthConfiguration` |API-based compose extension with none authType have auth-related configuration defined.| The API-based compose extension with authType `microsoftEntraConfiguration` or `apiSecretServiceConfiguration` isn't defined in the app manifest.|
 |`ApiSpecificationFileContainUnsupportedHttpMethod`| API-based compose extension have server urls that have unsupported http method defined on apiSpecificationFile. Currently only GET and POST are supported.| The API-based compose extension has an unsupported `http` method defined in the `apiSpecificationFile`.|
 |`ApiSpecificationFileRequiredParameterContainUnsupportedLocation`| API-based compose extension have unsupported parameter location defined on apiSpecificationFile for {0}. Currently only path and query supported.| The API-based compose extension has an unsupported parameter location defined in the `apiSpecificationFile`.|
-|`ApiSpecificationFileRequestBodyContainUnsupportedMediaType`|API-based compose extension have unsupported media type defined in request body on apiSpecificationFile. Currently only application/json is supported.| The API-based compose extension have unsupported `media` type defined in request body in the `apiSpecificationFile`.|
-|`ApiSpecificationFileRequestBodyContainUnsupportedSchemaType`| API-based compose extension have unsupported schema type defined in request body on apiSpecificationFile. Currently arrays aren't supported.| The API-based compose extension have unsupported schema type defined in request body in the `apiSpecificationFile`.|
-|`ApiSpecificationFileRequestBodySchemaContainKeywords` | API-based compose extension have keywords.|The API-based compose extension have keywords defined in request body in the `apiSpecificationFile`.|
-|`ApiSpecificationFileRequiredParameterOrPropertyNotDefinedOnManifest`| API-based compose extension have required parameters or properties {0} not defined on manifest.| The API-based compose extension have `required` parameter isn't defined in the app manifest.|
-|`ApiSpecificationFileResponseContainUnsupportedMediaType`| API-based compose extension have unsupported media type defined in response on apiSpecificationFile. Currently only application/json supported.	| The API-based compose extension have unsupported `media` type defined in response in the `apiSpecificationFile`.|
-|`ApiSpecificationFileServerUrlsContainHttp`| API-based compose extension have server urls that have http protocol defined on apiSpecificationFile.| The API-based compose extension have server urls that contain `http` protocol in the `apiSpecificationFile`.|
-|`ApiSpecificationFileServerUrlsContainInvalidUrl`| API-based compose extension have server urls that are invalid URL defined on apiSpecificationFile.| The API-based compose extension have `invalid` URL defined in the `apiSpecificationFile`.|
-|`ServerUrlsMissingOnApiSpecificationFile`| API-based compose extension have no server urls defined on apiSpecificationFile.| The error that occurs The API-based compose extension have no server urls defined in the `apiSpecificationFile`.|
-|`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension can't have apiResponseRenderingTemplateFile defined.|The bot-based compose extension have `apiResponseRenderingTemplateFile` property defined in the app manifest.|
-|`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension have API specification file defined in the app manifest.|
+|`ApiSpecificationFileRequestBodyContainUnsupportedMediaType`|API-based compose extension have unsupported media type defined in request body on apiSpecificationFile. Currently only application/json is supported.| The API-based compose extension has an unsupported `media` type defined in request body in the `apiSpecificationFile`.|
+|`ApiSpecificationFileRequestBodyContainUnsupportedSchemaType`| API-based compose extension have unsupported schema type defined in request body on apiSpecificationFile. Currently arrays aren't supported.| The API-based compose extension has an unsupported schema type defined in request body in the `apiSpecificationFile`.|
+|`ApiSpecificationFileRequestBodySchemaContainKeywords` | API-based compose extension have keywords.|The API-based compose extension has keywords defined in request body in the `apiSpecificationFile`.|
+|`ApiSpecificationFileRequiredParameterOrPropertyNotDefinedOnManifest`| API-based compose extension have required parameters or properties {0} not defined on manifest.| The API-based compose extension has a `required` parameter, which isn't defined in the app manifest.|
+|`ApiSpecificationFileResponseContainUnsupportedMediaType`| API-based compose extension have unsupported media type defined in response on apiSpecificationFile. Currently only application/json supported.	| The API-based compose extension has an unsupported `media` type defined in response in the `apiSpecificationFile`.|
+|`ApiSpecificationFileServerUrlsContainHttp`| API-based compose extension have server urls that have http protocol defined on apiSpecificationFile.| The API-based compose extension has server urls that contain `http` protocol in the `apiSpecificationFile`.|
+|`ApiSpecificationFileServerUrlsContainInvalidUrl`| API-based compose extension have server urls that are invalid URL defined on apiSpecificationFile.| The API-based compose extension has an `invalid` URL defined in the `apiSpecificationFile`.|
+|`ServerUrlsMissingOnApiSpecificationFile`| API-based compose extension have no server urls defined on apiSpecificationFile.| The error that occurs The API-based compose extension has no server urls defined in the `apiSpecificationFile`.|
+|`BotBasedComposeExtensionApiResponseRenderingTemplateFileExists` |Bot based compose extension can't have apiResponseRenderingTemplateFile defined.|The bot-based compose extension has an `apiResponseRenderingTemplateFile` property defined in the app manifest.|
+|`BotBasedComposeExtensionApiSpecificationFileExists` |Bot based compose extension can't have apiSpecificationFile defined.|The bot-based compose extension has an API specification file defined in the app manifest.|
 |`BotBasedComposeExtensionBotIdNotGuid` |Bot based compose extension must have GUID botId.| The bot-based compose extension `botId` isn't GUID.|
 |`CommonAppIdIsNotGuid`| Field 'ID' isn't a Guid in the manifest.| The `appId` isn't GUID.|
 |`CommonAppIdIsRequiredField`| Required field 'ID' is missing in the manifest.| The `appId` isn't provided.|
