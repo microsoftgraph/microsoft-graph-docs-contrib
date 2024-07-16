@@ -35,11 +35,11 @@ You can use three properties to set the person details. Use only one of the foll
 
 * Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their ID.
 
-* Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It will choose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
+* Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It chooses the first person available and fetches the person details. An email works best to ensure the right person is queried, but a name works as well.
 
 * Set the `person-presence` attribute or `personPresence` property to add a presence badge to person avatar manually.
 
-* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person-properties--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. By default, the value is set to `auto` which will automatically decide how to render the presence based on the `view` property. We recommend using `small` if your avatar is smaller than 32px by 32px.
+* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person-properties--person-presence-display-all) to the avatar. You need to choose the correct corresponding css custom properties shown below to further customize the avatar size. By default, the value is set to `auto` which will automatically decide how to render the presence based on the `view` property. We recommend using `small` if your avatar is smaller than 32px by 32px.
 
 * Use the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
 
@@ -53,7 +53,7 @@ You can use three properties to set the person details. Use only one of the foll
     }
     ```
 
-  If no image is provided, one will be fetched (if available).
+  If no image is provided, one is fetched (if available).
 
 * By default, the person component only requests the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
 
@@ -66,12 +66,12 @@ You can use several properties to customize the component.
 | -----------     | ----------     | ------------------------------------------------------------- |
 | user-id         | userId         | Set to a user ID to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
-| person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
+| person-details  | personDetails  | Set to an object representing a person. Works with objects from the people, users, contacts, or group, resources. |
 | fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in Microsoft Graph.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
-| disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
+| disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. It can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
 | avatar-size     | avatarSize     | Set the avatar size to `small`, `large`, or `auto`, helping also determine the correct size for the presence badge. The default value is `auto`. If the `view` attribute is set to `threelines` or `fourlines`, `avatar-size` is automatically treated as `large`, regardless of its actual value. |
 | vertical-layout | verticalLayout | Set the component layout to vertical.|
@@ -231,7 +231,7 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
+| person-card | personCardInteraction | An enumeration to determine the user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -243,7 +243,7 @@ The `MgtPerson` class exposes a static `config` object that configures all perso
 The following example shows how to use the config object.
 
 ```ts
-import { MgtPerson } from `@microsoft/mgt`;
+import { MgtPerson } from '@microsoft/mgt-components';
 
 MgtPerson.config.useContactApis = false;
 ```
