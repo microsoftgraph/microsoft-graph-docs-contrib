@@ -4959,4 +4959,11 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |cloud|
 |onPremises|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
 |unknownFutureValue|

@@ -26,7 +26,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 |:---------------|:--------|:----------|
 |id|string|The default teamwork identifier.|
 |isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
-|region|string|Represents the region of the organization. [!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]|
+|region|string|Represents the region of the organization or the tenant. The **region** value can be any region supported by the Teams payload. The possible values are: `Americas`, `Europe and MiddleEast`, `Asia Pacific`, `UAE`, `Australia`, `Brazil`, `Canada`, `Switzerland`, `Germany`, `France`, `India`, `Japan`, `South Korea`, `Norway`, `Singapore`, `United Kingdom`, `South Africa`, `Sweden`, `Qatar`, `Poland`, `Italy`, `Israe`l, `USGov Community Cloud`, `USGov Community Cloud High`, `USGov Department of Defense`, and `China`.|
 
 ## Relationships
 
