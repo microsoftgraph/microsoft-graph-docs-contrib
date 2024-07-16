@@ -26,7 +26,7 @@ Use the **summary** property to get details about what happened, impacted assets
 
 ### Applications | Application
 
-Use the **configurationUris** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to define the URIs required for the single sign-on configuration of a preintegrated application.
+Use the **configurationUris** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to get the URIs required for the single sign-on configuration of a preintegrated application.
 
 ### Device and app management | Cloud PC
 
