@@ -20,22 +20,34 @@ items:
       href: ../../api/administrativeunit-update.md
     - name: Delete
       href: ../../api/administrativeunit-delete.md
-    - name: Add member
-      href: ../../api/administrativeunit-post-members.md
-    - name: List members
-      href: ../../api/administrativeunit-list-members.md
-    - name: Get member
-      href: ../../api/administrativeunit-get-members.md
-    - name: Remove member
-      href: ../../api/administrativeunit-delete-members.md
-    - name: List role assignments with scope
-      href: ../../api/administrativeunit-list-scopedrolemembers.md
-    - name: Assign role with scope
-      href: ../../api/administrativeunit-post-scopedrolemembers.md
-    - name: Get role assignment with scope
-      href: ../../api/administrativeunit-get-scopedrolemembers.md
-    - name: Remove role assignment with scope
-      href: ../../api/administrativeunit-delete-scopedrolemembers.md
+    - name: Memberships
+      items:
+      - name: Add member
+        href: ../../api/administrativeunit-post-members.md
+      - name: List members
+        href: ../../api/administrativeunit-list-members.md
+      - name: Get member
+        href: ../../api/administrativeunit-get-members.md
+      - name: Remove member
+        href: ../../api/administrativeunit-delete-members.md
+    - name: Role assignments
+      items:
+      - name: List role assignments with scope
+        href: ../../api/administrativeunit-list-scopedrolemembers.md
+      - name: Assign role with scope
+        href: ../../api/administrativeunit-post-scopedrolemembers.md
+      - name: Get role assignment with scope
+        href: ../../api/administrativeunit-get-scopedrolemembers.md
+      - name: Remove role assignment with scope
+        href: ../../api/administrativeunit-delete-scopedrolemembers.md
+    - name: Deleted items
+      items:
+      - name: List
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore
+        href: ../../api/directory-deleteditems-restore.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -44,14 +56,6 @@ items:
       href: ../../api/bitlocker-list-recoverykeys.md
     - name: Get
       href: ../../api/bitlockerrecoverykey-get.md
-  - name: Company subscription
-    items:
-    - name: Company subscription
-      href: ../../resources/companysubscription.md
-    - name: Get
-      href: ../../api/companysubscription-get.md
-    - name: List
-      href: ../../api/directory-list-subscriptions.md
   - name: Contract
     items:
     - name: Contract
@@ -250,6 +254,24 @@ items:
       href: ../../api/groupsettingtemplate-get.md
     - name: List
       href: ../../api/groupsettingtemplate-list.md
+  - name: Licenses and subscriptions
+    items:
+    - name: Company subscription
+      items:
+      - name: Company subscription
+        href: ../../resources/companysubscription.md
+      - name: Get
+        href: ../../api/companysubscription-get.md
+      - name: List
+        href: ../../api/directory-list-subscriptions.md
+    - name: Subscribed SKU
+      items:
+      - name: Subscribed SKU
+        href: ../../resources/subscribedsku.md
+      - name: Get
+        href: ../../api/subscribedsku-get.md
+      - name: List
+        href: ../../api/subscribedsku-list.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -332,14 +354,6 @@ items:
         href: ../../api/unifiedroleassignment-get.md
       - name: Delete
         href: ../../api/unifiedroleassignment-delete.md
-  - name: Subscribed SKU
-    items:
-    - name: Subscribed SKU
-      href: ../../resources/subscribedsku.md
-    - name: Get
-      href: ../../api/subscribedsku-get.md
-    - name: List
-      href: ../../api/subscribedsku-list.md
   - name: Tenant information
     items:
     - name: Tenant information
@@ -357,6 +371,83 @@ items:
     items:
     - name: Overview
       href: ../../resources/accessreviewsv2-overview.md
+    - name: Access review schedule definition
+      items:
+      - name: Access review schedule definition
+        href: ../../resources/accessreviewscheduledefinition.md
+      - name: List
+        href: ../../api/accessreviewset-list-definitions.md
+      - name: Get
+        href: ../../api/accessreviewscheduledefinition-get.md
+      - name: Create
+        href: ../../api/accessreviewset-post-definitions.md
+      - name: Delete
+        href: ../../api/accessreviewscheduledefinition-delete.md
+      - name: Update
+        href: ../../api/accessreviewscheduledefinition-update.md
+      - name: Filter by current user
+        href: ../../api/accessreviewscheduledefinition-filterbycurrentuser.md
+    - name: Access review instance
+      items:
+      - name: Access review instance
+        href: ../../resources/accessreviewinstance.md
+      - name: List
+        href: ../../api/accessreviewscheduledefinition-list-instances.md
+      - name: Get
+        href: ../../api/accessreviewinstance-get.md
+      - name: Update
+        href: ../../api/accessreviewinstance-update.md
+      - name: Filter by current user
+        href: ../../api/accessreviewinstance-filterbycurrentuser.md
+      - name: List contacted reviewers
+        href: ../../api/accessreviewinstance-list-contactedreviewers.md
+      - name: Send reminder
+        href: ../../api/accessreviewinstance-sendreminder.md
+      - name: Stop
+        href: ../../api/accessreviewinstance-stop.md
+      - name: Accept recommendations
+        href: ../../api/accessreviewinstance-acceptrecommendations.md
+      - name: Apply decisions
+        href: ../../api/accessreviewinstance-applydecisions.md
+      - name: Batch record decisions
+        href: ../../api/accessreviewinstance-batchrecorddecisions.md
+      - name: Reset decisions
+        href: ../../api/accessreviewinstance-resetdecisions.md
+      - name: List stages
+        href: ../../api/accessreviewinstance-list-stages.md
+      - name: List decisions
+        href: ../../api/accessreviewinstance-list-decisions.md
+    - name: Access review stage
+      items:
+      - name: Access review stage
+        href: ../../resources/accessreviewstage.md
+      - name: List
+        href: ../../api/accessreviewinstance-list-stages.md
+      - name: Get
+        href: ../../api/accessreviewstage-get.md
+      - name: Update
+        href: ../../api/accessreviewstage-update.md
+      - name: Stop
+        href: ../../api/accessreviewstage-stop.md
+      - name: Filter by current user
+        href: ../../api/accessreviewstage-filterbycurrentuser.md
+      - name: List decisions from a stage of an instance
+        href: ../../api/accessreviewstage-list-decisions.md
+    - name: Access review instance decision item
+      displayName: access review decisions
+      items:
+      - name: Access review instance decision item
+        href: ../../resources/accessreviewinstancedecisionitem.md
+      - name: List instance decisions
+        href: ../../api/accessreviewinstance-list-decisions.md
+      - name: List stage decisions
+        href: ../../api/accessreviewstage-list-decisions.md
+      - name: Get
+        href: ../../api/accessreviewinstancedecisionitem-get.md
+      - name: Update
+        href: ../../api/accessreviewinstancedecisionitem-update.md
+      - name: Filter by current user
+        href: ../../api/accessreviewinstancedecisionitem-filterbycurrentuser.md
     - name: Access review history definition
       items:
       - name: Access review history definition
@@ -375,83 +466,6 @@ items:
         href: ../../api/accessreviewhistorydefinition-list-instances.md
       - name: Generate download URI
         href: ../../api/accessreviewhistoryinstance-generatedownloaduri.md
-    - name: Access review instance
-      items:
-      - name: Access review instance
-        href: ../../resources/accessreviewinstance.md
-      - name: List accessReviewInstances
-        href: ../../api/accessreviewscheduledefinition-list-instances.md
-      - name: Get accessReviewInstance
-        href: ../../api/accessreviewinstance-get.md
-      - name: Update accessReviewInstance
-        href: ../../api/accessreviewinstance-update.md
-      - name: filterByCurrentUser
-        href: ../../api/accessreviewinstance-filterbycurrentuser.md
-      - name: List contacted reviewers
-        href: ../../api/accessreviewinstance-list-contactedreviewers.md
-      - name: sendReminder
-        href: ../../api/accessreviewinstance-sendreminder.md
-      - name: stop
-        href: ../../api/accessreviewinstance-stop.md
-      - name: acceptRecommendations
-        href: ../../api/accessreviewinstance-acceptrecommendations.md
-      - name: applyDecisions
-        href: ../../api/accessreviewinstance-applydecisions.md
-      - name: batchRecordDecisions
-        href: ../../api/accessreviewinstance-batchrecorddecisions.md
-      - name: resetDecisions
-        href: ../../api/accessreviewinstance-resetdecisions.md
-      - name: List stages
-        href: ../../api/accessreviewinstance-list-stages.md
-      - name: List decisions
-        href: ../../api/accessreviewinstance-list-decisions.md
-    - name: Access review instance decision item
-      displayName: access review decisions
-      items:
-      - name: Access review instance decision item
-        href: ../../resources/accessreviewinstancedecisionitem.md
-      - name: List decisions
-        href: ../../api/accessreviewinstance-list-decisions.md
-      - name: List decisions
-        href: ../../api/accessreviewstage-list-decisions.md
-      - name: Get
-        href: ../../api/accessreviewinstancedecisionitem-get.md
-      - name: Update
-        href: ../../api/accessreviewinstancedecisionitem-update.md
-      - name: Filter by current user
-        href: ../../api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-    - name: Access review schedule definition
-      items:
-      - name: Access review schedule definition
-        href: ../../resources/accessreviewscheduledefinition.md
-      - name: List
-        href: ../../api/accessreviewset-list-definitions.md
-      - name: Get
-        href: ../../api/accessreviewscheduledefinition-get.md
-      - name: Create
-        href: ../../api/accessreviewset-post-definitions.md
-      - name: Delete
-        href: ../../api/accessreviewscheduledefinition-delete.md
-      - name: Update
-        href: ../../api/accessreviewscheduledefinition-update.md
-      - name: Filter by current user
-        href: ../../api/accessreviewscheduledefinition-filterbycurrentuser.md
-    - name: Access review stage
-      items:
-      - name: Access review stage
-        href: ../../resources/accessreviewstage.md
-      - name: List
-        href: ../../api/accessreviewinstance-list-stages.md
-      - name: Get
-        href: ../../api/accessreviewstage-get.md
-      - name: Update
-        href: ../../api/accessreviewstage-update.md
-      - name: Stop
-        href: ../../api/accessreviewstage-stop.md
-      - name: Filter by current user
-        href: ../../api/accessreviewstage-filterbycurrentuser.md
-      - name: List decisions from a stage of an instance
-        href: ../../api/accessreviewstage-list-decisions.md
     - name: Complex types
       items:
       - name: Access review apply action
@@ -566,40 +580,38 @@ items:
       items:
       - name: Access package
         href: ../../resources/accesspackage.md
-      - name: List accessPackages
+      - name: List
         href: ../../api/entitlementmanagement-list-accesspackages.md
-      - name: Create accessPackage
+      - name: Create
         href: ../../api/entitlementmanagement-post-accesspackages.md
-      - name: Get accessPackage
+      - name: Get
         href: ../../api/accesspackage-get.md
-      - name: Update accessPackage
+      - name: Update
         href: ../../api/accesspackage-update.md
-      - name: Delete accessPackage
+      - name: Delete
         href: ../../api/accesspackage-delete.md
-      - name: List incompatibleAccessPackages
-        href: ../../api/accesspackage-list-incompatibleaccesspackages.md
-      - name: Add accessPackage to incompatibleAccessPackages
-        href: ../../api/accesspackage-post-incompatibleaccesspackage.md
-      - name: Remove accessPackage from incompatibleAccessPackages
-        href: ../../api/accesspackage-delete-incompatibleaccesspackage.md
-      - name: List incompatibleGroups
-        href: ../../api/accesspackage-list-incompatiblegroups.md
-      - name: Add group to incompatibleGroups
-        href: ../../api/accesspackage-post-incompatiblegroup.md
-      - name: Remove group from incompatibleGroups
-        href: ../../api/accesspackage-delete-incompatiblegroup.md
-      - name: List accessPackagesIncompatibleWith
-        href: ../../api/accesspackage-list-accesspackagesincompatiblewith.md
-      - name: filterByCurrentUser
+      - name: Filter by current user
         href: ../../api/accesspackage-filterbycurrentuser.md
-      - name: getApplicablePolicyRequirements
+      - name: Get applicable policy requirements
         href: ../../api/accesspackage-getapplicablepolicyrequirements.md
-      - name: List accessPackageResourceRoleScopes
-        href: ../../api/accesspackage-list-resourcerolescopes.md
-      - name: Create accessPackageResourceRoleScope
-        href: ../../api/accesspackage-post-resourcerolescopes.md
-      - name: Delete accessPackageResourceRoleScope
-        href: ../../api/accesspackage-delete-resourcerolescopes.md
+      - name: Incompatible access packages
+        items:
+        - name: List
+          href: ../../api/accesspackage-list-incompatibleaccesspackages.md
+        - name: Add to
+          href: ../../api/accesspackage-post-incompatibleaccesspackage.md
+        - name: Remove from
+          href: ../../api/accesspackage-delete-incompatibleaccesspackage.md
+        - name: List incompatible with
+          href: ../../api/accesspackage-list-accesspackagesincompatiblewith.md
+      - name: Incompatible groups
+        items:
+        - name: List
+          href: ../../api/accesspackage-list-incompatiblegroups.md
+        - name: Add group to
+          href: ../../api/accesspackage-post-incompatiblegroup.md
+        - name: Remove group from
+          href: ../../api/accesspackage-delete-incompatiblegroup.md
     - name: Access package assignment
       items:
       - name: Access package assignment
@@ -614,6 +626,34 @@ items:
         href: ../../api/accesspackageassignment-reprocess.md
       - name: Check other access
         href: ../../api/accesspackageassignment-additionalaccess.md
+    - name: Approval
+      items:
+      - name: Approval
+        href: ../../resources/approval.md
+      - name: Get
+        href: ../../api/approval-get.md
+      - name: Filter by current user
+        href: ../../api/approval-filterbycurrentuser.md
+    - name: Approval stage
+      items:
+      - name: Approval stage
+        href: ../../resources/approvalstage.md
+      - name: List
+        href: ../../api/approval-list-stages.md
+      - name: Get
+        href: ../../api/approvalstage-get.md
+      - name: Update
+        href: ../../api/approvalstage-update.md
+    - name: Access package resource role scope
+      items:
+      - name: Access package resource role scope
+        href: ../../resources/accesspackageresourcerolescope.md
+      - name: List
+        href: ../../api/accesspackage-list-resourcerolescopes.md
+      - name: Create
+        href: ../../api/accesspackage-post-resourcerolescopes.md
+      - name: Delete
+        href: ../../api/accesspackage-delete-resourcerolescopes.md
     - name: Access package assignment policy
       items:
       - name: Access package assignment policy
@@ -646,6 +686,54 @@ items:
         href: ../../api/accesspackageassignmentrequest-cancel.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+    - name: Access package catalog
+      items:
+      - name: Access package catalog
+        href: ../../resources/accesspackagecatalog.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-catalogs.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-catalogs.md
+      - name: Get
+        href: ../../api/accesspackagecatalog-get.md
+      - name: Update
+        href: ../../api/accesspackagecatalog-update.md
+      - name: Delete
+        href: ../../api/accesspackagecatalog-delete.md
+      - name: Access package catalog resources
+        items:
+        - name: List
+          href: ../../api/accesspackagecatalog-list-resources.md
+      - name: Access package catalog resource roles
+        items:
+        - name: List
+          href: ../../api/accesspackagecatalog-list-resourceroles.md
+    - name: Access package resource
+      items:
+      - name: Access package resource
+        href: ../../resources/accesspackageresource.md
+      - name: List
+        href: ../../api/accesspackagecatalog-list-resources.md
+    - name: Access package resource role
+      items:
+      - name: Access package resource role
+        href: ../../resources/accesspackageresourcerole.md
+      - name: List
+        href: ../../api/accesspackagecatalog-list-resourceroles.md
+    - name: Access package resource environment
+      items:
+      - name: Access package resource environment
+        href: ../../resources/accesspackageresourceenvironment.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-resourceenvironments.md
+    - name: Access package resource request
+      items:
+      - name: Access package resource request
+        href: ../../resources/accesspackageresourcerequest.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-resourcerequests.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-resourcerequests.md
     - name: Access package assignment request workflow extension
       items:
       - name: Access package assignment request workflow extension
@@ -674,60 +762,8 @@ items:
         href: ../../api/accesspackageassignmentworkflowextension-update.md
       - name: Delete
         href: ../../api/accesspackageassignmentworkflowextension-delete.md
-    - name: Access package catalog
-      items:
-      - name: Access package catalog
-        href: ../../resources/accesspackagecatalog.md
-      - name: List accessPackageCatalogs
-        href: ../../api/entitlementmanagement-list-catalogs.md
-      - name: Create accessPackageCatalog
-        href: ../../api/entitlementmanagement-post-catalogs.md
-      - name: Get accessPackageCatalog
-        href: ../../api/accesspackagecatalog-get.md
-      - name: Update accessPackageCatalog
-        href: ../../api/accesspackagecatalog-update.md
-      - name: Delete accessPackageCatalog
-        href: ../../api/accesspackagecatalog-delete.md
-      - name: List accessPackageCatalog resources
-        href: ../../api/accesspackagecatalog-list-resources.md
-      - name: List accessPackageCatalog resource roles
-        href: ../../api/accesspackagecatalog-list-resourceroles.md
-    - name: Access package resource
-      items:
-      - name: Access package resource
-        href: ../../resources/accesspackageresource.md
-      - name: List
-        href: ../../api/accesspackagecatalog-list-resources.md
-    - name: Access package resource environment
-      items:
-      - name: Access package resource environment
-        href: ../../resources/accesspackageresourceenvironment.md
-      - name: List
-        href: ../../api/entitlementmanagement-list-resourceenvironments.md
-    - name: Access package resource request
-      items:
-      - name: Access package resource request
-        href: ../../resources/accesspackageresourcerequest.md
-      - name: List
-        href: ../../api/entitlementmanagement-list-resourcerequests.md
-      - name: Create
-        href: ../../api/entitlementmanagement-post-resourcerequests.md
-    - name: Access package resource role
-      items:
-      - name: Access package resource role
-        href: ../../resources/accesspackageresourcerole.md
-      - name: List
-        href: ../../api/accesspackagecatalog-list-resourceroles.md
-    - name: Access package resource role scope
-      items:
-      - name: Access package resource role scope
-        href: ../../resources/accesspackageresourcerolescope.md
-      - name: List
-        href: ../../api/accesspackage-list-resourcerolescopes.md
-      - name: Create
-        href: ../../api/accesspackage-post-resourcerolescopes.md
-      - name: Delete
-        href: ../../api/accesspackage-delete-resourcerolescopes.md
+    - name: Access package subject
+      href: ../../resources/accesspackagesubject.md
     - name: Connected organization
       items:
       - name: Connected organization
@@ -742,18 +778,22 @@ items:
         href: ../../api/connectedorganization-update.md
       - name: Delete
         href: ../../api/connectedorganization-delete.md
-      - name: List external sponsors
-        href: ../../api/connectedorganization-list-externalsponsors.md
-      - name: Add external sponsors
-        href: ../../api/connectedorganization-post-externalsponsors.md
-      - name: List internal sponsors
-        href: ../../api/connectedorganization-list-internalsponsors.md
-      - name: Add internal sponsors
-        href: ../../api/connectedorganization-post-internalsponsors.md
-      - name: Remove internal sponsors
-        href: ../../api/connectedorganization-delete-internalsponsors.md
-      - name: Remove external sponsors
-        href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: External sponsors
+        items:
+        - name: List
+          href: ../../api/connectedorganization-list-externalsponsors.md
+        - name: Add
+          href: ../../api/connectedorganization-post-externalsponsors.md
+        - name: Remove
+          href: ../../api/connectedorganization-delete-externalsponsors.md
+      - name: Internal sponsors
+        items:
+        - name: List
+          href: ../../api/connectedorganization-list-internalsponsors.md
+        - name: Add
+          href: ../../api/connectedorganization-post-internalsponsors.md
+        - name: Remove
+          href: ../../api/connectedorganization-delete-internalsponsors.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
@@ -800,8 +840,6 @@ items:
         href: ../../resources/accesspackageresourceattributesource.md
       - name: Access package resource scope
         href: ../../resources/accesspackageresourcescope.md
-      - name: Access package subject
-        href: ../../resources/accesspackagesubject.md
       - name: Access package text input question
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
@@ -881,72 +919,32 @@ items:
     items:
     - name: Overview
       href: ../../resources/identitygovernance-lifecycleworkflows-overview.md
-    - name: Custom task extension
-      items:
-      - name: Custom task extension
-        href: ../../resources/identitygovernance-customtaskextension.md
-      - name: List
-        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
-      - name: Create
-        href: ../../api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
-      - name: Get
-        href: ../../api/identitygovernance-customtaskextension-get.md
-      - name: Update
-        href: ../../api/identitygovernance-customtaskextension-update.md
-      - name: Delete
-        href: ../../api/identitygovernance-customtaskextension-delete.md
-    - name: Lifecycle management settings
-      items:
-      - name: Lifecycle management settings
-        href: ../../resources/identitygovernance-lifecyclemanagementsettings.md
-      - name: Get
-        href: ../../api/identitygovernance-lifecyclemanagementsettings-get.md
-      - name: Update
-        href: ../../api/identitygovernance-lifecyclemanagementsettings-update.md
-    - name: Task definition
-      items:
-      - name: Task definition
-        href: ../../resources/identitygovernance-taskdefinition.md
-      - name: List
-        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
-      - name: Get
-        href: ../../api/identitygovernance-taskdefinition-get.md
     - name: Workflow
       items:
       - name: Workflow
         href: ../../resources/identitygovernance-workflow.md
-      - name: List workflows
+      - name: List
         href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
-      - name: Create workflow
+      - name: Create
         href: ../../api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
-      - name: Get workflow
+      - name: Get
         href: ../../api/identitygovernance-workflow-get.md
-      - name: Update workflow
+      - name: Update
         href: ../../api/identitygovernance-workflow-update.md
-      - name: Delete workflow
+      - name: Delete
         href: ../../api/identitygovernance-workflow-delete.md
+      - name: Activate
+        href: ../../api/identitygovernance-workflow-activate.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
-      - name: Get a deleted workflow
-        href: ../../api/identitygovernance-deleteditemcontainer-get.md
-      - name: Permanently delete a workflow
-        href: ../../api/identitygovernance-deletedItemcontainer-delete.md
-      - name: List deleted workflows
-        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-      - name: activate
-        href: ../../api/identitygovernance-workflow-activate.md
-      - name: Create workflowVersion
-        href: ../../api/identitygovernance-workflow-createnewversion.md
-      - name: restore
-        href: ../../api/identitygovernance-workflow-restore.md
-      - name: List runs
-        href: ../../api/identitygovernance-workflow-list-runs.md
-      - name: Get task
-        href: ../../api/identitygovernance-task-get.md
-      - name: List tasks
-        href: ../../api/identitygovernance-workflow-list-task.md
-      - name: List versions
-        href: ../../api/identitygovernance-workflow-list-versions.md
+      - name: Deleted workflows
+        items:
+        - name: List
+          href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
+        - name: Get
+          href: ../../api/identitygovernance-deleteditemcontainer-get.md
+        - name: Restore
+          href: ../../api/identitygovernance-workflow-restore.md
       - name: Task
         items:
         - name: Task
@@ -1022,6 +1020,36 @@ items:
         href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
       - name: Get
         href: ../../api/identitygovernance-workflowtemplate-get.md
+    - name: Task definition
+      items:
+      - name: Task definition
+        href: ../../resources/identitygovernance-taskdefinition.md
+      - name: List
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+      - name: Get
+        href: ../../api/identitygovernance-taskdefinition-get.md
+    - name: Custom task extension
+      items:
+      - name: Custom task extension
+        href: ../../resources/identitygovernance-customtaskextension.md
+      - name: List
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
+      - name: Create
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
+      - name: Get
+        href: ../../api/identitygovernance-customtaskextension-get.md
+      - name: Update
+        href: ../../api/identitygovernance-customtaskextension-update.md
+      - name: Delete
+        href: ../../api/identitygovernance-customtaskextension-delete.md
+    - name: Lifecycle management settings
+      items:
+      - name: Lifecycle management settings
+        href: ../../resources/identitygovernance-lifecyclemanagementsettings.md
+      - name: Get
+        href: ../../api/identitygovernance-lifecyclemanagementsettings-get.md
+      - name: Update
+        href: ../../api/identitygovernance-lifecyclemanagementsettings-update.md
     - name: Complex types
       items:
       - name: Custom callout extension
@@ -1918,19 +1946,19 @@ items:
         href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
       - name: Reset
         href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
-  - name: OAuth 2 permission grant
+  - name: OAuth2 (delegated) permission grant
     items:
-    - name: OAuth 2 permission grant
+    - name: OAuth2 (delegated) permission grant
       href: ../../resources/oauth2permissiongrant.md
-    - name: List oAuth2PermissionGrants
+    - name: List
       href: ../../api/oauth2permissiongrant-list.md
-    - name: Get oAuth2PermissionGrant
+    - name: Get
       href: ../../api/oauth2permissiongrant-get.md
-    - name: Create oAuth2PermissionGrant
+    - name: Create
       href: ../../api/oauth2permissiongrant-post.md
-    - name: Update oAuth2PermissionGrant
+    - name: Update
       href: ../../api/oauth2permissiongrant-update.md
-    - name: Delete oAuth2PermissionGrant
+    - name: Delete
       href: ../../api/oauth2permissiongrant-delete.md
     - name: Get delta
       href: ../../api/oauth2permissiongrant-delta.md

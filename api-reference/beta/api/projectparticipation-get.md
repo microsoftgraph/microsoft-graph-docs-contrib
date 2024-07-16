@@ -157,6 +157,7 @@ Content-type: application/json
       "displayName": "Adventureworks Inc.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "C-100",
       "officeLocation": null,
       "address": null,
       "webUrl": "https://adventureworks.com"
