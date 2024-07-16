@@ -54,13 +54,21 @@ To update the sign-in preferences (system-preferred MFA) for a user:
 PATCH /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
-To update the per-user multifactor authentication state for a user:
+To update the per-user multifactor authentication state for the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /me/authentication/requirements
+```
+
+To update the per-user multifactor authentication state for a user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 PATCH /users/{id | userPrincipalName}/authentication/requirements
 ```
 
