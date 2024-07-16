@@ -175,7 +175,7 @@ Content-type: application/json
                 "dateTime": "2018-04-30T13:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-04-30T13:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -272,7 +272,7 @@ Content-type: application/json
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-01T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
