@@ -20,22 +20,34 @@ items:
       href: ../../api/administrativeunit-update.md
     - name: Delete
       href: ../../api/administrativeunit-delete.md
-    - name: Add member
-      href: ../../api/administrativeunit-post-members.md
-    - name: List members
-      href: ../../api/administrativeunit-list-members.md
-    - name: Get member
-      href: ../../api/administrativeunit-get-members.md
-    - name: Remove member
-      href: ../../api/administrativeunit-delete-members.md
-    - name: List role assignments with scope
-      href: ../../api/administrativeunit-list-scopedrolemembers.md
-    - name: Assign role with scope
-      href: ../../api/administrativeunit-post-scopedrolemembers.md
-    - name: Get role assignment with scope
-      href: ../../api/administrativeunit-get-scopedrolemembers.md
-    - name: Remove role assignment with scope
-      href: ../../api/administrativeunit-delete-scopedrolemembers.md
+    - name: Memberships
+      items:
+      - name: Add member
+        href: ../../api/administrativeunit-post-members.md
+      - name: List members
+        href: ../../api/administrativeunit-list-members.md
+      - name: Get member
+        href: ../../api/administrativeunit-get-members.md
+      - name: Remove member
+        href: ../../api/administrativeunit-delete-members.md
+    - name: Role assignments
+      items:
+      - name: List role assignments with scope
+        href: ../../api/administrativeunit-list-scopedrolemembers.md
+      - name: Assign role with scope
+        href: ../../api/administrativeunit-post-scopedrolemembers.md
+      - name: Get role assignment with scope
+        href: ../../api/administrativeunit-get-scopedrolemembers.md
+      - name: Remove role assignment with scope
+        href: ../../api/administrativeunit-delete-scopedrolemembers.md
+    - name: Deleted items
+      items:
+      - name: List
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore
+        href: ../../api/directory-deleteditems-restore.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -44,14 +56,6 @@ items:
       href: ../../api/bitlocker-list-recoverykeys.md
     - name: Get
       href: ../../api/bitlockerrecoverykey-get.md
-  - name: Company subscription
-    items:
-    - name: Company subscription
-      href: ../../resources/companysubscription.md
-    - name: Get
-      href: ../../api/companysubscription-get.md
-    - name: List
-      href: ../../api/directory-list-subscriptions.md
   - name: Contract
     items:
     - name: Contract
@@ -250,6 +254,24 @@ items:
       href: ../../api/groupsettingtemplate-get.md
     - name: List
       href: ../../api/groupsettingtemplate-list.md
+  - name: Licenses and subscriptions
+    items:
+    - name: Company subscription
+      items:
+      - name: Company subscription
+        href: ../../resources/companysubscription.md
+      - name: Get
+        href: ../../api/companysubscription-get.md
+      - name: List
+        href: ../../api/directory-list-subscriptions.md
+    - name: Subscribed SKU
+      items:
+      - name: Subscribed SKU
+        href: ../../resources/subscribedsku.md
+      - name: Get
+        href: ../../api/subscribedsku-get.md
+      - name: List
+        href: ../../api/subscribedsku-list.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -332,14 +354,6 @@ items:
         href: ../../api/unifiedroleassignment-get.md
       - name: Delete
         href: ../../api/unifiedroleassignment-delete.md
-  - name: Subscribed SKU
-    items:
-    - name: Subscribed SKU
-      href: ../../resources/subscribedsku.md
-    - name: Get
-      href: ../../api/subscribedsku-get.md
-    - name: List
-      href: ../../api/subscribedsku-list.md
   - name: Tenant information
     items:
     - name: Tenant information
