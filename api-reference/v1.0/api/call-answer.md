@@ -22,11 +22,11 @@ This API supports the following PSTN scenarios:
 + Incoming call to Bot's PSTN number and then bot invites another PSTN.
 + Incoming call to Bot's PSTN number and then bot transfer to another PSTN.
 + Incoming call to Bot's PSTN number and then bot redirects to another PSTN.
-+ Incoming call to Bot's Instance Id and then bot invites another PSTN.
-+ Incoming call to Bot's Instance Id and then bot transfer to another PSTN.
-+ Incoming call to Bot's Instance Id and then bot redirects to another PSTN.
-+ Incoming call to Bot's Instance Id from Scheduled Meeting and then bot invites PSTN.
-+ Outgoing call from Bot (with Instance Id) to a PSTN.
++ Incoming call to Bot's instance identifier and then bot invites another PSTN.
++ Incoming call to Bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to Bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to Bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from Bot (with instance identifier) to a PSTN.
 + P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN.
 + P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user.
 + Bot join the scheduled meeting and then invite PSTN.
