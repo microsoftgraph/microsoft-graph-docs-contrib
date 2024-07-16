@@ -54,13 +54,21 @@ To retrieve the sign-in preferences (system-preferred MFA) for a user:
 GET /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
-To retrieve the per-user multifactor authentication state for a user:
+To retrieve the per-user multifactor authentication state for the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /me/authentication/requirements
+```
+
+To retrieve the per-user multifactor authentication state for a user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 GET /users/{id | userPrincipalName}/authentication/requirements
 ```
 
