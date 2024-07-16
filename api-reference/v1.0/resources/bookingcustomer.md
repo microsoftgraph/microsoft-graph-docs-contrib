@@ -29,11 +29,11 @@ Inherits from [bookingCustomerBase](bookingcustomerbase.md).
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of **physicalAddress** isn't supported in v1.0. Internally we map the addresses to the type `others`.|
-|createdDateTime|DateTimeOffset|The date, time, and timezone when the customer was created.|
+|createdDateTime|DateTimeOffset|The date, time, and time zone when the customer was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|lastUpdatedDateTime|DateTimeOffset|The date, time, and timezone when the customer was last updated.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time, and time zone when the customer was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Relationships
