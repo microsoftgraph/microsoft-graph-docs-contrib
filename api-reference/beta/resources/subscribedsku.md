@@ -31,7 +31,7 @@ Inherits from [directoryObject](directoryobject.md).
 | accountId        | String                                           | The unique ID of the account this SKU belongs to.                                                                                                                                                                                                               |
 | accountName      | String                                           | The name of the account this SKU belongs to.                                                                                                                                                                                                                    |
 | appliesTo        | String                                           | The target class for this SKU. Only SKUs with target class `User` are assignable. Possible values are: `User`, `Company`.                                                                                                                                                  |
-| capabilityStatus | String                                           | `Enabled` indicates that the **prepaidUnits** property has at least one unit that is enabled. `LockedOut` indicates that the customer cancelled their subscription. Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+| capabilityStatus | String                                           | `Enabled` indicates that the **prepaidUnits** property has at least one unit that is enabled. `LockedOut` indicates that the customer canceled their subscription. Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 | consumedUnits    | Int32                                            | The number of licenses that have been assigned.                                                                                                                                                                                                                 |
 | id               | String                                           | The unique identifier for the subscribed SKU object. Key, not nullable.                                                                                                                                                                                         |
 | prepaidUnits     | [licenseUnitsDetail](licenseunitsdetail.md)      | Information about the number and status of prepaid licenses.                                                                                                                                                                                                    |
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
