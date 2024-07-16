@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/v1.0/overview.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/overview?view=graph-rest-1.0&preserve-view=true",
+      "redirect_document_id": false
+    }
+  ]
+}
