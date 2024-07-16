@@ -63,9 +63,9 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |serviceLocation|[location](../resources/location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it's computed from the service associated with the appointment by the **serviceId** property.|
 |serviceNotes|String|Notes from a [bookingStaffMember](../resources/bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. The default value is `false`.|
+|smsNotificationsEnabled|Boolean|`True` indicates that SMS notifications are sent to the customers for the appointment. The default value is `false`.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](../resources/bookingstaffmember.md) who is scheduled in this appointment.|
-|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone the appointment begins.|
+|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone when the appointment begins.|
 
 > [!NOTE]
 > If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
