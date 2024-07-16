@@ -71,7 +71,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.bookingAppointment",
     "customerTimeZone": "America/Chicago",
     "smsNotificationsEnabled": true,
-    "endDateTime": {
+    "end": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:30:00.0000000+00:00",
         "timeZone": "UTC"
@@ -138,7 +138,7 @@ Content-type: application/json
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
         "timeZone": "UTC"
@@ -232,11 +232,11 @@ Content-type: application/json
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-01T12:30:00.0000000Z",
         "timeZone": "UTC"
     },
