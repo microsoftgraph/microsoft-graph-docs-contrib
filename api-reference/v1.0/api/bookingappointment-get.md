@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-The **startDateTime** and **endDateTime** properties are always returned in UTC.
+The **start** and **end** properties are always returned in UTC.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -136,7 +136,7 @@ Content-type: application/json
         "dateTime": "2018-05-06T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
     },
