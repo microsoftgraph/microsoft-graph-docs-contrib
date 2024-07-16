@@ -6,7 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta solutions business-scenarios planner tasks create --business-scenario-id {businessScenario-id} --body '{\
-  "@odata.type": "#microsoft.graph.businessScenarioTask",\
   "title": "Customer order #12010",\
   "percentComplete": 0,\
   "priority": 5,\
