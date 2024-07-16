@@ -7,7 +7,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`Serialization_FileNotValidJson`| The file couldn't be parsed as a JSON object.| The submitted file didn't comply with a valid JSON format. |
 |`Serialization_ManifestVersionPropertyMissing`| The file doesn't contain the "{0}" property.| The `manifestVersion` property is missing in the app manifest file. Here, {0} is the string for `manifestVersion` property.|
 |`Serialization_FileMissing`| The file {0} couldn't be found in the app package.| The expected file is missing in the app package.|
-|`Serialization_TrailingCommaInManifestJsonFile`| Manifest json file contains trailing comma.| The app manifest file contains trailing comma.|
+|`Serialization_TrailingCommaInManifestJsonFile`| Manifest json file contains trailing comma.| The app manifest file contains a trailing comma.|
 |`SchemaError_MultipleOf`| Integer {0} isn't a multiple of {1}.| The app manifest file failed the `multipleOf` validation of the schema. Here, {0} represents the integer value and {1} indicates the required multiple. |
 |`SchemaError_Maximum`| Integer {0} exceeds maximum value of {1}.| The app manifest file failed the `maximum` validation of the schema. Here, {0} represents the value that exceeds the maximum limit and {1} represents the maximum limit. |
 |`SchemaError_Minimum`| Integer {0} is less than minimum value of {1}.|The app manifest file failed the `minimum` validation of the schema. Here, {0} represents the value that exceeds the minimum limit and {1} represents the minimum limit.|
