@@ -611,7 +611,7 @@ The following example shows how to send a message that includes a file attachmen
 The following example shows a request.
  
 >**Notes:**
-> - The file to be attached must already be located in SharePoint. Use any GUID as your attachment ID and the file share link as the **contentURL**. The user must have permissions to access the drive item via the [share link](../api/shares-get.md).
+> - The file to be attached must already be located in SharePoint. Use any GUID as your attachment ID and the file share link as the **contentURL**. Users must have permissions to access the drive item via the [share link](../api/shares-get.md).
 > - Using a file share link to send messages isn't supported in a [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario.
 
 
