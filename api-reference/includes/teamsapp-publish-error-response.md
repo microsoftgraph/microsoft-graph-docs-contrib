@@ -86,7 +86,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`DeveloperNameLengthCheck`| Maximum character length must not exceed 32 chars.| The developer name is more than 32 characters long.|
 |`DeveloperPrivacyUrlIsRequiredField`| Required field 'privacyUrl' is missing in the manifest.| The `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`| Privacy URL must be secured Support URL (HTTPS).| The developer privacy URL did not use HTTPS.|
-|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.| The termsOfUseUrl** is missing.|
+|`DeveloperTermsOfUseUrlIsRequiredField`| Required field 'termsOfUseUrl' is missing in the manifest.|  The **termsOfUseUrl** is missing from the manifest.|
 |`DeveloperTermsOfUseUrlMustBeHttps`|Terms Of Use URL must be secured Support URL (HTTPS).| The developer terms of use URL isn't `https`.|
 |`DeveloperWebsiteUrlIsRequiredField`| Required field 'websiteUrl' is missing in the manifest.| The developer website URL is missing.|
 |`DeveloperWebsiteUrlMustBeHttps`| Website URL must be secured Support URL (HTTPS).| The developer website URL didn't use HTTPS.|
@@ -99,17 +99,17 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidColor32x32IconHeightAndWidth`|Color 32x32 icon should be 32x32 with only white and transparent.| The color 32x32 icon doesn't have the correct dimensions.|
 |`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The dimensions of the color icon are incorrect.|
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The dimensions of the outline icon are incorrect.|
-|`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon isn't transparent. It contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
-|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined on API specification file. |
+|`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
+|`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined in the API specification file. |
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description was empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
-|`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| The short name is reserved name.|
+|`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| The short name is a reserved name.|
 |`ShortNameIsRequiredField`| Short name of the app can't be empty.| The short name is empty.|
 |`StaticTabNameCouldNotBeEmpty`| Non-reserved staticTabs "Name" property can't be empty.| The `staticTabs` name property is empty.|
-|`BotIdIsNotGuid`| BotId isn't a Guid value.| The `BotId` isn't GUID in the app manifest.|
-|`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The version in the app package is `null`.|
+|`BotIdIsNotGuid`| BotId isn't a Guid value.|The `BotId` value in the app manifest isn't a GUID.|
+|`VersionCannotBeEmpty`| Required field "version" is missing in the manifest.| The app package version is missing.|
 |`VersionContainsOnlyNumbersDotSeparated`| App version supports only numbers in the '#.#.#' format.| The version in the app package is not matched by the pattern, `#.#.#`.|
 |`VersionHasMajorLessThan1`|App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | The app version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0.|
 |`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 30 characters.|
