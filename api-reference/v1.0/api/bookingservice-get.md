@@ -93,7 +93,6 @@ Content-type: application/json
     "isAnonymousJoinEnabled": false,
     "isCustomerAllowedToManageBooking": true,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
-    "defaultLocation": {
     "customQuestions" : [
         {
             "questionId" : "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
