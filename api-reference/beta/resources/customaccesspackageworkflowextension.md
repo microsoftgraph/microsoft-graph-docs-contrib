@@ -5,6 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Custom access package workflow extension (deprecated)
 ---
 
 # customAccessPackageWorkflowExtension resource type (deprecated)

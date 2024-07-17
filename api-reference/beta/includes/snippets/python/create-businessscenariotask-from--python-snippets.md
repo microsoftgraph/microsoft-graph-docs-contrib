@@ -13,7 +13,6 @@ from msgraph_beta.generated.models.business_scenario_properties import BusinessS
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BusinessScenarioTask(
-	odata_type = "#microsoft.graph.businessScenarioTask",
 	title = "Customer order #12010",
 	percent_complete = 0,
 	priority = 5,
