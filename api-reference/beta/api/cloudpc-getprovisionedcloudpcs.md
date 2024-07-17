@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudPC.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPC](../resources/cloudpc.md) objects in the response body.
 
 ## Examples
 
@@ -113,7 +113,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPC)",
-  "name": "cloudpc.getProvisionedCloudPCs"
+  "name": "cloudpc.getProvisionedCloudPCs",
+  "truncated": true
 }
 -->
 
@@ -143,6 +144,7 @@ Content-Type: application/json
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
+            "deviceRegionName": "eastus2",
             "connectivityResult": "",
             "gracePeriodEndDateTime": null,
             "lastLoginResult": "2020-07-23T10:29:57Z",
@@ -173,6 +175,7 @@ Content-Type: application/json
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
+            "deviceRegionName": "eastus2",
             "connectivityResult": "",
             "gracePeriodEndDateTime": null,
             "lastLoginResult": "2020-07-23T10:29:57Z",

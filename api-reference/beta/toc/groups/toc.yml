@@ -58,11 +58,11 @@ items:
       href: ../../api/group-validateproperties.md
   - name: App role assignments
     items:
-    - name: List app role assignments
+    - name: List
       href: ../../api/group-list-approleassignments.md
-    - name: Add app role assignment
+    - name: Add
       href: ../../api/group-post-approleassignments.md
-    - name: Remove app role assignment
+    - name: Remove
       href: ../../api/group-delete-approleassignments.md
   - name: Calendar
     items:
@@ -116,15 +116,15 @@ items:
       href: ../../api/group-delete-rejectedsenders.md
   - name: Directory objects
     items:
-    - name: List deleted groups
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted group
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted group
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
-    - name: Permanently delete group
+    - name: Permanently delete item
       href: ../../api/directory-deleteditems-delete.md
-    - name: List deleted groups owned by user
+    - name: List deleted items owned by user
       href: ../../api/directory-deleteditems-getuserownedobjects.md
     - name: Check member groups
       href: ../../api/directoryobject-checkmembergroups.md
@@ -142,15 +142,15 @@ items:
       href: ../../api/driveitem-list-children.md
   - name: Group settings
     items:
-    - name: List settings
+    - name: List
       href: ../../api/group-list-settings.md
-    - name: Create setting
+    - name: Create
       href: ../../api/group-post-settings.md
-    - name: Get setting
+    - name: Get
       href: ../../api/directorysetting-get.md
-    - name: Update setting
+    - name: Update
       href: ../../api/directorysetting-update.md
-    - name: Delete setting
+    - name: Delete
       href: ../../api/directorysetting-delete.md
     - name: List setting templates
       href: ../../api/directorysettingtemplate-list.md
@@ -162,25 +162,19 @@ items:
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
-  - name: Open extensions
-    items:
-    - name: Create open extension
-      href: ../../api/opentypeextension-post-opentypeextension.md
-    - name: Get open extension
-      href: ../../api/opentypeextension-get.md
   - name: Password-based single sign-on credentials
     items:
-    - name: Get credentials
+    - name: Get
       href: ../../api/group-getpasswordsinglesignoncredentials.md
-    - name: Delete credentials
+    - name: Delete
       href: ../../api/group-deletepasswordsinglesignoncredentials.md
-  - name: Photo
+  - name: Profile photo
     items:
-    - name: Get profile photo
+    - name: Get
       href: ../../api/profilephoto-get.md
-    - name: Update profile photo
+    - name: Update
       href: ../../api/profilephoto-update.md
-    - name: Delete profile photo
+    - name: Delete
       href: ../../api/profilephoto-delete.md
   - name: Planner
     items:
@@ -188,18 +182,14 @@ items:
       href: ../../api/plannergroup-list-plans.md
   - name: Posts
     items:
-    - name: List posts
+    - name: List
       href: ../../api/conversationthread-list-posts.md
-    - name: Get post
+    - name: Get
       href: ../../api/post-get.md
     - name: Reply to post
       href: ../../api/post-reply.md
     - name: Forward post
       href: ../../api/post-forward.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Other group resources
     items:
     - name: List permission grants

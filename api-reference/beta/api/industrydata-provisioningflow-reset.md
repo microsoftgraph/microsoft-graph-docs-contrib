@@ -42,7 +42,7 @@ POST /external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFl
 
 | Name         | Description               |
 | :----------- | :------------------------ |
-| Authorization| Bearer {token}. Required. |
+| Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioning
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/provisioningflowthisreset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/provisioningflowthisreset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -3,7 +3,7 @@ title: "unifiedGroupSource resource type"
 description: "The container for a custodian's group."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

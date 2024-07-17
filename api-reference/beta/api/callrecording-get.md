@@ -29,8 +29,12 @@ For a recording, this API returns the metadata of the single recording associate
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "callrecording_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/callrecording-get-permissions.md)]
+<!-- { "blockType": "ignored", "name": "callrecording_get" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingRecording.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not available|
 
 > **Notes:**
 >
@@ -152,7 +156,6 @@ Content-type: application/json
   "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
   "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-  "meetingOrganizerId": "b935e675-5e67-48b9-8d45-249d5f88e964",
   "createdDateTime": "2023-04-10T08:13:17.5990966Z",
   "endDateTime": "2024-01-29T09:27:25.2346000Z",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",

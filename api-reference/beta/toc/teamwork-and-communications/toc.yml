@@ -18,7 +18,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app icon
     items:
@@ -160,7 +160,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -334,11 +334,11 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
-    - name: External meeting registration
+    - name: External meeting registration (deprecated)
       items:
-      - name: External meeting registration
+      - name: External meeting registration (deprecated)
         href: ../../resources/externalmeetingregistration.md
       - name: Create
         href: ../../api/externalmeetingregistration-post.md
@@ -346,9 +346,9 @@ items:
         href: ../../api/externalmeetingregistration-get.md
       - name: Delete
         href: ../../api/externalmeetingregistration-delete.md
-    - name: Meeting registration
+    - name: Meeting registration (deprecated)
       items:
-      - name: Meeting registration
+      - name: Meeting registration (deprecated)
         href: ../../resources/meetingregistration.md
       - name: Create
         href: ../../api/meetingregistration-post.md
@@ -412,14 +412,30 @@ items:
         href: ../../resources/virtualeventregistration.md
       - name: List
         href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
+      - name: List sessions
+        href: ../../api/virtualeventregistration-list-sessions.md
     - name: Virtual event webinar registration configuration
       items:
       - name: Virtual event webinar registration configuration
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event registration question
+      items:
+      - name: Virtual event registration question
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
@@ -452,6 +468,10 @@ items:
         href: ../../api/virtualeventwebinar-get.md
       - name: Update
         href: ../../api/virtualeventwebinar-update.md
+      - name: Publish
+        href: ../../api/virtualeventwebinar-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventwebinar-cancel.md
       - name: List in organization
         href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
@@ -742,7 +762,7 @@ items:
       - name: List operations
         href: ../../api/chat-list-operations.md
       - name: Get operation on chat
-        href: ../../api/teamsasyncoperation-get.md#example-get-operation-on-chat
+        href: ../../api/teamsasyncoperation-get.md
     - name: Pinned messages
       items:
       - name: List pinned messages

@@ -3,7 +3,7 @@ title: "List addToReviewSetOperation"
 description: "Get the last addToReviewSetOperation object associated with a source collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

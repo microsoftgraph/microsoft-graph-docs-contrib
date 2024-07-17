@@ -3,7 +3,7 @@ title: "plannerFormsDictionary resource type"
 description: "Represents a dictionary of planner form reference objects for a task."
 ms.localizationpriority: medium
 author: "cpanga22"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
