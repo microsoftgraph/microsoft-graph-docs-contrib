@@ -44,5 +44,4 @@ The following JSON representation shows the resource type.
 ## Related content
 
 - [Virtual event](../resources/virtualevent.md)
-- [Virtual event townhalls](../resources/virtualeventtownhall.md)
 - [Virtual event webinars](../resources/virtualeventwebinar.md)
