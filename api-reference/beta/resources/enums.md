@@ -4960,6 +4960,16 @@ Possible values for user account types (group membership), per Windows definitio
 |cloud|
 |onPremises|
 
+### uriUsageType values 
+
+|Member|
+|:---|
+|redirectUri|
+|identifierUri|
+|loginUrl|
+|logoutUrl|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member|
