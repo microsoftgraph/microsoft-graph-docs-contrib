@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventSettings](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSettings?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventSettings"
+        },
+        {
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-17T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a48373b0-1684-414b-abe3-360925c0011c",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventSettings",
