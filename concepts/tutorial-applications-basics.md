@@ -7,15 +7,15 @@ ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications
-ms.date: 08/14/2023
+ms.date: 07/16/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
 ---
 
 # Manage a Microsoft Entra application using Microsoft Graph
 
-Your app must be registered in Microsoft Entra ID before the Microsoft identity platform can authorize it to access data stored in Microsoft Entra or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
+Your app must be registered in Microsoft Entra ID before the Microsoft identity platform can authorize it to access data stored in the Microsoft cloud. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
 
-Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
+Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage details of app and service principal objects including the properties, permissions, and role assignments.
 
 ## Prerequisites
 
@@ -27,9 +27,9 @@ To test the API operations, you need the following resources and privileges:
 
 ## Register an application with Microsoft Entra ID
 
-The following request creates an app by specifying only the required **displayName** property.
+The following request creates an app by specifying only the required **displayName** property. Other properties are assigned the default values.
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +83,7 @@ The request returns a `201 Created` response with the application object in the 
 
 ## Create a service principal for an application
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -152,9 +152,22 @@ https://graph.microsoft.com/v1.0/applications(appId='appId')
 https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
 ```
 
+In addition, you can address an application object unique its **uniqueName**. You can use this property to create an application with the unique name if it doesn't exist, or update it if it exists; an operation referred to as "Upsert".
+
+Create an application with the specified uniqueName if it doesn't exist, otherwise, update it.
+```http
+PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='{uniqueName}')
+Content-Type: application/json
+Prefer: create-if-missing
+
+{
+  "displayName": "Display name"
+}
+```
+
 ## Configure other basic properties for your app
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 You configure the following basic properties for the app.
 
@@ -231,7 +244,9 @@ Content-type: application/json
 
 ## Limit app sign-in to only assigned identities
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+The following operation limits the identities that can sign in to an app to only those that are assigned all roles on the app.
+
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -284,9 +299,9 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 While you can assign permissions to an app through the Microsoft Entra admin center, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
-Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Microsoft Entra admin center. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+**Assigning** permissions doesn't automatically grant them to the app. You must still grant admin consent using the Microsoft Entra admin center. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -354,7 +369,7 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
-To keep any existing app roles, include them in the request. Otherwise, they are replaced with the new object.
+To keep any existing app roles, include them in the request. Otherwise, they're replaced with the new object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -421,7 +436,7 @@ Content-Type: application/json
 
 ### Identify ownerless service principals and service principals with one owner
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
@@ -474,7 +489,7 @@ ConsistencyLevel: eventual
 
 ### Assign an owner to an app
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
 In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
@@ -529,9 +544,9 @@ Content-Type: application/json
 
 ### Assign an owner to a service principal
 
-Least privilege delegated permission: `Application.ReadWrite.All`.
+Least privileged delegated permission: `Application.ReadWrite.All`.
 
-The following request references the service principal using its **appId**. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
+The following request references the service principal using its **appId**. You can alternatively reference it using the object ID in the pattern `../servicePrincipals/{bject ID}/owners/$ref`. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
 
 <!-- {
@@ -549,13 +564,13 @@ Content-Type: application/json
 
 ## Lock sensitive properties for service principals
 
-The *app instance lock* feature allows you to protect sensitive properties of your multi-tenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
+The *app instance lock* feature allows you to protect sensitive properties of your multitenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
 
 - **keyCredentials** where the usage type is `Sign` or `Verify`.
 - **passwordCredentials** where the usage type is `Sign` or `Verify`.
 - **tokenEncryptionKeyId** property.
 
-You manage the app instance lock feature through the **servicePrincipalLockConfiguration** property of the [application](/graph/api/resources/application) object of the multi-tenant app.
+You manage the app instance lock feature through the **servicePrincipalLockConfiguration** property of the [application](/graph/api/resources/application) object of the multitenant app.
 
 #### To lock all sensitive properties of a service principal
 
@@ -663,6 +678,89 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+
+## Configure trusted certificate authorities for apps
+
+You can restrict certificate credential usage for apps in your tenant to only the certificates issued by trusted certificate authorities. This policy is enforced when you add a certificate to an app and doesn't affect existing certificates unless they are rotated. When an app tries to rotate its certificate credentials, it goes through the policy evaluation to ensure the credentials being added comply with the trusted certificate authority restriction.
+
+### Step 1: Create a certificate chain of trust
+
+Least privileged delegated permission: `AppCertTrustConfiguration.Read.All`
+Least privileged Microsoft Entra role: `Application Administrator`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-certbasedappconfig"
+}-->
+```http
+POST https://graph.microsoft.com/beta/certificateAuthorities/certificateBasedApplicationConfigurations
+
+{
+    "displayName": "Trusted Certificate Chain of Trust for Contoso",
+    "description": "The Trusted Certificate Chain of Trust containing a certificate chain used by app policy, to only allow application certificates from selected issuer.",
+    "trustedCertificateAuthorities": [
+        {
+            "isRootAuthority": true,
+            "certificate": "MIIFVjCCAz6gAwIBAgIQJdrL...UyNDIyNTcwM1owPDE …="
+        },
+        {
+            "isRootAuthority": false,
+            "certificate": QAAAAAAWjABAQsFADA8M...UyNDIyNTcwM1o …="
+        }
+    ]
+}
+```
+
+The request returns a `200 OK` response object. The response includes the ID of the certificate chain of trust object. Assume that the ID is `eec5ba11-2fc0-4113-83a2-ed986ed13743`. 
+
+### Step 2: Assign the certificate chain of trust to an application management policy
+
+The following sample sets up a policy to ensure that only certificates issued by the intermediate certificate authority defined in the previous step can be added to apps in the tenant. The **applicationRestrictions** > **keyCredentials** object defines a **restrictionType** with the value `trustedCertificateAuthority`, which references the ID that was created. Because this policy is applied to the default tenant-level app management policy, it's enforced for all apps created in the tenant and rejects attempts to add noncompliant certificates as part of an app's certificate credentials.
+
+This policy ensures that only certificates from the specified intermediate certificate authority can be added to apps. The **applicationRestrictions** > **keyCredentials** object sets a **restrictionType** to `trustedCertificateAuthority`, referencing the created ID. This policy applies to all apps in the tenant, rejecting any noncompliant certificates.
+
+
+Least privileged delegated permission: `Policy.Read.ApplicationConfiguration`
+Least privileged Microsoft Entra role: `Security Administrator`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-update-appmanagementpolicy"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
+
+{
+  "id": "d015220e-9789-4e8e-bbcc-270fe419229d",
+  "description": "Lorem ipsum",
+  "displayName": "Credential management policy",
+  "isEnabled": true,
+  "applicationRestrictions": {
+    "passwordCredentials": [
+      {
+        "restrictionType": "passwordLifetime",
+        "maxLifetime": "P14D",
+        "restrictForAppsCreatedAfterDateTime": "2020-01-01T07:00:00Z"
+      }
+    ],
+    "keyCredentials": [
+      {
+        "restrictionType": "certificateLifetime",
+        "restrictForAppsCreatedAfterDateTime": "2020-01-01T10:37:00Z",
+        "maxLifetime": "P90D"
+      },
+      {
+        "restrictionType": "trustedCertificateAuthority",
+        "certificateBasedApplicationConfigurationIds": [
+          "eec5ba11-2fc0-4113-83a2-ed986ed13743"
+        ],
+        "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+      }
+    ]
+  }
+}
+```
 
 ## Related content
 

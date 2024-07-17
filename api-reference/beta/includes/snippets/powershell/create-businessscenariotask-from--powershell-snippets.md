@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.businessScenarioTask"
 	title = "Customer order #12010"
 	percentComplete = 0
 	priority = 5
