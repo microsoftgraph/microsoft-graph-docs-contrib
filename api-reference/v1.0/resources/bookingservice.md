@@ -39,7 +39,7 @@ Represents information about a particular service provided by a [booking busines
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isAnonymousJoinEnabled|Boolean|Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service. The default value is `false`. |
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
-|isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
+|isHiddenFromCustomers|Boolean|`True` indicates that this service isn't available to customers for booking.|
 |isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
 |lastUpdatedDateTime|DateTimeOffset|The date, time, and time zone when the service was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
