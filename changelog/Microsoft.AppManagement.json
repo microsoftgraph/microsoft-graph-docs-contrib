@@ -30,9 +30,9 @@
       "Id": "d9c722d5-7d5d-4d5d-8941-4e79bace02c4",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-18T15:06:39.9997402Z",
+      "CreatedDateTime": "2024-07-16T15:06:39.9997402Z",
       "WorkloadArea": "Applications",
-      "SubArea": "Application"
+      "SubArea": ""
     },
     {
       "ChangeList": [
