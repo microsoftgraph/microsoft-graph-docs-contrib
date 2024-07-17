@@ -500,6 +500,8 @@ items:
       href: ../../resources/microsoftmanageddesktop.md
     - name: Unified role permission
       href: ../../resources/unifiedrolepermission.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
 - name: Cloud printing
   displayName: Universal Print
   items:
