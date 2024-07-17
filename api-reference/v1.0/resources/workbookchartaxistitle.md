@@ -19,8 +19,8 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [workbookChartAxisTitle](workbookchartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get](../api/chartaxistitle-get.md) | [workbookChartAxisTitle](workbookchartaxistitle.md) |Readthe  properties and relationships of a chart axis title.|
+|[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)	|Update a chart axis title. |
 
 ## Properties
 | Property	   | Type	|Description|

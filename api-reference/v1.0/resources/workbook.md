@@ -17,7 +17,7 @@ The top-level object that contains related workbook objects such as worksheets, 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Create](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
 |[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
 |[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 

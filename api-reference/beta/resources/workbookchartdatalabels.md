@@ -21,20 +21,20 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartDataLabels](../api/chartdatalabels-get.md) | [workbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels-update.md) | [workbookChartDataLabels](workbookchartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get](../api/chartdatalabels-get.md) | [workbookChartDataLabels](workbookchartdatalabels.md) |Read the properties and relationships of a chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [workbookChartDataLabels](workbookchartdatalabels.md)	|Update a chartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|separator|string|String representing the separator used for the data labels on a chart.|
-|showBubbleSize|boolean|Boolean value representing if the data label bubble size is visible or not.|
-|showCategoryName|boolean|Boolean value representing if the data label category name is visible or not.|
-|showLegendKey|boolean|Boolean value representing if the data label legend key is visible or not.|
-|showPercentage|boolean|Boolean value representing if the data label percentage is visible or not.|
-|showSeriesName|boolean|Boolean value representing if the data label series name is visible or not.|
-|showValue|boolean|Boolean value representing if the data label value is visible or not.|
+|separator|string|String that represents the separator used for the data labels on a chart.|
+|showBubbleSize|boolean|Boolean value that represents whether the data label bubble size is visible.|
+|showCategoryName|boolean|Boolean value that represents whether the data label category name is visible.|
+|showLegendKey|boolean|Boolean value that represents whether the data label legend key is visible.|
+|showPercentage|boolean|Boolean value that represents whether the data label percentage is visible.|
+|showSeriesName|boolean|Boolean value that represents whether the data label series name is visible.|
+|showValue|boolean|Boolean value that represents whether the data label value is visible.|
 
 ## Relationships
 | Relationship | Type	|Description|
