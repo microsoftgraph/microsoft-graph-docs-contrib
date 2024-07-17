@@ -58,26 +58,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_photoupdatesettings"
-}
--->
+
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.photoUpdateSettings not found
+GET /admin/people/photoUpdateSettings
 ```
 
 ### Response
 
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.photoUpdateSettings)"
-}
--->
+If successful, this method returns a 200 OK response code and an photoUpdateSettings object in the response body.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -95,4 +84,3 @@ Content-Type: application/json
   ]
 }
 ```
-
