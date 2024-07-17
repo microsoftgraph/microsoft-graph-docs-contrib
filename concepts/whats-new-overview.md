@@ -22,6 +22,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
 
+### Teamwork and communications | Settings
+
+Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork) and [userTeamwork](/graph/api/resources/userteamwork) resources.
+
 ## July 2024: New in preview only
 
 ### Applications | Application
