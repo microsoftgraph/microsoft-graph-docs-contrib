@@ -16,32 +16,32 @@ import (
 )
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
-id := "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
-requestBody.SetId(&id) 
-displayName := "All Users"
+displayName := "customExtensionStageSettings policy"
 requestBody.SetDisplayName(&displayName) 
-description := "All users can request for access to the directory."
+description := "policy with specified stages for custom extension assignment"
 requestBody.SetDescription(&description) 
-allowedTargetScope := graphmodels.ALLDIRECTORYUSERS_ALLOWEDTARGETSCOPE 
+allowedTargetScope := graphmodels.NOTSPECIFIED_ALLOWEDTARGETSCOPE 
 requestBody.SetAllowedTargetScope(&allowedTargetScope) 
-automaticRequestSettings := null
-requestBody.SetAutomaticRequestSettings(&automaticRequestSettings) 
 specificAllowedTargets := []graphmodels.SubjectSetable {
 
 }
 requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
 expiration := graphmodels.NewExpirationPattern()
+endDateTime := null
+expiration.SetEndDateTime(&endDateTime) 
+duration := null
+expiration.SetDuration(&duration) 
 type := graphmodels.NOEXPIRATION_EXPIRATIONPATTERNTYPE 
 expiration.SetType(&type) 
 requestBody.SetExpiration(expiration)
 requestorSettings := graphmodels.NewAccessPackageAssignmentRequestorSettings()
-enableTargetsToSelfAddAccess := true
+enableTargetsToSelfAddAccess := false
 requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess) 
 enableTargetsToSelfUpdateAccess := false
 requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess) 
-enableTargetsToSelfRemoveAccess := true
+enableTargetsToSelfRemoveAccess := false
 requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess) 
-allowCustomAssignmentSchedule := false
+allowCustomAssignmentSchedule := true
 requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule) 
 enableOnBehalfRequestorsToAddAccess := false
 requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess) 
@@ -55,64 +55,36 @@ onBehalfRequestors := []graphmodels.SubjectSetable {
 requestorSettings.SetOnBehalfRequestors(onBehalfRequestors)
 requestBody.SetRequestorSettings(requestorSettings)
 requestApprovalSettings := graphmodels.NewAccessPackageAssignmentApprovalSettings()
-isApprovalRequiredForAdd := true
+isApprovalRequiredForAdd := false
 requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd) 
 isApprovalRequiredForUpdate := false
 requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate) 
-
-
-accessPackageApprovalStage := graphmodels.NewAccessPackageApprovalStage()
-durationBeforeAutomaticDenial , err := abstractions.ParseISODuration("P2D")
-accessPackageApprovalStage.SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial) 
-isApproverJustificationRequired := false
-accessPackageApprovalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
-isEscalationEnabled := false
-accessPackageApprovalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
-durationBeforeEscalation , err := abstractions.ParseISODuration("PT0S")
-accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
-
-
-subjectSet := graphmodels.NewRequestorManager()
-managerLevel := int32(1)
-subjectSet.SetManagerLevel(&managerLevel) 
-
-primaryApprovers := []graphmodels.SubjectSetable {
-	subjectSet,
-}
-accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
-
-
-subjectSet := graphmodels.NewSingleUser()
-userId := "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
-subjectSet.SetUserId(&userId) 
-description := "user"
-subjectSet.SetDescription(&description) 
-
-fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
-	subjectSet,
-}
-accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
-escalationApprovers := []graphmodels.SubjectSetable {
-
-}
-accessPackageApprovalStage.SetEscalationApprovers(escalationApprovers)
-fallbackEscalationApprovers := []graphmodels.SubjectSetable {
-
-}
-accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
-
 stages := []graphmodels.AccessPackageApprovalStageable {
-	accessPackageApprovalStage,
+
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
 accessPackage := graphmodels.NewAccessPackage()
-id := "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
+id := "5ad1eb64-15f7-4614-b419-05d11ee266bf"
 accessPackage.SetId(&id) 
 requestBody.SetAccessPackage(accessPackage)
 
+
+customExtensionStageSetting := graphmodels.NewCustomExtensionStageSetting()
+stage := graphmodels.ASSIGNMENTREQUESTCREATED_ACCESSPACKAGECUSTOMEXTENSIONSTAGE 
+customExtensionStageSetting.SetStage(&stage) 
+customExtension := graphmodels.NewAccessPackageAssignmentRequestWorkflowExtension()
+id := "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+customExtension.SetId(&id) 
+customExtensionStageSetting.SetCustomExtension(customExtension)
+
+customExtensionStageSettings := []graphmodels.CustomExtensionStageSettingable {
+	customExtensionStageSetting,
+}
+requestBody.SetCustomExtensionStageSettings(customExtensionStageSettings)
+
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-assignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().ByAccessPackageAssignmentPolicyId("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
+assignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```
