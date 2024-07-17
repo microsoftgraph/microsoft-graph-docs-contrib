@@ -50,9 +50,9 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, and `corrective`.|
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
-|isLocationOnline|Boolean|True indicates that the appointment is held online. The default value is `false`.|
+|isLocationOnline|Boolean|`True` indicates that the appointment is held online. The default value is `false`.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required. |
-|optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment doesn't wish to receive a confirmation for this appointment.|
+|optOutOfCustomerEmail|Boolean|`True` indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment doesn't wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |price|Double|The regular price for an appointment for the specified [bookingService](../resources/bookingservice.md).|
