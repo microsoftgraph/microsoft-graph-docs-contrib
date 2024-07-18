@@ -257,7 +257,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_callRecording",
+  "name": "get_callRecording_using_contentCorrelationId",
   "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
 }
 -->
