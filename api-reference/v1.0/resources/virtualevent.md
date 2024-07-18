@@ -52,24 +52,14 @@ The following JSON representation shows the resource type
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEvent",
-  "id": "String (identifier)",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
-  "description": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "settings": {
-    "@odata.type": "microsoft.graph.virtualEventSettings"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  }
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "status": "String"
 }
 ```
 
