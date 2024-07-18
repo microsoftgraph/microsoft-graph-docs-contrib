@@ -111,6 +111,7 @@ Here's an example  of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/rubrics/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/rubrics('<guid>')?$select=createdBy,createdDateTime",
