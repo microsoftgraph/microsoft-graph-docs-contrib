@@ -245,9 +245,10 @@ Content-Type: video/mp4
 
 <bytes of a recording>
 ```
-### Example 3: Get a callRecording from a corresponding transcript using ContentCorrelationId
 
-The following example shows how to get a single recording of an online meeting corresponding to a transcript using ContentCorrelationId.
+### Example 3: Get a callRecording from a corresponding transcript using contentCorrelationId
+
+The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
 
 #### Request
 
@@ -256,7 +257,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_callRecording",
-  "sampleKeys": ["1273a016-201d-4f95-8083-1b7f99b3edeb", "MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy", "e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0"]
+  "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
 }
 -->
 ``` http
