@@ -19,14 +19,14 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |Read the properties and relationships of a workbookWorksheetProtection object.|
+|[Get](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](./workbookworksheetprotection.md) |Read the properties and relationships of a workbookWorksheetProtection object.|
 |[Protect worksheet](../api/worksheetprotection-protect.md)|None|Protect a worksheet. Returns an error if the worksheet is already protected.|
 |[Unprotect worksheet](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtectionOptions](workbookworksheetprotectionoptions.md)|Worksheet protection options. Read-only.|
+|options|[workbookWorksheetProtectionOptions](./workbookworksheetprotectionoptions.md)|Worksheet protection options. Read-only.|
 |protected|boolean|Indicates whether the worksheet is protected.  Read-only.|
 
 ## JSON representation
