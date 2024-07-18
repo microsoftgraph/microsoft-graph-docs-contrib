@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/{class-id}/assignments/{assignment-id}/rubric/$ref
+DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ Here's an example  of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric/$ref
+DELETE https://graph.microsoft.com/v1.0/education/classes/f1e03281-acd7-4fb0-84c3-902b3d30104c/assignments/9aaba0b4-43a3-4dde-a593-9145055d9a60/rubric/$ref
 ```
 
 # [C#](#tab/csharp)

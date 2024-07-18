@@ -60,6 +60,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "id": "String (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "description": {"@odata.type": "microsoft.graph.itemBody"},

@@ -62,7 +62,7 @@ The following example shows a request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
+DELETE https://graph.microsoft.com/beta/education/classes/f1e03281-acd7-4fb0-84c3-902b3d30104c/assignments/0b30b986-7457-45e2-b87a-53df3ac7657d/rubric/$ref
 ```
 
 # [C#](#tab/csharp)
