@@ -26,7 +26,7 @@ To subscribe to Teams apps installation, you can use the specified scope such as
 
 **RSC permission**
 
-To subscribe to Teams apps installation, you can also use resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](/graph/permissions-reference.md#resource-specific-consent-rsc-permissions).
+To subscribe to Teams apps installation, you can also use resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](/graph/permissions-reference#resource-specific-consent-rsc-permissions).
 
 > [!NOTE]
 > Currently, you can use RSC permissions to receive notifications for installations and upgrades in team, chat, or personal scope. We plan to extend support for delivering deletion events within these scopes later in the year.
