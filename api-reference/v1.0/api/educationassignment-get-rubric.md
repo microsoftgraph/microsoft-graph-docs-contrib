@@ -59,7 +59,6 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["cf6005fc-9e13-44a2-a6ac-a53322006454"],
   "name": "get_rubric"
 }-->
 
