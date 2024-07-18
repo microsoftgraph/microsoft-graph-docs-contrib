@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+toc.title: Identity provider (deprecated)
 ---
 
 # identityProvider resource type (deprecated)

@@ -5,6 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: X509 certificate
 toc.keywords: [ certificate-based authentication, CBA ]
 ---
 

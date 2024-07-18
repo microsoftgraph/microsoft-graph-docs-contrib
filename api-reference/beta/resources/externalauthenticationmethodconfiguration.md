@@ -5,6 +5,7 @@ author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: External authentication method
 ---
 
 # externalAuthenticationMethodConfiguration resource type
