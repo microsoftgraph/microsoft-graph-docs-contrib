@@ -50,6 +50,7 @@ To use application permissions for this API, tenant administrators must create a
 
 Get a single recording of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
@@ -57,6 +58,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 
 Get the content of a single recording of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
