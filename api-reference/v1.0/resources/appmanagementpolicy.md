@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Restrictions on app management operations for specific applications and service principals. If this resource is not configured for an application or service principal, the restrictions default to the settings in the [tenantAppManagementPolicy](tenantappmanagementpolicy.md) object.
 
+To learn more about how to use app management policy, see [Microsoft Entra application authentication methods API overview](../resources/applicationauthenticationmethodpolicy.md).
+
+
 ## Methods
 
 | Method                                                         | Return type                                                                | Description                                                                                                            |
