@@ -31,7 +31,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
-|appointmentLabel|String|The user can stamp a custom label on the appointment.|
+|appointmentLabel|String|The custom label that can be stamped on this appointment by users.|
 |createdDateTime|DateTimeOffset|The date, time, and time zone when the appointment was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.	|
 |customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of customer properties for an appointment. An appointment contains a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
