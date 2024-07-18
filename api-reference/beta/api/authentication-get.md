@@ -1,6 +1,6 @@
 ---
 title: "Get authentication states"
-description: "Read the properties of a user's authentication method states, such as their sign-in preferences and per-user MFA state."
+description: "Read the properties of a user's authentication method states, such as their sign-in preferences (system-preferred MFA) and per-user MFA state."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -15,27 +15,52 @@ Namespace: microsoft.graph
 
 Read the properties of a user's authentication states. Use this API to retrieve the following information:
 
-- A user's [signInPreferences](../resources/signInPreferences.md)
-- A user's [strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)
+- A user's [signInPreferences (system-preferred MFA)](../resources/signInPreferences.md)
+- A user's [strongAuthenticationRequirements (per-user MFA)](../resources/strongauthenticationrequirements.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to read system-preferred MFA
+
 <!-- { "blockType": "permissions", "name": "authentication_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
+### Permissions to read per-user MFA state
+
+#### Permissions acting on self
+
+<!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-get-2-permissions.md)]
+
+#### Permissions acting on others
+
+<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-get-3-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
+
 ## HTTP request
-To retrieve the sign-in preferences for a user:
+To retrieve the sign-in preferences (system-preferred MFA) for a user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /users/{id | userPrincipalName}/authentication/signInPreferences
+```
+
+To retrieve the per-user multifactor authentication state for the signed-in user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/authentication/requirements
 ```
 
 To retrieve the per-user multifactor authentication state for a user:
@@ -61,7 +86,7 @@ For sign-in preferences: If successful, this method returns a `200 OK` response 
 
 ## Examples
 
-### Example 1: Get a user's default MFA method
+### Example 1: Get a user's system-preferred MFA method
 
 #### Request
 The following example shows a request.
