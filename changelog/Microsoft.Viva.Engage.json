@@ -80,6 +80,22 @@
       "ChangeList": [
         {
           "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "communityPrivacy",
+          "ChangeType": "Addition",
+          "Description": "Added the **communityPrivacy** enumeration type.",
+          "Target": "communityPrivacy"
+        },
+        {
+          "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "engagementAsyncOperationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementAsyncOperationType** enumeration type.",
+          "Target": "engagementAsyncOperationType"
+        },
+        {
+          "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
           "ApiChange": "Resource",
           "ChangedApiName": "community",
           "ChangeType": "Addition",
