@@ -29,8 +29,8 @@ Represents the border of an object.
 |:---------------|:--------|:----------|
 |color|string|The HTML color code that represents the color of the border line. Can either be of the form #RRGGBB, for example "FFA500", or a named HTML color, for example "orange".|
 |id|string|The border identifier. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|sideIndex|string|The constant value that indicates the specific side of the border. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|style|string|The constant value that indicates the line style for the border. The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|sideIndex|string|Indicates the specific side of the border. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
+|style|string|Indicates the line style for the border. The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
 |weight|string|The weight of the border around a range. The possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## Relationships

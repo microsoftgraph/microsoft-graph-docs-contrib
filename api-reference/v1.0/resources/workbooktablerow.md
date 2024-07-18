@@ -19,22 +19,23 @@ Represents a row in a table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/tablerow-list.md) | [workbookTableRow]( workbooktablerow.md) collection |Get a tableRow object collection. |
-|[Create row](../api/table-post-rows.md)|[workbookTableRow]( workbooktablerow.md)|Add rows to the table.|
-|[Get](../api/tablerow-get.md) | [workbookTableRow]( workbooktablerow.md) |Read the properties and relationships of a tableRow object.|
-|[Update](../api/tablerow-update.md) | [workbookTableRow]( workbooktablerow.md)	|Update a workbookTableRow object. |
-|[Delete row](../api/tablerow-delete.md)|None|Delete a row from the table.|
-|[Get range](../api/tablerow-range.md)|[Range](workbookrange.md)|Return the range object associated with the entire row.|
-|[Get item at](../api/tablerowcollection-itemat.md)|[workbookTableRow]( workbooktablerow.md)|Get a row based on its position in the collection.|
-|[Add row](../api/tablerowcollection-add.md)|[workbookTableRow]( workbooktablerow.md)|Add a new row to the table.|
+|[List](../api/tablerow-list.md) | [workbookTableRow](workbooktablerow.md) collection |Get a workbookTableRow object collection. |
+|[Add](../api/tablerowcollection-add.md)|[workbookTableRow](workbooktablerow.md)|Add a new row to the table.|
+|[Get](../api/tablerow-get.md) | [workbookTableRow](workbooktablerow.md) |Read the properties and relationships of a tableRow object.|
+|[Update](../api/tablerow-update.md) | [workbookTableRow](workbooktablerow.md)	|Update a workbookTableRow object. |
+|[Delete](../api/tablerow-delete.md)|None|Delete the row from the table.|
+|[Add rows](../api/table-post-rows.md)|[workbookTableRow](workbooktablerow.md)|Add rows to the table.|
+|[Get item at](../api/tablerowcollection-itemat.md)|[workbookTableRow](workbooktablerow.md)|Get a row based on its position in the collection.|
+|[Get row range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Return the range object associated with the entire row.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|Int32|Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.|
-|values|[Json](../resources/json.md)|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|index|Int32|The index of the row within the rows collection of the table. Zero-based. Read-only.|
+|values|[Json](../resources/json.md)|The raw values of the specified range. The data returned could be of type string, number, or a boolean. Any cell that contain an error will return the error string.|
 
 ## Relationships
+
 None.
 
 
