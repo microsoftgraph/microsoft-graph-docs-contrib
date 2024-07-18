@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents the Cloud PC encryption setting for a tenant. Only one encryption setting can be applied to the tenant.
 
 ## Methods
-None
+None.
 
 ## Properties
 |Property|Type|Description|
