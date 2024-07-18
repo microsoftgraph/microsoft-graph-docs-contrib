@@ -34,7 +34,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
-| id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
+| id | String | Unique identifier of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
@@ -76,30 +76,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "id": "String (identifier)",
-  "status": "String",
-  "displayName": "String",
-  "description": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "settings": {
-    "@odata.type": "microsoft.graph.virtualEventSettings"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
   "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ]
+  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
+  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
+  "displayName": "String",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "status": "String"
 }
 ```
 
