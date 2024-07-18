@@ -24,7 +24,7 @@ Represents the settings of a published booking page.
 |isBusinessLogoDisplayEnabled|Boolean|Indicates whether the business logo is displayed on the booking page. The default value is `false`.|
 |isCustomerConsentEnabled|Boolean|Enables personal data collection and the usage consent toggle on the booking page. The default value is `false`.|
 |isSearchEngineIndexabilityDisabled|Boolean|Indicates whether web crawlers index this page. The defaults value is `false`.|
-|isTimeSlotTimeZoneSetToBusinessTimeZone|Boolean|Displays the booking time slots in the business time zone. The default value is `false`.|
+|isTimeSlotTimeZoneSetToBusinessTimeZone|Boolean|Indicates whether the time zone of the time slot is set to the time zone of the business. The default value is `false`.|
 |privacyPolicyWebUrl|String|URL of a webpage that provides the terms and conditions of the business. If a privacy policy isn't included, the following text appears on the booking page as default: "The policies and practices of {booking_business_name} apply to the use of your data." |
 |termsAndConditionsWebUrl|String|URL of a webpage that provides the terms and conditions of the business.|
 
