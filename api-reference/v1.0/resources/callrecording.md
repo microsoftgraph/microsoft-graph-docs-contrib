@@ -45,6 +45,7 @@ The following JSON representation shows the resource type.
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.callRecording"
 }-->
+
 ```json
 {
   "callId": "String",
