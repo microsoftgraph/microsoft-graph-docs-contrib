@@ -22,6 +22,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
 
+### Teamwork and communications | Calls and online meetings
+
+Use the **settings** property on [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) to identify whether attendees receive email notifications.
+
 ## July 2024: New in preview only
 
 ### Applications | Application
