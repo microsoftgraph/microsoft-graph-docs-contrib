@@ -159,7 +159,7 @@ Content-type: application/json
             "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
             "displayName": null,
             "userIdentityType": "aadUser",
-            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
         }
     }
 }
