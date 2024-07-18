@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/28/2024
+ms.date: 07/12/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -226,6 +226,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Application-RemoteDesktopConfig.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3be0012a-cc4e-426b-895b-f9c836bf6381 | ffa91d43-2ad8-45cc-b592-09caddeb24bb 
+| DisplayText | Read and write the remote desktop security configuration for all apps | Read and write the remote desktop security configuration for apps 
+| Description | Allows the app to read and write the remote desktop security configuration for all apps in your organization, without a signed-in user. | Allows the app to read and write other apps' remote desktop security configuration, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### Application.Read.All
 
 | Category | Application | Delegated |
@@ -264,17 +275,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | - 
 
 [!INCLUDE [Application.ReadWrite.OwnedBy](../includes/permissions-notes/application.readwrite.ownedby.md)]
-
----
-
-### Application-RemoteDesktopConfig.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 3be0012a-cc4e-426b-895b-f9c836bf6381 | ffa91d43-2ad8-45cc-b592-09caddeb24bb 
-| DisplayText | Read and write the remote desktop security configuration for all apps | Read and write the remote desktop security configuration for apps 
-| Description | Allows the app to read and write the remote desktop security configuration for all apps in your organization, without a signed-in user. | Allows the app to read and write other apps' remote desktop security configuration, on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | Yes 
 
 ---
 
@@ -320,17 +320,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | b0afded3-3588-46d8-8b3d-9842eff778da | e4c9e354-4dc5-45b8-9e7c-e1393b0b1a20 
 | DisplayText | Read all audit log data | Read audit log data 
 | Description | Allows the app to read and query your audit log activities, without a signed-in user. | Allows the app to read and query your audit log activities, on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | Yes 
-
----
-
-### AuditLogsQuery.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 5e1e9171-754d-478c-812c-f1755a9a4c2d | 1d9e7ac3-0eca-442c-82f9-e92625af6e6d 
-| DisplayText | Read audit logs data from all services | Read audit logs data from all services 
-| Description | Allows the app to read and query audit logs from all services. | Allows the app to read and query audit logs from all services, on behalf of a signed-in user 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -397,6 +386,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 91c64a47-a524-4fce-9bf3-3d569a344ecf | 30630b65-ed12-4a81-9130-e3a964109fae 
 | DisplayText | Read audit logs data from SharePoint workload | Read audit logs data from SharePoint workload 
 | Description | Allows the app to read and query audit logs from SharePoint workload, without a signed-in user | Allows the app to read and query audit logs from SharePoint workload, on behalf of a signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### AuditLogsQuery.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5e1e9171-754d-478c-812c-f1755a9a4c2d | 1d9e7ac3-0eca-442c-82f9-e92625af6e6d 
+| DisplayText | Read audit logs data from all services | Read audit logs data from all services 
+| Description | Allows the app to read and query audit logs from all services. | Allows the app to read and query audit logs from all services, on behalf of a signed-in user 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -2564,6 +2564,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Group-Conversation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4f0a8235-6f6f-4ec7-9500-34b452a4a0c3 | c92fbbc2-50e0-4842-93ef-385c3293ea3d 
+| DisplayText | Read all group conversations | Read group conversations 
+| Description | Allows the app to read conversations of the groups this app has access to without a signed-in user. | Allows the app to read group conversations that the signed-in user has access to. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### Group-Conversation.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6679c91b-820a-4900-ab47-e97b197a89c4 | 302bcbb5-855a-4e49-ae20-94a331b0281e 
+| DisplayText | Read and write all group conversations | Read and write group conversations 
+| Description | Allows the app to read and write conversations of the groups this app has access to without a signed-in user. | Allows the app to read and write group conversations that the signed-in user has access to. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### Group.Create
 
 | Category | Application | Delegated |
@@ -2790,17 +2812,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### IndustryData.ReadBasic.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 4f5ac95f-62fd-472c-b60f-125d24ca0bc5 | 60382b96-1f5e-46ea-a544-0407e489e588 
-| DisplayText | View basic service and resource information | Read basic Industry Data service and resource definitions 
-| Description | Allows the app to read basic service and resource information without a signed-in user. | Allows the app to read basic Industry Data service and resource information on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | No 
-
----
-
 ### IndustryData-DataConnector.Read.All
 
 | Category | Application | Delegated |
@@ -2952,6 +2963,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Manage time period definitions | Manage time period definitions 
 | Description | Allows the app to read and write time period definitions without a signed-in user. | Allows the app to read and write time period definitions on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
+
+---
+
+### IndustryData.ReadBasic.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4f5ac95f-62fd-472c-b60f-125d24ca0bc5 | 60382b96-1f5e-46ea-a544-0407e489e588 
+| DisplayText | View basic service and resource information | Read basic Industry Data service and resource definitions 
+| Description | Allows the app to read basic service and resource information without a signed-in user. | Allows the app to read basic Industry Data service and resource information on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | No 
 
 ---
 
@@ -3412,6 +3434,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### NetworkAccess-Reports.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 40049381-3cc1-42af-94ec-5ce755db4b0d | b0c61509-cfc3-42bd-9bd4-66d81785fee4 
+| DisplayText | Read all network access reports | Read all network access reports 
+| Description | Allows the app to read all network access reports without a signed-in user. | Allows the app to read all network access reports on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### NetworkAccess.Read.All
 
 | Category | Application | Delegated |
@@ -3474,17 +3507,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | f0c341be-8348-4989-8e43-660324294538 | b1fbad0f-ef6e-42ed-8676-bca7fa3e7291 
 | DisplayText | Read and write all security and routing policies for network access | Read and write security and routing policies for network access 
 | Description | Allows the app to read and write your organization's network access policies, without a signed-in user. | Allows the app to read and write your organization's security and routing network access policies on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | Yes 
-
----
-
-### NetworkAccess-Reports.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 40049381-3cc1-42af-94ec-5ce755db4b0d | b0c61509-cfc3-42bd-9bd4-66d81785fee4 
-| DisplayText | Read all network access reports | Read all network access reports 
-| Description | Allows the app to read all network access reports without a signed-in user. | Allows the app to read all network access reports on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -5061,6 +5083,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Schedule-WorkingTime.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 0b21c159-dbf4-4dbb-a6f6-490e412c716e | - 
+| DisplayText | Trigger working time policies and read the working time status | - 
+| Description | Allows the app to trigger the working time policies and read the working time status for other users in your organization, without a signed-in user. | - 
+| AdminConsentRequired | Yes | - 
+
+---
+
 ### Schedule.Read.All
 
 | Category | Application | Delegated |
@@ -5091,17 +5124,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read/Write schedule permissions for a role | Read/Write schedule permissions for a role. 
 | Description | Allows the app to read/write schedule permissions for a specific role in Shifts application without a signed-in user. | Allows the app to read/write schedule permissions for a specific role in Shifts application on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
-
----
-
-### Schedule-WorkingTime.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 0b21c159-dbf4-4dbb-a6f6-490e412c716e | - 
-| DisplayText | Trigger working time policies and read the working time status | - 
-| Description | Allows the app to trigger the working time policies and read the working time status for other users in your organization, without a signed-in user. | - 
-| AdminConsentRequired | Yes | - 
 
 ---
 
@@ -6647,6 +6669,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### User-ConvertToInternal.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9d952b72-f741-4b40-9185-8c53076c2339 | 550e695c-7511-40f4-ac79-e8fb9c82552d 
+| DisplayText | Convert an external user to internal member user | Convert an external user to internal memeber user 
+| Description | Allow the app to convert an external user to an internal member user, without a signed-in user. | Allow the app to convert an external user to an internal member user, on behalf of signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### User-LifeCycleInfo.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8556a004-db57-4d7a-8b82-97a13428e96f | ed8d2a04-0374-41f1-aefe-da8ac87ccc87 
+| DisplayText | Read all users' lifecycle information | Read all users' lifecycle information 
+| Description | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### User-LifeCycleInfo.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 925f1248-0f97-47b9-8ec8-538c54e01325 | 7ee7473e-bd4b-4c9f-987c-bd58481f5fa2 
+| DisplayText | Read and write all users' lifecycle information | Read and write all users' lifecycle information 
+| Description | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### User.EnableDisableAccount.All
 
 | Category | Application | Delegated |
@@ -6820,39 +6875,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 50483e42-d915-4231-9639-7fdb7fd190e5 | b7887744-6746-4312-813d-72daeaee7e2d 
 | DisplayText | Read and write all users' authentication methods  | Read and write all users' authentication methods. 
 | Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. 
-| AdminConsentRequired | Yes | Yes 
-
----
-
-### User-ConvertToInternal.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 9d952b72-f741-4b40-9185-8c53076c2339 | 550e695c-7511-40f4-ac79-e8fb9c82552d 
-| DisplayText | Convert an external user to internal member user | Convert an external user to internal member user 
-| Description | Allow the app to convert an external user to an internal member user, without a signed-in user. | Allow the app to convert an external user to an internal member user, on behalf of signed-in user. 
-| AdminConsentRequired | Yes | Yes 
-
----
-
-### User-LifeCycleInfo.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 8556a004-db57-4d7a-8b82-97a13428e96f | ed8d2a04-0374-41f1-aefe-da8ac87ccc87 
-| DisplayText | Read all users' lifecycle information | Read all users' lifecycle information 
-| Description | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | Yes 
-
----
-
-### User-LifeCycleInfo.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 925f1248-0f97-47b9-8ec8-538c54e01325 | 7ee7473e-bd4b-4c9f-987c-bd58481f5fa2 
-| DisplayText | Read and write all users' lifecycle information | Read and write all users' lifecycle information 
-| Description | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---

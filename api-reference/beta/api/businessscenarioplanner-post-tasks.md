@@ -86,7 +86,6 @@ POST https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c68649
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.businessScenarioTask",
   "title": "Customer order #12010",
   "percentComplete": 0,
   "priority": 5,
