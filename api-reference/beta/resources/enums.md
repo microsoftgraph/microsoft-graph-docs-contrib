@@ -4953,6 +4953,16 @@ Possible values for user account types (group membership), per Windows definitio
 |outdated|
 |principalWantsCopy|
 
+### uriUsageType values 
+
+|Member|
+|:---|
+|redirectUri|
+|identifierUri|
+|loginUrl|
+|logoutUrl|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member|
