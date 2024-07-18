@@ -2048,6 +2048,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "pronounsSettings",
+        "photoUpdateSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2062,7 +2063,8 @@
           "name": "People admin settings",
           "resources": [
             "pronounsSettings",
-            "profileCardProperty"
+            "profileCardProperty",
+            "photoUpdateSettings"
           ]
         },
         {
