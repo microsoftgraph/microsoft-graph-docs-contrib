@@ -43,7 +43,7 @@ A format object that encapsulates the range's font, fill, borders, alignment, an
 |borders|[workbookRangeBorder](workbookrangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
 |fill|[workbookRangeFill](workbookrangefill.md)|Returns the fill object defined on the overall range. Read-only.|
 |font|[workbookRangeFont](workbookrangefont.md)|Returns the font object defined on the overall range selected Read-only.|
-|protection|[formatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
+|protection|[formatProtection](workbookformatprotection.md)|Returns the format protection object for a range. Read-only.|
 
 ## JSON representation
 
