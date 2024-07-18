@@ -46,18 +46,18 @@ To use application permission for this API, tenant administrators must create an
 
 Get a single transcript of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
-
 ```
 
 Get the content of a single transcript of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
-
 ```
 
 ## Request headers
@@ -125,8 +125,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -215,8 +213,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
----
-
 #### Response
 
 Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
@@ -286,8 +282,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
----
-
 #### Response
 
 Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
@@ -353,8 +347,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-metadatacontent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
