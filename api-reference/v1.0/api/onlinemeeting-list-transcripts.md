@@ -61,11 +61,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/callTranscript.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,6 +116,8 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ### Response
 
+The following example shows the response.
+
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -146,7 +150,7 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
         },
@@ -166,7 +170,7 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
         },
@@ -186,10 +190,10 @@ Content-Type: application/json
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
                     "userIdentityType": "aadUser",
-                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+                    "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
                 }
             }
-        }        
+        }
     ]
 }
 ```
