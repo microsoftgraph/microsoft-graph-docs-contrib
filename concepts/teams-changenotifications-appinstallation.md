@@ -22,7 +22,20 @@ To get change notifications for Teams app installations, subscribe to `/appCatal
 
 ### Permissions
 
-To subscribe to Teams apps installation, you can use the following specified scope or all scopes along with the corresponding permissions. For more information on how to choose permissions, see [Permissions](/graph/permissions-reference).
+To subscribe to Teams apps installation, you can use the specified scope such as personal, team, and chat or all scopes along with the corresponding permissions. For more information on how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+**RSC permission**
+
+To subscribe to Teams apps installation, you can also use resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](../../../concepts/permissions-reference.md#resource-specific-consent-rsc-permissions).
+
+> [!NOTE]
+> Currently, you can use RSC permissions to receive notifications for installations and upgrades in team, chat, or personal scope. We plan to extend support for delivering deletion events within these scopes later in the year.
+
+The following are the supported RSC permissions with one permission for each scope:
+
+* `TeamsAppInstallation.Read.User` permission is required to receive events in personal scope.
+* `TeamsAppInstallation.Read.Group` permission is required to receive events in team scope.
+* `TeamsAppInstallation.Read.Chat` permission is required to receive events in chat scope.
 
 #### Personal scope
 
@@ -122,6 +135,45 @@ Content-Type: application/json
 
 > [!NOTE]
 > Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
+
+To subscribe using RSC permissions, you must declare RSC usage with the `useResourceSpecificConsentBasedAuthorization` query parameter. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
+
+**RSC with `$filter` parameter:**
+
+```json
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json 
+{ 
+  "changeType": "created,updated,deleted", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal')&useResourceSpecificConsentBasedAuthorization=true", 
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
+  "includeResourceData": true, 
+  "encryptionCertificate": "{base64encodedCertificate}", 
+  "encryptionCertificateId": "{customId}", 
+  "expirationDateTime": "2023-11-16T11:00:00.0000000Z", 
+  "clientState": "{secretClientState}" 
+} 
+```
+
+**RSC without `$filter` parameter:**
+
+```json
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json 
+{ 
+  "changeType": "created,updated,deleted", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?useResourceSpecificConsentBasedAuthorization=true", 
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
+  "includeResourceData": true, 
+  "encryptionCertificate": "{base64encodedCertificate}", 
+  "encryptionCertificateId": "{customId}", 
+  "expirationDateTime": "2023-11-16T11:00:00.0000000Z", 
+  "clientState": "{secretClientState}" 
+} 
+```
+
+> [!NOTE]
+> If RSC permissions are in use, application permissions aren't required.
 
 ### Notifications with resource data
 
