@@ -379,7 +379,7 @@ Content-Type: application/json
 
 ### Example 3: Remove the customExtensionStageSettings from a policy
 
-To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object.
+To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object. 
 
 #### Request
 
@@ -496,3 +496,138 @@ Content-Type: application/json
 -->
 
 
+### Example 4: Update the customExtensionStageSettings for a policy
+
+The following example shows how to update a policy to include a custom extension.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_updating_customExtensionStageSettings"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
+Content-Type: application/json
+
+{
+    "displayName": "API Created policy with updated customExtensionStageSettings",
+    "description": "policy with updated customExtensionStageSettings",
+    "allowedTargetScope": "notSpecified",
+    "specificAllowedTargets": [],
+    "expiration": {
+        "endDateTime": null,
+        "duration": null,
+        "type": "noExpiration"
+    },
+    "requestorSettings": {
+        "enableTargetsToSelfAddAccess": false,
+        "enableTargetsToSelfUpdateAccess": false,
+        "enableTargetsToSelfRemoveAccess": false,
+        "allowCustomAssignmentSchedule": true,
+        "enableOnBehalfRequestorsToAddAccess": false,
+        "enableOnBehalfRequestorsToUpdateAccess": false,
+        "enableOnBehalfRequestorsToRemoveAccess": false,
+        "onBehalfRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequiredForAdd": false,
+        "isApprovalRequiredForUpdate": false,
+        "stages": []
+    },
+    "accessPackage": {
+        "id": "f9afd2e3-7486-40df-9c35-aa2ae108c495"
+    },
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accesspackageassignmentpolicy-updating-customextensionstagesettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "API Created policy with updated customExtensionStageSettings",
+    "description": "policy with updated customExtensionStageSettings",
+    "accessPackageId": "f9afd2e3-7486-40df-9c35-aa2ae108c495",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```

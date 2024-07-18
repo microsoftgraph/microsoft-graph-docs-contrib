@@ -54,7 +54,7 @@ The `MgtPersonCardConfig` class exposes static configuration properties that con
 By default, all sections and APIs are enabled. The following example shows how to use the class properties to disable sections or APIs.
 
 ```ts
-import { MgtPersonCardConfig } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from '@microsoft/mgt-components';
 
 MgtPersonCardConfig.useContactApis = false;
 MgtPersonCardConfig.sections.profile = false;
@@ -92,7 +92,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 To disable a section, set the property to `false` in your app initialization code:
 
 ```ts
-import { MgtPersonCardConfig } from `@microsoft/mgt`;
+import { MgtPersonCardConfig } from '@microsoft/mgt-components';
 
 MgtPersonCardConfig.sections.profile = false;
 ```
@@ -112,16 +112,16 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 ## Properties
 
-By default, the `mgt-person` component passes the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
+By default, the `mgt-person` component passes the person details to the `mgt-person-card` component. However, you can use these attributes to change it when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
 
 | Attribute       | Type                                                                       | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | person-details  | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user.                                                                                             |
 | person-image    | String                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
 | inherit-details | None                                                                       | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
-| user-id         | String                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
+| user-id         | String                                                                     | Allows developers to supply user-ID to retrieve data shown on person-card component                                                                                              |
 | person-query    | String                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
-| person-card     | String                                                                     | Specifies whether the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
+| person-card     | String                                                                     | Specifies whether the `person-card` component can be shown as a pop-up card when you hover or click on the `mgt-person` component. The allowed values are `hover` or `click`. |
 
 ## CSS custom properties
 
@@ -228,7 +228,7 @@ The Person-Card component uses [templates](../customize-components/templates.md)
 | person-details     | `person`: The person details object                                          | The template used to render the top part of the person card.                 |
 | additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add custom content to the additional details container. |
 
-For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card.
+For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details to the card.
 
 ```html
 <mgt-person person-query="me" view="twolines" person-card="hover">
@@ -253,7 +253,7 @@ The following events are fired from the component.
 
 | Event      | When is it emitted                                           | Custom data | Cancelable | Bubbles |          Works with custom template           |
 | ---------- | ------------------------------------------------------------ | ----------- | :--------: | :-----: | :-------------------------------------------: |
-| `expanded` | The user has opened the expanded details section of the card | None        |     No     |   Yes   | Yes, unless you override the default template |
+| `expanded` | The user opened the expanded details section of the card | None        |     No     |   Yes   | Yes, unless you override the default template |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -300,7 +300,7 @@ The Person-Card control uses the global authentication provider described in the
 ## Cache
 
 > [!IMPORTANT]
-> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and isn't cached.
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it retrieves the necessary data itself and caches it. The data displayed in the card's sections is retrieved separately and isn't cached.
 
 | Object store | Cached data               | Remarks                                                                   |
 | ------------ | ------------------------- | ------------------------------------------------------------------------- |

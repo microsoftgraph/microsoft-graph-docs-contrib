@@ -1,6 +1,6 @@
 ---
 title: "groupSetting resource type"
-description: "Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners."
+description: "Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guests are allowed to be group owners."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
@@ -12,11 +12,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners.
+Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guests are allowed to be group owners.
 
-By default, all groups inherit the preset defaults. To change the default settings, you must create a new settings object using the [groupSettingTemplates](groupsettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting. For example, the tenant-wide setting may allow guests to be invited by existing members of groups. However, an individual group setting can override and not allow guests to be invited by members of the group.
+By default, all groups inherit the preset defaults. To change the default settings, you must create a new settings object using the [groupSettingTemplates](groupsettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting. For example, the tenant-wide setting might allow existing members of groups to invite guests; but an individual group setting can override and not allow the operation.
 
-Group settings apply to only Microsoft 365 groups.
+Group-specific settings apply to only Microsoft 365 groups.
 
 > [!TIP]
 > The `/beta` version of this resource is named [directorySetting](/graph/api/resources/directorysetting?view=graph-rest-beta&preserve-view=true).
@@ -25,10 +25,10 @@ Group settings apply to only Microsoft 365 groups.
 
 | Method                                          | Return Type                                | Description                                                  |
 | :---------------------------------------------- | :----------------------------------------- | :----------------------------------------------------------- |
+| [List](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
 | [Create](../api/group-post-settings.md) | [groupSetting](groupsetting.md)            | Create a setting object based on a **groupSettingTemplate**. |
 | [Get](../api/groupsetting-get.md)       | [groupSetting](groupsetting.md)            | Read properties of a specific setting object.                |
-| [List](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
-| [Update](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update the groupsetting object.                                  |
+| [Update](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update the setting object.                                  |
 | [Delete](../api/groupsetting-delete.md) | None                                       | Delete a setting object.                                     |
 
 ## Properties
