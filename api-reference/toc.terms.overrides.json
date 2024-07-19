@@ -9,10 +9,6 @@
     "caseSensitive": true
   },
   {
-    "term": "activity based",
-    "override": "activity-based"
-  },
-  {
     "term": "android",
     "override": "Android"
   },

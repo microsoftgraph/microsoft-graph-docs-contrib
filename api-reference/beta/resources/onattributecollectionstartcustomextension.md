@@ -21,8 +21,8 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get on attribute collection start](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|[Update on attribute collection start](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+|[Get](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+|[Update](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
 
 ## Properties
 |Property|Type|Description|

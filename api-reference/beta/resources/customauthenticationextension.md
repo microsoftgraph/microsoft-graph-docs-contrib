@@ -36,12 +36,6 @@ Learn how to use this API when [Configuring a custom claim provider token issuan
 |[Update](../api/customauthenticationextension-update.md)|None|Update the properties of an object type that is derived from **customAuthenticationExtension**.|
 |[Delete](../api/customauthenticationextension-delete.md)|None|Delete an object type that is derived from **customAuthenticationExtension**.|
 |[Validate authentication configuration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check the validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|**On attribute collection start**|||
-|[Get](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|[Update](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|**On attribute collection submit**|||
-|[Get](../api/onattributecollectionsubmitcustomextension-get.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
-|[Update](../api/onattributecollectionsubmitcustomextension-update.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
