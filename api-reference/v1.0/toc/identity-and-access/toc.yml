@@ -1955,9 +1955,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/policy-overview.md
-    - name: activity-based timeout policy
+    - name: Activity-based timeout policy
       items:
-      - name: activity-based timeout policy
+      - name: Activity-based timeout policy
         href: ../../resources/activitybasedtimeoutpolicy.md
       - name: List
         href: ../../api/activitybasedtimeoutpolicy-list.md
@@ -2220,11 +2220,11 @@ items:
         items:
         - name: X509 certificate
           href: ../../resources/x509certificateauthenticationmethodconfiguration.md
-        - name: Get x509CertificateAuthenticationMethodConfiguration
+        - name: Get
           href: ../../api/x509certificateauthenticationmethodconfiguration-get.md
-        - name: Update x509CertificateAuthenticationMethodConfiguration
+        - name: Update
           href: ../../api/x509certificateauthenticationmethodconfiguration-update.md
-        - name: Delete x509CertificateAuthenticationMethodConfiguration
+        - name: Delete
           href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
     - name: Remote desktop security configuration
       items:
