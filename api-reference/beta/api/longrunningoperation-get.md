@@ -225,33 +225,29 @@ Content-Type: application/json
 
 The ID of the operation to use in this request is retrieved from the response you get from the [passwword reset operation](authenticationmethod-resetpassword.md).
 
-### Request
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_operation"
+  "name": "get_longrunningoperation_passwordreset"
 }-->
-
-``http
+```http
 GET https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.longRunningOperation"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 200 OK
 Content-type: application/json
 

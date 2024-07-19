@@ -71,9 +71,8 @@ The following example shows a request. The ID of the operation to use in this re
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_longrunningoperation"
+  "name": "get_longrunningoperation_passwordreset"
 }-->
-
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
@@ -123,7 +122,6 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.longRunningOperation"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
