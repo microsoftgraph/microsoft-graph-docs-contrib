@@ -19,11 +19,11 @@ Online meeting artifacts are content produced during an online meeting or [Micro
 - Recordings of a Teams live event, in the form of a download link that expires in 60 seconds. Recordings have the following characteristics:
   - Only available for Teams live events
   - Only available when the Teams live event has concluded
-  - Only the Teams live event organizer can access
+  - Only the organizer of the Teams live event can access
 - Attendee report of a Teams live event, in the form of a download link that expires in 60 seconds. Attendee reports have the following characteristics:
   - Only available for Teams live events
   - Only available when the Teams live event has concluded
-  - Only the Teams live event organizer can access
+  - Only the organizer of the Teams live event can access
 
 ## Permissions
 
