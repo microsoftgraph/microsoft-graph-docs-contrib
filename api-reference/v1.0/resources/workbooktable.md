@@ -53,6 +53,7 @@ Represents an Excel table.
 
 ## Relationships
 | Relationship | Type	|Description|
+|:---------------|:--------|:----------|
 |columns|[workbookTableColumn](workbooktablecolumn.md) collection|The list of all the columns in the table. Read-only.|
 |rows|[workbookTableRow](workbooktablerow.md) collection|The list of all the rows in the table. Read-only.|
 |sort|[workbookTableSort](workbooktablesort.md)|The sorting for the table. Read-only.|
