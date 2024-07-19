@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+This type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
