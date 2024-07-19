@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event. Used for verifying sign up attributes when they are submitted. The custom extension can be used to verify or modify attributes, or block sign-up.
+Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event. Used for verifying sign-up attributes when they're submitted. The custom extension can be used to verify or modify attributes, or block sign-up.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
@@ -27,7 +27,7 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Microsoft Entra ID can wait for a connection, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed.  Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Microsoft Entra ID can wait for a connection, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |description|String|Description for the onAttributeCollectionSubmitCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|Display name for the onAttributeCollectionSubmitCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
