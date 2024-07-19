@@ -1,6 +1,6 @@
 ---
 title: "Get longRunningOperation"
-description: "Read the properties and relationships of a longRunningOperation object. This API allows you to retrieve the details and status of a long running operation for different Microsoft Graph APIs."
+description: "Retrieve the status of a long-running Microsoft Graph API operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of a long running operation for the following Microsoft Graph API operations.
+Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 
 - [Role management alert refresh](unifiedrolemanagementalert-refresh.md)
 - [Password reset](authenticationmethod-resetpassword.md)

@@ -1,6 +1,6 @@
 ---
 title: "Get longRunningOperation"
-description: "Retrieve the status of a long-running operation."
+description: "Retrieve the status of a long-running Microsoft Graph API operation."
 ms.localizationpriority: medium
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of a long running operation for the following Microsoft Graph API operations.
+Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 
 - [Password reset](authenticationmethod-resetpassword.md)
 
