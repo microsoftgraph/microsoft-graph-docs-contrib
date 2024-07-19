@@ -444,7 +444,7 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 ### Limits per app ID and mailbox combination
 
-The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox doesn't affect the ability of the application to access another mailbox.
+The Outlook service applies limits to each mailbox individually, regardless of the application used - that is, any app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not impact the application's ability to access another mailbox.
 
 | Limit                                                             | Applies to              |
 |-------------------------------------------------------------------|-------------------------|
