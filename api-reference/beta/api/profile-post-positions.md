@@ -178,6 +178,7 @@ Content-type: application/json
       "displayName": "Adventureworks Ltd.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": null,
       "officeLocation": "AW23/344",
       "address": {
         "type": "business",

@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 630
+Content-Length: 867
 
 {
   "value": [
@@ -77,7 +77,14 @@ Content-Length: 630
       "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
       "deviceIMEI": "Device IMEI value",
       "actionState": "pending",
-      "managedDeviceId": "Managed Device Id value"
+      "managedDeviceId": "Managed Device Id value",
+      "deviceActionDetails": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair_2OfString_String"
+        }
+      ],
+      "deviceActionCategory": "bulk",
+      "bulkDeviceActionId": "Bulk Device Action Id value"
     }
   ]
 }

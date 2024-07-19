@@ -5902,8 +5902,6 @@ items:
         href: ../../api/intune-devices-devicelogcollectionresponse-update.md
       - name: createDownloadUrl action
         href: ../../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
-      - name: downloadDeviceLogs action
-        href: ../../api/intune-devices-devicelogcollectionresponse-downloaddevicelogs.md
     - name: Device management abstract complex setting definition
       items:
       - name: Device management abstract complex setting definition
@@ -6454,6 +6452,8 @@ items:
         href: ../../api/intune-devices-manageddevice-rotatelocaladminpassword.md
       - name: pauseConfigurationRefresh action
         href: ../../api/intune-devices-manageddevice-pauseconfigurationrefresh.md
+      - name: changeAssignments action
+        href: ../../api/intune-devices-manageddevice-changeassignments.md
       - name: appDiagnostics function
         href: ../../api/intune-devices-manageddevice-appdiagnostics.md
       - name: downloadAppDiagnostics action
@@ -7952,10 +7952,6 @@ items:
         href: ../../api/intune-rbac-operationapprovalpolicy-delete.md
       - name: Update operationApprovalPolicy
         href: ../../api/intune-rbac-operationapprovalpolicy-update.md
-      - name: getApprovableOperations function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md
-      - name: getOperationsRequiringApproval function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md
       - name: retrieveApprovableOperations function
         href: ../../api/intune-rbac-operationapprovalpolicy-retrieveapprovableoperations.md
       - name: retrieveOperationsRequiringApproval function

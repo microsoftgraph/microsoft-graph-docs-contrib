@@ -19,6 +19,8 @@ Discard the check out of a [driveItem](../resources/driveitem.md). This action r
 The same user that performed the checkout must discard it. Another alternative is to use application permissions.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -65,6 +67,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a discard checkout request on a file identified by `{item-id}`.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveitemthis.discardcheckout"
@@ -74,6 +77,11 @@ The following example shows a discard checkout request on a file identified by `
 POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardCheckout
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitemthisdiscardcheckout-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

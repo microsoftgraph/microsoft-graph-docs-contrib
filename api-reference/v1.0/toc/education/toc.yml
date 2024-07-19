@@ -212,6 +212,8 @@ items:
   items:
   - name: Rubric
     href: ../../resources/educationrubric.md
+  - name: List
+    href: ../../api/educationuser-list-rubrics.md
   - name: Create
     href: ../../api/educationuser-post-rubrics.md
   - name: Get
