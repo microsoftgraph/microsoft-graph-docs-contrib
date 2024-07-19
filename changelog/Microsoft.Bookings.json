@@ -943,15 +943,6 @@
       "SubArea": ""
     },
     {
-      "ChangeList": 
-        "Id": "d6128cb3-141f-4e5d-b37a-5f4ac2c18fc8",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2024-06-12T09:01:38.5968127Z",
-        "WorkloadArea": "Customer booking",
-        "SubArea": ""
-    },
-    {
       "ChangeList": [
         {
           "Id": "b3d89c83-9721-47ac-8cd9-e44628ebaa92",
