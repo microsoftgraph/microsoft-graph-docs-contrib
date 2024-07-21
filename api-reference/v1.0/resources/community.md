@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[Get](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
 |[Update](../api/community-update.md)|None|Update the properties of an existing Viva Engage [community](../resources/community.md).|
-|[Delete](../api/community-delete.md)|None|Delete a [community](../resources/community.md) in Viva Engage.|
+|[Delete](../api/community-delete.md)|None|Delete a Viva Engage [community](../resources/community.md) along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans.|
 
 ## Properties
 
