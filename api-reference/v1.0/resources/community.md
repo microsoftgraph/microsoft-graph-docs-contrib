@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| description | String | The description of the community. The maximum length is 1024 characters. |
+| description | String | The description of the community. The maximum length is 1,024 characters. |
 | displayName | String | The name of the community. The maximum length is 255 characters. |
 | groupId | String | The ID of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
 | id | String | The unique identifier of the community. Read-only. Inherited from [entity](../resources/entity.md). |
