@@ -29,6 +29,7 @@ For more information about working with security alerts for Microsoft Entra role
 |[Get](../api/unifiedrolemanagementalert-get.md)|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md)|Read the properties and relationships of an [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object.|
 |[Update](../api/unifiedrolemanagementalert-update.md)|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md)|Update the properties of an [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object.|
 |[Refresh](../api/unifiedrolemanagementalert-refresh.md)|None|Refresh incidents on all alerts or on a single alert for Privileged Identity Management (PIM) for Microsoft Entra roles.|
+|[Get long running operation](../api/longrunningoperation-get.md)|None|Get the status of the refresh operation if it returned a **Location** object.|
 
 ## Properties
 |Property|Type|Description|
