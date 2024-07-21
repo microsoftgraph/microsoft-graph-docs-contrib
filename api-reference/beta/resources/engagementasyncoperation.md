@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the status of a Viva Engage async operation that is an operation that transcends the lifetime of a single API request. These operations are long-running or too expensive to complete within the time frame of their original request.
 
-When an async operation is initiated, the method returns a `202 Accepted` response code and an operation location header that contains the location of the **engagementAsyncOperation**. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the operation **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource.
+When an async operation is initiated, the method returns a `202 Accepted` response code and an `Operation-Location` header that contains the location of the **engagementAsyncOperation**. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the operation **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource.
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
