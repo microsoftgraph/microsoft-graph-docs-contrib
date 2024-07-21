@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Return all the group IDs for the groups that the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
 
-This API returns up to 11,000 group IDs. If more than 11,000 results are available, it returns a `400 Bad Request` error with the `Directory_ResultSizeLimitExceeded` error code. As a workaround, use the [List group transitive memberOf](../api/group-list-transitivememberof.md) API.
+This API returns up to 11,000 group IDs. If more than 11,000 results are available, it returns a `400 Bad Request` error with the `Directory_ResultSizeLimitExceeded` error code. If you get the `Directory_ResultSizeLimitExceeded` error code, use the [List group transitive memberOf](../api/group-list-transitivememberof.md) API instead.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

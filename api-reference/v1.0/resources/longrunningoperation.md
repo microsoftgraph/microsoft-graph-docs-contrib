@@ -1,6 +1,6 @@
 ---
 title: "longRunningOperation resource type"
-description: "Represents the status of a long-running operation."
+description: "Represents the status of a long-running Microsoft Graph API operation."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
@@ -12,9 +12,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the status of a long-running operation.
+Represents the status of a long-running Microsoft Graph API operation.
 
-Base type of [engagementAsyncOperation](../resources/engagementasyncoperation.md).
+The following types derive from this object:
+- [attackSimulationOperation](../resources/attacksimulationoperation.md)
+- [engagementAsyncOperation](../resources/engagementasyncoperation.md)
+- [richLongRunningOperation](richlongrunningoperation.md)
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +28,6 @@ Base type of [engagementAsyncOperation](../resources/engagementasyncoperation.md
 |resourceLocation|String| URI of the resource that the operation is performed on. |
 |status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
-
 
 ## JSON representation
 
