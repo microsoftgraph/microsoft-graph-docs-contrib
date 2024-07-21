@@ -3,7 +3,7 @@ title: "employeeExperience resource type"
 description: "Represents a container that exposes navigation properties for employee experience resources."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.subservice: "employee-experience"
 doc_type: resourcePageType
 ---
 
@@ -17,13 +17,10 @@ Represents a container that exposes navigation properties for employee experienc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new [community](../resources/community.md) in Viva Engage.|
-|[Get community](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
 |[List communities](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the Viva Engage [community](../resources/community.md) objects and their properties.|
-|[Update a community](../api/community-update.md)|None|Update the properties of an existing Viva Engage [community](../resources/community.md).|
-|[Delete a community](../api/community-delete.md)|None|Delete a [community](../resources/community.md) in Viva Engage.|
-|[List](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
-|[Create](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and register it with Viva Learning using the specified display name and logos for different themes.|
+|[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new [community](../resources/community.md) in Viva Engage.|
+|[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
+|[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and register it with Viva Learning using the specified display name and logos for different themes.|
 
 ## Properties
 
