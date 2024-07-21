@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Windows Hello for Business
 ---
 
 # windowsHelloForBusinessAuthenticationMethod resource type

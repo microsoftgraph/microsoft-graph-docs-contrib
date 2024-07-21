@@ -388,7 +388,7 @@ For notifications with resource data, the payload looks like the following. This
         "@odata.type": "#Microsoft.Graph.callTranscript",
         "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')"
       },
-      "EncryptedContent": {
+      "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
         "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
         "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
@@ -440,7 +440,7 @@ For notifications with resource data, the payload looks like the following. This
         "@odata.type": "#Microsoft.Graph.callRecording",
         "@odata.id": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')"
       },
-      "EncryptedContent": {
+      "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
         "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
         "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
