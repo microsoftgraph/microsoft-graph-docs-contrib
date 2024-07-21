@@ -65,6 +65,7 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
+
 ### Response
 
 The following example shows the response.
