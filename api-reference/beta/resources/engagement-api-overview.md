@@ -55,7 +55,7 @@ For more information about the relationship between Viva Engage communities and 
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
 
-For guidance for how to handle throttling in Microsoft Graph, see [Microsoft Graph throttling guidance](/graph/throttling).
+For guidance on how to handle throttling in Microsoft Graph, see [Microsoft Graph throttling guidance](/graph/throttling).
 
 ## Next steps
 
