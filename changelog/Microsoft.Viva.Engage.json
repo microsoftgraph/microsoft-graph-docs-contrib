@@ -4,6 +4,22 @@
       "ChangeList": [
         {
           "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "communityPrivacy",
+          "ChangeType": "Addition",
+          "Description": "Added the **communityPrivacy** enumeration type.",
+          "Target": "communityPrivacy"
+        },
+        {
+          "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "engagementAsyncOperationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagementAsyncOperationType** enumeration type.",
+          "Target": "engagementAsyncOperationType"
+        },
+        {
+          "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
           "ApiChange": "Resource",
           "ChangedApiName": "community",
           "ChangeType": "Addition",
@@ -22,7 +38,7 @@
           "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
           "ApiChange": "Relationship",
           "ChangedApiName": "communities",
-          "ChangeType": "Change",
+          "ChangeType": "Addition",
           "Description": "Added the **communities** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
           "Target": "employeeExperience"
         },
@@ -30,7 +46,7 @@
           "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
           "ApiChange": "Relationship",
           "ChangedApiName": "engagementAsyncOperations",
-          "ChangeType": "Change",
+          "ChangeType": "Addition",
           "Description": "Added the **engagementAsyncOperations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
           "Target": "employeeExperience"
         }
@@ -80,7 +96,7 @@
       "ChangeList": [
         {
           "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "communityPrivacy",
           "ChangeType": "Addition",
           "Description": "Added the **communityPrivacy** enumeration type.",
@@ -88,7 +104,7 @@
         },
         {
           "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "engagementAsyncOperationType",
           "ChangeType": "Addition",
           "Description": "Added the **engagementAsyncOperationType** enumeration type.",
@@ -114,7 +130,7 @@
           "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
           "ApiChange": "Relationship",
           "ChangedApiName": "communities",
-          "ChangeType": "Change",
+          "ChangeType": "Addition",
           "Description": "Added the **communities** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource.",
           "Target": "employeeExperience"
         },
@@ -122,7 +138,7 @@
           "Id": "e3a40d69-61e5-480a-a107-1d713fa626da",
           "ApiChange": "Relationship",
           "ChangedApiName": "engagementAsyncOperations",
-          "ChangeType": "Change",
+          "ChangeType": "Addition",
           "Description": "Added the **engagementAsyncOperations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource.",
           "Target": "employeeExperience"
         }
