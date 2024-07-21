@@ -18,6 +18,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## July 2024: New and generally available
 
+### Employee experience | Employee engagement
+
+A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+
+- [Create a community](/graph/api/employeeexperience-post-communities)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
+- [Get a community](/graph/api/community-get)
+- [List communities](/graph/api/employeeexperience-list-communities)
+- [Update a community](/graph/api/community-update)
+- [Delete a community](/graph/api/community-delete)
+
 ### Security | Alerts and incidents
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
