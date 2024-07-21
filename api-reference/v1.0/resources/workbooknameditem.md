@@ -19,7 +19,6 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-
 |[List](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get the list of workbookNamedItem objects. |
 |[Add](../api/nameditem-add.md)|[workbookNamedItem](workbooknameditem.md)|Add a new workbookNamedItem object to the collection of the given scope.|
 |[Get](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |Read the properties and relationships of a workbookNamedItem object.|
