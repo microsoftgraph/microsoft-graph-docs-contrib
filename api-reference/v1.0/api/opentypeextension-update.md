@@ -81,11 +81,15 @@ Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md)
 |extensionName|String|Required if **id** isn't supplied. Updatable.|
 |id|String|Required if **id** isn't supplied. Read-only.|
 
-Use this operation to either store data in the open extension property, update the stored data, or delete the existing data.
+For resources that are directory (Microsoft Entra ID) objects:
 - To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph deletes the unspecified properties.
 - To delete data from a property in the open extension object but keep the property, set its value to `null`.
 - To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph deletes it.
 - To delete data from all properties in the open extension object but keep the open extension object, update the values of all the properties to `null`.
+
+For Microsoft 365 resources like messages:
+- You can specify a subset of the properties in the request body to update them. The omitted properties and their values are retained.
+- `null` values aren't allowed.
 
 ## Response
 
