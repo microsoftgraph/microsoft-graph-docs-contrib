@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport resource type"
-description: "Represents report of uploaded stream"
+description: "Get details of discovered cloud apps by endpoint/stream onboarded to discovery"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generate a `cloudAppDiscoveryReport` by providing relevant property details.
-
+Get details of discovered cloud apps by endpoint/stream onboarded to discovery.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
