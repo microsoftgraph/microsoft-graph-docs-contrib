@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppInfo resource type"
-description: "**This is a description for discovered app risk parameters**"
+description: "This is a description for discovered app risk parameters"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
+Get the details of discovered app risk parameters.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
