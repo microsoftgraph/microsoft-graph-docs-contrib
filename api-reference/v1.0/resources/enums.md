@@ -4502,13 +4502,6 @@ Possible values for user account types (group membership), per Windows definitio
 |rejectedByOrganizer|
 |unknownFutureValue|
 
-### virtualEventStatus values 
-
-|Member|
-|:---|
-|draft|
-|published|
-|canceled|
 
 ### socialIdentitySourceType values
 
