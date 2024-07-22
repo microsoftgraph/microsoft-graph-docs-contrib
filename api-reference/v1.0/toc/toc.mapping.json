@@ -915,13 +915,12 @@
             },
             {
               "name": "Identity provider",
-              "resources": [
-                "identityProviderBase"
-              ],
+              "resources": [],
               "childNodes": [
                 {
                   "name": "External identities",
                   "resources": [
+                    "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
                     "appleManagedIdentityProvider"
@@ -1021,6 +1020,14 @@
               ]
             },
             {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
+              ]
+            },
+            {
               "name": "User flows in workforce tenants",
               "resources": [
                 "b2xIdentityUserFlow",
@@ -1028,14 +1035,6 @@
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
-              ]
-            },
-            {
-              "name": "User flows in external tenants",
-              "resources": [
-                "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
               ]
             }
           ]

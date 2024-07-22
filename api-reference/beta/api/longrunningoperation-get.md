@@ -1,6 +1,6 @@
 ---
 title: "Get longRunningOperation"
-description: "Read the properties and relationships of a longRunningOperation object."
+description: "Retrieve the status of a long-running Microsoft Graph API operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -12,7 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object.
+Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
+
+- [Role management alert refresh](unifiedrolemanagementalert-refresh.md)
+- [Password reset](authenticationmethod-resetpassword.md)
+
+The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -21,14 +26,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### For role management alerts
 
-<!-- { "blockType": "permissions", "name": "longrunningoperation_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
+### For authentication methods (password reset)
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
+
 ## HTTP request
 
-To retrieve details of a long running operation of role management alert refresh
+To retrieve details of a long running operation of role management alert refresh:
 <!-- {
   "blockType": "ignored"
 }
@@ -37,8 +49,18 @@ To retrieve details of a long running operation of role management alert refresh
 GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
+To retrieve the status of a long running operation of authentication method reset:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
+```
+
 ## Optional query parameters
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -198,3 +220,44 @@ Content-Type: application/json
     "statusDetail": ""
 }
 ```
+
+### Example 3: Retrieve the status of a password authentication method reset operation.
+
+The ID of the operation to use in this request is retrieved from the response you get from the [passwword reset operation](authenticationmethod-resetpassword.md).
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_longrunningoperation_passwordreset"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.longRunningOperation"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "status": "running",
+  "createdDateTime": "2020-03-19T12-01-03.45Z",
+  "lastActionDateTime": "2020-03-19T12-01-04.23Z",
+  "id": "2d497bb-57bd-47a6-8749-5ccd0869f2bd"
+}
+```
+
+
+

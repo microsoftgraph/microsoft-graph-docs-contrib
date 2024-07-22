@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Microsoft Authenticator Passwordless Phone sign-in (deprecated)
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type (deprecated)
