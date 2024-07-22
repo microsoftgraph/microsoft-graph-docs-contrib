@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List dataDiscoveryReport objects
+# List dataDiscoveryReport
 
 Namespace: microsoft.graph.security
 
