@@ -1,6 +1,6 @@
 ---
 title: "Get discoveredCloudAppDetail"
-description: "Get the properties of discovered cloud apps details"
+description: "Get the properties of discovered cloud apps details."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
