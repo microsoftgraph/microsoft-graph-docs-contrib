@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the discovered cloud apps and their attributes.
+Get a list of the discovered cloud apps.
 
 ## Permissions
 
