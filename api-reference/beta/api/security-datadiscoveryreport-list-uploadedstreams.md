@@ -1,6 +1,6 @@
 ---
 title: "List cloudAppDiscoveryReport"
-description: "Get a list of the discovered cloud apps"
+description: "Get a list of the discovered cloud apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

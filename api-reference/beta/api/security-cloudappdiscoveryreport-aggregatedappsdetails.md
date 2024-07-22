@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport: aggregatedAppsDetails"
-description: "Get the aggregated details of discovered apps by providing the time period"
+description: "Get the aggregated details of discovered apps by providing the time period."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

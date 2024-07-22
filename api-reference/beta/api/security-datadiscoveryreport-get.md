@@ -1,6 +1,6 @@
 ---
 title: "Get dataDiscoveryReport"
-description: "Read the properties and relationships of discovery data report"
+description: "Read the properties and relationships of a discovery data report."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
