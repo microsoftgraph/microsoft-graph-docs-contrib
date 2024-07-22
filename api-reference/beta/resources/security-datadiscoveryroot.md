@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryRoot resource type"
-description: "This API provides data about discovery report entities."
+description: "Provides data about discovery report entities"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,10 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**Please read the disclaimer**
-
+Provides data about discovery report entities.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
