@@ -27,8 +27,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List sites across geographies][]            | GET /site/getAllSites                                      |
-| [List subsites for a site][] |  collection of sites  | Get a collection of subsites defined for a site.
+| [List sites across geographies][]                 | GET /site/getAllSites                                       |
+| [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
