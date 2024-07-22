@@ -25,13 +25,8 @@ Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherit
 
 |Property|Type|Description|
 |:---|:---|:---|
-| registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
-
-## Relationships
-
-|Relationship|Type|Description|
-|:---|:---|:---|
-| questions | [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection | Registration questions. |
+| isWaitlistEnabled | Bool | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| isManualApprovalEnabled | Bool | 
 
 ## JSON representation
 
