@@ -59,6 +59,10 @@ The following authentication methods are not yet supported in Microsoft Graph `b
 
 To require users to set up a new multifactor authentication the next time they sign in, call the individual DELETE authentication method operations to delete each of the user's current authentication methods. When the user has no more methods, they're prompted to register the next time they sign in where strong authentication is required.
 
+## Tenant-level authentication method usage
+
+You can monitor tenant-level authentication method registration and usage, including users registered or unregistered for MFA and passwordless authentication, and users registered or unregistered for SSPR by using the [Authentication methods usage report APIs](/graph/api/resources/authenticationmethods-usage-insights-overview).
+
 ## Next steps
 
 * Review the authentication method types and their various methods.
