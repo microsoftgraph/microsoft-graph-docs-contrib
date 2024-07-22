@@ -7,11 +7,9 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List discoveredCloudAppDetail objects
+# List discoveredCloudAppDetail
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the details of discovered cloud apps including the name of the app,tag of the app, risk score of the app & the usage analytics of the app.
 
