@@ -35,7 +35,7 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

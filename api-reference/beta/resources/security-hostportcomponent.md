@@ -33,7 +33,7 @@ Represents a web component that runs on a specific [hostPort](../resources/secur
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

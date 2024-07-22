@@ -27,7 +27,7 @@ Used for the **verifiableCredentialSettings** property of an [access package ass
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialSettings"

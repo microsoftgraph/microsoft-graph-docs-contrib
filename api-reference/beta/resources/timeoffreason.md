@@ -40,7 +40,7 @@ Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedul
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

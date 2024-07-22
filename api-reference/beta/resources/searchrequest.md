@@ -46,7 +46,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -47,7 +47,7 @@ Describes a user connection record, including when and how the Cloud PC was conn
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcConnectivityEvent"

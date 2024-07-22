@@ -22,7 +22,7 @@ The entitlement management schedule is used in three scenarios in [Microsoft Ent
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.entitlementManagementSchedule"

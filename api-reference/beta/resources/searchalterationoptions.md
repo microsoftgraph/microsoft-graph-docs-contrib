@@ -24,7 +24,7 @@ Provides the search alteration options for spelling correction.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

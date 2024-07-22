@@ -61,7 +61,7 @@ An access package catalog might also have linked resources that are used in thos
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

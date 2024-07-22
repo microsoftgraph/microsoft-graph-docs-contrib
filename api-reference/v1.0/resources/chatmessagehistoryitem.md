@@ -24,7 +24,7 @@ Represents activity history information for a message in a chat or a channel.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.chatMessageHistoryItem"

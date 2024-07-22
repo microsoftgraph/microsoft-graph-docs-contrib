@@ -30,7 +30,7 @@ Contains a custom question, an answer given by the customer for the custom quest
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingQuestionAnswer"

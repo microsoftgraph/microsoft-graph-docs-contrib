@@ -25,7 +25,7 @@ Represents an action that specifies the details on the content header to be remo
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

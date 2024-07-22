@@ -25,7 +25,7 @@ Represents monthly active usage data for a service in a managed tenant.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.serviceUsage"

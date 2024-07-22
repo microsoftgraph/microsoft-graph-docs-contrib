@@ -26,7 +26,7 @@ Microsoft Entra ID can require users to pass an MFA check before accessing resou
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationRequirementPolicy"

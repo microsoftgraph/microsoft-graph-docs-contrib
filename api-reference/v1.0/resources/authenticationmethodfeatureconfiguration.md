@@ -24,7 +24,7 @@ Defines the features that are allowed for different authentication methods. For 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"

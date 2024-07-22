@@ -28,7 +28,7 @@ We recommend that clients notify users when there are discrepancies and keep the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

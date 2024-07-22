@@ -26,7 +26,7 @@ Contains information for human and workload identity counts in a specific risk b
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.riskProfile"

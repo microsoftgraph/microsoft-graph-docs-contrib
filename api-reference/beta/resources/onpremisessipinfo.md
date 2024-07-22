@@ -26,7 +26,7 @@ This complex type contains all onPremises SIP information related to the user.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onPremisesSipInfo"

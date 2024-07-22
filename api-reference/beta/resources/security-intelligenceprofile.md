@@ -48,7 +48,7 @@ The Microsoft Defender Threat Intelligence Profiles (Intel Profile) API provides
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

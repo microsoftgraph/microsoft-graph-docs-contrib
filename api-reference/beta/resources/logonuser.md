@@ -27,7 +27,7 @@ Contains stateful information about the logged on user on this host
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

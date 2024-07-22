@@ -23,7 +23,7 @@ List of notifications used by the Communications servers for sending multiple no
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -27,7 +27,7 @@ Represents the course information for a class. It is used within [educationClass
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

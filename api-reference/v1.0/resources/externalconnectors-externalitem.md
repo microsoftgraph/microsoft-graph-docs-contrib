@@ -37,7 +37,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Returns a list of activities performed on the item. Write-only. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

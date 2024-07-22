@@ -46,7 +46,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

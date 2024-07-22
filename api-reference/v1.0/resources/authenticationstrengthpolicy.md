@@ -43,7 +43,7 @@ A collection of settings that define specific combinations of authentication met
 
 ## JSON representation
 The following is a JSON representation of the resource.
-<!-- {
+The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationStrengthPolicy",

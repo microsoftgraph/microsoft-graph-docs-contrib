@@ -20,7 +20,7 @@ Represents class-specific properties of a [team](team.md). Available only when t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

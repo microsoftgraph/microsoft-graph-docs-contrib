@@ -48,7 +48,7 @@ After a connector group is created, you can add or move connectors to the connec
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

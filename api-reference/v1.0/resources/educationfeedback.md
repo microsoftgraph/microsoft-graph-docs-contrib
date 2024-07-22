@@ -25,7 +25,7 @@ This property represents both the text part of the feedback along with who provi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

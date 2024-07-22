@@ -32,7 +32,7 @@ This resource provides a means to enable or disable the feature at the user leve
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

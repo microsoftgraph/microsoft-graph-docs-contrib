@@ -24,7 +24,7 @@ Provides the name and type of network from which the user signed in.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

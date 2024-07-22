@@ -26,7 +26,7 @@ An abstract type that represents a rule for governing the automatic creation of 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.complianceChangeRule"

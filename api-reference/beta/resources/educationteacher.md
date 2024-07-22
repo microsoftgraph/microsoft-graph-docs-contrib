@@ -27,7 +27,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -27,7 +27,7 @@ Represents a set of actions that should be taken to apply or update a label. **a
 | responsibleSensitiveTypeIds | Guid collection                                                          | If the label was the result of an automatic classification, supply the list of sensitive info type GUIDs that resulted in the returned label.                                                     |
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -18,7 +18,7 @@ The content of the results is depended on the submitted KQL query, see [KQL quic
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.huntingRowResult",

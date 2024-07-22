@@ -45,7 +45,7 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

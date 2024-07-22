@@ -26,7 +26,7 @@ Represents the details about the hardware properties of a Microsoft Teams-enable
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkHardwareDetail"

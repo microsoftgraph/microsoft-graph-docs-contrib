@@ -27,7 +27,7 @@ Represents user-specific properties of a [chat](../resources/chat.md). These pro
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.chatViewpoint"

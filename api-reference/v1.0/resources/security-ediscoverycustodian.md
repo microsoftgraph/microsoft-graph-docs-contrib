@@ -74,7 +74,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

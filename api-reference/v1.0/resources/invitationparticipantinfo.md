@@ -25,7 +25,7 @@ This resource is used to represent the entity that is being invited to a group c
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

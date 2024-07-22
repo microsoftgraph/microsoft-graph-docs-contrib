@@ -23,7 +23,7 @@ Represents the objects that will be provisioned and the synchronization rules ex
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationJobApplicationParameters"

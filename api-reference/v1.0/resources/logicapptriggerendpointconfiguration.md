@@ -24,7 +24,7 @@ The configuration details for the logic app's endpoint that is associated with a
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.logicAppTriggerEndpointConfiguration",

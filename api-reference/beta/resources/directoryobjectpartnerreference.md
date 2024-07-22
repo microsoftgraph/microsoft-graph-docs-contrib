@@ -27,7 +27,7 @@ Represents a reference to a directory object in a partner organization. Inherits
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

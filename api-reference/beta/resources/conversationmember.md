@@ -54,7 +54,7 @@ Base type for the following supported conversation member types:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -27,7 +27,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |meetingOrganizer|[identitySet](../resources/identityset.md)|The organizer of the meeting.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callTranscriptEventMessageDetail",

@@ -40,7 +40,7 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 |id|String|The identifier of the identity provider.|
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 The following JSON representation shows the resource type.
 
 <!-- {

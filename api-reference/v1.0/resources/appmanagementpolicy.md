@@ -46,7 +46,7 @@ To learn more about how to use app management policy, see [Microsoft Entra appli
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

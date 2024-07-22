@@ -45,7 +45,7 @@ Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) t
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

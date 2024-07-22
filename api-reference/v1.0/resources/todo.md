@@ -30,7 +30,7 @@ None
 |lists|[todoTaskList](../resources/todotasklist.md) collection| The task lists in the users mailbox. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

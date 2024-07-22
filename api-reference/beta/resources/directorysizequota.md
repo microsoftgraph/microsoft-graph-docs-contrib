@@ -21,7 +21,7 @@ Represents a [tenant's](organization.md) used and total directory quota.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

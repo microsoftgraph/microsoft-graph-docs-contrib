@@ -30,7 +30,7 @@ None.
 |servicePrincipalRiskDetections| [servicePrincipalRiskDetection](serviceprincipalriskdetection.md) collection | Represents information about detected at-risk service principals in a Microsoft Entra tenant.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

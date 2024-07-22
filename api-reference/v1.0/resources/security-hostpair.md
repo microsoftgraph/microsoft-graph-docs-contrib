@@ -49,7 +49,7 @@ For more information about host pairs, see the Microsoft Defender Threat Intelli
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

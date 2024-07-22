@@ -26,7 +26,7 @@ Describes an operator that can be used in a [filter](synchronization-filter.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

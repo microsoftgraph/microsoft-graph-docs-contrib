@@ -37,7 +37,7 @@ Represents the status of a long-running operation on a [site](../resources/site.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

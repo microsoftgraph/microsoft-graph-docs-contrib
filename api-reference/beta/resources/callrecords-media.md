@@ -28,7 +28,7 @@ Represents the media (audio, video, video-based screen-sharing, etc.) used in a 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -22,7 +22,7 @@ Defines the rules for resolving a URL to the ID of an [externalItem](externalcon
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.urlToItemResolverBase"

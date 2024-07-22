@@ -26,7 +26,7 @@ Specifies additional application IDs that are allowed to manage the externalConn
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

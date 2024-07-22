@@ -29,7 +29,7 @@ Represents the details about the speaker configuration for a Microsoft Teams Roo
 |speakers|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|The list of connected speakers.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkSpeakerConfiguration"

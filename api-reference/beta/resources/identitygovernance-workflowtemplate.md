@@ -50,7 +50,7 @@ Lifecycle Workflows currently provide the following predefined workflow template
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

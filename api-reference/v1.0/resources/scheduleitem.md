@@ -26,7 +26,7 @@ An item that describes the availability of a user corresponding to an actual eve
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

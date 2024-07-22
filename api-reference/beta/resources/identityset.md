@@ -31,7 +31,7 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

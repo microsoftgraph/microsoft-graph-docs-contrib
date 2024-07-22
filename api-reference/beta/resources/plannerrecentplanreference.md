@@ -26,7 +26,7 @@ We recommend that apps notify users when there are discrepancies and keep the en
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

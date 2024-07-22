@@ -21,7 +21,7 @@ Represents an object to be used as input test data when the [parseExpression](..
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

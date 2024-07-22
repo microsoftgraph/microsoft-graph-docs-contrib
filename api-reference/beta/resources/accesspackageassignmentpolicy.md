@@ -62,7 +62,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

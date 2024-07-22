@@ -95,7 +95,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

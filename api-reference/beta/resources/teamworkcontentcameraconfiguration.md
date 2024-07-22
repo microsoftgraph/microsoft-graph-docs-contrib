@@ -26,7 +26,7 @@ Represents configuration details for a content camera connected to a Microsoft T
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkContentCameraConfiguration"

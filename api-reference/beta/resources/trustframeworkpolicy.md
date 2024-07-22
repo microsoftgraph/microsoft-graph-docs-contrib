@@ -39,7 +39,7 @@ For more information, see [Custom policies in Azure Active Directory B2C](/azure
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

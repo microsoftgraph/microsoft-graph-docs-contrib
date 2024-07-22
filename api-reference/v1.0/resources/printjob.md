@@ -44,7 +44,7 @@ Represents a print job that has been queued for a printer.
 |tasks|[printTask](printtask.md) collection|A list of [printTasks](printtask.md) that were triggered by this print job.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -21,7 +21,7 @@ The connectionInfo object defines the resource locator that is used to communica
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.connectionInfo"

@@ -38,7 +38,7 @@ Indicates the reason or reasons why media content from a participant is restrict
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -40,7 +40,7 @@ If the resource is in an access package catalog but has not yet had its roles ad
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

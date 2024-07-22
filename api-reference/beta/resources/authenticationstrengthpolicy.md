@@ -50,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
   "baseType": "microsoft.graph.entity",
   "openType": false

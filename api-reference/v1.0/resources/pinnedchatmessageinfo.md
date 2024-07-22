@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 | message | [chatMessage](../resources/chatmessage.md) | Represents details about the chat message that is pinned.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

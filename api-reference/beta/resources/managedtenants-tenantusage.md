@@ -34,7 +34,7 @@ Represents the number of monthly active users per service in a managed tenant fo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

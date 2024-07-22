@@ -49,7 +49,7 @@ An access package catalog might also have linked resources that are used in thos
 |resources|[accessPackageResource](../resources/accesspackageresource.md) collection|Access package resources in this catalog.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

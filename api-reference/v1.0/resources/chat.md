@@ -90,7 +90,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

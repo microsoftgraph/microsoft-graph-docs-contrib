@@ -25,7 +25,7 @@ Represents the storage account information that can be used to store a snapshot 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "storageAccountId",

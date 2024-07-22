@@ -16,7 +16,7 @@ Abstract base type for an appointment's customer information.
 Base type of [bookingCustomerInformation](bookingcustomerinformation.md).
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingCustomerInformationBase"

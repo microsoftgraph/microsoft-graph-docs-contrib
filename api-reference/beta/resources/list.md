@@ -73,7 +73,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource",
        "@odata.type": "microsoft.graph.list",

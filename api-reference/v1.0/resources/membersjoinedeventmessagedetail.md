@@ -24,7 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of **members** who joined the **chat**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersJoinedEventMessageDetail",

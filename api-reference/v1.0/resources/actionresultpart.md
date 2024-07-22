@@ -23,7 +23,7 @@ An abstract type that serves as a base to model responses of bulk operations. Th
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionResultPart"

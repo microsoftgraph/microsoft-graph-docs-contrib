@@ -24,7 +24,7 @@ Provides the search result templates options for render connectors search result
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

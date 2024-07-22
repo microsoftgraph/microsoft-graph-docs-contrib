@@ -35,7 +35,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

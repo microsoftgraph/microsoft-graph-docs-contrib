@@ -34,7 +34,7 @@ In PIM, use this resource to define when a [unifiedRoleAssignmentScheduleRequest
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.expirationPattern"

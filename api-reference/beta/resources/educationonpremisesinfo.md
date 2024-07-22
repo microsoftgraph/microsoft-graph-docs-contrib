@@ -21,7 +21,7 @@ Additional information used to associate an on-premises Active Directory user ac
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

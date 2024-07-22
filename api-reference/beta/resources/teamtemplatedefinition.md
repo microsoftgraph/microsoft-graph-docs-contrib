@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |teamDefinition|[team](../resources/team.md)|Collection of [channel](../resources/channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -32,7 +32,7 @@ To add a keyCredential using Microsoft Graph, see [Add a certificate to an app u
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

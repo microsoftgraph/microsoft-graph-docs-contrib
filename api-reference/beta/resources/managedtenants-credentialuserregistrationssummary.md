@@ -43,7 +43,7 @@ Represents a summary of Microsoft Entra credential user registrations for a give
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

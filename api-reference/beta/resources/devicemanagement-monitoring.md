@@ -37,7 +37,7 @@ The roles of global admin, Intune admin, and Windows 365 admin have full access 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

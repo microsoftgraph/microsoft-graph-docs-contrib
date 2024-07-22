@@ -32,7 +32,7 @@ Represents rich content like images and code snippets in Microsoft Teams. For ri
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

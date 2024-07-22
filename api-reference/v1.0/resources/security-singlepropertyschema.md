@@ -21,7 +21,7 @@ The schema of one property in the results of running an [advanced hunting query]
 |type|String|The type of the property.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.singlePropertySchema"

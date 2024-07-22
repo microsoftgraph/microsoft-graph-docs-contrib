@@ -30,7 +30,7 @@ Represents a long-running Universal Print operation. Base class for operation ty
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

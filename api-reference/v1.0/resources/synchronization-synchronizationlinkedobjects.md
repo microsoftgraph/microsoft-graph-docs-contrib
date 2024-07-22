@@ -22,7 +22,7 @@ Represents any references to be provisioned during on-demand provisioning.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationLinkedObjects"

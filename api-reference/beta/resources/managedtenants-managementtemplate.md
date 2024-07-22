@@ -35,7 +35,7 @@ Represents a group of actions and setting that can be performed against a manage
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

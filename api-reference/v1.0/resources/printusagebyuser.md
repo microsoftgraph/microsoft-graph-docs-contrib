@@ -38,7 +38,7 @@ Describes print activity for a user during a specified time period (usageDate).
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

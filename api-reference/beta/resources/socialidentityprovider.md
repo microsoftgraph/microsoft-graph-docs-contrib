@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.socialIdentityProvider"
-} -->
+The following JSON representation shows the resource type.
 
 ```json
 {

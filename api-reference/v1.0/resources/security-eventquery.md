@@ -22,7 +22,7 @@ Represents the workload (SharePoint Online, OneDrive for Business, Exchange Onli
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.eventQuery"

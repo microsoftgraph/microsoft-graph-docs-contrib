@@ -47,7 +47,7 @@ For more information about host pairs, see the Microsoft Defender Threat Intelli
 |parentHost|[microsoft.graph.security.host](../resources/security-host.md)|Host used to reach the childHost.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

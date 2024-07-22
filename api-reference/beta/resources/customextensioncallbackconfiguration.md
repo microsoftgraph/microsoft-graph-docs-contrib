@@ -26,7 +26,7 @@ Callback settings that define how long Microsoft Entra ID can wait for a resume 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"

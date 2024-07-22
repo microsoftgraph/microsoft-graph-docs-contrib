@@ -315,7 +315,7 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 ```
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.objectMapping"

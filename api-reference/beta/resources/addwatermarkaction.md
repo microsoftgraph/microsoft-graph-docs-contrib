@@ -30,7 +30,7 @@ Represents an action that specifies the details on the content watermark to be a
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

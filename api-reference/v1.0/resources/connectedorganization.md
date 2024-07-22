@@ -48,7 +48,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |internalSponsors|[directoryObject](directoryobject.md) collection|Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

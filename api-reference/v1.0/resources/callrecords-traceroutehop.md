@@ -23,7 +23,7 @@ Represents the network trace route hops collected for a [media stream](callrecor
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -33,7 +33,7 @@ Represents the details about the system configuration for a Microsoft Teams-enab
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkSystemConfiguration"

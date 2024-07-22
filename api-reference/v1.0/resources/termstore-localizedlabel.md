@@ -26,7 +26,7 @@ Identifies the labels associated with a given term.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedLabel"

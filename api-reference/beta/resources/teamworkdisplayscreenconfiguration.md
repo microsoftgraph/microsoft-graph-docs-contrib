@@ -28,7 +28,7 @@ Represent the details about the display screen configuration for a Microsoft Tea
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkDisplayScreenConfiguration"

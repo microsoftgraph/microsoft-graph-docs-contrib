@@ -27,7 +27,7 @@ Describes the steps taken to perform an action.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

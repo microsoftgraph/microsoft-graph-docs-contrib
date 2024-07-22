@@ -21,7 +21,7 @@ The directory roles that can be assigned to a Microsoft partner through a delega
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unifiedRole"

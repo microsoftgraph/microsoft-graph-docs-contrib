@@ -24,7 +24,7 @@ Represents the details about the update status of the software for various compo
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"

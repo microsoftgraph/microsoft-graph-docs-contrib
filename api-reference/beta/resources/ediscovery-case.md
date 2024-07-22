@@ -91,7 +91,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

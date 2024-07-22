@@ -30,7 +30,7 @@ Represents the current status of a long-running Universal Print operation.
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printOperationStatus"

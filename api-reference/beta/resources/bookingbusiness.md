@@ -69,7 +69,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -27,7 +27,7 @@ Exposes the properties that specify whether a user's password is valid, when val
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.passwordValidationInformation"

@@ -49,7 +49,7 @@ Represents a single result within the list of search results.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

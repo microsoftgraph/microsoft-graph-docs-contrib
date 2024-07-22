@@ -30,7 +30,7 @@ Contains information about registry key changes related to the alert, and the pr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

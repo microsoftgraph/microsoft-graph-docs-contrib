@@ -25,7 +25,7 @@ Represents the feedback provided by the user an endpoint about the quality of th
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

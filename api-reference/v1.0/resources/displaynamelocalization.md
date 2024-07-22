@@ -20,7 +20,7 @@ Provides the ability for an administrator to customize the string used in a shar
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

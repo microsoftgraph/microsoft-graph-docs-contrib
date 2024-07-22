@@ -22,7 +22,7 @@ Represents the administrative roles that a Microsoft partner has in a customer t
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
