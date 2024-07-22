@@ -3,7 +3,7 @@ title: "Update workPosition"
 description: "Update the properties of a workPosition object in a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 ## Properties
 |Property|Type|Description|
@@ -160,6 +160,7 @@ Content-type: application/json
       "displayName": "Adventureworks Ltd.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "A-101",
       "officeLocation": "AW23/344",
       "address": {
         "type": "business",

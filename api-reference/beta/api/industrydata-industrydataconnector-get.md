@@ -52,18 +52,17 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.industryData.azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industryDataConnector.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_azuredatalakeconnector",
+  "name": "get_industrydataconnector",
   "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->
@@ -73,35 +72,35 @@ GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-azuredatalakeconnector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-industrydataconnector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-azuredatalakeconnector-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-industrydataconnector-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-azuredatalakeconnector-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-industrydataconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-azuredatalakeconnector-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-industrydataconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-azuredatalakeconnector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-industrydataconnector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-azuredatalakeconnector-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-industrydataconnector-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-azuredatalakeconnector-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-industrydataconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-azuredatalakeconnector-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-industrydataconnector-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,7 +114,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector"
+  "@odata.type": "microsoft.graph.industryData.industryDataConnector"
 }
 -->
 

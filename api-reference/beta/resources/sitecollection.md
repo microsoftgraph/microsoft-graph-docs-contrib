@@ -1,10 +1,9 @@
 ---
-author: spgraph-docs-team
-description: Provides more information about a site collection.
-ms.date: 09/10/2017
-title: aiteCollection resource type
+author: "spgraph-docs-team"
+description: "Provides more information about a site collection."
+title: "siteCollection resource type"
 ms.localizationpriority: medium
-ms.subservice: sharepoint
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -53,7 +52,7 @@ The following JSON representation shows the resource type.
 ```
 
 [root]: root.md
-[siteArchivalDetails]: siteArchivalDetails.md
+[siteArchivalDetails]: sitearchivaldetails.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

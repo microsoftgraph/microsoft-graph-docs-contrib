@@ -3,8 +3,8 @@ author: "vanshisingh"
 title: "recycleBinItem resource type"
 description: "Represents information about a deleted item in a recycleBin of a SharePoint site."
 ms.localizationpriority: "medium"
+doc_type: resourcePageType
 ms.subservice: "sharepoint"
-doc_type: apiPageType
 ---
 
 # recycleBinItem resource type
@@ -21,7 +21,7 @@ Inherits from [baseItem](baseitem.md).
 
 | Method                                                  | Return Type                                                 | Description                                                                              |
 |:--------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md). |
+| [List](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md). |
 
 ## Properties
 

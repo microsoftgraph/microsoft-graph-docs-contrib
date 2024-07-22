@@ -1,6 +1,6 @@
 ---
 title: "longRunningOperation resource type"
-description: "Represents the status of a long-running operation."
+description: "Represents the status of a long-running Microsoft Graph API operation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,15 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status of a long-running operation.
+Represents the status of a long-running Microsoft Graph API operation.
 
-Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md), [engagementAsyncOperation](../resources/engagementasyncoperation.md), and [validateOperation](../resources/industrydata-validateoperation.md).
+The following types derive from this object:
+- [richLongRunningOperation](richlongrunningoperation.md)
+- [attackSimulationOperation](../resources/attacksimulationoperation.md)
+- [engagementAsyncOperation](../resources/engagementasyncoperation.md)
+- [validateOperation](../resources/industrydata-validateoperation.md)
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get longRunningOperation](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
+|[Get](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
 
 ## Properties
 

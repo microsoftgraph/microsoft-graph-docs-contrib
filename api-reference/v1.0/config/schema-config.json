@@ -33,7 +33,10 @@
       "title",
       "description",
       "doc_type",
-      "ms.localizationpriority"
+      "ms.subservice"
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
     ]
   },
   "schemaDiffConfig": {

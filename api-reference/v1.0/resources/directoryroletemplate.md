@@ -19,11 +19,11 @@ Represents a directory role template. A directory role template specifies the pr
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
-|[List directoryRoleTemplate](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) collection |Retrieve a list of directoryRoleTemplate objects.|
+|[Get](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
+|[List](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) collection |Retrieve a list of directoryRoleTemplate objects.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |description|String|The description to set for the directory role. Read-only.|
 |displayName|String|The display name to set for the directory role. Read-only. |

@@ -22,11 +22,15 @@ Inherits from [externalProfile](externalprofile.md).
 
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
-|[Get pendingExternalUserProfile](../api/pendingexternaluserprofile-get.md) | [pendingExternalUserProfile](pendingexternaluserprofile.md) | Gets the properties of a pending external user profile. |
-|[List pendingExternalUserProfiles](../api/directory-list-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Gets a list of all pending external user profiles. |
-|[Create pendingExternalUserProfile](../api/directory-post-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md)| Creates a new pending external user profile. |
-|[Update pendingExternalUserProfile](../api/pendingexternaluserprofile-update.md) | None | Update a pending external user profile. |
-|[Delete pendingExternalUserProfile](../api/directory-delete-pendingexternaluserprofiles.md) | None | Delete a pending external user profile. |
+|[Get](../api/pendingexternaluserprofile-get.md) | [pendingExternalUserProfile](pendingexternaluserprofile.md) | Gets the properties of a pending external user profile. |
+|[List](../api/directory-list-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Gets a list of all pending external user profiles. |
+|[Create](../api/directory-post-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md)| Creates a new pending external user profile. |
+|[Update](../api/pendingexternaluserprofile-update.md) | None | Update a pending external user profile. |
+|[Delete](../api/directory-delete-pendingexternaluserprofiles.md) | None | Delete a pending external user profile. |
+|[List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted external user profiles from a collection of directory objects. |
+|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted external user profile object. |
+|[Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted external user profile object. |
+|[Permanently delete item](../api/directory-deleteditems-delete.md) | None | Permanently delete an external user profile. |
 
 ## Properties
 

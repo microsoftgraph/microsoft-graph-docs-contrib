@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). When an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
 > This method doesn't support channel meetings.
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "meetingattendancereport_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/meetingattendancereport-get-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. Granting an application access policy to the user authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
-To get an attendance report for a webinar session by ID:
+To get an attendance report for a webinar session by ID with delegated and app permission:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
@@ -46,7 +46,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 
 > [!TIP]
 >
->- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 >- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
@@ -62,7 +62,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option as shown in the [example 1](#example-1-get-the-attendance-report-for-an-online-meeting-by-id).
+> The **attendanceRecords** property provides participant data. It is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List attendance records](attendancerecord-list.md) API. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
 
 ## Request headers
 
@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 
 ## Examples
 
-### Example 1: Get the attendance report for an online meeting by ID
+### Example 1: Get the attendance report with attendance records for an online meeting by ID
 
 The following example shows how to get the attendance report for an online meeting with delegated permission.
 
@@ -191,6 +191,9 @@ Content-Type: application/json
 ### Example 2: Get the attendance report for a webinar session by ID
 
 The following example shows how to get the attendance report for a webinar session based on its **id**.
+
+> [!TIP]
+> The **attendanceRecords** property provides participant data. It is a navigation property that isn't returned by default. To retrieve **attendanceRecords**, use the [List attendance records](attendancerecord-list.md) API. Alternatively to retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 1](#example-1-get-the-attendance-report-with-attendance-records-for-an-online-meeting-by-id).
 
 #### Request
 

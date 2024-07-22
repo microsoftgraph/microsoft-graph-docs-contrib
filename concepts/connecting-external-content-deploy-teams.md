@@ -1,7 +1,7 @@
 ---
-title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center"
-description: "Deploy your custom Graph connector in your Teams App with simplified enablement"
-author: monaray
+title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams admin center"
+description: "Deploy your custom Graph connector in your Teams App with simplified enablement."
+author: "monaray97"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
@@ -49,7 +49,7 @@ In the [Microsoft Entra admin center](https://entra.microsoft.com) > expand the 
 When the admin turns **on** or **off** the Microsoft Graph connector from the Teams admin center, Microsoft Graph sends a change notification to the URL specified in the **notificationUrl** property in the manifest. Your app needs to manage these Microsoft Graph connections accordingly.
 
 ### Change notifications
-For details about how to set up change notifications, see [Set up notifications for changes in resource data](/graph/webhooks#change-notifications). The following is an example of a payload.
+For details about how to set up change notifications, see [Set up notifications for changes in resource data](/graph/webhooks#change-notifications). The following example shows a payload.
 
 ![Payload example for Microsoft Graph webhook notification](images/connectors-images/samplepayload-webhooknotif-TAC.png)
 
@@ -59,8 +59,8 @@ Keep the following tips in mind:
 * You can ignore **SubscriptionExpirationDateTime** and **SubscriptionId**.
 * The change notification is for Microsoft Graph connector management only when the @odata.type of the resource data matches the one in the sample payload.
 * The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
-* You can call the Microsoft Graph API to get the customers's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0&tabs=http).
-* Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** are needed when creating the connections.
+* You can call the Microsoft Graph API to get the customer's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
+* Within **resourceData**, use **state** to determine whether to create or delete connections. You need the **connectorsTicket** to create the connections.
 
 ### Handling "connector enable" notification
 
@@ -77,7 +77,7 @@ To handle "connector disable" notifications:
 
 * Determine which Microsoft Graph connections to delete by using the [External connection List API](/graph/api/externalconnectors-externalconnection-list) to query for all connections.
 * Delete all connections by using the [External connection Delete API](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&preserve-view=true&tabs=http).
-* We recommend that you build resiliency logic to retry the deleted connection to verify that it is deleted.
+* We recommend that you build resiliency logic to retry the deleted connection to verify that it's deleted.
 
 #### Request
 ```
@@ -113,7 +113,7 @@ HTTP/1.1 202 Accepted
 Content-type: application/json
 Content-length: 0
 ```
-You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publish the change notification a number of times for a period of about 4 hours. After that, the change notification will be dropped and won't be delivered.
+You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification a number of times for about four hours. After that, the change notification is dropped and isn't delivered.
 
 >[!NOTE]
 >Send the `202 - Accepted` status code as soon as you receive the change notification, even before you validate its authenticity. You are acknowledging the receipt of the change notification and preventing unnecessary retries.
@@ -122,8 +122,8 @@ You need to send a `202 - Accepted` status code in your response to Microsoft Gr
 >If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10-minute period, all subsequent notifications will be dropped.
 
 To validate the authenticity of **validatonToken**:
-- Verify that the token has not expired.
-- Verify that the token has not been tampered with and was issued by the Microsoft identity platform.
+- Verify that the token hasn't expired.
+- Verify that the token hasn't been tampered with and was issued by the Microsoft identity platform.
 - Verify that the **appId** claim in the **validationToken** is 0bf30f3b-4a52-48df-9a82-234910c4a086.
 - Verify the **aud** claim in the **validationToken** is the same as the "{{Teams-appid}}" you specified.
 
@@ -135,7 +135,7 @@ The following example shows a validation token.
 ```
 
 ## Create or delete Microsoft Graph connections
-You will need to send the **connectorTickets** from the payload you received as a `GraphConnectors-Ticket` header while initiating the creation of the Teams app connection, as shown in the following example.
+You need to send the **connectorTickets** from the payload you received as a `GraphConnectors-Ticket` header when you initiate the creation of the Teams app connection. The following example shows this process.
 
 ### Request
 ```
@@ -157,7 +157,7 @@ Authorization: bearer {{accessToken}}
 ```
 
 >[!NOTE]
->- {{connectorId}} is the value of the **id** property in the manifest. For details, see [App manifest schema for Teams](/microsoftteams/platform/resources/schema/manifest-schema).
+>- You must set the {{connectorId}} to the value provided in the notification from Graph Connectors when you create the connection.
 >- You should acquire the {{accessToken}} from the [Microsoft identity platform](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
 
 ### Response
@@ -178,16 +178,16 @@ To validate the experience:
 * Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
 * Select the **Manage apps** blade in the left rail.
 * Go to your Teams application.
-* On the detail page of the Teams app, you will notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
+* On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
 * Select the toggle button to send the enable or disable notifications to the notification endpoint of the app, as specified by the **graphConnector.notificationUrl** property in the app manifest.
 
 ## Make your Microsoft Graph connector available for other organizations in the Teams admin center
 
-You can submit your Microsoft Graph connector packaged as a Teams app extended across Microsoft 365 to [Microsoft Partner Center](https://partner.microsoft.com/). This will allow Microsoft to validate your Microsoft Graph connector, so that other organizations can discover and deploy it in the [Microsoft Teams admin center](https://admin.teams.microsoft.com).
+You can submit your Microsoft Graph connector packaged as a Teams app extended across Microsoft 365 to [Microsoft Partner Center](https://partner.microsoft.com/). This allows Microsoft to validate your Microsoft Graph connector, so that other organizations can discover and deploy it in the [Microsoft Teams admin center](https://admin.teams.microsoft.com).
 
-You can use the [step-by-step submission guide](https://learn.microsoft.com/en-us/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
+You can use the [step-by-step submission guide](/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
 
-You will need to submit a PDF in the **Additional certification info** step. Microsoft will use the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
+You need to submit a PDF in the **Additional certification info** step. Microsoft uses the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
 - Test accounts, license keys, and credentials
 - Custom Vertical Name
 - Semantic Labels

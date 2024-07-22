@@ -3,7 +3,7 @@ title: "List positions"
 description: "Retrieve a list of workPosition objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -157,6 +157,7 @@ Content-type: application/json
           "displayName": "Adventureworks Ltd.",
           "pronunciation": null,
           "department": "Consulting",
+          "companyCode": "A-101",
           "officeLocation": "AW23/344",
           "address": {
             "type": "business",

@@ -5,6 +5,7 @@ author: "mlafleur"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: School
 ---
 
 # educationSchool resource type
@@ -19,12 +20,12 @@ Inherits from [educationOrganization](../resources/educationorganization.md).
 
 | Method                                                     | Return type                                                   | Description                                                                                            |
 | :--------------------------------------------------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [List educationSchools](../api/educationschool-list.md)    | [educationSchool](../resources/educationschool.md) collection | Get a list of the [educationSchool](../resources/educationschool.md) objects and their properties.     |
-| [Create educationSchool](../api/educationschool-post.md) | [educationSchool](../resources/educationschool.md)            | Create a new [educationSchool](../resources/educationschool.md) object.                                |
-| [Get educationSchool](../api/educationschool-get.md)       | [educationSchool](../resources/educationschool.md)            | Read the properties and relationships of an [educationSchool](../resources/educationschool.md) object. |
-| [Update educationSchool](../api/educationschool-update.md) | [educationSchool](../resources/educationschool.md)            | Update the properties of an [educationSchool](../resources/educationschool.md) object.                 |
-| [Delete educationSchool](../api/educationschool-delete.md) | None                                                          | Delete an [educationSchool](../resources/educationschool.md) object.                                  |
-| [delta](../api/educationschool-delta.md)                   | [educationSchool](../resources/educationschool.md) collection | Get incremental changes to the resource collection.                                                    |
+| [List schools](../api/educationschool-list.md)    | [educationSchool](../resources/educationschool.md) collection | Get a list of the [educationSchool](../resources/educationschool.md) objects and their properties.     |
+| [Create school](../api/educationschool-post.md) | [educationSchool](../resources/educationschool.md)            | Create a new [educationSchool](../resources/educationschool.md) object.                                |
+| [Get school](../api/educationschool-get.md)       | [educationSchool](../resources/educationschool.md)            | Read the properties and relationships of an [educationSchool](../resources/educationschool.md) object. |
+| [Update school](../api/educationschool-update.md) | [educationSchool](../resources/educationschool.md)            | Update the properties of an [educationSchool](../resources/educationschool.md) object.                 |
+| [Delete school](../api/educationschool-delete.md) | None                                                          | Delete an [educationSchool](../resources/educationschool.md) object.                                  |
+| [Get changes to schools](../api/educationschool-delta.md)                   | [educationSchool](../resources/educationschool.md) collection | Get incremental changes to the resource collection.                                                    |
 
 ## Properties
 

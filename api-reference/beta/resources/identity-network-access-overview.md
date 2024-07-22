@@ -3,11 +3,12 @@ title: "Manage Microsoft Entra identity and network access by using Microsoft Gr
 description: "Microsoft Graph provides REST APIs to help manage identity and network access capabilities, most of which are available through Microsoft Entra."
 ms.localizationpriority: high
 doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw10
-ms.date: 04/30/2024
+ms.date: 05/31/2024
 ---
 
 # Manage Microsoft Entra identity and network access by using Microsoft Graph
@@ -92,9 +93,9 @@ A core functionality of identity and access management is managing your tenant c
 | Define a group of tenants belonging to your organization and streamline intra-organization cross-tenant collaboration | See [Multitenant organization API overview](multitenantorganization-overview.md) |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
 | Customize the UI/UX in Azure AD B2C using the Identity Experience Framework (IEF) | [trustFrameworkKeySet resource type](trustframeworkkeyset.md) and [trustFrameworkPolicy resource type](trustframeworkpolicy.md) and their associated APIs |
-| User flows for Microsoft Entra External ID for workforce | The following resource types and their associated APIs: <li>[b2xIdentityUserFlow](b2xidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
+| User flows for Microsoft Entra External ID in workforce tenants | The following resource types and their associated APIs: <li>[b2xIdentityUserFlow](b2xidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
 | User flows for Azure AD B2C | The following resource types and their associated APIs: <li>[b2cIdentityUserFlow ](b2cidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
-| User flows for Microsoft Entra External ID for external tenants | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
+| User flows for Microsoft Entra External ID in external tenants | The following resource types and their associated APIs: <li> [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes|
 |Manage app consent policies and condition sets|[permissionGrantPolicy resource type](permissiongrantpolicy.md)|
 |Manage app consent preapproval policies|[permissionGrantPreApprovalPolicy resource type](permissiongrantpreapprovalpolicy.md)|
 |Enable or disable security defaults in Microsoft Entra ID|[identitySecurityDefaultsEnforcementPolicy resource type](identitysecuritydefaultsenforcementpolicy.md)|
@@ -105,14 +106,15 @@ A core functionality of identity and access management is managing your tenant c
 
 For more information, see [Overview of Microsoft Entra ID Governance using Microsoft Graph](identitygovernance-overview.md).
 
-## Microsoft Entra External ID for external tenants
+## Microsoft Entra External ID in external tenants
 
-The following API use cases ar supported to customize how users interact with your customer-facing applications. For administrators, most of the features available in Microsoft Entra ID and also supported for Microsoft Entra External ID for external tenants. For example, domain management, application management, and conditional access.
+The following API use cases ar supported to customize how users interact with your customer-facing applications. For administrators, most of the features available in Microsoft Entra ID and also supported for Microsoft Entra External ID in external tenants. For example, domain management, application management, and conditional access.
 
 | Use cases | API operations |
 |--|--|
-| User flows for Microsoft Entra External ID for external tenants and self-service sign-up experiences | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
-| Manage identity providers for Microsoft Entra External ID. You can identify the identity providers that are supported or configured in the tenant | See [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
+| User flows for Microsoft Entra External ID in external tenants and self-service sign-up experiences | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
+| Manage identity providers for Microsoft Entra External ID. You can identify the identity providers that are supported or configured in the tenant | See [identityProviderBase resource type](identityproviderbase.md) and its associated APIs |
+| Configuring custom URL domains in Microsoft Entra External ID in external tenants | The `CustomUrlDomain` value for the **supportedServices** property of [domain resource type](domain.md) and its associated APIs|
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
 | Manage identity providers for Microsoft Entra External ID, such as social identities | [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
 | Manage user profiles in Microsoft Entra External ID for customers | For more information, see [Default user permissions in customer tenants](/graph/api/resources/users#default-user-permissions-in-customer-tenants) |
@@ -127,14 +129,13 @@ For more information, see [Discover, remediate, and monitor permissions in multi
 For more information, see [Secure access to cloud, public, and private apps using Microsoft Graph network access APIs](networkaccess-global-secure-access-api-overview.md).
 
 ## Partner tenant management
-
-With Microsoft Graph, you can access [Microsoft Entra](/entra/fundamentals/whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you're a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods apps can use, for example, to discover information about users' transitive group and role memberships.
-
+Microsoft Graph also provides the following identity and access capabilities for Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs to help manage their customer tenants.
 
 | Use cases                                           | API operations                                                |
 |-----------------------------------------------------|---------------------------------------------------------------|
 | Manage contracts for the partner with its customers | [contract resource type](contract.md) and its associated APIs |
-| Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
+| Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
+| Get detections and security alerts for unauthorized party abuse, account takeovers, and anomalous usage of Azure subscriptions in the customer tenants that you're responsible for. | See [Use the partner security alert API in Microsoft Graph](identity-network-access-overview.md) |
 
 ---
 

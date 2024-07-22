@@ -20,14 +20,9 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md)  collection|Retrieve all identity providers configured in a tenant including the [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object type. There is no way to retrieve only the OpenID Connect identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)|Create a new [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
-|[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
-|[Update](../api/identityproviderbase-update.md)|None|Update an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+None.
+
+For the list of API operations for managing OpenID Connect identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 

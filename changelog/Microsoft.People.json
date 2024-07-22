@@ -1,5 +1,107 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "photoUpdateSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoUpdateSource** enumeration type.",
+          "Target": "photoUpdateSource"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Resource",
+          "ChangedApiName": "photoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "photoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoUpdateSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-delete-photoupdatesettings?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        }
+      ],
+      "Id": "8a7c8eff-e942-4888-80b2-447a38615680",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-17T14:35:08.1357387Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"	  
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "192ceafc-dd91-4a74-8daf-289025ca3dd8",
+          "ApiChange": "Property",
+          "ChangedApiName": "companyCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **companyCode** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.",
+          "Target": "companyDetail"
+        }
+      ],
+      "Id": "192ceafc-dd91-4a74-8daf-289025ca3dd8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-10T15:33:39.4949087Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ba51d4ae-b58a-4038-bb67-a1d76c56f327",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSourceAnnotation",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSourceAnnotation](https://learn.microsoft.com/en-us/graph/api/resources/profileSourceAnnotation?view=graph-rest-beta) resource.",
+          "Target": "profileSourceAnnotation"
+        },
+        {
+          "Id": "ba51d4ae-b58a-4038-bb67-a1d76c56f327",
+          "ApiChange": "Property",
+          "ChangedApiName": "sources",
+          "ChangeType": "Addition",
+          "Description": "Added the **sources** property to the [itemFacet](https://learn.microsoft.com/en-us/graph/api/resources/itemFacet?view=graph-rest-beta) resource.",
+          "Target": "itemFacet"
+        }
+      ],
+      "Id": "ba51d4ae-b58a-4038-bb67-a1d76c56f327",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-14T12:39:41.9197795Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
     {
       "ChangeList": [
         {
@@ -595,6 +697,40 @@
       "CreatedDateTime": "2024-04-03T11:19:49.1889037Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "insightsSettings"
+        },
+        {
+          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemInsights](https://learn.microsoft.com/en-us/graph/api/resources/itemInsights?view=graph-rest-1.0) resource.",
+          "Target": "itemInsights"
+        },
+        {
+          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsights** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource.",
+          "Target": "peopleAdminSettings"
+        }
+      ],
+      "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-05T15:26:15.2757589Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
     }
   ]
 }

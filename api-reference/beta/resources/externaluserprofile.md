@@ -22,10 +22,14 @@ Inherits from [externalProfile](externalprofile.md).
 
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
-|[Get externalUserProfile](../api/externaluserprofile-get.md) | [externalUserProfile](externaluserprofile.md) | Gets the properties of an external user profile. |
-|[List externalUserProfiles](../api/directory-list-externaluserprofiles.md) |[externalUserProfile](externaluserprofile.md) collection| Gets a list of all external user profiles. |
-|[Update externalUserProfile](../api/externaluserprofile-update.md) | None | Update an external user profile. |
-|[Delete externalUserProfile](../api/directory-delete-externaluserprofiles.md) | None | Delete an external user profile. |
+|[Get](../api/externaluserprofile-get.md) | [externalUserProfile](externaluserprofile.md) | Gets the properties of an external user profile. |
+|[List](../api/directory-list-externaluserprofiles.md) |[externalUserProfile](externaluserprofile.md) collection| Gets a list of all external user profiles. |
+|[Update](../api/externaluserprofile-update.md) | None | Update an external user profile. |
+|[Delete](../api/directory-delete-externaluserprofiles.md) | None | Delete an external user profile. |
+|[List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted external user profiles from a collection of directory objects. |
+|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted external user profile object. |
+|[Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted external user profile object. |
+|[Permanently delete item](../api/directory-deleteditems-delete.md) | None | Permanently delete an external user profile. |
 
 ## Properties
 

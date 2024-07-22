@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AlexFilipin"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 03/12/2024
 ---
 
@@ -89,6 +90,7 @@ After identifying the tasks and execution conditions that you want to define for
 
 You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of scheduled new hires and terminations, while you can run a workflow on-demand immediately to terminate an employee's access if there is a sensitive event.
 
+
 ### Workflow versions
 
 While a workflow is in use, you might need to update execution conditions and tasks for a workflow. However, Lifecycle Workflows doesn't allow you to update these properties for an existing workflow.
@@ -114,15 +116,6 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 ## License checks
 
 Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
-
-## Role and application permission authorization checks
-
-The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage Lifecycle Workflows.
-
-| Operation | Application permissions | Required directory role of the calling user |
-|:------------------|:------------|:--------------------------------------------|
-| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
-| Create, Update, or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
 ## Related content
 

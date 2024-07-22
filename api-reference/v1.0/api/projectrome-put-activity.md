@@ -1,6 +1,6 @@
 ---
 title: "Create or replace an activity"
-description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use deep insert."
+description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **activityHistoryItems** in one request, you can use deep insert."
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 author: "ailae"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new or replace an existing [user activity](../resources/projectrome-activity.md) for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
+Create a new or replace an existing [user activity](../resources/projectrome-activity.md) for your app. If you'd like to create a user activity and its related **activityHistoryItems** in one request, you can use [deep insert](#example-2-deep-insert).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ PUT /me/activities/{appActivityId}
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

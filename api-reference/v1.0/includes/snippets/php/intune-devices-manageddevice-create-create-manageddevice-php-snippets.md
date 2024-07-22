@@ -7,9 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ManagedDevice;
+use Microsoft\Graph\Generated\Models\ManagedDeviceOwnerType;
 use Microsoft\Graph\Generated\Models\DeviceActionResult;
+use Microsoft\Graph\Generated\Models\ActionState;
+use Microsoft\Graph\Generated\Models\ComplianceState;
+use Microsoft\Graph\Generated\Models\ManagementAgentType;
+use Microsoft\Graph\Generated\Models\DeviceEnrollmentType;
+use Microsoft\Graph\Generated\Models\DeviceRegistrationState;
+use Microsoft\Graph\Generated\Models\DeviceManagementExchangeAccessState;
+use Microsoft\Graph\Generated\Models\DeviceManagementExchangeAccessStateReason;
 use Microsoft\Graph\Generated\Models\ConfigurationManagerClientEnabledFeatures;
 use Microsoft\Graph\Generated\Models\DeviceHealthAttestationState;
+use Microsoft\Graph\Generated\Models\ManagedDevicePartnerReportedHealthState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

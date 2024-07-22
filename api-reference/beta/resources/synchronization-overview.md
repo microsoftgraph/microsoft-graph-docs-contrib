@@ -69,12 +69,11 @@ To work with the Microsoft Entra synchronization APIs, Microsoft Graph supports 
 - Application.Read.All
 - Application.ReadWrite.All
 
-And the following [Microsoft Entra directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+And the following least privileged [Microsoft Entra directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Application Administrator
 - Cloud Application Administrator
 - Hybrid Identity Administrator
-- Global Administrator
 
 For more information about the privileges you need to call each API, visit the respective API reference documentation.
 

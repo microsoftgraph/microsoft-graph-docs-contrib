@@ -1,5 +1,5 @@
 ---
-title: "MOverview of access reviews APIs"
+title: "Overview of access reviews APIs"
 description: "Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Microsoft Entra resources."
 ms.localizationpriority: medium
 author: "jyothig123"
@@ -62,10 +62,10 @@ The following table lists the methods that you can use to interact with access r
 
 The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage access reviews.
 
-| Operation | Application permissions | Required directory role of the calling user |
+| Operation | Application permissions | Least privileged directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
-| Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
+| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Reader, Security Administrator, Security Reader or User Administrator |
+| Create, Update or Delete | AccessReview.ReadWrite.All | User Administrator |
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 

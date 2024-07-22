@@ -21,8 +21,8 @@ Inherits from [entity](entity.md).
 
 | Method                                                              | Return Type                                                | Description                                                                 |
 | :------------------------------------------------------------------ | :--------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [Get companySubscription](../api/companysubscription-get.md)      | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List companySubscriptions](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [Get](../api/companysubscription-get.md)      | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
+| [List](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "commerceSubscriptionId": "String",
+  "commerceSubscriptionId": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",

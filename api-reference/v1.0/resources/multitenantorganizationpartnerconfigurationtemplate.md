@@ -25,9 +25,9 @@ In its default and unconfigured state, where all template properties (other than
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get multiTenantOrganizationPartnerConfigurationTemplate](../api/multitenantorganizationpartnerconfigurationtemplate-get.md)|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Get the inbound and outbound partner configuration settings of the template.|
-|[Update multiTenantOrganizationPartnerConfigurationTemplate](../api/multitenantorganizationpartnerconfigurationtemplate-update.md)|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Update the inbound and outbound partner configuration settings of the template.|
-|[resetToDefaultSettings](../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md)|None|Reset the inbound and outbound partner configuration settings of the template to the default values.|
+|[Get](../api/multitenantorganizationpartnerconfigurationtemplate-get.md)|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Get the inbound and outbound partner configuration settings of the template.|
+|[Update](../api/multitenantorganizationpartnerconfigurationtemplate-update.md)|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Update the inbound and outbound partner configuration settings of the template.|
+|[Reset](../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md)|None|Reset the inbound and outbound partner configuration settings of the template to the default values.|
 
 ## Properties
 |Property|Type|Description|

@@ -21,6 +21,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
+- [OData query capabilities](/graph/query-parameters) including `$select`, `$filter`, `$search`, and `$top`. Specific usages are supported only with [Advanced query capabilities](/graph/aad-advanced-queries#group-properties).
 
 ## Methods
 
@@ -32,19 +33,20 @@ This resource supports:
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
 |[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Get newly created, updated, or deleted **administrativeUnits** without having to perform a full read of the entire resource collection.|
-|[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user or group).|
+|**Memberships**| | |
+|[Add member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user or group).|
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user and group) members.|
-|[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
-|[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
-|[Add a scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign a Microsoft Entra role with administrative unit scope.|
-|[List scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List Microsoft Entra role assignments with administrative unit scope.|
-|[Get a scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a Microsoft Entra role assignment with administrative unit scope.|
-|[Remove a scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a Microsoft Entra role assignment with administrative unit scope.|
-|**Open extensions**| | |
-|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
-|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Get member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
+|[Remove member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
+|**Role assignments**| | |
+|[Assign role with scope](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign a Microsoft Entra role with administrative unit scope.|
+|[List role assignments with scope](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List Microsoft Entra role assignments with administrative unit scope.|
+|[Get role assignment with scope](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a Microsoft Entra role assignment with administrative unit scope.|
+|[Remove role assignment with scope](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a Microsoft Entra role assignment with administrative unit scope.|
+|**Deleted items**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted administrative units from a collection of directory objects. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted administrative unit object. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted administrative unit object. |
 
 > [!NOTE]
 > The URL endpoint for calling the **administrativeUnits** API is `/administrativeUnits` in the `beta` endpoint but `/directory/administrativeUnits` in the `v1.0` endpoint.

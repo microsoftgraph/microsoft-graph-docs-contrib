@@ -3,7 +3,7 @@ title: "educationalActivity resource type"
 description: "educationalActivity resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits metadata properties from [itemFacet](itemfacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List educationalActivities](../api/profile-list-educationalactivities.md)|[educationalActivity](../resources/educationalactivity.md) collection|Get the educationalActivity resources from the educationalActivities navigation property.|
-|[Create educationalActivity ](../api/profile-post-educationalactivities.md)|[educationalActivity](../resources/educationalactivity.md)|Create a new educationalActivity object.|
-|[Get educationalActivity](../api/educationalactivity-get.md)|[educationalActivity](../resources/educationalactivity.md)|Read the properties and relationships of an [educationalActivity](../resources/educationalactivity.md) object.|
-|[Update educationalActivity](../api/educationalactivity-update.md)|[educationalActivity](../resources/educationalactivity.md)|Update the properties of an [educationalActivity](../resources/educationalactivity.md) object.|
-|[Delete educationalActivity](../api/educationalactivity-delete.md)|None|Deletes an [educationalActivity](../resources/educationalactivity.md) object.|
+|[List](../api/profile-list-educationalactivities.md)|[educationalActivity](../resources/educationalactivity.md) collection|Get the educationalActivity resources from the educationalActivities navigation property.|
+|[Create](../api/profile-post-educationalactivities.md)|[educationalActivity](../resources/educationalactivity.md)|Create a new educationalActivity object.|
+|[Get](../api/educationalactivity-get.md)|[educationalActivity](../resources/educationalactivity.md)|Read the properties and relationships of an [educationalActivity](../resources/educationalactivity.md) object.|
+|[Update](../api/educationalactivity-update.md)|[educationalActivity](../resources/educationalactivity.md)|Update the properties of an [educationalActivity](../resources/educationalactivity.md) object.|
+|[Delete](../api/educationalactivity-delete.md)|None|Deletes an [educationalActivity](../resources/educationalactivity.md) object.|
 
 ## Properties
 

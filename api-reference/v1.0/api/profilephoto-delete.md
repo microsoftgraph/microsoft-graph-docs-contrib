@@ -3,7 +3,7 @@ title: "Delete profilePhoto"
 description: "Delete the photo for the signed-in user or the specified group."
 ms.localizationpriority: medium
 author: "kristinmcleod"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -111,6 +111,10 @@ DELETE https://graph.microsoft.com/v1.0/me/photo/$value
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-profilephoto-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilephoto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Roles assigned outside PIM
 ---
 
 # rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident resource type
@@ -21,6 +22,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |Property|Type|Description|
 |:---|:---|:---|
 |assigneeDisplayName|String|Display name of the subject that the incident applies to.|
+|assignmentCreatedDateTime|DateTimeOffset|Date and time of assignment creation.|
 |assigneeId|String|The identifier of the subject that the incident applies to.|
 |assigneeUserPrincipalName|String|User principal name of the subject that the incident applies to. Applies to user principals.|
 |id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|

@@ -21,17 +21,17 @@ Inherits from [entity](../resources/entity.md).
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |
-|[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Read the properties and relationships of an [accessReviewInstance](../resources/accessreviewinstance.md) object. |
-|[Update accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Update the reviewers of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
-|[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Returns all instances of a given [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) for which the calling user is the reviewer of one or more decisions.|
+|[List](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |
+|[Get](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Read the properties and relationships of an [accessReviewInstance](../resources/accessreviewinstance.md) object. |
+|[Update](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Update the reviewers of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
+|[Filter by current user](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Returns all instances of a given [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) for which the calling user is the reviewer of one or more decisions.|
 |[List contacted reviewers](../api/accessreviewinstance-list-contactedreviewers.md)|[accessReviewReviewer](../resources/accessreviewreviewer.md) collection|Get the reviewers who received notifications for an access review instance.|
-|[sendReminder](../api/accessreviewinstance-sendreminder.md) | None | Send a reminder to the reviewers of an accessReviewInstance. |
-|[stop](../api/accessreviewinstance-stop.md) | None | Manually stop an accessReviewInstance. |
-|[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | None | Allows the calling user to accept the decision recommendation for each **accessReviewInstanceDecisionItem** that is marked as `NotReviewed` and for which the caller is a reviewer of the associated **accessReviewInstance**. |
-|[applyDecisions](../api/accessreviewinstance-applydecisions.md) | None | Manually apply decisions on an **accessReviewInstance**. |
-|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|Review batches of principals or resources in one call.|
-|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|None|Resets all decision items on an instance to `notReviewed`.|
+|[Send reminder](../api/accessreviewinstance-sendreminder.md) | None | Send a reminder to the reviewers of an accessReviewInstance. |
+|[Stop](../api/accessreviewinstance-stop.md) | None | Manually stop an accessReviewInstance. |
+|[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None | Allows the calling user to accept the decision recommendation for each **accessReviewInstanceDecisionItem** that is marked as `NotReviewed` and for which the caller is a reviewer of the associated **accessReviewInstance**. |
+|[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None | Manually apply decisions on an **accessReviewInstance**. |
+|[Batch record decisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|Review batches of principals or resources in one call.|
+|[Reset decisions](../api/accessreviewinstance-resetdecisions.md)|None|Resets all decision items on an instance to `notReviewed`.|
 |[List stages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection| Retrieve the stages in a multi-stage access review instance.|
 |[List decisions](../api/accessreviewinstance-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the accessReviewInstanceDecisionItem resources from the decisions navigation property.|
 
@@ -48,11 +48,11 @@ Inherits from [entity](../resources/entity.md).
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 | contactedReviewers   |[accessReviewReviewer](../resources/accessreviewreviewer.md) collection| Returns the collection of reviewers who were contacted to complete this review. While the **reviewers** and **fallbackReviewers** properties of the **accessReviewScheduleDefinition** might specify group owners or managers as **reviewers**, **contactedReviewers** returns their individual identities. Supports `$select`. Read-only. |
 | decisions               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Each user reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed. |
-|stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
+| stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 
 ## JSON representation
 
@@ -75,7 +75,6 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.accessReviewReviewer"
     }
   ],
- "displayName": "string",
  "endDateTime": "string (timestamp)",
  "fallbackReviewers": [
     {

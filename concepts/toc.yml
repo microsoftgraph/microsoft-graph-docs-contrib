@@ -292,6 +292,8 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
+  - name: Deploy with Bicep
+    href: /graph/templates?context=graph/context
 - name: Services and features
   expanded: true
   items:
@@ -302,13 +304,13 @@ items:
       displayName: users
     - name: Default user permissions
       href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
+    - name: Profile photo settings
+      href: profilephoto-configure-settings.md
   - name: Groups
     items:
     - name: Overview
       href: /graph/api/resources/groups-overview?context=graph/context
       displayName: groups
-    - name: Microsoft 365 groups
-      href: microsoft365-groups-concept-overview.md
     - name: Microsoft 365 group behaviors and provisioning options
       href: group-set-options.md
     - name: Microsoft 365 group settings
@@ -359,21 +361,12 @@ items:
       href: data-connect-datasets.md
     - name: User selection and filtering
       href: data-connect-filtering.md
-    - name: Updated onboarding experience
-      items:
-      - name: Onboarding experience overview
-        href: onboarding-experience-overview.md
-      - name: App registration
-        href: app-registration.md
-      - name: App authorization
-        href: app-authorization.md
-      - name: Existing customer migration
-        href: existing-customer-migration.md
+    - name: App registration
+      href: app-registration.md
+    - name: App authorization
+      href: app-authorization.md
     - name: Templates
       href: data-connect-templates-overview.md
-    - name: Integrate with PAM
-      href: data-connect-pam.md
-      displayName: Privileged Access Management
     - name: Define dataset scopes
       href: data-connect-users-and-groups.md
     - name: Security, privacy, and compliance
@@ -504,14 +497,14 @@ items:
       href: education-upload-resource-overview.md
     - name: Upload feedback files
       href: education-upload-feedback-resource-overview.md
-    - name: Assignment and submission states
+    - name: Assignment and submission status
       items:
       - name: Overview
-        href: assignments-submissions-states-transition.md
-      - name: Assignment states transition
-        href: assignments-states-transition.md
-      - name: Submission states transition
-        href: submissions-states-transition.md
+        href: assignments-submissions-status-transition.md
+      - name: Assignment status transition
+        href: assignments-status-transition.md
+      - name: Submission status transition
+        href: submissions-status-transition.md
     - name: Specify the default channel for assignment notifications
       href: education-build-notificationchannelurl.md
     - name: Set up an EDU development environment
@@ -546,6 +539,8 @@ items:
         href: download-resources-from-assignment.md
       - name: Share assignments with an embedded Teams application
         href: embed-teams-app-in-assignment.md
+      - name: Work with grading categories
+        href: work-with-grading-categories.md  
   - name: External data connections
     items:
     - name: Connectors overview
@@ -696,7 +691,7 @@ items:
       href: outlook-send-mime-message.md
     - name: Send mail from another user
       href: outlook-send-mail-from-other-user.md
-    - name: Explainer for sending mail
+    - name: Send mail process
       href: outlook-things-to-know-about-send-mail.md
     - name: Attach large files
       href: outlook-large-attachments.md
@@ -763,7 +758,7 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
-    - name: Customize item insights privacy (preview)
+    - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
@@ -1003,6 +998,12 @@ items:
       - name: Microsoft Entra built-in roles
         displayName: Microsoft Graph permissions
         href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
+      - name: Best practices for Teams app permissions
+        displayName: Best practices for using Microsoft Graph permissions to build Teams apps
+        href: best-practices-graph-permission.md
+      - name: Selected permissions in OneDrive and SharePoint
+        displayName: Selected Permissions in OneDrive and SharePoint
+        href: permissions-selected-overview.md
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access
@@ -1044,8 +1045,12 @@ items:
       - name: Service-specific limits
         displayName: throttling
         href: throttling-limits.md
+    - name: Work with long-running actions
+      href: long-running-actions-overview.md
     - name: Enable metered APIs
       href: metered-api-setup.md
+    - name: Metered APIs FAQ
+      href: metered-api-faq.md
     - name: Work with Graph Explorer
       href: graph-explorer/graph-explorer-features.md
     - name: Use Postman
@@ -1183,8 +1188,6 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
-  - name: Outlook REST APIs
-    href: /outlook/rest/compare-graph?context=graph/context
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference

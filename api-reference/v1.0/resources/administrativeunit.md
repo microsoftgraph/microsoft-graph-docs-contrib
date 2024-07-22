@@ -19,6 +19,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
+- [OData query capabilities](/graph/query-parameters) including `$select`, `$filter`, `$search`, and `$top`. Specific usages are supported only with [Advanced query capabilities](/graph/aad-advanced-queries#group-properties).
 
 
 ## Methods
@@ -30,14 +31,20 @@ This resource supports:
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
-|[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user, group, or device).|
+|**Memberships**| | |
+|[Add member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user, group, or device).|
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user, group, or device) members.|
-|[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
-|[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
-|[Add a scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign a Microsoft Entra role with administrative unit scope.|
-|[List scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List Microsoft Entra role assignments with administrative unit scope.|
-|[Get a scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a Microsoft Entra role assignment with administrative unit scope.|
-|[Remove a scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a Microsoft Entra role assignment with administrative unit scope.|
+|[Get member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
+|[Remove member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
+|**Role assignments**| | |
+|[List role assignments with scope](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List Microsoft Entra role assignments with administrative unit scope.|
+|[Assign role with scope](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign a Microsoft Entra role with administrative unit scope.|
+|[Get role assignment with scope](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a Microsoft Entra role assignment with administrative unit scope.|
+|[Remove role assignment with scope](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a Microsoft Entra role assignment with administrative unit scope.|
+|**Deleted items**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted administrative units from a collection of directory objects. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted administrative unit object. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted administrative unit object. |
 
 ## Properties
 

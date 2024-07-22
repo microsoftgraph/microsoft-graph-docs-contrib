@@ -1,10 +1,13 @@
 ---
 title: "Govern membership and ownership of groups using privileged identity management (PIM) for groups"
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
-author: "ilyalushnikov"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: ilyal
 ms.localizationpriority: medium
+doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: "entra-id-governance"
-doc_type: resourcePageType
 ms.date: 10/03/2023
 ---
 
@@ -153,7 +156,7 @@ Only the approver of the request can call the `/approval` and `/approvalStep` en
 - [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Microsoft Entra Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Privileged Identity Management (PIM) for groups](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
-  
+
   <!-- {
   "type": "#page.annotation",
   "description": "Govern membership and ownership of groups using privileged identity management (PIM) for groups",

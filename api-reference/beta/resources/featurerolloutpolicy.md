@@ -29,13 +29,13 @@ For more information about staged rollout, see [How to configure staged rollout 
 
 | Method                                                                         | Return Type                                     | Description                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
-| [List featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects.                          |
-| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. |
-| [Create featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
-| [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object.                     |
-| [Delete featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | None                                            | Delete a featureRolloutPolicy object.                                     |
-| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
-| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
+| [List](../api/list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects.                          |
+| [Get](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. |
+| [Create](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
+| [Update](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object.                     |
+| [Delete](../api/featurerolloutpolicy-delete.md)           | None                                            | Delete a featureRolloutPolicy object.                                     |
+| [Create applies to](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
+| [Delete applies to](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
 
 ## Properties
 

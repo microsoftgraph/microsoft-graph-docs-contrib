@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	"@odata.type" = "microsoft.graph.industryData.azureDataLakeConnector"
-	displayName = "API Monitor 60201009"
+	displayName = "CSV files from SIS"
 }
 
 Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId -BodyParameter $params

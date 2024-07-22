@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceManagementConfigurationGroupSettingCollectionInstance resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Instance of a GroupSettingCollection
 
@@ -25,7 +25,7 @@ Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune
 |:---|:---|:---|
 |settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|groupSettingCollectionValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md) collection|A collection of GroupSetting values|
+|groupSettingCollectionValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-mam-devicemanagementconfigurationgroupsettingvalue.md) collection|A collection of GroupSetting values|
 
 ## Relationships
 None

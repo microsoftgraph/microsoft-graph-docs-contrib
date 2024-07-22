@@ -27,6 +27,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/owners/read` role permission. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator
+- Exchange Administrator - for Microsoft 365 groups only
+- SharePoint Administrator - for Microsoft 365 groups only
+- Teams Administrator - for Microsoft 365 groups only
+- Yammer Administrator - for Microsoft 365 groups only
+- Intune Administrator - for security groups only
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +60,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

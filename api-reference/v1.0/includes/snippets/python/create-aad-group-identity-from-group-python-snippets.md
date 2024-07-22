@@ -5,7 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.external_connectors.identity import Identity
+from msgraph.generated.models.identity_type import IdentityType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -1,6 +1,6 @@
 ---
 title: "Use query parameters to customize responses"
-description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. Includes common parameters."
+description: "Microsoft Graph supports query parameters that you can use to specify and control the amount of data returned in a response."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
@@ -8,18 +8,18 @@ ms.topic: concept-article
 ms.subservice: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/22/2023
+ms.date: 07/16/2024
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use OData query parameters, so that I can control the data retrieval and optimize data usage.
 
 ---
 
 # Use query parameters to customize responses
 
-Microsoft Graph supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the v1.0 and beta endpoints.
+Microsoft Graph supports query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the *v1.0* and *beta* endpoints.
 
 > [!TIP] 
-> On the beta endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
-> On the v1 endpoint, the `$` prefix is optional for only a subset of APIs. For simplicity, always include `$` if using the v1 endpoint.
+> On the *beta* endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+> On the *v1.0* endpoint, the `$` prefix is optional for only a subset of APIs. **For simplicity, always include `$` across all versions**.
 
 Query parameters can be [OData system query options](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) or other query parameters.
 
@@ -42,11 +42,11 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 | [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
-To know the OData system query options that an API and its properties support, see the **Properties** table in the resource page, and the **Optional query parameters** section of the LIST and GET operations for the API.
+To know the OData system query options that an API and its properties support, see the "Properties" table in the resource page, and the "Optional query parameters" section of the LIST and GET operations for the API.
 
 ## Other query parameters
 
-| Name                     | Description | Example
+| Name                     | Description | Example |
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
@@ -56,17 +56,17 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 
 | Name                     | Description | Example 
 |:-------------------------|:------------|:---------|
-| [$count](/graph/api/user-list#example-3-get-only-a-count-of-users)| Retrieves the integer total of the collection. | `GET /users/$count` <br> `GET /groups/{id}/members/$count`|
-| [$ref](/graph/api/group-post-members) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
-| [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
-| [$batch](/graph/json-batching) | Combine multiple HTTP requests into a batch request. | `POST /$batch` |
+| $count| Retrieves the integer total of the collection. | `GET /users/$count` <br> `GET /groups/{id}/members/$count` <br/><br/> [Get a count of users](/graph/api/user-list#example-3-get-only-a-count-of-users)|
+| $ref | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` <br/><br/> [Add a member to a group](/graph/api/group-post-members) |
+| $value | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` <br/><br/> [Get the photo for a user, group, or team](/graph/api/profilephoto-get) |
+| $batch | Combine multiple HTTP requests into a batch request. | `POST /$batch` <br/><br/> [JSON batching](/graph/json-batching) |
 
 ## Encoding query parameters
 
-The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately. In some cases, you may have to double-encode the values.
+The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) handle this encoding for you. If a query fails, one possible cause is failure to encode the query parameter values appropriately. In some cases, you need to double-encode the values.
 
 > [!NOTE]
-> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
+> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the *v1.0* endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
 
 For example, an unencoded URL looks like this:
 
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 
 ### Escaping single quotes
 
-For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
+For requests that use single quotes, if any parameter values also contain single quotes, they must be double escaped; otherwise, the request fails due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
 
 
 # [HTTP](#tab/http)
@@ -266,7 +266,7 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 > 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 > 2. Use of `$count` is not supported in Azure AD B2C tenants.
 
-For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
+For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in an **@odata.count** property.
 
 
 # [HTTP](#tab/http)
@@ -312,20 +312,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 ---
 
-The `$count` query parameter is supported for collections of the following frequently used resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
-- [administrativeUnit](/graph/api/resources/administrativeunit)
-- [application](/graph/api/resources/application)
-- [orgContact](/graph/api/resources/orgcontact)
-- [device](/graph/api/resources/device)
-- [group](/graph/api/resources/group)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [user](/graph/api/resources/user)
+For directory objects, that is, resources that derive from [directoryObject](/graph/api/resources/directoryobject), the `$count` query parameter is only supported in [advanced queries](/graph/aad-advanced-queries). 
 
 ## expand parameter
 
-Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
+Many Microsoft Graph resources expose both declared properties of the resource and its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
 
-Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. Only one relationship can be expanded in a single request.
+You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. For some APIs, only one relationship can be expanded in a single request.
 
 The following example gets root drive information along with the top-level child items in a drive:
 
@@ -481,13 +474,13 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ---
 
 > [!NOTE]
-> The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
+> The `$format` query parameter supports a number of formats (for example, `atom`, `xml`, and `json`) but results may not be returned in all formats.
 
 ## orderby parameter
 
 Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph. The default order is ascending order.
 
-For example, the following request returns the users in the organization ordered by their display name:
+For example, the following request returns the users in the organization ordered by their display name in ascending order:
 
 
 # [HTTP](#tab/http)
@@ -533,7 +526,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 
 ---
 
-You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
+Some APIs support sorting by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 
 # [HTTP](#tab/http)
@@ -579,7 +572,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 ---
 
-To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name%20desc`. If the sort order is not specified, the default (ascending order) is inferred.
+To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name desc` (unencoded), `?$orderby=name%20desc` (URL encoded). If the sort order isn't specified, the default ascending order is inferred.
 
 With some APIs, you can order results on multiple properties. For example, the following request orders the messages in the user's Inbox, first by the name of the person who sent it in descending order (Z to A), and then by subject in ascending order (default).
 
@@ -628,7 +621,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 ---
 
 > [!NOTE]
-> When you specify `$filter` the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
+> When you specify `$filter`, the service infers a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and **receivedDateTime** properties in descending order.
@@ -686,7 +679,7 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 ## select parameter
 
-Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `$select`, you can specify a subset or a superset of the default properties.
+Use the `$select` query parameter to return a subset of properties for a resource. With `$select`, you can specify a subset or a superset of the default properties.
 
 When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
 
@@ -743,7 +736,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 > [!IMPORTANT]
 > In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
-> In `v1.0`, some Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
+> In *v1.0*, some Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.
 
 ## skip parameter
 
@@ -794,14 +787,14 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ---
 
-Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
+Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs return an **@odata.nextLink** property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
 [Directory objects](/graph/api/resources/directoryobject) such as **user**, **group**, and **application** don't support `$skip`.
 
 ## skipToken parameter
 
 Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
-The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
+This parameter contains an opaque token that references the next page of results and is returned in the URL provided in the **@odata.nextLink** property in the response. To learn more, see [Paging](./paging.md).
 
 > [!NOTE]
 > If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property is present only in the first page.
@@ -812,7 +805,7 @@ The `$skiptoken` parameter contains an opaque token that references the next pag
 
 Use the `$top` query parameter to specify the number of items to be included in the result.
 
-If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
+If more items remain in the result set, the response body contains an **@odata.nextLink** parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
 The minimum value of $top is 1 and the maximum depends on the corresponding API.  
 
@@ -867,7 +860,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship.
+Some requests return an error message if a specified query parameter isn't supported. For example, you can't use `$expand` on the `user/photo` relationship.
 
 ```http
 https://graph.microsoft.com/v1.0/me?$expand=photo
@@ -886,7 +879,7 @@ https://graph.microsoft.com/v1.0/me?$expand=photo
 }
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+However, sometimes query parameters specified in a request fail silently. For example, for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358

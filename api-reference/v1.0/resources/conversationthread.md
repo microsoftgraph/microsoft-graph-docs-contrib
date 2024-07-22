@@ -20,13 +20,13 @@ A new thread is created when a recipient is removed from the thread.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List threads](../api/group-list-threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
-|[Create thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
-|[Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
+|[List](../api/group-list-threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
+|[Create](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
+|[Get](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
 |[Delete](../api/conversationthread-delete.md) | None |Delete conversationThread object. |
-|[Reply](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
-|[List Posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
+|[Reply to conversation thread](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
+|[List posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
 
 ## Properties
 | Property              | Type                                 | Description                                                                                                                                                                                      |

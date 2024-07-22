@@ -35,7 +35,7 @@ PATCH /groups/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +51,7 @@ The following table specifies the properties that can be updated.
 | description             | String  | An optional description for the group.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | displayName             | String  | The display name for the group. This property is required when a group is created and it cannot be cleared during updates.                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
-| preferredDataLocation   | String  | The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned one of the following Microsoft Entra roles: <br><ul><li> Global Administrator <li> User Account Administrator <li> Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| preferredDataLocation   | String  | The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned at least one of the following Microsoft Entra roles: <br><ul><li> User Account Administrator <li> Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Boolean | Specifies whether the group is a security group.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | uniqueName                     | String                                                                   | The unique identifier that can be assigned to a group and used as an alternate key. Can updated only if `null` and is immutable once set. |
 | visibility              | String  | Specifies the visibility of a Microsoft 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).                                                                                                                                                                                                                                                                                                                                          |
@@ -89,17 +89,13 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0d09007d-45b2-458c-b180-880dde3a302e
 Content-type: application/json
 
 {
-  "description": "Library Assist",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mailEnabled": true,
-  "mailNickname": "library-help"
+  "description": "Library Assist - ADC",
+  "displayName": "Library Assist - ADC",
+  "mailNickname": "library-help-adc"
 }
 ```
 

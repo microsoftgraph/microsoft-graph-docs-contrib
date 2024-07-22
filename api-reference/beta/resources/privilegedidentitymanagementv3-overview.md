@@ -1,10 +1,13 @@
 ---
 title: "Manage Microsoft Entra role assignments using the privileged identity management (PIM) APIs"
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
-author: "rkarim-ms"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
+doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: "entra-id-governance"
-doc_type: resourcePageType
 ms.date: 10/12/2023
 ---
 
@@ -15,7 +18,7 @@ ms.date: 10/12/2023
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
-> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager (ARM)](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
 ## PIM APIs for managing active role assignments
 
@@ -140,7 +143,7 @@ The following permissions are supported for PIM for Microsoft Entra roles API op
 | RoleEligibilitySchedule.Read.Directory <br/> RoleEligibilitySchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage role eligibility operations.         |
 | RoleManagementAlert.Read.Directory <br/> RoleManagementAlert.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage security alerts for Microsoft Entra roles.         |
 
-For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID. 
+For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID.
 -->
 ## Licensing
 

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewBookingAppointment()
 customerTimeZone := "America/Chicago"
@@ -51,7 +51,7 @@ bookingReminder.SetOffset(&offset)
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder.SetAdditionalData(additionalData)
 bookingReminder1 := graphmodels.NewBookingReminder()
@@ -62,7 +62,7 @@ bookingReminder1.SetOffset(&offset)
 recipients := graphmodels.CUSTOMER_BOOKINGREMINDERRECIPIENTS 
 bookingReminder1.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder1.SetAdditionalData(additionalData)
 bookingReminder2 := graphmodels.NewBookingReminder()
@@ -73,7 +73,7 @@ bookingReminder2.SetOffset(&offset)
 recipients := graphmodels.STAFF_BOOKINGREMINDERRECIPIENTS 
 bookingReminder2.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder2.SetAdditionalData(additionalData)
 
@@ -100,7 +100,7 @@ address.SetStreet(&street)
 additionalData := map[string]interface{}{
 	postOfficeBox := null
 address.SetPostOfficeBox(&postOfficeBox) 
-	"odataType" : "#microsoft.graph.physicalAddressType", 
+	"type@odata.type" : "#microsoft.graph.physicalAddressType", 
 	type := null
 address.SetType(&type) 
 }
@@ -121,8 +121,8 @@ serviceLocation.SetUniqueId(&uniqueId)
 uniqueIdType := null
 serviceLocation.SetUniqueIdType(&uniqueIdType) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.locationType", 
-	"odataType" : "#microsoft.graph.locationUniqueIdType", 
+	"locationType@odata.type" : "#microsoft.graph.locationType", 
+	"uniqueIdType@odata.type" : "#microsoft.graph.locationUniqueIdType", 
 }
 serviceLocation.SetAdditionalData(additionalData)
 requestBody.SetServiceLocation(serviceLocation)
@@ -229,12 +229,13 @@ customers := []graphmodels.BookingCustomerInformationBaseable {
 }
 requestBody.SetCustomers(customers)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingPriceType", 
-	"odataType" : "#Collection(microsoft.graph.bookingReminder)", 
-	"odataType" : "#Collection(microsoft.graph.bookingCustomerInformation)", 
+	"priceType@odata.type" : "#microsoft.graph.bookingPriceType", 
+	"reminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
+	"customers@odata.type" : "#Collection(microsoft.graph.bookingCustomerInformation)", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 appointments, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 

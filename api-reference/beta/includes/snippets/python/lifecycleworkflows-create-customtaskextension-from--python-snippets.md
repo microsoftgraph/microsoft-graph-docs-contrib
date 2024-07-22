@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.custom_task_extension import CustomTaskExtension
-from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
-from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
-from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
-from msgraph.generated.models.custom_task_extension_callback_configuration import CustomTaskExtensionCallbackConfiguration
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.identity_governance.custom_task_extension import CustomTaskExtension
+from msgraph_beta.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
+from msgraph_beta.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
+from msgraph_beta.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
+from msgraph_beta.generated.models.identity_governance.custom_task_extension_callback_configuration import CustomTaskExtensionCallbackConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
