@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDetail resource type"
-description: "Describes the resource type for discovered apps."
+description: "Describes the resource type for discovered apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
+Describes the resource type for discovered apps. 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
