@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDevice resource type"
-description: "**This is a report on the devices that are accessing discovered SaaS apps**"
+description: "Get the details of the devices that are accessing discovered SaaS apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Get the report on the devices that are accessing discovered SaaS apps.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects and their properties.|
+|[List](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of the discovered cloud apps devices.|
 
 ## Properties
 |Property|Type|Description|
