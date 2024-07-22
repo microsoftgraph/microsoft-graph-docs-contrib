@@ -25,12 +25,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**These are all the available properties.** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|These are all the available properties|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|uploadedStreams|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|**These are all the available upload streams**|
+|uploadedStreams|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|These are all the available upload streams|
 
 ## JSON representation
 The following JSON representation shows the resource type.
