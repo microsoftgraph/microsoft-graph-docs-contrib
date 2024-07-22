@@ -55,6 +55,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.passwordAuthenticationMethod",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "password": "String"
