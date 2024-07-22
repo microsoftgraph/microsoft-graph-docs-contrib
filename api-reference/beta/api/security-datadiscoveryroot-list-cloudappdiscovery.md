@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Get a list of the [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) objects and their properties.
+Get a list of the DiscoveryReport objects and their properties.
 
 ## Permissions
 
