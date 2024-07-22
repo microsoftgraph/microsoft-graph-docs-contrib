@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The authentication methods usage reports help you understand how users in your organization are using Microsoft Entra authentication capabilities such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
+The authentication methods usage reports help you understand how users in your organization are using [Microsoft Entra authentication capabilities](../resources/authenticationmethods-overview.md) such as multifactor authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
 
 These reports provide information such as:
 
