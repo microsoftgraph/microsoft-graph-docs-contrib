@@ -22,7 +22,7 @@ The **place** object can be one of the following types:
 
 The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

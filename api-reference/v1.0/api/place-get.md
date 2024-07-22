@@ -20,7 +20,7 @@ The **place** object can be one of the following types:
 
 Both **room** and **roomList** are derived from the [place](../resources/place.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
