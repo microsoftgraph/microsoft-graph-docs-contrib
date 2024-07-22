@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get the report on the devices that are accessing discovered SaaS apps.
+Get the details of the devices that are accessing discovered SaaS apps.
 
 ## Methods
 |Method|Return type|Description|
