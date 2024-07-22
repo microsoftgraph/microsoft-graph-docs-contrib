@@ -1,19 +1,19 @@
 ---
 title: "List discoveredCloudAppDevice"
-description: "Get a list of all devices that are accessing discovered cloud apps"
+description: "Get a list of devices accessing discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List discoveredCloudAppDevice objects
+# List discoveredCloudAppDevice
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all devices that are accessing discovered cloud apps. You can get information of which device is accessing a specific cloud app
+Get a list of devices accessing discovered cloud apps. 
 
 ## Permissions
 
