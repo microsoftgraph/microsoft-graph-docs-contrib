@@ -69,6 +69,14 @@
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventsRoot](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventsRoot"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-1.0) resource.",
@@ -100,14 +108,6 @@
         },
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "townhalls",
-          "ChangeType": "Addition",
-          "Description": "Added the **townhalls** relationship to the [virtualEventsRoot](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventsRoot?view=graph-rest-1.0) resource.",
-          "Target": "virtualEventsRoot"
-        },
-        {
-          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventTownhall",
           "ChangeType": "Addition",
@@ -129,6 +129,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-1.0) resource.",
           "Target": "virtualEventWebinarRegistrationConfiguration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistration-cancel?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
         },
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
@@ -370,7 +378,7 @@
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
-          "Target": "virtualEventRegistration"
+        "Target": "virtualEventRegistration"
         },
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",

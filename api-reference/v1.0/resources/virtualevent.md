@@ -30,15 +30,6 @@ Inherits from [entity](../resources/entity.md).
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |status|[virtualEventStatus](#virtualeventstatus-values)|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
-### virtualEventStatus values
-
-| Value | Description |
-| ----- | ----------- |
-| draft | The virtual event is in draft and only visible to the organizer. |
-| published | The organizer published the virtual event and it's visible to the audience. |
-| canceled | The organizer canceled the virtual event. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-
 ## Relationships
 
 |Relationship|Type|Description|

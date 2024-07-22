@@ -306,26 +306,50 @@ items:
       href: ../../api/presence-setstatusmessage.md
   - name: Virtual events
     items:
-    - name: Virtual event webinar
+    - name: Virtual event presenter
       items:
-      - name: Virtual event webinar
-        href: ../../resources/virtualeventwebinar.md
+      - name: Virtual event presenter
+        href: ../../resources/virtualeventpresenter.md
       - name: List
-        href: ../../api/virtualeventsroot-list-webinars.md
+        href: ../../api/virtualevent-list-presenters.md
+      - name: Create
+        href: ../../api/virtualevent-post-presenters.md
       - name: Get
-        href: ../../api/virtualeventwebinar-get.md
-      - name: List by user role
-        href: ../../api/virtualeventwebinar-getbyuserrole.md
-      - name: List by user ID and role
-        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+        href: ../../api/virtualeventpresenter-get.md
+      - name: Update
+        href: ../../api/virtualeventpresenter-update.md
+      - name: Delete
+        href: ../../api/virtualeventpresenter-delete.md
     - name: Virtual event registration
       items:
       - name: Virtual event registration
         href: ../../resources/virtualeventregistration.md
       - name: List
         href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
+      - name: List sessions
+        href: ../../api/virtualeventregistration-list-sessions.md
+    - name: Virtual event webinar registration configuration
+      items:
+      - name: Virtual event webinar registration configuration
+        href: ../../resources/virtualeventwebinarregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event registration question
+      items:
+      - name: Virtual event registration question
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
@@ -334,6 +358,40 @@ items:
         href: ../../api/virtualevent-list-sessions.md
       - name: Get
         href: ../../api/virtualeventsession-get.md
+    - name: Virtual event webinar
+      items:
+      - name: Virtual event webinar
+        href: ../../resources/virtualeventwebinar.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-webinars.md
+      - name: Get
+        href: ../../api/virtualeventwebinar-get.md
+      - name: Update
+        href: ../../api/virtualeventwebinar-update.md
+      - name: Publish
+        href: ../../api/virtualeventwebinar-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventwebinar-cancel.md
+      - name: List in organization
+        href: ../../api/virtualeventsroot-list-webinars.md
+      - name: List by user role
+        href: ../../api/virtualeventwebinar-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+    - name: Virtual event townhall
+      items:
+      - name: Virtual event townhall
+        href: ../../resources/virtualeventtownhall.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-townhalls.md
+      - name: Get
+        href: ../../api/virtualeventtownhall-get.md
+      - name: Update
+        href: ../../api/virtualeventtownhall-update.md
+      - name: Publish
+        href: ../../api/virtualeventtownhall-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventtownhall-cancel.md
 - name: Employee learning
   displayName: Viva Learning
   items:
