@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of the security, legal & complaince risk attributes of the discovered cloud apps
+Get the details of the security, legal & complaince risk attributes of the discovered cloud apps.
 
 ## Permissions
 
