@@ -19,7 +19,7 @@ Update an open extension ([openTypeExtension](../resources/opentypeextension.md)
 - If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.
 - Otherwise, that property and its data are added to the extension. 
 
-The data in an extension can be primitive types or arrays of primitive types.
+The data in an extension can be primitive types or arrays of primitive types. The operation behaves differently for resources that are directory objects vs other resources.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
 
@@ -91,10 +91,15 @@ Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md)
 |extensionName|String|Required if **id** isn't supplied. Updatable.|
 |id|String|Required if **id** isn't supplied. Read-only.|
 
+For resources that are directory (Microsoft Entra ID) objects:
 - To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph deletes the unspecified properties.
 - To delete data from a property in the open extension object but keep the property, set its value to `null`.
 - To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph deletes it.
 - To delete data from all properties in the open extension object but keep the open extension object, update the values of all the properties to `null`.
+
+For Microsoft 365 resources like messages:
+- You can specify a subset of the properties in the request body to update them. The omitted properties and their values are retained.
+- `null` values aren't allowed.
 
 ## Response
 
