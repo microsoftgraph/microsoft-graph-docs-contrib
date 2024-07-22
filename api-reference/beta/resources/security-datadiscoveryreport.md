@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryReport resource type"
-description: "Describes the Discovery report resource."
+description: "Describes the discovery report resource"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,10 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**Make sure to read the disclaimer.**
-
+Describes the discovery report resource.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
