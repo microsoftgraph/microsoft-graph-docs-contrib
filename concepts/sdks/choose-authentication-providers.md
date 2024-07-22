@@ -61,7 +61,7 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ### [Python](#tab/python)
 
-In the following example, we're using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view=true) of this credential.
 
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
 
@@ -127,12 +127,12 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ### Using a client certificate
 
-In the following example, we're using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view=true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
 
 ### Using a client secret
 
-In the following example, we're using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view=true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
 
 ### [TypeScript](#tab/typescript)
@@ -171,7 +171,7 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ### [Python](#tab/python)
 
-In the following example, we're using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view=true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
 ### [TypeScript](#tab/typescript)
