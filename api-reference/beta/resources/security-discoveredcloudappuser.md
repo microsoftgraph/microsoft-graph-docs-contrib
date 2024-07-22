@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppUser resource type"
-description: "Represents discovered user"
+description: "Get details of users accessing discovered cloud app"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,17 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Get details of users accessing discovered cloud app
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) objects and their properties.|
+|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of users accessing discovered apps.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userIdentifier|String|**These are the available properties for users accessing discovered apps**|
+|userIdentifier|String|These are the available properties for users accessing discovered apps|
 
 ## Relationships
 None.
