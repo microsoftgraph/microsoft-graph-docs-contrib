@@ -1,6 +1,6 @@
 ---
 title: "List cloudAppDiscoveryReport"
-description: "Get a list of the discovered cloud apps report"
+description: "Get a list of the discovered cloud apps"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List cloudAppDiscoveryReport
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the discovered cloud apps.
 
@@ -52,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of discovered cloud apps in the response body.
 
 ## Examples
 
