@@ -7,13 +7,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List endpointDiscoveredCloudAppDetail objects
+# List endpointDiscoveredCloudAppDetail 
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the discovered apps in a specific endpoint/stream. You may chose any specific endpoint that you have onbaorded to cloud discovery.
+Get a list of the discovered apps on a specific endpoint/stream.Choose any endpoint that you have onboarded to cloud discovery.
 
 ## Permissions
 
