@@ -23,7 +23,6 @@ A collection of settings that define specific combinations of authentication met
 |[Update](../api/authenticationstrengthpolicy-update.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Update the properties of a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't update a built-in **authenticationStrengthPolicy** object. |
 |[Delete](../api/authenticationstrengthroot-delete-policies.md)|None|Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't delete a built-in **authenticationStrengthPolicy** object.|
 |[List usage](../api/authenticationstrengthpolicy-usage.md)|[authenticationStrengthUsage](../resources/authenticationstrengthusage.md)|Find all [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) that reference an authentication strength.|
-|[Update allowed combinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md)|[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
 
 ## Properties
 |Property|Type|Description|

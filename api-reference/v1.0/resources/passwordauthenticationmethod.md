@@ -6,6 +6,7 @@ author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: Password
 ---
 
 # passwordAuthenticationMethod resource type
@@ -24,6 +25,8 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |[List](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of a user's **passwordAuthenticationMethod** objects. |
 |[Get](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a user's **passwordAuthenticationMethod** object. |
 |[Reset](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
+|[Get long running operation](../api/longrunningoperation-get.md)|None|Get the status of the password reset long running operation if the reset operation returned a **Location** object.|
+
 
 ## Properties
 
