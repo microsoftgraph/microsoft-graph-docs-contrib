@@ -1,6 +1,6 @@
 ---
 title: "longRunningOperation resource type"
-description: "The status of a long-running operation."
+description: "Represents the status of a long-running Microsoft Graph API operation."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
@@ -12,7 +12,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The status of a long-running operation.
+Represents the status of a long-running Microsoft Graph API operation.
+
+The following types derive from this object:
+- [richLongRunningOperation](richlongrunningoperation.md)
+- [attackSimulationOperation](../resources/attacksimulationoperation.md)
 
 ## Properties
 |Property|Type|Description|
@@ -27,7 +31,7 @@ The status of a long-running operation.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
