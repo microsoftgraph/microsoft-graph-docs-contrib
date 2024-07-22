@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get details of discovered cloud apps by endpoint/stream onboarded to discovery.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
