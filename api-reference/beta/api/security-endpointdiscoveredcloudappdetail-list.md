@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the discovered apps in a specific endpoint/stream. You may chose any specific endpoint that you have onbaorded to cloud discovery
+Get a list of the discovered apps in a specific endpoint/stream. You may chose any specific endpoint that you have onbaorded to cloud discovery.
 
 ## Permissions
 
