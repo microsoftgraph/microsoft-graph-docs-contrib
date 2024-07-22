@@ -89,8 +89,7 @@ Use this operation to either store data in the open extension property, update t
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the updated
-[openTypeExtension](../resources/opentypeextension.md) object.
+If successful, this method returns a `204 No Content` response code for directory objects or a `200 OK` response code and an updated [openTypeExtension](../resources/opentypeextension.md) object for other resources.
 
 
 ## Example
