@@ -218,6 +218,9 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 The integrated Windows flow allows Windows computers to acquire an access token when domain-joined silently. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
+> [!NOTE]
+> Integrated Windows authentication has specific requirements. See [Using MSAL.NET with Integrated Windows Authentication (IWA)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/integrated-windows-authentication) for details.
+
 ### [C#](#tab/csharp)
 
 The `Azure.Identity` package doesn't currently support Windows-integrated authentication. Instead, create a custom access token provider using MSAL.
