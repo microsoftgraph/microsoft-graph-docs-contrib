@@ -98,8 +98,7 @@ Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md)
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and the updated
-[openTypeExtension](../resources/opentypeextension.md) object.
+If successful, this method returns a `204 No Content` response code for directory objects or a `200 OK` response code and an updated [openTypeExtension](../resources/opentypeextension.md) object for other resources.
 
 
 ## Example
