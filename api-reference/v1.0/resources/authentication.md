@@ -33,7 +33,7 @@ None.
 |fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
 |methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|
 |microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |
-|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents the status of a long-running operation.|
+|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents the status of a long-running operation, such as a password reset operation.|
 |passwordMethods|[passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) collection|Represents the password registered to a user for authentication. For security, the password itself is never returned in the object, but action can be taken to reset a password.|
 |phoneMethods|[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) collection|The phone numbers registered to a user for authentication.|
 |softwareOathMethods|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) collection|The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.|

@@ -1,6 +1,6 @@
 ---
 title: "Get longRunningOperation"
-description: "Retrieve the status of a long-running operation."
+description: "Retrieve the status of a long-running Microsoft Graph API operation."
 ms.localizationpriority: medium
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
@@ -12,8 +12,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object. This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 
-Retrieve the status of a long-running operation, represented by a [longRunningOperation](../resources/longrunningoperation.md) object. A long-running operation is initiated when you [reset a user's password](authenticationmethod-resetpassword.md). This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a [site](../resources/site.md) or a [list](../resources/list.md).
+- [Password reset](authenticationmethod-resetpassword.md)
 
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
 
@@ -23,14 +24,21 @@ The possible states of the long-running operation are `notStarted`, `running`, `
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "longrunningoperation_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
+### For authentication methods (password reset)
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+[!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To retrieve the status of a long running operation of authentication method reset:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ```http
 GET /users/{id | userPrincipalName}/authentication/operations/{id}
@@ -38,7 +46,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,17 +66,14 @@ If successful, this method returns a `200 OK` response code and the requested [l
 
 ### Request
 
-The following example shows a request.
-
-
+The following example shows a request. The ID of the operation to use in this request is retrieved from the response you get from the [passwword reset operation](authenticationmethod-resetpassword.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_longrunningoperation"
+  "name": "get_longrunningoperation_passwordreset"
 }-->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
@@ -117,7 +122,6 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.longRunningOperation"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
