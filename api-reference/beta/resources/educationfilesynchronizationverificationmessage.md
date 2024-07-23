@@ -25,7 +25,13 @@ Represents an error returned to the client in response to a request to [start sy
 | fileName    | string | Source file that contains the error.                                         |
 | description | string | Detailed information about the message type.                                 |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

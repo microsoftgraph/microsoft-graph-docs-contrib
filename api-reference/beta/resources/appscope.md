@@ -15,9 +15,6 @@ The scope of a role assignment determines the set of resources for which the pri
 
 This is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.
 
-## Methods
-None
-
 ## Properties
 
 | Property | Type | Description |
