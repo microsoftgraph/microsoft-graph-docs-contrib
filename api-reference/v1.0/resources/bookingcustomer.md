@@ -32,7 +32,7 @@ Inherits from [bookingCustomerBase](bookingcustomerbase.md).
 |createdDateTime|DateTimeOffset|The date, time, and time zone when the customer was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
-|id|String| The ID of the customer. Read-only.|
+|id|String| The ID of the customer. Read-only. Inherited from [bookingCustomerBase](bookingcustomerbase.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date, time, and time zone when the customer was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
