@@ -108,7 +108,7 @@ Content-Type: application/json
 					"name": "deliveryBucket"
 				}
 			]
-		},
+		}
   ]
 }
 ```
@@ -190,7 +190,7 @@ Content-Type: application/json
 					"name": "deliveryBucket"
 				}
 			]
-		},
+		}
   ]
 }
 ```
