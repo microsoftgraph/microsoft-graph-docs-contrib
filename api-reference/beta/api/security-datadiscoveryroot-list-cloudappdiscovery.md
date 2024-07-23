@@ -1,6 +1,6 @@
 ---
 title: "List dataDiscoveryReport"
-description: "Get a list of the DiscoveryReport objects and their properties."
+description: "Get a list of the discoveryReport objects and their properties."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
