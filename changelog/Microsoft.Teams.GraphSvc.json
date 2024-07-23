@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-22T12:15:16.6366934Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db50",
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
