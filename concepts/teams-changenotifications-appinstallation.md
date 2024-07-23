@@ -24,19 +24,6 @@ To get change notifications for Teams app installations, subscribe to `/appCatal
 
 To subscribe to Teams apps installation, you can use the specified scope such as personal, team, and chat or all scopes along with the corresponding permissions. For more information on how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-**RSC permission**
-
-To subscribe to Teams apps installation, you can also use resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](/graph/permissions-reference#resource-specific-consent-rsc-permissions).
-
-> [!NOTE]
-> You can use RSC permissions to receive notifications for installations and upgrades in team, chat, or personal scope. It doesn’t support the delivery of deletion events within these scopes.
-
-The following are the supported RSC permissions with one permission for each scope:
-
-* `TeamsAppInstallation.Read.User` permission is required to receive events in personal scope.
-* `TeamsAppInstallation.Read.Group` permission is required to receive events in team scope.
-* `TeamsAppInstallation.Read.Chat` permission is required to receive events in chat scope.
-
 #### Personal scope
 
 To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
@@ -45,7 +32,7 @@ To get change notifications for Teams app installation in personal scope, subscr
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All|
+| Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.Read.All|
 
 #### Team scope
 
@@ -55,7 +42,7 @@ To get change notifications for Teams app installation in team scope, subscribe 
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All|
+| Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.Read.All|
 
 #### Chat scope
 
@@ -65,7 +52,7 @@ To get change notifications for Teams app installation in chat scope, subscribe 
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All |
+| Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
 
 #### All scopes
 
@@ -76,6 +63,24 @@ To get change notifications for Teams app installation in all scope, subscribe t
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.Read.All |
+
+#### RSC permissions
+
+To subscribe to Teams apps installation, you can also use resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](/graph/permissions-reference#resource-specific-consent-rsc-permissions).
+
+> [!NOTE]
+> You can use RSC permissions to receive notifications for Teams app installations being created and upgraded in team, chat, or personal scope. Currently, the use of RSC permissions doesn’t support the delivery of Teams app installation deletion events.
+
+The following are the supported RSC permissions with one permission for each scope:
+
+* `TeamsAppInstallation.Read.User` permission is required to receive events in personal scope.
+* `TeamsAppInstallation.Read.Group` permission is required to receive events in team scope.
+* `TeamsAppInstallation.Read.Chat` permission is required to receive events in chat scope.
+
+To subscribe using RSC permissions, you must declare RSC usage with the `useResourceSpecificConsentBasedAuthorization` query parameter. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
+
+> [!NOTE]
+> If RSC permissions are in use, application permissions aren't required.
 
 ### Examples
 
@@ -134,9 +139,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
-
-To subscribe using RSC permissions, you must declare RSC usage with the `useResourceSpecificConsentBasedAuthorization` query parameter. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
+> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both `personal` and `team` scopes, it is mandatory to have at least one permission from each scope.
 
 **To create a subscription using RSC with the `$filter` parameter:**
 
@@ -171,9 +174,6 @@ Content-Type: application/json
   "clientState": "{secretClientState}" 
 } 
 ```
-
-> [!NOTE]
-> If RSC permissions are in use, application permissions aren't required.
 
 ### Notifications with resource data
 
