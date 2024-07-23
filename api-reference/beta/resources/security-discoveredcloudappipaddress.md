@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppIPAddress resource type"
-description: "Get details of IP addresses accessing discovered cloud app"
+description: "Get details of IP addresses accessing discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -21,7 +21,7 @@ Get details of IP addresses accessing discovered cloud app.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ipAddress|String|These are the list of properties available to query the IpAddresses accessed by discovered cloud app|
+|ipAddress|String|The IpAddresses accessed by discovered cloud app.|
 
 ## Relationships
 None.
