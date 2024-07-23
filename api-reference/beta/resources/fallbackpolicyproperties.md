@@ -27,7 +27,7 @@ Allows fallback policy to be specified for high-priority raw notifications on iO
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -39,7 +39,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 
 None.
-
+The following JSON representation shows the resource type.
 ## JSON representation
 
 The following is a JSON representation of the resource.

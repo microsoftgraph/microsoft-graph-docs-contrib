@@ -33,7 +33,7 @@ The **plannerPlanContextDetails** resource contains additional information about
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
