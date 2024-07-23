@@ -3,7 +3,7 @@ title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.subservice: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-## Permissions
+        ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -31,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Apps** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

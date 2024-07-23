@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Browser management
   displayName: Edge, Internet Explorer, IE mode, site list
@@ -346,7 +349,7 @@ items:
       - name: List monthly reports by printer
         href: ../../api/reportroot-list-monthlyprintusagebyprinter.md
       - name: Get
-        href: ../../api/printUsageByPrinter-get.md
+        href: ../../api/printusagebyprinter-get.md
     - name: Print usage by user
       items:
       - name: Print usage by user
@@ -2148,12 +2151,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-update.md
     - name: User experience analytics app health app performance by app version device id
       items:
       - name: User experience analytics app health app performance by app version device id
@@ -2162,12 +2159,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-update.md
     - name: User experience analytics app health app performance by OS version
       items:
       - name: User experience analytics app health app performance by OS version
@@ -2176,12 +2167,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
       - name: Get userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
         href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
-      - name: Create userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md
-      - name: Delete userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md
-      - name: Update userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md
     - name: User experience analytics app health application performance
       items:
       - name: User experience analytics app health application performance
@@ -2190,12 +2175,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthApplicationPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthApplicationPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
     - name: User experience analytics app health device model performance
       items:
       - name: User experience analytics app health device model performance
@@ -2204,12 +2183,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthDeviceModelPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDeviceModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-update.md
     - name: User experience analytics app health device performance
       items:
       - name: User experience analytics app health device performance
@@ -2218,12 +2191,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthDevicePerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
     - name: User experience analytics app health device performance details
       items:
       - name: User experience analytics app health device performance details
@@ -2232,12 +2199,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
       - name: Get userExperienceAnalyticsAppHealthDevicePerformanceDetails
         href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
-      - name: Create userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md
-      - name: Delete userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md
-      - name: Update userExperienceAnalyticsAppHealthDevicePerformanceDetails
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md
     - name: User experience analytics app health OS version performance
       items:
       - name: User experience analytics app health OS version performance
@@ -2246,12 +2207,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
       - name: Get userExperienceAnalyticsAppHealthOSVersionPerformance
         href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
-      - name: Create userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-create.md
-      - name: Delete userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
-      - name: Update userExperienceAnalyticsAppHealthOSVersionPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
     - name: User experience analytics baseline
       items:
       - name: User experience analytics baseline
@@ -2260,20 +2215,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsbaseline-list.md
       - name: Get userExperienceAnalyticsBaseline
         href: ../../api/intune-devices-userexperienceanalyticsbaseline-get.md
-      - name: Create userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-create.md
-      - name: Delete userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-delete.md
-      - name: Update userExperienceAnalyticsBaseline
-        href: ../../api/intune-devices-userexperienceanalyticsbaseline-update.md
     - name: User experience analytics category
       items:
       - name: User experience analytics category
         href: ../../resources/intune-devices-userexperienceanalyticscategory.md
       - name: Get userExperienceAnalyticsCategory
         href: ../../api/intune-devices-userexperienceanalyticscategory-get.md
-      - name: Update userExperienceAnalyticsCategory
-        href: ../../api/intune-devices-userexperienceanalyticscategory-update.md
     - name: User experience analytics device performance
       items:
       - name: User experience analytics device performance
@@ -2282,12 +2229,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md
       - name: Get userExperienceAnalyticsDevicePerformance
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md
-      - name: Create userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md
-      - name: Delete userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md
-      - name: Update userExperienceAnalyticsDevicePerformance
-        href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md
       - name: summarizeDevicePerformanceDevices function
         href: ../../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
     - name: User experience analytics device scores
@@ -2298,12 +2239,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicescores-list.md
       - name: Get userExperienceAnalyticsDeviceScores
         href: ../../api/intune-devices-userexperienceanalyticsdevicescores-get.md
-      - name: Create userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-create.md
-      - name: Delete userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-delete.md
-      - name: Update userExperienceAnalyticsDeviceScores
-        href: ../../api/intune-devices-userexperienceanalyticsdevicescores-update.md
     - name: User experience analytics device startup history
       items:
       - name: User experience analytics device startup history
@@ -2312,12 +2247,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md
       - name: Get userExperienceAnalyticsDeviceStartupHistory
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md
-      - name: Create userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-create.md
-      - name: Delete userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md
-      - name: Update userExperienceAnalyticsDeviceStartupHistory
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartuphistory-update.md
     - name: User experience analytics device startup process
       items:
       - name: User experience analytics device startup process
@@ -2326,12 +2255,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
       - name: Get userExperienceAnalyticsDeviceStartupProcess
         href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
-      - name: Create userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-create.md
-      - name: Delete userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-delete.md
-      - name: Update userExperienceAnalyticsDeviceStartupProcess
-        href: ../../api/intune-devices-userexperienceanalyticsdevicestartupprocess-update.md
     - name: User experience analytics metric
       items:
       - name: User experience analytics metric
@@ -2340,12 +2263,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmetric-list.md
       - name: Get userExperienceAnalyticsMetric
         href: ../../api/intune-devices-userexperienceanalyticsmetric-get.md
-      - name: Create userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-create.md
-      - name: Delete userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-delete.md
-      - name: Update userExperienceAnalyticsMetric
-        href: ../../api/intune-devices-userexperienceanalyticsmetric-update.md
     - name: User experience analytics metric history
       items:
       - name: User experience analytics metric history
@@ -2354,12 +2271,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-list.md
       - name: Get userExperienceAnalyticsMetricHistory
         href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-get.md
-      - name: Create userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-create.md
-      - name: Delete userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
-      - name: Update userExperienceAnalyticsMetricHistory
-        href: ../../api/intune-devices-userexperienceanalyticsmetrichistory-update.md
     - name: User experience analytics model scores
       items:
       - name: User experience analytics model scores
@@ -2368,20 +2279,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsmodelscores-list.md
       - name: Get userExperienceAnalyticsModelScores
         href: ../../api/intune-devices-userexperienceanalyticsmodelscores-get.md
-      - name: Create userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-create.md
-      - name: Delete userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-delete.md
-      - name: Update userExperienceAnalyticsModelScores
-        href: ../../api/intune-devices-userexperienceanalyticsmodelscores-update.md
     - name: User experience analytics overview
       items:
       - name: User experience analytics overview
         href: ../../resources/intune-devices-userexperienceanalyticsoverview.md
       - name: Get userExperienceAnalyticsOverview
         href: ../../api/intune-devices-userexperienceanalyticsoverview-get.md
-      - name: Update userExperienceAnalyticsOverview
-        href: ../../api/intune-devices-userexperienceanalyticsoverview-update.md
     - name: User experience analytics score history
       items:
       - name: User experience analytics score history
@@ -2390,12 +2293,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsscorehistory-list.md
       - name: Get userExperienceAnalyticsScoreHistory
         href: ../../api/intune-devices-userexperienceanalyticsscorehistory-get.md
-      - name: Create userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-create.md
-      - name: Delete userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-delete.md
-      - name: Update userExperienceAnalyticsScoreHistory
-        href: ../../api/intune-devices-userexperienceanalyticsscorehistory-update.md
     - name: User experience analytics work from anywhere device
       items:
       - name: User experience analytics work from anywhere device
@@ -2404,20 +2301,12 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereDevice
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereDevice
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-update.md
     - name: User experience analytics work from anywhere hardware readiness metric
       items:
       - name: User experience analytics work from anywhere hardware readiness metric
         href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-get.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-update.md
     - name: User experience analytics work from anywhere metric
       items:
       - name: User experience analytics work from anywhere metric
@@ -2426,12 +2315,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereMetric
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereMetric
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
     - name: User experience analytics work from anywhere model performance
       items:
       - name: User experience analytics work from anywhere model performance
@@ -2440,12 +2323,6 @@ items:
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
       - name: Get userExperienceAnalyticsWorkFromAnywhereModelPerformance
         href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
-      - name: Create userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
-      - name: Delete userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
-      - name: Update userExperienceAnalyticsWorkFromAnywhereModelPerformance
-        href: ../../api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
     - name: Windows device malware state
       items:
       - name: Windows device malware state
@@ -3180,9 +3057,9 @@ items:
     - name: Installation options
       href: ../../resources/m365appsinstallationoptions.md
     - name: Get m365AppsInstallationOptions
-      href: ../../api/m365AppsInstallationOptions-get.md
+      href: ../../api/m365appsinstallationoptions-get.md
     - name: Update m365AppsInstallationOptions
-      href: ../../api/m365AppsInstallationOptions-update.md
+      href: ../../api/m365appsinstallationoptions-update.md
   - name: Complex types
     items:
     - name: Admin

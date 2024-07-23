@@ -73,6 +73,8 @@ Conditional access settings in the Global Secure Access services involve enablin
 
 Use the [conditionalAccessSettings resource type](../resources/networkaccess-conditionalaccesssettings.md) and its associated APIs to manage conditional access settings.
 
+Use the [compliantNetworkNamedLocation resource type](../resources/compliantnetworknamedlocation.md) to ensure that users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators.
+
 ### Forwarding options
 
 Forwarding options allows administrators to enable or disable the ability to skip DNS lookup at the edge and forward Microsoft 365 traffic directly to Front Door using the client-resolved destination IP. Use the [forwardingOptions resource type](../resources/networkaccess-forwardingoptions.md) and its associated APIs to manage forwarding options.

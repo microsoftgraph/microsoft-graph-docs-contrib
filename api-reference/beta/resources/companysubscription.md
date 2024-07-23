@@ -48,7 +48,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "commerceSubscriptionId": "String",
+  "commerceSubscriptionId": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",

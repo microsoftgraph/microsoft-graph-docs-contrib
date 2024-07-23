@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\WorkbookNamedItem;
-use Microsoft\Graph\Generated\Models\Json;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -16,7 +15,7 @@ $requestBody = new WorkbookNamedItem();
 $requestBody->setType('type-value');
 $requestBody->setScope('scope-value');
 $requestBody->setComment('comment-value');
-$value = new Json();
+$value = new Value();
 $requestBody->setValue($value);
 $requestBody->setVisible(true);
 

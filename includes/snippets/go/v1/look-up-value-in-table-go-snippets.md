@@ -13,7 +13,6 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
@@ -26,9 +25,9 @@ configuration := &graphdrives.DriveItemItemItemWorkbookFunctionsVlookupRequestBu
 requestBody := graphdrives.NewVlookupPostRequestBody()
 lookupValue := "pear"
 requestBody.SetLookupValue(&lookupValue) 
-tableArray := graphmodels.NewJson()
+tableArray := graph.NewtableArray()
 additionalData := map[string]interface{}{
-	"address" : "Sheet1!B2:C7", 
+	"Address" : "Sheet1!B2:C7", 
 }
 tableArray.SetAdditionalData(additionalData)
 requestBody.SetTableArray(tableArray)

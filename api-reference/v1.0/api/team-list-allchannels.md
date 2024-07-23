@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the channel and run other operations on the [channel](../resources/channel.md) object.
 
 > [!Note]
-> Currently, invoking the URL returned from the **@odata.id** property fails for cross-tenant shared channels. You can solve this issue if you remove the `/tenants/{tenant-id}` part from the URL before you call this API. For more details, see [Known issues with Microsoft Graph](https://developer.microsoft.com/en-us/graph/known-issues/?search=14971).
+> Currently, invoking the URL returned from the **@odata.id** property fails for cross-tenant shared channels. You can solve this issue if you remove the `/tenants/{tenant-id}` part from the URL before you call this API. For more information, see [Known issues with Microsoft Graph](https://developer.microsoft.com/en-us/graph/known-issues/?search=14971).
 
 ## Examples
 
@@ -129,7 +129,8 @@ Content-Type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
-      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910"
+      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
+      "isArchived": false
     },
     {
        "@odata.id": "https://graph.microsoft.com/v1.0/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
@@ -137,7 +138,8 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
-      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
+      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
+      "isArchived": false
     }
   ]
 }
@@ -216,7 +218,8 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
-      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
+      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
+      "isArchived": false
     }
   ]
 }

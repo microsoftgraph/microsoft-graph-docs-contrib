@@ -21,17 +21,17 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| appId | String | The globally unique identifier of the application to which access has been granted. |
+| appId | String | The globally unique identifier of the application to which access is granted. |
 | displayName | String | Display name of the resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
 | id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | String | Type of resource. Type will always be `ServicePrincipal`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. Type is always `ServicePrincipal`. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessreviewinstancedecisionitemserviceprincipalresource",

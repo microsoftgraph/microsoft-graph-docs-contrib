@@ -47,6 +47,7 @@ PATCH /planner/tasks/{id}
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. This value 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
 |conversationThreadId|String|Thread ID of the conversation on the task and is the ID of the conversation thread object created in the group.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task. |
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
 |planId|String|Plan ID to which the task belongs.|

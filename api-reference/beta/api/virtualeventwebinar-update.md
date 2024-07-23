@@ -50,11 +50,12 @@ PATCH /solutions/virtualEvents/webinars/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
-| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
-| displayName | String | Display name of the virtual event. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
+| description | [itemBody](../resources/itembody.md) | Description of the webinar. |
+| displayName | String | Display name of the webinar. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
 ## Response
 
@@ -168,6 +169,9 @@ Content-Type: application/json
       "displayName": "Kenneth Brown",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
-  ]
+  ],
+  "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+  }
 }
 ```

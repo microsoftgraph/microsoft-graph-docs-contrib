@@ -3,7 +3,7 @@ title: "Update trainingCampaign"
 description: "Update the properties of a trainingCampaign object."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

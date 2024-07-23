@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a **participant** object.
 
+> [!NOTE]
+> Peer-to-peer calls between a calling bot and another peer, including both VoIP and PSTN calls, aren't supported.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

@@ -3,7 +3,7 @@ title: "Update sitePage"
 description: "Update the properties of a sitePage object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -81,6 +81,7 @@ There are two kinds of web parts that can be added to a [sitePage](../resources/
 | 11  | Quick Links    | `c70391ea-0b10-4ee9-b2b4-006d3fcad0cd` |
 | 12  | Spacer         | `8654b779-4886-46d4-8ffb-b5ed960ee986` |
 | 13  | Youtube Embed  | `544dd15b-cf3c-441b-96da-004d5a8cea1d` |
+| 14  | Title Area     | `cbe7b0a9-3504-44dd-a3a3-0e5cacd07788` |
 
 ## Response
 

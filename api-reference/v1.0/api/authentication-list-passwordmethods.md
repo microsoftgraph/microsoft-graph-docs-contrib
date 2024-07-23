@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of the passwords registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. This API returns exactly one object, as a user can have exactly one password. For security, the password itself will never be returned in the object and the **password** property is always `null`.
+Retrieve a list of the passwords registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. This API returns exactly one object referenced by ID `28c10230-6103-485e-b985-444c60001490`, as a user can have exactly one password. For security, the password itself is never returned in the object and the **password** property is always `null`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

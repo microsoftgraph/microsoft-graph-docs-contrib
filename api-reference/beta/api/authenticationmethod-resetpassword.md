@@ -35,10 +35,11 @@ Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Adminis
 
 ## HTTP request
 
+The ID of the password authentication method, referenced by `{passwordMethods-id}`, is always `28c10230-6103-485e-b985-444c60001490`.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id | userPrincipalName}/authentication/methods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/methods/{passwordMethods-id}/resetPassword
 ```
 
 ## Request headers

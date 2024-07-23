@@ -3,7 +3,7 @@ title: "Update ediscoveryHoldPolicy"
 description: "Update the properties of an ediscoveryHoldPolicy object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

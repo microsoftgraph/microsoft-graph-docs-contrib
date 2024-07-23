@@ -8,12 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Functions.Vlookup;
-using Microsoft.Graph.Models;
 
 var requestBody = new VlookupPostRequestBody
 {
 	LookupValue = "pear",
-	TableArray = new Json
+	TableArray = new TableArray
 	{
 		AdditionalData = new Dictionary<string, object>
 		{

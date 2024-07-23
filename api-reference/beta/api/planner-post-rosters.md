@@ -47,6 +47,16 @@ There are no writable properties on [plannerRoster](../resources/plannerroster.m
 
 If successful, this method returns a `201 Created` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
 
+This method fails with a `403 Forbidden` response code in the following situations. The **code** property in the error response indicates the specific error.
+
+| Description | Code property value |
+|:---|:---|
+|If labels are mandatory for the user and the created roster has no sensitivity label, the request fails.|`sensitivityLabelsAreMandatory`|
+|If the roster is created with guest members initially added, but the proposed sensitivity label disallows the addition of guests, the request fails.|`addingGuestUsersProhibitedByLabel`|
+|If the provided label doesn't have the correct tenant ID, the request fails.|`tenantIdIsIncorrect`|
+
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
+
 ## Examples
 
 ### Request

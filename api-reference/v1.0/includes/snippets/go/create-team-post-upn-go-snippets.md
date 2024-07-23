@@ -28,7 +28,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
@@ -37,7 +37,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

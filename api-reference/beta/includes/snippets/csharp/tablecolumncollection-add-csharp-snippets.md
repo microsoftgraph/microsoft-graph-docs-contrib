@@ -14,9 +14,9 @@ var requestBody = new AddPostRequestBody
 	Index = new IndexObject
 	{
 	},
-	Values = new List<Json>
+	Values = new List<object>
 	{
-		new Json
+		new 
 		{
 		},
 	},

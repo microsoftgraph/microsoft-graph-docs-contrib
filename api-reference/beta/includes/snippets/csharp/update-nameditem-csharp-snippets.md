@@ -14,7 +14,7 @@ var requestBody = new WorkbookNamedItem
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = new Json
+	Value = new Value
 	{
 	},
 	Visible = true,

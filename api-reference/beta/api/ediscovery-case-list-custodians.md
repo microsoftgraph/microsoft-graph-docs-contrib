@@ -3,7 +3,7 @@ title: "List custodians"
 description: "Get a list of the custodian objects and their properties."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

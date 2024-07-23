@@ -35,7 +35,7 @@ PATCH /groups/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,17 +89,13 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0d09007d-45b2-458c-b180-880dde3a302e
 Content-type: application/json
 
 {
-  "description": "Library Assist",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mailEnabled": true,
-  "mailNickname": "library-help"
+  "description": "Library Assist - ADC",
+  "displayName": "Library Assist - ADC",
+  "mailNickname": "library-help-adc"
 }
 ```
 

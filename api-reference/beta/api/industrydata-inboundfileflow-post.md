@@ -15,12 +15,6 @@ Namespace: microsoft.graph.industryData
 
 Create a new [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
-The following prerequisite resources are required when you create an **inboundFileFlow**:
-
-- [dataConnector](../resources/industrydata-industrydataconnector.md)
-- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
-- [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -50,18 +44,18 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
+In the request body, supply a JSON representation of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
-You can specify the following properties when you create an **inboundFileFlow**.
+The following table lists the required and optional properties for creating an **inboundFileFlow** object.
 
 | Property           | Type                                                                              | Description                                                                                                                                                                                                                                          |
 | :----------------- | :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
+| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The category of data that is being imported in this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
 | displayName        | String                                                                            | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
 | effectiveDateTime  | DateTimeOffset                                                                    | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | expirationDateTime | DateTimeOffset                                                                    | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
-| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
-| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
+| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector to the source system from where this flow gets its data. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
+| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year associated to the data that this flow brings in. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
 
 ## Response
 

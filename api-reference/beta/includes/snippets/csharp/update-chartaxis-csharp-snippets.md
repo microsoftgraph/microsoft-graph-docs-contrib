@@ -11,13 +11,13 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new WorkbookChartAxis
 {
-	MajorUnit = new Json
+	MajorUnit = new MajorUnit
 	{
 	},
-	Maximum = new Json
+	Maximum = new Maximum
 	{
 	},
-	Minimum = new Json
+	Minimum = new Minimum
 	{
 	},
 };

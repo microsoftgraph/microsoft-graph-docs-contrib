@@ -125,8 +125,8 @@ Content-Type: application/json
   "status": "published",
   "displayName": "The Impact of Tech on Our Lives",
   "description": {
-    "content": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
-    "contentType": "Html"
+    "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.</p>",
+    "contentType": "html"
   },
   "startDateTime": {
     "dateTime": "2023-11-30T16:30:00",
@@ -163,6 +163,9 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
+  "settings": {
+    "isAttendeeEmailNotificationEnabled": false
+  },
   "isInviteOnly": false
 }
 ```

@@ -3,11 +3,11 @@ title: "Microsoft Entra authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
-author: "jpettere"
-ms.reviewer: intelligentaccesspm
+author: FaithOmbongi
+ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 12/05/2023
+ms.date: 07/02/2024
 ---
 
 # Microsoft Entra authentication methods API overview
@@ -49,10 +49,15 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
+|Authentication states|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|
 
 ## Require re-register multifactor authentication
 
 To require users to set up a new multifactor authentication the next time they sign in, call the individual DELETE authentication method operations to delete each of the user's current authentication methods. After the user has no more methods, they're prompted to register the next time they sign in where strong authentication is required.
+
+## Tenant-level authentication method usage
+
+You can monitor tenant-level authentication method registration and usage, including users registered or unregistered for MFA and passwordless authentication, and users registered or unregistered for SSPR by using the [Authentication methods usage report APIs](/graph/api/resources/authenticationmethods-usage-insights-overview).
 
 ## Next steps
 

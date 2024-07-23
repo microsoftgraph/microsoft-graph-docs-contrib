@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview of Microsoft Graph
   href: /graph/overview?context=graph/api/1.0
@@ -28,7 +31,7 @@ items:
   expanded: true
   items:
   - name: Overview
-    href: overview.md
+    href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     displayName: Microsoft Graph REST API v1.0 reference
   - name: Users
     href: toc/users/toc.yml
@@ -65,7 +68,7 @@ items:
     displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
   - name: Identity and access
     href: toc/identity-and-access/toc.yml
-    displayName: Azure AD, Microsoft identity platform, Identity and access
+    displayName: Azure AD, Microsoft identity platform, Microsoft Entra ID, Identity and access
   - name: Mail
     href: toc/mail/toc.yml
     displayName: Outlook, Outlook mail

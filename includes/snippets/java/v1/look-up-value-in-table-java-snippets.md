@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.drives.item.items.item.workbook.functions.vlookup.VlookupPostRequestBody vlookupPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.functions.vlookup.VlookupPostRequestBody();
 vlookupPostRequestBody.setLookupValue("pear");
-Json tableArray = new Json();
+TableArray tableArray = new TableArray();
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("Address", "Sheet1!B2:C7");
 tableArray.setAdditionalData(additionalData);

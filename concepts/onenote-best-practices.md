@@ -48,9 +48,9 @@ This approach yields the same results in one network roundtrip, with better perf
 
 ## When getting all pages for a user, do so for each section separately
 
-Microsoft Graph exposes an endpoint to retrieve all pages; however, this isn't the best way to get all the pages the user has access to. When the user has too many sections and an attempt is made to get all pages, you will see a response with HTTP status code `400` and the following message: "The maximum number of sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time." For more information about this error code, see [OneNote error codes](/graph/onenote-error-codes#20266).
+Microsoft Graph exposes an endpoint to retrieve all pages; however, we don't recommend using this endpoint to get all the pages the user has access to. When the user has too many sections and an attempt is made to get all pages, the call results in an HTTP status code `400` and the following message: "The maximum number of sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time." For more information about this error code, see [OneNote error codes](/graph/onenote-error-codes#20266).
 
-It's better to iterate each section and get pages for each one separately.
+To get all pages that a user has access to, the best practice is to make separate calls to get the pages for each section.
 
 For example, instead of using this call (this API is paged, so you won't be able to fetch the pages all at once):
 

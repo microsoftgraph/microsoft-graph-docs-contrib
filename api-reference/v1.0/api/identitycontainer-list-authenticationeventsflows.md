@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/identity/authenticationEventsFlows
 
 ---
 
-
 #### Response
 
 The following is an example of a response that returns two user flows: "Test User Flow 1" and "Woodgrove Drive User Flow" with the following configurations:

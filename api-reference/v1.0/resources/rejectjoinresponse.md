@@ -23,7 +23,7 @@ This has the same effect as rejecting a policy recording incoming call notificat
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

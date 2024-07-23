@@ -3,7 +3,7 @@ title: "Feature differences between Azure AD Graph and Microsoft Graph"
 description: "Describes feature differences between Azure AD Graph and Microsoft Graph, in order to help you migrate apps quickly and easily."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: dkershaw
+ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications

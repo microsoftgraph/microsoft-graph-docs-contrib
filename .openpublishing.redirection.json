@@ -4,7 +4,7 @@
             "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
             "redirect_document_id": true
-        },    
+        },
         {
             "source_path": "api-reference/beta/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
@@ -184,6 +184,61 @@
             "source_path": "concepts/microsoft365-groups-concept-overview.md",
             "redirect_url": "/graph/api/resources/groups-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-delete.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-get.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-list.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-delete.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-get.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-get?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-list.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-list?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-post.md",
+            "redirect_url": "/graph/api/industrydata-inboundfileflow-post?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-update.md",
+            "redirect_url": "/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-post.md",
+            "redirect_url": "/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-update.md",
+            "redirect_url": "/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "graph/data-connect-pam.md",
+            "redirect_url": "/concepts/data-connect-concept-overview",
+            "redirect_document_id": true
         }
     ]
 }

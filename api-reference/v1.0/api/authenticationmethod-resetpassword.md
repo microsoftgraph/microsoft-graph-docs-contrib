@@ -34,10 +34,11 @@ Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Adminis
 
 ## HTTP request
 
+The ID of the password authentication method, referenced by `{passwordMethods-id}`, is always `28c10230-6103-485e-b985-444c60001490`.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id | userPrincipalName}/authentication/methods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/methods/{passwordMethods-id}/resetPassword
 ```
 
 ## Request headers
@@ -57,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body. The response body may also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
+If successful, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body. The response body might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
 If the caller didn't submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
@@ -215,7 +216,7 @@ POST https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0
 
 #### Response
 
-The following example shows the response.
+The following example shows the response. You can use the ID in the **Location** header to check the status of the operation via the [long-running operation API](longrunningoperation-get.md).
 
 > **Note:** The response object shown here might be shortened for readability.
 

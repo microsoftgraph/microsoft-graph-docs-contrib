@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/mail-api-overview.md
@@ -39,6 +42,8 @@ items:
     href: ../../api/message-replyall.md
   - name: Send draft message
     href: ../../api/message-send.md
+  - name: Recall message
+    href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
   - name: Attachments
@@ -53,10 +58,6 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: ../../graph/extensibility-schema-groups
   - name: Extended properties
     items:
     - name: Create single-value property

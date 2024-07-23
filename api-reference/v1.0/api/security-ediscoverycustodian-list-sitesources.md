@@ -3,7 +3,7 @@ title: "List siteSources"
 description: "Get the siteSource resources from the siteSources navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

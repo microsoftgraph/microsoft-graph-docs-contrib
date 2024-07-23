@@ -1,6 +1,6 @@
 ---
 title: "appliedConditionalAccessPolicy resource type"
-description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity."
+description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by a sign-in activity."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.
+Indicates the attributes related to applied conditional access policy or policies that are triggered by a [sign-in](signin.md) activity.
+
+The data in this object is returned only for callers with privileges to read conditional access data. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#viewing-applied-conditional-access-ca-policies-in-sign-ins).
 
 ## Properties
 
@@ -23,7 +25,7 @@ Indicates the attributes related to applied conditional access policy or policie
 |conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that aren't satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`,`ipAddressSeenByAzureAD`,`ipAddressSeenByResourceProvider`,`unknownFutureValue`,`servicePrincipals`,`servicePrincipalRisk`, `authenticationFlows`, `insiderRisk` . You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals`,`servicePrincipalRisk`, `authenticationFlows`, `insiderRisk`. **conditionalAccessConditions** is a multi-valued enumeration and the property can contain multiple values in a comma-separated list.|
 |conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`,`ipAddressSeenByAzureAD`,`ipAddressSeenByResourceProvider`,`unknownFutureValue`,`servicePrincipals`,`servicePrincipalRisk`, `authenticationFlows`, `insiderRisk`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals`,`servicePrincipalRisk`, `authenticationFlows`, `insiderRisk`. **conditionalAccessConditions** is a multi-valued enumeration and the property can contain multiple values in a comma-separated list.|
 |displayName|String|Name of the conditional access policy.|
-|enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: "Require multi-factor authentication").|
+|enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: "Require multifactor authentication").|
 |enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: "Require app enforced controls").|
 |excludeRulesSatisfied|[conditionalAccessRuleSatisfied](conditionalaccessrulesatisfied.md) collection|List of key-value pairs containing each matched exclude condition in the conditional access policy. Example: `[{"devicePlatform" : "DevicePlatform"}]` means the policy didn't apply, because the DevicePlatform condition was a match.|
 |id|String|Identifier of the conditional access policy.|

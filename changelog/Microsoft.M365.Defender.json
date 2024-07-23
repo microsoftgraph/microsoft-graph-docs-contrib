@@ -2163,6 +2163,58 @@
       "SubArea": ""
     },
     {
+      "ChangeList": [
+        {
+          "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonRequestEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonRequestEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonRequestEvidence?view=graph-rest-beta) resource.",
+          "Target": "cloudLogonRequestEvidence"
+        },
+        {
+          "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonSessionEvidence?view=graph-rest-beta) resource.",
+          "Target": "cloudLogonSessionEvidence"
+        }
+      ],
+      "Id": "e69ac42e-1845-4b01-984e-9ac3b56cfe92",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-31T13:20:45.1529001Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonRequestEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonRequestEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonRequestEvidence?view=graph-rest-1.0) resource.",
+          "Target": "cloudLogonRequestEvidence"
+        },
+        {
+          "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudLogonSessionEvidence?view=graph-rest-1.0) resource.",
+          "Target": "cloudLogonSessionEvidence"
+        }
+      ],
+      "Id": "63c5d570-d313-4947-8a52-452d7b2ef4fc",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-31T13:20:45.1531478Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
         "ChangeList": [
           {
             "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
@@ -2197,6 +2249,42 @@
         "CreatedDateTime": "2024-05-23T14:25:35.9322853Z",
         "WorkloadArea": "Security",
         "SubArea": "Advanced hunting"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "7600f0e7-8c42-444a-99c6-0be8260afdb0",
+            "ApiChange": "Property",
+            "ChangedApiName": "summary",
+            "ChangeType": "Addition",
+            "Description": "Added the **summary** property to the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource.",
+            "Target": "incident"
+          }
+        ],
+        "Id": "7600f0e7-8c42-444a-99c6-0be8260afdb0",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-05-26T11:35:02.5277871Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "658a5e0f-0f08-4d43-b63f-98b2148dbb8e",
+            "ApiChange": "Property",
+            "ChangedApiName": "summary",
+            "ChangeType": "Addition",
+            "Description": "Added the **summary** property to the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-1.0) resource.",
+            "Target": "incident"
+          }
+        ],
+        "Id": "658a5e0f-0f08-4d43-b63f-98b2148dbb8e",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-05-26T11:35:02.5280165Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Alerts and incidents"
       }
   ]
 }

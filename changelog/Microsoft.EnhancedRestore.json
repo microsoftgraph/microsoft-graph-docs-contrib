@@ -1,0 +1,406 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "7460c7d2-629f-49a0-bee4-5afbafc3fb95",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/serviceApp-activate?view=graph-rest-beta) method to the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource.",
+          "Target": "serviceApp"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "artifactRestoreStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **artifactRestoreStatus** enumeration type.",
+          "Target": "artifactRestoreStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "backupServiceConsumer",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupServiceConsumer** enumeration type.",
+          "Target": "backupServiceConsumer"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "backupServiceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupServiceStatus** enumeration type.",
+          "Target": "backupServiceStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "destinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **destinationType** enumeration type.",
+          "Target": "destinationType"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "disableReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableReason** enumeration type.",
+          "Target": "disableReason"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "protectionPolicyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **protectionPolicyStatus** enumeration type.",
+          "Target": "protectionPolicyStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "protectionRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **protectionRuleStatus** enumeration type.",
+          "Target": "protectionRuleStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "protectionUnitStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **protectionUnitStatus** enumeration type.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restorePointPreference",
+          "ChangeType": "Addition",
+          "Description": "Added the **restorePointPreference** enumeration type.",
+          "Target": "restorePointPreference"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restorePointTags",
+          "ChangeType": "Addition",
+          "Description": "Added the **restorePointTags** enumeration type.",
+          "Target": "restorePointTags"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restoreSessionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **restoreSessionStatus** enumeration type.",
+          "Target": "restoreSessionStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "serviceAppStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceAppStatus** enumeration type.",
+          "Target": "serviceAppStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restorePointSearchResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [restorePointSearchResponse](https://learn.microsoft.com/en-us/graph/api/resources/restorePointSearchResponse?view=graph-rest-beta) resource.",
+          "Target": "restorePointSearchResponse"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restorePointSearchResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [restorePointSearchResult](https://learn.microsoft.com/en-us/graph/api/resources/restorePointSearchResult?view=graph-rest-beta) resource.",
+          "Target": "restorePointSearchResult"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionSetting](https://learn.microsoft.com/en-us/graph/api/resources/retentionSetting?view=graph-rest-beta) resource.",
+          "Target": "retentionSetting"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceStatus](https://learn.microsoft.com/en-us/graph/api/resources/serviceStatus?view=graph-rest-beta) resource.",
+          "Target": "serviceStatus"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timePeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the [timePeriod](https://learn.microsoft.com/en-us/graph/api/resources/timePeriod?view=graph-rest-beta) resource.",
+          "Target": "timePeriod"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "backupRestoreRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource and supported methods.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveProtectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionRule?view=graph-rest-beta) resource.",
+          "Target": "driveProtectionRule"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveProtectionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveRestoreArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/driveRestoreArtifact?view=graph-rest-beta) resource.",
+          "Target": "driveRestoreArtifact"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeProtectionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource and supported methods.",
+          "Target": "exchangeProtectionPolicy"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeRestoreSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/exchangeRestoreSession?view=graph-rest-beta) resource  and supported methods.",
+          "Target": "exchangeRestoreSession"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxProtectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionRule?view=graph-rest-beta) resource.",
+          "Target": "mailboxProtectionRule"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxProtectionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxRestoreArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/mailboxRestoreArtifact?view=graph-rest-beta) resource.",
+          "Target": "mailboxRestoreArtifact"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveForBusinessProtectionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource  and supported methods.",
+          "Target": "oneDriveForBusinessProtectionPolicy"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveForBusinessRestoreSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [oneDriveForBusinessRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessRestoreSession?view=graph-rest-beta) resource  and supported methods.",
+          "Target": "oneDriveForBusinessRestoreSession"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectionPolicyBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource  and supported methods.",
+          "Target": "protectionPolicyBase"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectionRuleBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource and supported methods.",
+          "Target": "protectionRuleBase"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectionUnitBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource and supported methods.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoreArtifactBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreArtifactBase?view=graph-rest-beta) resource.",
+          "Target": "restoreArtifactBase"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restorePoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [restorePoint](https://learn.microsoft.com/en-us/graph/api/resources/restorePoint?view=graph-rest-beta) resource.",
+          "Target": "restorePoint"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoreSessionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource and supported methods.",
+          "Target": "restoreSessionBase"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource and supported methods.",
+          "Target": "serviceApp"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointProtectionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource and supported methods.",
+          "Target": "sharePointProtectionPolicy"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointRestoreSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/sharePointRestoreSession?view=graph-rest-beta) resource and supported methods.",
+          "Target": "sharePointRestoreSession"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteProtectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteProtectionRule](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionRule?view=graph-rest-beta) resource.",
+          "Target": "siteProtectionRule"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteProtectionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteRestoreArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/siteRestoreArtifact?view=graph-rest-beta) resource.",
+          "Target": "siteRestoreArtifact"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/serviceapp-activate?view=graph-rest-beta) method to the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource.",
+          "Target": "activate"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/restoresessionbase-activate?view=graph-rest-beta) method to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource.",
+          "Target": "activate"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/protectionpolicybase-activate?view=graph-rest-beta) method to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
+          "Target": "activate"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/en-us/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta) method to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
+          "Target": "deactivate"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/en-us/graph/api/serviceapp-deactivate?view=graph-rest-beta) method to the [serviceApp](https://learn.microsoft.com/en-us/graph/api/resources/serviceApp?view=graph-rest-beta) resource.",
+          "Target": "deactivate"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Addition",
+          "Description": "Added the [enable](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-enable?view=graph-rest-beta) method to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "enable"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "run",
+          "ChangeType": "Addition",
+          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/protectionrulebase-run?view=graph-rest-beta) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "search",
+          "ChangeType": "Addition",
+          "Description": "Added the [search](https://learn.microsoft.com/en-us/graph/api/restorepoint-search?view=graph-rest-beta) method to the [restorePoint](https://learn.microsoft.com/en-us/graph/api/resources/restorePoint?view=graph-rest-beta) resource.",
+          "Target": "search"
+        }
+      ],
+      "Id": "fd6e0e1a-11df-4c40-a5e7-5d793e0405ca",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-30T09:35:44.3571799Z",
+      "WorkloadArea": "Backup storage",
+      "SubArea": ""
+    }
+  ]
+}

@@ -23,7 +23,7 @@ This resource contains a tenant score and description for an individual control.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
