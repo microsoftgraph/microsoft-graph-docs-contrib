@@ -28,12 +28,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.challengingWord"
+  "@odata.type": "microsoft.graph.authenticationAttributeCollectionInputConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.challengingWord",
+  "@odata.type": "#microsoft.graph.authenticationAttributeCollectionInputConfiguration",
   "word": "String",
   "count": "Integer"
 }
