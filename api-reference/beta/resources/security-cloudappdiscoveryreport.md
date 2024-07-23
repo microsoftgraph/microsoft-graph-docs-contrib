@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport resource type"
-description: "Get details of discovered cloud apps by endpoint/stream onboarded to discovery"
+description: "Get details of discovered cloud apps by endpoint or a stream onboarded to discovery."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get details of discovered cloud apps by endpoint/stream onboarded to discovery.
+Get details of discovered cloud apps by endpoint or a stream onboarded to discovery.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
