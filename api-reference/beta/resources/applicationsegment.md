@@ -22,6 +22,10 @@ This resource type is an abstract type that exposes properties used to configure
 |:-------------|:------------|:------------|
 |id|String|The unique identifier that is assigned to an application segment by Microsoft Entra ID. Not nullable. Read-only. Supports `$filter` (`eq`).  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

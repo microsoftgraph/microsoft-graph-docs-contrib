@@ -25,6 +25,10 @@ Represents the custom domain certificate metadata for the [onPremisesPublishing]
 |subjectName|String| The subject name of the custom domain certificate. |
 |thumbprint|String| The thumbprint associated with the custom domain certificate. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
