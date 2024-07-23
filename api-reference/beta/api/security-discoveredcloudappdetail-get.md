@@ -1,6 +1,6 @@
 ---
 title: "Get discoveredCloudAppDetail"
-description: "Get an overview of discovered cloud apps usage"
+description: "Get an overview of discovered cloud apps usage."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an overview of discovered cloud apps usage
+Get an overview of discovered cloud apps usage.
 
 ## Permissions
 
