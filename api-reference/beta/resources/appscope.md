@@ -21,7 +21,7 @@ This scope is employed in both the single principal, single scope entity and mul
 |:-------- |:---- |:----------- |
 | id | string | ID of an app-specific container or resource representing the scope of the assignment. Usually the immutable ID of the resource. The scope of an assignment determines the set of resources for which the principal is granted access. Required. |
 | type | String | Describes the type of app-specific resource represented by the app scope. For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read only. |
-| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read only. |
+| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable ID. Read only. |
 
 ## Relationships
 
