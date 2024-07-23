@@ -25,9 +25,13 @@ This type has the following properties:
 | description |String | The name of the connected organization. Read only. |
 | isBackup | Boolean | Not used now. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
