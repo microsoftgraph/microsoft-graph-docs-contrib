@@ -22,10 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/plannerplanconfiguration-list-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Get a list of the [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) objects and their properties.|
-|[Create](../api/plannerplanconfiguration-post-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Create a new [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Get](../api/plannerplanconfigurationlocalization-get.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Read the properties and relationships of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Update](../api/plannerplanconfigurationlocalization-update.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Update the properties of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Delete](../api/plannerplanconfiguration-delete-localizations.md)|None|Delete a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
+|[Update](../api/plannerplanconfiguration-update.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Add, remove, or update a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) via the update of the plannerPlanConfiguration.|
 
 ## Properties
 |Property|Type|Description|
