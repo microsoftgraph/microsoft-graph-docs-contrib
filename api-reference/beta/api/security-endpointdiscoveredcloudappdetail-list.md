@@ -1,6 +1,6 @@
 ---
 title: "List endpointDiscoveredCloudAppDetail"
-description: "Get a list of the discovered apps in a specific endpoint/stream"
+description: "Get a list of the discovered apps in a specific endpoint or stream."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the discovered apps on a specific endpoint or stream. Choose any endpoint that you have onboarded to cloud discovery.
+Get a list of the discovered apps on a specific endpoint or a stream. Choose an endpoint that you have onboarded to cloud discovery.
 
 ## Permissions
 
