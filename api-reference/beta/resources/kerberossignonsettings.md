@@ -28,7 +28,7 @@ If you are configuring password-based single-sign this must be set using [create
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
