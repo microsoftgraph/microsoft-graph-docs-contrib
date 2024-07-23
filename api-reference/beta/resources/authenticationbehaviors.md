@@ -27,7 +27,7 @@ Applications can adopt new breaking changes by enabling a behavior (set the beha
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationBehaviors"

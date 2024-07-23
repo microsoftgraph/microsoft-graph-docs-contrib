@@ -26,7 +26,7 @@ Contains details of a verifiable credential type, including the type of the cred
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialType"
