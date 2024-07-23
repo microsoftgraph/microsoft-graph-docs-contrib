@@ -109,7 +109,7 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

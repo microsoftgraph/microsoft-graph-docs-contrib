@@ -22,7 +22,7 @@ Provides settings to enable others to configure [team](team.md) discoverability.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

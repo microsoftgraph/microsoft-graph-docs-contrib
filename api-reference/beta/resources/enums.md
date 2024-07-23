@@ -4953,6 +4953,13 @@ Possible values for user account types (group membership), per Windows definitio
 |outdated|
 |principalWantsCopy|
 
+### photoUpdateSource values
+
+|Member|
+|:---|
+|cloud|
+|onPremises|
+
 ### uriUsageType values 
 
 |Member|
