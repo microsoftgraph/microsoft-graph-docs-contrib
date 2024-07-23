@@ -36,6 +36,10 @@ Represents the processing status of the printer, including any errors.
 
 [printerProcessingStateDetail enum type](./printerprocessingstatedetail.md)
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

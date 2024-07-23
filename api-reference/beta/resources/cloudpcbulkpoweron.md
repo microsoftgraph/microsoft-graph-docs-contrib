@@ -17,8 +17,6 @@ Defines the bulk power-on action, with Cloud PC IDs as the only input parameter 
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
-## Methods
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
