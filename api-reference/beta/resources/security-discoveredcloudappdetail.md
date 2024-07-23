@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDetail resource type"
-description: "Describes the resource type for discovered apps"
+description: "Describes the resource type for discovered apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -25,24 +25,24 @@ Describes the resource type for discovered apps.
 |Property|Type|Description|
 |:---|:---|:---|
 |category|microsoft.graph.security.appCategory|The discovered app's category. Possible values include: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
-|displayName|String|The app name|
-|domains|String collection|The domain|
-|downloadNetworkTrafficInBytes|Int64|The download traffic size|
+|displayName|String|The app name.|
+|domains|String collection|The domain.|
+|downloadNetworkTrafficInBytes|Int64|The download traffic size.|
 |id|String|The app's SaaSDB ID. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|ipAddressCount|Int64|The IP address|
-|lastSeenDateTime|DateTimeOffset|The last seen date|
+|ipAddressCount|Int64|The IP address.|
+|lastSeenDateTime|DateTimeOffset|The last seen date.|
 |riskScore|Int64|The app's risk score.|
 |tags|String collection|The app's tag name. Possible values include Unsanctioned,Sanctioned,Monitored, or a custom tag.|
-|transactionCount|Int64|The app transaction count|
-|uploadNetworkTrafficInBytes|Int64|The app upload traffic size, in bytes|
-|userCount|Int64|The count of users using the app|
+|transactionCount|Int64|The app transaction count.|
+|uploadNetworkTrafficInBytes|Int64|The app upload traffic size, in bytes.|
+|userCount|Int64|The count of users using the app.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|The application information|
-|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|The list of IP addresses accessed by the app|
-|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|The list of users accessing the app|
+|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|The application information.|
+|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|The list of IP addresses accessed by the app.|
+|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|The list of users accessing the app.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
