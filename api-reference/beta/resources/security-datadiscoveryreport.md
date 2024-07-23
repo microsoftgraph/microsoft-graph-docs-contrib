@@ -18,8 +18,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get a list of the [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) objects and their properties.|
-|[Get](../api/security-datadiscoveryreport-get.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|Read the properties and relationships of a [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.|
+|[List](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get a list of the discovery report and its properties.|
+|[Get](../api/security-datadiscoveryreport-get.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|Read the properties and relationships of a discovery report object.|
 |[List uploadedStreams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get the cloudAppDiscoveryReport resources from the uploadedStreams navigation property.|
 
 ## Properties
