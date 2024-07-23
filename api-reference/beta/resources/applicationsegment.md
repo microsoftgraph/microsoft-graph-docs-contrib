@@ -1,6 +1,6 @@
 ---
 title: "applicationSegment resource type"
-description: "An abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Microsoft Entra application proxy."
+description: "Represents an abstract type that exposes properties used to configure allowed segment configurations for on-premises wildcard applications that are published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource type is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Microsoft Entra application proxy. The following types are derived from this abstract type:
+Represents an abstract resource type that exposes properties used to configure allowed segment configurations that on-premises wildcard applications that are published through Microsoft Entra application proxy. The following types are derived from this abstract type:
 + [webApplicationSegment](webapplicationsegment.md)
 
 ## Properties
