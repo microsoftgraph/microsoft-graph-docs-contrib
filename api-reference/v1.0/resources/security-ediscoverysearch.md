@@ -68,7 +68,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |noncustodialSources|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|**noncustodialDataSource** sources that are included in the **eDiscovery search**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

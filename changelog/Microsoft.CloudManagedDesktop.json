@@ -63,6 +63,48 @@
       {
         "ChangeList": [
         {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkModifyDiskEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkModifyDiskEncryptionType](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkModifyDiskEncryptionType?view=graph-rest-beta) resource",
+          "Target": "cloudPcBulkModifyDiskEncryptionType"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcDiskEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcDiskEncryptionType** enumeration type.",
+          "Target": "cloudPcDiskEncryptionType"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcTenantEncryptionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcTenantEncryptionSetting?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcTenantEncryptionSetting"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveTenantEncryptionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievetenantencryptionsetting?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+          "Target": "virtualEndpoint"
+        }
+      ],
+      "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-22T07:08:27.3298762Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b550ddff-55ce-4194-8fb3-92db2a24e6ec",
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcBulkActionStatus",
