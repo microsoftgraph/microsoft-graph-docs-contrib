@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryRoot resource type"
-description: "Provides data about discovery report entities"
+description: "Get data about discovery report entities."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,24 +11,24 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Provides data about discovery report entities.
+Get data about discovery report entities.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dataDiscoveryReport](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get the dataDiscoveryReport resources 
+|[List dataDiscoveryReport](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get the dataDiscoveryReport resources.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|These are the available properties|
+|id|String|The unique ID of the discovery stream|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|microsoft.graph.security.cloudAppDiscovery|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|These are the available relationships|
+|microsoft.graph.security.cloudAppDiscovery|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|The available relationships|
 
 ## JSON representation
 The following JSON representation shows the resource type.
