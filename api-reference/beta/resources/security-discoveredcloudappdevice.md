@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDevice resource type"
-description: "Get the details of the devices that are accessing discovered cloud apps"
+description: "Get the details of the devices that are accessing discovered cloud apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -21,7 +21,7 @@ Get the details of the devices that are accessing discovered cloud apps.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|List of available properties|
+|name|String|The name of cloud app.|
 
 ## Relationships
 None.
