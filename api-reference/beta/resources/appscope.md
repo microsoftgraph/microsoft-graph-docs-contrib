@@ -25,7 +25,7 @@ This scope is employed in both the single principal, single scope entity and mul
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
