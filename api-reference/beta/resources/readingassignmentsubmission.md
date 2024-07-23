@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/readingassignmentsubmissions-get.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md)|Read the properties and relationships of a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object.|
+|[Get](../api/readingassignmentsubmission-get.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md)|Read the properties and relationships of a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |missedPeriods|Int64 |Number of periods missed in the reading passage.|
 |missedQuestionMarks|Int64|Number of question marks missed in the reading passage.|
 |unexpectedPauses|Int64|Number of unexpected pauses made during the reading session.|
-|challengingWords|Collection of [challengingWords](../resources/challengingword.md)|List of words that the student found challenging during the reading session.|
+|challengingWords|Collection|List of words that the student found challenging during the reading session.|
 
 ## Relationships
 None.

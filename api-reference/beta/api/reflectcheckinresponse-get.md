@@ -138,12 +138,13 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reflectCheckinResponses",
+  "@odata.type": "microsoft.graph.reflectCheckInResponses",
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/reflectCheckInResponses",
     "value": [
