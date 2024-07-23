@@ -1,6 +1,6 @@
 ---
 title: "endpointDiscoveredCloudAppDetail resource type"
-description: "Get the list of endpoints accessing discovered apps"
+description: "Get the list of endpoints accessing discovered apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -29,19 +29,19 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.security.appCategory|These are the list of category of discovered apps.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
-|deviceCount|Int64|This is the number of devices accessing discovered apps.|
-|displayName|String|This is the device name.|
-|domains|String collection|This is the list of domains accessing discovered apps.|
-|downloadNetworkTrafficInBytes|Int64|This is the amount of download traffic from the devices.|
-|id|String|This is the ID of the discovered app.|
-|ipAddressCount|Int64|This is the IpAddress.|
-|lastSeenDateTime|DateTimeOffset|This is the App last seen date & time.|
-|riskScore|Int64|This is the riskscore of the discovered app.|
-|tags|String collection|This is the discovered app tag.|
-|transactionCount|Int64|This is the total transanctions on discovered app.|
-|uploadNetworkTrafficInBytes|Int64|This is the upload traffic on discovered app.|
-|userCount|Int64|This is the count of users accessing discovered app.|
+|category|microsoft.graph.security.appCategory|The list of category of discovered apps.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
+|deviceCount|Int64|The number of devices accessing discovered apps.|
+|displayName|String|The device name.|
+|domains|String collection|The list of domains accessing discovered apps.|
+|downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the devices.|
+|id|String|The ID of the discovered app.|
+|ipAddressCount|Int64|The IpAddress.|
+|lastSeenDateTime|DateTimeOffset|The App last seen date & time.|
+|riskScore|Int64|The riskscore of the discovered app.|
+|tags|String collection|The discovered app tag.|
+|transactionCount|Int64|The total transanctions on discovered app.|
+|uploadNetworkTrafficInBytes|Int64|The upload traffic on discovered app.|
+|userCount|Int64|The count of users accessing discovered app.|
 
 ## Relationships
 |Relationship|Type|Description|
