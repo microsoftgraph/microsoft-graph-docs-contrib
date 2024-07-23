@@ -23,7 +23,7 @@ Contains information about the audio file to be played and other additional sett
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

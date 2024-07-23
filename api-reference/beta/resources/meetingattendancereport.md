@@ -41,7 +41,7 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

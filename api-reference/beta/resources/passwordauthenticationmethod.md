@@ -40,7 +40,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 None.
 
-## JSON representation
+The following JSON representation shows the resource type.
 
 The following JSON representation shows the resource type.
 
@@ -55,6 +55,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.passwordAuthenticationMethod",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "password": "String"
