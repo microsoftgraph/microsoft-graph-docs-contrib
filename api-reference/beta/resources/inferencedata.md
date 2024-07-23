@@ -24,7 +24,7 @@ The [inferenceData](inferencedata.md) resource type provides additional detail a
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

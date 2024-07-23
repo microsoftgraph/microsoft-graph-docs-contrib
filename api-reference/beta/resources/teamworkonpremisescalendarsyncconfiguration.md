@@ -24,7 +24,7 @@ Represents the details about the account used to sync calendars in the Microsoft
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkOnPremisesCalendarSyncConfiguration"
