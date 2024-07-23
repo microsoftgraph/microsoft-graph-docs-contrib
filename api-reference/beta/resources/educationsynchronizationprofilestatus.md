@@ -1,18 +1,20 @@
 ---
-title: "educationSynchronizationProfileStatus resource type"
+title: "educationSynchronizationProfileStatus resource type (deprecated)"
 description: "Represents the synchronization status of a school data synchronization profile."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-toc.title: Synchronization profile status
+toc.title: Synchronization profile status (deprecated)
 ---
 
-# educationSynchronizationProfileStatus resource type
+# educationSynchronizationProfileStatus resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md).
 
@@ -55,7 +57,7 @@ The following JSON representation shows the resource type.
   "id": "String",
   "lastActivityDateTime": "DateTimeOffset",
   "lastSynchronizationDateTime": "DateTimeOffset",
-  "status": { "@odata.type": "microsoft.graph.educationSynchronizationStatus" },
+  "status": "String",
   "statusMessage": "String"
 }
 ```
