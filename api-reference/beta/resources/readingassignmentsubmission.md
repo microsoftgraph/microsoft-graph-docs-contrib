@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |missedPeriods|Int64 |Number of periods missed in the reading passage.|
 |missedQuestionMarks|Int64|Number of question marks missed in the reading passage.|
 |unexpectedPauses|Int64|Number of unexpected pauses made during the reading session.|
-|challengingWords|Collection|List of words that the student found challenging during the reading session.|
+|challengingWords|Collection of [challengingWords](../resources/challengingword.md)|List of words that the student found challenging during the reading session.|
 
 ## Relationships
 None.
@@ -83,11 +83,7 @@ The following JSON representation shows the resource type.
   "missedPeriods": "Integer",
   "missedQuestionMarks": "Integer",
   "unexpectedPauses": "Integer",
-  "challengingWords": [
-    {
-      "@odata.type": "microsoft.graph.challengingWord"
-    }
-  ]
+  "challengingWords": "Collection"
 }
 ```
 
