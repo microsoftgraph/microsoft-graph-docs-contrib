@@ -38,6 +38,7 @@ None.
 |schools|[educationSchool](educationschool.md) collection| Read-only. Nullable.|
 |synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Read-only. Nullable.|
 |users|[educationUser](educationuser.md) collection| Read-only. Nullable.|
+|reports|[reportRoot](../resources/reportroot.md)|Read-only. Nullable.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
