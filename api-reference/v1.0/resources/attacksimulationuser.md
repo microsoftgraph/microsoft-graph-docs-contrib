@@ -24,7 +24,7 @@ Represents a user in an attack simulation and training campaign.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attackSimulationUser"

@@ -30,7 +30,7 @@ Represents URI and identifying information for a print service instance.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

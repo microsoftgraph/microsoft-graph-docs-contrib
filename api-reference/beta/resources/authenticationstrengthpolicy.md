@@ -47,10 +47,9 @@ Inherits from [entity](../resources/entity.md).
 |combinationConfigurations|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
   "baseType": "microsoft.graph.entity",
   "openType": false

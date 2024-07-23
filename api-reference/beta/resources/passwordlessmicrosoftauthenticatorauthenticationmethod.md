@@ -39,7 +39,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |creationDateTime|DateTimeOffset|The timestamp when this method was registered to the user.|
 
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

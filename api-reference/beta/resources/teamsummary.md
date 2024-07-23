@@ -24,7 +24,7 @@ Contains information about a team in Microsoft Teams, including number of owners
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
