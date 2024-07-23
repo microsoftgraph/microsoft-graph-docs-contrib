@@ -22,7 +22,7 @@ Contains basic identification information about a channel in Microsoft Teams.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

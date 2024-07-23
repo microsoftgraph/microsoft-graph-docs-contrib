@@ -25,7 +25,7 @@ Contains information related to the subject of a content search. This resource i
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.dataSubject"

@@ -28,7 +28,7 @@ The border gateway protocol (BGP) specifies the IP address and ASN to route traf
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.bgpConfiguration"

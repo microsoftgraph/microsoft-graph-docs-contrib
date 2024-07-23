@@ -1398,11 +1398,11 @@
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
+                "platformCredentialAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "platformCredentialAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
               ]
             },
             {
@@ -1411,6 +1411,8 @@
               "resources": [
                 "authenticationStrengthPolicy",
                 "authenticationCombinationConfiguration",
+                "fido2CombinationConfiguration",
+                "x509CertificateCombinationConfiguration",
                 "authenticationMethodModeDetail"
               ]
             },
@@ -1499,6 +1501,12 @@
                   "resources": [
                     "internalDomainFederation"
                   ]
+                },
+                {
+                  "name": "Federated token validation policy (preview)",
+                  "resources": [
+                    "federatedTokenValidationPolicy"
+                  ]
                 }
               ]
             },
@@ -1556,15 +1564,6 @@
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
-              "complexTypes": [
-                "allDeviceRegistrationMembership",
-                "azureADJoinPolicy",
-                "azureADRegistrationPolicy",
-                "deviceRegistrationMembership",
-                "enumeratedDeviceRegistrationMembership",
-                "localAdminPasswordSettings",
-                "noDeviceRegistrationMembership"
-              ],
               "childNodes": [
                 {
                   "name": "Application authentication method policy",
@@ -1599,6 +1598,14 @@
               ]
             },
             {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
+              ]
+            },
+            {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
                 "identityUserFlow",
@@ -1608,14 +1615,6 @@
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
-              ]
-            },
-            {
-              "name": "User flows in external tenants",
-              "resources": [
-                "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
               ]
             }
           ]

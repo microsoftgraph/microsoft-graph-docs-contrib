@@ -17,12 +17,9 @@ For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in iden
 This type inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
+None.
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List configured identity providers](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers. There's no way to retrieve only the built-in identity providers in a tenant.|
-|[Get identity provider](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of a built-in identity provider.|
-|[List available identity providers](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+For the list of API operations for managing built-in identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 

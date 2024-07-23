@@ -442,7 +442,7 @@ The preceding limits apply to the following resources:
 
 Outlook service limits apply to the public cloud and [national cloud deployments](./deployments.md).
 
-### Limits per app ID and mailbox combination
+### Limits per mailbox
 
 The Outlook service applies limits to each mailbox individually, regardless of the application used - that is, any app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not impact the application's ability to access another mailbox.
 

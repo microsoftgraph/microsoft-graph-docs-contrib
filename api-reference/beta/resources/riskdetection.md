@@ -26,8 +26,8 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List risk detections](../api/riskdetection-list.md) | [riskDetection](riskdetection.md) collection|List risk detections and their properties.|
-|[Get risk detection](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
+|[List](../api/riskdetection-list.md) | [riskDetection](riskdetection.md) collection|List risk detections and their properties.|
+|[Get](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
 
 ## Properties
 
