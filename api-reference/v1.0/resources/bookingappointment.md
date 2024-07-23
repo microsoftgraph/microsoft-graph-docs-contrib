@@ -33,7 +33,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
 |appointmentLabel|String|The custom label that can be stamped on this appointment by users.|
 |createdDateTime|DateTimeOffset|The date, time, and time zone when the appointment was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.	|
-|customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
+|customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who books the appointment.|
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when you read this **bookingAppointment** by its ID. You can set this property only when you initially create an appointment with a new customer.|
 |customerPhone|String|The customer's phone number.|
