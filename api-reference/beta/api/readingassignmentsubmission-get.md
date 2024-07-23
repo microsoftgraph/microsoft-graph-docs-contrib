@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET education/reports/readingassignmentsubmissions
+GET education/reports/readingAssignmentSubmission
 ```
 
 ## Optional query parameters
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/readingassignmentsubmissions
+GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmission
 ```
 
 #### Response

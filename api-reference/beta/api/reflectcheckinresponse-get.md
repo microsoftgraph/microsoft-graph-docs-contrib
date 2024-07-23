@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET education/reports/reflectcheckinresponses
+GET education/reports/reflectCheckInResponses
 ```
 
 ## Optional query parameters
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/reflectcheckinresponses
+GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses
 ```
 
 #### Response
@@ -128,7 +128,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/reports/reflectcheckinresponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
+GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z
 ```
 
 #### Response
