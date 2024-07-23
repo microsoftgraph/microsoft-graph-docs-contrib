@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get a list of the DiscoveryReport objects and their properties.
+Get a list of the discoveryReport objects and their properties.
 
 ## Permissions
 
