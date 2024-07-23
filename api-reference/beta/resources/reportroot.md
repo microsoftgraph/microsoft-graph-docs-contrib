@@ -297,7 +297,7 @@ None.
 | userCredentialUsageDetails        | [userCredentialUsageDetails](usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                                              |
 | userInsights                      | [userInsightsRoot](userinsightsroot.md)                                              | Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers. |
 |readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md)|Represents the submission details of the reading assignment associated with this data.|
-|reflectCheckInResponse|[reflectCheckinResponse](../resources/reflectcheckinresponse.md)|Represents the response to the reflect check-in associated with this data.|
+|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md)|Represents the response to the reflect check-in associated with this data.|
 
 ## JSON representation
 
