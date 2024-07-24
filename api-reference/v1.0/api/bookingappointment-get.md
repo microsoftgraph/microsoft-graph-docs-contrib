@@ -132,6 +132,10 @@ Content-type: application/json
     "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "isCustomerAllowedToManageBooking": false,
+	"customerName": "Jordan Miller",
+	"customerEmailAddress": "jordanm@contoso.com",
+	"customerPhone": "213-555-0199",
+	"customerNotes": null,	
     "start": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",
         "timeZone": "UTC"

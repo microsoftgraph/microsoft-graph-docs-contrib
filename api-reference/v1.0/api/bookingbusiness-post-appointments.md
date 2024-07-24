@@ -70,6 +70,10 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.bookingAppointment",
     "customerTimeZone": "America/Chicago",
+	"customerName": "Jordan Miller",
+	"customerEmailAddress": "jordanm@contoso.com",
+	"customerPhone": "213-555-0199",
+	"customerNotes": null,	
     "smsNotificationsEnabled": true,
     "end": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
