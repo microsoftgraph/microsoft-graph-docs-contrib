@@ -1,6 +1,6 @@
 ---
 title: "challengingWord resource type"
-description: "Represents a word the student found challenging in a reading assignment submission."
+description: "Represents a word a student found challenging in a reading assignment submission."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -28,14 +28,14 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.authenticationAttributeCollectionInputConfiguration"
+  "@odata.type": "microsoft.graph.challengingWord"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.authenticationAttributeCollectionInputConfiguration",
-  "word": "String",
-  "count": "Integer"
+  "@odata.type": "#microsoft.graph.challengingWord",
+  "count": "Int64",
+  "word": "String" 
 }
 ```
 
