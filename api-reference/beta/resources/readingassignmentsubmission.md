@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |accuracyScore|Double|Accuracy score of the reading progress.|
 |assignmentId|String|ID of the assignment with which this submission is associated.|
-|challengingWords|[challengingWords](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
+|challengingWords|[challengingWord](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
 |classId|String|ID of the class this reading progress is associated with.|
 |id|String|The unique identifier for the **readingAssignmentSubmission**. Inherited from [entity](../resources/entity.md).|
 |insertions|Int64|Insertions of the reading progress.|
