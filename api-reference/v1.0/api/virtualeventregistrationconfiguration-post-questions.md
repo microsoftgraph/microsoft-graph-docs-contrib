@@ -49,7 +49,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 |Property|Type|Description|
 |:---|:---|:---|
 |answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
-|answerInputType|virtualEventRegistrationQuestionAnswerInputType|Input type of the registration question answer. The supported values are `text`, `multilineText`, `singleChoice`, `multiChoice`, and `boolean`.|
+|answerInputType|[virtualEventRegistrationQuestionAnswerInputType](../resources/enums.md#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer. The supported values are `text`, `multilineText`, `singleChoice`, `multiChoice`, and `boolean`.|
 |displayName|String|Display name of the registration question.|
 |isRequired|Boolean| Indicates whether an answer to the question is required. Default value is `false`.|
 
@@ -57,7 +57,7 @@ You can specify the following property when you create a **virtualEventRegistrat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. `unknownFutureValue` is an evolvable enumeration sentinel value; do not use this label.|
+|label|[virtualEventRegistrationPredefinedQuestionLabel](../resources/enums.md#virtualeventregistrationpredefinedquestionlabel-values)|Label of the predefined registration question. The following label values accept a single line  of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, and `organization`. |
 
 ## Response
 

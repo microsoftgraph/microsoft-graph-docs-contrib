@@ -21,23 +21,11 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 |Property|Type|Description|
 |:---|:---|:---|
 |answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
-|answerInputType|[virtualEventRegistrationQuestionAnswerInputType](#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer. Possible values are `text`, `multilineText`, `singleChoice`, `multiChoice`, `boolean`, and `unknownFutureValue`.|
+|answerInputType|[virtualEventRegistrationQuestionAnswerInputType](../resources/enums.md#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer. Possible values are `text`, `multilineText`, `singleChoice`, `multiChoice`, and `boolean`.|
 |displayName|String|Display name of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |id|String|Unique identifier of the registration question. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 |isRequired|Boolean| Indicates whether an answer to the question is required. The default value is `false`. Inherited from [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md).|
 
-### virtualEventRegistrationQuestionAnswerInputType values
-
-The following shows the supported types of answer input for a custom registration question.
-
-| Member | Description |
-| ----- | ----------- |
-| text | The registration question accepts single-line text. |
-| multilineText | The registration question accepts multi-line text. |
-| singleChoice | The registration question accepts one answer from a list of options. |
-| multiChoice | The registration question accepts more than one answer from a list of options. |
-| boolean | The registration question accepts a yes, or no answer. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 

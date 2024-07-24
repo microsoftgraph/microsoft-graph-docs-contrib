@@ -32,7 +32,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
+| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | To whom the webinar is visible. Possible values are: `everyone` and `organization`. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -40,24 +40,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
-| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
-
-### meetingAudience values
-
-| Value | Description |
-| ----- | ----------- |
-| everyone | The webinar is a public webinar. A public webinar is visible to everyone. |
-| organization | The webinar is a private webinar. A private webinar is visible only within the same organization as the organizer. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-
-### virtualEventStatus values
-
-| Value | Description |
-| ----- | ----------- |
-| draft | The virtual event is in draft and only visible to the organizer. |
-| published | The organizer published the virtual event and it's visible to the audience. |
-| canceled | The organizer canceled the virtual event. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| status | [virtualEventStatus](../resources/enums.md#virtualeventstatus-values) | Status of the webinar. Possible values are: `draft`, `published`, and `canceled`. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## Relationships
 

@@ -3292,31 +3292,31 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### meetingAudience values 
 
-|Member|
-|:---|
-|everyone|
-|organization|
-|unknownFutureValue|
+| Member | Description |
+| ----- | ----------- |
+| everyone | The town hall is open to anyone. Select this choice to include attendees from outside your organization. |
+| organization | The town hall is open to people in your organization and guests of your organization. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### virtualEventAttendeeRegistrationStatus values 
 
-|Member|
-|:---|
-|registered|
-|canceled|
-|waitlisted|
-|pendingApproval|
-|rejectedByOrganizer|
-|unknownFutureValue|
+| Member | Description |
+| ----- | ----------- |
+| registered | The attendee successfully registered for the virtual event. |
+| canceled | The attendee canceled registration for the virtual event. |
+| waitlisted | Waitlist is enabled and the virtual event is at full capacity. The attendee is on the waitlist. |
+| pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
+| rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ### virtualEventStatus values 
 
-|Member|
-|:---|
-|draft|
-|published|
-|canceled|
-|unknownFutureValue|
+| Member | Description |
+| ----- | ----------- |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### socialIdentitySourceType values
 
@@ -3400,14 +3400,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### virtualEventRegistrationQuestionAnswerInputType values 
 
-|Member|
-|:---|
-|text|
-|multilineText|
-|singleChoice|
-|multiChoice|
-|boolean|
-|unknownFutureValue|
+| Member | Description |
+| ----- | ----------- |
+| text | The registration question accepts single-line text. |
+| multilineText | The registration question accepts multi-line text. |
+| singleChoice | The registration question accepts one answer from a list of options. |
+| multiChoice | The registration question accepts more than one answer from a list of options. |
+| boolean | The registration question accepts a yes, or no answer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### teamworkActivityTopicSource values
 
@@ -4482,26 +4482,6 @@ Possible values for user account types (group membership), per Windows definitio
 | default            |
 | verticalSplit      |
 | unknownFutureValue |
-
-### meetingAudience values 
-
-|Member|
-|:---|
-|everyone|
-|organization|
-|unknownFutureValue|
-
-### virtualEventAttendeeRegistrationStatus values 
-
-|Member|
-|:---|
-|registered|
-|canceled|
-|waitlisted|
-|pendingApproval|
-|rejectedByOrganizer|
-|unknownFutureValue|
-
 
 ### socialIdentitySourceType values
 
