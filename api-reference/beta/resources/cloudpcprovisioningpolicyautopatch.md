@@ -1,6 +1,6 @@
 ---
-title: "CloudPcProvisioningPolicyAutopatch resource type"
-description: "Represents specific settings for Autopatch which enables Autopatch customers to get Autopatch experience for Cloud PC."
+title: "cloudPcProvisioningPolicyAutopatch resource type"
+description: "Represents specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific settings for Autopatch which enables Autopatch customers to get Autopatch experience for Cloud PC.
+Represents specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopatchGroupId|String|The unique identifier(ID) of Autopatch groups serve as logical containers or units that group several Microsoft Entra groups and software update policies. The devices with same Autopatch group ID share unified software update management. The default value is `null`, which indicates that no Autopatch group is associated with the provisioning policy.|
+|autopatchGroupId|String|The unique identifier (ID) of Windows Autopatch groups. Autopatch groups is a logical container or unit that groups several Microsoft Entra groups and software update policies. Devices with the same Autopatch group ID share unified software update management. The default value is `null` that indicates that no Autopatch group is associated with the provisioning policy.|
 
 ## Relationships
 
@@ -38,6 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAutopatch",
-  "autopatchGroupId": "9f06f7fc-db3b-499b-a9c8-6498dc92ef92"
+  "autopatchGroupId": "String (identifier)"
 }
 ```
