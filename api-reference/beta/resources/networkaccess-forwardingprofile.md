@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this traffic forwarding profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Supports `$expand` and a nested `$expand` to retrieve the policy. That is `/forwardingProfiles?$expand=policies($expand=policy)`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

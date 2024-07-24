@@ -679,7 +679,6 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 
 ---
 
-
 ## Configure trusted certificate authorities for apps
 
 You can restrict certificate credential usage for apps in your tenant to only the certificates issued by trusted certificate authorities. This policy is enforced when you add a certificate to an app and doesn't affect existing certificates unless they are rotated. When an app tries to rotate its certificate credentials, it goes through the policy evaluation to ensure the credentials being added comply with the trusted certificate authority restriction.
@@ -724,6 +723,7 @@ This policy ensures that only certificates from the specified intermediate certi
 Least privileged delegated permission: `Policy.Read.ApplicationConfiguration`
 Least privileged Microsoft Entra role: `Security Administrator`
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-update-appmanagementpolicy"
@@ -761,6 +761,40 @@ PATCH https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-update-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-update-appmanagementpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-application-basics-update-appmanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-application-basics-update-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-application-basics-update-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-application-basics-update-appmanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-application-basics-update-appmanagementpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-application-basics-update-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Related content
 

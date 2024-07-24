@@ -921,7 +921,7 @@ The request returns a `201 Created` response code and an [openTypeExtension](/gr
 
 #### Update an existing open extension
 
-To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties are updated to `null` and deleted from the open extension.
+To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties are deleted from the open extension. You can however explicitly set a property to `null` to retain it in the open extension.
 
 The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
 

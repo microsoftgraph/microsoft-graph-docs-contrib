@@ -25,7 +25,7 @@ Feedback from a teacher to a student. This property represents both the text par
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
