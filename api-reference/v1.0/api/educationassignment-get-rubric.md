@@ -73,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationRubric)"
+  "@odata.type": "microsoft.graph.educationRubric"
 } -->
 
 ```http
