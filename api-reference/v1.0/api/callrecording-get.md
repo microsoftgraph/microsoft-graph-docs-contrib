@@ -64,7 +64,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 
 ## Optional query parameters
 
-This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
