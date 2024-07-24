@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDevice resource type"
-description: "Get the details of the devices that are accessing discovered cloud apps."
+description: "Represents the resources available for a discovered cloud app device."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get the details of the devices that are accessing discovered cloud apps.
+Represents the resources available for a discovered cloud app device.
 
 ## Methods
 |Method|Return type|Description|
