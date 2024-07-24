@@ -25,26 +25,27 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentId|String|ID of the assignment with which this submission is associated.|
-|classId|String|ID of the class this reading progress is associated with.|
-|submissionId|String|ID of the submission this reading progress is associated with.|
-|studentId|String|ID of the user this reading progress is associated with.|
-|submissionDateTime|DateTime|Date and time of the submission this reading progress is associated with.|
 |accuracyScore|Double|Accuracy score of the reading progress.|
-|wordsPerMinute|Double|Words per minute of the reading progress.|
-|wordCount|Int64|Words count of the reading progress.|
-|mispronunciations|Int64|Mispronunciations of the reading progress.|
-|omissions|Int64|Omissions of the reading progress.|
+|assignmentId|String|ID of the assignment with which this submission is associated.|
+|challengingWords|[challengingWords](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
+|classId|String|ID of the class this reading progress is associated with.|
+|id|String|The unique identifier for the **readingAssignmentSubmission**. Inherited from [entity](../resources/entity.md).|
 |insertions|Int64|Insertions of the reading progress.|
-|selfCorrections|Int64|Number of times the student self-corrected their reading errors.|
-|repetitions|Int64|Number of times the student repeated words or phrases during the reading session.|
-|monotoneScore|Double|Score reflecting the student's use of intonation and expression, with lower scores indicating more monotone reading.|
-|missedShorts|Int64|Number of short words missed during the reading session.|
+|mispronunciations|Int64|Mispronunciations of the reading progress.|
 |missedExclamationMarks|Int64 |Number of exclamation marks missed in the reading passage.|
 |missedPeriods|Int64 |Number of periods missed in the reading passage.|
 |missedQuestionMarks|Int64|Number of question marks missed in the reading passage.|
+|missedShorts|Int64|Number of short words missed during the reading session.|
+|monotoneScore|Double|Score that reflects the student's use of intonation and expression. Lower scores indicate more monotone reading.|
+|omissions|Int64|Omissions of the reading progress.|
+|repetitions|Int64|Number of times the student repeated words or phrases during the reading session.|
+|selfCorrections|Int64|Number of times the student self-corrected their reading errors.|
+|studentId|String|ID of the user this reading progress is associated with.|
+|submissionId|String|ID of the submission this reading progress is associated with.|
+|submissionDateTime|DateTimeOffset|Date and time of the submission this reading progress is associated with. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |unexpectedPauses|Int64|Number of unexpected pauses made during the reading session.|
-|challengingWords|Collection of [challengingWords](../resources/challengingword.md)|List of words that the student found challenging during the reading session.|
+|wordCount|Int64|Words count of the reading progress.|
+|wordsPerMinute|Double|Words per minute of the reading progress.|
 
 ## Relationships
 None.
@@ -62,28 +63,28 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.readingAssignmentSubmission",
-  "id": "String (identifier)",
+  "accuracyScore": "Double",
   "action": "String",
   "assignmentId": "String",
+  "challengingWords": "Collection",
   "classId": "String",
-  "submissionId": "String",
+  "id": "String (identifier)",
+  "insertions": "Int64",
+  "mispronunciations": "Int64",
+  "missedExclamationMarks": "Int64",
+  "missedPeriods": "Int64",
+  "missedQuestionMarks": "Int64",
+  "missedShorts": "Int64",
+  "monotoneScore": "Double",
+  "omissions": "Int64",
+  "repetitions": "Int64",
+  "selfCorrections": "Int64",
   "studentId": "String",
   "submissionDateTime": "String (timestamp)",
-  "accuracyScore": "Double",
-  "wordsPerMinute": "Double",
-  "wordCount": "Integer",
-  "mispronunciations": "Integer",
-  "omissions": "Integer",
-  "insertions": "Integer",
-  "selfCorrections": "Integer",
-  "repetitions": "Integer",
-  "monotoneScore": "Double",
-  "missedShorts": "Integer",
-  "missedExclamationMarks": "Integer",
-  "missedPeriods": "Integer",
-  "missedQuestionMarks": "Integer",
-  "unexpectedPauses": "Integer",
-  "challengingWords": "Collection"
+  "submissionId": "String",
+  "unexpectedPauses": "Int64",
+  "wordCount": "Int64",
+  "wordsPerMinute": "Double"
 }
 ```
 
