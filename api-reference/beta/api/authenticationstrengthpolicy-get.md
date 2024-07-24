@@ -125,7 +125,7 @@ Content-Type: application/json
     "allowedCombinations": [
         "fido2"
     ],
-    "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('5790842a-5bab-44c2-9cf1-b38d675b70ea')/combinationConfigurations",
+    "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('5790842a-5bab-44c2-9cf1-b38d675b70ea')/combinationConfigurations",
     "combinationConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2CombinationConfiguration",
