@@ -21,7 +21,7 @@ Represents the resource available for users accessing a discovered cloud app.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userIdentifier|String|The user Identifier.|
+|userIdentifier|String|The user identifier.|
 
 ## Relationships
 None.
