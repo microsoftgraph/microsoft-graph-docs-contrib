@@ -66,7 +66,7 @@ The following JSON representation shows the resource type.
   "accuracyScore": "Double",
   "action": "String",
   "assignmentId": "String",
-  "challengingWords": "Collection",
+  "challengingWords": [{"@odata.type": "microsoft.graph.challengingWord"}],
   "classId": "String",
   "id": "String (identifier)",
   "insertions": "Int64",
