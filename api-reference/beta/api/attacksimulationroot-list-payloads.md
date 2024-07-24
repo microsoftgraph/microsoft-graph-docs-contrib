@@ -48,6 +48,8 @@ The following are examples of their use:
 -->
 ``` http
 GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$count=true
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&{property} eq '{property-value}' &$top=5
 GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'
 GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'&$orderby={property}
