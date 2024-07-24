@@ -23,7 +23,7 @@ Links to open a OneNote notebook. This resource type exists as a property on a [
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

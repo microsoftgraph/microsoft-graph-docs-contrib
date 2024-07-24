@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                                                      | Return type                                                                        | Description                                                     |
 | :------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-| [List risky service principals](../api/identityprotectionroot-list-riskyserviceprincipals.md) | [riskyServicePrincipal](../resources/riskyserviceprincipal.md) collection          | List risky service principals and their risk properties.        |
-| [Get risky service principal](../api/riskyserviceprincipal-get.md)                            | [riskyServicePrincipal](../resources/riskyserviceprincipal.md)                     | Get a specific risky service principal and its risk properties. |
+| [List](../api/identityprotectionroot-list-riskyserviceprincipals.md) | [riskyServicePrincipal](../resources/riskyserviceprincipal.md) collection          | List risky service principals and their risk properties.        |
+| [Get](../api/riskyserviceprincipal-get.md)                            | [riskyServicePrincipal](../resources/riskyserviceprincipal.md)                     | Get a specific risky service principal and its risk properties. |
 | [Dismiss](../api/riskyserviceprincipal-dismiss.md)                                          | None                                                                               | Dismiss the risk of a risky service principal.                  |
 | [Confirm compromised](../api/riskyserviceprincipal-confirmcompromised.md)                    | None                                                                               | Confirm a risky service principal as compromised.               |
 | [List history](../api/riskyserviceprincipal-list-history.md)                                | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection | Get the risk history of a Microsoft Entra service principal.          |
@@ -50,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

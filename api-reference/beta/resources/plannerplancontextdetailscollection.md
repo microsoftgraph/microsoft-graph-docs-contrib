@@ -22,7 +22,7 @@ Properties of an open type can be defined by the client. In this case, the clien
 The property values must be [plannerPlanContextDetails](plannerplancontextdetails.md) objects. Based on OData, property names in open types cannot contain the following characters: `.`, `:`, `@`, `%`. These characters need to be encoded with URL encoding format. To remove an item in the favorites list, the value needs to be removed from the [plannerPlanContextCollection](plannerplancontextcollection.md) collection instead, which will automatically remove the entry in this object.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
