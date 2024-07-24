@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a commercial subscription for a tenant.
+Represents a commercial subscription for a tenant. Use the values of **skuId** and **serviceStatus** > **servicePlanId** to assign licenses to unassigned users and groups through the [user: assignLicense](../api/user-assignlicense.md) and [group: assignLicense](../api/group-assignlicense.md) APIs respectively.
 
 Inherits from [entity](entity.md).
 
