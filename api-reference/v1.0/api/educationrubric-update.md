@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` if this is a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) if it's a rubric with points.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. Use the `null` value for a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) for a rubric with points.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
