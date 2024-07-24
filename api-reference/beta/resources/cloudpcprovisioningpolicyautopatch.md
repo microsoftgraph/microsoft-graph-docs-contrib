@@ -19,7 +19,7 @@ Represents specific settings for Windows Autopatch that enable its customers to 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopatchGroupId|String|The unique identifier (ID) of Windows Autopatch groups. Autopatch groups is a logical container or unit that groups several Microsoft Entra groups and software update policies. Devices with the same Autopatch group ID share unified software update management. The default value is `null` that indicates that no Autopatch group is associated with the provisioning policy.|
+|autopatchGroupId|String|The unique identifier (ID) of a Windows Autopatch group. An Autopatch group is a logical container or unit that groups several Microsoft Entra groups and software update policies. Devices with the same Autopatch group ID share unified software update management. The default value is `null` that indicates that no Autopatch group is associated with the provisioning policy.|
 
 ## Relationships
 
