@@ -36,6 +36,7 @@ None.
 |classes|[educationClass](educationclass.md) collection| Read-only. Nullable.|
 |me|[educationUser](educationuser.md)| Read-only. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Read-only. Nullable.|
+|synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Read-only. Nullable.|
 |users|[educationUser](educationuser.md) collection| Read-only. Nullable.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

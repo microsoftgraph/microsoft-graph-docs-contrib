@@ -34,6 +34,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 The following example shows how to subscribe to transcripts available at the tenant level.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -70,6 +71,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example 1: Subscribe to transcripts available for a particular online meeting using classic permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -87,6 +89,7 @@ Content-Type: application/json
 ```
 ### Example 2: Subscribe to transcripts available for a particular online meeting using resource-specific consent permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -120,6 +123,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 
 The following example shows how to subscribe to transcripts available for any online meeting organized by a specific user.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -158,6 +162,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 
 ### Example 1: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using classic permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -175,6 +180,7 @@ Content-Type: application/json
 
 ### Example 2: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -208,6 +214,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 The following example shows how to subscribe to recordings available at the tenant level.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -244,6 +251,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example 1: Subscribe to recordings available for a particular online meeting using classic permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -262,6 +270,7 @@ Content-Type: application/json
 
 ### Example 2: Subscribe to recordings available for a particular online meeting using only resource-specific consent permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -296,6 +305,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 
 The following example shows how to subscribe to recordings available for any online meeting organized by a specific user.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -334,6 +344,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 
 ### Example 1: Subscribe to recordings available for any online meeting where a specific Teams app is installed using required classic permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -351,6 +362,7 @@ Content-Type: application/json
 
 ### Example 2: Subscribe to recordings available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -374,6 +386,7 @@ Depending on your subscription, you can get the notification with or without res
 
 For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "value": [
@@ -405,12 +418,16 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [transcript](/graph/api/resources/calltranscript) schema. The payload is similar to the ones returned by GET operations.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
   "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy",
+  "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "transcriptContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy/transcripts/MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx/content",
   "createdDateTime": null,
+  "endDateTime": "2023-04-10T08:27:25.2346000Z",
+  "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
   "meetingOrganizer": {
     "application": null,
     "device": null,
@@ -426,6 +443,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "value": [
@@ -457,11 +475,15 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to the ones returned by GET operations.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
   "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy",
+  "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "createdDateTime": "2023-07-25T09:35:02.85022Z",
+  "endDateTime": "2023-04-10T08:27:25.2346000Z",
+  "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
   "recordingContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy/recordings/VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=/content",
   "meetingOrganizer": {
     "application": null,
@@ -483,6 +505,7 @@ Notifications without resource data give you the resource ID to make GET calls t
 
 For notifications without resource data, the payload looks like the following. This payload is for a transcript available for an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "subscriptionId": "0cc28c98-4d2a-4a34-b850-815d7e6486ea",
@@ -501,6 +524,7 @@ For notifications without resource data, the payload looks like the following. T
 
 For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "subscriptionId": "6aa5ced2-0a5a-4643-9274-3109c731d986",

@@ -22,7 +22,7 @@ Represents the attribute collection page that is part of a self-service user flo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAttributeCollectionPage"
