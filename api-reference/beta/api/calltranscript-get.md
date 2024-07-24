@@ -61,6 +61,7 @@ Get the content of a single transcript of an online meeting.
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
+
 ## Optional query parameters
 
 This method supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
