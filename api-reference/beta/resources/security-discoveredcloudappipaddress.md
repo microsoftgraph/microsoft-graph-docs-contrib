@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppIPAddress resource type"
-description: "Get details of IP addresses accessing discovered cloud app."
+description: "Represents the resource available for IP addresses accessing a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get details of IP addresses accessing discovered cloud app.
+Represents the resource available for IP addresses accessing a discovered cloud app.
 
 ## Methods
 |Method|Return type|Description|
