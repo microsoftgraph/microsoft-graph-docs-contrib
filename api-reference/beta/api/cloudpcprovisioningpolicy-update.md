@@ -50,7 +50,7 @@ The following table shows the properties that can be updated for the [cloudPcPro
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|The specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.|
+|autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|The specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC. The settings take effect when the tenant enrolls in Windows Autopatch and the **managedType** of the **microsoftManagedDesktop** property is set as `starterManaged`.|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy. |
 |domainJoinConfigurations|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md) collection|Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID.|
