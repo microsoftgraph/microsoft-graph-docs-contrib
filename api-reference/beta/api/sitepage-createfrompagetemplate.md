@@ -1,0 +1,148 @@
+---
+author: Yadong1106
+description: "Create a new page according to a page template."
+ms.date: 05/07/2018
+title: Create Page From template
+ms.localizationpriority: medium
+doc_type: apiPageType
+---
+ 
+# Create a site page from a page template
+ 
+Namespace: microsoft.graph
+ 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ 
+Create a new [sitePage](../resources/sitepage.md) from a [sitePageTemplate](../resources/sitepagetemplate.md) in a [site](../resources/site.md).
+ 
+## Permissions
+ 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+ 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
+ 
+## HTTP request
+ 
+<!-- { "blockType": "ignored" } -->
+ 
+```http
+POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
+```
+## Request headers
+ 
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
+ 
+## Request body
+ 
+These fields and be used in request payload.
+ 
+| Property             | Type                                         | Description                                                                                                                                                                                                        |
+| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| title                | String                                         | Title of the site page template to be created.  Optional.                                                                                                                                                                                  |
+| name                 | String                                         | Name of the site page template to be created. Required.                                                                                                                          |
+| id                   | String                                         | Id of an existing page templated. Required.                                                                                                                          |
+ 
+## Response
+ 
+If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
+ 
+## Example
+ 
+The following example shows how to create a new page from the page template.
+ 
+### Request
+ 
+The following example shows a request.
+ 
+<!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
+ 
+ 
+```http
+POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/microsoft.graph.sitePage/createFromTemplate
+Content-Type: application/json
+ 
+{
+    "title": "Sample",
+    "name": "Sample.aspx",
+    "id": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
+}
+ 
+```
+ 
+### Response
+ 
+The following example shows the response.
+ 
+If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
+ 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
+ 
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+ 
+{
+    "@odata.type": "microsoft.graph.sitePage",
+    "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
+    "name": "Sample.aspx",
+    "webUrl": https://contoso.sharepoint.com/SitePages/Sample.aspx",
+    "title": "Sample",
+    "pageLayout": "article",
+    "showComments": true,
+    "showRecommendedPages": false,
+    "createdBy": {
+      "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+      }
+    },
+    "lastModifiedBy": {
+      "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+      }
+    },
+    "publishingState": {
+      "level": "checkout",
+      "versionId": "0.1",
+      "checkedOutBy": {
+        "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+        }
+      }
+    },
+    "titleArea": {
+        "enableGradientEffect": true,
+        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "layout": "colorBlock",
+        "showAuthor": true,
+        "showPublishedDate": false,
+        "showTextBlockAboveTitle": false,
+        "textAboveTitle": "TEXT ABOVE TITLE",
+        "textAlignment": "left",
+        "imageSourceType": 2
+    }
+}
+ 
+```
+ 
+**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
+ 
+<!--
+{
+  "type": "#sitePage.annotation",
+  "description": "Create a new page form a page template.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "SitePages/CreateFromTemplate",
+  "suppressions": []
+}
+-->
