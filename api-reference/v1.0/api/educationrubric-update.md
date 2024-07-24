@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [educationRubric](../resources/educationrubric.md) object. Only teachers can perform this operation.
 
-Updating a rubric attached to an assignment (`PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/classes/{class-id}/assignments/{assignment-id}/rubric](educationrubric-get.md), but it cannot be updated.
+Updating a rubric attached to an assignment (`PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/classes/{class-id}/assignments/{assignment-id}/rubric](educationrubric-get.md), but it can't be updated.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` if this is a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) if it is a rubric with points.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` if this is a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) if it's a rubric with points.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
