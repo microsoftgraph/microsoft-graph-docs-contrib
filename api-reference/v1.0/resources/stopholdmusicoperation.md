@@ -24,7 +24,7 @@ Represents the status of a [stopHoldMusic](../api/participant-stopholdmusic.md) 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

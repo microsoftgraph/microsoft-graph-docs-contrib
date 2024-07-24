@@ -44,13 +44,12 @@ Each identity provider has a process for creating an app registration. For examp
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.socialIdentityProvider"
 } -->
-
 ```json
 {
     "id": "String",

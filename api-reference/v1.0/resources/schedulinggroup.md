@@ -35,7 +35,7 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 | userIds 		| `collection(string)`    |  The list of user IDs that are a member of the **schedulingGroup**. Required. |
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

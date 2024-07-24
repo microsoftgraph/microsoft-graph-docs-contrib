@@ -24,7 +24,7 @@ Represents time window during which [agents](onpremisesagent.md) can receive upd
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
