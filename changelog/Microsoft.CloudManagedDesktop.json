@@ -2,27 +2,27 @@
   "changelog": [
       {
         "ChangeList": [
-            {
-                "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
-                "ApiChange": "ComplexType",
-                "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcProvisioningPolicyAutopatch] complex type.",
-                "Target": "cloudPcProvisioningPolicyAutopatch"
-            },
-            {
-                "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
-                "ApiChange": "Property",
-                "ChangedApiName": "autopatch",
-                "ChangeType": "Addition",
-                "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-            }
+          {
+            "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcProvisioningPolicyAutopatch"
+          },
+          {
+            "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+            "ApiChange": "Property",
+            "ChangedApiName": "autopatch",
+            "ChangeType": "Addition",
+            "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+            "Target": "cloudPcProvisioningPolicy"
+          }
         ],
         "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-07-26T10:25:21.3434973Z",
+        "CreatedDateTime": "2024-07-24T10:25:21.3434973Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
