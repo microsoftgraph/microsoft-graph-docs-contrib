@@ -1,6 +1,6 @@
 ---
 title: "endpointDiscoveredCloudAppDetail resource type"
-description: "Get the list of endpoints accessing discovered apps."
+description: "Represents the resources available for endpoints accessing discovered apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get the list of endpoints accessing discovered apps.
+Represents the resources available for endpoints accessing discovered apps.
 
 Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md).
 
@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 |downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the devices.|
 |id|String|The ID of the discovered app.|
 |ipAddressCount|Int64|The IpAddress.|
-|lastSeenDateTime|DateTimeOffset|The App last seen date & time.|
+|lastSeenDateTime|DateTimeOffset|The app last seen date & time.|
 |riskScore|Int64|The riskscore of the discovered app.|
 |tags|String collection|The discovered app tag.|
 |transactionCount|Int64|The total transanctions on discovered app.|
