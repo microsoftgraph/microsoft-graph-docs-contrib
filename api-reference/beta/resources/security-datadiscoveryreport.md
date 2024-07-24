@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The stream id.|
+|id|String|The stream ID.|
 
 ## Relationships
 |Relationship|Type|Description|
