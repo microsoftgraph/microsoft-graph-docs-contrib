@@ -47,13 +47,13 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $count=true
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $orderby={property}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $skipToken={skipToken}
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $top=1
-GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $select={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$count=true
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$filter={property} eq '{property-value}'
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$orderby={property}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$skipToken={skipToken}
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$top=1
+GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' &$select={property}
 ```
 
 ## Request headers
