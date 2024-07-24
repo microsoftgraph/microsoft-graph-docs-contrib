@@ -136,29 +136,7 @@ Content-Type: application/json
           "type": "hybridAzureADJoin"
         }
       ],
-      "enableSingleSignOn": true,
-      "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-      "imageDisplayName": "Image Display Name value",
-      "imageId": "Image ID value",
-      "imageType":"custom",
-      "windowsSetting": {
-          "locale": "en-US"
-      },
-      "managedBy": "windows365",
-      "provisioningType": "dedicated"
-    },
-    {
-      "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-      "description": "Description value",
-      "displayName": "Display Name value",
-      "domainJoinConfigurations": [
-        {
-          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-          "type": "hybridAzureADJoin"
-        }
-      ],
-      "microsoftManagedDesktop":
-      {
+      "microsoftManagedDesktop": {
           "managedType": "starterManaged",
           "profile": null
       },
@@ -166,7 +144,8 @@ Content-Type: application/json
           "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
       },
       "enableSingleSignOn": true,
-      "id": "d8e7b30f-6753-41cb-8644-28635957c1a4",
+      "enableSingleSignOn": true,
+      "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
