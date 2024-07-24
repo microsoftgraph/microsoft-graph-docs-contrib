@@ -48,6 +48,14 @@ POST /domains/{id}/verify
 
 ## Request body
 
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are required when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|forceTakeover|Boolean|Optional parameter. If the domain to be verified belongs to another viral tenant that does not own the domain anymore, this parameter can be used to indicate taking over that domain from the viral tenant. Force takeover would only happen when the new owner is able to verify the domain ownership. The default value for this paramater is `false`.|
+
 ## Response
 
 If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.
@@ -134,5 +142,45 @@ Content-type: application/json
   ]
 }
 -->
+
+##### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "domain_verify_with_force_takeover",
+  "sampleKeys": ["contoso.com"]
+}-->
+```http
+POST https://graph.microsoft.com/beta/domains/contoso.com/verify
+
+{
+  "forceTakeover": true
+}
+```
+
+##### Response
+Note: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.domain"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "authenticationType": "authenticationType-value",
+  "availabilityStatus": "availabilityStatus-value",
+  "isAdminManaged": true,
+  "isDefault": true,
+  "isInitial": true,
+  "isRoot": true,
+  "name": "contoso.com",
+  "isVerified": true
+}
+```
+
 
 
