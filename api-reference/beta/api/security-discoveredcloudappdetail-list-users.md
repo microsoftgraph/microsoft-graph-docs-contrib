@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List discoveredCloudAppUser objects
+# List discoveredCloudAppUser
 
 Namespace: microsoft.graph.security
 
