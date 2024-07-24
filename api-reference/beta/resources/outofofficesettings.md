@@ -24,7 +24,7 @@ Represents the out of office settings related to the [presence](presence.md) of 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

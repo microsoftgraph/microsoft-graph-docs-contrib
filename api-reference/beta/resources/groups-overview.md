@@ -7,6 +7,7 @@ ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 05/22/2024
 ---
 
@@ -126,7 +127,7 @@ Membership to groups can be statically assigned or dynamic. Not all object types
 
 ### Dynamic membership
 
-Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group.
+Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any users who leave the department are automatically removed from the group.
 
 Only users and devices are supported as members in dynamic membership groups. You can create a dynamic membership group for devices or users, but not both.
 

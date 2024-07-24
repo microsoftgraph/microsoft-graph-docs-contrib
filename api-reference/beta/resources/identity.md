@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity of an _actor_. For example, an actor can be a user, device, or application.
+Represents an identity of an _actor_. For example, an actor can be a user, device, or application. Multiple Microsoft Graph APIs share this resource and the data they return varies depending on the API.
 
 Base type of [userIdentity](useridentity.md).
 
@@ -20,10 +20,10 @@ Base type of [userIdentity](useridentity.md).
 
 | Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).       |
-| id                  | String | Unique identifier for the identity. When the unique identifier is unavailable, the **displayName** property is provided for the identity, but the **id** property isn't included in the response. |
+| displayName         | String | The display name of the identity. <br/><br/>For drive items, the display name might not always be available or up to date. For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using [delta](../api/driveitem-delta.md).       |
+| id                  | String |Unique identifier for the identity or actor. For example, in the access reviews decisions API, this property might record the **id** of the principal, that is, the group, user, or application that's subject to review. |
 | tenantId            | String | Unique identity of the tenant. Optional.                                    |
-| thumbnails          | [thumbnailSet](thumbnailset.md) | Keyed collection of thumbnail resources. Optional. |
+| thumbnails          | [thumbnailSet](thumbnailset.md) | Keyed collection of thumbnail resources. Optional. Applies to drive items, for example. |
 
 ## JSON representation
 

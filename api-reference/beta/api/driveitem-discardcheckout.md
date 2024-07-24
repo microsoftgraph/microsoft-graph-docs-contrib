@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardC
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -42,7 +42,7 @@ For a fuller context of the example, see [List channel message replies](../api/c
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
