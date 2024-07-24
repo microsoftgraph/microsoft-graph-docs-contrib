@@ -99,16 +99,16 @@ Content-Type: application/json
   ],
   "localizations": [
     {
-			"id": "en-us",
-			"languageTag": "en-us",
-			"planTitle": "sample plan",
-			"buckets": [
-				{
-					"externalBucketId": "deliveryBucket",
-					"name": "deliveryBucket"
-				}
-			]
-		}
+      "id": "en-us",
+      "languageTag": "en-us",
+      "planTitle": "sample plan",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "deliveryBucket"
+        }
+      ]
+    }
   ]
 }
 ```
@@ -181,16 +181,16 @@ Content-Type: application/json
   ],
   "localizations": [
     {
-			"id": "en-us",
-			"languageTag": "en-us",
-			"planTitle": "sample plan",
-			"buckets": [
-				{
-					"externalBucketId": "deliveryBucket",
-					"name": "deliveryBucket"
-				}
-			]
-		}
+      "id": "en-us",
+      "languageTag": "en-us",
+      "planTitle": "sample plan",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "deliveryBucket"
+        }
+      ]
+    }
   ]
 }
 ```
