@@ -47,7 +47,6 @@ The `$filter` and `$orderby` query parameters are supported for all properties.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -59,11 +58,14 @@ If successful, this method returns a `200 OK` response code and a [readingAssign
 
 ## Examples
 
-### Example 1: Get Reading assignment submissions of the last 24 hours
+### Example 1: Get the reading assignment submissions from the last 24 hours
+
+The following example shows how to get the reading assignment submissions from the last 24 hours.
 
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_readingassignmentsubmission"
@@ -75,7 +77,8 @@ GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissi
 
 #### Response
 
-The following example by default shows the response from last 24 hours.
+The following example shows the default response for the last 24 hours.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -88,8 +91,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
+  "value": [
     {
       "action": "Attempt",
       "assignmentId": "66232464-3e0d-419a-a0b9-dbcd332cb606",
@@ -97,8 +100,8 @@ Content-Type: application/json
       "submissionId": "e6ea12ae-3c9b-48b5-a15a-e1979fd2b0ca",
       "studentId": "34fb22eb-6e42-42e4-8a3c-b2e33faf5a56",
       "submissionDateTime": "2023-09-19T11:44:16.0821219Z",
-      "accuracyScore": 94.0,
-      "wordsPerMinute": 154.0,
+      "accuracyScore": 94,
+      "wordsPerMinute": 154,
       "wordCount": 98,
       "mispronunciations": 1,
       "omissions": 1,
@@ -112,7 +115,7 @@ Content-Type: application/json
       "missedQuestionMarks": 0,
       "unexpectedPauses": 0,
       "challengingWords": [
-        { 
+        {
           "Word": "drinks",
           "Count": 2
         },
@@ -126,11 +129,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Use `$filter` to get reading assignment submissions for a specific date
+### Example 2: Get the reading assignment submissions for a specific date using $filter
+
+The following example shows how to get the reading assignment submissions for a specific date using the `$filter` query parameter.
 
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_ReadingAssignmentSubmission_filter"
@@ -143,6 +149,7 @@ GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissi
 #### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -155,43 +162,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
+  "value": [
+    {
+      "assignmentId": "c43f6736-7faf-4cee-a742-55a583bd3c18",
+      "classId": "adef893e-ff63-4b47-a081-7ea03e7dba6a",
+      "submissionId": "980cc32e-d476-66f7-2d8d-5e7b4f92f01c",
+      "studentId": "12d3e83c-786e-4b02-92bd-8fd5290d6d87",
+      "submissionDateTime": "2024-01-11T00:20:33.9812849Z",
+      "accuracyScore": 85,
+      "wordsPerMinute": 90,
+      "wordCount": 200,
+      "mispronunciations": 5,
+      "omissions": 3,
+      "insertions": 2,
+      "selfCorrections": 4,
+      "repetitions": 3,
+      "monotoneScore": 70,
+      "missedShorts": 2,
+      "missedExclamationMarks": 1,
+      "missedPeriods": 1,
+      "missedQuestionMarks": 1,
+      "unexpectedPauses": 2,
+      "challengingWords": [
         {
-            "assignmentId": "c43f6736-7faf-4cee-a742-55a583bd3c18",
-            "classId": "adef893e-ff63-4b47-a081-7ea03e7dba6a",
-            "submissionId": "980cc32e-d476-66f7-2d8d-5e7b4f92f01c",
-            "studentId": "12d3e83c-786e-4b02-92bd-8fd5290d6d87",
-            "submissionDateTime": "2024-01-11T00:20:33.9812849Z",
-            "accuracyScore": 85.0,
-            "wordsPerMinute": 90.0,
-            "wordCount": 200,
-            "mispronunciations": 5,
-            "omissions": 3,
-            "insertions": 2,
-            "selfCorrections": 4,
-            "repetitions": 3,
-            "monotoneScore": 70.0,
-            "missedShorts": 2,
-            "missedExclamationMarks": 1,
-            "missedPeriods": 1,
-            "missedQuestionMarks": 1,
-            "unexpectedPauses": 2,
-            "challengingWords": [
-              {
-                "word": "photosynthesis",
-                "count":2
-              },
-              {
-                "word": "ecosystem",
-                "count" : 6
-              },
-              {
-                "word":"biodiversity",
-                "count":6
-              }
-            ]   
+          "word": "photosynthesis",
+          "count": 2
+        },
+        {
+          "word": "ecosystem",
+          "count": 6
+        },
+        {
+          "word": "biodiversity",
+          "count": 6
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
