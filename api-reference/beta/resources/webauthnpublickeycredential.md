@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains attributes returned to the client from the browser after a web authentication credential is created. These attributes are needed by the server to persist the credential for use in Microsoft Entra ID. For more information, see [https://www.w3.org/TR/WebAuthn-2/#iface-pkcredential](https://www.w3.org/TR/WebAuthn-2/#iface-pkcredential).  
+Contains attributes returned to the client from the browser after a web authentication credential is created. These attributes are needed by the server to persist the credential for use in Microsoft Entra ID. For more information, see [PublicKeyCredential Interface](https://www.w3.org/TR/WebAuthn-2/#iface-pkcredential).  
 
 ## Properties
 |Property|Type|Description|
