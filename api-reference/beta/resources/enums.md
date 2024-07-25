@@ -85,6 +85,7 @@ Namespace: microsoft.graph
 | curious            |
 | sensitive          |
 | sad                |
+| unknownFutureValue |
 
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
