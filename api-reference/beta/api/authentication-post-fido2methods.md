@@ -59,10 +59,9 @@ You can specify the following properties when creating a **fido2AuthenticationMe
 |publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered|
 
 > [!NOTE]
-> The publicKeyCredential|[webAuthnPublicKeyCredential](../resources/webAuthnpublickeycredential.md) is a write-only property and will not be returned in GET requests.
+> The publicKeyCredential|[webAuthnPublicKeyCredential](../resources/webAuthnpublickeycredential.md) is a write-only property and is not returned in GET requests.
 
-## Acceptable attestation formats 
-Currently attestation formats of "packed" or "None" are only supported at this time.
+Currently, only attestation formats of "packed" or "None" are supported at this time.
 
 ## Response
 
@@ -125,4 +124,4 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Ensure proper base64URL encoding and decoding of the publicKeyCredential.id is properly performed prior to using response data to create a passkey on a FIDO2 security key.
+> Ensure proper base64URL encoding and decoding of the publicKeyCredential.id is performed before you use the response data to create a passkey on a FIDO2 security key.
