@@ -19,8 +19,8 @@ A collection of groups that are enabled to use a passkey (FIDO2) authentication 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Object identifier of a Microsoft Entra user or group.|
-|isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
-|targetType|authenticationMethodTargetType| Possible values are: `group`, and `unknownFutureValue`. From December 2022, targeting individual users using `user` is no longer recommended. Existing targets remain but we recommend moving the individual users to a targeted group.|
+|isRegistrationRequired|Boolean|Indicates whether the user is required to register the authentication method.|
+|targetType|authenticationMethodTargetType| The authentication method type. The possible values are: `group` and `unknownFutureValue`. Effective December 2022, the `user` target value is no longer recommended. We recommend moving individual users to a targeted group.|
 
 ## Relationships
 None.
