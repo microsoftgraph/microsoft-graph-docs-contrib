@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/reflectcheckinresponse-get.md)|[reflectcheckinresponse](../resources/reflectcheckinresponse.md)|Read the properties and relationships of an [reflectcheckinresponse](../resources/reflectcheckinresponse.md) object.|
+|[Get](../api/reflectcheckinresponse-get.md)|[reflectCheckInResponse](../resources/reflectcheckinresponse.md)|Read the properties and relationships of an [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object.|
 
 ## Properties
 |Property|Type|Description|
