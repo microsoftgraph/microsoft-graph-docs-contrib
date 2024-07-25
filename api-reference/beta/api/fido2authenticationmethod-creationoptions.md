@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve creation options required to generate and register a Microsoft Entra ID compatible passkey. Self-service operations aren't supported.  
+Retrieve creation options required to generate and register a Microsoft Entra ID-compatible passkey. Self-service operations aren't supported.  
 
 ## Permissions
 
@@ -38,12 +38,12 @@ GET /users/{usersId}/authentication/fido2Methods/creationOptions
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
+
 The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|challengeTimeoutInMinutes|Int32|Override the timeout of the server-generated challenge returned in the request. Defaults to 5 min; Can be overridden between 5 - 43200 minutes.|  
+|challengeTimeoutInMinutes|Int32|Override the timeout of the server-generated challenge returned in the request. The default value is 5 minutes; this value can be overridden to between 5 - 43200 minutes.|  
 
 
 ## Request headers
