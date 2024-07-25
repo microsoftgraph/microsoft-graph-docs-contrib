@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents data returned from a WebAuthn authenticator after it creates a new public key credential. For more information, see [https://www.w3.org/TR/WebAuthn-2/#iface-authenticatorattestationresponse](https://www.w3.org/TR/WebAuthn-2/#iface-authenticatorattestationresponse).
+Represents data returned from a WebAuthn authenticator after it creates a new public key credential. For more information, see [Information About Public Key Credential](https://www.w3.org/TR/WebAuthn-2/#iface-authenticatorattestationresponse).
 
 ## Properties
 |Property|Type|Description|
