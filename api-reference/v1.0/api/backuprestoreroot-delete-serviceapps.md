@@ -62,6 +62,8 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}
 ```
 
+---
+
 ### Response
 
 The following example shows the response.
