@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An approval item is an object that represents the approval including the decision, requests, and responses associated. Users can create new approval items, view the ones sent or received, and take actions on them.
+Represents the approval including the decision, requests, and responses associated. Users can create new approval items, view the ones sent or received, and take actions on them.
 
 ## Methods
 |Method|Return type|Description|
