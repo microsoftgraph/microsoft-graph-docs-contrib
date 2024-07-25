@@ -25,6 +25,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.|
+|artifactHitCount|int|
 
 ## JSON representation
 
@@ -36,6 +37,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.restorePointSearchResult"
+  "@odata.type": "#microsoft.graph.restorePointSearchResult",
+  "artifactHitCount": "Int"
 }
 ```

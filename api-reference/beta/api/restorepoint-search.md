@@ -48,6 +48,7 @@ In the request body, supply a JSON representation of the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|artifactQuery|[artifactQuery](../resources/artifactquery.md)|. Optional.|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
 |protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period.  Required.|
 |restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Indicates which restore point to return. The possible values are `oldest`, `latest`. Optional.|
