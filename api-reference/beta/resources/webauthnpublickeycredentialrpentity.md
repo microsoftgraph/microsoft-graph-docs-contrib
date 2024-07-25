@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the relying party (Microsoft Entra ID) responsible for the request. For more information, see [https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialrpentity](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialrpentity). 
+Contains information about the relying party (Microsoft Entra ID) responsible for the request. For more information, see [Relying Party Parameters for Credential Generation](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialrpentity). 
 
 ## Properties
 |Property|Type|Description|
