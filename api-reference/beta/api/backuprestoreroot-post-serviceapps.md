@@ -44,7 +44,7 @@ POST /solutions/backupRestore/serviceApps
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 
@@ -55,6 +55,7 @@ If successful, this method returns a `201 Created` response code and a [serviceA
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,6 +64,10 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+Content-type: application/json
+
+{
+}
 ```
 
 # [C#](#tab/csharp)
@@ -87,6 +92,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-serviceapp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-serviceapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

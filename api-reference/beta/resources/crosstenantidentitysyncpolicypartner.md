@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Partner user sync settings
 ---
 
 # crossTenantIdentitySyncPolicyPartner resource type
@@ -37,7 +38,7 @@ Defines the cross-tenant policy for synchronization of users from a partner tena
 None.
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

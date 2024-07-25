@@ -4,7 +4,7 @@ description: "Represents potential issues within a customer's Microsoft Defender
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.date: 03/20/2024
+ms.subservice: "security"
 ---
 
 # healthIssue resource type

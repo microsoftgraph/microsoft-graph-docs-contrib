@@ -3,7 +3,7 @@ title: "workPosition resource type"
 description: "workPosition resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: people-and-workplace-intelligence
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -50,7 +50,7 @@ This resource type inherits from [itemFacet](itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

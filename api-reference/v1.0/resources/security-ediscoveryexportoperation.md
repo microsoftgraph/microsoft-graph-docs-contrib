@@ -3,7 +3,7 @@ title: "ediscoveryExportOperation resource type"
 description: "Represents the process of a Microsoft Purview eDiscovery export."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

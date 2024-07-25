@@ -17,7 +17,7 @@ import (
 
 requestBody := graphidentity.New$refDeleteRequestBody()
 additionalData := map[string]interface{}{
-	"odataId" : "https://graph.microsoft.com/beta/identity/userFlowAttributes/city", 
+	"@odata.id" : "https://graph.microsoft.com/beta/identity/userFlowAttributes/city", 
 }
 requestBody.SetAdditionalData(additionalData)
 

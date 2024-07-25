@@ -36,11 +36,16 @@ To add a user, group, or device to an administrative unit, the calling user must
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All and AdministrativeUnit.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | Group.Create and AdministrativeUnit.Read.All, Group.ReadWrite.All and AdministrativeUnit.Read.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To create a new group in an administrative unit, the calling principal must be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) at the scope of the administrative unit:
+
+* Groups Administrator
+* User Administrator
+
+When these roles are assigned to a service principal, additional permissions are required to read the directory, such as assignment to the Directory Readers role, or having Microsoft Graph application permissions, such as Directory.Read.All.
 
 ## HTTP request
 

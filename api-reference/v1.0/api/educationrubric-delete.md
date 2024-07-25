@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/me/rubrics/{rubric-id}
+DELETE /education/me/rubrics/{id}
 ```
 
 ## Request headers

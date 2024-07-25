@@ -52,7 +52,7 @@ Use the **type** property to specify the different types of **recurrencePattern*
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

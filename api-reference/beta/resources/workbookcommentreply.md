@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Comment reply
 ---
 
 # workbookCommentReply resource type
@@ -37,7 +38,7 @@ Represents a reply to an excel comment.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

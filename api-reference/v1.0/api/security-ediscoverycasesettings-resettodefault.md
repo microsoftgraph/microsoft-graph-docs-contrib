@@ -3,7 +3,7 @@ title: "Reset ediscoveryCaseSettings to default"
 description: "Reset a ediscoveryCaseSettingsobject to the default values."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

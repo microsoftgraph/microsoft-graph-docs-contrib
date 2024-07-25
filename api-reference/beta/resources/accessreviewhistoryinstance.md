@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:-----|:----------|:----------|
 |[List](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection|Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
-|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI that can be used to retrieve the instance's review history data.|
+|[Generate download URI](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI that can be used to retrieve the instance's review history data.|
 
 ## Properties
 

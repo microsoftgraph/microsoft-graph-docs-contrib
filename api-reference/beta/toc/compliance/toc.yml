@@ -80,17 +80,17 @@ items:
       href: ../../api/ediscovery-custodian-release.md
     - name: Activate
       href: ../../api/ediscovery-custodian-activate.md
-    - name: List siteSources
+    - name: List site sources
       href: ../../api/ediscovery-custodian-list-sitesources.md
-    - name: Create siteSources
+    - name: Create site sources
       href: ../../api/ediscovery-custodian-post-sitesources.md
-    - name: List unifiedGroupSources
+    - name: List unified group sources
       href: ../../api/ediscovery-custodian-list-unifiedgroupsources.md
-    - name: Create unifiedGroupSources
+    - name: Create unified group sources
       href: ../../api/ediscovery-custodian-post-unifiedgroupsources.md
-    - name: List userSources
+    - name: List user sources
       href: ../../api/ediscovery-custodian-list-usersources.md
-    - name: Create userSources
+    - name: Create user sources
       href: ../../api/ediscovery-custodian-post-usersources.md
   - name: Legal hold
     items:
@@ -106,13 +106,13 @@ items:
       href: ../../api/ediscovery-legalhold-update.md
     - name: Delete
       href: ../../api/ediscovery-legalhold-delete.md
-    - name: List siteSources
+    - name: List site sources
       href: ../../api/ediscovery-legalhold-list-sitesources.md
-    - name: Create siteSource
+    - name: Create site source
       href: ../../api/ediscovery-legalhold-post-sitesources.md
-    - name: List userSources
+    - name: List user sources
       href: ../../api/ediscovery-legalhold-list-usersources.md
-    - name: Create userSource
+    - name: Create user source
       href: ../../api/ediscovery-legalhold-post-usersources.md
   - name: Noncustodial data source
     items:
@@ -168,7 +168,7 @@ items:
       href: ../../api/ediscovery-sourcecollection-post-additionalsources.md
     - name: Add custodian sources
       href: ../../api/ediscovery-sourcecollection-post-custodiansources.md
-    - name: Add noncustodialSource
+    - name: Add noncustodial source
       href: ../../api/ediscovery-sourcecollection-post-noncustodialsources.md
     - name: List
       href: ../../api/ediscovery-case-list-sourcecollections.md
@@ -186,7 +186,7 @@ items:
       href: ../../api/ediscovery-sourcecollection-list-additionalsources.md
     - name: List custodian sources
       href: ../../api/ediscovery-sourcecollection-list-custodiansources.md
-    - name: List noncustodialSources
+    - name: List noncustodial sources
       href: ../../api/ediscovery-sourcecollection-list-noncustodialsources.md
     - name: Purge data
       href: ../../api/ediscovery-sourcecollection-purgedata.md

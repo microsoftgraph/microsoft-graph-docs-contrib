@@ -3,7 +3,7 @@ title: 'Create webPart'
 description: 'Create a new webPart at a specified position in the sitePage'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -73,6 +73,7 @@ For [standardWebPart](../resources/standardWebPart.md), only the following are s
 | 11  | Quick Links    | `c70391ea-0b10-4ee9-b2b4-006d3fcad0cd` |
 | 12  | Spacer         | `8654b779-4886-46d4-8ffb-b5ed960ee986` |
 | 13  | Youtube Embed  | `544dd15b-cf3c-441b-96da-004d5a8cea1d` |
+| 14  | Title Area     | `cbe7b0a9-3504-44dd-a3a3-0e5cacd07788` |
 
 ## Response
 

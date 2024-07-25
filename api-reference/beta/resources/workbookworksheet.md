@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Worksheet
 ---
 
 # workbookWorksheet resource type
@@ -55,7 +56,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, and 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

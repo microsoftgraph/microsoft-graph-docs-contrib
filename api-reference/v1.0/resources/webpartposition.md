@@ -1,9 +1,9 @@
 ---
-title: 'webPartPosition resource type'
-description: Represents the position information of the given web part to the current page.
-author: sangle7
+title: "webPartPosition resource type"
+description: "Represents the position information of the given web part to the current page."
+author: "sangle7"
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

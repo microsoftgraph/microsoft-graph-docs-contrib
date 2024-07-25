@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a [samlOrWsFedEx
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
+GET https://graph.microsoft.com/v1.0/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
 
 # [C#](#tab/csharp)

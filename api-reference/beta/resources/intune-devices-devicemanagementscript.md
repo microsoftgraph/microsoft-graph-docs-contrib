@@ -10,21 +10,21 @@ doc_type: resourcePageType
 # deviceManagementScript resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) collection|List properties and relationships of the [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) objects.|
-|[Get deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Read properties and relationships of the [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.|
-|[Create deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.|
-|[Delete deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|None|Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).|
-|[Update deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Update the properties of a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.|
+|[List deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) collection|List properties and relationships of the [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) objects.|
+|[Get deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Read properties and relationships of the [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.|
+|[Create deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.|
+|[Delete deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|None|Deletes a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
+|[Update deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Update the properties of a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.|
 |[assign action](../api/intune-devices-devicemanagementscript-assign.md)|None||
 
 ## Properties
@@ -38,7 +38,7 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |fileName|String|Script file name.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 

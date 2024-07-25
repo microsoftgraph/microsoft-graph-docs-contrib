@@ -3,7 +3,7 @@ title: "List queries"
 description: "Get the list of queries associated with an eDiscovery review set."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

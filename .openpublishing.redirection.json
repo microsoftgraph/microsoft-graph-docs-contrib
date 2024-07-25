@@ -234,6 +234,11 @@
             "source_path": "api-reference/beta/api/industrydata-industrydataconnector-update.md",
             "redirect_url": "/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "graph/data-connect-pam.md",
+            "redirect_url": "/concepts/data-connect-concept-overview",
+            "redirect_document_id": true
         }
     ]
 }

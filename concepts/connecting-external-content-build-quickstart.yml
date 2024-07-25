@@ -10,7 +10,7 @@ metadata:
   author: jasonjoh
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:.NET, C#
-  ms.prod: search
+  ms.subservice: search
 items:
   - durationInMinutes: 3
     content: |

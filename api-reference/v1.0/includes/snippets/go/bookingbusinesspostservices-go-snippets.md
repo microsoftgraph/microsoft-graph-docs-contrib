@@ -34,7 +34,7 @@ address.SetStreet(&street)
 additionalData := map[string]interface{}{
 	postOfficeBox := null
 address.SetPostOfficeBox(&postOfficeBox) 
-	"odataType" : "#microsoft.graph.physicalAddressType", 
+	"type@odata.type" : "#microsoft.graph.physicalAddressType", 
 	type := null
 address.SetType(&type) 
 }
@@ -55,8 +55,8 @@ defaultLocation.SetUniqueId(&uniqueId)
 uniqueIdType := null
 defaultLocation.SetUniqueIdType(&uniqueIdType) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.locationType", 
-	"odataType" : "#microsoft.graph.locationUniqueIdType", 
+	"locationType@odata.type" : "#microsoft.graph.locationType", 
+	"uniqueIdType@odata.type" : "#microsoft.graph.locationUniqueIdType", 
 }
 defaultLocation.SetAdditionalData(additionalData)
 requestBody.SetDefaultLocation(defaultLocation)
@@ -74,7 +74,7 @@ bookingReminder.SetOffset(&offset)
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
+	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder.SetAdditionalData(additionalData)
 
@@ -120,9 +120,9 @@ requestBody.SetStaffMemberIds(staffMemberIds)
 isAnonymousJoinEnabled := false
 requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingPriceType", 
-	"odataType" : "#Collection(microsoft.graph.bookingReminder)", 
-	"odataType" : "#Collection(String)", 
+	"defaultPriceType@odata.type" : "#microsoft.graph.bookingPriceType", 
+	"defaultReminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
+	"staffMemberIds@odata.type" : "#Collection(String)", 
 }
 requestBody.SetAdditionalData(additionalData)
 

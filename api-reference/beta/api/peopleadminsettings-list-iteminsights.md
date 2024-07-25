@@ -1,13 +1,13 @@
 ---
-title: "List insightsSettings"
-description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
+title: "List itemInsights"
+description: "Get the properties of an insightsSettings object for displaying or returning item insights in an organization."
 author: "jolintve"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
-# List insightsSettings
+# List itemInsights
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization.
 
-To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy).
+To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy in Microsoft Graph](/graph/insights-customize-item-insights-privacy).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -36,11 +36,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/people/itemInsights
 ```
 
+## Optional query parameters
+
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -48,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [insightsSettings](../resources/insightssettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [insightsSettings](../resources/insightssettings.md) object in the response body.
 
 ## Examples
 

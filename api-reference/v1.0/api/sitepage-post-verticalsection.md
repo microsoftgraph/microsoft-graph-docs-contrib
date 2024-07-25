@@ -3,7 +3,7 @@ title: 'Create verticalSection'
 description: "Create a verticalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Create verticalSection

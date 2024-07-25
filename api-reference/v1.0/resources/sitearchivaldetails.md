@@ -3,7 +3,7 @@ author: "vanshisingh"
 description: "Represents the archival details of a siteCollection."
 title: "siteArchivalDetails resource type"
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: 'canvasLayout resource type'
-description: Represents the layout of the content in a given SharePoint page.
-author: sangle7
+title: "canvasLayout resource type"
+description: "Represents the layout of the content in a given SharePoint page."
+author: "sangle7"
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

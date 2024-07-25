@@ -20,13 +20,15 @@ An access package catalog might also have linked resources that are used in thos
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageCatalogs](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md) collection|Retrieve a list of accessPackageCatalog objects. |
-|[Create accessPackageCatalog](../api/entitlementmanagement-post-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md)|Create a new accessPackageCatalog object. |
-|[Get accessPackageCatalog](../api/accesspackagecatalog-get.md)|[accessPackageCatalog](accesspackagecatalog.md)|Read properties and relationships of an accessPackageCatalog object. |
-|[Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None|Update the properties of an accessPackageCatalog object. |
-|[Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md)|None|Delete accessPackageCatalog. |
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
-| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-resourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects in a catalog. |
+|[List](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md) collection|Retrieve a list of accessPackageCatalog objects. |
+|[Create](../api/entitlementmanagement-post-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md)|Create a new accessPackageCatalog object. |
+|[Get](../api/accesspackagecatalog-get.md)|[accessPackageCatalog](accesspackagecatalog.md)|Read properties and relationships of an accessPackageCatalog object. |
+|[Update](../api/accesspackagecatalog-update.md)|None|Update the properties of an accessPackageCatalog object. |
+|[Delete](../api/accesspackagecatalog-delete.md)|None|Delete accessPackageCatalog. |
+| **Access package catalog resources**| | |
+| [List](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| **Access package catalog resource roles**| | |
+| [List](../api/accesspackagecatalog-list-resourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects in a catalog. |
 
 ## Properties
 |Property|Type|Description|
@@ -47,7 +49,7 @@ An access package catalog might also have linked resources that are used in thos
 |resources|[accessPackageResource](../resources/accesspackageresource.md) collection|Access package resources in this catalog.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

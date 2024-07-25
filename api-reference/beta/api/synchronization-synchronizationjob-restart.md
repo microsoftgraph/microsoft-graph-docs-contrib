@@ -40,7 +40,7 @@ POST /servicePrincipals(appId='{appId}')/synchronization/jobs/{jobId}/restart
 
 | Name           | Type    | Description|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

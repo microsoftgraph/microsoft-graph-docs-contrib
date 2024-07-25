@@ -78,10 +78,6 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Extended properties
     items:
     - name: Create single-value property

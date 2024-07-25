@@ -27,7 +27,7 @@ lookupValue := "pear"
 requestBody.SetLookupValue(&lookupValue) 
 tableArray := graph.NewtableArray()
 additionalData := map[string]interface{}{
-	"address" : "Sheet1!B2:C7", 
+	"Address" : "Sheet1!B2:C7", 
 }
 tableArray.SetAdditionalData(additionalData)
 requestBody.SetTableArray(tableArray)

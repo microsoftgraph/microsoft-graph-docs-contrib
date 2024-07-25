@@ -3,7 +3,7 @@ title: "joinTransformation resource type"
 description: "Creates a new value by joining two attributes."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

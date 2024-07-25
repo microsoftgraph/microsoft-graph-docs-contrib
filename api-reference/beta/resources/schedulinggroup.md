@@ -28,11 +28,11 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 ## Properties
 
 | Property             | Type                          | Description            |
-| -------------------- | ----------------------------- | ---------------------- |
+|:---------------------|:------------------------------|:-----------------------|
 | code          | `string`                      | The code for the `schedulingGroup` to represent an external identifier. This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters. |
-| createdDateTime      | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |                 |
+| createdDateTime      | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | displayName          | `string`                      | The display name for the `schedulingGroup`. Required.      |
-| id                   | `string`                      | ID of the `schedulingGroup`.  
+| id                   | `string`                      | ID of the `schedulingGroup`.  |
 | isActive             | `bool`                        | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones. Required.             |
 | lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this `schedulingGroup`. |
 | lastModifiedDateTime | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |

@@ -3,7 +3,7 @@ title: "List projects"
 description: "Retrieve a list of projectParticipation objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -168,6 +168,7 @@ Content-type: application/json
           "displayName": "Adventureworks Inc.",
           "pronunciation": null,
           "department": "Consulting",
+          "companyCode": "C-100",
           "officeLocation": null,
           "address": null,
           "webUrl": "https://adventureworks.com"

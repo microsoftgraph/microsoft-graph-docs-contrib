@@ -4,7 +4,7 @@ description: "A container for security identities APIs."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.date: 03/27/2024
+ms.subservice: "security"
 ---
 
 # identityContainer resource type

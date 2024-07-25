@@ -22,32 +22,35 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 ## Methods
 
 The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
+All examples are relative to a **[list][]**; for example, `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
-| Common task                    | HTTP method                                  |
-| :----------------------------- | :------------------------------------------- |
-| [Get][]                        | GET /items/{item-id}                         |
-| [Get column values][Get]       | GET /items/{item-id}?expand=fields           |
-| [Get analytics][]              | GET /items/{item-id}/analytics               |
-| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval |
-| [Create][]                     | POST /items                                  |
-| [Delete][]                     | DELETE /items/{item-id}                      |
-| [Update][]                     | PATCH /items/{item-id}                       |
-| [Update column values][Update] | PATCH /items/{item-id}/fields                |
-| [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-| [List](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
-| [Create](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
-| [Restore](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
-| [Get delta][item-changes]    | GET /items/{item-id}/delta
+| Method                                                                   | Return Type                        | Description                                                               |
+|:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [Create][]                                                               | listItem                           | Create a new listItem in a list.                                          |
+| [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
+| [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
+| [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
+| [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
+| [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
+| [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
+| [List document set version](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
+| [Create document set version](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
+| [Restore document set version](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
+| [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
+| [List permissions](../api/listitem-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
+| [Create permission](../api/listitem-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).|
+| [Get permission](../api/listitem-post-permissions.md)| [permission](../resources/permission.md) |Create a new [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Update permission](../api/listitem-update-permissions.md)| [permission](../resources/permission.md) |Update a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
+| [Delete permission](../api/listitem-delete-permissions.md)| None |Delete a [permission](../resources/permission.md) object on a [listItem](../resources/listitem.md).|
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
-[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
-[CreateLink]: ../api/listitem-createlink.md
-[item-changes]: ../api/listitem-delta.md
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
+[documentSetVersion]: documentsetversion.md
 
 ## Properties
 
@@ -84,11 +87,12 @@ The following properties are inherited from **[baseItem][]**.
 |documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
+| permissions  | [permission](permission.md) collection | The set of permissions for the item. Read-only. Nullable.                                          |
 | versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "ediscoveryFile resource type"
 description: "Represents an eDiscovery file."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

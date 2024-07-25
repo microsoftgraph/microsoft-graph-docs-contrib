@@ -1,11 +1,12 @@
 ---
 title: "backupRestoreRoot resource type"
-description: "BackupRestoreRoot resource of Microsoft 365 Backup and Storage"
+description: "Represents the Microsoft 365 Backup Storage service in a tenant."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: Backup restore
 ---
 
 # backupRestoreRoot resource type

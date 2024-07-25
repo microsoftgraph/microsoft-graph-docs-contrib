@@ -1,7 +1,7 @@
 ---
 title: "solutionsRoot resource type"
 description: "The entry point for Microsoft Bookings, virtual event webinar, and business scenario APIs."
-author: "vikailas-microsoft"
+author: "vikailas"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 doc_type: resourcePageType
@@ -21,9 +21,9 @@ All Microsoft Graph calls to resources under `/solutions` use the following serv
 https://graph.microsoft.com/{version}/solutions/
 ```
 
-<!-- { "blockType": "ignored" } -->
 To access Bookings businesses, use the following syntax:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/{version}/solutions/bookingBusinesses 
 ```
@@ -91,3 +91,4 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.solutionsRoot"
 }
+```

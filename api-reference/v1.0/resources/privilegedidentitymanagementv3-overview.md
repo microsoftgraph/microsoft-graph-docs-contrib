@@ -1,9 +1,12 @@
 ---
 title: "Manage Microsoft Entra role assignments using the privileged identity management (PIM) APIs"
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
-author: "rkarim-ms"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: "entra-id-governance"
 ms.date: 09/13/2023
 ---

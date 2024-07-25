@@ -23,8 +23,6 @@ parentReference.SetDriveId(&driveId)
 id := "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 parentReference.SetId(&id) 
 requestBody.SetParentReference(parentReference)
-name := "contoso plan (copy).txt"
-requestBody.SetName(&name) 
 childrenOnly := true
 requestBody.SetChildrenOnly(&childrenOnly) 
 

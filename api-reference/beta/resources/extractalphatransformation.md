@@ -3,7 +3,7 @@ title: "extractAlphaTransformation resource type"
 description: "Returns the alphabetical part of the string."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "ediscoverySearchExportOperation resource type"
 description: "Represents the process of an ediscoverySearch export."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

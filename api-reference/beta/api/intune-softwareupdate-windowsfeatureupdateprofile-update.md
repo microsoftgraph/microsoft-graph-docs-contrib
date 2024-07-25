@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 |endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
 |installLatestWindows10OnWindows11IneligibleDevice|Boolean|If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11|
+|installFeatureUpdatesOptional|Boolean|If true, the Windows 11 update will become optional|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 731
+Content-length: 773
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -92,7 +93,8 @@ Content-length: 731
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
-  "installLatestWindows10OnWindows11IneligibleDevice": true
+  "installLatestWindows10OnWindows11IneligibleDevice": true,
+  "installFeatureUpdatesOptional": true
 }
 ```
 
@@ -101,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 903
+Content-Length: 945
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -122,6 +124,7 @@ Content-Length: 903
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
-  "installLatestWindows10OnWindows11IneligibleDevice": true
+  "installLatestWindows10OnWindows11IneligibleDevice": true,
+  "installFeatureUpdatesOptional": true
 }
 ```
