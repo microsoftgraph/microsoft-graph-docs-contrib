@@ -2038,10 +2038,14 @@ items:
         href: ../../resources/fido2authenticationmethod.md
       - name: List
         href: ../../api/fido2authenticationmethod-list.md
+      - name: Create
+        href: ../../api/authentication-post-fido2methods.md
       - name: Get
         href: ../../api/fido2authenticationmethod-get.md
       - name: Delete
         href: ../../api/fido2authenticationmethod-delete.md
+      - name: Creation options
+        href: ../../api/fido2authenticationmethod-creationoptions.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
