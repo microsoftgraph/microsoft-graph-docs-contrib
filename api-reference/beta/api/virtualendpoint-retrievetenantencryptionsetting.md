@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the encryption setting of the tenant associated with the current authenticated user. This information can help users to determine whether to trigger an encryption change based on the current setting.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
