@@ -38,7 +38,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
 |attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
 |attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, `notAttested`, `unknownFutureValue`.|
-|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests; Not returned on read operations.|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property is not returned on read operations.|
 
 
 ## Relationships
