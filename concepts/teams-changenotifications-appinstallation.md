@@ -56,7 +56,7 @@ To get change notifications for Teams app installation in chat scope, subscribe 
 
 #### All scopes
 
-To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permission:
+To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -77,7 +77,7 @@ The following are the supported RSC permissions with one permission for each sco
 * `TeamsAppInstallation.Read.Group` permission is required to receive events in team scope.
 * `TeamsAppInstallation.Read.Chat` permission is required to receive events in chat scope.
 
-To subscribe using RSC permissions, you must declare RSC usage with the `useResourceSpecificConsentBasedAuthorization` query parameter. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
+To subscribe using RSC permissions, append query parameter `useResourceSpecificConsentBasedAuthorization` to the subscription resource. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
 
 > [!NOTE]
 > If RSC permissions are in use, application permissions aren't required.
@@ -159,7 +159,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Notifications are sent only after the relevant RSC permission for the scope is granted and only for the resource that has been granted RSC permission. For example, if RSC permission is granted for user A but not for user B, the notifications are sent only for the Teams app installation events within user A's personal scope.
+> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted. For example, if RSC permission is granted for user A but not for user B, the notifications are sent only for the Teams app installation events within user A's personal scope.
 
 **To create a subscription using RSC without the `$filter` parameter:**
 
@@ -179,7 +179,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Notifications are sent only after the RSC permission is granted and only for the user, chat, or team resource where the RSC permission is granted.
+> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the user, chat, or team resource where RSC has been granted.
 
 ### Notifications with resource data
 
