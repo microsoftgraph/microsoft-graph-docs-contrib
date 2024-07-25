@@ -19,7 +19,7 @@ Contains the query for artifactQuery.
 |Property|Type|Description|
 |:---|:---|:---|
 |queryExpression|String|.|
-|artifactType|[restorableArtifact](../resources/artifactquery.md#restorableArtifact-values)|. The possible values are: `message`, `unknownFutureValue`.|
+|artifactType|[restorableArtifact](../resources/artifactquery.md#restorableartifact-values)|. The possible values are: `message`, `unknownFutureValue`.|
 
 ### restorableArtifact values
 
