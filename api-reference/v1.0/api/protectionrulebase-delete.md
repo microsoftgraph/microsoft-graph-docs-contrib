@@ -58,7 +58,7 @@ The following example shows how to delete a siteInclusionRule associated with a 
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "siteprotectionrule_delete"
@@ -88,7 +88,7 @@ The following example shows how to delete a driveInclusionRule associated with a
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_driveprotectionrule"
@@ -118,7 +118,7 @@ The following example shows how to delete a mailboxInclusionRule associated with
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionrule_delete"

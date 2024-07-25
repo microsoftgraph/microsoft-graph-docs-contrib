@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "sharepointrestoresession_create"

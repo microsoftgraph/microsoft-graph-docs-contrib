@@ -52,7 +52,7 @@ If successful, this action returns a `202 Accepted` response code and a [service
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceapp_deactivate"

@@ -60,7 +60,6 @@ The following example shows a request.
 
 To remove a **siteRestoreArtifact** from a site restore session, specify the @removed annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointrestoresession_update"

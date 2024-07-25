@@ -56,7 +56,7 @@ The following example shows how to get a list of all the **driveProtectionUnits*
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_all_driveprotectionunit"
@@ -260,7 +260,7 @@ The following example shows how to list all the **driveProtectionUnits** associa
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_driveprotectionunit"

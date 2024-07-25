@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_serviceapp"
@@ -61,8 +61,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}
 ```
-
----
 
 ### Response
 

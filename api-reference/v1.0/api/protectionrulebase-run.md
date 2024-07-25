@@ -58,7 +58,7 @@ The following example shows how to activate a **siteInclusionRule** associated w
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "siteprotectionrulethis.run"
@@ -116,7 +116,7 @@ The following example shows how to activate a **driveInclusionRule**associated w
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "driveprotectionrulethis_run"
@@ -174,7 +174,7 @@ The following example shows how to activate a **mailboxInclusionRule** associate
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionrulethis.run"

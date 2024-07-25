@@ -82,7 +82,7 @@ The following example shows how to create a new **siteInclusionRule** associated
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create_siteinclusionrules"
@@ -144,7 +144,7 @@ The following example shows how to create a new **driveInclusionRule** associate
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_create_driveinclusionrules"
@@ -206,7 +206,7 @@ The following example shows how to create a new **mailboxInclusionRule** associa
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy-create-mailboxinclusionrules"

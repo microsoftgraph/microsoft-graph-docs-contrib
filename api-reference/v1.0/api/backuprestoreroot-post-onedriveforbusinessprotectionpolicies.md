@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [oneDrive
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_create"

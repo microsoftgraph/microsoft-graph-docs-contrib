@@ -57,7 +57,7 @@ The following example shows how to get a list of all the **siteProtectionUnits**
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_all_siteprotectionunit"
@@ -262,7 +262,7 @@ The following example shows how to list all the **siteProtectionUnits** associat
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_siteprotectionunit"

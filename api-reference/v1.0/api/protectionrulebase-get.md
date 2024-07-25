@@ -60,7 +60,7 @@ The following example shows how to get a **siteInclusionRule** associated with a
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_get_siteinclusionrules"
@@ -120,7 +120,6 @@ he following example shows how to get a **driveInclusionRule** associated with a
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_get_driveinclusionrule"
@@ -180,7 +179,7 @@ he following example shows how to get a **mailboxInclusionRule** associated with
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_get_mailboxinclusionrule"

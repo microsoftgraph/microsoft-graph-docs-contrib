@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_all_mailboxprotectionunit"

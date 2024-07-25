@@ -56,7 +56,7 @@ Activate an inactive protection policy.
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_activate_example_1"
@@ -132,7 +132,7 @@ Activate an already active protection policy.
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_activate_example_2"

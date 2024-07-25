@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create"

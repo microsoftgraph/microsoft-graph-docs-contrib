@@ -56,7 +56,7 @@ If successful, this action returns a `200 OK` response code and a [serviceStatus
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "backuprestoreroot_enable"

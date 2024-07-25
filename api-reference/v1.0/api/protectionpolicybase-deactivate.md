@@ -56,7 +56,7 @@ Deactivating the protection policy when it is in active state.
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_deactivate_example_1"
@@ -132,7 +132,7 @@ Deactivating the protection policy when it is in updating state.
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_deactivate_example_2"
