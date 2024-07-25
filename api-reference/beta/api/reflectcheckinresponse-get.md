@@ -46,7 +46,6 @@ The `$filter` and `$orderby` query parameters are supported for all properties.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -58,11 +57,14 @@ If successful, this method returns a `200 OK` response code and a [reflectCheckI
 
 ## Examples
 
-### Example 1: Get Reflect checkin responses of the last 24 hours
+### Example 1: Get the Reflect check-in responses from the last 24 hours
+
+The following example shows how to get the Reflect check-in responses from the last 24 hours.
 
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_reflectcheckinresponse"
@@ -74,7 +76,8 @@ GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses
 
 #### Response
 
-The following example by default shows the response from last 24 hours.
+The following example shows the default response that includes Reflect check-in responses from the last 24 hours.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -87,41 +90,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/reflectCheckInResponses",
-    "value": [
-        {
-              "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c", 
-              "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
-              "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
-              "checkInTitle": "How are you feeling today?",
-              "isClosed": false,
-              "createdDateTime": "2023-09-19T11:44:16.0821219Z",
-              "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
-              "responseFeedback": "pleasant",
-              "responseEmotion": "motivated",
-              "submitDateTime": "2023-09-19T11:46:16.2813907Z",
-            }, 
-            {
-              "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c", 
-              "classId": null,
-              "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
-              "checkInTitle": "How are you feeling today?",
-              "isClosed": false,
-              "createdDateTime": "2023-09-19T11:44:16.0821219Z",
-              "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
-              "responseFeedback": "unpleasant",
-              "responseEmotion": "bored",
-              "submitDateTime": "2023-09-19T11:55:16.2813907Z",
-            }
-      ]
- }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/reflectCheckInResponses",
+  "value": [
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-09-19T11:44:16.0821219Z",
+      "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "responseFeedback": "pleasant",
+      "responseEmotion": "motivated",
+      "submitDateTime": "2023-09-19T11:46:16.2813907Z"
+    },
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": null,
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-09-19T11:44:16.0821219Z",
+      "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
+      "responseFeedback": "unpleasant",
+      "responseEmotion": "bored",
+      "submitDateTime": "2023-09-19T11:55:16.2813907Z"
+    }
+  ]
+}
 ```
 
-### Example 2: Using filter to get reflect checkin responses for a specific date
+### Example 2: Get the Reflect check-in responses for a specific date using $filter
+
+The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter.
 
 #### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_ReflectCheckinResponses_filter"
@@ -134,6 +140,7 @@ GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$
 #### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,32 +153,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/reflectCheckInResponses",
-    "value": [
-        {
-          "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
-          "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
-          "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
-          "checkInTitle": "How are you feeling today?",
-          "isClosed": false,
-          "createdDateTime": "2023-10-19T11:44:16.0821219Z",
-          "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
-          "responseFeedback": "pleasant",
-          "responseEmotion": "motivated",
-          "submitDateTime": "2023-10-19T11:46:16.2813907Z",
-      }, 
-      {
-          "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
-          "classId": null,
-          "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
-          "checkInTitle": "How are you feeling today?",
-          "isClosed": false,
-          "createdDateTime": "2023-10-19T11:44:16.0821219Z",
-          "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
-          "responseFeedback": "unpleasant",
-          "responseEmotion": "bored",
-          "submitDateTime": "2023-11-19T11:55:16.2813907Z",
-      }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/reflectCheckInResponses",
+  "value": [
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-10-19T11:44:16.0821219Z",
+      "responderId": "f2df94da-9a47-4c65-958c-8289ae30243b",
+      "responseFeedback": "pleasant",
+      "responseEmotion": "motivated",
+      "submitDateTime": "2023-10-19T11:46:16.2813907Z"
+    },
+    {
+      "creatorId": "0f1503b6-15fb-ea4a-ba6e-21b31e8a9b5c",
+      "classId": null,
+      "checkInId": "b8fc7306-068e-4380-93d4-ee72019a50fe",
+      "checkInTitle": "How are you feeling today?",
+      "isClosed": false,
+      "createdDateTime": "2023-10-19T11:44:16.0821219Z",
+      "responderId": "958c7306-9a47-15fb-958c-8289ae30243b",
+      "responseFeedback": "unpleasant",
+      "responseEmotion": "bored",
+      "submitDateTime": "2023-11-19T11:55:16.2813907Z"
+    }
+  ]
 }
 ```
