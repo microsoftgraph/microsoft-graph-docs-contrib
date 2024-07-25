@@ -290,14 +290,14 @@ None.
 | monthlyPrintUsageByPrinter        | [printUsageByPrinter](printusagebyprinter.md) collection                             | Retrieve a list of monthly print usage summaries, grouped by printer.                                                                    |
 | monthlyPrintUsageByUser           | [printUsageByUser](printusagebyuser.md) collection                                   | Retrieve a list of monthly print usage summaries, grouped by user.                                                                       |
 | partners                          | [partners](partners.md)                                                              | Represents billing details for a Microsoft direct partner.                                                                               |
+| readingAssignmentSubmission       | [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection| Represents the submission details of the reading assignment associated with this data.                                                   |
+| reflectCheckInResponse            | [reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection          | Represents the response to the Microsoft Reflect check-in associated with this data.                                                     |
 | security                          | [securityReportsRoot](securityreportsroot.md)                                        | Provides the ability to launch a simulated phishing attack that organizations can learn from.                                            |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                                     |
 | serviceActivity                   | [serviceActivity](serviceactivity.md)                                                | Reports that relate to tenant-level authentication activities in Microsoft Entra.                                                        |
 | sla                               | [serviceLevelAgreementRoot](servicelevelagreementroot.md)                            | Reports that relate to tenant-level Microsoft Entra SLA attainment.                                                                      |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                                              |
 | userInsights                      | [userInsightsRoot](userinsightsroot.md)                                              | Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers. |
-|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md)|Represents the submission details of the reading assignment associated with this data.|
-|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md)|Represents the response to the reflect check-in associated with this data.|
 
 ## JSON representation
 
