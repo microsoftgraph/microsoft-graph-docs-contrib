@@ -25,7 +25,7 @@ The complex type of a requestor's provided answer to an [accessPackageQuestion](
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAnswer"

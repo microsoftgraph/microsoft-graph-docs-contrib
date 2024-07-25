@@ -3976,21 +3976,6 @@ Possible values for user account types (group membership), per Windows definitio
 | app                |
 | unknownFutureValue |
 
-### submissionResultCategory values
-
-| Member             |
-| :----------------- |
-| notJunk            |
-| spam               |
-| phishing           |
-| malware            |
-| allowedByPolicy    |
-| blockedByPolicy    |
-| spoof              |
-| unknown            |
-| noResultAvailable  |
-| unknownFutureValue |
-
 ### submissionSource values
 
 | Member             |
@@ -4967,3 +4952,28 @@ Possible values for user account types (group membership), per Windows definitio
 |silentUpdate|
 |outdated|
 |principalWantsCopy|
+
+### photoUpdateSource values
+
+|Member|
+|:---|
+|cloud|
+|onPremises|
+
+### uriUsageType values 
+
+|Member|
+|:---|
+|redirectUri|
+|identifierUri|
+|loginUrl|
+|logoutUrl|
+|unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|

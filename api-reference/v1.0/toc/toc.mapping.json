@@ -43,16 +43,16 @@
         },
         {
           "name": "Service principal",
+          "shouldSort": true,
           "childNodes": [
             {
               "name": "Policies",
               "resources": [
-                "claimsMappingPolicy",
-                "homeRealmDiscoveryPolicy",
-                "permissionGrantPolicy",
-                "permissionGrantConditionSet",
                 "tokenIssuancePolicy",
-                "tokenLifetimePolicy"
+                "tokenLifetimePolicy",
+                "claimsMappingPolicy",
+                "customClaimsPolicy",
+                "homeRealmDiscoveryPolicy"
               ]
             }
           ]
@@ -65,14 +65,19 @@
             "synchronization",
             "synchronizationTemplate",
             "synchronizationJob",
-            "synchronizationSchema",
-            "directoryDefinition"
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
                 "bulkUpload"
+              ]
+            },
+            {
+              "name": "Synchronization schema",
+              "resources": [
+                "directoryDefinition"
               ]
             }
           ]
@@ -421,7 +426,7 @@
     },
     {
       "name": "Extensions",
-      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
+      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true",
       "keywords": [
         "Directory extensions",
         "Schema extensions",
@@ -486,7 +491,7 @@
     },
     {
       "name": "Identity and access",
-      "overview": "../../resources/azure-ad-overview.md",
+      "overview": "../../resources/identity-network-access-overview.md",
       "keywords": [
         "Azure AD",
         "Microsoft identity platform",
@@ -499,7 +504,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -512,7 +516,6 @@
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
-            "subscribedSku",
             "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo"
@@ -525,6 +528,13 @@
                 "allowedValue",
                 "attributeSet",
                 "customSecurityAttributeDefinition"
+              ]
+            },
+            {
+              "name": "Licenses and subscriptions",
+              "resources": [
+                "companySubscription",
+                "subscribedSku"
               ]
             },
             {
@@ -553,12 +563,12 @@
               "name": "Access reviews",
               "overview": "../../resources/accessreviewsv2-overview.md",
               "resources": [
-                "accessReviewHistoryDefinition",
-                "accessReviewHistoryInstance",
-                "accessReviewInstance",
-                "accessReviewInstanceDecisionItem",
                 "accessReviewScheduleDefinition",
-                "accessReviewStage"
+                "accessReviewInstance",
+                "accessReviewStage",
+                "accessReviewInstanceDecisionItem",
+                "accessReviewHistoryDefinition",
+                "accessReviewHistoryInstance"
               ],
               "complexTypes": [
                 "accessReviewApplyAction",
@@ -614,16 +624,19 @@
               "resources": [
                 "accessPackage",
                 "accessPackageAssignment",
+                "approval",
+                "approvalStage",
+                "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
-                "accessPackageAssignmentRequestWorkflowExtension",
-                "accessPackageAssignmentWorkflowExtension",
                 "accessPackageCatalog",
                 "accessPackageResource",
+                "accessPackageResourceRole",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
-                "accessPackageResourceRole",
-                "accessPackageResourceRoleScope",
+                "accessPackageAssignmentRequestWorkflowExtension",
+                "accessPackageAssignmentWorkflowExtension",
+                "accessPackageSubject",
                 "connectedOrganization",
                 "entitlementManagementSettings"
               ],
@@ -646,7 +659,6 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
-                "accessPackageSubject",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "attributeRuleMembers",
@@ -697,11 +709,11 @@
                 "Leaver"
               ],
               "resources": [
-                "microsoft.graph.identityGovernance.customTaskExtension",
-                "microsoft.graph.identityGovernance.lifecycleManagementSettings",
-                "microsoft.graph.identityGovernance.taskDefinition",
                 "microsoft.graph.identityGovernance.workflow",
-                "microsoft.graph.identityGovernance.workflowTemplate"
+                "microsoft.graph.identityGovernance.workflowTemplate",
+                "microsoft.graph.identityGovernance.taskDefinition",
+                "microsoft.graph.identityGovernance.customTaskExtension",
+                "microsoft.graph.identityGovernance.lifecycleManagementSettings"
               ],
               "complexTypes": [
                 "azureAdPopTokenAuthentication",
@@ -900,13 +912,12 @@
             },
             {
               "name": "Identity provider",
-              "resources": [
-                "identityProviderBase"
-              ],
+              "resources": [],
               "childNodes": [
                 {
                   "name": "External identities",
                   "resources": [
+                    "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
                     "appleManagedIdentityProvider"
@@ -995,7 +1006,22 @@
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
                   ]
+                },
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
                 }
+              ]
+            },
+            {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
               ]
             },
             {
@@ -1006,14 +1032,6 @@
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
-              ]
-            },
-            {
-              "name": "User flows in external tenants",
-              "resources": [
-                "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
               ]
             }
           ]

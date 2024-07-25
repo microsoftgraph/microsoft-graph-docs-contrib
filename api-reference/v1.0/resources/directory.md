@@ -14,7 +14,11 @@ Namespace: microsoft.graph
 
 Represents a deleted item in the directory. When an item is deleted, it moves to the deleted items container. Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
+Currently, deleted items functionality is supported for the the following resources:
+- [application](application.md)
+- [group](group.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](user.md)
 
 Inherits from [entity](entity.md).
 
@@ -22,10 +26,10 @@ Inherits from [entity](entity.md).
 
 | Method                                                                                     | Return Type                                      | Description                            |
 | :----------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------- |
-| [Get deleted item](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
-| [Restore deleted item](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
-| [List deleted items](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
-| [Permanently delete item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
+| [List](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
+| [Get](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
+| [Restore](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
+| [Permanently delete](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
 | [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties

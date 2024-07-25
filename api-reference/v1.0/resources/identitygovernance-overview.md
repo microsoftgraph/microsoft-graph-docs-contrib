@@ -6,6 +6,7 @@ author: FaithOmbongi
 ms.reviewer: Mark.Wahl
 ms.subservice: entra-id-governance
 doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 07/02/2024
 ---
 

@@ -40,16 +40,22 @@ items:
   items:
   - name: People admin settings
     href: ../../resources/peopleadminsettings.md
-  - name: Get peopleAdminSettings
+  - name: Get
     href: ../../api/peopleadminsettings-get.md
-  - name: List itemInsights
+  - name: List item insights
     href: ../../api/peopleadminsettings-list-iteminsights.md
-  - name: List pronounsSettings
+  - name: List pronoun settings
     href: ../../api/peopleadminsettings-list-pronouns.md
-  - name: List profileCardProperties
+  - name: List profile card properties
     href: ../../api/peopleadminsettings-list-profilecardproperties.md
-  - name: Create profileCardProperty
+  - name: Create profile card property
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
+  - name: List photo update settings
+    href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+  - name: Create photo update setting
+    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+  - name: Delete photo update setting
+    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
   - name: Pronouns settings
     items:
     - name: Pronouns settings
@@ -72,6 +78,20 @@ items:
       href: ../../api/profilecardproperty-update.md
     - name: Delete
       href: ../../api/profilecardproperty-delete.md
+  - name: Photo update settings
+    items:
+    - name: Photo update settings
+      href: ../../resources/photoupdatesettings.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+    - name: Create
+      href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+    - name: Get
+      href: ../../api/photoupdatesettings-get.md
+    - name: Update
+      href: ../../api/photoupdatesettings-update.md
+    - name: Delete
+      href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -92,6 +112,20 @@ items:
     href: ../../api/peopleadminsettings-list-pronouns.md
   - name: Update
     href: ../../api/pronounssettings-update.md
+- name: Photo update settings
+  items:
+  - name: Photo update settings
+    href: ../../resources/photoupdatesettings.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-photoupdatesettings.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
+  - name: Get
+    href: ../../api/photoupdatesettings-get.md
+  - name: Update
+    href: ../../api/photoupdatesettings-update.md
+  - name: Delete
+    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
 - name: Profile
   items:
   - name: Profile

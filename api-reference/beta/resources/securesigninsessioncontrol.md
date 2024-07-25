@@ -25,7 +25,7 @@ Session control to require sign in sessions to be bound to a device. Inherits fr
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.secureSignInSessionControl"

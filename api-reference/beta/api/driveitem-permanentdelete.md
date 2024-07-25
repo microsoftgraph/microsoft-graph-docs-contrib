@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
-If you delete items using this method, they're permanently removed and won't be sent to the recycle bin. Therefore, they can't be restored afterward.
+Permanently delete a [driveItem](../resources/driveitem.md) by using its ID. If you delete items using this method, they're permanently removed and aren't sent to the recycle bin, unlike the [Delete driveItem](../api/driveitem-delete.md) API, which sends the item to the recycle bin. Therefore, permanently deleted drive items can't be restored afterward.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

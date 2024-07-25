@@ -43,7 +43,7 @@ Represents an enterprise site list in a compliant cloud location that specifies 
 |sites|[browserSite](../resources/browsersite.md) collection|A collection of sites defined for the site list.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

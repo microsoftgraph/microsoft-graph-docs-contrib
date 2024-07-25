@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

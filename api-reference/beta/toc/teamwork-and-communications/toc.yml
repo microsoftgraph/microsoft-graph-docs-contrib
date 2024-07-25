@@ -336,9 +336,9 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
-    - name: External meeting registration
+    - name: External meeting registration (deprecated)
       items:
-      - name: External meeting registration
+      - name: External meeting registration (deprecated)
         href: ../../resources/externalmeetingregistration.md
       - name: Create
         href: ../../api/externalmeetingregistration-post.md
@@ -346,9 +346,9 @@ items:
         href: ../../api/externalmeetingregistration-get.md
       - name: Delete
         href: ../../api/externalmeetingregistration-delete.md
-    - name: Meeting registration
+    - name: Meeting registration (deprecated)
       items:
-      - name: Meeting registration
+      - name: Meeting registration (deprecated)
         href: ../../resources/meetingregistration.md
       - name: Create
         href: ../../api/meetingregistration-post.md

@@ -25,8 +25,8 @@ You can create or update the following types of group:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "group_post_groups" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-post-groups-permissions.md)]
+<!-- { "blockType": "permissions", "name": "group_upsert" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-upsert-permissions.md)]
 
 In order for an app with Group.Create permission to create a group with owners or members, it must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
 

@@ -21,11 +21,11 @@ Represents a role definition assigned to a principal at a particular scope. Supp
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List role assignment](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read a list of unifiedRoleAssignment objects and their properties. |
+| [List](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read a list of unifiedRoleAssignment objects and their properties. |
+| [Create](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
+| [Get](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
+| [Delete](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 | [List transitive role assignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get direct and transitive unifiedRoleAssignments assigned to a specific principal. Specifying principalId is required. |
-| [Get role assignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
-| [Create role assignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
-| [Delete role assignment](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 
 ## Properties
 

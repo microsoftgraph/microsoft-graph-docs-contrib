@@ -26,6 +26,8 @@ items:
     href: ../../api/site-list.md
   - name: List sites across geographies
     href: ../../api/site-getallsites.md
+  - name: List subsites for a site
+    href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
   - name: Follow site
