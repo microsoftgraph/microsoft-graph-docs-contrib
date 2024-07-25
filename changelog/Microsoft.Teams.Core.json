@@ -407,6 +407,90 @@
     {
       "ChangeList": [
         {
+          "Id": "56bd96b9-0d85-467a-8dcc-c14a589a7646",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$select` query parameter for the [Get](https://learn.microsoft.com/en-us/graph/api/callrecording-get?view=graph-rest-beta) operation of the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callrecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "56bd96b9-0d85-467a-8dcc-c14a589a7646",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$select` query parameter for the [Get](https://learn.microsoft.com/en-us/graph/api/calltranscript-get?view=graph-rest-beta) operation of the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "56bd96b9-0d85-467a-8dcc-c14a589a7646",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta) operation of the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callrecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "56bd96b9-0d85-467a-8dcc-c14a589a7646",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta) operation of the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "56bd96b9-0d85-467a-8dcc-c14a589a7646",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-25T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "de894035-255b-41ad-b497-fee4de3715a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$select` query parameter for the [Get](https://learn.microsoft.com/en-us/graph/api/callrecording-get?view=graph-rest-1.0) operation of the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callrecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "de894035-255b-41ad-b497-fee4de3715a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$select` query parameter for the [Get](https://learn.microsoft.com/en-us/graph/api/calltranscript-get?view=graph-rest-1.0) operation of the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "de894035-255b-41ad-b497-fee4de3715a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-recordings?view=graph-rest-1.0) operation of the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callrecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "de894035-255b-41ad-b497-fee4de3715a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Change",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0) operation of the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "de894035-255b-41ad-b497-fee4de3715a8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-25T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
           "ApiChange": "Relationship",
           "ChangedApiName": "messages",
