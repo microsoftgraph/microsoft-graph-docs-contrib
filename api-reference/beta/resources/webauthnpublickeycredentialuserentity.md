@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the user account for which the credential is generated. For more information, see [https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialuserentity](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialuserentity). 
+Contains information about the user account for which the credential is generated. For more information, see [User Account Parameters for Credential Generation](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialuserentity). 
 
 
 ## Properties
