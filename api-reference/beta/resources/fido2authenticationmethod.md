@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+The **fido2AuthenticationMethod** resource is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -34,11 +34,11 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|The authentication method identifier.|
 |displayName|String|The display name of the key as given by the user.|
 |createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
-|aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
+|aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
-|attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
+|attestationCertificates|String collection|The attestation certificate or certificates attached to this security key.|
 |attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, `notAttested`, `unknownFutureValue`.|
-|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property is not returned on read operations.|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property isn't returned on read operations.|
 
 
 ## Relationships
