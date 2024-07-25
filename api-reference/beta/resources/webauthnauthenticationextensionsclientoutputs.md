@@ -19,8 +19,7 @@ Represents data returned from a WebAuthn Authenticator after it creates a new pu
 This resource is an open type that allows other properties to be passed in.  
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
