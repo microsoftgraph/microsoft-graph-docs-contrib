@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a set of Microsoft Entra ID-preferred credential properties for the creation of a new public key credential. Fore more information, see [https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialparameters](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialparameters).  
+Defines a set of Microsoft Entra ID-preferred credential properties for the creation of a new public key credential. Fore more information, see [Parameters for Credential Generation](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialparameters).  
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alg|Int32|Specifies the cryptographic signature algorithm used for the new credential. The algorithm identifiers should be values registered in the IANA COSE algorithms registry. For more information, see [https://www.w3.org/TR/WebAuthn-2/#biblio-iana-cose-algs-reg](https://www.w3.org/TR/WebAuthn-2/#biblio-iana-cose-algs-reg)|  
-|type|String|Specifies the type of credential to be created. The only supported value today is `public-key`.|  
+|alg|Int32|Specifies the cryptographic signature algorithm used for the new credential. The algorithm identifiers should be values registered in the IANA COSE algorithms registry. For more information, see [IANA-COSE-ALGS-REG](https://www.w3.org/TR/WebAuthn-2/#biblio-iana-cose-algs-reg).|  
+|type|String|Specifies the type of credential to be created. The only supported value is `public-key`.|  
 
 
 ## Relationships
