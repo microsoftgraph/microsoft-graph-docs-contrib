@@ -22,7 +22,7 @@ Represents an approval provisioning status.
 |[provision](../api/approvalsolution-provision.md)|None|Provisions an approval solution instance on behalf of the tenant.|
 |[List approvalItems](../api/approvalsolution-list-approvalitems.md)|[approvalItem](../resources/approvalitem.md) collection|Get the approvalItem resources from the approvalItems navigation property.|
 |[Create approvalItem](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new approvalItem object.|
-|[Get approvalOperation](../api/approvaloperation-get.md)|[approvalOperation](../resources/approvaloperation.md)|Get approvalOperation object.|
+|[Get approvalOperation](../api/approvaloperation-get.md)|[approvalOperation](../resources/approvaloperation.md)|Get an approvalOperation object.|
 
 
 ## Properties
