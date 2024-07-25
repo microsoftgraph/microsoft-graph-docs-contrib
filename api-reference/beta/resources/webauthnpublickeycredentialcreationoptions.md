@@ -1,6 +1,6 @@
 ---
 title: "webauthnPublicKeyCredentialCreationOptions resource type"
-description: "webAuthnPublicKeyCredentialCreationOptions description:  Defines public key options for the creation of a new public key credential."
+description: "Defines public key options for the creation of a new public key credential."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines public key options for the creation of a new public key credential. For more information, see [https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialcreationoptions](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialcreationoptions).  
+Defines public key options for the creation of a new public key credential. For more information, see [Options for Credential Creation](https://www.w3.org/TR/WebAuthn-2/#dictdef-publickeycredentialcreationoptions).  
 
 ## Properties
 |Property|Type|Description|
