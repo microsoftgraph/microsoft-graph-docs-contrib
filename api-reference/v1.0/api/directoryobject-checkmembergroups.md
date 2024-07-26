@@ -66,7 +66,6 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ### Group memberships for a device
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
