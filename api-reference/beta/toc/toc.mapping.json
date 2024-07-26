@@ -1631,7 +1631,8 @@
               "resources": [
                 "awsAuthorizationSystem",
                 "azureAuthorizationSystem",
-                "gcpAuthorizationSystem"
+                "gcpAuthorizationSystem",
+                "authorizationSystemTypeService"
               ],
               "childNodes": [
                 {
@@ -1642,8 +1643,7 @@
                       "resources": [
                         "awsAuthorizationSystemTypeAction",
                         "awsPolicy",
-                        "awsAuthorizationSystemResource",
-                        "authorizationSystemTypeService"
+                        "awsAuthorizationSystemResource"
                       ],
                       "childNodes": [
                         {
@@ -1666,8 +1666,7 @@
                       "resources": [
                         "azureAuthorizationSystemTypeAction",
                         "azureAuthorizationSystemResource",
-                        "azureRoleDefinition",
-                        "authorizationSystemTypeService"
+                        "azureRoleDefinition"
                       ],
                       "childNodes": [
                         {
@@ -1691,8 +1690,7 @@
                       "resources": [
                         "gcpAuthorizationSystemTypeAction",
                         "gcpAuthorizationSystemResource",
-                        "gcpRole",
-                        "authorizationSystemTypeService"
+                        "gcpRole"
                       ],
                       "childNodes": [
                         {
