@@ -3293,7 +3293,7 @@ Possible values for user account types (group membership), per Windows definitio
 ### meetingAudience values 
 
 | Member |
-| ----- |
+| :----- |
 | everyone |
 | organization |
 | unknownFutureValue |
@@ -3301,7 +3301,7 @@ Possible values for user account types (group membership), per Windows definitio
 ### virtualEventAttendeeRegistrationStatus values 
 
 | Member |
-| ----- |
+| : ----- |
 | registered |
 | canceled |
 | waitlisted |
