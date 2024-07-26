@@ -203,7 +203,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "restorepoint_search"
+  "name": "restorepoint_search_artifactquery"
 }
 -->
 ``` http

@@ -68,7 +68,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "exchangerestoresession_create"
+  "name": "exchangerestoresession_create_mailboxrestoreartifacts"
 }
 -->
 ``` http
@@ -141,7 +141,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "exchangerestoresession_create"
+  "name": "exchangerestoresession_create_granularmailboxrestoreartifacts"
 }
 -->
 ``` http
