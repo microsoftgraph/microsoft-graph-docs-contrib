@@ -22,6 +22,10 @@ A time range resource with a start and end time.
 |endTime|TimeOfDay|End time for the time range.|
 |startTime|TimeOfDay|Start time for the time range.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

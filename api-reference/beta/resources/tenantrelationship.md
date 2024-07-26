@@ -13,10 +13,6 @@ Namespace: microsoft.graph
 
 Represent the various type of tenant relationships.
 
-## Methods
-
-None.
-
 ## Properties
 
 None.
