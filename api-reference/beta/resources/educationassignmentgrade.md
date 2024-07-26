@@ -27,7 +27,7 @@ resource type. This object also tracks who is doing the grading. This is used in
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

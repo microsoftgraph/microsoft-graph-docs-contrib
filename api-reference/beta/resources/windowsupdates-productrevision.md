@@ -36,7 +36,7 @@ When a quality update is released, it includes one or more product revisions to 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

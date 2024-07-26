@@ -67,7 +67,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

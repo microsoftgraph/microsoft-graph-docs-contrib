@@ -22,7 +22,7 @@ Used in the request settings of an access package assignment policy. The `@odata
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.connectedOrganizationMembers",

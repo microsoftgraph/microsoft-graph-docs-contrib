@@ -304,15 +304,15 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete submission resource
     href: ../../api/educationsubmissionresource-delete.md
-- name: Synchronization error
+- name: Synchronization error (deprecated)
   items:
-  - name: Synchronization error
+  - name: Synchronization error (deprecated)
     href: ../../resources/educationsynchronizationerror.md
   - name: Get
     href: ../../api/educationsynchronizationerrors-get.md
-- name: Synchronization profile
+- name: Synchronization profile (deprecated)
   items:
-  - name: Synchronization profile
+  - name: Synchronization profile (deprecated)
     href: ../../resources/educationsynchronizationprofile.md
   - name: List profiles
     href: ../../api/educationsynchronizationprofile-list.md
@@ -320,6 +320,8 @@ items:
     href: ../../api/educationsynchronizationprofile-get.md
   - name: Create profile
     href: ../../api/educationsynchronizationprofile-post.md
+  - name: Update profile
+    href: ../../api/educationsynchronizationprofile-put.md
   - name: Delete profile
     href: ../../api/educationsynchronizationprofile-delete.md
   - name: Pause profile
@@ -336,9 +338,9 @@ items:
     href: ../../api/educationsynchronizationprofilestatus-get.md
   - name: Get errors
     href: ../../api/educationsynchronizationerrors-get.md
-- name: Synchronization profile status
+- name: Synchronization profile status (deprecated)
   items:
-  - name: Synchronization profile status
+  - name: Synchronization profile status (deprecated)
     href: ../../resources/educationsynchronizationprofilestatus.md
   - name: Get
     href: ../../api/educationsynchronizationprofilestatus-get.md

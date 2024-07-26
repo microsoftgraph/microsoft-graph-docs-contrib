@@ -46,7 +46,7 @@ For more information about working with security alerts for Microsoft Entra role
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
