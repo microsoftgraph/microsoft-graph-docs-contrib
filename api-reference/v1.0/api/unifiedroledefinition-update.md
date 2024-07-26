@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedroledefinition_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-update-permissions.md)]
 
+[!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
