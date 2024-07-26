@@ -56,11 +56,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### Group memberships for an organizational contact
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_5" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-5-permissions.md)]
 
 <!--
 The following table lists the permission types to use for different scenarios.
