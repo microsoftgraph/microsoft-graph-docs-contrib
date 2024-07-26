@@ -3305,7 +3305,7 @@ Possible values for user account types (group membership), per Windows definitio
 | registered |
 | canceled |
 | waitlisted |
-| pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
+| pendingApproval |
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
@@ -3400,10 +3400,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### virtualEventRegistrationQuestionAnswerInputType values 
 
-| Member | Description |
-| ----- | ----------- |
-| text | The registration question accepts single-line text. |
-| multilineText | The registration question accepts multi-line text. |
+| Member |
+| ----- |
+| text |
+| multilineText |
 | singleChoice | The registration question accepts one answer from a list of options. |
 | multiChoice | The registration question accepts more than one answer from a list of options. |
 | boolean | The registration question accepts a yes, or no answer. |
