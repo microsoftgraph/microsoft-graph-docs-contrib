@@ -65,7 +65,9 @@ If successful, this action returns a `200 OK` response code and a [restorePointS
 
 ## Examples
 
-### Request
+### Example 1: Search request
+
+#### Request
 
 The following example shows a request.
 
@@ -89,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -154,5 +156,71 @@ Content-Type: application/json
         }
     ],
     "noResultProtectionUnitIds": ["63014d8c-71fe-4d00-a01a-31850bc5b42c"]
+}
+```
+
+### Example 2 : Search with artifactQuery expression
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "restorepoint_search"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints/search
+Content-Type: application/json
+
+{
+  "artifactQuery": {
+    "queryExpression": "((subject -contains ‘Finance’)  -or  (subject -contains ‘Legal’)) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true",
+    "artifactType": "message"
+  },
+  "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
+  "protectionTimePeriod": {
+    "startDateTime": "2021-01-01T00:00:00Z"
+  },
+  "restorePointPreference": "oldest"
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.restorePointSearchResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#restorePoints",
+  "searchResponseId": "M2UyZDAwMDAwMDMxMzkzYTMyNj",
+  "searchResults": [
+    {
+      "artifactHitCount": 26,
+      "restorePoint": {
+        "@odata.type": "#microsoft.graph.restorePoint",
+        "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279",
+        "protectionDateTime": "2023-01-04T00:00:00Z",
+        "expirationDateTime": "2024-01-04T00:00:00Z",
+        "protectionUnit": {
+          "@odata.type": "#microsoft.graph.siteProtectionUnit",
+          "id": "23014d8c-71fe-4d00-a01a-31850bc5b42a",
+          "siteId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
+          "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+        },
+        "tags": "fastRestore"
+      }
+    }
+  ]
 }
 ```

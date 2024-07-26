@@ -51,7 +51,8 @@ You can specify the following properties when you create an **exchangeRestoreSes
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
+|granularMailboxRestoreArtifact|[granularMailboxRestoreArtifact](../resources/granularmailboxrestoreartifact.md) collection|Collection of [granularMailboxRestoreArtifact](../resources/granularmailboxrestoreartifact.md) objects.|
+|mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects.|
 
 ## Response
 
@@ -59,10 +60,12 @@ If successful, this method returns a `201 Created` response code and an [exchang
 
 ## Examples
 
-### Request
+### Example 1: Create exchangeRestoreSession with mailboxRestoreArtifacts
+
+#### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_create"
@@ -86,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -130,3 +133,85 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create exchangeRestoreSession with granularMailboxRestoreArtifact
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "exchangerestoresession_create"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreSessions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.exchangeRestoreSession",
+  "granularMailboxRestoreArtifact": [
+    {
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "destinationType": "inPlace",
+      "searchResponseId" : "M2UyZDAwMDAwMDMxMzkzYTMyNj"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.exchangeRestoreSession"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#exchangeRestoreSessions/$entity",
+  "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
+  "status": "draft",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "ABC"
+    }
+  },
+  "createdDateTime": "2023-03-30T12-01-03.45Z",
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "DEF"
+    }
+  },
+  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+  "error": null,
+  "granularMailboxRestoreArtifact": [
+    {
+      "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "restoredFolderId": null,
+      "status": "added",
+      "startDateTime": null,
+      "destinationType": "inPlace",
+      "searchResponseId": "M2UyZDAwMDAwMDMxMzkzYTMyNj",
+      "error": null
+    }
+  ]
+}
+```

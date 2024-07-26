@@ -467,6 +467,70 @@
           "ChangeType": "Addition",
           "Description": "Added the [search](https://learn.microsoft.com/en-us/graph/api/restorepoint-search?view=graph-rest-1.0) method to the [restorePoint](https://learn.microsoft.com/en-us/graph/api/resources/restorePoint?view=graph-rest-1.0) resource.",
           "Target": "search"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restorableArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the **restorableArtifact** enumeration type.",
+          "Target": "restorableArtifact"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Resource",
+          "ChangedApiName": "artifactQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [artifactQuery](https://learn.microsoft.com/en-us/graph/api/resources/artifactQuery?view=graph-rest-1.0) resource.",
+          "Target": "artifactQuery"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Property",
+          "ChangedApiName": "artifactHitCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **artifactHitCount** property to the [restorePointSearchResult](https://learn.microsoft.com/en-us/graph/api/resources/restorePointSearchResult?view=graph-rest-1.0) resource.",
+          "Target": "restorePointSearchResult"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "granularMailboxRestoreArtifacts",
+          "ChangeType": "Addition",
+          "Description": "Added the **granularMailboxRestoreArtifacts** relationship to the [exchangeRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/exchangeRestoreSession?view=graph-rest-1.0) resource.",
+          "Target": "exchangeRestoreSession"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Resource",
+          "ChangedApiName": "granularMailboxRestoreArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the [granularMailboxRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularMailboxRestoreArtifact?view=graph-rest-1.0) resource.",
+          "Target": "granularMailboxRestoreArtifact"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailboxType",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxType** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Method",
+          "ChangedApiName": "search",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **search** method from the [restorePoint](https://learn.microsoft.com/en-us/graph/api/resources/restorePoint?view=graph-rest-1.0) resource.",
+          "Target": "restorePoint"
+        },
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Method",
+          "ChangedApiName": "search",
+          "ChangeType": "Addition",
+          "Description": "Added the [search](https://learn.microsoft.com/en-us/graph/api/restorePoint-search?view=graph-rest-1.0) method to the [restorePoint](https://learn.microsoft.com/en-us/graph/api/resources/restorePoint?view=graph-rest-1.0) resource.",
+          "Target": "restorePoint"
         }
       ],
       "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
