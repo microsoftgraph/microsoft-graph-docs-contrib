@@ -66,11 +66,8 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ### Group memberships for a device
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
 
 <!--
 

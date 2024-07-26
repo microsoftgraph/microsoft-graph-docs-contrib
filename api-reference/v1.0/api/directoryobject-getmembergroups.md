@@ -68,11 +68,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Group memberships for a device
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_getmembergroups_6" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-getmembergroups-6-permissions.md)]
 
 <!--
 
