@@ -27,6 +27,10 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 |copiesPrinted|Int32|The number of copies that were printed. Read-only.|
 |createdBy|[userIdentity](useridentity.md)|The user who created the print job. Read-only.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -22,6 +22,10 @@ Indicates the identity of the application that performed the action or was chang
 |servicePrincipalId|String|Refers to the unique ID for the service principal in Microsoft Entra ID.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
