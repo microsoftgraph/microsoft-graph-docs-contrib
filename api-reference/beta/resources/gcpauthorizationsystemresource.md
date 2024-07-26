@@ -1,11 +1,12 @@
 ---
 title: "gcpAuthorizationSystemResource resource type"
-description: "Represents a GCP resource in an GCP authorization system."
+description: "Represents a GCP resource in a GCP authorization system."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: GCP resources
 ---
 
 # gcpAuthorizationSystemResource resource type
@@ -36,7 +37,7 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Relationship|Type|Description|
 |:---|:---|:---|
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an GCP authorization system. This object is auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in a GCP authorization system. This object is autoexpanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
