@@ -116,15 +116,15 @@ items:
       href: ../../api/group-delete-rejectedsenders.md
   - name: Directory objects
     items:
-    - name: List deleted groups
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted group
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted group
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
-    - name: Permanently delete group
+    - name: Permanently delete item
       href: ../../api/directory-deleteditems-delete.md
-    - name: List deleted groups owned by user
+    - name: List deleted items owned by user
       href: ../../api/directory-deleteditems-getuserownedobjects.md
     - name: Check member groups
       href: ../../api/directoryobject-checkmembergroups.md

@@ -1,6 +1,6 @@
 ---
 title: "assignedLicense resource type"
-description: "Represents a license assigned to a user. The **assignedLicenses** property of the user entity is a collection of **assignedLicense**."
+description: "Represents a license assigned to a user or group. The assignedLicenses property of the user or group entity is a collection of assignedLicense objects."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.
+Represents a license assigned to a user or group. The **assignedLicenses** property of the [user](user.md) or [group](group.md) entitity is a collection of **assignedLicense** objects.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|disabledPlans|Guid collection|A collection of the unique identifiers for plans that have been disabled.|
-|skuId|Guid|The unique identifier for the SKU.|
+|disabledPlans|Guid collection|A collection of the unique identifiers for plans that have been disabled. IDs are available in **servicePlans** > **servicePlanId** in the tenant's [subscribedSkus](../resources/subscribedsku.md) or **serviceStatus** > **servicePlanId** in the tenant's [companySubscription](../resources/subscribedsku.md). |
+|skuId|Guid|The unique identifier for the SKU. Corresponds to the **skuId** from [subscribedSkus](../resources/subscribedsku.md) or [companySubscription](../resources/companysubscription.md).|
 
 ## JSON representation
 

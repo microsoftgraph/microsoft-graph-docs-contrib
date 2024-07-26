@@ -37,7 +37,7 @@ For more information about granting apps consent to access a specific instance o
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

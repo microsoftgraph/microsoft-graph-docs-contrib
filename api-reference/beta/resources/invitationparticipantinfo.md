@@ -28,7 +28,7 @@ Represents an entity that is being invited to a group call.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
