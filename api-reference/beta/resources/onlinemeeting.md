@@ -55,7 +55,7 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowLiveShare | [meetingLiveShareOptions](#meetingLiveShareOptions-values) | Indicates whether live share is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowPowerPointSharing | Boolean | Indicates whether powerpoint sharing is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| allowPowerPointSharing | Boolean | Indicates whether powerpoint live is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
