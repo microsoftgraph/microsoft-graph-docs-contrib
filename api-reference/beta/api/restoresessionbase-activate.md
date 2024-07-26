@@ -148,12 +148,12 @@ Content-Type: application/json
 
 The following limits apply to all API calls:
 
-- SharePoint sites and OneDrive accounts being restored to a prior point in time aren't locked in a ready-only state. Therefore, users might not realize their current edits will be imminently rolled back and lost. In the future, we introduce a read-only lock on all sites undergoing a restore.
-- For the new URL restore, the restored SharePoint Online sites/OneDrive users (new URLs only) will not have the same permission as original site. Only the global admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) will have permission to the restored site. However, for the in-place or same URL restore, permission will be reverted to the state of the original site at the time it's being restore form.
+- SharePoint sites and OneDrive accounts being restored to a prior point in time are not locked in a ready-only state.
+- For the new URL restore, the restored SharePoint Online sites/OneDrive users (new URLs only) do not have the same permission as original site. Only the global admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) is given permission to the restored site. However, for the in-place or same URL restore, permission is reverted to the state of the original site at the time it's being restored from.
 - Restoration of SharePoint Online sites/OneDrive users content deleted beyond recycle bin is not supported.
 - For restores to a new URL, only the admin who executed the restore has ownership permissions for the restored SharePoint sites or OneDrive accounts in the new URLs. Restores to the same URL reverts permissions to their original state. We might decide to change this behavior in the future.
 - Mailboxes, OneDrive accounts, and SharePoint sites that are under legal or in-place holds currently can't be restored unless the destination is removed from legal hold. To restore a SharePoint site under legal hold, you need to restore the site to a new URL.
 - Mailbox draft items aren't backed up or restorable.
-- If there are no differences between the current state of a mailbox and the prior point in time from which you're attempting a restore, a restore isn't performed.
+- If there are no differences between the current state of a mailbox and the prior point in time from which you are attempting a restore, a restore isn't performed.
 - SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually.
 - The global admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) can initiate restore of up to 1000 SharePoint sites, 1000 OneDrive users, and/or 1000 mailboxes queued in parallel at a time.
