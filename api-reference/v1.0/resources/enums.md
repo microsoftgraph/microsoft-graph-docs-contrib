@@ -3292,8 +3292,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### meetingAudience values 
 
-| Member | Description |
-| ----- | ----------- |
+| Member |
+| ----- |
 | everyone |
 | organization | The town hall is open to people in your organization and guests of your organization. |
 | unknownFutureValue |
