@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get Microsoft Reflect check-in responses and read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object .
+Read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object. This methods gets the responses to a [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
 
 ## Permissions
 
