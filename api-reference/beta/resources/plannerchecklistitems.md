@@ -19,6 +19,10 @@ The **plannerChecklistItemCollection** resource represents the collection of che
 ## Properties
 Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
