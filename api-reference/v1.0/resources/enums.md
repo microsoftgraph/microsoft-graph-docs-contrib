@@ -3306,8 +3306,8 @@ Possible values for user account types (group membership), per Windows definitio
 | canceled |
 | waitlisted |
 | pendingApproval |
-| rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| rejectedByOrganizer |
+| unknownFutureValue |
 
 ### virtualEventStatus values 
 
