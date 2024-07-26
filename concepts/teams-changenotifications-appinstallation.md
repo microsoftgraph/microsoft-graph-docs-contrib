@@ -179,7 +179,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the user, chat, or team resource where RSC has been granted.
+> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted.
 
 ### Notifications with resource data
 
