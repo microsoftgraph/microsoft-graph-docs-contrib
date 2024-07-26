@@ -32,6 +32,10 @@ Inherits from [entity](../resources/entity.md).
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
+| allowBreakoutRooms | Boolean | Indicates whether breakout rooms is enabled for the meeting. |
+| allowLiveShare | [meetingLiveShareOptions](#meetingLiveShareOptions-values) | Indicates whether live share is enabled for the meeting.  |
+| allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. |
+| allowPowerPointSharing | Boolean | Indicates whether powerpoint sharing is enabled for the meeting. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
@@ -72,6 +76,14 @@ Inherits from [entity](../resources/entity.md).
 | ------------------ | ---------------------------------------------------------------------- |
 | all                | All meeting chat history is shared.                                    |
 | none               | No meeting chat history is shared.                                     |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
+
+### meetingLiveShareOptions values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting live share is enabled.                                         |
+| disabled           | Meeting live share is disabled.                                        |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
 ## Relationships

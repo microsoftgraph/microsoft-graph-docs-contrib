@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "19affcdd-980e-4708-be4b-a9e81a003f3b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingLiveShareOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingLiveShareOptions** enumeration type.",
+          "Target": "meetingLiveShareOptions"
+        }
+      ],
+      "Id": "19affcdd-980e-4708-be4b-a9e81a003f3b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-05T18:39:29.7392578Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-25T17:17:05.1836226Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a48373b0-1684-414b-abe3-360925c0011c",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventSettings",
