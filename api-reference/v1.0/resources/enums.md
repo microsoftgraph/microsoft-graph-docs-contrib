@@ -3295,16 +3295,16 @@ Possible values for user account types (group membership), per Windows definitio
 | Member |
 | ----- |
 | everyone |
-| organization | The town hall is open to people in your organization and guests of your organization. |
+| organization |
 | unknownFutureValue |
 
 ### virtualEventAttendeeRegistrationStatus values 
 
-| Member | Description |
-| ----- | ----------- |
-| registered | The attendee successfully registered for the virtual event. |
-| canceled | The attendee canceled registration for the virtual event. |
-| waitlisted | Waitlist is enabled and the virtual event is at full capacity. The attendee is on the waitlist. |
+| Member |
+| ----- |
+| registered |
+| canceled |
+| waitlisted |
 | pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
