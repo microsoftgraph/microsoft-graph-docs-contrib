@@ -39,7 +39,7 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an artifact is protected by a protection policy and can be restored. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md)|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an artifact is protected by a protection policy and can be restored. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
