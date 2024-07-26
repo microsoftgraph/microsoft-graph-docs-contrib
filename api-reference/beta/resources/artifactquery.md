@@ -1,6 +1,6 @@
 ---
 title: "artifactQuery resource type"
-description: "Contains the query for artifactQuery."
+description: "Contains an expression that specifies the criteria for search."
 author: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,19 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the query for artifactQuery.
+Contains an expression that specifies the criteria for search.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|queryExpression|String|.|
 |artifactType|[restorableArtifact](../resources/artifactquery.md#restorableartifact-values)|. The possible values are: `message`, `unknownFutureValue`.|
+|queryExpression|String|Specifies criteria to retrieve artifacts.|
 
 ### restorableArtifact values
 
 |Member | Description |
 |:------|:------------|
-|message | .|
+|message | Mailbox message.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

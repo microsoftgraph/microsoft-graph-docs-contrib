@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 Contains a list of [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
 
 ## Properties
-
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|artifactHitCount|int| Total number of artifacts restored.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an [artifact](../resources/restoreartifactbase.md) is protected by a [protectionPolicy](../resources/protectionpolicybase.md) and can be restored.|
-|artifactHitCount|int|
 
 ## JSON representation
 
