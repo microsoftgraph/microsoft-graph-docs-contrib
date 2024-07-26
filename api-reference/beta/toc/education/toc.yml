@@ -350,6 +350,20 @@ items:
     href: ../../resources/relatedcontact.md
   - name: Update
     href: ../../api/relatedcontact-update.md
+- name: Readingassignmentsubmission
+  items:
+  - name: Readingassignmentsubmission
+    href: ../../resources/readingassignmentsubmission.md
+  - name: Get
+    href: ../../api/readingassignmentsubmission-get.md
+- name: Reflectcheckinresponse
+  items:
+  - name: Reflectcheckinresponse
+    href: ../../resources/reflectcheckinresponse.md
+  - name: Get
+    href: ../../api/reflectcheckinresponse-get.md
+- name: Challengingword
+  href: ../../resources/challengingword.md
 - name: Complex types
   items:
   - name: Education assignment class recipient
