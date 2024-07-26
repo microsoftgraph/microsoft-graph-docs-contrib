@@ -50,18 +50,19 @@ POST /domains/{id}/verify
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
+The following table lists the parameters that are optional when you call this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|forceTakeover|Boolean|Optional parameter. If the domain to be verified belongs to another viral tenant that does not own the domain anymore, this parameter can be used to indicate taking over that domain from the viral tenant. Force takeover would only happen when the new owner is able to verify the domain ownership. The default value for this paramater is `false`.|
+|forceTakeover|Boolean|Optional. Used for external admin takeover of an unmanaged domain. The default value for this parameter is `false`. <br/><br/>If the domain to be verified is currently linked to an unmanaged tenant but you own the domain, use this parameter to take over that domain. Force takeover only succeeds when this tenant has verified their ownership of the domain by adding the TXT records to the domain registrar. For more information, see [Take over an unmanaged directory as administrator in Microsoft Entra ID](/entra/identity/users/domains-admin-takeover).|
 
 ## Response
 
 If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.
 
-## Example
-##### Request
+### Example 1: Verify a domain
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,8 +108,8 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -143,7 +144,9 @@ Content-type: application/json
 }
 -->
 
-##### Request
+### Example 2: External admin takeover of a domain
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -159,8 +162,8 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 }
 ```
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -181,6 +184,3 @@ Content-type: application/json
   "isVerified": true
 }
 ```
-
-
-

@@ -13376,11 +13376,11 @@
 	  "ChangeList": [
         {
           "Id": "bb48a1c4-003b-42b6-86eb-8a5c980e509d",
-          "ApiChange": "Method",
+          "ApiChange": "Parameter",
           "ChangedApiName": "verify",
           "ChangeType": "Addition",
-          "Description": "Added the [verify](https://learn.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-beta) method to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
-          "Target": "domain"
+          "Description": "Added the `forceTakeover` parameter to the [domain: verify](https://learn.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-beta) method of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource, to support external admin takeover of a domain.",
+          "Target": "verify"
         }
       ],
       "Id": "bb48a1c4-003b-42b6-86eb-8a5c980e509d",
