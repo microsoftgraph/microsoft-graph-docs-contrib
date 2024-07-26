@@ -25,6 +25,10 @@ Base type of [userIdentity](useridentity.md).
 | tenantId            | String | Unique identity of the tenant. Optional.                                    |
 | thumbnails          | [thumbnailSet](thumbnailset.md) | Keyed collection of thumbnail resources. Optional. Applies to drive items, for example. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

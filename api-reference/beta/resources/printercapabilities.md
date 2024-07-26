@@ -45,7 +45,7 @@ Represents the capabilities reported by a printer.
 |collation|Boolean|True if the printer supports collating when printing multiple copies of a multi-page document; false otherwise.|
 |scalings|printScaling collection|Supported print scalings.|
 
-## printerFeedOrientation values
+### printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
@@ -207,6 +207,10 @@ Represents the capabilities reported by a printer.
 |Photo l 3.5x5in|
 |Business Card|
 |Photo|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

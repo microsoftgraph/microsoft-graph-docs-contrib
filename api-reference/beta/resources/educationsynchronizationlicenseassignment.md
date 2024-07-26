@@ -24,7 +24,13 @@ Represents the license information to assign to user accounts. The resource will
 | appliesTo | String            | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`. |
 | skuIds    | String collection | Represents the SKU identifiers of the licenses to assign.                                      |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

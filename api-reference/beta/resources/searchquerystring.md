@@ -22,6 +22,10 @@ The search terms for the query.
 |:-------------|:------------|:------------|
 |query|String|Contains the actual search terms of the request.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

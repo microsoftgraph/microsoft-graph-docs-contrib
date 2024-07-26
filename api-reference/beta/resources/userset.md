@@ -28,6 +28,10 @@ Used in the request, approval, and assignment review settings of an [access pack
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | For a user in an approval stage, this property indicates whether the user is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following is a JSON representation of userSet. A [userSet](userset.md) is an abstract base class and so would not be sent or received.  Instead, one of the following `@odata.type` values representing the inherited types would be used:

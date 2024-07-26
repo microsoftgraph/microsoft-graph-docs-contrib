@@ -17,8 +17,6 @@ Represents the entity that performs a bulk restore action. Perform a bulk restor
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
-## Methods
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
