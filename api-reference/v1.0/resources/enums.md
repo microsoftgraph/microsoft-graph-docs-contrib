@@ -3311,9 +3311,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### virtualEventStatus values 
 
-| Member | Description |
-| ----- | ----------- |
-| draft | The virtual event is in draft and only visible to the organizer. |
+| Member |
+| ----- |
+| draft | 
 | published | The organizer published the virtual event and it's visible to the audience. |
 | canceled | The organizer canceled the virtual event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
