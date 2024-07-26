@@ -29,7 +29,6 @@ Inherits from [entity](../resources/entity.md).
 |assignmentId|String|ID of the assignment with which this submission is associated.|
 |challengingWords|[challengingWord](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
 |classId|String|ID of the class this reading progress is associated with.|
-|id|String|The unique identifier for the **readingAssignmentSubmission**. Inherited from [entity](../resources/entity.md).|
 |insertions|Int64|Insertions of the reading progress.|
 |mispronunciations|Int64|Mispronunciations of the reading progress.|
 |missedExclamationMarks|Int64 |Number of exclamation marks missed in the reading passage.|

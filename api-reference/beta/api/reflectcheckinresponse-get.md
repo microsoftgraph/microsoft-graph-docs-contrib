@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object.
+Get Microsoft Reflect check-in responses and read the properties and relationships of a [reflectCheckInResponse](../resources/reflectcheckinresponse.md) object .
 
 ## Permissions
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [reflectCheckI
 
 ## Examples
 
-### Example 1: Get the Reflect check-in responses from the last 24 hours
+### Example 1: Get the Reflect check in responses from the last 24 hours
 
 The following example shows how to get the Reflect check-in responses from the last 24 hours.
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the Reflect check-in responses for a specific date using $filter
+### Example 2: Get the Reflect check in responses for a specific date using $filter
 
 The following example shows how to get the Reflect check-in responses for a specific date using the `$filter` query parameter.
 

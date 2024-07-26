@@ -35,7 +35,7 @@ None.
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Read-only. Nullable.|
 |me|[educationUser](educationuser.md)| Read-only. Nullable.|
-|reports|[reportRoot](../resources/reportroot.md)|Read-only. Nullable.|
+|reports|[reportRoot](../resources/reportroot.md)|Reporting resources. Read-only. Nullable. |
 |schools|[educationSchool](educationschool.md) collection| Read-only. Nullable.|
 |synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Read-only. Nullable.|
 |users|[educationUser](educationuser.md) collection| Read-only. Nullable.|

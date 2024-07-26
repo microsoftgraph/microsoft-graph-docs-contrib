@@ -30,7 +30,6 @@ Inherits from [entity](../resources/entity.md).
 |classId|String|ID of the class associated with the Reflect check-in.|
 |createdDateTime|DateTimeOffset|Date and time when the Reflect check-in was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |creatorId|String|ID of the user who created the Reflect check-in.|
-|id|String|Unique identifier for the **reflectCheckInResponse**. Inherited from [entity](../resources/entity.md).|
 |isClosed|Boolean|Indicates whether the Reflect check-in is closed (`true`) or open (`false`).|
 |responderId|String|ID of the user who responded to the Reflect check-in.|
 |responseEmotion|responseEmotionType|Represents the pleasantness level of the response that indicates how pleasant the responder felt. The possible values are: `none`, `confident`, `excited`, `happy`, `motivated`, `peaceful`, `ambitious`, `cheerful`, `comfortable`, `creative`, `determined`, `energized`, `focused`, `fulfilled`, `grateful`, `included`, `inspired`, `optimistic`, `proud`, `successful`, `valuable`, `annoyed`, `bored`, `calm`, `confused`, `glad`, `content`, `pensive`, `reserved`, `restless`, `shocked`, `tired`, `angry`, `depressed`, `exhausted`, `lonely`, `nervous`, `anxious`, `apathetic`, `concerned`, `disappointed`, `frightened`, `frustrated`, `hopeless`, `hurt`, `jealous`, `miserable`, `overwhelmed`, `skeptical`, `stressed`, `stuck`, `worthless`, `awed`, `ashamed`, `curious`, `sensitive`, `sad`, `unknownFutureValue`.|
