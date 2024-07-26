@@ -17,10 +17,6 @@ The entitlement management singleton is the container for entitlement management
 
 Inherits from [entity](entity.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 None.
