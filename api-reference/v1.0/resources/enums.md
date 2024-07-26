@@ -3294,9 +3294,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member | Description |
 | ----- | ----------- |
-| everyone | The town hall is open to anyone. Select this choice to include attendees from outside your organization. |
+| everyone |
 | organization | The town hall is open to people in your organization and guests of your organization. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| unknownFutureValue |
 
 ### virtualEventAttendeeRegistrationStatus values 
 
