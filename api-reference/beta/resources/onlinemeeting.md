@@ -17,7 +17,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 This resource supports subscribing to [change notifications](/graph/webhooks). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
-Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
+Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 ## Methods
 
@@ -43,39 +43,39 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
-| allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
+| allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatRestrictions      | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration for meeting chat restrictions.  |
-| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowBreakoutRooms | Boolean | Indicates whether breakout rooms is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowLiveShare | [meetingLiveShareOptions](#meetingLiveShareOptions-values) | Indicates whether live share is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| allowPowerPointSharing | Boolean | Indicates whether powerpoint live is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
-| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
 | externalId            | String | The external ID. A custom ID. Optional.      |
-| id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
-| isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).    |
+| isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | joinWebUrl | String | The join URL of the online meeting. The format of the URL may change; therefore, users shouldn't rely on any information extracted from parsing the URL. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
-| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | startDateTime | DateTime | The meeting start time in UTC. Required when you create an online meeting. |
-| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| subject | String | The subject of the online meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| subject | String | The subject of the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | alternativeRecording (deprecated) | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that are automatically allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
@@ -89,19 +89,13 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 >- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbybypasssettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
 
-### onlineMeetingPresenters values
+### meetingChatHistoryDefaultMode values
 
-| Value              | Description                                                   |
-| ------------------ | ------------------------------------------------------------- |
-| everyone           | Everyone is a presenter. Default.                             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
-| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.             |
-
-> [!TIP]
->
-> When creating or updating an online meeting with **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with the specified attendees' **role** set to `presenter` in the request body.
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meeting chat history is shared.                                     |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
 ### meetingChatMode values
 
@@ -109,16 +103,8 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | ------------------ | ---------------------------------------------------------------------- |
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
-| limited            | Meeting chat is enabled but only during the meeting call. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
-
-### meetingChatHistoryDefaultMode values
-
-| Value              | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------- |
-| all                | All meeting chat history is shared.                                    |
-| none               | No meeting chat history is shared.                                     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
+| limited            | Meeting chat is enabled but only during the meeting call.              |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
 ### meetingLiveShareOptions values
 
@@ -128,11 +114,25 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | disabled           | Meeting live share is disabled.                                        |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
+### onlineMeetingPresenters values
+
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter. Default.                             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
+| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
+| organizer          | Only the organizer  is a presenter.                           |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
+
+> [!TIP]
+>
+> When creating or updating an online meeting with **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with the specified attendees' **role** set to `presenter` in the request body.
+
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
 | transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingattendancereport.md) | The attendance report of the latest online meeting session. Read-only. |
@@ -159,9 +159,16 @@ The following JSON representation shows the resource type.
 {
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
+  "allowBreakoutRooms": "Boolean",
   "allowedPresenters": "String",
+  "allowLiveShare": "String",
+  "allowMeetingChat": "String",
+  "allowParticipantsToChangeName": "Boolean",
+  "allowPowerPointSharing": "Boolean",
+  "allowRecording": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "allowTranscription": "Boolean",
+  "allowWhiteboard": "Boolean",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
@@ -176,7 +183,7 @@ The following JSON representation shows the resource type.
   "meetingTemplateId": "String",
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
-  "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
+  "shareMeetingChatHistoryDefault": "String",
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
