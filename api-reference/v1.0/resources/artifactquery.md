@@ -16,7 +16,7 @@ Contains an expression that specifies the criteria for search.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactType|[restorableArtifact](../resources/artifactquery.md#restorableartifact-values)|. The possible values are: `message`, `unknownFutureValue`.|
+|artifactType|[restorableArtifact](../resources/artifactquery.md#restorableartifact-values)|The type of artifact to search. The possible values are: `message`, `unknownFutureValue`.|
 |queryExpression|String|Specifies criteria to retrieve artifacts.|
 
 ### restorableArtifact values

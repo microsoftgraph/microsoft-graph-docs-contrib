@@ -66,7 +66,7 @@ To remove a **siteRestoreArtifact** from a site restore session, specify the @re
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952/sessions
 Content-Type: application/json
 
 {
