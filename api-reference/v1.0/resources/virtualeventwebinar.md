@@ -32,7 +32,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | To whom the webinar is visible. Possible values are: `everyone` and `organization`. |
+| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | To whom the webinar is visible. Possible values are: `everyone`, `organization`,  and, `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -40,7 +40,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
-| status | [virtualEventStatus](../resources/enums.md#virtualeventstatus-values) | Status of the webinar. Possible values are: `draft`, `published`, and `canceled`. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| status | [virtualEventStatus](../resources/enums.md#virtualeventstatus-values) | Status of the webinar. Possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## Relationships
 
