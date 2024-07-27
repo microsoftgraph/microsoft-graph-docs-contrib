@@ -22,6 +22,10 @@ Indicates the order to sort search results.
 |name|String|The name of the property to sort on. Required.|
 |isDescending|Boolean|`True` if the sort order is descending. Default is `false`, with the sort order as ascending. Optional.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

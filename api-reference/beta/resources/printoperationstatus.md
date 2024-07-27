@@ -31,6 +31,10 @@ Represents the current status of a long-running Universal Print operation.
 |failed|3|The operation failed.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

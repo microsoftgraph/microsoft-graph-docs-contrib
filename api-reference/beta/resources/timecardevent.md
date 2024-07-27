@@ -22,6 +22,9 @@ Represents a specific [timeCard](timecard.md) event.
 | atApprovedLocation |`Edm.boolean `  |Indicates whether the entry was recorded at the approved location. |
 | notes			        |[itemBody](itembody.md)  | Notes about the **timeCardEvent**.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
