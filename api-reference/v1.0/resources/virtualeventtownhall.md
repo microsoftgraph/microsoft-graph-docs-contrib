@@ -29,7 +29,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | The audience to whom the town hall is visible. Possible values are: `everyone` and `organization`.  |
+| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | The audience to whom the town hall is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`.  |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of the coorganizers of the town hall. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of the creator of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -39,7 +39,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | invitedAttendees | [identity](../resources/identity.md) collection | The attendees invited to the town hall. The supported identities are: [communicationsUserIdentity](../resources/communicationsuseridentity.md) and [communicationsGuestIdentity](../resources/communicationsguestidentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
-| status | [virtualEventStatus](../resources/enums.md#virtualeventstatus-values) | Status of the town hall. Possible values are: `draft`, `published`, and `canceled`. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| status | [virtualEventStatus](../resources/enums.md#virtualeventstatus-values) | Status of the town hall. Possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## Relationships
 

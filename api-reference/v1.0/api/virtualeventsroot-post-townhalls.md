@@ -51,7 +51,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | The audience to whom the town hall is visible. Possible values are: `everyone` and `organization`. |
+| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | The audience to whom the town hall is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |

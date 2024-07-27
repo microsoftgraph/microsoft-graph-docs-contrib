@@ -32,7 +32,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | To whom the webinar is visible. Possible values are: `everyone`, `organization`,  and, `unknownFutureValue`. |
+| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | To whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
