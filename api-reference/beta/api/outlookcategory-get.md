@@ -32,6 +32,11 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
+## Optional query parameters
+This method supports the `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$orderby` for the the following property of [outlookCategory](../resources/outlookcategory.md) object **displayName**.
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
