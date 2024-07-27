@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base online meeting. The base type of [onlineMeeting](onlinemeeting.md) and [virtualEventSession](virtualEventSession.md).
+Represents a base online meeting. The base type of [onlineMeeting](onlinemeeting.md) and [virtualEventSession](virtualeventsession.md).
 
 Inherits from [entity](../resources/entity.md).
 
 > [!TIP]
-> This is an abstract type and can't be used directly. Use the derived types [onlineMeeting](onlinemeeting.md) and [virtualEventSession](virtualEventSession.md) instead.
+> This is an abstract type and can't be used directly. Use the derived types [onlineMeeting](onlinemeeting.md) and [virtualEventSession](virtualeventsession.md) instead.
 
 ## Properties
 
@@ -26,16 +26,16 @@ Inherits from [entity](../resources/entity.md).
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
-| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. |
+| allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
+| allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the meeting. |
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
-| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
-| allowBreakoutRooms | Boolean | Indicates whether breakout rooms is enabled for the meeting. |
-| allowLiveShare | [meetingLiveShareOptions](#meetingLiveShareOptions-values) | Indicates whether live share is enabled for the meeting.  |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. |
-| allowPowerPointSharing | Boolean | Indicates whether powerpoint live is enabled for the meeting. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
@@ -44,22 +44,20 @@ Inherits from [entity](../resources/entity.md).
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. |
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
-| lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
+| lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
-| shareMeetingChatHistoryDefault | meetingChatHistoryDefaultMode |Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`.|
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) |Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`.|
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type.  |
 
-### onlineMeetingPresenters values
+### meetingChatHistoryDefaultMode values
 
-| Value              | Description                                                   |
-| ------------------ | ------------------------------------------------------------- |
-| everyone           | Everyone is a presenter. Default.                             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
-| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meeting chat history is shared.                                     |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
 ### meetingChatMode values
 
@@ -70,14 +68,6 @@ Inherits from [entity](../resources/entity.md).
 | limited            | Meeting chat is enabled but only during the meeting call. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
-### meetingChatHistoryDefaultMode values
-
-| Value              | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------- |
-| all                | All meeting chat history is shared.                                    |
-| none               | No meeting chat history is shared.                                     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
-
 ### meetingLiveShareOptions values
 
 | Value              | Description                                                            |
@@ -85,6 +75,16 @@ Inherits from [entity](../resources/entity.md).
 | enabled            | Meeting live share is enabled.                                         |
 | disabled           | Meeting live share is disabled.                                        |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
+
+### onlineMeetingPresenters values
+
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter. Default.                             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
+| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
+| organizer          | Only the organizer  is a presenter.                           |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
 
 ## Relationships
 
@@ -108,20 +108,27 @@ The following JSON representation shows the resource type.
 {
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
+  "allowBreakoutRooms": "Boolean",
   "allowedPresenters": "String",
+  "allowLiveShare": "String",
+  "allowMeetingChat": "String",
+  "allowParticipantsToChangeName": "Boolean",
+  "allowPowerPointSharing": "Boolean",
+  "allowRecording": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "allowTranscription": "Boolean",
+  "allowWhiteboard": "Boolean",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
-  "id": "String (identifier)",  
+  "id": "String (identifier)",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "recordAutomatically": "Boolean",
-  "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
+  "shareMeetingChatHistoryDefault": "String",
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
