@@ -1,7 +1,7 @@
 ---
-title: "Get educationSubmission"
-description: "Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions. "
-author: "Sureshpadimi88"
+title: "Get recently modified educationSubmissions"
+description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
+author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a particular [submission](../resources/educationsubmission.md). Only teachers, students, and applications with application permissions can perform this operation.
+Retrieve recently modified submissions. Only teachers, students, and applications with application permissions can perform this operation.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 
