@@ -39,7 +39,7 @@ In the request URL, provide the following required query parameters with values.
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
