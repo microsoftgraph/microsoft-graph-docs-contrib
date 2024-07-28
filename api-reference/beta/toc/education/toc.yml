@@ -350,9 +350,9 @@ items:
     href: ../../resources/readingassignmentsubmission.md
   - name: Get
     href: ../../api/readingassignmentsubmission-get.md
-- name: Reflect check in response
+- name: Reflect check-in response
   items:
-  - name: Reflect check in response
+  - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
   - name: Get
     href: ../../api/reflectcheckinresponse-get.md
