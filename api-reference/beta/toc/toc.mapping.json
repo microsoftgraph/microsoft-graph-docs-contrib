@@ -740,11 +740,11 @@
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "reflectCheckInResponse",
         "relatedContact"
       ],
       "complexTypes": [
-        "challengingword",
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
