@@ -43,7 +43,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who books the appointment.|
+|customerEmailAddress|String|The SMTP address of the [bookingCustomer](../resources/bookingcustomer.md) who books the appointment.|
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when you read this **bookingAppointment** by its ID. You can set this property only when you initially create an appointment with a new customer.|
 |customerPhone|String|The customer's phone number.|
