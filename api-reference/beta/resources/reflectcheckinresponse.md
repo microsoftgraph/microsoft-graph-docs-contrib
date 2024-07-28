@@ -57,7 +57,6 @@ The following JSON representation shows the resource type.
   "classId": "String",
   "createdDateTime": "String (timestamp)",
   "creatorId": "String",
-  "id": "String (identifier)",
   "isClosed": "Boolean",
   "responderId": "String",
   "responseEmotion": "String",
