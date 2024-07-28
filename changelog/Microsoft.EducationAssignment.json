@@ -4,43 +4,67 @@
       "ChangeList": [
         {
           "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
-          "ApiChange": "Method",
-          "ChangedApiName": "readingassignmentsubmission",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "responseFeedbackType",
           "ChangeType": "Addition",
-          "Description": "Added the [readingassignmentsubmission](https://learn.microsoft.com/en-us/graph/api/readingassignmentsubmission-get?view=graph-rest-beta) method to the [readingassignmentsubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingassignmentsubmission?view=graph-rest-beta) resource.",
-          "Target": "education"
+          "Description": "Added the **responseFeedbackType** enumeration type.",
+          "Target": "responseFeedbackType"
         },
         {
           "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
-          "ApiChange": "Method",
-          "ChangedApiName": "reflectcheckinresponse",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "responseEmotionType",
           "ChangeType": "Addition",
-          "Description": "Added the [reflectcheckinresponse](https://learn.microsoft.com/en-us/graph/api/reflectcheckinresponse-get?view=graph-rest-beta) method to the [reflectcheckinresponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectcheckinresponse?view=graph-rest-beta) resource.",
-          "Target": "education"
+          "Description": "Added the **responseEmotionType** enumeration type.",
+          "Target": "responseEmotionType"
         },
         {
-          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
           "ApiChange": "Resource",
-          "ChangedApiName": "readingassignmentsubmission",
+          "ChangedApiName": "readingAssignmentSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [readingassignmentsubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingassignmentsubmission?view=graph-rest-beta) resource type.",
-          "Target": "readingassignmentsubmission"
+          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingassignmentsubmission?view=graph-rest-beta) resource and a supported method.",
+          "Target": "readingAssignmentSubmission"
         },
         {
-          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
           "ApiChange": "Resource",
-          "ChangedApiName": "educationGradingSchemeGrade",
+          "ChangedApiName": "reflectCheckInResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [reflectcheckinresponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectcheckinresponse?view=graph-rest-beta) resource type.",
-          "Target": "reflectcheckinresponse"
+          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectcheckinresponse?view=graph-rest-beta) resource and a supported method.",
+          "Target": "reflectCheckInResponse"
         },
         {
-          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
           "ApiChange": "Resource",
-          "ChangedApiName": "challengingword",
+          "ChangedApiName": "challengingWord",
           "ChangeType": "Addition",
-          "Description": "Added the [challengingword](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
-          "Target": "challengingword"
+          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
+          "Target": "challengingWord"
+        },
+        {
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingAssignmentSubmission** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reflectCheckInResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **reflectCheckInResponse** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reports",
+          "ChangeType": "Addition",
+          "Description": "Added the **reports** relationship to the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationRoot?view=graph-rest-beta) resource.",
+          "Target": "educationRoot"
         }
       ],
       "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
