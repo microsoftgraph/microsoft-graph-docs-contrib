@@ -739,12 +739,12 @@
         "educationSynchronizationError",
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
-        "relatedContact",
-        "readingassignmentsubmission",
-        "reflectcheckinresponse",
-        "challengingword"
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse"
+        "relatedContact"
       ],
       "complexTypes": [
+        "challengingword",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
