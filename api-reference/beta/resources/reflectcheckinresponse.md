@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: "Reflect check-in response"
 ---
 
 # reflectCheckInResponse resource type
