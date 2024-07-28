@@ -23,6 +23,10 @@ A dictionary of **resultTemplateIds** and associated values, which includes the 
 |displayName|String|Name of the result template.|
 |body|Json|JSON schema of the result template.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

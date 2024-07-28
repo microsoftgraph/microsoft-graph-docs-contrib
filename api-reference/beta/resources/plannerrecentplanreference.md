@@ -24,6 +24,10 @@ We recommend that apps notify users when there are discrepancies and keep the en
 |lastAccessedDateTime|DateTimeOffset|The date and time the plan was last viewed by the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |planTitle|String|The title of the plan at the time the user viewed it.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

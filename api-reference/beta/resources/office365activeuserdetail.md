@@ -40,9 +40,14 @@ Namespace: microsoft.graph
 | teamsLicenseAssignDate            | Date              | The last date when the user was assigned a Teams license. |
 | assignedProducts                  | String collection | All the products assigned for the user.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",
