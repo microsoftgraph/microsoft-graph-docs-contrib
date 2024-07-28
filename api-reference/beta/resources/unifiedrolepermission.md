@@ -67,6 +67,10 @@ The following is an example of a role permission with a condition.
 ```
 Conditions aren't supported for custom roles.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
