@@ -175,7 +175,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Change",
-          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0) method to [List] ((https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0).",
+          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0) method to [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0).",
           "Target": "virtualEventWebinar"
         },
         {
