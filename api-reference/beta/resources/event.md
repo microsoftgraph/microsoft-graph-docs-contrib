@@ -39,7 +39,7 @@ This resource supports:
 |[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update event](../api/event-update.md) | [event](event.md)	|Update event object. |
 |[Delete event](../api/event-delete.md) | None |Delete event object. |
-|[permanentDelete](../api/event-permanentdelete.md)|None|**TODO: Add Description**|
+|[permanentDelete](../api/event-permanentdelete.md)|None|Permanent delete event and places it in the Purges folder of the dumpster in user's mailbox|
 |[Get delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[Forward event](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[Cancel event](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
