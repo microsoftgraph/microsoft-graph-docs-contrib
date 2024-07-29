@@ -55,6 +55,12 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 - [Create a synchronization profile that automatically starts a sync](/graph/api/educationsynchronizationprofile-post).
 - Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile-pause), [resume](/graph/api/educationsynchronizationprofile-resume) and [reset](/graph/api/educationsynchronizationprofile-reset) operations.
 
+### Microsoft Reflect
+[Microsoft Reflect](https://reflect.microsoft.com/) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy and emotional growth.
+
+The Microsoft Reflect reports APIs support the following scenarios:
+[Get reflectCheckInResponse](api-reference\beta\api\reflectcheckinresponse-get.md) - this method gets the responses to Reflect check-ins.
+
 ## API reference
 
 Looking for the API reference for this service?

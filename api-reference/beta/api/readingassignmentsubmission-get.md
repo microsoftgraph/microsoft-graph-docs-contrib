@@ -165,6 +165,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/reports/readingAssignmentSubmissions",
   "value": [
     {
+      "action": "Attempt",
       "assignmentId": "c43f6736-7faf-4cee-a742-55a583bd3c18",
       "classId": "adef893e-ff63-4b47-a081-7ea03e7dba6a",
       "submissionId": "980cc32e-d476-66f7-2d8d-5e7b4f92f01c",
