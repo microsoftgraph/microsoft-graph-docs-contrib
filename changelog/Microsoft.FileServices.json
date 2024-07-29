@@ -41,21 +41,24 @@
       "CreatedDateTime": "2024-03-05T15:28:51.737705Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
-      {
-        "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
-        "ApiChange": "Method",
-        "ChangedApiName": "permanentDelete",
-        "ChangeType": "Addition",
-        "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-permanentdelete?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-        "Target": "fileStorageContainer"
-      }
-    ],
-    "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2024-06-10T06:57:37.5509045Z",
-    "WorkloadArea": "Files",
-    "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-permanentdelete?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-10T06:57:37.5509045Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     },
     {
         "ChangeList": [
