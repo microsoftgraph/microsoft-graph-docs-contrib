@@ -17,8 +17,6 @@ Represents the entity that performs a bulk restart action.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
-## Methods
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

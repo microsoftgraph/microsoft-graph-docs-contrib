@@ -21,6 +21,10 @@ Represents an inclusive range of integers described by two Int64 boundaries.
 |start|Int64|The inclusive lower bound of the integer range.|
 |end|Int64|The inclusive upper bound of the integer range.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
