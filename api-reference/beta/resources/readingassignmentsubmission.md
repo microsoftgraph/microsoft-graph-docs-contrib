@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accuracyScore|Double|Accuracy score of the reading progress.|
-|action|String|Indicates whether the submission is an attempt by the student ("Attempt") or a miscue edit done by the educator ("EditMiscue").|
+|action|String|Indicates whether the submission is an attempt by the student or a miscue edit done by the educator. The possible values are `Attempt` and `EditMiscue`.
 |assignmentId|String|ID of the assignment with which this submission is associated.|
 |challengingWords|[challengingWord](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
 |classId|String|ID of the class this reading progress is associated with.|
