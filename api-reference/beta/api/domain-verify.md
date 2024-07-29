@@ -148,7 +148,6 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_verify_with_force_takeover",
