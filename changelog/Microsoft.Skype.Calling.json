@@ -157,14 +157,6 @@
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
-          "Target": "virtualEventWebinar"
-        },
-        {
-          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
-          "ApiChange": "Method",
           "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
           "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
