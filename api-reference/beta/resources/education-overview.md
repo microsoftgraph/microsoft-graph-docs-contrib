@@ -101,14 +101,15 @@ The following are some common use cases for the assignment-related education API
 
 ## Classwork
 
-You can use classwork as a one-stop shop to create and organize class resources, including Assignments, OneNote Class Notebook pages, web links, files, and Teams channels. This means you no longer have to navigate multiple apps and platforms to find what you need. With Classwork, you can curate a view of content and resources that will help your students navigate the class and see everything in one place.
+You can use Classwork as a one-stop shop to create and organize class resources, including assignments, OneNote Class Notebook pages, web links, files, and Teams channels. This means you no longer have to navigate multiple apps and platforms to find what you need. With Classwork, you can curate a view of content and resources that helps your students navigate the class and see everything in one place.
 
-The classwork APIs provide the following key resources:
+The Classwork API provide the following key resources:
 
 - [educationModule](educationmodule.md) - A module is associated with a class. Represents a group of individual learning resources that are organized in a systematic way.
 - [educationModule Resource](educationmoduleresource.md) - A wrapper object that stores the resources associated with a module. The student isn't able to update this resource. This resource is a handout from the teacher to the student with nothing to be turned in.
 
-The classwork APIs support the following scenarios:
+The Classwork API support the following scenarios:
+
 ### Modules
 - [Create module](../api/educationclass-post-module.md)
 - [List modules](../api/educationclass-list-modules.md)
@@ -118,6 +119,7 @@ The classwork APIs support the following scenarios:
 - [Unpin module](../api/educationmodule-unpin.md)
 - [Publish module](../api/educationmodule-publish.md)
 - [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)
+
 ### Module Resources
 - [Create module resource](../api/educationmodule-post-resources.md)
 - [Get module resource](../api/educationmoduleresource-get.md)
@@ -125,7 +127,7 @@ The classwork APIs support the following scenarios:
 - [Update module resource](../api/educationmoduleresource-update.md)
 - [Delete module resource](../api/educationmoduleresource-delete.md)
 
-The following are some common use cases for the module-related education APIs.
+The following table shows some common use cases for the module-related education APIs.
 
 | Use case                    | Description                                                                                                         | See also                                                          |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
