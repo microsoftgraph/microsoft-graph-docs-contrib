@@ -12,9 +12,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of usageRight objects for enterprise users. This API returns details for licenses that are directly assigned and those transitively assigned through memberships in licensed groups.
-
-Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object.
+Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object.
 
 ## Permissions
 
