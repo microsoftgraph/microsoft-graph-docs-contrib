@@ -29,7 +29,7 @@ The following file types are media resources: `webm`, `mkv`, `avi`, `wmv`, `mp4`
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

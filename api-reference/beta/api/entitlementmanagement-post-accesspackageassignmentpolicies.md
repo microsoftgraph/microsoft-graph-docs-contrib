@@ -643,12 +643,13 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create a policy and specify the stages to trigger pre-defined access package custom extensions
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
+
+In the following example, the predefined **accessPackageCustomWorkflowExtension** object is triggered by the creation or approval of an access package assignment request. The identifier in the **customExtension** property corresponds to the ID of the **accessPackageCustomWorkflowExtension** object.
 
 #### Request
 
-In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assignment request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -732,7 +733,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy)
+The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) method with `$expand`. For more information, see [Example 3: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy).
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

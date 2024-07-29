@@ -22,7 +22,7 @@ Represents a single assertion that a candidate object must satisfy, and is evalu
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

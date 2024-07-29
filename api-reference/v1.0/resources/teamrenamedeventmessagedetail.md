@@ -25,7 +25,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamId|String|Unique identifier of the **team**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamRenamedEventMessageDetail",

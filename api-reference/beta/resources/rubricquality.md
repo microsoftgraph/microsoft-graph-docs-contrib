@@ -25,9 +25,13 @@ A quality of a rubric. See [educationRubric](educationrubric.md) for a descripti
 |qualityId|String|The ID of this resource.|
 |weight|Single|If present, a numerical weight for this quality.  Weights must add up to 100.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

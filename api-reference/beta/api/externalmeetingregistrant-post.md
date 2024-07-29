@@ -7,11 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create externalMeetingRegistrant
+# Create externalMeetingRegistrant (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The external meeting registrant API is deprecated and will stop returning data on **December 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
 
 Enroll an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) in an online meeting which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled. The meeting organizer enrolls someone by providing a unique **id** in the external registration system and gets the unique **joinWebUrl** of this registrant.
 

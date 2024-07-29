@@ -921,7 +921,7 @@ The request returns a `201 Created` response code and an [openTypeExtension](/gr
 
 #### Update an existing open extension
 
-To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties are updated to `null` and deleted from the open extension.
+To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties are deleted from the open extension. You can however explicitly set a property to `null` to retain it in the open extension.
 
 The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
 
@@ -1051,6 +1051,7 @@ The following table compares the extension types, which should help you decide w
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
 | Usable for customizing token claims | Yes | Yes ([1][DirectoryExt-CustomClaims-Concept], [2][DirectoryExt-CustomClaims-HowTo]) | No | No |
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
+| Available in Microsoft Entra External ID | Yes | Yes | Yes | Yes |
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
 > [!NOTE]

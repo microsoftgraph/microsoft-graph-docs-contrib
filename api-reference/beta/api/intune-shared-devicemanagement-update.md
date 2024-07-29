@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,6 +68,8 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

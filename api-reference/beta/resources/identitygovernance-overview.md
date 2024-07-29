@@ -7,6 +7,7 @@ ms.reviewer: Mark.Wahl
 ms.subservice: entra-id-governance
 doc_type: conceptualPageType
 ms.date: 07/02/2024
+ms.topic: overview
 ---
 
 # Overview of Microsoft Entra ID Governance using Microsoft Graph

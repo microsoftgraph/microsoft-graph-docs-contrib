@@ -122,7 +122,7 @@ You can supply a list of up to eight **itemIdResolver** resources in the **urlTo
 
 When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL isn't in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
 
-To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](https://learn.microsoft.com/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-1.0).
+To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](/graph/api/resources/externalconnectors-urlmatchinfo).
 ## Update a connection
 
 To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).

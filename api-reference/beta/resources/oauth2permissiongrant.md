@@ -23,12 +23,12 @@ Delegated permissions are sometimes referred to as "OAuth 2.0 scopes" or "scopes
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-| [List oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Retrieve a list of delegated permission grants. |
-| [Get oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Read a single delegated permission grant.|
-| [Create oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Create a delegated permission grant. |
-| [Update oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | None | Update oAuth2PermissionGrant object. |
-| [Delete oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | None  | Delete a delegated permission grant. |
-| [Delta](../api/oauth2permissiongrant-delta.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection |Get newly created, updated, or deleted **oauth2permissiongrant** objects without performing a full read of the entire resource collection. |
+| [List](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Retrieve a list of delegated permission grants. |
+| [Create](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Create a delegated permission grant. |
+| [Get](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Read a single delegated permission grant.|
+| [Update](../api/oauth2permissiongrant-update.md) | None | Update oAuth2PermissionGrant object. |
+| [Delete](../api/oauth2permissiongrant-delete.md) | None  | Delete a delegated permission grant. |
+| [Get delta](../api/oauth2permissiongrant-delta.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection |Get newly created, updated, or deleted **oauth2permissiongrant** objects without performing a full read of the entire resource collection. |
 
 ## Properties
 
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
