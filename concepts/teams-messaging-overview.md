@@ -648,13 +648,14 @@ The **reactions** property represents reactions from other users on the message,
 
 The following example shows a message with reactions.
 
->**Note:** The display name isn't always present.
+>**Note:** The display name isn't always present for user.
 
 ```json
 {
     "reactions": [
         {
-            "reactionType": "like",
+            "reactionType": "💯",
+            "displayName": "Hundred points",
             "createdDateTime": "2022-01-18T23:41:57.573Z",
             "user": {
                 "application": null,
@@ -674,13 +675,14 @@ The following example shows a message with a custom reaction.
 
 >**Note:**
 > * Custom reactions are only available on the `/beta` endpoint.
-> * The display name isn't always present.
+> * The display name isn't always present for user.
 
 ```json
 {
     "reactions": [
         {
             "reactionType": "custom",
+            "displayName": "microsoft_teams",
             "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
             "createdDateTime": "2024-02-14T22:07:02.288Z",
             "user": {
