@@ -223,7 +223,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Change",
-          "Description": "Changed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0) method reference link.",
+          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-registrations.md) method to [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0).",
           "Target": "virtualEventRegistration"
         }
       ],
