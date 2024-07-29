@@ -12,7 +12,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) objects and their properties.
+Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects for a given group.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
