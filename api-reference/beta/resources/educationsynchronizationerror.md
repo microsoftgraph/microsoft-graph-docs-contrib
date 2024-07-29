@@ -36,7 +36,13 @@ Represents an error during school data profile validation and/or sync. A unique 
 | recordedDateTime     | DateTimeOffset | The time of occurrence of this error.                           |
 | reportableIdentifier | String         | The identifier of this error entry.                             |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

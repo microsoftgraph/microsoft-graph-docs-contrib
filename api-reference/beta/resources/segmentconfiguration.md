@@ -20,6 +20,9 @@ An abstract type for defining application segments when publishing an on-premise
 
 None.
 
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -25,6 +25,10 @@ The **plannerPlanContext** resource represents the relationship of a [plannerPla
 |isCreationContext|Boolean|Read-only. Indicates whether the plan is created from the specified context. Auto-generated based on whether the context is specified as part of plan creation.|
 |ownerAppId|String|Read-only. ID of the app that created the **plannerPlanContext**.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

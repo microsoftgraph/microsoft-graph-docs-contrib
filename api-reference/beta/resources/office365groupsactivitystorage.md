@@ -21,6 +21,10 @@ Namespace: microsoft.graph
 | reportDate                | Date   | The snapshot date for Exchange and SharePoint used storage. |
 | reportPeriod              | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
