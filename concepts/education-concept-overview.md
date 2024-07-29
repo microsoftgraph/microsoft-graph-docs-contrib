@@ -57,10 +57,10 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 
 ### Integrate with Microsoft Reflect (preview)
 
-[Microsoft Reflect](https://reflect.microsoft.com/) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth. You can integrate with Microsoft Reflect to get student responses to Refect check-ins.
+[Microsoft Reflect](https://reflect.microsoft.com/) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth. You can integrate with Microsoft Reflect to get student responses to Reflect check-ins.
 
 The Microsoft Reflect reports APIs support the following scenarios:
-- [Get reflectCheckInResponse](api-reference\beta\api\reflectcheckinresponse-get.md) 
+- [Get reflectCheckInResponse](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true)
 
 ## API reference
 
