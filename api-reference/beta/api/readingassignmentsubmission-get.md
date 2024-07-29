@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissi
 
 #### Response
 
-The following example shows the default response for the last 24 hours.
+The following example shows the default response from the last 24 hours.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
