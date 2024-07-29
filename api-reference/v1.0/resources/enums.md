@@ -64,7 +64,7 @@ Namespace: microsoft.graph
 | serviceProvider        |
 | unknownFutureValue     |
 
-### migrationStatus values 
+### migrationStatus values
 
 |Member|
 |:---|
@@ -1122,7 +1122,7 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
-### windowsSettingType values 
+### windowsSettingType values
 
 Possible types of Windows settings.
 
@@ -3301,7 +3301,7 @@ Possible values for user account types (group membership), per Windows definitio
 ### virtualEventAttendeeRegistrationStatus values
 
 | Member|
-|: ----- |
+| :----- |
 | registered |
 | canceled |
 | waitlisted |
@@ -3374,7 +3374,7 @@ Possible values for user account types (group membership), per Windows definitio
 |rejectedByStaff|
 |unknownFutureValue|
 
-### conditionalAccessInsiderRiskLevels values 
+### conditionalAccessInsiderRiskLevels values
 
 |Member|
 |:---|
@@ -3384,7 +3384,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 
-### virtualEventRegistrationPredefinedQuestionLabel values 
+### virtualEventRegistrationPredefinedQuestionLabel values
 
 |Member|
 |:---|
@@ -3398,7 +3398,7 @@ Possible values for user account types (group membership), per Windows definitio
 |organization|
 |unknownFutureValue|
 
-### virtualEventRegistrationQuestionAnswerInputType values 
+### virtualEventRegistrationQuestionAnswerInputType values
 
 | Member |
 | ----- |
@@ -4539,7 +4539,7 @@ Possible values for user account types (group membership), per Windows definitio
 |rejectedByStaff|
 |unknownFutureValue|
 
-### conditionalAccessInsiderRiskLevels values 
+### conditionalAccessInsiderRiskLevels values
 
 |Member|
 |:---|

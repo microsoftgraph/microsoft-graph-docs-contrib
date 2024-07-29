@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |lastName|String|Last name of the registrant.|
 |registrationDateTime|DateTimeOffset|Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
-|status|String|Registration status of the registrant. Read-only. Possible values are `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, and `unknownFutureValue`. |
+|status|virtualEventAttendeeRegistrationStatus|Registration status of the registrant. Read-only. Possible values are `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, and `unknownFutureValue`. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
 |preferredTimezone|String|The registrant's time zone details.|
 |preferredLanguage|String|The registrant's preferred language.|
@@ -66,7 +66,7 @@ The following JSON representation shows the resource type
   "cancelationDateTime": "String (timestamp)",
   "email": "String",
   "firstName": "String",
-  "id": "String (identifier)",  
+  "id": "String (identifier)",
   "lastName": "String",
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
