@@ -19,10 +19,10 @@ Represents the provisioning status of the approval solution for a tenant.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/approvalsolution-get.md)|[approvalSolution](../resources/approvalsolution.md)|Read the properties and relationships of an [approvalSolution](../resources/approvalsolution.md) object.|
-|[provision](../api/approvalsolution-provision.md)|None|Provisions an approval solution instance on behalf of the tenant.|
-|[List approvalItems](../api/approvalsolution-list-approvalitems.md)|[approvalItem](../resources/approvalitem.md) collection|Get the approvalItem resources from the approvalItems navigation property.|
-|[Create approvalItem](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new approvalItem object.|
-|[Get approvalOperation](../api/approvaloperation-get.md)|[approvalOperation](../resources/approvaloperation.md)|Get an approvalOperation object.|
+|[Provision](../api/approvalsolution-provision.md)|None|Provisions an approval solution instance on behalf of the tenant.|
+|[List approval items](../api/approvalsolution-list-approvalitems.md)|[approvalItem](../resources/approvalitem.md) collection|Get the approvalItem resources from the approvalItems navigation property.|
+|[Create approval item](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new approvalItem object.|
+|[Get approval operation](../api/approvaloperation-get.md)|[approvalOperation](../resources/approvaloperation.md)|Get an approvalOperation object.|
 
 
 ## Properties

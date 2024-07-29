@@ -24,7 +24,7 @@ Represents an approval request, including the associated decisions, status, and 
 |[Cancel](../api/approvalitem-cancel.md)|None|Cancel the approval item. The owner of the approval can trigger this endpoint.|
 |[List requests](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get the approvalItemRequest resources from the requests navigation property.|
 |[List responses](../api/approvalitem-list-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md) collection|Get the approvalItemResponse resources from the responses navigation property.|
-|[Create approvalItemResponse](../api/approvalitem-post-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md)|Create a new approvalItemResponse object.|
+|[Create response](../api/approvalitem-post-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md)|Create a new **approvalItemResponse** object.|
 
 ## Properties
 |Property|Type|Description|
