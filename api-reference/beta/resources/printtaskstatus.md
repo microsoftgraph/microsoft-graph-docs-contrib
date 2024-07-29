@@ -35,9 +35,13 @@ For details about how to use this resource to add pull printing support to Unive
 |aborted|3|Task execution was aborted.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -11,9 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents information about a service SKU that a company is subscribed to.
+Represents information about a service SKU that a company is subscribed to. Use the values of **skuId** and **servicePlans** > **servicePlanId** to assign licenses to unassigned users and groups through the [user: assignLicense](../api/user-assignlicense.md) and [group: assignLicense](../api/group-assignlicense.md) APIs respectively.
 
-Only the read operation is supported on subscribed SKUs; create, update, and delete aren't supported. Query filter expressions aren't supported. Inherits from [directoryObject](directoryobject.md).
+For more information about subscriptions and licenses, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
+
+Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 

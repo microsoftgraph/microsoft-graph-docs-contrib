@@ -92,7 +92,7 @@ The JSON object to be inserted into the **definition** property must first be **
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

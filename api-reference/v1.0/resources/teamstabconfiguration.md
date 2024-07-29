@@ -28,7 +28,7 @@ In addition to the properties below, some tab provider applications specify addi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsTabConfiguration"
