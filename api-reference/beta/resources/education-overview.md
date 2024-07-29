@@ -99,6 +99,42 @@ The following are some common use cases for the assignment-related education API
 | Read assignment information | An analytics application can get information about assignments and student submissions, including dates and grades. | [Get assignment](../api/educationassignment-get.md)               |
 | Track student submissions   | Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.           | [Submission resource](educationsubmission.md)                     |
 
+## Classwork
+
+You can use classwork as a one-stop shop to create and organize class resources, including Assignments, OneNote Class Notebook pages, web links, files, and Teams channels. This means you no longer have to navigate multiple apps and platforms to find what you need. With Classwork, you can curate a view of content and resources that will help your students navigate the class and see everything in one place.
+
+The classwork APIs provide the following key resources:
+
+- [educationModule](educationmodule.md) - A module is associated with a class. Represents a group of individual learning resources that are organized in a systematic way.
+- [educationModule Resource](educationmoduleresource.md) - A wrapper object that stores the resources associated with a module. The student isn't able to update this resource. This resource is a handout from the teacher to the student with nothing to be turned in.
+
+The classwork APIs support the following scenarios:
+### Modules
+- [Create module](../api/educationclass-post-module.md)
+- [List modules](../api/educationclass-list-modules.md)
+- [Update module](../api/educationmodule-update.md)
+- [Delete module](../api/educationmodule-delete.md)
+- [Pin module](../api/educationmodule-pin.md)
+- [Unpin module](../api/educationmodule-unpin.md)
+- [Publish module](../api/educationmodule-publish.md)
+- [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)
+### Module Resources
+- [Create module resource](../api/educationmodule-post-resources.md)
+- [Get module resource](../api/educationmoduleresource-get.md)
+- [List module resources](../api/educationmodule-list-resources.md)
+- [Update module resource](../api/educationmoduleresource-update.md)
+- [Delete module resource](../api/educationmoduleresource-delete.md)
+
+The following are some common use cases for the module-related education APIs.
+
+| Use case                    | Description                                                                                                         | See also                                                          |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| Create modules          | Only teachers in a class can create a module. Modules start in the draft state, which means that students won't see the modules until publication.                   | [Create module](../api/educationclass-post-module.md) |
+| List modules | A teacher or an application with application permissions can see all module objects for the class. Students can only see published modules. | [List modules](../api/educationclass-list-modules.md)               |
+| Publish module   | Changes the state of an educationModule from its original `draft` status to the `published` status.       | [Publish module](../api/educationmodule-publish.md)                     |
+| Create module resource          | Create a resource in a module. Only teachers can perform this operation.                   | [Create module resource](../api/educationmodule-post-resources.md) |
+| List module resources | Get all the educationModuleResource objects associated with a module. Only teachers, students, and applications with application permissions can perform this operation. | [List module resources](../api/educationmodule-list-resources.md)               |
+
 ## School data sync management
 
 [School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Microsoft Entra ID and Microsoft 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
