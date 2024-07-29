@@ -71,7 +71,10 @@ The last column indicates whether updating this property will take effect for an
 | allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
 | allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
-| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                           |
+| allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                           |
+| allowLiveShare              | Boolean                                                    | Indicates whether live share is enabled for the meeting.                            | No                           |
+| allowPowerPointSharing      | Boolean                                                    | Indicates whether PowerPoint live is enabled for the meeting.                       | No                           |
+| allowWhiteboard             | Boolean                                                    | Indicates whether whiteboard is enabled for the meeting.                            | No                           |
 
 > [!NOTE]
 >
