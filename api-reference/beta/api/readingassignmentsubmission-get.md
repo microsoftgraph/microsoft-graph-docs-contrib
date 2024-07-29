@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET education/reports/readingAssignmentSubmission
+GET /education/reports/readingAssignmentSubmission
 ```
 
 ## Optional query parameters
