@@ -157,7 +157,7 @@
         {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Method",
-          "ChangedApiName": "LIST",
+          "ChangedApiName": "GET",
           "ChangeType": "Addition",
           "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
           "Target": "virtualEventWebinar"
@@ -168,6 +168,14 @@
           "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
           "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Change List api to [List in organization](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0).",
           "Target": "virtualEventWebinar"
         },
         {
@@ -208,6 +216,14 @@
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
           "Description": "Added the [List sessions](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-sessions?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Changed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0) method reference link.",
           "Target": "virtualEventRegistration"
         }
       ],
