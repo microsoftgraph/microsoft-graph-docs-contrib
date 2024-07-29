@@ -24,7 +24,13 @@ Abstract base class for all school data profile identity synchronization configu
 | [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | Use this type to **match existing** user accounts in Microsoft Entra ID. |
 | [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | Use this type to **create new** user accounts in Microsoft Entra ID.                              |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

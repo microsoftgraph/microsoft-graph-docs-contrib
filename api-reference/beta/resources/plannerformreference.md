@@ -22,7 +22,12 @@ Represents complete details about a form, including the form's display name, URL
 |formWebUrl|String|The URL of the form associated with the **plannerFormReference** object.|
 |formResponse|String|The unique identifier of the response.|
 
+## Relationships
+
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
 
 <!-- {

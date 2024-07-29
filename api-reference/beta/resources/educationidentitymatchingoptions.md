@@ -26,7 +26,13 @@ Provides a mapping between a source property and a target property for matching 
 | targetPropertyName | String | The name of the target property, which should be a valid property in Microsoft Entra ID. This property is case-sensitive.                                                |
 | targetDomain       | String | The domain to suffix with the source property to match on the target. If provided as null, the source property will be used to match with the target property. |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
