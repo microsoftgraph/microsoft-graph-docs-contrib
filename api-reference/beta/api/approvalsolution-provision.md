@@ -1,6 +1,6 @@
 ---
 title: "approvalSolution: provision"
-description: "Provisions ApprovalSolution on behalf of the tenant."
+description: "Provisions an approvalSolution on behalf of a tenant."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provisions [approvalSolution](../resources/approvalsolution.md) on behalf of the tenant.
+Provision an [approvalSolution](../resources/approvalsolution.md) on behalf of a tenant.
 
 ## Permissions
 

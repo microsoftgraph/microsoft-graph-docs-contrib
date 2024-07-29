@@ -91,7 +91,7 @@ Content-Type: application/json
       "owner":{
           "user":{
             "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
-            "displayName":"Tom Gates"
+            "displayName":"Lilli Allik"
           }
       },
       "createdDateTime":"2022-04-13T00:17:49Z",
@@ -102,7 +102,7 @@ Content-Type: application/json
       "owner":{
           "group":{
             "id":"f2926053-5479-4bce-ad4c-8394ce51d6c5",
-            "displayName":"Jack Gates"
+            "displayName":"Rene Magi"
           }
       },
       "createdDateTime":"2022-04-18T00:17:49Z",
@@ -113,7 +113,7 @@ Content-Type: application/json
       "owner":{
           "user":{
             "id":"f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473",
-            "displayName":"Harry Gates"
+            "displayName":"Jana Pihlak"
           }
       },
       "createdDateTime":"2022-04-18T00:17:49Z",

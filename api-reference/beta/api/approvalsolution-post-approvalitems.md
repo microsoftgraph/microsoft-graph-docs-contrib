@@ -82,7 +82,7 @@ Content-Type: application/json
     {
       "user": {
         "id": "39d1a7fb-5f54-4c89-b513-241683718c9b",
-        "displayName": "Satya Nadella"
+        "displayName": "Jana Pihlak"
       }
     },
     {

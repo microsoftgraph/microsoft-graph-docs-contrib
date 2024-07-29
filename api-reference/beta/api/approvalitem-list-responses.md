@@ -92,7 +92,7 @@ Content-Type: application/json
       "comments":"Approve this request",
       "createdBy":{
           "user": {
-              "displayName": "Bill Gates",
+              "displayName": "Jana Pihlak",
               "id": "f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473"
             }
       },
@@ -101,7 +101,7 @@ Content-Type: application/json
         {
             "user":{
               "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
-              "displayName":"Satya Nadella"
+              "displayName":"Lilli Allik"
             }
         }
       ]
@@ -113,7 +113,7 @@ Content-Type: application/json
         "createdBy":{
           "user": {
               "id": "39d1a7fb-5f54-4c89-b513-241683718c9b",
-              "displayName": "Satya Nadella"
+              "displayName": "Lilli Allik"
             }
         },
         "createdDateTime":"2022-04-12T20:51:19Z",
@@ -121,7 +121,7 @@ Content-Type: application/json
         {
             "user":{
               "id":"f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473",
-              "displayName":"Bill Gates"
+              "displayName":"Jana Pihlak"
             }
         },
         {

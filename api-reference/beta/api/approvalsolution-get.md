@@ -1,6 +1,6 @@
 ---
 title: "Get approvalSolution"
-description: "Read the provisioning state of approvalSolution for a tenant."
+description: "Read the properties of an approvalSolution object to determine the provisioning state for a tenant."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the [provisioning](../api/approvalsolution-provision.md) state of [approvalSolution](../resources/approvalsolution.md) for a tenant.
+Read the properties of an [approvalSolution](../resources/approvalsolution.md) object to determine the [provisioning](../api/approvalsolution-provision.md) state for a tenant.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
 title: "approvalSolution resource type"
-description: "Represents an approval provisioning status."
+description: "Represents the provisioning status of the approval solution for a tenant."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval provisioning status.
+Represents the provisioning status of the approval solution for a tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,8 +33,8 @@ Represents an approval provisioning status.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approvalItems|[approvalItem](../resources/approvalitem.md) collection|Navigation property for the collection of approval items.|
-|approvalOperations|[approvalOperation](../resources/approvaloperation.md) collection|Navigation property for the collection of approval operations.|
+|approvalItems|[approvalItem](../resources/approvalitem.md) collection|A collection of approval items.|
+|approvalOperations|[approvalOperation](../resources/approvaloperation.md) collection|A collection of approval operations.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
