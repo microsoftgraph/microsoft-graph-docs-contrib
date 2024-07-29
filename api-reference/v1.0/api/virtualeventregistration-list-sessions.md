@@ -1,5 +1,5 @@
 ---
-title: "List sessions registered by a registrant"
+title: "List sessions"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions registered by a registrant
+# List sessions
 Namespace: microsoft.graph
 
 Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
