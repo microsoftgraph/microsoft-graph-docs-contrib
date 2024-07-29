@@ -83,9 +83,11 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 ## Response
 
-If successful, if the object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
+If an object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
 
-If the object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
+If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
+
+If an object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
 
 ## Examples
 

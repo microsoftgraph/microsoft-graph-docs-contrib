@@ -24,6 +24,10 @@ The configuration details for the logic app's endpoint that is associated with a
 |subscriptionId|String|Identifier of the Azure subscription for the logic app.|
 |url|String| The URL to the logic app endpoint that will be triggered. Only required for app-only token scenarios where app is creating a [customCalloutExtension](../resources/customcalloutextension.md) without a signed-in user.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

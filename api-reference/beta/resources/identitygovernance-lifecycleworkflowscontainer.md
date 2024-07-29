@@ -17,10 +17,6 @@ A container for the relationships that expose the Microsoft Entra ID Governance 
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 |Property|Type|Description|

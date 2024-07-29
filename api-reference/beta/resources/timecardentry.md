@@ -22,6 +22,9 @@ Represents a specific [timeCard](timecard.md) entry.
 | clockOutEvent			        |[timeCardEvent](timecardevent.md)  |The clock-out event of the **timeCard**. |
 | breaks 	|[timeCardBreak](timecardbreak.md) collection    |The list of breaks associated with the **timeCard**.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
