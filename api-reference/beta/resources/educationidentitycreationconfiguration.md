@@ -26,7 +26,13 @@ Derived from [educationIdentitySynchronizationConfiguration](educationidentitysy
 | :---------- | :--------------------------------------------------------------- | :--------------------------------------------- |
 | userDomains | [educationIdentityDomain](educationidentitydomain.md) collection | Sets the list of domains to use per user type. |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

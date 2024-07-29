@@ -17,9 +17,6 @@ Defines when to execute a [custom access package workflow extension](customacces
 
 Inherits from [entity](entity.md).
 
-## Methods
-None.
-
 > [!NOTE]
 >
 > 1. To read the customExtensionHandler objects on a policy, append `?$expand=customExtensionHandlers` to a [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) request. For example, `GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionHandlers`. For more information, see [Example 2: Retrieve the custom extension handlers for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy).
