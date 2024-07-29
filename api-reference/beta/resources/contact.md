@@ -29,6 +29,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
 |[Update contact](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
 |[Delete contact](../api/contact-delete.md) | None |Delete contact object. |
+|[permanentDelete](../api/contact-permanentdelete.md)|None|**TODO: Add Description**|
 |[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|

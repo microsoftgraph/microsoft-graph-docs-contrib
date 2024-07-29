@@ -34,6 +34,7 @@ When a search folder is deleted, your app should create a new search folder reso
 | [Get mail search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
 | [Update mail search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
 | [Delete mail search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
+| [permanentDelete](../api/mailsearchfolder-permanentdelete.md)|None|**TODO: Add Description**|
 | [List messages in folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
 
 ## Properties

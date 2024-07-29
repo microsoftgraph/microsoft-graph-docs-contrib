@@ -44,6 +44,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md)	|Change writeable properties of an Outlook task. |
 |[Delete](../api/outlooktask-delete.md) | None |Delete the specified task in the user's mailbox. |
 |[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) collection|Complete an Outlook task which sets the **completedDateTime** property to the current date, and **status** property to `completed`.|
+|[permanentDelete](../api/outlooktask-permanentdelete.md)|None|**TODO: Add Description**|
 |**Attachments**| | |
 |[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an Outlook task.|
 |[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Add a file, item (message, event or contact), or link to a file as an attachment to a task.|
