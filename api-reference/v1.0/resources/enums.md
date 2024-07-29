@@ -3290,7 +3290,7 @@ Possible values for user account types (group membership), per Windows definitio
 | verticalSplit      |
 | unknownFutureValue |
 
-### meetingAudience values 
+### meetingAudience values
 
 | Member |
 | :----- |
@@ -3309,11 +3309,11 @@ Possible values for user account types (group membership), per Windows definitio
 | rejectedByOrganizer |
 | unknownFutureValue |
 
-### virtualEventStatus values 
+### virtualEventStatus values
 
 | Member|
 | :----- |
-| draft | 
+| draft |
 | published|
 | canceled |
 | unknownFutureValue |
