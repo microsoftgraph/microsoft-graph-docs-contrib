@@ -31,7 +31,7 @@ You cannot rename or delete these default task group and folder, but you can cre
 |[List task folders in group](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the specified folder.|
 |[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)	|Update the writable properties of an Outlook task folder. |
 |[Delete](../api/outlooktaskfolder-delete.md) | None |Delete the specified Outlook task folder.|
-|[permanentDelete](../api/outlooktaskfolder-permanentdelete.md)|None|**TODO: Add Description**|
+|[permanentDelete](../api/outlooktaskfolder-permanentdelete.md)|None|Permanent delete outlook task folder and remove it's items from the user's mailbox|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Create one or more single-value extended properties in a new or existing Outlook task folder.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
