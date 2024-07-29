@@ -29,6 +29,9 @@ Use the **summary** property to get details about what happened, impacted assets
 - Use the **endDateTime** on [callRecording](/graph/api/resources/callrecording) or [callTranscript](/graph/api/resources/calltranscript) to identify when a recording or transcript ends.
 
 ## July 2024: New in preview only
+### Teamwork and communications | Messaging
+
+- Use the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).
 
 ### Applications | Application
 
