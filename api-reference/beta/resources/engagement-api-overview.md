@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph API to work with Viva Engage (preview)"
+title: "Use the Microsoft Graph API to work with Viva Engage"
 description: "The Microsoft Graph API enables apps to manage communities in Viva Engage."
 ms.localizationpriority: medium
 author: "aditijha4"
@@ -7,7 +7,7 @@ ms.subservice: "viva-engage"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph API to work with Viva Engage (preview)
+# Use the Microsoft Graph API to work with Viva Engage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
