@@ -1,9 +1,9 @@
 ---
 title: "eventMessage: permanentDelete"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Permanent delete eventmessage and places it in the Purges folder of the dumpster in user's mailbox"
+author: "deepakbaghel99"
+ms.localizationpriority: high
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Items and folders deleted using this API are permanently deleted. 
+Permanent-deleted items are placed in the Purges folder of the dumpster in user's mailbox. This is like when the recycling truck empties your curbside recycle container. The items cannot be accessed from an email client like Outlook or Outlook Web App, and, unless there is a hold set on the mailbox, the items will be permanently deleted after a set period of time.
+
+You can read more about item retention in the article Configure Deleted Item Retention and [Recoverable Items Quotas](https://technet.microsoft.com/library/ee364752%28v=exchg.150%29.aspx).
+
+NOTE: Folders are not placed in the Purges folder when they are permanently deleted. Permanently deleted folders are removed from the mailbox.
 
 ## Permissions
 
