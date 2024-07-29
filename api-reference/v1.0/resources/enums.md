@@ -3298,10 +3298,10 @@ Possible values for user account types (group membership), per Windows definitio
 | organization |
 | unknownFutureValue |
 
-### virtualEventAttendeeRegistrationStatus values 
+### virtualEventAttendeeRegistrationStatus values
 
-| Member |
-| : ----- |
+| Member|
+|: ----- |
 | registered |
 | canceled |
 | waitlisted |

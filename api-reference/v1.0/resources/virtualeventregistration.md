@@ -70,7 +70,7 @@ The following JSON representation shows the resource type
   "lastName": "String",
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
-  "status":  [{"@odata.type": "virtualEventAttendeeRegistrationStatus"}],
+  "status": "String",
   "userId": "String",
   "preferredTimezone": "String",
   "preferredLanguage": "String"
