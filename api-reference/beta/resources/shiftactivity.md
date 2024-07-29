@@ -24,7 +24,6 @@ Represents an activity in a [shift](shift.md).
 | code               | `string`                  | Customer defined code for the `shiftActivity`. Required.    |
 | displayName               | `string`                  | The name of the `shiftActivity`. Required.    |
 
-
 ## Relationships
 
 None.

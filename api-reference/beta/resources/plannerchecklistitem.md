@@ -29,6 +29,10 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

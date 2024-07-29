@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Used to record the status of  [custom workflow extension](customaccesspackageworkflowextension.md) instance being run on an [access package assignment request](accesspackageassignmentrequest.md).
 
-## Methods
-None
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

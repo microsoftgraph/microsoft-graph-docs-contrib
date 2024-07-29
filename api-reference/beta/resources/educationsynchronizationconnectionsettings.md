@@ -34,9 +34,13 @@ Represents the provider connection settings. This allows the system to know how 
 | clientId     | String | Client ID used to connect to the provider.                    |
 | clientSecret | String | Client secret to authenticate the connection to the provider. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of this resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

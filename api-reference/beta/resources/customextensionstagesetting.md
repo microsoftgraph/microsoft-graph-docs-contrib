@@ -22,10 +22,6 @@ To read the **customExtensionStageSettings** objects on a policy, append `?$expa
 
 To delete the **customExtensionStageSettings** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection. For more information, see [Example 3: Remove the customExtensionStageSettings from a policy](../api/accesspackageassignmentpolicy-update.md#example-3-remove-the-customextensionstagesettings-from-a-policy).
 
-## Methods
-None
-
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
