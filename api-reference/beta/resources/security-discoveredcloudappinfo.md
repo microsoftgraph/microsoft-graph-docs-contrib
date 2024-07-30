@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|The app's CSA star program certification level.Possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
+|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|The app's CSA star program certification level. Possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
 |dataAtRestEncryptionMethod|microsoft.graph.security.appInfoDataAtRestEncryptionMethod|The app's encryption mode for data at rest. The possible values are: `aes`, `bitLocker`, `blowfish`, `des3`, `des`, `rc4`, `rsA`, `notSupported`, `unknown`, `unknownFutureValue.`|
 |dataCenter|String|The countries/regions in which your data center resides.|
 |dataRetentionPolicy|microsoft.graph.security.appInfoDataRetentionPolicy|The app's policy for user data retention after account termination. The possible values are: `dataRetained`, `deletedImmediately`, `deletedWithinTwoWeeks`, `deletedWithinOneMonth`, `deletedWithinThreeMonths`, `deletedWithinMoreThanThreeMonths`, `unknown`, `unknownFutureValue`.|
