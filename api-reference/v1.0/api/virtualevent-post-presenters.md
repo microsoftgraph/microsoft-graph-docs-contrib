@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object on a virtual event.
 
-Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Currently, the following types of virtual events are supported: 
+- [virtualEventTownhall](../resources/virtualeventtownhall.md)
+- [virtualEventWebinar](../resources/virtualeventwebinar.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -55,14 +57,14 @@ You can specify the following properties when you create a presenter on a **virt
 
 |Property|Type|Description|
 |:---|:---|:---|
-|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+|identity|[identity](../resources/identity.md)|Identity information of the presenter. The following are the supported identities: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 
 You can specify the following properties when you create a presenter on a **virtualEventWebinar**:
 
 |Property|Type|Description|
 |:---|:---|:---|
-|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-|presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter.|
+|identity|[identity](../resources/identity.md)|Identity information of the presenter. The following are the supported identities: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+|presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other details about the presenter.|
 
 ## Response
 
