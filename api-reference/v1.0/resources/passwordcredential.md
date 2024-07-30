@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **passwordCredential** objects.
 
-To update the **passwordCredential** property, use the following methods.
+To update the **passwordCredential** property, use the following methods:
 - [application: addPassword](../api/application-addpassword.md)
 - [application: removePassword](../api/application-removepassword.md)
 - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
