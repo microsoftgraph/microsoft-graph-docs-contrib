@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryReport resource type"
-description: "Represents the discovery report streams."
+description: "Represents the resources available for discovery report streams."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the discovery report on all available discovery streams.
+Represents the resources available for discovery report streams.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
