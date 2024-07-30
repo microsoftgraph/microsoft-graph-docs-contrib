@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "outlooktaskthis.permanentdelete"
 }
 -->
@@ -76,11 +76,10 @@ POST https://graph.microsoft.com/beta/users/{usersId}/outlook/tasks/{outlookTask
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
