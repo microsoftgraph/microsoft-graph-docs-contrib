@@ -34,8 +34,6 @@ You can use the following attributes and properties to customize the component.
 | Attribute | Property | Description |
 | -- | -- | -- |
 | read-only | readOnly | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| hide-header | hideHeader | A Boolean to show or hide the header of the component. Default is `false`. |
-| hide-options | hideOptions | A Boolean to show or hide the options in tasks. Default is `false`.
 | initial-id="folder_id" | initialId | A string ID to set the initially displayed folder to the provided ID. |
 | target-id="folder_id"| targetId | A string ID to lock the tasks interface to the provided folder ID. |
 | N/A | isNewTaskVisible  | Determines whether new task view is visible at render. |

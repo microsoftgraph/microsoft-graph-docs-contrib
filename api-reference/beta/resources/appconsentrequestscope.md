@@ -24,7 +24,7 @@ The **appConsentRequestScope** details the dynamic permission scopes for which a
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConsentRequestScope"

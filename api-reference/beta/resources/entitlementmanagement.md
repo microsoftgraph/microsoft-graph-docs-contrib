@@ -17,10 +17,6 @@ The entitlement management singleton is the container for entitlement management
 
 Inherits from [entity](entity.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 None.
@@ -46,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

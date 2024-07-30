@@ -48,7 +48,7 @@ When a search folder is deleted, your app should create a new search folder reso
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

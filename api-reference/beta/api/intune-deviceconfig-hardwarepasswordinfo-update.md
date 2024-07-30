@@ -50,10 +50,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the hardware password info|
-|serialNumber|String|Device serial number|
-|currentPassword|String|Current device password|
-|previousPasswords|String collection|List of previous device passwords|
+|id|String|A unique string Id that is based on associated Intune Device Id. This property is read-only.|
+|serialNumber|String|Associated device's serial number . This property is read-only.|
+|currentPassword|String|Current device password. This property is read-only.|
+|previousPasswords|String collection|List of previous device passwords. This property is read-only.|
 
 
 

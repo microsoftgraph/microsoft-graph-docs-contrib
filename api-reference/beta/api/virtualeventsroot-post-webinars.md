@@ -58,6 +58,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
 ## Response
@@ -69,6 +70,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,7 +101,10 @@ Content-Type: application/json
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    }
 }
 ```
 
@@ -159,6 +164,9 @@ Content-Type: application/json
         "displayName": "Kenneth Brown", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    }
 }
 ```

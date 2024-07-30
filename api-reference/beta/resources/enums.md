@@ -11,6 +11,82 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### responseFeedbackType values
+
+| Member             |
+|:-------------------|
+| none               |
+| notDetected        |
+| veryUnpleasant     |
+| unpleasant         |
+| neutral            |
+| pleasant           |
+| veryPleasant       |
+| unknownFutureValue |
+
+### responseEmotionType values
+
+| Member             |
+|:-------------------|
+| none               |
+| confident          |
+| excited            |
+| happy              |
+| motivated          |
+| peaceful           |
+| ambitious          |
+| cheerful           |
+| comfortable        |
+| creative           |
+| determined         |
+| energized          |
+| focused            |
+| fulfilled          |
+| grateful           |
+| included           |
+| inspired           |
+| optimistic         |
+| proud              |
+| successful         |
+| valuable           |
+| annoyed            |
+| bored              |
+| calm               |
+| confused           |
+| glad               |
+| content            |
+| pensive            |
+| reserved           |
+| restless           |
+| shocked            |
+| tired              |
+| angry              |
+| depressed          |
+| exhausted          |
+| lonely             |
+| nervous            |
+| anxious            |
+| apathetic          |
+| concerned          |
+| disappointed       |
+| frightened         |
+| frustrated         |
+| hopeless           |
+| hurt               |
+| jealous            |
+| miserable          |
+| overwhelmed        |
+| skeptical          |
+| stressed           |
+| stuck              |
+| worthless          |
+| awed               |
+| ashamed            |
+| curious            |
+| sensitive          |
+| sad                |
+| unknownFutureValue |
+
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
 | Member             |
@@ -3976,21 +4052,6 @@ Possible values for user account types (group membership), per Windows definitio
 | app                |
 | unknownFutureValue |
 
-### submissionResultCategory values
-
-| Member             |
-| :----------------- |
-| notJunk            |
-| spam               |
-| phishing           |
-| malware            |
-| allowedByPolicy    |
-| blockedByPolicy    |
-| spoof              |
-| unknown            |
-| noResultAvailable  |
-| unknownFutureValue |
-
 ### submissionSource values
 
 | Member             |
@@ -4967,3 +5028,28 @@ Possible values for user account types (group membership), per Windows definitio
 |silentUpdate|
 |outdated|
 |principalWantsCopy|
+
+### photoUpdateSource values
+
+|Member|
+|:---|
+|cloud|
+|onPremises|
+
+### uriUsageType values 
+
+|Member|
+|:---|
+|redirectUri|
+|identifierUri|
+|loginUrl|
+|logoutUrl|
+|unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|

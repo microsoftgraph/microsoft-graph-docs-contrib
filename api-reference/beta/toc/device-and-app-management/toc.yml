@@ -265,8 +265,12 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: getDailyAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: getFrontlineReport
+      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getInaccessibleCloudPcReports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: getRawRemoteConnectionReports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
     - name: getRealTimeRemoteConnectionLatency
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
     - name: getRealTimeRemoteConnectionStatus
@@ -275,12 +279,10 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: getSharedUseLicenseUsageReport
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getFrontlineReport
-      href: ../../api/cloudpcreports-getfrontlinereport.md
     - name: getTotalAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getRawRemoteConnectionReports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: retrieveCrossRegionDisasterRecoveryReport
+      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
@@ -339,45 +341,45 @@ items:
       href: ../../resources/virtualendpoint.md
     - name: Get effective permissions
       href: ../../api/virtualendpoint-geteffectivepermissions.md
-    - name: List cloudPCs
+    - name: List Cloud PCs
       href: ../../api/virtualendpoint-list-cloudpcs.md
-    - name: List deviceImages
+    - name: List device images
       href: ../../api/virtualendpoint-list-deviceimages.md
-    - name: List galleryImages
+    - name: List gallery images
       href: ../../api/virtualendpoint-list-galleryimages.md
-    - name: Create cloudPcDeviceImage
+    - name: Create Cloud PC device image
       href: ../../api/virtualendpoint-post-deviceimages.md
-    - name: List onPremisesConnections
+    - name: List Cloud PC on-premises connections
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
-    - name: Create cloudPcOnPremisesConnection
+    - name: Create on-premises connection
       href: ../../api/virtualendpoint-post-onpremisesconnections.md
-    - name: List provisioningPolicies
+    - name: List provisioning policies
       href: ../../api/virtualendpoint-list-provisioningpolicies.md
-    - name: Create cloudPcProvisioningPolicy
+    - name: Create provisioning policy
       href: ../../api/virtualendpoint-post-provisioningpolicies.md
-    - name: List userSettings
+    - name: List user settings
       href: ../../api/virtualendpoint-list-usersettings.md
-    - name: Create cloudPcUserSetting
+    - name: Create user setting
       href: ../../api/virtualendpoint-post-usersettings.md
-    - name: List auditEvents
+    - name: List audit events
       href: ../../api/virtualendpoint-list-auditevents.md
-    - name: List supportedRegions
+    - name: List supported regions
       href: ../../api/virtualendpoint-list-supportedregions.md
-    - name: List servicePlans
+    - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
     - name: List snapshots
       href: ../../api/virtualendpoint-list-snapshots.md
-    - name: List externalPartnerSettings
+    - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create cloudPcExternalPartnerSetting
+    - name: Create external partner setting
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
-    - name: List frontLintServicePlans
+    - name: List front line service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
-    - name: List sharedUseServicePlans
+    - name: List shared use service plans
       href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: List bulkActions
+    - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
-    - name: Create cloudPcBulkAction
+    - name: Create bulk action
       href: ../../api/virtualendpoint-post-bulkactions.md
   - name: Cloud PC bulk action
     items:
@@ -418,6 +420,10 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk disaster recovery failback
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
+    - name: Cloud PC bulk disaster recovery failover
+      href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -5896,8 +5902,6 @@ items:
         href: ../../api/intune-devices-devicelogcollectionresponse-update.md
       - name: createDownloadUrl action
         href: ../../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
-      - name: downloadDeviceLogs action
-        href: ../../api/intune-devices-devicelogcollectionresponse-downloaddevicelogs.md
     - name: Device management abstract complex setting definition
       items:
       - name: Device management abstract complex setting definition
@@ -6448,6 +6452,8 @@ items:
         href: ../../api/intune-devices-manageddevice-rotatelocaladminpassword.md
       - name: pauseConfigurationRefresh action
         href: ../../api/intune-devices-manageddevice-pauseconfigurationrefresh.md
+      - name: changeAssignments action
+        href: ../../api/intune-devices-manageddevice-changeassignments.md
       - name: appDiagnostics function
         href: ../../api/intune-devices-manageddevice-appdiagnostics.md
       - name: downloadAppDiagnostics action
@@ -7946,10 +7952,6 @@ items:
         href: ../../api/intune-rbac-operationapprovalpolicy-delete.md
       - name: Update operationApprovalPolicy
         href: ../../api/intune-rbac-operationapprovalpolicy-update.md
-      - name: getApprovableOperations function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md
-      - name: getOperationsRequiringApproval function
-        href: ../../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md
       - name: retrieveApprovableOperations function
         href: ../../api/intune-rbac-operationapprovalpolicy-retrieveapprovableoperations.md
       - name: retrieveOperationsRequiringApproval function

@@ -10,18 +10,18 @@ doc_type: resourcePageType
 # deviceManagement resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Singleton entity that acts as a container for all device and app management functionality.
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-policyset-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-policyset-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-policyset-devicemanagement-get.md)|[deviceManagement](../resources/intune-policyset-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-policyset-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-policyset-devicemanagement-update.md)|[deviceManagement](../resources/intune-policyset-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-policyset-devicemanagement.md) object.|
 |[getAssignmentFiltersStatusDetails action](../api/intune-policyset-devicemanagement-getassignmentfiltersstatusdetails.md)|[assignmentFilterStatusDetails](../resources/intune-policyset-assignmentfilterstatusdetails.md)||
 |[evaluateAssignmentFilter action](../api/intune-policyset-devicemanagement-evaluateassignmentfilter.md)|Stream||
 

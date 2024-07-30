@@ -20,10 +20,13 @@ Adding new references to this collection will automatically remove the oldest en
 ## Properties
 You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

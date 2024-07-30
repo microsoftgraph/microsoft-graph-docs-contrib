@@ -153,9 +153,14 @@ Inherits from [entity](../resources/entity.md).
 |high| The payload complexity is high. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.payload"

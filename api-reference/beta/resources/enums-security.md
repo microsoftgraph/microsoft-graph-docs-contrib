@@ -595,6 +595,39 @@ Namespace: microsoft.graph.security
 | targetAccountUpn            |
 | unknownFutureValue          |
 
+### submissionResultCategory values
+
+| Member             |
+| :----------------- |
+| notJunk            |
+| spam               |
+| phishing           |
+| malware            |
+| allowedByPolicy    |
+| blockedByPolicy    |
+| spoof              |
+| unknown            |
+| noResultAvailable  |
+| unknownFutureValue |
+| beingAnalyzed |
+| notSubmittedToMicrosoft |
+| phishingSimulation |
+| allowedDueToOrganizationOverride |
+| blockedDueToOrganizationOverride |
+| allowedDueToUserOverride |
+| blockedDueToUserOverride |
+| itemNotfound |
+| threatsFound |
+| noThreatsFound |
+| domainImpersonation |
+| userImpersonation |
+| brandImpersonation |
+| authenticationFailure |
+| spoofedBlocked |
+| spoofedAllowed |
+| reasonLostInTransit |
+| bulk |
+
 <!--
 {
   "type": "#page.annotation",
