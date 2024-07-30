@@ -1,6 +1,6 @@
 ---
 title: "Get partnerSecurityScore"
-description: "Read the properties and relationships of a microsoft.graph.partner.security.partnerSecurityScore object."
+description: "Read the properties and relationships of a partnerSecurityScore object."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.partner.security.partnerSecurityScore](../resources/partner-security-partnersecurityscore.md) object.
+Read the properties and relationships of a [partnerSecurityScore](../resources/partner-security-partnersecurityscore.md) object.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
 title: "List customerInsights for Partner"
-description: "Get a list of the microsoft.graph.partner.security.customerInsight data and their properties."
+description: "Get a list of the customerInsight data and their properties."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) objects and their properties.
+Get a list of the [customerInsight](../resources/partner-security-customerinsight.md) objects and their properties.
 
 ## Permissions
 

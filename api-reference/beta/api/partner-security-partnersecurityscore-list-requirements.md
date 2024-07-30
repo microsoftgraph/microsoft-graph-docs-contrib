@@ -1,6 +1,6 @@
 ---
 title: "List securityRequirement objects"
-description: "Get a list of the microsoft.graph.partner.security.securityRequirement objects and their properties."
+description: "Get a list of the securityRequirement objects and their properties."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.
+Get a list of the [securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.
 
 ## Permissions
 
