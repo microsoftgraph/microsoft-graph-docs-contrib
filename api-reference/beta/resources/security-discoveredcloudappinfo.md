@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppInfo resource type"
-description: Get the details of discovered app risk parameters.
+description: Read the details of discovered app risk attributes resources.
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # discoveredCloudAppInfo resource type
 
-Get the details of discovered app risk parameters.
+Read the details of discovered app risk attributes resources.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
