@@ -24,8 +24,6 @@ Applications built on the Microsoft 365 Backup Storage platform deliver the foll
 
 - Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state at specific prior points in time via a rollback operation
 
-- In the future, roll forward granular file-level restores in OneDrive and SharePoint
-
 - Full Exchange mailbox item restores, or granular item restores using search
 
 - Consolidated security and compliance domain management
