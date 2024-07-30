@@ -22,9 +22,13 @@ Specifies the criteria used for collapsing search results. Applies only to sorta
 |fields|String Collection| Defines the collapse group to trim results. The properties in this collection must be sortable/refinable properties. Required.|
 |limit|Int16| Defines a maximum limit count for this field. This numeric value must be a positive integer. Required.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

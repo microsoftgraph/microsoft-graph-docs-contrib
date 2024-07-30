@@ -23,9 +23,13 @@ Specifies the margin widths to use when printing.
 |right|Int32|The margin in microns from the right edge.|
 |left|Int32|The margin in microns from the left edge.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

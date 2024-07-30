@@ -25,7 +25,7 @@ An abstract type that represents an error for a managed tenant operation.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.managedTenantOperationError"

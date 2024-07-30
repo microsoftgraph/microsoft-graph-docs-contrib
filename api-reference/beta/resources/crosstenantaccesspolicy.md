@@ -42,7 +42,7 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 |templates|[policyTemplate](../resources/policytemplate.md)|Represents the base policy in the directory for multi-tenant organization settings.|
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

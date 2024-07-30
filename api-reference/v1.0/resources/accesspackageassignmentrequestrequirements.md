@@ -27,7 +27,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequestRequirements"

@@ -23,7 +23,7 @@ Represents the file metadata for an export in Microsoft Purview eDiscovery.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

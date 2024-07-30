@@ -58,11 +58,10 @@ Microsoft Graph exposes [application permissions](./permissions-overview.md#appl
 
 You preconfigure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Microsoft Entra ID records the administrator consent, the app can request tokens without having to request consent again.
 
-To configure application permissions for the app in the [Azure app registrations portal](https://go.microsoft.com/fwlink/?linkid=2083908), follow these steps:
+To configure application permissions for the app in the app registrations experience on the Microsoft Entra admin center, follow these steps:
 
 - Under the application's **API permissions** page, choose **Add a permission**.
-- Select **Microsoft Graph**.
-- Select **Application permissions**.
+- Select **Microsoft Graph** > select **Application permissions**.
 - In the **Select Permissions** dialog, choose the permissions to configure to the app.
 
 The following screenshot shows the **Select Permissions** dialog box for Microsoft Graph application permissions.
