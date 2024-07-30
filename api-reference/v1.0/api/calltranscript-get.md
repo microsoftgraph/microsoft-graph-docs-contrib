@@ -28,8 +28,12 @@ Retrieving the transcript returns the metadata of the single transcript associat
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "calltranscript_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/calltranscript-get-permissions.md)]
+<!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingTranscript.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -42,18 +46,18 @@ To use application permission for this API, tenant administrators must create an
 
 Get a single transcript of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
-
 ```
 
 Get the content of a single transcript of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
-
 ```
 
 ## Request headers
@@ -124,8 +128,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
----
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -144,7 +146,10 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/$entity",
     "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
     "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+    "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
     "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+    "endDateTime": "2021-09-17T06:27:25.2346000Z",
+    "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
     "transcriptContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
     "meetingOrganizer": {
         "application": null,
@@ -154,7 +159,7 @@ Content-type: application/json
             "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
             "displayName": null,
             "userIdentityType": "aadUser",
-            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
+            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331"
         }
     }
 }
@@ -205,8 +210,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-content-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -279,8 +282,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
----
-
 #### Response
 
 Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
@@ -346,8 +347,6 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-metadatacontent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

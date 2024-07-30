@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
-|[Create](../api/virtualeventregistration-post.md)|None|Create a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
+|[Create](../api/virtualeventwebinar-post-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Create a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
 |[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
 |[Cancel](../api/virtualeventregistration-cancel.md)|None|Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
 |[List sessions](../api/virtualeventregistration-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).|

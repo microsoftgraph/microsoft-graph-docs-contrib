@@ -27,8 +27,8 @@ You can create or update the following types of group:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "group_post_groups" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-post-groups-permissions.md)]
+<!-- { "blockType": "permissions", "name": "group_upsert" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-upsert-permissions.md)]
 
 In order for an app with Group.Create permission to create a group with owners or members, it must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
 
@@ -84,9 +84,11 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 ## Response
 
-If successful, if the object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
+If an object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
 
-If the object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
+If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
+
+If an object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
 
 ## Examples
 

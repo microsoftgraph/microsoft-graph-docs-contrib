@@ -3364,6 +3364,15 @@ Possible values for user account types (group membership), per Windows definitio
 |defaultConfiguredIdp|
 |unknownFutureValue|
 
+### bookingStaffMembershipStatus values
+
+|Member|
+|:---|
+|active|
+|pendingAcceptance|
+|rejectedByStaff|
+|unknownFutureValue|
+
 ### conditionalAccessInsiderRiskLevels values 
 
 |Member|
@@ -3371,4 +3380,12 @@ Possible values for user account types (group membership), per Windows definitio
 |minor|
 |moderate|
 |elevated|
+|unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
 |unknownFutureValue|

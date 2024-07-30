@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 
-mgc invitations create --body '{\
+mgc invitations post --body '{\
     "invitedUserEmailAddress": "AdeleV@fabrikam.com",\
     "inviteRedirectUrl": "https://myapp.contoso.com",\
     "invitedUser": {\

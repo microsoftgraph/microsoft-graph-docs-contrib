@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **nativeAuthenticationApisEnabled** enumeration type.",
+          "Target": "application"
+        },
+        {
+          "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `nativeAuthenticationApisEnabled` property to the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-v1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **nativeAuthenticationApisEnabled** enumeration type.",
+          "Target": "application"
+        },
+        {
+          "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "nativeAuthenticationApisEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `nativeAuthenticationApisEnabled` property to the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "12ca3fb5-d769-49c7-a79e-38b5eb955e9a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9f36ca59-dedd-4ed2-b95d-713f02df87d3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementRestrictionState",
@@ -13293,7 +13345,51 @@
       "CreatedDateTime": "2024-06-07T05:48:06.5135016Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6434350c-1102-4db1-b67c-253a23f78a5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "companySubscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [companySubscription](https://learn.microsoft.com/en-us/graph/api/resources/companysubscription?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "companySubscription"
+        },
+        {
+          "Id": "6434350c-1102-4db1-b67c-253a23f78a5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "2fa20a6b-7caa-4d36-a129-0c78b19e5de8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-26T13:40:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+	{
+	  "ChangeList": [
+        {
+          "Id": "bb48a1c4-003b-42b6-86eb-8a5c980e509d",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "verify",
+          "ChangeType": "Addition",
+          "Description": "Added the `forceTakeover` parameter to the [domain: verify](https://learn.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-beta) method of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource, to support external admin takeover of a domain.",
+          "Target": "verify"
+        }
+      ],
+      "Id": "bb48a1c4-003b-42b6-86eb-8a5c980e509d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-29T19:18:43.3124977Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+	}
   ]
 }
   

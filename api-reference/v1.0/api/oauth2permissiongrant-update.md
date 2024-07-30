@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "oauth2permissiongrant_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-update-permissions.md)]
 
+[!INCLUDE [rbac-oauth2permissiongrant-apis-write](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,7 +43,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |scope|String|A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, `openid User.Read GroupMember.Read.All`. Each claim value should match the **value** field of one of the delegated permissions defined by the API, listed in the **oauth2PermissionScopes** property of the resource [service principal](../resources/serviceprincipal.md).  Must not exceed 3850 characters in length.<br/><br/> To add new scopes to the existing values, specify both the existing and new scopes in this parameter. Otherwise, the action will overwrite the existing scopes.|
 

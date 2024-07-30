@@ -44,7 +44,7 @@ Represents on-premises published resource. A tenant administrator can publish va
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

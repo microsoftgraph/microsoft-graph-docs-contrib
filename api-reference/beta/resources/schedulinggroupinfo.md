@@ -23,6 +23,10 @@ Represents the details of a [schedulingGroup](schedulingGroup.md).
 | schedulingGroupId    | `string`                      | ID of the `schedulingGroup`.  |
 | code                 | `string`                      | The code for the `schedulingGroup`. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

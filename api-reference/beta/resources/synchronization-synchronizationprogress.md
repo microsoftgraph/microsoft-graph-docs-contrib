@@ -27,7 +27,7 @@ Represents the progress of a [synchronizationJob](synchronization-synchronizatio
 <!-- The troubleshootingUrl property is missing a description -->
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationProgress"

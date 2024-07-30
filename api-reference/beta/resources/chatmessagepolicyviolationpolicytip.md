@@ -24,7 +24,7 @@ Policy tips are typically set by a data loss prevention (DLP) app which watches 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

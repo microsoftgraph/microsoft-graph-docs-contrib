@@ -22,8 +22,8 @@ Represents an existing partnership that the partner tenant has with a customer t
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get contract](../api/contract-get.md) | Contract |Read properties of a specific contract object. |
-|[List contracts](../api/contract-list.md) | Contract collection | List of contracts in the partner tenant. |
+|[Get](../api/contract-get.md) | Contract |Read properties of a specific contract object. |
+|[List](../api/contract-list.md) | Contract collection | List of contracts in the partner tenant. |
 
 ## Properties
 | Property   | Type | Description |
@@ -40,7 +40,7 @@ Represents an existing partnership that the partner tenant has with a customer t
 |:---|:---|
 |SyndicationPartner|Partner that *exclusively* resells and manages O365 and Intune for this customer. They resell and support their customers.|
 |BreadthPartner|Partner has the ability to provide administrative support for this customer. However, the partner isn't allowed to resell to the customer.|
-|ResellerPartner|Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant. In the syndication case, the customer can't buy additional direct subscriptions from Microsoft or from other partners.|
+|ResellerPartner|Partner that is similar to a syndication partner, except that the partner doesn't have exclusive access to a tenant. In the syndication case, the customer can't buy additional direct subscriptions from Microsoft or from other partners.|
 
 ## Relationships
 None

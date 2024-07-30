@@ -49,9 +49,9 @@ This resource supports:
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. Renewing extends the group expiration by the number of days defined in the policy. |
 | [Validate properties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |  |  |
-| [List app role assignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this group. |
-| [Add app role assignment](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this group. |
-| [Remove app role assignment](../api/group-delete-approleassignments.md) | None. | Remove an app role assignment from this group. |
+| [List](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this group. |
+| [Add](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this group. |
+| [Remove](../api/group-delete-approleassignments.md) | None. | Remove an app role assignment from this group. |
 | **Calendar** |  |  |
 | [Get calendar](../api/calendar-get.md) | [calendar](calendar.md) | Get the group's calendar. |
 | [Update calendar](../api/calendar-update.md) | None | Update the group's calendar. |
@@ -78,11 +78,11 @@ This resource supports:
 | [Add rejected sender](../api/group-post-rejectedsenders.md) | [directoryObject](directoryobject.md) | Add a new User or Group to the rejectedSenders collection. |
 | [Remove rejected sender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Remove new User or Group from the rejectedSenders collection. |
 | **Directory objects** |  |  |
-| [List deleted groups](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
-| [Get deleted group](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted group by ID. |
-| [Restore deleted group](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a group deleted in the tenant in the last 30 days. |
-| [Permanently delete group](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted group from the tenant. |
-| [List deleted groups owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the user's groups deleted in the tenant in the last 30 days. |
+| [List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
+| [Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted group by ID. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a group deleted in the tenant in the last 30 days. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted group from the tenant. |
+| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the user's groups deleted in the tenant in the last 30 days. |
 | [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The function is transitive. |
 | [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
 | [Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
@@ -91,25 +91,25 @@ This resource supports:
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
 | **Group settings** |  |  |
-| [List settings](../api/group-list-settings.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-| [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates can be used for this operation. |
-| [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-| [Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
-| [Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+| [List](../api/group-list-settings.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+| [Create](../api/group-post-settings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates can be used for this operation. |
+| [Get](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+| [Update](../api/groupsetting-update.md) | None | Update a setting object. |
+| [Delete](../api/groupsetting-delete.md) | None | Delete a setting object. |
 | [List setting template](../api/groupsettingtemplate-list.md) | None | List properties of all setting templates. |
 | [Get setting template](../api/groupsettingtemplate-get.md) | None | Read properties of a setting template. |
 | **Notes** |  |  |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
-| **Photo** |  |  |
-| [Get profile photo](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
-| [Update profile photo](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
-| [Delete profile photo](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant including the signed-in user or the specified group. |
+| **Profile photo** |  |  |
+| [Get](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
+| [Update](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
+| [Delete](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant including the signed-in user or the specified group. |
 | **Planner** |  |  |
 | [List plans](../api/plannergroup-list-plans.md) | [plannerPlan](plannerplan.md) collection | Get plans assigned to the group. |
 | **Posts** | | |
-| [List posts](../api/conversationthread-list-posts.md) | [post](post.md) collection | Get posts in a conversation thread. |
-| [Get post](../api/post-get.md) | [post](post.md) | Get a specific post. |
+| [List](../api/conversationthread-list-posts.md) | [post](post.md) collection | Get posts in a conversation thread. |
+| [Get](../api/post-get.md) | [post](post.md) | Get a specific post. |
 | [Reply to post](../api/post-reply.md) | None | Reply to a post. |
 | [Forward post](../api/post-forward.md) | None | Forward a post. |
 | **Other group resources** |  |  |
@@ -158,7 +158,7 @@ This resource supports:
 | onPremisesLastSyncDateTime | DateTimeOffset | Indicates the last time at which the group was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br><br>Returned by default. Supports `$filter` (`eq`, `not`). |
 | onPremisesSamAccountName | String | Contains the on-premises **SAM account name** synchronized from the on-premises directory. The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). Read-only. |
-| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the group synchronized from on-premises to the cloud. Read-only. <br><br>Returned by default. Supports `$filter` (`eq` including on `null` values). Read-only. |
+| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the group synchronized from on-premises to the cloud. Read-only. <br><br>Returned by default. Supports `$filter` (`eq` including on `null` values). |
 | onPremisesSyncEnabled | Boolean | `true` if this group is synced from an on-premises directory; `false` if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never synced from an on-premises directory (default). <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 | preferredDataLocation | String | The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling app must be granted the *Directory.ReadWrite.All* permission and the user be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): <br><ul>User Account Administrator <li>Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul><br/> For more information about this property, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Nullable. Returned by default. |
 | preferredLanguage | String | The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example, `en-US`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -216,7 +216,7 @@ This resource supports:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

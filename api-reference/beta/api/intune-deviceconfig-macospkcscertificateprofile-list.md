@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2266
+Content-Length: 2309
 
 {
   "value": [
@@ -118,7 +118,8 @@ Content-Length: 2266
           "name": "Name value"
         }
       ],
-      "allowAllAppsAccess": true
+      "allowAllAppsAccess": true,
+      "deploymentChannel": "userChannel"
     }
   ]
 }

@@ -35,9 +35,11 @@ The following table lists the types of presence changes you can subscribe to. Fo
 | Single user presence changes                  | `communications/presences/{id}`                                |Updated                |
 | Bulk user presence changes (maximum 650 user IDs) | `communications/presences?$filter=id in ('{id}', '{id}', ...)` | Updated                |
 
-### Subscribe to presence changes 
+## Subscribe to presence changes 
 
 To subscribe to presence changes, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
+
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
 
 ### Example: Single user presence subscription payloads
 

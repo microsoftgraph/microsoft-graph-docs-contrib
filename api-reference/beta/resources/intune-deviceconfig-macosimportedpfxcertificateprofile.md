@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # macOSImportedPFXCertificateProfile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 MacOS PFX Import certificate profile
 
@@ -49,6 +49,7 @@ Inherits from [macOSCertificateProfileBase](../resources/intune-deviceconfig-mac
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
 |intendedPurpose|[intendedPurpose](../resources/intune-deviceconfig-intendedpurpose.md)|Intended Purpose of the Certificate Profile - which could be Unassigned, SmimeEncryption, SmimeSigning etc. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -109,6 +110,7 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameType": "String",
   "certificateValidityPeriodValue": 1024,
   "certificateValidityPeriodScale": "String",
-  "intendedPurpose": "String"
+  "intendedPurpose": "String",
+  "deploymentChannel": "String"
 }
 ```
