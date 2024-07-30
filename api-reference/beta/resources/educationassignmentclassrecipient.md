@@ -22,6 +22,9 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 
 None.
 
+## Relationships
+
+None.
 
 <!-- {
   "blockType": "resource",

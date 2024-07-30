@@ -73,40 +73,40 @@ The following example shows a request. The ID of the operation to use in this re
   "blockType": "request",
   "name": "get_longrunningoperation_passwordreset"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-passwordreset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-passwordreset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-longrunningoperation-passwordreset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-longrunningoperation-passwordreset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-longrunningoperation-passwordreset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-longrunningoperation-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-longrunningoperation-passwordreset-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-longrunningoperation-passwordreset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-longrunningoperation-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-longrunningoperation-passwordreset-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

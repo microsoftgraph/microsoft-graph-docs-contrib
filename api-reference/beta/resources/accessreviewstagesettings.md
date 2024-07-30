@@ -30,7 +30,12 @@ Represents the settings of the stages associated with a [multi-stage access revi
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Defines who the reviewers are. If none is specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). <br/><br/>**NOTE:** The value of this property overrides the corresponding setting on the [accessReviewScheduleDefinition](accessReviewScheduleDefinition.md). |
 |stageId|String|Unique identifier of the **accessReviewStageSettings**. The **stageId** is used in **dependsOn** property to indicate the stage relationship. Required. |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",

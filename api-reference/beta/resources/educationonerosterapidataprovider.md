@@ -41,7 +41,13 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 [terms]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452034
 [orgs]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452016
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

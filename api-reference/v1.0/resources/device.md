@@ -127,7 +127,7 @@ The following JSON representation shows the resource type.
   "mdmAppId": "String",
   "model": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesSecurityIdentifier": "Boolean",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": "Boolean",
   "operatingSystem": "String",
   "operatingSystemVersion": "String",
