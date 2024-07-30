@@ -1,6 +1,6 @@
 ---
 title: "customerInsight resource type"
-description: "Represents a single customer's security score insights for a partner"
+description: "Represents insights into the security score for a partner's customer."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity contains insights into the security posture of a Partner's customer.
+This entity contains insights into the security posture of a partner's customer.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +24,7 @@ This entity contains insights into the security posture of a Partner's customer.
 |Property|Type|Description|
 |:---|:---|:---|
 |mfa|[microsoft.graph.partner.security.customerMfaInsight](../resources/partner-security-customermfainsight.md)|Details about the customer's mfa posture.|
-|tenantId|String|Identifier for the customer.|
+|tenantId|String|The unique identifier for the customer.|
 
 ## Relationships
 None.

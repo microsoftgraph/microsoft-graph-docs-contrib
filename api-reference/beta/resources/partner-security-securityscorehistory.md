@@ -27,11 +27,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compliantRequirementsCount|Int64|The count of compliant security requirements at the time.|
+|compliantRequirementsCount|Int64|The number of compliant security requirements at the time.|
 |createdDateTime|DateTimeOffset|The date the history entry was created.|
-|id|String|Identifier for the history entry.|
-|score|Single|The score recorded at this time.|
-|totalRequirementsCount|Int64|The total count of requirements at the time.|
+|id|String|The unique identifier for the history entry.|
+|score|Single|The score recorded at the time.|
+|totalRequirementsCount|Int64|The total The number of requirements at the time.|
 
 ## Relationships
 None.

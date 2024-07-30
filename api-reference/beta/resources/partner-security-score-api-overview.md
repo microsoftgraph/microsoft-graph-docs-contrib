@@ -1,6 +1,6 @@
 ---
 title: "Use the partner security score API in Microsoft Graph (preview)"
-description: "The partner security score API can help Cloud Solution Provider (CSP) partners understand their security posture and their customer's security posture."
+description: "The partner security score API helps Cloud Solution Provider (CSP) partners understand their security posture and their customer's security posture."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Microsoft Partner Center ecosystem, we provide a security score to Indirect Provider or Direct Bill Partners partners in the Cloud Solution Provider (CSP), Value Added Reseller, or Advisor programs who are . The goal of the score and requirements is to help partners understand the security posture of their tenant and their customer's tenants. The partner security score builds on the Identity and Microsoft 365 security scores to provide specific suggestions to their scenario.
+The Microsoft Partner Center ecosystem provides a security score to indirect providers or direct bill partners in the Cloud Solution Provider (CSP), Value Added Reseller, or Advisor programs who are . The goal of the score and requirements is to help partners understand the security posture of their tenant and their customer's tenants. The partner security score builds on the Identity and Microsoft 365 security scores to provide specific suggestions to their scenario.
 The [Partner Security Score API](../resources/partner-security-partnersecurityscore.md) is a pivotal tool designed to empower Microsoft partners by providing a quantifiable measure of their security performance. This API facilitates partners in enhancing their security posture by offering a comprehensive security score based on their adherence to Microsoft's security requirements.
 
 ## Objectives
