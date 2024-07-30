@@ -32,7 +32,7 @@ Represents the resource type for discovered cloud apps.
 |ipAddressCount|Int64|The IP address.|
 |lastSeenDateTime|DateTimeOffset|The last seen date.|
 |riskScore|Int64|The app's risk score.|
-|tags|String collection|The app's tag name. Possible values include Unsanctioned,Sanctioned,Monitored, or a custom tag.|
+|tags|String collection|The app's tag name. Possible values include `Unsanctioned`,`Sanctioned`,`Monitored`, or a custom created tag.|
 |transactionCount|Int64|The app transaction count.|
 |uploadNetworkTrafficInBytes|Int64|The app upload traffic size, in bytes.|
 |userCount|Int64|The count of users using the app.|
