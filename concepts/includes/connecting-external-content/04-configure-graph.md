@@ -24,7 +24,7 @@ In this section, you configure the Microsoft Graph SDK client to use app-only au
     }
     ```
 
-1. Add the following code to the `GraphHelper` class to configure a `GraphServiceClient` with app-only authentication.
+1. Add the following code to the `GraphHelper` class, which configures a `GraphServiceClient` with app-only authentication.
 
     :::code language="csharp" source="./snippets/PartsInventoryConnector/Graph/GraphHelper.cs" id="GraphInitializationSnippet":::
 
