@@ -648,7 +648,7 @@ The **reactions** property represents reactions from other users on the message,
 
 The following example shows a message with reactions.
 
->**Note:** The display name isn't always present for user.
+>**Note:** The display name isn't always present in the **user** property.
 
 ```json
 {

@@ -31,7 +31,7 @@ Use the **summary** property to get details about what happened, impacted assets
 ## July 2024: New in preview only
 ### Teamwork and communications | Messaging
 
-- Use the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).
+- Use the **displayName** property on the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).
 
 ### Applications | Application
 
