@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |headquarters|String|The location of the app's headquarters.|
 |holding|microsoft.graph.security.appInfoHolding|The app's ownership model. The possible values are: `private`, `public`, `unknown`, `unknownFutureValue`.|
 |hostingCompany|String|The company name that provides hosting services for the app.|
-|id|String|The app's identified unique SaaS ID.Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|The app's identified unique SaaS ID. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |isAdminAuditTrail|microsoft.graph.security.cloudAppInfoState|The app's availability of an admin audit trail. The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`. |
 |isCobitCompliant|microsoft.graph.security.cloudAppInfoState|The app's compliant status with the Control Objectives for Information Technology (COBIT). The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`. |
 |isCoppaCompliant|microsoft.graph.security.cloudAppInfoState|The app's compliant status with the Children's Online Privacy Protection Rule (COPPA). The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`. |
