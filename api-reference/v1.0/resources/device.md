@@ -88,7 +88,7 @@ This resource supports:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -127,7 +127,7 @@ The following is a JSON representation of the resource.
   "mdmAppId": "String",
   "model": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesSecurityIdentifier": "Boolean",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": "Boolean",
   "operatingSystem": "String",
   "operatingSystemVersion": "String",

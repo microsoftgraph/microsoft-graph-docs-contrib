@@ -50,55 +50,20 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationrubric"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/me/rubrics/bf040af7-a5ff-4abe-a8c8-1bdc532344c2
+GET https://graph.microsoft.com/beta/education/me/rubrics/199816a3-bd27-4134-bffa-b3928e8ab3a5
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationrubric-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-educationrubric-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationrubric-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationrubric-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-educationrubric-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationrubric-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-educationrubric-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -113,92 +78,193 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "Example Points Rubric",
-  "id": "bf040af7-a5ff-4abe-a8c8-1bdc532344c2",
-  "description": {
-    "content": "This is an example of a rubric with points",
-    "contentType": "text"
-  },
-  "levels": [
-    {
-      "levelId": "519cd134-c513-40b9-aa71-fdb0d063c084",
-      "displayName": "Good",
-      "description": {
-        "content": "",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/rubrics/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/rubrics('<guid>')?$select=createdBy,createdDateTime",
+    "displayName": "Rubric6468",
+    "createdDateTime": "2024-07-11T14:03:36.5435838Z",
+    "lastModifiedDateTime": "2024-07-11T14:03:55.6961018Z",
+    "id": "199816a3-bd27-4134-bffa-b3928e8ab3a5",
+    "description": {
+        "content": "New Rubric",
         "contentType": "text"
-      },
-      "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 2
-      }
     },
-    {
-      "levelId": "db2a0c91-abef-44cb-b8b1-ef1f85ef4a77",
-      "displayName": "Poor",
-      "description": {
-        "content": "",
-        "contentType": "text"
-      },
-      "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 1
-      }
-    }
-  ],
-  "qualities": [
-    {
-      "qualityId": "bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
-      "weight": 50.0,
-      "description": {
-        "content": "Argument",
-        "contentType": "text"
-      },
-      "criteria": [
+    "qualities": [
         {
-          "id": "5e637d79-f26b-4ea6-acd7-73824f0c0967",
-          "description": {
-            "content": "The essay's argument is persuasive.",
-            "contentType": "text"
-          }
+            "qualityId": "93b651aa-1167-43dd-9971-fab0e242b396",
+            "displayName": null,
+            "weight": 33.33,
+            "description": {
+                "content": "First quality",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "First quality is excellent",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is good",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is fair",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is poor",
+                        "contentType": "text"
+                    }
+                }
+            ]
         },
         {
-          "id": "ebdcc27f-d1ec-4aa3-9da7-bd8d7842e3d3",
-          "description": {
-            "content": "The essay's argument does not make sense.",
-            "contentType": "text"
-          }
-        }
-      ]
-    },
-    {
-      "qualityId": "ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
-      "weight": 50.0,
-      "description": {
-        "content": "Spelling and Grammar",
-        "contentType": "text"
-      },
-      "criteria": [
-        {
-          "id": "5417252a-f810-41eb-9a83-09276a258a08",
-          "description": {
-            "content": "The essay uses proper spelling and grammar with few or no errors.",
-            "contentType": "text"
-          }
+            "qualityId": "89e767f0-f66a-42f6-94f5-5b084bb17dad",
+            "displayName": null,
+            "weight": 33.33,
+            "description": {
+                "content": "Second quality",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "Second quality is excellent",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "Second quality is good",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "Second quality is fair",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "Second quality is poor",
+                        "contentType": "text"
+                    }
+                }
+            ]
         },
         {
-          "id": "5de220bd-74b9-41a7-85d5-9be7c6cb7933",
-          "description": {
-            "content": "The essay has numerous errors in spelling and/or grammar.",
-            "contentType": "text"
-          }
+            "qualityId": "6c0e77ee-6bf5-4639-9602-3075d4774aa9",
+            "displayName": null,
+            "weight": 33.33,
+            "description": {
+                "content": "Third quality",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "Third quality is excellent",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "Third quality is good",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "Third quality is fair",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "This quality is poor",
+                        "contentType": "text"
+                    }
+                }
+            ]
         }
-      ]
+    ],
+    "levels": [
+        {
+            "levelId": "df3a03e2-a222-4515-aaaf-adbba692917d",
+            "displayName": "Excellent",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 4
+            }
+        },
+        {
+            "levelId": "a2f90a11-a565-4904-aaa2-c2be1c0c71f9",
+            "displayName": "Good",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 3
+            }
+        },
+        {
+            "levelId": "53023e26-1f8e-437a-a1fa-163683e0619a",
+            "displayName": "Fair",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 2
+            }
+        },
+        {
+            "levelId": "7afc81dc-8ecf-4889-aa59-5bfe20c8e755",
+            "displayName": "Poor",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 1
+            }
+        }
+    ],
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "96134727-5b49-4f67-9a6b-68e133681d2a",
+            "displayName": null
+        }
     }
-  ],
-  "grading": {
-    "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-    "maxPoints": 100
-  }
 }
 ```
 

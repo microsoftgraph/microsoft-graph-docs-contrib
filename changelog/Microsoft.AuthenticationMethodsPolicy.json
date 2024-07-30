@@ -629,6 +629,24 @@
       "CreatedDateTime": "2023-11-02T16:40:54.9462605Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+      },
+    {
+      "ChangeList": [
+        {
+          "Id": "cd2520bf-b70f-482a-b505-18c3696c46fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passkeyAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [passkeyAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/passkeyAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "passkeyAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "cd2520bf-b70f-482a-b505-18c3696c46fa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-24T19:09:22.8776342Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

@@ -24,7 +24,7 @@ Represents the system that a user was provisioned to or from. For example, when 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

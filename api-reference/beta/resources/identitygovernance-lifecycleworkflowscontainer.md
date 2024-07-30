@@ -17,10 +17,6 @@ A container for the relationships that expose the Microsoft Entra ID Governance 
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 |Property|Type|Description|
@@ -41,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -39,7 +39,7 @@ For every subdomain, there can be a new set of IP addresses to which the domain 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
