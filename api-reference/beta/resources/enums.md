@@ -509,16 +509,6 @@ Namespace: microsoft.graph
 | notNotified |
 | unknownFutureValue |
 
-## accessReviewHistoryStatus values
-
-| Member |
-| ------------------ |
-| done |
-| inprogress |
-| error |
-| requested |
-| unknownFutureValue |
-
 ## crossTenantAccessPolicyTargetConfigurationAccessType values
 
 | Member |
@@ -1709,6 +1699,7 @@ Namespace: microsoft.graph
 | ------ |
 | user |
 | group |
+| unknownFutureValue |
 
 ## authenticationMethodState values
 
@@ -1827,18 +1818,6 @@ Namespace: microsoft.graph
 | email |
 | focus |
 | meeting |
-
-## registrationAuthMethod values
-
-| Member |
-| -------------------- |
-| email |
-| mobilePhone |
-| officePhone |
-| securityQuestion |
-| appNotification |
-| appCode |
-| alternateMobilePhone |
 
 ## entityTypes values
 
@@ -2648,16 +2627,6 @@ Possible values for user account types (group membership), per Windows definitio
 | oneDriveConsumer |
 | dropbox |
 
-## networkType values
-
-| Member |
-| ------------------ |
-| intranet |
-| extranet |
-| namedNetwork |
-| trusted |
-| unknownFutureValue |
-
 ## exchangeIdFormat values
 
 | Member |
@@ -3366,14 +3335,6 @@ Possible values for user account types (group membership), per Windows definitio
 | publication |
 | unknownFutureValue |
 
-## policyScope values
-
-| Member |
-| -------- |
-| none |
-| all |
-| selected |
-
 ## teamsAppInstallationScope values
 
 | Member    | Value | Description                                                                                                                 |
@@ -3876,16 +3837,6 @@ Possible values for user account types (group membership), per Windows definitio
 | teamsOnly            | 4     | Supports only `Teams`.                                 |
 | unknownFutureValue   | 5     | Evolvable enumeration sentinel value. Don't use.       |
 
-## longRunningOperationStatus values
-
-| Member |
-| ------------------ |
-| notStarted |
-| running |
-| succeeded |
-| failed |
-| unknownFutureValue |
-
 ## delegatedAdminAccessAssignmentStatus values
 
 | Member |
@@ -4246,13 +4197,6 @@ Possible values for user account types (group membership), per Windows definitio
 | enabledForPercentage |
 | unknownFutureValue |
 
-## authenticationMethodTargetType values
-
-| Member |
-| ------------------ |
-| group |
-| unknownFutureValue |
-
 ## authenticationMethodsPolicyMigrationState values
 
 | Member |
@@ -4605,22 +4549,6 @@ Possible values for user account types (group membership), per Windows definitio
 | facebook |
 | unknownFutureValue |
 
-## authorizationSystemActionSeverity values
-
-| Member |
-| ---- |
-| normal |
-| high |
-| unknownFutureValue |
-
-## authorizationSystemActionType values
-
-| Member |
-| ---- |
-| delete |
-| read |
-| unknownFutureValue |
-
 ## authorizationSystemType values
 
 | Member |
@@ -4638,33 +4566,6 @@ Possible values for user account types (group membership), per Windows definitio
 | restricted |
 | crossAccount |
 | private |
-| unknownFutureValue |
-
-## awsPolicyType values
-
-| Member |
-| ---- |
-| system |
-| custom |
-| unknownFutureValue |
-
-## awsRoleTrustEntityType values
-
-| Member |
-| ---- |
-| none |
-| service |
-| sso |
-| crossAccount |
-| webIdentity |
-| unknownFutureValue |
-
-## awsRoleType values
-
-| Member |
-| ---- |
-| system |
-| custom |
 | unknownFutureValue |
 
 ## awsSecretInformationWebServices values
@@ -4707,22 +4608,6 @@ Possible values for user account types (group membership), per Windows definitio
 | customer |
 | unknownFutureValue |
 
-## azureRoleDefinitionType values
-
-| Member |
-| ---- |
-| system |
-| custom |
-| unknownFutureValue |
-
-## dataCollectionStatus values
-
-| Member |
-| ---- |
-| online |
-| offline |
-| unknownFutureValue |
-
 ## externalSystemAccessMethods values
 
 | Member |
@@ -4748,14 +4633,6 @@ Possible values for user account types (group membership), per Windows definitio
 | customer |
 | unknownFutureValue |
 
-## gcpRoleType values
-
-| Member |
-| ---- |
-| system |
-| custom |
-| unknownFutureValue |
-
 ## iamStatus values
 
 | Member |
@@ -4763,15 +4640,6 @@ Possible values for user account types (group membership), per Windows definitio
 | active |
 | inactive |
 | disabled |
-| unknownFutureValue |
-
-## permissionsModificationCapability values
-
-| Member |
-| ---- |
-| enabled |
-| notConfigured |
-| noRecentDataCollected |
 | unknownFutureValue |
 
 ## devicePlatformType values

@@ -445,15 +445,6 @@ Namespace: microsoft.graph
 | allExternalUsers |
 | unknownFutureValue |
 
-## approvalFilterByCurrentUserOptions values
-
-| Member |
-| ------------------ |
-| target |
-| createdBy |
-| approver |
-| unknownFutureValue |
-
 ## accessPackageAssignmentFilterByCurrentUserOptions values
 
 | Member |
@@ -1469,17 +1460,6 @@ Possible types of Windows settings.
 | thursday |
 | friday |
 | saturday |
-
-## recurrencePatternType values
-
-| Member |
-| -------------------------- |
-| daily |
-| weekly |
-| absoluteMonthly |
-| relativeMonthly |
-| absoluteYearly |
-| relativeYearly |
 
 ## recurrenceRangeType values
 
@@ -3177,7 +3157,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Delete |
 | Update |
 
-## scopeOperatorType values
+## escrowBehavior values
 
 | Member |
 | ------ |
