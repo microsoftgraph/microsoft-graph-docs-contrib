@@ -22,9 +22,13 @@ It's a subtype of [userSet](userset.md), in which the `@odata.type` value `#micr
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | Indicates whether the sponsor is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

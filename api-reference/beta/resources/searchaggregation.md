@@ -23,9 +23,14 @@ Provides the details of the search aggregation in the search response.
 |field|String| Defines on which field the aggregation was computed on.|
 |buckets|[searchBucket](searchbucket.md) collection| Defines the actual buckets of the computed aggregation.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",
