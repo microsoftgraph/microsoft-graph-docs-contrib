@@ -215,7 +215,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Change",
-          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-registrations?view=graph-rest-1.0) method to [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0).",
+          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-registrations?view=graph-rest-1.0) method to (https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0).",
           "Target": "virtualEventRegistration"
         }
       ],
