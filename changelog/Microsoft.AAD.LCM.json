@@ -541,6 +541,154 @@
     {
       "ChangeList": [
         {
+          "Id": "20c0188a-4cd9-4f50-aaa5-aeaf425869fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "group",
+          "ChangeType": "Addition",
+          "Description": "Added the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "20c0188a-4cd9-4f50-aaa5-aeaf425869fc",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-31T13:11:48.3107876Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "membershipChangeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipChangeType** enumeration type.",
+          "Target": "membershipChangeType"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeChangeTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-1.0) resource.",
+          "Target": "attributeChangeTrigger"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupBasedSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-1.0) resource.",
+          "Target": "groupBasedSubjectSet"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipChangeTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-1.0) resource.",
+          "Target": "membershipChangeTrigger"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "topTasksInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topTasksInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksInsightsSummary?view=graph-rest-1.0) resource.",
+          "Target": "topTasksInsightsSummary"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "topWorkflowsInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topWorkflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsInsightsSummary?view=graph-rest-1.0) resource.",
+          "Target": "topWorkflowsInsightsSummary"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "triggerAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-1.0) resource.",
+          "Target": "triggerAttribute"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowsInsightsByCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsInsightsByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsByCategory?view=graph-rest-1.0) resource.",
+          "Target": "workflowsInsightsByCategory"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowsInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsSummary?view=graph-rest-1.0) resource.",
+          "Target": "workflowsInsightsSummary"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Target": "insights"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-1.0) resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "topTasksProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-topTasksProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Target": "insights"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "topWorkflowsProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-topWorkflowsProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Target": "insights"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "workflowsProcessedByCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-workflowsProcessedByCategory?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Target": "insights"
+        },
+        {
+          "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "workflowsProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-workflowsProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Target": "insights"
+        }
+      ],
+      "Id": "b156c23c-4fa2-4156-8cf0-24e1875f55f1",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-31T13:11:48.3110255Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
           "ApiChange": "Enumeration",
           "ChangedApiName": "membershipChangeType",
