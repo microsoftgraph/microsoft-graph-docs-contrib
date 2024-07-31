@@ -17,17 +17,17 @@ Represents the options in sheet protection.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowAutoFilter|boolean|Represents the worksheet protection option of allowing using auto filter feature.|
-|allowDeleteColumns|boolean|Represents the worksheet protection option of allowing deleting columns.|
-|allowDeleteRows|boolean|Represents the worksheet protection option of allowing deleting rows.|
-|allowFormatCells|boolean|Represents the worksheet protection option of allowing formatting cells.|
-|allowFormatColumns|boolean|Represents the worksheet protection option of allowing formatting columns.|
-|allowFormatRows|boolean|Represents the worksheet protection option of allowing formatting rows.|
-|allowInsertColumns|boolean|Represents the worksheet protection option of allowing inserting columns.|
-|allowInsertHyperlinks|boolean|Represents the worksheet protection option of allowing inserting hyperlinks.|
-|allowInsertRows|boolean|Represents the worksheet protection option of allowing inserting rows.|
-|allowPivotTables|boolean|Represents the worksheet protection option of allowing using pivot table feature.|
-|allowSort|boolean|Represents the worksheet protection option of allowing using sort feature.|
+|allowAutoFilter|Boolean|Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.|
+|allowDeleteColumns|Boolean|Indicates whether the worksheet protection option to allow deleting columns is enabled.|
+|allowDeleteRows|Boolean|Indicates whether the worksheet protection option to allow deleting rows is enabled.|
+|allowFormatCells|Boolean|Indicates whether the worksheet protection option to allow formatting cells is enabled.|
+|allowFormatColumns|Boolean|Indicates whether the worksheet protection option to allow formatting columns is enabled.|
+|allowFormatRows|Boolean|Indicates whether the worksheet protection option to allow formatting rows is enabled.|
+|allowInsertColumns|Boolean|Indicates whether the worksheet protection option to allow inserting columns is enabled.|
+|allowInsertHyperlinks|Boolean|Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.|
+|allowInsertRows|Boolean|Indicates whether the worksheet protection option to allow inserting rows is enabled.|
+|allowPivotTables|Boolean|Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.|
+|allowSort|Boolean|Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.|
 
 ## JSON representation
 
