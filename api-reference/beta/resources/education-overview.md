@@ -108,7 +108,7 @@ The Classwork API provides the following key resources:
 - [educationModule](educationmodule.md) - A module is associated with a class. Represents a group of individual learning resources that are organized in a systematic way.
 - [educationModuleResource](educationmoduleresource.md) - A wrapper object that stores the resources associated with a module. The student is unable to update this resource, which is a handout from the teacher to the student with nothing to be turned in.
 
-The Classwork API supports the following scenarios:
+The following lists show the scenarios supported by the Classwork API.
 
 ### Modules
 
