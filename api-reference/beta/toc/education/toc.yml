@@ -344,6 +344,18 @@ items:
     href: ../../resources/educationsynchronizationprofilestatus.md
   - name: Get
     href: ../../api/educationsynchronizationprofilestatus-get.md
+- name: Reading assignment submission
+  items:
+  - name: Reading assignment submission
+    href: ../../resources/readingassignmentsubmission.md
+  - name: Get
+    href: ../../api/readingassignmentsubmission-get.md
+- name: Reflect check-in response
+  items:
+  - name: Reflect check-in response
+    href: ../../resources/reflectcheckinresponse.md
+  - name: Get
+    href: ../../api/reflectcheckinresponse-get.md
 - name: Related contact
   items:
   - name: Related contact
@@ -352,6 +364,8 @@ items:
     href: ../../api/relatedcontact-update.md
 - name: Complex types
   items:
+  - name: Challenging word
+    href: ../../resources/challengingword.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade
