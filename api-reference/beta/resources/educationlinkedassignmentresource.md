@@ -20,6 +20,10 @@ A subclass of [educationResource](educationresource.md) that represents a link t
 |:---------------|:--------|:----------|
 |url|String|URL of the actual assignment.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

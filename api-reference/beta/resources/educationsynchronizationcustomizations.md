@@ -38,7 +38,13 @@ This resource is member of the following data providers:
 
 [educationsynchronizationcustomization]: educationsynchronizationcustomization.md
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

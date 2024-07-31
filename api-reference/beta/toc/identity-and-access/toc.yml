@@ -2038,10 +2038,14 @@ items:
         href: ../../resources/fido2authenticationmethod.md
       - name: List
         href: ../../api/fido2authenticationmethod-list.md
+      - name: Create
+        href: ../../api/authentication-post-fido2methods.md
       - name: Get
         href: ../../api/fido2authenticationmethod-get.md
       - name: Delete
         href: ../../api/fido2authenticationmethod-delete.md
+      - name: Creation options
+        href: ../../api/fido2authenticationmethod-creationoptions.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator
@@ -2737,6 +2741,16 @@ items:
           href: ../../api/emailauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/emailauthenticationmethodconfiguration-delete.md
+      - name: External authentication method
+        items:
+        - name: External authentication method
+          href: ../../resources/externalauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/externalauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/externalauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/externalauthenticationmethodconfiguration-delete.md
       - name: FIDO2
         items:
         - name: FIDO2
@@ -2767,16 +2781,6 @@ items:
           href: ../../api/smsauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/smsauthenticationmethodconfiguration-delete.md
-      - name: Temporary Access Pass
-        items:
-        - name: Temporary Access Pass
-          href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
       - name: Software OATH
         items:
         - name: Software OATH
@@ -2787,6 +2791,16 @@ items:
           href: ../../api/softwareoathauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/softwareoathauthenticationmethodconfiguration-delete.md
+      - name: Temporary Access Pass
+        items:
+        - name: Temporary Access Pass
+          href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
       - name: Voice
         items:
         - name: Voice
@@ -3282,9 +3296,9 @@ items:
         href: ../../api/awsauthorizationsystem-list.md
       - name: AWS authorization system inventory
         items:
-        - name: AWS authorization system type action
+        - name: AWS actions
           items:
-          - name: AWS authorization system type action
+          - name: AWS actions
             href: ../../resources/awsauthorizationsystemtypeaction.md
           - name: List
             href: ../../api/awsauthorizationsystem-list-actions.md
@@ -3298,31 +3312,19 @@ items:
             href: ../../api/awsauthorizationsystem-list-policies.md
           - name: Get
             href: ../../api/awspolicy-get.md
-        - name: AWS authorization system resource
+        - name: AWS resources
           items:
-          - name: AWS authorization system resource
+          - name: AWS resources
             href: ../../resources/awsauthorizationsystemresource.md
           - name: List
             href: ../../api/awsauthorizationsystem-list-resources.md
           - name: Get
             href: ../../api/awsauthorizationsystemresource-get.md
-        - name: Authorization system type service
-          items:
-          - name: Authorization system type service
-            href: ../../resources/authorizationsystemtypeservice.md
-          - name: List AWS authorization system services
-            href: ../../api/awsauthorizationsystem-list-services.md
-          - name: List Azure authorization system type services
-            href: ../../api/azureauthorizationsystem-list-services.md
-          - name: List GCP authorization system type services
-            href: ../../api/gcpauthorizationsystem-list-services.md
-          - name: Get authorization system services
-            href: ../../api/authorizationsystemtypeservice-get.md
         - name: AWS identities
           items:
-          - name: AWS identity
+          - name: All AWS identities
             items:
-            - name: AWS identity
+            - name: All AWS identities
               href: ../../resources/awsidentity.md
             - name: List
               href: ../../api/awsassociatedidentities-list-all.md
@@ -3354,17 +3356,17 @@ items:
         href: ../../api/azureauthorizationsystem-list.md
       - name: Azure authorization system inventory
         items:
-        - name: Azure authorization system type action
+        - name: Azure actions
           items:
-          - name: Azure authorization system type action
+          - name: Azure actions
             href: ../../resources/azureauthorizationsystemtypeaction.md
           - name: List
             href: ../../api/azureauthorizationsystem-list-actions.md
           - name: Get
             href: ../../api/azureauthorizationsystemtypeaction-get.md
-        - name: Azure authorization system resource
+        - name: Azure resources
           items:
-          - name: Azure authorization system resource
+          - name: Azure resources
             href: ../../resources/azureauthorizationsystemresource.md
           - name: List
             href: ../../api/azureauthorizationsystem-list-resources.md
@@ -3378,18 +3380,6 @@ items:
             href: ../../api/azureauthorizationsystem-list-roledefinitions.md
           - name: Get
             href: ../../api/azureroledefinition-get.md
-        - name: Authorization system type service
-          items:
-          - name: Authorization system type service
-            href: ../../resources/authorizationsystemtypeservice.md
-          - name: List AWS authorization system services
-            href: ../../api/awsauthorizationsystem-list-services.md
-          - name: List Azure authorization system type services
-            href: ../../api/azureauthorizationsystem-list-services.md
-          - name: List GCP authorization system type services
-            href: ../../api/gcpauthorizationsystem-list-services.md
-          - name: Get authorization system services
-            href: ../../api/authorizationsystemtypeservice-get.md
         - name: Azure identities
           items:
           - name: Azure identity
@@ -3432,17 +3422,17 @@ items:
         href: ../../api/gcpauthorizationsystem-list.md
       - name: GCP authorization system inventory
         items:
-        - name: GCP authorization system type action
+        - name: GCP actions
           items:
-          - name: GCP authorization system type action
+          - name: GCP actions
             href: ../../resources/gcpauthorizationsystemtypeaction.md
           - name: List
             href: ../../api/gcpauthorizationsystem-list-actions.md
           - name: Get
             href: ../../api/gcpauthorizationsystemtypeaction-get.md
-        - name: GCP authorization system resource
+        - name: GCP resources
           items:
-          - name: GCP authorization system resource
+          - name: GCP resources
             href: ../../resources/gcpauthorizationsystemresource.md
           - name: List
             href: ../../api/gcpauthorizationsystem-list-resources.md
@@ -3456,18 +3446,6 @@ items:
             href: ../../api/gcpauthorizationsystem-list-roles.md
           - name: Get
             href: ../../api/gcprole-get.md
-        - name: Authorization system type service
-          items:
-          - name: Authorization system type service
-            href: ../../resources/authorizationsystemtypeservice.md
-          - name: List AWS authorization system services
-            href: ../../api/awsauthorizationsystem-list-services.md
-          - name: List Azure authorization system type services
-            href: ../../api/azureauthorizationsystem-list-services.md
-          - name: List GCP authorization system type services
-            href: ../../api/gcpauthorizationsystem-list-services.md
-          - name: Get authorization system services
-            href: ../../api/authorizationsystemtypeservice-get.md
         - name: GCP identities
           items:
           - name: GCP identity
@@ -3494,6 +3472,18 @@ items:
               href: ../../api/gcpassociatedidentities-list-serviceaccounts.md
             - name: Get
               href: ../../api/gcpserviceaccount-get.md
+    - name: Services
+      items:
+      - name: Services
+        href: ../../resources/authorizationsystemtypeservice.md
+      - name: List AWS authorization system services
+        href: ../../api/awsauthorizationsystem-list-services.md
+      - name: List Azure authorization system type services
+        href: ../../api/azureauthorizationsystem-list-services.md
+      - name: List GCP authorization system type services
+        href: ../../api/gcpauthorizationsystem-list-services.md
+      - name: Get authorization system services
+        href: ../../api/authorizationsystemtypeservice-get.md
   - name: Permissions requests
     items:
     - name: Scheduled permissions request
@@ -3514,9 +3504,9 @@ items:
         href: ../../api/permissionsrequestchange-get.md
   - name: Permissions analytics
     items:
-    - name: Permissions creep index distribution
+    - name: Permissions Creep Index
       items:
-      - name: Permissions creep index distribution
+      - name: Permissions Creep Index
         href: ../../resources/permissionscreepindexdistribution.md
       - name: List
         href: ../../api/permissionsanalytics-list-permissionscreepindexdistributions.md
@@ -3578,6 +3568,10 @@ items:
         href: ../../api/openawssecuritygroupfinding-list.md
       - name: Get
         href: ../../api/openawssecuritygroupfinding-get.md
+      - name: List assignedComputeInstanceDetails
+        href: ../../api/openawssecuritygroupfinding-list-assignedcomputeinstancesdetails.md
+      - name: Get assignedComputeInstanceDetails
+        href: ../../api/assignedcomputeinstancedetails-get.md
     - name: Open network Azure security group finding
       items:
       - name: Open network Azure security group finding
@@ -3602,9 +3596,9 @@ items:
         href: ../../api/awsexternalsystemaccessrolefinding-list.md
       - name: Get
         href: ../../api/awsexternalsystemaccessrolefinding-get.md
-    - name: AWS identity access management key age finding
+    - name: AWS IAM access key age finding
       items:
-      - name: AWS identity access management key age finding
+      - name: AWS IAM access key age finding
         href: ../../resources/awsidentityaccessmanagementkeyagefinding.md
       - name: List
         href: ../../api/awsidentityaccessmanagementkeyagefinding-list.md
@@ -3612,9 +3606,9 @@ items:
         href: ../../api/awsidentityaccessmanagementkeyagefinding-get.md
       - name: Aggregated summary
         href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
-    - name: AWS identity access management key usage finding
+    - name: AWS IAM access key usage finding
       items:
-      - name: AWS identity access management key usage finding
+      - name: AWS IAM access key usage finding
         href: ../../resources/awsidentityaccessmanagementkeyusagefinding.md
       - name: List
         href: ../../api/awsidentityaccessmanagementkeyusagefinding-list.md
@@ -3858,9 +3852,9 @@ items:
         items:
         - name: Secret information access AWS role finding
           href: ../../resources/secretinformationaccessawsrolefinding.md
-        - name: List secretInformationAccessAwsRoleFinding objects
+        - name: List
           href: ../../api/secretinformationaccessawsrolefinding-list.md
-        - name: Get secretInformationAccessAwsRoleFinding
+        - name: Get
           href: ../../api/secretinformationaccessawsrolefinding-get.md
       - name: Secret information access AWS resource finding
         items:
