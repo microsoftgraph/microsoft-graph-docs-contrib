@@ -47,7 +47,7 @@ PATCH /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md) | Other detail information of the presenter. |
+| presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md) | Other details about the presenter. |
 
 ## Response
 
