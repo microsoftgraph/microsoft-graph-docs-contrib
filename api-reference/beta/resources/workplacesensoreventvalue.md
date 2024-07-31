@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensorEventValue resource type"
-description: "Represents the data collected and reported by a Wi-Fi or badge-swiping device."
+description: "Represents the data collected and reported by a badge-swiping device."
 author: "Ailss"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data collected and reported by a Wi-Fi or badge-swiping device.
+Represents the data collected and reported by a badge-swiping device.
 
 ## Properties
 
