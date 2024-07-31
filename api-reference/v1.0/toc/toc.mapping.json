@@ -1160,7 +1160,9 @@
     {
       "name": "Item insights",
       "resources": [
-        "userInsightsSettings"
+        "itemInsights",
+        "userInsightsSettings",
+        "insightsSettings"
       ]
     },
     {
