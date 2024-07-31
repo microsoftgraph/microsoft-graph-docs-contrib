@@ -97,6 +97,32 @@
     {
       "ChangeList": [
         {
+          "Id": "7b3907c5-3e30-4e98-888c-3dfa79752e02",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesDomainName",
+          "ChangeType": "Change",
+          "Description": "Added the **onPremisesDomainName** property to the [group](https://learn.microsoft.com/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "7b3907c5-3e30-4e98-888c-3dfa79752e02",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesNetBiosName",
+          "ChangeType": "Change",
+          "Description": "Added the **onPremisesNetBiosName** property to the [group](https://learn.microsoft.com/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "7b3907c5-3e30-4e98-888c-3dfa79752e02",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-09T16:45:20.304139Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a890c0f1-c9d0-45a3-a5dc-48497cd8367d",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
