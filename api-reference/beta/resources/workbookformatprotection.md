@@ -2,15 +2,16 @@
 title: "workbookFormatProtection resource type"
 description: "Represents the format protection of a range object."
 ms.localizationpriority: medium
-author: "ruoyingl"
-ms.subservice: excel
 doc_type: resourcePageType
-toc.title: Format protection
+ms.subservice: excel
+author: "ruoyingl"
 ---
 
 # workbookFormatProtection resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the format protection of a range object.
 
@@ -19,17 +20,17 @@ Represents the format protection of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookFormatProtection](../api/formatprotection-get.md) | [workbookFormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
-|[Update](../api/formatprotection-update.md) | [workbookFormatProtection](formatprotection.md)	|Update FormatProtection object. |
+|[Get](../api/workbookformatprotection-get.md) | [workbookFormatProtection](workbookformatprotection.md) |Read the properties and relationships of a workbookFormatProtection object.|
+|[Update](../api/workbookformatprotection-update.md) | [workbookFormatProtection](workbookformatprotection.md)	|Update a workbookFormatProtection object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
-|locked|boolean|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
+|formulaHidden|boolean|Indicates whether Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
+|locked|boolean|Indicates whether Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
 
 ## Relationships
-None.
+None
 
 
 ## JSON representation
@@ -38,11 +39,10 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookFormatProtection"
+  "@odata.type": "microsoft.graph.formatProtection"
 }-->
 
 ```json
@@ -55,11 +55,15 @@ The following JSON representation shows the resource type.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "FormatProtection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
 
