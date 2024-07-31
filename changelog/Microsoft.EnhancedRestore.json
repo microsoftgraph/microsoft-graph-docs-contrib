@@ -4,6 +4,14 @@
         "ChangeList": [
           {
             "Id": "79760265-6742-4bbc-a1cc-656679fb6322",
+            "ApiChange": "Member",
+            "ChangedApiName": "controllerServiceAppDeleted",
+            "ChangeType": "Addition",
+            "Description": "Added the `controllerServiceAppDeleted` member to the **disableReason** enumeration.",
+            "Target": "disableReason"
+          },
+          {
+            "Id": "79760265-6742-4bbc-a1cc-656679fb6322",
             "ApiChange": "Enumeration",
             "ChangedApiName": "restorableArtifact",
             "ChangeType": "Addition",
@@ -76,6 +84,14 @@
       },
       {
       "ChangeList": [
+        {
+          "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
+          "ApiChange": "Member",
+          "ChangedApiName": "controllerServiceAppDeleted",
+          "ChangeType": "Addition",
+          "Description": "Added the `controllerServiceAppDeleted` member to the **disableReason** enumeration.",
+          "Target": "disableReason"
+        },
         {
           "Id": "1b874df1-9afd-4b19-bbf7-5a68ec0c1400",
           "ApiChange": "Method",
