@@ -19,7 +19,7 @@ Represents the tenant-level service status of the backup service.
 |Property|Type|Description|
 |:---|:---|:---|
 |backupServiceConsumer|[backupServiceConsumer](../resources/servicestatus.md#backupserviceconsumer-values)|The type of consumer. The possible values are: `unknown`, `firstparty`, `thirdparty`, `unknownFutureValue`.|
-|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
+|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `controllerServiceAppDeleted`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
 |gracePeriodDateTime|DateTimeOffset|The expiration time of the grace period.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the entity.|
@@ -40,6 +40,7 @@ Represents the tenant-level service status of the backup service.
 |Member | Description |
 |:------|:------------|
 |none | No reason specified.|
+|controllerServiceAppDeleted | Controller service app has been deleted for this consumer.|
 |invalidBillingProfile | Billing profile or Azure subscription status does not exist or is not healthy.|
 |userRequested | Service is disabled manually via user action.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
