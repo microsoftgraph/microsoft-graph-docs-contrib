@@ -112,7 +112,7 @@ The Classwork API supports the following scenarios:
 
 ### Modules
 
-The **educationModule** resource supports the following methods:
+The **educationModule** resource supports the following scenarios:
 
 - [List modules](../api/educationclass-list-modules.md)
 - [Create module](../api/educationclass-post-module.md)
@@ -126,7 +126,7 @@ The **educationModule** resource supports the following methods:
 
 ### Module resources
 
-The **educationModuleResource** resource supports the following methods:
+The **educationModuleResource** resource supports the following scenarios:
 
 - [List module resources](../api/educationmodule-list-resources.md)
 - [Create module resource](../api/educationmodule-post-resources.md)
