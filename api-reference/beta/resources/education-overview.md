@@ -124,7 +124,7 @@ The **educationModule** resource supports the following methods:
 - [Publish module](../api/educationmodule-publish.md)
 - [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)
 
-### Module Resources
+### Module resources
 
 The **educationModuleResource** resource supports the following methods:
 
