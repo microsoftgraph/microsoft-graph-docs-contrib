@@ -42,9 +42,9 @@ None
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) collection| A list of categories defined for the user. |
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|
+|taskFolders (deprecated)|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|
 |taskGroups (deprecated)|[outlookTaskGroup](outlooktaskgroup.md) collection| The user's Outlook task groups. Read-only. Nullable.|
-|tasks|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
+|tasks (deprecated)|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
 
 ## JSON representation
 
