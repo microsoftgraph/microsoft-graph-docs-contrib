@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update virtualEventTownhall
 Namespace: microsoft.graph
 
-Update the properties of a v[virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
