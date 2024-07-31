@@ -41,6 +41,70 @@
           "ChangeType": "Addition",
           "Description": "Added the **allowWhiteboard** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
           "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
