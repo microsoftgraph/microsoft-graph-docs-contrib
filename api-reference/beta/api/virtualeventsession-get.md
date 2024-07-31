@@ -1,5 +1,5 @@
 ---
-title: "Get virtualEventSession"
+title: "Get virtualEventSession for a virtual event"
 description: "Read the properties and relationships of a virtualEventSession object."
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventSession
+# Get a session for a virtual event
 
 Namespace: microsoft.graph
 

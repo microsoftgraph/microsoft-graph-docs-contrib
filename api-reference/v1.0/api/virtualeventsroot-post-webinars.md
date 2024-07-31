@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create virtualEventWebinar
+# Create a virtual event webinar
 
 Namespace: microsoft.graph
 
@@ -17,7 +17,7 @@ Create a new [virtualEventWebinar](../resources/virtualeventwebinar.md) object i
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -51,7 +51,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](../resources/enums.md#meetingaudience-values) | The audience to whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| audience | meetingAudience | The audience to whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |

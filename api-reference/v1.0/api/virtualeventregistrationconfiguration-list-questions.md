@@ -1,5 +1,5 @@
 ---
-title: "List questions"
+title: "List registration questions for a virtual event"
 description: "Get a list of all registration questions for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List questions
+# List registration questions for a virtual event
 Namespace: microsoft.graph
 
 Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).

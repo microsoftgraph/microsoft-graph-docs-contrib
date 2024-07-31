@@ -1,5 +1,5 @@
 ---
-title: "Delete virtualEventRegistrationQuestionBase"
+title: "Delete virtualEventRegistrationQuestionBase for a virtual event"
 description: "Delete a registration question from a webinar."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete virtualEventRegistrationQuestionBase
+# Delete a registration question for a virtual event
 Namespace: microsoft.graph
 
 Delete a registration question from a [webinar](../resources/virtualeventwebinar.md). The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 

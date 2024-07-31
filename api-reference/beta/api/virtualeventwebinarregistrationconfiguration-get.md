@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventWebinarRegistrationConfiguration
+# Get the registration configuration for a virtual event webinar
 
 Namespace: microsoft.graph
 

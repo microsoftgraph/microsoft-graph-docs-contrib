@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a registrant's registration record for a [virtualEvent](../resources/virtualevent.md).
-
-Currently, only [virtualEventWebinar](../resources/virtualeventwebinar.md) is supported.
+Represents a registrant's registration record for a [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -30,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---|
+|:---|:---|:---|  
 |cancelationDateTime|DateTimeOffset|Date and time when the registrant cancels their registration for the virtual event. Only appears when applicable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |email|String|Email address of the registrant.|
 |firstName|String|First name of the registrant.|

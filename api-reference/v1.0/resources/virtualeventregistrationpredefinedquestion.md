@@ -21,7 +21,7 @@ Inherits from [virtualEventRegistrationQuestionBase](../resources/virtualeventre
 
 |Property|Type|Description|
 |:---|:---|:---|
-|label|[virtualEventRegistrationPredefinedQuestionLabel](../resources/enums.md#virtualeventregistrationpredefinedquestionlabel-values)|Label of the predefined registration question. It accepts a single line of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, `organization`, and `unknownFutureValue`. |
+|label|virtualEventRegistrationPredefinedQuestionLabel|Label of the predefined registration question. It accepts a single line of text: `street`, `city`, `state`, `postalCode`, `countryOrRegion`, `industry`, `jobTitle`, `organization`, and `unknownFutureValue`. |
 
 ## JSON representation
 

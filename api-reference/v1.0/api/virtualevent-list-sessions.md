@@ -7,13 +7,16 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions for a virtual event
+# List session summaries for a virtual event
 
 Namespace: microsoft.graph
 
-Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
+Get a list of all [virtualEventSession](../resources/virtualeventsession.md) summary objects under a virtual event. A session summary contains only the `endDateTime`, `id`, `joinWebUrl`, `startDateTime`, and `subject` of a virtual event session. The rest of session properties will be null.
 
-Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
+
+Currently, the following virtual event types are supported: 
+- [virtualEventTownhall](../resources/virtualeventtownhall.md)
+- [virtualEventWebinar](../resources/virtualeventwebinar.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

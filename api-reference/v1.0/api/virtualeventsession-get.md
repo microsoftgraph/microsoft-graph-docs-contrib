@@ -1,5 +1,5 @@
 ---
-title: "Get virtualEventSession"
+title: "Get virtualEventSession for a virtual event"
 description: "Read the properties and relationships of a virtual event session."
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,12 +7,15 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventSession
+# Get a session for a virtual event
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. 
 
-Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Currently, the following virtual event types are supported: 
+- [virtualEventTownhall](../resources/virtualeventtownhall.md)
+- [virtualEventWebinar](../resources/virtualeventwebinar.md)
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

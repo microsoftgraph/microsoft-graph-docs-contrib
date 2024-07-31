@@ -7,19 +7,22 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions for a virtual event registration
+# List session summaries for a virtual event registration
 Namespace: microsoft.graph
 
-Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
+Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the `endDateTime`, `id`, `joinWebUrl`, `startDateTime`, and `subject` of a virtual event session. The rest of session properties will be null.
+
+To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method. 
 
 > [!NOTE]
 > 
-> Currently, this API only supports single session webinars and returns a single session. 
+> Virtual event webinars can only have a singular virtual event session. A single session summary will be returned in the collection.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -50,9 +53,15 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body. 
 
-> [!NOTE]
-> 
-> Currently, this API is only able to return the session summary, which is a partial representation of the full session object.
+Currently, only the following properties of a **virtualEventSession** object contain data when the object is returned by this method. All other properties are null. To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 
 ## Examples
 

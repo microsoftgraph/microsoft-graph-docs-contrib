@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventTownhall
+# Get a virtual event townhall
 
 Namespace: microsoft.graph
 
@@ -65,6 +65,9 @@ The following example shows a request.
 }
 -->
 
+``` http
+GET /solutions/virtualEvents/townhalls/{id}
+```
 ---
 
 ### Response

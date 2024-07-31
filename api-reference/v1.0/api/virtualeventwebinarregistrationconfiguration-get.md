@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventWebinarRegistrationConfiguration
+# Get the registration configuration for a virtual event webinar
 
 Namespace: microsoft.graph
 
@@ -35,6 +35,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration
 ```
+
+## Optional query parameters
+
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -7,14 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventWebinar: cancel
+# Cancel a virtual event webinar
 Namespace: microsoft.graph
 
 Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",

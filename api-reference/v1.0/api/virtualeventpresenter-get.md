@@ -1,5 +1,5 @@
 ---
-title: "Get virtualEventPresenter"
+title: "Get virtualEventPresenter for a virtual event"
 description: "Read the properties and relationships of a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,12 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEventPresenter
+# Get a presenter for a virtual event
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
-Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Currently the supported virtual event types are: 
+- [virtualEventTownhall](../resources/virtualeventtownhall.md)
+- [virtualEventWebinar](../resources/virtualeventwebinar.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,6 +40,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 GET /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 ```
+
+## Optional query parameters
+
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
