@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this section you will define the model for the appliance part inventory records and Entity Framework context, and use the `dotnet ef` tool to initialize the database.
+In this section, you define the model for the appliance part inventory records and Entity Framework context, and use the `dotnet ef` tool to initialize the database.
 
 ## Define the model
 
