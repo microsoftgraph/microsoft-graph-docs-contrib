@@ -35,7 +35,7 @@ Represents the tenant-level service status of the backup service.
 |none | Default value. No consumer is using the service.|
 |firstparty | Microsoft Admin Center is the backup service control app.|
 |thirdparty | An ISV app is the backup service control app.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ### disableReason values
 
@@ -45,7 +45,7 @@ Represents the tenant-level service status of the backup service.
 |controllerServiceAppDeleted | Controller service app is deleted for this consumer.|
 |invalidBillingProfile | Billing profile or Azure subscription status doesn't exist or is not healthy.|
 |userRequested | Service is disabled manually via user action.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ### backupServiceStatus values
 
@@ -55,7 +55,7 @@ Represents the tenant-level service status of the backup service.
 |enabled | Service is enabled. A new protection policy can be created or modified and restore is allowed.|
 |protectionChangeLocked | Service is locked with no change in protection allowed. A new protection policy can't be created or updated. No new protection items can be added or removed.|
 |restoreLocked | Service is locked with no protection change and no restore. The protection policy can't be created or updated. No new protection items can be added or removed. No restore can be performed.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
