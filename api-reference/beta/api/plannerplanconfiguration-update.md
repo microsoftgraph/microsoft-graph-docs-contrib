@@ -216,7 +216,7 @@ Content-Type: application/json
   ],
   "localizations": [
     {
-      id": "en-us",
+      "id": "en-us",
       "languageTag": "en-us",
       "planTitle": "Order Tracking",
       "buckets": [
