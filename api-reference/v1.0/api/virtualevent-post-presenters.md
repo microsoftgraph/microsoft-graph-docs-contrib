@@ -191,7 +191,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_virtualeventpresenter_internal_",
+  "name": "create_virtualeventpresenter_internal_3",
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
