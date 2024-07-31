@@ -40,8 +40,8 @@ Represents the tenant-level service status of the backup service.
 |Member | Description |
 |:------|:------------|
 |none | No reason specified.|
-|controllerServiceAppDeleted | Controller service app has been deleted for this consumer.|
-|invalidBillingProfile | Billing profile or Azure subscription status does not exist or is not healthy.|
+|controllerServiceAppDeleted | Controller service app is deleted for this consumer.|
+|invalidBillingProfile | Billing profile or Azure subscription status doesn't or is not healthy.|
 |userRequested | Service is disabled manually via user action.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
@@ -49,7 +49,7 @@ Represents the tenant-level service status of the backup service.
 
 |Member | Description |
 |:------|:------------|
-|disabled | Service is disabled. This is the default state. The service is not enabled for the tenant.|
+|disabled | Service is disabled. This is the default state. The service isn't enabled for the tenant.|
 |enabled | Service is enabled. A new protection policy can be created or modified and restore is allowed.|
 |protectionChangeLocked | Service is locked with no change in protection allowed. A new protection policy can't be created or updated. No new protection items can be added or removed.|
 |restoreLocked | Service is locked with no protection change and no restore. The protection policy can't be created or updated. No new protection items can be added or removed. No restore can be performed.|
