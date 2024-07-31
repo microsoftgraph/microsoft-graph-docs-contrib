@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [sharepointprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
+Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [siteprotectionunit](../resources/siteprotectionunit.md) to or removes it from the protection policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
