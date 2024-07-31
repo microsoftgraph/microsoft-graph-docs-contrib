@@ -84,3 +84,20 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update checklistItem",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/users:
+      /users/{var}/outlook/taskFolders/{var}/permanentDelete
+      Uri path requires navigating into unknown object hierarchy: missing property 'taskFolders' on 'outlookUser'. Possible issues:
+  	 1) Doc bug where 'taskFolders' isn't defined on the resource.
+  	 2) Doc bug where 'taskFolders' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'outlookUser' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->
