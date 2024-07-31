@@ -57,7 +57,7 @@ You can specify the following properties when creating an **approvalItemResponse
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [approvalItemResponse](../resources/approvalitemresponse.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code with the operation location in the header.
 
 ## Examples
 

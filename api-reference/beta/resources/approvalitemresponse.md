@@ -29,7 +29,7 @@ Represents a response to an approval item request.
 |createdBy|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the approver.|
 |createdDateTime|DateTimeOffset|Creation date and time of the response.|
 |owners|[approvalIdentitySet](../resources/approvalidentityset.md) collection|The identity set of the principal who owns the approval item.|
-|response|String|Approver response based on the response options.|
+|response|String|Approver response based on the response options. The default response options are "Approved" and "Rejected". The approval item creator can also define custom response options during [approval item creation](../api/approvalsolution-post-approvalitems.md).|
 
 ## Relationships
 None.

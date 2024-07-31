@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/approval/operations/{approvalOperationId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -84,11 +80,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#solutions/approval/operations/$entity",
-  "createdDateTime": "0001-01-01T00:00:00Z",
-  "lastActionDateTime": "0001-01-02T00:00:00Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/approval/operations/$entity",
+  "createdDateTime": "2024-07-31T21:22:11.3816263Z",
+  "lastActionDateTime": "2024-07-31T21:22:14.6923809Z",
   "status": "succeeded",
-  "resourceLocation": "https://canary.graph.microsoft.com/beta/solutions/approval/approvalitems/7d096f68-c4fe-4967-99dc-df0248c33a77",
+  "resourceLocation": "https://graph.microsoft.com/beta/solutions/approval/approvalitems/3a11d210-3aa7-423d-ae47-6854ce847581",
   "error": null
 }
 ```

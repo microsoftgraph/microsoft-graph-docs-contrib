@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents collections of requests created for each approver on the approval item.
+Represents a request created for each approver on an [approvalItem](../resources/approvalitem.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get a list of the [approvalItemRequest](../resources/approvalitemrequest.md) objects and their properties.|
+|[List](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get a collection of [approvalItemRequest](../resources/approvalitemrequest.md) objects and their properties, associated with an [approvalItem](../resources/approvalitem.md).|
 |[Get](../api/approvalitemrequest-get.md)|[approvalItemRequest](../resources/approvalitemrequest.md)|Read the properties and relationships of an [approvalItemRequest](../resources/approvalitemrequest.md) object.|
 
 ## Properties

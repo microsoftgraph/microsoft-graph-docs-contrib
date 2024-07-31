@@ -1,6 +1,6 @@
 ---
 title: "List requests"
-description: "Get the approvalItemRequest resources from the requests navigation property."
+description: "Get a list of approvalItemRequest objects."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [approvalItemRequest](../resources/approvalitemrequest.md) resources from the requests navigation property.
+Get a list of [approvalItemRequest](../resources/approvalitemrequest.md) objects.
 
 ## Permissions
 
@@ -35,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/approval/approvalItems/{approvalItemId}/requests
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -22,8 +22,8 @@ Represents an approval request, including the associated decisions, status, and 
 |[Create](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new [approvalItem](../resources/approvalitem.md) object.|
 |[Get](../api/approvalitem-get.md)|[approvalItem](../resources/approvalitem.md)|Read the properties and relationships of an [approvalItem](../resources/approvalitem.md) object.|
 |[Cancel](../api/approvalitem-cancel.md)|None|Cancel the approval item. The owner of the approval can trigger this endpoint.|
-|[List requests](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get the approvalItemRequest resources from the requests navigation property.|
-|[List responses](../api/approvalitem-list-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md) collection|Get the approvalItemResponse resources from the responses navigation property.|
+|[List requests](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get the collection of approvalItemRequest for the approvalItem.|
+|[List responses](../api/approvalitem-list-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md) collection|Get the collection of approvalItemResponse for the approvalItem.|
 |[Create response](../api/approvalitem-post-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md)|Create a new **approvalItemResponse** object.|
 
 ## Properties
@@ -47,8 +47,8 @@ Represents an approval request, including the associated decisions, status, and 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|requests|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Collections of requests created for each approver on the approval item.|
-|responses|[approvalItemResponse](../resources/approvalitemresponse.md) collection|Collections of responses created for the approval item.|
+|requests|[approvalItemRequest](../resources/approvalitemrequest.md) collection|A collection of requests created for each approver on the approval item.|
+|responses|[approvalItemResponse](../resources/approvalitemresponse.md) collection|A collection of responses created for the approval item.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -88,4 +88,3 @@ The following JSON representation shows the resource type.
   "result": "String"
 }
 ```
-

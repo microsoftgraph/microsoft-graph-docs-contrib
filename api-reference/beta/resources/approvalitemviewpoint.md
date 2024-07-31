@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user viewpoints data on the approval item. The data includes the user's roles for the approval item.
+Represents a user's roles for an [approvalItem](../resources/approvalitem.md).
 
 ## Properties
 |Property|Type|Description|
