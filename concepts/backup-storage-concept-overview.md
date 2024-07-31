@@ -32,7 +32,7 @@ Partners can use Microsoft 365 Backup Storage APIs in Microsoft Graph to create 
 
 Use the following steps to create and deploy an application:
 
-- Develop your Microsoft 365 Backup Storage application with the required OAuth permissions scopes an [Microsoft 365 Backup Storage APIs](/graph/api/resources/backuprestoreroot?view=graph-rest-1.0).
+- Develop your Microsoft 365 Backup Storage application with the required OAuth permissions scopes an [Microsoft 365 Backup Storage APIs](/graph/api/resources/backuprestoreroot).
 
 - Create a billing policy for your Microsoft 365 Backup Storage application. For details, see [Set up third-party billing for Microsoft 365 Backup Storage](/microsoft-365/backup/storage/backup-3p-billing?view=o365-worldwide).
 
@@ -44,5 +44,5 @@ Use the following steps to create and deploy an application:
 
 Looking for the API reference for this service?
 
-- [Microsoft 365 Backup Storage API in Microsoft Graph v1.0](/graph/api/resources/backuprestoreroot?view=graph-rest-1.0)
-- [Microsoft 365 Backup Storage API in Microsoft Graph beta](/graph/api/resources/backuprestoreroot?view=graph-rest-beta)
+- [Microsoft 365 Backup Storage API in Microsoft Graph v1.0](/graph/api/resources/backuprestoreroot?view=graph-rest-1.0&preserve-view=true)
+- [Microsoft 365 Backup Storage API in Microsoft Graph beta](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true)
