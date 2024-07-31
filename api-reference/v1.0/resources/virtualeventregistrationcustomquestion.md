@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
----
 
 # virtualEventRegistrationCustomQuestion resource type
 
