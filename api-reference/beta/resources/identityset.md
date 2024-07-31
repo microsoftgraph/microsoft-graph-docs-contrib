@@ -29,6 +29,10 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 | phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
 | user        | [identity](identity.md) | Optional. The user associated with this action.         |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
