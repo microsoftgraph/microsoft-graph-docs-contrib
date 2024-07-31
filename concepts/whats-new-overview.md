@@ -43,6 +43,10 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 
 - Deprecated the **synchronizationProfiles** relationship on the [educationRoot](/graph/api/resources/educationroot?view=graph-rest-beta&preserve-view=true), including all types serviced under this endpoint.
 - Introduced the Reflect API in Microsoft Graph to [get Reflect check-in responses](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true) and [get reading assignment submissions](/graph/api/readingassignmentsubmission-get?view=graph-rest-beta&preserve-view=true). [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app. 
+
+### Identity and access | Directory management
+
+Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/resources/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
   
 ### People and workplace intelligence | Profile
 

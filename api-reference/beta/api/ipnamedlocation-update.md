@@ -49,7 +49,7 @@ You must specify the **@odata.type** as `#microsoft.graph.ipNamedLocation`.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String|Human-readable name of the location.|
-|ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962.|
+|ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962. To retain any existing **ipRange** objects, you must add them to this object in addition to any new objects; to remove any **ipRange** objects, exclude them from this object.|
 |isTrusted|Boolean|The value is `true` if this location is explicitly trusted.|
 
 ## Response
