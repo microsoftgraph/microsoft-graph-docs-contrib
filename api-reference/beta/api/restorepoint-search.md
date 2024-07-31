@@ -195,7 +195,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2 : Search with artifactQuery expression
+### Example 2: Search with artifactQuery expression
 
 #### Request
 
