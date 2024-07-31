@@ -37,7 +37,7 @@ Represents a column in a table.
 |id|string|The unique identifier for the column within the table. This property should be interpreted as an opaque string value and shouldn't be parsed to any other type. Read-only.|
 |index|int|The index of the column within the columns collection of the table. Zero-indexed. Read-only.|
 |name|string|The name of the table column.|
-|values|Json|TRepresents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|JSON|Represents the raw values of the specified range. The data returned could be of type string, number, or a Boolean. Cell that contain an error will return the error string.|
 
 ## Relationships
 | Relationship | Type	|Description|
