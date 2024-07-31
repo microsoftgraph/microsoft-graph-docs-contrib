@@ -24,7 +24,7 @@ Object used to specify an OAuth 2.0 permission scope or an app role that an appl
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

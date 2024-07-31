@@ -26,7 +26,7 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError"

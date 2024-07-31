@@ -26,7 +26,7 @@ Represents the total number of IAM keys and the number of a specific finding for
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIamKeySummary"

@@ -31,7 +31,7 @@ Represents the history of modifications applied to a [browserSharedCookie](../re
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.browserSharedCookieHistory"

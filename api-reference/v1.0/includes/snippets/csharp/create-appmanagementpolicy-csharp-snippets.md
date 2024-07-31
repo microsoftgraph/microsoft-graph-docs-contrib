@@ -14,7 +14,7 @@ var requestBody = new AppManagementPolicy
 	DisplayName = "Credential management policy",
 	Description = "Cred policy sample",
 	IsEnabled = true,
-	Restrictions = new AppManagementConfiguration
+	Restrictions = new CustomAppManagementConfiguration
 	{
 		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{
