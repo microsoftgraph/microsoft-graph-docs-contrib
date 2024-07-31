@@ -19,17 +19,21 @@ Manages sorting operations on Table objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort-get.md) | [workbookTableSort](workbooktablesort.md) |Read properties and relationships of tableSort object.|
-|[Apply](../api/tablesort-apply.md)|None|Perform a sort operation.|
-|[Clear](../api/tablesort-clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
-|[Reapply](../api/tablesort-reapply.md)|None|Reapplies the current sorting parameters to the table.|
+|[Get](../api/tablesort-get.md) | [workbookTableSort](workbooktablesort.md) |Read the properties and relationships of the workbookTableSort object.|
+|[Apply sort](../api/tablesort-apply.md)|None|Perform a sort operation.|
+|[Clear sort](../api/tablesort-clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
+|[Reapply sort](../api/tablesort-reapply.md)|None|Reapplies the current sorting parameters to the table.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|[workbookSortField](sortfield.md) collection|Represents the current conditions used to last sort the table. Read-only.|
-|matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
-|method|string|Represents Chinese character ordering method last used to sort the table. The possible values are: `PinYin`, `StrokeCount`. Read-only.|
+|fields|[workbookSortField](sortfield.md) collection|The list of the current conditions last used to sort the table. Read-only.|
+|matchCase|boolean|Indicates whether the casing impacted the last sort of the table. Read-only.|
+|method|string|The Chinese character ordering method last used to sort the table. The possible values are: `PinYin`, `StrokeCount`. Read-only.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

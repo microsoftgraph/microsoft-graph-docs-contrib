@@ -2741,6 +2741,16 @@ items:
           href: ../../api/emailauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/emailauthenticationmethodconfiguration-delete.md
+      - name: External authentication method
+        items:
+        - name: External authentication method
+          href: ../../resources/externalauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/externalauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/externalauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/externalauthenticationmethodconfiguration-delete.md
       - name: FIDO2
         items:
         - name: FIDO2
@@ -2771,16 +2781,6 @@ items:
           href: ../../api/smsauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/smsauthenticationmethodconfiguration-delete.md
-      - name: Temporary Access Pass
-        items:
-        - name: Temporary Access Pass
-          href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
-        - name: Get
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-        - name: Update
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-        - name: Delete
-          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
       - name: Software OATH
         items:
         - name: Software OATH
@@ -2791,6 +2791,16 @@ items:
           href: ../../api/softwareoathauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/softwareoathauthenticationmethodconfiguration-delete.md
+      - name: Temporary Access Pass
+        items:
+        - name: Temporary Access Pass
+          href: ../../resources/temporaryaccesspassauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
       - name: Voice
         items:
         - name: Voice

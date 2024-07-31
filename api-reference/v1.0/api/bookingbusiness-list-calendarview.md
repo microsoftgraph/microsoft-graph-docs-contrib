@@ -39,7 +39,7 @@ In the request URL, provide the following required query parameters with values.
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -128,6 +128,10 @@ Content-type: application/json
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
+	    "customerName": "Jordan Miller",
+	    "customerEmailAddress": "jordanm@contoso.com",
+	    "customerPhone": "213-555-0199",
+	    "customerNotes": null,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "anonymousJoinWebUrl": null,
             "customers": [
@@ -176,11 +180,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-05-05T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-05T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -214,6 +218,10 @@ Content-type: application/json
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "anonymousJoinWebUrl": null,
+	    "customerName": "Jordan Miller",
+	    "customerEmailAddress": "jordanm@contoso.com",
+	    "customerPhone": "213-555-0199",
+	    "customerNotes": null,	
             "customers": [
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -260,11 +268,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-05-06T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-06T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
