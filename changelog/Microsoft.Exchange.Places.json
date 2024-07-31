@@ -171,7 +171,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Enumeration",
           "ChangedApiName": "workplaceSensorEventType",
           "ChangeType": "Addition",
@@ -179,7 +179,7 @@
           "Target": "workplaceSensorEventType"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Member",
           "ChangedApiName": "badge",
           "ChangeType": "Addition",
@@ -187,7 +187,7 @@
           "Target": "workplaceSensorType"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Property",
           "ChangedApiName": "eventValue",
           "ChangeType": "Addition",
@@ -195,7 +195,7 @@
           "Target": "workplaceSensorDeviceTelemetry"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Property",
           "ChangedApiName": "locationHint",
           "ChangeType": "Addition",
@@ -203,7 +203,7 @@
           "Target": "workplaceSensorDeviceTelemetry"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Resource",
           "ChangedApiName": "workplaceSensorEventValue",
           "ChangeType": "Addition",
@@ -211,7 +211,7 @@
           "Target": "workplaceSensorEventValue"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Resource",
           "ChangedApiName": "emailIdentity",
           "ChangeType": "Addition",
@@ -219,7 +219,7 @@
           "Target": "emailIdentity"
         },
         {
-          "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
           "ApiChange": "Resource",
           "ChangedApiName": "identity",
           "ChangeType": "Addition",
@@ -227,10 +227,10 @@
           "Target": "identity"
         }
       ],
-      "Id": "a88630a5-bfa0-4218-91c4-034d03ea4f98",
+      "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-07-31T03:18:26.8319066Z",
+      "CreatedDateTime": "2024-07-31T10:16:22.3182957Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
     }
