@@ -1,5 +1,107 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcProvisioningPolicyAutopatch"
+          },
+          {
+            "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+            "ApiChange": "Property",
+            "ChangedApiName": "autopatch",
+            "ChangeType": "Addition",
+            "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+            "Target": "cloudPcProvisioningPolicy"
+          }
+        ],
+        "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-07-24T10:25:21.3434973Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "39c5f364-3a9e-42e9-bcf3-09c3a1ac022e",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "cloudPcDisasterRecoveryCapabilityType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcDisasterRecoveryCapabilityType** enumeration type.",
+            "Target": "cloudPcDisasterRecoveryCapabilityType"
+          },
+          {
+            "Id": "39c5f364-3a9e-42e9-bcf3-09c3a1ac022e",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcDisasterRecoveryCapability",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcDisasterRecoveryCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryCapability?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcDisasterRecoveryCapability"
+          },
+          {
+            "Id": "39c5f364-3a9e-42e9-bcf3-09c3a1ac022e",
+            "ApiChange": "Property",
+            "ChangedApiName": "disasterRecoveryCapability",
+            "ChangeType": "Addition",
+            "Description": "Added the **disasterRecoveryCapability** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+            "Target": "cloudPC"
+          }
+        ],
+        "Id": "39c5f364-3a9e-42e9-bcf3-09c3a1ac022e",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-07-08T08:03:56.9188489Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkModifyDiskEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkModifyDiskEncryptionType](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkModifyDiskEncryptionType?view=graph-rest-beta) resource",
+          "Target": "cloudPcBulkModifyDiskEncryptionType"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcDiskEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcDiskEncryptionType** enumeration type.",
+          "Target": "cloudPcDiskEncryptionType"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcTenantEncryptionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcTenantEncryptionSetting?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcTenantEncryptionSetting"
+        },
+        {
+          "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveTenantEncryptionSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievetenantencryptionsetting?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+          "Target": "virtualEndpoint"
+        }
+      ],
+      "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-22T07:08:27.3298762Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {
@@ -149,7 +251,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-06-20T09:45:11.7491462Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {

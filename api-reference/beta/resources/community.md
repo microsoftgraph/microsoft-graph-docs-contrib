@@ -25,8 +25,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the Viva Engage [community](../resources/community.md) objects and their properties.|
 |[Create](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[Get](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
+|[Update](../api/community-update.md)|None|Update the properties of an existing Viva Engage [community](../resources/community.md).|
+|[Delete](../api/community-delete.md)|None|Delete a [community](../resources/community.md) in Viva Engage.|
 
 ## Properties
 

@@ -10,18 +10,18 @@ doc_type: resourcePageType
 # deviceManagement resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Singleton entity that acts as a container for all device management functionality.
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-rbac-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-rbac-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-rbac-devicemanagement-get.md)|[deviceManagement](../resources/intune-rbac-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-rbac-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-rbac-devicemanagement-update.md)|[deviceManagement](../resources/intune-rbac-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-rbac-devicemanagement.md) object.|
 |[getEffectivePermissions function](../api/intune-rbac-devicemanagement-geteffectivepermissions.md)|String collection||
 |[getEffectivePermissions function](../api/intune-rbac-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) collection||
 |[getRoleScopeTagsByResource function](../api/intune-rbac-devicemanagement-getrolescopetagsbyresource.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection||

@@ -30,13 +30,12 @@ Retrieving the transcript returns the metadata of the single transcript associat
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignore", "name": "calltranscript_get" } -->
-
-| Permission type                        | Least privileged permissions                                        | Higher privileged permissions |
-| :------------------------------------- | :------------------------------------------------------------------ | :---------------------------- |
-| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All                                    | Not available.                |
-| Delegated (personal Microsoft account) | Not supported.                                                      | Not supported.                |
-| Application                            | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat | Not available.                |
+<!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
+| Permission type| Least privileged permissions|Higher privileged permissions|
+| :---| :---| :--- |
+|Delegated (work or school account)| OnlineMeetingTranscript.Read.All| Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -149,7 +148,6 @@ Content-type: application/json
     "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
     "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
     "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-    "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
     "createdDateTime": "2021-09-17T06:09:24.8968037Z",
     "endDateTime": "2021-09-17T06:27:25.2346000Z",
     "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",

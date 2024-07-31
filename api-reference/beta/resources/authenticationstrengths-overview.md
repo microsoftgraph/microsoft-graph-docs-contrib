@@ -5,7 +5,8 @@ ms.localizationpriority: medium
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
-doc_type: "conceptualPageType"
+doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 09/12/2023
 ---
 

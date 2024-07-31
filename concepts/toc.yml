@@ -758,7 +758,7 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
-    - name: Customize item insights privacy (preview)
+    - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
@@ -998,6 +998,9 @@ items:
       - name: Microsoft Entra built-in roles
         displayName: Microsoft Graph permissions
         href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
+      - name: Best practices for Teams app permissions
+        displayName: Best practices for using Microsoft Graph permissions to build Teams apps
+        href: best-practices-graph-permission.md
       - name: Selected permissions in OneDrive and SharePoint
         displayName: Selected Permissions in OneDrive and SharePoint
         href: permissions-selected-overview.md
@@ -1046,6 +1049,8 @@ items:
       href: long-running-actions-overview.md
     - name: Enable metered APIs
       href: metered-api-setup.md
+    - name: Metered APIs FAQ
+      href: metered-api-faq.md
     - name: Work with Graph Explorer
       href: graph-explorer/graph-explorer-features.md
     - name: Use Postman

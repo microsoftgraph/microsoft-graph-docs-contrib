@@ -24,6 +24,10 @@ which will add the who data to this property. The max points are stored in the *
 |gradedBy|[identitySet](identityset.md)| User who did the grading. |
 |gradedDateTime|DateTimeOffset| Moment in time when the grade was applied to this submission object. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
