@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create a virtual event webinar
+# Create virtualEventWebinar
 
 Namespace: microsoft.graph
 
@@ -100,8 +100,6 @@ Content-Type: application/json
     ]
 }
 ```
-
----
 
 ### Response
 
