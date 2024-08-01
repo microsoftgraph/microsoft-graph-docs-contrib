@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |category|microsoft.graph.healthMonitoring.category|The category is a classification grouping the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. New categories may be added over time as new monitored scenarios are added.|
 |createdDateTime|DateTimeOffset|Time that the Alert was generated at.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|Returns a key-value pair containing the name of documentation to aid in investigation of the alert and a link to the documentation.|
-|enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Provides helpful investigative information on the alert.|
+|enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Provides helpful investigative information on the alert. This information typically includes counts of impacted users, devices, and other resources and a pointer to supporting data.|
 |id|String|Unique identifier of this alert under the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. New scenarios may be added over time.|
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|A collection of signals that are used in the generation of the alert.|
