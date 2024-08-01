@@ -36,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/approval/operations/{approvalOperationId}
 ```
 
+## Optional query parameters
+
+This method doesn't support the OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
