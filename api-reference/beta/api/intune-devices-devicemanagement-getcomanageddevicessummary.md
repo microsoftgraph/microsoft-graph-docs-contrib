@@ -2,7 +2,7 @@
 title: "getComanagedDevicesSummary function"
 description: "Intune Devices Devicemanagement Getcomanageddevicessummary Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

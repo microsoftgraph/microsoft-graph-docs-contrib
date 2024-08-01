@@ -2,7 +2,7 @@
 title: "Update windowsInformationProtectionDeviceRegistration"
 description: "Update the properties of a windowsInformationProtectionDeviceRegistration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

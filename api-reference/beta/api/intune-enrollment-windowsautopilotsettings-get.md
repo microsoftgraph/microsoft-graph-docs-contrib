@@ -2,7 +2,7 @@
 title: "Get windowsAutopilotSettings"
 description: "Read properties and relationships of the windowsAutopilotSettings object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

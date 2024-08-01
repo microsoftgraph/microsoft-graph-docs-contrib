@@ -2,7 +2,7 @@
 title: "androidForWorkGeneralDeviceConfiguration resource type"
 description: "Android For Work general device configuration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

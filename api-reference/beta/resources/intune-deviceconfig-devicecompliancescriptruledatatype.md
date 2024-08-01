@@ -2,7 +2,7 @@
 title: "deviceComplianceScriptRuleDataType enum type"
 description: "Data types for rules."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

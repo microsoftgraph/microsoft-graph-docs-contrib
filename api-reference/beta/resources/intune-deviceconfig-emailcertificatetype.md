@@ -2,7 +2,7 @@
 title: "emailCertificateType enum type"
 description: "Supported certificate sources for email signing and encryption."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

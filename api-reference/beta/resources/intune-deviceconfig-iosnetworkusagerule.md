@@ -2,7 +2,7 @@
 title: "iosNetworkUsageRule resource type"
 description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

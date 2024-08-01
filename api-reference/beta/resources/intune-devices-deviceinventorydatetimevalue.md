@@ -2,7 +2,7 @@
 title: "deviceInventoryDateTimeValue resource type"
 description: "Inherited type of DeviceInventoryValue where the value is a dateTime"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
