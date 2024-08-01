@@ -160,6 +160,8 @@ items:
         href: ../../resources/plannerplanconfigurationlocalization.md
       - name: List
         href: ../../api/plannerplanconfiguration-list-localizations.md
+      - name: Update
+        href: ../../api/plannerplanconfiguration-update.md
     - name: Planner task configuration
       items:
       - name: Planner task configuration
