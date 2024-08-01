@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation using Microsoft Graph
 
-Change notifications allow you to subscribe to changes (create, update, and delete) to Teams app installations. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat, or personal scope. For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
+Change notifications allow you to subscribe to changes (create, update, and delete) to Teams app installations. You can get notified whenever the Teams app is installed, upgraded, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope). For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
 
 Continue with this article about scenarios for Teams app installation resources in **personal**, **team**, or **chat** scope. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
@@ -53,6 +53,9 @@ To get change notifications for Teams app installation in chat scope, subscribe 
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
+
+> [!NOTE]
+> Notification for Teams app installation might not be delivered in the chat scope. This is a known limitation.
 
 #### All scopes
 
