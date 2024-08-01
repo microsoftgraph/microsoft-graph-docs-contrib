@@ -4,7 +4,7 @@ description: "Represents the process of an ediscoverySearch export."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
-doc_type: "apiPageType"
+doc_type: "resourcePageType"
 ---
 
 # ediscoverySearchExportOperation resource type
