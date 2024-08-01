@@ -1,5 +1,5 @@
 ---
-title: "Get virtualEventSession for a virtual event"
+title: "Get virtualEventSession"
 description: "Read the properties and relationships of a virtualEventSession object."
 author: "awang119"
 ms.localizationpriority: medium

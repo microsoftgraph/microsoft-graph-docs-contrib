@@ -1,5 +1,5 @@
 ---
-title: "List sessions for a virtual event registration"
+title: "List sessions"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium

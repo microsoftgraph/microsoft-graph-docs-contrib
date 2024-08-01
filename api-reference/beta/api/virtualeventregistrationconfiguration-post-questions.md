@@ -1,5 +1,5 @@
 ---
-title: "Create a registration question for a virtual event"
+title: "Create question"
 description: "Create a registration question for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium

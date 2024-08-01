@@ -1,5 +1,5 @@
 ---
-title: "Create virtualEventPresenter for a virtual event"
+title: "Create virtualEventPresenter"
 description: "Create a new virtualEventPresenter object to a virtual event."
 author: "frankpeng7"
 ms.localizationpriority: medium

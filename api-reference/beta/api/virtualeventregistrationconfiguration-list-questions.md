@@ -1,5 +1,5 @@
 ---
-title: "List registration questions for a virtual event"
+title: "List questions"
 description: "Get a list of all registration questions for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium

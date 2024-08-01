@@ -1,5 +1,5 @@
 ---
-title: "Delete virtualEventPresenter for a virtual event"
+title: "Delete virtualEventPresenter"
 description: "Delete a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-title: "Delete virtualEventRegistrationQuestionBase for a virtual event"
+title: "Delete virtualEventRegistrationQuestionBase"
 description: "Delete a registration question from a webinar."
 author: "frankpeng7"
 ms.localizationpriority: medium

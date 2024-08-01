@@ -1,5 +1,5 @@
 ---
-title: "Cancel a virtualEventRegistration for a virtual event"
+title: "virtualEventRegistration: cancel"
 description: "Cancel a registrant's registration record for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium

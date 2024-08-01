@@ -1,5 +1,5 @@
 ---
-title: "Get virtualEventPresenter for a virtual event"
+title: "Get virtualEventPresenter"
 description: "Read the properties and relationships of a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium

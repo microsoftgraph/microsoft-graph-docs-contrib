@@ -1,5 +1,5 @@
 ---
-title: "List presenters for a virtual event"
+title: "List presenters"
 description: "Get the list of all virtualEventPresenter objects of a virtual event."
 author: "frankpeng7"
 ms.localizationpriority: medium
