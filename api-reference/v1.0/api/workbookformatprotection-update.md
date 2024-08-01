@@ -42,8 +42,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
-|locked|boolean|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
+|formulaHidden|Boolean|Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
+|locked|Boolean|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
 
 ## Response
 

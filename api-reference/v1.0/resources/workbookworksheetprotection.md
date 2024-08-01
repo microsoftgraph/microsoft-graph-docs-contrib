@@ -27,7 +27,7 @@ Represents the protection of a sheet object.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |options|[workbookWorksheetProtectionOptions](./workbookworksheetprotectionoptions.md)|Worksheet protection options. Read-only.|
-|protected|boolean|Indicates whether the worksheet is protected.  Read-only.|
+|protected|Boolean|Indicates whether the worksheet is protected.  Read-only.|
 
 ## JSON representation
 

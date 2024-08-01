@@ -27,7 +27,7 @@ Represents major or minor gridlines on a chart axis.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Indicates whether the axis gridlines are visible.|
+|visible|Boolean|Indicates whether the axis gridlines are visible.|
 
 ## Relationships
 | Relationship | Type	|Description|
