@@ -739,9 +739,12 @@
         "educationSynchronizationError",
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse",
         "relatedContact"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -1576,9 +1579,11 @@
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
+                  "shouldSort": true,
                   "resources": [
                     "authenticationMethodsPolicy",
                     "emailAuthenticationMethodConfiguration",
+                    "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",

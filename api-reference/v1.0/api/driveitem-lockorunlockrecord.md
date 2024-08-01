@@ -23,7 +23,7 @@ For more information about how you can lock and unlock retention labels, see [Us
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All    |
 | Delegated (personal Microsoft account) | Not supported.                              |

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\TenantAppManagementPolicy;
-use Microsoft\Graph\Beta\Generated\Models\AppManagementConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AppManagementApplicationConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
@@ -18,7 +18,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TenantAppManagementPolicy();
 $requestBody->setIsEnabled(true);
-$applicationRestrictions = new AppManagementConfiguration();
+$applicationRestrictions = new AppManagementApplicationConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictionType(new AppCredentialRestrictionType('passwordAddition'));
 $passwordCredentialsPasswordCredentialConfiguration1->setMaxLifetime(null);
