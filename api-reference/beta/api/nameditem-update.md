@@ -1,19 +1,19 @@
 ---
-title: "Update nameditem"
-description: "Update the properties of nameditem object."
+title: "Update named item"
+description: "Update the properties of namedItem object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: excel
 author: "ruoyingl"
 ---
 
-# Update nameditem
+# Update namedItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of nameditem object.
+Update the properties of namedItem object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -33,10 +33,10 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 | Name       | Description|
 |:-----------|:-----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
+| Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that didn't change.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

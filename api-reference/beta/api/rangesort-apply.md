@@ -35,7 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -44,8 +44,8 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |fields|workbookSortField collection|The list of conditions to sort on.|
 |matchCase|Boolean|Optional. Whether to have the casing determines string ordering.|
-|hasHeaders|Boolean|Optional. Whether the range has a header.|
-|orientation|string|Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.|
+|hasHeaders|Boolean|Optional. Whether the range has a header. |
+|orientation|string|Optional. Whether the operation is sorting rows or columns. Possible values are: `Rows`, `Columns`.|
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
