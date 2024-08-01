@@ -1,5 +1,5 @@
 ---
-title: "Delete virtualEventPresenter for a virtual event"
+title: "Delete virtualEventPresenter"
 description: "Delete a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete a presenter for a virtual event
+# Delete virtualEventPresenter
 
 Namespace: microsoft.graph
 
