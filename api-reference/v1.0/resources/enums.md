@@ -3324,6 +3324,76 @@ Possible values for user account types (group membership), per Windows definitio
 | windows81AndLater |
 | windows10AndLater |
 | androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
+
+### educationAssignmentStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+| assigned           |
+| unknownFutureValue |
+| inactive           |
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
+
+### bookingStaffMembershipStatus values
+
+|Member|
+|:---|
+|active|
+|pendingAcceptance|
+|rejectedByStaff|
+|unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
+|unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|
 | unknown |
 | androidAOSP |
 | androidMobileApplicationManagement |
@@ -3377,3 +3447,4 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+

@@ -1,5 +1,5 @@
 ---
-title: "timecard resource type"
+title: "timeCard resource type"
 description: "Represents a timecard entry in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: resourcePageType_
 ---
 
-# timecard resource type
+# timeCard resource type
 
 Namespace: microsoft.graph
 

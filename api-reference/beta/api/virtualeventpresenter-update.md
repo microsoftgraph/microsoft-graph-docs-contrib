@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update a presenter for a virtual event
+# Update virtualEventPresenter
 
 Namespace: microsoft.graph
 

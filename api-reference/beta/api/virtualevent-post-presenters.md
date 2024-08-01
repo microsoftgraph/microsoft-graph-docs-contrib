@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create a presenter for a virtual event
+# Create virtualEventPresenter
 
 Namespace: microsoft.graph
 
