@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
-# usersignininsight resource type
+# userSignInInsight resource type
 
 Namespace: microsoft.graph
 
