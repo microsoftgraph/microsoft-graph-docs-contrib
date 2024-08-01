@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification
+Use the Microsoft Entra scenario health monitoring API to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in serviceActivity APIs. These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
 
 ## Licenses
 **TODO: Are we required user to have specific licenses?**
