@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List session summaries for a virtual event
+# List sessions for a virtual event
 
 Namespace: microsoft.graph
 
