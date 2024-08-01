@@ -1,5 +1,5 @@
 ---
-title: "Create virtualEventPresenter for a virtual event"
+title: "Create virtualEventPresenter"
 description: "Create a new virtualEventPresenter object to a virtual event."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create a presenter for a virtual event
+# Create virtualEventPresenter
 
 Namespace: microsoft.graph
 
