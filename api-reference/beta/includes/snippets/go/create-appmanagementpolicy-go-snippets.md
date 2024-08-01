@@ -22,7 +22,7 @@ description := "Cred policy sample"
 requestBody.SetDescription(&description) 
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-restrictions := graphmodels.NewAppManagementConfiguration()
+restrictions := graphmodels.NewCustomAppManagementConfiguration()
 
 
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
