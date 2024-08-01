@@ -36,7 +36,7 @@ The following tables show the least privileged permission or permissions require
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All, Group.ReadWrite           | Group.ReadWrite.All |
-|Delegated (personal Microsoft account)      |   Group.ReadWrite            | Not supported. |
+|Delegated (personal Microsoft account)      |    Not supported.            | Not supported. |
 |Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 ### To update the profile photo of a team
