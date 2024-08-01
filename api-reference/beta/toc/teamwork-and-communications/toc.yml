@@ -64,8 +64,6 @@ items:
       href: ../../resources/approvaloperation.md
     - name: Get
       href: ../../api/approvaloperation-get.md
-  - name: Approvalidentityset
-    href: ../../resources/approvalidentityset.md
 - name: Apps
   items:
   - name: Teams app
