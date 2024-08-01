@@ -1,5 +1,5 @@
 ---
-title: "Update presenter for a virtual event"
+title: "Update virtualEventPresenter"
 description: "Update the properties of a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update a presenter for a virtual event
+# Update virtualEventPresenter
 
 Namespace: microsoft.graph
 
