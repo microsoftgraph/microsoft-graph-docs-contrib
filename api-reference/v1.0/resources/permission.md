@@ -294,8 +294,5 @@ property will contain the information about the account that redeemed the permis
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
   "tocPath": "Resources/Permission",
-  "suppressions": [
-    "Error: Property 'grantedTo' found in resource definition for 'microsoft.graph.permission', but not described in markdown table.",
-    "Error: Property 'grantedToIdentities' found in resource definition for 'microsoft.graph.permission', but not described in markdown table."
-  ]
+  "suppressions": []
 } -->
