@@ -21,7 +21,7 @@ For information about retention labels from an administrator's perspective, see 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Files.Read.All, Sites.Read.All              |
 | Delegated (personal Microsoft account) | Not supported.                              |
