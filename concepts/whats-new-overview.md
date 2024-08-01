@@ -65,7 +65,7 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 
 ### Identity and access | Directory management
 
-Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/resources/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
+Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
   
 ### People and workplace intelligence | Profile
 
