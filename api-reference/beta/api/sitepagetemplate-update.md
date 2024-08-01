@@ -3,6 +3,7 @@ title: "Update Page Template"
 description: "Update the properties of a sitePageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,10 @@
 ---
-title: "sitePage: save as template"
-description: "Save a site page as a template page."
 author: Yadong1106
+description: "Save a site page as a page template by id."
+ms.date: 05/07/2018
+title: Save page as template
 ms.localizationpriority: medium
-ms.subservice: "sharepoint"
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # sitePage: save page as template
@@ -52,7 +53,6 @@ The following example shows how to save a site page as a template page.
  
 ### Request
  
- # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "saveAsTemplate", "scopes": "sites.readwrite.all" } -->
  
 ```http
@@ -61,7 +61,7 @@ Content-Type: application/json
 
 {
   "title": "SampleTitle",
-  "name" ："Sample.aspx"
+  "name" ："SampleTemplate.aspx"
 }
 
 ```
@@ -81,7 +81,7 @@ Content-type: application/json
 {
     "@odata.type": "microsoft.graph.sitePageTemplate",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e726371",
-    "name": "Sample.aspx",
+    "name": "SampleTemplate.aspx",
     "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Sample.aspx",
     "title": "SampleTitle",
     "pageLayout": "article",
