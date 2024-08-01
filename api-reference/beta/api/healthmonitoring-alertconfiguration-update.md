@@ -19,6 +19,8 @@ Update the properties of a [microsoft.graph.healthMonitoring.alertConfiguration]
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+NOTE: This API does not currently support group validation. If group validation is added in the future, a call to the group API will be necessary, which will require additional permissions for groups.read.all.
+
 <!-- {
   "blockType": "permissions",
   "name": "healthmonitoring-alertconfiguration-update-permissions"
