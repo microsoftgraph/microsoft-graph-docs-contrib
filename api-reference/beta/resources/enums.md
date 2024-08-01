@@ -4679,78 +4679,23 @@ Possible values for user account types (group membership), per Windows definitio
 
 ## conditionalAccessTransferMethods values
 
-|Member|
-|:---|
-|none|
-|deviceCodeFlow|
-|authenticationTransfer|
-|unknownFutureValue|
+| Member |
+| ---- |
+| none |
+| deviceCodeFlow |
+| authenticationTransfer |
+| unknownFutureValue |
 
 ## claimConditionUserType values
 
-| Member             |
-|:-------------------|
-| android            |
-| androidForWork     |
-| iOS                |
-| macOS              |
-| windowsPhone81     |
-| windows81AndLater  |
-| windows10AndLater  |
-| androidWorkProfile |
-| unknown            |
-| androidAOSP        |
-| androidMobileApplicationManagement|
-| iOSMobileApplicationManagement|
-| unknownFutureValue|
-
-### bookingPageAccessControl values 
-
-|Member|
-|:---|
-|unrestricted|
-|restrictedToOrganization|
-|unknownFutureValue|
-
-### bookingsServiceAvailabilityType values 
-
-|Member|
-|:---|
-|bookWhenStaffAreFree|
-|notBookable|
-|customWeeklyHours|
-|unknownFutureValue|
-
-### conditionalAccessTransferMethods values
-
-|Member|
-|:---|
-|none|
-|deviceCodeFlow|
-|authenticationTransfer|
-|unknownFutureValue|
-
-### pageLayoutType values 
-
-|Member|
-|:---|
-|microsoftReserved|
-|article|
-|home|
-|unknownFutureValue|
-|newsLink|
-|videoNewsLink|
-
-### claimConditionUserType values
-
-|Member|
-|:---|
-|any|
-|members|
-|allGuests|
-|aadGuests|
-|externalGuests|
-|unknownFutureValue|
+| Member |
+| ---- |
+| any |
+| members |
+| allGuests |
+| aadGuests |
+| externalGuests |
+| unknownFutureValue |
 
 ## filterType values
 
