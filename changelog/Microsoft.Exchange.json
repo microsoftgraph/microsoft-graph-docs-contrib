@@ -1139,6 +1139,80 @@
       "CreatedDateTime": "2024-06-24T12:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/calendar-permanentDelete?view=graph-rest-beta) method to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/contact-permanentDelete?view=graph-rest-beta) method to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/contactFolder-permanentDelete?view=graph-rest-beta) method to the [contactFolder](https://learn.microsoft.com/en-us/graph/api/resources/contactFolder?view=graph-rest-beta) resource.",
+          "Target": "contactFolder"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/event-permanentDelete?view=graph-rest-beta) method to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/mailFolder-permanentDelete?view=graph-rest-beta) method to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailFolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/message-permanentDelete?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+          "Target": "message"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/outlookTask-permanentDelete?view=graph-rest-beta) method to the [outlookTask](https://learn.microsoft.com/en-us/graph/api/resources/outlookTask?view=graph-rest-beta) resource.",
+          "Target": "outlookTask"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/outlookTaskFolder-permanentDelete?view=graph-rest-beta) method to the [outlookTaskFolder](https://learn.microsoft.com/en-us/graph/api/resources/outlookTaskFolder?view=graph-rest-beta) resource.",
+          "Target": "outlookTaskFolder"
+        }
+      ],
+      "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-01T04:13:38.5525311Z",
+      "WorkloadArea": "Calendar, mail, personal contacts",
+      "SubArea": ""
     }
   ]
 }
