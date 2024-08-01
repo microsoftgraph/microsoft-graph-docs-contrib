@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
+
 # sitePage: save page as template
  
 Namespace: microsoft.graph
