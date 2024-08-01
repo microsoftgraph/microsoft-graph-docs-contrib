@@ -34,6 +34,7 @@ Represents the data provider to use as the synchronization source for a [educati
 None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
