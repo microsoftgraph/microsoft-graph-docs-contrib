@@ -4,6 +4,7 @@ description: "Returns the metadata for a page template in the templates folder i
 ms.date: 03/15/2018
 title: Get sitePageTemplate
 ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

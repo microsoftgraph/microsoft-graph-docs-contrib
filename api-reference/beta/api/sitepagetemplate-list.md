@@ -4,6 +4,7 @@ description: "Get the collection of sitePageTemplate objects from the page templ
 ms.date: 03/15/2018
 title: List sitePageTemplate
 ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

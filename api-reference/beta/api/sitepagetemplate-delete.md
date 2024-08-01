@@ -3,6 +3,7 @@ author: "Yadong1106"
 description: "Delete a page template from the templates folder in a site."
 title: "Delete sitePageTemplate"
 ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Delete SitePageTemplate

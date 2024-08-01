@@ -4,6 +4,7 @@ description: "Create a new page according to a page template."
 ms.date: 05/07/2018
 title: Create Page From template
 ms.localizationpriority: medium
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
  
@@ -54,16 +55,14 @@ If successful, this method returns a `201` and the created [sitePage](../resourc
 The following example shows how to create a new page from the page template.
  
 ### Request
- 
-The following example shows a request.
- 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
- 
  
 ```http
 POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/microsoft.graph.sitePage/createFromTemplate
 Content-Type: application/json
- 
+
 {
     "title": "Sample",
     "name": "Sample.aspx",

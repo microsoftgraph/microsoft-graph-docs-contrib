@@ -1,7 +1,7 @@
 ---
-author: Yadong1106
-description: "Save a site page as a template page."
 title: "sitePage: save as template"
+description: "Save a site page as a template page."
+author: Yadong1106
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -52,20 +52,18 @@ The following example shows how to save a site page as a template page.
  
 ### Request
  
-The following example shows a request.
- 
+ # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "saveAsTemplate", "scopes": "sites.readwrite.all" } -->
- 
  
 ```http
 POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb/microsoft.graph.sitePage/saveAsTemplate
 Content-Type: application/json
- 
+
 {
   "title": "SampleTitle",
   "name" ："Sample.aspx"
 }
- 
+
 ```
  
 ### Response
