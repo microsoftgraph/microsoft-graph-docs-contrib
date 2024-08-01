@@ -2693,8 +2693,7 @@
             "approvalitemrequest",
             "approvalitemresponse",
             "approvalitemviewpoint",
-            "approvaloperation",
-            "approvalidentityset"
+            "approvaloperation"
           ]
         },
         {
