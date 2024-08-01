@@ -6,13 +6,13 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get usageRight
+# Get usageRight for a group
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object.
+Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object for a group.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [usageRight](../resources/cloudlicensing-usageright.md) object in the response body.
 
 ## Examples
 
