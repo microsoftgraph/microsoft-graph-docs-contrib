@@ -5,6 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: "Microsoft Entra health monitoring"
 ---
 
 # Overview
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification
+Use the Microsoft Entra scenario health monitoring API to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in serviceActivity APIs. These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
 
 ## Licenses
 **TODO: Are we required user to have specific licenses?**
@@ -26,7 +27,7 @@ The following table lists some common requests that you can use with this API.
 | ----------- | ----------- |
 | Retrieve all alerts of a Microsoft Entra tenant | [List alerts](../api/healthmonitoring-healthmonitoringroot-list-alerts.md) |
 | Retrieve an alert and its associated data, including the impacted resources | [Get alert](../api/healthmonitoring-alert-get.md) |
-| Update an alert | [Update alert](../api/healthmonitoring-alert-update.md) |
+| Update the state of an alert | [Update alert](../api/healthmonitoring-alert-update.md) |
 | Retrieve alert configurations for all alert types | [List alert configurations](../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md) |
 | Retrieve alert configuration for an alert type | [Get alert configuration](../api/healthmonitoring-alertconfiguration-get.md) |
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
