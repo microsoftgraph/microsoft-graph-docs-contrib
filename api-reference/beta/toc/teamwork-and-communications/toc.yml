@@ -6,9 +6,9 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Approvals
   items:
-  - name: Approvalitem
+  - name: Approval item
     items:
-    - name: Approvalitem
+    - name: Approval item
       href: ../../resources/approvalitem.md
     - name: List
       href: ../../api/approvalsolution-list-approvalitems.md
@@ -24,9 +24,9 @@ items:
       href: ../../api/approvalitem-list-responses.md
     - name: Create response
       href: ../../api/approvalitem-post-responses.md
-  - name: Approvalsolution
+  - name: Approval solution
     items:
-    - name: Approvalsolution
+    - name: Approval solution
       href: ../../resources/approvalsolution.md
     - name: Get
       href: ../../api/approvalsolution-get.md
@@ -38,17 +38,17 @@ items:
       href: ../../api/approvalsolution-post-approvalitems.md
     - name: Get approval operation
       href: ../../api/approvaloperation-get.md
-  - name: Approvalitemrequest
+  - name: Approval item request
     items:
-    - name: Approvalitemrequest
+    - name: Approval item request
       href: ../../resources/approvalitemrequest.md
     - name: List
       href: ../../api/approvalitem-list-requests.md
     - name: Get
       href: ../../api/approvalitemrequest-get.md
-  - name: Approvalitemresponse
+  - name: Approval item response
     items:
-    - name: Approvalitemresponse
+    - name: Approval item response
       href: ../../resources/approvalitemresponse.md
     - name: List
       href: ../../api/approvalitem-list-responses.md
@@ -56,11 +56,11 @@ items:
       href: ../../api/approvalitem-post-responses.md
     - name: Get
       href: ../../api/approvalitemresponse-get.md
-  - name: Approvalitemviewpoint
+  - name: Approval item view point
     href: ../../resources/approvalitemviewpoint.md
-  - name: Approvaloperation
+  - name: Approval operation
     items:
-    - name: Approvaloperation
+    - name: Approval operation
       href: ../../resources/approvaloperation.md
     - name: Get
       href: ../../api/approvaloperation-get.md
