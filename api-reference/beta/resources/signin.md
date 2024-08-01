@@ -18,8 +18,7 @@ Provides details about user or application sign-in activity in your directory. Y
 
 The [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
 
-Note: This API will default to return only interactive sign-ins unless an explicit filter is set on it. For example, the filter for getting non-interactive sign-ins is this "
-https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')"
+> [!NOTE] This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
 
 ## Methods
 
