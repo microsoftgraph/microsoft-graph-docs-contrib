@@ -1101,9 +1101,9 @@ items:
       href: ../../api/swapshiftschangerequest-approve.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
-  - name: Timecard
+  - name: Time card
     items:
-    - name: Timecard
+    - name: Time card
       href: ../../resources/timecard.md
     - name: List
       href: ../../api/timecard-list.md

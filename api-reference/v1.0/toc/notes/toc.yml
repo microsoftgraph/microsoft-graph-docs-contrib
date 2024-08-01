@@ -58,9 +58,9 @@ items:
     href: ../../api/page-delete.md
   - name: Copy to section
     href: ../../api/page-copytosection.md
-- name: One note resource
+- name: OneNote resource
   items:
-  - name: One note resource
+  - name: OneNote resource
     href: ../../resources/resource.md
   - name: Get resource
     href: ../../api/resource-get.md

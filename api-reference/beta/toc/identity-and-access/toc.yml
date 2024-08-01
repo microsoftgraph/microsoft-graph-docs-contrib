@@ -1342,6 +1342,8 @@ items:
           href: ../../api/identitygovernance-deleteditemcontainer-get.md
         - name: Restore
           href: ../../api/identitygovernance-workflow-restore.md
+        - name: Permanently delete
+          href: ../../api/identitygovernance-deleteditemcontainer-delete.md
       - name: Task
         items:
         - name: Task
@@ -3967,8 +3969,6 @@ items:
     items:
     - name: Traffic logs
       href: ../../resources/networkaccess-logs.md
-    - name: List remoteNetworks
-      href: ../../api/networkaccess-remotenetworkhealthstatusevent-list.md
     - name: List traffic
       href: ../../api/networkaccess-logs-list-traffic.md
     - name: Network access traffic
