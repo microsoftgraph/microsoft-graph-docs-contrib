@@ -250,6 +250,11 @@
     "caseSensitive": true
   },
   {
+    "term": "One note",
+    "override": "OneNote",
+    "caseSensitive": true
+  },
+  {
     "term": "onenote",
     "override": "OneNote"
   },
