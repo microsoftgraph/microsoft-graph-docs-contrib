@@ -16,7 +16,7 @@ Update the properties of the [userSettings](../resources/usersettings.md) object
 Users in the same organization can have different settings based on their preference or on the organization policies. 
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Batch request
 

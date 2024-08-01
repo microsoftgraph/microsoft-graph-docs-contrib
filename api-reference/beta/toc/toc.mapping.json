@@ -740,9 +740,12 @@
         "educationSynchronizationError",
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse",
         "relatedContact"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -1399,11 +1402,11 @@
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
+                "platformCredentialAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "platformCredentialAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
               ]
             },
             {
@@ -1412,6 +1415,8 @@
               "resources": [
                 "authenticationStrengthPolicy",
                 "authenticationCombinationConfiguration",
+                "fido2CombinationConfiguration",
+                "x509CertificateCombinationConfiguration",
                 "authenticationMethodModeDetail"
               ]
             },
@@ -1500,6 +1505,12 @@
                   "resources": [
                     "internalDomainFederation"
                   ]
+                },
+                {
+                  "name": "Federated token validation policy (preview)",
+                  "resources": [
+                    "federatedTokenValidationPolicy"
+                  ]
                 }
               ]
             },
@@ -1557,15 +1568,6 @@
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
-              "complexTypes": [
-                "allDeviceRegistrationMembership",
-                "azureADJoinPolicy",
-                "azureADRegistrationPolicy",
-                "deviceRegistrationMembership",
-                "enumeratedDeviceRegistrationMembership",
-                "localAdminPasswordSettings",
-                "noDeviceRegistrationMembership"
-              ],
               "childNodes": [
                 {
                   "name": "Application authentication method policy",
@@ -1578,9 +1580,11 @@
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
+                  "shouldSort": true,
                   "resources": [
                     "authenticationMethodsPolicy",
                     "emailAuthenticationMethodConfiguration",
+                    "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
@@ -1600,6 +1604,14 @@
               ]
             },
             {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
+              ]
+            },
+            {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
                 "identityUserFlow",
@@ -1609,14 +1621,6 @@
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
-              ]
-            },
-            {
-              "name": "User flows in external tenants",
-              "resources": [
-                "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
               ]
             }
           ]
@@ -1633,7 +1637,8 @@
               "resources": [
                 "awsAuthorizationSystem",
                 "azureAuthorizationSystem",
-                "gcpAuthorizationSystem"
+                "gcpAuthorizationSystem",
+                "authorizationSystemTypeService"
               ],
               "childNodes": [
                 {
@@ -1644,8 +1649,7 @@
                       "resources": [
                         "awsAuthorizationSystemTypeAction",
                         "awsPolicy",
-                        "awsAuthorizationSystemResource",
-                        "authorizationSystemTypeService"
+                        "awsAuthorizationSystemResource"
                       ],
                       "childNodes": [
                         {
@@ -1668,8 +1672,7 @@
                       "resources": [
                         "azureAuthorizationSystemTypeAction",
                         "azureAuthorizationSystemResource",
-                        "azureRoleDefinition",
-                        "authorizationSystemTypeService"
+                        "azureRoleDefinition"
                       ],
                       "childNodes": [
                         {
@@ -1693,8 +1696,7 @@
                       "resources": [
                         "gcpAuthorizationSystemTypeAction",
                         "gcpAuthorizationSystemResource",
-                        "gcpRole",
-                        "authorizationSystemTypeService"
+                        "gcpRole"
                       ],
                       "childNodes": [
                         {
@@ -2049,6 +2051,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "pronounsSettings",
+        "photoUpdateSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2063,7 +2066,8 @@
           "name": "People admin settings",
           "resources": [
             "pronounsSettings",
-            "profileCardProperty"
+            "profileCardProperty",
+            "photoUpdateSettings"
           ]
         },
         {

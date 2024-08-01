@@ -84,7 +84,7 @@ In those cases, none of the column type facets will be populated, and the column
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

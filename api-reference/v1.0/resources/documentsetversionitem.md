@@ -24,7 +24,7 @@ Represents an [item](../resources/listitem.md) that is a part of a captured [doc
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.documentSetVersionItem"
