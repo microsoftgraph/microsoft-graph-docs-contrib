@@ -2688,12 +2688,12 @@
         {
           "name": "Approvals",
           "resources": [
-            "approvalitem",
-            "approvalsolution",
-            "approvalitemrequest",
-            "approvalitemresponse",
-            "approvalitemviewpoint",
-            "approvaloperation"
+            "approvalItem",
+            "approvalSolution",
+            "approvalItemRequest",
+            "approvalItemResponse",
+            "approvalItemViewPoint",
+            "approvalOperation"
           ]
         },
         {
