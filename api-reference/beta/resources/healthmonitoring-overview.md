@@ -27,7 +27,7 @@ The following table lists some common requests that you can use with this API.
 | ----------- | ----------- |
 | Retrieve all alerts of a Microsoft Entra tenant | [List alerts](../api/healthmonitoring-healthmonitoringroot-list-alerts.md) |
 | Retrieve an alert and its associated data, including the impacted resources | [Get alert](../api/healthmonitoring-alert-get.md) |
-| Update an alert | [Update alert](../api/healthmonitoring-alert-update.md) |
+| Update the state of an alert | [Update alert](../api/healthmonitoring-alert-update.md) |
 | Retrieve alert configurations for all alert types | [List alert configurations](../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md) |
 | Retrieve alert configuration for an alert type | [Get alert configuration](../api/healthmonitoring-alertconfiguration-get.md) |
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
