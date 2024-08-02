@@ -31,15 +31,13 @@ The following known issues are associated with this API:
 - [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
 - [Delta queries might return older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
 
+
 ## Permissions
 
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)| Not supported |
-|Delegated (personal Microsoft account) | Not supported |
-|Application | OnlineMeetingTranscript.Read.All |
+<!-- { "blockType": "permissions", "name": "calltranscript_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/calltranscript-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
