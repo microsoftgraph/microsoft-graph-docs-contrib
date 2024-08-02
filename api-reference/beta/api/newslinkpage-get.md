@@ -62,8 +62,6 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!--{
   "blockType": "request",
   "name": "get-newslinkpage",
@@ -72,10 +70,8 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 -->
 
 ```http
-GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/cb9c62e1-07da-46ec-88dc-aed1d5164727/microsoft.graph.newsLinkPage
-prefer: include-unknown-enum-members
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.newsLinkPage
 ```
----
 
 ### Response
 
@@ -85,17 +81,18 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.newsLinkPage",
-  "isCollection":false
+  "@odata.type": "microsoft.graph.newsLinkPage"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "microsoft.graph.newsLinkPage",
   "createdDateTime": "2024-06-05T20:39:55Z",
-  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate."
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
   "id": "57aff05d-6c80-4d36-b051-acc211400306",
   "lastModifiedDateTime": "2024-06-05T20:39:57Z",
