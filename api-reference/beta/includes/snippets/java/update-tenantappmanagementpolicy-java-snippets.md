@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TenantAppManagementPolicy tenantAppManagementPolicy = new TenantAppManagementPolicy();
 tenantAppManagementPolicy.setIsEnabled(true);
-AppManagementConfiguration applicationRestrictions = new AppManagementConfiguration();
+AppManagementApplicationConfiguration applicationRestrictions = new AppManagementApplicationConfiguration();
 LinkedList<PasswordCredentialConfiguration> passwordCredentials = new LinkedList<PasswordCredentialConfiguration>();
 PasswordCredentialConfiguration passwordCredentialConfiguration = new PasswordCredentialConfiguration();
 passwordCredentialConfiguration.setRestrictionType(AppCredentialRestrictionType.PasswordAddition);

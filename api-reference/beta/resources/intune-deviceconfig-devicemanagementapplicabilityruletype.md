@@ -2,7 +2,7 @@
 title: "deviceManagementApplicabilityRuleType enum type"
 description: "Supported Applicability rule types for Device Configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

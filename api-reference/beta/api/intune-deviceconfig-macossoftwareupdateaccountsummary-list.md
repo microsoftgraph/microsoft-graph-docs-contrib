@@ -2,7 +2,7 @@
 title: "List macOSSoftwareUpdateAccountSummaries"
 description: "List properties and relationships of the macOSSoftwareUpdateAccountSummary objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

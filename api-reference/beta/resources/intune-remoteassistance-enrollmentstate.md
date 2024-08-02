@@ -2,7 +2,7 @@
 title: "enrollmentState enum type"
 description: "This status denotes the current enrollent state of the device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

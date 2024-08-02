@@ -2,7 +2,7 @@
 title: "Create iosLobAppProvisioningConfigurationPolicySetItem"
 description: "Create a new iosLobAppProvisioningConfigurationPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -26,7 +26,13 @@ Provides settings for customizing the school data profile synchronization of the
 | isSyncDeferred           | Boolean           | Indicates whether synchronization of the parent entity is deferred to a later date.                                                                                                                                    |
 | allowDisplayNameUpdate   | Boolean           | Indicates whether the display name of the resource can be overwritten by the sync.                                                                                                                                     |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

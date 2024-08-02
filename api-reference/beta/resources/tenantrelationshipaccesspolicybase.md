@@ -59,8 +59,6 @@ The following JSON representation shows the resource type.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: Property 'definition' found in resource definition for 'microsoft.graph.tenantRelationshipAccessPolicyBase', but not described in markdown table."
-  ]
+  "suppressions": []
 }
 -->

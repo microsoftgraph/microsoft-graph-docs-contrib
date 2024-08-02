@@ -2,7 +2,7 @@
 title: "createDownloadUrl action"
 description: "Intune Mstunnel Microsofttunnelserverlogcollectionresponse Createdownloadurl Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

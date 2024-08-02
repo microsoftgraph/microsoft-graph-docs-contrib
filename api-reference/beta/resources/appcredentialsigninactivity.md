@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents an application credential activity in a given tenant. This resource contains information about the last usage time of an application credential.
 
+For more information about this report, see [Usage and insights report: Microsoft Entra application activity (preview)](/entra/identity/monitoring-health/concept-usage-insights-report?tabs=microsoft-entra-admin-center#microsoft-entra-application-activity-preview)
+
 ## Methods
 
 | Method                                                                         | Return Type                                                                           | Description                                                                |
@@ -26,7 +28,7 @@ Represents an application credential activity in a given tenant. This resource c
 
 | Property                 | Type                                             | Description                                                                                           |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| appId                    | String                                           | The globally unique appId (also called *client ID* on the Microsoft Entra admin center) of the credential application.                                                                 |
+| appId                    | String                                           | The globally unique **appId** (also called *client ID* on the Microsoft Entra admin center) of the credentialed application.                                                                 |
 | appObjectId              | String                                           | The ID of the credential application instance.                                                        |
 | createdDateTime          | DateTimeOffset                                   | The date and time when the credential was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                   |
 | credentialOrigin         | applicationKeyOrigin                             | The type the key credential originated from. Possible values are: `application`, `servicePrincipal`, `unknownFutureValue`. |

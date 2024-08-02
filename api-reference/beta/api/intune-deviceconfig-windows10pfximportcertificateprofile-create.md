@@ -2,7 +2,7 @@
 title: "Create windows10PFXImportCertificateProfile"
 description: "Create a new windows10PFXImportCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

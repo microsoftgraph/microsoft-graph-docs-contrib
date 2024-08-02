@@ -25,6 +25,10 @@ Namespace: microsoft.graph
 | reportDate             | Date   | The date on which a number of emails were sent to a group mailbox or a number of messages were posted, read, or liked in a Yammer group |
 | reportPeriod           | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

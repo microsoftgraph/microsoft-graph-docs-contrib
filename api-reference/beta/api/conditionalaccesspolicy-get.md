@@ -64,7 +64,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67
 ```
 
 # [C#](#tab/csharp)
@@ -118,111 +118,104 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
-    "id": "6b5e999b-0ba8-4186-a106-e0296c1c4358",
-    "displayName": "Demo app for documentation",
-    "createdDateTime": "2019-09-26T23:12:16.0792706Z",
-    "modifiedDateTime": "2019-09-27T00:12:12.5986473Z",
-    "state": "disabled",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/policies('<guid>')?$select=conditions,createdDateTime",
+    "id": "10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67",
+    "templateId": null,
+    "displayName": "CA008: Require password change for high-risk users",
+    "createdDateTime": "2021-11-02T14:26:29.1005248Z",
+    "modifiedDateTime": "2024-01-30T23:11:08.549481Z",
+    "state": "enabled",
+    "partialEnablementStrategy": null,
     "conditions": {
-        "signInRiskLevels": [
-            "medium",
-            "low"
+        "userRiskLevels": [
+            "high"
         ],
+        "signInRiskLevels": [],
         "clientAppTypes": [
-            "mobileAppsAndDesktopClients",
-            "exchangeActiveSync",
-            "other"
+            "all"
         ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
         "applications": {
             "includeApplications": [
                 "All"
             ],
-            "excludeApplications": [
-                "499b84ac-1321-427f-aa17-267ca6975798",
-                "00000007-0000-0000-c000-000000000000",
-                "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-                "00000012-0000-0000-c000-000000000000",
-                "797f4846-ba00-4fd7-ba43-dac1f8f63013",
-                "05a65629-4c1b-48c1-a78b-804c4abdd4af",
-                "7df0a125-d3be-4c96-aa54-591f83ff541c"
-            ],
-            "includeUserActions": []
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
         },
         "users": {
             "includeUsers": [
-                "a702a13d-a437-4a07-8a7e-8c052de62dfd"
-            ],
-            "excludeUsers": [
-                "124c5b6a-ffa5-483a-9b88-04c3fce5574a",
-                "GuestsOrExternalUsers"
-            ],
-            "includeGroups": [],
-            "excludeGroups": [],
-            "includeRoles": [
-                "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
-                "cf1c38e5-3621-4004-a7cb-879624dced7c",
-                "c4e39bd9-1100-46d3-8c65-fb160da0071f"
-            ],
-            "excludeRoles": [
-                "b0f54661-2d74-4c50-afa3-1ec803f12efe"
-            ]
-        },
-        "platforms": {
-            "includePlatforms": [
-                "all"
-            ],
-            "excludePlatforms": [
-                "iOS",
-                "windowsPhone"
-            ]
-        },
-        "locations": {
-            "includeLocations": [
-                "AllTrusted"
-            ],
-            "excludeLocations": [
-                "00000000-0000-0000-0000-000000000000",
-                "d2136c9c-b049-47ae-b9cf-316e04ef7198"
-            ]
-        },
-        "deviceStates": null,
-        "devices": {
-            "includeDevices": [
                 "All"
             ],
-            "excludeDevices": [
-                "Compliant"
-            ]
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [
+                "eedad040-3722-4bcb-bde5-bc7c857f4983"
+            ],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
         }
     },
     "grantControls": {
-        "operator": "OR",
+        "operator": "AND",
         "builtInControls": [
-            "mfa",
-            "compliantDevice",
-            "domainJoinedDevice",
-            "approvedApplication",
-            "compliantApplication"
+            "passwordChange"
         ],
         "customAuthenticationFactors": [],
-        "termsOfUse": [
-            "ce580154-086a-40fd-91df-8a60abac81a0",
-            "7f29d675-caff-43e1-8a53-1b8516ed2075"
-        ],
-        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('6b5e999b-0ba8-4186-a106-e0296c1c4358')/grantControls/authenticationStrength/$entity",
-        "authenticationStrength": null
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": {
+            "id": "00000000-0000-0000-0000-000000000002",
+            "createdDateTime": "2021-12-01T08:00:00Z",
+            "modifiedDateTime": "2021-12-01T08:00:00Z",
+            "displayName": "Multifactor authentication",
+            "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+            "policyType": "builtIn",
+            "requirementsSatisfied": "mfa",
+            "allowedCombinations": [
+                "windowsHelloForBusiness",
+                "fido2",
+                "x509CertificateMultiFactor",
+                "deviceBasedPush",
+                "temporaryAccessPassOneTime",
+                "temporaryAccessPassMultiUse",
+                "password,microsoftAuthenticatorPush",
+                "password,softwareOath",
+                "password,hardwareOath",
+                "password,sms",
+                "password,voice",
+                "federatedMultiFactor",
+                "microsoftAuthenticatorPush,federatedSingleFactor",
+                "softwareOath,federatedSingleFactor",
+                "hardwareOath,federatedSingleFactor",
+                "sms,federatedSingleFactor",
+                "voice,federatedSingleFactor"
+            ],
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67')/grantControls/authenticationStrength/combinationConfigurations",
+            "combinationConfigurations": []
+        }
     },
     "sessionControls": {
+        "disableResilienceDefaults": null,
         "applicationEnforcedRestrictions": null,
+        "cloudAppSecurity": null,
         "persistentBrowser": null,
-        "cloudAppSecurity": {
-            "cloudAppSecurityType": "blockDownloads",
-            "isEnabled": true
-        },
+        "continuousAccessEvaluation": null,
+        "secureSignInSession": null,
         "signInFrequency": {
-            "value": 4,
-            "type": "hours",
+            "value": null,
+            "type": null,
+            "authenticationType": "primaryAndSecondaryAuthentication",
+            "frequencyInterval": "everyTime",
             "isEnabled": true
         }
     }

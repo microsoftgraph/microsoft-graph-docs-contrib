@@ -40,6 +40,10 @@ This type has the following properties:
 | removeAccess | The review decision is to remove access to access package. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

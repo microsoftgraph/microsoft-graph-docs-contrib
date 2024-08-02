@@ -2,7 +2,7 @@
 title: "Get appleExpeditedCheckinConfigurationBase"
 description: "Read properties and relationships of the appleExpeditedCheckinConfigurationBase object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
