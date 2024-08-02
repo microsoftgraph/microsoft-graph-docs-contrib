@@ -14,6 +14,8 @@ items:
     href: ../../api/plannerplan-list-buckets.md
   - name: List plan tasks
     href: ../../api/plannerplan-list-tasks.md
+  - name: Create plan
+    href: ../../api/planner-post-plans.md
   - name: Update plan
     href: ../../api/plannerplan-update.md
   - name: Delete plan
@@ -32,6 +34,8 @@ items:
     href: ../../resources/plannertask.md
   - name: Get task
     href: ../../api/plannertask-get.md
+  - name: Create task
+    href: ../../api/planner-post-tasks.md
   - name: Update task
     href: ../../api/plannertask-update.md
   - name: Delete task
