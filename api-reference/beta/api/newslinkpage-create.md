@@ -73,10 +73,10 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 <!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages
-Content-Type: multipart/form-data; boundary=MyPartBoundary198374
+POST https://graph.microsoft.com/beta/sites/{id}/pages
+Content-type: multipart/form-data; boundary=198374
 
---MyPartBoundary198374
+--198374
 Content-Disposition: form-data; name="request"
 Content-Type: application/json
 
@@ -88,13 +88,13 @@ Content-Type: application/json
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
---MyPartBoundary198374
+--198374
 Content-Disposition: form-data; name="content"; filename="b3.jpg"
 Content-Type: image/jpeg
 
 ... binary image data ...
 
---MyPartBoundary198374--
+--198374--
 ```
 
 ---
