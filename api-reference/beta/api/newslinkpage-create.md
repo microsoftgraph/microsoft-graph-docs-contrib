@@ -104,7 +104,7 @@ Content-Type: image/jpeg
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.newsLinkPage"
 }
