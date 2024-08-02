@@ -2,7 +2,7 @@
 title: "Create deviceManagementDomainJoinConnector"
 description: "Create a new deviceManagementDomainJoinConnector object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

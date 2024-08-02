@@ -381,6 +381,8 @@ items:
       href: ../../api/virtualendpoint-list-bulkactions.md
     - name: Create bulk action
       href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Retrieve tenant encryption setting
+      href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
   - name: Cloud PC bulk action
     items:
     - name: Cloud PC bulk action

@@ -2,7 +2,7 @@
 title: "List iosManagedAppRegistrations"
 description: "List properties and relationships of the iosManagedAppRegistration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

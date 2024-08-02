@@ -1,6 +1,6 @@
 ---
 author: "spgraph-docs-team"
-description: "Indicates that the column in a columnDefinition holds a boolean value."
+description: "Indicates that the column in a columnDefinition holds a Boolean value."
 title: "booleanColumn resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that the column in a [columnDefinition](columndefinition.md) holds a boolean value.
+Indicates that the column in a [columnDefinition](columndefinition.md) holds a Boolean value.
 
 ## Properties
 

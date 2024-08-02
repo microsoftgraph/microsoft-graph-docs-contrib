@@ -25,9 +25,9 @@ Represents the legend in a chart.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Indicates whether the chart legend should overlap with the main body of the chart.|
+|overlay|Boolean|Indicates whether the chart legend should overlap with the main body of the chart.|
 |position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|Indicates whether the chart legend is visible.|
+|visible|Boolean|Indicates whether the chart legend is visible.|
 
 ## Relationships
 | Relationship | Type	|Description|

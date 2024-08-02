@@ -2,7 +2,7 @@
 title: "Delete macOSMicrosoftEdgeApp"
 description: "Deletes a macOSMicrosoftEdgeApp."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

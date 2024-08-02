@@ -2,7 +2,7 @@
 title: "Create managedDeviceCleanupRule"
 description: "Create a new managedDeviceCleanupRule object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

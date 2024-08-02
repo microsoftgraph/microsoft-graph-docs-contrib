@@ -2,7 +2,7 @@
 title: "deviceHealthScriptDailySchedule resource type"
 description: "Device health script daily schedule."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

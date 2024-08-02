@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationCheckBox resource type"
 description: "Represents an ADMX checkBox element and an ADMX boolean element."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
