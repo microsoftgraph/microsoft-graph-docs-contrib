@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List sessions for virtualEventRegistration
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
