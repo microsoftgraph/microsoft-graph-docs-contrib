@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List virtualEventRegistrations
 Namespace: microsoft.graph
 
-Get a list of all [registration](../resources/virtualeventregistration.md) records of a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
