@@ -75,24 +75,27 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ```http
 POST https://graph.microsoft.com/beta/sites/{id}/pages
-Content-type: multipart/form-data; boundary=198374
+Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
---198374
-Content-Disposition: form-data; name="request"
+--MyPartBoundary198374
+Content-Disposition:form-data; name="request"
 Content-Type: application/json
 
 {
   "@odata.type" : "#microsoft.graph.newsLinkPage",
-  "title": "Microsoft Build brings AI tools to the forefront for developers",
-  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
+  "title" : "Microsoft Build brings AI tools to the forefront for developers",
+  "newsWebUrl" : "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
   "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
---198374
+--MyPartBoundary198374
 Content-Disposition: form-data; name="content"; filename="b3.jpg"
 Content-Type: image/jpeg
 
+... binary image data ...
+
+--MyPartBoundary198374
 ```
 
 ---
