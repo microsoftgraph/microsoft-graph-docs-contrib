@@ -86,8 +86,8 @@ Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/servi
   "@odata.type": "#microsoft.graph.serviceApp",
   "id":"71633878-8321-4950-bfaf-ed285bdd1461",
   "status" : "inactive",
-  "registrationDateTime":"2022-06-19T12-01-03.45Z",
-  "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+  "registrationDateTime":"2022-06-19T12:01:03.45Z",
+  "lastModifiedDateTime":"2023-06-19T12:01:03.45Z",
   "lastModifiedBy":{
       "application":{
           "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"

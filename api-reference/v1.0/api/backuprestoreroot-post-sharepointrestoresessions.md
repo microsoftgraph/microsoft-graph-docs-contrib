@@ -113,7 +113,7 @@ Content-Type: application/json
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -124,7 +124,7 @@ Content-Type: application/json
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
 }
 ```
 
