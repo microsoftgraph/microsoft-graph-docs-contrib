@@ -2686,6 +2686,17 @@
       ],
       "childNodes": [
         {
+          "name": "Approvals",
+          "resources": [
+            "approvalItem",
+            "approvalSolution",
+            "approvalItemRequest",
+            "approvalItemResponse",
+            "approvalItemViewPoint",
+            "approvalOperation"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
