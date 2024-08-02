@@ -30,14 +30,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "String-value":
-  {
-    "isChecked": true,
-    "lastModifiedBy": "String-value",
-    "lastModifiedByDateTime": "String(timestamp)",
-    "orderHint": "String-value",
-    "title": "String-value"
-  }
+  "String (client-generated GUID)": {"@odata.type": "microsoft.graph.plannerChecklistItem"}
 }
 ```
 
