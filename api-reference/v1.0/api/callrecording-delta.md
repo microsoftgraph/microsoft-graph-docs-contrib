@@ -48,7 +48,7 @@ The following permissions are required to call this API. To learn more, includin
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
 ```
->**Note:** The request fails, if you don't pass the function parameter **meetingOrganizerUserId**.
+>**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**.
 
 ## Query parameters
 
