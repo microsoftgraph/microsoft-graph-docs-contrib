@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Initial response
 
-The response includes two call recordings and an **@odata.nextLink** response header with a `skipToken`. The **@odata.nextLink** URL indicates there are more call recordings to retrieve.
+The response includes two call recordings and an **@odata.nextLink** response header with a `skipToken`. The **@odata.nextLink** URL indicates that more call recordings are available to retrieve.
 
 <!-- {
   "blockType": "response",
@@ -145,7 +145,7 @@ $skiptoken={skipToken1}
 
 #### Second response
 
-The second response returns one or more next call recordings and an **@odata.nextLink** property with a `skipToken` that indicates there are more recordings.
+The second response returns one or more next call recordings and an **@odata.nextLink** property with a `skipToken` that indicates that more recordings are available.
 
 <!-- {
   "blockType": "response",
