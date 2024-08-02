@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Get a set of [callRecording](../resources/callrecording.md) resources added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.
 
-Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 A GET request with the delta function returns one of the following:
 
-- A **@odata.nextLink** that contains a URL with a **delta** function call and a `skipToken`.
-- A **@odata.deltaLink** that contains a URL with a **delta** function call and `deltaToken`.
+- An **@odata.nextLink** that contains a URL with a **delta** function call and a `skipToken`.
+- An **@odata.deltaLink** that contains a URL with a **delta** function call and `deltaToken`.
 
-State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call for that same recording view. A **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you start the next round of synchronization to get the new recordings added after you acquire **@odata.deltaLink**.
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call for that same recording view. An **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you start the next round of synchronization to get the new recordings added after you acquire **@odata.deltaLink**.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Initial response
 
-The response includes two call recordings and a **@odata.nextLink** response header with a `skipToken`. The **@odata.nextLink** URL indicates there are more call recordings to retrieve.
+The response includes two call recordings and an **@odata.nextLink** response header with a `skipToken`. The **@odata.nextLink** URL indicates there are more call recordings to retrieve.
 
 <!-- {
   "blockType": "response",
