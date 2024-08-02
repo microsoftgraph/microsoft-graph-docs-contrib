@@ -49,6 +49,7 @@ POST /sites/{site-id}/pages
 In the request body, supply a JSON representation of the [newsLinkPage](../resources/newsLinkPage.md) object.
 
 > **Notes:**
+>
 > 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
 > 2. Currently, to set the bannerImageWebUrl, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
 
@@ -70,7 +71,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "ignored", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/sites/{id}/pages
