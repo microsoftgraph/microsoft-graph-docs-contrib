@@ -2145,10 +2145,13 @@
                 },
                 {
                   "name": "Microsoft Entra health",
-                  "resources": [
-                    "azureADAuthentication"
-                  ],
                   "childNodes": [
+                    {
+                      "name": "SLA Attainment",
+                      "resources": [
+                        "azureADAuthentication"
+                      ]
+                    },
                     {
                       "name": "Microsoft Entra health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
