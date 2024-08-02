@@ -34,6 +34,16 @@ windowsSetting := graphmodels.NewCloudPcWindowsSetting()
 locale := "en-US"
 windowsSetting.SetLocale(&locale) 
 requestBody.SetWindowsSetting(windowsSetting)
+microsoftManagedDesktop := graphmodels.NewMicrosoftManagedDesktop()
+managedType := graphmodels.STARTERMANAGED_MICROSOFTMANAGEDDESKTOPTYPE 
+microsoftManagedDesktop.SetManagedType(&managedType) 
+profile := null
+microsoftManagedDesktop.SetProfile(&profile) 
+requestBody.SetMicrosoftManagedDesktop(microsoftManagedDesktop)
+autopatch := graphmodels.NewCloudPcProvisioningPolicyAutopatch()
+autopatchGroupId := "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+autopatch.SetAutopatchGroupId(&autopatchGroupId) 
+requestBody.SetAutopatch(autopatch)
 additionalData := map[string]interface{}{
 	"onPremisesConnectionId" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff", 
 }

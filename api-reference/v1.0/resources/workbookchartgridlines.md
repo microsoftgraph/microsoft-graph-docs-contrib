@@ -19,13 +19,13 @@ Represents major or minor gridlines on a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |Read properties and relationships of chartGridlines object.|
-|[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](workbookchartgridlines.md)	|Update ChartGridlines object. |
+|[Get](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |Read the properties and relationships of a chartGridlines object.|
+|[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](workbookchartgridlines.md)	|Update a chartGridlines object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Boolean value representing if the axis gridlines are visible or not.|
+|visible|boolean|Indicates whether the axis gridlines are visible.|
 
 ## Relationships
 | Relationship | Type	|Description|
