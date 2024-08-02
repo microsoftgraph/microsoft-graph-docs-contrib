@@ -2,7 +2,7 @@
 title: "updateDefinitionValues action"
 description: "Intune Grouppolicy Grouppolicyconfiguration Updatedefinitionvalues Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

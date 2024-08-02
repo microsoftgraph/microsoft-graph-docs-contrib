@@ -2,7 +2,7 @@
 title: "winGetAppNotification enum type"
 description: "Contains value for notification status."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

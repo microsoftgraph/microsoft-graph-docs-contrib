@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationChoiceSettingCollectionDefinition resource type"
 description: "Not yet documented"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

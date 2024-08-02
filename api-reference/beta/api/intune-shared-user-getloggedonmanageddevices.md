@@ -2,7 +2,7 @@
 title: "getLoggedOnManagedDevices function"
 description: "Intune Shared User Getloggedonmanageddevices Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

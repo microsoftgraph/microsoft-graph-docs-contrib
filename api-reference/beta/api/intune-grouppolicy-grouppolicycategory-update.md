@@ -2,7 +2,7 @@
 title: "Update groupPolicyCategory"
 description: "Update the properties of a groupPolicyCategory object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

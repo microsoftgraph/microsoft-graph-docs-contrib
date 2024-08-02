@@ -2,7 +2,7 @@
 title: "deviceScopeActionStatus enum type"
 description: "Indicates the status of the attempted device scope action"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "setPriority action"
 description: "Intune Shared Deviceenrollmentconfiguration Setpriority Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

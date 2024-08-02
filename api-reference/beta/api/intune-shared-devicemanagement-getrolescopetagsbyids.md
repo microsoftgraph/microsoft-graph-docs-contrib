@@ -2,7 +2,7 @@
 title: "getRoleScopeTagsByIds function"
 description: "Intune Shared Devicemanagement Getrolescopetagsbyids Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

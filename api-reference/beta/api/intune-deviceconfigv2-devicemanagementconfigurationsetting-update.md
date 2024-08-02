@@ -2,7 +2,7 @@
 title: "Update deviceManagementConfigurationSetting"
 description: "Update the properties of a deviceManagementConfigurationSetting object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
