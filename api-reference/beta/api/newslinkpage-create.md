@@ -74,10 +74,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ```http
 POST https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages
-
-Prefer: include-unknown-enum-members
 Content-Type: multipart/form-data; boundary=---------------------------acebdf13572468
-Content-Length: 1520421
 
 ---------------------------acebdf13572468
 Content-Disposition: form-data; name="request"
