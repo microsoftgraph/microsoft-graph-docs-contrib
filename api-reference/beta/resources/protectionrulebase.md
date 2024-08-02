@@ -25,7 +25,7 @@ The following are the limitations of protectionRuleBase:
 
 - The protection rule APIs for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
 - The protection rule APIs for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time.
-- These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. Groups or list won't be dynamically updated in the system if users are added or removed from the original security group, for example.
+- The rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
 
 ## Properties
 
