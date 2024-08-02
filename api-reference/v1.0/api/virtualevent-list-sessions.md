@@ -1,5 +1,5 @@
 ---
-title: "List sessions"
+title: "List virtualEventSessions"
 description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
