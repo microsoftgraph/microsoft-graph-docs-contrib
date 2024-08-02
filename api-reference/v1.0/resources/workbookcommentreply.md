@@ -18,16 +18,17 @@ Represents a reply to an Excel comment.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects. |
-| [Get reply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read properties and relationships of workbookCommentReply object. |
-| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply. |
+| [List](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a list of comment replies. |
+| [Create](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new comment reply. |
+| [Get](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read the properties and relationships of a reply. |
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of a comment reply.|
-|contentType|String|Indicates the type for the comment reply.|
-|id|String|Represents the comment identifier. Read-only.|
+|content|String|The content of the reply.|
+|contentType|String|The content type for the reply.|
+|id|String|The unique identifier for the reply. Read-only.|
 
 
 ## Relationships

@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |[List shared use service plans](../api/virtualendpoint-list-shareduseserviceplans.md) (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|List properties and relationships of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects.|
 |[List bulk actions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
 |[Create bulk action](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
-|[Retrieve tenant encryption setting](../api/virtualEndpoint-retrieveTenantEncryptionSetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md)|Retrieve the [cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) associated with the current authenticated user.|
+|[Retrieve tenant encryption setting](../api/virtualendpoint-retrievetenantencryptionsetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md)|Retrieve the [cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) associated with the current authenticated user.|
 
 ## Properties
 

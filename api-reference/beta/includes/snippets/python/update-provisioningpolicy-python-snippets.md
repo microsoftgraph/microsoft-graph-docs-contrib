@@ -9,6 +9,9 @@ from msgraph_beta.generated.models.cloud_pc_provisioning_policy import CloudPcPr
 from msgraph_beta.generated.models.cloud_pc_provisioning_policy_image_type import CloudPcProvisioningPolicyImageType
 from msgraph_beta.generated.models.cloud_pc_windows_settings import CloudPcWindowsSettings
 from msgraph_beta.generated.models.cloud_pc_windows_setting import CloudPcWindowsSetting
+from msgraph_beta.generated.models.microsoft_managed_desktop import MicrosoftManagedDesktop
+from msgraph_beta.generated.models.microsoft_managed_desktop_type import MicrosoftManagedDesktopType
+from msgraph_beta.generated.models.cloud_pc_provisioning_policy_autopatch import CloudPcProvisioningPolicyAutopatch
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -24,6 +27,13 @@ request_body = CloudPcProvisioningPolicy(
 	),
 	windows_setting = CloudPcWindowsSetting(
 		locale = "en-US",
+	),
+	microsoft_managed_desktop = MicrosoftManagedDesktop(
+		managed_type = MicrosoftManagedDesktopType.StarterManaged,
+		profile = None,
+	),
+	autopatch = CloudPcProvisioningPolicyAutopatch(
+		autopatch_group_id = "91197a0b-3a74-408d-ba88-bce3fdc4e5eb",
 	),
 	additional_data = {
 			"on_premises_connection_id" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
