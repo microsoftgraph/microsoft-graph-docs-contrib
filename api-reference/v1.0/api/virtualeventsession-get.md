@@ -10,7 +10,11 @@ doc_type: apiPageType
 # Get virtualEventSession
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.
+Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. 
+
+Currently, the following virtual event types are supported: 
+- [virtualEventTownhall](../resources/virtualeventtownhall.md)
+- [virtualEventWebinar](../resources/virtualeventwebinar.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,14 +31,24 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To get a session of a webinar:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-To get a session of a webinar:
-
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
+```
+
+To get a session of a town hall:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
 ```
 
 ## Optional query parameters
@@ -62,7 +76,8 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventsession"
+  "name": "get_virtualeventsession",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942"]
 }
 -->
 ``` http
