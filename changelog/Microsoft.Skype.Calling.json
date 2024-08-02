@@ -222,9 +222,9 @@
       "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-07-04T15:26:51.6498509Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "CreatedDateTime": "2024-08-01T15:26:51.6498509Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
