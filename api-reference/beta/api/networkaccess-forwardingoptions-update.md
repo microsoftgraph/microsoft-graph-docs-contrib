@@ -46,7 +46,7 @@ PATCH /networkAccess/settings/forwardingOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|signalingStatus|microsoft.graph.networkaccess.status|The skipDnsLookupState flag is a boolean value that determines whether DNS lookup should be performed at the client-side. When this flag is enabled (true), DNS lookup is skipped, and Microsoft 365 (M365) traffic is directly forwarded to the Front Door using the client-resolved destination IP address. The possible values are: `enabled`, `disabled`. Required.|
+|signalingStatus|microsoft.graph.networkaccess.status|The skipDnsLookupState flag is a Boolean value that determines whether DNS lookup should be performed at the client-side. When this flag is enabled (true), DNS lookup is skipped, and Microsoft 365 (M365) traffic is directly forwarded to the Front Door using the client-resolved destination IP address. The possible values are: `enabled`, `disabled`. Required.|
 
 
 

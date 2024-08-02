@@ -2,7 +2,7 @@
 title: "ratingUnitedKingdomTelevisionType enum type"
 description: "TV content rating labels in United Kingdom"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "serviceNowConnection resource type"
 description: "ServiceNow properties including the ServiceNow instanceUrl, connection credentials and other metadata."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

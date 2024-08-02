@@ -945,6 +945,8 @@ items:
           href: ../../api/identitygovernance-deleteditemcontainer-get.md
         - name: Restore
           href: ../../api/identitygovernance-workflow-restore.md
+        - name: Permanently delete
+          href: ../../api/identitygovernance-deleteditemcontainer-delete.md
       - name: Task
         items:
         - name: Task

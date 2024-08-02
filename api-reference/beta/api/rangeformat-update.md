@@ -45,7 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|Gets or sets the height of all rows in the range. When, the row heights aren't uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
-|wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
+|wrapText|Boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
 ## Response
 

@@ -2,7 +2,7 @@
 title: "removeDeviceFirmwareConfigurationInterfaceManagement action"
 description: "Remove device from Device Firmware Configuration Interface management"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

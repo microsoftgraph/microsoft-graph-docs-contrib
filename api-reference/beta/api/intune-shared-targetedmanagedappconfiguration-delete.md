@@ -2,7 +2,7 @@
 title: "Delete targetedManagedAppConfiguration"
 description: "Deletes a targetedManagedAppConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

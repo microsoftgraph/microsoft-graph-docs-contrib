@@ -2,7 +2,7 @@
 title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAnomalyDeviceFeatureType enum type"
 description: "Indicates the device's feature type. Possible values are: manufacturer, model, osVersion, application or driver."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

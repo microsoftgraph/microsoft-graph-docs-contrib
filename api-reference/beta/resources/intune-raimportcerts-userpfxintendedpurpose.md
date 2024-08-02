@@ -2,7 +2,7 @@
 title: "userPfxIntendedPurpose enum type"
 description: "Supported values for the intended purpose of a user PFX certificate."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
