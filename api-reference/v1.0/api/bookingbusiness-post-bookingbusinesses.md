@@ -32,7 +32,7 @@ POST /solutions/bookingBusinesses
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of a [bookingBusiness](../resources/bookingbusiness.md) object.

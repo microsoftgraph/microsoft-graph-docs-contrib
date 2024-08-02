@@ -36,7 +36,7 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ho
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
-|Authorization|Bearer {token}.| Required|
+|Authorization|Bearer {token}. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
