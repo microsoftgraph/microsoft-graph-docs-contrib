@@ -70,13 +70,10 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/179210c2-637e-4c61-8491-331d0d4a0c05/microsoft.graph.newsLinkPage
-Content-Type: application/json
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
+Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
-prefer: include-unknown-enum-members
-Content-Type: multipart/form-data; boundary=-------------------------acebdf13572468
-
----------------------------acebdf13572468
+--MyPartBoundary198374
 Content-Disposition:form-data; name="metadata"
 Content-Type: application/json
 
@@ -85,26 +82,27 @@ Content-Type: application/json
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
----------------------------acebdf13572468
+--MyPartBoundary198374
 Content-Disposition:form-data; name="content"
 Content-Type: image/jpeg
 
-The contents of the file goes here.
+... binary file data ...
 
----------------------------acebdf13572468--
+--MyPartBoundary198374--
 ```
-
 
 ### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.newsLinkPage"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
