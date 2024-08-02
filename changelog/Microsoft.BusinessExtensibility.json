@@ -107,6 +107,48 @@
       "CreatedDateTime": "2024-04-15T17:42:49.5069025Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": "Business scenarios"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Create** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Target": "POST"
+        },
+        {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Get** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Target": "GET"
+        },
+        {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Update** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Target": "PATCH"
+        },
+        {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Delete** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Target": "DELETE"
+        }
+      ],
+      "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-01T00:00:00.0000000Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": "Business scenarios"
     }
   ]
 }

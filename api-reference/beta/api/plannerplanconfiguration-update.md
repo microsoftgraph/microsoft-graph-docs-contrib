@@ -57,7 +57,7 @@ PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfig
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultLanguage|String|The language that should be used for creating plans when no language has been specified.|
-|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|Buckets that will be available in the plan.|
+|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|Buckets available in the plan.|
 |localizations|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Localized names for the plan configuration.|
 
 ## Response
