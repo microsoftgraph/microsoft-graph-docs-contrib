@@ -23,41 +23,41 @@ Choose the permission or permissions marked as least privileged for this API. Us
  <!-- { "blockType": "permissions", "name": "sitepage_createFromPageTemplate" } -->
 
 ## HTTP request
- 
+
 <!-- { "blockType": "ignored" } -->
- 
+
 ```http
 POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
 ```
 ## Request headers
- 
+
 | Name          | Description                 |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
- 
+
 ## Request body
- 
+
 These fields and be used in request payload.
- 
-| Property             | Type                                         | Description                                                                                                                                                                                                        |
+
+| Property             | Type                                         | Description                                                                                                                                                                                                      |
 | :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | title                | String                                         | Title of the site page template to be created.  Optional.                                                                                                                                                                                  |
 | name                 | String                                         | Name of the site page template to be created. Required.                                                                                                                          |
 | id                   | String                                         | Id of an existing page templated. Required.                                                                                                                          |
- 
+
 ## Response
- 
+
 If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
- 
+
 ## Example
- 
+
 The following example shows how to create a new page from the page template.
- 
+
 ### Request
 
 <!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
- 
+
 ```http
 POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/microsoft.graph.sitePage/createFromTemplate
 Content-Type: application/json
@@ -67,21 +67,21 @@ Content-Type: application/json
     "name": "Sample.aspx",
     "id": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
 }
- 
+
 ```
- 
+
 ### Response
- 
+
 The following example shows the response.
- 
+
 If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
- 
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
- 
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
- 
+
 {
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
@@ -125,11 +125,11 @@ Content-type: application/json
         "imageSourceType": 2
     }
 }
- 
+
 ```
- 
+
 **Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
- 
+
 <!--
 {
   "type": "#sitePage.annotation",
