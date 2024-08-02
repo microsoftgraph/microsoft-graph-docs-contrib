@@ -2,7 +2,7 @@
 title: "Delete androidForWorkCompliancePolicy"
 description: "Deletes a androidForWorkCompliancePolicy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

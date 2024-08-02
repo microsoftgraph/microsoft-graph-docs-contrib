@@ -25,7 +25,12 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 |orderHint|String|Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner-order-hint-format.md).|
 |title|String|Title of the checklist item|
 
+## Relationships
+
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
 
 <!-- {

@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+The **fido2AuthenticationMethod** resource is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's fido2AuthenticationMethod objects and their properties.|
+|[Create](../api/authentication-post-fido2methods.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object based on [WebAuthn W3C standards](https://www.w3.org/TR/webauthn-2/#iface-pkcredential).|
 |[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's fido2AuthenticationMethod object.|
 |[Delete](../api/fido2authenticationmethod-delete.md)|None|Deletes a user's fido2AuthenticationMethod object.|
+|[Creation options](../api/fido2authenticationmethod-creationoptions.md)|[webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md)|Retrieve creation options required to generate and register an Entra ID compatible passkey.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,17 +34,19 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|The authentication method identifier.|
 |displayName|String|The display name of the key as given by the user.|
 |createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
-|aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
+|aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
-|attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
+|attestationCertificates|String collection|The attestation certificate or certificates attached to this security key.|
 |attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, `notAttested`, `unknownFutureValue`.|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property isn't returned on read operations.|
 
 
 ## Relationships
 None.
 
+## JSON representation
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -62,7 +66,10 @@ The following is a JSON representation of the resource.
   "attestationCertificates": [
     "String"
   ],
-  "attestationLevel": "String"
+  "attestationLevel": "String",
+  "publicKeyCredential": {
+    "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
+  }
 }
 ```
 

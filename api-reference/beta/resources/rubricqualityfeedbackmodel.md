@@ -22,6 +22,10 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 |feedback|[itemBody](itembody.md)|Specific feedback for one quality of this rubric.|
 |qualityId|String|The ID of the [rubricQuality](rubricquality.md) that this feedback is related to.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

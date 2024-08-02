@@ -2,7 +2,7 @@
 title: "Get windowsPhone81CertificateProfileBase"
 description: "Read properties and relationships of the windowsPhone81CertificateProfileBase object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

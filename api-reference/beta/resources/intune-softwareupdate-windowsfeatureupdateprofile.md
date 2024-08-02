@@ -2,7 +2,7 @@
 title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

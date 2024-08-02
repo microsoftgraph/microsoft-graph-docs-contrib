@@ -2,7 +2,7 @@
 title: "windowsAutopilotUserlessEnrollmentStatus enum type"
 description: "Userless enrollment block status, indicating whether the next device enrollment will be blocked."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

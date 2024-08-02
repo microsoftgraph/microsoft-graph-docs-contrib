@@ -2,7 +2,7 @@
 title: "Delete windowsUpdateState"
 description: "Deletes a windowsUpdateState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

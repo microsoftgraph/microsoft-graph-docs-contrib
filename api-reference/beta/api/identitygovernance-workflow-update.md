@@ -51,7 +51,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |:---|:---|:---|
 |description|String|Describes the purpose of the workflow for administrative use.|
 |displayName|String|A unique string that identifies the workflow.|
-|isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
+|isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
 > [!NOTE]

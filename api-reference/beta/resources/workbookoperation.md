@@ -16,16 +16,16 @@ Represents the status of a long-running workbook operation.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Retrieve the status of a **workbookOperation** object. |
+| [Get](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get a workbookOperation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The operation ID. Read-only.|
-|status|String| The current status of the operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
+|id|String| The identifier for the operation. Read-only.|
 |resourceLocation|String| The resource URI for the result.|
+|status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |statusCode| integer| Status code of the operation. | 
 
 ## Relationships

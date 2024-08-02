@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationCheckBox"
 description: "Create a new groupPolicyPresentationCheckBox object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

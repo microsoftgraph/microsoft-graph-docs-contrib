@@ -25,10 +25,6 @@ This abstract type is inherited by the following derived types.
 
 Inherits from [entity](entity.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 |Property|Type|Description|
@@ -41,6 +37,7 @@ None.
 |id|String|Identifier for the customCalloutExtension object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation

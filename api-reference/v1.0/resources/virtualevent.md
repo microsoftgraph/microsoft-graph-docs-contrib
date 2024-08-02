@@ -11,36 +11,37 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a base virtual event. 
-
-This is an abstract type. The base type of [virtualEventWebinar](virtualEventWebinar.md).
+Represents an abstract base type for a virtual event. Base type of [virtualEventTownhall](virtualeventtownhall.md) and [virtualEventWebinar](virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
 > [!TIP]
-> This is an abstract type and can't be used directly. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
+> This is an abstract type and can't be used directly. Use the derived types [virtualEventTownhall](virtualeventtownhall.md) or [virtualEventWebinar](virtualeventwebinar.md) instead.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
-|displayName|String|Display name of the virtual event.|
-|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
-|id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
+|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|The identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
+|description|[itemBody](../resources/itembody.md)|A description of the virtual event.|
+|displayName|String|The display name of the virtual event. |
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The end time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
+|id|String|The unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
 |settings|[virtualEventSettings](../resources/virtualeventsettings.md)| The virtual event settings. |
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
-|status|virtualEventStatus|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+|status|virtualEventStatus|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|Sessions for the virtual event.|
+|presenters|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|The virtual event presenters.|
+|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|The sessions for the virtual event.|
+
 
 ## JSON representation
-The following JSON representation shows the resource type
+
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,13 +53,23 @@ The following JSON representation shows the resource type
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEvent",
-  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
-  "description": {"@odata.type": "microsoft.graph.itemBody"},
+  "createdBy": {
+    "@odata.type": "microsoft.graph.communicationsIdentitySet"
+  },
+  "description": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
   "displayName": "String",
-  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "endDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
   "id": "String (identifier)",
-  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "settings": {
+    "@odata.type": "microsoft.graph.virtualEventSettings"
+  },
+  "startDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
   "status": "String"
 }
 ```
