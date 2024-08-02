@@ -2,7 +2,7 @@
 title: "Create windowsPhone81AppXBundle"
 description: "Create a new windowsPhone81AppXBundle object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update userPFXCertificate"
 description: "Update the properties of a userPFXCertificate object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

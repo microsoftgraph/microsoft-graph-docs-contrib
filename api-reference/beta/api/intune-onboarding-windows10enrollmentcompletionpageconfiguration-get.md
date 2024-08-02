@@ -2,7 +2,7 @@
 title: "Get windows10EnrollmentCompletionPageConfiguration"
 description: "Read properties and relationships of the windows10EnrollmentCompletionPageConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

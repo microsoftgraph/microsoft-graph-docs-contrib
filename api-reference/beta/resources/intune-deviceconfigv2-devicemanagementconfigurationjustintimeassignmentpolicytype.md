@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationJustInTimeAssignmentPolicyType enum type"
 description: "Represents the type of target (i.e. unique identifier of Entra Security Group) used to create the just-in-time assignment."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

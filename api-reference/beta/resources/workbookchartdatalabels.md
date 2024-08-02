@@ -29,12 +29,12 @@ Represents a collection of all the data labels on a chart point.
 |:---------------|:--------|:----------|
 |position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|String that represents the separator used for the data labels on a chart.|
-|showBubbleSize|boolean|Boolean value that represents whether the data label bubble size is visible.|
-|showCategoryName|boolean|Boolean value that represents whether the data label category name is visible.|
-|showLegendKey|boolean|Boolean value that represents whether the data label legend key is visible.|
-|showPercentage|boolean|Boolean value that represents whether the data label percentage is visible.|
-|showSeriesName|boolean|Boolean value that represents whether the data label series name is visible.|
-|showValue|boolean|Boolean value that represents whether the data label value is visible.|
+|showBubbleSize|Boolean|Boolean value that represents whether the data label bubble size is visible.|
+|showCategoryName|Boolean|Boolean value that represents whether the data label category name is visible.|
+|showLegendKey|Boolean|Boolean value that represents whether the data label legend key is visible.|
+|showPercentage|Boolean|Boolean value that represents whether the data label percentage is visible.|
+|showSeriesName|Boolean|Boolean value that represents whether the data label series name is visible.|
+|showValue|Boolean|Boolean value that represents whether the data label value is visible.|
 
 ## Relationships
 | Relationship | Type	|Description|

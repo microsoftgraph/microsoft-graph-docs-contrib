@@ -2,7 +2,7 @@
 title: "deviceIdentityAttestationDetail resource type"
 description: "Indicates the attestation status of the managed device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

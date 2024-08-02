@@ -2,7 +2,7 @@
 title: "androidForWorkImportedPFXCertificateProfile resource type"
 description: "Android For Work PFX Import certificate profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

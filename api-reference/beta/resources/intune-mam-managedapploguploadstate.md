@@ -2,7 +2,7 @@
 title: "managedAppLogUploadState enum type"
 description: "Represents the current status of the associated `managedAppLogCollectionRequest`."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

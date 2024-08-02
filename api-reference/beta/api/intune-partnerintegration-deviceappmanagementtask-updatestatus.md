@@ -2,7 +2,7 @@
 title: "updateStatus action"
 description: "Set the task's status and attach a note."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

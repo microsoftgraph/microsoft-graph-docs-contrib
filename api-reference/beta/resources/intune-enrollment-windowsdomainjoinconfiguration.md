@@ -2,7 +2,7 @@
 title: "windowsDomainJoinConfiguration resource type"
 description: "Intune Enrollment Windowsdomainjoinconfiguration Source_Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

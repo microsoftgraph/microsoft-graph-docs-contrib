@@ -2,7 +2,7 @@
 title: "user resource type"
 description: "Intune Onboarding User Source_Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
