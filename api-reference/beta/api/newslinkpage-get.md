@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "newslinkpage-get-permissions"
+  "name": "newslinkpage_get"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/newslinkpage-get-permissions.md)]
@@ -67,15 +67,15 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 <!--{
   "blockType": "request",
   "name": "get-newslinkpage",
-  "scopes": "sites.read.all",
-  "tags": "service.sharepoint"
+  "scopes": "sites.read.all"
 }
 -->
 
-```msgraph-interactive
+```http
 GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/cb9c62e1-07da-46ec-88dc-aed1d5164727/microsoft.graph.newsLinkPage
 prefer: include-unknown-enum-members
 ```
+---
 
 ### Response
 

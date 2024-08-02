@@ -70,7 +70,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create_newslinkpage", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages
@@ -98,6 +98,8 @@ The contents of the file goes here.
 
 ---------------------------acebdf13572468--
 ```
+
+---
 
 ### Response
 
