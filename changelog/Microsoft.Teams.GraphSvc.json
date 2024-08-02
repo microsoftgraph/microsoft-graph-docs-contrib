@@ -1715,6 +1715,48 @@
     {
       "ChangeList": [
         {
+          "Id": "00ff750d-f762-4649-884c-508896b6c7b2",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllTranscripts?view=graph-rest-1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "00ff750d-f762-4649-884c-508896b6c7b2",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRecordings",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllRecordings?view=graph-rest-1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "00ff750d-f762-4649-884c-508896b6c7b2",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/callTranscript-delta?view=graph-rest-1.0) method to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "00ff750d-f762-4649-884c-508896b6c7b2",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/callRecording-delta?view=graph-rest-1.0) method to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callrecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        }
+      ],
+      "Id": "00ff750d-f762-4649-884c-508896b6c7b2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-10T12:00:00.0154606Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d51c4dba-957b-47a8-9eb5-be042d0519fd",
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingTranscript.Read.Chat",
