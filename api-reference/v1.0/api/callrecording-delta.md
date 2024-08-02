@@ -15,12 +15,12 @@ Get a set of [callRecording](../resources/callrecording.md) resources added for 
 
 Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
-A GET request with the delta function returns either:
+A GET request with the delta function returns one of the following:
 
-- A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
-- A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
+- A **@odata.nextLink** that contains a URL with a **delta** function call and a `skipToken`.
+- A **@odata.deltaLink** that contains a URL with a **delta** function call and `deltaToken`.
 
-State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next **delta** function call for that same recording view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you start the next round of synchronization to get the new recordings added after acquiring `@odata.deltaLink`.
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call for that same recording view. A **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you start the next round of synchronization to get the new recordings added after you acquire **@odata.deltaLink**.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -28,7 +28,7 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 The following known issues are associated with this API:
 
-- [Using the `$top` query parameter might not return the @odata.nextLink](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
+- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
 - [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
 - [Recordings aren't exported for meetings that don't have transcription turned on](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933).
 - [Delta queries might return older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
@@ -48,19 +48,19 @@ The following permissions are required to call this API. To learn more, includin
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
 ```
->**Note:** If you don't pass the function parameter **meetingOrganizerUserId**, the request fails.
+>**Note:** The request fails, if you don't pass the function parameter **meetingOrganizerUserId**.
 
 ## Query parameters
 
-Tracking changes in call recordings incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+Tracking changes in call recordings incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltaToken` and `$skipToken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the **@odata.nextLink** or **@odata.deltaLink** URL provided in the response.
 
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded parameters.
+In subsequent requests, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL from the previous response, as that URL already includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
-| `$top` |     integer     | Allows the caller to specify the maximum number of objects per page. |
+| `$deltaToken` | String | A [state token](/graph/delta-query-overview) returned in the **@odata.deltaLink** URL of the previous **delta** function call that indicates the completion of that round of change tracking. Save and apply the entire **@odata.deltaLink** URL including this token in the first request of the next round of change tracking for that collection.|
+| `$skipToken` | String | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call that indicates that there are further changes to be tracked. |
+| `$top` |     Integer     | Allows the caller to specify the maximum number of objects per page. |
 
 ## Request headers
 
@@ -70,7 +70,7 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body. The response also includes an `@odata.nextLink` URL or an `@odata.deltaLink` URL.
+If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body. The response also includes an **@odata.nextLink** URL or an **@odata.deltaLink** URL.
 
 ## Examples
 
@@ -86,7 +86,7 @@ See also what you'll do in the [next round to get more recordings](#example-2-ne
 
 #### Initial request
 
-In this example, the call recordings are being synchronized for the first time, so the initial sync request doesn't include any state token. This round returns all recordings available at the time.
+In this example, the call recordings synchronize for the first time and the initial sync request doesn't include any state token. This round returns all recordings available at the time.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -95,13 +95,12 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Initial response
 
-The response includes two call recordings and a `@odata.nextLink` response header with a `skipToken`. The `@odata.nextLink` URL indicates there are more call recordings to retrieve.
+The response includes two call recordings and a **@odata.nextLink** response header with a `skipToken`. The **@odata.nextLink** URL indicates there are more call recordings to retrieve.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -136,7 +135,7 @@ Content-type: application/json
 
 #### Second request
 
-The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify the same query parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
+The second request specifies the **@odata.nextLink** URL returned from the previous response. Notice that it no longer has to specify the same query parameters as in the initial request, as the `skipToken` in the **@odata.nextLink** URL encodes and includes them.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -146,13 +145,12 @@ $skiptoken={skipToken1}
 
 #### Second response
 
-The second response returns one or more next call recordings and a `@odata.nextLink` property with a `skipToken`, which indicates there are more recordings.
+The second response returns one or more next call recordings and an **@odata.nextLink** property with a `skipToken` that indicates there are more recordings.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -187,7 +185,7 @@ Content-type: application/json
 
 #### Third request
 
-The third request continues to use the latest `@odata.nextLink` returned from the last sync request.
+The third request continues to use the latest **@odata.nextLink** returned from the last sync request.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -196,13 +194,12 @@ GET https://graph.microsoft.com/v1.0/users({userId})/onlineMeetings/getAllRecord
 
 #### Third and final response for the round
 
-The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken`, which indicates that all recordings are returned. Save and use the `@odata.deltaLink` URL to query for any new recording that is added from this point onwards.
+The third response returns the only remaining recordings and an **@odata.deltaLink** property with a `deltaToken` that indicates that all recordings are returned. Save and use the **@odata.deltaLink** URL to query for any new recording that is added from this point onwards.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -237,7 +234,7 @@ Content-type: application/json
 
 ### Example 2: Next round to get more recordings
 
-Using the `@odata.deltaLink` from the last request in the last round, you can get only those recordings added since the `@odata.deltaLink` was acquired.
+Using the **@odata.deltaLink** from the last request in the last round, you can get only those recordings added since the **@odata.deltaLink** was acquired.
 
 #### Request
 The following example shows a request.
@@ -254,8 +251,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
