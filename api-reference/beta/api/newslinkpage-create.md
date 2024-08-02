@@ -74,9 +74,9 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ```http
 POST https://graph.microsoft.com/beta/sites/{id}/pages
-Content-type: multipart/form-data; boundary=198374
+Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
---198374
+--MyPartBoundary198374
 Content-Disposition: form-data; name="request"
 Content-Type: application/json
 
@@ -88,13 +88,13 @@ Content-Type: application/json
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
---198374
+--MyPartBoundary198374
 Content-Disposition: form-data; name="content"; filename="b3.jpg"
 Content-Type: image/jpeg
 
 ... binary image data ...
 
---198374--
+--MyPartBoundary198374--
 ```
 
 ---
