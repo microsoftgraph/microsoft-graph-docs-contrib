@@ -1,5 +1,5 @@
 ---
-title: "Create question"
+title: "Create virtualEventRegistrationCustomQuestion"
 description: "Create a registration question for a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create question
+# Create virtualEventRegistrationCustomQuestion
 Namespace: microsoft.graph
 
 Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).
