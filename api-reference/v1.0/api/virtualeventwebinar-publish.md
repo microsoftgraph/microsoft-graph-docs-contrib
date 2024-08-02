@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Publish a virtual event webinar
+# virtualEventWebinar: publish
 Namespace: microsoft.graph
 
 Publish a [virtualEventWebinar](../resources/virtualeventwebinar.md) to make it visible to its audience.

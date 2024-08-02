@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Cancel a virtual event webinar
+# virtualEventWebinar: cancel
 Namespace: microsoft.graph
 
 Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.

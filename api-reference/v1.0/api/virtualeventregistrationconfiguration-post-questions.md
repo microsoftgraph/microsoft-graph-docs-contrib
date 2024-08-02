@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create a registration question for a virtual event
+# Create question
 Namespace: microsoft.graph
 
 Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).

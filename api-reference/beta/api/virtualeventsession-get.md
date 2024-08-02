@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get a session for a virtual event
+# Get virtualEventSession
 
 Namespace: microsoft.graph
 

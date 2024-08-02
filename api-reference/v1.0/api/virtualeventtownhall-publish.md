@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Publish a virtual event townhall
+# virtualEventTownhall: publish
 Namespace: microsoft.graph
 
 Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md) to make it visible to its audience.

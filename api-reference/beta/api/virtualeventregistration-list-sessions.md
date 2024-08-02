@@ -1,5 +1,5 @@
 ---
-title: "List sessions"
+title: "List sessions for virtualEventRegistration"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions 
+# List sessions for virtualEventRegistration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

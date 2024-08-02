@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create a registration record for a virtual event webinar
+# Create virtualEventRegistration
 Namespace: microsoft.graph
 
 Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 

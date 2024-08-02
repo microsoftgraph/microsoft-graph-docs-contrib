@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Cancel a virtual event townhall
+# virtualEventTownhall: cancel
 Namespace: microsoft.graph
 
 Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled town hall has its **status** set to `canceled` permanently. You can still get a canceled town hall by using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) API.

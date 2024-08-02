@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update a virtual event webinar
+# Update virtualEventWebinar
 Namespace: microsoft.graph
 
 Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.

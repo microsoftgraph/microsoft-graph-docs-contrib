@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Cancel a registration for a virtual event
+# virtualEventRegistration: cancel
 Namespace: microsoft.graph
 
 Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 

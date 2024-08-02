@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
-# List presenters for a virtual event
+# List presenters
 
 Namespace: microsoft.graph
 

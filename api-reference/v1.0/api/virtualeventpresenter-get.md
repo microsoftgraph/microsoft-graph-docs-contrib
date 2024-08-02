@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get a presenter for a virtual event
+# Get virtualEventPresenter
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.

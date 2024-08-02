@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete a registration question for a virtual event
+# Delete virtualEventRegistrationQuestionBase
 Namespace: microsoft.graph
 
 Delete a registration question from a [webinar](../resources/virtualeventwebinar.md). The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 

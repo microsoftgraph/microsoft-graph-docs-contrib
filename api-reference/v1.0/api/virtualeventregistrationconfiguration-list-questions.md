@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List registration questions for a virtual event
+# List questions
 Namespace: microsoft.graph
 
 Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).

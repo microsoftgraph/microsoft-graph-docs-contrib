@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update a virtual event townhall
+# Update virtualEventTownhall
 Namespace: microsoft.graph
 
 Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
