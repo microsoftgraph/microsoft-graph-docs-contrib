@@ -38,7 +38,7 @@ POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/saveAsTemplate
 ## Request body
 
 These fields and be used in request payload.
- 
+
 | Property             | Type                                         | Description                                                                                                                                                                                                      |
 | :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | title                | String                                       | Title of the site page template to be created.  Optional.                                                                                                                                                                                  |
@@ -62,7 +62,7 @@ Content-Type: application/json
 
 {
   "title": "SampleTitle",
-  "name" ："SampleTemplate.aspx"
+  "name": "SampleTemplate.aspx"
 }
 
 ```
