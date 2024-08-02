@@ -122,7 +122,7 @@ Content-type: application/json
 
 ### Example 2: Get all recordings of a given meeting organizer with date range filter
 
-The following example shows a request to get all recordings of a given meeting organizer, that are created between a given start date and an end date.
+The following example shows a request to get all recordings of a given meeting organizer that are created between a given start date and an end date.
 
 #### Request
 
