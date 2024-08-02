@@ -2,7 +2,7 @@
 title: "List deviceConfigurations"
 description: "List properties and relationships of the deviceConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device configuration** |DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

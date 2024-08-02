@@ -2,7 +2,7 @@
 title: "macOSTrustedRootCertificate resource type"
 description: "OS X Trusted Root Certificate configuration profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -21,9 +21,13 @@ A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) th
 |:---------------|:--------|:----------|
 |userId|String|User ID of the user to whom the submission is assigned.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

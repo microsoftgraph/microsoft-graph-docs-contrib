@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [sharepointprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
+Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [siteprotectionunit](../resources/siteprotectionunit.md) to or removes it from the protection policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/sharepointprotectionpolicy-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointprotectionpolicy-update-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

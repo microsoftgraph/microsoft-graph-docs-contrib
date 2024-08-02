@@ -1,5 +1,5 @@
 ---
-title: "List sessions"
+title: "List sessions for a virtual event registration"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,8 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions 
+# List sessions for a virtual event registration
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +22,8 @@ Get a list of [sessions](../resources/virtualeventsession.md) that a registrant 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",

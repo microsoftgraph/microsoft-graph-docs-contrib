@@ -2,7 +2,7 @@
 title: "Update iosLobAppProvisioningConfiguration"
 description: "Update the properties of a iosLobAppProvisioningConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Apps** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementApps.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

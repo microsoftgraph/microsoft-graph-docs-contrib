@@ -2,7 +2,7 @@
 title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

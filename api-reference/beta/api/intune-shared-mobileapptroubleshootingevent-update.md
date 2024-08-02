@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppTroubleshootingEvent"
 description: "Describes the Update mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jaiprakashmb"
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

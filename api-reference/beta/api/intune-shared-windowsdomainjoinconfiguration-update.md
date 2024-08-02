@@ -2,7 +2,7 @@
 title: "Update windowsDomainJoinConfiguration"
 description: "Update the properties of a windowsDomainJoinConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 

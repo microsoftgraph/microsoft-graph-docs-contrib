@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationValue"
 description: "Create a new groupPolicyPresentationValue object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

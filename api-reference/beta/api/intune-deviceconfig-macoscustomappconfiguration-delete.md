@@ -2,7 +2,7 @@
 title: "Delete macOSCustomAppConfiguration"
 description: "Deletes a macOSCustomAppConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -25,6 +25,15 @@ var requestBody = new CloudPcProvisioningPolicy
 	{
 		Locale = "en-US",
 	},
+	MicrosoftManagedDesktop = new MicrosoftManagedDesktop
+	{
+		ManagedType = MicrosoftManagedDesktopType.StarterManaged,
+		Profile = null,
+	},
+	Autopatch = new CloudPcProvisioningPolicyAutopatch
+	{
+		AutopatchGroupId = "91197a0b-3a74-408d-ba88-bce3fdc4e5eb",
+	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

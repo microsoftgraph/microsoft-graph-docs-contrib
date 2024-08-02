@@ -11,15 +11,13 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> entity is a collection of **passwordCredential** objects.
+Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **passwordCredential** objects.
 
-> [!IMPORTANT]
-> Using POST or PATCH to set the **passwordCredential** property is not supported. Use the following addPassword and removePassword methods to update the password or secret for an application or a servicePrincipal:
->
-> - [application: addPassword](../api/application-addpassword.md)
-> - [application: removePassword](../api/application-removepassword.md)
-> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
-> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
+To update the **passwordCredential** property, use the following methods:
+- [application: addPassword](../api/application-addpassword.md)
+- [application: removePassword](../api/application-removepassword.md)
+- [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+- [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 
 ## Properties
 | Property	   | Type	|Description|
@@ -48,7 +46,7 @@ Represents a password credential associated with an application or a service pri
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

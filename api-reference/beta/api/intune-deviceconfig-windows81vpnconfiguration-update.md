@@ -2,7 +2,7 @@
 title: "Update windows81VpnConfiguration"
 description: "Update the properties of a windows81VpnConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

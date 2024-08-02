@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new TenantAppManagementPolicy
 {
 	IsEnabled = true,
-	ApplicationRestrictions = new AppManagementConfiguration
+	ApplicationRestrictions = new AppManagementApplicationConfiguration
 	{
 		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{

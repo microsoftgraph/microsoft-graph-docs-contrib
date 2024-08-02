@@ -2,7 +2,7 @@
 title: "Delete deviceManagementScriptDeviceState"
 description: "Deletes a deviceManagementScriptDeviceState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

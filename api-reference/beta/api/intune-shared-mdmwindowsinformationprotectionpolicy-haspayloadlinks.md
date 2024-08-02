@@ -2,7 +2,7 @@
 title: "hasPayloadLinks action"
 description: "Intune Shared Mdmwindowsinformationprotectionpolicy Haspayloadlinks Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
         ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {

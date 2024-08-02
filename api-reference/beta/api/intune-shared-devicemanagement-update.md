@@ -2,7 +2,7 @@
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
         ## Permissions
 
@@ -70,6 +68,8 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 <!-- {
