@@ -59,7 +59,7 @@ In subsequent requests, copy and apply the **@odata.nextLink** or **@odata.delta
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 | `$deltaToken` | String | A [state token](/graph/delta-query-overview) returned in the **@odata.deltaLink** URL of the previous **delta** function call that indicates the completion of that round of change tracking. Save and apply the entire **@odata.deltaLink** URL including this token in the first request of the next round of change tracking for that collection.|
-| `$skipToken` | String | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call that indicates that there are further changes to be tracked. |
+| `$skipToken` | String | A [state token](/graph/delta-query-overview) returned in the **@odata.nextLink** URL of the previous **delta** function call that indicates that there are further changes to be tracked. |
 | `$top` |     Integer     | Allows the caller to specify the maximum number of objects per page. |
 
 ## Request headers
