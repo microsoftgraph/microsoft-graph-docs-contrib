@@ -2,7 +2,7 @@
 title: "Create mdmWindowsInformationProtectionPolicy"
 description: "Create a new mdmWindowsInformationProtectionPolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

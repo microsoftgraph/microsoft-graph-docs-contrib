@@ -2,7 +2,7 @@
 title: "windows10NetworkBoundaryConfiguration resource type"
 description: "Windows10 Network Boundary Configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

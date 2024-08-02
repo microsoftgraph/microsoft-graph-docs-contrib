@@ -2,7 +2,7 @@
 title: "deviceManagement resource type"
 description: "Singleton entity that acts as a Container for all device management functionality"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

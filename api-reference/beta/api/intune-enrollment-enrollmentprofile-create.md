@@ -2,7 +2,7 @@
 title: "Create enrollmentProfile"
 description: "Create a new enrollmentProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

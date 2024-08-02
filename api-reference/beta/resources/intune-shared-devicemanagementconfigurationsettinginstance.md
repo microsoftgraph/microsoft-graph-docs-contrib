@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingInstance resource type"
 description: "Setting instance within policy"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

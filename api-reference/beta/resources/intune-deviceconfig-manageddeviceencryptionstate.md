@@ -2,7 +2,7 @@
 title: "managedDeviceEncryptionState resource type"
 description: "Encryption report per device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Create deviceManagementConfigurationCategory"
 description: "Create a new deviceManagementConfigurationCategory object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

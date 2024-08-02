@@ -76,9 +76,9 @@ The following table shows the properties of the [group](../resources/group.md) r
 | displayName | string | The name to display in the address book for the group. Required. |
 | description | string | A description for the group. Optional. |
 | isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Privileged Role Administrator is the least privileged role to set the value of this property. Optional. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
+| mailEnabled | Boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
+| securityEnabled | Boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
