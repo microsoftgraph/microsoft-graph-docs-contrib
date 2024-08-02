@@ -148,12 +148,12 @@ Content-Type: application/json
 
 The following limits apply to all API calls:
 
-- The SharePoint sites and OneDrive accounts being restored to a prior point in time aren't locked in a ready-only state.
-- The new URLs of the restored SharePoint sites/OneDrive users (new URLs only) don't have the same permission as original site. Only the global admin(or SharePoint Admin for SharePoint/OneDrive & Exchange Admin for Exchange) is given permission to the restored site. However, for the in-place or same URL restore, permission is reverted to the state of the original site at the time it's being restored from.
-- Restoration of SharePoint sites/OneDrive users content deleted beyond recycle bin isn't supported.
-- For restores to a new URL, only the admin who executed the restore has ownership permissions for the restored SharePoint sites or OneDrive accounts in the new URLs. Restores to the same URL reverts permissions to their original state. We might decide to change this behavior in the future.
-- Mailboxes, OneDrive accounts, and SharePoint sites that are under legal or in-place holds currently can't be restored unless the destination is removed from legal hold. To restore a SharePoint site under legal hold, you need to restore the site to a new URL.
-- Mailbox draft items aren't backed up or restorable.
-- There's no restore performed if the current state of mailbox is same as the point in time you're trying to restore it to.
-- SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually.
-- The global admin(or SharePoint Admin for SharePoint/OneDrive & Exchange Admin for Exchange) can initiate restore of up to 1000 SharePoint sites, 1,000 OneDrive users, and/or 1000 mailboxes queued in parallel at a time.
+- The SharePoint sites and OneDrive accounts being restored aren't locked in a ready-only state.
+- For SharePoint sites restored to new URLs, OneDrive users don't have the same permissions they had to the original site. Only the global admin, SharePoint admin, or Exchange admin has permission to the restored site. However, for in-place or restores to the same URL, the permissions from the original site at the time of restoration are preserved.
+- Restoration of SharePoint site and OneDrive user content that was removed from the recycle bin isn't supported.
+- For restores to a new URL, only the admin who ran the restore has ownership permissions on the restored SharePoint sites or OneDrive accounts. For restores to the same URL, the original permissions are preserved. 
+- Mailboxes, OneDrive accounts, and SharePoint sites that are under legal or in-place holds can't be restored unless the legal hold is removes. To restore a SharePoint site under legal hold, you need to restore the site to a new URL.
+- Mailbox draft items aren't backed up and can't be restored.
+- A restore isn't performed if the current state of mailbox is same as the point in time you're trying to restore it to.
+- SharePoint sites and OneDrive accounts that are restored to a new URL have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually.
+- The global admin, SharePoint admin, or Exchange admin can initiate a restore of up to 1,000 SharePoint sites, 1,000 OneDrive users, and 1000 mailboxes queued in parallel at a time.
