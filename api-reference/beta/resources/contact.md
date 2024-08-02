@@ -29,7 +29,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
 |[Update contact](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
 |[Delete contact](../api/contact-delete.md) | None |Delete contact object. |
-|[permanentDelete](../api/contact-permanentdelete.md)|None|	Permanent delete contact and places it in the Purges folder of the dumpster in user's mailbox|
+|[permanentDelete](../api/contact-permanentdelete.md)|None|	Permanently delete contact and places it in the Purges folder in the user's mailbox.|
 |[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|

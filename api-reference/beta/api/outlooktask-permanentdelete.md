@@ -1,6 +1,6 @@
 ---
 title: "outlookTask: permanentDelete"
-description: "Permanent delete outlook tasks and places it in the Purges folder of the dumpster in user's mailbox"
+description: "Permanently delete outlook tasks and places it in the Purges folder in the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"

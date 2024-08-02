@@ -1,6 +1,6 @@
 ---
 title: "mailSearchFolder: permanentDelete"
-description: "Permanent delete mail search folder and remove its items from the user's mailbox"
+description: "Permanently delete mail search folder and remove its items from the user's mailbox"
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"

@@ -1,6 +1,6 @@
 ---
 title: "outlookTaskFolder: permanentDelete"
-description: "Permanent delete outlook task folder and remove its items from the user's mailbox"
+description: "Permanently delete outlook task folder and remove its items from the user's mailbox"
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"

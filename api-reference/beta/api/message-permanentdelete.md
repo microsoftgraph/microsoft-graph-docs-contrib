@@ -1,6 +1,6 @@
 ---
 title: "message: permanentDelete"
-description: "Permanent delete mail and places it in the Purges folder of the dumpster in user's mailbox"
+description: "Permanently delete mail and places it in the Purges folder in the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"

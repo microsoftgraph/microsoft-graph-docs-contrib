@@ -168,7 +168,7 @@ The following JSON representation shows the resource type.
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
-|[permanentDelete](../api/eventmessage-permanentdelete.md)|None|Permanent delete eventmessage and places it in the Purges folder of the dumpster in user's mailbox|
+|[permanentDelete](../api/eventmessage-permanentdelete.md)|None|Permanently delete eventmessage and places it in the Purges folder in the user's mailbox.|
 |**Attachments**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an eventMessage by posting to the attachments collection.|

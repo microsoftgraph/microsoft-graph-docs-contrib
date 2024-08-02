@@ -1,6 +1,6 @@
 ---
 title: "calendar: permanentDelete"
-description: "Permanently deletes the calender folder and removes it from the mailbox"
+description: "Permanently deletes the calender folder and the events that it contains and removes them from the mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
@@ -13,12 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Items and folders deleted using this API are permanently deleted. 
-Permanent-deleted items are placed in the Purges folder of the dumpster in user's mailbox. This is like when the recycling truck empties your curbside recycle container. The items can't be accessed from an email client like Outlook or Outlook Web App, and, unless there's a hold set on the mailbox, the items will be permanently deleted after a set period of time.
+Permanently deletes the calender folder and the events that it contains and removes them from the mailbox.
 
-You can read more about item retention in the article Configure Deleted Item Retention and [Recoverable Items Quotas](https://technet.microsoft.com/library/ee364752%28v=exchg.150%29.aspx).
+Permanently deleted items are placed in the Purges folder in the user's mailbox. The items can't be accessed from email clients such as Outlook or the Outlook Web App. Unless there's a hold set on the mailbox, the items will be permanently deleted after a set period of time.
 
-NOTE: Folders aren't placed in the Purges folder when they are permanently deleted. Permanently deleted folders are removed from the mailbox.
+You can read more about item retention in the article [Configure Deleted Item Retention and Recoverable Items Quotas](https://technet.microsoft.com/library/ee364752%28v=exchg.150%29.aspx).
+
+>**Note:** Folders aren't placed in the Purges folder when they are permanently deleted. Permanently deleted folders are removed from the mailbox.
 
 ## Permissions
 
@@ -74,6 +75,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/calendar/permanentDelete
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
