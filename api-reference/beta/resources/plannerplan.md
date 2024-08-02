@@ -22,6 +22,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[Get plan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Create plan](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create **plannerPlan** object.|
 |[Update plan](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete plan](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
