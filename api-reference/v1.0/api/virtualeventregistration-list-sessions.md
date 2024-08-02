@@ -1,5 +1,5 @@
 ---
-title: "List sessions for virtualEventRegistration"
+title: "List sessions for a virtual event registration"
 description: "Get a list of sessions that a registrant registered for in a webinar."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List sessions for virtualEventRegistration
+# List sessions for a virtual event registration
 Namespace: microsoft.graph
 
 Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the `endDateTime`, `id`, `joinWebUrl`, `startDateTime`, and `subject` of a virtual event session. The rest of session properties will be null.
