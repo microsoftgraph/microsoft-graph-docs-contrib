@@ -77,8 +77,6 @@ items:
     displayName: OneNote
   - name: People and workplace intelligence
     href: toc/people-and-workplace-intelligence/toc.yml
-  - name: Item insights
-    href: toc/item-insights/toc.yml
   - name: Personal contacts
     href: toc/personal-contacts/toc.yml
     displayName: Outlook, Outlook contacts, Outlook contact, People
