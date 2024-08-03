@@ -27,7 +27,6 @@ There are a few ways to customize users' item insights privacy settings:
 - A user can view or update one's own settings, in two ways:
   - [MyAccount, under Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).
   - Microsoft Graph REST API - [reading](/graph/api/usersettings-get?view=graph-rest-1.0&preserve-view=true) or [updating](/graph/api/usersettings-update?view=graph-rest-1.0&preserve-view=true) one's own settings that are exposed through an **itemInsights** navigation property of [userSettings](/graph/api/resources/usersettings?view=graph-rest-1.0&preserve-view=true). These user-centric item insights privacy settings are of the type [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-1.0&preserve-view=true).
-  
 - An administrator can customize these settings at scale for an organization or a group through one of the following ways:
   - [Microsoft 365 admin center](#configure-item-insights-settings-via-microsoft-365-admin-center)
   - [Microsoft Graph PowerShell SDK](#configure-item-insights-settings-via-powershell)
