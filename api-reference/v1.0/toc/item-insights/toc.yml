@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Item insights
+  href: ../../resources/iteminsights.md
 - name: User insights settings
   items:
   - name: User insights settings
@@ -10,3 +12,11 @@ items:
     href: ../../api/userinsightssettings-get.md
   - name: Update
     href: ../../api/userinsightssettings-update.md
+- name: Insights settings
+  items:
+  - name: Insights settings
+    href: ../../resources/insightssettings.md
+  - name: List itemInsights
+    href: ../../api/peopleadminsettings-list-iteminsights.md
+  - name: Update insightsSettings
+    href: ../../api/insightssettings-update.md
