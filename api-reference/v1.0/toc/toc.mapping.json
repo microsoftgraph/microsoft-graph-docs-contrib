@@ -1154,15 +1154,15 @@
             "sharingDetail",
             "usageDetails"
           ]
+        },
+        {
+          "name": "Item insights",
+          "resources": [
+            "itemInsights",
+            "userInsightsSettings",
+            "insightsSettings"
+          ]
         }
-      ]
-    },
-    {
-      "name": "Item insights",
-      "resources": [
-        "itemInsights",
-        "userInsightsSettings",
-        "insightsSettings"
       ]
     },
     {
