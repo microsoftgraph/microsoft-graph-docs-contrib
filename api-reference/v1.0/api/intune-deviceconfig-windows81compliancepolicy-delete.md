@@ -2,7 +2,7 @@
 title: "Delete windows81CompliancePolicy"
 description: "Deletes a windows81CompliancePolicy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

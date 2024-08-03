@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateBehavior enum type"
 description: "Update behavior options for macOS software updates."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -25,9 +25,9 @@ This object represents the font attributes (font name, font size, color, etc.) f
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Indicates whether the fond is bold.|
+|bold|Boolean|Indicates whether the fond is bold.|
 |color|string|The HTML color code representation of the text color. For example #FF0000 represents Red.|
-|italic|boolean|Indicates whether the fond is italic.|
+|italic|Boolean|Indicates whether the fond is italic.|
 |name|string|The font name. For example "Calibri".|
 |size|double|The size of the font. For example,  11.|
 |underline|string|The type of underlining applied to the font. The possible values are: `None`, `Single`.|

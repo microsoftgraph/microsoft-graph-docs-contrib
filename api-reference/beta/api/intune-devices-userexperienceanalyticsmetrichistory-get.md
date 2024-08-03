@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsMetricHistory"
 description: "Read properties and relationships of the userExperienceAnalyticsMetricHistory object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

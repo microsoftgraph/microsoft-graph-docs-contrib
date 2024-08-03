@@ -2,7 +2,7 @@
 title: "deviceHealthScriptParameter resource type"
 description: "Base properties of the script parameter."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

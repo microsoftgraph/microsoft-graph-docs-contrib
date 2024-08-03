@@ -2,7 +2,7 @@
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the number of devices a user can enroll"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
