@@ -2,7 +2,7 @@
 title: "getMobileApplicationManagementAppConfigurationReport action"
 description: "Intune Mam Devicemanagementreports Getmobileapplicationmanagementappconfigurationreport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

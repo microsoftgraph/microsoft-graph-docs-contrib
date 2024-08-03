@@ -26,7 +26,7 @@ Represents the title of a chart axis.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |text|string|Represents the axis title.|
-|visible|boolean|A boolean that specifies the visibility of an axis title.|
+|visible|Boolean|A Boolean that specifies the visibility of an axis title.|
 
 ## Relationships
 | Relationship | Type	|Description|

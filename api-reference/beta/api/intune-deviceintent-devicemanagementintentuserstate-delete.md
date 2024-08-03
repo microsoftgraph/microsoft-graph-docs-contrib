@@ -2,7 +2,7 @@
 title: "Delete deviceManagementIntentUserState"
 description: "Deletes a deviceManagementIntentUserState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

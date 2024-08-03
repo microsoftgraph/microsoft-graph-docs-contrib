@@ -2,7 +2,7 @@
 title: "iosEduDeviceConfiguration resource type"
 description: "iOS Education device configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

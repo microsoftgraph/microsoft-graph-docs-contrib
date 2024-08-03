@@ -2,7 +2,7 @@
 title: "operationApprovalPolicyType enum type"
 description: "The set of available policy types that can be configured for approval. The policy type must always be defined in an OperationApprovalRequest."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

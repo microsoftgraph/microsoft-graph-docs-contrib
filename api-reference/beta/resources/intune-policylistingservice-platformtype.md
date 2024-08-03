@@ -2,7 +2,7 @@
 title: "platformType enum type"
 description: "Platform Type"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

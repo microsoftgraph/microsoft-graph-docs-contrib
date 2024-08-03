@@ -2,7 +2,7 @@
 title: "Create deviceManagementInventoryPolicy"
 description: "Create a new deviceManagementInventoryPolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

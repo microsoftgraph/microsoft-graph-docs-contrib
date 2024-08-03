@@ -2,7 +2,7 @@
 title: "Create macOSSoftwareUpdateConfiguration"
 description: "Create a new macOSSoftwareUpdateConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

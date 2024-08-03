@@ -1665,9 +1665,13 @@
             {
               "name": "Virtual events",
               "resources": [
-                "virtualEventWebinar",
+                "virtualEventPresenter",
                 "virtualEventRegistration",
-                "virtualEventSession"
+                "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventRegistrationQuestionBase",
+                "virtualEventSession",
+                "virtualEventTownhall",
+                "virtualEventWebinar"
               ]
             }
           ]
