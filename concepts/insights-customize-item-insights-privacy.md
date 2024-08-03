@@ -55,7 +55,7 @@ An administrator with the _global administrator role_ can tune item insights pri
 
 Then toggle item insights for your organization, or enable it or disable it for specific groups.
 
-![admincenter_toggleoverview](images/itemInsights/iteminsights_admincenter_toggledetails.png)
+![admincenter_toggledetails](images/itemInsights/iteminsights_admincenter_toggledetails.png)
 
 ### Configure item insights settings via PowerShell
 
