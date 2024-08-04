@@ -2,7 +2,7 @@
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

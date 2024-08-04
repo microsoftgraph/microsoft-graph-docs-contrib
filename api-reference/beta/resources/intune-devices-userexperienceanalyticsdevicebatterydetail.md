@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsDeviceBatteryDetail resource type"
 description: "Collection of properties describing the current status of the battery."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

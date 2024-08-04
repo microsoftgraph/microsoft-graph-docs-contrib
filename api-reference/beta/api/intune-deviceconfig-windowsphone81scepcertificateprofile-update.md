@@ -2,7 +2,7 @@
 title: "Update windowsPhone81SCEPCertificateProfile"
 description: "Update the properties of a windowsPhone81SCEPCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

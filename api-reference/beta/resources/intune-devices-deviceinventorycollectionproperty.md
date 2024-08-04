@@ -2,7 +2,7 @@
 title: "deviceInventoryCollectionProperty resource type"
 description: "Inherited type of DeviceInventoryProperty where the property contains a collection of values"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
