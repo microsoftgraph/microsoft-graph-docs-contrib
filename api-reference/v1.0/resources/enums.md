@@ -3330,7 +3330,7 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-### educationAssignmentStatus values
+## educationAssignmentStatus values
 
 | Member             |
 | :----------------- |
@@ -3340,7 +3340,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | inactive           |
 
-### b2bIdentityProvidersType values
+## b2bIdentityProvidersType values
 
 |Member|
 |:-----|
@@ -3352,7 +3352,7 @@ Possible values for user account types (group membership), per Windows definitio
 |defaultConfiguredIdp|
 |unknownFutureValue|
 
-### bookingStaffMembershipStatus values
+## bookingStaffMembershipStatus values
 
 |Member|
 |:---|
@@ -3361,7 +3361,7 @@ Possible values for user account types (group membership), per Windows definitio
 |rejectedByStaff|
 |unknownFutureValue|
 
-### conditionalAccessInsiderRiskLevels values 
+## conditionalAccessInsiderRiskLevels values 
 
 |Member|
 |:---|
@@ -3370,7 +3370,7 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
-### bookingPageAccessControl values 
+## bookingPageAccessControl values 
 
 |Member|
 |:---|
@@ -3378,7 +3378,7 @@ Possible values for user account types (group membership), per Windows definitio
 |restrictedToOrganization|
 |unknownFutureValue|
 
-### bookingsServiceAvailabilityType values 
+## bookingsServiceAvailabilityType values 
 
 |Member|
 |:---|
@@ -3386,59 +3386,6 @@ Possible values for user account types (group membership), per Windows definitio
 |notBookable|
 |customWeeklyHours|
 |unknownFutureValue|
-
-### nativeAuthenticationApisEnabled values
-
-| Member|
-|:---|
-|none|
-|all|
-|unknownFutureValue|
-| unknown |
-| androidAOSP |
-| androidMobileApplicationManagement |
-| iOSMobileApplicationManagement |
-| unknownFutureValue |
-
-## educationAssignmentStatus values
-
-| Member |
-| ------------------ |
-| draft |
-| published |
-| assigned |
-| unknownFutureValue |
-| inactive |
-
-## b2bIdentityProvidersType values
-
-| Member |
-| ------ |
-| azureActiveDirectory |
-| externalFederation |
-| socialIdentityProviders |
-| emailOneTimePasscode |
-| microsoftAccount |
-| defaultConfiguredIdp |
-| unknownFutureValue |
-
-## bookingStaffMembershipStatus values
-
-| Member |
-| ---- |
-| active |
-| pendingAcceptance |
-| rejectedByStaff |
-| unknownFutureValue |
-
-## conditionalAccessInsiderRiskLevels values
-
-| Member |
-| ---- |
-| minor |
-| moderate |
-| elevated |
-| unknownFutureValue |
 
 ## nativeAuthenticationApisEnabled values
 
