@@ -11,7 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### virtualEventRegistrationPredefinedQuestionLabel values
+## virtualEventRegistrationPredefinedQuestionLabel values
 
 |Member|
 |:---|
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 |organization|
 |unknownFutureValue|
 
-### virtualEventRegistrationQuestionAnswerInputType values
+## virtualEventRegistrationQuestionAnswerInputType values
 
 |Member|
 |:---|
