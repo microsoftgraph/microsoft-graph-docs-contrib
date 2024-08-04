@@ -2,7 +2,7 @@
 title: "Create deviceManagementComplexSettingInstance"
 description: "Create a new deviceManagementComplexSettingInstance object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

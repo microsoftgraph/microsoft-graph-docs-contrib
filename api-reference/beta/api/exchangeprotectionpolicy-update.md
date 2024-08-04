@@ -76,10 +76,10 @@ Authorization: Bearer <Access-Token>
   "displayName": "Exchange Policy - Inadvertent data loss",
   "mailboxProtectionUnits@delta": [
     {
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
       "@removed": {
@@ -146,7 +146,7 @@ HTTP/1.1 200 OK
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -175,7 +175,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "protectRequested",
       "createdBy": {
@@ -205,7 +205,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "99954f18-c8ec-4b62-85bf-cdf3b70b140e",
-      "userId": "7b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "7b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "removeRequested",
       "createdBy": {

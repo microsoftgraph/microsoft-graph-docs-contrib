@@ -2,7 +2,7 @@
 title: "managedDeviceLogCollectionRequest resource type"
 description: "Windows Log Collection request"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

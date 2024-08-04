@@ -2,7 +2,7 @@
 title: "Delete managedEBookCategory"
 description: "Deletes a managedEBookCategory."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsNotAutopilotReadyDevices"
 description: "List properties and relationships of the userExperienceAnalyticsNotAutopilotReadyDevice objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

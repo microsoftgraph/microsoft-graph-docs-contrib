@@ -2,7 +2,7 @@
 title: "Create macOSWiFiConfiguration"
 description: "Create a new macOSWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

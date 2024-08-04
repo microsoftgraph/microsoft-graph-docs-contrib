@@ -2,7 +2,7 @@
 title: "deviceEnrollmentConfigurationType enum type"
 description: "Describes the TemplateFamily for the Template entity"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

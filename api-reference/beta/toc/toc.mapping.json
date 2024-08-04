@@ -1810,12 +1810,11 @@
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
-            "microsoft.graph.networkaccess.remoteNetwork",
-            "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+            "microsoft.graph.networkaccess.remoteNetwork"
           ],
           "childNodes": [
             {
-              "name": "Branch site",
+              "name": "Branch site (deprecated)",
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.connectivityConfigurationLink"
@@ -1836,7 +1835,9 @@
                 "microsoft.graph.networkaccess.forwardingPolicy",
                 "microsoft.graph.networkaccess.forwardingPolicyLink",
                 "microsoft.graph.networkaccess.policyRule",
-                "microsoft.graph.networkaccess.forwardingRule"
+                "microsoft.graph.networkaccess.forwardingRule",
+                "microsoft.graph.networkaccess.m365ForwardingRule",
+                "microsoft.graph.networkaccess.privateAccessForwardingRule"
               ]
             },
             {
@@ -1853,6 +1854,13 @@
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration"
+              ]
+            },
+            {
+              "name": "Traffic logs",
+              "resources": [
+                "microsoft.graph.networkaccess.networkAccessTraffic",
+                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2687,6 +2695,17 @@
         "Microsoft Teams"
       ],
       "childNodes": [
+        {
+          "name": "Approvals",
+          "resources": [
+            "approvalItem",
+            "approvalSolution",
+            "approvalItemRequest",
+            "approvalItemResponse",
+            "approvalItemViewPoint",
+            "approvalOperation"
+          ]
+        },
         {
           "name": "Apps",
           "resources": [

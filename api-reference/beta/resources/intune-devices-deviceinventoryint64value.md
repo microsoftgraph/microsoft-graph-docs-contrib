@@ -2,7 +2,7 @@
 title: "deviceInventoryInt64Value resource type"
 description: "Inherited type of DeviceInventoryValue where the value is an int64"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

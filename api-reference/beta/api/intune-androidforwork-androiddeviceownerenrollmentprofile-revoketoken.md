@@ -2,7 +2,7 @@
 title: "revokeToken action"
 description: "Intune Androidforwork Androiddeviceownerenrollmentprofile Revoketoken Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

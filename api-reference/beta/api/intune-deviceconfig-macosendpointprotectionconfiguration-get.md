@@ -2,7 +2,7 @@
 title: "Get macOSEndpointProtectionConfiguration"
 description: "Read properties and relationships of the macOSEndpointProtectionConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

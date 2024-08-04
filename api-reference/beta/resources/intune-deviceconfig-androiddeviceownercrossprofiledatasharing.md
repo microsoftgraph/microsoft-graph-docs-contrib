@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerCrossProfileDataSharing enum type"
 description: "An enum representing possible values for cross profile data sharing."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

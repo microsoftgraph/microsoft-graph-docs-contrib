@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateConfiguration resource type"
 description: "MacOS Software Update Configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

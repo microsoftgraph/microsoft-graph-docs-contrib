@@ -2,7 +2,7 @@
 title: "appleEnrollmentProfileAssignment resource type"
 description: "An assignment of an Apple profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

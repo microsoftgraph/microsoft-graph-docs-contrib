@@ -2,7 +2,7 @@
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
