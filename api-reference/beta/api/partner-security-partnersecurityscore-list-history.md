@@ -1,6 +1,6 @@
 ---
 title: "List securityScoreHistory objects"
-description: "Lists the history of security score changes for the partner"
+description: "Lists the history of security score changes for the partner."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
