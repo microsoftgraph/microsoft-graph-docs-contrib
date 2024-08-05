@@ -40,6 +40,8 @@ GET /security/partner/securityScore
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+Specifically, the `$expand` parameter is useful to retrieve optional properties like `requirements` or `history`.
+
 ## Request headers
 
 |Name|Description|

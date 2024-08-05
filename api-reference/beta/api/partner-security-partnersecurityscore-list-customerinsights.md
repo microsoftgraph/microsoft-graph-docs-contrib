@@ -40,6 +40,8 @@ GET /security/partner/securityScore/customerInsights
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+Server-Side pagination is supported by following the `nextLink` provided in the API response. This will using the `$skiptoken` OData query parameter. Using Client-Side pagination with `$skip` and `$top` is not supported.
+
 ## Request headers
 
 |Name|Description|
