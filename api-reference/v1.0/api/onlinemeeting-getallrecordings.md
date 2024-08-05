@@ -53,7 +53,7 @@ In the request URL, provide the following query parameters with values.
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name           | Description                                                                       |
-|  ------------- | --------------------------------------------------------------------------------- |
+| :------------- | :-------------------------------------------------------------------------------- |
 |  `$top`        | Allows the caller to specify the max number of objects per page as the page size. |
 
 ## Request headers
