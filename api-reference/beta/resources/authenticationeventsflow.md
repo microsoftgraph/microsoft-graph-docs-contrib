@@ -42,7 +42,6 @@ Inherits from [entity](../resources/entity.md).
 |[Update](../api/identityuserflowattribute-update.md)|None|Update a custom user flow attribute.|
 |[Delete](../api/identityuserflowattribute-delete.md)|None|Delete a custom user flow attribute.|
 |[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 |[Add attribute to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Add an **identityUserFlowAttribute** object associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 |[Remove attribute from a user flow](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove an **identityUserFlowAttribute** object associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 
