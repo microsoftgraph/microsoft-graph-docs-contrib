@@ -89,7 +89,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.partner.security.securityScoreHistory",
       "id": "a368fa06-ba31-2d7e-3b0c-2ded0b0c093e",
       "createdDateTime": "2024-01-17T00:00:00Z",
-      "score": 80,
+      "score": 80.0,
       "compliantRequirementsCount": 4,
       "totalRequirementsCount": 5
     }
