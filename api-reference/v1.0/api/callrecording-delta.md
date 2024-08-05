@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a series of three requests to synchronize the call recordings available for all the online meetings organized by the user.
 
 - Step 1: [initial request](#initial-request) and [response](#initial-response).
-- Step 2: [second request](#second-request) and [response](#second-response)
+- Step 2: [second request](#second-request) and [response](#second-response).
 - Step 3: [third request](#third-request) and [final response](#third-and-final-response-for-the-round).
 
 See also what you'll do in the [next round to get more recordings](#example-2-next-round-to-get-more-recordings).
