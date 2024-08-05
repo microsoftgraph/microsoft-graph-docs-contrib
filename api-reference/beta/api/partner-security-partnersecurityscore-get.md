@@ -87,10 +87,10 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.partner.security.partnerSecurityScore",
     "id": "9021efeb-af08-e3dd-9c11-ac69f92e43b8",
-    "updatedDateTime": "String (timestamp)",
-    "lastRefreshDateTime": "String (timestamp)",
-    "currentScore": "Single",
-    "maxScore": "Single"
+    "updatedDateTime": "2024-01-17T00:00:00Z",
+    "lastRefreshDateTime":"2024-02-28T00:00:00Z",
+    "currentScore": 14.29,
+    "maxScore": 100.0
   }
 }
 ```

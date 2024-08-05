@@ -89,7 +89,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.partner.security.customerInsight",
       "tenantId": "d90cb160-123d-0608-3fd6-c53551dcc20c",
       "mfa": {
-        "@odata.type": "microsoft.graph.partner.security.customerMfaInsight"
+        "@odata.type": "microsoft.graph.partner.security.customerMfaInsight",
+        "compliantAdminsCount": 1,
+        "compliantNonAdminsCount": 2,
+        "totalUsersCount": 5,
+        "securityDefaultsStatus": "enabled",
+        "mfaConditionalAccessPolicyStatus": "disabled",
+        "legacyPerUserMfaStatus": "disabled"
       }
     }
   ]

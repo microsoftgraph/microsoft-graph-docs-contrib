@@ -87,14 +87,14 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.partner.security.securityRequirement",
     "id": "adc3e54c-8dde-f1cb-b92e-ffb989948282",
-    "requirementType": "String",
-    "complianceStatus": "String",
-    "actionUrl": "String",
-    "helpUrl": "String",
-    "score": "Integer",
-    "maxScore": "Integer",
-    "state": "String",
-    "updatedDateTime": "String (timestamp)"
+    "requirementType": "securityContactProvided",
+    "complianceStatus": "compliant",
+    "actionUrl": "https://aka.ms/partner-center-security-contact",
+    "helpUrl": "https://aka.ms/partner-center-security-dashboard-security-contact",
+    "score": "20",
+    "maxScore": "20",
+    "state": "active",
+    "updatedDateTime": "2023-09-26T04:04:01.4261872Z"
   }
 }
 ```
