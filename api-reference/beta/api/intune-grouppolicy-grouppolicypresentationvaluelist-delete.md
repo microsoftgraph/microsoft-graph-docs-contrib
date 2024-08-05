@@ -2,7 +2,7 @@
 title: "Delete groupPolicyPresentationValueList"
 description: "Deletes a groupPolicyPresentationValueList."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

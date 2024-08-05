@@ -2,7 +2,7 @@
 title: "androidManagedStoreAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Android Managed Store mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

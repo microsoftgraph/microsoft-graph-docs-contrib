@@ -1,22 +1,29 @@
 ---
-title: "connectivityConfigurationLink resource type"
+title: "connectivityConfigurationLink resource type (deprecated)"
 description: "Specifies connectivity details for device links associated with a branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+toc.title: Connectivity configuration link (deprecated)
 ---
 
-# connectivityConfigurationLink resource type
+# connectivityConfigurationLink resource type (deprecated)
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetworkConnectivityConfiguration resource type](../resources/networkaccess-remotenetworkconnectivityconfiguration.md) and its associated methods instead.
+
 Specifies connectivity details for [deviceLink](../resources/networkaccess-devicelink.md) objects associated with a branch.
 
 ## Methods
-None.
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get](../api/networkaccess-branchconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchconnectivityconfiguration.md)|Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and the Microsoft gateway.|
 
 ## Properties
 |Property|Type|Description|

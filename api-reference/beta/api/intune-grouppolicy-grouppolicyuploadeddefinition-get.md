@@ -2,7 +2,7 @@
 title: "Get groupPolicyUploadedDefinition"
 description: "Read properties and relationships of the groupPolicyUploadedDefinition object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

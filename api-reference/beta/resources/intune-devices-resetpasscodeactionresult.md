@@ -2,7 +2,7 @@
 title: "resetPasscodeActionResult resource type"
 description: "Reset passcode action result"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

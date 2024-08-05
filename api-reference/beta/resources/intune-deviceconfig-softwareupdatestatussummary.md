@@ -2,7 +2,7 @@
 title: "softwareUpdateStatusSummary resource type"
 description: "Intune Deviceconfig Softwareupdatestatussummary Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

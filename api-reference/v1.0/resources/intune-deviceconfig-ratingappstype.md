@@ -2,7 +2,7 @@
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|across|boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
+|across|Boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
 
 ## Response
 
