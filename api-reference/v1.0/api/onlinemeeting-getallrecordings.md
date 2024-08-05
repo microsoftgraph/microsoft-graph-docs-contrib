@@ -15,7 +15,7 @@ Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md)
 
 You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-The delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+The delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you perform an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 Find more information in the [delta query](/graph/delta-query-overview) documentation. For more examples, see [callRecording: delta](callrecording-delta.md).
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
->**Note:** If you don't pass the function parameter **meetingOrganizerUserId** or a filter clause with **MeetingOrganizer/User/Id**, the request fails.
+>**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId** or a filter clause with **MeetingOrganizer/User/Id**.
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
@@ -45,14 +45,16 @@ In the request URL, provide the following query parameters with values.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |meetingOrganizerUserId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date.|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
-## Supported query patterns
+## Optional query parameters
 
-| Pattern                | Supported | Syntax                                                  | Notes                                                                                                        |
-| ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page. |
+This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name           | Description                                                                       |
+|  ------------- | --------------------------------------------------------------------------------- |
+|  `$top`        | Allows the caller to specify the max number of objects per page as the page size. |
 
 ## Request headers
 
@@ -62,7 +64,7 @@ In the request URL, provide the following query parameters with values.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [callRecording](../resources/callrecording.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body.
 
 ## Examples
 
@@ -72,19 +74,27 @@ The following example shows a request to get all the recordings of a given meeti
 
 #### Request
 
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
+  "name": "get_allrecordings"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllRecordings?$filter=MeetingOrganizer/User/Id eq '8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "get_allrecordings",
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -117,25 +127,33 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get all recordings of a given meeting organizer with date range filter
+### Example 2: Get all recordings of a given meeting organizer using a date range filter
 
 The following example shows a request to get all recordings of a given meeting organizer that are created between a given start date and an end date.
 
 #### Request
 
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "2024-01-15T00:00:00Z", "2024-01-31T00:00:00Z"],
+  "name": "get_allrecordings_with_dates"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllRecordings(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)
 ```
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "get_allrecordings_with_dates",
-  "@odata.type": "microsoft.graph.callRecording",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -170,8 +188,6 @@ Content-type: application/json
 
 ## Related content
 
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
-
-[Delta query overview](/graph/delta-query-overview)
-
-[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Delta query overview](/graph/delta-query-overview)
+- [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
