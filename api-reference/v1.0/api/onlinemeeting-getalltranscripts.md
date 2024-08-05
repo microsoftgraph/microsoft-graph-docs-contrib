@@ -188,6 +188,6 @@ Content-type: application/json
 
 ## Related content
 
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
-[Delta query overview](/graph/delta-query-overview)
-[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Delta query overview](/graph/delta-query-overview)
+- [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
