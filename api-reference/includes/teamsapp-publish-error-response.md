@@ -12,7 +12,6 @@ If you send a request to upload an app manifest that contains missing informatio
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
 |`Serialization_FileNotValidJson`| The file couldn't be parsed as a JSON object.| The submitted file didn't comply with a valid JSON format. |
-|`Serialization_ManifestVersionPropertyMissing`| The file doesn't contain the "{0}" property.| The `manifestVersion` property is missing in the app manifest file. Here, {0} is the string for `manifestVersion` property.|
 |`Serialization_FileMissing`| The file {0} couldn't be found in the app package.| The expected file is missing in the app package.|
 |`Serialization_TrailingCommaInManifestJsonFile`| Manifest json file contains trailing comma.| The app manifest file contains a trailing comma.|
 |`SchemaError_MultipleOf`| Integer {0} isn't a multiple of {1}.| The app manifest file failed the `multipleOf` validation of the schema. Here, {0} represents the integer value and {1} indicates the required multiple. |
@@ -34,17 +33,17 @@ If you send a request to upload an app manifest that contains missing informatio
 |`SchemaError_AdditionalProperties`| Property {0} hasn't been defined and the schema doesn't allow additional properties.| The app manifest file failed the `additionalProperties` validation of the schema. Here, {0} represents the additional property.|
 |`SchemaError_Dependencies`|Dependencies for property {0} failed. Missing required keys.| The app manifest file failed the `dependencies` validation of the schema. Here, {0} represents the property that failed.|
 |`SchemaError_Enum`| Value {0} isn't defined in the enum.| The app manifest file failed the `enum` validation of the schema. Here, {0} represents the value that isn't in the enum.|
-|`SchemaError_AllOf`| JSON doesn't match all schemas from "allOf".| The app manifest file failed the `allOf` validation of the schema. The `allOf` isn't localizable.|
-|`SchemaError_AnyOf`| JSON doesn't match any schemas from "anyOf".| The app manifest file failed the `anyOf` validation of the schema. The `anyOf` isn't localizable.|
-|`SchemaError_OneOf`| JSON is valid against more than one schema from "oneOf".| The app manifest file failed the `oneOf` validation of the schema. The `oneOf` isn't localizable.|
-|`SchemaError_Not`| JSON is valid against schema from "not".| The app manifest file failed the `not` validation of the schema. The `not` isn't localizable.|
+|`SchemaError_AllOf`| JSON doesn't match all schemas from "allOf".| The app manifest file failed the `allOf` validation of the schema.|
+|`SchemaError_AnyOf`| JSON doesn't match any schemas from "anyOf".| The app manifest file failed the `anyOf` validation of the schema.|
+|`SchemaError_OneOf`| JSON is valid against more than one schema from "oneOf".| The app manifest file failed the `oneOf` validation of the schema.|
+|`SchemaError_Not`| JSON is valid against schema from "not".| The app manifest file failed the `not` validation of the schema.|
 |`SchemaError_Id`| Duplicate schema ID {0} encountered.| The app manifest file failed the `id` validation of the schema. Here, {0} represents the `id` of the schema.|
 |`SchemaError_PatternProperties`| Couldn't test property names with regex pattern "{0}".| The app manifest file failed the `patternProperties` validation of the schema. Here, {0} represents the pattern for the properties.|
 |`SchemaError_Valid`| Schema always fails validation.| The app manifest file failed the `valid` validation of the schema.|
 |`SchemaError_Const`| Value {0} doesn't match constant {1}.| The app manifest file failed the `const` validation of the schema. Here, {0} represents the value that failed and {1} represents the correct value.|
 |`SchemaError_Contains`| Array doesn't contain a required item.| The app manifest file failed the `contains` validation of the schema.|
-|`SchemaError_Then`|JSON doesn't match schema from "then".| The app manifest file failed the `then` validation of the schema. The `then` isn't localizable.|
-|`SchemaError_Else`| JSON doesn't match schema from "else".|The app manifest file failed the `else` validation of the schema. The `else` isn't localizable.|
+|`SchemaError_Then`|JSON doesn't match schema from "then".| The app manifest file failed the `then` validation of the schema.|
+|`SchemaError_Else`| JSON doesn't match schema from "else".|The app manifest file failed the `else` validation of the schema.|
 | `SchemaError_Other`| The value doesn't conform to the schema for this property.| The app manifest file failed other unhandled validations of the schema.|
 |`ActivityGroupIdFromActivitiesTypeValidation` 	| ActivityGroupId field in ActivityType must be a subset of ID field in ActivityGroup.| The `ActivityGroupId` field in `ActivityType` isn't a subset of the `Id` field in `ActivityGroup` in the app manifest.|
 |`ActivityTypesMustExistWithActivitiesGroupValidation` |	Manifest shouldn't contain Activity Group when Activity Types is missing.| The `ActivityGroup` property is available, but the `ActivityType` property is missing in the app manifest.|
@@ -60,7 +59,6 @@ If you send a request to upload an app manifest that contains missing informatio
 |`MsftEntraAuthTypeComposeExtensionContainsApiSecretServiceConfiguration`|API-based compose extension with microsoftEntra authType have apiSecretServiceConfiguration defined. |The API-based compose extension has `apiSecretServiceConfiguration` defined in the manifest.|
 |`MsftEntraAuthTypeComposeExtensionContainsNoMsftEntraConfiguration`|API-based compose extension with microsoftEntra authType have no microsoftEntraConfiguration defined.| The API-based compose extension doesn't have `microsoftEntraConfiguration` defined in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionWebApplicationInfoOrResourceNotDefined`|API-based compose extension with microsoftEntra authType have no webApplicationInfo or resource defined on manifest.| The API-based compose extension with `microsoftEntra` authType doesn't have `webApplicationInfo` or `resource` defined in the app manifest.|
-|`MsftEntraAuthTypeComposeExtensionSupportsSingleSignOnFalse` | API-based compose extension with microsoftEntra authType doesn't set supportsSingleSignOn to true.| The API-based compose extension doesn't set `supportsSingleSignOn` to `true` in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionResourceURLNotMatchServerURLOnApiSpec` |API-based compose extension with microsoftEntra authType resource URL on manifest doesn't match server URL on API specification file.| The API-based compose extension with `microsoftEntra` authType resource URL in the app manifest doesn't match server URL in the API specification file.|
 |`NoAuthTypeComposeExtensionContainsAuthConfiguration` |API-based compose extension with none authType have auth-related configuration defined.| The API-based compose extension with authType `microsoftEntraConfiguration` or `apiSecretServiceConfiguration` isn't defined in the app manifest.|
 |`ApiSpecificationFileContainUnsupportedHttpMethod`| API-based compose extension have server urls that have unsupported http method defined on apiSpecificationFile. Currently only GET and POST are supported.| The API-based compose extension has an unsupported `http` method defined in the `apiSpecificationFile`.|
@@ -99,7 +97,6 @@ If you send a request to upload an app manifest that contains missing informatio
 |`InvalidColor32x32IconHeightAndWidth`|Color 32x32 icon should be 32x32 with only white and transparent.| The color 32x32 icon doesn't have the correct dimensions.|
 |`InvalidColorIconHeightAndWidth`| Color Icon isn't as per the required dimension.| The dimensions of the color icon are incorrect.|
 |`InvalidOutlineIconHeightAndWidth` | Small icon should be 32x32 with only white and transparent.| The dimensions of the outline icon are incorrect.|
-|`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined in the API specification file. |
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
