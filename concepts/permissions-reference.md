@@ -3922,7 +3922,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 21ffa320-2e7f-47d3-a466-7ff04d2dd68d | 5567b981-0bf1-4796-9038-0648b46e116d |
-| DisplayText | Read security alerts of customer with CSP relationship | Read security alerts of customer with CSP relationship |
+| DisplayText | Read security alerts of customer with Cloud Solution Provider (CSP) relationship | Read security alerts of customer with CSP relationship |
 | Description | Allows the app to read security alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts of customer with CSP relationship on behalf of the partner signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -3933,7 +3933,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 04a2c935-5b4b-474a-be42-11f53111f271 | 0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5 |
-| DisplayText | Read security alerts and update status of security alerts of customer with CSP relationship | Read security alerts and update status of security alerts of customer with CSP relationship |
+| DisplayText | Read security alerts and update status of security alerts of customer with Cloud Solution Provider (CSP) relationship | Read security alerts and update status of security alerts of customer with CSP relationship |
 | Description | Allows the app to read security alerts and update status of alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts and update status of alerts of customer with CSP relationship on behalf of the partner signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
