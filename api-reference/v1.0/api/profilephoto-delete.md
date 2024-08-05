@@ -38,7 +38,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite, Group.ReadWrite.All |
+|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 |Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
 |Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
