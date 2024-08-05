@@ -2,7 +2,7 @@
 title: "targetApps action"
 description: "Intune Mam Targetedmanagedappconfiguration Targetapps Source_Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "getAllElevationRequests action"
 description: "Intune Epmgraphapiservice Privilegemanagementelevationrequest Getallelevationrequests Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

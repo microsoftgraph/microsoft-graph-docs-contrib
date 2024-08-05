@@ -2,7 +2,7 @@
 title: "deviceManagementComplianceScheduledActionForRule resource type"
 description: "Scheduled Action for Rule"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

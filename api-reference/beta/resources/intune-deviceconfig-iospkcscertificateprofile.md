@@ -2,7 +2,7 @@
 title: "iosPkcsCertificateProfile resource type"
 description: "iOS PKCS certificate profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

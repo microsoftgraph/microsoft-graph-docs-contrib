@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationReferredSettingInformation resource type"
 description: "Referred setting information about reusable setting"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

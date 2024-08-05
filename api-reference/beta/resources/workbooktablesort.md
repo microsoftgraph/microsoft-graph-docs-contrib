@@ -30,7 +30,7 @@ Manages sorting operations on Table objects.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|[workbookSortField](workbooksortfield.md) collection|The list of the current conditions last used to sort the table. Read-only.|
-|matchCase|boolean|Indicates whether the casing impacted the last sort of the table. Read-only.|
+|matchCase|Boolean|Indicates whether the casing impacted the last sort of the table. Read-only.|
 |method|string|The Chinese character ordering method last used to sort the table. The possible values are: `PinYin`, `StrokeCount`. Read-only.|
 
 ## Relationships

@@ -2,7 +2,7 @@
 title: "Delete deviceManagementAutopilotPolicyStatusDetail"
 description: "Deletes a deviceManagementAutopilotPolicyStatusDetail."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

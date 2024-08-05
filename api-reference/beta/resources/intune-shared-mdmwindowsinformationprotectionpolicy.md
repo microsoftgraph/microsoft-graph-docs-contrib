@@ -2,7 +2,7 @@
 title: "mdmWindowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection with MDM"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---

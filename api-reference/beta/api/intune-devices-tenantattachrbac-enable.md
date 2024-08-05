@@ -2,7 +2,7 @@
 title: "enable action"
 description: "Intune Devices Tenantattachrbac Enable Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

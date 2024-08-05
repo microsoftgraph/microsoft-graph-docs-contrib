@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|string|Address or name of the range object representing the data source. If the address doesn't contain a sheet name, the currently active sheet is used.|
-|hasHeaders|boolean|Boolean value that indicates whether the data being imported has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
+|hasHeaders|Boolean|Boolean value that indicates whether the data being imported has column labels. If the source doesn't contain headers (when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
 

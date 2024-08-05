@@ -2,7 +2,7 @@
 title: "androidWorkProfileCustomConfiguration resource type"
 description: "Android Work Profile custom configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

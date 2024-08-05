@@ -15,6 +15,7 @@ The following table lists the latency to expect between an event happening in th
 | Resource                | Average latency      | Maximum latency |
 |:------------------------|:---------------------|:----------------|
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
+| [approvals][]           | Less than 10 seconds | 40 seconds      |
 | [calendar][]            | Less than 1 minute   | 3 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
 | [callRecording][]       | Less than 10 seconds | 60 minutes      |
@@ -75,3 +76,4 @@ The following table lists the latency to expect between an event happening in th
 [callRecording]: /graph/api/resources/callrecording
 [calendar]: /graph/api/resources/calendar
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
+[approvals]: /graph/api/resources/approvalItem
