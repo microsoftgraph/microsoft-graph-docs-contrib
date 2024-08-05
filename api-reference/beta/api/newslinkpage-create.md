@@ -165,8 +165,8 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-  "Error: /api/newslinkpage-update.md/update_newslinkpage: 
-    Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2"
+  "Error: /api/newslinkpage-create.md/create-newslinkpage:
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
   ]
 }
 -->
