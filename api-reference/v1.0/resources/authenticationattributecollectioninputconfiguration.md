@@ -72,3 +72,17 @@ The following JSON representation shows the resource type.
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "authenticationAttributeCollectionInputConfiguration resource type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: /resources/authenticationattributecollectioninputconfiguration.md:
+          Unable to parse code block metadata.
+          Unexpected character encountered while parsing value: U. Path '', line 0, position 0."
+  ]
+}
+-->
