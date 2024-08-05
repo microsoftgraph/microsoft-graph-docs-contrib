@@ -2,7 +2,7 @@
 title: "Delete windowsDefenderApplicationControlSupplementalPolicy"
 description: "Deletes a windowsDefenderApplicationControlSupplementalPolicy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

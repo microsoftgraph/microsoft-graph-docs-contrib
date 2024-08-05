@@ -21,6 +21,10 @@ Namespace: microsoft.graph
 | reportDate        | Date   | The date on which a number of files were active in the group's SharePoint site. |
 | reportPeriod      | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

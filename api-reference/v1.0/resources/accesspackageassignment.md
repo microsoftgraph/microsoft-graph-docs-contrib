@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
+
 # accessPackageAssignment resource type
 
 Namespace: microsoft.graph
@@ -19,7 +20,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |[List](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
 |[Get](../api/accesspackageassignment-get.md)|[accessPackageAssignment](../resources/accesspackageassignment.md)|Retrieve a **accessPackageAssignment** object. |
 |[Filter by current user](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
-|[Reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
+|[Reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user's assignments for a specific access package.|
 |[Check other access](../api/accesspackageassignment-additionalaccess.md) | [accessPackageAssignment](../resources/accesspackageassignment.md) collection| Retrieve a list of **accessPackageAssignment** objects indicating potential separation of duties conflicts or access to incompatible access packages. |
 
 > [!NOTE]

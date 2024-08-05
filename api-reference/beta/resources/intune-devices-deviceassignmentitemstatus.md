@@ -2,7 +2,7 @@
 title: "deviceAssignmentItemStatus enum type"
 description: "A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device. For example, a configuration included in the deviceAssignmentItems list has just been executed the action. Its status starts with inProgress until it's successfully removed to reflect as removed status or failed to be removed to reflect as error status on the managed device. Similar status change happens for restoration process"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

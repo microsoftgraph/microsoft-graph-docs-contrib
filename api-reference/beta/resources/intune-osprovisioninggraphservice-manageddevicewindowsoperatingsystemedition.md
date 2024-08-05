@@ -2,7 +2,7 @@
 title: "managedDeviceWindowsOperatingSystemEdition resource type"
 description: "Different Windows' versions have Edition specific support timelines. This complex type defines the date until which a particular edition is supported in a Windows' version."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

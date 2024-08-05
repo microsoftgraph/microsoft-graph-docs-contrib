@@ -25,6 +25,10 @@ Represents a version of a [shift](shift.md).
 | theme | scheduleEntityTheme   |  Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities 	| [shiftActivity](shiftactivity.md) collection   | An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

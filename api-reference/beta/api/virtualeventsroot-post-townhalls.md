@@ -19,7 +19,7 @@ Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -60,6 +60,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
 ## Response
@@ -70,6 +71,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -100,7 +102,10 @@ Content-Type: application/json
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    }
 }
 ```
 
@@ -162,6 +167,9 @@ Content-Type: application/json
       }
     ],
     "invitedAttendees": [],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    },
     "isInviteOnly": false
 }
 ```

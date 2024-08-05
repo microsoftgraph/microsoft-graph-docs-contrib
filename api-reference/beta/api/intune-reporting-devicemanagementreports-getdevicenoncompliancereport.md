@@ -2,7 +2,7 @@
 title: "getDeviceNonComplianceReport action"
 description: "Intune Reporting Devicemanagementreports Getdevicenoncompliancereport Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

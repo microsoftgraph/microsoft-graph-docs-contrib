@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationDropdownListItem resource type"
 description: "Intune Grouppolicy Grouppolicypresentationdropdownlistitem Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

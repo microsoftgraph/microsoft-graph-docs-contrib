@@ -2,7 +2,7 @@
 title: "androidTargetedPlatforms enum type"
 description: "Specifies which platform(s) can be targeted for a given Android LOB application or Managed Android LOB application."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

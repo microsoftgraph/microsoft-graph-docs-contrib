@@ -2,7 +2,7 @@
 title: "verifyWindowsEnrollmentAutoDiscovery function"
 description: "Intune Shared Devicemanagement Verifywindowsenrollmentautodiscovery Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

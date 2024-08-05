@@ -2,7 +2,7 @@
 title: "areGlobalScriptsAvailable function"
 description: "Intune Devices Devicehealthscript Areglobalscriptsavailable Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

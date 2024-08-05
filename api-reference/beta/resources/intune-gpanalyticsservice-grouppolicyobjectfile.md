@@ -2,7 +2,7 @@
 title: "groupPolicyObjectFile resource type"
 description: "The Group Policy Object file uploaded by admin."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

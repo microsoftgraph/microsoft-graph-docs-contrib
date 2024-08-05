@@ -2,7 +2,7 @@
 title: "win32LobAppRegistryRuleOperationType enum type"
 description: "A list of possible operations for rules used to make determinations about an application based on registry keys or values. Unless noted, the values can be used with either detection or requirement rules."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

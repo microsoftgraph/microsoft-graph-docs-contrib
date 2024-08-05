@@ -28,9 +28,14 @@ Properties of an open type can be defined by the client. In this case, the clien
 }
 ```
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

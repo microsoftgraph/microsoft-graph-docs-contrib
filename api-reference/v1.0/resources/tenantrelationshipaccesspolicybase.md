@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -57,8 +57,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: Property 'definition' found in resource definition for 'microsoft.graph.tenantRelationshipAccessPolicyBase', but not described in markdown table."
-  ]
+  "suppressions": []
 }
 -->

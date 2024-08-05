@@ -48,7 +48,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

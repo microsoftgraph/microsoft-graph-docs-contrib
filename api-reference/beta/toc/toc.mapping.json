@@ -739,9 +739,12 @@
         "educationSynchronizationError",
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse",
         "relatedContact"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -919,7 +922,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "companySubscription",
             "contract",
             "directory",
             "device",
@@ -932,7 +934,6 @@
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
-            "subscribedSku",
             "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
@@ -955,6 +956,13 @@
               "resources": [
                 "externalUserProfile",
                 "pendingExternalUserProfile"
+              ]
+            },
+            {
+              "name": "Licenses and subscriptions",
+              "resources": [
+                "companySubscription",
+                "subscribedSku"
               ]
             },
             {
@@ -1014,20 +1022,21 @@
             "Access reviews",
             "Entitlement Management",
             "Terms of Use",
-            "Privileged Identity Management"
+            "Privileged Identity Management",
+            "Microsoft Entra ID Governance"
           ],
           "childNodes": [
             {
               "name": "Access reviews",
               "overview": "../../resources/accessreviewsv2-overview.md",
               "resources": [
+                "accessReviewScheduleDefinition",
+                "accessReviewInstance",
+                "accessReviewStage",
+                "accessReviewInstanceDecisionItem",
                 "accessReviewHistoryDefinition",
                 "accessReviewHistoryInstance",
-                "accessReviewInstance",
-                "accessReviewInstanceDecisionItem",
-                "accessReviewPolicy",
-                "accessReviewScheduleDefinition",
-                "accessReviewStage"
+                "accessReviewPolicy"
               ],
               "complexTypes": [
                 "accessReviewApplyAction",
@@ -1090,27 +1099,26 @@
             {
               "name": "Entitlement management",
               "overview": "../../resources/entitlementmanagement-overview.md",
-              "shouldSort": true,
               "resources": [
-                "approval",
-                "approvalStep",
                 "accessPackage",
                 "accessPackageAssignment",
+                "approval",
+                "approvalStep",
+                "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
-                "accessPackageAssignmentRequestWorkflowExtension",
                 "accessPackageAssignmentResourceRole",
-                "accessPackageAssignmentWorkflowExtension",
                 "accessPackageCatalog",
+                "accessPackageResourceRole",
                 "accessPackageResource",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
-                "accessPackageResourceRole",
-                "accessPackageResourceRoleScope",
+                "accessPackageAssignmentRequestWorkflowExtension",
+                "accessPackageAssignmentWorkflowExtension",
                 "accessPackageSubject",
                 "connectedOrganization",
-                "customAccessPackageWorkflowExtension",
-                "entitlementManagementSettings"
+                "entitlementManagementSettings",
+                "customAccessPackageWorkflowExtension"
               ],
               "complexTypes": [
                 "accessPackageAnswer",
@@ -1189,11 +1197,12 @@
                 "Leaver"
               ],
               "resources": [
+                "microsoft.graph.identityGovernance.workflow",
+                "microsoft.graph.identityGovernance.workflowTemplate",
+                "microsoft.graph.identityGovernance.taskDefinition",
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
-                "microsoft.graph.identityGovernance.taskDefinition",
-                "microsoft.graph.identityGovernance.workflow",
-                "microsoft.graph.identityGovernance.workflowTemplate"
+                "microsoft.graph.identitygovernance.insights"
               ],
               "complexTypes": [
                 "azureAdPopTokenAuthentication",
@@ -1392,11 +1401,11 @@
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
+                "platformCredentialAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
-                "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-                "platformCredentialAuthenticationMethod"
+                "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
               ]
             },
             {
@@ -1405,6 +1414,8 @@
               "resources": [
                 "authenticationStrengthPolicy",
                 "authenticationCombinationConfiguration",
+                "fido2CombinationConfiguration",
+                "x509CertificateCombinationConfiguration",
                 "authenticationMethodModeDetail"
               ]
             },
@@ -1493,6 +1504,12 @@
                   "resources": [
                     "internalDomainFederation"
                   ]
+                },
+                {
+                  "name": "Federated token validation policy (preview)",
+                  "resources": [
+                    "federatedTokenValidationPolicy"
+                  ]
                 }
               ]
             },
@@ -1550,15 +1567,6 @@
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
-              "complexTypes": [
-                "allDeviceRegistrationMembership",
-                "azureADJoinPolicy",
-                "azureADRegistrationPolicy",
-                "deviceRegistrationMembership",
-                "enumeratedDeviceRegistrationMembership",
-                "localAdminPasswordSettings",
-                "noDeviceRegistrationMembership"
-              ],
               "childNodes": [
                 {
                   "name": "Application authentication method policy",
@@ -1571,9 +1579,11 @@
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
+                  "shouldSort": true,
                   "resources": [
                     "authenticationMethodsPolicy",
                     "emailAuthenticationMethodConfiguration",
+                    "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
@@ -1593,6 +1603,14 @@
               ]
             },
             {
+              "name": "User flows in external tenants",
+              "resources": [
+                "authenticationEventsFlow",
+                "externalUsersSelfServiceSignUpEventsFlow",
+                "authenticationConditionApplication"
+              ]
+            },
+            {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
                 "identityUserFlow",
@@ -1602,14 +1620,6 @@
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
                 "identityApiConnector"
-              ]
-            },
-            {
-              "name": "User flows in external tenants",
-              "resources": [
-                "authenticationEventsFlow",
-                "externalUsersSelfServiceSignUpEventsFlow",
-                "authenticationConditionApplication"
               ]
             }
           ]
@@ -1626,7 +1636,8 @@
               "resources": [
                 "awsAuthorizationSystem",
                 "azureAuthorizationSystem",
-                "gcpAuthorizationSystem"
+                "gcpAuthorizationSystem",
+                "authorizationSystemTypeService"
               ],
               "childNodes": [
                 {
@@ -1637,8 +1648,7 @@
                       "resources": [
                         "awsAuthorizationSystemTypeAction",
                         "awsPolicy",
-                        "awsAuthorizationSystemResource",
-                        "authorizationSystemTypeService"
+                        "awsAuthorizationSystemResource"
                       ],
                       "childNodes": [
                         {
@@ -1661,8 +1671,7 @@
                       "resources": [
                         "azureAuthorizationSystemTypeAction",
                         "azureAuthorizationSystemResource",
-                        "azureRoleDefinition",
-                        "authorizationSystemTypeService"
+                        "azureRoleDefinition"
                       ],
                       "childNodes": [
                         {
@@ -1686,8 +1695,7 @@
                       "resources": [
                         "gcpAuthorizationSystemTypeAction",
                         "gcpAuthorizationSystemResource",
-                        "gcpRole",
-                        "authorizationSystemTypeService"
+                        "gcpRole"
                       ],
                       "childNodes": [
                         {
@@ -1800,12 +1808,11 @@
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
-            "microsoft.graph.networkaccess.remoteNetwork",
-            "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+            "microsoft.graph.networkaccess.remoteNetwork"
           ],
           "childNodes": [
             {
-              "name": "Branch site",
+              "name": "Branch site (deprecated)",
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.connectivityConfigurationLink"
@@ -1826,7 +1833,9 @@
                 "microsoft.graph.networkaccess.forwardingPolicy",
                 "microsoft.graph.networkaccess.forwardingPolicyLink",
                 "microsoft.graph.networkaccess.policyRule",
-                "microsoft.graph.networkaccess.forwardingRule"
+                "microsoft.graph.networkaccess.forwardingRule",
+                "microsoft.graph.networkaccess.m365ForwardingRule",
+                "microsoft.graph.networkaccess.privateAccessForwardingRule"
               ]
             },
             {
@@ -1843,6 +1852,13 @@
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration"
+              ]
+            },
+            {
+              "name": "Traffic logs",
+              "resources": [
+                "microsoft.graph.networkaccess.networkAccessTraffic",
+                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2042,6 +2058,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "pronounsSettings",
+        "photoUpdateSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2056,7 +2073,8 @@
           "name": "People admin settings",
           "resources": [
             "pronounsSettings",
-            "profileCardProperty"
+            "profileCardProperty",
+            "photoUpdateSettings"
           ]
         },
         {
@@ -2675,6 +2693,17 @@
         "Microsoft Teams"
       ],
       "childNodes": [
+        {
+          "name": "Approvals",
+          "resources": [
+            "approvalItem",
+            "approvalSolution",
+            "approvalItemRequest",
+            "approvalItemResponse",
+            "approvalItemViewPoint",
+            "approvalOperation"
+          ]
+        },
         {
           "name": "Apps",
           "resources": [

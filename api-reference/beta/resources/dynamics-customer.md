@@ -35,7 +35,7 @@ Represents a customer in Dynamics 365 Business Central.
 |phoneNumber  |string    |Specifies the customer's telephone number.|
 |email        |string    |Specifies the customer's email address.|
 |website      |string    |Specifies the customer's home page address.|
-|taxLiable    |boolean   |Specifies if the customer or vendor is liable for sales tax. Set to **true** if the customer is tax liable.|
+|taxLiable    |Boolean   |Specifies if the customer or vendor is liable for sales tax. Set to **true** if the customer is tax liable.|
 |taxAreaId    |GUID      |Specifies which tax area the customer belongs to.|
 |taxAreaDisplayName|string|Specified the display name of the tax area the customer belongs to.|
 |taxRegistrationNumber|string, maximum size 20|Specified the tax registration number of the customer.|
@@ -77,7 +77,7 @@ The following JSON representation shows the resource type.
     "phoneNumber": "string",
     "email": "string",
     "website": "string",
-    "taxLiable": "boolean",
+    "taxLiable": "Boolean",
     "taxAreaId": "GUID",
     "taxAreaDisplayName": "string",
     "taxRegistrationNumber": "string",
