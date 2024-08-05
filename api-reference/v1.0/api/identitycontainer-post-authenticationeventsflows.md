@@ -52,7 +52,7 @@ You can specify the following properties when creating an **authenticationEvents
 |priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Optional. The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Optional. The configuration for what to invoke when attributes are ready to be collected from the user. To configure this property when it wasn't configured during user flow creation, call the [Add attributes to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md) API.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Optional. The configuration for what to invoke during user creation.|
 
 ## Response
