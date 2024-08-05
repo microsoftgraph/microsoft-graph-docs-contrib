@@ -38,12 +38,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.customerMfaInsight",
-  "compliantAdminsCount": "Integer",
-  "compliantNonAdminsCount": "Integer",
-  "totalUsersCount": "Integer",
-  "securityDefaultsStatus": "String",
-  "mfaConditionalAccessPolicyStatus": "String",
-  "legacyPerUserMfaStatus": "String"
+  "compliantAdminsCount": 53,
+  "compliantNonAdminsCount": 11,
+  "totalUsersCount": 6852,
+  "securityDefaultsStatus": "disabled",
+  "mfaConditionalAccessPolicyStatus": "enabled",
+  "legacyPerUserMfaStatus": "enabled"
 }
 ```
 

@@ -48,16 +48,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.responseTimeSecurityRequirement",
-  "id": "String (identifier)",
-  "requirementType": "String",
-  "complianceStatus": "String",
-  "actionUrl": "String",
-  "helpUrl": "String",
-  "score": "Integer",
-  "maxScore": "Integer",
-  "state": "String",
-  "updatedDateTime": "String (timestamp)",
-  "averageResponseTimeInHours": "Single"
+  "id": "securityAlertsPromptlyResolved",
+  "requirementType": "securityAlertsPromptlyResolved",
+  "complianceStatus": "compliant",
+  "actionUrl":"https://aka.ms/partner-center-security-alerts", 
+  "helpUrl":"https://aka.ms/partner-center-security-dashboard-response-time",
+  "score": 10,
+  "maxScore": 10,
+  "state": "active",
+  "updatedDateTime": "2023-11-20T12:00:09.1398813Z",
+  "averageResponseTimeInHours": "1.2"
 }
 ```
 

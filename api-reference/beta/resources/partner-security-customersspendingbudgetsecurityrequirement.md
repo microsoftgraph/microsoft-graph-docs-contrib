@@ -48,17 +48,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
-  "id": "String (identifier)",
-  "requirementType": "String",
-  "complianceStatus": "String",
-  "actionUrl": "String",
-  "helpUrl": "String",
-  "score": "Integer",
-  "maxScore": "Integer",
-  "state": "String",
-  "updatedDateTime": "String (timestamp)",
-  "totalCustomersCount": "Integer",
-  "customersWithSpendBudgetCount": "Integer"
+  "id": "spendingBudgetSetForCustomerAzureSubscriptions",
+  "requirementType": "spendingBudgetSetForCustomerAzureSubscriptions",
+  "complianceStatus": "compliant",
+  "actionUrl":"https://aka.ms/partner-center-spending-budget", 
+  "helpUrl":"https://aka.ms/partner-center-security-dashboard-spending-budget", 
+  "score": 20,
+  "maxScore": 20,
+  "state": "active",
+  "updatedDateTime": "2024-01-27T18:02:09.0713969Z",
+  "totalCustomersCount": 79,
+  "customersWithSpendBudgetCount": 50
 }
 ```
 
