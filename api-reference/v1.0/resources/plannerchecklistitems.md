@@ -30,7 +30,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "String (client-generated GUID)": {"@odata.type": "microsoft.graph.plannerChecklistItem"}
+  "@odata.type": "microsoft.graph.plannerChecklistItem"
 }
 ```
 
