@@ -92,8 +92,8 @@ Content-Type: application/json
       "complianceStatus": "compliant",
       "actionUrl": "https://aka.ms/partner-center-security-contact",
       "helpUrl": "https://aka.ms/partner-center-security-dashboard-security-contact",
-      "score": "20",
-      "maxScore": "20",
+      "score": 20,
+      "maxScore": 20,
       "state": "active",
       "updatedDateTime": "2023-09-26T04:04:01.4261872Z"
     }
