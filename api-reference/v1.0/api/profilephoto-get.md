@@ -42,7 +42,7 @@ The following tables show the least privileged permission or permissions require
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |  ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, Group.Read.All, Group.ReadWrite.All           |
 |Delegated (personal Microsoft account)      |   Not supported.            |  Not supported. |
-|Application      |    Group.Read.All | Group.ReadWrite.All           |
+|Application      |   ProfilePhoto.Read.All | ProfilePhoto.ReadWrite.All, Group.Read.All, Group.ReadWrite.All           |
 
 ### To retrieve the profile photo of a team
 
